@@ -2,3 +2,11 @@
 node_modules/
 .DS_Store
 Thumbs.db
+
+tools/__pycache__/
+tools/logs/
+
+languages/*.suggestions.json
+tools/*report*.json
+tools/missing-*.json
+tools/_*.py

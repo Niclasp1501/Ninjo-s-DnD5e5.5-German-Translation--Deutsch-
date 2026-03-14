@@ -10,7 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate JSON files
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate core JSON files
         run: |
-          node -e "JSON.parse(require('fs').readFileSync('module.json','utf8'))"
-          node -e "JSON.parse(require('fs').readFileSync('languages/de.json','utf8'))"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          files = [
+            'module.json',
+            'languages/de.json',
+            'config/scope-blocklist.json',
+            'config/scope-allowlist.json',
+            'config/glossary.json',
+            'config/metric-policy.json'
+          ]
+          for f in files:
+            json.loads(Path(f).read_text(encoding='utf-8'))
+          print('core-json-ok')
+          PY
+
+      - name: Lint tool scripts (syntax)
+        run: |
+          python -m py_compile tools/extract_missing_keys.py tools/translate_missing_gemini.py tools/validate_suggestions.py tools/merge_suggestions.py tools/migrate_reuse_translations.py

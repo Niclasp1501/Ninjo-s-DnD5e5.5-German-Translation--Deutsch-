@@ -1,1 +1,4567 @@
-{}
+{
+  "DOCUMENT": {
+    "DND5E": {
+      "Activity": "Aktivität",
+      "Warning": {
+        "SelectType": "{name}-Type muss für die Erstellung ausgewählt sein."
+      },
+      "Advancement": "Fortschritt"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Spielercharakter",
+      "characterPl": "Spielercharaktere",
+      "group": "Gruppe",
+      "groupPl": "Gruppen",
+      "npc": "Nichtspielercharakter",
+      "npcPl": "Nichtspielercharaktere",
+      "vehicle": "Fahrzeug",
+      "vehiclePl": "Fahrzeuge",
+      "encounter": "Begegnung",
+      "encounterPl": "Begegnungen"
+    },
+    "ActiveEffect": {
+      "enchantment": "Verzauberung",
+      "enchantmentPl": "Verzauberungen"
+    },
+    "Item": {
+      "background": "Hintergrund",
+      "backgroundPl": "Hintergründe",
+      "container": "Behälter",
+      "containerPl": "Behälter",
+      "class": "Klasse",
+      "classPl": "Klassen",
+      "consumable": "Verbrauchsgut",
+      "consumablePl": "Verbrauchsgüter",
+      "equipment": "Ausrüstung",
+      "equipmentPl": "Ausrüstung",
+      "feat": "Merkmal",
+      "featurePl": "Merkmale",
+      "loot": "Beute",
+      "lootPl": "Beute",
+      "race": "Spezies",
+      "racePl": "Spezies",
+      "raceLegacy": "Volk",
+      "raceLegacyPl": "Völker",
+      "spell": "Zauber",
+      "spellPl": "Zauber",
+      "subclass": "Unterklasse",
+      "subclassPl": "Unterklassen",
+      "tool": "Werkzeug",
+      "toolPl": "Werkzeuge",
+      "weapon": "Waffe",
+      "weaponPl": "Waffen",
+      "facility": "Einrichtung",
+      "facilityPl": "Einrichtungen"
+    },
+    "JournalEntryPage": {
+      "class": "Klassenübersicht",
+      "map": "Karten Standort",
+      "rule": "Regel",
+      "spells": "Zauberliste",
+      "subclass": "Unterklassenübersicht"
+    },
+    "ChatMessage": {
+      "request": "Anfragenachricht",
+      "rest": "Rastnachricht",
+      "turn": "Kampfzugnachricht",
+      "usage": "Nutzungsnachricht"
+    },
+    "RegionBehavior": {
+      "dnd5e": {
+        "difficultTerrain": "Schwieriges Gelände",
+        "rotateArea": "Bereich drehen"
+      }
+    },
+    "HINTS": {
+      "RegionBehavior": {
+        "dnd5e": {
+          "difficultTerrain": "Markiert eine Region als schwieriges Gelände und legt ihren Typ sowie die Betroffenen fest.",
+          "rotateArea": "Dreht Marker, Kacheln, Wände und andere Objekte um einen zentralen Drehpunkt."
+        }
+      }
+    }
+  },
+  "DND5E": {
+    "title": "Dungeons & Dragons 5. Edition",
+    "AbbreviationCR": "HG",
+    "AbbreviationConc": "Konz.",
+    "AbbreviationDC": "SG",
+    "AbbreviationKg": "kg",
+    "AbbreviationLR": "LR",
+    "AbbreviationLevel": "St.",
+    "AbbreviationLbs": "Pf.",
+    "AbbreviationSR": "SR",
+    "ABILITY": {
+      "Configure": {
+        "Title": "{ability} bearbeiten",
+        "CheckLabel": "{ability}-Probe",
+        "SaveLabel": "{ability}-Rettungswurf"
+      },
+      "SECTIONS": {
+        "Bonuses": {
+          "Label": "{ability} Boni",
+          "Hint": "Diese Boni gelten für Attributs- und Rettungswürfe, die sich auf {ability} beziehen."
+        },
+        "Global": {
+          "Label": "Globale Boni",
+          "Hint": "Diese Boni gelten für Attributs- und Rettungswürfe, die sich auf beliebige Attribute beziehen."
+        },
+        "Score": "{ability}wert"
+      }
+    },
+    "Ability": "Attribut",
+    "Abilities": "Attribute",
+    "AbilityStr": "Stärke",
+    "AbilityStrAbbr": "Stä",
+    "AbilityCon": "Konstitution",
+    "AbilityConAbbr": "Kon",
+    "AbilityDex": "Geschicklichkeit",
+    "AbilityDexAbbr": "Ges",
+    "AbilityInt": "Intelligenz",
+    "AbilityIntAbbr": "Int",
+    "AbilityWis": "Weisheit",
+    "AbilityWisAbbr": "Wei",
+    "AbilityCha": "Charisma",
+    "AbilityChaAbbr": "Cha",
+    "AbilityHon": "Ehre",
+    "AbilityHonAbbr": "Ehr",
+    "AbilitySan": "Geistige Gesundheit",
+    "AbilitySanAbbr": "Ges",
+    "AbilityScore": "Attributswert",
+    "AbilityScoreShort": "Wert",
+    "AbilityScorePl": "Attributswerte",
+    "AbilityScoreL": "{ability} Wert",
+    "AbilityScoreMax": "Maximaler Attributswert",
+    "AbilityScoreMaxShort": "Maximal",
+    "AbilityModifier": "Attributsmodifikator",
+    "AbilityPromptText": "Welche Art von {ability} Wurf?",
+    "AbilityPromptTitle": "{ability} Attributswurf",
+    "AbilityUseChargesLabel": "{value} Ladungen",
+    "AbilityUseConsumableLabel": "{max} pro {per}",
+    "AbilityUseCast": "Zauber wirken",
+    "AbilityUseUse": "Fertigkeit benutzen",
+    "AbilityUseConfig": "Nutzungen bearbeiten",
+    "AbilityBonuses": "Attributsboni",
+    "AbilityConfigure": "Fähigkeits- und Rettungswürfe bearbeiten",
+    "AbilityConfigureTitle": "{ability} Rettungswürfe und Proben bearbeiten",
+    "AbilitySaveConfigure": "{ability} Rettungswürfe",
+    "AbilityCheckConfigure": "{ability} Fähigkeitsproben",
+    "AbilityCheckConfigurationHint": "Probenboni bearbeiten.",
+    "AbilityConfigurationHint": "Übung für Rettungswürfe und Boni für Rettungswürfe und Proben konfigurieren.",
+    "AbilityCheckBonus": "Probenbonus",
+    "AbilityCheckGlobalBonusHint": "Dieser Bonus gilt für alle Attributswürfe dieses Akteurs.",
+    "Action": "Aktion",
+    "ActionAbbr": "A",
+    "ActionPl": "Aktionen",
+    "ActionAbil": "Attributswurf",
+    "ActionEnch": "Verzaubern",
+    "ActionHeal": "Heilung",
+    "ActionMSAK": "Nahkampf-Zauberangriff",
+    "ActionMWAK": "Nahkampf-Waffenangriff",
+    "ActionOther": "Andere",
+    "ActionRSAK": "Fernkampf-Zauberangriff",
+    "ActionRWAK": "Fernkampf-Waffenangriff",
+    "ActionSave": "Rettungswurf",
+    "ActionSumm": "Beschwören",
+    "ActionUtil": "Utility",
+    "ActionWarningNoItem": "Das angefragte Objekt {item} existiert nicht mehr bei Charakter {name}",
+    "ActionWarningNoToken": "Um diese Option zu verwenden, brauchst du Kontrolle über mindestens eine Figur.",
+    "ACTIVATION": {
+      "FIELDS": {
+        "activation": {
+          "label": "Aktivierung",
+          "condition": {
+            "label": "Aktivierungsbedingung",
+            "hint": "Bedingung, die erfüllt sein muss, um diese Aktivität zu aktivieren."
+          },
+          "override": {
+            "label": "Aktivierung überschreiben",
+            "hint": "Verwende diese Aktivierungswerte anstelle der Werte des Items, wenn du diese Aktivität verwendest."
+          },
+          "type": {
+            "label": "Aktivierungskosten",
+            "hint": "Aktivierungstyp (z.B. Aktion, Legendäre Aktion, Minuten)"
+          },
+          "value": {
+            "label": "Aktivierungswert",
+            "hint": "Skalarwert, der mit der Aktivierung verbunden ist."
+          }
+        }
+      },
+      "Category": {
+        "Monster": "Monster",
+        "Standard": "Standard",
+        "Time": "Zeit",
+        "Vehicle": "Fahrzeug",
+        "Combat": "Kampf",
+        "Rest": "Rast"
+      },
+      "Type": {
+        "Action": {
+          "Header": "Aktionen",
+          "Label": "Aktion"
+        },
+        "BonusAction": {
+          "Header": "Bonusaktionen",
+          "Label": "Bonusaktion"
+        },
+        "Crew": {
+          "Counted": {
+            "one": "{number} Besatzungsaktion",
+            "other": "{number} Besatzungsaktionen"
+          },
+          "Header": "Besatzungsaktionen",
+          "Label": "Besatzungsaktion"
+        },
+        "Day": {
+          "Header": "Tage",
+          "Label": "Tag"
+        },
+        "Encounter": {
+          "Label": "Beginn der Begegnung"
+        },
+        "Hour": {
+          "Header": "Stunden",
+          "Label": "Stunde"
+        },
+        "Lair": {
+          "Header": "Höhlenaktionen",
+          "Label": "Höhlenaktion"
+        },
+        "Legendary": {
+          "Counted": {
+            "one": "{number} legendäre Aktion",
+            "other": "{number} legendäre Aktionen"
+          },
+          "Header": "Legendäre Aktionen",
+          "Label": "Legendäre Aktion"
+        },
+        "LongRest": {
+          "Label": "Ende einer langen Rast"
+        },
+        "Minute": {
+          "Header": "Minuten",
+          "Label": "Minute"
+        },
+        "Mythic": {
+          "Counted": {
+            "one": "{number} mythische Aktion",
+            "other": "{number} mythische Aktionen"
+          },
+          "Header": "Mythische Aktionen",
+          "Label": "Mythische Aktion"
+        },
+        "Reaction": {
+          "Header": "Reaktionen",
+          "Label": "Reaktion"
+        },
+        "ShortRest": {
+          "Label": "Ende einer Kurzen Rast"
+        },
+        "TurnEnd": {
+          "Label": "Ende des Zuges"
+        },
+        "TurnStart": {
+          "Label": "Beginn des Zuges"
+        }
+      },
+      "Warning": {
+        "NoActions": "Keine {type} verfügbar, aber die Aktivierung erfordert mindestens {required}.",
+        "NotEnoughActions": "Nicht genug {type} zur Aktivierung, {required} benötigt, aber nur {available} verfügbar."
+      }
+    },
+    "ACTIVITY": {
+      "Action": {
+        "Create": "Erstelle Aktivität",
+        "Delete": "Entferne Aktivität",
+        "Edit": "Aktivität bearbeiten"
+      },
+      "Title": {
+        "one": "Aktivität",
+        "other": "Aktivitäten"
+      },
+      "FIELDS": {
+        "description": {
+          "label": "Beschreibung",
+          "chatFlavor": {
+            "label": "Chat Flavortext",
+            "hint": "Zusätzlicher Text, der in der Aktivierungs-Chatnachricht angezeigt wird."
+          }
+        },
+        "effects": {
+          "label": "Effekt anwenden",
+          "element": {
+            "level": {
+              "label": "Stufenbegrenzung",
+              "hint": "Stufenbereich, der zum Anwenden dieses Effekts erforderlich ist.",
+              "max": {
+                "label": "Maximale Stufe"
+              },
+              "min": {
+                "label": "Minimale Stufe"
+              }
+            }
+          }
+        },
+        "img": {
+          "label": "Icon"
+        },
+        "name": {
+          "label": "Name"
+        },
+        "visibility": {
+          "identifier": {
+            "hint": "Der Bezeichner der Klasse, für die Stufenbegrenzungen gelten. Wenn leer gelassen, wird die Charakterstufe verwendet.",
+            "label": "Klassenbezeichner"
+          },
+          "label": "Sichtbarkeit",
+          "level": {
+            "hint": "Stufenbereich, der zur Nutzung dieser Aktivität erforderlich ist.",
+            "label": "Stufenbegrenzung",
+            "max": {
+              "label": "Maximale Stufe"
+            },
+            "min": {
+              "label": "Minimale Stufe"
+            }
+          },
+          "requireAttunement": {
+            "hint": "Die Aktivität ist nicht nutzbar, wenn der Gegenstand eine Einstimmung erfordert und nicht eingestimmt ist.",
+            "label": "Einstimmung erforderlich"
+          },
+          "requireIdentification": {
+            "hint": "Die Aktivität ist nicht nutzbar, wenn der Gegenstand nicht identifiziert ist.",
+            "label": "Identifikation erforderlich"
+          },
+          "requireMagic": {
+            "hint": "Die Aktivität ist nicht nutzbar, wenn Magie nicht verfügbar ist.",
+            "label": "Magie erforderlich"
+          }
+        }
+      },
+      "SECTIONS": {
+        "Activation": "Aktivierung",
+        "Behavior": "Verhalten",
+        "Effect": "Effekt",
+        "Identity": "Identität",
+        "Time": "Zeit"
+      },
+      "Warning": {
+        "UsageNotAllowed": "Die Nutzung dieser Aktivität ist derzeit nicht möglich."
+      }
+    },
+    "ActiveEffectOverrideWarning": "Dieser Wert wird von einem Aktive Effekt beeinflusst und kann nicht bearbeitet werden. Zum Bearbeiten Effekt deaktivieren.",
+    "Add": "Neu",
+    "AdditionalControls": "Zusätzliche Steuerelemente",
+    "AdditionalSettings": "Zusätzliche Einstellungen",
+    "AddEmbeddedItemPromptHint": "Diese Items zum Charakterbogen hinzufügen?",
+    "Advanced": "Erweitert",
+    "ADVANCEMENT": {
+      "AbilityScoreImprovement": {
+        "CapDisplay": {
+          "one": "Maximal {points} Punkte pro Attribut",
+          "other": "Maximal {points} Punkte pro Wert"
+        },
+        "Feat": {
+          "Hint": "Talent hierher ziehen um es statt einer Erhöhung der Attributswerte zu wählen.",
+          "ASIName": "Talent zur Attributsverbesserung"
+        },
+        "FIELDS": {
+          "cap": {
+            "hint": "Maximale Anzahl von Punkten, die ein Spieler einem einzelnen Attribut zuordnen kann.",
+            "label": "Punktobergrenze"
+          },
+          "fixed": {
+            "hint": "Attribute, die um einen festen Wert erhöht werden und während des Vorgangs nicht manuell erhöht werden können.",
+            "label": "Feste Erhöhung"
+          },
+          "locked": {
+            "hint": "Attributswert kann nicht erhöht werden.",
+            "label": "Gesperrt",
+            "locked": "Fähigkeit kann nicht verbessert werden.",
+            "unlocked": "Fähigkeit kann verbessert werden."
+          },
+          "points": {
+            "decrease": "Punkte verringern",
+            "hint": "Anzahl der Punkte, die einem freigeschalteten Attributswert zugewiesen werden können.",
+            "increase": "Punkte erhöhen",
+            "label": "Punkte"
+          },
+          "max": {
+            "hint": "Erhöht den maximalen Wert über das hinaus, was für den Akteur erlaubt ist.",
+            "label": "Maximum"
+          },
+          "recommendation": {
+            "hint": "Epische Gabe-Talent, das von dieser Klasse empfohlen wird.",
+            "label": "Empfehlung"
+          }
+        },
+        "Hint": "Erlaubt dem Spieler, einen oder mehrere Attributswerte zu erhöhen oder ein optionales Talent zu wählen.",
+        "LockedHint": "Werte sind nicht veränderbar, wenn ein Talent gewählt wurde.",
+        "PointsRemaining": {
+          "one": "{points} Punkt verbleibend",
+          "other": "{points} Punkte verbleibend"
+        },
+        "Title": "Attributswerterhöhung",
+        "Warning": {
+          "Type": "Nur Merkmale vom Typ \"Talent\" können gewählt werden."
+        },
+        "Action": {
+          "Select": "Talent auswählen"
+        },
+        "Details": "Verbesserungsdetails",
+        "EffectTargetHint": "Dieser Wert wird durch einen Aktiven Effekt modifiziert. Sein Endwert wird {value} sein.",
+        "Journal": {
+          "DescriptionEpic": "<p>Du erhältst ein Talent für eine Epische Gabe oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.</p>",
+          "DescriptionEpicRecommendation": "<p>Du erhältst ein Talent für eine Epische Gabe oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. {recommendation} wird empfohlen.</p>",
+          "DescriptionLegacy": "<p>Wenn du die {firstLevelOrdinal}. Stufe erreichst und erneut auf der {otherLevelsOrdinal}. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl um 1 erhöhen. Normalerweise kannst du einen Attributswert mit dieser Funktion nicht über {maxAbilityScore} erhöhen.</p><p>Wenn du die optionale Talentregel verwendest, kannst du auf diese Funktion verzichten, um stattdessen ein Talent deiner Wahl zu wählen.</p>",
+          "DescriptionModern": "<p>Du erhältst das Talent Attributsverbesserung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst diese Funktion erneut auf den {class}-Stufen {otherLevels}.</p>",
+          "Name": "Attributsverbesserung"
+        },
+        "TitleEpic": "Epische Gabe"
+      },
+      "SPELLCONFIG": {
+        "FreeCasting": "Kostenloses Zauberwirken",
+        "FIELDS": {
+          "spell": {
+            "label": "Zauberdetails",
+            "ability": {
+              "label": "Attribut"
+            },
+            "method": {
+              "label": "Zaubermethode"
+            },
+            "prepared": {
+              "label": "Vorbereitung"
+            },
+            "uses": {
+              "max": {
+                "label": "Anwendungen"
+              },
+              "per": {
+                "label": "Zeitraum"
+              },
+              "requireSlot": {
+                "label": "Zauberplatz erforderlich",
+                "hint": "Erfordert das Verbrauchen eines Zauberplatzes bei der Nutzung der begrenzten Anwendungen. Wenn nicht aktiviert, sind die Anwendungen zusätzliche freie Anwendungen, die keinen Zauberplatz verbrauchen."
+              }
+            }
+          }
+        }
+      },
+      "Subclass": {
+        "Hint": "Gib an, auf welcher Stufe diese Klasse ihre Unterklasse erhält.",
+        "Title": "Unterklasse",
+        "Action": {
+          "Select": "Unterklasse auswählen"
+        },
+        "Warning": {
+          "InvalidType": "Es können nur Unterklassen ausgewählt werden."
+        }
+      },
+      "Action": {
+        "Create": "Fortschritt erstellen",
+        "Delete": "Fortschritt löschen",
+        "Duplicate": "Fortschritt duplizieren",
+        "Edit": "Fortschritt bearbeiten",
+        "View": "Fortschritt ansehen"
+      },
+      "Config": {
+        "AnyLevel": "Beliebig",
+        "Details": "Fortschrittsdetails"
+      },
+      "Defaults": {
+        "BackgroundFeat": "Hintergrundtalent",
+        "BackgroundFeature": "Hintergrundmerkmal",
+        "BackgroundProficiencies": "Hintergrundfertigkeiten",
+        "ChooseLanguages": "Sprachen wählen"
+      },
+      "Deletion": {
+        "Delete": {
+          "Message": "Das Löschen dieses Eintrags löscht auch alle dafür getroffenen Fortschrittsentscheidungen. Diese Änderungen werden von deinem Charakter entfernt, solange das untenstehende Kontrollkästchen aktiviert ist.",
+          "Title": "Löschen bestätigen"
+        },
+        "LevelDown": {
+          "Message": "Das Verringern der Stufe für diese Klasse löscht auch alle dafür getroffenen Fortschrittsentscheidungen. Diese Änderungen werden von deinem Charakter entfernt, solange das untenstehende Kontrollkästchen aktiviert ist.",
+          "Title": "Stufe verringern"
+        },
+        "Label": "Änderungen entfernen",
+        "Options": "Optionen"
+      },
+      "HitPoints": {
+        "Action": {
+          "RollClass": "Würfle {class}-Trefferpunkte",
+          "RollDie": "Würfle {die}"
+        },
+        "Average": "Durchschnitt",
+        "Breakdown": {
+          "Average": "Durchschn.",
+          "Bonus": "Bonus",
+          "Final": "Endgültig",
+          "Max": "Max.",
+          "Previous": "Vorh.",
+          "Roll": "Wurf"
+        },
+        "Hint": "Verfolge die Trefferpunkte des Spielers für jede Stufe in der Klasse.",
+        "MaxAtFirstLevel": "Max. auf der 1. Stufe: <strong>{max}</strong>",
+        "Options": "Optionen",
+        "Starting": "Trefferpunkte auf Stufe 1",
+        "TakeAverage": "Durchschnitt nehmen",
+        "Title": "Trefferpunkte",
+        "Warning": {
+          "Empty": "Trefferpunkte müssen gewürfelt oder der Durchschnittswert genommen werden.",
+          "Invalid": "Trefferpunkte müssen eine gültige ganze Zahl sein."
+        }
+      },
+      "ItemChoice": {
+        "Action": {
+          "SelectGeneric": "Gegenstand auswählen",
+          "SelectSpecific": "{type} auswählen"
+        },
+        "Choose": "{count} auswählen",
+        "Chosen": "Ausgewählt: {current} von {max}",
+        "Details": "Auswahl-Details",
+        "DropHint": "Gegenstände hierher ziehen, um sie der Liste hinzuzufügen, die mit dieser Entwicklung ausgewählt werden können.",
+        "FIELDS": {
+          "allowDrops": {
+            "hint": "Erlaubt Spielern, ihre eigenen Auswahlmöglichkeiten in diese Entwicklung zu ziehen.",
+            "label": "Ablegen erlauben"
+          },
+          "choices": {
+            "hint": "Gibt an, wie viele Auswahlmöglichkeiten auf jeder Stufe erlaubt sind.",
+            "label": "Auswahlmöglichkeiten",
+            "FIELDS": {
+              "count": {
+                "label": "Anzahl"
+              },
+              "replacement": {
+                "label": "Ersetzen erlauben"
+              }
+            }
+          },
+          "pool": {
+            "label": "Gegenstandsoptionen"
+          },
+          "restriction": {
+            "level": {
+              "Available": "Jede verfügbare Stufe",
+              "hint": "Nur Auswahlmöglichkeiten aus Zaubern dieser Stufe erlauben.",
+              "label": "Zauberstufe"
+            },
+            "list": {
+              "hint": "Nur Zauber aus diesen Listen erlauben.",
+              "label": "Zauberlisten"
+            },
+            "subtype": {
+              "label": "Untertyp"
+            },
+            "type": {
+              "label": "Typ"
+            }
+          },
+          "type": {
+            "Any": "Alles",
+            "hint": "Beschränkt, welche Gegenstandstypen ausgewählt werden können.",
+            "label": "Gegenstandstyp"
+          }
+        },
+        "Hint": "Bietet dem Spieler eine Auswahl an Gegenständen (wie Ausrüstung, Merkmale oder Zauber), die er für seinen Charakter auf einer oder mehreren Stufen wählen kann.",
+        "Options": "Optionen",
+        "Replacement": {
+          "None": "Kein Ersatz",
+          "Title": "ersetzen"
+        },
+        "Title": "Gegenstände wählen",
+        "Warning": {
+          "InvalidType": "Nur Gegenstände vom Typ {type} können für diese Auswahl gewählt werden.",
+          "MaxSelected": "Es können keine weiteren Gegenstände ausgewählt werden. Deaktivieren Sie Gegenstände, bevor Sie weitere auswählen.",
+          "NoOriginal": "Zuvor getroffene Auswahl steht nicht mehr zum Ersetzen zur Verfügung.",
+          "SpellLevelAvailable": "Nur Zauber der Stufe {level} oder niedriger können für diese Entwicklung gewählt werden.",
+          "SpellLevelSpecific": "Nur Zauber der Stufe {level} können für diese Entwicklung gewählt werden.",
+          "SpellList": "Nur Zauber, die auf der Zauberliste {lists} verfügbar sind, können für diese Entwicklung gewählt werden."
+        }
+      },
+      "ScaleValue": {
+        "Type": {
+          "Dice": {
+            "FIELDS": {
+              "faces": {
+                "label": "Seiten"
+              },
+              "number": {
+                "label": "Anzahl"
+              }
+            },
+            "Hint": "Verwenden Sie dies für Würfelwerte wie Bardeninspiration, Hinterhältiger Angriff oder Überlegenheitswürfel.",
+            "Identifier": "Dieser Skalierungswert für die aktuelle Stufe ist in einer Formel verfügbar unter:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - ganze Formel (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - ganzer Würfel (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - Anzahl der Würfel (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - Anzahl der Seiten (<code>6</code>)",
+            "Label": "Würfel"
+          },
+          "Distance": {
+            "Hint": "Verwenden Sie dies für numerische Werte, die eine Distanz darstellen, wie z.B. die Bewegungsgeschwindigkeit ohne Rüstung oder den Radius einer Schutzaura.",
+            "Label": "Distanz"
+          },
+          "Number": {
+            "Hint": "Verwenden Sie dies für rein numerische Werte wie den Wut-Schadensbonus oder die Anzahl der Anwendungen pro Tag.",
+            "Label": "Numerisch"
+          },
+          "String": {
+            "FIELDS": {
+              "value": {
+                "label": "Wert"
+              }
+            },
+            "Hint": "Verwenden Sie dies, wenn Sie sich über den Typ der Skalierungswerte unsicher sind oder wenn der Typ keine Rolle spielt.",
+            "Identifier": "Dieser Skalierungswert für die aktuelle Stufe ist in einer Formel verfügbar unter:<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+            "Label": "Beliebig"
+          },
+          "CR": {
+            "FIELDS": {
+              "value": {
+                "label": "HG"
+              }
+            },
+            "Hint": "Verwende dies, um die Herausforderungsgrade von Kreaturen für Funktionen wie Wilde Gestalt darzustellen.",
+            "Label": "Herausforderungsgrad"
+          }
+        },
+        "Action": {
+          "CopyFormula": "Formel kopieren"
+        },
+        "Details": "Skalenwert-Details",
+        "FIELDS": {
+          "distance": {
+            "units": {
+              "label": "Entfernungseinheiten"
+            }
+          },
+          "identifier": {
+            "label": "Bezeichner"
+          },
+          "scale": {
+            "label": "Skala"
+          },
+          "type": {
+            "label": "Skalentyp"
+          }
+        },
+        "Hint": "Ein einzelner Wert, der sich ändert, wenn eine Klasse im Level aufsteigt und in Würfelformeln verfügbar gemacht wird (z.B. der Kampfkunst-Würfel eines Mönchs).",
+        "Title": "Skalierungswert"
+      },
+      "Size": {
+        "Action": {
+          "SelectSize": "Größe auswählen"
+        },
+        "DefaultHint": {
+          "Multiple": "Wählen Sie Ihre Größe aus {sizes}.",
+          "Single": "Ihre Größe ist {size}."
+        },
+        "FIELDS": {
+          "sizes": {
+            "label": "Größen"
+          }
+        },
+        "Hint": "Legen Sie die Größe eines Charakters fest.",
+        "Title": "Größe"
+      },
+      "Trait": {
+        "Action": {
+          "AddChoice": "Wahl hinzufügen",
+          "RemoveChoice": "Wahl entfernen",
+          "RemoveTrait": "Merkmal entfernen",
+          "SelectTrait": "Merkmal auswählen"
+        },
+        "ChoicesRemaining": "Wählen Sie {count} weitere {type}",
+        "Details": "Merkmal-Details",
+        "FIELDS": {
+          "allowReplacements": {
+            "hint": "Wenn ein Merkmal bereits für den Akteur festgelegt ist, erlaube dem Spieler, ein anderes Merkmal als Ersatz zu wählen.",
+            "label": "Ersetzungen erlauben"
+          },
+          "choices": {
+            "hint": "Die folgenden Merkmale werden dem Spieler zur Auswahl präsentiert.",
+            "label": "Auswahlmöglichkeiten",
+            "FIELDS": {
+              "count": {
+                "label": "Anzahl"
+              },
+              "pool": {
+                "label": "Eigenschaften"
+              }
+            }
+          },
+          "grants": {
+            "hint": "Die folgenden Eigenschaften werden dem Charakter gewährt, solange er diese Eigenschaft nicht bereits besitzt.",
+            "label": "Gewährt"
+          },
+          "mode": {
+            "label": "Modus"
+          }
+        },
+        "Hint": "Gewährt einem Charakter bestimmte Eigenschaften oder gibt ihm die Möglichkeit, Eigenschaften (wie Fertigkeiten, Kenntnisse, Sprachen) auszuwählen.",
+        "Mode": {
+          "Default": {
+            "Hint": "Erhält eine Eigenschaft oder Fertigkeit.",
+            "Label": "Standard"
+          },
+          "Expertise": {
+            "Hint": "Erhält Expertise in einer Eigenschaft, in der du bereits Fertigkeit besitzt.",
+            "Label": "Expertise"
+          },
+          "Force": {
+            "Hint": "Erhält Expertise in einer Eigenschaft, unabhängig von deinem vorherigen Fertigkeitsgrad.",
+            "Label": "Erzwungene Expertise"
+          },
+          "Mastery": {
+            "Hint": "Erhält Meisterschaft mit einer Waffe, in der du bereits Fertigkeit besitzt.",
+            "Label": "Meisterschaft"
+          },
+          "Upgrade": {
+            "Hint": "Erhält Fertigkeit in einer Eigenschaft, es sei denn, du besitzt sie bereits, andernfalls erhältst du Expertise.",
+            "Label": "Aufwertung"
+          }
+        },
+        "TraitType": "Eigenschaftstyp",
+        "Title": "Eigenschaften"
+      },
+      "ItemGrant": {
+        "Details": "Vergabe-Details",
+        "DropHint": "Ziehe Gegenstände hierher, um sie der Liste hinzuzufügen, die durch diesen Fortschritt vergeben werden.",
+        "FIELDS": {
+          "items": {
+            "label": "Gegenstände"
+          },
+          "optional": {
+            "label": "Optional",
+            "hint": "Wenn der gesamte Fortschritt als optional markiert ist, können Spieler auf einen der folgenden Gegenstände verzichten; andernfalls werden alle nicht-optionalen Gegenstände vergeben."
+          }
+        },
+        "Hint": "Vergibt dem Charakter Gegenstände (wie Ausrüstung, Merkmale oder Zauber), wenn er ein bestimmtes Level erreicht.",
+        "Title": "Gegenstände vergeben",
+        "Warning": {
+          "Container": "Inhalte von Behältern werden nicht zusammen mit den Behältern hinzugefügt.",
+          "Duplicate": "Dieser Gegenstand existiert bereits in diesem Fortschritt.",
+          "Recursive": "Du kannst einen Gegenstand nicht in seinem eigenen Fortschritt vergeben."
+        }
+      },
+      "Migration": {
+        "Action": {
+          "Confirm": "Migrationen anwenden"
+        },
+        "Hint": "Wählen Sie aus, welche der folgenden Fortschritte zu {name} hinzugefügt werden.",
+        "Selection": "Fortschrittsauswahl",
+        "Title": "Fortschritt migrieren"
+      },
+      "Manager": {
+        "Action": {
+          "Complete": "Abschließen",
+          "NextStep": "Weiter",
+          "PreviousStep": "Zurück"
+        }
+      }
+    },
+    "AdvancementChoices": "Auswahl",
+    "AdvancementClassRestriction": "Klassenbeschränkung",
+    "AdvancementClassRestrictionNone": "Alle Klassen",
+    "AdvancementClassRestrictionPrimary": "Nur ursprüngliche Klasse",
+    "AdvancementClassRestrictionSecondary": "Nur Klassenkombinationen",
+    "AdvancementConfigurationActionDisable": "Konfiguration deaktivieren",
+    "AdvancementConfigurationActionEnable": "Konfiguration aktivieren",
+    "AdvancementConfigurationModeDisabled": "Konfiguration deaktiviert",
+    "AdvancementConfigurationModeEnabled": "Konfiguration aktiviert",
+    "AdvancementConfigureTitle": "{item} Fortschritt bearbeiten",
+    "AdvancementConfigureAllowDrops": "Reinziehen erlauben",
+    "AdvancementConfigureAllowDropsHint": "Dürfen Spieler selbst Items in diesen Fortschritt ziehen?",
+    "AdvancementConfigureDropAreaHint": "Hier Items hinziehen, um sie der möglichen Auswahl für Spieler hinzuzufügen.",
+    "AdvancementConfiguredComplete": "Vollständig konfiguriert",
+    "AdvancementConfiguredIncomplete": "Nicht konfiguriert",
+    "AdvancementCustomIcon": "Eigenes Icon",
+    "AdvancementCustomTitle": "Eigener Titel",
+    "AdvancementFlowDropAreaHint": "Item hierhin ziehen, um es auszuwählen.",
+    "AdvancementHint": "Hinweis",
+    "AdvancementItemTypeInvalidWarning": "Items vom Typ {type} können nicht mit diesem Fortschrittstyp hinzugefügt werden.",
+    "AdvancementLevelHeader": "Stufe {level}",
+    "AdvancementLevelAnyHeader": "Jede Stufe",
+    "AdvancementLevelNoneHeader": "Keine Stufe",
+    "AdvancementLevelDownConfirmationMessage": "Diese Klasse herabzustufen wird auch alle Fortschrittsentscheidungen rückgängig machen. Diese werden vom Charaktere entfernt, wenn die Checkbox unten aktiviert ist.",
+    "AdvancementLevelDownConfirmationTitle": "Herabstufen bestätigen",
+    "AdvancementModifyChoices": "Auswahl ändern",
+    "AdvancementSaveButton": "Fortschritt speichern",
+    "AdvancementSelectionCreateButton": "Fortschritt erstellen",
+    "AdvancementSelectionTitle": "Fortschrittstyp wählen",
+    "AdvancementTitle": "Fortschritt",
+    "Advantage": "Vorteil",
+    "AdvantageMode": "Vorteilmodus",
+    "Age": "Alter",
+    "Alignment": "Gesinnung",
+    "AlignmentCE": "Chaotisch Böse",
+    "AlignmentCG": "Chaotisch Gut",
+    "AlignmentCN": "Chaotisch Neutral",
+    "AlignmentLE": "Rechtschaffen Böse",
+    "AlignmentLG": "Rechtschaffen Gut",
+    "AlignmentLN": "Rechtschaffen Neutral",
+    "AlignmentNE": "Neutral Böse",
+    "AlignmentNG": "Neutral Gut",
+    "AlignmentTN": "Neutral",
+    "Amount": "Anzahl",
+    "Appearance": "Erscheinung",
+    "Apply": "Anwenden",
+    "Attunement": "Einstimmung",
+    "AttunementMax": "Maximal Eingestimmte Gegenstände",
+    "AttunementNone": "Einstimmung nicht nötig",
+    "AttunementOptional": "Einstimmung optional",
+    "AttunementRequired": "Einstimmung nötig",
+    "AttunementAttuned": "Eingestimmt",
+    "AttunementOverride": "Einstimmung überschreiben",
+    "Attuned": "Eingestimmt",
+    "AreaOfEffect": {
+      "Label": "Wirkungsbereich",
+      "Size": {
+        "Label": "Größe",
+        "Height": "Höhe",
+        "Length": "Länge",
+        "Radius": "Radius",
+        "Thickness": "Dicke",
+        "Width": "Breite"
+      },
+      "Description": {
+        "Height": "hoch",
+        "Length": "lang",
+        "Radius": "Radius",
+        "SizeSimple": "{number}-{unit}",
+        "SizeType": "{number}-{unit}-{type}",
+        "Thickness": "dick",
+        "Width": "breit"
+      }
+    },
+    "Armor": "Rüstung",
+    "ArmorClass": "Rüstungsklasse",
+    "ArmorClassEquipment": "Angelegte Rüstung",
+    "ArmorClassFlat": "Pauschal",
+    "ArmorClassUnarmored": "Ungerüstet",
+    "ArmorClassNatural": "Natürliche Rüstung",
+    "ArmorClassMage": "Magierrüstung",
+    "ArmorClassMotionless": "Bewegunglose Rüstungsklasse",
+    "ArmorClassDraconic": "Drakonische Widerstandskraft",
+    "ArmorClassUnarmoredMonk": "Ungerüstete Verteidigung (Mönch)",
+    "ArmorClassUnarmoredBarbarian": "Ungerüstete Verteidigung (Barbar)",
+    "ArmorClassUnarmoredBard": "Ungerüstete Verteidigung (Barde)",
+    "ArmorClassCustom": "Eigene Formel",
+    "ArmorConfig": "Rüstung bearbeiten",
+    "ArmorConfigHint": "Feld oben ausfüllen, um die automatisch berechnete Rüstungsklasse zu überschreiben.",
+    "ArmorClassCalculation": "Berechnung",
+    "ArmorClassFormula": "Formel",
+    "ArmorHeavyProficiency": "Schwer",
+    "ArmorLightProficiency": "Leicht",
+    "ArmorMediumProficiency": "Mittel",
+    "ArmorValue": "Rüstungswert",
+    "AC": "RK",
+    "ATTACK": {
+      "Attack": {
+        "mwak": "Nahkampfangriff",
+        "rwak": "Fernkampfangriff"
+      },
+      "Classification": {
+        "Spell": "Zauber",
+        "Unarmed": "Waffenlos",
+        "Weapon": "Waffe"
+      },
+      "FIELDS": {
+        "attack": {
+          "label": "Angriffs-Details",
+          "ability": {
+            "label": "Angriffsattribut",
+            "hint": "Attribut, as für den Angriff und die Bestimmung des Schadens verwendet wird. Verfügbar mit @mod in Formeln."
+          },
+          "bonus": {
+            "label": "Auf Treffer Bonus",
+            "hint": "Bonus zum Angriffswurf für den Angriff hinzugefügt."
+          },
+          "critical": {
+            "threshold": {
+              "label": "Kritischer Schwellwert",
+              "hint": "Minimum Wert auf dem W20, der benötigt wird, um einen Kritischen Treffer zu erzielen."
+            }
+          },
+          "flat": {
+            "label": "Pauschal auf Treffer",
+            "hint": "Ignoriere den Attributsmodifikator, die Übung und alle anderen Boni des Akteurs und verwende nur den durch die Aktivität definierten Bonus, wenn du den Treffer berechnest."
+          },
+          "type": {
+            "label": "Angriffszyp",
+            "value": {
+              "label": "Angriffstyp",
+              "hint": "Handelt es sich um einen Nah- oder Fernkampfangriff?"
+            },
+            "classification": {
+              "label": "Angriffsklassifizierung",
+              "hint": "Handelt es sich um einen waffenlosen, einen Waffen- oder einen Zauberangriff?"
+            }
+          }
+        },
+        "damage": {
+          "label": "Angriffsschaden",
+          "critical": {
+            "bonus": {
+              "label": "Zusätzlicher Kritischer Schaden",
+              "hint": "Zusätzlicher Schaden der zugefügt wird, wenn ein kritischer Treffer gewürfelt wird. Wird zum Grundschaden oder zum ersten Teil des Schadens addiert."
+            }
+          },
+          "includeBase": {
+            "label": "Grundschaden inkludieren",
+            "hint": "Inkludiere den Grundschaden des Items mit allen zusätzliche Schadensbestandteilen"
+          },
+          "parts": {
+            "label": "Schadensbestandteile",
+            "hint": "Individuelle Schadensbestandteile die in den Wurf inkludiert werden."
+          }
+        }
+      },
+      "Mode": {
+        "Label": "Angriffsmodus",
+        "Offhand": "Nebenhand",
+        "OneHanded": "Einhändig",
+        "Thrown": "Wurfwaffe",
+        "ThrownOffhand": "Nebenhand Wurfwaffe",
+        "TwoHanded": "Zweihändig",
+        "Ranged": "Fernkampf"
+      },
+      "Title": {
+        "one": "Angriff",
+        "other": "Angriffe"
+      },
+      "Type": {
+        "Melee": "Nahkampf",
+        "Ranged": "Fernkampf"
+      },
+      "Warning": {
+        "NoQuantity": "Versuch, mit einer Waffe mit einer Menge von Null anzugreifen."
+      },
+      "Weapon": {
+        "Melee": "Nahkampfwaffe",
+        "Ranged": "Fernkampfwaffe"
+      },
+      "Formatted": {
+        "2014": "{type} {classification} Angriff",
+        "2024": "{type} Angriffswurf"
+      },
+      "Hint": "Führe einen Angriffswurf und einen Schadenswurf aus."
+    },
+    "Attack": "Angriff",
+    "AttackPl": "Angriffe",
+    "AttackRoll": "Angriffswurf",
+    "Attributes": "Attribute",
+    "AttrConcentration": {
+      "Limit": "Limit"
+    },
+    "Automatic": "Automatisch",
+    "AutomaticValue": "Automatisch ({value})",
+    "Award": {
+      "Title": "Belohnung verteilen",
+      "Action": "Belohnung",
+      "Distribution": {
+        "Split": "Aufteilen",
+        "Each": "Jeder"
+      },
+      "Message": "{name} wurde {award} verliehen.",
+      "NoDestinations": "Kein Ziel verfügbar",
+      "NoPrimaryParty": "Keine primäre Gruppe festgelegt, zeigt stattdessen die den Spielern zugewiesenen Charaktere.",
+      "NotGMError": "Der /award Befehl ist nur für SL verfügbar.",
+      "UnrecognizedWarning": "Kann {commands} nicht parsen. Der Befehl /award sollte mit XP und Währungen verwendet werden wie '/award 10gp 50xp'"
+    },
+    "Background": "Hintergrund",
+    "BackgroundAdd": "Hintergrund hinzufügen",
+    "BackgroundName": "Hintergrundname",
+    "Biography": "Biographie",
+    "BiographyPublic": "Öffentliche Biographie",
+    "BiopgrahyPublicEdit": "Bearbeite Öffentliche Biographie",
+    "Bonds": "Bindungen",
+    "Bonus": "Bonus",
+    "BonusAction": "Bonusaktion",
+    "BonusActionAbbr": "BA",
+    "BonusAttack": "Angriffsbonus",
+    "BonusDamage": "Schadensbonus",
+    "BonusSaveForm": "Aktualisierter Bonus",
+    "BonusTitle": "Bearbeite Spielercharakter-Boni",
+    "CAST": {
+      "Action": {
+        "RemoveSpell": "Zauber entfernen"
+      },
+      "Enchantment": {
+        "Name": "Änderungen am Zauber"
+      },
+      "FIELDS": {
+        "spell": {
+          "label": "Zauberwirken Details",
+          "challenge": {
+            "attack": {
+              "label": "Angriffsbonus",
+              "hint": "Fester Trefferbonus, der anstelle des normalen Angriffsbonus des Zaubers verwendet wird."
+            },
+            "save": {
+              "label": "Rettungswurf-SG",
+              "hint": "Fester SG, der anstelle des normalen Rettungswurf-SG des Zaubers verwendet wird."
+            },
+            "override": {
+              "label": "Werte überschreiben",
+              "hint": "Überschreibe beim Wirken den normalen Angriffsbonus und SG des Zaubers."
+            }
+          },
+          "level": {
+            "label": "Zaubergrad",
+            "hint": "Basisstufe des Zaubers, falls sie sich von der Stufe des Zaubers unterscheidet."
+          },
+          "properties": {
+            "label": "Ignorierte Eigenschaften",
+            "hint": "Zauberkomponenten und Eigenschaften, die beim Zaubern ignoriert werden."
+          },
+          "spellbook": {
+            "label": "Im Zauberbuch anzeigen",
+            "hint": "Den Zauber im Zauber Reiter des Charakterbogens anzeigen."
+          },
+          "uuid": {
+            "label": "Zauber der gewirkt wird"
+          }
+        }
+      },
+      "SECTIONS": {
+        "Spell": "Zauber",
+        "Spellbook": "Zusätzliche Zauber"
+      },
+      "Title": "Zauber wirken"
+    },
+    "Casting": "Wirken",
+    "Conditions": "Zustände",
+    "Controls": {
+      "Hint": "Aktivieren Sie verschiedene Hinweise auf der Benutzeroberfläche für bestimmte Maus- und Tastatursteuerungen.",
+      "LeftClick": "Links Klick",
+      "LockHint": "Mittlere Maustaste zum sperren",
+      "MiddleClick": "Mittlere Maustaste",
+      "Name": "Aktiviere Steuerungshinweise",
+      "Activity": {
+        "FastForwardHint": "<kbd>Shift</kbd> + <left-click> das Item, um diesen Dialog zu überspringen"
+      }
+    },
+    "ChallengeRating": "Herausforderungsgrad",
+    "Charged": "Aufladen",
+    "Charges": "Ladungen",
+    "ChatContextDamage": "Schaden verursachen",
+    "ChatContextHealing": "Heilung anwenden",
+    "ChatContextTempHP": "Temporäre TP anwenden",
+    "ChatContextDoubleDamage": "Verursacht doppelten Schaden",
+    "ChatContextHalfDamage": "Verursacht halben Schaden",
+    "ChatContextSelectHit": "Wähle getroffene Ziele",
+    "ChatContextSelectMiss": "Wähle verfehlte Ziele",
+    "ChatFlavor": "Chatnachrichten-Flavortext",
+    "CHECK": {
+      "FIELDS": {
+        "check": {
+          "label": "Proben-Details",
+          "ability": {
+            "label": "Proben Attribut",
+            "hint": "Attribut das für die Probe genutzt wird."
+          },
+          "associated": {
+            "label": "Assoziierte Fertigkeiten oder Werkzeuge",
+            "hint": "Führe die Attributsproben anhand Übung und Boni mit diesen Fertigkeiten und Werkzeugen durch."
+          },
+          "dc": {
+            "label": "Schwierigkeitsgrad",
+            "calculation": {
+              "label": "SG Berechnung",
+              "hint": "Methode oder Attribut, das zur Berechnung des Schwierigkeitsgrades verwendet wird."
+            },
+            "formula": {
+              "label": "SG Formel",
+              "hint": "Eigene Formel oder fester Wert zur Definition des Proben-SG."
+            }
+          }
+        }
+      },
+      "ThisTool": "Dieses Werkzeug",
+      "Title": "Probe"
+    },
+    "CheckBonus": "Probenbonus",
+    "CLASS": {
+      "Multiclass": {
+        "Title": "Klassenkombinationen"
+      },
+      "FIELDS": {
+        "levels": {
+          "label": "Klassenstufe"
+        },
+        "primaryAbility": {
+          "all": {
+            "label": "Benötigt Alle",
+            "hint": "Benötige alle primären Attribute auf dem Minimum, um mehrere Klassen zu spielen."
+          },
+          "value": {
+            "label": "Primärattribut",
+            "hint": "Attribute, die von dieser Klasse am häufigsten verwendet werden. Dient zur Bestimmung der Voraussetzung für Klassenkombinationen."
+          }
+        }
+      }
+    },
+    "ClassAdd": "Klasse hinzufügen",
+    "ClassIdentifier": "Klassen-ID",
+    "ClassIdentifierHint": "Die Daten dieser Klasse werden unter der ID <strong>@classes.{identifier}</strong> in Formeln verfügbar sein.",
+    "ClassLevels": "Klassenstufen",
+    "ClassMakeOriginal": "Ursprungsklasse",
+    "ClassMakeOriginalHint": "Erste Klasse, die von einem Charakter gewählt wurde. Wird genutzt, um manche Klasseneigenschaften bei Klassenkombinationen zu bestimmen.",
+    "ClassName": "Klassenname",
+    "ClassOriginal": "Ursprungsklasse",
+    "ClassSaves": "Rettungswürfe",
+    "Confirm": "Bestätigen",
+    "CompendiumBrowser": {
+      "Title": "Kompendium Browser",
+      "Action": {
+        "Open": "Kompendium Browser öffnen"
+      },
+      "Column": {
+        "Icon": "Icon",
+        "Name": "Name",
+        "Results": "Ergebnisse",
+        "Source": "Quelle"
+      },
+      "Filters": {
+        "Label": "Filter",
+        "HasDarkvision": "Hat Dunkelsicht",
+        "HasSpellcasting": "Hat Zauberwirken",
+        "SearchResults": "Ergebnisse Durchsuchen"
+      },
+      "Selection": {
+        "Label": "Ausgewählt: {summary}",
+        "Select": "Auswählen",
+        "Summary": {
+          "Max": "<span class=\"value\">{value}</span> von bis zu {max}",
+          "Min": "<span class=\"value\">{value}</span> von mindestens {min}",
+          "Range": "<span class=\"value\">{value}</span> von {min} bis {max}",
+          "Single": "<span class=\"value\">{value}</span> von {max}"
+        },
+        "Warning": {
+          "Document": {
+            "one": "Dokument",
+            "other": "Dokumente"
+          },
+          "Max": "Muss maximal {max} {document} auswählen, {value} ausgewählt.",
+          "Min": "Muss mindestens {min} {document} auswählen, {value} ausgewählt.",
+          "Range": "Muss zwischen {min} und {max} {document} auswählen, {value} ausgewählt.",
+          "Single": "Muss {max} {document} auswählen, {value} ausgewählt."
+        }
+      },
+      "Sources": {
+        "Name": "Compendium Browser Quellen",
+        "Label": "Konfiguriere Quellen",
+        "FilterPackages": "Pakete Filtern",
+        "Hint": "Konfiguriere, welche Kompendienpakete im Kompendium Browser verfügbar sind."
+      },
+      "Tabs": {
+        "Feat": {
+          "other": "Merkmale"
+        },
+        "Item": {
+          "other": "Items"
+        },
+        "Monster": {
+          "other": "Monster"
+        }
+      },
+      "Types": {
+        "Label": "Typen"
+      },
+      "Locked": "Gesperrt"
+    },
+    "ComponentMaterial": "Material",
+    "ComponentMaterialAbbr": "M",
+    "ComponentSomatic": "Gesten",
+    "ComponentSomaticAbbr": "G",
+    "ComponentVerbal": "Verbal",
+    "ComponentVerbalAbbr": "V",
+    "Components": "Komponenten",
+    "Container": "Behälter",
+    "ContainerDeleteMessage": "Dieser Behälter wird dauerhaft gelöscht und kann nicht wiederhergestellt werden, und die darin enthaltenen {count} Items werden ausgelagert.",
+    "ContainerDeleteContents": "Alle Items aus dem Behälter löschen.",
+    "ContainerMaxDepth": "Behälter können nicht mehr als {depth} Ebenen tief verschachtelt werden.",
+    "ContainerRecursiveError": "Behälter können sich nicht selbst enthalten.",
+    "Contents": "Inhalte",
+    "ContextMenuActionEdit": "Bearbeiten",
+    "ContextMenuActionDuplicate": "Duplizieren",
+    "ContextMenuActionDelete": "Löschen",
+    "ContextMenuActionEquip": "Ausrüsten",
+    "ContextMenuActionUnequip": "Ablegen",
+    "ContextMenuActionPrepare": "Vorbereiten",
+    "ContextMenuActionExpendCharge": "Entladen",
+    "ContextMenuActionCharge": "Aufladen",
+    "ContextMenuActionUnprepare": "Vorbereitung aufheben",
+    "ContextMenuActionAttune": "Einstimmen",
+    "ContextMenuActionUnattune": "Einstimmung brechen",
+    "ContextMenuActionEnable": "Aktivieren",
+    "ContextMenuActionDisable": "Deaktivieren",
+    "ContextMenuActionView": "Anzeigen",
+    "Contiguous": "Angrenzend",
+    "ConBlinded": "Blind",
+    "ConCharmed": "Bezaubert",
+    "ConDeafened": "Taub",
+    "ConDiseased": "Erkrankt",
+    "ConExhaustion": "Erschöpft",
+    "ConFrightened": "Verängstigt",
+    "ConGrappled": "Gepackt",
+    "ConImm": "Zustandsimmunitäten",
+    "ConIncapacitated": "Kampfunfähig",
+    "ConInvisible": "Unsichtbar",
+    "ConParalyzed": "Gelähmt",
+    "ConPetrified": "Versteinert",
+    "ConPoisoned": "Vergiftet",
+    "ConProne": "Liegend",
+    "ConRestrained": "Festgesetzt",
+    "ConStunned": "Betäubt",
+    "ConUnconscious": "Bewusstlos",
+    "Concentration": "Konzentration",
+    "ConcentrationAbbr": "K",
+    "ConcentrationBreak": "Breche Konzentration",
+    "ConcentrationBreakWarning": "Das Brechen der Konzentration auf einen Effekt, der bei anderen Kreaturen aktiv ist, erfordert die Anwesenheit eines aktiven SL.",
+    "ConcentrationBonus": "Konzentrationsbonus",
+    "ConcentrationDuration": "Konzentration, bis zu {duration}",
+    "ConcentratingOn": "Du hältst die Konzentration auf die Effekte von '{Name}' {Typ} aufrecht.",
+    "ConcentratingEndChoice": "Du konzentrierst dich auf Effekte aus mehr als einer Quelle. Wählen Sie aus, welche Effekte Sie beenden wollen.",
+    "ConcentratingMissingItem": "Die Effekte, auf die man sich konzentriert und die ersetzt werden sollen, gibt es nicht.",
+    "ConcentratingLimited": "Du bist nicht in der Lage, dich auf einen zusätzlichen Effekt zu konzentrieren.",
+    "ConcentrationLimit": "Konzentrationsgrenze",
+    "ConcentratingEnd": "Konzentration beenden",
+    "ConcentratingItemless": "Konzentration ohne Quelle",
+    "ConcentratingWarnLimit": "Sie können sich nicht auf mehrere Effekte konzentrieren!",
+    "ConcentratingWarnLimitOptional": "Du kannst die Konzentration auf einen deiner aufrechterhaltenen Effekte beenden, um diesen Gegenstand zu benutzen.",
+    "ConcentratingWarnLimitZero": "Du bist nicht in der Lage, dich auf irgendwelche Effekte zu konzentrieren!",
+    "ConcentrationConfigurationHint": "Konfiguriere die Konzentrationsmodifikatoren und -boni, die für diese Kreatur gelten.",
+    "ConsumeTitle": "Ressourcen-Verbrauch",
+    "ConsumeAmount": "Verbrauchsmenge",
+    "ConsumeHint": {
+      "Attribute": "Attribute zum verbrauchen (z.B. currency.gp)",
+      "Item": "UUID des Ziels im Kompendium"
+    },
+    "ConsumeTarget": "Verbrauchsziel",
+    "ConsumeType": "Verbrauchstyp",
+    "ConsumeAmmunition": "Munition",
+    "ConsumeAttribute": "Attribut",
+    "ConsumeHitDice": "Trefferwürfel",
+    "ConsumeHitDiceLargest": "Größter verfügbarer",
+    "ConsumeHitDiceLargestLong": "Größter verfügbarer Trefferwürfel",
+    "ConsumeHitDiceSmallest": "Kleinster verfügbarer",
+    "ConsumeHitDiceSmallestLong": "Kleinster verfügbarer Trefferwürfel",
+    "ConsumeMaterial": "Material",
+    "ConsumeCharges": "Lad. Gegenst.",
+    "ConsumeResource": "Ressource verbrauchen?",
+    "ConsumeRecharge": "Ladung verbrauchen?",
+    "ConsumeScaling": "Ressourcen Skalierung",
+    "ConsumeScalingLabel": "Ressourcen verwenden",
+    "ConsumeScalingTooltip": "Wenn diese Option angekreuzt ist, erhöht der Verbrauch zusätzlicher Ressourcen die Stufe, auf der der Zauber gewirkt wird.",
+    "CONSUMABLE": {
+      "FIELDS": {
+        "damage": {
+          "label": "Munitionsschaden",
+          "replace": {
+            "label": "Ersetze Waffenschaden",
+            "hint": "Ersetze den Basis-Waffenschaden mit diesem Schaden anstatt ihn zu erhöhen."
+          }
+        },
+        "magicalBonus": {
+          "label": "Magischer Bonus"
+        },
+        "properties": {
+          "label": "Verbrauchsgut Eigenschaften"
+        },
+        "uses": {
+          "autoDestroy": {
+            "label": "Zerstöre wenn Leer",
+            "hint": "Reduziere die Menge des Items um 1, wenn alle Limitierten Nutzungen aufgebraucht sind."
+          }
+        }
+      },
+      "Category": {
+        "Poison": "Gift"
+      },
+      "Type": {
+        "Ammunition": {
+          "Label": "Munition",
+          "Arrow": "Pfeil",
+          "Bolt": "Bolzen",
+          "BulletFirearm": "Kugel, Feuerwaffe",
+          "BulletSling": "Kugel, Schleuder",
+          "Needle": "Nadel"
+        },
+        "Food": {
+          "Label": "Nahrung"
+        },
+        "Poison": {
+          "Label": "Gift",
+          "Contact": "Kontakt",
+          "Ingested": "Einnahme",
+          "Inhaled": "Eingeatmet",
+          "Injury": "Verletzung"
+        },
+        "Potion": {
+          "Label": "Trank"
+        },
+        "Rod": {
+          "Label": "Rute"
+        },
+        "Scroll": {
+          "Label": "Schriftrolle"
+        },
+        "Trinket": {
+          "Label": "Schmuckstück"
+        },
+        "Wand": {
+          "Label": "Zauberstab"
+        }
+      }
+    },
+    "ConsumableUseWarnStart": "dieses Verbrauchsmaterial hat",
+    "ConsumableUseWarnEnd": "der aktuellen Ladungen",
+    "ConsumableUnitWarn": "verbleibende Ladungen",
+    "ConsumableLastChargeWarn": "Dies ist die letzte Ladung, und wenn sie verbraucht wird, verringert sich auch die Menge des Items um 1",
+    "ConsumableWithoutCharges": "verfügbare und verwendbare Ladungen",
+    "CONSUMPTION": {
+      "FIELDS": {
+        "consumption": {
+          "label": "Verbrauch",
+          "scaling": {
+            "abbr": "Skalierung",
+            "label": "Verbrauch Skalieren",
+            "allowed": {
+              "label": "Skalierung Erlauben",
+              "hint": "Kann eine Aktivität, die nicht in einem Zauber enthalten ist, auf höheren Stufen aktiviert werden?"
+            },
+            "max": {
+              "label": "Maximale Skalierung",
+              "hint": "Maximale Anzahl von Skalierungsebenen für dieses Item, einschließlich der Basisstufe."
+            }
+          },
+          "spellSlot": {
+            "label": "Verbrauche Zauberplatz",
+            "hint": "Soll die Verwendung dieser Aktivität einen Zauberplatz für diesen Zauber verbrauchen?"
+          },
+          "targets": {
+            "label": "Verbrauchsziele",
+            "hint": "Ziele des möglichen Verbrauchs, wenn diese Aktivität aktiviert wird.",
+            "FIELDS": {
+              "type": {
+                "label": "Verbrauchstyp",
+                "hint": "Art des Verbrauchsziels."
+              },
+              "target": {
+                "label": "Verbrauchsziel",
+                "hint": "Spezifisches Ziel das verbraucht werden soll."
+              },
+              "value": {
+                "label": "Verbrauchsmenge",
+                "hint": "Gib einen negativen Wert ein, um wiederherzustellen, statt zu verbrauchen."
+              },
+              "scaling": {
+                "label": "Verbrauchsskalierung",
+                "mode": {
+                  "label": "Skalierungsmodus",
+                  "hint": "Wie der Verbrauch skaliert werden sollte."
+                },
+                "formula": {
+                  "label": "Skalierungsformel",
+                  "hint": "Individuelle Skalierung der Verbrauchsmenge pro Stufe."
+                }
+              }
+            }
+          }
+        }
+      },
+      "Action": {
+        "ConsumeResource": "Ressource verbrauchen",
+        "Create": "Verbrauchsziel erstellen",
+        "Delete": "Verbrauchsziel entfernen",
+        "RefundResource": "Ressource Zurückerstatten"
+      },
+      "Scaling": {
+        "Amount": "Anzahl",
+        "Automatic": "Automatisch",
+        "None": "Keine Skalierung",
+        "SlotLevel": "Zauberplatzgrad"
+      },
+      "Target": {
+        "ThisItem": "Dieses Item"
+      },
+      "Type": {
+        "ActivityUses": {
+          "Label": "Aktivität Nutzungen",
+          "PromptDecrease": "Aktivität Nutzung Verbrauchen?",
+          "PromptIncrease": "Aktivität Nutzung Wiederherstellen?",
+          "PromptHintDecrease": "Gib <strong>{cost}</strong> {use} von dieser Aktivität.",
+          "PromptHintIncrease": "Erhalte <strong>{cost}</strong> {use} für diese Aktivität.",
+          "Warning": "Nutzungen von {item} Aktivität {activity}"
+        },
+        "Attribute": {
+          "Label": "Attribut",
+          "PromptDecrease": "Attribut Verbrauchen?",
+          "PromptIncrease": "Attribut Wiederherstellen?",
+          "PromptHintDecrease": "Verringere <code>{attribute}</code> um <strong>{cost}</strong>.",
+          "PromptHintIncrease": "Erhöhe <code>{attribute}</code> um <strong>{cost}</strong>.",
+          "Warning": "{attribute} Anzahl"
+        },
+        "HitDice": {
+          "Label": "Trefferwürfel",
+          "PromptDecrease": "Trefferwürfel Verbrauchen?",
+          "PromptIncrease": "Trefferwürfel Wiederherstellen?",
+          "PromptHintDecrease": "Verbrauche <strong>{cost}</strong> {denomination} {die}.",
+          "PromptHintIncrease": "Wiederherstellen <strong>{cost}</strong> {denomination} {die}.",
+          "Warning": "{denomination} Trefferwürfel"
+        },
+        "HitDie": {
+          "one": "Trefferwürfel",
+          "other": "Trefferwürfel"
+        },
+        "ItemUses": {
+          "Label": "Itemnutzungen",
+          "PromptDecrease": "Itemnutzung Verbrauchen?",
+          "PromptIncrease": "Itemnutzung Wiederherstellen?",
+          "PromptHintDecrease": "Verbrauche <strong>{cost}</strong> {use} von {item}.",
+          "PromptHintIncrease": "Wiederherstellen <strong>{cost}</strong> {use} von {item}.",
+          "Warning": "Nutzungen von {name}"
+        },
+        "Material": {
+          "Label": "Material",
+          "PromptDecrease": "Material Verbrauchen?",
+          "PromptIncrease": "Material Wiederherstellen?",
+          "PromptHintDecrease": "Verringere Anzahl von {item} um <strong>{cost}</strong>.",
+          "PromptHintIncrease": "Erhöhe Anzahl von {item} um <strong>{cost}</strong>.",
+          "Warning": "Von {name}"
+        },
+        "SpellSlot": {
+          "one": "{level}. Grad",
+          "other": "{level}. Grade"
+        },
+        "SpellSlots": {
+          "Label": "Zauberplätze",
+          "PromptDecrease": "Zauberplatz verbrauchen?",
+          "PromptIncrease": "Zauberplatz wiederherstellen?",
+          "PromptHintDecrease": "Verbrauche <strong>{cost}</strong> {slot}.",
+          "PromptHintIncrease": "Wiederherstellen <strong>{cost}</strong> {slot}.",
+          "Warning": "{level}. Grad"
+        },
+        "Use": {
+          "one": "Nutzung",
+          "other": "Nutzungen"
+        }
+      },
+      "Warning": {
+        "MissingAttribute": "Das Attribut {attribute}, das für die Verwendung durch die {activity} Aktivität auf dem {item} konfiguriert wurde, konnte nicht gefunden werden.",
+        "MissingHitDice": "Der Akteur hat keine Klasse mit einem {denomination} Trefferwürfel",
+        "MissingItem": "Das Item, das für den Verbrauch durch die {activity} Aktivität auf {item} konfiguriert wurde, konnte nicht gefunden werden.",
+        "MissingSpellSlot": "Keine {level}. Grad Plätze verfügbar.",
+        "None": "Kein {type} verfügbar zum verbrauchen, {cost} benötigt",
+        "NotEnough": "Nicht genug {type} verfügbar zum verbrauchen, {cost} benötigt und nur {available} verfügbar.",
+        "WillDestroy": "Wenn Sie {item} benutzen, wird seine letzte Verwendung verbraucht und es wird zerstört."
+      }
+    },
+    "Consumed": "Verbraucht",
+    "Copy": "Text kopieren",
+    "Copied": "{value} kopiert",
+    "Cover": "Deckung",
+    "CoverHalf": "Halbe",
+    "CoverThreeQuarters": "Dreiviertel",
+    "CoverTotal": "Volle",
+    "Cost": "Kosten",
+    "CostGP": "Kosten (GM)",
+    "CreatureAberration": "Aberration",
+    "CreatureAberrationPl": "Aberrationen",
+    "CreatureBeast": "Tier",
+    "CreatureBeastPl": "Tiere",
+    "CreatureCelestial": "Himmlisches Wesen",
+    "CreatureCelestialPl": "Himmlische Wesen",
+    "CreatureConstruct": "Konstrukt",
+    "CreatureConstructPl": "Konstrukte",
+    "CreatureDragon": "Drache",
+    "CreatureDragonPl": "Drachen",
+    "CreatureElemental": "Elementar",
+    "CreatureElementalPl": "Elementare",
+    "CreatureFey": "Feenwesen",
+    "CreatureFeyPl": "Feenwesen",
+    "CreatureFiend": "Unhold",
+    "CreatureFiendPl": "Unholde",
+    "CreatureGiant": "Riese",
+    "CreatureGiantPl": "Riesen",
+    "CreatureHumanoid": "Humanoider",
+    "CreatureHumanoidPl": "Humanoide",
+    "CreatureMonstrosity": "Monstrosität",
+    "CreatureMonstrosityPl": "Monstrositäten",
+    "CreatureOoze": "Schlick",
+    "CreatureOozePl": "Schlicke",
+    "CreaturePlant": "Pflanze",
+    "CreaturePlantPl": "Pflanzen",
+    "CreatureType": "Kreaturentyp",
+    "CreatureTypeTitle": "Kreaturentyp bearbeiten",
+    "CreatureSwarm": "Schwarm",
+    "CreatureSwarmSize": "Schwarmgröße",
+    "CreatureSwarmPhrase": "Schwarm von {size} {type}",
+    "CreatureTypeConfig": "Kreaturentyp bearbeiten",
+    "CreatureTypeSelectorCustom": "Eigener Typ",
+    "CreatureTypeSelectorSubtype": "Subtyp",
+    "CreatureUndead": "Untoter",
+    "CreatureUndeadPl": "Untote",
+    "Crewed": "Bemannt",
+    "Critical": "Kritisch",
+    "CriticalHit": "Kritischer Treffer",
+    "PowerfulCritical": "Mächtige kritische Treffer",
+    "CRLabel": "HG {cr}",
+    "Currency": "Währung",
+    "CurrencyAbbrCP": "km",
+    "CurrencyAbbrEP": "em",
+    "CurrencyAbbrGP": "gm",
+    "CurrencyAbbrPP": "pm",
+    "CurrencyAbbrSP": "sm",
+    "CurrencyCP": "Kupfer",
+    "CurrencyEP": "Elektrum",
+    "CurrencyGP": "Gold",
+    "CurrencyPP": "Platin",
+    "CurrencySP": "Silber",
+    "CurrencyManager": {
+      "Title": "Währung verwalten",
+      "Convert": {
+        "Label": "Umrechnen",
+        "Action": "Alle Währungen umrechnen",
+        "Hint": "Rechnet alle mitgeführten Währungen in den höchstmöglichen Nennwert um, um die Menge der vom Charakter mitgeführten Münzen zu reduzieren. Aber Vorsicht: Diese Aktion kann nicht rückgängig gemacht werden."
+      },
+      "Error": {
+        "InsufficientFunds": "Der Betrag {amount}{denomination} konnte nicht von {name} abgezogen werden. Nicht genügend Geld."
+      },
+      "Transfer": {
+        "Label": "Übertragen",
+        "Action": "Auswahl übertragen",
+        "All": "Alle",
+        "Half": "Hälfte"
+      }
+    },
+    "Current": "Aktuell",
+    "DAMAGE": {
+      "FIELDS": {
+        "damage": {
+          "label": "Schaden",
+          "critical": {
+            "allow": {
+              "label": "Erlaube Kritische Treffer",
+              "hint": "Sollte die Kreatur kritischen Schaden verursachen können?"
+            },
+            "bonus": {
+              "label": "Zusätzlicher Kritischer Schaden",
+              "hint": "Zusätzlicher Schaden, der dem ersten Schadensbestandteil zugefügt wird, wenn ein kritischer Treffer erzielt wird."
+            }
+          },
+          "parts": {
+            "label": "Schadensbestandteil",
+            "hint": "Einzelne Schadensbestandteile dem Wurf hinzufügen.",
+            "FIELDS": {
+              "bonus": {
+                "label": "Schadensbonus",
+                "hint": "Bonus zum Schadenswurf hinzugefügt."
+              },
+              "custom": {
+                "label": "Eigene Schadensformel",
+                "enabled": {
+                  "label": "Eigene Formel aktivieren",
+                  "hint": "Verwende eine Eigene Formel anstelle der Standardwürfel."
+                },
+                "formula": {
+                  "label": "Schadensformel",
+                  "hint": "Eigene Schadensformel."
+                }
+              },
+              "denomination": {
+                "label": "Würfel Nennwert",
+                "hint": "Nennwert des zu werfenden Würfels."
+              },
+              "number": {
+                "label": "Würfel Zahl",
+                "hint": "Zahl des zu werfenden Würfels"
+              },
+              "scaling": {
+                "label": "Schadensskalierung",
+                "abbr": "Skalierung",
+                "mode": {
+                  "label": "Skalierungsmodus",
+                  "abbr": "Modus",
+                  "hint": "Methode, mit der die Skalierungszunahme berechnet wird."
+                },
+                "number": {
+                  "label": "Würfelskalierung",
+                  "abbr": "Würfel",
+                  "hint": "Anzahl der Würfel, die für jede Skalierungsstufe erhöht werden. Wird auf den ersten Würfel angewendet, der in der Schadensformel gefunden wird, wenn mehr als einer vorhanden ist."
+                },
+                "formula": {
+                  "label": "Skalierungsformel",
+                  "hint": "Beliebige Skalierungsformel, die für jeden Skalierungsschritt multipliziert und zur ursprünglichen Formel addiert wird."
+                }
+              },
+              "types": {
+                "label": "Schadensarten",
+                "hint": "Art des zugefügten Schadens oder mehrere zur Auswahl für den Nutzer."
+              }
+            }
+          }
+        }
+      },
+      "Part": {
+        "Action": {
+          "Create": "Erstelle Schadensbestandteil",
+          "Delete": "Entferne Schadensbestandteil"
+        }
+      },
+      "Scaling": {
+        "Half": "Jede zweite Stufe",
+        "None": "Keine Skalierung",
+        "Whole": "Jede Stufe",
+        "HalfCantrip": "Skalierung (halber Zaubertrick)",
+        "WholeCantrip": "Skalierung (Zaubertrick)"
+      },
+      "Title": "Schaden",
+      "All": "Gesamtschaden",
+      "Hint": "Verursacht Schaden an einer Kreatur ohne Angriff oder Rettungswurf.",
+      "PhysicalBypass": {
+        "Description": "{damageTypes} von Angriffen, die nicht {bypassTypes} sind",
+        "DescriptionShort": "Umgegangen durch {type}-Quellen",
+        "Hint": "Diese Waffeneigenschaften umgehen den Widerstand gegen physischen Schaden.",
+        "Label": "Physische Umgehungen"
+      },
+      "Type": {
+        "Acid": "Säure",
+        "Bludgeoning": "Wuchtschaden",
+        "Cold": "Kälte",
+        "Fire": "Feuer",
+        "Force": "Wucht",
+        "Lightning": "Blitz",
+        "Necrotic": "Nekrotisch",
+        "Piercing": "Durchschlagend",
+        "Poison": "Gift",
+        "Psychic": "Psychisch",
+        "Radiant": "Strahlend",
+        "Slashing": "Hieb",
+        "Thunder": "Donner"
+      }
+    },
+    "DamImm": "Schadensimmunitäten",
+    "DamMod": "Schadensmodifikation",
+    "DamRes": "Schadensresistenzen",
+    "DamVuln": "Schadensanfälligkeiten",
+    "Damage": "Schaden",
+    "DamageApplication": {
+      "Change": {
+        "Modification": "{type} Modifikation",
+        "Immunity": "{type} Immunität",
+        "Resistance": "{type} Resistenz",
+        "Vulnerability": "{type} Anfälligkeit"
+      },
+      "Downgrading": "{source} runterstufen zu Resistenz",
+      "Ignoring": "Ignoriere {source}"
+    },
+    "DamageModification": {
+      "Label": "Schadensmodifikation",
+      "Hint": "Formeln für die Mengen, die zu dem typisierten Schaden, der auf diesen Akteur angewendet wird, addiert werden. Negative Werte verringern den erlittenen Schaden.",
+      "BypassHint": "Diese Waffeneigenschaften umgehen die Schadensmodifikation für physischen Schaden."
+    },
+    "DamageRoll": "Schadenswurf",
+    "DamageThreshold": "Schadensgrenzwert",
+    "DamageType": "Schadensart",
+    "DamageTypes": "Schadensarten",
+    "Dawn": "Morgengrauen",
+    "Day": "Tag",
+    "DeathSave": "RW gg. Tod",
+    "DeathSaveCriticalSuccess": "{name} hat den RW gg. Tod kritisch geschafft  und erhält 1 TP!",
+    "DeathSaveHide": "Verstecke Todesrettungswürfe",
+    "DeathSaveShow": "Zeige Todesrettungswürfe",
+    "DeathSaveSuccess": "{name} hat 3 RW gg. Tod geschafft und ist jetzt stabil!",
+    "DeathSaveSuccessLabel": "Todesrettungswurf Erfolg",
+    "DeathSaveSuccessLabelN": {
+      "one": "1. Todesrettungswurf Erfolg",
+      "two": "2. Todesrettungswurf Erfolg",
+      "few": "3. Todesrettungswurf Erfolg"
+    },
+    "DeathSaveSuccesses": "Erfolge",
+    "DeathSaveFailure": "{name} hat 3 RW gg. Tod nicht geschafft und ist tot!",
+    "DeathSaveFailureLabel": "Todesrettungswurf Fehlschlag",
+    "DeathSaveFailureLabelN": {
+      "one": "1. Todesrettungswurf Fehlschlag",
+      "two": "2. Todesrettungswurf Fehlschlage",
+      "few": "3. Todesrettungswurf Fehlschlag"
+    },
+    "DeathSaveFailures": "Fehlschläge",
+    "DeathSaveRoll": "Werfe einen Todesrettungswurf",
+    "DeathSavingThrow": "RW gg. Tod",
+    "DeathSaveUnnecessary": "Du musst keinen Todesrettungswurf ablegen, da du über eine positive Trefferpunktezahl oder bereits 3 Erfolge oder Misserfolge verfügst.",
+    "Default": "Standard",
+    "DefaultSpecific": "Standard ({default})",
+    "DefaultAbilityCheck": "Standard Attributswurf",
+    "Denomination": "Nennwert",
+    "Description": "Beschreibung",
+    "DescriptionChat": "Chatbeschreibung",
+    "DescriptionEdit": "Bearbeiten {description}",
+    "DescriptionSummary": "Beschreibung (Übersicht)",
+    "DescriptionUnidentified": "Beschreibung (Unidentifiziert)",
+    "Details": "Details",
+    "DetailsEdit": "Details bearbeiten",
+    "Die": "Würfel",
+    "Dimensions": "Abmessungen",
+    "Disadvantage": "Nachteil",
+    "Discord": "Discord",
+    "Disclaimer": "Disclaimer",
+    "DistAny": "Jede",
+    "DistFt": "Fuß",
+    "DistFtAbbr": "ft",
+    "DistKm": "Kilometer",
+    "DistKmAbbr": "km",
+    "DistM": "Meter",
+    "DistMAbbr": "m",
+    "DistMi": "Meilen",
+    "DistMiAbbr": "mi",
+    "DistSelf": "Selbst",
+    "DistTouch": "Berührung",
+    "DocumentUseWarn": "Sie haben keine Erlaubnis, ein Item in diesem Dokument zu verwenden.",
+    "DocumentViewWarn": "Sie haben keine Erlaubnis, dieses Dokument einzusehen.",
+    "DURATION": {
+      "FIELDS": {
+        "duration": {
+          "label": "Dauer",
+          "concentration": {
+            "label": "Konzentration",
+            "hint": "Die Kreatur muss die Konzentration aktiv halten."
+          },
+          "override": {
+            "label": "Dauer überschreiben",
+            "hint": "Verwende diese Dauerwerte anstelle der Dauer des Items, wenn du diese Aktivität verwendest."
+          },
+          "special": {
+            "label": "Spezielle Dauer",
+            "hint": "Beschreibung für jede spezielle Dauer."
+          },
+          "units": {
+            "label": "Dauer Einheiten",
+            "hint": "Einheiten zur Messung der Dauer."
+          },
+          "value": {
+            "label": "Dauer Wert",
+            "hint": "Wert der Dauer in den angegebenen Einheiten, falls zutreffend."
+          }
+        }
+      }
+    },
+    "Duration": "Dauer",
+    "DurationPermanent": "Permanent",
+    "DurationTime": "Zeit",
+    "DurationType": "Dauer (Typ)",
+    "DurationUnits": "Dauer (Einheiten)",
+    "DurationValue": "Dauer (Wert)",
+    "Dusk": "Abenddämmerung",
+    "Effect": "Effekt",
+    "Effects": "Effekte",
+    "EFFECT": {
+      "Action": {
+        "Create": "Erstelle Effekt",
+        "Delete": "Entferne Effekt",
+        "Dissociate": "Trenne Effekt"
+      },
+      "Empty": "Kein verbundener Effekt. Verwende den <i class=\"fas fa-plus\"></i> Knopf, um einen zu erstellen, oder wähle einen vorhandenen Effekt aus dem Dropdown-Menü aus.",
+      "Label": "Verbundene Effekte",
+      "RIDER": {
+        "Activity": "Begleitaktivität der Verzauberung",
+        "Effect": "Begleiteffekt der Verzauberung"
+      }
+    },
+    "EffectsApplyTokens": "Auf ausgewählte Token anwenden",
+    "EffectApplyWarningConcentration": "Das Anwenden eines Effekts, auf den sich ein anderer Charakter konzentriert, erfordert die Erlaubnis des SLs.",
+    "EffectApplyWarningOwnership": "Effekte können nicht auf Token angewandt werden, deren Besitzer man nicht ist.",
+    "EffectsSearch": "Effekte durchsuchen",
+    "ENCHANT": {
+      "FIELDS": {
+        "enchant": {
+          "label": "Verzauberung Konfiguration",
+          "identifier": {
+            "label": "Klassen-ID",
+            "hint": "ID, die verwendet wird, um zu bestimmen, ob die Charakterstufe oder eine bestimmte Klassenstufe für die Begrenzung der Verzauberungsstufe verwendet werden soll."
+          }
+        },
+        "restrictions": {
+          "label": "Einschränkung",
+          "hint": "Einschränkungen hinsichtlich der Art des Items, auf das diese Verzauberung angewendet werden kann.",
+          "allowMagical": {
+            "label": "Erlaube Magisches",
+            "hint": "Erlaube, dass Items, die bereits magisch sind, verzaubert werden können."
+          },
+          "categories": {
+            "label": "Gültige Kategorien",
+            "hint": "Spezifische Item-Kategorien, auf die diese Verzauberung angewendet werden kann."
+          },
+          "properties": {
+            "label": "Gültige Eigenschaften",
+            "hint": "Bestimmte Eigenschaften des Items, die vorhanden sein müssen, damit diese Verzauberung angewendet werden kann."
+          },
+          "type": {
+            "label": "Item-Typ",
+            "hint": "Typ des Items, auf das diese Verzauberung angewendet werden kann.",
+            "Any": "Jeder verzauberbare Typ"
+          }
+        }
+      },
+      "DropArea": "Platziere das Item hier, um es zu verzaubern...",
+      "Enchanted": "{current} &sol; {max} Verzaubert",
+      "Enchantment": {
+        "Action": {
+          "Create": "Erstelle Verzauberung",
+          "Delete": "Entferne Verzauberung"
+        },
+        "Empty": "Keine zugehörigen Verzauberungen. Verwende die Schaltfläche <i class=\"fas fa-plus\"></i> oben, um eine zu erstellen, oder wähle eine vorhandene Verzauberung aus dem Dropdown-Menü aus."
+      },
+      "SECTIONS": {
+        "Enchanting": "Verzauberung",
+        "Enchantments": "Verzauberungen",
+        "Restrictions": "Einschränkungen"
+      },
+      "Title": "Verzauberung",
+      "Warning": {
+        "ConcentrationEnded": "Diese Verzauberung kann nicht angewendet werden, da die Konzentration beendet ist.",
+        "MissingProperty": "Item muss eine dieser Eigenschaften haben, um verzaubert zu werden: {validProperties}.",
+        "NoMagicalItems": "Items, die bereits magisch sind, können nicht verzaubert werden.",
+        "NoSubtype": "Nur {allowedType}-Items können mit dieser Verzauberung verzaubert werden, aber dieses Item hat keinen Subtyp.",
+        "WrongType": "{incorrectType} Items können nicht mit dieser Verzauberung verzaubert werden, nur {allowedType} Items sind erlaubt."
+      }
+    },
+    "ENCHANTMENT": {
+      "Action": {
+        "Apply": "Verzauberung anwenden",
+        "Disable": "Verzauberung deaktivieren",
+        "Edit": "Verzauberung bearbeiten",
+        "Enable": "Verzauberung aktivieren",
+        "Remove": "Verzauberung entfernen"
+      },
+      "Category": {
+        "Active": "Aktive Verzauberungen",
+        "General": "Verzauberungen",
+        "Inactive": "Inaktive Verzauberungen"
+      },
+      "FIELDS": {
+        "enchantment": {
+          "label": "Verzauberung Konfiguration",
+          "items": {
+            "max": {
+              "label": "Item Grenze",
+              "hint": "Formel für die maximale Anzahl von Verzauberungen dieser Art, die gleichzeitig aktiv sein können."
+            },
+            "period": {
+              "label": "Ersatz Periode",
+              "hint": "Wie oft können Verzauberungen dieser Art auf verschiedene Items übertragen werden?"
+            }
+          }
+        }
+      },
+      "Items": {
+        "Entry": "{item} auf <em>{actor}</em>"
+      },
+      "Label": "Verzauberung",
+      "Warning": {
+        "NotOnActor": "Verzauberungen können nur Items hinzugefügt werden, nicht direkt Akteuren.",
+        "Override": "Dieser Wert wird durch eine Verzauberung verändert und kann nicht bearbeitet werden. Deaktiviere die Verzauberung im Reiter Effekte, um sie zu bearbeiten."
+      }
+    },
+    "Environment": "Umgebung",
+    "EQUIPMENT": {
+      "Type": {
+        "Clothing": {
+          "Label": "Kleidung"
+        },
+        "Ring": {
+          "Label": "Ring"
+        },
+        "Rod": {
+          "Label": "Stab"
+        },
+        "Trinket": {
+          "Label": "Schmuckstück"
+        },
+        "Vehicle": {
+          "Label": "Fahrzeug-Ausrüstung"
+        },
+        "Wand": {
+          "Label": "Zauberstab"
+        },
+        "Wondrous": {
+          "Label": "Wundersamer Gegenstand"
+        }
+      }
+    },
+    "EquipmentBonus": "Magischer Bonus",
+    "EquipmentHeavy": "Schwere Rüstung",
+    "EquipmentLight": "Leichte Rüstung",
+    "EquipmentMedium": "Mittelschwere Rüstung",
+    "EquipmentNatural": "Natürliche Rüstung",
+    "EquipmentShield": "Schild",
+    "EquipmentShieldProficiency": "Schilde",
+    "Equipped": "Angelegt",
+    "Exhaustion": "Erschöpfung",
+    "ExhaustionLevel": "Erschöpfung Stufe {n}",
+    "Expertise": "Expertise",
+    "Favorite": "Favorit",
+    "FavoriteDrop": "Favorit hinzufügen",
+    "FavoriteRemove": "Favorit entfernen",
+    "Favorites": "Favoriten",
+    "FeatureActionRecharge": "Aktion Nachladen",
+    "Feature": {
+      "Background": "Hintergrundmerkmal",
+      "Class": {
+        "Label": "Klassenmerkmal",
+        "ArcaneShot": "Arkaner Schuss",
+        "ArtificerInfusion": "Artifizienten-Durchdringung",
+        "ChannelDivinity": "Göttliche Macht fokussieren",
+        "DefensiveTactic": "Defensive Taktik",
+        "EldritchInvocation": "Schauerliche Anrufung",
+        "ElementalDiscipline": "Elementare Disziplin",
+        "FightingStyle": "Kampfstil",
+        "HuntersPrey": "Des Jägers Beute",
+        "Ki": "Ki Fähigkeit",
+        "Maneuver": "Manöver",
+        "Metamagic": "Metamagie Option",
+        "Multiattack": "Mehrfachangriff",
+        "PactBoon": "Segen des Paktes",
+        "PsionicPower": "Psionische Kraft",
+        "Rune": "Rune",
+        "SuperiorHuntersDefense": "Ausserordentliche Verteidigung des Jägers"
+      },
+      "Feat": {
+        "Label": "Talent",
+        "EpicBoon": "Epische Gabe Talent",
+        "FightingStyle": "Kampfstil Talent",
+        "General": "Allgemeines Talent",
+        "Origin": "Ursprung Talent"
+      },
+      "Monster": "Monstermerkmal",
+      "Species": "Speziesmerkmal",
+      "SpeciesLegacy": "Volksmerkmal",
+      "SupernaturalGift": {
+        "Label": "Übernatürliches Geschenk",
+        "Blessing": "Segen",
+        "Charm": "Bezauberung",
+        "EpicBoon": "Epische Gabe"
+      }
+    },
+    "Focus": {
+      "Label": "Zauberfokus",
+      "Arcane": "Arkaner Fokus",
+      "Druidic": "Druidischer Fokus",
+      "Holy": "Heiliges Symbol"
+    },
+    "Loot": {
+      "Art": "Kunstgegenstand",
+      "Gear": "Abenteuerausrüstung",
+      "Gem": "Edelstein",
+      "Junk": "Schrott",
+      "Material": "Material",
+      "Resource": "Ressource",
+      "Treasure": "Schatz"
+    },
+    "Flaws": "Makel",
+    "FormulaCannotContainDiceError": "Formel {name} kann keine Würfelausdrücke enthalten.",
+    "FORWARD": {
+      "FIELDS": {
+        "activity": {
+          "label": "Ausgelöste Aktivität"
+        }
+      },
+      "Title": "Weiterleiten",
+      "Warning": {
+        "NoActivity": "Eine verknüpfte Aktivität muss konfiguriert werden, bevor die Weiterleiten-Aktivität verwendet werden kann."
+      }
+    },
+    "EffectCreate": "Effekt erstellen",
+    "EffectToggle": "Effekt umschalten",
+    "EffectEdit": "Effekt bearbeiten",
+    "EffectEnable": "Effekt aktivieren",
+    "EffectDelete": "Effekt löschen",
+    "EffectDisable": "Effekt deaktivieren",
+    "EffectTemporary": "Temporäre Effekte",
+    "EffectPassive": "Passive Effekte",
+    "EffectInactive": "Inaktive Effekte",
+    "EffectNew": "Neuer Effekt",
+    "EffectType": {
+      "Inactive": "Inaktiv",
+      "Passive": "Passiv",
+      "Temporary": "Temporär",
+      "Unavailable": "Nicht verfügbar"
+    },
+    "EffectUnavailable": "Nicht verfügbare Effekte",
+    "EffectUnavailableInfo": "Quellen-Item muss ausgerüstet oder eingestimmt sein, um diese zu aktivieren",
+    "Encumbrance": "Belastung",
+    "Eyes": "Augen",
+    "Faith": "Glaube",
+    "FeatureActive": "Aktive Fähigkeiten",
+    "FeatureAdd": "Erschaffe Merkmal",
+    "FeatureAttack": "Merkmalsangriff",
+    "FeaturePassive": "Passives Merkmal ",
+    "FeatureRechargeOn": "Wiederaufladen aktiv",
+    "FeatureRechargeResult": "1W6 Ergebnis",
+    "FeatureSearch": "Merkmale durchsuchen",
+    "FeatureUsage": "Merkmalsverwendung",
+    "Features": "Merkmale",
+    "FeaturesBackground": "Hintergrundmerkmale",
+    "FeaturesClass": "{class} Merkmale",
+    "FeaturesOther": "Sonstige Merkmale",
+    "Feats": "Merkmale",
+    "FeetAbbr": "ft.",
+    "Filter": "Filter",
+    "FilterClear": "Filter löschen",
+    "FilterGroupCategory": "Gruppieren nach Kategorien",
+    "FilterGroupOrigin": "Gruppieren nach Herkunft",
+    "FilterGroupAction": "Gruppieren nach Aktion",
+    "FilterNoSpells": "Mit diesem Filter wurden keine Zauber gefunden.",
+    "NoSpellLevels": "Dieser Charakter hat keine Zaubererstufen, aber du kannst Zauber manuell hinzufügen.",
+    "FLAGS": {
+      "EnhancedDualWielding": {
+        "Name": "Verbesserte Beidhändigkeit",
+        "Hint": "Erlaube Bonusaktionen für zusätzliche Angriffe mit jeder Nahkampfwaffe ohne die Zweihändig Eigenschaft."
+      }
+    },
+    "FlagsInstructions": "Bearbeite Charaktermerkmale und Talente, die das Verhalten des D&D5e-Systems ändern.",
+    "FlagsSave": "Besondere Merkmale aktualisieren",
+    "FlagsTitle": "Besondere Merkmale bearbeiten",
+    "FlagsDiamondSoul": "Diamantseele",
+    "FlagsDiamondSoulHint": "Erhalte Übung in allen Rettungswürfen.",
+    "FlagsPowerfulBuild": "Mächtiger Körperbau",
+    "FlagsPowerfulBuildHint": "Bietet erhöhte Tragfähigkeit.",
+    "FlagsElvenAccuracy": "Elfengenauigkeit",
+    "FlagsElvenAccuracyHint": "Wenn du bei Würfen für GE, INT, CHA o. WEI im Vorteil bist, darfst du einen Würfel erneut würfeln.",
+    "FlagsHalflingLucky": "Halblingsglück",
+    "FlagsHalflingLuckyHint": "Bei Proben darfst du deinen Wurf bei einer 1 EINMAL wiederholen.",
+    "FlagsAlert": "Wachsam",
+    "FlagsAlertHint": "Verleiht +5 auf Ini.",
+    "FlagsAlertHintLegacy": "Gewährt +5 auf Initiative.",
+    "FlagsJOAT": "Alleskönner",
+    "FlagsJOATHint": "Halber Übungsbonus auf alle nicht erlernten Fertigkeiten.",
+    "FlagsObservant": "Aufmerksam",
+    "FlagsObservantHint": "Verleiht +5 auf passive Wahrnehmung und Nachforschungen.",
+    "FlagsTavernBrawler": "Kneipenschläger-Talent",
+    "FlagsTavernBrawlerHint": "Übung mit improvisierten Waffen.",
+    "FlagsReliableTalent": "Verlässliches Talent",
+    "FlagsReliableTalentHint": "Schurkenmerkmal Verlässliches Talent.",
+    "FlagsRemarkableAthlete": "Bemerkenswerter Athlet.",
+    "FlagsRemarkableAthleteHint": "Halber Übungsbonus (aufgerundet) auf körperliche Fertigkeitswürfe und Initiative.",
+    "FlagsWeaponCritThreshold": "Kritischer Treffer Schwellwert (Waffen)",
+    "FlagsWeaponCritThresholdHint": "Erweiterter Schwellwert für kritische Treffer bei Angriffen mit Waffen.",
+    "FlagsSpellCritThreshold": "Kritischer Treffer Schwellwert (Zauber)",
+    "FlagsSpellCritThresholdHint": "Erweiterter Schwellwert für kritische Treffer bei Angriffen mit Zaubern.",
+    "FlagsMeleeCriticalDice": "Nahkampf Kritische Schadenswürfel",
+    "FlagsMeleeCriticalDiceHint": "Anzahl zusätzlicher Schadenswürfel für kritische Treffer bei Nahkampf-Waffenangriffen.",
+    "Flat": "Flach",
+    "Formula": "Formel",
+    "FormulaMalformedError": "Problem bei der Vorbereitung der Formel {property} in {name}.",
+    "FormulaMissingReferenceWarn": "Die {property}-Formel in {name} enthält Verweise auf fehlende Daten: {references}",
+    "Gender": "Geschlecht",
+    "GlobalBonus": "Globaler Bonus",
+    "GrantedAbilities": "gewährte Fähigkeit",
+    "GroupInventory": "Inventar",
+    "GroupHP": "Gesamte Trefferpunkte",
+    "GroupSummary": "Eine Gruppe von {members}n",
+    "GroupSummaryEmpty": "Leere Gruppe",
+    "GroupControls": "Steuerung",
+    "Group": {
+      "Challenge": "Herausforderung",
+      "Member": {
+        "one": "Mitglied",
+        "other": "Mitglieder"
+      },
+      "PlaceMembers": "Platziere Mitglieder",
+      "Primary": {
+        "Remove": "Als primäre Gruppe entfernen",
+        "Set": "Als primäre Gruppe festlegen"
+      },
+      "Type": "Gruppenart",
+      "TypeEncounter": "Begegnung",
+      "TypeGeneric": "Gruppe",
+      "TypeParty": "Gemeinschaft"
+    },
+    "Hair": "Haar",
+    "HalfProficient": "Halber Übungsbonus",
+    "HEAL": {
+      "FIELDS": {
+        "healing": {
+          "label": "Heilung",
+          "bonus": {
+            "label": "Heilungsbonus",
+            "hint": "Bonus zum Heilungswurf hinzufügen."
+          },
+          "custom": {
+            "label": "Eigene Heilungsformel",
+            "enabled": {
+              "label": "Aktiviere Eigene Formel",
+              "hint": "Sollte die eigene Formel anstelle der Standardwürfel verwendet werden."
+            },
+            "formula": {
+              "label": "Heilungsformel",
+              "hint": "Eigene Heilungsformel"
+            }
+          },
+          "denomination": {
+            "label": "Würfel Nennwert",
+            "hint": "Nennwert des zu werfenden Würfels."
+          },
+          "number": {
+            "label": "Würfel Zahl",
+            "hint": "Zahl des zu werfenden Würfels"
+          },
+          "scaling": {
+            "label": "Heilungsskalierung",
+            "mode": {
+              "label": "Skalierungsmodus",
+              "hint": "Methode, mit der die Skalierungszunahme berechnet wird."
+            },
+            "number": {
+              "label": "Würfelskalierung",
+              "hint": "Anzahl der Würfel, die für jede Skalierungsstufe erhöht werden. Wird auf den ersten Würfel angewendet, der in der Schadensformel gefunden wird, wenn mehr als einer vorhanden ist."
+            },
+            "formula": {
+              "label": "Skalierungsformel",
+              "hint": "Beliebige Skalierungsformel, die für jeden Skalierungsschritt multipliziert"
+            }
+          },
+          "types": {
+            "label": "Heilungstyp",
+            "hint": "Art der zugefügten Heilung oder mehrere zur Auswahl für den Nutzer."
+          }
+        }
+      },
+      "Title": "Heilen"
+    },
+    "Height": "Größe",
+    "HitPoints": "Trefferpunkte",
+    "HitPointsBonusLevel": "Bonus pro Stufe",
+    "HitPointsBonusOverall": "Bonus fest",
+    "HitPointsConfig": "Trefferpunkte bearbeiten",
+    "HitPointsCurrent": "Aktuelle Trefferpunkte",
+    "HitPointsMax": "Maximale Trefferpunkte",
+    "HitPointsMin": "Minimale Trefferpunkte",
+    "HitPointsOverride": "Maximale Trefferpunkte fest setzen",
+    "HitPointsOverrideHint": "Überschreibt automatisch berechnete Trefferpunkte und ignoriert alle TP aus Klassen, Boni und Attributsmodifikatoren.",
+    "HitPointsTemp": "Temporäre Trefferpunkte",
+    "HitPointsTempShort": "Temporäre TP",
+    "HitPointsTempMax": "Temporary Maximum Hit Points",
+    "HitPointsTempMaxHint": "Temporäre Änderung der maximalen TP.",
+    "HitPointsTempMaxShort": "Temp Max TP",
+    "HP": "TP",
+    "HPFormula": "Trefferpunkteformel",
+    "HPFormulaError": "Die Trefferpunkte-Formel ist ungültig.",
+    "HPFormulaRollMessage": "Wurf mit Trefferpunkteformel",
+    "HITDICE": {
+      "Action": {
+        "Decrease": "Verringern",
+        "Increase": "Erhöhen"
+      },
+      "Config": "Trefferwürfel anpassen"
+    },
+    "HitDie": "Trefferwürfel",
+    "HitDice": "Trefferwürfel",
+    "HitDiceConfig": "Trefferwürfel anpassen",
+    "HitDiceConfigHint": "Passt die verbleibenden Trefferwürfelstufen für jede Klasse an.",
+    "HitDiceMax": "Maximale Trefferwürfel",
+    "HitDiceRemaining": "Verbleibende Trefferwürfel",
+    "HitDiceRoll": "Wirf TW",
+    "HitDiceWarn": "{name} hat keine {formula} Trefferwürfel übrig!",
+    "HitDiceNPCWarn": "{name} hat keine Trefferwürfel übrig!",
+    "Ideals": "Ideale",
+    "Identified": "Identifiziert",
+    "Identifier": "ID",
+    "IdentifierError": "ID darf nur Buchstaben (a-z), Zahlen (0-9), Bindestriche (-) und Unterstriche (_) enthalten.",
+    "Identify": "Identifizieren",
+    "Immunities": "Immunitäten",
+    "Initiative": "Initiative",
+    "InitiativeAbbr": "Init",
+    "InitiativeBonus": "Initiativebonus",
+    "InitiativeRoll": "Initiativewurf",
+    "InitiativeConfig": "Initiative bearbeiten",
+    "InitiativeConfigHint": "Initiativmodifikator und Boni für diesen Akteur festlegen.",
+    "Inspiration": "Inspiration",
+    "Inventory": "Inventar",
+    "InventorySearch": "Inventar durchsuchen",
+    "Issues": "Probleme",
+    "ItemActionType": "Aktionstyp",
+    "ItemActivation": "Aktivierung",
+    "ItemActivationCondition": "Aktivierungsbedingung",
+    "ItemActivationCost": "Aktivierungskosten",
+    "ItemActivationType": "Aktivierungsart",
+    "ItemAmmoProperties": "Munitionseigenschaften",
+    "ItemAttackBonus": "Bonus für Angriffwurf",
+    "ItemAttackFlat": "Pauschaler Bonus",
+    "ItemAttackFlatHint": "Wenn diese Option angekreuzt ist, darfst du dem Angriffswurf keine weiteren Boni hinzufügen, außer denen, die hier angegeben sind.",
+    "ItemBackgroundDetails": "Hintergrund-Details",
+    "ItemClassDetails": "Klassen-Details",
+    "ItemConsumableActivation": "Verbrauchsgut-Aktivierung",
+    "ItemConsumableUsage": "Verbrauchsgut-Nutzung",
+    "ItemConsumableDetails": "Verbrauchsgut-Details",
+    "ItemConsumableProperties": "Verbrauchsgut-Eigenschaften",
+    "ItemConsumableStatus": "Verbrauchsgut-Status",
+    "ItemConsumableSubtype": "{category}-Typ",
+    "ItemConsumableType": "Verbrauchsgut-Typ",
+    "ItemCreate": "Gegenstand erstellen",
+    "ItemCritThreshold": "Grenzwert kritischer Treffer",
+    "ItemCritExtraDamage": "Zusätz. kritischer Schaden",
+    "ItemDelete": "Gegenstand löschen",
+    "ItemEdit": "Gegenstand bearbeiten",
+    "ItemEquipmentAction": "Ausrüstungaktion",
+    "ItemEquipmentBase": "Basisausrüstung",
+    "ItemEquipmentDetails": "Ausrüstungs-Details",
+    "ItemEquipmentDexMod": "Max. Geschicklichkeitsmodifikator",
+    "ItemEquipmentDexModAbbr": "Max. Ges",
+    "ItemEquipmentProperties": "Ausstattungseigenschaften",
+    "ItemEquipmentStatus": "Ausrüstungsstatus",
+    "ItemEquipmentStealthDisav": "Erzwingt Heimlichkeitsnachteil",
+    "ItemEquipmentType": "Ausrüstungstyp",
+    "ItemEquipmentUsage": "Ausrüstungsnutzung",
+    "ItemFeatureDetails": "Merkmal-Details",
+    "ItemFeatureProperties": "Merkmal Eigenschaften",
+    "ItemFeatureSubtype": "{category}-Typ",
+    "ItemFeatureType": "Merkmal-Typ",
+    "ItemLootDetails": "Beute-Details",
+    "ItemLootProperties": "Beuteeigenschaften",
+    "ItemLootSubtype": "{category} Typ",
+    "ItemLootType": "Beute-Typ",
+    "ItemName": "Gegenstandsname",
+    "ItemNew": "Neu: {type}",
+    "ItemRarityCommon": "gewöhnlich",
+    "ItemRarityMundane": "alltäglich",
+    "ItemRarityUncommon": "ungewöhnlich",
+    "ItemRarityRare": "selten",
+    "ItemRarityVeryRare": "sehr selten",
+    "ItemRarityLegendary": "legendär",
+    "ItemRarityArtifact": "artefakt",
+    "ItemRechargeCheck": "{name} Aufladeprüfung",
+    "ItemRechargeFailure": "Fehlschlag!",
+    "ItemRechargeSuccess": "Erfolgreich!",
+    "ItemRecoveryRoll": "{name} erhält {count} Aufladungen zurück",
+    "ItemLossRoll": "{name} verliert {count} Aufladungen",
+    "ItemRecoveryRollMax": "{name} erhält alle Aufladungen zurück",
+    "ItemRecoveryFormulaWarning": "{name} kann keine Aufladungen zurückerhalten. Ungültige Formel: '{formula}'.",
+    "ItemRequiredStr": "Benötigte Stärke",
+    "ItemSiegeProperties": "Belagerungs-Eigenschaften",
+    "ItemSpeciesDetails": "Spezies-Details",
+    "ItemSubclassDetails": "Unterklassen-Details",
+    "ItemToolBase": "Basiswerkzeug",
+    "ItemToolBonus": "Werkzeugbonus",
+    "ItemToolDetails": "Werkzeugdetails",
+    "ItemToolProficiency": "Handwerkliches Geschick",
+    "ItemToolProperties": "Werkzeug Eigenschaften",
+    "ItemToolStatus": "Werkzeugstatus",
+    "ItemToolType": "Werkzeugtyp",
+    "ItemToolUsage": "Werkzeug Nutzung",
+    "ItemVehicleProperties": "Fahrzeuge Details",
+    "ItemView": "Item anzeigen",
+    "ItemWeaponAttack": "Waffenangriff",
+    "ItemWeaponBase": "Basiswaffe",
+    "ItemWeaponDetails": "Waffendetails",
+    "ItemWeaponProperties": "Waffeneigenschaften",
+    "ItemWeaponStatus": "Waffenstatus",
+    "ItemWeaponType": "Waffentyp",
+    "ItemWeaponUsage": "Waffennutzung",
+    "JackOfAllTrades": "Alleskönner",
+    "Languages": "Sprachen",
+    "Level": "Stufe",
+    "LevelPl": "Stufen",
+    "LevelActionDecrease": "Stufenaufstieg",
+    "LevelActionIncrease": "Stufenabstieg",
+    "LevelCount": "{ordinal} Stufe",
+    "LevelLimit": {
+      "Label": "Stufen Grenze",
+      "Max": "Maximale Stufe",
+      "Min": "Minimale Stufe"
+    },
+    "LevelNumber": "Stufe {level}",
+    "LevelScaling": "Stufenanpassung",
+    "LimitedUses": "Limitierte Nutzungen",
+    "LimitedUsesAvailable": "Verbleibende Nutzungen",
+    "LimitedUsesMax": "Maximale Nutzungen",
+    "LimitedUsesPer": "Rückerlangung",
+    "LimitedUsesPrompt": "Abfrage benutzen",
+    "LimitedUsesPromptTooltip": "Wenn nicht aktiviert, wird die Abfrage beim verbrauchen von Nutzungen unterdrückt.",
+    "Long": "Weit",
+    "MagicalBonus": "Magischer Bonus",
+    "Materials": "Material",
+    "Max": "Max",
+    "MaxCharacterLevelExceededWarn": "Charakter kann nicht über Stufe {max} hinaus aufsteigen.",
+    "MaxClassLevelExceededWarn": "Klasse kann nicht über Stufe {max} hinaus aufsteigen.",
+    "MaxClassLevelMinimumWarn": "Klasse muss mindestens eine Stufe haben.",
+    "Maximum": "Maximum",
+    "Minimum": "Minimum",
+    "Modifier": "Modifikator",
+    "ModuleArtConfigH": "Legt Module für Medien (z.B. für Illustrationen von Akteurporträts und Spielfiguren) fest.",
+    "ModuleArtConfigL": "Medien bearbeiten",
+    "ModuleArtConfigN": "Medien aus Modulen",
+    "ModuleArtConfigPortraits": "Porträts",
+    "ModuleArtConfigTokens": "Spielfiguren",
+    "ModuleArtPriorityDecrease": "Priorität senken",
+    "ModuleArtPriorityHint": "Mit den Pfeilen kann die Priorisierung der Art-Quellen angepasst werden. Wenn für einen Akteur Medien aus mehreren Quellen vorliegen, werden die mit der höchsten Priorität genutzt.",
+    "ModuleArtPriorityIncrease": "Priorität erhöhen",
+    "Multiple": "Mehrfach",
+    "Multiplier": "Multiplikator",
+    "MythicActionLabel": "Mythische Aktion",
+    "Name": "Charakter Name",
+    "NameUnidentified": "Unidentifizierter Name",
+    "NoCharges": "Keine Ladungen",
+    "None": "Nichts",
+    "NoneActionLabel": "Keine",
+    "Normal": "Normal",
+    "NotProficient": "Nicht geübt",
+    "Notes": "Notizen",
+    "Number": "Anzahl",
+    "OtherFormula": "Andere Formel",
+    "PactMagic": "Paktmagie",
+    "Passive": "Passiv",
+    "PassivePerception": "Passive Wahrnehmmung",
+    "Period": "Periode",
+    "PersonalityTraits": "Persönlichkeitsmerkmale",
+    "Portrait": "Porträt",
+    "Prepared": "Vorbereitet",
+    "Prerequisites": {
+      "Header": "Merkmal Voraussetzungen",
+      "FIELDS": {
+        "prerequisites": {
+          "level": {
+            "hint": "Charakter- oder Klassenstufe, die für die Auswahl dieses Merkmals beim Stufenaufstieg erforderlich ist.",
+            "label": "Benötigte Stufe"
+          }
+        }
+      }
+    },
+    "Price": "Preis",
+    "Proficiency": "Übungsbonus",
+    "ProficiencyBonus": "Übungsbonus",
+    "ProficiencyConfigurationHint": "Übung und Boni bearbeiten.",
+    "ProficiencyConfigureTitle": "{label} bearbeiten",
+    "ProficiencyLevel": "Übungsstufe",
+    "ProficiencyOther": "Sonstige",
+    "Proficient": "Geübt",
+    "Properties": "Eigenschaften",
+    "PropertyBase": "Basis",
+    "PropertyTotal": "Gesamt",
+    "Public": "Öffentlich",
+    "Quantity": "Anzahl",
+    "QuantityAbbr": "Anz",
+    "QuantityFormula": "Anzahl Formel",
+    "QuantityRoll": "Anzahl der Würfe",
+    "RacialTraits": "Volkseigenschaften",
+    "RANGE": {
+      "FIELDS": {
+        "range": {
+          "label": "Reichweite",
+          "long": {
+            "label": "Maximalreichweite",
+            "hint": "Große Angriffsreichweite der Waffe, falls vorhanden."
+          },
+          "override": {
+            "label": "Überschreibe Reichweite",
+            "hint": "Verwende diese Werte für die Reichweite anstelle der Werte für das Item, wenn du diese Aktivität verwendest."
+          },
+          "reach": {
+            "label": "Reichweite"
+          },
+          "special": {
+            "label": "Spezielle Reichweite",
+            "hint": "Beschreibung einer Speziellen Reichweite."
+          },
+          "units": {
+            "label": "Reichweiten Einheit",
+            "hint": "Einheiten zur Messung der Reichweite."
+          },
+          "value": {
+            "label": "Reichweitenwert",
+            "hint": "Wert der Reichweite in den angegebenen einheiten, falls zutreffend."
+          }
+        }
+      },
+      "Formatted": {
+        "Range": "Reichweite {range}",
+        "Reach": "Reichweite {reach}"
+      }
+    },
+    "Range": "Reichweite",
+    "RangeDistance": "Distanz",
+    "RangeLong": "Maximalreichweite",
+    "RangeNormal": "Grundreichweite",
+    "RangeUnits": "Reichweitentyp oder Einheit",
+    "Rarity": "Seltenheit",
+    "Reaction": "Reaktion",
+    "ReactionAbbr": "R",
+    "ReactionPl": "Reaktionen",
+    "Recharge": "Aufladen",
+    "Recovery": "Wiederherst.",
+    "RecoveryFormula": "Formel zum Wiederaufladen",
+    "RequiredMaterials": "Benötigte Materialien",
+    "Requirements": "Voraussetzungen",
+    "Resistances": "Resistenz",
+    "Resources": "Ressourcen",
+    "ResourceLabel": "Name",
+    "ResourceMax": "Ressourcenmaximum",
+    "ResourceValue": "Ressourcenwert",
+    "ResourcePrimary": "Ressource 1",
+    "ResourceSecondary": "Ressource 2",
+    "ResourceTertiary": "Ressource 3",
+    "Ritual": "Ritual",
+    "RitualAbbr": "R",
+    "ROLL": {
+      "Range": {
+        "Label": "Würfelspanne",
+        "Maximum": "Maximaler Wurf",
+        "Minimum": "Minimaler Wurf"
+      },
+      "Section": "{label} Würfe"
+    },
+    "Roll": "Wurf",
+    "RollConfiguration": {
+      "Title": "Wurf Konfigurieren",
+      "Configuration": "Konfiguration",
+      "Rolls": "Würfe"
+    },
+    "RollExample": "z.B. +1W4",
+    "RollMode": "Wurf Modus",
+    "RollSituationalBonus": "Situativer Bonus?",
+    "Rule": {
+      "Tooltip": "Tooltip",
+      "Type": {
+        "Label": "Regel-Typ",
+        "Condition": "Zustand",
+        "Rule": "Regel"
+      }
+    },
+    "Movement": "Bewegung",
+    "SAVE": {
+      "FIELDS": {
+        "damage": {
+          "label": "Rettungswurf Schaden",
+          "onSave": {
+            "label": "Schaden bei Erfolg",
+            "hint": "Wie viel Schaden sollte bei einem Erfolgreichen Rettungswurf zugefügt werden?",
+            "Full": "Vollständiger Schaden",
+            "Half": "Halber Schaden",
+            "None": "Kein Schaden"
+          },
+          "parts": {
+            "label": "Schadensbestandteil",
+            "hint": "Einzelne Schadensbestandteile dem Wurf hinzufügen."
+          }
+        },
+        "effects": {
+          "onSave": {
+            "label": "Immer Anwenden",
+            "hint": "Dieser Effekt wird immer angewendet, auch wenn das Ziel seinen Rettungswurf schafft."
+          }
+        },
+        "save": {
+          "label": "Rettungswurf Details",
+          "ability": {
+            "label": "Herausforderndes Attribut",
+            "hint": "Attribut, das gewürfelt werden muss, um zu versuchen, den Rettungswurf zu bestehen."
+          },
+          "dc": {
+            "label": "Schwierigkeitsgrad",
+            "calculation": {
+              "label": "SG Berechnung",
+              "hint": "Methode oder Attribut, das zur Berechnung des Schwierigkeitsgrades verwendet wird."
+            },
+            "formula": {
+              "label": "SG Formel",
+              "hint": "Eigene Formel oder fester Wert zur Definition Rettungs-SG."
+            },
+            "CustomFormula": "Eigene Formel",
+            "DefaultFormula": "8 + @mod + @prof"
+          }
+        }
+      },
+      "OnSave": "Bei Erfolg",
+      "Title": {
+        "one": "Rettungswurf",
+        "other": "Rettungswürfe"
+      }
+    },
+    "SaveBonus": "Rettungswurfbonus",
+    "SaveGlobalBonusHint": "Dieser Bonus gilt für alle Rettungswürfe dieses Akteurs.",
+    "Scroll": {
+      "CreateFrom": "Schriftrolle von {spell} erstellen",
+      "CreateScroll": "Schriftrolle erstellen",
+      "Details": "Schriftrollendetails",
+      "Explanation": {
+        "Label": "Erklärung",
+        "Hint": "Menge der Regeln zur Verwendung von Zauberrollen, die in die erstellte Schriftrolle aufgenommen werden.",
+        "Complete": "Komplett",
+        "Reference": "Referenz"
+      },
+      "RequiresConcentration": "Benötigt Konzentration",
+      "SaveDC": "Zauber SG",
+      "Values": "Zauber Werte"
+    },
+    "Senses": "Sinne",
+    "SensesConfig": "Sinne bearbeiten",
+    "SensesConfigHint": "Bearbeite spezielle sensorische Wahrnehmungsfähigkeiten, die dieser Charakter besitzt.",
+    "SenseDarkvision": "Dunkelsicht",
+    "SenseBlindsight": "Blindsicht",
+    "SenseTremorsense": "Erschütterungssinn",
+    "SenseTruesight": "Wahrsicht",
+    "SenseUnits": "Einheiten",
+    "SenseSpecial": "Spezielle Sinne",
+    "Shape": "Form",
+    "SheetModeEdit": "Bearbeiten",
+    "SheetModePlay": "Spielen",
+    "SavingThrow": "Rettungswurf",
+    "SavingThrowDC": "SG {dc} {ability}-Rettungswurf",
+    "SavingThrowRoll": "Werfe {ability}-Rettungswurf",
+    "SaveDC": "SG {dc} {ability}",
+    "SavePromptTitle": "{ability} Rettungswurf",
+    "ScalingFormula": "Skalierungsformel",
+    "ScalingMode": "Skalierungsmodus",
+    "ScalingValue": "Skalierungswert",
+    "School": "Schule",
+    "SchoolAbj": "Bannmagie",
+    "SchoolCon": "Beschwörung",
+    "SchoolDiv": "Erkenntnismagie",
+    "SchoolEnc": "Verzauberung",
+    "SchoolEvo": "Hervorrufung",
+    "SchoolIll": "Illusion",
+    "SchoolNec": "Nekromantie",
+    "SchoolTrs": "Verwandlung",
+    "Size": "Größe",
+    "SizeGargantuan": "Gigantisch",
+    "SizeGargantuanAbbr": "Gi",
+    "SizeHuge": "Riesig",
+    "SizeHugeAbbr": "Ri",
+    "SizeLarge": "Gross",
+    "SizeLargeAbbr": "Gr",
+    "SizeMedium": "Mittelgross",
+    "SizeMediumAbbr": "Mi",
+    "SizeSmall": "Klein",
+    "SizeSmallAbbr": "Ll",
+    "SizeTiny": "Winzig",
+    "SizeTinyAbbr": "Wi",
+    "SKILL": {
+      "SECTIONS": {
+        "Details": "{label} Details",
+        "Bonuses": {
+          "Label": "{label} Boni",
+          "Hint": "Diese Boni gelten für passive Werte und Proben, die mit {label} durchgeführt werden."
+        },
+        "Global": {
+          "Label": "Globale Boni",
+          "Hint": "Diese Boni gelten für Proben, die mit einer beliebigen Fertigkeit durchgeführt werden."
+        }
+      }
+    },
+    "Skill": "Fertigkeit",
+    "Skills": "Fertigkeiten",
+    "SkillAcr": "Akrobatik",
+    "SkillAni": "Mit Tieren umgehen",
+    "SkillArc": "Arkane Kunde",
+    "SkillAth": "Athletik",
+    "SkillDec": "Täuschen",
+    "SkillHis": "Geschichte",
+    "SkillIns": "Motiv erkennen",
+    "SkillInv": "Nachforschungen",
+    "SkillItm": "Einschüchtern",
+    "SkillMed": "Heilkunde",
+    "SkillNat": "Naturkunde",
+    "SkillPer": "Überzeugen",
+    "SkillPrc": "Wahrnehmung",
+    "SkillPrf": "Auftreten",
+    "SkillRel": "Religion",
+    "SkillSlt": "Fingerfertigkeit",
+    "SkillSte": "Heimlichkeit",
+    "SkillSur": "Überlebenskunst",
+    "SkillPromptTitle": "{skill} Fertigkeitswurf",
+    "SkillConfigureTitle": "{skill} bearbeiten",
+    "SkillConfigure": "Fertigkeit bearbeiten",
+    "SkillsConfig": "Fertigkeiten bearbeiten",
+    "SkillBonuses": "Fertigkeitsboni",
+    "SkillBonusCheck": "Probenbonus",
+    "SkillBonusPassive": "Passiver Bonus",
+    "SkillConfigurationHint": "Übung in Fertigkeit und Boni bearbeiten.",
+    "SkillGlobalBonusCheckHint": "Dieser Bonus gilt für alle Fertigkeitsproben dieses Akteurs.",
+    "SkillModifierHint": "{skill}-Modifikator",
+    "SkillPassiveHint": "Passive {skill}",
+    "SkillPassiveSpecificHint": "Passive {ability} ({skill})",
+    "SkillPassiveScore": "Passiver {skill}wert",
+    "SkillPassives": "Passive Fertigkeiten",
+    "Skin": "Haut",
+    "Skip": "Überspringen",
+    "SOURCE": {
+      "FIELDS": {
+        "source": {
+          "label": "Quelle",
+          "book": {
+            "label": "Buch"
+          },
+          "custom": {
+            "label": "Eigenes Label"
+          },
+          "license": {
+            "label": "Lizenz"
+          },
+          "page": {
+            "label": "Seite/Abschnitt"
+          },
+          "revision": {
+            "label": "Revision"
+          },
+          "rules": {
+            "label": "Regelversion"
+          },
+          "uuid": {
+            "label": "Originalquelle"
+          }
+        }
+      },
+      "Action": {
+        "Configure": "Quelle Konfigurieren"
+      },
+      "Display": {
+        "Full": "{book} {page}",
+        "Page": "S. {page}"
+      }
+    },
+    "Special": "Spezial",
+    "SpecialHint": "Spezialwerte durch Semikolons getrennt.",
+    "SpecialTraits": "Spezielle Merkmale",
+    "Species": {
+      "Label": "Spezies",
+      "Add": "Spezies Hinzufügen",
+      "Features": "Spezies Merkmal",
+      "Name": "Spezies Name"
+    },
+    "Speed": "Bewegungswert",
+    "SpeedSpecial": "Spez. Bewegungsart",
+    "SpellAbility": "Zauberattribut",
+    "SpellAbilitySet": "Festlegen als Primäres Zauberattribut",
+    "SpellAdd": "Zauber hinzufügen",
+    "SpellCantrip": "Zaubertrick",
+    "SpellCastConsume": "Zauberplatz verbrauchen?",
+    "SpellCastNoSlots": "Kein freier Zauberplatz um diesen Spruch zu wirken",
+    "SpellCastNoSlotsLeft": "Du hast keine Verfügbaren Zauberplätze um {name} zu wirken!",
+    "SpellCastTime": "Zauberzeit",
+    "SpellCastUpcast": "Wirke auf Grad",
+    "SpellcasterLevel": "Zauberwirkerstufe",
+    "SpellCastingHeader": "Zauberwirken",
+    "Spellcasting": "Zauberwirken",
+    "SpellcastingClass": "{class} Zauberwirken",
+    "SpellComponent": "Zauberkomponenten",
+    "SpellComponents": "Zauber Komponenten",
+    "SpellCreate": "Zauber erschaffen",
+    "SpellDC": "Zauber SG",
+    "SpellDetails": "Zauber Details",
+    "SpellEffects": "Zauber Effekte",
+    "SpellHeader": {
+      "Formula": "Formel",
+      "Range": "Reichweite",
+      "Roll": "Wurf",
+      "School": "Schule",
+      "Target": "Ziel",
+      "Time": "Zeit"
+    },
+    "SpellLevel": "Zaubergrad",
+    "SpellLevels": "Zaubergrade",
+    "SpellLevel0": "Zaubertrick",
+    "SpellLevel1": "1. Grad",
+    "SpellLevel2": "2. Grad",
+    "SpellLevel3": "3. Grad",
+    "SpellLevel4": "4. Grad",
+    "SpellLevel5": "5. Grad",
+    "SpellLevel6": "6. Grad",
+    "SpellLevel7": "7. Grad",
+    "SpellLevel8": "8. Grad",
+    "SpellLevel9": "9. Grad",
+    "SpellLevelPact": "Paktzauberplatz",
+    "SpellMaterials": "Zaubermaterialien",
+    "SpellMaterialsConsumed": "Material verbrauchen",
+    "SpellMaterialsCost": "Materialkosten",
+    "SpellMaterialsDescription": "Materialbeschreibung",
+    "SpellMaterialsSupply": "Materialvorrat",
+    "SpellName": "Zaubername",
+    "SpellNone": "Nichts",
+    "SpellPrepAtWill": "Nach Belieben",
+    "SpellPrepInnate": "Angeborenes Zauberwirken",
+    "SpellPrepRitual": "Nur Rituale",
+    "SpellPrepPrepared": "Vorbereitet",
+    "SpellPrepAlways": "Immer verfügbar",
+    "SpellPreparation": {
+      "Label": "Zaubervorbereitung",
+      "Formula": "Vorbereitungs-Formel"
+    },
+    "SpellPrepared": "Vorbereitet",
+    "SpellProgArt": "Artifizient",
+    "SpellProgAvailable": "Verfügbare Plätze",
+    "SpellProgFull": "Vollzauberer",
+    "SpellProgHalf": "Halbzauberer",
+    "SpellProgLeveled": "Stufenbasiertes Zaubern",
+    "SpellProgOverride": "Überschreibe Plätze",
+    "SpellProgPact": "Paktmagie",
+    "SpellProgThird": "Drittelzauberer",
+    "SpellProgression": "Zauberfortschritt",
+    "SpellsSearch": "Zauber durchsuchen",
+    "SpellSchool": "Zauberschule",
+    "SpellScroll": "Zauberspruchrolle",
+    "SpellSlotExpended": "Verbrauchter Zauberplatz",
+    "SpellSlotN": {
+      "one": "{n}. Zauberplatz",
+      "two": "{n}. Zauberplatz",
+      "few": "{n}. Zauberplatz",
+      "other": "{n}. Zauberplatz"
+    },
+    "SpellSlotsN": {
+      "one": "{n}. Grad Zauberplätze",
+      "two": "{n}. Grad Zauberplätze",
+      "few": "{n}. Grad Zauberplätze",
+      "other": "{n}. Grad Zauberplätze"
+    },
+    "SpellSlotsPact": "Pakt-Zauberplätze",
+    "SpellSlotsConfig": "Zauberplätze Konfigurieren",
+    "SpellTag": "Zauber-Tag",
+    "SpellTarget": "Zauberziel",
+    "SpellUnprepared": "Unvorbereitet",
+    "SpellUsage": "Zaubernutzung",
+    "Spellbook": "Zauberbuch",
+    "Spent": "Ausgegeben",
+    "StartingEquipment": {
+      "Title": "Startausrüstung",
+      "Action": {
+        "AddEntry": "Eintrag hinzufügen",
+        "Configure": "Startausrüstung konfigurieren",
+        "RemoveEntry": "Eintrag entfernen"
+      },
+      "Choice": {
+        "Armor": "Rüstung wählen",
+        "Focus": "Zauberfokus wählen",
+        "Tool": "Werkzeug wählen",
+        "Weapon": "Waffe wählen"
+      },
+      "DropHint": "Item hier ablegen zum verlinken",
+      "IfProficient": "Wenn geübt",
+      "Operator": {
+        "AND": "Alle aus…",
+        "OR": "Eins aus…"
+      },
+      "RequireProficiency": "Benötigt Übung",
+      "SpecificItem": "Spezifisches Item",
+      "Warning": {
+        "Depth": "Bei der Startausrüstung sind nur drei Verschachtelung erlaubt.",
+        "ItemTypeInvalid": "{type} Items können nicht zur Startausrüstung hinzugefügt werden."
+      },
+      "Wealth": {
+        "Label": "Startvermögen",
+        "Hint": "Formel in GM, die anstelle der Startausrüstung verwendet werden kann."
+      }
+    },
+    "SubclassAdd": "Unterklasse Hinzufügen",
+    "SubclassIdentifierHint": "Diese ID sollte der Oberklasse entsprechen, um sicherzustellen, dass beide richtig verknüpft sind.",
+    "SubclassAssignmentError": "{class} hat schon eine Unterklasse. Bestehende Unterklasse '{subclass}' entfernen, bevor eine neue hinzugefügt wird.",
+    "SubclassDuplicateError": "Unterklasse mit ID {identifier} existiert an diesem Akteur bereits.",
+    "SubclassMismatchWarn": "Unterklasse {name} verfügt über keine Klasse, die zur ID '{class}' passt.",
+    "SubclassName": "Name der Unterklasse",
+    "Subtype": "Unterart",
+    "SUMMON": {
+      "FIELDS": {
+        "bonuses": {
+          "ac": {
+            "label": "Bonus Rüstungsklasse",
+            "hint": "Bonus auf die Rüstungsklasse, die für die beschworene Kreatur festgelegt wurde, zusätzlich zu dem, was in ihrem Werteblock angegeben ist."
+          },
+          "attackDamage": {
+            "label": "Bonus Angriffsschaden",
+            "hint": "Zusätzlicher Schaden durch die Angriffe der Kreatur."
+          },
+          "hd": {
+            "label": "Bonus Trefferwürfel",
+            "hint": "Fügt der Kreatur zusätzliche Trefferwürfel hinzu, zusätzlich zu denen, die sich aus der TP-Formel in ihrem Werteblock ergeben. Kann nur bei der Beschwörung von NPC-Akteuren verwendet werden."
+          },
+          "healing": {
+            "label": "Bonus Heilung",
+            "hint": "Zusätzliche Heilung durch heilende Fähigkeiten."
+          },
+          "hp": {
+            "label": "Bonus Trefferpunkte",
+            "hint": "Der Kreatur wurden zusätzlich zu den Angaben in ihrem Werteblock weitere Trefferpunkte hinzugefügt."
+          },
+          "saveDamage": {
+            "label": "Bonus Rettungswurfschaden",
+            "hint": "Zusätzlicher Schaden, der durch die Fähigkeitene der Kreatur verursacht wird und Rettungswürfe erfordert."
+          }
+        },
+        "creatureSizes": {
+          "label": "Kreaturengröße",
+          "hint": "Beschworene Kreaturen und Toen werden auf diese Größe geändert. Wenn mehr als eine Größe ausgewählt wird, kann der Spieler beim Beschwören aus diesen Größen wählen."
+        },
+        "creatureTypes": {
+          "label": "Kreaturentyp",
+          "hint": "Die beschworene Kreatur wird in diesen Typ geändert. Wenn mehr als ein Typ ausgewählt ist, kann der Spieler beim Beschwören aus diesen Typen auswählen."
+        },
+        "match": {
+          "ability": {
+            "label": "Fähigkeit anpassen",
+            "hint": "Spezifische Fähigkeit, die beim Abgleich von Angriffen und Rettungswurf-SGs zu verwenden ist."
+          },
+          "attacks": {
+            "label": "Angriffe Angleichen",
+            "hint": "Passt die Trefferwerte der Angriffe der beschworenen Kreatur an die des Beschwörers an."
+          },
+          "proficiency": {
+            "label": "Übungen angleichen",
+            "hint": "Passt die Übungen der beschworenen Kreatur an die des Beschwörers an."
+          },
+          "saves": {
+            "label": "Rettungswürfe angleichen",
+            "hint": "Passt die Rettungswürfe SGs für die Fähigkeiten der beschworenen Kreatur an die des Beschwörers an."
+          }
+        },
+        "profiles": {
+          "label": "Beschwörungs Profil"
+        },
+        "summon": {
+          "label": "Beschwörung Details",
+          "identifier": {
+            "label": "Klassen-ID",
+            "hint": "ID, die verwendet wird, um zu bestimmen, ob die Charakterstufe oder eine bestimmte Klassenstufe für die Begrenzung der Verzauberungsstufe verwendet werden soll."
+          },
+          "mode": {
+            "label": "Modus",
+            "hint": "Legt fest, wie die Kreaturen, die beschworen werden sollen, spezifiziert werden.",
+            "CR": "Durch Herausforderungsgrad & Typ",
+            "Direct": "Durch direkte Verlinkung"
+          },
+          "prompt": {
+            "label": "Beschwörungsabfrage",
+            "hint": "Wenn nicht aktiviert, wird die Abfrage zum platzieren einer Beschwörung unterdrückt. Die Spieler können weiterhin über die Chatkarte beschwören."
+          }
+        }
+      },
+      "Action": {
+        "Place": "Beschwörungen Platzieren",
+        "Summon": "Beschwören",
+        "View": "Beschwörung Anzeigen"
+      },
+      "CreatureChanges": {
+        "Label": "Kreatur anpassungen",
+        "Hint": "Anpassungen, die an der beschworenen Kreatur vorgenommen werden. Alle @ Referenzen, die in den folgenden Formeln verwendet werden, basieren auf den Werten des Beschwörers. Die Werte beschworener Kreaturen können mit @summon abgerufen werden (z. B. @summon.attributes.hd.max, um die Trefferwürfelzahl der Kreatur abzurufen)."
+      },
+      "ItemChanges": {
+        "Label": "Item Anpassungen",
+        "Hint": "Anpassungen an den Items der beschworenen Kreatur."
+      },
+      "Profile": {
+        "Label": "Beschwörungs Profil",
+        "Action": {
+          "Create": "Erstelle Profil",
+          "Delete": "Entferne Profil"
+        },
+        "ChallengeRatingLabel": "Herausforderungsgrad von {cr} oder niedriger",
+        "DropHint": "Kreatur hier ablegen",
+        "Empty": "Klicke den <i class=\"fas fa-plus\"></i> Knopf oben um ein Profil zu erstellen.",
+        "EmptyDrop": "Klicke den <i class=\"fas fa-plus\"></i> Knopf oben um ein Profil zu erstellen oder lege hier eine Kreatur zum beschwören ab"
+      },
+      "SECTIONS": {
+        "Changes": "Änderungen",
+        "Profiles": "Profile",
+        "Summoning": "Beschwörung"
+      },
+      "Title": "Beschwören",
+      "Warning": {
+        "NoOwnership": "Du musst Eigentümer von '{Akteur}' sein, um ihn beschwören zu können.",
+        "NoProfile": "Das Beschwörungsprofil {profileId} für '{item}' konnte nicht gefunden werden.",
+        "Wildcard": "Sie müssen über die Berechtigung 'Dateien durchsuchen' verfügen, um Kreaturen mit Platzhalterbildern zu beschwören."
+      }
+    },
+    "Summoning": {
+      "Label": "Beschwörung"
+    },
+    "Supply": "Versorgung",
+    "Suppressed": "Unterdrückt",
+    "TARGET": {
+      "Action": {
+        "PlaceTemplate": "Platziere Messschablone"
+      },
+      "FIELDS": {
+        "target": {
+          "label": "Ziele",
+          "affects": {
+            "label": "Betroffene Ziele",
+            "choice": {
+              "label": "Wähle Ziele",
+              "hint": "Kann der Benutzer bei der Auswahl eines Bereichs entscheiden, wer davon betroffen ist?"
+            },
+            "count": {
+              "label": "Anzahl Ziele",
+              "hint": "Anzahl der einzelnen Ziele, die betroffen sein können."
+            },
+            "special": {
+              "label": "Spezielle Ziele",
+              "hint": "Beschreibung für jede spezielle Ziel."
+            },
+            "type": {
+              "label": "Zielart",
+              "hint": "Art der Ziele, die betroffen sein können (z. B. Kreaturen, Objekte, Räume)."
+            }
+          },
+          "override": {
+            "label": "Überschreibe Ziel",
+            "hint": "Verwende diese Zielwerte anstelle der Items, wenn du diese Aktivität verwendest."
+          },
+          "prompt": {
+            "label": "Vorlagenabfrage für Messschablone",
+            "hint": "Sollte der Spieler aufgefordert werden, eine Messschablone zu platzieren? Spieler können weiterhin Vorlagen von der Chat-Karte platzieren, wenn die Aufforderung deaktiviert ist."
+          },
+          "template": {
+            "label": "Wirkungsbereich",
+            "contiguous": {
+              "label": "Angrenzende Bereiche",
+              "hint": "Müssen alle geschaffenen Bereiche miteinander verbunden sein?"
+            },
+            "count": {
+              "label": "Anzahl Bereiche",
+              "hint": "Anzahl der verschiedenen Bereiche, die gezielt angewählt werden können."
+            },
+            "height": {
+              "label": "Bereichshöhe",
+              "hint": "Höhe des betroffenen Zylinders, falls zutreffend."
+            },
+            "size": {
+              "label": "Bereichsgröße",
+              "hint": "Größe des Wirkungsbereichs auf seiner Hauptachse."
+            },
+            "type": {
+              "label": "Bereichstyp",
+              "hint": "Art des Zielbereichs."
+            },
+            "units": {
+              "label": "Bereicheinheit",
+              "hint": "Einheiten zur Messung der Größe von Wirkungsbereichen."
+            },
+            "width": {
+              "label": "Bereichsbreite",
+              "hint": "Breite einer Linie wenn verfügbar."
+            },
+            "stationary": {
+              "label": "Stationär",
+              "hint": "Emanation kann nicht bewegt werden, nachdem sie platziert wurde."
+            }
+          }
+        }
+      },
+      "Warning": {
+        "PlaceTemplate": "Die Messschablone konnte nicht platziert werden."
+      },
+      "Count": {
+        "Any": "Beliebig",
+        "Every": "Jeder"
+      },
+      "Formatted": "{count} {type}",
+      "Type": {
+        "Ally": {
+          "Label": "Verbündeter",
+          "Counted": {
+            "any": "beliebige Verbündete",
+            "each": "jeder Verbündete",
+            "every": "jeder Verbündete",
+            "one": "{number} Verbündeter",
+            "other": "{number} Verbündete"
+          }
+        },
+        "Any": {
+          "Label": "Beliebig"
+        },
+        "Circle": {
+          "Label": "Kreis",
+          "Counted": {
+            "one": "{number} Kreis",
+            "other": "{number} Kreise",
+            "oneSized": "{sizes} Kreis",
+            "otherSized": "{number} {sizes} Kreise"
+          }
+        },
+        "Cone": {
+          "Label": "Kegel",
+          "Counted": {
+            "one": "{number} Kegel",
+            "other": "{number} Kegel",
+            "oneSized": "{sizes} Kegel",
+            "otherSized": "{number} {sizes} Kegel"
+          }
+        },
+        "Creature": {
+          "Label": "Kreatur",
+          "Counted": {
+            "any": "beliebige Kreaturen",
+            "each": "jede Kreatur",
+            "every": "jede Kreatur",
+            "one": "{number} Kreatur",
+            "other": "{number} Kreaturen"
+          }
+        },
+        "CreatureOrObject": {
+          "Label": "Kreatur oder Objekt",
+          "Counted": {
+            "any": "beliebige Kreaturen oder Objekte",
+            "each": "jede Kreatur oder jedes Objekt",
+            "every": "jede Kreatur oder jedes Objekt",
+            "one": "{number} Kreatur oder Objekt",
+            "other": "{number} Kreaturen oder Objekte"
+          }
+        },
+        "Cube": {
+          "Label": "Würfel",
+          "Counted": {
+            "one": "{number} Würfel",
+            "other": "{number} Würfel",
+            "oneSized": "{sizes} Würfel",
+            "otherSized": "{number} {sizes} Würfel"
+          }
+        },
+        "Cylinder": {
+          "Label": "Zylinder",
+          "Counted": {
+            "one": "{number} Zylinder",
+            "other": "{number} Zylinder",
+            "oneSized": "{sizes} Zylinder",
+            "otherSized": "{number} {sizes} Zylinder"
+          }
+        },
+        "Emanation": {
+          "Label": "Emanation",
+          "Counted": {
+            "one": "{number} Emanation",
+            "other": "{number} Emanationen",
+            "oneSized": "{sizes} Emanation",
+            "otherSized": "{number} {sizes} Emanationen"
+          }
+        },
+        "Enemy": {
+          "Label": "Gegner",
+          "Counted": {
+            "any": "beliebige Gegner",
+            "each": "jeder Gegner",
+            "every": "jeder Gegner",
+            "one": "{number} Gegner",
+            "other": "{number} Gegner"
+          }
+        },
+        "Line": {
+          "Label": "Linie",
+          "Counted": {
+            "one": "{number} Linie",
+            "other": "{number} Linien",
+            "oneSized": "{sizes} Linie",
+            "otherSized": "{number} {sizes} Linien"
+          }
+        },
+        "Object": {
+          "Label": "Objekt",
+          "Counted": {
+            "any": "beliebige Objekte",
+            "each": "jedes Objekt",
+            "every": "jedes Objekt",
+            "one": "{number} Objekt",
+            "other": "{number} Objekte"
+          }
+        },
+        "Radius": {
+          "Label": "Radius",
+          "Counted": {
+            "one": "{number} Radius",
+            "other": "{number} Radien",
+            "oneSized": "{sizes} Radius",
+            "otherSized": "{number} {sizes} Radien"
+          }
+        },
+        "Self": {
+          "Label": "Selbst"
+        },
+        "Space": {
+          "Label": "Raum",
+          "Counted": {
+            "any": "beliebige Felder",
+            "each": "jedes Feld",
+            "every": "jedes Feld",
+            "one": "{number} Feld",
+            "other": "{number} Felder"
+          }
+        },
+        "Sphere": {
+          "Label": "Kugel",
+          "Counted": {
+            "one": "{number} Kugel",
+            "other": "{number} Kugeln",
+            "oneSized": "{sizes} Kugel",
+            "otherSized": "{number} {sizes} Kugeln"
+          }
+        },
+        "Special": {
+          "Label": "{special}",
+          "Counted": {
+            "any": "beliebige {special}",
+            "each": "jedes {special}",
+            "every": "alle {special}",
+            "one": "{number} {special}",
+            "other": "{number} {special}"
+          }
+        },
+        "Square": {
+          "Label": "Quadrat",
+          "Counted": {
+            "one": "{number} Quadrat",
+            "other": "{number} Quadrate",
+            "oneSized": "{sizes} Quadrat",
+            "otherSized": "{number} {sizes} Felder"
+          }
+        },
+        "Target": {
+          "Label": "Ziel",
+          "Counted": {
+            "any": "beliebige Ziele",
+            "each": "jedes Ziel",
+            "every": "alle Ziele",
+            "one": "{number} Ziel",
+            "other": "{number} Ziele"
+          }
+        },
+        "Wall": {
+          "Label": "Mauer",
+          "Counted": {
+            "one": "{number} Mauer",
+            "other": "{number} Mauern",
+            "oneSized": "{sizes} Wand",
+            "otherSized": "{number} {sizes} Wände"
+          }
+        },
+        "WillingCreature": {
+          "Label": "Williges Geschöpf",
+          "Counted": {
+            "any": "beliebige willige Geschöpfe",
+            "each": "jedes willige Geschöpf",
+            "every": "jede willige Kreatur",
+            "one": "{number} willige Kreatur",
+            "other": "{number} willige Kreaturen"
+          }
+        }
+      }
+    },
+    "Target": "Ziel",
+    "TargetPl": "Ziele",
+    "TargetType": "Zielart",
+    "TargetTypeArea": "Bereich",
+    "TargetTypeIndividual": "Gezielt",
+    "TargetUnits": "Bereichseffekt-Einheit",
+    "TargetValue": "Ziellänge oder Anzahl",
+    "TargetWidth": "Linienbreite",
+    "TemplatePrompt": "Vorlagenabfrage",
+    "TemplatePromptTooltip": "Wenn nicht aktiviert, wird die Abfrage zum platzieren einer Vorlage unterdrückt.",
+    "Temp": "Temp",
+    "Threshold": "Schwellenwert",
+    "TimeDay": "Tage",
+    "TimeDayAbbr": "t",
+    "TimeDisp": "Bis der Zauber gebannt wird",
+    "TimeDispTrig": "Bis der Zauber gebannt oder ausgelöst wird",
+    "TimeHour": "Stunden",
+    "TimeHourAbbr": "h",
+    "TimeInst": "Sofort",
+    "TimeMinute": "Minuten",
+    "TimeMinuteAbbr": "m",
+    "TimeMonth": "Monate",
+    "TimePerm": "Permanent",
+    "TimeRound": "Runden",
+    "TimeTurn": "Züge",
+    "TimeYear": "Jahre",
+    "TMP": "TMP",
+    "ToHit": "Trefferbonus",
+    "Tokens": {
+      "NoneSelected": "Kein Token ausgewählt",
+      "NoneTargeted": "Kein Token anvisiert",
+      "Selected": "Ausgewählt",
+      "Targeted": "Anvisiert"
+    },
+    "ToggleDescription": "Beschreibung umschalten",
+    "TOOL": {
+      "SECTIONS": {
+        "Details": "{label} Details",
+        "Bonuses": {
+          "Label": "{label} Boni",
+          "Hint": "Diese Boni gelten für Proben, die mit {label} durchgeführt werden."
+        },
+        "Global": {
+          "Label": "Globale Boni",
+          "Hint": "Diese Boni gelten für Proben, die mit einem beliebigen Werkzeug durchgeführt werden."
+        }
+      }
+    },
+    "ToolArtisans": "Handwerkerausrüstung",
+    "ToolBonuses": "Werkzeugboni",
+    "ToolCheck": "Werkzeugprobe",
+    "ToolConfigure": "Übung mit Werkzeug bearbeiten",
+    "ToolDisguiseKit": "Verkleidungsausrüstung",
+    "ToolForgeryKit": "Fälscherausrüstung",
+    "ToolGamingSet": "Spiel",
+    "ToolHerbalismKit": "Kräuterkundeausrüstung",
+    "ToolMusicalInstrument": "Musikinstrument",
+    "ToolNavigators": "Navigationswerkzeuge",
+    "ToolPoisonersKit": "Giftmischerausrüstung",
+    "ToolPromptTitle": "{tool}-Probe",
+    "ToolThieves": "Diebeswerkzeug",
+    "ToolVehicle": "Fahrzeug",
+    "TraitAll": "Alle {category}",
+    "TraitArmorPlural": {
+      "one": "Übung mit Rüstung",
+      "other": "Übung mit Rüstungen"
+    },
+    "TraitArmorProf": "Übung mit Rüstung",
+    "TraitArmorLegacyPlural": {
+      "one": "Übung mit Rüstung",
+      "other": "Übung mit Rüstungen"
+    },
+    "TraitArmorLegacyProf": "Übung mit Rüstung",
+    "TraitCIPlural": {
+      "one": "Zustandsimmunität",
+      "other": "Zustandsimmunitäten"
+    },
+    "TraitConfig": "{trait} bearbeiten",
+    "TraitConfigChooseAnyCounted": "jede {count} {type}",
+    "TraitConfigChooseAnyUncounted": "jede {type}",
+    "TraitConfigChooseList": "{count} aus {list}",
+    "TraitConfigChooseOther": "{count} andere {type}",
+    "TraitConfigChooseWrapper": "Wähle {choices}",
+    "TraitDIPlural": {
+      "one": "Schadensimmunität",
+      "other": "Schadensimmunitäten"
+    },
+    "TraitDMPlural": {
+      "one": "Schadensmodifikator",
+      "other": "Schadensmodifikatoren"
+    },
+    "TraitDRPlural": {
+      "one": "Schadensresistenz",
+      "other": "Schadensresistenzen"
+    },
+    "TraitDVPlural": {
+      "one": "Schadensanfälligkeit",
+      "other": "Schadensanfälligkeiten"
+    },
+    "TraitGenericPlural": {
+      "one": "Merkmal",
+      "other": "Merkmale"
+    },
+    "TraitLanguagesPlural": {
+      "one": "Sprache",
+      "other": "Sprachen"
+    },
+    "TraitSave": "Speichern",
+    "TraitSavesPlural": {
+      "one": "Übung mit Rettungswurf",
+      "other": "Übung mit Rettungswürfen"
+    },
+    "TraitSelectorSpecial": "Spezial (durch Semikolon getrennt)",
+    "TraitSkillsPlural": {
+      "one": "Übung in Fertigkeit",
+      "other": "Übung in Fertigkeiten"
+    },
+    "TraitToolPlural": {
+      "one": "Übung mit Werkzeug",
+      "other": "Übung mit Werkzeugen"
+    },
+    "TraitToolProf": "Übung mit Werkzeug",
+    "TraitWeaponPlural": {
+      "one": "Übung mit Waffe",
+      "other": "Übung mit Waffen"
+    },
+    "TraitWeaponProf": "Übung mit Waffen",
+    "Traits": "Eigenschaften",
+    "TraitsChosen": "Gewählte Eigenschaften",
+    "Trigger": "Auslöser",
+    "Type": "Typ",
+    "Uncrewed": "Unbemannt",
+    "Unequipped": "Nicht angelegt",
+    "Unidentified": {
+      "DefaultName": "Unidentifiziert: {name}",
+      "Notice": "Du musst das Item identifizieren um die details zu erfahren.",
+      "Title": "Unidentifiziert",
+      "Value": "???"
+    },
+    "Unknown": "Unbekannt",
+    "Unlimited": "Unbegrenzt",
+    "USAGE": {
+      "SECTION": {
+        "Consumption": "Verbrauch",
+        "Creation": "Erstellen",
+        "Scaling": "Skalierung"
+      }
+    },
+    "Usage": "Nutzung",
+    "Use": "benutzen",
+    "UseItem": "{item} verwenden",
+    "Uses": "Nutzungen",
+    "UsesAvailable": "Verbleibende  Nutzungen",
+    "UsesMax": "Maximale Nutzungen",
+    "UsesPeriod": "Aufladungszeit",
+    "UsesPeriods": {
+      "Charges": "Aufladungen",
+      "ChargesAbbreviation": "Aufladungen"
+    },
+    "USES": {
+      "FIELDS": {
+        "uses": {
+          "label": "Nutzungen",
+          "max": {
+            "label": "Maximale Nutzungen",
+            "hint": "Formel für die maximale Anzahl von Nutzungen"
+          },
+          "recovery": {
+            "label": "Nutzung Wiederherstellung",
+            "hint": "Wiederherstellungsprofile für dies Nutzungen dieser Aktivität",
+            "FIELDS": {
+              "period": {
+                "label": "Wiederherstellungsperiode",
+                "hint": "Zeitpunkt, zu dem diese Wiedederherstellung eintreten wird."
+              },
+              "type": {
+                "label": "Wiederherstellungstyp",
+                "hint": "Wie Nutzungen wiederhergestellt werden."
+              },
+              "formula": {
+                "label": "Wiederherstellungsformel",
+                "hint": "Formel zur Bestimmung der Anzahl der wiederhergestellten Nutzungen."
+              }
+            }
+          },
+          "spent": {
+            "label": "Verbrauche Nutzung",
+            "hint": "Anzahl der Nutzungen die verbraucht werden."
+          }
+        }
+      },
+      "Recovery": {
+        "Action": {
+          "Create": "Erstelle Wiederherstellungsprofil",
+          "Delete": "Entferne Wiederherstellungsprofil"
+        },
+        "Recharge": {
+          "Label": "Wiederaufladen",
+          "Range": "Wiederaufladen {range}"
+        },
+        "Type": {
+          "Formula": "Eigene Formel",
+          "LoseAll": "Alle Nutzungen verlieren",
+          "RecoverAll": "Alle Nutzungen Wiederherstellen"
+        },
+        "Combat": "Kampf",
+        "Never": "Niemals",
+        "Period": {
+          "Dawn": {
+            "Label": "Tagesanbruch"
+          },
+          "Day": {
+            "Label": "Tag"
+          },
+          "Dusk": {
+            "Label": "Dämmerung"
+          },
+          "Initiative": {
+            "Label": "Initiative"
+          },
+          "LongRest": {
+            "Label": "Lange Rast",
+            "Abbreviation": "LR"
+          },
+          "ShortRest": {
+            "Label": "Kurze Rast",
+            "Abbreviation": "SR"
+          },
+          "Turn": {
+            "Label": "Jede Runde"
+          },
+          "TurnEnd": {
+            "Label": "Ende der Runde",
+            "Abbreviation": "Rundenende"
+          },
+          "TurnStart": {
+            "Label": "Rundenbeginn",
+            "Abbreviation": "Rundenbeginn"
+          }
+        },
+        "Special": "Spezial",
+        "Time": "Zeit"
+      }
+    },
+    "UTILITY": {
+      "FIELDS": {
+        "roll": {
+          "label": "Utility Wurf",
+          "formula": {
+            "label": "Wurf Formel",
+            "hint": "Formel für einen beliebigen Wurf."
+          },
+          "name": {
+            "label": "Wurf Beschriftung",
+            "hint": "Beschiftung für den Wurfknopf"
+          },
+          "prompt": {
+            "label": "Utility Wurf Abfrage",
+            "hint": "Sollte das Dialogfeld „Wurfkonfiguration“ beim Würfeln angezeigt werden?"
+          },
+          "visible": {
+            "label": "Sichtbar für Alle",
+            "hint": "Soll der Wurfknopf für alle Spieler sichtbar sein?"
+          }
+        }
+      },
+      "Title": "Utility"
+    },
+    "Value": "Wert",
+    "Vehicle": "Fahrzeug",
+    "Versatile": "Vielseitig",
+    "VersatileDamage": "Vielseitig: Schaden",
+    "VsDC": "gg. SG.",
+    "Vulnerabilities": "Verwundbarkeiten",
+    "WarnBadACFormula": "Die genutzte RK-Formel konnte nicht evaluiert werden.",
+    "WarnCantAddMultipleAdvancements": "Es ist momentan nicht möglich, gleichzeitig mehrere Items mit Fortschritten einem Akteur hinzuzufügen. Bitte Items einzeln hinzufügen.",
+    "WarnMultipleArmor": "Mehr als eine Rüstung ausgerüstet, RK-Berechnung ist möglicherweise inkorrekt.",
+    "WarnMultipleShields": "Mehr als ein Schild ausgerüstet, RK-Berechnung ist möglicherweise inkorrekt.",
+    "WEAPON": {
+      "FIELDS": {
+        "ammunition": {
+          "type": {
+            "label": "Munitionstyp"
+          }
+        },
+        "damage": {
+          "hint": "Würfel für intrinsische Schäden der Waffe. Modifikatoren für Attribute und zusätzliche Schadensbestandteile werden beim Angriff automatisch bereitgestellt."
+        },
+        "mastery": {
+          "label": "Meisterschaft",
+          "hint": "Spezielles Waffenattribut für Charaktere freigeschaltet, die die Waffenmeisterschaft oder ein verwandtes Merkmal besitzen."
+        }
+      },
+      "Mastery": {
+        "Label": "Waffenmeisterschaft",
+        "Flavor": "Meisterschaft",
+        "Cleave": "Spalten",
+        "Graze": "Streifen",
+        "Nick": "Schwingen",
+        "Push": "Stoßen",
+        "Sap": "Betäuben",
+        "Slow": "Verlangsamen",
+        "Topple": "Stürzen",
+        "Vex": "Wüten"
+      }
+    },
+    "WeaponCategory": "{category} Waffe",
+    "WeaponImprov": "Improvisiert",
+    "WeaponMartialM": "Kriegswaffe Nah.",
+    "WeaponMartialProficiency": "Übung Kriegswaffen",
+    "WeaponMartialR": "Kriegswaffe Fern.",
+    "WeaponNatural": "Natürlich",
+    "WeaponSiege": "Belagerungswaffe",
+    "WeaponSimpleM": "Einfache Waffe Nah.",
+    "WeaponSimpleProficiency": "Übung Einfache Waffen",
+    "WeaponSimpleR": "Einfache Waffe Fern.",
+    "Weight": "Gewicht",
+    "WhisperedTo": "Flüstern zu",
+    "Wiki": "Wiki",
+    "available": "verfügbar",
+    "description": "Ein umfassendes Spielsystem zum Spielen der Dungeons & Dragons 5. Edition in Foundry VTT.",
+    "of": "von",
+    "per": "pro",
+    "spell": "Zauber",
+    "AbilityModifierShort": "Mod",
+    "ACTIVEEFFECT": {
+      "AttributeKeyTooltip": "Eine Liste gängiger Schlüssel findest du unter <a href=\"{url}\">dem Wiki</a>.",
+      "FIELDS": {
+        "statuses": {
+          "label": "Zustände",
+          "hint": "Solange dieser Aktive Effekt wirkt, wird das Ziel so behandelt, als hätte es diese zusätzlichen Zustände."
+        }
+      }
+    },
+    "ACTOR": {
+      "Warning": {
+        "CreateActor": "Du musst die Berechtigung 'Neue Akteure erstellen' haben, um direkt aus einem Kompendium zu beschwören.",
+        "InvalidItem": "{itemType}-Gegenstände können nicht zu einem {actorType} hinzugefügt werden.",
+        "NoActor": "Akteur mit UUID '{uuid}' zum Beschwören nicht gefunden.",
+        "Singleton": "Nur ein einzelner {itemType} kann einem {actorType} hinzugefügt werden."
+      }
+    },
+    "Bastion": {
+      "Action": {
+        "BastionTurn": "Bastionszug vorrücken"
+      },
+      "Attack": {
+        "Automatic": "Automatisch auflösen",
+        "Formula": "Angriffsformel",
+        "NoActorWarning": "Kein Charakter als Ziel des Angriffs ausgewählt. Wähle entweder ein Token aus oder öffne dessen Charakterbogen.",
+        "Resolve": "Angriff auflösen",
+        "Result": {
+          "Damaged": "{link} wurde im Angriff beschädigt.",
+          "Deaths": {
+            "one": "<strong>{deaths}</strong> Verteidiger wurde bei einem Angriff auf seine Bastion getötet!",
+            "other": "<strong>{deaths}</strong> Verteidiger wurden bei einem Angriff auf ihre Bastion getötet!"
+          },
+          "NoDeaths": "Ein Angriff auf die Bastion wurde ohne Verluste abgewehrt!",
+          "Undefended": "Unverteidigte Bastion angegriffen!"
+        },
+        "Title": "Bastionsangriff"
+      },
+      "Button": {
+        "Label": "Bastionszug-Schaltfläche anzeigen",
+        "Hint": "Zeigt eine Schaltfläche zum Vorantreiben von Bastionszügen in der Hauptspieloberfläche an."
+      },
+      "Configuration": {
+        "Name": "Bastionen",
+        "Label": "Bastionen konfigurieren",
+        "Hint": "Verschiedene Konfigurationsoptionen für das Bastion-System, wie im DMG 2024 vorgestellt."
+      },
+      "Confirm": "Einen Bastionszug vorantreiben?",
+      "Duration": {
+        "Label": "Bastion-Zugdauer (Tage)"
+      },
+      "Enabled": {
+        "Label": "Bastion-Funktionalität aktivieren",
+        "Hint": "Wenn aktiviert, erhalten Spielercharaktere Zugriff auf einen neuen Bastion-Reiter auf ihren Charakterbögen, wenn sie Stufe 5 erreichen, und können Einrichtungen bauen und ihnen Befehle erteilen."
+      },
+      "Gold": {
+        "Claim": "Einkommen beanspruchen",
+        "Claimed": "beansprucht",
+        "Unclaimed": "unbeansprucht"
+      },
+      "Label": "Bastion",
+      "Summary": {
+        "Gold": "{value} ({claimed})",
+        "NoOrders": "Keine Aufträge an spezielle Einrichtungen in dieser Runde erteilt.",
+        "Order": "{link} hat den Auftrag <strong>{order}</strong> abgeschlossen."
+      },
+      "Trade": {
+        "Cancel": "Ausstehenden Handel abbrechen",
+        "Invalid": "Das Entfernen eines ausstehenden Handels macht deine Handelsbestellung ungültig.",
+        "Pending": "Ausstehender Handel"
+      }
+    },
+    "BONUSES": {
+      "FIELDS": {
+        "bonuses": {
+          "label": "Globale Boni",
+          "hint": "Globale Boni als Formeln, die zu bestimmten Würfen hinzugefügt werden.",
+          "abilities": {
+            "label": "Globale Attributsboni",
+            "check": {
+              "label": "Globaler Attributswurf-Bonus"
+            },
+            "save": {
+              "label": "Globaler Rettungswurf-Bonus"
+            },
+            "skill": {
+              "label": "Globaler Fertigkeitswurf-Bonus"
+            }
+          },
+          "msak": {
+            "label": "Nahkampfzauber-Boni",
+            "attack": {
+              "label": "Nahkampf-Zauberangriffsbonus"
+            },
+            "damage": {
+              "label": "Nahkampf-Zauberschadensbonus"
+            }
+          },
+          "mwak": {
+            "label": "Nahkampfwaffenboni",
+            "attack": {
+              "label": "Nahkampfwaffenangriffsbonus"
+            },
+            "damage": {
+              "label": "Nahkampfwaffenschadensbonus"
+            }
+          },
+          "rsak": {
+            "label": "Fernkampf-Zauberboni",
+            "attack": {
+              "label": "Fernkampf-Zauberangriffsbonus"
+            },
+            "damage": {
+              "label": "Fernkampf-Zauberschadensbonus"
+            }
+          },
+          "rwak": {
+            "label": "Fernkampf-Waffenboni",
+            "attack": {
+              "label": "Fernkampf-Waffenangriffsbonus"
+            },
+            "damage": {
+              "label": "Bonus auf Fernkampfwaffenschaden"
+            }
+          },
+          "spell": {
+            "label": "Globale Zauberboni",
+            "dc": {
+              "label": "Globaler Zauber-SG-Bonus"
+            }
+          }
+        }
+      }
+    },
+    "CALENDAR": {
+      "Action": {
+        "AdvanceTime": "Um {amount} vorrücken",
+        "OpenCharacterSheet": "Charakterbogen öffnen",
+        "OpenPartySheet": "Gruppenblatt öffnen",
+        "ReverseTime": "Um {amount} zurücksetzen",
+        "SetDate": "Datum festlegen"
+      },
+      "Component": {
+        "Day": "Tag",
+        "Month": "Monat",
+        "Year": "Jahr"
+      },
+      "Configuration": {
+        "DisabledMessage": "Der SL muss die Kalender-Oberfläche aktivieren, bevor sie von Spielern verwendet werden kann.",
+        "Hint": "Steuert, ob das Kalender-HUD angezeigt wird und wie es funktioniert.",
+        "Label": "Kalender konfigurieren",
+        "Name": "Kalender",
+        "Preferences": "Kalendereinstellungen",
+        "UnavailableMessage": "Die Standard-Kalender-Oberfläche ist nicht verfügbar, da sie von einem Modul deaktiviert wurde."
+      },
+      "FIELDS": {
+        "calendar": {
+          "hint": "Dieser Kalender wird zur Verfolgung der Spielzeit verwendet.",
+          "label": "Kalender"
+        },
+        "enabled": {
+          "hint": "Erlaube allen Benutzern, die Kalender-Benutzeroberfläche anzuzeigen und anzupassen.",
+          "label": "Aktiviert"
+        },
+        "formatters": {
+          "date": {
+            "label": "Datumsformat"
+          },
+          "time": {
+            "label": "Zeitformat"
+          }
+        },
+        "visible": {
+          "label": "Kalender-HUD anzeigen"
+        }
+      },
+      "Formatters": {
+        "Date": "Datumsformatierungen",
+        "ApproximateDate": {
+          "EarlySeason": "Früh {season}",
+          "Label": "Ungefähres Datum",
+          "LateSeason": "Spät {season}",
+          "MidSeason": "Mitte-{season}"
+        },
+        "ApproximateTime": {
+          "Afternoon": "Nachmittag",
+          "Dawn": "Morgendämmerung",
+          "Dusk": "Abenddämmerung",
+          "Evening": "Abend",
+          "Label": "Ungefähre Zeit",
+          "Midnight": "Mitternacht"
+        }
+      }
+    },
+    "ITEM": {
+      "Category": {
+        "Label": "Kategorie",
+        "Physical": "Physisch"
+      },
+      "Property": {
+        "Adamantine": "Adamantine",
+        "Ammunition": "Munition",
+        "Concentration": "Konzentration",
+        "Finesse": "Finte",
+        "Firearm": "Schusswaffe",
+        "Focus": "Fokus",
+        "Gear": "Ausrüstung",
+        "Heavy": "Schwer",
+        "Light": "Leicht",
+        "Loading": "Nachladen",
+        "Material": "Material",
+        "Magical": "Magisch",
+        "Reach": "Reichweite",
+        "Reload": "Nachladen",
+        "Returning": "Zurückkehrend",
+        "Ritual": "Ritual",
+        "Sidekick": "Sidekick",
+        "Silvered": "Versilbert",
+        "Somatic": "Somatisch",
+        "Special": "Besonders",
+        "StealthDisadvantage": "Nachteil auf Heimlichkeit",
+        "Thrown": "Wurf",
+        "Trait": "Passives Merkmal",
+        "TwoHanded": "Zweihändig",
+        "Versatile": "Vielseitig",
+        "Verbal": "Verbal",
+        "WeightlessContents": "Gewichtslose Inhalte"
+      },
+      "SECTIONS": {
+        "Activities": "Aktivitäten",
+        "Advancement": "Fortschritt",
+        "Contents": "Inhalte",
+        "Description": "Beschreibung",
+        "Details": "Details",
+        "Effects": "Effekte"
+      }
+    },
+    "REST": {
+      "Configuration": "Rast-Konfiguration",
+      "HitDice": {
+        "AutoSpend": {
+          "Hint": "Trefferwürfel automatisch ausgeben, bis sie aufgebraucht sind oder die Gesundheit voll ist.",
+          "Label": "HD automatisch ausgeben"
+        },
+        "None": "Keine Trefferwürfel mehr übrig, die während dieser Rast gewürfelt werden können.",
+        "Select": "Würfel zum Würfeln auswählen"
+      },
+      "Label": "Rast",
+      "Long": {
+        "Abbreviation": "LR",
+        "Hint": {
+          "Group": "Bei einer langen Rast erholen sich Gruppenmitglieder Trefferpunkte, Trefferwürfel, Klassenressourcen, Ladungen von Gegenständen mit begrenzter Nutzung und Zauberplätze.",
+          "GroupLegacy": "Bei einer langen Rast erholen sich Gruppenmitglieder Trefferpunkte, die Hälfte ihrer maximalen Trefferwürfel, Klassenressourcen, Ladungen von Gegenständen mit begrenzter Nutzung und Zauberplätze.",
+          "Normal": "Bei einer langen Rast erholst du Trefferpunkte, Trefferwürfel, Klassenressourcen, Ladungen von Gegenständen mit begrenzter Nutzung und Zauberplätze.",
+          "NormalLegacy": "Bei einer langen Rast erholt ihr Trefferpunkte, die Hälfte eurer maximalen Trefferwürfel, Klassenressourcen, Ladungen von Gegenständen mit begrenzter Nutzung und Zauberplätze."
+        },
+        "Label": "Lange Rast",
+        "LabelShort": "L. Rast",
+        "Recovery": "Erholt sich nach langer Rast",
+        "Result": {
+          "Full": "{name} macht eine lange Rast und erholt sich um {health} und {dice}.",
+          "HitDice": "{name} macht eine lange Rast und stellt {dice} Trefferwürfel wieder her.",
+          "HitPoints": "{name} macht eine lange Rast und stellt {health} Trefferpunkte wieder her.",
+          "Short": "{name} macht eine lange Rast."
+        }
+      },
+      "NewDay": {
+        "Hint": "Stellt Fähigkeiten mit begrenzter Nutzung wieder her, die bei Dämmerung, Morgengrauen oder an einem neuen Tag wieder aufgeladen werden.",
+        "Label": "Neuer Tag"
+      },
+      "RecoverTempHP": {
+        "Label": "Temporäre TP entfernen"
+      },
+      "RecoverTempMaxHP": {
+        "Hint": "Entfernt alle Anpassungen an den maximalen Trefferpunkten eines Charakters.",
+        "Label": "Maximale TP wiederherstellen"
+      },
+      "Request": {
+        "AutoRest": {
+          "Hint": "Führt die Rast automatisch für ausgewählte Gruppen-Akteure durch, anstatt eine Raste-Anfrage an die Spieler zu senden.",
+          "Label": "Automatische Rast"
+        },
+        "Label": "Rastanfrage"
+      },
+      "Short": {
+        "Abbreviation": "KR",
+        "Hint": {
+          "Group": "Bei einer kurzen Rast können Gruppenmitglieder Trefferwürfel ausgeben und stellen Gegenstandsverwendungen wieder her.",
+          "Normal": "Bei einer kurzen Rast kannst du verbleibende Trefferwürfel ausgeben und Gegenstandsverwendungen wiederherstellen."
+        },
+        "Label": "Kurze Rast",
+        "LabelShort": "Kurze Rast",
+        "Recovery": "Erholung nach kurzer Rast",
+        "Result": {
+          "Full": "{name} macht eine kurze Rast, verbraucht {dice}, um {health} wiederherzustellen.",
+          "Short": "{name} macht eine kurze Rast."
+        }
+      },
+      "Warning": {
+        "OnlyByRequest": "Rasten können nur auf Anfrage des Spielleiters durchgeführt werden."
+      }
+    },
+    "SheetClass": {
+      "Character": "D&D 5e Charakterbogen",
+      "ClassSummary": "D&D 5e Klassenübersichtsbogen",
+      "Container": "D&D 5e Containerbogen",
+      "DifficultTerrain": "D&D 5e Bogen für schwieriges Gelände",
+      "Encounter": "D&D 5e Begegnungsbogen",
+      "Group": "D&D 5e Gruppen-Charakterbogen",
+      "Item": "D&D 5e Gegenstandsblatt",
+      "JournalEntry": "D&D 5e Journaleintragsblatt",
+      "JournalEntryLegacy": "Veraltetes D&D 5e Journaleintragsblatt",
+      "MapLocation": "D&D 5e Kartenort-Blatt",
+      "NPC": "D&D 5e NSC-Charakterbogen",
+      "RollTable": "D&D 5e Würfeltabellen-Blatt",
+      "RotateArea": "D&D 5e Rotationsbereich-Blatt",
+      "Rule": "D&D 5e Regel-Blatt",
+      "SpellList": "D&D 5e Zauberlisten-Blatt",
+      "Token": "D&D 5e Token-Blatt",
+      "Vehicle": "D&D 5e Fahrzeug-Blatt"
+    },
+    "SPELLCASTING": {
+      "METHODS": {
+        "AtWill": {
+          "label": "Beliebig oft"
+        },
+        "Innate": {
+          "label": "Angeborene Zauber"
+        },
+        "Ritual": {
+          "label": "Nur als Ritual"
+        },
+        "Spell": {
+          "label": "Zauberwirken",
+          "Full": {
+            "label": "Voller Zauberwirker"
+          },
+          "Half": {
+            "label": "Halber Zauberwirker"
+          },
+          "Third": {
+            "label": "Drittel-Zauberwirker"
+          },
+          "Artificer": {
+            "label": "Artificer"
+          }
+        },
+        "Pact": {
+          "abbr": "Pakt",
+          "label": "Paktmagie",
+          "Full": {
+            "label": "Paktmagie"
+          }
+        }
+      },
+      "SLOTS": {
+        "spell0": "Zaubertricks",
+        "spell1": "1. Grad",
+        "spell2": "2. Grad",
+        "spell3": "3. Grad",
+        "spell4": "4. Grad",
+        "spell5": "5. Grad",
+        "spell6": "6. Grad",
+        "spell7": "7. Stufe",
+        "spell8": "8. Stufe",
+        "spell9": "9. Stufe"
+      },
+      "STATES": {
+        "Unprepared": "Nicht vorbereitet",
+        "Prepared": "Vorbereitet",
+        "AlwaysPrepared": "Immer vorbereitet"
+      },
+      "Unlabeled": "Unbenanntes Zauberwirken"
+    },
+    "UNITS": {
+      "DISTANCE": {
+        "Foot": {
+          "Abbreviation": "ft",
+          "Label": "Fuß",
+          "Template": "Fuß"
+        },
+        "Kilometer": {
+          "Abbreviation": "km",
+          "Label": "Kilometer",
+          "Template": "Kilometer"
+        },
+        "Label": "Entfernungseinheit",
+        "Meter": {
+          "Abbreviation": "m",
+          "Label": "Meter",
+          "Template": "Meter"
+        },
+        "Mile": {
+          "Abbreviation": "km",
+          "Label": "Kilometer",
+          "Template": "Kilometer"
+        }
+      },
+      "TIME": {
+        "Day": {
+          "Label": "Tag"
+        },
+        "Hour": {
+          "Label": "Stunde"
+        },
+        "Minute": {
+          "Label": "Minute"
+        },
+        "Month": {
+          "Label": "Monat"
+        },
+        "Round": {
+          "Label": "Runde",
+          "Counted": {
+            "narrow": "{number}R",
+            "one": "{number} Runde",
+            "other": "{number} Runden"
+          }
+        },
+        "Second": {
+          "Label": "Sekunde"
+        },
+        "Turn": {
+          "Label": "Zug",
+          "Abbreviation": "Z",
+          "Counted": {
+            "narrow": "{number}Z",
+            "one": "{number} Zug",
+            "other": "{number} Züge"
+          }
+        },
+        "Week": {
+          "Label": "Woche"
+        },
+        "Year": {
+          "Label": "Jahr"
+        }
+      },
+      "TRAVEL": {
+        "Kilometer": {
+          "AbbreviationHour": "km/h",
+          "AbbreviationDay": "km/d",
+          "Label": "Kilometer"
+        },
+        "Label": "Reiseeinheit",
+        "Mile": {
+          "AbbreviationDay": "km/T",
+          "AbbreviationHour": "km/h",
+          "Label": "Kilometer"
+        }
+      },
+      "VOLUME": {
+        "Label": "Volumeneinheiten",
+        "CubicFoot": {
+          "Abbreviation": "m³",
+          "Counted": {
+            "narrow": {
+              "one": "{number}m³",
+              "other": "{number}m³"
+            },
+            "short": {
+              "other": "{number} cu ft",
+              "one": "{number} m³"
+            },
+            "long": {
+              "one": "{number} Kubikfuß",
+              "other": "{number} Kubikfuß"
+            }
+          },
+          "Label": "Kubikfuß"
+        },
+        "Liter": {
+          "Label": "Liter",
+          "Abbreviation": "L"
+        }
+      },
+      "WEIGHT": {
+        "Label": "Gewichtseinheiten",
+        "Kilogram": {
+          "Label": "Kilogramm",
+          "Abbreviation": "kg"
+        },
+        "Megagram": {
+          "Label": "Tonnen",
+          "Abbreviation": "t",
+          "Counted": {
+            "narrow": {
+              "one": "{number}t",
+              "other": "{number}t"
+            },
+            "short": {
+              "one": "{number} t",
+              "other": "{number} t"
+            },
+            "long": {
+              "one": "{number} Tonne",
+              "other": "{number} Tonnen"
+            }
+          }
+        },
+        "Pound": {
+          "Abbreviation": "lb",
+          "Label": "Pfund"
+        },
+        "Ton": {
+          "Label": "Tonnen",
+          "Abbreviation": "t",
+          "Counted": {
+            "narrow": {
+              "one": "{number}t",
+              "other": "{number}t"
+            },
+            "short": {
+              "one": "{number} t",
+              "other": "{number} t"
+            },
+            "long": {
+              "one": "{number} Tonne",
+              "other": "{number} Tonnen"
+            }
+          }
+        }
+      }
+    },
+    "VEHICLE": {
+      "Action": {
+        "Create": {
+          "Equipment": "Ausrüstung erstellen",
+          "Feature": "Merkmal erstellen",
+          "Weapon": "Waffe erstellen"
+        },
+        "Crew": {
+          "Decrease": "Verringern",
+          "Increase": "Erhöhen"
+        },
+        "Drop": {
+          "Animal": "Zugtier ablegen",
+          "Crew": "Besatzung ablegen",
+          "Passengers": "Passagiere absetzen"
+        },
+        "Uncrew": "Besatzung entfernen"
+      },
+      "Actions": {
+        "Ordinal": {
+          "one": "{n}. Aktion",
+          "two": "{n}. Aktion",
+          "few": "{n}. Aktion",
+          "other": "{n}. Aktion"
+        }
+      },
+      "Activation": {
+        "Crew": {
+          "label": "Besatzungsaktion"
+        }
+      },
+      "Crew": {
+        "Assigned": "Zugewiesen",
+        "Label": "Besatzung",
+        "Passengers": "Passagiere",
+        "Unassigned": "Unbesetzt"
+      },
+      "FIELDS": {
+        "attributes": {
+          "actions": {
+            "label": "Aktionen",
+            "max": {
+              "hint": "Aktionen, die mit einer vollständigen Besatzung ausgeführt werden können",
+              "label": "Maximale Aktionen"
+            },
+            "spent": {
+              "label": "Verbrauchte Aktionen"
+            },
+            "stations": {
+              "label": "Aktionsstationen"
+            },
+            "thresholds": {
+              "full": {
+                "label": "Volle Besatzungsstärke"
+              },
+              "mid": {
+                "label": "Teilweise Besatzungsstärke"
+              },
+              "min": {
+                "label": "Minimale Besatzungsstärke"
+              },
+              "label": "Schwellenwerte"
+            }
+          },
+          "capacity": {
+            "cargo": {
+              "value": {
+                "label": "Ladung"
+              }
+            },
+            "label": "Kapazität"
+          }
+        },
+        "crew": {
+          "max": {
+            "label": "Besatzung"
+          }
+        },
+        "passengers": {
+          "max": {
+            "label": "Passagiere"
+          }
+        },
+        "traits": {
+          "beam": {
+            "value": {
+              "label": "Breite"
+            }
+          },
+          "keel": {
+            "value": {
+              "label": "Kiel"
+            }
+          }
+        }
+      },
+      "Mishap": {
+        "label": "Unglück",
+        "Threshold": {
+          "abbr": "US",
+          "label": "Unglücksschwelle"
+        }
+      },
+      "MOUNTABLE": {
+        "FIELDS": {
+          "cover": {
+            "label": "Deckung",
+            "hint": "Deckung, die der Besatzung gewährt wird, die diese Ausrüstung bedient."
+          },
+          "crew": {
+            "label": "Besatzung"
+          },
+          "hp": {
+            "label": "Trefferpunkte",
+            "conditions": {
+              "label": "Gesundheitszustand"
+            },
+            "dt": {
+              "label": "Schadensschwelle"
+            },
+            "max": {
+              "label": "Max. LP"
+            },
+            "value": {
+              "label": "Aktuelle LP"
+            }
+          },
+          "speed": {
+            "conditions": {
+              "label": "Geschwindigkeitsbedingungen"
+            },
+            "value": {
+              "label": "Geschwindigkeit"
+            }
+          }
+        }
+      },
+      "Option": {
+        "Abilities": "Fähigkeiten anzeigen",
+        "Initiative": "Initiative anzeigen",
+        "Quality": "Qualität anzeigen"
+      },
+      "Tabs": {
+        "Cargo": "Ladung",
+        "CrewPassengers": "Besatzung & Passagiere"
+      },
+      "Type": {
+        "Air": {
+          "label": "Luftfahrzeug"
+        },
+        "label": "Fahrzeugtyp",
+        "Land": {
+          "label": "Landfahrzeug"
+        },
+        "Space": {
+          "label": "Raumfahrzeug"
+        },
+        "Water": {
+          "label": "Wasserfahrzeug"
+        }
+      }
+    }
+  },
+  "EDITOR": {
+    "DND5E": {
+      "Inline": {
+        "ApplyStatus": "Status auf ausgewählte Token anwenden",
+        "AwardEach": "{award} jeden",
+        "CheckShort": "{check}",
+        "CheckLong": "{check} prüfung",
+        "DamageShort": "{formula} {type}",
+        "DamageLong": "{average} ({formula}) {type}",
+        "DC": "SG {dc} {check}",
+        "DCPassiveShort": "SG {dc} passiver {check}",
+        "DCPassiveLong": "passiver {check} Wert von {dc} oder höher",
+        "NoActorWarning": "Es konnte kein ausgewählter oder zugewiesener Akteur gefunden werden, um den Wurf auszuführen",
+        "RequestRoll": "Wurf anfragen",
+        "RollRequest": "Anfragen eines Wurfes",
+        "SaveShort": "{save}",
+        "SaveLong": "{save} Rettungswurf",
+        "SpecificCheck": "{ability} ({type})",
+        "Warning": {
+          "NoActivityOnItem": "{item} von {actor} hat keine Aktivität mit dem Namen {activity}.",
+          "NoActor": "Es konnte kein ausgewählter oder zugewiesener Akteur gefunden werden um diesen Wurf auszuführen",
+          "NoItemOnActor": "{actor} hat kein Item mit dem Namen {item}."
+        }
+      }
+    }
+  },
+  "EFFECT": {
+    "DND5E": {
+      "StatusBleeding": "Bluten",
+      "StatusBloodied": "Blutig",
+      "StatusBurning": "Brennend",
+      "StatusBurrowing": "Eingraben",
+      "StatusConcentrating": "Konzentration",
+      "StatusCursed": "Verflucht",
+      "StatusDead": "Tod",
+      "StatusDehydration": "Dehydrierung",
+      "StatusDodging": "Ausweichen",
+      "StatusEncumbered": "Belastet",
+      "StatusEthereal": "Ätherisch",
+      "StatusExceedingCarryingCapacity": "Überschreitung der Traglastt",
+      "StatusFalling": "Fallend",
+      "StatusFlying": "Fliegen",
+      "StatusHalfCover": "Halbe Deckung",
+      "StatusHeavilyEncumbered": "Stark belastet",
+      "StatusHiding": "Verstecken",
+      "StatusHovering": "Schweben",
+      "StatusMalnutrition": "Unterernährung",
+      "StatusMarked": "Markiert",
+      "StatusSilenced": "Stumm",
+      "StatusSleeping": "Schlafen",
+      "StatusStable": "Stabil",
+      "StatusSuffocation": "Ersticken",
+      "StatusSurprised": "Überrascht",
+      "StatusThreeQuartersCover": "Dreivierteldeckung",
+      "StatusTotalCover": "Vollständige Deckung",
+      "StatusTransformed": "Verwandelt"
+    }
+  },
+  "JOURNALENTRYPAGE": {
+    "DND5E": {
+      "Class": {
+        "FIELDS": {
+          "description": {
+            "additionalEquipment": {
+              "label": "Zusätzliche Ausrüstung Beschreibung",
+              "hint": "Zusätzlicher beschreibender Text, der unter dem Startausrüstungsabschnitt angezeigt wird."
+            },
+            "additionalHitPoints": {
+              "label": "Zusätzliche Trefferpunkte Beschreibung",
+              "hint": "Zusätzlicher beschreibender Text, der unter dem automatisch generierten Trefferpunkte Abschnitt angezeigt wird."
+            },
+            "additionalTraits": {
+              "label": "Zusätzliche Übungen Beschreibung",
+              "hint": "Zusätzlicher beschreibender Text, der unter der Liste der von dieser Klasse gewährten Übungen angezeigt wird."
+            },
+            "subclass": {
+              "label": "Unterklassen-Einleitung",
+              "hint": "Einleitung, die vor den Unterklassen dieser Klasse angezeigt wird."
+            },
+            "value": {
+              "label": "Einleitung",
+              "hint": "Grundsätzliche Beschreibung der Klasse. Wird zuerst angezeigt."
+            }
+          },
+          "item": {
+            "label": "Gewählte Klasse"
+          },
+          "style": {
+            "label": "Stil",
+            "hint": "Erzwinge die Verwendung der Modernen oder Legacy-Formatierung für den Seitenstil, anstatt des durch die Klasse festgelegten."
+          },
+          "subclassHeader": {
+            "label": "Unterklassenabschnitt"
+          },
+          "subclassItems": {
+            "label": "Unterklassen"
+          }
+        },
+        "EquipmentHeader": "Ausrüstung",
+        "EquipmentDescription": "Du beginnst mit der folgenden Ausrüstung, zusätzlich zu der, die du durch deinen Hintergrund erhältst:",
+        "Features": {
+          "DescriptionLegacy": "Als {name} erhältst du die folgenden Klassenmerkmale, die in der {name}-Tabelle zusammengefasst werden.",
+          "DescriptionModern": "Als ein {name}, erhältst du die folgenden Klassenmerkmale wenn du die spezifische {name} Stufe erreichst. Die Merkmale sind in der {name} Merkmale Tabelle gelistet.",
+          "Header": "Klassenmerkmale",
+          "Name": "Stufe {level}: {name}"
+        },
+        "HitPoints": {
+          "Header": "Trefferpunkte",
+          "HitDiceLegacy": "<strong>Trefferwürfel:</strong> {dice} pro Stufe als {class}",
+          "HitDiceModern": "{dice} pro {class} Stufe",
+          "Level1": "<strong>Trefferpunkte auf Stufe 1:</strong> {max} + dein Konstitutionsmodifikator",
+          "LevelX": "<strong>Trefferpunkte auf höheren Stufen:</strong> {dice} (oder {average}) + dein Konstitutionsmodifikator pro Stufe als {class} über die 1. Stufe hinaus"
+        },
+        "ItemHint": "Klasse hierhin ziehen",
+        "NoValidClass": "Keine gültige Klasse gewählt, Bearbeiten nutzen um eine Klasse hinzuzufügen.",
+        "OptionalFeaturesCaption": "Optionale Klassenmerkmale",
+        "OptionalFeaturesDescription": "Der folgende Abschnitt enthält optionale {class}-Klassenmerkmale. Diese werden nicht automatisch zugewiesen und können einzeln, alle oder nach Wahl der Spielleitung gewählt werden.",
+        "SpellSlotLevel": "Platzgrad",
+        "SpellSlots": "Zauberplätze",
+        "SpellSlotsPerSpellLevel": "—Zauberplätze pro Grad—",
+        "Style": {
+          "Inferred": "Aus Quelle abgeleitet",
+          "Legacy": "Legacy",
+          "Modern": "Modern"
+        },
+        "SubclassHint": "Unterklassen hierhin ziehen",
+        "TableCaption": "{class}",
+        "TableOptionalCaption": "Optionale {class}-Klassenmerkmale",
+        "Traits": {
+          "Caption": "{class} Kernmerkmale",
+          "Header": "Übung"
+        }
+      },
+      "EditDescription": "Bearbeiten",
+      "TableTOC": "Tabelle: {caption}",
+      "SpellList": {
+        "DropHint": "Zauber oder Ordner mit Zaubern hierhin ziehen um die Liste zu ergänzen",
+        "Grouping": {
+          "Label": "Gruppierungsmodus",
+          "Hint": "Legt fest, wie die Zauber standardmäßig in der Zauberliste gruppiert werden sollen.",
+          "Alphabetical": "Nach Anfangsbuchstaben",
+          "Level": "Nach Zaubergrad",
+          "None": "Keine Gruppierung",
+          "School": "Nach Zauberschule"
+        },
+        "IdentifierHint": "Die ID sollte mit der im zugehörigen Dokument definierten ID übereinstimmen, falls zutreffend. Bei der Erstellung einer Zauberliste für die Klasse \"Magier\" sollte die ID beispielsweise \"Magier\" lauten.",
+        "Type": {
+          "Label": "Zauberlisten-Typ",
+          "Other": "Unkategorisiert"
+        },
+        "UnlinkedSpells": {
+          "Label": "Unverlinkte Zauber",
+          "Add": "Unverlinkte Zauber hinzufügen",
+          "Configuration": "Zauberkonfiguration",
+          "Edit": "Unverlinkte Zauber bearbeiten"
+        }
+      },
+      "Subclass": {
+        "FIELDS": {
+          "description": {
+            "value": {
+              "label": "Einleitung",
+              "hint": "Grundsätzliche Beschreibung der Unterklasse. Wird zuerst angezeigt."
+            }
+          },
+          "item": {
+            "label": "Gewählte Unterklasse"
+          },
+          "style": {
+            "label": "Stil",
+            "hint": "Erzwingt, dass der Seitenstil moderne oder Legacy-Formatierung verwendet und nicht die von der Unterklasse vorgegebene."
+          }
+        },
+        "ItemHint": "Unterklasse hierhin ziehen",
+        "NoValidSubclass": "Keine gültige Unterklasse gewählt, Bearbeiten nutzen um eine Unterlasse hinzuzufügen."
+      }
+    }
+  },
+  "KEYBINDINGS": {
+    "DND5E": {
+      "SkipDialogNormal": "Überspringe Dialog",
+      "SkipDialogAdvantage": "Überspringe Dialog (Wurf mit Vorteil/Kritisch)",
+      "SkipDialogDisadvantage": "Überspringe Dialog (Wurf mit Nachteil)"
+    }
+  },
+  "MACRO": {
+    "5eMissingTargetWarn": "Dein kontrollierter Akteur '{actor}' hat kein(en) {type} mit Namen '{name}'.",
+    "5eMultipleTargetsWarn": "Dein kontrollierter Akteur '{actor}' hat mehr als ein(en) {type} mit Namen '{name}'. Der erste Treffer wird genutzt.",
+    "5eNoActorSelected": "Kein gewählter oder zugewiesener Akteur konnte als Ziel für Makro gefunden werden.",
+    "5eUnownedWarn": "Du kannst nur Makrobuttons für Items erstellen, die dir gehören"
+  },
+  "MIGRATION": {
+    "5eBegin": "Migriere DnD5E System zu Version {version}. Bitte Geduld haben und das Spiel nicht schließen oder beenden.",
+    "5eComplete": "DnD5E System-Migration zu Version {version} abgeschlossen!",
+    "5eVersionTooOldWarning": "Die DnD5e-Systemdaten stammen von einer zu alten Foundry-Version und können nicht verlässlich migriert werden. Ein Versuch wird unternommen, aber Fehler können auftreten."
+  },
+  "SETTINGS": {
+    "5eAutoCollapseCardL": "Objektkartenbeschreibungen im Chat-Protokoll automatisch zusammenklappen",
+    "5eAutoCollapseCardN": "Objektkarten im Chat zusammenklappen",
+    "5eAutoSpellTemplateL": "Wenn ein Zauberspruch gewirkt wird, beginnt standardmäßig der Prozess zur Erstellung der entsprechenden Messschablone, falls vorhanden (erfordert die Spielerrolle TRUSTED) oder eine höhere Rolle",
+    "5eAutoSpellTemplateN": "Messschablone immer platzieren",
+    "5eNoAdvancementsN": "Stufenaufstieg nicht automatisieren",
+    "5eNoAdvancementsL": "Bei Stufenaufstieg und Charaktererstellung keine Auswahl abfragen.",
+    "5eNoConcentrationN": "Konzentrationsverfolgung deaktivieren",
+    "5eNoConcentrationL": "Deaktivieren Sie die automatische Verfolgung der Konzentration durch das System.",
+    "5eGridAlignedSquareTemplatesL": "Wenn quadratische Schablonen durch das Wirken eines Zaubers oder die Verwendung eines Gegenstands erstellt werden, sind sie an die Ausrichtung des Rasters gebunden und können nicht gedreht werden.",
+    "5eGridAlignedSquareTemplatesN": "Am Raster ausgerichtete quadratische Schablonen",
+    "DND5E": {
+      "BLOODIED": {
+        "Name": "Blutig Status",
+        "Hint": "Konfiguriere, ob der Blutig Status automatisch verfolgt wird und dessen Sichtbarkeit.",
+        "All": "Anzeigen für Verbündete und Feinde",
+        "Player": "Nur für Verbündete Anzeigen",
+        "None": "Nicht anzeigen"
+      },
+      "COLLAPSETRAYS": {
+        "Name": "Fächer im Chat zusammenklappen",
+        "Hint": "Automatisches Einklappen von Schadens-, Treffer- und Effektfächern, die in Chat-Karten erscheinen.",
+        "Always": "Alle einklappen",
+        "Older": "Ältere Fächer zusammenklappen",
+        "Never": "Alle ausklappen",
+        "Manual": "Nie einklappen"
+      },
+      "DEFAULTSKILLS": {
+        "Name": "Standard Fertigkeit",
+        "Hint": "Die Fertigkeiten, die unabhängig vom Grad der Übung, Standardmäßig auf den NPC-Bögen erscheinen"
+      },
+      "THEME": {
+        "Name": "Thema",
+        "Hint": "Thema, das standardmäßig auf die Benutzeroberfläche und alle Blätter angewendet wird. Die Automatik wird durch die Einstellungen Ihres Browsers oder Betriebssystems bestimmt."
+      },
+      "RULESVERSION": {
+        "Name": "Regel Version",
+        "Hint": "Ändere die Handhabung verschiedener Regeln zwischen den Regelsätzen von 2024 und 2014",
+        "Legacy": "Legacy Regeln (2014)",
+        "Modern": "Moderne Regeln (2024)"
+      },
+      "AUTOMATION": {
+        "Movement": {
+          "Name": "Bewegungsautomatisierung",
+          "Hint": "Konfiguriere den Grad der Bewegungsautomatisierung, die vom System verwendet wird: Volle Automatisierung inklusive Token-Blockierung, teilweise Automatisierung nur für schwieriges Gelände, oder komplett deaktiviert.",
+          "Full": "Voll",
+          "NoBlocking": "Teilweise",
+          "None": "Keine"
+        }
+      },
+      "COMBAT": {
+        "Hint": "Verschiedene Konfigurationsoptionen, die den Kampf beeinflussen.",
+        "Label": "Kampf konfigurieren",
+        "Name": "Kampf",
+        "DexTiebreaker": {
+          "Name": "Geschicklichkeits-Gleichstandsentscheider",
+          "Hint": "Hänge den rohen Geschicklichkeitswert an, um Gleichstände in der Initiative zu entscheiden."
+        },
+        "InitiativeScore": {
+          "Name": "Initiativwert",
+          "Hint": "Verwende den Initiativwert einer Kreatur (10 + Bonus) anstatt für die Initiative zu würfeln.",
+          "All": "Initiativwert für alle verwenden",
+          "None": "Immer für die Initiative würfeln",
+          "NPCs": "Verwende Wert für SL-NSCs"
+        }
+      },
+      "CRITICAL": {
+        "Name": "Kritischer Schaden",
+        "MaxDice": {
+          "Name": "Würfel maximieren",
+          "Hint": "Mache kritische Treffer tödlicher, durch Maximieren der Werte der Basis-Schadenswürfel."
+        },
+        "MultiplyModifiers": {
+          "Name": "Modifikatoren multiplizieren",
+          "Hint": "Mache kritische Treffer tödlicher, durch Multiplizieren von Nicht-Würfel-Modifikatoren zusätzlich zu den gewürfelten Würfeln."
+        }
+      },
+      "General": "Allgemein",
+      "LOYALTY": {
+        "Hint": "Optionale Loyalitätsverfolgung aktivieren.",
+        "Name": "Loyalitätswert"
+      },
+      "METRIC": {
+        "LengthUnits": {
+          "Name": "Metrische Längeneinheiten verwenden",
+          "Hint": "Verwendet standardmäßig Meter anstelle von Fuß für Bewegung und Sinne."
+        },
+        "VolumeUnits": {
+          "Name": "Metrische Volumeneinheiten verwenden",
+          "Hint": "Verwendet standardmäßig Liter anstelle von Kubikfuß für die Behälterkapazität."
+        },
+        "WeightUnits": {
+          "Name": "Metrische Gewichtseinheiten verwenden",
+          "Hint": "Ersetzt alle Verweise auf Pfund durch kg und aktualisiert die Berechnungen für die Traglast, um metrische Gewichtseinheiten zu verwenden."
+        }
+      },
+      "NPCS": {
+        "Name": "NSCs",
+        "AutoRecharge": {
+          "Name": "Fähigkeiten wiederaufladen",
+          "Hint": "Würfelt automatisch zu Beginn des Zuges des NSCs, um dessen Fähigkeiten wieder aufzuladen.",
+          "No": "Nicht automatisch aufladen",
+          "Silent": "Aufladen ohne Chatkarte zu erstellen",
+          "Yes": "Aufladen und Chatkarte anzeigen"
+        },
+        "AutoRollNPCHP": {
+          "Name": "Trefferpunkte",
+          "Hint": "Konfiguriert, ob für die maximalen TP von NSCs gewürfelt werden soll, wenn ein neues Token erstellt wird.",
+          "No": "Nicht würfeln",
+          "Silent": "Würfeln, ohne eine Chatkarte zu erstellen",
+          "Yes": "Würfeln und Chatkarte erstellen"
+        }
+      },
+      "PERMISSIONS": {
+        "AllowRests": {
+          "Hint": "Erlaube Spielern, direkt von ihren Charakterbögen aus zu rasten. Wenn deaktiviert, können Spieler nur rasten, wenn der Spielleiter eine Anfrage von der Gruppe ausstellt.",
+          "Name": "Individuelle Rasten zulassen"
+        },
+        "AllowSummoning": {
+          "Hint": "Erlaube Spielern, Beschwörungsfähigkeiten zu nutzen, um Akteure zu beschwören. Spieler müssen auch die Kernberechtigung 'Token erstellen' besitzen.",
+          "Name": "Beschwörung zulassen"
+        },
+        "AllowTransformation": {
+          "Hint": "Erlaube Spielern, ihre eigenen Akteure zu transformieren. Spieler müssen auch die Kernberechtigungen „Akteure erstellen“ und „Token erstellen“ besitzen.",
+          "Name": "Transformation erlauben"
+        }
+      },
+      "VARIANT": {
+        "Hint": "Aktiviere und konfiguriere Regelvarianten, die vom System angeboten werden.",
+        "Label": "Variantenregeln konfigurieren",
+        "Name": "Variantenregeln",
+        "AllowFeats": {
+          "Hint": "Erlaube Spielern, ein Talent zu wählen, anstatt eine Attributsverbesserung während des Klassenaufstiegs zu nehmen, wenn die Legacy-Regeln verwendet werden.",
+          "Name": "Talente erlauben"
+        },
+        "CurrencyWeight": {
+          "Hint": "Getragenes Geld beeinflusst die Belastung des Charakters.",
+          "Name": "Währungsgewicht verfolgen"
+        },
+        "Encumbrance": {
+          "Hint": "Aktiviere die automatische Nachverfolgung von Belastung und die Anwendung von Statuseffekten für Charaktere, die zu viel tragen.",
+          "Name": "Belastungsnachverfolgung",
+          "None": "Keine",
+          "Normal": "Normal (maximale Tragfähigkeit)",
+          "Variant": "Variante (belastet & stark belastet)"
+        },
+        "HonorScore": {
+          "Hint": "Aktiviert die Verwendung des optionalen Ehren-Attributs.",
+          "Name": "Ehren-Attributswert"
+        },
+        "LevelingMode": {
+          "Hint": "Bestimmt, wie die Spieler neue Stufen erreichen.",
+          "Name": "Stufenaufstiegsmodus",
+          "NoXP": "Stufenaufstieg ohne EP",
+          "XP": "Erfahrungspunkte",
+          "XPBoons": "Erfahrungspunkte mit Epischen Gaben"
+        },
+        "ProficiencyModifier": {
+          "Bonus": "PHB: Bonus (+2, +3, +4, +5, +6)",
+          "Dice": "DMG: Würfel (1d4, 1d6, 1d8, 1d10, 1d12)",
+          "Hint": "Konfiguriert den Übungsbonus-Modifikator, um einen festen Bonus oder einen Würfelwurf zu verwenden.",
+          "Name": "Übungsvariante"
+        },
+        "Rest": {
+          "Epic": "Epischer Heroismus (LR: 1 Stunde, SR: 1 Minute)",
+          "Gritty": "Rauer Realismus (LR: 7 Tage, SR: 8 Stunden)",
+          "Hint": "Konfiguriere, welche Rastvariante für Spiele in diesem System verwendet werden soll.",
+          "Name": "Rastvariante",
+          "Normal": "Spielerhandbuch (LR: 8 Stunden, SR: 1 Stunde)"
+        },
+        "SanityScore": {
+          "Hint": "Aktiviert die Verwendung des optionalen Attributs Geistige Stabilität.",
+          "Name": "Attribut Geistige Stabilität"
+        }
+      },
+      "VISIBILITY": {
+        "Hint": "Verschiedene Konfigurationsoptionen, die die Sichtbarkeit für Spieler von Informationen beeinflussen, die der Spielleiter möglicherweise geheim halten möchte.",
+        "Label": "Sichtbarkeit konfigurieren",
+        "Name": "Sichtbarkeit",
+        "Attack": {
+          "Name": "Sichtbarkeit des Angriffsergebnisses",
+          "Hint": "Steuert die Sichtbarkeit von Angriffswurfergebnissen in Chatkarten für Spieler.",
+          "All": "Ergebnisse & Ziel-RKs anzeigen",
+          "HideAC": "Nur Ergebnisse anzeigen",
+          "None": "Alle ausblenden"
+        },
+        "Challenge": {
+          "All": "Alle anzeigen",
+          "Hint": "Kontrolliert, welche Wurf-SG für die Spieler sichtbar sind und ob Erfolge/Misserfolge hervorgehoben werden.",
+          "Name": "Sichtbarkeit der Herausforderung",
+          "None": "Alle ausblenden",
+          "Player": "Nur von anderen Spielern anzeigen"
+        },
+        "ItemDescriptions": {
+          "Hint": "Verstecke die Beschreibungen von NSC-Gegenständen vor Spielern, wenn sie vom SL in den Chat gepostet werden. Dies verbirgt nur Beschreibungen für Gegenstände, die keine Chat-Beschreibung festgelegt haben.",
+          "Name": "NSC-Beschreibungen verbergen"
+        }
+      }
+    }
+  },
+  "SHEETS": {
+    "DND5E": {
+      "THEME": {
+        "Label": "Thema",
+        "Automatic": "Automatisch",
+        "Dark": "Dunkler Modus",
+        "Light": "Heller Modus"
+      }
+    }
+  },
+  "SIDEBAR": {
+    "SortModePriority": "Nach Priorität sortieren"
+  }
+}

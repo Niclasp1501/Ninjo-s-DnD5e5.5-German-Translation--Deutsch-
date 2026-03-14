@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Current Version / Aktuelle Version:** 0.1.0
+**Current Version / Aktuelle Version:** 0.1.2
 
 German localization module for the official Foundry VTT `dnd5e` system (5.x) on Foundry VTT v13.
 
@@ -17,6 +17,7 @@ MVP scope: UI-first localization only. No SRD or compendium gameplay content is 
 ### Requirements
 - Foundry VTT v13
 - Official `dnd5e` system, version 5.x
+- Python 3.10+
 
 ### Installation
 1. Open Foundry VTT and go to **Add-on Modules**.
@@ -29,14 +30,25 @@ MVP scope: UI-first localization only. No SRD or compendium gameplay content is 
 - `module.json`: module metadata and dependency on `dnd5e`
 - `scripts/init.js`: minimal runtime guard and init hook
 - `languages/de.json`: primary localization file
-- `tools/`: diff and validation scripts
-- `config/`: scope and glossary governance files
+- `config/`: scope, glossary and metric policy
+- `tools/`: migration, diff, translation and validation scripts
 
-### Contribution Workflow (planned)
-1. Diff latest `dnd5e/lang/en.json` against `languages/de.json`.
-2. Translate missing UI keys.
-3. Run validation checks (JSON, placeholders, scope).
-4. Open PR with changelog entry.
+### LLM Translation Pipeline (Gemini)
+1. Extract missing keys:
+   `python tools/extract_missing_keys.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --de languages/de.json --out tools/missing-keys.json`
+2. Set API key:
+   `setx GEMINI_API_KEY "<your-key>"`
+3. Generate suggestions (writes `languages/de.suggestions.json`):
+   `python tools/translate_missing_gemini.py --missing tools/missing-keys.json`
+4. Validate suggestions (placeholders, HTML tags, unit plausibility):
+   `python tools/validate_suggestions.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --suggestions languages/de.suggestions.json`
+5. Merge approved suggestions:
+   `python tools/merge_suggestions.py --base languages/de.json --suggestions languages/de.suggestions.json --out languages/de.json`
+
+Notes:
+- The LLM is allowed to suggest metric conversions.
+- Suggestions are intentionally written to a separate file first.
+- Validation blocks obviously broken placeholder and unit output.
 
 ---
 
@@ -49,6 +61,7 @@ MVP scope: UI-first localization only. No SRD or compendium gameplay content is 
 ### Voraussetzungen
 - Foundry VTT v13
 - Offizielles `dnd5e`-System, Version 5.x
+- Python 3.10+
 
 ### Installation
 1. Foundry VTT starten und zu **Zusatzmodule** wechseln.
@@ -61,10 +74,34 @@ MVP scope: UI-first localization only. No SRD or compendium gameplay content is 
 - `module.json`: Modul-Metadaten und `dnd5e`-Abhangigkeit
 - `scripts/init.js`: minimaler Runtime-Guard und Init-Hook
 - `languages/de.json`: zentrale Ubersetzungsdatei
-- `tools/`: Diff- und Validierungs-Skripte
-- `config/`: Scope- und Glossar-Regeln
+- `config/`: Scope-, Glossar- und Metrik-Policy
+- `tools/`: Migrations-, Extraktions-, Ubersetzungs- und Validierungs-Skripte
+
+### LLM-Ubersetzungs-Pipeline (Gemini)
+1. Fehlende Keys extrahieren:
+   `python tools/extract_missing_keys.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --de languages/de.json --out tools/missing-keys.json`
+2. API-Key setzen:
+   `setx GEMINI_API_KEY "<dein-key>"`
+3. Vorschlage erzeugen (`languages/de.suggestions.json`):
+   `python tools/translate_missing_gemini.py --missing tools/missing-keys.json`
+4. Vorschlage validieren (Platzhalter, HTML-Tags, Einheiten-Plausibilitat):
+   `python tools/validate_suggestions.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --suggestions languages/de.suggestions.json`
+5. Freigegebene Vorschlage mergen:
+   `python tools/merge_suggestions.py --base languages/de.json --suggestions languages/de.suggestions.json --out languages/de.json`
+
+Hinweise:
+- Das LLM darf metrische Umrechnungen vorschlagen.
+- Vorschlage gehen bewusst erst in eine separate Datei.
+- Die Validierung blockt offensichtliche Platzhalter-/Einheitenfehler.
 
 ---
 
 ## License / Lizenz
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
+### Live Window Runner (PowerShell)
+Start a separate PowerShell window with live pipeline status:
+`powershell -ExecutionPolicy Bypass -File tools/start_pipeline_window.ps1 -BatchSize 5 -SleepMs 3000 -MaxBatches 5`
+
+The window shows each stage and writes a full log to `tools/logs/`.
+

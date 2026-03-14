@@ -1,0 +1,37 @@
+{
+  "mode": "metric_or_dual",
+  "require_number_when_source_has_number": true,
+  "require_unit_when_source_has_imperial_unit": true,
+  "imperial_units": [
+    "ft",
+    "feet",
+    "foot",
+    "mile",
+    "miles",
+    "lb",
+    "lbs",
+    "pound",
+    "pounds",
+    "oz",
+    "ounce",
+    "ounces"
+  ],
+  "metric_units": [
+    "mm",
+    "cm",
+    "m",
+    "km",
+    "g",
+    "kg",
+    "ml",
+    "l",
+    "meter",
+    "metern",
+    "kilometer",
+    "kilometern",
+    "gramm",
+    "kilogramm",
+    "liter",
+    "litern"
+  ]
+}

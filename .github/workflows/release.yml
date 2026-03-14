@@ -1,12 +1,43 @@
 name: Release
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - "v*.*.*"
 
 jobs:
-  package:
+  package-and-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
-      - name: Prepare release artifact
-        run: echo "Release workflow placeholder"
+
+      - name: Read module version
+        id: version
+        run: |
+          VERSION=$(python -c "import json; print(json.load(open('module.json', encoding='utf-8'))['version'])")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Verify tag matches module version
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          VERSION="${{ steps.version.outputs.version }}"
+          if [ "$TAG" != "v$VERSION" ]; then
+            echo "Tag $TAG does not match module.json version v$VERSION"
+            exit 1
+          fi
+
+      - name: Build module.zip
+        run: |
+          mkdir -p dist
+          zip -r dist/module.zip module.json README.md CHANGELOG.md LICENSE languages scripts config tools .github/workflows
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: |
+            module.json
+            dist/module.zip
