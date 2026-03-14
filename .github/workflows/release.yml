@@ -32,7 +32,17 @@ jobs:
       - name: Build module.zip
         run: |
           mkdir -p dist
-          zip -r dist/module.zip module.json README.md CHANGELOG.md LICENSE languages scripts config tools .github/workflows
+          INCLUDE_FILES="module.json README.md CHANGELOG.md LICENSE"
+          INCLUDE_DIRS="languages scripts packs templates styles assets"
+
+          ZIP_INPUTS="$INCLUDE_FILES"
+          for d in $INCLUDE_DIRS; do
+            if [ -d "$d" ]; then
+              ZIP_INPUTS="$ZIP_INPUTS $d"
+            fi
+          done
+
+          zip -r dist/module.zip $ZIP_INPUTS
 
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2

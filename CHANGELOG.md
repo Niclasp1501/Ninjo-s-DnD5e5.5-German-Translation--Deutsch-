@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-03-15
+### Changed
+- Version bumped to `0.1.3` in `module.json` and `README.md`.
+- README cleaned up and synchronized with current tooltip-reference architecture.
+
+### Fixed
+- Removed invalid document-type migration attempt for legacy tooltip pages.
+- Added safe migration path for legacy `text` pages: replace with `rule`/`skill` pages instead of type mutation.
+- Added duplicate cleanup logic for internal skill tooltip pages to avoid stale references.
+
 ## [0.1.2] - 2026-03-14
 ### Added
 - Full translation coverage for `SETTINGS.DND5E` (module settings UI).

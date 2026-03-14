@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Current Version / Aktuelle Version:** 0.1.2
+**Current Version / Aktuelle Version:** 0.1.3
 
 German localization module for the official Foundry VTT `dnd5e` system (5.x) on Foundry VTT v13.
 
@@ -28,10 +28,15 @@ MVP scope: UI-first localization only. No SRD or compendium gameplay content is 
 
 ### Architecture
 - `module.json`: module metadata and dependency on `dnd5e`
-- `scripts/init.js`: minimal runtime guard and init hook
+- `scripts/init.js`: runtime guard, DE-only boot logic, internal skill-tooltip reference mapping
 - `languages/de.json`: primary localization file
 - `config/`: scope, glossary and metric policy
 - `tools/`: migration, diff, translation and validation scripts
+
+### DE Skill Tooltip References (Internal)
+- On first load in a German UI, a GM creates one internal world JournalEntry with DE skill pages.
+- The module remaps `CONFIG.DND5E.skills.*.reference` to these JournalEntryPage UUIDs.
+- Tooltips then use native dnd5e reference rendering.
 
 ### LLM Translation Pipeline (Gemini)
 1. Extract missing keys:
@@ -72,10 +77,15 @@ Notes:
 
 ### Projektstruktur
 - `module.json`: Modul-Metadaten und `dnd5e`-Abhangigkeit
-- `scripts/init.js`: minimaler Runtime-Guard und Init-Hook
+- `scripts/init.js`: Runtime-Guard, DE-Bootlogik, interne Skill-Tooltip-Referenzzuweisung
 - `languages/de.json`: zentrale Ubersetzungsdatei
 - `config/`: Scope-, Glossar- und Metrik-Policy
 - `tools/`: Migrations-, Extraktions-, Ubersetzungs- und Validierungs-Skripte
+
+### DE-Skill-Tooltip-Referenzen (intern)
+- Beim ersten Laden mit deutscher UI legt ein GM einen internen Welt-Journal-Eintrag mit DE-Skill-Seiten an.
+- Das Modul mappt `CONFIG.DND5E.skills.*.reference` auf diese JournalEntryPage-UUIDs.
+- Tooltips werden dann nativ uber die dnd5e-Referenzdarstellung angezeigt.
 
 ### LLM-Ubersetzungs-Pipeline (Gemini)
 1. Fehlende Keys extrahieren:
@@ -104,4 +114,3 @@ Start a separate PowerShell window with live pipeline status:
 `powershell -ExecutionPolicy Bypass -File tools/start_pipeline_window.ps1 -BatchSize 5 -SleepMs 3000 -MaxBatches 5`
 
 The window shows each stage and writes a full log to `tools/logs/`.
-
