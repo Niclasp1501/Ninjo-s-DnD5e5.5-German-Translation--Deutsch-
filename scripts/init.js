@@ -52,6 +52,15 @@ const TOC_HEADING_MAP_DE_NORMALIZED = new Map(
   Array.from(TOC_HEADING_MAP_DE.entries(), ([source, target]) => [source.toLowerCase(), target])
 );
 const BabeleReferenceLabelMap = new Map();
+const COMPENDIUM_LABEL_MAP_DE = new Map([
+  ["D&D Modern Content", "D&D Moderne Inhalte"],
+  ["D&D Legacy Content", "D&D Legacy-Inhalte"],
+  ["Character Features", "Charaktermerkmale"],
+  ["Items & Spells", "Gegenstände & Zauber"],
+  ["Monsters", "Monster"],
+  ["Player's Handbook", "Spielerhandbuch"],
+  ["Players Handbook", "Spielerhandbuch"]
+]);
 
 const SKILL_LABELS_DE = {
   acr: "Akrobatik",
@@ -257,6 +266,106 @@ function localizeTocHeading(value) {
   return TOC_HEADING_MAP_DE.get(text) ?? text;
 }
 
+function localizeCompendiumLabel(value) {
+  const text = String(value ?? "").trim();
+  if (!text) return text;
+  return COMPENDIUM_LABEL_MAP_DE.get(text) ?? text;
+}
+
+function localizePackFolderTree(folderNode) {
+  if (!folderNode || typeof folderNode !== "object") return;
+
+  if (typeof folderNode.name === "string") {
+    folderNode.name = localizeCompendiumLabel(folderNode.name);
+  }
+
+  for (const child of folderNode.folders ?? []) {
+    localizePackFolderTree(child);
+  }
+}
+
+function localizeDnd5ePackFoldersConfig() {
+  const roots = game.system?.packFolders;
+  if (!Array.isArray(roots)) return;
+  for (const root of roots) localizePackFolderTree(root);
+}
+
+function localizeCompendiumSidebarInElement(rootElement) {
+  if (!rootElement?.querySelectorAll) return 0;
+
+  const replaceTextNodeValue = value => {
+    let output = value;
+    for (const [source, target] of COMPENDIUM_LABEL_MAP_DE.entries()) {
+      const escaped = source.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      output = output.replace(new RegExp(`(^|\\s)${escaped}(?=\\s|$)`), `$1${target}`);
+    }
+    return output;
+  };
+
+  let changed = 0;
+  const selectors = [
+    "#compendium .directory .folder .folder-header h3",
+    "#compendium .directory .folder .folder-header .folder-name",
+    "#compendium .directory .folder .folder-name",
+    "#compendium .directory .entry-name",
+    "#compendium .package .package-title",
+    "#compendium .compendium-name",
+    "#compendium .folder .folder-header",
+    "#compendium .folder .folder-title"
+  ].join(", ");
+
+  for (const node of rootElement.querySelectorAll(selectors)) {
+    if (!node) continue;
+
+    for (const child of node.childNodes ?? []) {
+      if (child.nodeType !== Node.TEXT_NODE) continue;
+      const original = String(child.nodeValue ?? "");
+      const replaced = replaceTextNodeValue(original);
+      if (replaced === original) continue;
+      child.nodeValue = replaced;
+      changed += 1;
+    }
+
+    const direct = String(node.textContent ?? "").trim();
+    if (!direct) continue;
+    const localized = localizeCompendiumLabel(direct);
+    if (localized !== direct && node.childElementCount === 0) {
+      node.textContent = localized;
+      changed += 1;
+    }
+  }
+
+  return changed;
+}
+
+async function localizeCompendiumFolderDocuments() {
+  if (!game.user?.isGM) return 0;
+
+  const updates = [];
+  for (const folder of game.folders ?? []) {
+    if (folder.type !== "Compendium") continue;
+    const localized = localizeCompendiumLabel(folder.name);
+    if (localized === folder.name) continue;
+    updates.push({ _id: folder.id, name: localized });
+  }
+
+  if (!updates.length) return 0;
+
+  try {
+    await Folder.implementation.updateDocuments(updates, { diff: false, render: false });
+  } catch (_err) {
+    for (const update of updates) {
+      const folder = game.folders.get(update._id);
+      if (!folder) continue;
+      await folder.update({ name: update.name }, { diff: false, render: false });
+    }
+  }
+
+  ui.compendium?.render(true);
+  console.log(`[${MODULE_ID}] Localized compendium folders: ${updates.length}`);
+  return updates.length;
+}
+
 function patchTableOfContentsCompendiumContext() {
   if (patchTableOfContentsCompendiumContext._installed) return;
   patchTableOfContentsCompendiumContext._installed = true;
@@ -299,6 +408,7 @@ function installLegacyUuidBridge() {
     normalizeLegacyUuidsInElement(element);
     localizeReferenceLabelsInElement(element);
     localizeOverviewHeadingsInElement(element);
+    localizeCompendiumSidebarInElement(element);
   };
 
   document.addEventListener(
@@ -450,6 +560,8 @@ Hooks.once("ready", async () => {
   if (game.system.id !== "dnd5e") return;
   if (!isGermanUi()) return;
 
+  localizeDnd5ePackFoldersConfig();
+  await localizeCompendiumFolderDocuments();
   patchTableOfContentsCompendiumContext();
 
   if (isCompendiumTranslationEnabled()) {
@@ -481,5 +593,14 @@ Hooks.once("ready", async () => {
     }
   } catch (err) {
     console.error(`[${MODULE_ID}] Failed to map DE skill tooltip references from module compendium`, err);
+  }
+});
+
+Hooks.on("renderCompendiumDirectory", (_app, html) => {
+  if (game.system.id !== "dnd5e" || !isGermanUi()) return;
+  const element = html?.[0] ?? html;
+  localizeCompendiumSidebarInElement(element);
+  for (const delay of [50, 250, 1000]) {
+    window.setTimeout(() => localizeCompendiumSidebarInElement(element), delay);
   }
 });

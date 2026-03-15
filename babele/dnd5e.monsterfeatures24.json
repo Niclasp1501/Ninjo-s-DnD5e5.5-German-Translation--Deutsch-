@@ -18,6 +18,11 @@
       "converter": "dnd5e55ActivitiesDeRuntime"
     }
   },
-  "folders": {},
+  "folders": {
+    "Actions": "Aktionen",
+    "Attacks": "Angriffe",
+    "Legendary Actions": "Legendäre Aktionen",
+    "Traits": "Eigenschaften"
+  },
   "entries": {}
 }
