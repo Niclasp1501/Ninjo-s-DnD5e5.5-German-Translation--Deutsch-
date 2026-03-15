@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-03-15
+### Changed
+- Localized compendium folder names more robustly for legacy and modern sidebar structures.
+- Standardized legacy SRD pack labels to include `(SRD, DE)` consistently (heroes, rules, tables, monsters).
+
+### Fixed
+- Legacy folder headers (`D&D Legacy Content`, `Character Features`, `Items & Spells`, `Monsters`) now localize reliably in-world.
+- `Player's Handbook` sidebar label now localizes to `Spielerhandbuch`.
+
 ## [1.0.1] - 2026-03-15
 ### Changed
 - Expanded runtime TOC heading localization for modern rules overview chapters.

@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Version:** 1.0.1  
+**Version:** 1.0.2  
 **Status:** Beta
 
 Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins Deutsche.
@@ -18,7 +18,7 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Beta betrifft primär Regel-/Kompendiumsinhalte (SRD und weitere Inhalte).
 - Aktuell ist in diesem Bereich vor allem **Ausrüstung** (Legacy + Modern) weit ausgebaut.
 - Weitere Inhalte folgen schrittweise in kommenden Releases.
-- In `1.0.1` wurden zusätzliche Kapitel- und Inhaltsüberschriften im Modern-Rules-TOC lokalisiert.
+- In `1.0.2` wurden Kompendium-Ordnernamen (Legacy/Modern) robuster lokalisiert und SRD-Label konsistent auf `(SRD, DE)` vereinheitlicht.
 
 ### Feedback
 - Feedback ist ausdrücklich willkommen und hilft direkt bei der Priorisierung der nächsten Übersetzungsbereiche.
@@ -29,7 +29,7 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Babele 2.7.5 oder neuer
 
 ### Optional empfohlen
-- `metric-ruler-labels` (separates Modul) fÃ¼r zusÃ¤tzliche metrische Anzeigen im Lineal/Messwerkzeug.
+- `metric-ruler-labels` (separates Modul) für zusätzliche metrische Anzeigen im Lineal/Messwerkzeug.
 
 ### Installation
 1. In Foundry auf **Add-on Modules** gehen.
@@ -53,7 +53,7 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Beta currently applies mainly to rules/compendium content (SRD and additional content packs).
 - In that area, **equipment** (legacy + modern) is currently the most developed.
 - More content will be added step by step in upcoming releases.
-- `1.0.1` adds additional localized chapter and content headings in the modern rules TOC.
+- `1.0.2` improves compendium folder localization (legacy/modern) and standardizes SRD pack labels to `(SRD, DE)`.
 
 ### Feedback
 - Feedback is very welcome and helps prioritize the next translation areas.

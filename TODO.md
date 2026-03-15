@@ -1,7 +1,7 @@
 # TODO
 
 ## Release Tracking
-- [x] Latest release: `1.0.1` (2026-03-15)
+- [x] Latest release: `1.0.2` (2026-03-15)
 
 ## Next Releases
 - [x] Strict-provenance Babele migration baseline (legacy/modern split + allowlist + gap report).
