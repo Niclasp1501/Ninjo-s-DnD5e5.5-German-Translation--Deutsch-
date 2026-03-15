@@ -12,3 +12,5 @@ tools/missing-*.json
 tools/_*.py
 
 .codex_tmp_dnd5e_upstream/
+
+oldmod_ref_20260315/
