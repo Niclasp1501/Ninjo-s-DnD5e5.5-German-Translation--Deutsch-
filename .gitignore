@@ -10,3 +10,5 @@ languages/*.suggestions.json
 tools/*report*.json
 tools/missing-*.json
 tools/_*.py
+
+.codex_tmp_dnd5e_upstream/
