@@ -1,6 +1,13 @@
 {
-  "label": "Equipment - DE Runtime",
-  "types": ["weapon", "tool"],
+  "label": "Ausrüstung (Modern, DE)",
+  "types": [
+    "weapon",
+    "tool",
+    "equipment",
+    "consumable",
+    "loot",
+    "container"
+  ],
   "mapping": {
     "name": {
       "path": "name",
@@ -22,5 +29,38 @@
       "path": "system.weight.units",
       "converter": "dnd5e55WeightUnitMetricRuntime"
     }
+  },
+  "folders": {
+    "Tools": "Werkzeuge",
+    "Tool": "Werkzeug",
+    "Other": "Sonstiges",
+    "Weapon": "Waffen",
+    "Weapons": "Waffen",
+    "Armor": "Rüstungen",
+    "Container": "Behälter",
+    "Containers": "Behälter",
+    "Equipment": "Ausrüstung",
+    "Equipment Packs": "Ausrüstungspakete",
+    "Ammunition": "Munition",
+    "Loot": "Beute",
+    "Food": "Proviant",
+    "Potion": "Tränke",
+    "Potions": "Tränke",
+    "Poison": "Gifte",
+    "Poisons": "Gifte",
+    "Scroll": "Schriftrollen",
+    "Scrolls": "Schriftrollen",
+    "Rod": "Stäbe",
+    "Wand": "Zauberstäbe",
+    "Trinket": "Schmuckstücke",
+    "Adventuring Gear": "Abenteuerausrüstung",
+    "Consumables": "Verbrauchsgüter",
+    "Supplemental": "Ergänzend",
+    "Traps": "Fallen",
+    "Artisan": "Handwerk",
+    "Gaming Set": "Spielset",
+    "Musical Instrument": "Musikinstrument",
+    "Ring": "Ringe",
+    "Spellcasting Focus": "Zauberfokus"
   }
 }

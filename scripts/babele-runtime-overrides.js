@@ -1,4 +1,4 @@
-export const TOOL_OVERRIDES_BY_ID = {
+﻿export const CURATED_OVERRIDES_BY_ID = {
   phbtulForgeryKit: {
     name: "Fälscherausrüstung",
     description:
@@ -42,3 +42,6 @@ export const TOOL_OVERRIDES_BY_ID = {
     }
   }
 };
+
+// Backward compatibility for older imports.
+export const TOOL_OVERRIDES_BY_ID = CURATED_OVERRIDES_BY_ID;

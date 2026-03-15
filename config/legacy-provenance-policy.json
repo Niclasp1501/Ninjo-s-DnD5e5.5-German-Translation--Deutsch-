@@ -1,0 +1,14 @@
+﻿{
+  "packs": {
+    "items": {
+      "legacyFiles": ["dnd5e.items.json"],
+      "types": ["weapon", "tool", "equipment", "consumable", "loot", "container"],
+      "mode": "allow_exact_name"
+    },
+    "equipment24": {
+      "legacyFiles": ["dnd5e.items.json"],
+      "types": ["weapon", "tool", "equipment", "consumable", "loot", "container"],
+      "mode": "allow_ids_only"
+    }
+  }
+}

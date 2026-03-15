@@ -1,14 +1,12 @@
-import { GENERATED_OVERRIDES_BY_ID } from "./babele-runtime-overrides.generated.js";
-import { TOOL_OVERRIDES_BY_ID } from "./babele-runtime-overrides.js";
+import { LEGACY_OVERRIDES_BY_ID } from "./babele-runtime-overrides.legacy.generated.js";
+import { MODERN_OVERRIDES_BY_ID } from "./babele-runtime-overrides.modern.generated.js";
+import { CURATED_OVERRIDES_BY_ID } from "./babele-runtime-overrides.js";
 
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
+const ITEM_TYPES_WITH_WEIGHT = new Set(["weapon", "tool", "equipment", "consumable", "loot", "container"]);
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
-}
-
-function isTargetType(data) {
-  return !!data && (data.type === "weapon" || data.type === "tool");
 }
 
 function getSourceId(data) {
@@ -19,10 +17,12 @@ function getItemId(data) {
   return getSourceId(data) || data?._id || "";
 }
 
-function getToolOverride(data) {
+function getOverrideById(data) {
   const itemId = getItemId(data);
   if (!itemId) return null;
-  return TOOL_OVERRIDES_BY_ID[itemId] || GENERATED_OVERRIDES_BY_ID[itemId] || null;
+
+  // Priority: curated manual > modern generated > strict legacy generated.
+  return CURATED_OVERRIDES_BY_ID[itemId] || MODERN_OVERRIDES_BY_ID[itemId] || LEGACY_OVERRIDES_BY_ID[itemId] || null;
 }
 
 function roundMetric(value) {
@@ -31,23 +31,23 @@ function roundMetric(value) {
   return Math.round((n / 2) * 10) / 10;
 }
 
-function translateItemNameRuntime(originalValue, _entryTranslation, data) {
-  if (!isGermanUi() || !isTargetType(data)) return originalValue;
-  const override = getToolOverride(data);
+function translateNameRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const override = getOverrideById(data);
   return override?.name || originalValue;
 }
 
-function translateToolWeaponDescriptionRuntime(originalValue, _entryTranslation, data) {
-  if (!isGermanUi() || !isTargetType(data)) return originalValue;
-  const override = getToolOverride(data);
+function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const override = getOverrideById(data);
   return override?.description || originalValue;
 }
 
-function translateToolWeaponActivitiesRuntime(originalValue, _entryTranslation, data) {
-  if (!isGermanUi() || !isTargetType(data)) return originalValue;
+function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
   if (!originalValue || typeof originalValue !== "object") return originalValue;
 
-  const override = getToolOverride(data);
+  const override = getOverrideById(data);
   if (!override?.activities) return originalValue;
 
   const translated = foundry.utils.deepClone(originalValue);
@@ -60,12 +60,16 @@ function translateToolWeaponActivitiesRuntime(originalValue, _entryTranslation, 
 }
 
 function convertWeightValueRuntime(originalValue, _entryTranslation, data) {
-  if (!isGermanUi() || !isTargetType(data)) return originalValue;
+  if (!isGermanUi()) return originalValue;
+  if (!ITEM_TYPES_WITH_WEIGHT.has(String(data?.type ?? ""))) return originalValue;
+  const units = String(data?.system?.weight?.units ?? "").toLowerCase();
+  if (units !== "lb") return originalValue;
   return roundMetric(originalValue);
 }
 
 function convertWeightUnitsRuntime(originalValue, _entryTranslation, data) {
-  if (!isGermanUi() || !isTargetType(data)) return originalValue;
+  if (!isGermanUi()) return originalValue;
+  if (!ITEM_TYPES_WITH_WEIGHT.has(String(data?.type ?? ""))) return originalValue;
   const units = String(originalValue ?? "").toLowerCase();
   return units === "lb" ? "kg" : originalValue;
 }
@@ -74,7 +78,7 @@ Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
 
   if (typeof Babele === "undefined") {
-    console.warn(`[${MODULE_ID}] Babele not found. Runtime weapon/tool translation is disabled.`);
+    console.warn(`[${MODULE_ID}] Babele not found. Runtime translation is disabled.`);
     return;
   }
 
@@ -85,12 +89,12 @@ Hooks.once("init", () => {
   });
 
   Babele.get().registerConverters({
-    dnd5e55NameDeRuntime: translateItemNameRuntime,
-    dnd5e55DescriptionDeRuntime: translateToolWeaponDescriptionRuntime,
-    dnd5e55ActivitiesDeRuntime: translateToolWeaponActivitiesRuntime,
+    dnd5e55NameDeRuntime: translateNameRuntime,
+    dnd5e55DescriptionDeRuntime: translateDescriptionRuntime,
+    dnd5e55ActivitiesDeRuntime: translateActivitiesRuntime,
     dnd5e55WeightMetricRuntime: convertWeightValueRuntime,
     dnd5e55WeightUnitMetricRuntime: convertWeightUnitsRuntime
   });
 
-  console.log(`[${MODULE_ID}] Babele runtime mappings registered for DE weapon/tool names, descriptions, and metric weights.`);
+  console.log(`[${MODULE_ID}] Babele runtime mappings registered with strict legacy/modern separation.`);
 });

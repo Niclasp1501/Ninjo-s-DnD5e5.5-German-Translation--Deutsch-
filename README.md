@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Current Version / Aktuelle Version:** 0.1.8
+**Current Version / Aktuelle Version:** 1.0.0
 
 German localization module for the official Foundry VTT `dnd5e` system (5.x) on Foundry VTT v13.
 
@@ -14,6 +14,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
 - Full German localization for major `dnd5e` 5.x interface areas.
 - Broad coverage for sheets, dialogs, settings, hints, labels, and workflow messages.
 - Internal module compendium for German skill tooltip references.
+- Strict legacy/modern runtime separation for Babele content mapping (legacy cannot overwrite new 2024+ content without ID allowlisting).
 - Clean module-first architecture for Foundry v13 and modern `dnd5e` 5.x updates.
 - Ongoing key coverage expansion with release-based updates.
 
@@ -22,6 +23,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
   - UI localization keys based on `dnd5e/lang/en.json`.
   - Interface-facing text used in regular gameplay workflows.
   - Skill tooltip reference integration through module-owned content.
+  - Babele runtime mapping for items and equipment24 (weapon/tool/equipment/consumable/loot/container) with strict provenance rules, including translated folder labels.
 - Excluded (MVP boundary):
   - SRD/content gameplay translations such as `content24`, `rules`, `spells24`, `classes24`, and similar compendium text bodies.
   - Full compendium translation packs outside interface needs.
@@ -62,6 +64,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
 - Umfassende deutsche Lokalisierung fuer zentrale `dnd5e`-5.x-Oberflaechen.
 - Breite Abdeckung fuer Character Sheets, Dialoge, Einstellungen, Hinweise, Labels und Workflow-Meldungen.
 - Internes Modul-Kompendium fuer deutsche Skill-Tooltip-Referenzen.
+- Strikte Legacy/Modern-Trennung fuer Babele-Content-Mappings (Legacy ueberschreibt 2024+-Inhalte nur mit ID-Allowlist).
 - Moderne, saubere Modul-Architektur fuer Foundry v13 und aktuelle `dnd5e`-5.x-Updates.
 - Laufende Erweiterung der Key-Abdeckung ueber Release-Updates.
 
@@ -70,6 +73,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
   - UI-Lokalisierungskeys auf Basis von `dnd5e/lang/en.json`.
   - Oberflaechentexte fuer typische Spiel- und Bedienablaeufe.
   - Skill-Tooltip-Referenzen ueber modul-eigene Inhalte.
+  - Babele-Runtime-Mapping fuer items und equipment24 (Waffen/Werkzeug/Ausruestung/Verbrauch/Beute/Behaelter) mit strikter Provenance-Regel inklusive uebersetzter Ordnerlabels.
 - Nicht enthalten (MVP-Grenze):
   - SRD-/Content-Spieltexte wie `content24`, `rules`, `spells24`, `classes24` und aehnliche Kompendium-Textkoerper.
   - Vollstaendige Kompendium-Uebersetzungspakete ausserhalb der UI-Fokussierung.

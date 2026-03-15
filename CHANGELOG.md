@@ -3,6 +3,33 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [1.0.0] - 2026-03-15
+### Added
+- Equipment-first release scope completed for legacy (`dnd5e.items`) and modern (`dnd5e.equipment24`) item families.
+- Folder label translation map for equipment/item group names (e.g. `Tools`, `Other`, `Armor`, `Weapon`).
+- Gemini handoff list for unresolved modern equipment entries: `tools/reports/gemini-candidates-equipment24.json`.
+
+### Changed
+- Version bumped to `1.0.0`.
+- Expanded active equipment mapping types to `weapon`, `tool`, `equipment`, `consumable`, `loot`, `container`.
+- Modern equipment import remains strict via ID allowlist; legacy import remains broader for known legacy scope.
+
+### Fixed
+- Corrected UTF-8 umlaut/encoding issues in curated tool translations.
+- Weight conversion now applies only when source units are `lb`, then maps units to `kg`.
+
+### Added
+- Strict-provenance migration pipeline for legacy content with explicit ID allowlist support for modern 2024+ packs.
+- Strict-provenance runtime mapping is currently limited to the stable weapon/tool scope in dnd5e.items and dnd5e.equipment24.
+- Split runtime override sources: curated manual, generated legacy, generated modern.
+- New migration report buckets: legacy_mapped, modern_unmapped, conflict_blocked, missing_legacy.
+
+### Changed
+- Babele runtime resolution priority is now: curated > modern > legacy > original.
+- CI validates new provenance config files and includes the new migration tool syntax check.
+
 ## [0.1.8] - 2026-03-15
 ### Added
 - Legacy migration tool to build ID-based Babele runtime overrides from existing German translation sources.

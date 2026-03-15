@@ -26,13 +26,15 @@ jobs:
             'config/scope-blocklist.json',
             'config/scope-allowlist.json',
             'config/glossary.json',
-            'config/metric-policy.json'
+            'config/metric-policy.json',
+            'config/legacy-provenance-policy.json',
+            'config/legacy-id-allowlist.json'
           ]
           for f in files:
-            json.loads(Path(f).read_text(encoding='utf-8'))
+            json.loads(Path(f).read_text(encoding='utf-8-sig'))
           print('core-json-ok')
           PY
 
       - name: Lint tool scripts (syntax)
         run: |
-          python -m py_compile tools/extract_missing_keys.py tools/translate_missing_gemini.py tools/validate_suggestions.py tools/merge_suggestions.py tools/migrate_reuse_translations.py
+          python -m py_compile tools/extract_missing_keys.py tools/translate_missing_gemini.py tools/validate_suggestions.py tools/merge_suggestions.py tools/migrate_reuse_translations.py tools/migrate_legacy_sprache_overrides.py
