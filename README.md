@@ -36,7 +36,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
 1. Open Foundry VTT and go to **Add-on Modules**.
 2. Click **Install Module**.
 3. Paste this manifest URL:
-   `https://github.com/Niclasp1501/foundryvtt-dnd5e55-lang-de/releases/latest/download/module.json`
+   `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
 4. Install, restart Foundry, then enable the module in your world.
 
 ### Usage
@@ -84,7 +84,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
 1. Foundry VTT starten und in den Reiter **Add-on Modules** wechseln.
 2. **Install Module** anklicken.
 3. Diese Manifest-URL einfuegen:
-   `https://github.com/Niclasp1501/foundryvtt-dnd5e55-lang-de/releases/latest/download/module.json`
+   `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
 4. Installieren, Foundry neu starten und das Modul in deiner Welt aktivieren.
 
 ### Verwendung
