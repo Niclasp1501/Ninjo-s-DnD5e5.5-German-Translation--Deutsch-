@@ -1,0 +1,41 @@
+{
+  "label": "Charakterherkuenfte (Modern, DE)",
+  "types": [
+    "race",
+    "background",
+    "feat"
+  ],
+  "mapping": {
+    "name": {
+      "path": "name",
+      "converter": "dnd5e55NameDeRuntime"
+    },
+    "description": {
+      "path": "system.description.value",
+      "converter": "dnd5e55DescriptionDeRuntime"
+    },
+    "activities": {
+      "path": "system.activities",
+      "converter": "dnd5e55ActivitiesDeRuntime"
+    }
+  },
+  "folders": {
+    "Dragonborn": "Drachenblütige",
+    "Dragonborn Features": "Drachenblütige Merkmale",
+    "Dwarf": "Zwerge",
+    "Dwarf Features": "Zwergische Merkmale",
+    "Elf": "Elfen",
+    "Elf Features": "Elfische Merkmale",
+    "Gnome": "Gnome",
+    "Gnome Features": "Gnomische Merkmale",
+    "Halfling": "Halblinge",
+    "Halfling Features": "Halbling Merkmale",
+    "Human": "Mensch",
+    "Human Features": "Menschliche Merkmale",
+    "Orc": "Ork",
+    "Orc Features": "Orkische Merkmale",
+    "Tiefling": "Tiefling",
+    "Tiefling Features": "Tiefling Merkmale"
+  },
+  "entries": {}
+}

@@ -1,14 +1,236 @@
-﻿{
-  "packs": {
-    "items": {
-      "legacyFiles": ["dnd5e.items.json"],
-      "types": ["weapon", "tool", "equipment", "consumable", "loot", "container"],
-      "mode": "allow_exact_name"
-    },
-    "equipment24": {
-      "legacyFiles": ["dnd5e.items.json"],
-      "types": ["weapon", "tool", "equipment", "consumable", "loot", "container"],
-      "mode": "allow_ids_only"
-    }
-  }
+{
+    "packs":  {
+                  "items":  {
+                                "legacyFiles":  [
+                                                    "dnd5e.items.json"
+                                                ],
+                                "types":  [
+                                              "weapon",
+                                              "tool",
+                                              "equipment",
+                                              "consumable",
+                                              "loot",
+                                              "container"
+                                          ],
+                                "mode":  "allow_exact_name",
+                                "bucket":  "legacy"
+                            },
+                  "tradegoods":  {
+                                     "legacyFiles":  [
+                                                         "dnd5e.tradegoods.json"
+                                                     ],
+                                     "types":  [
+                                                   "loot"
+                                               ],
+                                     "mode":  "allow_exact_name",
+                                     "bucket":  "legacy"
+                                 },
+                  "spells":  {
+                                 "legacyFiles":  [
+                                                     "dnd5e.spells.json"
+                                                 ],
+                                 "types":  [
+                                               "spell"
+                                           ],
+                                 "mode":  "allow_exact_name",
+                                 "bucket":  "legacy"
+                             },
+                  "classes":  {
+                                  "legacyFiles":  [
+                                                      "dnd5e.classes.json"
+                                                  ],
+                                  "types":  [
+                                                "class"
+                                            ],
+                                  "mode":  "allow_exact_name",
+                                  "bucket":  "legacy"
+                              },
+                  "subclasses":  {
+                                     "legacyFiles":  [
+                                                         "dnd5e.subclasses.json"
+                                                     ],
+                                     "types":  [
+                                                   "subclass"
+                                               ],
+                                     "mode":  "allow_exact_name",
+                                     "bucket":  "legacy"
+                                 },
+                  "classfeatures":  {
+                                        "legacyFiles":  [
+                                                            "dnd5e.classfeatures.json"
+                                                        ],
+                                        "types":  [
+                                                      "feat",
+                                                      "weapon"
+                                                  ],
+                                        "mode":  "allow_exact_name",
+                                        "bucket":  "legacy"
+                                    },
+                  "backgrounds":  {
+                                      "legacyFiles":  [
+                                                          "dnd5e.backgrounds.json"
+                                                      ],
+                                      "types":  [
+                                                    "background",
+                                                    "feat"
+                                                ],
+                                      "mode":  "allow_exact_name",
+                                      "bucket":  "legacy"
+                                  },
+                  "races":  {
+                                "legacyFiles":  [
+                                                    "dnd5e.races.json"
+                                                ],
+                                "types":  [
+                                              "race",
+                                              "feat"
+                                          ],
+                                "mode":  "allow_exact_name",
+                                "bucket":  "legacy"
+                            },
+                  "monsterfeatures":  {
+                                          "legacyFiles":  [
+                                                              "dnd5e.monsterfeatures.json"
+                                                          ],
+                                          "types":  [
+                                                        "feat",
+                                                        "weapon"
+                                                    ],
+                                          "mode":  "allow_exact_name",
+                                          "bucket":  "legacy"
+                                      },
+                  "monsters":  {
+                                   "legacyFiles":  [
+                                                       "dnd5e.monsters.json"
+                                                   ],
+                                   "types":  [
+                                                 "npc"
+                                             ],
+                                   "mode":  "allow_exact_name",
+                                   "bucket":  "legacy"
+                               },
+                  "heroes":  {
+                                 "legacyFiles":  [
+                                                     "dnd5e.heroes.json"
+                                                 ],
+                                 "types":  [
+                                               "character"
+                                           ],
+                                 "mode":  "allow_exact_name",
+                                 "bucket":  "legacy"
+                             },
+                  "rules":  {
+                                "legacyFiles":  [
+                                                    "dnd5e.rules.json"
+                                                ],
+                                "mode":  "allow_exact_name",
+                                "bucket":  "legacy"
+                            },
+                  "tables":  {
+                                 "legacyFiles":  [
+                                                     "dnd5e.tables.json"
+                                                 ],
+                                 "mode":  "allow_exact_name",
+                                 "bucket":  "legacy"
+                             },
+                  "equipment24":  {
+                                      "legacyFiles":  [
+                                                          "dnd5e.items.json"
+                                                      ],
+                                      "types":  [
+                                                    "weapon",
+                                                    "tool",
+                                                    "equipment",
+                                                    "consumable",
+                                                    "loot",
+                                                    "container"
+                                                ],
+                                      "mode":  "allow_ids_only",
+                                      "bucket":  "modern"
+                                  },
+                  "spells24":  {
+                                   "legacyFiles":  [
+                                                       "dnd5e.spells.json"
+                                                   ],
+                                   "types":  [
+                                                 "spell"
+                                             ],
+                                   "mode":  "allow_ids_only",
+                                   "bucket":  "modern"
+                               },
+                  "classes24":  {
+                                    "legacyFiles":  [
+                                                        "dnd5e.classes.json",
+                                                        "dnd5e.subclasses.json",
+                                                        "dnd5e.classfeatures.json"
+                                                    ],
+                                    "types":  [
+                                                  "class",
+                                                  "subclass",
+                                                  "feat"
+                                              ],
+                                    "mode":  "allow_ids_only",
+                                    "bucket":  "modern"
+                                },
+                  "origins24":  {
+                                    "legacyFiles":  [
+                                                        "dnd5e.backgrounds.json",
+                                                        "dnd5e.races.json"
+                                                    ],
+                                    "types":  [
+                                                  "background",
+                                                  "race",
+                                                  "feat"
+                                              ],
+                                    "mode":  "allow_ids_only",
+                                    "bucket":  "modern"
+                                },
+                  "feats24":  {
+                                  "legacyFiles":  [
+                                                      "dnd5e.classfeatures.json",
+                                                      "dnd5e.races.json"
+                                                  ],
+                                  "types":  [
+                                                "feat"
+                                            ],
+                                  "mode":  "allow_ids_only",
+                                  "bucket":  "modern"
+                              },
+                  "monsterfeatures24":  {
+                                            "legacyFiles":  [
+                                                                "dnd5e.monsterfeatures.json"
+                                                            ],
+                                            "types":  [
+                                                          "feat",
+                                                          "weapon"
+                                                      ],
+                                            "mode":  "allow_ids_only",
+                                            "bucket":  "modern"
+                                        },
+                  "actors24":  {
+                                   "legacyFiles":  [
+                                                       "dnd5e.monsters.json"
+                                                   ],
+                                   "types":  [
+                                                 "npc"
+                                             ],
+                                   "mode":  "allow_ids_only",
+                                   "bucket":  "modern"
+                               },
+                  "content24":  {
+                                    "legacyFiles":  [
+                                                        "dnd5e.rules.json",
+                                                        "dnd-players-handbook.content.json"
+                                                    ],
+                                    "mode":  "allow_ids_only",
+                                    "bucket":  "modern"
+                                },
+                  "tables24":  {
+                                   "legacyFiles":  [
+                                                       "dnd5e.tables.json"
+                                                   ],
+                                   "mode":  "allow_ids_only",
+                                   "bucket":  "modern"
+                               }
+              }
 }

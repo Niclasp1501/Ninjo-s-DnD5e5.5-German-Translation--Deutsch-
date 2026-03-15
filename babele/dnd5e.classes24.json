@@ -1,0 +1,24 @@
+{
+  "label": "Klassen (Modern, DE)",
+  "types": [
+    "class",
+    "subclass",
+    "feat"
+  ],
+  "mapping": {
+    "name": {
+      "path": "name",
+      "converter": "dnd5e55NameDeRuntime"
+    },
+    "description": {
+      "path": "system.description.value",
+      "converter": "dnd5e55DescriptionDeRuntime"
+    },
+    "activities": {
+      "path": "system.activities",
+      "converter": "dnd5e55ActivitiesDeRuntime"
+    }
+  },
+  "folders": {},
+  "entries": {}
+}

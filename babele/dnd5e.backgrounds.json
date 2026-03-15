@@ -1,0 +1,26 @@
+{
+  "label": "Hintergruende (SRD, DE)",
+  "types": [
+    "background",
+    "feat"
+  ],
+  "mapping": {
+    "name": {
+      "path": "name",
+      "converter": "dnd5e55NameDeRuntime"
+    },
+    "description": {
+      "path": "system.description.value",
+      "converter": "dnd5e55DescriptionDeRuntime"
+    },
+    "activities": {
+      "path": "system.activities",
+      "converter": "dnd5e55ActivitiesDeRuntime"
+    }
+  },
+  "folders": {
+    "Acolyte Equipment": "Tempeldiener Ausrüstung",
+    "Acolyte Feature": "Tempeldiener Merkmale"
+  },
+  "entries": {}
+}
