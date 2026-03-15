@@ -1,0 +1,125 @@
+{
+  "batch_preview_count": 20,
+  "items": [
+    {
+      "id": "phbagAcid0000000",
+      "name": "Acid",
+      "type": "consumable",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgBoatUtility00",
+      "name": "Activate Folding Boat",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgAdamantineArm",
+      "name": "Adamantine Armor",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgAirRingOfElem",
+      "name": "Air Ring of Elemental Command",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "phbagAmmunitionV",
+      "name": "Ammunition (Varies)",
+      "type": "loot",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgSlayingAmmuni",
+      "name": "Ammunition of Slaying",
+      "type": "consumable",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgAmmunition12o",
+      "name": "Ammunition, +1, +2, or +3",
+      "type": "consumable",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "phbagArcaneFocus",
+      "name": "Arcane Focus (Varies)",
+      "type": "loot",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgArmorOfResist",
+      "name": "Armor of Resistance",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgArmor12or3000",
+      "name": "Armor, +1, +2, or +3",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "phbamoArrows0000",
+      "name": "Arrows",
+      "type": "consumable",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgAssassinsBloo",
+      "name": "Assassin's Blood",
+      "type": "consumable",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgDmtBalance000",
+      "name": "Balance",
+      "type": "consumable",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgBeadOfNourish",
+      "name": "Bead of Nourishment",
+      "type": "consumable",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgBeltOfGiantSt",
+      "name": "Belt of Giant Strength",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgcloBeltofGian",
+      "name": "Belt of Giant Strength (cloud)",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgfirBeltofGian",
+      "name": "Belt of Giant Strength (fire)",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgfroBeltofGian",
+      "name": "Belt of Giant Strength (frost)",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmghilBeltofGian",
+      "name": "Belt of Giant Strength (hill)",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    },
+    {
+      "id": "dmgstoBeltofGian",
+      "name": "Belt of Giant Strength (stone)",
+      "type": "equipment",
+      "reason": "missing_legacy"
+    }
+  ]
+}

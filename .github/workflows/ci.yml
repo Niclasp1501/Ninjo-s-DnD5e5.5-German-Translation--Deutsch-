@@ -37,4 +37,4 @@ jobs:
 
       - name: Lint tool scripts (syntax)
         run: |
-          python -m py_compile tools/extract_missing_keys.py tools/translate_missing_gemini.py tools/validate_suggestions.py tools/merge_suggestions.py tools/migrate_reuse_translations.py tools/migrate_legacy_sprache_overrides.py
+          python -m py_compile tools/extract_missing_keys.py tools/translate_missing_gemini.py tools/validate_suggestions.py tools/merge_suggestions.py tools/migrate_reuse_translations.py tools/migrate_legacy_sprache_overrides.py tools/translate_equipment24_gemini.py
