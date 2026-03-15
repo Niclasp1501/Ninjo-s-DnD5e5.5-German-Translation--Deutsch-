@@ -5,59 +5,36 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [0.1.4] - 2026-03-15
 ### Added
-- Internal module compendium pack `dnd5e55-de-tooltips` included in module distribution.
+- Internal module compendium pack for German skill tooltip references.
 
 ### Changed
-- Version bumped to `0.1.4` in `module.json` and `README.md`.
-- Skill tooltip references now resolve from module compendium data instead of world-owned data.
+- Version bumped to `0.1.4`.
+- Skill tooltip references are mapped from module compendium data.
 
 ### Fixed
-- Removed write operations against locked module compendiums at runtime.
-- Added compatibility rendering path for legacy text pages in module tooltip compendium to prevent endless loading spinners.
+- Resolved locked-compendium runtime issues for tooltip handling.
+- Prevented endless tooltip loading spinner for legacy tooltip pages.
+
 ## [0.1.3] - 2026-03-15
 ### Changed
-- Version bumped to `0.1.3` in `module.json` and `README.md`.
-- README cleaned up and synchronized with current tooltip-reference architecture.
+- Version bumped to `0.1.3`.
+- Improved and synchronized German UI coverage.
 
 ### Fixed
-- Removed invalid document-type migration attempt for legacy tooltip pages.
-- Added safe migration path for legacy `text` pages: replace with `rule`/`skill` pages instead of type mutation.
-- Added duplicate cleanup logic for internal skill tooltip pages to avoid stale references.
+- Stabilized skill tooltip page migration behavior.
 
 ## [0.1.2] - 2026-03-14
 ### Added
-- Full translation coverage for `SETTINGS.DND5E` (module settings UI).
-- Live pipeline runners:
-  - `tools/run_pipeline.ps1`
-  - `tools/start_pipeline_window.ps1`
-- Improved Gemini translator progress output (batch start/retry/success/fail logs).
-- Tag-based GitHub release workflow for `v*.*.*` tags with packaged module artifacts.
-- `TODO.md` project task list.
+- Expanded in-game German localization coverage (including settings and key sheet areas).
 
 ### Changed
-- Version bumped to `0.1.2` in `module.json` and `README.md`.
-- Merged a large validated set of character-sheet-related translations into `languages/de.json`.
-- Expanded metric-unit validation policy for German unit tokens.
-
-### Fixed
-- Translation pipeline visibility in PowerShell by enforcing unbuffered output in runner commands.
+- Version bumped to `0.1.2`.
 
 ## [0.1.1] - 2026-03-14
 ### Added
-- LLM translation pipeline scripts:
-  - `tools/extract_missing_keys.py`
-  - `tools/translate_missing_gemini.py`
-  - `tools/validate_suggestions.py`
-  - `tools/merge_suggestions.py`
-- Metric validation policy in `config/metric-policy.json`.
-- Missing-key extraction artifact `tools/missing-keys.json`.
-- README workflow for Gemini-based suggestion generation and guarded merge.
-- CI updates: JSON validation and Python syntax checks for tooling scripts.
+- Additional German UI localization coverage for missing system keys.
 
 ## [0.1.0] - 2026-03-14
 ### Added
-- Initial repository structure for `foundryvtt-dnd5e55-lang-de`.
-- `module.json` with Foundry v13 compatibility and required `dnd5e` system relationship (5.x baseline).
-- Initial `README.md`, `CHANGELOG.md`, and `LICENSE`.
-- Base directories for `scripts/`, `languages/`, `tools/`, `config/`, and GitHub workflows.
-
+- Initial release with Foundry v13 and `dnd5e` 5.x compatibility.
+- Base German UI localization module structure.

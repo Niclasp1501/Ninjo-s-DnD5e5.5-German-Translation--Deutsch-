@@ -4,115 +4,103 @@
 
 German localization module for the official Foundry VTT `dnd5e` system (5.x) on Foundry VTT v13.
 
-MVP scope: UI-first localization only. No SRD or compendium gameplay content is included in this module.
+*(Scroll down for German version / Scrolle weiter runter fuer die deutsche Version)*
 
 ---
 
 ## English
 
-### Scope (MVP)
-- Includes: UI localization keys from `dnd5e/lang/en.json` (sheets, settings, dialogs, hints, system-facing UI).
-- Excludes: SRD/content packs and gameplay text (for example: `content24`, `rules`, `spells24`, `classes24` key spaces).
+### Features
+- Full German localization for major `dnd5e` 5.x interface areas.
+- Broad coverage for sheets, dialogs, settings, hints, labels, and workflow messages.
+- Internal module compendium for German skill tooltip references.
+- Clean module-first architecture for Foundry v13 and modern `dnd5e` 5.x updates.
+- Ongoing key coverage expansion with release-based updates.
+
+### Scope
+- Included:
+  - UI localization keys based on `dnd5e/lang/en.json`.
+  - Interface-facing text used in regular gameplay workflows.
+  - Skill tooltip reference integration through module-owned content.
+- Excluded (MVP boundary):
+  - SRD/content gameplay translations such as `content24`, `rules`, `spells24`, `classes24`, and similar compendium text bodies.
+  - Full compendium translation packs outside interface needs.
 
 ### Requirements
 - Foundry VTT v13
 - Official `dnd5e` system, version 5.x
-- Python 3.10+
+- The `dnd5e` system must be installed and active in the world
 
 ### Installation
 1. Open Foundry VTT and go to **Add-on Modules**.
 2. Click **Install Module**.
-3. Paste the manifest URL:
+3. Paste this manifest URL:
    `https://github.com/Niclasp1501/foundryvtt-dnd5e55-lang-de/releases/latest/download/module.json`
-4. Restart Foundry and enable the module in your world.
+4. Install, restart Foundry, then enable the module in your world.
 
-### Architecture
-- `module.json`: module metadata and dependency on `dnd5e`
-- `scripts/init.js`: runtime guard, DE-only boot logic, internal skill-tooltip reference mapping
-- `languages/de.json`: primary localization file
-- `config/`: scope, glossary and metric policy
-- `tools/`: migration, diff, translation and validation scripts
+### Usage
+- Set your Foundry language to German.
+- Enable this module in the target world.
+- Open character and NPC sheets, settings, and dialogs to verify localized UI text.
+- Skill tooltip text is resolved by the internal module compendium references.
 
-### DE Skill Tooltip References (Internal)
-- The module ships an internal module compendium pack with DE skill tooltip pages.
-- On load, the module remaps `CONFIG.DND5E.skills.*.reference` to these compendium JournalEntryPage UUIDs.
-- Tooltips then use native dnd5e reference rendering.
+### Known Boundaries
+- This module focuses on system UI localization first.
+- Gameplay source text from official SRD/content packs is not fully localized in the MVP scope.
 
-### LLM Translation Pipeline (Gemini)
-1. Extract missing keys:
-   `python tools/extract_missing_keys.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --de languages/de.json --out tools/missing-keys.json`
-2. Set API key:
-   `setx GEMINI_API_KEY "<your-key>"`
-3. Generate suggestions (writes `languages/de.suggestions.json`):
-   `python tools/translate_missing_gemini.py --missing tools/missing-keys.json`
-4. Validate suggestions (placeholders, HTML tags, unit plausibility):
-   `python tools/validate_suggestions.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --suggestions languages/de.suggestions.json`
-5. Merge approved suggestions:
-   `python tools/merge_suggestions.py --base languages/de.json --suggestions languages/de.suggestions.json --out languages/de.json`
-
-Notes:
-- The LLM is allowed to suggest metric conversions.
-- Suggestions are intentionally written to a separate file first.
-- Validation blocks obviously broken placeholder and unit output.
+### Roadmap
+- Improve remaining uncovered UI keys in incremental releases.
+- Continue terminology consistency and quality passes.
+- Keep compatibility aligned with Foundry v13 and `dnd5e` 5.x updates.
 
 ---
 
 ## Deutsch
 
-### Scope (MVP)
-- Enthalten: UI-Lokalisierungs-Keys aus `dnd5e/lang/en.json` (Sheets, Einstellungen, Dialoge, Hinweise, systemnahe UI).
-- Ausgeschlossen: SRD-/Content-Pakete und Regeltexte (z. B. `content24`, `rules`, `spells24`, `classes24`).
+### Features
+- Umfassende deutsche Lokalisierung fuer zentrale `dnd5e`-5.x-Oberflaechen.
+- Breite Abdeckung fuer Character Sheets, Dialoge, Einstellungen, Hinweise, Labels und Workflow-Meldungen.
+- Internes Modul-Kompendium fuer deutsche Skill-Tooltip-Referenzen.
+- Moderne, saubere Modul-Architektur fuer Foundry v13 und aktuelle `dnd5e`-5.x-Updates.
+- Laufende Erweiterung der Key-Abdeckung ueber Release-Updates.
+
+### Umfang
+- Enthalten:
+  - UI-Lokalisierungskeys auf Basis von `dnd5e/lang/en.json`.
+  - Oberflaechentexte fuer typische Spiel- und Bedienablaeufe.
+  - Skill-Tooltip-Referenzen ueber modul-eigene Inhalte.
+- Nicht enthalten (MVP-Grenze):
+  - SRD-/Content-Spieltexte wie `content24`, `rules`, `spells24`, `classes24` und aehnliche Kompendium-Textkoerper.
+  - Vollstaendige Kompendium-Uebersetzungspakete ausserhalb der UI-Fokussierung.
 
 ### Voraussetzungen
 - Foundry VTT v13
 - Offizielles `dnd5e`-System, Version 5.x
-- Python 3.10+
+- Das `dnd5e`-System muss in der Welt installiert und aktiv sein
 
 ### Installation
-1. Foundry VTT starten und zu **Zusatzmodule** wechseln.
-2. **Modul installieren** klicken.
-3. Manifest-URL einfugen:
+1. Foundry VTT starten und in den Reiter **Add-on Modules** wechseln.
+2. **Install Module** anklicken.
+3. Diese Manifest-URL einfuegen:
    `https://github.com/Niclasp1501/foundryvtt-dnd5e55-lang-de/releases/latest/download/module.json`
-4. Foundry neu starten und das Modul in der Welt aktivieren.
+4. Installieren, Foundry neu starten und das Modul in deiner Welt aktivieren.
 
-### Projektstruktur
-- `module.json`: Modul-Metadaten und `dnd5e`-Abhangigkeit
-- `scripts/init.js`: Runtime-Guard, DE-Bootlogik, interne Skill-Tooltip-Referenzzuweisung
-- `languages/de.json`: zentrale Ubersetzungsdatei
-- `config/`: Scope-, Glossar- und Metrik-Policy
-- `tools/`: Migrations-, Extraktions-, Ubersetzungs- und Validierungs-Skripte
+### Verwendung
+- Foundry-Sprache auf Deutsch stellen.
+- Modul in der Zielwelt aktivieren.
+- Character- und NPC-Sheets, Einstellungen und Dialoge oeffnen und lokalisierte UI-Texte pruefen.
+- Skill-Tooltip-Texte werden ueber interne Kompendium-Referenzen des Moduls geladen.
 
-### DE-Skill-Tooltip-Referenzen (intern)
-- Das Modul liefert ein internes Modul-Kompendium mit DE-Skill-Tooltip-Seiten aus.
-- Beim Laden mappt das Modul `CONFIG.DND5E.skills.*.reference` auf diese Kompendium-JournalEntryPage-UUIDs.
-- Tooltips werden dann nativ uber die dnd5e-Referenzdarstellung angezeigt.
+### Bekannte Grenzen
+- Fokus liegt auf der Lokalisierung der Systemoberflaeche.
+- Gameplay-Quelltexte aus offiziellen SRD-/Content-Packs sind im MVP nicht vollstaendig lokalisiert.
 
-### LLM-Ubersetzungs-Pipeline (Gemini)
-1. Fehlende Keys extrahieren:
-   `python tools/extract_missing_keys.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --de languages/de.json --out tools/missing-keys.json`
-2. API-Key setzen:
-   `setx GEMINI_API_KEY "<dein-key>"`
-3. Vorschlage erzeugen (`languages/de.suggestions.json`):
-   `python tools/translate_missing_gemini.py --missing tools/missing-keys.json`
-4. Vorschlage validieren (Platzhalter, HTML-Tags, Einheiten-Plausibilitat):
-   `python tools/validate_suggestions.py --en C:/Users/nicla/Documents/Playground/dnd5e/lang/en.json --suggestions languages/de.suggestions.json`
-5. Freigegebene Vorschlage mergen:
-   `python tools/merge_suggestions.py --base languages/de.json --suggestions languages/de.suggestions.json --out languages/de.json`
-
-Hinweise:
-- Das LLM darf metrische Umrechnungen vorschlagen.
-- Vorschlage gehen bewusst erst in eine separate Datei.
-- Die Validierung blockt offensichtliche Platzhalter-/Einheitenfehler.
+### Roadmap
+- Restliche offene UI-Keys in inkrementellen Releases schliessen.
+- Terminologie-Konsistenz und Qualitaetssicherung weiter verbessern.
+- Kompatibilitaet mit Foundry v13 und `dnd5e` 5.x fortlaufend pflegen.
 
 ---
 
 ## License / Lizenz
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
-
-### Live Window Runner (PowerShell)
-Start a separate PowerShell window with live pipeline status:
-`powershell -ExecutionPolicy Bypass -File tools/start_pipeline_window.ps1 -BatchSize 5 -SleepMs 3000 -MaxBatches 5`
-
-The window shows each stage and writes a full log to `tools/logs/`.
-
-
