@@ -3,10 +3,15 @@ import { MODERN_OVERRIDES_BY_ID } from "./babele-runtime-overrides.modern.genera
 import { CURATED_OVERRIDES_BY_ID } from "./babele-runtime-overrides.js";
 
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
+const SETTING_ENABLE_COMPENDIUM_TRANSLATIONS = "enableCompendiumTranslations";
 const ITEM_TYPES_WITH_WEIGHT = new Set(["weapon", "tool", "equipment", "consumable", "loot", "container"]);
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
+}
+
+function isCompendiumTranslationEnabled() {
+  return game.settings?.get(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS) !== false;
 }
 
 function getSourceId(data) {
@@ -76,6 +81,21 @@ function convertWeightUnitsRuntime(originalValue, _entryTranslation, data) {
 
 Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
+
+  game.settings.register(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS, {
+    name: "Zusatzinhalte (Kompendien) übersetzen",
+    hint: "Aktiviert Laufzeit-Übersetzungen für zusätzliche dnd5e-Kompendiuminhalte über Babele. Deaktiviert: nur System/UI, Character-Sheets und Tooltips.",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true,
+    requiresReload: true
+  });
+
+  if (!isCompendiumTranslationEnabled()) {
+    console.log(`[${MODULE_ID}] Additional compendium translations are disabled by world setting.`);
+    return;
+  }
 
   if (typeof Babele === "undefined") {
     console.warn(`[${MODULE_ID}] Babele not found. Runtime translation is disabled.`);

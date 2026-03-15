@@ -1,4 +1,5 @@
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
+const SETTING_ENABLE_COMPENDIUM_TRANSLATIONS = "enableCompendiumTranslations";
 const MODULE_PACK_NAME = "dnd5e55-de-tooltips";
 const MODULE_PACK_COLLECTION = `${MODULE_ID}.${MODULE_PACK_NAME}`;
 const LEGACY_UUID_PREFIX_MAP = new Map([
@@ -49,6 +50,10 @@ const SKILL_LABELS_DE = {
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
+}
+
+function isCompendiumTranslationEnabled() {
+  return game.settings?.get(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS) !== false;
 }
 
 function normalizeLabel(value) {
@@ -310,8 +315,12 @@ Hooks.once("ready", async () => {
   if (game.system.id !== "dnd5e") return;
   if (!isGermanUi()) return;
 
-  await loadReferenceLabelsFromBabele();
-  installLegacyUuidBridge();
+  if (isCompendiumTranslationEnabled()) {
+    await loadReferenceLabelsFromBabele();
+    installLegacyUuidBridge();
+  } else {
+    console.log(`[${MODULE_ID}] Additional compendium translations are disabled by world setting.`);
+  }
 
   try {
     const pack = await getPack();
