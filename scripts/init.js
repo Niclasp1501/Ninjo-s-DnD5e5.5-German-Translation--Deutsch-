@@ -1,155 +1,121 @@
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
-const JOURNAL_FLAG = "skillTooltips";
-const JOURNAL_NAME = "DnD5e Skill Tooltips (DE Internal)";
+const MODULE_PACK_NAME = "dnd5e55-de-tooltips";
+const MODULE_PACK_COLLECTION = `${MODULE_ID}.${MODULE_PACK_NAME}`;
 
-const SKILL_TOOLTIPS_DE = {
-  acr: { title: "Akrobatik", body: "Beispiele: Halte in kniffligen Situationen das Gleichgewicht oder fuehre ein akrobatisches Kunststueck aus." },
-  ani: { title: "Mit Tieren umgehen", body: "Beispiele: Beruhige ein Tier, fuehre es oder deute sein Verhalten und seine Absichten." },
-  arc: { title: "Arkane Kunde", body: "Beispiele: Erinnere dich an Wissen ueber Zauber, magische Traditionen, Ebenen und magische Symbole." },
-  ath: { title: "Athletik", body: "Beispiele: Klettere, springe, schwimme oder stemme schwere Lasten mit roher koerperlicher Kraft." },
-  dec: { title: "Taeuschung", body: "Beispiele: Verberge die Wahrheit, gib dich anders aus oder fuehre andere mit Luegen in die Irre." },
-  his: { title: "Geschichte", body: "Beispiele: Erinnere dich an historische Ereignisse, Reiche, Kriege, Legenden und alte Kulturen." },
-  ins: { title: "Motiv erkennen", body: "Beispiele: Lies Koerpersprache, erkenne Luegen und erfasse Stimmungen oder verborgene Absichten." },
-  itm: { title: "Einschuechtern", body: "Beispiele: Setze Drohungen, Praesenz oder Furcht ein, um andere unter Druck zu setzen." },
-  inv: { title: "Nachforschungen", body: "Beispiele: Ziehe aus Hinweisen logische Schluesse, finde Spuren und decke Zusammenhaenge auf." },
-  med: { title: "Heilkunde", body: "Beispiele: Stabilisiere eine sterbende Kreatur, diagnostiziere Verletzungen oder beurteile Krankheiten." },
-  nat: { title: "Naturkunde", body: "Beispiele: Erinnere dich an Wissen ueber Tiere, Pflanzen, Gelaende, Klima und natuerliche Gefahren." },
-  per: { title: "Auftreten", body: "Beispiele: Ueberzeuge andere mit Charme, Takt und glaubwuerdigen Argumenten." },
-  prc: { title: "Wahrnehmung", body: "Beispiele: Bemerke Geraeusche, Bewegungen, versteckte Details oder andere Sinneseindruecke." },
-  prf: { title: "Darbietung", body: "Beispiele: Unterhalte mit Musik, Gesang, Tanz, Schauspiel oder einer anderen Kunstform." },
-  rel: { title: "Religion", body: "Beispiele: Erinnere dich an Wissen ueber Goetter, Kulte, Riten, heilige Symbole und Mythen." },
-  slt: { title: "Fingerfertigkeit", body: "Beispiele: Fuehre Taschenspielertricks aus, verstecke kleine Gegenstaende oder manipuliere etwas unbemerkt." },
-  ste: { title: "Heimlichkeit", body: "Beispiele: Bewege dich leise, verberge dich im Schatten oder entgehe der Aufmerksamkeit anderer." },
-  sur: { title: "Ueberlebenskunst", body: "Beispiele: Finde Spuren, orientiere dich in der Wildnis, jage oder sichere Nahrung und Unterkunft." }
+const SKILL_LABELS_DE = {
+  acr: "Akrobatik",
+  ani: "Mit Tieren umgehen",
+  arc: "Arkane Kunde",
+  ath: "Athletik",
+  dec: "Taeuschung",
+  his: "Geschichte",
+  ins: "Motiv erkennen",
+  itm: "Einschuechtern",
+  inv: "Nachforschungen",
+  med: "Heilkunde",
+  nat: "Naturkunde",
+  per: "Auftreten",
+  prc: "Wahrnehmung",
+  prf: "Darbietung",
+  rel: "Religion",
+  slt: "Fingerfertigkeit",
+  ste: "Heimlichkeit",
+  sur: "Ueberlebenskunst"
 };
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
 }
 
-function buildTooltipHtml(tooltip) {
-  return `<p><strong>Beispiele:</strong> ${tooltip.body.replace(/^Beispiele:\s*/i, "")}</p>`;
+function normalizeLabel(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replace(/\u00e4/g, "ae")
+    .replace(/\u00f6/g, "oe")
+    .replace(/\u00fc/g, "ue")
+    .replace(/\u00df/g, "ss")
+    .replace(/[^a-z0-9]+/g, "")
+    .trim();
 }
 
-function makePageData(skillKey, tooltip) {
-  return {
-    name: tooltip.title,
-    type: "rule",
-    system: {
-      type: "skill",
-      tooltip: ""
-    },
-    title: {
-      show: true,
-      level: 3
-    },
-    text: {
-      format: 1,
-      content: buildTooltipHtml(tooltip)
-    },
-    ownership: { default: CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER },
-    flags: {
-      [MODULE_ID]: {
-        skillKey
-      }
+function patchLegacyTooltipRendering() {
+  const proto = JournalEntryPage?.prototype;
+  if (!proto || proto._deTooltipPatchApplied) return;
+
+  const original = proto.richTooltip;
+
+  proto.richTooltip = async function richTooltipPatched(enrichmentOptions = {}) {
+    if (this.pack !== MODULE_PACK_COLLECTION) {
+      return original?.call(this, enrichmentOptions);
     }
+
+    if (typeof original === "function") {
+      const native = await original.call(this, enrichmentOptions);
+      if (native?.content) return native;
+    }
+
+    const textEditor = foundry.applications.ux.TextEditor.implementation;
+    const enriched = await textEditor.enrichHTML(this.text?.content ?? "", {
+      secrets: false,
+      relativeTo: this,
+      ...enrichmentOptions
+    });
+
+    const context = {
+      page: this,
+      type: game.i18n.localize("DND5E.Skill"),
+      content: enriched
+    };
+
+    return {
+      content: await foundry.applications.handlebars.renderTemplate(
+        "systems/dnd5e/templates/journal/page-rule-tooltip.hbs",
+        context
+      ),
+      classes: ["dnd5e-tooltip", "rule-tooltip", "dnd5e2", "themed", "theme-light"]
+    };
   };
+
+  proto._deTooltipPatchApplied = true;
 }
 
-function isRuleSkillPage(page) {
-  return page?.type === "rule" && page?.system?.type === "skill";
+async function getPack() {
+  const pack = game.packs?.get(MODULE_PACK_COLLECTION);
+  if (!pack) {
+    console.warn(`[${MODULE_ID}] Module compendium pack not found: ${MODULE_PACK_COLLECTION}`);
+    return null;
+  }
+  return pack;
 }
 
-function getTooltipJournal() {
-  return game.journal?.find(j => j.getFlag(MODULE_ID, JOURNAL_FLAG) === true) ?? null;
+async function getTooltipJournal(pack) {
+  const index = await pack.getIndex();
+  const first = index.contents?.[0] ?? index[0] ?? Array.from(index)[0];
+  if (!first?._id) return null;
+  return pack.getDocument(first._id);
 }
 
-async function ensureTooltipJournal() {
-  let journal = getTooltipJournal();
-  if (!journal) {
-    journal = await JournalEntry.create({
-      name: JOURNAL_NAME,
-      ownership: { default: CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER },
-      flags: {
-        [MODULE_ID]: {
-          [JOURNAL_FLAG]: true
-        }
-      },
-      pages: Object.entries(SKILL_TOOLTIPS_DE).map(([skillKey, tooltip]) => makePageData(skillKey, tooltip))
-    });
-    return journal;
-  }
+function buildPageBySkill(journal) {
+  if (!journal) return null;
 
-  if ((journal.ownership?.default ?? 0) < CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER) {
-    await journal.update({ ownership: { default: CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER } });
-  }
-
-  const pagesBySkill = new Map();
-  for (const page of journal.pages) {
-    const skillKey = page.getFlag(MODULE_ID, "skillKey");
-    if (!skillKey) continue;
-    if (!pagesBySkill.has(skillKey)) pagesBySkill.set(skillKey, []);
-    pagesBySkill.get(skillKey).push(page);
-  }
-
-  const toCreate = [];
-  const toUpdate = [];
-  const deleteIds = new Set();
-
-  for (const [skillKey, tooltip] of Object.entries(SKILL_TOOLTIPS_DE)) {
-    const pages = pagesBySkill.get(skillKey) ?? [];
-    const validPage = pages.find(isRuleSkillPage) ?? null;
-
-    if (!validPage) {
-      for (const page of pages) deleteIds.add(page.id);
-      toCreate.push(makePageData(skillKey, tooltip));
-      continue;
-    }
-
-    for (const page of pages) {
-      if (page.id !== validPage.id) deleteIds.add(page.id);
-    }
-
-    toUpdate.push({
-      _id: validPage.id,
-      name: tooltip.title,
-      title: {
-        show: true,
-        level: 3
-      },
-      text: {
-        format: 1,
-        content: buildTooltipHtml(tooltip)
-      },
-      flags: {
-        [MODULE_ID]: {
-          skillKey
-        }
-      }
-    });
-  }
-
-  if (deleteIds.size) {
-    await journal.deleteEmbeddedDocuments("JournalEntryPage", Array.from(deleteIds));
-  }
-  if (toCreate.length) {
-    await journal.createEmbeddedDocuments("JournalEntryPage", toCreate);
-  }
-  if (toUpdate.length) {
-    await journal.updateEmbeddedDocuments("JournalEntryPage", toUpdate);
-  }
-
-  return journal;
-}
-
-function applySkillReferenceMapping(journal) {
-  if (!journal) return 0;
+  const normalizedSkillByLabel = new Map(
+    Object.entries(SKILL_LABELS_DE).map(([skillKey, label]) => [normalizeLabel(label), skillKey])
+  );
 
   const pageBySkill = new Map();
   for (const page of journal.pages) {
-    const skillKey = page.getFlag(MODULE_ID, "skillKey");
-    if (skillKey) pageBySkill.set(skillKey, page.uuid);
+    const flagged = page.getFlag?.(MODULE_ID, "skillKey");
+    const byName = normalizedSkillByLabel.get(normalizeLabel(page.name));
+    const skillKey = flagged || byName;
+    if (!skillKey) continue;
+    pageBySkill.set(skillKey, page.uuid);
   }
+
+  return pageBySkill;
+}
+
+function applySkillReferenceMapping(pageBySkill) {
+  if (!pageBySkill?.size) return 0;
 
   let applied = 0;
   for (const [skillKey, skillConfig] of Object.entries(CONFIG.DND5E?.skills ?? {})) {
@@ -166,6 +132,8 @@ Hooks.once("init", () => {
     ui.notifications?.error("This module requires the official dnd5e system.");
     return;
   }
+
+  patchLegacyTooltipRendering();
   console.log(`[${MODULE_ID}] Initialized.`);
 });
 
@@ -174,21 +142,26 @@ Hooks.once("ready", async () => {
   if (!isGermanUi()) return;
 
   try {
-    let journal = null;
-    if (game.user.isGM) {
-      journal = await ensureTooltipJournal();
-    } else {
-      journal = getTooltipJournal();
-    }
+    const pack = await getPack();
+    if (!pack) return;
 
-    if (!journal) {
-      console.warn(`[${MODULE_ID}] DE tooltip journal not available yet. Let a GM open the world once.`);
+    const journal = await getTooltipJournal(pack);
+    const pageBySkill = buildPageBySkill(journal);
+
+    if (!pageBySkill?.size) {
+      console.warn(`[${MODULE_ID}] No tooltip pages resolved from module compendium.`);
       return;
     }
 
-    const mapped = applySkillReferenceMapping(journal);
-    console.log(`[${MODULE_ID}] Skill tooltip references mapped: ${mapped}`);
+    const mapped = applySkillReferenceMapping(pageBySkill);
+    const expected = Object.keys(SKILL_LABELS_DE).length;
+    console.log(`[${MODULE_ID}] Skill tooltip references mapped: ${mapped}/${expected}`);
+
+    if (mapped < expected) {
+      const unresolved = Object.keys(SKILL_LABELS_DE).filter(skillKey => !pageBySkill.has(skillKey));
+      console.warn(`[${MODULE_ID}] Unresolved skill tooltip pages: ${unresolved.join(", ")}`);
+    }
   } catch (err) {
-    console.error(`[${MODULE_ID}] Failed to prepare DE skill tooltip references`, err);
+    console.error(`[${MODULE_ID}] Failed to map DE skill tooltip references from module compendium`, err);
   }
 });

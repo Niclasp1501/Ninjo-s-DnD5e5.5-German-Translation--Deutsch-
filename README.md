@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Current Version / Aktuelle Version:** 0.1.3
+**Current Version / Aktuelle Version:** 0.1.4
 
 German localization module for the official Foundry VTT `dnd5e` system (5.x) on Foundry VTT v13.
 
@@ -34,8 +34,8 @@ MVP scope: UI-first localization only. No SRD or compendium gameplay content is 
 - `tools/`: migration, diff, translation and validation scripts
 
 ### DE Skill Tooltip References (Internal)
-- On first load in a German UI, a GM creates one internal world JournalEntry with DE skill pages.
-- The module remaps `CONFIG.DND5E.skills.*.reference` to these JournalEntryPage UUIDs.
+- The module ships an internal module compendium pack with DE skill tooltip pages.
+- On load, the module remaps `CONFIG.DND5E.skills.*.reference` to these compendium JournalEntryPage UUIDs.
 - Tooltips then use native dnd5e reference rendering.
 
 ### LLM Translation Pipeline (Gemini)
@@ -83,8 +83,8 @@ Notes:
 - `tools/`: Migrations-, Extraktions-, Ubersetzungs- und Validierungs-Skripte
 
 ### DE-Skill-Tooltip-Referenzen (intern)
-- Beim ersten Laden mit deutscher UI legt ein GM einen internen Welt-Journal-Eintrag mit DE-Skill-Seiten an.
-- Das Modul mappt `CONFIG.DND5E.skills.*.reference` auf diese JournalEntryPage-UUIDs.
+- Das Modul liefert ein internes Modul-Kompendium mit DE-Skill-Tooltip-Seiten aus.
+- Beim Laden mappt das Modul `CONFIG.DND5E.skills.*.reference` auf diese Kompendium-JournalEntryPage-UUIDs.
 - Tooltips werden dann nativ uber die dnd5e-Referenzdarstellung angezeigt.
 
 ### LLM-Ubersetzungs-Pipeline (Gemini)
@@ -114,3 +114,5 @@ Start a separate PowerShell window with live pipeline status:
 `powershell -ExecutionPolicy Bypass -File tools/start_pipeline_window.ps1 -BatchSize 5 -SleepMs 3000 -MaxBatches 5`
 
 The window shows each stage and writes a full log to `tools/logs/`.
+
+

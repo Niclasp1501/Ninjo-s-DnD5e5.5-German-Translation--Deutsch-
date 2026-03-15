@@ -1,7 +1,7 @@
 # TODO
 
 ## Release Tracking
-- [x] Latest release: `0.1.3` (2026-03-15)
+- [x] Latest release: `0.1.4` (2026-03-15)
 
 ## Next Releases
 - [ ] Translate remaining high-impact UI namespaces (`DND5E.CALENDAR`, `DND5E.FACILITY`, `DND5E.TRANSFORM`).
@@ -17,3 +17,4 @@
   - `CHANGELOG.md`
   - `TODO.md` (status adjustments)
 - [ ] Create and push a matching git tag (`v<version>`) for release workflow.
+

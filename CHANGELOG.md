@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4] - 2026-03-15
+### Added
+- Internal module compendium pack `dnd5e55-de-tooltips` included in module distribution.
+
+### Changed
+- Version bumped to `0.1.4` in `module.json` and `README.md`.
+- Skill tooltip references now resolve from module compendium data instead of world-owned data.
+
+### Fixed
+- Removed write operations against locked module compendiums at runtime.
+- Added compatibility rendering path for legacy text pages in module tooltip compendium to prevent endless loading spinners.
 ## [0.1.3] - 2026-03-15
 ### Changed
 - Version bumped to `0.1.3` in `module.json` and `README.md`.
@@ -49,3 +60,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - `module.json` with Foundry v13 compatibility and required `dnd5e` system relationship (5.x baseline).
 - Initial `README.md`, `CHANGELOG.md`, and `LICENSE`.
 - Base directories for `scripts/`, `languages/`, `tools/`, `config/`, and GitHub workflows.
+
