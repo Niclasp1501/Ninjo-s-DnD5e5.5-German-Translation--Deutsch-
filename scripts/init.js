@@ -14,7 +14,7 @@ const LEGACY_UUID_PREFIX_MAP = new Map([
 const REFERENCE_LABEL_MAP_DE = new Map([
   ["Attack", "Angriff"],
   ["Dash", "Sprinten"],
-  ["Disengage", "Rückzug"],
+  ["Disengage", "R\u00fcckzug"],
   ["Dodge", "Ausweichen"],
   ["Help", "Helfen"],
   ["Hide", "Verstecken"],
@@ -23,7 +23,12 @@ const REFERENCE_LABEL_MAP_DE = new Map([
   ["Ready", "Bereithalten"],
   ["Search", "Suchen"],
   ["Study", "Studieren"],
-  ["Utilize", "Nutzen"]
+  ["Utilize", "Nutzen"],
+  ["D20 Test", "W20-Wurf"],
+  ["D20 Tests", "W20-W\u00fcrfe"],
+  ["Critical Hit", "Kritischer Treffer"],
+  ["Bonus Actions", "Bonusaktionen"],
+  ["Reactions", "Reaktionen"]
 ]);
 const BabeleReferenceLabelMap = new Map();
 
@@ -95,11 +100,18 @@ function addReferenceLabel(source, localized) {
 function getReferenceLabel(sourceText) {
   const text = String(sourceText ?? "").trim();
   if (!text) return null;
+
+  const direct = REFERENCE_LABEL_MAP_DE.get(text);
+  if (direct) return direct;
+
   for (const variant of keyVariants(text)) {
     const mapped = BabeleReferenceLabelMap.get(variant);
-    if (mapped) return mapped;
+    if (!mapped) continue;
+    if (normalizeLabel(mapped) === normalizeLabel(text)) continue;
+    return mapped;
   }
-  return REFERENCE_LABEL_MAP_DE.get(text) || null;
+
+  return null;
 }
 
 async function loadReferenceLabelsFromBabele() {
@@ -170,7 +182,7 @@ function localizeOverviewHeadingsInElement(rootElement) {
   const headingMap = new Map([
     ["Playing the Game", "Das Spiel spielen"],
     ["Character Classes", "Klassen"],
-    ["Equipment", "Ausrüstung"],
+    ["Equipment", "Ausr\u00fcstung"],
     ["Rules Glossary", "Regelglossar"],
     ["Gameplay Toolbox", "Spielhilfen"]
   ]);
