@@ -1,3 +1,5 @@
+import { TOOL_OVERRIDES_BY_ID } from "./babele-runtime-overrides.js";
+
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
 
 function isGermanUi() {
@@ -20,6 +22,19 @@ function normalizeName(value) {
 
 function isTargetType(data) {
   return !!data && (data.type === "weapon" || data.type === "tool");
+}
+
+function getSourceId(data) {
+  return foundry.utils.parseUuid(data?.flags?.core?.sourceId || data?._stats?.compendiumSource)?.id;
+}
+
+function getItemId(data) {
+  return getSourceId(data) || data?._id || "";
+}
+
+function getToolOverride(data) {
+  const itemId = getItemId(data);
+  return TOOL_OVERRIDES_BY_ID[itemId] || null;
 }
 
 function roundMetric(value) {
@@ -106,17 +121,12 @@ const NAME_MAP_DE = new Map(
   }).map(([k, v]) => [normalizeName(k), v])
 );
 
-const ACTIVITY_NAME_MAP_DE = new Map([
-  ["Mimic Handwriting", "Handschrift imitieren"],
-  ["Duplicate Wax Seal", "Wachssiegel fälschen"],
-  ["Pick a Lock/Disarm a Trap", "Schloss knacken/Falle entschärfen"],
-  ["Plot a Course", "Kurs festlegen"],
-  ["Determine Position by Stargazing", "Position per Sternbeobachtung bestimmen"]
-]);
-
 function translateItemNameRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (!isTargetType(data)) return originalValue;
+
+  const override = getToolOverride(data);
+  if (override?.name) return override.name;
 
   const original = String(originalValue ?? "").trim();
   if (!original) return originalValue;
@@ -133,62 +143,14 @@ function translateItemNameRuntime(originalValue, _entryTranslation, data) {
   return originalValue;
 }
 
-function translateDescriptionTextDe(text) {
-  let out = String(text ?? "");
-  if (!out) return out;
-
-  const sentencePatterns = [
-    {
-      re: /Mimic\s+10\s+or\s+fewer\s+words\s+of\s+someone\s+else['’]s\s+handwriting\s+\((?:DC|SG)\s*_?15\),\s*or\s+duplicate\s+a\s+wax\s+seal\s+\((?:DC|SG)\s*_?20\)/gi,
-      de: "Imitiere bis zu 10 Wörter in der Handschrift einer anderen Person (SG 15) oder fälsche ein Wachssiegel (SG 20)"
-    },
-    {
-      re: /Pick\s+a\s+lock\s+\((?:DC|SG)\s*_?15\),\s*or\s+disarm\s+a\s+trap\s+\((?:DC|SG)\s*_?15\)/gi,
-      de: "Knacke ein Schloss (SG 15) oder entschärfe eine Falle (SG 15)"
-    },
-    {
-      re: /Plot\s+a\s+course\s+\((?:DC|SG)\s*_?10\),\s*or\s+determine\s+position\s+by\s+stargazing\s+\((?:DC|SG)\s*_?15\)/gi,
-      de: "Bestimme einen Kurs (SG 10) oder ermittle die Position per Sternbeobachtung (SG 15)"
-    },
-    {
-      re: /Detect\s+a\s+poisoned\s+object\s+\((?:DC|SG)\s*_?10\)/gi,
-      de: "Erkenne ein vergiftetes Objekt (SG 10)"
-    },
-    {
-      re: /Identify\s+a\s+plant\s+\((?:DC|SG)\s*_?10\)/gi,
-      de: "Bestimme eine Pflanze (SG 10)"
-    },
-    {
-      re: /Play\s+a\s+known\s+tune\s+\((?:DC|SG)\s*_?10\),\s*or\s+improvise\s+a\s+song\s+\((?:DC|SG)\s*_?15\)/gi,
-      de: "Spiele eine bekannte Melodie (SG 10) oder improvisiere ein Lied (SG 15)"
-    }
-  ];
-
-  for (const { re, de } of sentencePatterns) {
-    out = out.replace(re, de);
-  }
-
-  out = out
-    .replace(/<strong>\s*Ability:\s*<\/strong>/gi, "<strong>Attribut:</strong>")
-    .replace(/<strong>\s*Utilize:\s*<\/strong>/gi, "<strong>Verwenden:</strong>")
-    .replace(/<strong>\s*Craft:\s*<\/strong>/gi, "<strong>Herstellen:</strong>")
-    .replace(/\bStrength\b/g, "Stärke")
-    .replace(/\bDexterity\b/g, "Geschicklichkeit")
-    .replace(/\bConstitution\b/g, "Konstitution")
-    .replace(/\bIntelligence\b/g, "Intelligenz")
-    .replace(/\bWisdom\b/g, "Weisheit")
-    .replace(/\bCharisma\b/g, "Charisma")
-    .replace(/\(DC\s*_?(\d+)\)/g, "(SG $1)")
-    .replace(/\(DC\s+(\d+)\)/g, "(SG $1)");
-
-  return out;
-}
-
 function translateToolWeaponDescriptionRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (!isTargetType(data)) return originalValue;
-  if (typeof originalValue !== "string") return originalValue;
-  return translateDescriptionTextDe(originalValue);
+
+  const override = getToolOverride(data);
+  if (override?.description) return override.description;
+
+  return originalValue;
 }
 
 function translateToolWeaponActivitiesRuntime(originalValue, _entryTranslation, data) {
@@ -196,18 +158,16 @@ function translateToolWeaponActivitiesRuntime(originalValue, _entryTranslation, 
   if (!isTargetType(data)) return originalValue;
   if (!originalValue || typeof originalValue !== "object") return originalValue;
 
-  const translated = foundry.utils.deepClone(originalValue);
+  const override = getToolOverride(data);
+  if (!override?.activities) return originalValue;
 
+  const translated = foundry.utils.deepClone(originalValue);
   for (const activity of Object.values(translated)) {
     if (!activity || typeof activity !== "object") continue;
+    if (typeof activity.name !== "string") continue;
 
-    if (typeof activity.name === "string" && ACTIVITY_NAME_MAP_DE.has(activity.name)) {
-      activity.name = ACTIVITY_NAME_MAP_DE.get(activity.name);
-    }
-
-    if (activity.description?.chatFlavor && typeof activity.description.chatFlavor === "string") {
-      activity.description.chatFlavor = translateDescriptionTextDe(activity.description.chatFlavor);
-    }
+    const mapped = override.activities[activity.name];
+    if (mapped) activity.name = mapped;
   }
 
   return translated;

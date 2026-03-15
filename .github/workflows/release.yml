@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir -p dist
           INCLUDE_FILES="module.json README.md CHANGELOG.md LICENSE"
-          INCLUDE_DIRS="languages scripts packs templates styles assets"
+          INCLUDE_DIRS="languages scripts babele packs templates styles assets"
 
           ZIP_INPUTS="$INCLUDE_FILES"
           for d in $INCLUDE_DIRS; do
