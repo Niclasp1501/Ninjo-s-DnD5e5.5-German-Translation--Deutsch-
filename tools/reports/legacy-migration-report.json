@@ -1,0 +1,156 @@
+{
+  "legacy": "F:\\KI-Agenten-Workspace\\sprache\\de\\dnd5e.items.json",
+  "source_root": "C:\\Users\\nicla\\Documents\\Playground\\dnd5e\\packs\\_source",
+  "packs": [
+    "equipment24",
+    "items"
+  ],
+  "types": [
+    "tool",
+    "weapon"
+  ],
+  "totals": {
+    "targets": 438,
+    "migrated": 411,
+    "missing": 27
+  },
+  "missing_by_pack": {
+    "equipment24": [
+      {
+        "id": "dmgClawedGauntle",
+        "name": "Clawed Gauntlet",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgBerserkerAxe0",
+        "name": "Berserker Axe",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgDancingSword0",
+        "name": "Dancing Sword",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgDefender00000",
+        "name": "Defender",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgDragonSlayer0",
+        "name": "Dragon Slayer",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgEnergyBow0000",
+        "name": "Energy Bow",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgFlameTongue00",
+        "name": "Flame Tongue",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgFrostBrand000",
+        "name": "Frost Brand",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgGiantSlayer00",
+        "name": "Giant Slayer",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgHolyAvenger00",
+        "name": "Holy Avenger",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgLuckBlade0000",
+        "name": "Luck Blade",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgNineLivesStea",
+        "name": "Nine Lives Stealer",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgQuarterstaffO",
+        "name": "Quarterstaff of the Acrobat",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgSwordOfLifeSt",
+        "name": "Sword of Life Stealing",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgSwordOfSharpn",
+        "name": "Sword of Sharpness",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgSwordOfWoundi",
+        "name": "Sword of Wounding",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgThunderousGre",
+        "name": "Thunderous Greatclub",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgViciousWeapon",
+        "name": "Vicious Weapon",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgVorpalSword00",
+        "name": "Vorpal Sword",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgWeapon12or300",
+        "name": "Weapon, +1, +2, or +3",
+        "type": "weapon"
+      },
+      {
+        "id": "dmgWeaponOfWarni",
+        "name": "Weapon of Warning",
+        "type": "weapon"
+      },
+      {
+        "id": "phbwepMusket0000",
+        "name": "Musket",
+        "type": "weapon"
+      },
+      {
+        "id": "phbwepPistol0000",
+        "name": "Pistol",
+        "type": "weapon"
+      },
+      {
+        "id": "phbgstDice000000",
+        "name": "Dice",
+        "type": "tool"
+      },
+      {
+        "id": "phbgstDragonches",
+        "name": "Dragonchess",
+        "type": "tool"
+      },
+      {
+        "id": "phbgstPlayingcar",
+        "name": "Playing Cards",
+        "type": "tool"
+      },
+      {
+        "id": "phbgstThreedrago",
+        "name": "Three-dragon ante",
+        "type": "tool"
+      }
+    ]
+  }
+}

@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.8] - 2026-03-15
+### Added
+- Legacy migration tool to build ID-based Babele runtime overrides from existing German translation sources.
+- Generated runtime override table covering migrated `tool` and `weapon` entries for current `dnd5e` source packs.
+- Migration report output for transparent tracking of migrated and missing entries.
+
+### Changed
+- Version bumped to `0.1.8`.
+- Runtime Babele lookup now combines curated manual overrides with generated migration output.
+
 ## [0.1.7] - 2026-03-15
 ### Added
 - ID-based runtime override table for 5 tool examples (`Forgery`, `Thieves`, `Navigator`, `Poisoner`, `Herbalism`).
