@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Current Version / Aktuelle Version:** 0.1.4
+**Current Version / Aktuelle Version:** 0.1.5
 
 German localization module for the official Foundry VTT `dnd5e` system (5.x) on Foundry VTT v13.
 

@@ -137,6 +137,37 @@ function translateDescriptionTextDe(text) {
   let out = String(text ?? "");
   if (!out) return out;
 
+  const sentencePatterns = [
+    {
+      re: /Mimic\s+10\s+or\s+fewer\s+words\s+of\s+someone\s+else['’]s\s+handwriting\s+\((?:DC|SG)\s*_?15\),\s*or\s+duplicate\s+a\s+wax\s+seal\s+\((?:DC|SG)\s*_?20\)/gi,
+      de: "Imitiere bis zu 10 Wörter in der Handschrift einer anderen Person (SG 15) oder fälsche ein Wachssiegel (SG 20)"
+    },
+    {
+      re: /Pick\s+a\s+lock\s+\((?:DC|SG)\s*_?15\),\s*or\s+disarm\s+a\s+trap\s+\((?:DC|SG)\s*_?15\)/gi,
+      de: "Knacke ein Schloss (SG 15) oder entschärfe eine Falle (SG 15)"
+    },
+    {
+      re: /Plot\s+a\s+course\s+\((?:DC|SG)\s*_?10\),\s*or\s+determine\s+position\s+by\s+stargazing\s+\((?:DC|SG)\s*_?15\)/gi,
+      de: "Bestimme einen Kurs (SG 10) oder ermittle die Position per Sternbeobachtung (SG 15)"
+    },
+    {
+      re: /Detect\s+a\s+poisoned\s+object\s+\((?:DC|SG)\s*_?10\)/gi,
+      de: "Erkenne ein vergiftetes Objekt (SG 10)"
+    },
+    {
+      re: /Identify\s+a\s+plant\s+\((?:DC|SG)\s*_?10\)/gi,
+      de: "Bestimme eine Pflanze (SG 10)"
+    },
+    {
+      re: /Play\s+a\s+known\s+tune\s+\((?:DC|SG)\s*_?10\),\s*or\s+improvise\s+a\s+song\s+\((?:DC|SG)\s*_?15\)/gi,
+      de: "Spiele eine bekannte Melodie (SG 10) oder improvisiere ein Lied (SG 15)"
+    }
+  ];
+
+  for (const { re, de } of sentencePatterns) {
+    out = out.replace(re, de);
+  }
+
   out = out
     .replace(/<strong>\s*Ability:\s*<\/strong>/gi, "<strong>Attribut:</strong>")
     .replace(/<strong>\s*Utilize:\s*<\/strong>/gi, "<strong>Verwenden:</strong>")
@@ -149,37 +180,6 @@ function translateDescriptionTextDe(text) {
     .replace(/\bCharisma\b/g, "Charisma")
     .replace(/\(DC\s*_?(\d+)\)/g, "(SG $1)")
     .replace(/\(DC\s+(\d+)\)/g, "(SG $1)");
-
-  const sentenceMap = [
-    [
-      "Mimic 10 or fewer words of someone else's handwriting (DC 15), or duplicate a wax seal (DC 20)",
-      "Imitiere bis zu 10 Wörter in der Handschrift einer anderen Person (SG 15) oder fälsche ein Wachssiegel (SG 20)"
-    ],
-    [
-      "Pick a lock (DC 15), or disarm a trap (DC 15)",
-      "Knacke ein Schloss (SG 15) oder entschärfe eine Falle (SG 15)"
-    ],
-    [
-      "Plot a course (DC 10), or determine position by stargazing (DC 15)",
-      "Bestimme einen Kurs (SG 10) oder ermittle die Position per Sternbeobachtung (SG 15)"
-    ],
-    [
-      "Detect a poisoned object (DC 10)",
-      "Erkenne ein vergiftetes Objekt (SG 10)"
-    ],
-    [
-      "Identify a plant (DC 10)",
-      "Bestimme eine Pflanze (SG 10)"
-    ],
-    [
-      "Play a known tune (DC 10), or improvise a song (DC 15)",
-      "Spiele eine bekannte Melodie (SG 10) oder improvisiere ein Lied (SG 15)"
-    ]
-  ];
-
-  for (const [en, de] of sentenceMap) {
-    out = out.replaceAll(en, de);
-  }
 
   return out;
 }

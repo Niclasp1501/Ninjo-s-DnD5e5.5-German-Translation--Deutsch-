@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.5] - 2026-03-15
+### Added
+- Babele integration for runtime weapon and tool translation mappings.
+- Runtime mapping files for `dnd5e.items` and `dnd5e.equipment24`.
+
+### Changed
+- Version bumped to `0.1.5`.
+- German weapon and tool name mapping now uses proper umlauts.
+
+### Fixed
+- Tool/weapon metric display conversion for weight (`lb` to `kg`) in runtime mapping.
+- Initial tool description phrase replacements for key in-sheet usage text (e.g. Forgery/Thieves/Navigator patterns).
+
 ## [0.1.4] - 2026-03-15
 ### Added
 - Internal module compendium pack for German skill tooltip references.
