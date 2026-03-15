@@ -1,6 +1,30 @@
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
 const MODULE_PACK_NAME = "dnd5e55-de-tooltips";
 const MODULE_PACK_COLLECTION = `${MODULE_ID}.${MODULE_PACK_NAME}`;
+const LEGACY_UUID_PREFIX_MAP = new Map([
+  ["Compendium.dnd-players-handbook.content.", "Compendium.dnd5e.content24."],
+  ["Compendium.dnd-players-handbook.equipment.", "Compendium.dnd5e.equipment24."],
+  ["Compendium.dnd-players-handbook.spells.", "Compendium.dnd5e.spells24."],
+  ["Compendium.dnd-players-handbook.classes.", "Compendium.dnd5e.classes24."],
+  ["Compendium.dnd-players-handbook.origins.", "Compendium.dnd5e.origins24."],
+  ["Compendium.dnd-players-handbook.feats.", "Compendium.dnd5e.feats24."],
+  ["Compendium.dnd-players-handbook.tables.", "Compendium.dnd5e.tables24."]
+]);
+const REFERENCE_LABEL_MAP_DE = new Map([
+  ["Attack", "Angriff"],
+  ["Dash", "Sprinten"],
+  ["Disengage", "Rückzug"],
+  ["Dodge", "Ausweichen"],
+  ["Help", "Helfen"],
+  ["Hide", "Verstecken"],
+  ["Influence", "Beeinflussen"],
+  ["Magic", "Magie"],
+  ["Ready", "Bereithalten"],
+  ["Search", "Suchen"],
+  ["Study", "Studieren"],
+  ["Utilize", "Nutzen"]
+]);
+const BabeleReferenceLabelMap = new Map();
 
 const SKILL_LABELS_DE = {
   acr: "Akrobatik",
@@ -36,6 +60,151 @@ function normalizeLabel(value) {
     .replace(/\u00df/g, "ss")
     .replace(/[^a-z0-9]+/g, "")
     .trim();
+}
+
+function remapLegacyUuid(uuid) {
+  const value = String(uuid ?? "");
+  for (const [legacyPrefix, modernPrefix] of LEGACY_UUID_PREFIX_MAP.entries()) {
+    if (value.startsWith(legacyPrefix)) return `${modernPrefix}${value.slice(legacyPrefix.length)}`;
+  }
+  return value;
+}
+
+function keyVariants(value) {
+  const source = String(value ?? "").trim();
+  if (!source) return [];
+  const lower = source.toLowerCase();
+  const compact = lower.replace(/[^a-z0-9]+/g, "");
+  const alnum = lower.replace(/[^a-z0-9]+/g, " ").trim();
+  return Array.from(new Set([source, lower, compact, alnum]));
+}
+
+function addReferenceLabel(source, localized) {
+  const local = String(localized ?? "").trim();
+  if (!local) return;
+  for (const variant of keyVariants(source)) {
+    BabeleReferenceLabelMap.set(variant, local);
+  }
+}
+
+function getReferenceLabel(sourceText) {
+  const text = String(sourceText ?? "").trim();
+  if (!text) return null;
+  for (const variant of keyVariants(text)) {
+    const mapped = BabeleReferenceLabelMap.get(variant);
+    if (mapped) return mapped;
+  }
+  return REFERENCE_LABEL_MAP_DE.get(text) || null;
+}
+
+async function loadReferenceLabelsFromBabele() {
+  const files = ["dnd5e.content24.json", "dnd5e.rules.json"];
+  for (const file of files) {
+    try {
+      const response = await fetch(`modules/${MODULE_ID}/babele/${file}`);
+      if (!response.ok) continue;
+      const data = await response.json();
+      const entries = data?.entries ?? {};
+      for (const [entryKey, entryValue] of Object.entries(entries)) {
+        addReferenceLabel(entryKey, entryValue?.name);
+        for (const [pageKey, pageValue] of Object.entries(entryValue?.pages ?? {})) {
+          addReferenceLabel(pageKey, pageValue?.name);
+        }
+      }
+    } catch (_err) {
+      // Non-fatal: fallback map remains available.
+    }
+  }
+}
+
+function normalizeLegacyUuidsInElement(rootElement) {
+  const root = rootElement?.querySelectorAll ? rootElement : null;
+  if (!root) return 0;
+
+  let changed = 0;
+  for (const link of root.querySelectorAll("a.content-link[data-uuid], a.entity-link[data-uuid], [data-uuid]")) {
+    const original = link.dataset?.uuid;
+    if (!original) continue;
+    const mapped = remapLegacyUuid(original);
+    if (mapped === original) continue;
+    link.dataset.uuid = mapped;
+    changed += 1;
+  }
+
+  return changed;
+}
+
+function localizeReferenceLabelsInElement(rootElement) {
+  const root = rootElement?.querySelectorAll ? rootElement : null;
+  if (!root) return 0;
+
+  let changed = 0;
+  const selector = [
+    "a.content-link",
+    "a.entity-link",
+    "a[data-link]",
+    "a[data-uuid]",
+    "span.reference"
+  ].join(", ");
+
+  for (const link of root.querySelectorAll(selector)) {
+    const text = String(link.textContent ?? "").trim();
+    if (!text) continue;
+    const localized = getReferenceLabel(text);
+    if (!localized || localized === text) continue;
+    link.textContent = localized;
+    changed += 1;
+  }
+
+  return changed;
+}
+
+function localizeOverviewHeadingsInElement(rootElement) {
+  const root = rootElement?.querySelectorAll ? rootElement : null;
+  if (!root) return 0;
+  const headingMap = new Map([
+    ["Playing the Game", "Das Spiel spielen"],
+    ["Character Classes", "Klassen"],
+    ["Equipment", "Ausrüstung"],
+    ["Rules Glossary", "Regelglossar"],
+    ["Gameplay Toolbox", "Spielhilfen"]
+  ]);
+  let changed = 0;
+  for (const node of root.querySelectorAll("h1, h2, h3, h4, strong, a, span")) {
+    const text = String(node.textContent ?? "").trim();
+    if (!text) continue;
+    const replacement = headingMap.get(text);
+    if (!replacement || replacement === text) continue;
+    node.textContent = replacement;
+    changed += 1;
+  }
+  return changed;
+}
+
+function installLegacyUuidBridge() {
+  if (installLegacyUuidBridge._installed) return;
+  installLegacyUuidBridge._installed = true;
+
+  document.addEventListener(
+    "click",
+    event => {
+      const link = event.target?.closest?.("a.content-link[data-uuid], a.entity-link[data-uuid], [data-uuid]");
+      if (!link?.dataset?.uuid) return;
+      link.dataset.uuid = remapLegacyUuid(link.dataset.uuid);
+    },
+    true
+  );
+
+  Hooks.on("renderApplication", (_app, html) => {
+    const element = html?.[0] ?? html;
+    normalizeLegacyUuidsInElement(element);
+    localizeReferenceLabelsInElement(element);
+    localizeOverviewHeadingsInElement(element);
+  });
+
+  normalizeLegacyUuidsInElement(document.body);
+  localizeReferenceLabelsInElement(document.body);
+  localizeOverviewHeadingsInElement(document.body);
 }
 
 function patchLegacyTooltipRendering() {
@@ -140,6 +309,9 @@ Hooks.once("init", () => {
 Hooks.once("ready", async () => {
   if (game.system.id !== "dnd5e") return;
   if (!isGermanUi()) return;
+
+  await loadReferenceLabelsFromBabele();
+  installLegacyUuidBridge();
 
   try {
     const pack = await getPack();

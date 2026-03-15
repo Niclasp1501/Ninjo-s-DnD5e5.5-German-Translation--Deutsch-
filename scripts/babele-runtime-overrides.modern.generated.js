@@ -16,7 +16,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgAdamantineArm": {
     "name": "Adamantinharnisch",
-    "description": "<p><em>Rüstung (jede mittelschwere oder schwere, außer Lederharnisch), Ungewöhnlich</em></p><p>Dieser Harnisch ist mit Adamantin verstärkt, einer der härtesten Substanzen, die es gibt. Während du ihn trägst, wird jeder &amp;Reference[CriticalHits] gegen dich zu einem normalen Treffer.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "description": "<p><em>Rüstung (jede mittelschwere oder schwere, außer Lederharnisch), Ungewöhnlich</em></p><p>Dieser Harnisch ist mit Adamantin verstärkt, einer der härtesten Substanzen, die es gibt. Während du ihn trägst, wird jeder &amp;Reference[CriticalHits]{Kritische Treffer} gegen dich zu einem normalen Treffer.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
     "activities": {
       "Adamantine Armor": "Adamantinharnisch"
     }
@@ -363,7 +363,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgFallingNet000": {
     "name": "Fallnetz",
-    "description": "<div><p><em>Lästiger Falle (Stufen\n1–4)</em></p><p><strong>Auslöser:</strong> Eine Kreatur überquert einen Stolperdraht</p><p><strong>Dauer:</strong> Augenblicklich</p><p>Eine Fallnetz-Falle verwendet einen Stolperdraht, um ein beschwertes, 3 Meter großes Netz freizugeben, das von der Decke hängt. Der Stolperdraht ist 7,5 cm über dem Boden gespannt und erstreckt sich zwischen zwei Säulen oder Bäumen.</p><p>Die erste Kreatur, die den Stolperdraht überquert, lässt das Netz auf sie fallen. Das Ziel muss einen Rettungswurf auf Geschicklichkeit SG 10 bestehen oder den &amp;Reference[Restrained] Zustand haben, bis es entkommt. Das Ziel ist automatisch erfolgreich, wenn es Riesig oder größer ist. Eine Kreatur kann eine Aktion aufwenden, um eine Fertigkeitsprobe auf Stärke (Athletik) SG 10 abzulegen, wodurch sie sich selbst oder eine andere Kreatur in ihrer Reichweite bei Erfolg aus dem Netz befreit.</p><p><em><strong>Entdecken und Entschärfen.</strong></em> Als Suchaktion kann eine Kreatur den Fallenbereich untersuchen und eine [[/check prc 11]] Probe ablegen, wodurch sie bei Erfolg den Stolperdraht und das hängende @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000]{Netz} entdeckt. Einmal entdeckt, kann der Stolperdraht leicht durchgeschnitten oder umgangen werden (keine Fertigkeitsprobe erforderlich).</p><p><em><strong>Das Netz zerstören.</strong></em> Das Netz auf 0 Trefferpunkte zu reduzieren, befreit jede darin gefangene Kreatur (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.xIDcbjgXOndS8zRl]{Ausrüstung} für die Werte des Netzes).</p><p><em><strong>Die Falle stellen.</strong></em> Eine Kreatur, die Diebeswerkzeuge und alle Fallenkomponenten (einschließlich eines Netzes) besitzt, kann versuchen, eine Fallnetz-Falle zu stellen, was ihr mit einer erfolgreichen Fertigkeitsprobe auf Geschicklichkeit (Fingerfertigkeit) SG 13 gelingt. Jeder Versuch, diese Falle zu stellen, dauert 10 Minuten.</p><p><em><strong>Auf höheren Stufen.</strong></em> Du kannst die Falle für höhere Stufen skalieren, indem du das Gewicht des Netzes erhöhst, was den Rettungswurf-SG und den SG der Stärke (Athletik)-Probe wie folgt erhöht: SG 12 auf Stufen 5–10, SG 14 auf Stufen 11–16 oder SG 16 auf Stufen 17–20.</p></div>",
+    "description": "<div><p><em>Lästiger Falle (Stufen\n1–4)</em></p><p><strong>Auslöser:</strong> Eine Kreatur überquert einen Stolperdraht</p><p><strong>Dauer:</strong> Augenblicklich</p><p>Eine Fallnetz-Falle verwendet einen Stolperdraht, um ein beschwertes, 3 Meter großes Netz freizugeben, das von der Decke hängt. Der Stolperdraht ist 7,5 cm über dem Boden gespannt und erstreckt sich zwischen zwei Säulen oder Bäumen.</p><p>Die erste Kreatur, die den Stolperdraht überquert, lässt das Netz auf sie fallen. Das Ziel muss einen Rettungswurf auf Geschicklichkeit SG 10 bestehen oder den &amp;Reference[Restrained]{Festhalten} Zustand haben, bis es entkommt. Das Ziel ist automatisch erfolgreich, wenn es Riesig oder größer ist. Eine Kreatur kann eine Aktion aufwenden, um eine Fertigkeitsprobe auf Stärke (Athletik) SG 10 abzulegen, wodurch sie sich selbst oder eine andere Kreatur in ihrer Reichweite bei Erfolg aus dem Netz befreit.</p><p><em><strong>Entdecken und Entschärfen.</strong></em> Als Suchaktion kann eine Kreatur den Fallenbereich untersuchen und eine [[/check prc 11]] Probe ablegen, wodurch sie bei Erfolg den Stolperdraht und das hängende @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000]{Netz} entdeckt. Einmal entdeckt, kann der Stolperdraht leicht durchgeschnitten oder umgangen werden (keine Fertigkeitsprobe erforderlich).</p><p><em><strong>Das Netz zerstören.</strong></em> Das Netz auf 0 Trefferpunkte zu reduzieren, befreit jede darin gefangene Kreatur (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.xIDcbjgXOndS8zRl]{Ausrüstung} für die Werte des Netzes).</p><p><em><strong>Die Falle stellen.</strong></em> Eine Kreatur, die Diebeswerkzeuge und alle Fallenkomponenten (einschließlich eines Netzes) besitzt, kann versuchen, eine Fallnetz-Falle zu stellen, was ihr mit einer erfolgreichen Fertigkeitsprobe auf Geschicklichkeit (Fingerfertigkeit) SG 13 gelingt. Jeder Versuch, diese Falle zu stellen, dauert 10 Minuten.</p><p><em><strong>Auf höheren Stufen.</strong></em> Du kannst die Falle für höhere Stufen skalieren, indem du das Gewicht des Netzes erhöhst, was den Rettungswurf-SG und den SG der Stärke (Athletik)-Probe wie folgt erhöht: SG 12 auf Stufen 5–10, SG 14 auf Stufen 11–16 oder SG 16 auf Stufen 17–20.</p></div>",
     "activities": {
       "Escape Check (1-4)": "Entkommen (1-4)",
       "Escape Check (11-16)": "Entkommen (11-16)",
@@ -1002,7 +1002,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbagRope0000000": {
     "name": "Seil",
-    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]-, &amp;Reference[Incapacitated]- oder &amp;Reference[Restrained]-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
+    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]{Gepackt}-, &amp;Reference[Incapacitated]{Handlungsunfähig}- oder &amp;Reference[Restrained]{Festhalten}-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
     "activities": {
       "Burst Rope": "Seil zerreißen",
       "Escape Check": "Entkommen-Wurf",
@@ -1011,7 +1011,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "x8jC9e00t4cUYiKR": {
     "name": "Seil",
-    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]-, &amp;Reference[Incapacitated]- oder &amp;Reference[Restrained]-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
+    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]{Gepackt}-, &amp;Reference[Incapacitated]{Handlungsunfähig}- oder &amp;Reference[Restrained]{Festhalten}-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
     "activities": {
       "Burst Rope": "Seil zerreißen",
       "Escape Check": "Entkommen-Wurf",
@@ -1020,7 +1020,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "LfDewuKszszreg6i": {
     "name": "Seil",
-    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]-, &amp;Reference[Incapacitated]- oder &amp;Reference[Restrained]-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
+    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]{Gepackt}-, &amp;Reference[Incapacitated]{Handlungsunfähig}- oder &amp;Reference[Restrained]{Festhalten}-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
     "activities": {
       "Burst Rope": "Seil zerreißen",
       "Escape Check": "Entkommen-Wurf",
@@ -1029,7 +1029,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "5KMKEV07I25SVth0": {
     "name": "Seil",
-    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]-, &amp;Reference[Incapacitated]- oder &amp;Reference[Restrained]-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
+    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn du einen erfolgreichen SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf ablegst. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine unwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den &amp;Reference[Grappled]{Gepackt}-, &amp;Reference[Incapacitated]{Handlungsunfähig}- oder &amp;Reference[Restrained]{Festhalten}-Zustand hat. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegt.</p>",
     "activities": {
       "Burst Rope": "Seil zerreißen",
       "Escape Check": "Entkommen-Wurf",
@@ -1197,7 +1197,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgSwordOfSharpn": {
     "name": "Schwert der Schärfe",
-    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glefe},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Großschwert},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Langschwert} oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Krummsäbel}), Sehr\nSelten (Benötigt Einstimmung)</em></p><p>Wenn du ein Objekt mit dieser\nmagischen Waffe angreifst und triffst, maximierst du deine Waffenschadenswürfel gegen das\nZiel.</p><p>Wenn du eine Kreatur mit dieser Waffe angreifst und bei dem Angriffswurf eine 20 auf\ndem W20 würfelst, erleidet das Ziel zusätzlich 14 Hiebschaden\nund erhält <span class=\"no-break\">1 &amp;Reference[Exhaustion]</span>\nErschöpfungsstufe.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glefe},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Großschwert},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Langschwert} oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Krummsäbel}), Sehr\nSelten (Benötigt Einstimmung)</em></p><p>Wenn du ein Objekt mit dieser\nmagischen Waffe angreifst und triffst, maximierst du deine Waffenschadenswürfel gegen das\nZiel.</p><p>Wenn du eine Kreatur mit dieser Waffe angreifst und bei dem Angriffswurf eine 20 auf\ndem W20 würfelst, erleidet das Ziel zusätzlich 14 Hiebschaden\nund erhält <span class=\"no-break\">1 &amp;Reference[Exhaustion]{Erschöpfung}</span>\nErschöpfungsstufe.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
     "activities": {
       "Sword of Sharpness": "Schwert der Schärfe"
     }
@@ -1237,7 +1237,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgDmtThrone0000": {
     "name": "Thron",
-    "description": "<p>Du erhältst Übung und &amp;Reference[Expertise] in deiner Wahl von Geschichte, Einsicht, Einschüchterung oder Überzeugen. Zusätzlich erhältst du rechtmäßigen Besitz einer kleinen Festung irgendwo in der Welt. Die Festung beherbergt jedoch derzeit ein oder mehrere Monster, die vertrieben werden müssen, bevor du die Festung als deine beanspruchen kannst.</p><section id=\"secret-KpjqOSPJGy0Ec8YA\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Im Gegensatz zu den anderen Karten aus dem Stapel wird dieser Gegenstand sich bei Gebrauch <em>nicht</em> selbst zerstören, um als Symbol des Besitzes der Festung zu dienen.</p></section>",
+    "description": "<p>Du erhältst Übung und &amp;Reference[Expertise]{Expertise} in deiner Wahl von Geschichte, Einsicht, Einschüchterung oder Überzeugen. Zusätzlich erhältst du rechtmäßigen Besitz einer kleinen Festung irgendwo in der Welt. Die Festung beherbergt jedoch derzeit ein oder mehrere Monster, die vertrieben werden müssen, bevor du die Festung als deine beanspruchen kannst.</p><section id=\"secret-KpjqOSPJGy0Ec8YA\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Im Gegensatz zu den anderen Karten aus dem Stapel wird dieser Gegenstand sich bei Gebrauch <em>nicht</em> selbst zerstören, um als Symbol des Besitzes der Festung zu dienen.</p></section>",
     "activities": {
       "Card Effect": "Karteneffekt"
     }
@@ -1290,42 +1290,42 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbWaterpint0000": {
     "name": "Wasser (Pinte)",
-    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration].</p>",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration]{Dehydrierung}.</p>",
     "activities": {
       "Consume": "Verbrauchen"
     }
   },
   "2nlARB78sJo8Z2W6": {
     "name": "Wasser (Pinte)",
-    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration].</p>",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration]{Dehydrierung}.</p>",
     "activities": {
       "Consume": "Verbrauchen"
     }
   },
   "It6m0vGGZwCf9E7r": {
     "name": "Wasser (Pinte)",
-    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration].</p>",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration]{Dehydrierung}.</p>",
     "activities": {
       "Consume": "Verbrauchen"
     }
   },
   "Qgekp4euuB5S9tpe": {
     "name": "Wasser (Pinte)",
-    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration].</p>",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration]{Dehydrierung}.</p>",
     "activities": {
       "Consume": "Verbrauchen"
     }
   },
   "aWEY8Xh0wfn69Q1w": {
     "name": "Wasser (Pinte)",
-    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration].</p>",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration]{Dehydrierung}.</p>",
     "activities": {
       "Consume": "Verbrauchen"
     }
   },
   "67ScUFYRuMU0J2Wt": {
     "name": "Wasser (Pinte)",
-    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration].</p>",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration]{Dehydrierung}.</p>",
     "activities": {
       "Consume": "Verbrauchen"
     }
@@ -1339,7 +1339,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgspWaterfresh0": {
     "name": "Wasser, frisch (Pinte)",
-    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration].</p>",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[Dehydration]{Dehydrierung}.</p>",
     "activities": {
       "Consume": "Verbrauchen"
     }
@@ -1694,7 +1694,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbagNet00000000": {
     "name": "Netz",
-    "description": "<p>Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe\ndurch das Werfen eines Netzes ersetzen. Wähle eine Kreatur, die du innerhalb von 4,5 Metern von\ndir sehen kannst, als Ziel. Das Ziel muss einen Rettungswurf auf Geschicklichkeit (SG 8 plus\ndein Geschicklichkeitsmodifikator und Übungsbonus) bestehen oder den\nZustand &amp;Reference[Restrained] haben, bis es entkommt. Das Ziel besteht\nautomatisch, wenn es Riesig oder größer ist.</p><p>Um zu entkommen, muss das Ziel oder eine\nKreatur innerhalb von 1,5 Metern von ihm eine Aktion ausführen, um einen [[/skill ath\n10]] Wurf zu machen, wodurch die gefesselte Kreatur bei Erfolg befreit wird. Das Zerstören des\nNetzes (RK 10; 5 TP; Immunität gegen Wuchtschaden, Giftschaden und Psychischen Schaden)\nbefreit das Ziel ebenfalls und beendet den Effekt.</p>"
+    "description": "<p>Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe\ndurch das Werfen eines Netzes ersetzen. Wähle eine Kreatur, die du innerhalb von 4,5 Metern von\ndir sehen kannst, als Ziel. Das Ziel muss einen Rettungswurf auf Geschicklichkeit (SG 8 plus\ndein Geschicklichkeitsmodifikator und Übungsbonus) bestehen oder den\nZustand &amp;Reference[Restrained]{Festhalten} haben, bis es entkommt. Das Ziel besteht\nautomatisch, wenn es Riesig oder größer ist.</p><p>Um zu entkommen, muss das Ziel oder eine\nKreatur innerhalb von 1,5 Metern von ihm eine Aktion ausführen, um einen [[/skill ath\n10]] Wurf zu machen, wodurch die gefesselte Kreatur bei Erfolg befreit wird. Das Zerstören des\nNetzes (RK 10; 5 TP; Immunität gegen Wuchtschaden, Giftschaden und Psychischen Schaden)\nbefreit das Ziel ebenfalls und beendet den Effekt.</p>"
   },
   "dmgPearlOfPower0": {
     "name": "Perle der Macht",
@@ -1720,7 +1720,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgPortableHole0": {
     "name": "Tragbares Loch",
-    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieses feine schwarze Tuch, weich wie Seide,\nist auf die Größe eines Taschentuchs gefaltet. Es entfaltet sich zu einem\nkreisförmigen Tuch mit 1,8 Metern Durchmesser.</p><p>Du kannst eine Magie-Aktion ausführen, um\nein <em>Tragbares Loch</em> zu entfalten und es auf oder gegen eine feste\nOberfläche zu legen, woraufhin das <em>Tragbare Loch</em> ein extradimensionales\nLoch von 3 Metern Tiefe erzeugt. Der zylindrische Raum innerhalb des Lochs existiert auf einer\nanderen Existenzebene, daher kann er nicht verwendet werden, um offene Passagen zu schaffen.\nJede Kreatur innerhalb eines offenen <em>Tragbaren Lochs</em> kann das Loch\nverlassen, indem sie herausklettert.</p><p>Du kannst eine Magie-Aktion ausführen, um ein\n<em>Tragbares Loch</em> zu schließen, indem du die Ränder des Tuchs festhältst und\nes zusammenfaltest. Das Zusammenfalten des Tuchs schließt das Loch, und alle Kreaturen oder\nObjekte darin verbleiben im extradimensionalen Raum. Egal was sich darin befindet,\ndas Loch wiegt so gut wie nichts.</p><p>Wenn das Loch zusammengefaltet ist, kann eine\nKreatur innerhalb des extradimensionalen Raums des Lochs eine Aktion ausführen, um einen Wurf auf\nStärke (Athletik) SG 10 zu machen. Bei einem erfolgreichen Wurf bahnt sich die\nKreatur ihren Weg nach draußen und erscheint innerhalb von 1,5 Metern vom <em>Tragbaren\nLoch</em>. Ein geschlossenes <em>Tragbares Loch</em> enthält genug Luft für 1 Stunde\nAtmung, geteilt durch die Anzahl der atmenden Kreaturen\ndarin.</p><p>Das Platzieren eines <em>Tragbaren Lochs</em> in einem extradimensionalen\nRaum, der von einem <em>Beutel der Aufbewahrung</em>, einem <em>Praktischen Tornister</em> oder\neinem ähnlichen Gegenstand geschaffen wurde, zerstört sofort beide Gegenstände und öffnet ein Tor zur\nAstralebene. Das Tor entsteht dort, wo der eine Gegenstand in den anderen gelegt wurde.\nJede Kreatur innerhalb von 3 Metern vom Tor und nicht hinter\n&amp;Reference[Total Cover] ist, wird durch es gesaugt und an einem zufälligen\nOrt auf der Astralebene abgesetzt. Das Tor schließt sich dann. Das Tor ist nur eine\nEinbahnstraße und kann nicht wieder geöffnet werden.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieses feine schwarze Tuch, weich wie Seide,\nist auf die Größe eines Taschentuchs gefaltet. Es entfaltet sich zu einem\nkreisförmigen Tuch mit 1,8 Metern Durchmesser.</p><p>Du kannst eine Magie-Aktion ausführen, um\nein <em>Tragbares Loch</em> zu entfalten und es auf oder gegen eine feste\nOberfläche zu legen, woraufhin das <em>Tragbare Loch</em> ein extradimensionales\nLoch von 3 Metern Tiefe erzeugt. Der zylindrische Raum innerhalb des Lochs existiert auf einer\nanderen Existenzebene, daher kann er nicht verwendet werden, um offene Passagen zu schaffen.\nJede Kreatur innerhalb eines offenen <em>Tragbaren Lochs</em> kann das Loch\nverlassen, indem sie herausklettert.</p><p>Du kannst eine Magie-Aktion ausführen, um ein\n<em>Tragbares Loch</em> zu schließen, indem du die Ränder des Tuchs festhältst und\nes zusammenfaltest. Das Zusammenfalten des Tuchs schließt das Loch, und alle Kreaturen oder\nObjekte darin verbleiben im extradimensionalen Raum. Egal was sich darin befindet,\ndas Loch wiegt so gut wie nichts.</p><p>Wenn das Loch zusammengefaltet ist, kann eine\nKreatur innerhalb des extradimensionalen Raums des Lochs eine Aktion ausführen, um einen Wurf auf\nStärke (Athletik) SG 10 zu machen. Bei einem erfolgreichen Wurf bahnt sich die\nKreatur ihren Weg nach draußen und erscheint innerhalb von 1,5 Metern vom <em>Tragbaren\nLoch</em>. Ein geschlossenes <em>Tragbares Loch</em> enthält genug Luft für 1 Stunde\nAtmung, geteilt durch die Anzahl der atmenden Kreaturen\ndarin.</p><p>Das Platzieren eines <em>Tragbaren Lochs</em> in einem extradimensionalen\nRaum, der von einem <em>Beutel der Aufbewahrung</em>, einem <em>Praktischen Tornister</em> oder\neinem ähnlichen Gegenstand geschaffen wurde, zerstört sofort beide Gegenstände und öffnet ein Tor zur\nAstralebene. Das Tor entsteht dort, wo der eine Gegenstand in den anderen gelegt wurde.\nJede Kreatur innerhalb von 3 Metern vom Tor und nicht hinter\n&amp;Reference[Total Cover]{Volle Deckung} ist, wird durch es gesaugt und an einem zufälligen\nOrt auf der Astralebene abgesetzt. Das Tor schließt sich dann. Das Tor ist nur eine\nEinbahnstraße und kann nicht wieder geöffnet werden.</p>",
     "activities": {
       "Escape Check": "Entkommen-Wurf",
       "Unfold Portable Hole": "Tragbares Loch entfalten"
@@ -1908,23 +1908,23 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbagWaterskin00": {
     "name": "Wasserschlauch",
-    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>"
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration]{Dehydrierung}.</p>"
   },
   "LuLBFWwxjbNKU9FF": {
     "name": "Wasserschlauch",
-    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>"
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration]{Dehydrierung}.</p>"
   },
   "UOiM3icOTVhR3llN": {
     "name": "Wasserschlauch",
-    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>"
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration]{Dehydrierung}.</p>"
   },
   "5tEPJK0TLcjPvPNF": {
     "name": "Wasserschlauch",
-    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>"
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration]{Dehydrierung}.</p>"
   },
   "X5XgogJLLydoKdrJ": {
     "name": "Wasserschlauch",
-    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>"
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration]{Dehydrierung}.</p>"
   },
   "dmgWellOfManyWor": {
     "name": "Brunnen vieler Welten",
