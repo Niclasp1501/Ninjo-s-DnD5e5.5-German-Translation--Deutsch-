@@ -3,23 +3,24 @@
 **Version:** 1.0.0  
 **Status:** Beta
 
-Dieses Modul liefert deutsche Übersetzungen für Foundry VTT `dnd5e` 5.x (Foundry v13).
+Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins Deutsche.
 
 ## Deutsch (zuerst)
 
-### Aktueller Scope (Beta)
-- Schwerpunkt ist aktuell das **Ausrüstungs-Ökosystem** in `dnd5e.items` (Legacy) und `dnd5e.equipment24` (Modern).
-- Übersetzt werden derzeit vor allem:
-  - Namen
-  - Beschreibungen
-  - Aktivitäten
-  - Ordner- und Unterordner-Namen
-- Metrische Darstellung (z. B. Gewichte) wird in der Runtime berücksichtigt.
+### Zielbild
+- Kernfokus ist eine starke deutsche Systemübersetzung für:
+  - DnD5e-Moduloberfläche
+  - Character Sheets
+  - zentrale Spiel- und Bedienfunktionen
+- Diese Hauptfunktion ist bereits nutzbar.
 
-### Wichtiger Hinweis
-- Dieses Release ist **Beta**.
-- Der Übersetzungsumfang ist **noch nicht vollständig für alle dnd5e-Packs**.
-- Fokus von `1.0.0`: Ausrüstung stabil und sauber nutzbar machen.
+### Was ist Beta?
+- Beta betrifft primär Regel-/Kompendiumsinhalte (SRD und weitere Inhalte).
+- Aktuell ist in diesem Bereich vor allem **Ausrüstung** (Legacy + Modern) weit ausgebaut.
+- Weitere Inhalte folgen schrittweise in kommenden Releases.
+
+### Feedback
+- Feedback ist ausdrücklich willkommen und hilft direkt bei der Priorisierung der nächsten Übersetzungsbereiche.
 
 ### Voraussetzungen
 - Foundry VTT v13
@@ -33,27 +34,24 @@ Dieses Modul liefert deutsche Übersetzungen für Foundry VTT `dnd5e` 5.x (Found
    `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
 4. Modul installieren, Foundry neu starten, Modul in der Welt aktivieren.
 
-### Roadmap (kurz)
-- Nach und nach weitere Packs und offene Inhalte ergänzen.
-- Fehlende Inhalte kontrolliert nachziehen (Legacy/Modern strikt getrennt).
-
 ---
 
 ## English
 
-### Current Scope (Beta)
-- Current focus is the **equipment ecosystem** in `dnd5e.items` (legacy) and `dnd5e.equipment24` (modern).
-- This currently translates mainly:
-  - names
-  - descriptions
-  - activities
-  - folder and subfolder labels
-- Runtime metric display handling is included (for example weight conversion display).
+### Project Goal
+- Primary goal is robust German system translation for:
+  - dnd5e module interface
+  - character sheets
+  - core gameplay-facing UI
+- This core function is already usable.
 
-### Important Note
-- This release is **beta**.
-- Translation coverage is **not complete across all dnd5e packs** yet.
-- `1.0.0` focuses on making equipment translation stable and usable first.
+### What is Beta?
+- Beta currently applies mainly to rules/compendium content (SRD and additional content packs).
+- In that area, **equipment** (legacy + modern) is currently the most developed.
+- More content will be added step by step in upcoming releases.
+
+### Feedback
+- Feedback is very welcome and helps prioritize the next translation areas.
 
 ### Requirements
 - Foundry VTT v13

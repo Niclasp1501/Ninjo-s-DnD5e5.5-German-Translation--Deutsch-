@@ -1,7 +1,7 @@
 {
   "id": "foundryvtt-dnd5e55-lang-de",
   "title": "Ninjo's DnD5e5.5 German Translation (Deutsch)",
-  "description": "Beta: German localization for dnd5e 5.x on Foundry v13 with current focus on equipment translation (legacy + modern).",
+  "description": "German translation for Foundry dnd5e 5.x (v13): core UI, character sheets, and key gameplay-facing texts are available; SRD/compendium content is in beta, with equipment currently most complete.",
   "version": "1.0.0",
   "compatibility": {
     "minimum": "13",
