@@ -20,6 +20,7 @@
     }
   ],
   "esmodules": [
+    "scripts/babele-register.js",
     "scripts/init.js"
   ],
   "packs": [
@@ -34,6 +35,13 @@
   ],
   "relationships": {
     "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {
+          "minimum": "2.7.5"
+        }
+      },
       {
         "id": "dnd5e",
         "type": "system",

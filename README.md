@@ -30,6 +30,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
 - Foundry VTT v13
 - Official `dnd5e` system, version 5.x
 - The `dnd5e` system must be installed and active in the world
+- Babele module (2.7.5 or newer)
 
 ### Installation
 1. Open Foundry VTT and go to **Add-on Modules**.
@@ -77,6 +78,7 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
 - Foundry VTT v13
 - Offizielles `dnd5e`-System, Version 5.x
 - Das `dnd5e`-System muss in der Welt installiert und aktiv sein
+- Babele-Modul (2.7.5 oder neuer)
 
 ### Installation
 1. Foundry VTT starten und in den Reiter **Add-on Modules** wechseln.
@@ -104,3 +106,4 @@ German localization module for the official Foundry VTT `dnd5e` system (5.x) on 
 
 ## License / Lizenz
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
