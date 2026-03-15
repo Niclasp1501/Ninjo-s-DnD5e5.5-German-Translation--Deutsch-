@@ -1,10 +1,11 @@
 # TODO
 
 ## Release Tracking
-- [x] Latest release: `1.0.0` (2026-03-15)
+- [x] Latest release: `1.0.1` (2026-03-15)
 
 ## Next Releases
 - [x] Strict-provenance Babele migration baseline (legacy/modern split + allowlist + gap report).
+- [x] Expand modern rules TOC heading localization coverage (overview chapter headings).
 - [ ] Translate remaining high-impact UI namespaces (`DND5E.CALENDAR`, `DND5E.FACILITY`, `DND5E.TRANSFORM`).
 - [ ] Add stricter placeholder checks for pluralization variants and ICU-style patterns.
 - [ ] Add optional glossary enforcement in CI.

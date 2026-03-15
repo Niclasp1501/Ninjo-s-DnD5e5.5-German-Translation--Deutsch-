@@ -30,6 +30,27 @@ const REFERENCE_LABEL_MAP_DE = new Map([
   ["Bonus Actions", "Bonusaktionen"],
   ["Reactions", "Reaktionen"]
 ]);
+const TOC_HEADING_MAP_DE = new Map([
+  ["Playing the Game", "Das Spielgeschehen"],
+  ["Character Classes", "Klassen"],
+  ["Character Origins", "Charakterherk\u00fcnfte"],
+  ["Equipment", "Ausr\u00fcstung"],
+  ["Spells", "Zauber"],
+  ["Feats", "Talente"],
+  ["Rules Glossary", "Regelglossar"],
+  ["Gameplay Toolbox", "Spielhilfen"],
+  ["The Basics", "Grundlagen"],
+  ["Ensuring Fun for All", "Spa\u00df f\u00fcr alle sichern"],
+  ["Magic Items", "Magische Gegenst\u00e4nde"],
+  ["How to Use a Monster", "Monster verwenden"],
+  ["Monster A-Z", "Monster A-Z"],
+  ["Tracking Sheets", "Tracking-B\u00f6gen"],
+  ["Running Combat", "Kampf leiten"],
+  ["Monster", "Monster"]
+]);
+const TOC_HEADING_MAP_DE_NORMALIZED = new Map(
+  Array.from(TOC_HEADING_MAP_DE.entries(), ([source, target]) => [source.toLowerCase(), target])
+);
 const BabeleReferenceLabelMap = new Map();
 
 const SKILL_LABELS_DE = {
@@ -183,16 +204,6 @@ function localizeReferenceLabelsInElement(rootElement) {
 function localizeOverviewHeadingsInElement(rootElement) {
   const roots = collectSearchRoots(rootElement);
   if (!roots.length) return 0;
-  const headingMap = new Map([
-    ["playing the game", "Das Spielgeschehen"],
-    ["character classes", "Klassen"],
-    ["character origins", "Charakterherkünfte"],
-    ["equipment", "Ausrüstung"],
-    ["rules glossary", "Regelglossar"],
-    ["gameplay toolbox", "Spielhilfen"],
-    ["the basics", "Grundlagen"],
-    ["ensuring fun for all", "Spaß für alle sichern"]
-  ]);
 
   const normalizeDisplayText = value =>
     String(value ?? "")
@@ -207,7 +218,7 @@ function localizeOverviewHeadingsInElement(rootElement) {
     for (const node of root.querySelectorAll(selector)) {
       const text = String(node.textContent ?? "").trim();
       if (!text || text.length > 80) continue;
-      const replacement = headingMap.get(normalizeDisplayText(text));
+      const replacement = TOC_HEADING_MAP_DE_NORMALIZED.get(normalizeDisplayText(text));
       if (!replacement || replacement === text.trim()) continue;
       node.textContent = replacement;
       changed += 1;
@@ -243,17 +254,7 @@ function collectSearchRoots(rootElement) {
 function localizeTocHeading(value) {
   const text = String(value ?? "").trim();
   if (!text) return text;
-  const map = new Map([
-    ["Playing the Game", "Das Spielgeschehen"],
-    ["Character Classes", "Klassen"],
-    ["Character Origins", "Charakterherkünfte"],
-    ["Equipment", "Ausrüstung"],
-    ["Rules Glossary", "Regelglossar"],
-    ["Gameplay Toolbox", "Spielhilfen"],
-    ["The Basics", "Grundlagen"],
-    ["Ensuring Fun for All", "Spaß für alle sichern"]
-  ]);
-  return map.get(text) ?? text;
+  return TOC_HEADING_MAP_DE.get(text) ?? text;
 }
 
 function patchTableOfContentsCompendiumContext() {

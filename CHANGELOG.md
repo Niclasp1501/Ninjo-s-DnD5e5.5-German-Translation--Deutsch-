@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-03-15
+### Changed
+- Expanded runtime TOC heading localization for modern rules overview chapters.
+- Centralized TOC heading map used by both context patching and DOM fallback localization.
+
+### Fixed
+- Remaining English overview headings (e.g. `Spells`, `Magic Items`, `Feats`, `Tracking Sheets`) now localize consistently in German UI.
+
 ## [1.0.0] - 2026-03-15
 ### Added
 - First beta release (`1.0.0`).
