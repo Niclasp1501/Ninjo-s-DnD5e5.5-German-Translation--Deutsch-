@@ -1,113 +1,71 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Current Version / Aktuelle Version:** 1.0.0
+**Version:** 1.0.0  
+**Status:** Beta
 
-German localization module for the official Foundry VTT `dnd5e` system (5.x) on Foundry VTT v13.
+Dieses Modul liefert deutsche Übersetzungen für Foundry VTT `dnd5e` 5.x (Foundry v13).
 
-*(Scroll down for German version / Scrolle weiter runter fuer die deutsche Version)*
+## Deutsch (zuerst)
+
+### Aktueller Scope (Beta)
+- Schwerpunkt ist aktuell das **Ausrüstungs-Ökosystem** in `dnd5e.items` (Legacy) und `dnd5e.equipment24` (Modern).
+- Übersetzt werden derzeit vor allem:
+  - Namen
+  - Beschreibungen
+  - Aktivitäten
+  - Ordner- und Unterordner-Namen
+- Metrische Darstellung (z. B. Gewichte) wird in der Runtime berücksichtigt.
+
+### Wichtiger Hinweis
+- Dieses Release ist **Beta**.
+- Der Übersetzungsumfang ist **noch nicht vollständig für alle dnd5e-Packs**.
+- Fokus von `1.0.0`: Ausrüstung stabil und sauber nutzbar machen.
+
+### Voraussetzungen
+- Foundry VTT v13
+- `dnd5e` System 5.x (aktiv in der Welt)
+- Babele 2.7.5 oder neuer
+
+### Installation
+1. In Foundry auf **Add-on Modules** gehen.
+2. **Install Module** auswählen.
+3. Manifest einfügen:
+   `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
+4. Modul installieren, Foundry neu starten, Modul in der Welt aktivieren.
+
+### Roadmap (kurz)
+- Nach und nach weitere Packs und offene Inhalte ergänzen.
+- Fehlende Inhalte kontrolliert nachziehen (Legacy/Modern strikt getrennt).
 
 ---
 
 ## English
 
-### Features
-- Full German localization for major `dnd5e` 5.x interface areas.
-- Broad coverage for sheets, dialogs, settings, hints, labels, and workflow messages.
-- Internal module compendium for German skill tooltip references.
-- Strict legacy/modern runtime separation for Babele content mapping (legacy cannot overwrite new 2024+ content without ID allowlisting).
-- Clean module-first architecture for Foundry v13 and modern `dnd5e` 5.x updates.
-- Ongoing key coverage expansion with release-based updates.
+### Current Scope (Beta)
+- Current focus is the **equipment ecosystem** in `dnd5e.items` (legacy) and `dnd5e.equipment24` (modern).
+- This currently translates mainly:
+  - names
+  - descriptions
+  - activities
+  - folder and subfolder labels
+- Runtime metric display handling is included (for example weight conversion display).
 
-### Scope
-- Included:
-  - UI localization keys based on `dnd5e/lang/en.json`.
-  - Interface-facing text used in regular gameplay workflows.
-  - Skill tooltip reference integration through module-owned content.
-  - Babele runtime mapping for items and equipment24 (weapon/tool/equipment/consumable/loot/container) with strict provenance rules, including translated folder labels.
-- Excluded (MVP boundary):
-  - SRD/content gameplay translations such as `content24`, `rules`, `spells24`, `classes24`, and similar compendium text bodies.
-  - Full compendium translation packs outside interface needs.
+### Important Note
+- This release is **beta**.
+- Translation coverage is **not complete across all dnd5e packs** yet.
+- `1.0.0` focuses on making equipment translation stable and usable first.
 
 ### Requirements
 - Foundry VTT v13
-- Official `dnd5e` system, version 5.x
-- The `dnd5e` system must be installed and active in the world
-- Babele module (2.7.5 or newer)
+- `dnd5e` system 5.x (active in world)
+- Babele 2.7.5 or newer
 
 ### Installation
-1. Open Foundry VTT and go to **Add-on Modules**.
+1. Open **Add-on Modules** in Foundry.
 2. Click **Install Module**.
-3. Paste this manifest URL:
+3. Paste manifest URL:
    `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
-4. Install, restart Foundry, then enable the module in your world.
+4. Install, restart Foundry, enable module in your world.
 
-### Usage
-- Set your Foundry language to German.
-- Enable this module in the target world.
-- Open character and NPC sheets, settings, and dialogs to verify localized UI text.
-- Skill tooltip text is resolved by the internal module compendium references.
-
-### Known Boundaries
-- This module focuses on system UI localization first.
-- Gameplay source text from official SRD/content packs is not fully localized in the MVP scope.
-
-### Roadmap
-- Improve remaining uncovered UI keys in incremental releases.
-- Continue terminology consistency and quality passes.
-- Keep compatibility aligned with Foundry v13 and `dnd5e` 5.x updates.
-
----
-
-## Deutsch
-
-### Features
-- Umfassende deutsche Lokalisierung fuer zentrale `dnd5e`-5.x-Oberflaechen.
-- Breite Abdeckung fuer Character Sheets, Dialoge, Einstellungen, Hinweise, Labels und Workflow-Meldungen.
-- Internes Modul-Kompendium fuer deutsche Skill-Tooltip-Referenzen.
-- Strikte Legacy/Modern-Trennung fuer Babele-Content-Mappings (Legacy ueberschreibt 2024+-Inhalte nur mit ID-Allowlist).
-- Moderne, saubere Modul-Architektur fuer Foundry v13 und aktuelle `dnd5e`-5.x-Updates.
-- Laufende Erweiterung der Key-Abdeckung ueber Release-Updates.
-
-### Umfang
-- Enthalten:
-  - UI-Lokalisierungskeys auf Basis von `dnd5e/lang/en.json`.
-  - Oberflaechentexte fuer typische Spiel- und Bedienablaeufe.
-  - Skill-Tooltip-Referenzen ueber modul-eigene Inhalte.
-  - Babele-Runtime-Mapping fuer items und equipment24 (Waffen/Werkzeug/Ausruestung/Verbrauch/Beute/Behaelter) mit strikter Provenance-Regel inklusive uebersetzter Ordnerlabels.
-- Nicht enthalten (MVP-Grenze):
-  - SRD-/Content-Spieltexte wie `content24`, `rules`, `spells24`, `classes24` und aehnliche Kompendium-Textkoerper.
-  - Vollstaendige Kompendium-Uebersetzungspakete ausserhalb der UI-Fokussierung.
-
-### Voraussetzungen
-- Foundry VTT v13
-- Offizielles `dnd5e`-System, Version 5.x
-- Das `dnd5e`-System muss in der Welt installiert und aktiv sein
-- Babele-Modul (2.7.5 oder neuer)
-
-### Installation
-1. Foundry VTT starten und in den Reiter **Add-on Modules** wechseln.
-2. **Install Module** anklicken.
-3. Diese Manifest-URL einfuegen:
-   `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
-4. Installieren, Foundry neu starten und das Modul in deiner Welt aktivieren.
-
-### Verwendung
-- Foundry-Sprache auf Deutsch stellen.
-- Modul in der Zielwelt aktivieren.
-- Character- und NPC-Sheets, Einstellungen und Dialoge oeffnen und lokalisierte UI-Texte pruefen.
-- Skill-Tooltip-Texte werden ueber interne Kompendium-Referenzen des Moduls geladen.
-
-### Bekannte Grenzen
-- Fokus liegt auf der Lokalisierung der Systemoberflaeche.
-- Gameplay-Quelltexte aus offiziellen SRD-/Content-Packs sind im MVP nicht vollstaendig lokalisiert.
-
-### Roadmap
-- Restliche offene UI-Keys in inkrementellen Releases schliessen.
-- Terminologie-Konsistenz und Qualitaetssicherung weiter verbessern.
-- Kompatibilitaet mit Foundry v13 und `dnd5e` 5.x fortlaufend pflegen.
-
----
-
-## License / Lizenz
-This project is licensed under the MIT License. See [LICENSE](LICENSE).
-
+## License
+MIT License, see [LICENSE](LICENSE).
