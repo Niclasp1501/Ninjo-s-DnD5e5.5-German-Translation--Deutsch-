@@ -1,8 +1,8 @@
-﻿{
+{
     "id":  "foundryvtt-dnd5e55-lang-de",
     "title":  "Ninjo\u0027s DnD5e5.5 German Translation (Deutsch)",
     "description":  "German UI localization module for Foundry VTT dnd5e 5.x (MVP: UI-only, no SRD content translations).",
-    "version":  "0.1.5",
+    "version": "0.1.6",
     "compatibility":  {
                           "minimum":  "13",
                           "verified":  "13"

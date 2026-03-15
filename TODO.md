@@ -1,7 +1,7 @@
 # TODO
 
 ## Release Tracking
-- [x] Latest release: `0.1.5` (2026-03-15)
+- [x] Latest release: `0.1.6` (2026-03-15)
 
 ## Next Releases
 - [ ] Translate remaining high-impact UI namespaces (`DND5E.CALENDAR`, `DND5E.FACILITY`, `DND5E.TRANSFORM`).
