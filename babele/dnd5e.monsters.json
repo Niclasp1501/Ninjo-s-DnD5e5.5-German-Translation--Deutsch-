@@ -9896,7 +9896,7 @@
       ]
     }
   },
-  "label": "Monster (SRD)",
+  "label": "Monster (SRD, DE)",
   "mapping": {
     "name": {
       "converter": "monstername",

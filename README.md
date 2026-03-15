@@ -28,6 +28,9 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - `dnd5e` System 5.x (aktiv in der Welt)
 - Babele 2.7.5 oder neuer
 
+### Optional empfohlen
+- `metric-ruler-labels` (separates Modul) fÃ¼r zusÃ¤tzliche metrische Anzeigen im Lineal/Messwerkzeug.
+
 ### Installation
 1. In Foundry auf **Add-on Modules** gehen.
 2. **Install Module** auswählen.
@@ -59,6 +62,9 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Foundry VTT v13
 - `dnd5e` system 5.x (active in world)
 - Babele 2.7.5 or newer
+
+### Optional recommendation
+- `metric-ruler-labels` (separate module) for additional metric labels in ruler/measuring tool overlays.
 
 ### Installation
 1. Open **Add-on Modules** in Foundry.

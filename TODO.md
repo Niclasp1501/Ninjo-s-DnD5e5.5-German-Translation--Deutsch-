@@ -20,3 +20,21 @@
   - `TODO.md` (status adjustments)
 - [ ] Create and push a matching git tag (`v<version>`) for release workflow.
 
+## Possible Feature Backlog
+- [ ] Evaluate optional world setting: `Auto-normalize imported imperial units to metric`.
+- [ ] Guard feature by `dnd5e.metricLengthUnits` (only run when metric length is enabled).
+- [ ] Add import-time hooks for normalization candidates:
+  - `preCreateActor`
+  - `preCreateItem`
+  - `preCreateToken` (if token-side fields require normalization)
+- [ ] Normalize structured distance fields on import:
+  - Actor movement/senses (`system.attributes.movement.*`, `system.attributes.senses.*`)
+  - Item range (`system.range`)
+  - Activity range/target/template (`system.activities.*`)
+- [ ] Convert units and values consistently:
+  - `ft` -> `m`
+  - `mi` -> `km`
+- [ ] Add idempotency flag (e.g. `flags.<moduleId>.metricNormalized`) to avoid double conversion.
+- [ ] Keep scope strict: normalize data fields only, do not rewrite descriptive free-text.
+- [ ] Add test checklist with import samples (imperial, metric, mixed, repeated import).
+
