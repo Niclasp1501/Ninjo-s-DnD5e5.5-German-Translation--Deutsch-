@@ -1,8 +1,8 @@
 {
   "id": "foundryvtt-dnd5e55-lang-de",
   "title": "Ninjo's DnD5e5.5 German Translation (Deutsch)",
-  "description": "German translation for Foundry dnd5e 5.x (v13): core UI, character sheets, and key gameplay-facing texts are available; SRD/compendium content is in beta, with equipment currently most complete.",
-  "version": "1.0.2",
+  "description": "German translation for Foundry dnd5e 5.x (v13): core UI and character sheets are available; modern SRD/compendium translation coverage has expanded significantly but remains beta and incomplete.",
+  "version": "1.0.3",
   "compatibility": {
     "minimum": "13",
     "verified": "13"

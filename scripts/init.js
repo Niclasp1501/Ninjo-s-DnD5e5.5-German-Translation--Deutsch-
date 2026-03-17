@@ -1,5 +1,6 @@
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
 const SETTING_ENABLE_COMPENDIUM_TRANSLATIONS = "enableCompendiumTranslations";
+const SETTING_AUTO_METRIC_IMPORT_NORMALIZATION = "autoMetricImportNormalization";
 const MODULE_PACK_NAME = "dnd5e55-de-tooltips";
 const MODULE_PACK_COLLECTION = `${MODULE_ID}.${MODULE_PACK_NAME}`;
 const LEGACY_UUID_PREFIX_MAP = new Map([
@@ -89,6 +90,104 @@ function isGermanUi() {
 
 function isCompendiumTranslationEnabled() {
   return game.settings?.get(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS) !== false;
+}
+
+function isMetricLengthEnabled() {
+  return game.settings?.get("dnd5e", "metricLengthUnits") === true;
+}
+
+function shouldNormalizeMetricImports() {
+  if (game.system.id !== "dnd5e") return false;
+  if (game.settings?.get(MODULE_ID, SETTING_AUTO_METRIC_IMPORT_NORMALIZATION) !== true) return false;
+  return isMetricLengthEnabled();
+}
+
+function roundMetricValue(value) {
+  return Math.round((value + Number.EPSILON) * 100) / 100;
+}
+
+function convertDistanceValue(value, fromUnit, toUnit) {
+  const num = Number(value);
+  if (!Number.isFinite(num)) return value;
+
+  const from = CONFIG.DND5E?.movementUnits?.[fromUnit]?.conversion;
+  const to = CONFIG.DND5E?.movementUnits?.[toUnit]?.conversion;
+  if (!Number.isFinite(from) || !Number.isFinite(to) || to === 0) return value;
+
+  return roundMetricValue((num * from) / to);
+}
+
+function convertScalarLike(value, fromUnit, toUnit) {
+  if (typeof value === "number") return convertDistanceValue(value, fromUnit, toUnit);
+
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    if (!trimmed) return value;
+    if (!/^[-+]?\d+(\.\d+)?$/.test(trimmed)) return value; // Keep formulas as-is.
+    const converted = convertDistanceValue(Number(trimmed), fromUnit, toUnit);
+    if (!Number.isFinite(converted)) return value;
+    return String(converted);
+  }
+
+  return value;
+}
+
+function normalizeDistanceUnitsInObject(root) {
+  if (!root || typeof root !== "object") return 0;
+
+  const DISTANCE_KEYS = ["value", "long", "reach", "size", "width", "height", "distance"];
+  let changes = 0;
+
+  const walk = node => {
+    if (!node || typeof node !== "object") return;
+
+    if (Array.isArray(node)) {
+      for (const entry of node) walk(entry);
+      return;
+    }
+
+    const rawUnits = typeof node.units === "string" ? node.units.toLowerCase() : null;
+    const targetUnit = rawUnits === "ft" ? "m" : rawUnits === "mi" ? "km" : null;
+
+    if (targetUnit) {
+      for (const key of DISTANCE_KEYS) {
+        if (!(key in node)) continue;
+        const original = node[key];
+        const converted = convertScalarLike(original, rawUnits, targetUnit);
+        if (converted !== original) {
+          node[key] = converted;
+          changes += 1;
+        }
+      }
+
+      if (node.units !== targetUnit) {
+        node.units = targetUnit;
+        changes += 1;
+      }
+    }
+
+    for (const value of Object.values(node)) walk(value);
+  };
+
+  walk(root);
+  return changes;
+}
+
+function normalizeItemCreateData(source) {
+  return normalizeDistanceUnitsInObject(source?.system ?? source);
+}
+
+function normalizeActorCreateData(source) {
+  let changes = normalizeDistanceUnitsInObject(source?.system ?? source);
+
+  const items = source?.items;
+  if (Array.isArray(items)) {
+    for (const itemSource of items) {
+      changes += normalizeItemCreateData(itemSource);
+    }
+  }
+
+  return changes;
 }
 
 function normalizeLabel(value) {
@@ -552,8 +651,33 @@ Hooks.once("init", () => {
     return;
   }
 
+  game.settings.register(MODULE_ID, SETTING_AUTO_METRIC_IMPORT_NORMALIZATION, {
+    name: "Importe metrisch normalisieren",
+    hint: "Konvertiert beim Erstellen/Import von dnd5e-Akteuren und -Gegenstaenden strukturierte Distanzfelder von ft/mi nach m/km, wenn die dnd5e-Einstellung fuer metrische Laengeneinheiten aktiv ist.",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
   patchLegacyTooltipRendering();
   console.log(`[${MODULE_ID}] Initialized.`);
+});
+
+Hooks.on("preCreateItem", (document, createData) => {
+  if (!shouldNormalizeMetricImports()) return;
+
+  const source = foundry.utils.deepClone(createData ?? {});
+  const changes = normalizeItemCreateData(source);
+  if (changes > 0) document.updateSource(source);
+});
+
+Hooks.on("preCreateActor", (document, createData) => {
+  if (!shouldNormalizeMetricImports()) return;
+
+  const source = foundry.utils.deepClone(createData ?? {});
+  const changes = normalizeActorCreateData(source);
+  if (changes > 0) document.updateSource(source);
 });
 
 Hooks.once("ready", async () => {

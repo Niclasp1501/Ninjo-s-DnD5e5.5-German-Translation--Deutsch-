@@ -12,9 +12,49 @@
       "path": "system.description.value",
       "converter": "dnd5e55DescriptionDeRuntime"
     },
+    "materials": {
+      "path": "system.materials.value",
+      "converter": "dnd5e55MaterialsDeRuntime"
+    },
+    "activationCondition": {
+      "path": "system.activation.condition",
+      "converter": "dnd5e55SpellActivationConditionDeRuntime"
+    },
+    "rangeValue": {
+      "path": "system.range.value",
+      "converter": "dnd5e55SpellRangeMetricRuntime"
+    },
+    "rangeUnits": {
+      "path": "system.range.units",
+      "converter": "dnd5e55SpellRangeUnitMetricRuntime"
+    },
+    "rangeSpecial": {
+      "path": "system.range.special",
+      "converter": "dnd5e55SpellRangeSpecialDeRuntime"
+    },
+    "durationSpecial": {
+      "path": "system.duration.special",
+      "converter": "dnd5e55SpellDurationSpecialDeRuntime"
+    },
+    "targetAffectsSpecial": {
+      "path": "system.target.affects.special",
+      "converter": "dnd5e55SpellTargetAffectsSpecialDeRuntime"
+    },
+    "unidentifiedDescription": {
+      "path": "system.unidentified.description",
+      "converter": "dnd5e55SpellUnidentifiedDescriptionDeRuntime"
+    },
+    "targetTemplate": {
+      "path": "system.target.template",
+      "converter": "dnd5e55SpellTargetTemplateMetricRuntime"
+    },
     "activities": {
       "path": "system.activities",
-      "converter": "dnd5e55ActivitiesDeRuntime"
+      "converter": "dnd5e55ActivitiesRangeMetricRuntime"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "dnd5e55EffectsDeRuntime"
     }
   },
   "folders": {

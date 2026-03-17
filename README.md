@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Version:** 1.0.2  
+**Version:** 1.0.3  
 **Status:** Beta
 
 Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins Deutsche.
@@ -18,7 +18,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Beta betrifft primär Regel-/Kompendiumsinhalte (SRD und weitere Inhalte).
 - Aktuell ist in diesem Bereich vor allem **Ausrüstung** (Legacy + Modern) weit ausgebaut.
 - Weitere Inhalte folgen schrittweise in kommenden Releases.
-- In `1.0.2` wurden Kompendium-Ordnernamen (Legacy/Modern) robuster lokalisiert und SRD-Label konsistent auf `(SRD, DE)` vereinheitlicht.
+- In `1.0.3` wurden viele weitere Modern-SRD-Inhalte ergänzt.
+- Hinweis: Die Modern-SRD/Kompendium-Übersetzung ist deutlich breiter abgedeckt, aber weiterhin beta und noch nicht vollständig.
 
 ### Feedback
 - Feedback ist ausdrücklich willkommen und hilft direkt bei der Priorisierung der nächsten Übersetzungsbereiche.
@@ -53,7 +54,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Beta currently applies mainly to rules/compendium content (SRD and additional content packs).
 - In that area, **equipment** (legacy + modern) is currently the most developed.
 - More content will be added step by step in upcoming releases.
-- `1.0.2` improves compendium folder localization (legacy/modern) and standardizes SRD pack labels to `(SRD, DE)`.
+- `1.0.3` adds substantial modern SRD translation coverage across additional packs.
+- Note: modern SRD/compendium translation is now much broader, but still beta and not yet complete.
 
 ### Feedback
 - Feedback is very welcome and helps prioritize the next translation areas.

@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-03-17
+### Changed
+- Expanded modern SRD translation coverage across multiple packs (including substantial additions in spells, origins, classes/features, feats, and content journals).
+- Improved metric conversion/runtime handling for additional spell fields and modern data structures.
+
+### Notes
+- Modern SRD/compendium translation is now much broader than previous releases, but still beta and not yet fully complete in all areas.
+
 ## [1.0.2] - 2026-03-15
 ### Changed
 - Localized compendium folder names more robustly for legacy and modern sidebar structures.
