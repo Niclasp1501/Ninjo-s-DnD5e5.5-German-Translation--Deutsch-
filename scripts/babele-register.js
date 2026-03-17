@@ -61,9 +61,14 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
 
   const normalized = description.replace(INLINE_TOKEN_RE, (_full, kind, inner, suffix = "") => {
     const cleanInner = String(inner ?? "")
+      .replace(/\\"/g, "\"")
+      .replace(/\\'/g, "'")
       .replace(/\s+/g, " ")
       .trim();
-    return `@${kind}[${cleanInner}]${suffix || ""}`;
+    const cleanSuffix = String(suffix || "")
+      .replace(/\\"/g, "\"")
+      .replace(/\\'/g, "'");
+    return `@${kind}[${cleanInner}]${cleanSuffix}`;
   });
   const awardNormalized = normalizeAwardCommands(normalized);
   if (!awardNormalized.includes("@UUID[")) return awardNormalized;
