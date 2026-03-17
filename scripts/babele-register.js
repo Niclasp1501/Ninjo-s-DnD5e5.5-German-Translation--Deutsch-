@@ -83,6 +83,30 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
   return translated;
 }
 
+function translateAdvancementRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  if (!Array.isArray(originalValue)) return originalValue;
+
+  const itemType = String(data?.type ?? "");
+  if (!["class", "subclass", "feat"].includes(itemType)) return originalValue;
+
+  const override = getOverrideById(data);
+  const advMap = override?.advancement;
+  if (!advMap || typeof advMap !== "object") return originalValue;
+
+  const translated = foundry.utils.deepClone(originalValue);
+  for (const step of translated) {
+    if (!step || typeof step !== "object") continue;
+    const sid = String(step._id ?? "");
+    const title = String(step.title ?? "");
+    const mapped = advMap[sid] || advMap[title] || null;
+    if (!mapped || typeof mapped !== "object") continue;
+    if (typeof mapped.title === "string" && mapped.title.trim()) step.title = mapped.title;
+    if (typeof mapped.hint === "string" && mapped.hint.trim()) step.hint = mapped.hint;
+  }
+  return translated;
+}
+
 function convertWeightValueRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (!ITEM_TYPES_WITH_WEIGHT.has(String(data?.type ?? ""))) return originalValue;
@@ -354,6 +378,7 @@ Hooks.once("init", () => {
     dnd5e55NameDeRuntime: translateNameRuntime,
     dnd5e55DescriptionDeRuntime: translateDescriptionRuntime,
     dnd5e55ActivitiesDeRuntime: translateActivitiesRuntime,
+    dnd5e55AdvancementDeRuntime: translateAdvancementRuntime,
     dnd5e55MaterialsDeRuntime: translateMaterialsRuntime,
     dnd5e55WeightMetricRuntime: convertWeightValueRuntime,
     dnd5e55WeightUnitMetricRuntime: convertWeightUnitsRuntime,

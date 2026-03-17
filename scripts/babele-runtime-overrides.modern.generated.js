@@ -4248,7 +4248,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du hast zwei der Worte der Schöpfung gemeistert: die Worte des Lebens und des Todes. Du hast daher immer die Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplPowerWordH]{Power Word Heal} und @UUID[Compendium.dnd5e.spells24.Item.phbsplPowerWordK]{Power Word\nKill} vorbereitet. Wenn du einen der Zauber wirkst, kannst du ein zweites Wesen damit anvisieren, wenn dieses Wesen sich innerhalb von 3 m des ersten Ziels befindet.</p><section id=\"secret-aHHp3ZnTrWPHHB7j\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Zauber werden dir automatisch gewährt, wenn du aufsteigst.</p></section>"
   },
   "phbbrdBonusProfi": {
-    "name": "Bonus-Fertigkeiten"
+    "name": "Bonus-Fertigkeiten",
+    "description": "<p>Du erhältst Übung in drei Fertigkeiten deiner Wahl.</p>"
   },
   "phbbrdCuttingWor": {
     "name": "Spottende Worte",
@@ -4908,7 +4909,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du hast Vorteil auf Angriffswürfe gegen die Kreatur, die derzeit von deinem\nJägerzeichen markiert ist.</p>"
   },
   "phbrgrRelentless": {
-    "name": "Unerbittlicher Jäger"
+    "name": "Unerbittlicher Jäger",
+    "description": "<p>Schaden zu erleiden kann deine Konzentration auf *Zeichen des Jägers* nicht brechen.</p>"
   },
   "phbrgrRoving0000": {
     "name": "Streifen",
@@ -4999,7 +5001,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonoftheNigh]{Boon of the Night\nSpirit} wird empfohlen.</p><section class=\"secret\"\nid=\"secret-Wpt1OtuMYQJ7BwK8\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst beim Stufenaufstieg zur Auswahl aufgefordert.</p></section>"
   },
   "phbrgeEvasion000": {
-    "name": "Entrinnen"
+    "name": "Entrinnen",
+    "description": "<p>Du kannst bestimmten Gefahren flink ausweichen. Wenn du einem Effekt ausgesetzt bist, der es dir erlaubt, einen Geschicklichkeits-Rettungswurf zu machen, um nur halben Schaden zu erleiden, erleidest du stattdessen keinen Schaden, wenn du den Rettungswurf schaffst, und nur halben Schaden, wenn du scheiterst. Du kannst dieses Merkmal nicht verwenden, wenn du den Zustand Handlungsunfähig hast.</p><section class=\\\"secret\\\" id=\\\"secret-mJSoikZHwVq6UUDf\\\"><p><strong>Foundry-Hinweis</strong></p><p>Wenn dein Token ausgewählt ist, kannst du entweder mit der rechten Maustaste auf die Chat-Karte des Schadenswurfs klicken und <span class=\\\"reference\\\"><em class=\\\"fas fa-user-shield\\\">\\_</em>Halben Schaden anwenden</span> auswählen oder auf die Schaltfläche „1/2“ und dann auf die Schaltfläche <span class=\\\"reference\\\"><em class=\\\"fa-solid fa-reply-all\\\">\\_</em>Anwenden</span> klicken.</p></section>"
   },
   "phbrgeExpertise0": {
     "name": "Expertise",
@@ -5043,7 +5046,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Unheimliche Ausweichbewegung",
     "activities": {
       "Uncanny Dodge": "Unheimliche Ausweichbewegung"
-    }
+    },
+    "description": "<p>Wenn ein Angreifer, den du sehen kannst, dich mit einem Angriffswurf trifft, kannst du eine Reaktion aufwenden, um den Schaden des Angriffs gegen dich zu halbieren (abgerundet).</p><section class=\\\"secret\\\" id=\\\"secret-fLqTNntX7T0swRsu\\\"><p><strong>Foundry-Hinweis</strong></p><p>Wenn dein Token ausgewählt ist, kannst du entweder mit der rechten Maustaste auf die Chat-Karte des Schadenswurfs klicken und <span class=\\\"reference\\\"><em class=\\\"fas fa-user-shield\\\">\\_</em>Halben Schaden anwenden</span> auswählen oder auf die Schaltfläche „1/2“ und dann auf die Schaltfläche <span class=\\\"reference\\\"><em class=\\\"fa-solid fa-reply-all\\\">\\_</em>Anwenden</span> klicken.</p></section>"
   },
   "phbrgeWeaponMast": {
     "name": "Waffenbeherrschung",
@@ -5093,7 +5097,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Regain Sorcery Points": "Zauberpunkte zurückgewinnen",
       "Regain Spell Slot": "Zauberplatz zurückgewinnen"
-    }
+    },
+    "description": "<p>Du kannst die Quelle der Magie in dir anzapfen. Diese Quelle wird durch Zaubereipunkte dargestellt, die es dir ermöglichen, eine Vielzahl von magischen Effekten zu erzeugen.</p><p>Du hast 2 Zaubereipunkte und erhältst mehr, wenn du höhere Stufen erreichst, wie in der Spalte Zaubereipunkte der Tabelle Hexenmeister-Merkmale gezeigt. Du kannst nicht mehr Zaubereipunkte haben als die in der Tabelle für deine Stufe angegebene Anzahl. Du erhältst alle verbrauchten Zaubereipunkte zurück, wenn du eine lange Rast beendest.</p><p>Du kannst deine Zaubereipunkte verwenden, um die folgenden Optionen zu nutzen, zusammen mit anderen Merkmalen, wie Metamagie, die diese Punkte verwenden.</p><p><strong>Zauberplätze in Zaubereipunkte umwandeln.</strong> Du kannst einen Zauberplatz aufwenden, um eine Anzahl von Zaubereipunkten zu erhalten, die dem Grad des Platzes entspricht (keine Aktion erforderlich).</p><p><strong>Zauberplätze erschaffen.</strong> Als Bonusaktion kannst du nicht verbrauchte Zaubereipunkte in einen Zauberplatz umwandeln. Die Tabelle „Zauberplätze erschaffen“ zeigt die Kosten für die Erschaffung eines Zauberplatzes eines bestimmten Grades und listet die Mindeststufe als Hexenmeister auf, die du haben musst, um einen Platz zu erschaffen. Du kannst einen Zauberplatz nicht höher als Grad\\_5 erschaffen.</p><p>Jeder Zauberplatz, den du mit diesem Merkmal erschaffst, verschwindet, wenn du eine lange Rast beendest.</p><table><caption>Zauberplätze erschaffen</caption><thead><tr><td>Grad des Zauberplatzes</td><td>Kosten in Zaubereipunkten</td><td>Min. Hexenmeister-Stufe</td></tr></thead><tbody><tr><td>1</td><td>2</td><td>2</td></tr><tr><td>2</td><td>3</td><td>3</td></tr><tr><td>3</td><td>5</td><td>5</td></tr><tr><td>4</td><td>6</td><td>7</td></tr><tr><td>5</td><td>7</td><td>9</td></tr></tbody></table><section class=\\\"secret\\\" id=\\\"secret-Q72pdf6OJGSybxFV\\\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivität <strong>Zauberplatz wiedererlangen</strong> wandelt deine Zaubereipunkte in Zauberplätze um.</p><p>Die Aktivität <strong>Zaubereipunkte wiedererlangen</strong> wandelt deinen gewählten Zauberplatz in Zaubereipunkte um.</p></section>"
   },
   "phbscrInnateSorc": {
     "name": "Angeborene Zauberei",
@@ -5351,6 +5356,24 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Find Familiar with Flight": "Vertrauten finden (Flug)",
       "Find Familiar with Swimming": "Vertrauten finden (Schwimmen)",
       "Invest with Resistance": "Mit Resistenz investieren"
+    },
+    "description": "<blockquote><p>Voraussetzung: Hexenmeister der 5. Stufe oder höher, @UUID[Compendium.dnd5e.classes24.Item.phbinvPactChain0]{Pact of the Chain} Anrufung</p></blockquote><p>Wenn du @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar} wirkst, erfüllst du den beschworenen Vertrauten mit einem Teil deiner unheimlichen Macht und gewährst der Kreatur die folgenden Vorteile.</p><p><strong>Luft- oder Wasserwesen.</strong> Der Vertraute erhält entweder eine Fluggeschwindigkeit oder eine Schwimmgeschwindigkeit (deine Wahl) von 12 m.</p><p><strong>Schneller Angriff.</strong> Als Bonusaktion kannst du dem Vertrauten befehlen, die Aktion \\_Angreifen\\_ auszuführen.</p><p><strong>Nekrotischer oder gleißender Schaden.</strong> Immer wenn der Vertraute Wucht-, Stich- oder Hiebschaden verursacht, kannst du stattdessen nekrotischen oder gleißenden Schaden verursachen lassen.</p><p><strong>Dein Rettungswurf-SG.</strong> Wenn der Vertraute eine Kreatur zu einem Rettungswurf zwingt, verwendet er deinen Zauberrettungs-SG.</p><p><strong>Resistenz.</strong> Wenn der Vertraute Schaden erleidet, kannst du eine Reaktion aufwenden, um ihm Resistenz gegen diesen Schaden zu gewähren.</p><section class=\\\"secret\\\" id=\\\"secret-D3vSCo0uEG4Kp1X6\\\"><p><strong>Foundry-Anmerkung</strong></p><p>Die Aktivitäten <strong>Vertrauten finden mit Flug</strong> und <strong>mit Schwimmen</strong> ermöglichen es dir beide, einen Vertrauten mit dem entsprechenden Bewegungsbonus zu beschwören. Beide Aktivitäten verbrauchen einen Paktmagie-Zauberplatz.</p><p>Die Aktivität <strong>Mit Resistenz ausstatten</strong> enthält einen aktiven Effekt für die Resistenz gegen jeden Schadenstyp, der angewendet werden kann, um die entsprechende Resistenz zu erhalten. Stelle sicher, dass du den vorherigen aktiven Effekt im Reiter \\\"Effekte\\\" deines Bogens deaktivierst/löschst, wenn du die Resistenzen änderst.</p><p>Der Vertraute verwendet automatisch deinen Rettungswurf-SG.</p></section>",
+    "effects": {
+      "0vsrMfL3s6IQtWcM": "Resistenz gegen Donner",
+      "8tJH6UHt7riDLp1q": "Resistenz gegen Stichschaden",
+      "931L7kMtCmfeKCke": "Resistenz gegen Energie",
+      "J9HrAcFSX8Oiz5Os": "Resistenz gegen Feuer",
+      "QDl6CxMONYK8Kru1": "Resistenz gegen Hiebschaden",
+      "SzrV0ZUdpHCl8ury": "Resistenz gegen Wuchtschaden",
+      "VxM3FsirIcd3Of7q": "Investition des Schwimmens",
+      "W1jLBRVt0gryqFMJ": "Resistenz gegen Gift",
+      "XYrQSl0kdJtV6Bf0": "Resistenz gegen Psionisch",
+      "Ziuu5P6LoAvevtuN": "Investition des Flugs",
+      "chVfpaM9kmt2hOWW": "Resistenz gegen Säure",
+      "dNB2b7C34xZ8f1VC": "Resistenz gegen Kälte",
+      "ftnhEVvBRxrbAfa3": "Resistenz gegen Blitz",
+      "hNA4gzQMT9cM2ALU": "Resistenz gegen Gleißend",
+      "wNoq81xzNrVLdSGT": "Resistenz gegen Nekrotisch"
     }
   },
   "phbinvLessonsoft": {
@@ -5551,105 +5574,1035 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbwzdPotentCant": {
-    "name": "Mächtiger Zaubertrick"
+    "name": "Mächtiger Zaubertrick",
+    "description": "<p>Deine schadensverursachenden Zaubertricks treffen sogar Kreaturen, die der vollen Wucht des Effekts entgehen. Wenn du einen Zaubertrick auf eine Kreatur wirkst und mit dem Angriffswurf verfehlst oder das Ziel bei einem Rettungswurf gegen den Zaubertrick erfolgreich ist, erleidet das Ziel den halben Schaden des Zaubertricks (falls vorhanden), aber keinen zusätzlichen Effekt des Zaubertricks.</p><section id=\\\"secret-fJby40y1vz8RXGG4\\\" class=\\\"secret\\\"><p><strong>Foundry-Anmerkung</strong></p><p>Wenn ihr Token ausgewählt ist, kannst du entweder mit der rechten Maustaste auf die Chat-Karte des Schadenswurfs klicken und <span class=\\\"reference\\\"><em class=\\\"fas fa-user-shield\\\">\\_</em>Halben Schaden anwenden</span> auswählen oder auf die Schaltfläche \\\"1/2\\\" und dann auf die Schaltfläche <span class=\\\"reference\\\"><em class=\\\"fa-solid fa-reply-all\\\">\\_</em>Anwenden</span> klicken.</p></section>"
   },
   "phbwzdSculptSpel": {
     "name": "Zauber formen",
     "description": "<p>Du kannst Bereiche relativer Sicherheit innerhalb der Effekte deiner Hervorrufungen erschaffen. Wenn du einen Hervorrufungszauber wirkst, der andere Kreaturen betrifft, die du sehen kannst, kannst du eine Anzahl von ihnen wählen, die 1 plus der Zauberstufe entspricht. Die gewählten Kreaturen bestehen ihre Rettungswürfe gegen den Zauber automatisch und erleiden keinen Schaden, wenn sie normalerweise bei einem erfolgreichen Rettungswurf halben Schaden erleiden würden.</p>"
   },
   "phbbrbBarbarian0": {
-    "name": "Barbar"
+    "name": "Barbar",
+    "description": "<h3>Grundmerkmale des Barbaren</h3><table class=\\\"core-class-traits\\\"><tbody><tr><th scope=\\\"row\\\"><p>Hauptattribut</p></th><td><p>Stärke</p></td></tr><tr><th><p><strong>Trefferwürfel</strong></p></th><td><p>W12 pro Stufe als Barbar</p></td></tr><tr><th><p><strong>Geübte Rettungswürfe</strong></p></th><td><p>Stärke und Konstitution</p></td></tr><tr><th><p><strong>Geübte Fertigkeiten</strong></p></th><td><p><em>Wähle 2:</em> Athletik, Einschüchtern, Mit Tieren umgehen, Naturkunde, Überlebenskunst oder Wahrnehmung</p></td></tr><tr><th><p><strong>Geübt im Umgang mit Waffen</strong></p></th><td><p>Einfache Waffen und Kriegswaffen</p></td></tr><tr><th><p><strong>Geübt im Umgang mit Rüstungen</strong></p></th><td><p>Leichte und mittlere Rüstungen sowie Schilde</p></td></tr><tr><th><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreataxe00]{Greataxe}, 4 @UUID[Compendium.dnd5e.equipment24.Item.phbwepHandaxe000]{Handaxes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's Pack} und [[/award 15GP]]; oder (B) [[/award 75GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrbBarbarian0 inline classes=\\\"free-rules-embed\\\"]</p><h2>Ein Barbar werden …</h2><h3>Als Charakter der Stufe 1</h3><ul><li>Du erhältst alle Merkmale aus der Tabelle „Grundmerkmale des Barbaren“.</li><li>Du erhältst die Merkmale des Barbaren der Stufe 1, die in der Tabelle „Merkmale des Barbaren“ aufgeführt sind.</li></ul><h3>Als mehrklassiger Charakter</h3><ul><li>Du erhältst die folgenden Merkmale aus der Tabelle „Grundmerkmale des Barbaren“: Trefferwürfel, Übung mit Kriegswaffen und Übung mit Schilden.</li><li>Du erhältst die Merkmale des Barbaren der Stufe 1, die in der Tabelle „Merkmale des Barbaren“ aufgeführt sind.</li></ul>",
+    "advancement": {
+      "JsGU20wwFmwSQ5He": {
+        "title": "Wutschaden"
+      },
+      "Hc3cNal60BVZjgi5": {
+        "title": "Bekannte Waffenbeherrschungen"
+      },
+      "c07WAYE7J6zHt0yk": {
+        "title": "Klassenmerkmale"
+      },
+      "vbNdqiHqN2qTbnUw": {
+        "title": "Klassenmerkmale"
+      },
+      "MUU3y634K3edUdyL": {
+        "title": "Klassenmerkmale"
+      },
+      "49KNhnvoZJduJaOI": {
+        "title": "Klassenmerkmale"
+      },
+      "ALO7yStJ7IHDxOss": {
+        "title": "Klassenmerkmale"
+      },
+      "JNtXQqEZhCUM1NLJ": {
+        "title": "Klassenmerkmale"
+      },
+      "5S7821U8Dtg9egZu": {
+        "title": "Klassenmerkmale"
+      },
+      "zqXib0MKbaqrTTVR": {
+        "title": "Klassenmerkmale"
+      },
+      "YYXyPXHTKRgnPswF": {
+        "title": "Klassenmerkmale"
+      },
+      "e5XIkDQYhqNDImgs": {
+        "title": "Klassenmerkmale"
+      },
+      "WlOoBbYeEoCTcD0t": {
+        "title": "Klassenmerkmale"
+      },
+      "vsCiTVHhgLseNJjr": {
+        "title": "Klassenmerkmale"
+      },
+      "n7u8pfM928PJ8Mkd": {
+        "title": "Urtümliches Wissen"
+      },
+      "joUosIRgww6atx7N": {
+        "title": "Brutaler Schlag"
+      },
+      "yRMpy6l9CCzZfkmT": {
+        "title": "Geübte Rettungswürfe"
+      },
+      "x68sQAjEcrIug4VO": {
+        "title": "Geübte Fertigkeiten"
+      },
+      "Q4crzEug7m7VK51P": {
+        "title": "Geübt im Umgang mit Waffen"
+      },
+      "HKfpwmpBxd4539HK": {
+        "title": "Geübt im Umgang mit Rüstungen"
+      },
+      "yj2VgvjKystoRCK6": {
+        "title": "Geübt im Umgang mit Waffen"
+      },
+      "oxhsE5PIGxe6mO4s": {
+        "title": "Geübt im Umgang mit Rüstungen"
+      },
+      "UJdrH9cjLqpQrLCz": {
+        "title": "Waffenbeherrschung"
+      },
+      "WYkWGiSyjLN4WC4x": {
+        "title": "Waffenbeherrschung"
+      },
+      "EUfvF7zVF9ooQGUg": {
+        "title": "Waffenbeherrschung"
+      }
+    }
   },
   "phbbrdBard000000": {
     "name": "Barde",
-    "description": "<h3>Grundlegende Bardenmerkmale</h3><table\nclass=\"core-class-traits\"><tbody><tr><th><p><strong>Primäres\nAttribut</strong></p></th><td><p>Charisma</p></td></tr><tr><th><p><strong>Trefferwürfel</strong></p></th><td><p>W8 pro Bardenstufe</p></td></tr><tr><th><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Geschicklichkeit und\nCharisma</p></td></tr><tr><th><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 3 beliebige\nFertigkeiten</em></p></td></tr><tr><th><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache\nWaffen</p></td></tr><tr><th><p><strong>Werkzeug-Fertigkeiten</strong></p></th><td><p><em>Wähle 3 Musikinstrumente</em></p></td></tr><tr><th><p><strong>Rüstungstraining</strong></p></th><td><p>Leichte\nRüstung</p></td></tr><tr><th><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\nMusikinstrument deiner Wahl,\n@UUID[Compendium.dnd5e.equipment24.Item.phbagEntertainer]{Entertainer's\nPack}, und [[/award 19gp]]; oder (B) [[/award\n90GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Barde werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Bardenmerkmale“.</li><li>Erhalte die Merkmale des Barden der Stufe 1, die in der\nTabelle „Bardenmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Bardenmerkmale“: Trefferwürfel, Fertigkeit in einer Fertigkeit deiner Wahl, Fertigkeit\nmit einem Musikinstrument deiner Wahl und Training mit Leichter\nRüstung.</li><li>Erhalte die Merkmale des Barden der Stufe 1, die in der\nTabelle „Bardenmerkmale“ aufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul>"
+    "description": "<h3>Grundlegende Bardenmerkmale</h3><table\nclass=\"core-class-traits\"><tbody><tr><th><p><strong>Primäres\nAttribut</strong></p></th><td><p>Charisma</p></td></tr><tr><th><p><strong>Trefferwürfel</strong></p></th><td><p>W8 pro Bardenstufe</p></td></tr><tr><th><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Geschicklichkeit und\nCharisma</p></td></tr><tr><th><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 3 beliebige\nFertigkeiten</em></p></td></tr><tr><th><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache\nWaffen</p></td></tr><tr><th><p><strong>Werkzeug-Fertigkeiten</strong></p></th><td><p><em>Wähle 3 Musikinstrumente</em></p></td></tr><tr><th><p><strong>Rüstungstraining</strong></p></th><td><p>Leichte\nRüstung</p></td></tr><tr><th><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\nMusikinstrument deiner Wahl,\n@UUID[Compendium.dnd5e.equipment24.Item.phbagEntertainer]{Entertainer's\nPack}, und [[/award 19gp]]; oder (B) [[/award\n90GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Barde werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Bardenmerkmale“.</li><li>Erhalte die Merkmale des Barden der Stufe 1, die in der\nTabelle „Bardenmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Bardenmerkmale“: Trefferwürfel, Fertigkeit in einer Fertigkeit deiner Wahl, Fertigkeit\nmit einem Musikinstrument deiner Wahl und Training mit Leichter\nRüstung.</li><li>Erhalte die Merkmale des Barden der Stufe 1, die in der\nTabelle „Bardenmerkmale“ aufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul>",
+    "advancement": {
+      "e0FUZL9SxuBimLv3": {
+        "title": "Klassenmerkmale"
+      },
+      "eHieMgibvVLqVjY8": {
+        "title": "Klassenmerkmale"
+      },
+      "L3wEIpgyQxfW3Cbu": {
+        "title": "Klassenmerkmale"
+      },
+      "hqCCMUsYBCaBxjd1": {
+        "title": "Klassenmerkmale"
+      },
+      "GXUFneKrn7jWh8FI": {
+        "title": "Klassenmerkmale"
+      },
+      "9n9yDwqtG7foinNB": {
+        "title": "Klassenmerkmale"
+      },
+      "G2PRnWVCjP5c3Cm7": {
+        "title": "Klassenmerkmale"
+      },
+      "A5T1rsj28aK7qQdm": {
+        "title": "Max. vorbereitete Zauber"
+      },
+      "jhPf4YuOvE1POUaX": {
+        "title": "Bekannte Zaubertricks"
+      },
+      "afzqphkin9YZOIBf": {
+        "title": "Inspirationswürfel"
+      },
+      "zHtnbRgLICltyy8V": {
+        "title": "Expertise"
+      },
+      "tOHyKfroR3MU9nUq": {
+        "title": "Worte der Schöpfung"
+      },
+      "fc1RwzQMT6qSaH5v": {
+        "title": "Geübte Rettungswürfe"
+      },
+      "NGtmmsYBnIAGKUSn": {
+        "title": "Geübte Fertigkeiten"
+      },
+      "iFuxb8gJBCVtfegb": {
+        "title": "Geübt im Umgang mit Waffen"
+      },
+      "2ew4StamPWWfQYsf": {
+        "title": "Geübt im Umgang mit Werkzeugen"
+      },
+      "5Dar82bZhYxSpxG7": {
+        "title": "Geübt im Umgang mit Rüstungen"
+      },
+      "kPeKGxUo8GJygCJG": {
+        "title": "Geübte Fertigkeiten"
+      }
+    }
   },
   "phbclcCleric0000": {
     "name": "Kleriker",
-    "description": "<h3>Grundlegende Klerikermerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p>Primäres Attribut</p></th><td><p>Weisheit</p></td></tr><tr><th\nscope=\"row\"><p>Trefferwürfel</p></th><td><p>W8 pro Klerikerstufe</p></td></tr><tr><th scope=\"row\"><p>Rettungswurf-Fertigkeiten</p></th><td><p>Weisheit und Charisma</p></td></tr><tr><th\nscope=\"row\"><p>Fertigkeits-Fertigkeiten</p></th><td><p><em>Wähle 2:\n</em>Geschichte, Einsicht, Medizin, Überzeugen oder\nReligion</p></td></tr><tr><th scope=\"row\"><p>Waffen-Fertigkeiten</p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p>Rüstungstraining</p></th><td><p>Leichte und Mittlere Rüstung und\nSchilde</p></td></tr><tr><th scope=\"row\"><p>Startausrüstung</p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmChainShirt]{Chain Shirt},\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepMace000000]{Mace},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy Symbol},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPriestsPack]{Priest's Pack},\nund [[/award 7GP]]; oder (B) [[/award\n110GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Kleriker werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Klerikermerkmale“.</li><li>Erhalte die Merkmale des Klerikers der Stufe 1, die\nin der Tabelle „Klerikermerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Klerikermerkmale“: Trefferwürfel und Training mit Leichter und Mittlerer Rüstung und\nSchilden.</li><li>Erhalte die Merkmale des Klerikers der Stufe 1, die in\nder Tabelle „Klerikermerkmale“ aufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um\ndeine verfügbaren Zauberplätze zu bestimmen.</li></ul>"
+    "description": "<h3>Grundlegende Klerikermerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p>Primäres Attribut</p></th><td><p>Weisheit</p></td></tr><tr><th\nscope=\"row\"><p>Trefferwürfel</p></th><td><p>W8 pro Klerikerstufe</p></td></tr><tr><th scope=\"row\"><p>Rettungswurf-Fertigkeiten</p></th><td><p>Weisheit und Charisma</p></td></tr><tr><th\nscope=\"row\"><p>Fertigkeits-Fertigkeiten</p></th><td><p><em>Wähle 2:\n</em>Geschichte, Einsicht, Medizin, Überzeugen oder\nReligion</p></td></tr><tr><th scope=\"row\"><p>Waffen-Fertigkeiten</p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p>Rüstungstraining</p></th><td><p>Leichte und Mittlere Rüstung und\nSchilde</p></td></tr><tr><th scope=\"row\"><p>Startausrüstung</p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmChainShirt]{Chain Shirt},\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepMace000000]{Mace},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy Symbol},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPriestsPack]{Priest's Pack},\nund [[/award 7GP]]; oder (B) [[/award\n110GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Kleriker werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Klerikermerkmale“.</li><li>Erhalte die Merkmale des Klerikers der Stufe 1, die\nin der Tabelle „Klerikermerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Klerikermerkmale“: Trefferwürfel und Training mit Leichter und Mittlerer Rüstung und\nSchilden.</li><li>Erhalte die Merkmale des Klerikers der Stufe 1, die in\nder Tabelle „Klerikermerkmale“ aufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um\ndeine verfügbaren Zauberplätze zu bestimmen.</li></ul>",
+    "advancement": {
+      "rQCM2OtE22hoSikN": {
+        "title": "Klassenmerkmale"
+      },
+      "sbC9gYqIKyBudLEX": {
+        "title": "Klassenmerkmale"
+      },
+      "iyByIlgOSTkVdiIb": {
+        "title": "Klassenmerkmale"
+      },
+      "fMMlnS7XNj4jHolA": {
+        "title": "Klassenmerkmale"
+      },
+      "db2RJZ0xSSbbOPIk": {
+        "title": "Klassenmerkmale"
+      },
+      "ilTop8eaoKLL9KVJ": {
+        "title": "Klassenmerkmale"
+      },
+      "ivrX9MYiE52lFZLI": {
+        "title": "Göttliche Macht fokussieren (Anwendungen)"
+      },
+      "jMZmkkMc9XLsde4W": {
+        "title": "Max. vorbereitete Zauber"
+      },
+      "FjHGiO7BkbHTcQ2J": {
+        "title": "Bekannte Zaubertricks"
+      },
+      "X3bKJF53QCfKsonV": {
+        "title": "Gesegnete Schläge"
+      },
+      "V8GfnoZYTe1PLXPI": {
+        "title": "Wahl des Göttlichen Ordens"
+      },
+      "C9ABIfTHZkeFpUva": {
+        "title": "Wahl der Gesegneten Schläge"
+      },
+      "14RcvdtbvXnTdR9P": {
+        "title": "Göttlicher Schlag"
+      },
+      "Z9K5kHYMLvroIMpT": {
+        "title": "Geübte Rettungswürfe"
+      },
+      "2wUNkQzS4vL9nR6D": {
+        "title": "Geübte Fertigkeiten"
+      },
+      "U6GGwY4ZKiXqXBQN": {
+        "title": "Geübt im Umgang mit Waffen"
+      }
+    }
   },
   "phbdrdDruid00000": {
     "name": "Druide",
-    "description": "<h3>Grundlegende Druidenmerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p><strong>Primäres\nAttribut</strong></p></th><td><p>Weisheit</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W8 pro Druidenstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Intelligenz und\nWeisheit</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 2:</em> Tierbeherrschung,\nArkana, Einsicht, Medizin, Naturkunde, Wahrnehmung, Religion oder\nÜberleben</p></td></tr><tr><th scope=\"row\"><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p><strong>Werkzeug-Fertigkeiten</strong></p></th><td><p>Kräuterkunde-Set</p></td></tr><tr><th\nscope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Leichte Rüstung\nund Schilde</p></td></tr><tr><th scope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSickle0000]{Sickle},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagDruidicFocu]{Druidic Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's\nPack}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism\nKit}, und [[/award 9GP]]; oder (B) [[/award\n50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Druide werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Druidenmerkmale“.</li><li>Erhalte die Merkmale des Druiden der Stufe 1, die in der\nTabelle „Druidenmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Druidenmerkmale“: Trefferwürfel und Training mit Leichter Rüstung und\nSchilden.</li><li>Erhalte die Merkmale des Druiden der Stufe 1, die in\nder Tabelle „Druidenmerkmale“ aufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um\ndeine verfügbaren Zauberplätze zu bestimmen.</li></ul>"
+    "description": "<h3>Grundlegende Druidenmerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p><strong>Primäres\nAttribut</strong></p></th><td><p>Weisheit</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W8 pro Druidenstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Intelligenz und\nWeisheit</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 2:</em> Tierbeherrschung,\nArkana, Einsicht, Medizin, Naturkunde, Wahrnehmung, Religion oder\nÜberleben</p></td></tr><tr><th scope=\"row\"><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p><strong>Werkzeug-Fertigkeiten</strong></p></th><td><p>Kräuterkunde-Set</p></td></tr><tr><th\nscope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Leichte Rüstung\nund Schilde</p></td></tr><tr><th scope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSickle0000]{Sickle},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagDruidicFocu]{Druidic Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's\nPack}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism\nKit}, und [[/award 9GP]]; oder (B) [[/award\n50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Druide werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Druidenmerkmale“.</li><li>Erhalte die Merkmale des Druiden der Stufe 1, die in der\nTabelle „Druidenmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Druidenmerkmale“: Trefferwürfel und Training mit Leichter Rüstung und\nSchilden.</li><li>Erhalte die Merkmale des Druiden der Stufe 1, die in\nder Tabelle „Druidenmerkmale“ aufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um\ndeine verfügbaren Zauberplätze zu bestimmen.</li></ul>",
+    "advancement": {
+      "P65WodekLKSPQLGZ": {
+        "title": "Klassenmerkmale"
+      },
+      "hmO24ovOBpmXAb4U": {
+        "title": "Klassenmerkmale"
+      },
+      "J2JpbQEZhVD3Dnjz": {
+        "title": "Klassenmerkmale"
+      },
+      "2G5tFifGdMns95Jw": {
+        "title": "Klassenmerkmale"
+      },
+      "uNjxqZQ9lZuOKmU7": {
+        "title": "Klassenmerkmale"
+      },
+      "3DZ1Olv41g5BzP4z": {
+        "title": "Klassenmerkmale"
+      },
+      "K72jypxSpzVJRXDh": {
+        "title": "Klassenmerkmale"
+      },
+      "JoHnvnMWRhadHGwf": {
+        "title": "Bekannte Zaubertricks"
+      },
+      "VmNGSY7Jbmy4AwBb": {
+        "title": "Max. vorbereitete Zauber"
+      },
+      "pIfdGSkqdp00omkE": {
+        "title": "Tiergestalt HG"
+      },
+      "MIVwoANGkc6gmUWN": {
+        "title": "Tiergestalt (Anwendungen)"
+      },
+      "EoM7g9kruaS8VvhA": {
+        "title": "Bekannte Gestalten"
+      },
+      "SpGvDfOabbJrOR3K": {
+        "title": "Druidische Zauber"
+      },
+      "NpBpNlHOO43gMD0U": {
+        "title": "Urtümlicher Orden"
+      },
+      "HYDmnuNUbI5liP08": {
+        "title": "Elementare Wut"
+      },
+      "W0d3c6X31SgnFFYM": {
+        "title": "Elementare Wut"
+      },
+      "Kx19MYNjomUt6m4p": {
+        "title": "Geübte Rettungswürfe"
+      },
+      "ail7EZ56O8d037cL": {
+        "title": "Geübte Fertigkeiten"
+      },
+      "Eq4uHvKtlKorid7h": {
+        "title": "Geübt im Umgang mit Waffen"
+      },
+      "wB9ulPjnFnueTfr5": {
+        "title": "Geübt im Umgang mit Werkzeugen"
+      },
+      "iqdFykNhppeEsmtM": {
+        "title": "Geübt im Umgang mit Rüstungen"
+      }
+    }
   },
   "phbftrFighter000": {
-    "name": "Kämpfer"
+    "name": "Kämpfer",
+    "description": "<h3>Grundmerkmale des Kämpfers</h3><table class=\\\"core-class-traits\\\"><tbody><tr><th scope=\\\"row\\\"><p><strong>Hauptattribut</strong></p></th><td><p>Stärke oder Geschicklichkeit</p></td></tr><tr><th scope=\\\"row\\\"><p><strong>Trefferwürfel</strong></p></th><td><p>W10 pro Stufe als Kämpfer</p></td></tr><tr><th scope=\\\"row\\\"><p><strong>Geübte Rettungswürfe</strong></p></th><td><p>Stärke und Konstitution</p></td></tr><tr><th scope=\\\"row\\\"><p><strong>Geübte Fertigkeiten</strong></p></th><td><p><em>Wähle 2:</em> Akrobatik, Athletik, Einschüchtern, Geschichte, Menschenkenntnis, Mit Tieren umgehen, Überlebenskunst, Überzeugen oder Wahrnehmung</p></td></tr><tr><th scope=\\\"row\\\"><p><strong>Geübt im Umgang mit Waffen</strong></p></th><td><p>Einfache Waffen und Kriegswaffen</p></td></tr><tr><th scope=\\\"row\\\"><p><strong>Geübt im Umgang mit Rüstungen</strong></p></th><td><p>Leichte, mittlere und schwere Rüstungen sowie Schilde</p></td></tr><tr><th scope=\\\"row\\\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A, B oder C:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbarmChainMail0]{Chain Mail}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepFlail00000]{Flail}, 8 @UUID[Compendium.dnd5e.equipment24.Item.phbwepJavelin000]{Javelins}, @UUID[Compendium.dnd5e.equipment24.Item.phbagDungeoneers]{Dungeoneer's Pack} und [[/award 4GP]]; (B) @UUID[Compendium.dnd5e.equipment24.Item.phbarmStuddedLea]{Studded Leather Armor}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Short­sword}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLongbow000]{Longbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.equipment24.Item.phbagDungeoneers]{Dungeoneer's Pack} und [[/award 11GP]]; oder (C) [[/award 155GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbftrFighter000 inline classes=\\\"free-rules-embed\\\"]</p><h2>Ein Kämpfer werden …</h2><h3>Als Charakter der Stufe 1</h3><ul><li>Du erhältst alle Merkmale aus der Tabelle „Grundmerkmale des Kämpfers“.</li><li>Du erhältst die Merkmale des Kämpfers der Stufe 1, die in der Tabelle „Merkmale des Kämpfers“ aufgeführt sind.</li></ul><h3>Als mehrklassiger Charakter</h3><ul><li>Du erhältst die folgenden Merkmale aus der Tabelle „Grundmerkmale des Kämpfers“: Trefferwürfel, Übung mit Kriegswaffen und Übung mit Leichten und Mittleren Rüstungen sowie Schilden.</li><li>Du erhältst die Merkmale des Kämpfers der Stufe 1, die in der Tabelle „Merkmale des Kämpfers“ aufgeführt sind.</li></ul>",
+    "advancement": {
+      "15eBHWfn4f7qB8mA": {
+        "title": "Klassenmerkmale"
+      },
+      "T2FovyKDjcIGMPCW": {
+        "title": "Klassenmerkmale"
+      },
+      "9UkcNtQ0HwJhmwKQ": {
+        "title": "Klassenmerkmale"
+      },
+      "wKoM6KOIKl1HWVpR": {
+        "title": "Klassenmerkmale"
+      },
+      "gxbvTuKFKDsuzCmp": {
+        "title": "Klassenmerkmale"
+      },
+      "pUT3XfEF6U1xeY18": {
+        "title": "Klassenmerkmale"
+      },
+      "knLMZh9N1O50qEcV": {
+        "title": "Klassenmerkmale"
+      },
+      "x1gr4ONIHZo6bjX8": {
+        "title": "Tatendrang"
+      },
+      "iJ9JidHgTldknGgK": {
+        "title": "Unbezwingbar"
+      },
+      "yEH3vVRip4nzxnN9": {
+        "title": "Zweite Luft"
+      },
+      "B05A1ijLPQMNlb3m": {
+        "title": "Geübte Rettungswürfe"
+      },
+      "UaSYMl2io5kbXNOY": {
+        "title": "Geübte Fertigkeiten"
+      },
+      "TsqDRDOepHDmgYjZ": {
+        "title": "Geübt im Umgang mit Waffen"
+      },
+      "XNba1RiASLSxoS8e": {
+        "title": "Geübt im Umgang mit Rüstungen"
+      },
+      "fK62ORkG9cOsa3XL": {
+        "title": "Geübt im Umgang mit Waffen"
+      },
+      "Nl6NkDxsiWjv7MfC": {
+        "title": "Geübt im Umgang mit Rüstungen"
+      },
+      "mJnrjhWpEz2lMDq4": {
+        "title": "Waffenbeherrschung"
+      },
+      "EmTANp6x6GfXFTmU": {
+        "title": "Kampfstil"
+      }
+    }
   },
   "phbmnkMonk000000": {
     "name": "Mönch",
-    "description": "<h3>Grundlegende Mönchsmerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p>Primäres Attribut</p></th><td><p>Geschicklichkeit und\nWeisheit</p></td></tr><tr><th scope=\"row\"><p>Trefferwürfel</p></th><td><p>W8\npro Mönchsstufe</p></td></tr><tr><th scope=\"row\"><p>Rettungswurf-Fertigkeiten</p></th><td><p>Stärke und Geschicklichkeit</p></td></tr><tr><th\nscope=\"row\"><p>Fertigkeits-Fertigkeiten</p></th><td><p><em>Wähle 2:</em>\nAkrobatik, Athletik, Geschichte, Einsicht, Religion oder\nHeimlichkeit</p></td></tr><tr><th scope=\"row\"><p>Waffen-Fertigkeiten</p></th><td><p>Einfache Waffen und Kriegswaffen mit der Eigenschaft\nLeicht</p></td></tr><tr><th scope=\"row\"><p>Werkzeug-Fertigkeiten</p></th><td><p><em>Wähle eine Art von Handwerkerwerkzeugen oder\nMusikinstrument</em></p></td></tr><tr><th scope=\"row\"><p>Rüstungstraining</p></th><td><p>Keine</p></td></tr><tr><th scope=\"row\"><p>Startausrüstung</p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, 5\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\nHandwerkerwerkzeuge oder Musikinstrument, wie oben für die Werkzeugfertigkeit\ngewählt,\n@UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's\nPack}, und [[/award 11GP]]; oder (B) [[/award\n50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Mönch werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Mönchsmerkmale“.</li><li>Erhalte die Merkmale des Mönchs der Stufe 1, die in der\nTabelle „Mönchsmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte das Merkmal Trefferwürfel aus der Tabelle „Grundlegende Mönchsmerkmale“.</li><li>Erhalte die Merkmale des Mönchs der Stufe 1, die\nin der Tabelle „Mönchsmerkmale“ aufgeführt sind.</li></ul>"
+    "description": "<h3>Grundlegende Mönchsmerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p>Primäres Attribut</p></th><td><p>Geschicklichkeit und\nWeisheit</p></td></tr><tr><th scope=\"row\"><p>Trefferwürfel</p></th><td><p>W8\npro Mönchsstufe</p></td></tr><tr><th scope=\"row\"><p>Rettungswurf-Fertigkeiten</p></th><td><p>Stärke und Geschicklichkeit</p></td></tr><tr><th\nscope=\"row\"><p>Fertigkeits-Fertigkeiten</p></th><td><p><em>Wähle 2:</em>\nAkrobatik, Athletik, Geschichte, Einsicht, Religion oder\nHeimlichkeit</p></td></tr><tr><th scope=\"row\"><p>Waffen-Fertigkeiten</p></th><td><p>Einfache Waffen und Kriegswaffen mit der Eigenschaft\nLeicht</p></td></tr><tr><th scope=\"row\"><p>Werkzeug-Fertigkeiten</p></th><td><p><em>Wähle eine Art von Handwerkerwerkzeugen oder\nMusikinstrument</em></p></td></tr><tr><th scope=\"row\"><p>Rüstungstraining</p></th><td><p>Keine</p></td></tr><tr><th scope=\"row\"><p>Startausrüstung</p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, 5\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\nHandwerkerwerkzeuge oder Musikinstrument, wie oben für die Werkzeugfertigkeit\ngewählt,\n@UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's\nPack}, und [[/award 11GP]]; oder (B) [[/award\n50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Mönch werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Mönchsmerkmale“.</li><li>Erhalte die Merkmale des Mönchs der Stufe 1, die in der\nTabelle „Mönchsmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte das Merkmal Trefferwürfel aus der Tabelle „Grundlegende Mönchsmerkmale“.</li><li>Erhalte die Merkmale des Mönchs der Stufe 1, die\nin der Tabelle „Mönchsmerkmale“ aufgeführt sind.</li></ul>",
+    "advancement": {
+      "IeCvD9wvP0cOa6kt": {
+        "title": "Klassenmerkmale"
+      },
+      "mrRoW8wNhjYbeqH1": {
+        "title": "Klassenmerkmale"
+      },
+      "ms2HaCjkdW9DV3KG": {
+        "title": "Klassenmerkmale"
+      },
+      "8tQG3hCcquAKQaPI": {
+        "title": "Klassenmerkmale"
+      },
+      "W4pBCGfpgL3LjHT0": {
+        "title": "Klassenmerkmale"
+      },
+      "TIzNw6t61wYmtj6V": {
+        "title": "Klassenmerkmale"
+      },
+      "Rfq6ZXQhdFm3Zmjx": {
+        "title": "Klassenmerkmale"
+      },
+      "26AlznyWcDuaFTCY": {
+        "title": "Klassenmerkmale"
+      },
+      "H32KYn1ozuG9jgYH": {
+        "title": "Klassenmerkmale"
+      },
+      "p4M4GK8yYVPY4Nsc": {
+        "title": "Klassenmerkmale"
+      },
+      "l5WJg41iXSVd88sd": {
+        "title": "Klassenmerkmale"
+      },
+      "9EzbkaZcskpZqLAv": {
+        "title": "Klassenmerkmale"
+      },
+      "BJBdi5OYKS2pvCeV": {
+        "title": "Klassenmerkmale"
+      },
+      "DOmTqz4RzFr3Scvj": {
+        "title": "Klassenmerkmale"
+      },
+      "lk5OJhSpicsPoiL2": {
+        "title": "Körper und Geist"
+      },
+      "ddtuQmULKmXOQU4i": {
+        "title": "Kampfkünste-Würfel"
+      },
+      "wMwMS7RC49lh1hp2": {
+        "title": "Bewegung ohne Rüstung"
+      },
+      "Sz3XH2IWUeXzTNib": {
+        "title": "Geübte Rettungswürfe"
+      },
+      "LD3eEVw9tmZUHaXO": {
+        "title": "Geübte Fertigkeiten"
+      },
+      "iohrMAJkjQtDeSXa": {
+        "title": "Geübt im Umgang mit Waffen"
+      },
+      "XoLzEcH6CBYyK9qz": {
+        "title": "Geübt im Umgang mit Werkzeugen"
+      }
+    }
   },
   "phbpdnPaladin000": {
     "name": "Paladin",
-    "description": "<h3>Grundlegende Paladinmerkmale</h3><table\nclass=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Primäres\nAttribut</strong></p></th><td><p>Stärke und Charisma</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W10 pro\nPaladinstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Weisheit und\nCharisma</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 2: </em>Athletik,\nEinsicht, Einschüchtern, Medizin, Überzeugen oder\nReligion</p></td></tr><tr><th scope=\"row\"><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache und Kriegswaffen</p></td></tr><tr><th scope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Leichte, Mittlere und Schwere Rüstung und\nSchilde</p></td></tr><tr><th scope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmChainMail0]{Chain Mail},\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, 6\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepJavelin000]{Javelins},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy Symbol},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPriestsPack]{Priest's Pack},\nund [[/award 9GP]]; oder (B) [[/award\n150GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Paladin werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Paladinmerkmale“.</li><li>Erhalte die Merkmale des Paladins der Stufe 1, die\nin der Tabelle „Paladinmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Paladinmerkmale“: Trefferwürfel, Fertigkeit mit Kriegswaffen und\nTraining mit Leichter und Mittlerer Rüstung und Schilden.</li><li>Erhalte die\nMerkmale des Paladins der Stufe 1, die in der Tabelle „Paladinmerkmale“\naufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um deine\nverfügbaren Zauberplätze zu bestimmen.</li></ul><blockquote><p><strong>Deinen Eid\nbrechen</strong></p><p>Ein Paladin versucht, die höchsten Verhaltensstandards\neinzuhalten, aber selbst die engagiertesten sind fehlbar. Manchmal übertritt ein Paladin\nseinen Eid.</p><p>Ein Paladin, der einen Eid gebrochen hat, sucht typischerweise\nAbsolution, verbringt eine Nachtwache als Zeichen der Buße oder\nunternimmt ein Fasten. Nach einem Vergebungsritual beginnt der Paladin\nvon Neuem.</p><p>Wenn dein Paladin seinen Eid reuelos verletzt, sprich mit\ndeinem Spielleiter. Dein Paladin sollte wahrscheinlich eine passendere Unterklasse wählen oder\nsogar die Klasse aufgeben und eine andere annehmen.</p></blockquote>"
+    "description": "<h3>Grundmerkmale des Paladins</h3><table\nclass=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Hauptattribut</strong></p></th><td><p>Stärke und Charisma</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W10 pro\nPaladinstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurf-Übungsboni</strong></p></th><td><p>Weisheit und\nCharisma</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Übungsboni</strong></p></th><td><p><em>Wähle 2: </em>Athletik,\nEinschüchtern, Heilkunde, Motiv erkennen, Religion oder\nÜberzeugen</p></td></tr><tr><th scope=\"row\"><p><strong>Waffen-Übungsboni</strong></p></th><td><p>Einfache und\nKriegswaffen</p></td></tr><tr><th scope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Leichte, mittlere und schwere Rüstungen sowie\nSchilde</p></td></tr><tr><th scope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmChainMail0]{Chain Mail},\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, 6\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepJavelin000]{Javelins},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy Symbol},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPriestsPack]{Priest's Pack},\nund [[/award 9GP]]; oder (B) [[/award\n150GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Paladin werden …</h2><h3>Als\nCharakter der 1. Stufe</h3><ul><li>Du erhältst alle Merkmale in der Tabelle „Grundmerkmale des\nPaladins“.</li><li>Du erhältst die Merkmale des Paladins der 1. Stufe, die\nin der Tabelle „Merkmale des Paladins“ aufgeführt sind.</li></ul><h3>Als mehrklassiger\nCharakter</h3><ul><li>Du erhältst die folgenden Merkmale aus der Tabelle\n„Grundmerkmale des Paladins“: Trefferwürfel, Übungsbonus mit\nKriegswaffen und Training mit leichten und mittleren Rüstungen sowie\nSchilden.</li><li>Du erhältst die\nMerkmale des Paladins der 1. Stufe, die in der Tabelle „Merkmale des\nPaladins“ aufgeführt sind. Siehe die Regeln für Mehrklassigkeit in\nKapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul><blockquote><p><strong>Deinen Eid\nbrechen</strong></p><p>Ein Paladin versucht, sich an die höchsten Verhaltensstandards zu\nhalten, aber selbst die engagiertesten sind fehlbar. Manchmal verstößt\nein Paladin gegen seinen Eid.</p><p>Ein Paladin, der ein Gelübde gebrochen hat, sucht\ntypischerweise nach Absolution, indem er als Zeichen der Buße eine\nNachtwache hält oder fastet. Nach einem Ritus der Vergebung beginnt der\nPaladin von Neuem.</p><p>Wenn dein Paladin seinen Eid reuelos bricht, sprich mit\ndeinem SL. Dein Paladin sollte wahrscheinlich eine passendere Unterklasse\nwählen oder sogar die Klasse aufgeben und eine andere annehmen.</p></blockquote>",
+    "advancement": {
+      "Cu9TxxKJqfAOPURY": {
+        "title": "Klassenmerkmale"
+      },
+      "AKkVlHKAVYHNqf6q": {
+        "title": "Klassenmerkmale"
+      },
+      "8I26b7hyVhhTyCho": {
+        "title": "Klassenmerkmale"
+      },
+      "ETE0AFEPZYVKhGeV": {
+        "title": "Klassenmerkmale"
+      },
+      "4ZvtY8dxJGz7VaDN": {
+        "title": "Klassenmerkmale"
+      },
+      "S2e43900sVur7sOK": {
+        "title": "Klassenmerkmale"
+      },
+      "7Nhpo9BJt103peym": {
+        "title": "Klassenmerkmale"
+      },
+      "sBD0PwAIuNSCs9Px": {
+        "title": "Klassenmerkmale"
+      },
+      "G6XicWkWUTdMTmC9": {
+        "title": "Klassenmerkmale"
+      },
+      "dChGldRqBZQFRIoP": {
+        "title": "Klassenmerkmale"
+      },
+      "xNrNjQXdjdqudAk8": {
+        "title": "Aurendistanz"
+      },
+      "K0m33nbxbp3BfUKd": {
+        "title": "Max. vorbereitete Zauber"
+      },
+      "czWJhEH2Xw1gaXzl": {
+        "title": "Göttliche Macht fokussieren (Anwendungen)"
+      },
+      "eK65opSkuSD1C22h": {
+        "title": "Rettungswurf-Übungsboni"
+      },
+      "WdtO0qeppSNvtel8": {
+        "title": "Fertigkeits-Übungsboni"
+      },
+      "iZReGwulhKjVqgRD": {
+        "title": "Waffen-Übungsboni"
+      },
+      "2sq0pcazOXs74X5l": {
+        "title": "Rüstungstraining"
+      },
+      "dSjz0J0F5cQLvWTd": {
+        "title": "Waffen-Übungsboni"
+      },
+      "TZP9M5VqcBv8D313": {
+        "title": "Rüstungstraining"
+      },
+      "g88kf6OtX8abBt5c": {
+        "title": "Kampfstil"
+      }
+    }
   },
   "phbrgrRanger0000": {
     "name": "Waldläufer",
-    "description": "<h3>Grundlegende Waldläufermerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p><strong>Primäres Attribut</strong></p></th><td><p>Geschicklichkeit\nund Weisheit</p></td></tr><tr><th scope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W10 pro Waldläuferstufe</p></td></tr><tr><th\nscope=\"row\"><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Stärke und\nGeschicklichkeit</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 3:</em> Tierbeherrschung,\nAthletik, Einsicht, Nachforschungen, Naturkunde, Wahrnehmung, Heimlichkeit oder\nÜberleben</p></td></tr><tr><th scope=\"row\"><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache und Kriegswaffen</p></td></tr><tr><th scope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Leichte und Mittlere Rüstung und\nSchilde</p></td></tr><tr><th scope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B: </em>(A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmStuddedLea]{Studded Leather\nArmor},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongbow000]{Longbow}, 20\n@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagDruidicFocu]{Druidic Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbdfcSprigofmis]{sprig of\nmistletoe}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's\nPack}, und [[/award 7GP]]; oder (B) [[/award\n150GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgrRanger0000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Waldläufer werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Waldläufermerkmale“.</li><li>Erhalte die Merkmale des Waldläufers der Stufe 1, die\nin der Tabelle „Waldläufermerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Waldläufermerkmale“: Trefferwürfel, Fertigkeit mit Kriegswaffen, Fertigkeit\nin einer Fertigkeit deiner Wahl aus der Fertigkeitenliste des Waldläufers und Training\nmit Leichter und Mittlerer Rüstung und Schilden.</li><li>Erhalte die Merkmale des Waldläufers der Stufe 1,\ndie in der Tabelle „Waldläufermerkmale“ aufgeführt sind. Siehe die\nRegeln für Multiklassen in Kapitel 2, um deine verfügbaren Zauberplätze\nzu bestimmen.</li></ul>"
+    "description": "<h3>Grundmerkmale des Waldläufers</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p><strong>Hauptattribut</strong></p></th><td><p>Geschicklichkeit\nund Weisheit</p></td></tr><tr><th scope=\"row\"><p><strong>Trefferpunkte-\nwürfel</strong></p></th><td><p>W10 pro Waldläuferstufe</p></td></tr><tr><th\nscope=\"row\"><p><strong>Rettungswurf-\nGeübtheiten</strong></p></th><td><p>Stärke und\nGeschicklichkeit</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-\nGeübtheiten</strong></p></th><td><p><em>Wähle 3:</em> Mit Tieren umgehen,\nAthletik, Menschenkenntnis, Nachforschungen, Naturkunde, Wahrnehmung, Heimlichkeit oder\nÜberlebenskunst</p></td></tr><tr><th scope=\"row\"><p><strong>Waffen-\nGeübtheiten</strong></p></th><td><p>Einfache und Kriegs-\nwaffen</p></td></tr><tr><th scope=\"row\"><p><strong>Rüstungs-\nTraining</strong></p></th><td><p>Leichte und Mittlere Rüstung und\nSchilde</p></td></tr><tr><th scope=\"row\"><p><strong>Start-\nausrüstung</strong></p></th><td><p><em>Wähle A oder B: </em>(A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmStuddedLea]{Studded Leather\nArmor},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongbow000]{Longbow}, 20\n@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagDruidicFocu]{Druidic Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbdfcSprigofmis]{sprig of\nmistletoe}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's\nPack}, und [[/award 7GM]]; oder (B) [[/award\n150GM]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgrRanger0000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Waldläufer werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Du erhältst alle Merkmale aus der Tabelle Grundmerkmale des Waldläufers.</li><li>Du erhältst die Merkmale des Waldläufers der Stufe 1, die in der Tabelle Merkmale des Waldläufers aufgeführt sind.</li></ul><h3>Als\nMultiklassen-Charakter</h3><ul><li>Du erhältst die folgenden Merkmale aus der Tabelle Grundmerkmale des Waldläufers: Trefferpunktewürfel, Geübtheit mit Kriegswaffen, Geübtheit\nin einer Fertigkeit deiner Wahl aus der Fertigkeitsliste des Waldläufers und Training\nmit Leichter und Mittlerer Rüstung sowie Schilden.</li><li>Du erhältst die Merkmale des Waldläufers der Stufe 1,\ndie in der Tabelle Merkmale des Waldläufers aufgeführt sind. Siehe die\nMultiklassen-Regeln in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul>",
+    "advancement": {
+      "R77BAIzMfcPq0urg": {
+        "title": "Klassenmerkmale"
+      },
+      "0XJhkNDTm9P3K5n3": {
+        "title": "Klassenmerkmale"
+      },
+      "onoWzEIWhrrG4QJt": {
+        "title": "Klassenmerkmale"
+      },
+      "fEmkkyi2Z6qGfYOZ": {
+        "title": "Klassenmerkmale"
+      },
+      "fy2LFc8UC9PTq4aF": {
+        "title": "Klassenmerkmale"
+      },
+      "Yscwm2LPBUNjW0pk": {
+        "title": "Expertise"
+      },
+      "tfv4CeK2F4fdZMMi": {
+        "title": "Klassenmerkmale"
+      },
+      "yMKZmo7nE6oSFMD0": {
+        "title": "Klassenmerkmale"
+      },
+      "zurYQjBBNQW92SAz": {
+        "title": "Klassenmerkmale"
+      },
+      "c3CqyzFeTFA5Yq8u": {
+        "title": "Klassenmerkmale"
+      },
+      "e1EWIvBos04kIm4n": {
+        "title": "Klassenmerkmale"
+      },
+      "M9VOxnHqo0qYtwGb": {
+        "title": "Klassenmerkmale"
+      },
+      "DOENALOWWjAUHzb7": {
+        "title": "Erzfeind"
+      },
+      "FksFWNV4X4lTFlvO": {
+        "title": "Erzfeind"
+      },
+      "PLqssMc398jEsEW4": {
+        "title": "Flinker Entdecker"
+      },
+      "wzh6lW4bOlQy4geS": {
+        "title": "Flinker Entdecker"
+      },
+      "2Wma1d7xii6GUWC9": {
+        "title": "Schaden des Mals des Jägers"
+      },
+      "iYdu1uOqAnHGWIZY": {
+        "title": "Max. vorbereitete Zauber"
+      },
+      "3trTn2JpXbZ6X24q": {
+        "title": "Rettungswurf-Übungsboni"
+      },
+      "H1iv8RH9TOVH30qO": {
+        "title": "Fertigkeits-Übungsboni"
+      },
+      "knFte4PvZAtHAcFJ": {
+        "title": "Waffen-Übungsboni"
+      },
+      "TehnIJlh1drGLjpj": {
+        "title": "Rüstungstraining"
+      },
+      "491B9spyMvoNt2ij": {
+        "title": "Fertigkeits-Übungsboni"
+      },
+      "AtKKnCoTLBqSxhCh": {
+        "title": "Kampfstil"
+      },
+      "cvPNAaphQTdoQqAb": {
+        "title": "Waffenmeisterschaft"
+      }
+    }
   },
   "phbrgeRogue00000": {
     "name": "Schurke",
-    "description": "<h3>Grundlegende Schurkenmerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p>Primäres\nAttribut</p></th><td><p>Geschicklichkeit</p></td></tr><tr><th scope=\"row\"><p>Trefferwürfel</p></th><td><p>W8 pro Schurkenstufe</p></td></tr><tr><th\nscope=\"row\"><p>Rettungswurf-Fertigkeiten</p></th><td><p>Geschicklichkeit und\nIntelligenz</p></td></tr><tr><th scope=\"row\"><p>Fertigkeits-Fertigkeiten</p></th><td><p><em>Wähle 4: </em>Akrobatik, Athletik,\nTäuschung, Einsicht, Einschüchtern, Nachforschungen, Wahrnehmung, Überzeugen,\nFingerfertigkeit oder Heimlichkeit</p></td></tr><tr><th scope=\"row\"><p>Waffen-Fertigkeiten</p></th><td><p>Einfache Waffen und Kriegswaffen mit der Eigenschaft\nFinesse oder Leicht</p></td></tr><tr><th scope=\"row\"><p>Werkzeug-Fertigkeiten</p></th><td><p>Diebeswerkzeuge</p></td></tr><tr><th\nscope=\"row\"><p>Rüstungstraining</p></th><td><p>Leichte\nRüstung</p></td></tr><tr><th scope=\"row\"><p>Startausrüstung</p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Short­sword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20\n@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagBurglarsPac]{Burglar's Pack},\nund [[/award 8GP]]; oder (B) [[/award\n100GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Schurke werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Schurkenmerkmale“.</li><li>Erhalte die Merkmale des Schurken der Stufe 1, die in der\nTabelle „Schurkenmerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Schurkenmerkmale“: Trefferwürfel, Fertigkeit in einer Fertigkeit deiner Wahl aus der\nFertigkeitenliste des Schurken, Fertigkeit mit Diebeswerkzeugen und Training mit\nLeichter Rüstung.</li><li>Erhalte die Merkmale des Schurken der Stufe 1,\ndie in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbRogue00000000.JournalEntryPage.gJV8iDqdNhRMLi5r#class-features]{Rogue\nFeatures table}.</li></ul>"
+    "description": "<h3>Grundmerkmale des Schurken</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p>Haupt-\nattribut</p></th><td><p>Geschicklichkeit</p></td></tr><tr><th scope=\"row\"><p>Trefferpunkte-\nwürfel</p></th><td><p>W8 pro Schurkenstufe</p></td></tr><tr><th\nscope=\"row\"><p>Rettungswurf-Geübtheiten</p></th><td><p>Geschicklichkeit und\nIntelligenz</p></td></tr><tr><th scope=\"row\"><p>Fertigkeits-\nGeübtheiten</p></th><td><p><em>Wähle 4: </em>Akrobatik, Athletik,\nTäuschung, Menschenkenntnis, Einschüchtern, Nachforschungen, Wahrnehmung, Überzeugen,\nFingerfertigkeit oder Heimlichkeit</p></td></tr><tr><th scope=\"row\"><p>Waffen-\nGeübtheiten</p></th><td><p>Einfache Waffen und Kriegswaffen mit der\nEigenschaft Finesse oder Leicht</p></td></tr><tr><th scope=\"row\"><p>Werkzeug-\nGeübtheiten</p></th><td><p>Diebeswerkzeug</p></td></tr><tr><th\nscope=\"row\"><p>Rüstungstraining</p></th><td><p>Leichte\nRüstung</p></td></tr><tr><th scope=\"row\"><p>Start-\nausrüstung</p></th><td><p><em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Short­sword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20\n@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagBurglarsPac]{Burglar's Pack},\nund [[/award 8GM]]; oder (B) [[/award\n100GM]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Schurke werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Du erhältst alle Merkmale aus der Tabelle Grundmerkmale des Schurken.</li><li>Du erhältst die Merkmale des Schurken der Stufe 1, die in der Tabelle Merkmale des Schurken aufgeführt sind.</li></ul><h3>Als\nMultiklassen-Charakter</h3><ul><li>Du erhältst die folgenden Merkmale aus der Tabelle Grundmerkmale des Schurken:\nTrefferpunktewürfel, Geübtheit in einer Fertigkeit deiner Wahl aus der\nFertigkeitsliste des Schurken, Geübtheit mit Diebeswerkzeug und Training mit\nLeichter Rüstung.</li><li>Du erhältst die Merkmale des Schurken der Stufe 1, die in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbRogue00000000.JournalEntryPage.gJV8iDqdNhRMLi5r#class-features]{Rogue\nFeatures table} aufgeführt sind.</li></ul>",
+    "advancement": {
+      "4lvoA3fvGLv15lyc": {
+        "title": "Klassenmerkmale"
+      },
+      "MWgIb29krlDy6YW6": {
+        "title": "Klassenmerkmale"
+      },
+      "py3wJiuRo9A5PlZb": {
+        "title": "Klassenmerkmale"
+      },
+      "hsOIIBWwSrWJvTuc": {
+        "title": "Klassenmerkmale"
+      },
+      "6lgPpApxgrLKsNdH": {
+        "title": "Klassenmerkmale"
+      },
+      "G8gk2pfQ2FIn6lX9": {
+        "title": "Klassenmerkmale"
+      },
+      "bUBIV36rJZHw5GKr": {
+        "title": "Klassenmerkmale"
+      },
+      "mC2Y1MpLlQ7uSnvk": {
+        "title": "Klassenmerkmale"
+      },
+      "n1IVdZzKh3PPG915": {
+        "title": "Klassenmerkmale"
+      },
+      "Rb7qWhNRuua2brG0": {
+        "title": "Klassenmerkmale"
+      },
+      "4doj2kFD8sIYiX8X": {
+        "title": "Expertise",
+        "hint": ">-"
+      },
+      "sqWH6tnUg7jiGaEj": {
+        "title": "Expertise"
+      },
+      "4uOxepnMxb2TYDY4": {
+        "title": "Hinterhältiger Angriff"
+      },
+      "IHbn6EXoBfxHdj7c": {
+        "title": "Diebessprache",
+        "hint": ">-"
+      },
+      "FiaNLovfP6tnY4tD": {
+        "hint": ">-"
+      },
+      "yp6ZCsT10nGs4J4q": {
+        "title": "Waffenmeisterschaft"
+      },
+      "OJXVOKQhi05P672u": {
+        "title": "Rettungswurf-Übungsboni"
+      },
+      "xE00qAIjMdw63Kja": {
+        "title": "Fertigkeits-Übungsboni"
+      },
+      "q22sm4VsezAltuqE": {
+        "title": "Waffen-Übungsboni"
+      },
+      "N5TGZDRu7NwVSaq6": {
+        "title": "Werkzeug-Übungsboni"
+      },
+      "UH1CrcBv6JRJJxsQ": {
+        "title": "Rüstungstraining"
+      }
+    }
   },
   "phbscrSorcerer00": {
     "name": "Zauberer",
-    "description": "<h3>Grundlegende Zauberermerkmale</h3><table\nclass=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Primäres\nAttribut</strong></p></th><td><p>Charisma</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W6 pro\nZaubererstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Konstitution und\nCharisma</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 2:</em> Arkana,\nTäuschung, Einsicht, Einschüchtern, Überzeugen oder\nReligion</p></td></tr><tr><th scope=\"row\"><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Keine</p></td></tr><tr><th\nscope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B: </em>(A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, 2\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbafcCrystal000]{crystal}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagDungeoneers]{Dungeoneer's\nPack}, und [[/award 28GP]]; oder (B) [[/award\n50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00\ninline classes=\"free-rules-embed\"]</p><h2>Ein Zauberer werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Zauberermerkmale“.</li><li>Erhalte die Merkmale des Zauberers der Stufe 1, die\nin der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSorcerer00000.JournalEntryPage.fsqRUA4acVXH4I3O#class-features]{Sorcerer\nFeatures table}.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte den Trefferwürfel aus der Tabelle „Grundlegende Zauberermerkmale“.</li><li>Erhalte die\nMerkmale des Zauberers der Stufe 1, die in der Tabelle „Zauberermerkmale“\naufgeführt sind. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing\nrules}, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul>"
+    "description": "<h3>Grundmerkmale des Zauberers</h3><table\nclass=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Hauptattribut</strong></p></th><td><p>Charisma</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W6 pro\nZaubererstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurfübungen</strong></p></th><td><p>Konstitution und\nCharisma</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeitsübungen</strong></p></th><td><p><em>Wähle 2:</em> Arkane Kunde,\nTäuschung, Motiv erkennen, Einschüchterung, Überzeugen oder\nReligion</p></td></tr><tr><th scope=\"row\"><p><strong>Waffenübungen</strong></p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Keine</p></td></tr><tr><th\nscope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B: </em>(A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, 2\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbafcCrystal000]{crystal}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagDungeoneers]{Dungeoneer's\nPack} und [[/award 28GM]]; oder (B) [[/award\n50GM]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00\ninline classes=\"free-rules-embed\"]</p><h2>Ein Zauberer werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Du erhältst alle Merkmale aus der Tabelle „Grundmerkmale des Zauberers“.</li><li>Du erhältst die Merkmale des Zauberers der Stufe 1, die in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSorcerer00000.JournalEntryPage.fsqRUA4acVXH4I3O#class-features]{Sorcerer\nFeatures table} aufgeführt sind.</li></ul><h3>Als mehrklassiger Charakter</h3><ul><li>Du erhältst\nden Trefferwürfel aus der Tabelle „Grundmerkmale des Zauberers“.</li><li>Du erhältst die\nMerkmale des Zauberers der Stufe 1, die in der Tabelle „Merkmale des Zauberers“\naufgeführt sind. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing\nrules}, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul>",
+    "advancement": {
+      "preISmaDhLpsoWqy": {
+        "title": "Klassenmerkmale"
+      },
+      "c5fRAxTbRHamZM7M": {
+        "title": "Klassenmerkmale"
+      },
+      "SihgGDvXjAktGkt1": {
+        "title": "Klassenmerkmale"
+      },
+      "vGoDRNITjHNqxW1z": {
+        "title": "Klassenmerkmale"
+      },
+      "g3PLJU1zYyUrHCY0": {
+        "title": "Klassenmerkmale"
+      },
+      "DUHZI0oND7OQ6lox": {
+        "title": "Max. vorbereitete Zauber"
+      },
+      "zMjMi0B3XrcQMqAS": {
+        "title": "Bekannte Zaubertricks"
+      },
+      "nIaa61I4SSnwAQvz": {
+        "title": "Metamagie",
+        "hint": ">-"
+      },
+      "XzTd1a6iGhCAqMs3": {
+        "title": "Übung in Rettungswürfen"
+      },
+      "7xtY4ilruYHMPFfM": {
+        "title": "Übung in Fertigkeiten"
+      },
+      "nFvwOhQGBMwm07Fa": {
+        "title": "Übung mit Waffen"
+      }
+    }
   },
   "phbwlkWarlock000": {
     "name": "Hexenmeister",
-    "description": "<h3>Grundlegende Hexenmeistermerkmale</h3><table\nclass=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primäres\nAttribut</p></th><td><p>Charisma</p></td></tr><tr><th scope=\"row\"><p>Trefferwürfel</p></th><td><p>W8 pro Hexenmeisterstufe</p></td></tr><tr><th\nscope=\"row\"><p>Rettungswurf-Fertigkeiten</p></th><td><p>Weisheit und\nCharisma</p></td></tr><tr><th scope=\"row\"><p>Fertigkeits-Fertigkeiten</p></th><td><p><em>Wähle 2: </em>Arkana, Täuschung,\nGeschichte, Einschüchtern, Nachforschungen, Naturkunde oder\nReligion</p></td></tr><tr><th scope=\"row\"><p>Waffen-Fertigkeiten</p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p>Rüstungstraining</p></th><td><p>Leichte\nRüstung</p></td></tr><tr><th scope=\"row\"><p>Startausrüstung</p></th><td><p><em>Wähle A oder B: </em>(A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSickle0000]{Sickle}, 2\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbafcOrb0000000]{orb}),\n@UUID[Compendium.dnd5e.equipment24.Item.phiPN9UzkXk3i5xh]{Book} (okkulte\nÜberlieferung), @UUID[Compendium.dnd5e.equipment24.Item.phbagScholarsPac]{Scholar's\nPack}, und [[/award 15GP]]; oder (B) [[/award\n100GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwlkWarlock000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Hexenmeister werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Hexenmeistermerkmale“.</li><li>Erhalte die Merkmale des Hexenmeisters der Stufe 1,\ndie in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWarlock000000.JournalEntryPage.znue6EaGDDXgeQb0#class-features]{Warlock\nFeatures table}.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte\ndie folgenden Merkmale aus der Tabelle „Grundlegende Hexenmeistermerkmale“: Trefferwürfel und\nTraining mit Leichter Rüstung.</li><li>Erhalte die Merkmale des Hexenmeisters der Stufe 1,\ndie in der Tabelle „Hexenmeistermerkmale“ aufgeführt sind. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing\nrules}, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul>"
+    "description": "<h3>Grundmerkmale des Hexenmeisters</h3><table\nclass=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Hauptattribut</p></th><td><p>Charisma</p></td></tr><tr><th scope=\"row\"><p>Trefferwürfel</p></th><td><p>W8 pro Hexenmeisterstufe</p></td></tr><tr><th\nscope=\"row\"><p>Rettungswurfübungen</p></th><td><p>Weisheit und\nCharisma</p></td></tr><tr><th scope=\"row\"><p>Fertigkeitsübungen</p></th><td><p><em>Wähle 2: </em>Arkane Kunde, Täuschung,\nGeschichte, Einschüchterung, Nachforschungen, Natur oder\nReligion</p></td></tr><tr><th scope=\"row\"><p>Waffenübungen</p></th><td><p>Einfache Waffen</p></td></tr><tr><th\nscope=\"row\"><p>Rüstungstraining</p></th><td><p>Leichte\nRüstung</p></td></tr><tr><th scope=\"row\"><p>Startausrüstung</p></th><td><p><em>Wähle A oder B: </em>(A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSickle0000]{Sickle}, 2\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbafcOrb0000000]{orb}),\n@UUID[Compendium.dnd5e.equipment24.Item.phiPN9UzkXk3i5xh]{Book} (okkultes\nWissen), @UUID[Compendium.dnd5e.equipment24.Item.phbagScholarsPac]{Scholar's\nPack} und [[/award 15GM]]; oder (B) [[/award\n100GM]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwlkWarlock000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Hexenmeister werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Du erhältst alle Merkmale aus der Tabelle „Grundmerkmale des Hexenmeisters“.</li><li>Du erhältst die Merkmale des Hexenmeisters der Stufe 1, die in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWarlock000000.JournalEntryPage.znue6EaGDDXgeQb0#class-features]{Warlock\nFeatures table} aufgeführt sind.</li></ul><h3>Als mehrklassiger Charakter</h3><ul><li>Du erhältst\ndie folgenden Merkmale aus der Tabelle „Grundmerkmale des Hexenmeisters“: Trefferwürfel und\nTraining mit Leichter Rüstung.</li><li>Du erhältst die Merkmale des Hexenmeisters der Stufe 1,\ndie in der Tabelle „Merkmale des Hexenmeisters“ aufgeführt sind. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing\nrules}, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul>",
+    "advancement": {
+      "yjm7B73po6OV5DPi": {
+        "title": "Klassenmerkmale"
+      },
+      "IUkGspfJYbVXFLjw": {
+        "title": "Klassenmerkmale"
+      },
+      "sDYsem2WwWHtRGj9": {
+        "title": "Klassenmerkmale"
+      },
+      "T6SDpQI1L8qivGUw": {
+        "title": "Klassenmerkmale"
+      },
+      "E698BngQ7tgxYG9T": {
+        "title": "Klassenmerkmale"
+      },
+      "bwCLOdauuzoHofil": {
+        "hint": ">-"
+      },
+      "mRSh9oUVjLU33e7p": {
+        "hint": ">-"
+      },
+      "mhZh3LfLMa15tXee": {
+        "hint": ">-"
+      },
+      "FOf5CkGnSs0OlppY": {
+        "hint": ">-"
+      },
+      "HucmTSEzIq7OeJr7": {
+        "title": "Bekannte Mystische Anrufungen"
+      },
+      "dZ29O2QGbIsj25Vg": {
+        "title": "Bekannte Zaubertricks"
+      },
+      "KTLPtUpPuGbXWiap": {
+        "hint": ">-"
+      },
+      "v3lym1uxhRr5SHcH": {
+        "title": "Max. Paktmagie-Zauber"
+      },
+      "xMtpuEuf5g6C8cqA": {
+        "title": "Mystische Anrufungen",
+        "hint": ">-"
+      },
+      "pNAJJ0MCkjHO2ZK1": {
+        "title": "Schirmherrn kontaktieren",
+        "hint": ">-"
+      },
+      "W9auMtMHTf0KV1Xw": {
+        "title": "Übung in Rettungswürfen"
+      },
+      "9LblGv17rkWDNni2": {
+        "title": "Übung in Fertigkeiten"
+      },
+      "4XUbrDNUSRAH6TqT": {
+        "title": "Übung mit Waffen"
+      }
+    }
   },
   "phbwzdWizard0000": {
     "name": "Magier",
-    "description": "<h3>Grundlegende Magiermerkmale</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p><strong>Primäres\nAttribut</strong></p></th><td><p>Intelligenz</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W6 pro Magierstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurf-Fertigkeiten</strong></p></th><td><p>Intelligenz und\nWeisheit</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Fertigkeiten</strong></p></th><td><p><em>Wähle 2:</em>Arkana, Geschichte,\nEinsicht, Nachforschungen, Medizin, Naturkunde oder Religion</p></td></tr><tr><th\nscope=\"row\"><p><strong>Waffen-Fertigkeiten</strong></p></th><td><p>Einfache\nWaffen</p></td></tr><tr><th scope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Keine</p></td></tr><tr><th\nscope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A) 2\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n@UUID[Compendium.dnd5e.items.Item.LBajgahniRJbAgDr]{Spellbook},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagScholarsPac]{Scholar's Pack},\nund [[/award 5GP]]; oder (B) [[/award\n55GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Magier werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Erhalte alle Merkmale aus der Tabelle „Grundlegende Magiermerkmale“.</li><li>Erhalte die Merkmale des Magiers der Stufe 1, die in der\nTabelle „Magiermerkmale“ aufgeführt sind.</li></ul><h3>Als Multiklassen-Charakter</h3><ul><li>Erhalte den Trefferwürfel aus der Tabelle „Grundlegende Magiermerkmale“.</li><li>Erhalte die Merkmale des Magiers der Stufe 1, die in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWizard0000000.JournalEntryPage.g7cMRWzsgAsEF7zC#class-features]{Wizard\nFeatures table}. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing\nrules}, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul><aside\nclass=\"notable\"><p><strong>Ein Zauberbuch erweitern und ersetzen</strong></p><p>Die Zauber, die du deinem Zauberbuch hinzufügst, wenn du Stufen\naufsteigst, spiegeln deine fortlaufende magische Forschung wider, aber du könntest während deiner Abenteuer auch andere Zauber finden, die du dem Buch hinzufügen kannst. Du könntest\nzum Beispiel einen Magierzauber auf einer Zauberrolle entdecken und ihn dann in dein Zauberbuch kopieren.</p><p><strong>Einen Zauber in das Buch kopieren.</strong>\nWenn du einen Magierzauber der Stufe 1 oder höher findest, kannst du ihn in dein Zauberbuch\nkopieren, wenn er von einer Stufe ist, die du vorbereiten kannst, und wenn du Zeit hast, ihn zu kopieren. Für\njede Stufe des Zaubers dauert die Abschrift 2 Stunden und kostet 50 GM.\nDanach kannst du den Zauber wie die anderen Zauber in deinem Zauberbuch vorbereiten.</p><p><strong>Das Buch kopieren.</strong> Du kannst einen Zauber\naus deinem Zauberbuch in ein anderes Buch kopieren. Dies ist wie das Kopieren eines neuen Zaubers\nin dein Zauberbuch, aber schneller, da du bereits weißt, wie man den\nZauber wirkt. Du musst nur 1 Stunde und 10 GM für jede Stufe des kopierten\nZaubers aufwenden.</p><p>Wenn du dein Zauberbuch verlierst, kannst du dasselbe Verfahren anwenden, um\ndie Magierzauber, die du vorbereitet hast, in ein neues Zauberbuch zu übertragen.\nDas Ausfüllen des restlichen neuen Buches erfordert, dass du neue Zauber\nfindest, um dies zu tun. Aus diesem Grund führen viele Magier ein Ersatzzauberbuch.</p></aside>"
+    "description": "<h3>Grundmerkmale des Magiers</h3><table class=\"core-class-traits\"><tbody><tr><th\nscope=\"row\"><p><strong>Primäres\nAttribut</strong></p></th><td><p>Intelligenz</p></td></tr><tr><th\nscope=\"row\"><p><strong>Trefferwürfel</strong></p></th><td><p>W6 pro Magierstufe</p></td></tr><tr><th scope=\"row\"><p><strong>Rettungswurf-Übungen</strong></p></th><td><p>Intelligenz und\nWeisheit</p></td></tr><tr><th scope=\"row\"><p><strong>Fertigkeits-Übungen</strong></p></th><td><p><em>Wähle 2:</em>Arkanes Wissen, Geschichte,\nMenschenkenntnis, Nachforschungen, Medizin, Naturkunde oder Religion</p></td></tr><tr><th\nscope=\"row\"><p><strong>Waffen-Übungen</strong></p></th><td><p>Einfache\nWaffen</p></td></tr><tr><th scope=\"row\"><p><strong>Rüstungstraining</strong></p></th><td><p>Keine</p></td></tr><tr><th\nscope=\"row\"><p><strong>Startausrüstung</strong></p></th><td><p><em>Wähle A oder B:</em> (A) 2\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n@UUID[Compendium.dnd5e.items.Item.LBajgahniRJbAgDr]{Spellbook},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagScholarsPac]{Scholar's Pack},\nund [[/award 5GP]]; oder (B) [[/award\n55GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000\ninline classes=\"free-rules-embed\"]</p><h2>Ein Magier werden …</h2><h3>Als\nCharakter der Stufe 1</h3><ul><li>Du erhältst alle Merkmale aus der Tabelle „Grundmerkmale des Magiers“.</li><li>Du erhältst die Merkmale des Magiers der Stufe 1, die in der Tabelle „Merkmale des Magiers“ aufgeführt sind.</li></ul><h3>Als mehrklassiger\nCharakter</h3><ul><li>Du erhältst den Trefferwürfel aus der Tabelle „Grundmerkmale des Magiers“.</li><li>Du erhältst die Merkmale des Magiers der Stufe 1, die in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWizard0000000.JournalEntryPage.g7cMRWzsgAsEF7zC#class-features]{Wizard\nFeatures table} aufgeführt sind. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing\nrules}, um deine verfügbaren Zauberplätze zu bestimmen.</li></ul><aside\nclass=\"notable\"><p><strong>Ein Zauberbuch erweitern und ersetzen</strong></p><p>Die Zauber, die du deinem Zauberbuch hinzufügst, während du Stufen aufsteigst, spiegeln deine fortlaufende magische Forschung wider, aber du könntest während deiner Abenteuer andere Zauber finden, die du dem Buch hinzufügen kannst. Du könntest zum Beispiel einen Magierzauber auf einer Zauberspruchrolle entdecken und ihn dann in dein Zauberbuch kopieren.</p><p><strong>Einen Zauber in das Buch kopieren.</strong>\nWenn du einen Magierzauber der Stufe 1+ findest, kannst du ihn in dein Zauberbuch kopieren,\nwenn er von einer Stufe ist, die du vorbereiten kannst, und wenn du Zeit hast, ihn zu kopieren. Für\njede Stufe des Zaubers dauert die Abschrift 2 Stunden und kostet 50 GM.\nDanach kannst du den Zauber wie die anderen Zauber in deinem\nZauberbuch vorbereiten.</p><p><strong>Das Buch kopieren.</strong> Du kannst einen Zauber\naus deinem Zauberbuch in ein anderes Buch kopieren. Das ist wie das Kopieren eines neuen Zaubers\nin dein Zauberbuch, aber schneller, da du bereits weißt, wie man den\nZauber wirkt. Du musst nur 1 Stunde und 10 GM für jede Stufe des kopierten\nZaubers aufwenden.</p><p>Wenn du dein Zauberbuch verlierst, kannst du das gleiche Verfahren anwenden, um\ndie Magierzauber, die du vorbereitet hast, in ein neues Zauberbuch zu übertragen.\nUm den Rest des neuen Buches zu füllen, musst du neue Zauber finden.\nAus diesem Grund führen viele Magier ein Ersatz-Zauberbuch.</p></aside>",
+    "advancement": {
+      "2whBHO3s8fBYBEWi": {
+        "title": "Klassenmerkmale"
+      },
+      "JTCSb4dfm8Auy6WD": {
+        "title": "Klassenmerkmale"
+      },
+      "tQSiUAW1DhfY3Idi": {
+        "title": "Klassenmerkmale"
+      },
+      "rZqSZS149KxDBwjI": {
+        "title": "Klassenmerkmale"
+      },
+      "ssLPH7qn9DUncfJ1": {
+        "title": "Klassenmerkmale"
+      },
+      "EvuUhx2TrDAsAxgN": {
+        "title": "Max. vorbereitete Zauber"
+      },
+      "ZTnATJgznTj4W6ZG": {
+        "title": "Bekannte Zaubertricks"
+      },
+      "S1H3INPWaAiRkB6G": {
+        "title": "Gelehrter",
+        "hint": ">-"
+      },
+      "4ImCjedK6yWbC2ni": {
+        "title": "Übung in Rettungswürfen"
+      },
+      "73lag0NN0ElcSq94": {
+        "title": "Übung in Fertigkeiten"
+      }
+    }
   },
   "phbbrbBerserker0": {
     "name": "Pfad des Berserkers",
-    "description": "<blockquote><p>Kanalisiere Wut in wilde\nRaserei</p></blockquote><p>Barbaren, die den Pfad des Berserkers gehen,\nrichten ihre Wut hauptsächlich auf Gewalt. Ihr Pfad ist einer der\nungezügelten Raserei, und sie schwelgen im Chaos des Kampfes, indem sie\nihre Wut sie ergreifen und stärken lassen.</p>"
+    "description": "<blockquote><p>Kanalisiere Wut in wilde\nRaserei</p></blockquote><p>Barbaren, die den Pfad des Berserkers gehen,\nrichten ihre Wut hauptsächlich auf Gewalt. Ihr Pfad ist einer der\nungezügelten Raserei, und sie schwelgen im Chaos des Kampfes, indem sie\nihre Wut sie ergreifen und stärken lassen.</p>",
+    "advancement": {
+      "F2EPRo00Nf6Ds8Lk": {
+        "title": "Unterklassenmerkmale"
+      },
+      "2AGvW4P2FHYxDTmU": {
+        "title": "Unterklassenmerkmale"
+      },
+      "HPirEn8oG5KFLosG": {
+        "title": "Unterklassenmerkmale"
+      },
+      "GouI4YrjO1nFz4uM": {
+        "title": "Unterklassenmerkmale"
+      }
+    }
   },
   "phbbrdLore000000": {
     "name": "Kollegium des Wissens",
-    "description": "<blockquote><p>Ergründe die Tiefen des magischen\nWissens</p></blockquote><p>Barden des Kollegiums des Wissens sammeln Zauber\nund Geheimnisse aus verschiedenen Quellen, wie gelehrten Folianten, mystischen Riten\nund Bauerngeschichten. Die Mitglieder des Kollegiums versammeln sich in Bibliotheken und\nUniversitäten, um ihr Wissen miteinander zu teilen. Sie treffen sich auch auf\nFesten oder Staatsangelegenheiten, wo sie Korruption aufdecken, Lügen entwirren\nund sich über selbstgefällige Autoritätspersonen lustig machen können.</p>"
+    "description": "<blockquote><p>Ergründe die Tiefen des magischen\nWissens</p></blockquote><p>Barden des Kollegiums des Wissens sammeln Zauber\nund Geheimnisse aus verschiedenen Quellen, wie gelehrten Folianten, mystischen Riten\nund Bauerngeschichten. Die Mitglieder des Kollegiums versammeln sich in Bibliotheken und\nUniversitäten, um ihr Wissen miteinander zu teilen. Sie treffen sich auch auf\nFesten oder Staatsangelegenheiten, wo sie Korruption aufdecken, Lügen entwirren\nund sich über selbstgefällige Autoritätspersonen lustig machen können.</p>",
+    "advancement": {
+      "0Wn8ilqxVDetcEJb": {
+        "title": "Unterklassenmerkmale"
+      },
+      "yiYMrVRwPpGHPk0N": {
+        "title": "Unterklassenmerkmale"
+      },
+      "P34BmKnqAYXUdYol": {
+        "title": "Unterklassenmerkmale"
+      },
+      "zXNjqYhloLv46FqV": {
+        "title": "Bonusgeübtheiten"
+      }
+    }
   },
   "phbclcLifeDomain": {
     "name": "Domäne des Lebens",
-    "description": "<blockquote><p>Lindere die Wunden der Welt</p></blockquote><p>Die Domäne\ndes Lebens konzentriert sich auf die positive Energie, die alles Leben im\nMultiversum aufrechterhält. Kleriker, die diese Domäne nutzen, sind Meister der Heilung und setzen\ndiese Lebenskraft ein, um viele Wunden zu heilen.</p><p>Die Existenz selbst beruht auf der\npositiven Energie, die mit dieser Domäne verbunden ist, daher könnte ein Kleriker fast jeder\nreligiösen Tradition sie wählen. Diese Domäne ist besonders\nmit landwirtschaftlichen Gottheiten, Göttern der Heilung oder Ausdauer und\nGöttern von Heim und Gemeinschaft verbunden. Religiöse Heilungsorden suchen ebenfalls die\nMagie dieser Domäne.</p>"
+    "description": "<blockquote><p>Lindere die Wunden der Welt</p></blockquote><p>Die Domäne\ndes Lebens konzentriert sich auf die positive Energie, die alles Leben im\nMultiversum aufrechterhält. Kleriker, die diese Domäne nutzen, sind Meister der Heilung und setzen\ndiese Lebenskraft ein, um viele Wunden zu heilen.</p><p>Die Existenz selbst beruht auf der\npositiven Energie, die mit dieser Domäne verbunden ist, daher könnte ein Kleriker fast jeder\nreligiösen Tradition sie wählen. Diese Domäne ist besonders\nmit landwirtschaftlichen Gottheiten, Göttern der Heilung oder Ausdauer und\nGöttern von Heim und Gemeinschaft verbunden. Religiöse Heilungsorden suchen ebenfalls die\nMagie dieser Domäne.</p>",
+    "advancement": {
+      "xGJEF0anyVTaO02x": {
+        "title": "Unterklassenmerkmale"
+      },
+      "Qkx3Cd07TGIwBX91": {
+        "title": "Unterklassenmerkmale"
+      },
+      "fke7bQihEBwKmOXP": {
+        "title": "Unterklassenmerkmale"
+      },
+      "MOUCVB3JGazDiUI3": {
+        "title": "Domänenzauber des Lebens"
+      },
+      "zfcT1xCvqRLRZXiH": {
+        "title": "Domänenzauber des Lebens"
+      },
+      "1FttAn0lw9lBpofn": {
+        "title": "Domänenzauber des Lebens"
+      },
+      "iYrz7E0p8N6pp5Uy": {
+        "title": "Domänenzauber des Lebens"
+      }
+    }
   },
   "phbdrdCirland000": {
     "name": "Zirkel des Landes",
-    "description": "<blockquote><p>Feiere die Verbindung zur natürlichen\nWelt</p></blockquote><p>Der Zirkel des Landes besteht aus Mystikern und\nWeisen, die altes Wissen und alte Riten bewahren. Diese Druiden treffen sich in\nheiligen Baumkreisen oder Menhiren, um urtümliche Geheimnisse in\nDruidisch zu flüstern. Die weisesten Mitglieder des Zirkels fungieren als Oberpriester ihrer\nGemeinschaften.</p>"
+    "description": "<blockquote><p>Feiere die Verbindung zur natürlichen\nWelt</p></blockquote><p>Der Zirkel des Landes besteht aus Mystikern und\nWeisen, die altes Wissen und alte Riten bewahren. Diese Druiden treffen sich in\nheiligen Baumkreisen oder Menhiren, um urtümliche Geheimnisse in\nDruidisch zu flüstern. Die weisesten Mitglieder des Zirkels fungieren als Oberpriester ihrer\nGemeinschaften.</p>",
+    "advancement": {
+      "amRVULpFLpOQ2gPC": {
+        "title": "Unterklassenmerkmale"
+      },
+      "9l1ICcnaGx27bdOp": {
+        "title": "Unterklassenmerkmale"
+      },
+      "tQpnSPCulIWNV3ZV": {
+        "title": "Unterklassenmerkmale"
+      },
+      "tdzTZSOWJgyhnk5X": {
+        "title": "Unterklassenmerkmale"
+      },
+      "3QzkY4MkeL5QLWfM": {
+        "title": "Schaden durch Hilfe des Landes"
+      }
+    }
   },
   "phbftrChampion00": {
     "name": "Champion",
-    "description": "<blockquote><p>Strebe nach körperlicher Exzellenz im Kampf</p></blockquote><p>Ein\nChampion konzentriert sich auf die Entwicklung kriegerischer Fähigkeiten in einem unerbittlichen\nStreben nach dem Sieg. Champions kombinieren rigoroses Training mit körperlicher\nExzellenz, um verheerende Schläge auszuteilen, Gefahren zu widerstehen und Ruhm zu erlangen.\nOb in sportlichen Wettkämpfen oder blutigen Schlachten, Champions streben nach der\nKrone des Siegers.</p>"
+    "description": "<blockquote><p>Strebe nach körperlicher Exzellenz im Kampf</p></blockquote><p>Ein\nChampion konzentriert sich auf die Entwicklung kriegerischer Fähigkeiten in einem unerbittlichen\nStreben nach dem Sieg. Champions kombinieren rigoroses Training mit körperlicher\nExzellenz, um verheerende Schläge auszuteilen, Gefahren zu widerstehen und Ruhm zu erlangen.\nOb in sportlichen Wettkämpfen oder blutigen Schlachten, Champions streben nach der\nKrone des Siegers.</p>",
+    "advancement": {
+      "1uBHnM7yyltYiGYr": {
+        "title": "Unterklassenmerkmale"
+      },
+      "WS2baKDHOKdTHvn4": {
+        "title": "Unterklassenmerkmale"
+      },
+      "ifmHcVXF9ZqyVhXa": {
+        "title": "Unterklassenmerkmale"
+      },
+      "DNwHuSG5CFe5o94z": {
+        "title": "Unterklassenmerkmale"
+      },
+      "nAg9H5fvgytySqaf": {
+        "title": "Unterklassenmerkmale"
+      },
+      "F4BJnjlTZ7nAuzjg": {
+        "title": "Kampfstil"
+      }
+    }
   },
   "phbmnkOpenHandWa": {
     "name": "Krieger der Offenen Hand",
-    "description": "<blockquote><p>Meistere waffenlose Kampftechniken</p></blockquote><p>Krieger der Offenen Hand sind Meister des\nwaffenlosen Kampfes. Sie erlernen Techniken, um ihre Gegner zu stoßen und zu Fall zu bringen und\nihre eigene Energie zu manipulieren, um sich vor Schaden zu schützen.</p>"
+    "description": "<blockquote><p>Meistere waffenlose Kampftechniken</p></blockquote><p>Krieger der Offenen Hand sind Meister des\nwaffenlosen Kampfes. Sie erlernen Techniken, um ihre Gegner zu stoßen und zu Fall zu bringen und\nihre eigene Energie zu manipulieren, um sich vor Schaden zu schützen.</p>",
+    "advancement": {
+      "VeL49OqjttBKjx3J": {
+        "title": "Unterklassenmerkmale"
+      },
+      "KKc6VtzWsSGh2NnC": {
+        "title": "Unterklassenmerkmale"
+      },
+      "M7cvHrnI6p0Yo150": {
+        "title": "Unterklassenmerkmale"
+      },
+      "1kqB8Z5f6UcgmGjY": {
+        "title": "Unterklassenmerkmale"
+      }
+    }
   },
   "phbpdnOathOfDevo": {
     "name": "Eid der Hingabe",
-    "description": "<blockquote><p>Verteidige die Ideale von Gerechtigkeit und\nOrdnung</p></blockquote><p>Der Eid der Hingabe bindet Paladine an die Ideale\nder Gerechtigkeit und Ordnung. Diese Paladine entsprechen dem Archetyp des Ritters in\nglänzender Rüstung. Sie halten sich an die höchsten Verhaltensstandards,\nund einige – im Guten wie im Schlechten – halten den Rest der Welt an die gleichen\nStandards.</p><p>Viele, die diesen Eid schwören, sind Göttern des Gesetzes und\ndes Guten ergeben und nutzen die Lehren ihrer Götter als Maßstab für persönliche Hingabe.\nAndere sehen Engel als ihre Ideale an und integrieren Bilder von Engelsflügeln\nin ihre Helme oder Wappen.</p><p>Diese Paladine teilen die\nfolgenden Grundsätze:</p><ul><li>Dein Wort sei dein\nVersprechen.</li><li>Beschütze die Schwachen und scheue dich niemals zu handeln.</li><li>Lass deine\nehrenhaften Taten ein Beispiel sein.</li></ul>"
+    "description": "<blockquote><p>Verteidige die Ideale von Gerechtigkeit und\nOrdnung</p></blockquote><p>Der Eid der Hingabe bindet Paladine an die Ideale\nder Gerechtigkeit und Ordnung. Diese Paladine entsprechen dem Archetyp des Ritters in\nglänzender Rüstung. Sie halten sich an die höchsten Verhaltensstandards,\nund einige – im Guten wie im Schlechten – halten den Rest der Welt an die gleichen\nStandards.</p><p>Viele, die diesen Eid schwören, sind Göttern des Gesetzes und\ndes Guten ergeben und nutzen die Lehren ihrer Götter als Maßstab für persönliche Hingabe.\nAndere sehen Engel als ihre Ideale an und integrieren Bilder von Engelsflügeln\nin ihre Helme oder Wappen.</p><p>Diese Paladine teilen die\nfolgenden Grundsätze:</p><ul><li>Dein Wort sei dein\nVersprechen.</li><li>Beschütze die Schwachen und scheue dich niemals zu handeln.</li><li>Lass deine\nehrenhaften Taten ein Beispiel sein.</li></ul>",
+    "advancement": {
+      "jxzvTfXzjLzIvQbF": {
+        "title": "Unterklassenmerkmale"
+      },
+      "jix1tV556sLlpGYr": {
+        "title": "Unterklassenmerkmale"
+      },
+      "3t0heVzpZV6AClAz": {
+        "title": "Unterklassenmerkmale"
+      },
+      "1Koj8mZO5gVtRril": {
+        "title": "Unterklassenmerkmale"
+      },
+      "vplzciS9QHhcjdQt": {
+        "title": "Zauber des Eids der Hingabe"
+      },
+      "9rAVikjK0DFEkhXH": {
+        "title": "Zauber des Eids der Hingabe"
+      },
+      "K8RRsq7vmiYuKAAv": {
+        "title": "Zauber des Eids der Hingabe"
+      },
+      "VuZSFzUklRDrpP5g": {
+        "title": "Zauber des Eids der Hingabe"
+      },
+      "Qji0iHmIWmCZcKt8": {
+        "title": "Zauber des Eids der Hingabe"
+      }
+    }
   },
   "phbrgrHunter0000": {
     "name": "Jäger",
-    "description": "<blockquote><p>Schütze Natur und Menschen vor\nZerstörung</p></blockquote><p>Du pirschst in der Wildnis und anderswo nach Beute,\nund nutzt deine Fähigkeiten als Jäger, um Natur und Menschen überall\nvor Kräften zu schützen, die sie zerstören würden.</p>"
+    "description": "<blockquote><p>Schütze Natur und Menschen vor\nZerstörung</p></blockquote><p>Du pirschst in der Wildnis und anderswo nach Beute,\nund nutzt deine Fähigkeiten als Jäger, um Natur und Menschen überall\nvor Kräften zu schützen, die sie zerstören würden.</p>",
+    "advancement": {
+      "wacj6x75L5ZaZUky": {
+        "title": "Unterklassenmerkmale"
+      },
+      "4nA7C6uQhBJBtWdS": {
+        "title": "Unterklassenmerkmale"
+      },
+      "gBE1JZA0jf6dglQu": {
+        "title": "Unterklassenmerkmale"
+      },
+      "1P4RbYyrzFoutFrj": {
+        "title": "Unterklassenmerkmale"
+      }
+    }
   },
   "phbrgeThief00000": {
     "name": "Dieb",
-    "description": "<blockquote><p>Jage nach Schätzen als klassischer\nAbenteurer</p></blockquote><p>Als Mischung aus Einbrecher, Schatzjäger und\nEntdecker bist du der Inbegriff eines Abenteurers. Neben der Verbesserung\ndeiner Beweglichkeit und Heimlichkeit erhältst du Fähigkeiten, die nützlich sind, um Ruinen zu erkunden\nund den maximalen Nutzen aus den dort gefundenen magischen Gegenständen zu ziehen.</p>"
+    "description": "<blockquote><p>Jage nach Schätzen als klassischer\nAbenteurer</p></blockquote><p>Als Mischung aus Einbrecher, Schatzjäger und\nEntdecker bist du der Inbegriff eines Abenteurers. Neben der Verbesserung\ndeiner Beweglichkeit und Heimlichkeit erhältst du Fähigkeiten, die nützlich sind, um Ruinen zu erkunden\nund den maximalen Nutzen aus den dort gefundenen magischen Gegenständen zu ziehen.</p>",
+    "advancement": {
+      "52x82ltPXCgmrh1K": {
+        "title": "Unterklassenmerkmale"
+      },
+      "MlEcUhyGRGitfiUJ": {
+        "title": "Unterklassenmerkmale"
+      },
+      "aNcqA4J0puHsYiyv": {
+        "title": "Unterklassenmerkmale"
+      },
+      "Q45sJX4IS3NbsrtV": {
+        "title": "Unterklassenmerkmale"
+      }
+    }
   },
   "phbscrDraconicSo": {
     "name": "Drakonische Zauberei",
-    "description": "<blockquote><p>Atme die Magie der Drachen</p></blockquote><p>Deine angeborene\nMagie stammt aus dem Geschenk eines Drachen. Vielleicht hat ein uralter Drache, der dem\nTode entgegensah, dir oder deinem Vorfahren einen Teil seiner magischen Kraft vermacht. Du\nkönntest Magie von einem Ort absorbiert haben, der von Drachenkraft durchdrungen war. Oder\nvielleicht hast du einen Schatz aus einem Drachenhort berührt, der\nvon drakonischer Kraft durchdrungen war. Oder du hast einen Drachen als Vorfahren.</p>"
+    "description": "<blockquote><p>Atme die Magie der Drachen</p></blockquote><p>Deine angeborene\nMagie stammt aus dem Geschenk eines Drachen. Vielleicht hat ein uralter Drache, der dem\nTode entgegensah, dir oder deinem Vorfahren einen Teil seiner magischen Kraft vermacht. Du\nkönntest Magie von einem Ort absorbiert haben, der von Drachenkraft durchdrungen war. Oder\nvielleicht hast du einen Schatz aus einem Drachenhort berührt, der\nvon drakonischer Kraft durchdrungen war. Oder du hast einen Drachen als Vorfahren.</p>",
+    "advancement": {
+      "L6ggzptPm0jk4nxC": {
+        "title": "Unterklassenmerkmale"
+      },
+      "3ptQZs8Z30J3e8MH": {
+        "title": "Unterklassenmerkmale"
+      },
+      "Rr3BfHIS9JdX6c5X": {
+        "title": "Unterklassenmerkmale"
+      },
+      "zWNxZUTJugO6duSj": {
+        "title": "Unterklassenmerkmale"
+      },
+      "EgVTydL5IkLS1uph": {
+        "title": "Drakonische Zauber"
+      },
+      "VLhcXqbjyXnCbXTP": {
+        "title": "Drakonische Zauber"
+      },
+      "nQwB2GYHgvg5IRhf": {
+        "title": "Drakonische Zauber"
+      },
+      "zKCculAFWxVPXhnA": {
+        "title": "Drakonische Zauber"
+      }
+    }
   },
   "phbwlkFiendPatro": {
     "name": "Erzfeind-Pakt",
-    "description": "<blockquote><p>Schließe einen Pakt mit den Unteren Ebenen</p></blockquote><p>Dein\nPakt schöpft aus den Unteren Ebenen, den Reichen des Verderbens. Du könntest einen\nHandel mit einem Dämonenfürsten wie Demogorgon oder Orcus schließen; einem Erz-Teufel wie\nAsmodeus; oder einem Gruben-Teufel, Balor, Yugoloth oder einer Nachthexe, die\nbesonders mächtig ist. Die Ziele dieses Patrons sind böse – die Verderbnis oder\nZerstörung aller Dinge, letztendlich auch deiner selbst – und dein Weg ist\ndefiniert durch das Ausmaß, in dem du gegen diese Ziele ankämpfst.</p>"
+    "description": "<blockquote><p>Schließe einen Pakt mit den Unteren Ebenen</p></blockquote><p>Dein\nPakt schöpft aus den Unteren Ebenen, den Reichen des Verderbens. Du könntest einen\nHandel mit einem Dämonenfürsten wie Demogorgon oder Orcus schließen; einem Erz-Teufel wie\nAsmodeus; oder einem Gruben-Teufel, Balor, Yugoloth oder einer Nachthexe, die\nbesonders mächtig ist. Die Ziele dieses Patrons sind böse – die Verderbnis oder\nZerstörung aller Dinge, letztendlich auch deiner selbst – und dein Weg ist\ndefiniert durch das Ausmaß, in dem du gegen diese Ziele ankämpfst.</p>",
+    "advancement": {
+      "EyDjHPlaiU9pcKWc": {
+        "title": "Unterklassenmerkmale"
+      },
+      "pkjDsDeyI1xHOSDb": {
+        "title": "Unterklassenmerkmale"
+      },
+      "hEHLXeuzpfLUyPbb": {
+        "title": "Unterklassenmerkmale"
+      },
+      "BXdX73NWYsGIrZyc": {
+        "title": "Unterklassenmerkmale"
+      },
+      "BL0KO6NHMdWDzORz": {
+        "title": "Unheilsvolk-Zauber"
+      },
+      "RQGbS50hbBG90d1e": {
+        "title": "Unheilsvolk-Zauber"
+      },
+      "HI0odgqJuVranhPH": {
+        "title": "Unheilsvolk-Zauber"
+      },
+      "Aqu6VkaM9Z70GTtM": {
+        "title": "Unheilsvolk-Zauber"
+      }
+    }
   },
   "phbwzdEvoker0000": {
     "name": "Evokationsmagier",
-    "description": "<blockquote><p>Erzeuge explosive elementare Effekte</p></blockquote><p>Deine\nStudien konzentrieren sich auf Magie, die mächtige elementare Effekte erzeugt, wie\nbittere Kälte, sengende Flammen, rollenden Donner, knisternde Blitze und\nbrennende Säure. Einige Evokationsmagier finden Anstellung in militärischen Kräften und dienen als\nArtillerie, um Armeen aus der Ferne zu beschießen. Andere nutzen ihre Macht, um\nandere zu schützen, während einige ihren eigenen Vorteil suchen.</p>"
+    "description": "<blockquote><p>Erzeuge explosive elementare Effekte</p></blockquote><p>Deine\nStudien konzentrieren sich auf Magie, die mächtige elementare Effekte erzeugt, wie\nbittere Kälte, sengende Flammen, rollenden Donner, knisternde Blitze und\nbrennende Säure. Einige Evokationsmagier finden Anstellung in militärischen Kräften und dienen als\nArtillerie, um Armeen aus der Ferne zu beschießen. Andere nutzen ihre Macht, um\nandere zu schützen, während einige ihren eigenen Vorteil suchen.</p>",
+    "advancement": {
+      "NElqwo5qeP2KjewN": {
+        "title": "Unterklassenmerkmale"
+      },
+      "MnGUHDUfl1pqbwJK": {
+        "title": "Unterklassenmerkmale"
+      },
+      "vyrvNKiCAYyJcR9l": {
+        "title": "Unterklassenmerkmale"
+      },
+      "GeBj8GgEaEGUkxxL": {
+        "title": "Unterklassenmerkmale"
+      }
+    }
   },
   "phbBoonofCombatP": {
     "name": "Gunst der Kampfkunst",

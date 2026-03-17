@@ -17,6 +17,10 @@
     "activities": {
       "path": "system.activities",
       "converter": "dnd5e55ActivitiesDeRuntime"
+    },
+    "advancement": {
+      "path": "system.advancement",
+      "converter": "dnd5e55AdvancementDeRuntime"
     }
   },
   "folders": {
