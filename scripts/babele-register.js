@@ -15,6 +15,7 @@ const DISTANCE_UNIT_MAP = {
   miles: { unit: "km", factor: 1.6 }
 };
 const INLINE_TOKEN_RE = /@(UUID|Embed|Compendium)\[([\s\S]*?)\](\{[^}]*\})?/g;
+const AWARD_CMD_RE = /\[\[\s*\/award\s+([^\]]+)\]\]/gi;
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
@@ -64,15 +65,44 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
       .trim();
     return `@${kind}[${cleanInner}]${suffix || ""}`;
   });
-  if (!normalized.includes("@UUID[")) return normalized;
+  const awardNormalized = normalizeAwardCommands(normalized);
+  if (!awardNormalized.includes("@UUID[")) return awardNormalized;
 
-  return normalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
+  return awardNormalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
     const id = String(uuidPath).split(".").pop();
     if (!id) return full;
     const linked = CURATED_OVERRIDES_BY_ID[id] || MODERN_OVERRIDES_BY_ID[id] || LEGACY_OVERRIDES_BY_ID[id];
     const deName = linked?.name;
     if (!deName || typeof deName !== "string" || !deName.trim()) return full;
     return `@UUID[${uuidPath}]{${deName}}`;
+  });
+}
+
+function canonicalAwardUnit(unit) {
+  const u = String(unit ?? "").toLowerCase();
+  if (u === "xp") return "xp";
+  if (u === "gp" || u === "gm") return "gp";
+  if (u === "sp" || u === "sm") return "sp";
+  if (u === "cp" || u === "km") return "cp";
+  if (u === "ep" || u === "em") return "ep";
+  if (u === "pp" || u === "pm") return "pp";
+  return "";
+}
+
+function normalizeAwardCommands(text) {
+  if (typeof text !== "string" || !text.includes("/award")) return text;
+  return text.replace(AWARD_CMD_RE, (full, args) => {
+    const parts = [];
+    const re = /(\d+(?:[.,]\d+)?)\s*([a-zA-Z]+)/g;
+    let m;
+    while ((m = re.exec(String(args ?? ""))) !== null) {
+      const amount = m[1].replace(",", ".");
+      const unit = canonicalAwardUnit(m[2]);
+      if (!unit) continue;
+      parts.push(`${amount}${unit}`);
+    }
+    if (!parts.length) return full;
+    return `[[/award ${parts.join(" ")}]]`;
   });
 }
 
