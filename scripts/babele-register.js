@@ -14,6 +14,7 @@ const DISTANCE_UNIT_MAP = {
   mile: { unit: "km", factor: 1.6 },
   miles: { unit: "km", factor: 1.6 }
 };
+const INLINE_TOKEN_RE = /@(UUID|Embed|Compendium)\[([\s\S]*?)\](\{[^}]*\})?/g;
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
@@ -55,9 +56,17 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
   const description = override?.description || originalValue;
-  if (typeof description !== "string" || !description.includes("@UUID[")) return description;
+  if (typeof description !== "string") return description;
 
-  return description.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
+  const normalized = description.replace(INLINE_TOKEN_RE, (_full, kind, inner, suffix = "") => {
+    const cleanInner = String(inner ?? "")
+      .replace(/\s+/g, " ")
+      .trim();
+    return `@${kind}[${cleanInner}]${suffix || ""}`;
+  });
+  if (!normalized.includes("@UUID[")) return normalized;
+
+  return normalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
     const id = String(uuidPath).split(".").pop();
     if (!id) return full;
     const linked = CURATED_OVERRIDES_BY_ID[id] || MODERN_OVERRIDES_BY_ID[id] || LEGACY_OVERRIDES_BY_ID[id];
