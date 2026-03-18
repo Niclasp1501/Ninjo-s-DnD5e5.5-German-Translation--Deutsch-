@@ -2871,7 +2871,8 @@
       "name": "Barbar",
       "pages": {
         "Path of the Berserker": {
-          "name": "Pfad des Berserkers"
+          "name": "Pfad des Berserkers",
+          "text": "<blockquote><p>Kanalisiere Wut in wilde Raserei</p></blockquote><p>Barbaren, die den @UUID[Compendium.dnd5e.classes24.Item.phbbrbBerserker0]{Pfad des Berserkers} beschreiten, richten ihre Wut hauptsächlich auf Gewalt. Ihr Pfad ist einer der ungezügelten Wut, und sie schwelgen im Chaos des Kampfes, während sie ihrer Wut erlauben, sie zu ergreifen und zu stärken.</p>"
         },
         "Barbarian": {
           "name": "Barbar",
@@ -2892,7 +2893,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Barde werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Merkmale aus der Tabelle „Grundlegende Bardenmerkmale“.</p></li><li><p>Erhalte die Merkmale des Barden der 1. Stufe, die in der Tabelle „Bardenmerkmale“ aufgeführt sind.</p></li></ul><h3>Als Mehrklassencharakter</h3><ul><li><p>Erhalte die folgenden Merkmale aus der Tabelle „Grundlegende Bardenmerkmale“: Trefferwürfel, Übung in einer Fertigkeit deiner Wahl, Übung mit einem Musikinstrument deiner Wahl und Ausbildung mit Leichter Rüstung.</p></li><li><p>Erhalte die Merkmale des Barden der 1. Stufe, die in der Tabelle „Bardenmerkmale“ aufgeführt sind. Siehe die Regeln für Mehrklassencharaktere in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</p></li></ul>"
         },
         "College of Lore": {
-          "name": "Kollegium des Wissens"
+          "name": "Kollegium des Wissens",
+          "text": "<blockquote><p>Ergründe die Tiefen des magischen\nWissens</p></blockquote><p>Barden des\n@UUID[Compendium.dnd5e.classes24.Item.phbbrdLore000000]{Kollegium des Wissens} sammeln Zauber und Geheimnisse aus vielfältigen Quellen, wie gelehrten\nFolianten, mystischen Riten und Bauerngeschichten. Die Mitglieder des Kollegiums\nversammeln sich in Bibliotheken und Universitäten, um ihr Wissen miteinander zu\nteilen. Sie treffen sich auch auf Festen oder Staatsangelegenheiten, wo sie\nKorruption aufdecken, Lügen entwirren und sich über selbstgefällige\nAutoritätspersonen lustig machen können.</p>"
         }
       },
       "flags": {
@@ -2909,7 +2911,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Kleriker werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><p>Du erhältst alle Merkmale aus der\nTabelle der Kernmerkmale des Klerikers.</p><ul><li><p>Du erhältst die Merkmale des Klerikers der 1.\nStufe, die in der Tabelle der Kleriker-Merkmale\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Du erhältst\ndie folgenden Merkmale aus der Tabelle der Kernmerkmale des Klerikers: Trefferwürfel\nund Übung mit Leichter und Mittlerer Rüstung und\nSchilden.</p></li><li><p>Du erhältst die Merkmale des Klerikers der 1. Stufe, die in der\nTabelle der Kleriker-Merkmale aufgeführt sind. Siehe die Regeln für Multiklassen in\nKapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</p></li></ul>"
         },
         "Life Domain": {
-          "name": "Domäne des Lebens"
+          "name": "Lebensdomäne",
+          "text": "<blockquote><p>Linderung der Wunden der Welt</p></blockquote><p>Die\n@UUID[Compendium.dnd5e.classes24.Item.phbclcLifeDomain]{Lebensdomäne}\nkonzentriert sich auf die positive Energie, die alles Leben im\nMultiversum aufrechterhält. Kleriker, die diese Domäne nutzen, sind Meister der Heilung\nund setzen diese Lebenskraft ein, um viele Wunden zu heilen.</p><p>Die Existenz selbst\nberuht auf der positiven Energie, die mit dieser Domäne verbunden ist, daher könnte ein Kleriker\nfast jeder religiösen Tradition sie wählen. Diese Domäne ist\nbesonders mit Gottheiten der Landwirtschaft, Göttern der Heilung oder\nAusdauer sowie Göttern von Heim und Gemeinschaft verbunden. Religiöse Heilungsorden\nsuchen ebenfalls die Magie dieser Domäne.</p>"
         }
       },
       "flags": {
@@ -2926,7 +2929,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Druide werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Du erhältst alle Merkmale aus\nder Tabelle der Kernmerkmale des Druiden.</p></li><li><p>Du erhältst die Merkmale des Druiden der 1.\nStufe, die in der Tabelle der Druiden-Merkmale\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Du erhältst\ndie folgenden Merkmale aus der Tabelle der Kernmerkmale des Druiden: Trefferwürfel\nund Übung mit Leichter Rüstung und Schilden.</p></li><li><p>Du erhältst die\nMerkmale des Druiden der 1. Stufe, die in der Tabelle der Druiden-Merkmale\naufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um deine\nverfügbaren Zauberplätze zu bestimmen.</p></li></ul>"
         },
         "Circle of Land": {
-          "name": "Zirkel des Landes"
+          "name": "Zirkel des Landes",
+          "text": "<blockquote><p>Die Verbindung zur Natur feiern</p></blockquote><p>Der @UUID[Compendium.dnd5e.classes24.Item.phbdrdCirland000]{Circle of the\nLand} besteht aus Mystikern und Weisen, die altes Wissen und alte Riten bewahren. Diese Druiden treffen sich in heiligen Kreisen aus Bäumen oder stehenden Steinen, um urtümliche Geheimnisse in Druidisch zu flüstern. Die weisesten Mitglieder des Zirkels fungieren als Oberpriester ihrer Gemeinschaften.</p>"
         }
       },
       "flags": {
@@ -2943,7 +2947,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbftrFighter000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Kämpfer werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Eigenschaften aus der Tabelle der Kern-Kämpfer-Eigenschaften.</p></li><li><p>Erhalte die Merkmale des Kämpfers der 1. Stufe, die in der Tabelle der Kämpfer-Merkmale aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte die folgenden Eigenschaften aus der Tabelle der Kern-Kämpfer-Eigenschaften: Trefferwürfel, Übung mit Kriegswaffen und Ausbildung mit Leichter und Mittlerer Rüstung und Schilden.</p></li><li><p>Erhalte die Merkmale des Kämpfers der 1. Stufe, die in der Tabelle der Kämpfer-Merkmale aufgeführt sind.</p></li></ul>"
         },
         "Champion": {
-          "name": "Champion"
+          "name": "Champion",
+          "text": "<blockquote><p>Strebe nach körperlicher Exzellenz im Kampf</p></blockquote><p>Ein\n@UUID[Compendium.dnd5e.classes24.Item.phbftrChampion00]{Champion}\nkonzentriert sich auf die Entwicklung kriegerischer Fähigkeiten in einem unerbittlichen Streben nach dem Sieg. Champions verbinden rigoroses Training mit körperlicher Exzellenz, um verheerende Schläge auszuteilen, Gefahren zu widerstehen und Ruhm zu erlangen. Ob in athletischen Wettkämpfen oder blutigen Schlachten, Champions streben nach der Krone des Siegers.</p>"
         }
       },
       "flags": {
@@ -2960,7 +2965,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Mönch werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Eigenschaften aus der Tabelle der Kern-Mönch-Eigenschaften.</p></li><li><p>Erhalte die Merkmale des Mönchs der 1. Stufe, die in der Tabelle der Mönch-Merkmale aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte die Eigenschaft Trefferwürfel aus der Tabelle der Kern-Mönch-Eigenschaften.</p></li><li><p>Erhalte die Merkmale des Mönchs der 1. Stufe, die in der Tabelle der Mönch-Merkmale aufgeführt sind.</p></li></ul>"
         },
         "Warrior of the Open Hand": {
-          "name": "Krieger der Offenen Hand"
+          "name": "Krieger der Offenen Hand",
+          "text": "<blockquote><p>Meister der waffenlosen Kampftechniken</p></blockquote><p>@UUID[Compendium.dnd5e.classes24.Item.phbmnkOpenHandWa]{Warriors\nof the Open Hand} sind Meister des waffenlosen Kampfes. Sie erlernen Techniken, um ihre Gegner zu stoßen und zu Fall zu bringen, und manipulieren ihre eigene Energie, um sich vor Schaden zu schützen.</p>"
         }
       },
       "flags": {
@@ -2977,7 +2983,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000\ninline classes=\"free-rules-embed\"]</p> <aside\nclass=\"notable\"><h3>Den Eid brechen</h3><p>Ein Paladin versucht,\ndie höchsten Verhaltensstandards einzuhalten, doch selbst die engagiertesten sind\nfehlbar. Manchmal übertritt ein Paladin seinen Eid.</p><p>Ein Paladin,\nder einen Eid gebrochen hat, sucht typischerweise Absolution, indem er eine Nachtwache\nals Zeichen der Buße hält oder fastet. Nach einem Vergebungsritual\nbeginnt der Paladin von Neuem.</p><p>Wenn dein Paladin\nreuelos seinen Eid verletzt, sprich mit deinem SL. Dein Paladin\nsollte wahrscheinlich eine passendere Unterklasse wählen oder sogar die\nKlasse aufgeben und eine andere annehmen.</p></aside><h2>Ein Paladin\nwerden …</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle „Grundlegende Paladin-Merkmale“.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften\ndes Paladins, die in der Tabelle „Paladin-Eigenschaften“\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndie folgenden Merkmale aus der Tabelle „Grundlegende Paladin-Merkmale“: Trefferwürfel,\nÜbung mit Kriegswaffen und Ausbildung mit Leichter und\nMittlerer Rüstung sowie Schilden.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften\ndes Paladins, die in der Tabelle „Paladin-Eigenschaften“ aufgeführt sind. Siehe die\nMultiklassen-Regeln in Kapitel 2, um deine verfügbaren Zauberplätze\nzu bestimmen.</p></li></ul>"
         },
         "Oath of Devotion": {
-          "name": "Schwur der Hingabe"
+          "name": "Eid der Hingabe",
+          "text": "<blockquote><p>Wahre die Ideale von Gerechtigkeit und Ordnung</p></blockquote><p>Der @UUID[Compendium.dnd5e.classes24.Item.phbpdnOathOfDevo]{Eid der Hingabe} bindet Paladine an die Ideale von Gerechtigkeit und Ordnung. Diese Paladine entsprechen dem Archetyp des Ritters in glänzender Rüstung. Sie halten sich selbst an die höchsten Verhaltensstandards, und einige – im Guten wie im Schlechten – halten den Rest der Welt an dieselben Standards.</p><p>Viele, die diesen Eid schwören, sind Göttern des Gesetzes und des Guten ergeben und nutzen die Lehren ihrer Götter als Maßstab ihrer persönlichen Hingabe. Andere sehen Engel als ihre Ideale an und integrieren Bilder von Engelsflügeln in ihre Helme oder Wappen.</p><p>Diese Paladine teilen die folgenden Grundsätze:</p><ul><li><p>Dein Wort sei dein Versprechen.</p></li><li><p>Beschütze die Schwachen und scheue dich nie zu handeln.</p></li><li><p>Deine ehrenhaften Taten seien ein Beispiel.</p></li></ul>"
         }
       },
       "flags": {
@@ -2994,7 +3001,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Waldläufer\nwerden …</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle „Grundlegende Waldläufer-Merkmale“.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften\ndes Waldläufers, die in der Tabelle „Waldläufer-Eigenschaften“\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndie folgenden Merkmale aus der Tabelle „Grundlegende Waldläufer-Merkmale“: Trefferwürfel,\nÜbung mit Kriegswaffen, Übung in einer Fertigkeit deiner\nWahl aus der Fertigkeitenliste des Waldläufers und Ausbildung mit Leichter und\nMittlerer Rüstung sowie Schilden.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften\ndes Waldläufers, die in der Tabelle „Waldläufer-Eigenschaften“ aufgeführt sind. Siehe die\nMultiklassen-Regeln in Kapitel 2, um deine verfügbaren Zauberplätze\nzu bestimmen.</p></li></ul>"
         },
         "Hunter": {
-          "name": "Jäger"
+          "name": "Jäger",
+          "text": "<blockquote><p>Schützt Natur und Menschen vor Zerstörung</p></blockquote><p>Du pirschst in der Wildnis und anderswo nach Beute und nutzt deine Fähigkeiten als ein @UUID[Compendium.dnd5e.classes24.Item.phbrgrHunter0000]{Jäger}, um Natur und Menschen überall vor Kräften zu schützen, die sie zerstören würden.</p>"
         }
       },
       "flags": {
@@ -3011,7 +3019,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Schurke werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Merkmale aus der Tabelle „Kernmerkmale des Schurken“.</p></li><li><p>Erhalte die Merkmale des Schurken der 1. Stufe, die in der Tabelle „Merkmale des Schurken“ aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte die folgenden Merkmale aus der Tabelle „Kernmerkmale des Schurken“: Trefferwürfel, Übung in einer Fertigkeit deiner Wahl aus der Fertigkeitenliste des Schurken, Übung mit Diebeswerkzeugen und Ausbildung mit Leichter Rüstung.</p></li><li><p>Erhalte die Merkmale des Schurken der 1. Stufe, die in der Tabelle „Merkmale des Schurken“ aufgeführt sind.</p></li></ul>"
         },
         "Thief": {
-          "name": "Dieb"
+          "name": "Dieb",
+          "text": "<blockquote><p>Jage Schätze als klassischer\nAbenteurer</p></blockquote><p>Als Mischung aus Einbrecher, Schatzsucher und\nEntdecker bist du der Inbegriff eines Abenteurers\n(@UUID[Compendium.dnd5e.classes24.Item.phbrgeThief00000]{Thief\nsubclass}). Zusätzlich zur Verbesserung deiner Beweglichkeit und Heimlichkeit erhältst du\nFähigkeiten, die nützlich sind, um Ruinen zu erkunden und den größtmöglichen\nNutzen aus den dort gefundenen magischen Gegenständen zu ziehen.</p>"
         }
       },
       "flags": {
@@ -3028,7 +3037,8 @@
           "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Magier werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Merkmale aus der Tabelle „Kernmerkmale des Magiers“.</p></li><li><p>Erhalte die Merkmale des Magiers der 1. Stufe, die in der Tabelle „Merkmale des Magiers“ aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte den Trefferwürfel aus der Tabelle „Kernmerkmale des Magiers“.</p></li><li><p>Erhalte die Merkmale des Magiers der 1. Stufe, die in der Tabelle „Merkmale des Magiers“ aufgeführt sind. Siehe die Multiklassen-Regeln in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</p></li></ul><p><strong>Ein Zauberbuch erweitern und ersetzen</strong></p><aside class=\"notable\"><p>Die Zauber, die du deinem Zauberbuch hinzufügst, während du Stufen aufsteigst, spiegeln deine fortlaufende magische Forschung wider, aber du könntest während deiner Abenteuer auch andere Zauber finden, die du dem Buch hinzufügen kannst. Du könntest zum Beispiel einen Magierzauber auf einer Zauberrolle entdecken und ihn dann in dein Zauberbuch kopieren.</p><p><strong>Einen Zauber in das Buch kopieren.</strong> Wenn du einen Magierzauber der 1. Stufe oder höher findest, kannst du ihn in dein Zauberbuch kopieren, wenn er einer Stufe entspricht, die du vorbereiten kannst, und wenn du Zeit hast, ihn zu kopieren. Für jede Stufe des Zaubers dauert die Abschrift 2 Stunden und kostet 50 GM. Danach kannst du den Zauber wie die anderen Zauber in deinem Zauberbuch vorbereiten.</p><p><strong>Das Buch kopieren.</strong> Du kannst einen Zauber aus deinem Zauberbuch in ein anderes Buch kopieren. Dies ist wie das Kopieren eines neuen Zaubers in dein Zauberbuch, aber schneller, da du bereits weißt, wie man den Zauber wirkt. Du musst nur 1 Stunde und 10 GM für jede Stufe des kopierten Zaubers aufwenden.</p><p>Wenn du dein Zauberbuch verlierst, kannst du dasselbe Verfahren anwenden, um die Magierzauber, die du vorbereitet hast, in ein neues Zauberbuch zu übertragen. Den Rest des neuen Buches zu füllen, erfordert, dass du neue Zauber findest, um dies zu tun. Aus diesem Grund führen viele Magier ein Ersatz-Zauberbuch.</p></aside>"
         },
         "Evoker": {
-          "name": "Hervorrufer"
+          "name": "Evokationsmagier",
+          "text": "<blockquote><p>Erschaffe explosive Elementareffekte</p></blockquote><p>Deine Studien konzentrieren sich auf Magie, die mächtige Elementareffekte wie bittere Kälte, sengende Flammen, rollenden Donner, zuckende Blitze und brennende Säure erzeugt. Manche @UUID[Compendium.dnd5e.classes24.Item.phbwzdEvoker0000]{Evokers} finden Anstellung bei Militärkräften und dienen als Artillerie, um Armeen aus der Ferne zu vernichten. Andere nutzen ihre Macht, um andere zu schützen, während manche ihren eigenen Vorteil suchen.</p>"
         }
       },
       "flags": {
