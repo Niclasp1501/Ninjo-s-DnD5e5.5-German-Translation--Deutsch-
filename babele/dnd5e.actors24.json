@@ -14,6 +14,10 @@
       "path": "system.details.biography.value",
       "converter": "dnd5e55DescriptionDeRuntime"
     },
+    "movementContainer": {
+      "path": "system.attributes.movement",
+      "converter": "dnd5e55ActorMovementMetricRuntime"
+    },
     "movementWalk": {
       "path": "system.attributes.movement.walk",
       "converter": "dnd5e55ActorDistanceMetricRuntime"
@@ -37,6 +41,26 @@
     "movementUnits": {
       "path": "system.attributes.movement.units",
       "converter": "dnd5e55ActorDistanceUnitMetricRuntime"
+    },
+    "sensesContainer": {
+      "path": "system.attributes.senses",
+      "converter": "dnd5e55ActorSensesMetricRuntime"
+    },
+    "senseDarkvisionLegacy": {
+      "path": "system.attributes.senses.darkvision",
+      "converter": "dnd5e55ActorDistanceMetricRuntime"
+    },
+    "senseBlindsightLegacy": {
+      "path": "system.attributes.senses.blindsight",
+      "converter": "dnd5e55ActorDistanceMetricRuntime"
+    },
+    "senseTremorsenseLegacy": {
+      "path": "system.attributes.senses.tremorsense",
+      "converter": "dnd5e55ActorDistanceMetricRuntime"
+    },
+    "senseTruesightLegacy": {
+      "path": "system.attributes.senses.truesight",
+      "converter": "dnd5e55ActorDistanceMetricRuntime"
     },
     "senseDarkvision": {
       "path": "system.attributes.senses.ranges.darkvision",

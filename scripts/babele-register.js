@@ -16,6 +16,7 @@ const DISTANCE_UNIT_MAP = {
 };
 const INLINE_TOKEN_RE = /@(UUID|Embed|Compendium)\[([\s\S]*?)\](\{[^}]*\})?/g;
 const AWARD_CMD_RE = /\[\[\s*\/award\s+([^\]]+)\]\]/gi;
+const LOOKUP_ACTIVITY_RE = /\[\[\s*lookup\s+([^\]]*?)\s+activity=([A-Za-z0-9_-]+)([^\]]*?)\]\]/gi;
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
@@ -104,15 +105,33 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
     return `@${kind}[${cleanInner}]${cleanSuffix}`;
   });
   const awardNormalized = normalizeAwardCommands(normalized);
-  if (!awardNormalized.includes("@UUID[")) return fixMojibakeRuntime(awardNormalized);
+  const lookupNormalized = stripInvalidLookupActivityRefs(awardNormalized, data);
+  if (!lookupNormalized.includes("@UUID[")) return fixMojibakeRuntime(lookupNormalized);
 
-  return awardNormalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
+  return lookupNormalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
     const id = String(uuidPath).split(".").pop();
     if (!id) return full;
     const linked = CURATED_OVERRIDES_BY_ID[id] || MODERN_OVERRIDES_BY_ID[id] || LEGACY_OVERRIDES_BY_ID[id];
     const deName = linked?.name;
     if (!deName || typeof deName !== "string" || !deName.trim()) return full;
     return `@UUID[${uuidPath}]{${deName}}`;
+  });
+}
+
+function stripInvalidLookupActivityRefs(text, data) {
+  if (typeof text !== "string" || !text.includes("[[lookup")) return text;
+  const activities = data?.system?.activities;
+  if (!activities || typeof activities !== "object") return text;
+  const validIds = new Set(Object.keys(activities).filter(Boolean));
+  if (!validIds.size) return text;
+
+  return text.replace(LOOKUP_ACTIVITY_RE, (full, left, activityId, right) => {
+    if (validIds.has(activityId)) return full;
+    const normalizedLeft = String(left ?? "").trim();
+    const normalizedRight = String(right ?? "").trim();
+    const spaceLeft = normalizedLeft ? `${normalizedLeft} ` : "";
+    const spaceRight = normalizedRight ? ` ${normalizedRight}` : "";
+    return `[[lookup ${spaceLeft}${spaceRight}]]`.replace(/\s+\]\]$/, "]]").replace(/\s{2,}/g, " ");
   });
 }
 
@@ -380,6 +399,51 @@ function convertActorDistanceUnitMetricRuntime(originalValue, _entryTranslation,
   const actorType = String(data?.type ?? "");
   if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
   return "m";
+}
+
+function convertActorMovementMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  if (!originalValue || typeof originalValue !== "object") return originalValue;
+
+  const translated = foundry.utils.deepClone(originalValue);
+  const sourceUnit = String(translated.units ?? getActorDistanceContextUnit(data) ?? "ft").toLowerCase();
+  const unitKey = DISTANCE_UNIT_MAP[sourceUnit] ? sourceUnit : "ft";
+  for (const key of ["walk", "fly", "swim", "climb", "burrow"]) {
+    if (translated[key] !== null && translated[key] !== undefined && translated[key] !== "") {
+      translated[key] = convertDistanceValueByUnit(translated[key], unitKey);
+    }
+  }
+  translated.units = "m";
+  return translated;
+}
+
+function convertActorSensesMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  if (!originalValue || typeof originalValue !== "object") return originalValue;
+
+  const translated = foundry.utils.deepClone(originalValue);
+  const sourceUnit = String(translated.units ?? getActorDistanceContextUnit(data) ?? "ft").toLowerCase();
+  const unitKey = DISTANCE_UNIT_MAP[sourceUnit] ? sourceUnit : "ft";
+
+  if (translated.ranges && typeof translated.ranges === "object") {
+    for (const key of ["darkvision", "blindsight", "tremorsense", "truesight"]) {
+      if (translated.ranges[key] !== null && translated.ranges[key] !== undefined && translated.ranges[key] !== "") {
+        translated.ranges[key] = convertDistanceValueByUnit(translated.ranges[key], unitKey);
+      }
+    }
+  }
+
+  for (const key of ["darkvision", "blindsight", "tremorsense", "truesight"]) {
+    if (translated[key] !== null && translated[key] !== undefined && translated[key] !== "") {
+      translated[key] = convertDistanceValueByUnit(translated[key], unitKey);
+    }
+  }
+  translated.units = "m";
+  return translated;
 }
 
 function convertItemRangeMetricRuntime(originalValue, _entryTranslation, data) {
@@ -690,6 +754,8 @@ Hooks.once("init", () => {
     dnd5e55OriginDistanceContainerUnitsRuntime: convertOriginDistanceContainerUnitsRuntime,
     dnd5e55ActorDistanceMetricRuntime: convertActorDistanceMetricRuntime,
     dnd5e55ActorDistanceUnitMetricRuntime: convertActorDistanceUnitMetricRuntime,
+    dnd5e55ActorMovementMetricRuntime: convertActorMovementMetricRuntime,
+    dnd5e55ActorSensesMetricRuntime: convertActorSensesMetricRuntime,
     dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,
     dnd5e55ItemRangeUnitMetricRuntime: convertItemRangeUnitMetricRuntime,
     dnd5e55SpellTargetAffectsSpecialDeRuntime: translateSpellTargetAffectsSpecialRuntime,
