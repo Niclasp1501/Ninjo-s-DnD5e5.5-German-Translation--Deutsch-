@@ -1,4 +1,4 @@
-import { LEGACY_OVERRIDES_BY_ID } from "./babele-runtime-overrides.legacy.generated.js";
+﻿import { LEGACY_OVERRIDES_BY_ID } from "./babele-runtime-overrides.legacy.generated.js";
 import { MODERN_OVERRIDES_BY_ID } from "./babele-runtime-overrides.modern.generated.js";
 import { CURATED_OVERRIDES_BY_ID } from "./babele-runtime-overrides.js";
 
@@ -47,16 +47,49 @@ function roundMetric(value) {
   return Math.round((n / 2) * 10) / 10;
 }
 
+function fixMojibakeRuntime(text) {
+  if (typeof text !== "string" || !text || !/[ÃÂâ]/.test(text)) return text;
+  let current = text;
+  for (let i = 0; i < 3; i += 1) {
+    if (!/[ÃÂâ]/.test(current)) break;
+    try {
+      const bytes = Uint8Array.from([...current].map((ch) => ch.charCodeAt(0) & 0xff));
+      const decoded = new TextDecoder("utf-8", { fatal: false }).decode(bytes);
+      if (!decoded || decoded === current) break;
+      if (decoded.includes("�") && !current.includes("�")) break;
+      current = decoded;
+    } catch (_err) {
+      break;
+    }
+  }
+  // Fallback for mixed/double-encoded fragments that survived the UTF-8 decode pass.
+  return current
+    .replace(/Ã„/g, "Ä")
+    .replace(/Ã–/g, "Ö")
+    .replace(/Ãœ/g, "Ü")
+    .replace(/Ã¤/g, "ä")
+    .replace(/Ã¶/g, "ö")
+    .replace(/Ã¼/g, "ü")
+    .replace(/ÃŸ/g, "ß")
+    .replace(/â€“/g, "–")
+    .replace(/â€”/g, "—")
+    .replace(/â€ž/g, "„")
+    .replace(/â€œ/g, "“")
+    .replace(/â€\x9c/g, "“")
+    .replace(/â€\x9d/g, "”")
+    .replace(/Â/g, "");
+}
+
 function translateNameRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
-  return override?.name || originalValue;
+  return fixMojibakeRuntime(override?.name || originalValue);
 }
 
 function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
-  const description = override?.description || originalValue;
+  const description = fixMojibakeRuntime(override?.description || originalValue);
   if (typeof description !== "string") return description;
 
   const normalized = description.replace(INLINE_TOKEN_RE, (_full, kind, inner, suffix = "") => {
@@ -71,7 +104,7 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
     return `@${kind}[${cleanInner}]${cleanSuffix}`;
   });
   const awardNormalized = normalizeAwardCommands(normalized);
-  if (!awardNormalized.includes("@UUID[")) return awardNormalized;
+  if (!awardNormalized.includes("@UUID[")) return fixMojibakeRuntime(awardNormalized);
 
   return awardNormalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
     const id = String(uuidPath).split(".").pop();
@@ -116,13 +149,71 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
   if (!originalValue || typeof originalValue !== "object") return originalValue;
 
   const override = getOverrideById(data);
-  if (!override?.activities) return originalValue;
+  if (!override?.activities && !override?.activitiesMeta) return originalValue;
 
   const translated = foundry.utils.deepClone(originalValue);
   for (const activity of Object.values(translated)) {
-    if (!activity || typeof activity !== "object" || typeof activity.name !== "string") continue;
-    const mapped = override.activities[activity.name];
-    if (mapped) activity.name = mapped;
+    if (!activity || typeof activity !== "object") continue;
+    const sourceActivityName = String(activity.name ?? "");
+    const activityId = String(activity._id ?? "");
+    const activityMeta =
+      override?.activitiesMeta?.[activityId] ||
+      override?.activitiesMeta?.[sourceActivityName] ||
+      null;
+
+    if (override?.activities && sourceActivityName) {
+      const mapped = override.activities[sourceActivityName];
+      if (mapped) activity.name = mapped;
+    }
+
+    const rangeUnits = String(activity?.range?.units ?? "").toLowerCase();
+    if (DISTANCE_UNIT_MAP[rangeUnits] && activity?.range?.value !== undefined && activity?.range?.value !== null) {
+      activity.range.value = convertDistanceValueByUnit(activity.range.value, rangeUnits);
+      activity.range.units = convertDistanceUnit(activity.range.units);
+    }
+
+    const tmplUnits = String(activity?.target?.template?.units ?? "").toLowerCase();
+    if (DISTANCE_UNIT_MAP[tmplUnits]) {
+      if (activity?.target?.template?.size !== undefined && activity?.target?.template?.size !== null) {
+        activity.target.template.size = convertDistanceValueByUnit(activity.target.template.size, tmplUnits);
+      }
+      if (activity?.target?.template?.width !== undefined && activity?.target?.template?.width !== null) {
+        activity.target.template.width = convertDistanceValueByUnit(activity.target.template.width, tmplUnits);
+      }
+      activity.target.template.units = convertDistanceUnit(activity.target.template.units);
+    }
+
+    if (activityMeta && typeof activityMeta === "object") {
+      if (typeof activityMeta.chatFlavor === "string" && activityMeta.chatFlavor.trim() && activity?.description) {
+        activity.description.chatFlavor = fixMojibakeRuntime(activityMeta.chatFlavor);
+      }
+      if (typeof activityMeta.activationCondition === "string" && activityMeta.activationCondition.trim() && activity?.activation) {
+        activity.activation.condition = fixMojibakeRuntime(activityMeta.activationCondition);
+      }
+      if (typeof activityMeta.rangeSpecial === "string" && activityMeta.rangeSpecial.trim() && activity?.range) {
+        activity.range.special = fixMojibakeRuntime(activityMeta.rangeSpecial);
+      }
+      if (typeof activityMeta.durationSpecial === "string" && activityMeta.durationSpecial.trim() && activity?.duration) {
+        activity.duration.special = fixMojibakeRuntime(activityMeta.durationSpecial);
+      }
+      if (
+        typeof activityMeta.targetAffectsSpecial === "string" &&
+        activityMeta.targetAffectsSpecial.trim() &&
+        activity?.target?.affects
+      ) {
+        activity.target.affects.special = fixMojibakeRuntime(activityMeta.targetAffectsSpecial);
+      }
+      if (activityMeta.profileNames && typeof activityMeta.profileNames === "object" && activity?.profiles) {
+        for (const profile of Object.values(activity.profiles)) {
+          if (!profile || typeof profile !== "object") continue;
+          const profileName = String(profile.name ?? "");
+          const mappedName = activityMeta.profileNames[profileName];
+          if (typeof mappedName === "string" && mappedName.trim()) {
+            profile.name = fixMojibakeRuntime(mappedName);
+          }
+        }
+      }
+    }
   }
   return translated;
 }
@@ -132,7 +223,7 @@ function translateAdvancementRuntime(originalValue, _entryTranslation, data) {
   if (!Array.isArray(originalValue)) return originalValue;
 
   const itemType = String(data?.type ?? "");
-  if (!["class", "subclass", "feat"].includes(itemType)) return originalValue;
+  if (!["class", "subclass", "feat", "race", "background"].includes(itemType)) return originalValue;
 
   const override = getOverrideById(data);
   const advMap = override?.advancement;
@@ -145,8 +236,8 @@ function translateAdvancementRuntime(originalValue, _entryTranslation, data) {
     const title = String(step.title ?? "");
     const mapped = advMap[sid] || advMap[title] || null;
     if (!mapped || typeof mapped !== "object") continue;
-    if (typeof mapped.title === "string" && mapped.title.trim()) step.title = mapped.title;
-    if (typeof mapped.hint === "string" && mapped.hint.trim()) step.hint = mapped.hint;
+    if (typeof mapped.title === "string" && mapped.title.trim()) step.title = fixMojibakeRuntime(mapped.title);
+    if (typeof mapped.hint === "string" && mapped.hint.trim()) step.hint = fixMojibakeRuntime(mapped.hint);
   }
   return translated;
 }
@@ -242,6 +333,21 @@ function convertSpellTargetTemplateRuntime(originalValue, _entryTranslation, dat
   translated.size = convertDistanceValueByUnit(translated.size, units);
   translated.units = convertDistanceUnit(translated.units);
   return translated;
+}
+
+function convertOriginDistanceMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  if (String(data?.type ?? "") !== "race") return originalValue;
+  if (originalValue === null || originalValue === undefined || originalValue === "") return originalValue;
+  const n = Number(originalValue);
+  if (!Number.isFinite(n)) return originalValue;
+  return convertFeetToMeters(n);
+}
+
+function convertOriginDistanceUnitMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  if (String(data?.type ?? "") !== "race") return originalValue;
+  return "m";
 }
 
 function translateMaterialsRuntime(originalValue, _entryTranslation, data) {
@@ -393,8 +499,8 @@ Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
 
   game.settings.register(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS, {
-    name: "Zusatzinhalte (Kompendien) übersetzen",
-    hint: "Aktiviert Laufzeit-Übersetzungen für zusätzliche dnd5e-Kompendiuminhalte über Babele. Deaktiviert: nur System/UI, Character-Sheets und Tooltips.",
+    name: "Zusatzinhalte (Kompendien) Ã¼bersetzen",
+    hint: "Aktiviert Laufzeit-Ãœbersetzungen fÃ¼r zusÃ¤tzliche dnd5e-Kompendiuminhalte Ã¼ber Babele. Deaktiviert: nur System/UI, Character-Sheets und Tooltips.",
     scope: "world",
     config: true,
     type: Boolean,
@@ -434,6 +540,8 @@ Hooks.once("init", () => {
     dnd5e55SpellTargetTemplateMetricRuntime: convertSpellTargetTemplateRuntime,
     dnd5e55SpellTemplateMetricRuntime: convertSpellTargetTemplateSizeRuntime,
     dnd5e55SpellTemplateUnitMetricRuntime: convertSpellTargetTemplateUnitsRuntime,
+    dnd5e55OriginDistanceMetricRuntime: convertOriginDistanceMetricRuntime,
+    dnd5e55OriginDistanceUnitMetricRuntime: convertOriginDistanceUnitMetricRuntime,
     dnd5e55SpellTargetAffectsSpecialDeRuntime: translateSpellTargetAffectsSpecialRuntime,
     dnd5e55SpellUnidentifiedDescriptionDeRuntime: translateSpellUnidentifiedDescriptionRuntime,
     dnd5e55ActivitiesRangeMetricRuntime: convertActivitiesRangeRuntime,
@@ -442,3 +550,7 @@ Hooks.once("init", () => {
 
   console.log(`[${MODULE_ID}] Babele runtime mappings registered with strict legacy/modern separation.`);
 });
+
+
+
+
