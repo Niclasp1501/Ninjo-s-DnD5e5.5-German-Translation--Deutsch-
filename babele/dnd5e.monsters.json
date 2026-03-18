@@ -5852,8 +5852,8 @@
         },
         {
           "id": "Lightning Storm",
-          "name": "Lightning Storm",
-          "description": "<section class=\"secret\"><p>The kraken magically creates three bolts of lightning, each of which can strike a target the kraken can see within 120 feet of it.</p><p>A target must make a <strong>DC 23 Dexterity</strong> saving throw, taking <strong>22 (4d10) <em>Blitzschaden</em></strong>, halb so viel Schaden bei einem erfolgreichen Rettungswurf.</p></section><p>The kraken magically creates three bolts of lightning, each of which can strike a target the kraken can see within 120 feet of it. A target must make a <strong>Dexterity</strong> saving throw.</p>"
+          "name": "Blitzsturm",
+          "description": "<section class=\"secret\"><p>Der Kraken erschafft auf magische Weise drei Blitze, von denen jeder ein Ziel treffen kann, das der Kraken innerhalb von 36 m sehen kann.</p><p>Ein Ziel muss einen <strong>SG-23-Geschicklichkeitsrettungswurf</strong> machen und erleidet bei einem Fehlschlag <strong>22 (4W10) <em>Blitzschaden</em></strong>, bei einem erfolgreichen Rettungswurf halb so viel Schaden.</p></section><p>Der Kraken erschafft auf magische Weise drei Blitze, von denen jeder ein Ziel treffen kann, das der Kraken sehen kann. Ein Ziel muss einen <strong>Geschicklichkeitsrettungswurf</strong> machen.</p>"
         },
         {
           "id": "Lightning Storm",
