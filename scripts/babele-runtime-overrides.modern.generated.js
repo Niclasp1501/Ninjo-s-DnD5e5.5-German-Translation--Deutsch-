@@ -12157,5 +12157,2038 @@ export const MODERN_OVERRIDES_BY_ID = {
       "UH8N3zGLSGiLPObv": "<strong>Falsches Ziel:</strong> Missgeschick",
       "yJ4FhyyZvenG7AJl": "<strong>Falsches Ziel:</strong> Ähnlicher Bereich"
     }
+  },
+  "phbagAcid0000000": {
+    "name": "Säure",
+    "description": "<p>Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe\ndurch das Werfen eines Fläschchens Säure ersetzen. Wähle eine Kreatur oder ein Objekt, das du\ninnerhalb von 6 m von dir sehen kannst. Das Ziel muss einen erfolgreichen Rettungswurf auf\nGeschicklichkeit (SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) ablegen oder\n2W6 Säureschaden erleiden.</p>",
+    "activities": {
+      "Throw Acid": "Säure werfen"
+    }
+  },
+  "phbagAmmunitionV": {
+    "name": "Munition (Variiert)",
+    "description": "<p>Munition wird von einer Waffe benötigt, die die Eigenschaft Munition besitzt. Die\nBeschreibung einer Waffe gibt die Art der Munition an, die von der Waffe verwendet wird.\nDie Munitionstabelle listet die verschiedenen Arten und die Menge auf, die du beim\nKauf erhältst. Die Tabelle listet auch den Gegenstand auf, der typischerweise zur\nAufbewahrung jeder Art verwendet wird; die Aufbewahrung muss separat\ngekauft werden.</p><table><caption>Munition</caption><thead><tr><td>Typ</td><td>Menge</td><td>Lagerung</td><td>Gewicht</td><td>Kosten</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}</td><td>20</td><td>@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}</td><td>0,5 kg.</td><td>1\nGP</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbamoBolts00000]{Bolts}</td><td>20</td><td>@UUID[Compendium.dnd5e.equipment24.Item.phbagCaseCrossbo]{Case}</td><td>1½\nlb.</td><td>1\nGP</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbamoBulletsFir]{Bullets,\nFirearm}</td><td>10</td><td>@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}</td><td>1 kg.</td><td>3\nGP</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbamoBulletsSli]{Bullets,\nSling}</td><td>20</td><td>@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}</td><td>1½\nlb.</td><td>4\nCP</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbamoNeedles000]{Needles}</td><td>50</td><td>@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}</td><td>0,5 kg.</td><td>1 GP</td></tr></tbody></table>"
+  },
+  "phbamoArrows0000": {
+    "name": "Pfeile",
+    "description": "<p><em><strong>Lagerung:</strong>\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}</em></p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagAmmunitionV]{Ammunition}\nwird von einer Waffe benötigt, die die Eigenschaft Munition besitzt. Die Beschreibung einer Waffe\ngibt die Art der Munition an, die von der Waffe verwendet wird. Die Munitionstabelle listet die\nverschiedenen Arten und die Menge auf, die du beim Kauf erhältst. Die Tabelle listet auch den\nGegenstand auf, der typischerweise zur Aufbewahrung jeder Art verwendet wird; die Aufbewahrung\nmuss separat gekauft werden.</p>"
+  },
+  "phbamoBolts00000": {
+    "name": "Bolzen",
+    "description": "<p><em><strong>Lagerung:</strong>\n@UUID[Compendium.dnd5e.equipment24.Item.phbagCaseCrossbo]{Case}</em></p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagAmmunitionV]{Ammunition}\nwird von einer Waffe benötigt, die die Eigenschaft Munition besitzt. Die Beschreibung einer Waffe\ngibt die Art der Munition an, die von der Waffe verwendet wird. Die Munitionstabelle listet die\nverschiedenen Arten und die Menge auf, die du beim Kauf erhältst. Die Tabelle listet auch den\nGegenstand auf, der typischerweise zur Aufbewahrung jeder Art verwendet wird; die Aufbewahrung\nmuss separat gekauft werden.</p>"
+  },
+  "phbamoBulletsFir": {
+    "name": "Kugeln, Schusswaffe",
+    "description": "<p><em><strong>Lagerung:</strong>\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}</em></p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagAmmunitionV]{Ammunition}\nwird von einer Waffe benötigt, die die Eigenschaft Munition besitzt. Die Beschreibung einer Waffe\ngibt die Art der Munition an, die von der Waffe verwendet wird. Die Munitionstabelle listet die\nverschiedenen Arten und die Menge auf, die du beim Kauf erhältst. Die Tabelle listet auch den\nGegenstand auf, der typischerweise zur Aufbewahrung jeder Art verwendet wird; die Aufbewahrung\nmuss separat gekauft werden.</p>"
+  },
+  "phbamoBulletsSli": {
+    "name": "Kugeln, Schleuder",
+    "description": "<p><em><strong>Lagerung:</strong>\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}</em></p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagAmmunitionV]{Ammunition}\nwird von einer Waffe benötigt, die die Eigenschaft Munition besitzt. Die Beschreibung einer Waffe\ngibt die Art der Munition an, die von der Waffe verwendet wird. Die Munitionstabelle listet die\nverschiedenen Arten und die Menge auf, die du beim Kauf erhältst. Die Tabelle listet auch den\nGegenstand auf, der typischerweise zur Aufbewahrung jeder Art verwendet wird; die Aufbewahrung\nmuss separat gekauft werden.</p>"
+  },
+  "phbamoNeedles000": {
+    "name": "Nadeln",
+    "description": "<p><em><strong>Lagerung:</strong>\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}</em></p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagAmmunitionV]{Ammunition}\nwird von einer Waffe benötigt, die die Eigenschaft Munition besitzt. Die Beschreibung einer Waffe\ngibt die Art der Munition an, die von der Waffe verwendet wird. Die Munitionstabelle listet die\nverschiedenen Arten und die Menge auf, die du beim Kauf erhältst. Die Tabelle listet auch den\nGegenstand auf, der typischerweise zur Aufbewahrung jeder Art verwendet wird; die Aufbewahrung\nmuss separat gekauft werden.</p>"
+  },
+  "phbagBell0000000": {
+    "name": "Glocke",
+    "description": "<p>Wenn als Aktion Nutzen geläutet, erzeugt eine Glocke einen Klang, der\nbis zu 18 m weit zu hören ist.</p>"
+  },
+  "phbagBlockandTac": {
+    "name": "Flaschenzug",
+    "description": "<p>Ein Flaschenzug ermöglicht es dir, bis zum Vierfachen des Gewichts zu heben, das du normalerweise tragen kannst.</p>"
+  },
+  "phbagBottleGlass": {
+    "name": "Flasche, Glas",
+    "description": "<p>Eine Glasflasche fasst bis zu 1½ Pints.</p>"
+  },
+  "GDF2kmAUO8B5UEEJ": {
+    "name": "Glocke",
+    "description": "<p>Wird eine Glocke als Aktion Nutzen geläutet, erzeugt sie einen Klang, der bis zu 18 m weit zu hören ist.</p>"
+  },
+  "JpE7eqjwXw95Sai5": {
+    "name": "Öl",
+    "description": "<p>Du kannst eine Kreatur, ein Objekt oder einen Bereich mit Öl übergießen oder es als Brennstoff verwenden, wie unten beschrieben.</p><p><strong>Eine Kreatur oder ein Objekt übergießen.</strong>\nWenn du die Aktion Angriff ausführst, kannst du einen deiner Angriffe durch das Werfen einer Ölflasche ersetzen. Ziele auf eine Kreatur oder ein Objekt innerhalb von 6 m von dir. Das Ziel muss einen erfolgreichen Geschicklichkeitsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) ablegen oder ist mit Öl bedeckt. Wenn das Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet das Ziel zusätzlich [[/damage 5 type=fire]] Schaden durch brennendes Öl.</p><p><strong>Einen Bereich übergießen.</strong> Du kannst die Aktion Nutzen ausführen, um eine Ölflasche auf ebenen Boden zu gießen, um einen Bereich von 1,5 m im Quadrat innerhalb von 1,5 m von dir zu bedecken. Wenn es angezündet wird, brennt das Öl bis zum Ende des Zuges, der 2 Runden nach dem Anzünden des Öls liegt (oder 12 Sekunden), und verursacht 5 Feuerschaden bei jeder Kreatur, die den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur kann diesen Schaden nur einmal pro Zug erleiden.</p><p><strong>Brennstoff.</strong> Öl dient als Brennstoff für Lampen und Laternen. Einmal angezündet, brennt eine Ölflasche 6 Stunden lang in einer Lampe oder Laterne. Diese Dauer muss nicht zusammenhängend sein; du kannst das brennende Öl löschen (als Aktion Nutzen) und es wieder anzünden, bis es insgesamt 6 Stunden gebrannt hat.</p>",
+    "activities": {
+      "Douse Space": "Bereich übergießen",
+      "Throw": "Werfen"
+    }
+  },
+  "x8jC9e00t4cUYiKR": {
+    "name": "Seil",
+    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil binden, wenn dir ein erfolgreicher Geschicklichkeitswurf (Fingerfertigkeit) gegen SG 10 gelingt. Das Seil kann mit einem erfolgreichen Stärkewurf (Athletik) gegen SG 20 zerrissen werden.</p><p>Du kannst eine widerwillige Kreatur nur dann mit dem Seil fesseln, wenn die Kreatur den Zustand &amp;Reference[Grappled], &amp;Reference[Incapacitated] oder &amp;Reference[Restrained] hat. Sind die Beine der Kreatur gefesselt, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem Seil erfordert, dass die Kreatur als Aktion einen erfolgreichen Geschicklichkeitswurf (Akrobatik) gegen SG 15 ablegt.</p>",
+    "activities": {
+      "Burst Rope": "Seil zerreißen",
+      "Escape Check": "Entkommen prüfen",
+      "Tie Knot": "Knoten binden"
+    }
+  },
+  "RqrWyXa9XkriaxTP": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Zündstahl und Zunder (normalerweise trockenes, in leichtes Öl getränktes Tuch) enthält, um ein Feuer zu entfachen. Das Anzünden einer Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem Brennstoff – dauert eine Bonusaktion. Das Anzünden jedes anderen Feuers dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "X5XgogJLLydoKdrJ": {
+    "name": "Wasserschlauch",
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht ausreichend Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>"
+  },
+  "67ScUFYRuMU0J2Wt": {
+    "name": "Wasser (Pint)",
+    "description": "<p>Wenn du nicht ausreichend Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "phbagCaseCrossbo": {
+    "name": "Köcher, Armbrustbolzen",
+    "description": "<p>Ein Köcher für Armbrustbolzen fasst bis zu 20 Bolzen.</p>"
+  },
+  "phbagCaseMaporSc": {
+    "name": "Hülle, Karte oder Schriftrolle",
+    "description": "<p>Eine Hülle für Karten oder Schriftrollen fasst bis zu 10 Blatt Papier oder 5 Blatt Pergament.</p>"
+  },
+  "phbagChain000000": {
+    "name": "Kette",
+    "description": "<p>Als Aktion Nutzen kannst du eine Kette um eine widerwillige Kreatur innerhalb von 1,5 m von dir wickeln, die den Zustand &amp;Reference[Grappled], &amp;Reference[Incapacitated] oder &amp;Reference[Restrained] hat, wenn du einen SG 13 Stärke (Athletik) Wurf erfolgreich ablegst. Wenn die Beine der Kreatur gefesselt sind, hat die Kreatur den Zustand 'Gefesselt', bis sie entkommt. Der Kette zu entkommen erfordert, dass die Kreatur einen erfolgreichen SG 18 Geschicklichkeit (Akrobatik) Wurf als Aktion ablegt. Die Kette zu zerreißen erfordert einen erfolgreichen SG 20 Stärke (Athletik) Wurf als Aktion.</p>",
+    "activities": {
+      "Burst Chain Check": "Kette zerreißen Wurf",
+      "Escape Check": "Entkommen Wurf",
+      "Wrap Chain Check": "Kette wickeln Wurf"
+    }
+  },
+  "phbagClimbersKit": {
+    "name": "Kletterausrüstung",
+    "description": "<p>Eine Kletterausrüstung enthält Stiefelspitzen, Handschuhe, Haken und einen Klettergurt. Als Aktion Nutzen kannst du die Kletterausrüstung verwenden, um dich selbst zu verankern; wenn du dies tust, kannst du nicht mehr als 7,5 m vom Ankerpunkt fallen und dich nicht weiter als 7,5 m von dort entfernen, ohne den Anker als Bonusaktion zu lösen.</p>"
+  },
+  "phbagClothesFine": {
+    "name": "Kleidung, Edel",
+    "description": "<p>Edle Kleidung ist aus teuren Stoffen gefertigt und mit fachmännisch gefertigten Details verziert. Einige Veranstaltungen und Orte lassen nur Personen zu, die diese Kleidung tragen.</p>"
+  },
+  "phbagClothesTrav": {
+    "name": "Kleidung, Reise-",
+    "description": "<p>Reisekleidung sind strapazierfähige Kleidungsstücke, die für Reisen in verschiedenen Umgebungen konzipiert sind.</p>"
+  },
+  "phbagCostume0000": {
+    "name": "Kostüm",
+    "description": "<p>Während du ein Kostüm trägst, hast du Vorteil auf jeden Fertigkeitswurf, den du machst, um die Person oder den Typ von Person zu imitieren, die es darstellt.</p>"
+  },
+  "uBvsyY44RP4LJLzp": {
+    "name": "Tintenfeder",
+    "description": "<p>Mit Tinte wird eine Tintenfeder zum Schreiben oder Zeichnen verwendet.</p>"
+  },
+  "vi0j4PYnO596a2L1": {
+    "name": "Tinte",
+    "description": "<p>Tinte wird in einer 1-Unzen-Flasche geliefert, die genug Tinte für etwa\n500 Seiten enthält.</p>"
+  },
+  "SMj5QHHkDCdvkx35": {
+    "name": "Lampe",
+    "description": "<p>Eine Lampe verbrennt\n@UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} als Brennstoff, um\nhelles Licht in einem Radius von 4,5 m und schwaches Licht für weitere 9 m zu spenden.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "8dJcpxveaFEzjK5C": {
+    "name": "Öl",
+    "description": "<p>Du kannst eine Kreatur, ein Objekt oder einen Bereich mit Öl übergießen oder es als Brennstoff verwenden,\nwie unten beschrieben.</p><p><strong>Übergießen einer Kreatur oder eines Objekts.</strong>\nWenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe durch\ndas Werfen einer Ölflasche ersetzen. Ziele eine Kreatur oder ein Objekt innerhalb von 6 m von\ndir an. Das Ziel muss einen erfolgreichen Geschicklichkeitsrettungswurf (SG 8 plus\ndein Geschicklichkeitsmodifikator und dein Übungsbonus) ablegen oder ist mit Öl bedeckt. Wenn\ndas Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet das\nZiel zusätzlichen [[/damage 5 type=fire]] Schaden durch brennendes\nÖl.</p><p><strong>Übergießen eines Bereichs.</strong> Du kannst die Aktion „Nutzen“\nausführen, um eine Ölflasche auf ebenen Boden zu gießen, um einen 1,5 m großen quadratischen Bereich\ninnerhalb von 1,5 m von dir zu bedecken. Wenn es angezündet wird, brennt das Öl bis zum Ende des Zuges,\n2 Runden nachdem das Öl angezündet wurde (oder 12 Sekunden), und verursacht 5 Feuerschaden\nan jeder Kreatur, die den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur\nkann diesen Schaden nur einmal pro Zug erleiden.</p><p><strong>Brennstoff.</strong> Öl\ndient als Brennstoff für Lampen und Laternen. Einmal angezündet, brennt eine Flasche Öl für\n6 Stunden in einer Lampe oder Laterne. Diese Dauer muss nicht\nzusammenhängend sein; du kannst das brennende Öl löschen (als Aktion „Nutzen“) und\nes wieder anzünden, bis es insgesamt 6 Stunden gebrannt hat.</p>",
+    "activities": {
+      "Douse Space": "Bereich übergießen",
+      "Throw": "Werfen"
+    }
+  },
+  "YAXBQxHMEtJx6OuQ": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Feuerstahl und Zunder\n(normalerweise trockenes, in leichtes Öl getränktes Tuch) enthält, um ein Feuer zu entfachen. Sie zu verwenden, um\neine Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem\nBrennstoff – anzuzünden, erfordert eine Bonusaktion. Jedes andere Feuer anzuzünden dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "q6nVEb4XnTWxqA81": {
+    "name": "Öl",
+    "description": "<p>Du kannst eine Kreatur, ein Objekt oder einen Bereich mit Öl übergießen oder es als Brennstoff verwenden,\nwie unten beschrieben.</p><p><strong>Übergießen einer Kreatur oder eines Objekts.</strong>\nWenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe durch\ndas Werfen einer Ölflasche ersetzen. Ziele eine Kreatur oder ein Objekt innerhalb von 6 m von\ndir an. Das Ziel muss einen erfolgreichen Geschicklichkeitsrettungswurf (SG 8 plus\ndein Geschicklichkeitsmodifikator und dein Übungsbonus) ablegen oder ist mit Öl bedeckt. Wenn\ndas Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet das\nZiel zusätzlichen [[/damage 5 type=fire]] Schaden durch brennendes\nÖl.</p><p><strong>Übergießen eines Bereichs.</strong> Du kannst die Aktion „Nutzen“\nausführen, um eine Ölflasche auf ebenen Boden zu gießen, um einen 1,5 m großen quadratischen Bereich\ninnerhalb von 1,5 m von dir zu bedecken. Wenn es angezündet wird, brennt das Öl bis zum Ende des Zuges,\n2 Runden nachdem das Öl angezündet wurde (oder 12 Sekunden), und verursacht 5 Feuerschaden\nan jeder Kreatur, die den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur\nkann diesen Schaden nur einmal pro Zug erleiden.</p><p><strong>Brennstoff.</strong> Öl\ndient als Brennstoff für Lampen und Laternen. Einmal angezündet, brennt eine Flasche Öl für\n6 Stunden in einer Lampe oder Laterne. Diese Dauer muss nicht\nzusammenhängend sein; du kannst das brennende Öl löschen (als Aktion „Nutzen“) und\nes wieder anzünden, bis es insgesamt 6 Stunden gebrannt hat.</p>",
+    "activities": {
+      "Douse Space": "Bereich übergießen",
+      "Throw": "Werfen"
+    }
+  },
+  "LfDewuKszszreg6i": {
+    "name": "Seil",
+    "description": "<p>Als Aktion „Nutzen“ kannst du mit einem Seil einen Knoten binden, wenn du einen\nerfolgreichen Geschicklichkeitswurf (Fingerfertigkeit) SG 10 ablegst. Das Seil kann mit einem\nerfolgreichen Stärkewurf (Athletik) SG 20 zerrissen werden.</p><p>Du kannst eine\nunwillige Kreatur nur dann mit dem Seil fesseln, wenn die Kreatur den Zustand\n&amp;Reference[Grappled], &amp;Reference[Incapacitated] oder\n&amp;Reference[Restrained] hat. Wenn die Beine der Kreatur gefesselt sind,\nhat die Kreatur den Zustand „Fesselung“, bis sie entkommt. Das Entkommen aus dem\nSeil erfordert, dass die Kreatur als Aktion einen erfolgreichen Geschicklichkeitswurf\n(Akrobatik) SG 15 ablegt.</p>",
+    "activities": {
+      "Burst Rope": "Seil zerreißen",
+      "Escape Check": "Entkommen prüfen",
+      "Tie Knot": "Knoten binden"
+    }
+  },
+  "EGuDt2xpscYtalmV": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Feuerstahl und Zunder\n(normalerweise trockenes, in leichtes Öl getränktes Tuch) enthält, um ein Feuer zu entfachen. Sie zu verwenden, um\neine Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem\nBrennstoff – anzuzünden, erfordert eine Bonusaktion. Jedes andere Feuer anzuzünden dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "5tEPJK0TLcjPvPNF": {
+    "name": "Wasserschlauch",
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst,\nriskierst du &amp;Reference[dehydration].</p>"
+  },
+  "aWEY8Xh0wfn69Q1w": {
+    "name": "Wasser (Pinte)",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du\n&amp;Reference[dehydration].</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "NmDigoAOjCENDrea": {
+    "name": "Glocke",
+    "description": "<p>Wenn sie als Aktion „Nutzen“ geläutet wird, erzeugt eine Glocke einen Klang, der bis zu 18 m weit zu hören ist.</p>"
+  },
+  "oQRUfRQQjsMMXJhD": {
+    "name": "Kostüm",
+    "description": "<p>Während du ein Kostüm trägst, hast du Vorteil auf jeden Fertigkeitswurf, den du machst, um die Person oder den Typ von Person zu imitieren, die es darstellt.</p>"
+  },
+  "SoNpADeVEx2DDZgB": {
+    "name": "Spiegel",
+    "description": "<p>Ein handgehaltener Stahlspiegel ist nützlich für die persönliche Kosmetik, aber auch, um um Ecken zu spähen und Licht als Signal zu reflektieren.</p>"
+  },
+  "rwITntQ6OAy0neX8": {
+    "name": "Öl",
+    "description": "<p>Du kannst eine Kreatur, ein Objekt oder einen Bereich mit Öl übergießen oder es als Brennstoff verwenden, wie unten beschrieben.</p><p><strong>Eine Kreatur oder ein Objekt übergießen.</strong>\nWenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe durch das Werfen einer Ölflasche ersetzen. Ziele eine Kreatur oder ein Objekt innerhalb von 6 m von dir an. Das Ziel muss einen Rettungswurf auf Geschicklichkeit (SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) bestehen oder ist mit Öl bedeckt. Wenn das Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet das Ziel zusätzlichen [[/damage 5 type=fire]] Schaden durch brennendes Öl.</p><p><strong>Einen Bereich übergießen.</strong> Du kannst die Aktion „Nutzen“ ausführen, um eine Ölflasche auf ebenen Boden zu gießen, um einen Bereich von 1,5 m im Quadrat innerhalb von 1,5 m von dir zu bedecken. Wenn es angezündet wird, brennt das Öl bis zum Ende des Zuges, 2 Runden nachdem das Öl angezündet wurde (oder 12 Sekunden), und verursacht 5 Feuerschaden bei jeder Kreatur, die den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur kann diesen Schaden nur einmal pro Zug erleiden.</p><p><strong>Brennstoff.</strong> Öl dient als Brennstoff für Lampen und Laternen. Einmal angezündet, brennt eine Ölflasche 6 Stunden lang in einer Lampe oder Laterne. Diese Dauer muss nicht zusammenhängend sein; du kannst das brennende Öl löschen (als Aktion „Nutzen“) und es wieder anzünden, bis es insgesamt 6 Stunden gebrannt hat.</p>",
+    "activities": {
+      "Douse Space": "Bereich übergießen",
+      "Throw": "Werfen"
+    }
+  },
+  "rIuY5ZDJh6ctfUwG": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Feuereisen und Zunder (normalerweise trockenes, in leichtem Öl getränktes Tuch) enthält, um ein Feuer zu entzünden. Das Anzünden einer Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem Brennstoff – dauert eine Bonusaktion. Das Anzünden jedes anderen Feuers dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "UOiM3icOTVhR3llN": {
+    "name": "Wasserschlauch",
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst, riskierst du &amp;Reference[dehydration].</p>"
+  },
+  "Qgekp4euuB5S9tpe": {
+    "name": "Wasser (Pinte)",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du\n&amp;Reference[dehydration].</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "VczW1tStT5y7No3b": {
+    "name": "Öl",
+    "description": "<p>Du kannst eine Kreatur, ein Objekt oder einen Bereich mit Öl übergießen oder es als Brennstoff verwenden,\nwie unten beschrieben.</p><p><strong>Eine Kreatur oder ein Objekt übergießen.</strong>\nWenn du die Aktion Angriff ausführst, kannst du einen deiner Angriffe durch\ndas Werfen einer Ölflasche ersetzen. Ziele eine Kreatur oder ein Objekt innerhalb von 6 m von\ndir an. Das Ziel muss einen erfolgreichen Geschicklichkeitsrettungswurf (SG 8 plus\ndein Geschicklichkeitsmodifikator und dein Übungsbonus) ablegen oder ist mit Öl bedeckt. Wenn\ndas Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet das\nZiel zusätzlich [[/damage 5 type=fire]] Schaden durch brennendes\nÖl.</p><p><strong>Einen Bereich übergießen.</strong> Du kannst die Aktion Nutzen\nausführen, um eine Ölflasche auf ebenen Boden zu gießen, um einen 1,5 m großen quadratischen Bereich\ninnerhalb von 1,5 m von dir zu bedecken. Wenn es angezündet wird, brennt das Öl bis zum Ende des Zuges,\nder 2 Runden nach dem Anzünden des Öls liegt (oder 12 Sekunden), und verursacht 5 Feuerschaden\nbei jeder Kreatur, die den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur\nkann diesen Schaden nur einmal pro Zug erleiden.</p><p><strong>Brennstoff.</strong> Öl\ndient als Brennstoff für Lampen und Laternen. Einmal angezündet, brennt eine Flasche Öl\n6 Stunden lang in einer Lampe oder Laterne. Diese Dauer muss nicht\nzusammenhängend sein; du kannst das brennende Öl löschen (als Aktion Nutzen) und\nes wieder anzünden, bis es insgesamt 6 Stunden gebrannt hat.</p>",
+    "activities": {
+      "Douse Space": "Bereich übergießen",
+      "Throw": "Werfen"
+    }
+  },
+  "5KMKEV07I25SVth0": {
+    "name": "Seil",
+    "description": "<p>Als Aktion Nutzen kannst du einen Knoten mit dem Seil knüpfen, wenn dir ein\nerfolgreicher Geschicklichkeitswurf (Fingerfertigkeit) gegen SG 10 gelingt. Das Seil kann mit einem\nerfolgreichen Stärkewurf (Athletik) gegen SG 20 zerrissen werden.</p><p>Du kannst eine\nunwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den\n&amp;Reference[Grappled], &amp;Reference[Incapacitated] oder\n&amp;Reference[Restrained] Zustand hat. Wenn die Beine der Kreatur gefesselt sind,\nhat die Kreatur den Zustand Fesselung, bis sie entkommt. Das Entkommen aus dem\nSeil erfordert, dass die Kreatur als Aktion einen erfolgreichen Geschicklichkeitswurf\n(Akrobatik) gegen SG 15 ablegt.</p>",
+    "activities": {
+      "Burst Rope": "Seil zerreißen",
+      "Escape Check": "Entkommen prüfen",
+      "Tie Knot": "Knoten knüpfen"
+    }
+  },
+  "367bsHMaHI1II4k9": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Zunderstahl und Zunder\n(normalerweise trockenes Tuch, das in leichtem Öl getränkt ist) enthält, um ein Feuer zu entzünden. Sie zu\nverwenden, um eine Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem\nBrennstoff – anzuzünden, dauert eine Bonusaktion. Jedes andere Feuer anzuzünden dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "LuLBFWwxjbNKU9FF": {
+    "name": "Wasserschlauch",
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst,\nriskierst du &amp;Reference[dehydration].</p>"
+  },
+  "It6m0vGGZwCf9E7r": {
+    "name": "Wasser (Pint)",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du\n&amp;Reference[dehydration].</p>",
+    "activities": {
+      "Consume": "Konsumieren"
+    }
+  },
+  "phbagGrapplingHo": {
+    "name": "Enterhaken",
+    "description": "<p>Als Aktion Nutzen kannst du den Enterhaken auf ein Geländer, einen Vorsprung\noder eine andere Halterung innerhalb von 15 m von dir werfen, und der Haken verfängt\nsich, wenn dir ein erfolgreicher Geschicklichkeitswurf (Akrobatik) gegen SG 13 gelingt. Wenn du ein\nSeil am Haken befestigt hast, kannst du es dann hochklettern.</p>",
+    "activities": {
+      "Throw": "Werfen"
+    }
+  },
+  "phbagHolyWater00": {
+    "name": "Weihwasser",
+    "description": "<p>Wenn du die Aktion Angriff ausführst, kannst du einen deiner Angriffe\ndurch das Werfen einer Flasche Weihwasser ersetzen. Ziele eine Kreatur an, die du\ninnerhalb von 6 m von dir sehen kannst. Das Ziel muss einen erfolgreichen Geschicklichkeitsrettungswurf\n(SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) ablegen oder erleidet\n2W8 gleißenden Schaden, wenn es ein Unhold oder ein Untoter ist.</p>",
+    "activities": {
+      "Throw": "Werfen"
+    }
+  },
+  "phbagInkPen00000": {
+    "name": "Tintenfeder",
+    "description": "<p>Eine Tintenfeder wird mit Tinte zum Schreiben oder Zeichnen verwendet.</p>"
+  },
+  "phbagInk00000000": {
+    "name": "Tinte",
+    "description": "<p>Tinte wird in einer 1-Unzen-Flasche geliefert, die genug Tinte für etwa 500 Seiten bietet.</p>"
+  },
+  "phbagLadder00000": {
+    "name": "Leiter",
+    "description": "<p>Eine Leiter ist 3 m hoch. Du musst klettern, um sie hinauf- oder hinabzusteigen.</p>"
+  },
+  "phbagLamp0000000": {
+    "name": "Lampe",
+    "description": "<p>Eine Lampe verbrennt\n@UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} als Brennstoff, um Helles Licht in einem Radius von 4,5 m und Schwaches Licht für weitere 9 m zu spenden.</p>",
+    "activities": {
+      "Light": "Licht"
+    }
+  },
+  "phbagLanternBull": {
+    "name": "Blendlaterne",
+    "description": "<p>Eine Blendlaterne verbrennt Öl als Brennstoff, um Helles Licht in einem 18 m langen Kegel und Schwaches Licht für weitere 18 m zu spenden.</p>",
+    "activities": {
+      "Light": "Licht"
+    }
+  },
+  "phbagLanternHood": {
+    "name": "Verdeckte Laterne",
+    "description": "<p>Eine Verdeckte Laterne verbrennt Öl als Brennstoff, um Helles Licht in einem Radius von 9 m und Schwaches Licht für weitere 9 m zu spenden. Als Bonusaktion kannst du die Blende herunterlassen, wodurch das Licht auf Schwaches Licht in einem Radius von 1,5 m reduziert wird, oder sie wieder anheben.</p>",
+    "activities": {
+      "Light": "Licht"
+    }
+  },
+  "phbagLock0000000": {
+    "name": "Schloss",
+    "description": "<p>Ein Schloss wird mit einem Schlüssel geliefert. Ohne den Schlüssel kann eine Kreatur @UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools} verwenden, um dieses Schloss mit einem erfolgreichen [[/tool thief dex 15]]-Wurf zu knacken.</p>"
+  },
+  "phbagMap00000000": {
+    "name": "Karte",
+    "description": "<p>Wenn du eine genaue Karte konsultierst, erhältst du einen Bonus von +5 auf Weisheit (Überleben)-Würfe, die du machst, um dich an dem darauf dargestellten Ort zurechtzufinden.</p>"
+  },
+  "phbagMirror00000": {
+    "name": "Spiegel",
+    "description": "<p>Ein handgehaltener Stahlspiegel ist nützlich für die persönliche Kosmetik, aber auch, um um Ecken zu spähen und Licht als Signal zu reflektieren.</p>"
+  },
+  "phbagNet00000000": {
+    "name": "Netz",
+    "description": "<p>Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe durch das Werfen eines Netzes ersetzen. Wähle eine Kreatur, die du innerhalb von 4,5 m von dir sehen kannst. Das Ziel muss einen Rettungswurf auf Geschicklichkeit (SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) bestehen oder den Zustand &amp;Reference[Restrained] haben, bis es entkommt. Das Ziel besteht automatisch, wenn es riesig oder größer ist.</p><p>Um zu entkommen, muss das Ziel oder eine Kreatur innerhalb von 1,5 m von ihm eine Aktion aufwenden, um eine [[/skill ath 10]]-Probe abzulegen, wodurch die gefesselte Kreatur bei Erfolg befreit wird. Das Zerstören des Netzes (RK 10; 5 TP; Immunität gegen Wuchtschaden, Giftschaden und psychischen Schaden) befreit das Ziel ebenfalls und beendet den Effekt.</p>",
+    "effects": {
+      "67ofG0FVqrrkAHKa": "Im Netz gefangen"
+    }
+  },
+  "phbagOil00000000": {
+    "name": "Öl",
+    "description": "<p>Du kannst eine Kreatur, ein Objekt oder einen Bereich mit Öl übergießen oder es als Brennstoff verwenden, wie unten beschrieben.</p><p><strong>Eine Kreatur oder ein Objekt übergießen.</strong> Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe durch das Werfen einer Ölflasche ersetzen. Wähle eine Kreatur oder ein Objekt innerhalb von 6 m von dir. Das Ziel muss einen Rettungswurf auf Geschicklichkeit (SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) bestehen oder mit Öl bedeckt sein. Wenn das Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet das Ziel zusätzlich [[/damage 5 type=fire]] Schaden durch brennendes Öl.</p><p><strong>Einen Bereich übergießen.</strong> Du kannst die Aktion 'Nutzen' verwenden, um eine Ölflasche auf ebenen Boden zu gießen und einen Bereich von 1,5 m im Quadrat innerhalb von 1,5 m von dir zu bedecken. Wenn es angezündet wird, brennt das Öl bis zum Ende des Zuges, der 2 Runden nach dem Anzünden des Öls liegt (oder 12 Sekunden), und verursacht 5 Feuerschaden bei jeder Kreatur, die den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur kann diesen Schaden nur einmal pro Zug erleiden.</p><p><strong>Brennstoff.</strong> Öl dient als Brennstoff für Lampen und Laternen. Einmal angezündet, brennt eine Flasche Öl 6 Stunden lang in einer Lampe oder Laterne. Diese Dauer muss nicht zusammenhängend sein; du kannst das brennende Öl löschen (als Aktion 'Nutzen') und es wieder anzünden, bis es insgesamt 6 Stunden gebrannt hat.</p>",
+    "activities": {
+      "Douse Space": "Bereich übergießen",
+      "Throw": "Werfen"
+    }
+  },
+  "phbagPoisonBasic": {
+    "name": "Gift, Einfaches",
+    "description": "<p>Als Bonusaktion kannst du ein Fläschchen einfaches Gift verwenden, um eine Waffe oder bis zu drei Munitionsstücke zu beschichten. Eine Kreatur, die Stich- oder Hiebschaden von der vergifteten Waffe oder Munition erleidet, nimmt zusätzlich 1W4 Giftschaden. Einmal aufgetragen, behält das Gift seine Wirksamkeit für 1 Minute oder bis sein Schaden zugefügt wurde, je nachdem, was zuerst eintritt.</p><section\nid=\"secret-YwO5GX35V4XweNWL\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Funktion beinhaltet einen Wurf für den Giftschaden.</p></section>"
+  },
+  "phbagPotIron0000": {
+    "name": "Topf, Eisen",
+    "description": "<p>Ein Eisentopf fasst bis zu 1 Gallone.</p>"
+  },
+  "nshr9PBVyB03T7wB": {
+    "name": "Weihwasser",
+    "description": "<p>Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe durch das Werfen einer Flasche Weihwasser ersetzen. Wähle eine Kreatur, die du innerhalb von 6 m von dir sehen kannst. Das Ziel muss einen Rettungswurf auf Geschicklichkeit (SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) bestehen oder 2W8 gleißenden Schaden erleiden, wenn es ein Unhold oder ein Untoter ist.</p>",
+    "activities": {
+      "Throw": "Werfen"
+    }
+  },
+  "KUlBAAjJ9KmOCSsC": {
+    "name": "Lampe",
+    "description": "<p>Eine Lampe verbrennt @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} als Brennstoff, um helles Licht in einem Radius von 4,5 m und schwaches Licht für weitere 9 m zu spenden.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "jLcAY4Oph8ZEniG2": {
+    "name": "Robe",
+    "description": "<p>Eine Robe hat berufliche oder zeremonielle Bedeutung. Einige Veranstaltungen und Orte lassen nur Personen zu, die eine Robe mit bestimmten Farben oder Symbolen tragen.</p>"
+  },
+  "gHOs5HRZJdnUwfng": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Zündstahl und Zunder (normalerweise trockenes Tuch, das in leichtem Öl getränkt ist) enthält und zum Anzünden eines Feuers verwendet wird. Sie zum Anzünden einer Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem Brennstoff – zu verwenden, erfordert eine Bonusaktion. Jedes andere Feuer anzuzünden dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "phbagRamPortable": {
+    "name": "Rammbock, Tragbar",
+    "description": "<p>Du kannst einen Tragbaren Rammbock verwenden, um Türen aufzubrechen. Dabei erhältst du einen Bonus von +4 auf den Stärkewurf. Ein anderer Charakter kann dir beim Einsatz des Rammbocks helfen, wodurch du bei diesem Wurf Vorteil erhältst.</p>"
+  },
+  "phbagRobe0000000": {
+    "name": "Robe",
+    "description": "<p>Eine Robe hat berufliche oder zeremonielle Bedeutung. Einige Veranstaltungen und Orte lassen nur Personen zu, die eine Robe mit bestimmten Farben oder Symbolen tragen.</p>"
+  },
+  "phbagRope0000000": {
+    "name": "Seil",
+    "description": "<p>Als Aktion Nutzen kannst du mit einem Seil einen Knoten binden, wenn dir ein erfolgreicher SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf gelingt. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine widerwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den Zustand &amp;Reference[Grappled], &amp;Reference[Incapacitated] oder &amp;Reference[Restrained] hat. Sind die Beine der Kreatur gefesselt, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Um dem Seil zu entkommen, muss die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegen.</p>",
+    "activities": {
+      "Burst Rope": "Seil zerreißen",
+      "Escape Check": "Entkommen-Wurf",
+      "Tie Knot": "Knoten binden"
+    }
+  },
+  "x9BzTUcsOj6K6OJE": {
+    "name": "Tintenfeder",
+    "description": "<p>Eine Tintenfeder wird mit Tinte zum Schreiben oder Zeichnen verwendet.</p>"
+  },
+  "UEH4xJlj50S9ztbH": {
+    "name": "Tinte",
+    "description": "<p>Tinte wird in einer 1-Unzen-Flasche geliefert, die genug Tinte für etwa 500 Seiten bietet.</p>"
+  },
+  "Ekz3r0UKJ261oBJj": {
+    "name": "Lampe",
+    "description": "<p>Eine Lampe verbrennt @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} als Brennstoff, um Helles Licht in einem Radius von 4,5 m und Schwaches Licht für weitere 9 m zu spenden.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "Ur2LYFqSdOgeWWF0": {
+    "name": "Öl",
+    "description": "<p>Du kannst eine Kreatur, ein Objekt oder einen Bereich mit Öl übergießen oder es als Brennstoff verwenden, wie unten beschrieben.</p><p><strong>Eine Kreatur oder ein Objekt übergießen.</strong> Wenn du die Aktion Angriff ausführst, kannst du einen deiner Angriffe durch das Werfen einer Ölflasche ersetzen. Ziele eine Kreatur oder ein Objekt innerhalb von 6 m von dir an. Das Ziel muss einen erfolgreichen Geschicklichkeitsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator und dein Übungsbonus) ablegen oder ist mit Öl bedeckt. Wenn das Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet das Ziel zusätzlichen [[/damage 5 type=fire]] Schaden durch brennendes Öl.</p><p><strong>Einen Bereich übergießen.</strong> Du kannst die Aktion Nutzen ausführen, um eine Ölflasche auf ebenen Boden zu gießen, um einen 5-Fuß-Quadratbereich innerhalb von 1,5 m von dir zu bedecken. Wenn es angezündet wird, brennt das Öl bis zum Ende des Zuges, 2 Runden nachdem das Öl angezündet wurde (oder 12 Sekunden), und verursacht 5 Feuerschaden bei jeder Kreatur, die den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur kann diesen Schaden nur einmal pro Zug erleiden.</p><p><strong>Brennstoff.</strong> Öl dient als Brennstoff für Lampen und Laternen. Einmal angezündet, brennt eine Flasche Öl 6 Stunden lang in einer Lampe oder Laterne. Diese Dauer muss nicht zusammenhängend sein; du kannst das brennende Öl löschen (als Aktion Nutzen) und es wieder anzünden, bis es insgesamt 6 Stunden gebrannt hat.</p>",
+    "activities": {
+      "Douse Space": "Bereich übergießen",
+      "Throw": "Werfen"
+    }
+  },
+  "etKzfLUMWikSsi3R": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Feuereisen und Zunder (normalerweise trockenes Tuch, das in leichtem Öl getränkt ist) enthält, um ein Feuer zu entfachen. Eine Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem Brennstoff – damit anzuzünden, erfordert eine Bonusaktion. Jedes andere Feuer anzuzünden dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "phbagSignalWhist": {
+    "name": "Signalpfeife",
+    "description": "<p>Wenn als Aktion Nutzen geblasen, erzeugt eine Signalpfeife einen Schall, der bis zu 180 m weit gehört werden kann.</p>",
+    "activities": {
+      "Whistle": "Pfeifen"
+    }
+  },
+  "phbagCantripScro": {
+    "name": "Zauberrolle, Zaubertrick",
+    "description": "<p>Eine <em>Zauberrolle</em> (Zaubertrick) oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbagSpellScroll]{Spell Scroll\n(Level 1)} ist ein magischer Gegenstand, der die Worte eines Zaubertricks bzw. eines Zaubers des 1. Grades trägt, bestimmt durch den Erschaffer der Rolle. Wenn der Zauber auf der Zauberliste deiner Klasse steht, kannst du die Rolle lesen und den Zauber mit seiner normalen Zauberzeit und ohne Materialkomponenten wirken.</p><p>Wenn der Zauber einen Rettungswurf oder einen Angriffswurf erfordert, beträgt der SG des Zauberrettungswurfs 13 und der Angriffsbonus +5. Die Rolle zerfällt, wenn das Wirken abgeschlossen ist.</p>"
+  },
+  "phbagSpellScroll": {
+    "name": "Zauberrolle, Grad 1",
+    "description": "<p>Eine @UUID[Compendium.dnd5e.equipment24.Item.phbagCantripScro]{Spell\nScroll (Cantrip)} oder <em>Zauberrolle</em> (Grad 1) ist ein magischer Gegenstand, der die Worte eines Zaubertricks bzw. eines Zaubers des 1. Grades trägt, bestimmt durch den Erschaffer der Rolle. Wenn der Zauber auf der Zauberliste deiner Klasse steht, kannst du die Rolle lesen und den Zauber mit seiner normalen Zauberzeit und ohne Materialkomponenten wirken.</p><p>Wenn der Zauber einen Rettungswurf oder einen Angriffswurf erfordert, beträgt der SG des Zauberrettungswurfs 13 und der Angriffsbonus +5. Die Rolle zerfällt, wenn das Wirken abgeschlossen ist.</p>"
+  },
+  "phbagArcaneFocus": {
+    "name": "Arkanes Fokusobjekt (Variiert)",
+    "description": "<p>Ein Arkanes Fokusobjekt nimmt eine der Formen in der Tabelle der Arkanen Fokusobjekte an und ist mit Juwelen besetzt oder geschnitzt, um arkane Magie zu kanalisieren. Ein Zauberer, Hexenmeister oder Magier kann einen solchen Gegenstand als Zauberfokus verwenden.</p><table><caption>Arkane\nFokusobjekte</caption><thead><tr><td>Fokusobjekt</td><td>Gewicht</td><td>Kosten</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbafcCrystal000]{Crystal}</td><td>1\nPfund</td><td>10\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbafcOrb0000000]{Orb}</td><td>3\nPfund</td><td>20\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbafcRod0000000]{Rod}</td><td>2\nPfund</td><td>10\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}\n(auch ein\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}Viertelstab</td>)<td>4\nPfund</td><td>5\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbafcWand000000]{Wand}</td><td>1\nPfund</td><td>10 GM</td></tr></tbody></table>"
+  },
+  "phbagDruidicFocu": {
+    "name": "Druidischer Fokus (Variiert)",
+    "description": "<p>Ein Druidischer Fokus nimmt eine der Formen in der Tabelle der Druidischen Fokusobjekte an und ist geschnitzt, mit Bändern gebunden oder bemalt, um ursprüngliche Magie zu kanalisieren. Ein Druide oder Waldläufer kann einen solchen Gegenstand als Zauberfokus verwenden.</p><table><caption>Druidische\nFokusobjekte</caption><thead><tr><td>Fokusobjekt</td><td>Gewicht</td><td>Kosten</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbdfcSprigofmis]{Sprig\nof mistletoe}</td><td>—</td><td>1\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbdfcWoodenstaf]{Wooden\nstaff} (auch ein\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}Viertelstab</td>)<td>4\nPfund</td><td>5\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbdfcYewwand000]{Yew\nwand}</td><td>1 Pfund</td><td>10 GM</td></tr></tbody></table>"
+  },
+  "phbagHolySymbolV": {
+    "name": "Heiliges Symbol (Variiert)",
+    "description": "<p>Ein Heiliges Symbol nimmt eine der Formen in der Tabelle der Heiligen Symbole an und ist mit Juwelen besetzt oder bemalt, um göttliche Magie zu kanalisieren. Ein Kleriker oder Paladin kann ein Heiliges Symbol als Zauberfokus verwenden.</p><p>Die Tabelle gibt an, ob ein Heiliges Symbol gehalten, getragen oder auf Stoff (wie einem Wappenrock oder Banner) oder einem Schild angebracht werden muss.</p><table><caption>Heilige\nSymbole</caption><thead><tr><td>Symbol</td><td>Gewicht</td><td>Kosten</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbhsyAmuletworn]{Amulet}\n(getragen oder gehalten)</td><td>1 Pfund</td><td>5\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbhsyEmblemborn]{Emblem}\n(auf Stoff oder einem Schild angebracht)</td><td>—</td><td>5\nGM</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.phbhsyReliquaryh]{Reliquary}\n(gehalten)</td><td>2 Pfund</td><td>5 GM</td></tr></tbody></table>"
+  },
+  "phbagSpikesIron0": {
+    "name": "Eisennägel",
+    "description": "<p>Eisennägel kommen in Bündeln zu je zehn Stück. Als Aktion Nutzen kannst du einen stumpfen Gegenstand, wie einen Leichten Hammer, verwenden, um einen Nagel in Holz, Erde oder ein ähnliches Material zu schlagen. Du kannst dies tun, um eine Tür zu verkeilen oder um dann ein Seil oder eine Kette an den Nagel zu binden.</p>"
+  },
+  "phbagString00000": {
+    "name": "Schnur",
+    "description": "<p>Eine Schnur ist 3 m lang. Du kannst als Aktion Nutzen einen Knoten darin machen.</p>"
+  },
+  "phbagTent0000000": {
+    "name": "Zelt",
+    "description": "<p>Ein Zelt bietet Platz für bis zu zwei Kleine oder Mittelgroße Kreaturen.</p>"
+  },
+  "phbagTinderbox00": {
+    "name": "Zunderbüchse",
+    "description": "<p>Eine Zunderbüchse ist ein kleiner Behälter, der Feuerstein, Zunderstahl und Zunder (normalerweise trockenes, in leichtes Öl getränktes Tuch) enthält, um ein Feuer zu entfachen. Das Anzünden einer Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem Brennstoff – dauert eine Bonusaktion. Das Anzünden jedes anderen Feuers dauert 1 Minute.</p>",
+    "activities": {
+      "Light": "Anzünden"
+    }
+  },
+  "phbWaterpint0000": {
+    "name": "Wasser (Pinte)",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du\n&amp;Reference[dehydration].</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "phbagWaterskin00": {
+    "name": "Wasserschlauch",
+    "description": "<p>Ein Wasserschlauch fasst bis zu 4 Pints. Wenn du nicht genug Wasser trinkst,\nriskierst du &amp;Reference[dehydration].</p>"
+  },
+  "2nlARB78sJo8Z2W6": {
+    "name": "Wasser (Pinte)",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du\n&amp;Reference[dehydration].</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "dmgAdamantineArm": {
+    "name": "Adamantinharnisch",
+    "description": "<p><em>Rüstung (jede Mittlere oder Schwere, außer Lederharnisch),\nUngewöhnlich</em></p><p>Diese Rüstung ist mit Adamantin verstärkt, einer\nder härtesten Substanzen, die es gibt. Solange du sie trägst, wird jeder\n&amp;Reference[CriticalHits] gegen dich zu einem normalen\nTreffer.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Adamantine Armor": "Adamantinharnisch"
+    }
+  },
+  "dmgArmor12or3000": {
+    "name": "Rüstung, +1, +2 oder +3",
+    "description": "<p><em>Rüstung (jede Leichte, Mittlere oder Schwere), Selten (+1), Sehr Selten (+2) oder\nLegendär (+3)</em></p><p>Du erhältst einen Bonus auf deine Rüstungsklasse, solange du\ndiese Rüstung trägst. Der Bonus wird durch ihre\nSeltenheit bestimmt.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Armor, +1, +2, or +3": "Rüstung, +1, +2 oder +3"
+    }
+  },
+  "dmgMithralArmor0": {
+    "name": "Mithralrüstung",
+    "description": "<p><em>Rüstung (jede Mittlere oder Schwere, außer Lederharnisch),\nUngewöhnlich</em></p><p>Mithral ist ein leichtes, flexibles Metall. Rüstungen aus dieser\nSubstanz können unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise\nNachteil auf Geschicklichkeit (Heimlichkeit)-Würfe auferlegt oder eine Stärkeanforderung hat,\ntut die Mithralversion der Rüstung\ndies nicht.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Mithral Armor": "Mithralrüstung"
+    }
+  },
+  "dmgSentinelShiel": {
+    "name": "Schild des Wächters",
+    "description": "<p><em>Rüstung (Schild), Ungewöhnlich</em></p><p>Solange du diesen Schild hältst, hast du Vorteil auf Initiativewürfe und Weisheit (Wahrnehmung)-Würfe. Der Schild ist mit dem Symbol eines Auges verziert.</p>",
+    "effects": {
+      "bHeGysatAXUbusV0": "Vorteil auf Initiative"
+    }
+  },
+  "dmgShield12or300": {
+    "name": "Schild, +1, +2 oder +3",
+    "description": "<p><em>Rüstung\n(@UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield}),\nUngewöhnlich (+1), Selten (+2) oder Sehr Selten (+3)</em></p><p>Solange du diesen\nSchild hältst, erhältst du einen Bonus auf deine Rüstungsklasse, der durch die Seltenheit des Schildes bestimmt wird,\nzusätzlich zum normalen Bonus des Schildes auf die\nRK.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Shield, +1, +2, or +3": "Schild, +1, +2 oder +3"
+    }
+  },
+  "dmgShieldOfTheCa": {
+    "name": "Schild des Kavaliers",
+    "description": "<p><em>Rüstung (Schild), Sehr Selten (Benötigt Einstimmung)</em></p><p>Solange\ndu diesen Schild hältst, hast du einen Bonus von +2 auf deine Rüstungsklasse. Dieser Bonus kommt\nzusätzlich zum normalen Bonus des Schildes auf die RK.</p><p>Der Schild hat die\nfolgenden zusätzlichen Eigenschaften, die du nutzen kannst, während du ihn\nhältst.</p><p><em><strong>Wuchtiger Stoß</strong></em><strong>.</strong> Wenn\ndu die Angriffsaktion ausführst, kannst du einen der Angriffswürfe mit dem\nSchild gegen ein Ziel innerhalb von 1,5 m von dir machen. Wende deinen Übungsbonus\nund deinen Stärkemodifikator auf den Angriffswurf an. Bei einem Treffer fügt der Schild\ndem Ziel Wuchtschaden in Höhe von 2W6 + 2 plus deinem Stärkemodifikator\nzu, und wenn das Ziel eine Kreatur ist, kannst du sie bis zu 3 m direkt\nvon dir wegstoßen. Wenn die Kreatur deine Größe oder kleiner ist, kannst du sie auch\nzu Boden werfen, wodurch sie den Zustand Liegend erhält.</p><p><em><strong>Schutzfeld.</strong></em> Als Reaktion, wenn du oder ein Verbündeter, den du innerhalb\nvon 1,5 m von dir sehen kannst, von einem Angriff anvisiert wird oder einen Rettungswurf gegen einen\nFlächeneffekt macht, kannst du den Schild verwenden, um eine unbewegliche 5-Fuß-\nEmanation zu erzeugen, die von dir ausgeht. Wenn die Emanation erscheint, werden alle Kreaturen\noder Objekte, die nicht vollständig darin enthalten sind, in die nächsten\nunbesetzten Felder außerhalb davon geschoben. Der Angriff oder Flächeneffekt, der die\nReaktion ausgelöst hat, hat keine Wirkung auf Kreaturen und Objekte innerhalb der Emanation,\ndie so lange anhält, wie du die Konzentration aufrechterhältst, bis zu 1 Minute. Nichts\nkann in die Emanation hinein oder aus ihr heraus gelangen. Eine Kreatur oder ein Objekt innerhalb der\nEmanation kann nicht durch Angriffe oder Effekte von außen beschädigt werden,\nnoch kann eine Kreatur innerhalb der Emanation etwas außerhalb beschädigen. Sobald\ndiese Eigenschaft verwendet wurde, kann sie erst nach der nächsten Morgendämmerung wieder verwendet werden.</p>",
+    "activities": {
+      "Forceful Bash": "Wuchtiger Stoß",
+      "Protective Field": "Schutzfeld"
+    },
+    "effects": {
+      "TNWNbk14uUGiJGvv": "Zu Boden geworfen"
+    }
+  },
+  "dmgAmmunition12o": {
+    "name": "Munition, +1, +2 oder +3",
+    "description": "<p><em>Waffe (Beliebige Munition), Ungewöhnlich (+1), Selten (+2) oder Sehr Selten\n(+3)</em></p><p>Du hast einen Bonus auf Angriffs- und Schadenswürfe, die\nmit diesem Stück magischer Munition gemacht werden. Der Bonus wird durch die Seltenheit\nder Munition bestimmt. Sobald sie ein Ziel trifft, ist die Munition nicht mehr\nmagisch.</p><p>Diese Munition wird typischerweise in Mengen von\nzehn oder zwanzig Stück gefunden oder verkauft. Zehn Stück dieser Munition entsprechen im\nWert einem Trank derselben\nSeltenheit.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Ammunition, +1, +2, or +3": "Munition, +1, +2 oder +3"
+    }
+  },
+  "dmgBagOfBeans000": {
+    "name": "Bohnensack",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieser schwere Stoffbeutel enthält 3W4\ntrockene Bohnen bei Fund. Der Beutel wiegt ein halbes Pfund, unabhängig davon, wie viele\nBohnen er enthält, und wird zu einem\n@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{nonmagical item}\nwenn er keine Bohnen mehr enthält.</p><p>Wenn du eine oder mehrere Bohnen\naus dem Beutel schüttest, explodieren sie in einer Kugel mit 3 m Radius, die auf ihnen zentriert ist.\nAlle ausgeschütteten Bohnen werden bei der Explosion zerstört, und jede Kreatur in\nder Kugel, einschließlich dir, muss einen Geschicklichkeitsrettungswurf gegen SG 15 machen. Bei einem\nmisslungenen Rettungswurf erleidet sie 5W4 Wuchtschaden, bei einem erfolgreichen\nRettungswurf halb so viel Schaden.</p><p>Wenn du eine Bohne aus dem Beutel nimmst, sie in Erde oder Sand\npflanzt und dann gießt, verschwindet die Bohne und erzeugt 1 Minute\nspäter einen Effekt aus dem Boden, wo sie gepflanzt wurde. Der SL kann einen Effekt\naus der folgenden Tabelle wählen oder ihn zufällig\nbestimmen.</p><details><summary>Bohnensack-Effekt (zum Erweitern\nklicken)</summary><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgBagOfBeansEff\nrollable caption=false]</p></details><p></p><section class=\"secret\"\nid=\"secret-Ksf2KyYXOK1HhLmm\"><p><strong>Foundry-Hinweis</strong></p><p>Nach\nErhalt dieses Gegenstands kann die Aktion <strong>Bohnen zählen</strong> verwendet werden,\num die Anzahl der enthaltenen trockenen Bohnen zu bestimmen und die Anzahl der Verwendungen dieses Gegenstands\nentsprechend festzulegen.</p></section>",
+    "activities": {
+      "Count Beans": "Bohnen zählen",
+      "Dump Beans": "Bohnen ausschütten",
+      "Plant Bean": "Bohne pflanzen"
+    }
+  },
+  "dmgElementalGem0": {
+    "name": "Elementarjuwel",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Dieser Edelstein enthält einen Funken\nelementarer Energie. Wenn du eine Nutzen-Aktion ausführst, um den Edelstein zu zerbrechen, wird ein\nElementar beschworen, und der Edelstein hört auf, magisch zu sein. Das Elementar\nerscheint in einem unbesetzten Feld so nah wie möglich am zerbrochenen Edelstein,\nversteht deine Sprachen, gehorcht deinen Befehlen und ist sofort nach dir an deiner\nInitiativereihenfolge an der Reihe. Das Elementar verschwindet nach 1 Stunde, wenn es stirbt,\noder wenn du es als Bonusaktion entlässt. Die Art des Edelsteins bestimmt das Elementar,\nwie in der folgenden Tabelle gezeigt.</p><table><thead><tr><td>Edelstein</td><td>Beschworenes\nElementar</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.dmgBlueElemental]{Blue\nsapphire}</td><td>@UUID[Compendium.dnd5e.actors24.Actor.mmAirElemental00]{Air\nElemental}</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.dmgEmeraldElemen]{Emerald}</td><td>@UUID[Compendium.dnd5e.actors24.Actor.mmWaterElemental]{Water\nElemental}</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.dmgRedElementalG]{Red\ncorundum}</td><td>@UUID[Compendium.dnd5e.actors24.Actor.mmFireElemental0]{Fire\nElemental}</td></tr><tr><td>@UUID[Compendium.dnd5e.equipment24.Item.dmgYellowElement]{Yellow\ndiamond}</td><td>@UUID[Compendium.dnd5e.actors24.Actor.mmEarthElemental]{Earth\nElemental}</td></tr></tbody></table>",
+    "activities": {
+      "Blue Sapphire": "Blauer Saphir",
+      "Emerald": "Smaragd",
+      "Red Corundum": "Roter Korund",
+      "Yellow Diamond": "Gelber Diamant"
+    }
+  },
+  "dmgBlueElemental": {
+    "name": "Elementarjuwel (Blauer Saphir)",
+    "description": "<p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgElementalGem0]</em></p><p>Dieser\nEdelstein enthält einen Funken elementarer Energie. Wenn du eine Nutzen-Aktion ausführst, um\nden Edelstein zu zerbrechen, wird ein\n@UUID[Compendium.dnd5e.actors24.Actor.mmAirElemental00]{Air Elemental} beschworen, und der Edelstein hört auf, magisch zu sein. Das Elementar erscheint in einem\nunbesetzten Feld so nah wie möglich am zerbrochenen Edelstein, versteht deine\nSprachen, gehorcht deinen Befehlen und ist sofort nach dir\nan deiner Initiativereihenfolge an der Reihe. Das Elementar verschwindet nach 1 Stunde, wenn es\nstirbt, oder wenn du es als Bonusaktion entlässt.</p>",
+    "activities": {
+      "Utilize": "Nutzen"
+    }
+  },
+  "dmgEmeraldElemen": {
+    "name": "Elementarjuwel (Smaragd)",
+    "description": "<p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgElementalGem0]</em></p><p>Dieser\nEdelstein enthält einen Funken elementarer Energie. Wenn du eine Nutzen-Aktion ausführst, um\nden Edelstein zu zerbrechen, wird ein\n@UUID[Compendium.dnd5e.actors24.Actor.mmWaterElemental]{Water Elemental}\nbeschworen, und der Edelstein hört auf, magisch zu sein. Das Elementar erscheint in einem\nunbesetzten Feld so nah wie möglich am zerbrochenen Edelstein, versteht deine\nSprachen, gehorcht deinen Befehlen und ist sofort nach dir\nan deiner Initiativereihenfolge an der Reihe. Das Elementar verschwindet nach 1 Stunde, wenn es\nstirbt, oder wenn du es als Bonusaktion entlässt.</p>",
+    "activities": {
+      "Utilize": "Nutzen"
+    }
+  },
+  "dmgRedElementalG": {
+    "name": "Elementarjuwel (Roter Korund)",
+    "description": "<p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgElementalGem0]</em></p><p>Dieses Juwel enthält ein Körnchen Elementarenergie. Wenn du eine Nutzen-Aktion ausführst, um das Juwel zu zerbrechen, wird ein\n@UUID[Compendium.dnd5e.actors24.Actor.mmFireElemental0]{Fire Elemental} beschworen, und das Juwel hört auf, magisch zu sein. Das Elementarwesen erscheint in einem unbesetzten Feld so nah wie möglich am zerbrochenen Juwel, versteht deine Sprachen, gehorcht deinen Befehlen und ist sofort nach dir an deiner Initiative an der Reihe. Das Elementarwesen verschwindet nach 1 Stunde, wenn es stirbt oder wenn du es als Bonusaktion entlässt.</p>",
+    "activities": {
+      "Utilize": "Nutzen"
+    }
+  },
+  "dmgYellowElement": {
+    "name": "Elementarjuwel (Gelber Diamant)",
+    "description": "<p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgElementalGem0]</em></p><p>Dieses Juwel enthält ein Körnchen Elementarenergie. Wenn du eine Nutzen-Aktion ausführst, um das Juwel zu zerbrechen, wird ein\n@UUID[Compendium.dnd5e.actors24.Actor.mmEarthElemental]{Earth Elemental} beschworen, und das Juwel hört auf, magisch zu sein. Das Elementarwesen erscheint in einem unbesetzten Feld so nah wie möglich am zerbrochenen Juwel, versteht deine Sprachen, gehorcht deinen Befehlen und ist sofort nach dir an deiner Initiative an der Reihe. Das Elementarwesen verschwindet nach 1 Stunde, wenn es stirbt oder wenn du es als Bonusaktion entlässt.</p>",
+    "activities": {
+      "Utilize": "Nutzen"
+    }
+  },
+  "dmgAnchorQuaalsF": {
+    "name": "Federzeichen (Anker)",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feather\nToken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen an ein Boot oder Schiff zu halten. Für die nächsten 24 Stunden kann das Gefährt auf keine Weise bewegt werden. Das erneute Berühren des Zeichens am Gefährt beendet den Effekt. Wenn der Effekt endet, verschwindet das Zeichen.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    },
+    "effects": {
+      "Fvj9Ua7rVEqdfPz5": "Anker"
+    }
+  },
+  "dmgBirdQuaalsFea": {
+    "name": "Federzeichen (Vogel)",
+    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feather\nToken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen 1,5 m in die Luft zu werfen. Das Zeichen verschwindet und ein riesiger, vielfarbiger Vogel nimmt seinen Platz ein. Der Vogel hat die Werte eines\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRoc00000000000]{Roc}</strong>, kann aber nicht angreifen. Er gehorcht deinen einfachen Befehlen und kann bis zu 500 Pfund tragen, während er mit seiner Höchstgeschwindigkeit fliegt (25,6 km pro Stunde für maximal 230,4 km pro Tag, mit einer 1-stündigen Pause für alle 3 Stunden Flug) oder 1.000 Pfund mit halber Geschwindigkeit. Der Vogel verschwindet, nachdem er seine maximale Tagesdistanz geflogen ist oder wenn er auf 0 Trefferpunkte fällt. Du kannst den Vogel als Magie-Aktion entlassen.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    }
+  },
+  "dmgFanQuaalsFeat": {
+    "name": "Federzeichen (Fächer)",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feather\nToken}</em></p><p>Wenn du dich auf einem Boot oder Schiff befindest, kannst du eine Magie-Aktion ausführen, um das Zeichen bis zu 3 m in die Luft zu werfen. Das Zeichen verschwindet, und ein riesiger, flatternder Fächer nimmt seinen Platz ein. Der Fächer schwebt und erzeugt einen starken Wind. Dieser Wind kann die Segel eines Schiffes füllen und dessen Geschwindigkeit für 8 Stunden um 8 km pro Stunde erhöhen. Du kannst den Fächer als Magie-Aktion entlassen.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    },
+    "effects": {
+      "xCyHeKeepXMk3KXZ": "Federzeichen: Fächer"
+    }
+  },
+  "dmgSwanBoatQuaal": {
+    "name": "Federzeichen (Schwanenboot)",
+    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feather\nToken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen an ein Gewässer mit mindestens 18 m Durchmesser zu halten. Das Zeichen verschwindet, und ein 15 m langes, 6 m breites Boot in Form eines Schwans nimmt seinen Platz ein. Das Boot ist selbstfahrend und bewegt sich mit einer Geschwindigkeit von 9,6 km pro Stunde über Wasser. Du kannst eine Magie-Aktion ausführen, während du auf dem Boot bist, um es zu befehlen, sich zu bewegen oder sich um bis zu 90 Grad zu drehen. Das Boot bleibt 24 Stunden lang und verschwindet dann. Du kannst das Boot als Magie-Aktion entlassen.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    }
+  },
+  "dmgTreeQuaalsFea": {
+    "name": "Federzeichen (Baum)",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feather\nToken}</em></p><p>Du musst dich im Freien befinden, um dieses Zeichen zu verwenden. Du kannst eine Magie-Aktion ausführen, um es an ein unbesetztes Feld auf dem Boden zu halten. Das Zeichen verschwindet, und an seiner Stelle entsteht ein nichtmagischer Eichenbaum. Der Baum ist 18 m hoch und hat einen Stamm mit 1,5 m Durchmesser, und seine Äste an der Spitze breiten sich in einem Radius von 6 m aus.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    }
+  },
+  "dmgWhipQuaalsFea": {
+    "name": "Federzeichen (Peitsche)",
+    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feather\nToken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen auf einen Punkt innerhalb von 3 m von dir zu werfen. Das Zeichen verschwindet, und eine\n@UUID[Compendium.dnd5e.actors24.Actor.dmgqftFloatingWh]{floating whip} nimmt seinen Platz ein. Du kannst dann eine Bonusaktion ausführen, um einen Nahkampfzauberangriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu machen, mit einem Angriffsbonus von +9. Bei einem Treffer erleidet das Ziel 1W6 + 5 Wuchtschaden.</p><p>Als Bonusaktion kannst du die Peitsche anweisen, bis zu 6 m zu fliegen und den Angriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu wiederholen. Die Peitsche verschwindet nach 1 Stunde, wenn du eine Magie-Aktion ausführst, um sie zu entlassen, oder wenn du stirbst oder den Zustand 'Handlungsunfähig' hast.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    }
+  },
+  "dmgAssassinsBloo": {
+    "name": "Assassinenblut",
+    "description": "<p><em>Eingenommenes Gift</em></p><p>Eine Kreatur, die Assassinenblut ausgesetzt ist, muss einen Konstitutionsrettungswurf gegen SG 10 ablegen. Bei einem misslungenen Rettungswurf erleidet die Kreatur 6 (1W12) Giftschaden und hat für 24 Stunden den Zustand &amp;Reference[Poisoned\napply=false]. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur nur halb so viel Schaden.</p>",
+    "activities": {
+      "Use Poison": "Gift einsetzen"
+    },
+    "effects": {
+      "zpDCMRInMzrnRAAd": "Vergiftet"
+    }
+  },
+  "dmgBurntOthurFum": {
+    "name": "Verbrannte Othur-Dämpfe",
+    "description": "<p><em>Eingeatmetes Gift</em></p><p>Eine Kreatur, die verbrannten Othur-Dämpfen ausgesetzt ist, muss einen Konstitutionsrettungswurf gegen SG 13 bestehen oder erleidet 10 (3W6) Giftschaden und muss den Rettungswurf zu Beginn jedes ihrer Züge wiederholen. Bei jedem weiteren misslungenen Rettungswurf erleidet die Kreatur 3 (1W6) Giftschaden. Nach drei erfolgreichen Rettungswürfen endet das Gift.</p>",
+    "activities": {
+      "Successive Failed Save Damage": "Schaden durch aufeinanderfolgende misslungene Rettungswürfe",
+      "Use Poison": "Gift einsetzen"
+    }
+  },
+  "dmgCarrionCrawle": {
+    "name": "Schleim des Aasfressers",
+    "description": "<p><em>Kontaktgift</em></p><p>Eine Kreatur, die dem Schleim des Aasfressers ausgesetzt ist, muss einen Konstitutionsrettungswurf gegen SG 13 bestehen oder hat für 1 Minute den Zustand &amp;Reference[Poisoned apply=false]. Die Kreatur hat außerdem den Zustand &amp;Reference[Paralyzed apply=false], solange sie auf diese Weise vergiftet ist. Die Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt bei Erfolg für sich selbst.</p>",
+    "activities": {
+      "Use Poison": "Gift einsetzen"
+    },
+    "effects": {
+      "a9KfUV3KbbB5wrFY": "Vergiftet und gelähmt"
+    }
+  },
+  "dmgEssenceOfEthe": {
+    "name": "Ätheressenz",
+    "description": "<p><em>Eingeatmetes Gift</em></p><p>Eine Kreatur, die Ätheressenz ausgesetzt ist, muss einen Konstitutionsrettungswurf gegen SG 15 bestehen oder hat für 8 Stunden den Zustand &amp;Reference[Poisoned apply=false]. Die Kreatur hat außerdem den Zustand &amp;Reference[Unconscious apply=false], solange sie auf diese Weise vergiftet ist. Die Kreatur erwacht, wenn sie Schaden nimmt oder wenn eine andere Kreatur eine Aktion aufwendet, um sie wachzurütteln.</p>",
+    "activities": {
+      "Use Poison": "Gift einsetzen"
+    },
+    "effects": {
+      "izr2j393TujCLu53": "Vergiftet und bewusstlos"
+    }
+  },
+  "dmgMalice0000000": {
+    "name": "Bosheit",
+    "description": "<p><em>Eingeatmetes Gift</em></p><p>Eine Kreatur, die Bosheit ausgesetzt ist, muss einen Konstitutionsrettungswurf gegen SG 15 bestehen oder hat für 1 Stunde den Zustand &amp;Reference[Poisoned apply=false]. Die Kreatur hat außerdem den Zustand &amp;Reference[Blinded apply=false], solange sie auf diese Weise vergiftet ist.</p>",
+    "activities": {
+      "Use Poison": "Gift einsetzen"
+    },
+    "effects": {
+      "pzgyNngTSSV4O7ym": "Vergiftet und blind"
+    }
+  },
+  "dmgMidnightTears": {
+    "name": "Mitternachtstränen",
+    "description": "<p><em>Eingenommenes Gift</em></p><p>Eine Kreatur, die Mitternachtstränen zu sich nimmt, erleidet keine Wirkung bis zum Schlag Mitternachts. Jeder Effekt, der den Zustand &amp;Reference[Poisoned apply=false] beendet, neutralisiert dieses Gift. Wenn das Gift vor Mitternacht nicht neutralisiert wurde, legt die Kreatur einen Konstitutionsrettungswurf gegen SG 17 ab und erleidet bei einem misslungenen Rettungswurf 31 (9W6) Giftschaden oder bei einem erfolgreichen Rettungswurf halb so viel Schaden.</p>",
+    "activities": {
+      "Use Poison": "Gift einsetzen"
+    }
+  },
+  "dmgOilOfTaggit00": {
+    "name": "Taggit-Öl",
+    "description": "<p><em>Kontaktgift</em></p><p>Eine Kreatur, die Taggit-Öl ausgesetzt ist, muss einen Konstitutionsrettungswurf gegen SG 13 bestehen oder hat für 24 Stunden den Zustand &amp;Reference[Poisoned apply=false]. Die Kreatur hat außerdem den Zustand &amp;Reference[Unconscious apply=false], solange sie auf diese Weise vergiftet ist. Sie erwacht, wenn sie Schaden nimmt.</p>",
+    "activities": {
+      "Use Poison": "Gift einsetzen"
+    },
+    "effects": {
+      "H2a1ShsSWCmSWfW7": "Vergiftet und bewusstlos"
+    }
+  },
+  "dmgPaleTincture0": {
+    "name": "Blasse Tinktur",
+    "description": "<p><em>Eingenommenes Gift</em></p><p>Eine Kreatur, die der Blassen Tinktur ausgesetzt ist, muss einen Konstitutionsrettungswurf gegen SG 16 bestehen oder erleidet 3 (1W6) Giftschaden und hat den Zustand &amp;Reference[Poisoned apply=false]. Die vergiftete Kreatur wiederholt den Rettungswurf alle 24 Stunden und erleidet bei einem misslungenen Rettungswurf 3 (1W6) Giftschaden. Der Schaden, den das Gift verursacht, kann auf keine Weise geheilt werden, solange die Kreatur vergiftet bleibt. Nach sieben erfolgreichen Rettungswürfen gegen das Gift ist die Kreatur nicht länger vergiftet.</p><section\nclass=\"secret\" id=\"secret-tSBe5DSXqLu6xn8u\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivität <strong>Gift einsetzen</strong> beinhaltet den Rettungswurf und der Aktive Effekt <strong>Vergiftet und Max. reduzieren</strong> wendet den Zustand Vergiftet an und kann auch zur Verhinderung von Heilung verwendet werden. Bearbeite den Aktiven Effekt des Spielers, wechsle zum Tab „Effekte“ und passe den „Effektwert“ auf „-X“ an, wobei X der Gesamtschaden ist, den sie durch das Gift erlitten haben. Dies reduziert vorübergehend ihre maximalen TP um diesen Wert.</p></section>",
+    "activities": {
+      "Use Poison": "Gift einsetzen"
+    },
+    "effects": {
+      "o6ZuvxhWeXsg50MH": "Vergiftet und Max. reduzieren"
+    }
+  },
+  "dmgPurpleWormPoi": {
+    "name": "Purpurwurmgift",
+    "description": "<p><em>Verletzungsgift</em></p><p>Eine Kreatur, die Purpurwurmgift ausgesetzt ist, muss einen Rettungswurf auf Konstitution gegen SG 21 ablegen. Bei einem misslungenen Rettungswurf erleidet sie 35 (10d6) Giftschaden, bei einem erfolgreichen Rettungswurf halb so viel Schaden.</p>",
+    "activities": {
+      "Use Poison": "Gift anwenden"
+    }
+  },
+  "dmgSerpentVenom0": {
+    "name": "Schlangengift",
+    "description": "<p><em>Verletzungsgift</em></p><p>Eine Kreatur, die Schlangengift ausgesetzt ist, muss einen Rettungswurf auf Konstitution gegen SG 11 bestehen. Bei einem misslungenen Rettungswurf erleidet sie 10 (3d6) Giftschaden, bei einem erfolgreichen Rettungswurf halb so viel Schaden.</p>",
+    "activities": {
+      "Use Poison": "Gift anwenden"
+    }
+  },
+  "dmgLolthsSting00": {
+    "name": "Spinnenstich",
+    "description": "<p><em>Verletzungsgift</em></p><p>Eine Kreatur, die Lolths Stich ausgesetzt ist, muss einen Rettungswurf auf Konstitution gegen SG 13 bestehen oder ist für 1 Stunde im Zustand &amp;reference[Poisoned apply=false]. Wenn die Kreatur den Rettungswurf um 5 oder mehr misslingt, ist sie zusätzlich im Zustand &amp;Reference[Unconscious apply=false], solange sie auf diese Weise vergiftet ist. Die Kreatur erwacht, wenn sie Schaden erleidet oder wenn eine andere Kreatur eine Aktion aufwendet, um sie wachzurütteln.</p>",
+    "activities": {
+      "Use Poison": "Gift anwenden"
+    },
+    "effects": {
+      "MQXypBP5zuMEKEqm": "Vergiftet",
+      "zEQTKqd3uBj660cR": "Bewusstlos"
+    }
+  },
+  "dmgTorpor0000000": {
+    "name": "Torpor",
+    "description": "<p><em>Eingenommenes Gift</em></p><p>Eine Kreatur, die Torpor-Gift ausgesetzt ist, muss einen Rettungswurf auf Konstitution gegen SG 15 bestehen oder ist für [[/r 4d6]] Stunden im Zustand &amp;Reference[Poisoned]. Die Bewegungsrate der Kreatur ist halbiert, solange sie auf diese Weise vergiftet ist.</p>",
+    "activities": {
+      "Use Poison": "Gift anwenden"
+    },
+    "effects": {
+      "4fBr9e0P9LVogtyq": "Vergiftet"
+    }
+  },
+  "dmgWyvernPoison0": {
+    "name": "Wyverngift",
+    "description": "<p><em>Verletzungsgift</em></p><p>Eine Kreatur, die Wyverngift ausgesetzt ist, muss einen Rettungswurf auf Konstitution gegen SG 14 ablegen. Bei einem misslungenen Rettungswurf erleidet sie 24 (7d6) Giftschaden, bei einem erfolgreichen Rettungswurf halb so viel Schaden.</p>",
+    "activities": {
+      "Use Poison": "Gift anwenden"
+    }
+  },
+  "dmgElixirOfHealt": {
+    "name": "Elixier der Gesundheit",
+    "description": "<div><p><em>Trank, Selten</em></p></div><p>Wenn du diesen Trank trinkst, wirst du von allen magischen Ansteckungen geheilt. Zusätzlich enden die folgenden Zustände für dich: &amp;Reference[Blinded apply=false], &amp;Reference[Deafened\napply=false], &amp;Reference[Paralyzed apply=false] und &amp;Reference[Poisoned apply=false].</p><p>Die klare, rote Flüssigkeit enthält winzige Lichtbläschen.</p>",
+    "activities": {
+      "Utilize": "Nutzen"
+    }
+  },
+  "dmgGreaterPotion": {
+    "name": "Heiltrank (Mächtiger)",
+    "description": "<p><em>Trank, Ungewöhnlich</em></p><p>Du erhältst 4W4 + 4 Trefferpunkte zurück, wenn du diesen Trank trinkst.</p><p>Unabhängig von seiner Potenz schimmert die rote Flüssigkeit des Tranks, wenn sie geschüttelt wird.</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "dmgSuperiorPotio": {
+    "name": "Heiltrank (Überragender)",
+    "description": "<p><em>Trank, Selten</em></p><p>Du erhältst 8W4 + 8 Trefferpunkte zurück, wenn du diesen Trank trinkst.</p><p>Unabhängig von seiner Potenz schimmert die rote Flüssigkeit des Tranks, wenn sie geschüttelt wird.</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "dmgSupremePotion": {
+    "name": "Heiltrank (Überragend)",
+    "description": "<p><em>Trank, Sehr Selten</em></p><p>Du erhältst 10W4 + 20 Trefferpunkte zurück, wenn du diesen Trank trinkst.</p><p>Unabhängig von seiner Potenz schimmert die rote Flüssigkeit des Tranks, wenn sie aufgewirbelt wird.</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "dmgPotionofGiant": {
+    "name": "Trank der Riesenstärke",
+    "description": "<p><em>Trank, Seltenheit Variiert</em></p><p>Wenn du diesen Trank trinkst, ändert sich dein Stärkewert für 1 Stunde. Die Art des Riesen bestimmt den Wert (siehe Tabelle unten). Der Trank hat keine Wirkung auf dich, wenn deine Stärke gleich oder größer als dieser Wert ist.</p><p>In der transparenten Flüssigkeit dieses Tranks schwebt ein Lichtsplitter, der einem Fingernagel eines Riesen ähnelt.</p><table><thead><tr><td>Trank</td><td>Stärke</td><td>Seltenheit</td></tr></thead><tbody><tr><td><em>Trank der Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgHillPotionOfG]{hill})</td><td>21</td><td>Ungewöhnlich</td></tr><tr><td><em>Trank der Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgFrostPotionOf]{frost} oder\n@UUID[Compendium.dnd5e.equipment24.Item.dmgStonePotionOf]{stone})</td><td>23</td><td>Selten</td></tr><tr><td><em>Trank der Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgFirePotionOfG]{fire})</td><td>25</td><td>Selten</td></tr><tr><td><em>Trank der Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgCloudPotionOf]{cloud})</td><td>27</td><td>Sehr Selten</td></tr><tr><td><em>Trank der Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgStormPotionOf]{storm})</td><td>29</td><td>Legendär</td></tr></tbody></table>"
+  },
+  "dmgPotionOfInvul": {
+    "name": "Trank der Unverwundbarkeit",
+    "description": "<p><em>Trank, Selten</em></p><p>Für 1 Minute, nachdem du diesen Trank getrunken hast, hast du Resistenz gegen alle Arten von Schaden.</p><p>Die sirupartige Flüssigkeit dieses Tranks sieht aus wie verflüssigtes Eisen.</p>",
+    "activities": {
+      "Drink": "Trinken"
+    },
+    "effects": {
+      "ojfKVnyWWyc5EPA2": "Resistent"
+    }
+  },
+  "dmgPotionOfLonge": {
+    "name": "Trank der Langlebigkeit",
+    "description": "<p><em>Trank, Sehr Selten</em></p><p>Wenn du diesen Trank trinkst, wird dein physisches Alter um 1W6 + 6 Jahre reduziert, auf ein Minimum von 13 Jahren. Jedes Mal, wenn du anschließend einen Trank der Langlebigkeit trinkst, besteht eine kumulative Chance von 10 Prozent, dass du stattdessen um 1W6 + 6 Jahre alterst.</p><p>In dieser bernsteinfarbenen Flüssigkeit schwebt ein winziges Herz, das wider alle Vernunft noch schlägt. Diese Zutaten verschwinden, wenn der Trank geöffnet wird.</p>",
+    "activities": {
+      "Drink": "Trinken"
+    }
+  },
+  "dmgPotionOfVital": {
+    "name": "Trank der Vitalität",
+    "description": "<p><em>Trank, Sehr Selten</em></p><p>Wenn du diesen Trank trinkst, entfernt er alle &amp;Reference[Exhaustion apply=false] Stufen, die du hast, und beendet den Zustand &amp;Reference[Poisoned apply=false] auf dir. Für die nächsten 24 Stunden erhältst du die maximale Anzahl an Trefferpunkten für jeden Trefferwürfel, den du ausgibst.</p><p>Die purpurrote Flüssigkeit dieses Tranks pulsiert regelmäßig mit mattem Licht, das an einen Herzschlag erinnert.</p><section class=\"secret\"\nid=\"secret-z0SSGecWIDLeIdS3\"><p><strong>Foundry-Hinweis</strong></p><p>Der aktive Effekt <strong>Voller Vitalität</strong> kann zur Nachverfolgung verwendet werden.</p></section>",
+    "activities": {
+      "Drink": "Trinken"
+    },
+    "effects": {
+      "GxutU47JS0FNfeoM": "Voller Vitalität"
+    }
+  },
+  "dmgCloudPotionOf": {
+    "name": "Trank der Riesenstärke (Wolke)",
+    "description": "<p><em>Trank, Sehr Selten</em></p><p>Wenn du diesen Trank trinkst, ändert sich dein Stärkewert für 1 Stunde auf 27. Die Art des Riesen bestimmt den Wert. Der Trank hat keine Wirkung auf dich, wenn deine Stärke gleich oder größer als dieser Wert ist.</p><p>In der transparenten Flüssigkeit dieses Tranks schwebt ein Lichtsplitter, der einem Fingernagel eines Riesen ähnelt.</p>",
+    "activities": {
+      "Drink Potion": "Trank trinken"
+    },
+    "effects": {
+      "1dBN1NUlcymoWlxz": "Stärke der Wolken"
+    }
+  },
+  "dmgFirePotionOfG": {
+    "name": "Trank der Riesenstärke (Feuer)",
+    "description": "<p><em>Trank, Selten</em></p><p>Wenn du diesen Trank trinkst, ändert sich dein Stärkewert für 1 Stunde auf 25. Die Art des Riesen bestimmt den Wert. Der Trank hat keine Wirkung auf dich, wenn deine Stärke gleich oder größer als dieser Wert ist.</p><p>In der transparenten Flüssigkeit dieses Tranks schwebt ein Lichtsplitter, der einem Fingernagel eines Riesen ähnelt.</p>",
+    "activities": {
+      "Drink Potion": "Trank trinken"
+    },
+    "effects": {
+      "Men77BWldNXaCmrA": "Stärke des Feuers"
+    }
+  },
+  "dmgFrostPotionOf": {
+    "name": "Trank der Riesenstärke (Frost)",
+    "description": "<p><em>Trank, Selten</em></p><p>Wenn du diesen Trank trinkst, ändert sich dein Stärkewert für 1 Stunde auf 23. Die Art des Riesen bestimmt den Wert. Der Trank hat keine Wirkung auf dich, wenn deine Stärke gleich oder größer als dieser Wert ist.</p><p>In der transparenten Flüssigkeit dieses Tranks schwebt ein Lichtsplitter, der einem Fingernagel eines Riesen ähnelt.</p>",
+    "activities": {
+      "Drink Potion": "Trank trinken"
+    },
+    "effects": {
+      "LDgXdJ95q8cgmNXK": "Stärke des Frosts"
+    }
+  },
+  "dmgHillPotionOfG": {
+    "name": "Trank der Riesenstärke (Hügel)",
+    "description": "<p><em>Trank, Ungewöhnlich</em></p><p>Wenn du diesen Trank trinkst, ändert sich dein Stärkewert für 1 Stunde auf 21. Die Art des Riesen bestimmt den Wert. Der Trank hat keine Wirkung auf dich, wenn deine Stärke gleich oder größer als dieser Wert ist.</p><p>Die transparente Flüssigkeit dieses Tranks enthält einen Lichtsplitter, der einem Fingernagel eines Riesen ähnelt.</p>",
+    "activities": {
+      "Drink Potion": "Trank trinken"
+    },
+    "effects": {
+      "Strength of Hills": "Stärke der Hügel"
+    }
+  },
+  "dmgStonePotionOf": {
+    "name": "Trank der Riesenstärke (Stein)",
+    "description": "<p><em>Trank, Selten</em></p><p>Wenn du diesen Trank trinkst, ändert sich dein Stärkewert für 1 Stunde auf 23. Die Art des Riesen bestimmt den Wert. Der Trank hat keine Wirkung auf dich, wenn deine Stärke gleich oder größer als dieser Wert ist.</p><p>Die transparente Flüssigkeit dieses Tranks enthält einen Lichtsplitter, der einem Fingernagel eines Riesen ähnelt.</p>",
+    "activities": {
+      "Drink Potion": "Trank trinken"
+    },
+    "effects": {
+      "Strength of Stone": "Stärke des Steins"
+    }
+  },
+  "dmgStormPotionOf": {
+    "name": "Trank der Riesenstärke (Sturm)",
+    "description": "<p><em>Trank, Legendär</em></p><p>Wenn du diesen Trank trinkst, ändert sich dein Stärkewert für 1 Stunde auf 29. Die Art des Riesen bestimmt den Wert. Der Trank hat keine Wirkung auf dich, wenn deine Stärke gleich oder größer als dieser Wert ist.</p><p>Die transparente Flüssigkeit dieses Tranks enthält einen Lichtsplitter, der einem Fingernagel eines Riesen ähnelt.</p>",
+    "activities": {
+      "Drink Potion": "Trank trinken"
+    },
+    "effects": {
+      "Strength of Storms": "Stärke der Stürme"
+    }
+  },
+  "dmgSpellScroll00": {
+    "name": "Zauberrolle",
+    "description": "<section class=\\\"fvtt advice\\\"><figure class=\\\"icon\\\"><img src=\\\"icons/vtt-512.png\\\" /></figure><article><h3>Rollen aus Zaubern erstellen</h3><p>Du kannst ganz einfach eine Rolle für einen Zauber erstellen, indem du mit der rechten Maustaste auf den Zauber klickst und die Option <span class=\\\"reference\\\"><em class=\\\"fa-solid fa-scroll fa-fw\\\">\\_</em> Rolle erstellen</span> auswählst.</p></article></section><p>Eine Zauberrolle trägt die Worte eines einzelnen Zaubers, geschrieben in einer mystischen Chiffre. Wenn der Zauber auf deiner Zauberliste steht, kannst du die Rolle lesen und ihren Zauber ohne Materialkomponenten wirken. Andernfalls ist die Rolle unverständlich. Das Wirken des Zaubers durch Lesen der Rolle erfordert die normale Zauberzeit des Zaubers. Sobald der Zauber gewirkt ist, zerfällt die Rolle zu Staub. Wenn das Wirken unterbrochen wird, geht die Rolle nicht verloren.</p><p>Wenn der Zauber auf deiner Zauberliste steht, aber von einem höheren Grad ist, als du normalerweise wirken kannst, machst du einen Attributswurf mit deiner Zauberfähigkeit, um zu bestimmen, ob du den Zauber wirkst. Der SG beträgt 10 plus den Grad des Zaubers. Bei einem misslungenen Wurf verschwindet der Zauber von der Rolle ohne weitere Wirkung.</p><p>Der Grad des Zaubers auf der Rolle bestimmt den Rettungswurf-SG und den Angriffsbonus des Zaubers sowie die Seltenheit der Rolle, wie in der folgenden Tabelle gezeigt.</p><table><thead><tr><th><p>Zaubergrad</p></th><th><p>Seltenheit</p></th><th><p>Rettungs-SG</p></th><th><p>Angriffsbonus</p></th></tr></thead><tbody><tr><td><p>Zaubertrick</p></td><td><p>Häufig</p></td><td><p>13</p></td><td><p>+5</p></td></tr><tr><td><p>1</p></td><td><p>Häufig</p></td><td><p>13</p></td><td><p>+5</p></td></tr><tr><td><p>2</p></td><td><p>Ungewöhnlich</p></td><td><p>13</p></td><td><p>+5</p></td></tr><tr><td><p>3</p></td><td><p>Ungewöhnlich</p></td><td><p>15</p></td><td><p>+7</p></td></tr><tr><td><p>4</p></td><td><p>Selten</p></td><td><p>15</p></td><td><p>+7</p></td></tr><tr><td><p>5</p></td><td><p>Selten</p></td><td><p>17</p></td><td><p>+9</p></td></tr><tr><td><p>6</p></td><td><p>Sehr selten</p></td><td><p>17</p></td><td><p>+9</p></td></tr><tr><td><p>7</p></td><td><p>Sehr selten</p></td><td><p>18</p></td><td><p>+10</p></td></tr><tr><td><p>8</p></td><td><p>Sehr selten</p></td><td><p>18</p></td><td><p>+10</p></td></tr><tr><td><p>9</p></td><td><p>Legendär</p></td><td><p>19</p></td><td><p>+11</p></td></tr></tbody></table><p><em><strong>Eine Rolle in ein Zauberbuch kopieren.</strong></em> Ein Zauber eines Zauberers auf einer Zauberrolle kann in ein Zauberbuch kopiert werden. Wenn ein Zauber auf diese Weise kopiert wird, muss der Kopierende einen Intelligenz (Arkanum)-Wurf mit einem SG von 10 plus dem Grad des Zaubers bestehen. Bei einem erfolgreichen Wurf wird der Zauber kopiert. Ob der Wurf gelingt oder fehlschlägt, die Zauberrolle wird zerstört.</p>"
+  },
+  "dmgSpellScroll1s": {
+    "name": "Zauberrolle, Grad 1",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll2n": {
+    "name": "Zauberrolle, Grad 2",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll3r": {
+    "name": "Zauberrolle, Grad 3",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll4t": {
+    "name": "Zauberrolle, Grad 4",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll5t": {
+    "name": "Zauberrolle, Grad 5",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll6t": {
+    "name": "Zauberrolle, Grad 6",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll7t": {
+    "name": "Zauberrolle, Grad 7",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll8t": {
+    "name": "Zauberrolle, Grad 8",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScroll9t": {
+    "name": "Zauberrolle, Grad 9",
+    "description": "<p>@Embed[Compendium.dnd5e.equipment24.Item.dmgSpellScroll00 inline]</p>"
+  },
+  "dmgSpellScrollCa": {
+    "name": "Zauberrolle, Zaubertrick",
+    "description": "<section class=\\\"fvtt advice\\\"><figure class=\\\"icon\\\"><img src=\\\"icons/vtt-512.png\\\" /></figure><article><h3>Zauberrollen aus Zaubern erstellen</h3><p>Du kannst ganz einfach eine Zauberrolle für einen Zauber erstellen, indem du mit der rechten Maustaste auf den Zauber klickst und die Option <span class=\\\"reference\\\"><em class=\\\"fa-solid fa-scroll fa-fw\\\">\\_</em> Zauberrolle erstellen</span> auswählst.</p></article></section><p>Eine Zauberrolle trägt die Worte eines einzelnen Zaubers, geschrieben in einer mystischen Chiffre. Wenn der Zauber auf deiner Zauberliste steht, kannst du die Rolle lesen und ihren Zauber ohne Materialkomponenten wirken. Andernfalls ist die Rolle unverständlich. Das Wirken des Zaubers durch Lesen der Rolle erfordert die normale Zauberzeit des Zaubers. Sobald der Zauber gewirkt ist, zerfällt die Rolle zu Staub. Wenn das Wirken unterbrochen wird, geht die Rolle nicht verloren.</p><p>Wenn der Zauber auf deiner Zauberliste steht, aber einen höheren Grad hat, als du normalerweise wirken kannst, machst du eine Attributsprobe mit deinem Zauberattribut, um zu bestimmen, ob du den Zauber wirkst. Der SG beträgt 10 plus den Grad des Zaubers. Bei einem misslungenen Wurf verschwindet der Zauber von der Rolle ohne weitere Wirkung.</p><p>Der Grad des Zaubers auf der Rolle bestimmt den Rettungswurf-SG und den Angriffsbonus des Zaubers sowie die Seltenheit der Rolle, wie in der folgenden Tabelle gezeigt.</p><table><thead><tr><th><p>Zaubergrad</p></th><th><p>Seltenheit</p></th><th><p>Rettungs-SG</p></th><th><p>Angriffsbonus</p></th></tr></thead><tbody><tr><td><p>Zaubertrick</p></td><td><p>Häufig</p></td><td><p>13</p></td><td><p>+5</p></td></tr><tr><td><p>1</p></td><td><p>Häufig</p></td><td><p>13</p></td><td><p>+5</p></td></tr><tr><td><p>2</p></td><td><p>Ungewöhnlich</p></td><td><p>13</p></td><td><p>+5</p></td></tr><tr><td><p>3</p></td><td><p>Ungewöhnlich</p></td><td><p>15</p></td><td><p>+7</p></td></tr><tr><td><p>4</p></td><td><p>Selten</p></td><td><p>15</p></td><td><p>+7</p></td></tr><tr><td><p>5</p></td><td><p>Selten</p></td><td><p>17</p></td><td><p>+9</p></td></tr><tr><td><p>6</p></td><td><p>Sehr selten</p></td><td><p>17</p></td><td><p>+9</p></td></tr><tr><td><p>7</p></td><td><p>Sehr selten</p></td><td><p>18</p></td><td><p>+10</p></td></tr><tr><td><p>8</p></td><td><p>Sehr selten</p></td><td><p>18</p></td><td><p>+10</p></td></tr><tr><td><p>9</p></td><td><p>Legendär</p></td><td><p>19</p></td><td><p>+11</p></td></tr></tbody></table><p><em><strong>Eine Zauberrolle in ein Zauberbuch kopieren.</strong></em> Ein Zauber einer Zauberrolle kann in ein Zauberbuch kopiert werden. Wenn ein Zauber auf diese Weise kopiert wird, muss der Kopierende eine Intelligenz (Arkanum)-Probe mit einem SG von 10 plus dem Grad des Zaubers bestehen. Bei einer erfolgreichen Probe wird der Zauber kopiert. Ob die Probe gelingt oder fehlschlägt, die Zauberrolle wird zerstört.</p>"
+  },
+  "dmgSovereignGlue": {
+    "name": "Souveräner Klebstoff",
+    "description": "<p><em>Wundersamer Gegenstand, Legendär</em></p><p>Diese zähflüssige, milchig-weiße Substanz kann eine dauerhafte Klebeverbindung zwischen zwei beliebigen Objekten herstellen. Sie muss in einem Glas oder einer Flasche aufbewahrt werden, die innen mit @UUID[Compendium.dnd5e.equipment24.Item.dmgOilOfSlipperi]{Oil of\nSlipperiness} beschichtet wurde. Wenn gefunden, enthält ein Behälter 1W6 + 1 Unzen.</p><p>Eine Unze des Klebstoffs kann eine Oberfläche von 1 Quadratfuß bedecken. Das Auftragen einer Unze <em>Souveränen Klebstoffs</em> erfordert eine Nutzen-Aktion, und der aufgetragene Klebstoff benötigt 1 Minute zum Aushärten. Sobald dies geschehen ist, kann die von ihm erzeugte Verbindung nur durch die Anwendung von @UUID[Compendium.dnd5e.equipment24.Item.dmgUniversalSolv]{Universal\nSolvent} oder @UUID[Compendium.dnd5e.equipment24.Item.dmgOilOfEthereal]{Oil\nof Etherealness} oder mit einem @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish} Zauber gelöst werden.</p><section class=\"secret\"\nid=\"secret-5E4TGkxH4i9Bo67I\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand beinhaltet 7 begrenzte Anwendungen. Die Aktivität <strong>Unzen bestimmen</strong> kann verwendet werden, um die Anzahl der Unzen zu bestimmen, die 1W6 + 1 entsprechen.</p><p>Die Aktivität <strong>Klebstoff auftragen</strong> ermöglicht es dir, die Anzahl der Unzen auszuwählen, die du aufträgst.</p></section>",
+    "activities": {
+      "Apply Glue": "Klebstoff auftragen",
+      "Determine Ounces": "Unzen bestimmen"
+    }
+  },
+  "dmgUniversalSolv": {
+    "name": "Universallösungsmittel",
+    "description": "<p><em>Wundersamer Gegenstand, Legendär</em></p><p>Dieses Röhrchen enthält eine milchige Flüssigkeit mit starkem Alkoholgeruch. Wenn gefunden, enthält ein Röhrchen 1W6 + 1 Unzen.</p><p>Du kannst eine Nutzen-Aktion ausführen, um 1 oder mehr Unzen Lösungsmittel aus dem Röhrchen auf eine Oberfläche in Reichweite zu gießen. Jede Unze löst sofort bis zu 1 Quadratfuß Klebstoff auf, den sie berührt, einschließlich @UUID[Compendium.dnd5e.equipment24.Item.dmgSovereignGlue]{Sovereign\nGlue}.</p><section class=\"secret\"\nid=\"secret-cCr2F0ctb7qvQ3x8\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand beinhaltet 7 begrenzte Anwendungen. Die Aktivität <strong>Unzen bestimmen</strong> kann verwendet werden, um die Anzahl der Unzen zu bestimmen, die 1W6 + 1 entsprechen.</p><p>Die Aktivität <strong>Lösungsmittel auftragen</strong> ermöglicht es dir, die Anzahl der Unzen auszuwählen, die du aufträgst.</p></section>",
+    "activities": {
+      "Apply Glue": "Klebstoff auftragen",
+      "Determine Ounces": "Unzen bestimmen"
+    }
+  },
+  "dmgspWaterfresh0": {
+    "name": "Wasser, frisch (Pint)",
+    "description": "<p>Wenn du nicht genug Wasser trinkst, riskierst du\n&amp;Reference[dehydration].</p>",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "dmgspWatersalt00": {
+    "name": "Wasser, Salzwasser (Pint)",
+    "activities": {
+      "Consume": "Verbrauchen"
+    }
+  },
+  "dmgLongCompartme": {
+    "name": "Langes Fach",
+    "description": "<p>Das lange Fach fasst bis zu 6 lange Gegenstände, wie Bögen,\nKampfstäbe oder Speere.</p>"
+  },
+  "dmgMidsizeCompar": {
+    "name": "Mittelgroßes Fach",
+    "description": "<p>Das mittelgroße Fach fasst bis zu 18 Speere oder ähnliche Gegenstände.</p>"
+  },
+  "dmgShortCompartm": {
+    "name": "Kurzes Fach",
+    "description": "<p>Das kurze Fach kann bis zu 60 Pfeile, Bolzen oder ähnliche\nGegenstände aufnehmen.</p>"
+  },
+  "dmgFoldingBoat00": {
+    "name": "Faltboot",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten</em></p></div><p>Dieser Gegenstand erscheint als eine\nhölzerne Kiste, die 30,5 cm lang, 15,2 cm breit und 15,2 cm tief ist.\nSie wiegt 4 Pfund und schwimmt. Sie kann geöffnet werden, um Gegenstände darin zu verstauen.\nDieser Gegenstand hat außerdem drei Befehlswörter, von denen jedes eine Magie-Aktion erfordert,\num es zu verwenden:</p><p>@Embed[Compendium.dnd5e.equipment24.Item.dmgBoatUtility00\ncaption=false]</p>"
+  },
+  "dmgBoatUtility00": {
+    "name": "Faltboot aktivieren",
+    "description": "<p><strong>Erstes Befehlswort.</strong> Die Kiste entfaltet sich zu einem\n@UUID[Compendium.dnd5e.actors24.Actor.phbmobRowboat000]{Rowboat}.</p><p><strong>Zweites\nBefehlswort.</strong> Die Kiste entfaltet sich zu einem\n@UUID[Compendium.dnd5e.actors24.Actor.phbmobKeelboat00]{Keelboat}.</p><p><strong>Drittes\nBefehlswort.</strong> Das <em>Faltboot</em> faltet sich zu einer Kiste zusammen,\nwenn keine Kreaturen an Bord sind. Alle Gegenstände im Gefäß, die nicht in\ndie Kiste passen, bleiben außerhalb der Kiste, wenn sie sich zusammenfaltet. Alle Gegenstände im Gefäß, die\nin die Kiste passen, tun dies.</p><p>Wenn die Kiste zu einem Gefäß wird, entspricht ihr\nGewicht dem eines normalen Gefäßes ihrer Größe, und alles, was\nin der Kiste gelagert war, bleibt im Boot.</p><p>Statistiken für das Ruderboot\nund das Kielboot erscheinen in\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000]{Equipment}.\nWenn eines der Gefäße auf 0 Trefferpunkte reduziert wird, wird das <em>Faltboot</em>\nzerstört.</p>",
+    "activities": {
+      "1st and 2nd Command": "1. und 2. Befehl",
+      "3rd Command": "3. Befehl"
+    }
+  },
+  "dmgCentralPouch0": {
+    "name": "Zentraler Beutel"
+  },
+  "dmgLeftPouch0000": {
+    "name": "Linker Beutel"
+  },
+  "dmgRightPouch000": {
+    "name": "Rechter Beutel"
+  },
+  "dmgApparatusOfKw": {
+    "name": "Apparat des Krebses",
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär</em></p><p>Dieser Gegenstand erscheint zuerst als ein\nversiegeltes Eisenfass, das 500 Pfund wiegt. Das Fass hat einen\nversteckten Verschluss, der mit einem erfolgreichen [[/check ability=int skill=inv\ndc=20]] Wurf gefunden werden kann. Das Lösen des Verschlusses öffnet\neine Luke an einem Ende des Fasses, sodass zwei mittelgroße oder kleinere\nKreaturen hineinkriechen können. Zehn Hebel sind in einer Reihe am\nhinteren Ende angebracht, jeder in einer neutralen Position, die nach\noben oder unten bewegt werden können. Wenn bestimmte Hebel betätigt\nwerden, verwandelt sich der Apparat, um einem riesigen Hummer zu\nähneln.</p><p>Der\n<em>@UUID[Compendium.dnd5e.actors24.Actor.dmgApparatusofKw]{Apparatus of\nthe Crab}</em> ist ein großes Objekt mit den folgenden Statistiken: RK 20; TP\n200; Bewegung 9 m, Schwimmen 9 m (oder 0 m für beides, wenn die\nBeine nicht ausgefahren sind); Immunität gegen Gift- und Psychischen\nSchaden.</p><p>@Embed[Compendium.dnd5e.actors24.Actor.dmgApparatusofKw\ncaption=false]</p></div>",
+    "activities": {
+      "Move Levers": "Hebel bewegen"
+    }
+  },
+  "dmgBagOfTricks00": {
+    "name": "Grauer Beutel der Tricks",
+    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Dieser Beutel aus grauem,\nrostfarbenem oder hellbraunem Stoff erscheint leer. Wenn man jedoch in\nden Beutel greift, offenbart sich die Anwesenheit eines kleinen,\nflaumigen Objekts.</p><p>Du kannst eine Magie-Aktion ausführen, um das\nflaumige Objekt aus dem Beutel zu ziehen und es bis zu 6 m weit zu\nwerfen. Wenn das Objekt landet, verwandelt es sich in eine Kreatur, die\ndu bestimmst, indem du auf der Tabelle würfelst, die der Farbe des\nBeutels entspricht. Siehe\n@UUID[Compendium.dnd5e.content24.JournalEntry.mmMonstersAtoZ00]{Monsters}\nfür den Werteblock der Kreatur. Die Kreatur verschwindet bei der nächsten\nMorgendämmerung oder wenn sie auf 0 Trefferpunkte reduziert\nwird.</p><p>Die Kreatur ist dir und deinen Verbündeten gegenüber\nFreundlich und handelt sofort nach dir auf deiner Initiativzählung. Du\nkannst eine Bonusaktion ausführen, um zu befehlen, wie sich die Kreatur\nbewegt und welche Aktion sie in ihrem nächsten Zug ausführt, z. B. einen\nFeind angreifen. In Ermangelung solcher Befehle handelt die Kreatur auf\neine ihrer Natur entsprechende Weise.</p><p>Sobald drei flaumige Objekte aus dem Beutel gezogen wurden, kann der\nBeutel erst bei der nächsten Morgendämmerung wieder verwendet\nwerden.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgGrayBagOfTric\nrollable]</p></div>",
+    "activities": {
+      "Pull and Throw": "Ziehen und Werfen"
+    }
+  },
+  "dmgRustBagofTric": {
+    "name": "Rostfarbener Beutel der Tricks",
+    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Dieser Beutel aus grauem,\nrostfarbenem oder hellbraunem Stoff erscheint leer. Wenn man jedoch in\nden Beutel greift, offenbart sich die Anwesenheit eines kleinen,\nflaumigen Objekts.</p><p>Du kannst eine Magie-Aktion ausführen, um das\nflaumige Objekt aus dem Beutel zu ziehen und es bis zu 6 m weit zu\nwerfen. Wenn das Objekt landet, verwandelt es sich in eine Kreatur, die\ndu bestimmst, indem du auf der Tabelle würfelst, die der Farbe des\nBeutels entspricht. Siehe\n@UUID[Compendium.dnd5e.content24.JournalEntry.mmMonstersAtoZ00]{Monsters}\nfür den Werteblock der Kreatur. Die Kreatur verschwindet bei der nächsten\nMorgendämmerung oder wenn sie auf 0 Trefferpunkte reduziert\nwird.</p><p>Die Kreatur ist dir und deinen Verbündeten gegenüber\nFreundlich und handelt sofort nach dir auf deiner Initiativzählung. Du\nkannst eine Bonusaktion ausführen, um zu befehlen, wie sich die Kreatur\nbewegt und welche Aktion sie in ihrem nächsten Zug ausführt, z. B. einen\nFeind angreifen. In Ermangelung solcher Befehle handelt die Kreatur auf\neine ihrer Natur entsprechende Weise.</p><p>Sobald drei flaumige Objekte aus dem Beutel gezogen wurden, kann der\nBeutel erst bei der nächsten Morgendämmerung wieder verwendet\nwerden.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgRustBagOfTric\nrollable]</p></div>",
+    "activities": {
+      "Pull and Throw": "Ziehen und Werfen"
+    }
+  },
+  "dmgTanBagofTrick": {
+    "name": "Hellbrauner Beutel der Tricks",
+    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Dieser Beutel aus grauem,\nrostfarbenem oder hellbraunem Stoff erscheint leer. Wenn man jedoch in\nden Beutel greift, offenbart sich die Anwesenheit eines kleinen,\nflaumigen Objekts.</p><p>Du kannst eine Magie-Aktion ausführen, um das\nflaumige Objekt aus dem Beutel zu ziehen und es bis zu 6 m weit zu\nwerfen. Wenn das Objekt landet, verwandelt es sich in eine Kreatur, die\ndu bestimmst, indem du auf der Tabelle würfelst, die der Farbe des\nBeutels entspricht. Siehe\n@UUID[Compendium.dnd5e.content24.JournalEntry.mmMonstersAtoZ00]{Monsters}\nfür den Werteblock der Kreatur. Die Kreatur verschwindet bei der nächsten\nMorgendämmerung oder wenn sie auf 0 Trefferpunkte reduziert\nwird.</p><p>Die Kreatur ist dir und deinen Verbündeten gegenüber\nFreundlich und handelt sofort nach dir auf deiner Initiativzählung. Du\nkannst eine Bonusaktion ausführen, um zu befehlen, wie sich die Kreatur\nbewegt und welche Aktion sie in ihrem nächsten Zug ausführt, z. B. einen\nFeind angreifen. In Ermangelung solcher Befehle handelt die Kreatur auf\neine ihrer Natur entsprechende Weise.</p><p>Sobald drei flaumige Objekte aus dem Beutel gezogen wurden, kann der\nBeutel erst bei der nächsten Morgendämmerung wieder verwendet\nwerden.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgTanBagOfTrick\nrollable]</p></div>",
+    "activities": {
+      "Pull and Throw": "Ziehen und Werfen"
+    }
+  },
+  "dmgBeadOfNourish": {
+    "name": "Perle der Nahrung",
+    "description": "<div><p><em>Wundersamer Gegenstand, Gewöhnlich</em></p><p>Diese geschmacklose, gelatineartige\nPerle löst sich auf deiner Zunge auf und liefert so viel Nahrung wie 1 Tag\n@UUID[Compendium.dnd5e.equipment24.Item.phbagRations0000]{Rations}.</p></div>",
+    "activities": {
+      "Consume": "Verzehren"
+    }
+  },
+  "dmgBeltOfGiantSt": {
+    "name": "Gürtel der Riesenstärke",
+    "description": "<p><em>Wundersamer Gegenstand, Seltenheit Variiert (Benötigt Einstimmung)</em></p><p>Während\ndu diesen Gürtel trägst, ändert sich deine Stärke zu einem Wert, der vom\nGürtel gewährt wird. Die Art des Riesen bestimmt den Wert (siehe Tabelle\nunten). Der Gegenstand hat keine Wirkung auf dich, wenn deine Stärke ohne\nden Gürtel gleich oder größer als der Wert des Gürtels\nist.</p><table><thead><tr><td>Gürtel</td><td>Stärke</td><td>Seltenheit</td></tr></thead><tbody><tr><td><em>Gürtel\nder Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmghilBeltofGian]{hill})</td><td>21</td><td>Selten</td></tr><tr><td><em>Gürtel\nder Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgfroBeltofGian]{frost} oder\n@UUID[Compendium.dnd5e.equipment24.Item.dmgstoBeltofGian]{stone})</td><td>23</td><td>Sehr\nSelten</td></tr><tr><td><em>Gürtel der Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgfirBeltofGian]{fire})</td><td>25</td><td>Sehr\nSelten</td></tr><tr><td><em>Gürtel der Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgcloBeltofGian]{cloud})</td><td>27</td><td>Legendär</td></tr><tr><td><em>Gürtel\nder Riesenstärke</em>\n(@UUID[Compendium.dnd5e.equipment24.Item.dmgstmBeltofGian]{storm})</td><td>29</td><td>Legendär</td></tr></tbody></table>"
+  },
+  "dmgcloBeltofGian": {
+    "name": "Gürtel der Riesenstärke (Wolke)",
+    "description": "<div><p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>Solange du diesen Gürtel trägst, ändert sich deine Stärke auf 27. Die Art des Riesen bestimmt den Wert. Der Gegenstand hat keine Wirkung auf dich, wenn deine Stärke ohne den Gürtel 27 oder höher ist.</p></div>",
+    "effects": {
+      "dVP7XiBERjMWs7xK": "Wolkenriesen-Stärke"
+    }
+  },
+  "dmgfirBeltofGian": {
+    "name": "Gürtel der Riesenstärke (Feuer)",
+    "description": "<div><p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>Solange du diesen Gürtel trägst, ändert sich deine Stärke auf 25. Die Art des Riesen bestimmt den Wert. Der Gegenstand hat keine Wirkung auf dich, wenn deine Stärke ohne den Gürtel 25 oder höher ist.</p></div>",
+    "effects": {
+      "dVP7XiBERjMWs7xK": "Feuerriesen-Stärke"
+    }
+  },
+  "dmgfroBeltofGian": {
+    "name": "Gürtel der Riesenstärke (Frost)",
+    "description": "<div><p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>Solange du diesen Gürtel trägst, ändert sich deine Stärke auf 23. Die Art des Riesen bestimmt den Wert. Der Gegenstand hat keine Wirkung auf dich, wenn deine Stärke ohne den Gürtel 23 oder höher ist.</p></div>",
+    "effects": {
+      "dVP7XiBERjMWs7xK": "Frostriesen-Stärke"
+    }
+  },
+  "dmghilBeltofGian": {
+    "name": "Gürtel der Riesenstärke (Hügel)",
+    "description": "<div><p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>Solange du diesen Gürtel trägst, ändert sich deine Stärke auf 21. Die Art des Riesen bestimmt den Wert. Der Gegenstand hat keine Wirkung auf dich, wenn deine Stärke ohne den Gürtel 21 oder höher ist.</p></div>",
+    "effects": {
+      "dLiEcoOg6cQcgIP8": "Hügelriesen-Stärke"
+    }
+  },
+  "dmgstoBeltofGian": {
+    "name": "Gürtel der Riesenstärke (Stein)",
+    "description": "<div><p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>Solange du diesen Gürtel trägst, ändert sich deine Stärke auf 23. Die Art des Riesen bestimmt den Wert. Der Gegenstand hat keine Wirkung auf dich, wenn deine Stärke ohne den Gürtel 23 oder höher ist.</p></div>",
+    "effects": {
+      "dVP7XiBERjMWs7xK": "Steinriesen-Stärke"
+    }
+  },
+  "dmgstmBeltofGian": {
+    "name": "Gürtel der Riesenstärke (Sturm)",
+    "description": "<div><p><em>Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgBeltOfGiantSt]</em></p><p>Solange du diesen Gürtel trägst, ändert sich deine Stärke auf 29. Die Art des Riesen bestimmt den Wert. Der Gegenstand hat keine Wirkung auf dich, wenn deine Stärke ohne den Gürtel 29 oder höher ist.</p></div>",
+    "effects": {
+      "dVP7XiBERjMWs7xK": "Sturmriesen-Stärke"
+    }
+  },
+  "dmgBowlOfCommand": {
+    "name": "Schale der Befehligung von Wasserelementaren",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten</em></p></div><p>Solange diese Schale mit Wasser gefüllt ist und du dich innerhalb von 1,5 m (ca. 1,5 m) von ihr befindest, kannst du eine Magie-Aktion ausführen, um ein\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmWaterElemental]{Water\nElemental}</strong> zu beschwören. Das Elementarwesen erscheint in einem unbesetzten Feld so nah wie möglich an der Schale, versteht deine Sprachen, gehorcht deinen Befehlen und ist in der Initiative sofort nach dir an der Reihe. Das Elementarwesen verschwindet nach 1 Stunde, wenn es stirbt oder wenn du es als Bonusaktion entlässt. Die Schale kann auf diese Weise erst wieder nach dem nächsten Morgengrauen verwendet werden.</p><p>Die Schale hat einen Durchmesser von etwa 0,3 m (ca. 30 cm) und ist halb so tief. Sie fasst etwa 3 Gallonen (ca. 11 Liter).</p>"
+  },
+  "dmgBrazierOfComm": {
+    "name": "Kohlenbecken der Befehligung von Feuerelementaren",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten</em></p></div><p>Solange du dich innerhalb von 1,5 m (ca. 1,5 m) von diesem Kohlenbecken befindest, kannst du eine Magie-Aktion ausführen, um ein\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmFireElemental0]{Fire\nElemental}</strong> zu beschwören. Das Elementarwesen erscheint in einem unbesetzten Feld so nah wie möglich am Kohlenbecken, versteht deine Sprachen, gehorcht deinen Befehlen und ist in der Initiative sofort nach dir an der Reihe. Das Elementarwesen verschwindet nach 1 Stunde, wenn es stirbt oder wenn du es als Bonusaktion entlässt. Das Kohlenbecken kann auf diese Weise erst wieder nach dem nächsten Morgengrauen verwendet werden.</p>"
+  },
+  "dmgBroomOfFlying": {
+    "name": "Besen des Fliegens",
+    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich (Benötigt\nEinstimmung)</em></p></div><p>Dieser hölzerne Besen funktioniert wie ein gewöhnlicher\nBesen, bis du dich darauf stellst und eine Magie-Aktion ausführst, um ihn unter\ndir schweben zu lassen, woraufhin er in der Luft geritten werden kann. Er hat eine\nFluggeschwindigkeit von 15 m. Er kann bis zu 400 Pfund tragen, aber seine\nFluggeschwindigkeit wird zu 9 m, wenn er über 200 Pfund trägt. Der Besen\nhört auf zu schweben, wenn du landest oder wenn du ihn nicht mehr reitest.</p><p>Als Magie-Aktion kannst du\nden Besen allein zu einem Ziel innerhalb von 1,6 km von dir schicken, wenn\ndu den Ort nennst und mit ihm vertraut bist. Der Besen kehrt zu dir zurück,\nwenn du eine Magie-Aktion ausführst und ein Befehlswort verwendest, falls der Besen\nnoch innerhalb von 1,6 km von dir ist.</p>",
+    "activities": {
+      "Activate Broom": "Besen aktivieren",
+      "Send Alone or Recall": "Allein senden oder zurückrufen"
+    },
+    "effects": {
+      "HT7JLnMCpfGKFxI2": "Reitbesen (Geringes Gewicht)",
+      "UzcvESI8ovNwhIPz": "Reitbesen (Hohes Gewicht)"
+    }
+  },
+  "dmgCenserOfContr": {
+    "name": "Weihrauchfass der Kontrolle von Luftelementaren",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten</em></p></div><p>Während du dieses\nWeihrauchfass sanft schwingst, kannst du eine Magie-Aktion ausführen, um ein\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmAirElemental00]{Air\nElemental}</strong> zu beschwören. Das Elementar erscheint in einem unbesetzten Feld so nah\nwie möglich am Weihrauchfass, versteht deine Sprachen, gehorcht deinen\nBefehlen und ist in der Initiative sofort nach dir an der Reihe. Das Elementar\nverschwindet nach 1 Stunde, wenn es stirbt oder wenn du es als Bonusaktion\nentlässt. Das Weihrauchfass kann auf diese Weise erst wieder nach der nächsten\nMorgendämmerung verwendet werden.</p>"
+  },
+  "dmgChimeOfOpenin": {
+    "name": "Glockenspiel des Öffnens",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten</em></p></div><p>Dieses hohle Metallrohr\nist etwa 0,3 m lang und wiegt 1 Pfund. Als Magie-Aktion kannst du das\nGlockenspiel anschlagen, um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplKnock00000]{Knock}</em> zu wirken.\nDas übliche Klopfgeräusch des Zaubers wird durch den klaren, klingenden Ton\ndes Glockenspiels ersetzt, der bis zu 90 m weit hörbar ist.</p><p>Das Glockenspiel kann\n10 Mal verwendet werden. Nach dem zehnten Mal bekommt es einen Riss und wird\nunbrauchbar.</p>"
+  },
+  "dmgCloakOfInvisi": {
+    "name": "Umhang der Unsichtbarkeit",
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär (Benötigt\nEinstimmung)</em></p></div><p>Dieser Umhang hat 3 Ladungen und stellt täglich bei\nSonnenaufgang 1W3 verbrauchte Ladungen wieder her. Während du den Umhang\nträgst, kannst du eine Magie-Aktion ausführen, um die Kapuze über deinen Kopf\nzu ziehen und 1 Ladung zu verbrauchen, um dir selbst den Zustand &amp;Reference[Invisible apply=false] für 1 Stunde zu verleihen.\nDer Effekt endet vorzeitig, wenn du die Kapuze herunterziehst (keine Aktion\nerforderlich) oder den Umhang nicht mehr trägst.</p>",
+    "activities": {
+      "Raise Hood": "Kapuze hochziehen"
+    },
+    "effects": {
+      "sSsgrnNQCK4vurTm": "Kapuze oben: Unsichtbar"
+    }
+  },
+  "dmgMindReadingCr": {
+    "name": "Kristallkugel der Gedankenlesung",
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär (Benötigt\nEinstimmung)</em></p></div><p>Während du diese Kristallkugel berührst, kannst du damit\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>\n(SG 17) wirken. Zusätzlich kannst du\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectThou]{Detect\nThoughts}</em> (SG 17) auf Kreaturen wirken, die du innerhalb von 9 m\ndes Zaubersensors sehen kannst. Du musst dich nicht auf diesen <em>Gedanken entdecken</em>-Zauber konzentrieren, um ihn während seiner Dauer\naufrechtzuerhalten, aber er endet, wenn der <em>Ausspähung</em>-Zauber endet.</p>"
+  },
+  "dmgTelepathyCrys": {
+    "name": "Kristallkugel der Telepathie",
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär (Benötigt\nEinstimmung)</em></p></div><p>Während du diese Kristallkugel berührst, kannst du damit\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>\n(SG 17) wirken. Zusätzlich kannst du telepathisch mit\nKreaturen kommunizieren, die du innerhalb von 9 m des Zaubersensors sehen\nkannst. Du kannst auch\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSuggestion]{Suggestion}</em>\n(SG 17) durch den Sensor auf eine dieser Kreaturen wirken. Du musst dich nicht\nauf diese <em>Suggestion</em> konzentrieren, um sie während ihrer\nDauer aufrechtzuerhalten, aber sie endet, wenn <em>Ausspähung</em> endet. Du kannst\n<em>Suggestion</em> auf diese Weise erst wieder nach der nächsten Morgendämmerung wirken.</p>"
+  },
+  "dmgTrueSeeingCry": {
+    "name": "Kristallkugel der Wahren Sicht",
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär (Benötigt\nEinstimmung)</em></p></div><p>Während du diese Kristallkugel berührst, kannst du damit\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>\n(SG 17) wirken. Zusätzlich hast du Wahre Sicht mit einer Reichweite von 36 m, zentriert auf den Zaubersensor.</p>"
+  },
+  "dmgCrystalBall00": {
+    "name": "Kristallkugel",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten (Benötigt Einstimmung)</em></p><p>Während\ndu diese Kristallkugel berührst, kannst du damit\n@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying} (SG\n17) wirken.</p>"
+  },
+  "dmgCubeOfForce00": {
+    "name": "Würfel der Macht",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten (Benötigt Einstimmung)</em></p></div><p>Dieser Würfel ist etwa einen Zoll groß. Jede Seite hat eine deutliche Markierung. Du kannst eine dieser Seiten drücken, die dafür erforderliche Anzahl an Ladungen aufwenden und dadurch den damit verbundenen Zauber wirken (SG 17 für den Rettungswurf), wie in der Tabelle „Seiten des Würfels der Macht“ gezeigt.</p><p>Der Würfel beginnt mit 10 Ladungen und erhält täglich bei Sonnenaufgang 1W6 <span\nclass=\"no-break\">verbrauchte</span> Ladungen zurück.</p><table><caption>Seiten des Würfels der Macht</caption><thead><tr><td>Zauber</td><td>Ladungskosten</td></tr></thead><tbody><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMageArmor0]{Mage\nArmor}</em></td><td>1</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}</em></td><td>1</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLeomundsTi]{Tiny\nHut}</em></td><td>3</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbPrivateSanctu]{Private\nSanctum}</em></td><td>4</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplOtilukesRe]{Resilient\nSphere}</em></td><td>4</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Wall\nof Force}</em></td><td>5</td></tr></tbody></table>"
+  },
+  "dmgCubicGate0000": {
+    "name": "Kubisches Tor",
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär</em></p></div><p>Dieser Würfel ist 7,6 cm groß und strahlt spürbare magische Energie aus. Die sechs Seiten des Würfels sind jeweils einer anderen Existenzebene zugeordnet, wovon eine die Materielle Ebene ist. Die anderen Seiten sind mit Ebenen verbunden, die vom SL bestimmt werden.</p><p>Der Würfel hat 3 Ladungen und erhält täglich bei Sonnenaufgang 1W3 verbrauchte Ladungen zurück. Als Magie-Aktion kannst du 1 der Ladungen des Würfels aufwenden, um einen der folgenden Zauber mit dem Würfel zu wirken.</p><p><strong>Tor.</strong> Indem du eine Seite des Würfels drückst, wirkst du <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGate000000]{Gate}</em> und öffnest ein Portal zu der Existenzebene, die dieser Seite zugeordnet ist.</p><p><strong>Ebenenwechsel.</strong> Indem du eine Seite des Würfels zweimal drückst, wirkst du <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplPlaneShift]{Plane\nShift}</em> und transportierst die Ziele zu der Existenzebene, die dieser Seite zugeordnet ist.</p>"
+  },
+  "dmgDecanterOfEnd": {
+    "name": "Dekanter des endlosen Wassers",
+    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p></div><p>Diese verschlossene Flasche schwappt, wenn sie geschüttelt wird, als ob sie Wasser enthielte. Der Dekanter wiegt 2 Pfund.</p><p>Du kannst eine Magie-Aktion ausführen, um den Stopfen zu entfernen und eines von drei Befehlsworten auszusprechen, woraufhin eine Menge @UUID[Compendium.dnd5e.equipment24.Item.dmgspWaterfresh0]{fresh water} oder @UUID[Compendium.dnd5e.equipment24.Item.dmgspWatersalt00]{salt water} (deiner Wahl) aus der Flasche strömt. Das Wasser hört am Beginn deines nächsten Zuges auf zu strömen. Wähle aus den folgenden Befehlsworten:</p><div\nclass=\"def-block\"><p><strong>Spritzer.</strong> Der Dekanter erzeugt 1 Gallone Wasser.</p><p><strong>Fontäne.</strong> Der Dekanter erzeugt 5 Gallonen Wasser.</p><p><strong>Geysir.</strong> Der Dekanter erzeugt 30 Gallonen Wasser, das in einer 9 m langen und 0,3 m breiten Linie hervorströmt. Wenn du den Dekanter hältst, kannst du den Geysir in eine Richtung zielen (keine Aktion erforderlich). Eine Kreatur deiner Wahl in der Linie muss einen Rettungswurf auf Stärke SG 13 bestehen oder erleidet 1W4 Wuchtschaden und erhält den Zustand &amp;Reference[Prone]. Anstelle einer Kreatur kannst du ein Objekt in der Linie anvisieren, das nicht getragen wird und nicht mehr als 200 Pfund wiegt. Das Objekt wird vom Geysir umgestoßen.</p></div>",
+    "activities": {
+      "Fountain": "Fontäne",
+      "Geyser": "Geysir",
+      "Splash": "Spritzer"
+    }
+  },
+  "dmgDimensionalSh": {
+    "name": "Dimensionale Fesseln",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten</em></p></div><p>Du kannst eine Nutzen-Aktion ausführen, um diese Fesseln an einer Kreatur anzulegen, die den Zustand &amp;Reference[Incapacitated apply=false] hat. Die Fesseln passen sich an Kreaturen von kleiner bis großer Größe an. Die Fesseln hindern eine durch sie gefesselte Kreatur daran, jegliche Art von extradimensionaler Bewegung zu nutzen, einschließlich Teleportation oder Reisen zu einer anderen Existenzebene. Sie hindern die Kreatur nicht daran, ein interdimensionales Portal zu durchqueren.</p><p>Du und jede Kreatur, die du beim Anlegen der Fesseln bestimmst, können eine Nutzen-Aktion ausführen, um sie zu entfernen. Alle 30 Tage kann die gefesselte Kreatur einen [[/check ability=str skill=ath dc=30 format=long]] ablegen. Bei einem erfolgreichen Wurf befreit sich die Kreatur und zerstört die Fesseln.</p>",
+    "activities": {
+      "Attempt Escape": "Fluchtversuch",
+      "Place Shackles": "Fesseln anlegen"
+    },
+    "effects": {
+      "JYlrfQOPp5jRIFK2": "Dimensional gebunden"
+    }
+  },
+  "dmgOrbOfDragonki": {
+    "name": "Drachenkugel",
+    "description": "<p><em>Wundersamer Gegenstand, Artefakt (Benötigt Einstimmung)</em></p><section\nclass=\"secret\" id=\"secret-giR5yoa8kkJFGmuP\"><p>Während du an eine Kugel eingestimmt bist, kannst du eine Magie-Aktion ausführen, um in die Tiefen der Kugel zu blicken. Du musst dann einen Rettungswurf auf Charisma SG 15 ablegen. Bei einem erfolgreichen Rettungswurf kontrollierst du die Kugel, solange du an sie eingestimmt bleibst. Bei einem misslungenen Rettungswurf belegt die Kugel dich mit dem Zustand Bezaubert, solange du an sie eingestimmt bleibst.</p><p>Während du von der Kugel bezaubert bist, kannst du deine Einstimmung auf sie nicht freiwillig beenden, und die Kugel wirkt nach Belieben @UUID[Compendium.dnd5e.spells24.Item.phbsplSuggestion]{Suggestion} auf dich (Rettungswurf SG 18), um dich dazu zu drängen, die bösen Ziele zu verfolgen, die sie wünscht. Die Drachenessenz in der Kugel könnte vieles wollen: die Vernichtung einer bestimmten Gesellschaft oder Organisation, Freiheit von der Kugel, die Verbreitung von Leid in der Welt, die Förderung der Verehrung von Tiamat oder etwas anderes, das der SL entscheidet.</p><p><em><strong>Eine Kugel zerstören.</strong></em> Eine <em>Drachenkugel</em> hat RK 20 und wird zerstört, wenn sie Schaden durch eine <em>+3 Waffe</em> oder einen @UUID[Compendium.dnd5e.spells24.Item.phbsplDisintegra]{Disintegrate} Zauber erleidet. Nichts anderes kann ihr schaden.</p></section><p>Eine Kugel ist eine geätzte Kristallkugel mit einem Durchmesser von etwa 25,4 cm. Bei Gebrauch wächst sie auf etwa 50,8 cm Durchmesser an, und Nebel wirbelt in ihrem Inneren.</p><p><em><strong>Zauber.</strong></em> Die Kugel hat 7 Ladungen und erhält täglich bei Sonnenaufgang 1W4 + 3 verbrauchte Ladungen zurück. Wenn du die Kugel kontrollierst, kannst du einen der Zauber aus der folgenden Tabelle von ihr wirken. Die Tabelle gibt an, wie viele Ladungen du aufwenden musst, um den Zauber zu wirken.</p><table><thead><tr><th><p>Zauber</p></th><th><p>Ladungskosten</p></th><th></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure\nWounds} (Version auf Grad 9)</p></td><td><p>4</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDaylight00]{Daylight}</p></td><td><p>1</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDeathWard0]{Death\nWard}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect\nMagic}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying} (Rettungswurf SG 18)</p></td><td><p>3</p></td><td></td></tr></tbody></table><p><em><strong>Drachen rufen.</strong></em> Während du die Kugel kontrollierst, kannst du eine Magie-Aktion ausführen, um die Kugel einen telepathischen Ruf aussenden zu lassen, der sich in alle Richtungen über 64 km erstreckt. Chromatische Drachen in Reichweite fühlen sich gezwungen, so schnell wie möglich auf dem direktesten Weg zur Kugel zu kommen. Drachengötter wie Tiamat sind von diesem Ruf unberührt. Chromatische Drachen, die zur Kugel gezogen werden, könnten dir gegenüber feindselig sein, weil du sie gegen ihren Willen zwingst. Sobald du diese Eigenschaft genutzt hast, kann sie für 1 Stunde nicht wieder verwendet werden.</p>",
+    "activities": {
+      "Attunement Save": "Einstimmungs-Rettungswurf",
+      "Call Dragons": "Drachen rufen"
+    },
+    "effects": {
+      "raPJlnmYfmMnMEE3": "Bezaubert"
+    }
+  },
+  "dmgEversmokingBo": {
+    "name": "Flasche des ewigen Rauchs",
+    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p></div><p>Als Magie-Aktion kannst du diese Flasche öffnen oder schließen.</p><p>Das Öffnen der Flasche lässt dichten Rauch hervorquellen, der eine Wolke bildet, die eine 18 m große Emanation füllt, die von der Flasche ausgeht. Der Bereich innerhalb des Rauchs ist &amp;Reference[HeavilyObscured].</p><p>Jede Minute, die die Flasche offen bleibt, erhöht sich die Größe der Emanation um 3 m, bis sie ihre maximale Größe von 36 m erreicht.</p><p>Das Schließen der Flasche bewirkt, dass die Wolke an Ort und Stelle fixiert wird, bis sie sich nach 10 Minuten auflöst. Ein starker Wind (wie der, der durch den Zauber <em>Windstoß</em> erzeugt wird) löst die Wolke nach 1 Minute auf.</p><section class=\"secret\"\nid=\"secret-O7B8LCiiU4CnDjQw\"><p><strong>Foundry-Hinweis</strong></p><p>Der Skalierungsregler der Aktion <strong>Flasche öffnen</strong> steuert die Größe der erzeugten Emanation von 18 m bei Skalierungswert 1 bis 36 m bei Skalierungswert 7 (Schritte von 3 m).</p></section>",
+    "activities": {
+      "Open Bottle": "Flasche öffnen"
+    }
+  },
+  "dmgFigurineOfWon": {
+    "name": "Figur der wundersamen Macht",
+    "description": "<div><p><em>Wundersamer Gegenstand, Seltenheit variiert</em></p></div><p>Eine <em>Figur der wundersamen Macht</em> ist eine Statuette, die klein genug ist, um in eine Tasche zu passen. Wenn du eine Magie-Aktion ausführst, um die Figur auf einen Punkt am Boden innerhalb von 18 m von dir zu werfen, wird die Figur zu einer lebenden Kreatur, wie in der Beschreibung der Figur unten angegeben. Wenn der Raum, in dem die Kreatur erscheinen würde, von anderen Kreaturen oder Objekten besetzt ist oder wenn nicht genügend Platz für die Kreatur vorhanden ist, wird die Figur nicht zu einer Kreatur.</p><p>Die Kreatur ist dir und deinen Verbündeten gegenüber Freundlich. Sie versteht deine Sprachen, gehorcht deinen Befehlen und ist in der Initiative sofort nach dir an der Reihe. Wenn du keine Befehle gibst, verteidigt sich die Kreatur, führt aber keine weiteren Aktionen aus.</p><p>Die Kreatur existiert für eine Dauer, die für jede Figur spezifisch ist. Am Ende der Dauer kehrt die Kreatur in ihre Figurenform zurück. Sie kehrt früher in eine Figur zurück, wenn ihre Kreaturenform auf 0 Trefferpunkte fällt oder wenn du eine Magie-Aktion ausführst, während du die Kreatur berührst, um sie in ihre Figurenform zurückkehren zu lassen. Wenn die Kreatur wieder zu einer Figur wird, kann ihre Eigenschaft erst wieder verwendet werden, nachdem eine bestimmte Zeit verstrichen ist, wie in der Beschreibung der Figur angegeben.</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpBronzeGrif]{Bronze\nGriffon\n(Rare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpEbonyFlyRa]{Ebony\nFly\n(Rare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpGoldenLion]{Golden\nLions\n(Rare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpIvoryGoats]{Ivory\nGoats\n(Rare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpMarbleElep]{Marble\nElephant\n(Rare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpObsidianSt]{Obsidian\nSteed (Very\nRare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpOnyxDogRar]{Onyx\nDog\n(Rare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpSerpentine]{Serpentine\nOwl\n(Rare)}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFwpSilverRave]{Silver\nRaven (Uncommon)}</p>"
+  },
+  "dmgFwpBronzeGrif": {
+    "name": "Bronzegreif",
+    "description": "<p><em>Siehe @UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese Bronzestatuette stellt einen aufgerichteten Greif dar. Sie kann für bis zu 6 Stunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGriffon0000000]{Griffon}</strong> werden. Sobald sie benutzt wurde, kann sie erst nach 5 Tagen wieder verwendet werden.</p><section class=\"secret\"\nid=\"secret-CyXRwZfsh4tOiRUf\"><p><strong>Foundry-Hinweis</strong></p><p>Die begrenzten Verwendungen dieses Gegenstands stellen die 5 Tage dar, die vergehen müssen, bevor die Figur wieder verwendet werden kann.</p></section>"
+  },
+  "dmgFwpEbonyFlyRa": {
+    "name": "Ebenholzfliege",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese Ebenholzstatuette, geschnitzt nach dem Vorbild\neiner Pferdebremse, kann für bis zu 12 Stunden zu einem\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.dmgGiantFly00000]{Giant\nFly}</strong> werden und als Reittier genutzt werden. Sobald sie\nbenutzt wurde, kann sie erst nach 2 Tagen wieder verwendet werden.</p><section\nclass=\"secret\" id=\"secret-50TFh1zOfnv1SBKO\"><p><strong>Foundry-Hinweis</strong></p><p>Die begrenzten Verwendungen dieses Gegenstands stellen die 2 Tage dar,\ndie vergehen müssen, bevor die Figur wieder verwendet werden kann.</p></section>"
+  },
+  "dmgFwpGoldenLion": {
+    "name": "Goldene Löwen",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese goldenen Löwenstatuetten werden immer\npaarweise erschaffen. Du kannst eine Figur oder beide gleichzeitig\nverwenden. Jede kann für bis zu 1 Stunde zu einem\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmLion0000000000]{Lion}</strong> werden. Sobald ein Löwe benutzt wurde, kann er erst nach\n7 Tagen wieder verwendet werden.</p><section class=\"secret\"\nid=\"secret-e1wLN4czlgS5CpcW\"><p><strong>Foundry-Hinweis</strong></p><p>Jede\n<strong>Löwenfigur benutzen</strong> Aktivität hat begrenzte Verwendungen, die die 7\nTage darstellen, die vergehen müssen, bevor diese bestimmte gepaarte Figur\nwieder verwendet werden kann.</p></section>",
+    "activities": {
+      "Use First Lion": "Ersten Löwen benutzen",
+      "Use Second Lion": "Zweiten Löwen benutzen"
+    }
+  },
+  "dmgFwpIvoryGoats": {
+    "name": "Elfenbeinzicklein",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese Elfenbeinstatuetten von Ziegen werden immer\nin Dreiersets erschaffen. Jede Ziege sieht einzigartig aus und\nfunktioniert anders als die anderen. Ihre Eigenschaften sind wie\nfolgt:</p><p><strong>Ziege des Schreckens.</strong> Diese Figur kann für bis zu 3\nStunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantGoat00000]{Giant\nGoat}</strong> werden. Die Ziege kann nicht angreifen, aber\ndu kannst ihre Hörner (harmlos) entfernen und als Waffen verwenden. Ein\nHorn wird zu einer <em>+1 Lanze</em>, und das andere wird zu einem <em>+2\nLangschwert</em>. Das Entfernen eines Horns erfordert eine Magie-Aktion,\nund die Waffen verschwinden und die Hörner kehren zurück, wenn die Ziege\nin ihre Figurenform zurückkehrt. Während du die Ziege reitest, muss jede\nfeindliche Kreatur, die ihren Zug innerhalb einer 9 m großen Emanation\nbeginnt, die von der Ziege ausgeht, einen erfolgreichen Weisheitsrettungswurf\ngegen SG 15 ablegen oder erhält den Zustand Verängstigt für 1 Minute, bis\ndu die Ziege nicht mehr reitest oder bis die Ziege in ihre Figurenform\nzurückkehrt. Die verängstigte Kreatur wiederholt den Rettungswurf am Ende\njedes ihrer Züge und beendet den Effekt bei einem Erfolg. Sobald sie den\nRettungswurf erfolgreich abgelegt hat, ist eine Kreatur für die nächsten\n24 Stunden immun gegen diesen Effekt. Sobald die Figur benutzt wurde, kann\nsie erst nach 15 Tagen wieder verwendet werden.</p><p><strong>Ziege des\nReisens.</strong> Diese Figur kann zu einer Großen Ziege mit denselben Werten\nwie ein <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Riding\nHorse}</strong> werden. Sie hat 24 Ladungen, und jede Stunde oder\njeder Teil davon, die sie in Ziegenform verbringt, kostet 1 Ladung. Solange\nsie Ladungen hat, kannst du sie so oft verwenden, wie du möchtest. Wenn ihr\ndie Ladungen ausgehen, kehrt sie in eine Figur zurück und kann erst nach 7\nTagen wieder verwendet werden, wenn sie alle verbrauchten Ladungen\nzurückerhält.</p><section class=\"secret\"\nid=\"secret-Bzl0aaerk0Ql0uOm\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nAktivität <strong>Ziege des Reisens zurückverwandeln oder zurückrufen</strong> wird\noptional bereitgestellt, um die Verfolgung der nicht zusammenhängenden 24\nStunden zu erleichtern, die die Figur in Ziegenform bleiben kann. Wenn sie\nin eine Figur zurückverwandelt wird, stellt der Skalierungswert für den\nVerbrauch die Anzahl der Stunden dar, die in Ziegenform verbracht wurden.\nWenn die Figur in Ziegenform zurückgerufen wird, deaktiviere das\nKontrollkästchen „Gegenstandsverwendung verbrauchen?“ bei der Verwendung\ndieser Aktivität.</p></section><p><strong>Ziege der Mühsal.</strong> Diese\nFigur kann für bis zu 3 Stunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantGoat00000]{Giant\nGoat}</strong> werden. Sobald sie\nbenutzt wurde, kann sie erst nach 30 Tagen wieder verwendet werden.</p>",
+    "activities": {
+      "Goat of Terror": "Ziege des Schreckens",
+      "Goat of Travail": "Ziege der Mühsal",
+      "Goat of Traveling": "Ziege des Reisens",
+      "Revert or Recall Goat of Traveling": "Ziege des Reisens zurückverwandeln oder zurückrufen"
+    }
+  },
+  "dmgFwpMarbleElep": {
+    "name": "Marmorelefant",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese Marmorstatuette ähnelt einem trompetenden\nElefanten. Sie kann für bis zu 24 Stunden zu einem\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmElephant000000]{Elephant}</strong> werden. Sobald sie benutzt wurde, kann sie erst nach 7\nTagen wieder verwendet werden.</p><section class=\"secret\"\nid=\"secret-RHHx3aKcpKsHN2aK\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nbegrenzten Verwendungen dieses Gegenstands stellen die 7 Tage dar, die\nvergehen müssen, bevor die Figur wieder verwendet werden kann.</p></section>"
+  },
+  "dmgFwpObsidianSt": {
+    "name": "Obsidianross",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Dieses polierte Obsidianpferd kann für bis zu 24\nStunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmNightmare00000]{Nightmare}</strong> werden. Der Albtraum kämpft nur zur\nSelbstverteidigung. Sobald er benutzt wurde, kann er erst nach 5 Tagen\nwieder verwendet werden.</p><p>Die Figur hat jedes Mal, wenn du sie\nbenutzt, eine [[/r 1d10cs1]]{10-prozentige Chance}, deine Befehle zu ignorieren,\neinschließlich eines Befehls, in die Figurenform zurückzukehren. Wenn du\nden Albtraum reitest, während er deine Befehle ignoriert, werden du und der\nAlbtraum sofort an einen zufälligen Ort auf der Ebene des Hades\ntransportiert, wo der Albtraum in die Figurenform zurückkehrt.</p><section\nclass=\"secret\" id=\"secret-OH9v7OxKinHyCnIQ\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nbegrenzten Verwendungen dieses Gegenstands stellen die 5 Tage dar, die\nvergehen müssen, bevor die Figur wieder verwendet werden kann.</p></section>"
+  },
+  "dmgFwpOnyxDogRar": {
+    "name": "Onyxhund",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese Onyxstatuette eines Hundes kann für bis zu\n6 Stunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmMastiff0000000]{Mastiff}</strong> werden. Der Mastiff hat eine Intelligenz\nvon 8 und kann Gemeinsprache sprechen. Er hat außerdem Blindgespür mit\neiner Reichweite von 18 m. Sobald er benutzt wurde, kann er erst nach 7\nTagen wieder verwendet werden.</p><section\nclass=\"secret\" id=\"secret-61PsF1VxjiD2gq06\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nbegrenzten Verwendungen dieses Gegenstands stellen die 7 Tage dar, die\nvergehen müssen, bevor die Figur wieder verwendet werden kann.</p></section>",
+    "effects": {
+      "fMC3o8l8D2GamPbU": "Mastiff-Figur"
+    }
+  },
+  "dmgFwpSerpentine": {
+    "name": "Serpentin-Eule",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese Serpentin-Statuette einer Eule kann für bis\nzu 8 Stunden zu einer <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantOwl000000]{Giant\nOwl}</strong> werden. Die Eule kann telepathisch mit\ndir über jede Entfernung kommunizieren, wenn du und sie sich auf derselben\nExistenzebene befinden. Sobald sie benutzt wurde, kann sie erst nach 2\nTagen wieder verwendet werden.</p><section class=\"secret\"\nid=\"secret-lvDPI4uyHQj4dE5a\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nbegrenzten Verwendungen dieses Gegenstands stellen die 2 Tage dar, die\nvergehen müssen, bevor die Figur wieder verwendet werden kann.</p></section>"
+  },
+  "dmgFwpSilverRave": {
+    "name": "Silberrabe",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of\nWondrous Power}</em></p><p>Diese Silberstatuette eines Raben kann für bis zu\n12 Stunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRaven000000000]{Raven}</strong> werden. Sobald sie benutzt wurde, kann sie\nerst nach 2 Tagen wieder verwendet werden. In Rabenform verleiht dir die\nFigur die Fähigkeit, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAnimalMess]{Animal\nMessenger}</em> auf sie zu wirken.</p><section class=\"secret\"\nid=\"secret-1zjsYfZzKHfXhi9j\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nbegrenzten Verwendungen dieses Gegenstands stellen die 2 Tage dar, die\nvergehen müssen, bevor die Figur wieder verwendet werden kann.</p></section>"
+  },
+  "dmgGemOfBrightne": {
+    "name": "Edelstein der Helligkeit",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Dieses Prisma hat 50 Ladungen. Während\ndu es hältst, kannst du eine Magie-Aktion ausführen und eines von drei\nBefehlswörtern verwenden, um einen der folgenden Effekte zu verursachen:</p><p><strong>Erstes\nBefehlswort.</strong> Der Edelstein spendet Helles Licht in einem Radius von 9 m und\nSchwaches Licht für weitere 9 m. Dieser Effekt verbraucht keine Ladung.\nEr hält an, bis du eine Bonusaktion ausführst, um das Befehlswort zu wiederholen, oder bis\ndu eine andere Funktion des Edelsteins nutzt.</p><p><strong>Zweites Befehlswort.</strong> Du verbrauchst 1 Ladung und lässt den Edelstein einen brillanten\nLichtstrahl auf eine Kreatur abfeuern, die du innerhalb von 18 m von dir sehen kannst. Die\nKreatur muss einen Konstitutionsrettungswurf SG 15 bestehen oder den\nZustand &amp;Reference[Blinded apply=false] für 1 Minute haben. Die Kreatur\nwiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt auf\nsich selbst bei einem Erfolg.</p><p><strong>Drittes Befehlswort.</strong> Du verbrauchst\n5 Ladungen und lässt den Edelstein in einem 9 m großen Kegel mit intensivem Licht aufleuchten.\nJede Kreatur im Kegel macht einen Rettungswurf, als ob sie von dem Strahl\ngetroffen würde, der mit dem zweiten Befehlswort erzeugt wurde.</p><p>Wenn alle Ladungen des Edelsteins\nverbraucht sind, wird der Edelstein zu einem nicht-magischen Juwel im Wert von 50 GM.</p>",
+    "activities": {
+      "First Command Word": "Erstes Befehlswort",
+      "Second Command Word": "Zweites Befehlswort",
+      "Third Command Word": "Drittes Befehlswort"
+    },
+    "effects": {
+      "05Lok63szRXdAafx": "Geblendet von Brillanz"
+    }
+  },
+  "dmgGemOfSeeing00": {
+    "name": "Edelstein des Sehens",
+    "description": "<p><em>Wundersamer Gegenstand, Selten (Benötigt Einstimmung)</em></p><p>Dieser Edelstein hat 3\nLadungen. Als Magie-Aktion kannst du 1 Ladung verbrauchen. Für die nächsten 10\nMinuten hast du &amp;Reference[Truesight] bis zu 36 m, wenn du\ndurch den Edelstein blickst.</p><p>Der Edelstein erhält täglich bei\nSonnenaufgang 1W3 verbrauchte Ladungen zurück.</p>",
+    "activities": {
+      "Gain Truesight": "Wahre Sicht erhalten"
+    },
+    "effects": {
+      "z8fm5PbP5qz4iJuP": "Sehen"
+    }
+  },
+  "dmgGlovesOfThiev": {
+    "name": "Handschuhe der Dieberei",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Diese Handschuhe sind beim Tragen unmerklich.\nWährend du sie trägst, erhältst du einen Bonus von +5 auf Geschicklichkeit (Fingerfertigkeit)-Würfe.</p><section id=\"secret-MTbVEJqcHy1oERli\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Der <strong>Handschuhe\nan</strong> Aktive Effekt automatisiert den +5 Bonus auf deine Fingerfertigkeit-\nWürfe.</p></section>",
+    "effects": {
+      "6f8ARzOvPmhNZ0NV": "Handschuhe an"
+    }
+  },
+  "dmgHornOfBlastin": {
+    "name": "Horn des Schmetterns",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Du kannst eine Magie-Aktion ausführen, um das\nHorn zu blasen, das einen donnernden Stoß in einem 9 m großen Kegel aussendet,\nder bis zu 180 m weit hörbar ist. Jede Kreatur im Kegel macht einen Konstitutions-\nRettungswurf SG 15. Bei einem misslungenen Rettungswurf erleidet eine Kreatur 5W8 Donnerschaden und\nhat den Zustand &amp;Reference[Deafened apply=false] für 1 Minute. Bei einem\nerfolgreichen Rettungswurf erleidet eine Kreatur nur halb so viel Schaden. Glas- oder\nKristallobjekte im Kegel, die nicht getragen oder gehalten werden, erleiden 10W8\nDonnerschaden.</p><p>Jede Nutzung der Magie des Horns hat eine 20-prozentige Chance,\ndass das Horn explodiert. Die Explosion verursacht 10W6 Wuchtschaden am\nBenutzer und zerstört das Horn.</p><section class=\"secret\"\nid=\"secret-rkHeC2mFJBKqNOh0\"><p><strong>Foundry-Hinweis</strong></p><p>Die\n<strong>Würfel auf Explosionschance</strong> Aktivität gibt 1 zurück, wenn es\nexplodiert, ansonsten 0.</p></section>",
+    "activities": {
+      "Blow Horn": "Horn blasen",
+      "Explosion Damage": "Explosionsschaden",
+      "Object Damage": "Objektschaden",
+      "Roll for Explosion Chance": "Würfel auf Explosionschance"
+    },
+    "effects": {
+      "HREyjqFevgTvN4uC": "Taub"
+    }
+  },
+  "dmgHornofValhall": {
+    "name": "Horn von Valhalla",
+    "description": "<p><em>Wundersamer Gegenstand, Selten (Silber oder Messing), Sehr Selten (Bronze) oder\nLegendär (Eisen)</em></p><p>Du kannst eine Magie-Aktion ausführen, um dieses Horn zu blasen.\nAls Reaktion erscheinen Kriegergeister aus der Ebene von Ysgard in unbesetzten\nFeldern innerhalb von 18 m von dir. Jeder Geist verwendet den\n<strong>Berserker</strong> Spielwertblock und kehrt nach 1 Stunde\noder wenn er auf 0 Trefferpunkte fällt, nach Ysgard zurück. Die Geister sehen aus wie lebende,\natmende Krieger und haben Immunität gegen die Zustände Bezaubert und Verängstigt.\nSobald du das Horn benutzt hast, kann es erst nach 7 Tagen wieder benutzt\nwerden.</p><p>Es sind vier Arten von <em>Horn von Valhalla</em> bekannt,\njede aus einem anderen Metall gefertigt. Die Art des Horns bestimmt, wie viele\nGeister es beschwört, sowie die Voraussetzung für seine Verwendung. Der Spielleiter wählt\ndie Art des Horns oder bestimmt sie zufällig, indem er auf der folgenden\nTabelle würfelt.</p><p>Wenn du das Horn bläst, ohne seine Voraussetzung zu erfüllen, greifen die\nbeschworenen Geister dich an. Wenn du die Voraussetzung erfüllst, sind sie\nfreundlich zu dir und deinen Verbündeten und folgen deinen\nBefehlen.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgHornOfValhall\nrollable]</p>",
+    "activities": {
+      "Summon Warriors": "Krieger beschwören"
+    },
+    "effects": {
+      "7da5gsAdyzIIfWBL": "Horn von Valhalla: Zustandsimmunität"
+    }
+  },
+  "dmgBrassHornOfVa": {
+    "name": "Messinghorn von Valhalla",
+    "description": "<p><em>Siehe: @UUID[Compendium.dnd5e.equipment24.Item.dmgHornofValhall]{Horn\nof Valhalla}</em></p><p><em>Voraussetzung: Übung mit allen Einfachen\nWaffen</em></p><p><em>Geister: 3</em></p><p>Du kannst eine Magie-Aktion\nausführen, um dieses Horn zu blasen. Als Reaktion erscheinen Kriegergeister aus der Ebene von Ysgard\nin unbesetzten Feldern innerhalb von 18 m von dir. Jeder Geist verwendet den\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]{Berserker}</strong>\nSpielwertblock und kehrt nach 1 Stunde oder wenn er auf 0 Trefferpunkte fällt, nach Ysgard zurück.\nDie Geister sehen aus wie lebende, atmende Krieger und haben Immunität gegen die Zustände\n&amp;Reference[Charmed apply=false] und\n&amp;Reference[Frightened apply=false]. Sobald du das Horn benutzt hast,\nkann es erst nach 7 Tagen wieder benutzt werden.</p><p>Wenn du das\nHorn bläst, ohne seine Voraussetzung zu erfüllen, greifen die beschworenen Geister dich an. Wenn\ndu die Voraussetzung erfüllst, sind sie freundlich zu dir und deinen Verbündeten und\nfolgen deinen Befehlen.</p>",
+    "activities": {
+      "Summon Warriors": "Krieger beschwören"
+    },
+    "effects": {
+      "ZiKBbktr6MQ4J3Qr": "Horn von Valhalla: Zustandsimmunität"
+    }
+  },
+  "dmgBronzeHornOfV": {
+    "name": "Bronzehorn von Valhalla",
+    "description": "<p><em>Siehe: @UUID[Compendium.dnd5e.equipment24.Item.dmgHornofValhall]{Horn\nof Valhalla}</em></p><p><em>Voraussetzung: Übung mit allen Mittleren\nRüstungen</em></p><p><em>Geister: 4</em></p><p>Du kannst eine Magie-Aktion\nausführen, um dieses Horn zu blasen. Als Reaktion erscheinen Kriegergeister aus der Ebene von Ysgard\nin unbesetzten Feldern innerhalb von 18 m von dir. Jeder Geist verwendet den\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]{Berserker}</strong>\nSpielwertblock und kehrt nach 1 Stunde oder wenn er auf 0 Trefferpunkte fällt, nach Ysgard zurück.\nDie Geister sehen aus wie lebende, atmende Krieger und haben Immunität gegen die Zustände\n&amp;Reference[Charmed apply=false] und\n&amp;Reference[Frightened apply=false]. Sobald du das Horn benutzt hast,\nkann es erst nach 7 Tagen wieder benutzt werden.</p><p>Wenn du das\nHorn bläst, ohne seine Voraussetzung zu erfüllen, greifen die beschworenen Geister dich an. Wenn\ndu die Voraussetzung erfüllst, sind sie freundlich zu dir und deinen Verbündeten und\nfolgen deinen Befehlen.</p>",
+    "activities": {
+      "Summon Warriors": "Krieger beschwören"
+    },
+    "effects": {
+      "L0OzTUZwZz9nzNwe": "Horn von Valhalla: Zustandsimmunität"
+    }
+  },
+  "dmgIronHornOfVal": {
+    "name": "Eisenhorn von Valhalla",
+    "description": "<p><em>Siehe: @UUID[Compendium.dnd5e.equipment24.Item.dmgHornofValhall]{Horn\nof Valhalla}</em></p><p><em>Voraussetzung: Übung mit allen Kriegswaffen</em></p><p><em>Geister: 5</em></p><p>Du kannst eine Magie-Aktion\nausführen, um dieses Horn zu blasen. Als Reaktion erscheinen Kriegergeister aus der Ebene von Ysgard\nin unbesetzten Feldern innerhalb von 18 m von dir. Jeder Geist verwendet den\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]{Berserker}</strong>\nSpielwertblock und kehrt nach 1 Stunde oder wenn er auf 0 Trefferpunkte fällt, nach Ysgard zurück.\nDie Geister sehen aus wie lebende, atmende Krieger und haben Immunität gegen die Zustände\n&amp;Reference[Charmed apply=false] und\n&amp;Reference[Frightened apply=false]. Sobald du das Horn benutzt hast,\nkann es erst nach 7 Tagen wieder benutzt werden.</p><p>Wenn du das\nHorn bläst, ohne seine Voraussetzung zu erfüllen, greifen die beschworenen Geister dich an. Wenn\ndu die Voraussetzung erfüllst, sind sie freundlich zu dir und deinen Verbündeten und\nfolgen deinen Befehlen.</p>",
+    "activities": {
+      "Summon Warriors": "Krieger beschwören"
+    },
+    "effects": {
+      "zdUROHVtNHVtR4JL": "Horn von Valhalla: Zustandsimmunität"
+    }
+  },
+  "dmgSilverHornOfV": {
+    "name": "Silbernes Horn von Valhalla",
+    "description": "<p><em>Siehe: @UUID[Compendium.dnd5e.equipment24.Item.dmgHornofValhall]{Horn\nof Valhalla}</em></p><p><em>Voraussetzung: Keine</em></p><p><em>Geister:\n2</em></p><p>Du kannst eine Magie-Aktion ausführen, um dieses Horn zu blasen. Als Reaktion darauf erscheinen\nKriegergeister aus der Ebene von Ysgard in unbesetzten Feldern\ninnerhalb von 18 m von dir. Jeder Geist verwendet den\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]{Berserker}</strong>\nWertekatalog und kehrt nach 1 Stunde oder wenn er auf 0 Trefferpunkte fällt, nach Ysgard zurück. Die Geister sehen aus wie lebende, atmende Krieger und haben\nImmunität gegen die Zustände &amp;Reference[Charmed apply=false] und\n&amp;Reference[Frightened apply=false]. Sobald du das Horn benutzt hast,\nkann es erst nach 7 Tagen wieder benutzt werden.</p><p>Wenn du das\nHorn bläst, ohne seine Voraussetzung zu erfüllen, greifen dich die beschworenen Geister an. Wenn\ndu die Voraussetzung erfüllst, sind sie dir und deinen Verbündeten gegenüber freundlich und\nfolgen deinen Befehlen.</p>",
+    "activities": {
+      "Summon Warriors": "Krieger beschwören"
+    },
+    "effects": {
+      "k8UhBonX9A2LPImO": "Horn von Valhalla: Zustandsimmunität"
+    }
+  },
+  "dmgHorseshoesOfA": {
+    "name": "Hufeisen eines Zephyrs",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Diese Hufeisen kommen in einem Satz\nvon vier. Als Magie-Aktion kannst du eines der Hufeisen an den\nHuf eines Pferdes oder einer ähnlichen Kreatur halten, woraufhin sich das Hufeisen\nam Huf befestigt. Das Entfernen eines Hufeisens erfordert ebenfalls eine Magie-\nAktion.</p><p>Solange alle vier Hufeisen an den Hufen eines Pferdes oder\neiner ähnlichen Kreatur befestigt sind, ermöglichen sie der Kreatur, sich normal zu bewegen, während sie\n10,2 cm über einer Oberfläche schwebt. Dieser Effekt bedeutet, dass die Kreatur nicht-feste oder instabile Oberflächen,\nwie Wasser oder Lava, überqueren oder darüber stehen kann. Die\nKreatur hinterlässt keine Spuren und ignoriert &amp;Reference[Difficult Terrain].\nZusätzlich kann die Kreatur bis zu 12 Stunden am Tag reisen, ohne\n&amp;Reference[Exhaustion] Stufen durch ausgedehnte Reisen zu erhalten.</p>",
+    "activities": {
+      "Attach Horseshoes": "Hufeisen anbringen"
+    },
+    "effects": {
+      "AYtAkgcEHRws0Qeo": "Ignoriert schwieriges Gelände"
+    }
+  },
+  "dmgHorseshoesOfS": {
+    "name": "Hufeisen der Geschwindigkeit",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Diese Hufeisen kommen in einem Satz von\nvier. Als Magie-Aktion kannst du eines der Hufeisen an den Huf\neines Pferdes oder einer ähnlichen Kreatur halten, woraufhin sich das Hufeisen\nam Huf befestigt. Das Entfernen eines Hufeisens erfordert ebenfalls eine Magie-Aktion.</p><p>Solange alle\nvier Hufeisen an derselben Kreatur befestigt sind, wird ihre Bewegungsrate\num 9 m erhöht.</p>",
+    "activities": {
+      "Attach Horseshoes": "Hufeisen anbringen"
+    },
+    "effects": {
+      "9lS2LxCve4hPYGMn": "Schneller"
+    }
+  },
+  "dmgDaernsInstant": {
+    "name": "Daerns Sofortfestung",
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten (Benötigt Einstimmung)</em></p></div><p>Als\neine Magie-Aktion kannst du diese 2,5 cm große Adamantit-Statuette auf den\nBoden stellen und, mit einem Befehlswort, veranlassen, dass sie schnell zu einem quadratischen\nAdamantit-Turm heranwächst. Das Wiederholen des Befehlswortes lässt den Turm in die\nStatuettenform zurückkehren, was nur funktioniert, wenn der Turm leer ist. Jede Kreatur in\ndem Bereich, in dem der Turm erscheint, wird auf ein unbesetztes Feld außerhalb,\naber neben dem Turm geschoben. Objekte in dem Bereich, die nicht getragen oder\nmitgeführt werden, werden ebenfalls vom Turm weggeschoben.</p><p>Der Turm ist 6 m\nSeitenlänge und 9 m hoch, mit Schießscharten an allen Seiten und einer Zinne\nobenauf. Sein Inneres ist in zwei Stockwerke unterteilt, die durch eine Leiter,\nTreppe oder Rampe (deine Wahl) verbunden sind. Diese Leiter, Treppe\noder Rampe endet an einer Falltür, die zum Dach führt. Bei der Erschaffung hat der Turm\neine einzelne Tür auf Bodenniveau auf der Seite, die dir zugewandt ist. Die Tür öffnet sich\nnur auf deinen Befehl hin, den du als Bonusaktion erteilen kannst. Sie ist immun\ngegen den Zauber <em>Klopfen</em> und ähnliche Magie.</p><p>Magie verhindert, dass der\nTurm umgestoßen wird. Das Dach, die Tür und die Wände haben jeweils\nRK 20; TP 100; Immunität gegen Wuchtschaden, Stichschaden und Hiebschaden,\naußer dem, der durch Belagerungsausrüstung verursacht wird; und Resistenz gegen alle anderen\nSchäden. Das Schrumpfen des Turms zurück in die Statuettenform repariert\nkeinen Schaden am Turm. Nur ein\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em>\nZauber kann den Turm reparieren (diese Verwendung des Zaubers zählt als Nachbildung eines\nZaubers des 8. Grades oder niedriger). Jede Anwendung von <em>Wunsch</em> lässt den Turm\nalle seine Trefferpunkte zurückerlangen.</p>",
+    "activities": {
+      "Grow Tower": "Turm wachsen lassen",
+      "Open Fortress Door": "Festungstür öffnen"
+    }
+  },
+  "dmgIounStone0000": {
+    "name": "Ioun-Stein",
+    "description": "<p><em>Wundersamer Gegenstand, Seltenheit variiert (Benötigt\nEinstimmung)</em></p><p>Ungefähr marmorgroß, sind <em>Ioun-Steine</em> nach Ioun benannt, einem Gott des Wissens und der Prophezeiung, der auf einigen Welten verehrt wird.\nViele Arten von <em>Ioun-Steinen</em> existieren, jede Art eine eigene Kombination\naus Form und Farbe.</p><p>Wenn du eine Magie-Aktion ausführst, um einen <em>Ioun-\nStein</em> in die Luft zu werfen, umkreist der Stein deinen Kopf in einem Abstand von 1W3\nFuß und gewährt dir dabei seinen Vorteil. Du kannst bis zu\ndrei <em>Ioun-Steine</em> gleichzeitig um deinen Kopf kreisen lassen.</p><p>Jeder\n<em>Ioun-Stein</em>, der deinen Kopf umkreist, gilt als ein Gegenstand, den du\nträgst. Der umkreisende Stein vermeidet Kontakt mit anderen Kreaturen und\nObjekten, passt seine Umlaufbahn an, um Kollisionen zu vermeiden, und vereitelt alle\nVersuche anderer Kreaturen, ihn anzugreifen oder zu schnappen.</p><p>Als Benutzen-\nAktion kannst du beliebig viele <em>Ioun-Steine</em>, die deinen Kopf umkreisen,\nergreifen und verstauen. Wenn deine Einstimmung auf einen <em>Ioun-Stein</em> endet, während er\ndeinen Kopf umkreist, fällt der Stein, als hättest du ihn fallen\ngelassen.</p><p>Die Art des Steins bestimmt seine Seltenheit und\nWirkung.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAbsorptionIou]{Absorption}\n(Sehr Selten).</strong> Während dieses blassviolette Ellipsoid deinen Kopf umkreist,\nkannst du eine Reaktion ausführen, um einen Zauber des 4. Grades oder niedriger, der von einer\nKreatur gewirkt wurde, die du sehen kannst, aufzuheben. Ein aufgehobener Zauber hat keine\nWirkung, und alle zum Wirken verwendeten Ressourcen sind verschwendet. Sobald der Stein 20 Zaubergrade\naufgehoben hat, brennt er aus, wird mattgrau und verliert seine\nMagie.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAgilityIounSt]{Agility}\n(Sehr Selten).</strong> Deine Geschicklichkeit erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese tiefrote Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAwarenessIoun]{Awareness}\n(Selten).</strong> Während dieses dunkelblaue Rhomboid deinen Kopf umkreist, hast du\nVorteil auf Initiativewürfe und Weisheit (Wahrnehmung)-\nWürfe.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgFortitudeIoun]{Fortitude}\n(Sehr Selten).</strong> Deine Konstitution erhöht sich um 2, bis zu einem Maximum von\n20, während dieses pinkfarbene Rhomboid deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgGreaterAbsorp]{Greater\nAbsorption} (Legendär).</strong> Während dieses marmorierte lavendel- und grüne\nEllipsoid deinen Kopf umkreist, kannst du eine Reaktion ausführen, um einen Zauber des\n8. Grades oder niedriger, der von einer Kreatur gewirkt wurde, die du sehen kannst, aufzuheben. Ein aufgehobener Zauber hat keine\nWirkung, und alle zum Wirken verwendeten Ressourcen sind verschwendet. Sobald der Stein\n20 Zaubergrade aufgehoben hat, brennt er aus, wird mattgrau und verliert seine\nMagie.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgInsightIounSt]{Insight}\n(Sehr Selten).</strong> Deine Weisheit erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese glühend blaue Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgIntellectIoun]{Intellect}\n(Sehr Selten).</strong> Deine Intelligenz erhöht sich um 2, bis zu einem Maximum von\n20, während diese marmorierte scharlachrote und blaue Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgLeadershipIou]{Leadership}\n(Sehr Selten).</strong> Dein Charisma erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese marmorierte pinkfarbene und grüne Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgMasteryIounSt]{Mastery}\n(Legendär).</strong> Dein Übungsbonus erhöht sich um 1, während dieses\nblassgrüne Prisma deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgProtectionIou]{Protection}\n(Selten).</strong> Du erhältst einen Bonus von +1 auf die Rüstungsklasse, während dieses staubrosafarbene\nPrisma deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgRegnerationIo]{Regeneration}\n(Legendär).</strong> Du erhältst 15 Trefferpunkte am Ende jeder Stunde zurück,\nwährend diese perlmuttweiße Spindel deinen Kopf umkreist, wenn du mindestens 1 Trefferpunkt\nhast.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgReserveIounSt]{Reserve}\n(Selten).</strong> Dieses leuchtend violette Prisma speichert Zauber, die in es gewirkt werden,\nund hält sie, bis du sie verwendest. Der Stein kann bis zu 4 Zaubergrade\ngleichzeitig speichern. Wenn er gefunden wird, enthält er 1W4 Grade gespeicherter Zauber,\ndie vom SL gewählt werden.</p><p>Jede Kreatur kann einen Zauber des 1. bis 4.\nGrades in den Stein wirken, indem sie ihn beim Wirken des Zaubers berührt. Der Zauber hat keine\nWirkung, außer im Stein gespeichert zu werden. Wenn der Stein den\nZauber nicht halten kann, wird der Zauber ohne Wirkung verbraucht. Der Grad des Zauberplatzes, der zum\nWirken des Zaubers verwendet wurde, bestimmt, wie viel Platz er verbraucht.</p><p>Während dieser Stein\ndeinen Kopf umkreist, kannst du jeden darin gespeicherten Zauber wirken. Der Zauber verwendet den\nZauberplatzgrad, den SG für den Zauberrettungswurf, den Zauberangriffsbonus und die Zauberwirkungsfähigkeit des\nursprünglichen Wirkers, wird aber ansonsten so behandelt, als hättest du den Zauber gewirkt. Der\naus dem Stein gewirkte Zauber ist nicht mehr darin gespeichert, wodurch Platz\nfreigegeben wird.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgStrengthIounS]{Strength}\n(Sehr Selten).</strong> Deine Stärke erhöht sich um 2, bis zu einem Maximum von 20,\nwährend dieses blassblaue Rhomboid deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgSustenanceIou]{Sustenance}\n(Selten).</strong> Du musst nicht essen oder trinken, während diese klare Spindel\ndeinen Kopf umkreist.</p>"
+  },
+  "dmgIronBandsOfBi": {
+    "name": "Eisenbänder",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Diese rostige Eisenkugel misst 7,6 cm im Durchmesser und wiegt 1 Pfund. Du kannst eine Magie-Aktion ausführen, um\ndie Kugel auf eine riesige oder kleinere Kreatur zu werfen, die du innerhalb von 18 m\nvon dir sehen kannst. Während sich die Kugel durch die Luft bewegt, öffnet sie sich zu einem Gewirr\nvon Metallbändern.</p><p>Führe einen Fernangriffswurf mit einem Angriffsbonus durch, der\ndeinem Geschicklichkeitsmodifikator plus deinem Übungsbonus entspricht. Bei einem Treffer hat das\nZiel den Zustand &amp;Reference[Restrained apply=false], bis du\neine Bonusaktion ausführst, um einen Befehl zu erteilen, der es freigibt. Dies oder\ndas Verfehlen des Angriffs führt dazu, dass sich die Bänder zusammenziehen und wieder zu einer Kugel\nwerden.</p><p>Eine Kreatur, die die Bänder berühren kann, einschließlich der\ngefesselten, kann eine Aktion ausführen, um einen SG 20 Stärke (Athletik)-Wurf zu machen,\num die Eisenbänder zu zerbrechen. Bei einem erfolgreichen Wurf wird der Gegenstand zerstört, und\ndie gefesselte Kreatur wird befreit. Bei einem fehlgeschlagenen Wurf schlagen alle weiteren Versuche,\ndie von dieser Kreatur unternommen werden, automatisch fehl, bis 24 Stunden\nvergangen sind.</p><p>Sobald die Bänder verwendet wurden, können sie erst wieder bei der\nnächsten Dämmerung verwendet werden.</p>",
+    "activities": {
+      "Break Check": "Zerbrechen-Wurf",
+      "Throw Bands": "Bänder werfen"
+    },
+    "effects": {
+      "IgRS1gR2uBlWZnIK": "Durch Eisen gefesselt"
+    }
+  },
+  "dmgIronFlask0000": {
+    "name": "Eisenflasche",
+    "description": "<p><em>Wundersamer Gegenstand, Legendär</em></p><p>Während du diese\nmit Messing verschlossene Eisenflasche hältst, kannst du eine Magie-Aktion ausführen, um eine\nKreatur anzuvisieren, die du innerhalb von 18 m von dir sehen kannst. Wenn die Flasche\nleer ist und das Ziel von einer anderen Existenzebene stammt als der, auf der du dich befindest,\nmuss das Ziel einen SG 17 Weisheitsrettungswurf bestehen oder wird\nin der Flasche gefangen. Wenn das Ziel zuvor von der Flasche gefangen wurde,\nhat es Vorteil auf den Rettungswurf. Einmal gefangen, bleibt eine Kreatur in der\nFlasche, bis sie freigelassen wird. Die Flasche kann nur eine Kreatur gleichzeitig halten. Eine\nin der Flasche gefangene Kreatur altert nicht und muss nicht atmen,\nessen oder trinken.</p><p>Du kannst eine Magie-Aktion ausführen, um den Stopfen der Flasche zu entfernen\nund die Kreatur in der Flasche freizulassen. Die Kreatur gehorcht dann\ndeinen Befehlen für 1 Stunde und versteht diese Befehle, auch wenn sie die Sprache,\nin der die Befehle gegeben werden, nicht kennt. Wenn du keine\nBefehle erteilst oder der Kreatur einen Befehl gibst, der wahrscheinlich zu ihrem\nTod oder ihrer Gefangenschaft führt, verteidigt sie sich, unternimmt aber ansonsten keine Aktionen.\nAm Ende der Wirkungsdauer handelt die Kreatur gemäß ihrer\nnormalen Veranlagung und Gesinnung.</p><p>Ein\n@UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identify}-Zauber\nenthüllt, ob die Flasche eine Kreatur enthält, aber die einzige Möglichkeit, die Art der Kreatur zu bestimmen,\nist das Öffnen der Flasche. Eine neu entdeckte <em>Eisenflasche</em> könnte bereits eine vom SL gewählte Kreatur enthalten.</p><section\nclass=\"secret\" id=\"secret-LJ4Og6JjdncKvEKV\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieser Gegenstand hat eine begrenzte Nutzung, um zu verfolgen, ob\neine Kreatur in der Flasche gefangen wurde oder nicht.</p><p>Die Aktion <strong>Gefangene\nKreatur hinzufügen</strong> verbraucht eine Nutzung, um anzuzeigen, dass sie\nderzeit voll ist.</p><p>Die Aktion <strong>Gefangene Kreatur freilassen</strong>\nist eine Beschwörungsaktion, die eine Nutzung wiederherstellt, um anzuzeigen, dass sie\nnun eine weitere Kreatur enthalten kann. Du kannst die Aktion bearbeiten, zum\nReiter „Beschwören“ wechseln und den Akteur der gefangenen Kreatur auf den Reiter ziehen, damit sie\nspäter beschworen werden kann.</p></section>",
+    "activities": {
+      "Add Trapped Creature": "Gefangene Kreatur hinzufügen",
+      "Attempt to Trap Creature": "Versuch, Kreatur zu fangen",
+      "Release Creature": "Kreatur freilassen"
+    }
+  },
+  "dmgLanternOfReve": {
+    "name": "Laterne der Enthüllung",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Solange sie leuchtet, brennt diese Kapuzenlaterne\n6 Stunden lang mit 1 Pinte Öl und spendet helles Licht in einem Radius von 9 m\nund dämmriges Licht für weitere 9 m. &amp;Reference[Invisible\napply=false] Kreaturen und Objekte sind sichtbar, solange sie sich im\nhellen Licht der Laterne befinden. Du kannst eine Benutzen-Aktion ausführen, um die Kapuze\nherunterzulassen, wodurch das Licht der Laterne auf dämmriges Licht in einem Radius von 1,5 m reduziert wird.</p>",
+    "activities": {
+      "Consume Oil": "Öl verbrauchen"
+    }
+  },
+  "dmgManualOfBodil": {
+    "name": "Handbuch der körperlichen Gesundheit",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Dieses Buch enthält Gesundheits- und\nErnährungstipps, und seine Worte sind mit Magie aufgeladen. Wenn du 48\nStunden über einen Zeitraum von 6 oder weniger Tagen damit verbringst, den\nInhalt des Buches zu studieren und seine Richtlinien zu praktizieren, erhöht\nsich deine Konstitution um 2, bis zu einem Maximum von 30. Das Handbuch\nverliert dann seine Magie, erlangt sie aber in einem Jahrhundert\nzurück.</p><section class=\"secret\"\nid=\"secret-SOm6BCXpqNkcxRCM\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser\nGegenstand enthält 48 maximale Verwendungen, um die gelesenen Stunden zu\nverfolgen.</p><p>Die\n<strong>Lesen</strong>-Aktivität enthält einen Skalierungswert, mit dem du\ndie Anzahl der gelesenen Stunden eingeben kannst. Sobald du 48 erreicht hast,\nkannst du den enthaltenen Aktiven Effekt verwenden, um deine Konstitution zu\nerhöhen.</p><p>Die\n<strong>Fortschritt zurücksetzen</strong>-Aktivität setzt deine Verwendungen auf 0\nzurück, falls du das Buch nicht innerhalb von 6 Tagen abschließt und von\nvorne beginnen musst.</p></section>",
+    "activities": {
+      "Read": "Lesen",
+      "Reset Progress": "Fortschritt zurücksetzen"
+    },
+    "effects": {
+      "7W1n7zchV0g7BKyq": "Gesund"
+    }
+  },
+  "dmgManualOfGainf": {
+    "name": "Handbuch der gewinnbringenden Übungen",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Dieses Buch beschreibt Fitness-\nÜbungen, und seine Worte sind mit Magie aufgeladen. Wenn du 48 Stunden\nüber einen Zeitraum von 6 oder weniger Tagen damit verbringst, den Inhalt\ndes Buches zu studieren und seine Richtlinien zu praktizieren, erhöht sich\ndeine Stärke um 2, bis zu einem Maximum von 30. Das Handbuch verliert dann\nseine Magie, erlangt sie aber in einem Jahrhundert\nzurück.</p><section class=\"secret\"\nid=\"secret-rzQiysHGZvxuxsGz\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser\nGegenstand enthält 48 maximale Verwendungen, um die gelesenen Stunden zu\nverfolgen.</p><p>Die\n<strong>Lesen</strong>-Aktivität enthält einen Skalierungswert, mit dem du\ndie Anzahl der gelesenen Stunden eingeben kannst. Sobald du 48 erreicht hast,\nkannst du den enthaltenen Aktiven Effekt verwenden, um deine Stärke zu\nerhöhen.</p><p>Die <strong>Fortschritt zurücksetzen</strong>-Aktivität\nsetzt deine Verwendungen auf 0 zurück, falls du das Buch nicht innerhalb von\n6 Tagen abschließt und von vorne beginnen musst.</p></section>",
+    "activities": {
+      "Read": "Lesen",
+      "Reset Progress": "Fortschritt zurücksetzen"
+    },
+    "effects": {
+      "ME2J4WX5cDLqGWDW": "Gut trainiert"
+    }
+  },
+  "dmgManualOfQuick": {
+    "name": "Handbuch der Aktionsschnelligkeit",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Dieses Buch enthält Koordinations-\nund Gleichgewichtsübungen, und seine Worte sind mit Magie aufgeladen. Wenn\ndu 48 Stunden über einen Zeitraum von 6 oder weniger Tagen damit verbringst,\nden Inhalt des Buches zu studieren und seine Richtlinien zu praktizieren,\nerhöht sich deine Geschicklichkeit um 2, bis zu einem Maximum von 30. Das\nHandbuch verliert dann seine Magie, erlangt sie aber in einem Jahrhundert\nzurück.</p><section class=\"secret\"\nid=\"secret-cXi2vCFHtxDKHpSv\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser\nGegenstand enthält 48 maximale Verwendungen, um die gelesenen Stunden zu\nverfolgen.</p><p>Die\n<strong>Lesen</strong>-Aktivität enthält einen Skalierungswert, mit dem du\ndie Anzahl der gelesenen Stunden eingeben kannst. Sobald du 48 erreicht hast,\nkannst du den enthaltenen Aktiven Effekt verwenden, um deine Geschicklichkeit\nzu erhöhen.</p><p>Die <strong>Fortschritt zurücksetzen</strong>-Aktivität\nsetzt deine Verwendungen auf 0 zurück, falls du das Buch nicht innerhalb von\n6 Tagen abschließt und von vorne beginnen musst.</p></section>",
+    "activities": {
+      "Read": "Lesen",
+      "Reset Progress": "Fortschritt zurücksetzen"
+    },
+    "effects": {
+      "yjQAL2g65jahNoBP": "Schnell handelnd"
+    }
+  },
+  "dmgNolzursMarvel": {
+    "name": "Wunderbare Pigmente",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Diese feine Holzkiste enthält\n1W4 Töpfe Pigment und einen Pinsel (insgesamt 1 Pfund schwer).</p><p>Mit\ndem Pinsel und unter Verbrauch von 1 Topf Pigment kannst du beliebig viele\ndreidimensionale Objekte und Geländemerkmale (wie Wände, Türen, Bäume,\nBlumen, Waffen, Spinnennetze und Gruben) malen, vorausgesetzt, diese Elemente\nbefinden sich alle in einem 20-Fuß-Würfel. Der Aufwand dauert 10 Minuten\n(unabhängig von der Anzahl der Elemente, die du erstellst), während dieser\nZeit musst du im Würfel bleiben und Konzentration aufrechterhalten. Wenn\ndeine Konzentration unterbrochen wird oder du den Würfel verlässt, bevor die\nArbeit beendet ist, verschwinden alle gemalten Elemente, und der Topf Pigment\nist verschwendet.</p><p>Wenn die Arbeit beendet ist, werden alle gemalten\nObjekte und Geländemerkmale real. So erzeugt das Malen einer Tür an einer\nWand eine tatsächliche Tür, die sich zu dem öffnen lässt, was dahinter liegt.\nDas Malen einer Grube erzeugt eine echte Grube, deren gesamte Tiefe innerhalb\ndes 20-Fuß-Würfels liegen muss.</p><p>Kein Objekt, das durch einen Topf\nPigment erzeugt wird, kann einen Wert von mehr als 25 GM haben, und der\nGesamtwert aller Objekte, die durch einen Topf Pigment erzeugt werden, darf\n500 GM nicht überschreiten. Wenn du Objekte von größerem Wert malst (wie einen\ngroßen Goldhaufen), sehen sie authentisch aus, aber bei genauerer Betrachtung\nentpuppen sie sich als aus Paste, Keksen oder anderem wertlosen Material\ngefertigt.</p><p>Wenn du eine Energieform wie Feuer oder Blitz malst,\nlöst sich die Energie auf, sobald du das Gemälde fertiggestellt hast, ohne\nSchaden anzurichten.</p><section class=\"secret\"\nid=\"secret-qUNCffT2Tfry1qQt\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser\nGegenstand beginnt mit 4 maximalen Verwendungen. Die <strong>Anzahl der Töpfe\nbestimmen</strong>-Aktivität kann verwendet werden, um zu bestimmen, wie viele\nTöpfe in der Kiste verbleiben.</p></section>",
+    "activities": {
+      "Determine Number of Pots": "Anzahl der Töpfe bestimmen",
+      "Paint": "Malen"
+    }
+  },
+  "dmgMirrorOfLifeT": {
+    "name": "Spiegel der Lebensfalle",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Wenn dieser 1,2 m hohe,\n0,6 m breite Spiegel indirekt betrachtet wird, zeigt seine Oberfläche schwache\nBilder von Kreaturen. Der Spiegel wiegt 50 Pfund und hat RK 11, TP 10,\nImmunität gegen Gift- und Psychischen Schaden sowie Verwundbarkeit gegen\nWuchtschaden. Er zerspringt und wird zerstört, wenn er auf 0 Trefferpunkte\nreduziert wird.</p><p>Wenn der Spiegel an einer vertikalen Oberfläche\nhängt und du dich innerhalb von 1,5 m von ihm befindest, kannst du eine\nMagieaktion ausführen und ein Befehlswort verwenden, um ihn zu aktivieren.\nEr bleibt aktiviert, bis du eine Magieaktion ausführst und das Befehlswort\nwiederholst, um ihn zu deaktivieren.</p><p>Jede Kreatur außer dir, die\nihr Spiegelbild im aktivierten Spiegel sieht, während sie sich innerhalb von\n9 m vom Spiegel befindet, muss einen Charisma-Rettungswurf gegen SG 15\nbestehen oder wird zusammen mit allem, was sie trägt oder bei sich hat, in\neine der zwölf extradimensionalen Zellen des Spiegels gefangen. Eine Kreatur,\ndie die Natur des Spiegels kennt, macht den Rettungswurf mit Vorteil, und\nKonstrukte bestehen den Rettungswurf automatisch.</p><p>Eine\nextradimensionale Zelle ist eine unendliche Weite, gefüllt mit dichtem Nebel,\nder die Sicht auf 3 m reduziert. Kreaturen, die in den Zellen des Spiegels\ngefangen sind, altern nicht und müssen weder essen, trinken noch schlafen.\nEine in einer Zelle gefangene Kreatur kann mit Magie entkommen, die Planarreisen\nerlaubt. Andernfalls ist die Kreatur in der Zelle gefangen, bis sie befreit\nwird.</p><p>Wenn der Spiegel eine Kreatur fängt, aber seine zwölf\nextradimensionalen Zellen bereits besetzt sind, befreit der Spiegel eine\nzufällig ausgewählte gefangene Kreatur, um den neuen Gefangenen aufzunehmen.\nEine befreite Kreatur erscheint in einem unbesetzten Raum in Sichtweite des\nSpiegels, aber von ihm abgewandt. Wenn der Spiegel zerspringt, werden alle\nKreaturen, die er enthält, befreit und erscheinen in unbesetzten Räumen in\nseiner Nähe.</p><p>While within 1,5 m of the\nmirror, you can take a Magic action to name one creature trapped in it or\ncall out a particular cell by number. The creature named or contained in\nthe named cell appears as an image on the mirror's surface. You and the\ncreature can then communicate.</p><p>In a similar way, you can take a\nMagic action and use a second command word to free one creature trapped in\nthe mirror. The freed creature appears, along with its possessions, in the\nunoccupied space nearest to the mirror and facing away from\nit.</p><p>Das Platzieren des Spiegels in einem extradimensionalen\nRaum, der von einem <em>Beutel der Verwahrung</em>, einem <em>Tragbaren Loch</em>\noder einem ähnlichen Gegenstand geschaffen wurde, zerstört sofort beide\nGegenstände und öffnet ein Tor zur Astralebene. Das Tor entsteht dort, wo der\neine Gegenstand in den anderen gelegt wurde. Jede Kreatur innerhalb von 3 m\nvom Tor und nicht hinter voller Deckung wird durch es an einen zufälligen Ort\nauf der Astralebene gesaugt. Das Tor schließt sich dann. Das Tor ist nur\neinseitig und kann nicht wieder geöffnet werden.</p><section\nid=\"secret-wD2MAubhr1RWqA6v\" class=\"secret\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieser Gegenstand hat eine maximale Verwendung\nvon 12, die verwendet werden kann, um die Anzahl der im Spiegel gefangenen\nKreaturen zu verfolgen. Die <strong>Gefangene Kreatur hinzufügen/befreien</strong>-\nAktivitäten können verwendet werden, um diese Zahl zu erhöhen/verringern.</p></section>",
+    "activities": {
+      "Add Trapped Creature": "Gefangene Kreatur hinzufügen",
+      "Free Trapped Creature": "Gefangene Kreatur befreien"
+    }
+  },
+  "dmgDmtBalance000": {
+    "name": "Gleichgewicht",
+    "description": "<p>Du kannst einen deiner Attributswerte um 2 erhöhen, bis zu einem Maximum\nvon 22, vorausgesetzt, du verringerst gleichzeitig einen anderen deiner\nAttributswerte um 2. Du kannst kein Attribut verringern, das einen Wert von 5\noder niedriger hat. Alternativ kannst du wählen, deine Attributswerte nicht\nanzupassen, in welchem Fall diese Karte <span class=\"no-break\">keine Wirkung</span> hat.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtComet00000": {
+    "name": "Komet",
+    "description": "<p> Wenn du das nächste Mal in den Kampf gegen eine oder mehrere feindliche\nKreaturen eintrittst, kannst du eine davon als deinen Feind auswählen, wenn du\nInitiative würfelst. Wenn du deinen Feind während dieses Kampfes auf 0\nTrefferpunkte reduzierst, hast du 1 Jahr lang Vorteil auf Todesrettungswürfe.\nWenn jemand anderes deinen ausgewählten Feind auf 0 Trefferpunkte reduziert\noder du keinen Feind wählst, hat diese Karte keine Wirkung.</p>",
+    "activities": {
+      "Card Effect: Resolve": "Karteneffekt: Auflösen",
+      "Card Effect: Start": "Karteneffekt: Starten"
+    },
+    "effects": {
+      "3M7d2VBW3htCp7Aj": "Kometenkarte: Markierter Feind",
+      "asqZlVwoKSS1ckCU": "Kometenkarte: Vorteil auf Todesrettungswurf"
+    }
+  },
+  "dmgDmtDonjon0000": {
+    "name": "Verlies",
+    "description": "<p>Du verschwindest und wirst in einem Zustand des Scheintods in einer\nextradimensionalen Sphäre begraben. Alles, was du trägst und bei dir hast,\nverschwindet mit dir, außer Artefakten, die an dem Ort verbleiben, den du\neingenommen hast, als du verschwunden bist. Du bleibst gefangen, bis du\ngefunden und aus der Sphäre entfernt wirst. Du kannst durch keine\nErkenntnismagie lokalisiert werden, aber ein\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em>\nZauber kann den Ort deines Gefängnisses enthüllen. Du ziehst keine weiteren\nKarten.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    },
+    "effects": {
+      "dJN7ArhjS5DHmArT": "Verlieskarte: Scheintod"
+    }
+  },
+  "dmgDmtEuryale000": {
+    "name": "Euryale",
+    "description": "<p> Das medusenartige Antlitz der Karte verflucht dich. Du erhältst einen Malus von −2 auf Rettungswürfe, solange du auf diese Weise verflucht bist. Nur ein Gott oder die Magie der Schicksalskarte kann diesen Fluch beenden.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    },
+    "effects": {
+      "TdKyE2tB9wNdh86t": "Euryale-Karte: Verfluchte Rettungswürfe"
+    }
+  },
+  "dmgDmtFates00000": {
+    "name": "Schicksal",
+    "description": "<p> Das Gefüge der Realität entwirrt sich und spinnt sich neu, wodurch du ein Ereignis vermeiden oder auslöschen kannst, als wäre es nie geschehen. Du kannst die Magie der Karte nutzen, sobald du sie ziehst, oder zu jedem anderen Zeitpunkt, bevor <span\nclass=\"no-break\">du stirbst</span> .</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtFlames0000": {
+    "name": "Flammen",
+    "description": "<p> Ein mächtiger Teufel wird zu deinem Feind. Der Teufel trachtet nach deinem Verderben und quält dich, genießt dein Leid, bevor er versucht, dich zu töten. Diese Feindschaft währt, bis entweder du oder der Teufel stirbt.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    },
+    "effects": {
+      "UpR6gfUl5Qqjddq1": "Flammen-Karte: Teuflische Feindschaft"
+    }
+  },
+  "dmgDmtFool000000": {
+    "name": "Narr",
+    "description": "<p> Du hast Nachteil auf W20-Würfe für die nächsten 72 Stunden. Ziehe eine weitere Karte; dieses Ziehen zählt nicht als eines deiner deklarierten Ziehen.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    },
+    "effects": {
+      "BkChhqAw5emn7aQp": "Narr-Karte: Nachteil"
+    }
+  },
+  "dmgDmtGem0000000": {
+    "name": "Edelstein",
+    "description": "<p> Fünfundzwanzig Schmuckstücke im Wert von je 2.000 GM oder fünfzig Edelsteine im Wert von je 1.000 GM erscheinen zu deinen Füßen.</p>",
+    "activities": {
+      "Card Effect: Gems": "Karteneffekt: Edelsteine",
+      "Card Effect: Jewelry": "Karteneffekt: Schmuck"
+    }
+  },
+  "dmgDmtJester0000": {
+    "name": "Hofnarr",
+    "description": "<p> Du hast Vorteil auf W20-Würfe für die nächsten 72 Stunden, oder du kannst zwei zusätzliche Karten über deine deklarierten Ziehen hinaus ziehen.</p>",
+    "activities": {
+      "Card Effect: Advantage": "Karteneffekt: Vorteil",
+      "Card Effect: Draw Two": "Karteneffekt: Zwei ziehen"
+    }
+  },
+  "dmgDmtKey0000000": {
+    "name": "Schlüssel",
+    "description": "<p> Eine seltene oder seltenere magische Waffe, in der du geübt bist, erscheint bei dir. Der SL wählt die Waffe aus.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtKnight0000": {
+    "name": "Ritter",
+    "description": "<p>Du erhältst die Dienste eines\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmKnight00000000]{Knight}</strong>,\nder magisch in einem unbesetzten Feld deiner Wahl innerhalb von 9 m von dir erscheint. Der Ritter hat dieselbe Gesinnung wie du und dient dir loyal bis zum Tod, da er glaubt, ihr beide seid vom Schicksal zusammengeführt worden. Arbeite mit deinem SL zusammen, um einen Namen und eine Hintergrundgeschichte für diesen NSC zu erstellen. Der SL kann einen anderen Werteblock verwenden, um den Ritter darzustellen, <span\nclass=\"no-break\">wie gewünscht</span>.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtMoon000000": {
+    "name": "Mond",
+    "description": "<p>Du erhältst die Fähigkeit, \n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em> 1d3 Mal zu wirken.</p>",
+    "activities": {
+      "Card Effect: Wish": "Karteneffekt: Wunsch"
+    }
+  },
+  "dmgDmtPuzzle0000": {
+    "name": "Rätsel",
+    "description": "<p> Reduziere dauerhaft deine Intelligenz oder Weisheit um 1W4 + 1 (auf einen\nMindestwert von 1). Du kannst eine zusätzliche Karte über deine deklarierten\nZüge hinaus ziehen.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtRogue00000": {
+    "name": "Schurke",
+    "description": "<p> Ein NSC nach Wahl des SL wird dir gegenüber feindselig. Du kennst\ndie Identität dieses NSC nicht, bis er oder jemand anderes sie enthüllt. Nichts\nGeringeres als ein <em>Wunsch</em>-Zauber oder göttliche Intervention kann die\nFeindseligkeit des NSC dir gegenüber beenden.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    },
+    "effects": {
+      "qwsSkmGQOC4YLbCy": "Schurkenkarte: Feindseligkeit"
+    }
+  },
+  "dmgDmtRuin000000": {
+    "name": "Verderben",
+    "description": "<p>Alle Formen von Reichtum, die du bei dir trägst oder besitzt, außer magischen Gegenständen, gehen\ndir verloren. Tragbarer Besitz verschwindet. Unternehmen, Gebäude und Land,\ndie du besitzt, gehen auf eine Weise verloren, die die Realität am wenigsten verändert.\nJegliche Dokumentation, die beweist, dass du etwas besitzen solltest, das durch diese Karte verloren geht, verschwindet ebenfalls.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtSage000000": {
+    "name": "Weiser",
+    "description": "<p> Zu jedem Zeitpunkt innerhalb eines Jahres, nachdem du diese Karte gezogen hast, kannst du\nin Meditation eine Frage stellen und mental eine wahrheitsgemäße Antwort auf\ndiese Frage erhalten.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtSkull00000": {
+    "name": "Schädel",
+    "description": "<p>Ein\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.dmgAvatarofDeath]{Avatar of\nDeath}</strong> erscheint in einem unbesetzten Feld so nah wie möglich bei dir.\nDer Avatar greift nur dich mit seinen Angriffen an und erscheint als\ngeisterhaftes Skelett, das in eine zerfetzte schwarze Robe gekleidet ist und eine spektrale\nSense trägt. Der Avatar verschwindet, wenn er auf 0 Trefferpunkte fällt oder du stirbst. Wenn\nein Verbündeter von dir dem Avatar Schaden zufügt, beschwört dieser Verbündete einen weiteren\n<strong>Avatar des Todes</strong>. Der neue Avatar erscheint in einem unbesetzten\nFeld so nah wie möglich bei diesem Verbündeten und greift nur diesen Verbündeten mit\nseinen Angriffen an. Du und deine Verbündeten können als\nFolge dieses Zugs jeweils nur einen Avatar beschwören. Eine Kreatur, die von einem Avatar getötet wird, kann nicht wiederbelebt\nwerden.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtStar000000": {
+    "name": "Stern",
+    "description": "<p> Erhöhe einen deiner Attributswerte um 2, bis zu einem Maximum von 24.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtSun0000000": {
+    "name": "Sonne",
+    "description": "<p> Ein magischer Gegenstand (vom SL gewählt) erscheint bei dir. Zusätzlich\nerhältst du täglich bei Sonnenaufgang 10 temporäre Trefferpunkte, bis du stirbst.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    },
+    "effects": {
+      "enZ79fOzsta0vlqK": "Sonnenkarte: Tägliche temporäre TP"
+    }
+  },
+  "dmgDmtTalons0000": {
+    "name": "Krallen",
+    "description": "<p> Jeder magische Gegenstand, den du trägst oder bei dir hast, zerfällt. Artefakte in deinem Besitz verschwinden stattdessen.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtThrone0000": {
+    "name": "Thron",
+    "description": "<p>Du erhältst Übung und &amp;Reference[Expertise] in deiner Wahl aus Geschichte, Einsicht, Einschüchterung oder Überzeugen. Zusätzlich erhältst du rechtmäßigen Besitz einer kleinen Festung irgendwo in der Welt. Die Festung ist jedoch derzeit die Heimat eines oder mehrerer Monster, die vertrieben werden müssen, bevor du die Festung als deine beanspruchen kannst.</p><section\nid=\"secret-KpjqOSPJGy0Ec8YA\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Im Gegensatz zu den anderen Karten des Decks wird dieser Gegenstand sich bei Gebrauch <em>nicht</em> selbst zerstören, um als Symbol des Besitzes der Festung zu dienen.</p></section>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    }
+  },
+  "dmgDmtVoid000000": {
+    "name": "Leere",
+    "description": "<p>Deine Seele wird aus deinem Körper gezogen und in einem Gegenstand an einem vom SL gewählten Ort gefangen. Ein oder mehrere mächtige Wesen bewachen diesen Ort. Solange deine Seele auf diese Weise gefangen ist, ist dein Körper träge, altert nicht mehr und benötigt weder Nahrung, Luft noch Wasser. Ein\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em>\nZauber kann deine Seele nicht in deinen Körper zurückbringen, aber der Zauber enthüllt den Ort des Gegenstands, der deine Seele enthält. Du ziehst keine weiteren Karten.</p>",
+    "activities": {
+      "Card Effect": "Karteneffekt"
+    },
+    "effects": {
+      "ZCkhbQFg4H5ePlNm": "Leere-Karte: Gefangene Seele"
+    }
+  },
+  "dmgDeckOfManyThi": {
+    "name": "Geheimnisvolles Deck",
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär</em></p></div><p>Dieses Deck, das gewöhnlich in einer Schachtel oder einem Beutel gefunden wird, enthält eine Reihe von Karten aus Elfenbein oder Pergament. Die meisten (75 Prozent) dieser Decks haben dreizehn Karten, aber einige haben zweiundzwanzig. Verwende die entsprechende Spalte der Tabelle des Geheimnisvollen Decks, wenn du zufällig Karten aus dem Deck ziehst.</p><p>Bevor du eine Karte ziehst, musst du angeben, wie viele Karten du ziehen möchtest, und sie dann zufällig ziehen. Alle Karten, die über diese Anzahl hinaus gezogen werden, haben keine Wirkung. Andernfalls tritt die Magie der Karte sofort in Kraft, sobald du sie aus dem Deck ziehst. Du musst jede Karte nicht länger als 1 Stunde nach dem vorherigen Zug ziehen. Wenn du die gewählte Anzahl nicht ziehst, fliegen die verbleibenden Karten von selbst aus dem Deck und treten alle gleichzeitig in Kraft.</p><p>Sobald eine Karte gezogen wurde, verschwindet sie. Sofern die Karte nicht der Narr oder der Joker ist, erscheint die Karte wieder im Deck, wodurch es möglich ist, dieselbe Karte zweimal zu ziehen. (Sobald der Narr oder der Joker das Deck verlassen hat, würfle erneut auf der Tabelle, wenn diese Karte wieder auftaucht.)</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmg13CardDeckOfM\nrollable]</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmg22CardDeckOfM\nrollable]</p><section class=\"secret\"\nid=\"secret-89gUJH8GuylznwxV\"><p><strong>Foundry-Hinweis</strong></p><p>Bei Entdeckung sollte der Besitzer (oder SL) die <strong>Deckgröße prüfen</strong> Aktivität verwenden, um die Anzahl der Karten im Deck zu bestimmen. Die Aktivität setzt die verbleibenden Verwendungen dieses Gegenstands (von 22) entsprechend der Anzahl der Karten in diesem Deck. Alternativ kann der SL die <em>maximalen Verwendungen</em> dieses Gegenstands basierend auf der Deckgröße festlegen.</p><p>In beiden Fällen können sowohl die <strong>Deckgröße prüfen</strong> Aktivität als auch der eingebettete RollTable-Link, der der ungenutzten Deckgröße entspricht, gelöscht werden, nachdem diese Bestimmung getroffen wurde.</p></section>",
+    "activities": {
+      "Check Deck Size": "Deckgröße prüfen",
+      "Draw Cards": "Karten ziehen"
+    }
+  },
+  "dmgNecklaceOfFir": {
+    "name": "Halskette der Feuerbälle",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Diese Halskette hat 1W6 + 3 Perlen, die daran hängen. Du kannst eine Magie-Aktion ausführen, um eine Perle abzunehmen und sie bis zu 18 m weit zu werfen. Wenn sie das Ende ihrer Flugbahn erreicht, detoniert die Perle als ein Stufe-3-\n@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball} (Rettungswurf SG\n15).</p><p>Du kannst mehrere Perlen oder sogar die ganze Halskette gleichzeitig schleudern. Wenn du dies tust, erhöhe den Schaden des <em>Feuerballs</em> um 1W6 für jede Perle nach der ersten (maximal 12W6).</p><section class=\"secret\"\nid=\"secret-sVvONZCjIbxSR0Xs\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand enthält 9 begrenzte Verwendungen. Die <strong>Anzahl der Perlen bestimmen</strong> Aktivität kann verwendet werden, um zu bestimmen, wie viele Perlen (entspricht 1W6 + 3) sich an der Halskette befinden.</p><p>Die <strong>Perle werfen</strong> Aktivität ermöglicht es dir, den Feuerball auf maximal 12W6 zu skalieren.</p></section>",
+    "activities": {
+      "Determine Number of Beads": "Anzahl der Perlen bestimmen",
+      "Throw Bead": "Perle werfen"
+    }
+  },
+  "dmgPearlOfPower0": {
+    "name": "Machtperle",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich (Benötigt Einstimmung durch einen Zauberwirker)</em></p><p>Solange diese Perle bei dir ist, kannst du eine Magie-Aktion ausführen, um einen verbrauchten Zauberplatz des 3. Grades oder niedriger zurückzuerhalten. Sobald du die Perle benutzt hast, kann sie erst wieder bei der nächsten Morgendämmerung verwendet werden.</p>",
+    "activities": {
+      "Regain Spell Slot": "Zauberplatz zurückerhalten"
+    }
+  },
+  "dmgPipesOfHaunti": {
+    "name": "Pfeifen der Heimsuchung",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Diese Pfeifen haben 3 Ladungen und erhalten täglich bei Morgendämmerung 1W3 verbrauchte Ladungen zurück. Du kannst eine Magie-Aktion ausführen, um sie zu spielen und 1 Ladung zu verbrauchen, um eine unheimliche, bezaubernde Melodie zu erzeugen. Jede Kreatur deiner Wahl innerhalb von 9 m von dir muss einen Rettungswurf auf Weisheit (SG 15) bestehen oder die &amp;Reference[Frightened apply=false]\nBedingung für 1 Minute haben. Eine Kreatur, die den Rettungswurf nicht besteht, wiederholt ihn am Ende jedes ihrer Züge, wobei der Effekt bei einem Erfolg auf sich selbst endet. Eine Kreatur, die ihren Rettungswurf besteht, ist 24 Stunden lang immun gegen den Effekt dieser Pfeifen.</p>",
+    "activities": {
+      "Play Pipes": "Pfeifen spielen"
+    },
+    "effects": {
+      "29Rm9ru4fP60YFj3": "Verängstigt"
+    }
+  },
+  "dmgPipesOfTheSew": {
+    "name": "Pfeifen der Kanalisation",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich (Benötigt Einstimmung)</em></p><p>Solange diese Pfeifen bei dir sind, sind gewöhnliche Ratten und Riesenratten dir gegenüber gleichgültig und greifen dich nicht an, es sei denn, du bedrohst oder verletzt sie.</p><p>Die Pfeifen haben 3 Ladungen und erhalten täglich bei Morgendämmerung 1W3 verbrauchte Ladungen zurück. Wenn du die Pfeifen als Magie-Aktion spielst, kannst du eine Bonusaktion ausführen, um 1 bis 3 Ladungen zu verbrauchen und mit jeder verbrauchten Ladung einen\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmSwarmOfRats000]{Swarm of\nRats}</strong> herbeizurufen, wenn genügend Ratten innerhalb einer halben Meile von dir sind, um auf diese Weise gerufen zu werden (nach Ermessen des SL). Wenn nicht genügend Ratten vorhanden sind, um einen Schwarm zu bilden, ist die Ladung verschwendet. Herbeigerufene Schwärme bewegen sich auf dem kürzesten verfügbaren Weg zur Musik, stehen aber ansonsten nicht unter deiner Kontrolle.</p><p>Immer wenn ein <strong>Rattenschwarm</strong>, der nicht unter der Kontrolle einer anderen Kreatur steht, innerhalb von 9 m von dir kommt, während du die Pfeifen spielst, macht der Schwarm einen Rettungswurf auf Weisheit (SG 15). Bei einem erfolgreichen Rettungswurf verhält sich der Schwarm normal und kann für die nächsten 24 Stunden nicht von der Musik der Pfeifen beeinflusst werden. Bei einem fehlgeschlagenen Rettungswurf wird der Schwarm von der Musik der Pfeifen beeinflusst und wird dir und deinen Verbündeten gegenüber freundlich, solange du die Pfeifen jede Runde als Magie-Aktion weiter spielst. Ein freundlicher Schwarm gehorcht deinen Befehlen. Wenn du einem freundlichen Schwarm keine Befehle gibst, verteidigt er sich, unternimmt aber ansonsten keine Aktionen. Wenn ein freundlicher Schwarm seinen Zug mehr als 9 m von dir entfernt beginnt, endet deine Kontrolle über diesen Schwarm, und der Schwarm verhält sich normal und kann für die nächsten 24 Stunden nicht von der Musik der Pfeifen beeinflusst werden.</p>",
+    "activities": {
+      "Call Swarm of Rats": "Rattenschwarm herbeirufen",
+      "Sway Rats": "Ratten beeinflussen"
+    }
+  },
+  "dmgPortableHole0": {
+    "name": "Tragbares Loch",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieses feine schwarze Tuch, weich wie Seide,\nist auf die Größe eines Taschentuchs zusammengefaltet. Es entfaltet sich zu einem\nkreisförmigen Tuch mit 1,8 m Durchmesser.</p><p>Du kannst eine Magie-Aktion ausführen, um\nein <em>Tragbares Loch</em> zu entfalten und es auf oder an eine feste\nOberfläche zu legen, woraufhin das <em>Tragbare Loch</em> ein extradimensionales\nLoch von 3 m Tiefe erzeugt. Der zylindrische Raum innerhalb des Lochs existiert auf einer\nanderen Existenzebene, daher kann er nicht verwendet werden, um offene Passagen zu schaffen.\nJede Kreatur in einem offenen <em>Tragbaren Loch</em> kann das Loch verlassen,\nindem sie herausklettert.</p><p>Du kannst eine Magie-Aktion ausführen, um ein\n<em>Tragbares Loch</em> zu schließen, indem du die Ränder des Tuchs festhältst und\nes zusammenfaltest. Das Zusammenfalten des Tuchs schließt das Loch, und alle Kreaturen oder\nObjekte darin verbleiben im extradimensionalen Raum. Egal was sich darin befindet,\ndas Loch wiegt so gut wie nichts.</p><p>Wenn das Loch zusammengefaltet ist, kann eine\nKreatur innerhalb des extradimensionalen Raums des Lochs eine Aktion ausführen, um\neinen SG 10 Stärke (Athletik)-Wurf zu machen. Bei einem erfolgreichen Wurf\ndrängt sich die Kreatur heraus und erscheint innerhalb von 1,5 m des <em>Tragbaren\nLochs</em>. Ein geschlossenes <em>Tragbares Loch</em> enthält genug Luft für 1 Stunde\nAtmung, geteilt durch die Anzahl der atmenden Kreaturen\ndarin.</p><p>Das Platzieren eines <em>Tragbaren Lochs</em> in einem extradimensionalen\nRaum, der von einem <em>Beutel der Verwahrung</em>, einem <em>Praktischen Beutel</em> oder\neinem ähnlichen Gegenstand geschaffen wurde, zerstört sofort beide Gegenstände und öffnet ein Tor zur Astralebene.\nDas Tor entsteht dort, wo der eine Gegenstand in den anderen gelegt wurde.\nJede Kreatur innerhalb von 3 m des Tors, die sich nicht hinter\n&amp;Reference[Total Cover] befindet, wird hindurchgesaugt und an einem zufälligen\nOrt auf der Astralebene abgesetzt. Das Tor schließt sich dann. Das Tor ist nur eine Einbahnstraße\nund kann nicht wieder geöffnet werden.</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf",
+      "Unfold Portable Hole": "Tragbares Loch entfalten"
+    }
+  },
+  "dmgAirRingOfElem": {
+    "name": "Luft-Ring der Elementarbefehlsgewalt",
+    "description": "<p>Ring, Legendär (Benötigt Einstimmung)</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> ist mit einer der vier Elementarebenen verbunden. Der SL wählt\noder bestimmt zufällig die verbundene Ebene. Zum Beispiel ist ein <em>Ring der\nElementarbefehlsgewalt</em> (Luft) mit der Elementarebene der\nLuft verbunden.</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> hat die folgenden zwei\nEigenschaften:</p><p><strong>Elementarfluch.</strong> Während du den Ring trägst,\nhast du Vorteil auf Angriffswürfe gegen Elementare und sie haben\nNachteil auf Angriffswürfe gegen dich.</p><p><strong>Elementarer\nZwang.</strong> Während du den Ring trägst, kannst du eine Magie-Aktion ausführen,\num zu versuchen, ein Elementarwesen, das du innerhalb von 18 m von dir siehst, zu zwingen. Das\nElementarwesen macht einen SG 18 Weisheits-Rettungswurf. Bei einem misslungenen Rettungswurf hat das\nElementarwesen den Zustand &amp;Reference[Charmed apply=false] bis zum\nBeginn deines nächsten Zuges, und du bestimmst, was es mit seiner Bewegung und\nAktion in seinem nächsten Zug tut.</p><p><em><strong>Elementarer Fokus.</strong></em>\nWährend du den Ring trägst, profitierst du von zusätzlichen Eigenschaften,\ndie der verbundenen Elementarebene des Rings\nentsprechen:</p><p><strong>Luft.</strong> Du sprichst Auran, du hast Resistenz gegen\nBlitzschaden und du hast eine Flugbewegungsrate gleich deiner Bewegungsrate und kannst\nschweben.</p><p><em><strong>Zauberwirken.</strong></em> Der Ring hat 5\nLadungen und regeneriert täglich bei Sonnenaufgang 1W4 + 1 verbrauchte Ladungen. Während du den Ring trägst,\nkannst du einen Zauber von ihm wirken. Wähle den Zauber aus der Liste der\nverfügbaren Zauber, basierend auf der Elementarebene, mit der der Ring verbunden ist, wie\nin der folgenden Tabelle gezeigt. Die Tabelle gibt an, wie viele Ladungen du\naufwenden musst, um den Zauber zu wirken, der einen Rettungswurf-SG von\n18 hat.</p><table><thead><tr><th\nstyle=\"min-width:50px\"><p>Ebene</p></th><th><p>Zauber\n(Ladungen)</p></th></tr></thead><tbody><tr><td><p>Luft</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplChainLight]{Chain\nLightning} (3 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplFeatherFal]{Feather Fall} (0\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of\nWind} (2 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWindWall00]{Wind Wall} (1\nLadung)</p></td></tr></tbody></table>",
+    "activities": {
+      "Elemental Compulsion": "Elementarer Zwang"
+    },
+    "effects": {
+      "cN85nWiTzfGzWR7D": "Bezaubert",
+      "d5aFCMPqEUaUQ37L": "Luft-Fokus"
+    }
+  },
+  "dmgEarthRingOfEl": {
+    "name": "Erde-Ring der Elementarbefehlsgewalt",
+    "description": "<p>Ring, Legendär (Benötigt Einstimmung)</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> ist mit einer der vier Elementarebenen verbunden. Der SL wählt\noder bestimmt zufällig die verbundene Ebene. Zum Beispiel ist ein <em>Ring der\nElementarbefehlsgewalt</em> (Luft) mit der Elementarebene der\nLuft verbunden.</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> hat die folgenden zwei\nEigenschaften:</p><p><strong>Elementarfluch.</strong> Während du den Ring trägst,\nhast du Vorteil auf Angriffswürfe gegen Elementare und sie haben\nNachteil auf Angriffswürfe gegen dich.</p><p><strong>Elementarer\nZwang.</strong> Während du den Ring trägst, kannst du eine Magie-Aktion ausführen,\num zu versuchen, ein Elementarwesen, das du innerhalb von 18 m von dir siehst, zu zwingen. Das\nElementarwesen macht einen SG 18 Weisheits-Rettungswurf. Bei einem misslungenen Rettungswurf hat das\nElementarwesen den Zustand &amp;Reference[Charmed apply=false] bis zum\nBeginn deines nächsten Zuges, und du bestimmst, was es mit seiner Bewegung und\nAktion in seinem nächsten Zug tut.</p><p><em><strong>Elementarer Fokus.</strong></em>\nWährend du den Ring trägst, profitierst du von zusätzlichen Eigenschaften,\ndie der verbundenen Elementarebene des Rings\nentsprechen:</p><p><strong>Erde.</strong> Du sprichst Terran, und du hast\nResistenz gegen Säureschaden. Gelände, das aus Schutt, Felsen oder Erde\nbesteht, ist für dich kein schwieriges Gelände. Zusätzlich kannst du dich durch feste\nErde oder Felsen bewegen, als wären diese Bereiche schwieriges Gelände, ohne die\nMaterie, durch die du dich bewegst, zu stören. Wenn du deinen Zug in fester Erde oder\nFelsen beendest, wirst du in den nächsten unbesetzten Raum geschoben, den du zuletzt\nbesetzt hast.</p><p><em><strong>Zauberwirken.</strong></em> Der Ring hat 5\nLadungen und regeneriert täglich bei Sonnenaufgang 1W4 + 1 verbrauchte Ladungen. Während du den Ring trägst,\nkannst du einen Zauber von ihm wirken. Wähle den Zauber aus der Liste der\nverfügbaren Zauber, basierend auf der Elementarebene, mit der der Ring verbunden ist, wie\nin der folgenden Tabelle gezeigt. Die Tabelle gibt an, wie viele Ladungen du\naufwenden musst, um den Zauber zu wirken, der einen Rettungswurf-SG von\n18 hat.</p><table><thead><tr><th\nstyle=\"min-width:50px\"><p>Ebene</p></th><th><p>Zauber\n(Ladungen)</p></th></tr></thead><tbody><tr><td><p>Erde</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplEarthquake]{Earthquake}\n(5 Ladungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplStoneShape]{Stone\nShape} (2 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplStoneskin0]{Stoneskin} (3\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofSton]{Wall of\nStone} (3 Ladungen)</p></td></tr></tbody></table>",
+    "activities": {
+      "Elemental Compulsion": "Elementarer Zwang"
+    },
+    "effects": {
+      "cN85nWiTzfGzWR7D": "Bezaubert",
+      "cXb7lTtpbcsz0BJn": "Erde-Fokus"
+    }
+  },
+  "dmgFireRingOfEle": {
+    "name": "Feuer-Ring der Elementarbefehlsgewalt",
+    "description": "<p>Ring, Legendär (Benötigt Einstimmung)</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> ist mit einer der vier Elementarebenen verbunden. Der SL wählt\noder bestimmt zufällig die verbundene Ebene. Zum Beispiel ist ein <em>Ring der\nElementarbefehlsgewalt</em> (Luft) mit der Elementarebene der\nLuft verbunden.</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> hat die folgenden zwei\nEigenschaften:</p><p><strong>Elementarfluch.</strong> Während du den Ring trägst,\nhast du Vorteil auf Angriffswürfe gegen Elementare und sie haben\nNachteil auf Angriffswürfe gegen dich.</p><p><strong>Elementarer\nZwang.</strong> Während du den Ring trägst, kannst du eine Magie-Aktion ausführen,\num zu versuchen, ein Elementarwesen, das du innerhalb von 18 m von dir siehst, zu zwingen. Das\nElementarwesen macht einen SG 18 Weisheits-Rettungswurf. Bei einem misslungenen Rettungswurf hat das\nElementarwesen den Zustand &amp;Reference[Charmed apply=false] bis zum\nBeginn deines nächsten Zuges, und du bestimmst, was es mit seiner Bewegung und\nAktion in seinem nächsten Zug tut.</p><p><em><strong>Elementarer Fokus.</strong></em>\nWährend du den Ring trägst, profitierst du von zusätzlichen Eigenschaften,\ndie der verbundenen Elementarebene des Rings\nentsprechen:</p><p><strong>Feuer.</strong> Du sprichst Ignan, und du hast Immunität\ngegen Feuerschaden.</p><p><em><strong>Zauberwirken.</strong></em> Der Ring hat\n5 Ladungen und regeneriert täglich bei Sonnenaufgang 1W4 + 1 verbrauchte Ladungen. Während\ndu den Ring trägst, kannst du einen Zauber von ihm wirken. Wähle den Zauber aus der\nListe der verfügbaren Zauber, basierend auf der Elementarebene, mit der der Ring verbunden\nist, wie in der folgenden Tabelle gezeigt. Die Tabelle gibt an, wie viele Ladungen\ndu aufwenden musst, um den Zauber zu wirken, der einen Rettungswurf-SG von\n18 hat.</p><table><thead><tr><th\nstyle=\"min-width:50px\"><p>Ebene</p></th><th><p>Zauber\n(Ladungen)</p></th></tr></thead><tbody><tr><td><p>Feuer</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Burning\nHands} (1 Ladung),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball} (2\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplFireStorm0]{Fire\nStorm} (4 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of Fire} (3\nLadungen)</p></td></tr></tbody></table>",
+    "activities": {
+      "Elemental Compulsion": "Elementarer Zwang"
+    },
+    "effects": {
+      "cN85nWiTzfGzWR7D": "Bezaubert",
+      "RoINTVV5dmSu3Ebo": "Feuer-Fokus"
+    }
+  },
+  "dmgRingOfElement": {
+    "name": "Ring der Elementarbefehlsgewalt",
+    "description": "<p><em>Ring, Legendär (Benötigt Einstimmung)</em></p><p>Jeder Ring der\nElementarbefehlsgewalt ist mit einer der vier Elementarebenen verbunden. Der SL\nwählt oder bestimmt zufällig die verbundene Ebene. Zum Beispiel ist ein Ring der\nElementarbefehlsgewalt (Luft) mit der Elementarebene der\nLuft verbunden.</p><p>Jeder Ring der Elementarbefehlsgewalt hat die folgenden zwei\nEigenschaften:</p><p><strong>Elementarfluch.</strong> Während du den Ring trägst,\nhast du Vorteil auf Angriffswürfe gegen Elementare und sie haben\nNachteil auf Angriffswürfe gegen dich.</p><p><strong>Elementarer\nZwang.</strong> Während du den Ring trägst, kannst du eine Magie-Aktion ausführen,\num zu versuchen, ein Elementarwesen, das du innerhalb von 18 m von dir siehst, zu zwingen. Das\nElementarwesen macht einen SG 18 Weisheits-Rettungswurf. Bei einem misslungenen Rettungswurf hat das\nElementarwesen den Zustand Bezaubert bis zum Beginn deines nächsten Zuges, und\ndu bestimmst, was es mit seiner Bewegung und Aktion in seinem nächsten\nZug tut.</p><p><strong>Elementarer Fokus.</strong> Während du den Ring trägst, profitierst du\nvon zusätzlichen Eigenschaften, die der verbundenen Elementarebene des Rings\nentsprechen:</p><p><strong>Luft.</strong> Du sprichst Auran, du hast\nResistenz gegen Blitzschaden und du hast eine Flugbewegungsrate gleich deiner\nBewegungsrate und kannst schweben.</p><p><strong>Erde.</strong> Du sprichst Terran, und\ndu hast Resistenz gegen Säureschaden. Gelände, das aus Schutt, Felsen oder\nErde besteht, ist für dich kein schwieriges Gelände. Zusätzlich kannst du dich durch\nfeste Erde oder Felsen bewegen, als wären diese Bereiche schwieriges Gelände, ohne\ndie Materie, durch die du dich bewegst, zu stören. Wenn du deinen Zug in\nfester Erde oder Felsen beendest, wirst du in den nächsten unbesetzten Raum\ngeschoben, den du zuletzt besetzt hast.</p><p><strong>Feuer.</strong> Du sprichst Ignan, und du\nhast Immunität gegen Feuerschaden.</p><p><strong>Wasser.</strong> Du sprichst\nAquan, du erhältst eine Schwimmbewegungsrate von 18 m und du kannst unter Wasser\natmen.</p><p><strong>Zauberwirken.</strong> Der Ring hat 5 Ladungen\nund regeneriert täglich bei Sonnenaufgang 1W4 + 1 verbrauchte Ladungen. Während du den\nRing trägst, kannst du einen Zauber von ihm wirken. Wähle den Zauber aus der Liste der\nverfügbaren Zauber, basierend auf der Elementarebene, mit der der Ring verbunden ist, wie\nin der folgenden Tabelle gezeigt. Die Tabelle gibt an, wie viele Ladungen du\naufwenden musst, um den Zauber zu wirken, der einen Rettungswurf-SG von\n18 hat.</p><table><thead><tr><td><p>Ebene</p></td><td><p>Zauber\n(Ladungen)</p></td></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgAirRingOfElem]{Air\nRing}</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplChainLight]{Chain\nLightning} (3 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplFeatherFal]{Feather Fall} (0\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of\nWind} (2 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWindWall00]{Wind Wall} (1\nLadung)</p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgEarthRingOfEl]{Earth\nRing}</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplEarthquake]{Earthquake}\n(5 Ladungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplStoneShape]{Stone\nShape} (2 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplStoneskin0]{Stoneskin} (3\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofSton]{Wall of\nStone} (3\nLadungen)</p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgFireRingOfEle]{Fire\nRing}</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Burning\nHands} (1 Ladung),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball} (2\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplFireStorm0]{Fire\nStorm} (4 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of Fire} (3\nLadungen)</p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.equipment24.Item.dmgWaterRingOfEl]{Water\nRing}</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplCreateorDe]{Create\nor Destroy Water} (1 Ladung),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00]{Ice Storm} (2\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplTsunami000]{Tsunami}\n(5 Ladungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofIce0]{Wall\nof Ice} (3 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWaterWalk0]{Water Walk} (2\nLadungen)</p></td></tr></tbody></table>"
+  },
+  "dmgWaterRingOfEl": {
+    "name": "Wasser-Ring der Elementarbefehlsgewalt",
+    "description": "<p>Ring, Legendär (Benötigt Einstimmung)</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> ist mit einer der vier Elementarebenen verbunden. Der SL wählt\noder bestimmt zufällig die verbundene Ebene. Zum Beispiel ist ein <em>Ring der\nElementarbefehlsgewalt</em> (Luft) mit der Elementarebene der\nLuft verbunden.</p><p>Jeder <em>Ring der Elementarbefehlsgewalt</em> hat die folgenden zwei\nEigenschaften:</p><p><strong>Elementarfluch.</strong> Während du den Ring trägst,\nhast du Vorteil auf Angriffswürfe gegen Elementare und sie haben\nNachteil auf Angriffswürfe gegen dich.</p><p><strong>Elementarer\nZwang.</strong> Während du den Ring trägst, kannst du eine Magie-Aktion ausführen,\num zu versuchen, ein Elementarwesen, das du innerhalb von 18 m von dir siehst, zu zwingen. Das\nElementarwesen macht einen SG 18 Weisheits-Rettungswurf. Bei einem misslungenen Rettungswurf hat das\nElementarwesen den Zustand &amp;Reference[Charmed apply=false] bis zum\nBeginn deines nächsten Zuges, und du bestimmst, was es mit seiner Bewegung und\nAktion in seinem nächsten Zug tut.</p><p><em><strong>Elementarer Fokus.</strong></em>\nWährend du den Ring trägst, profitierst du von zusätzlichen Eigenschaften,\ndie der verbundenen Elementarebene des Rings\nentsprechen:</p><p><strong>Wasser.</strong> Du sprichst Aquan, du erhältst eine Schwimmbewegungsrate\nvon 18 m und du kannst unter Wasser\natmen.</p><p><em><strong>Zauberwirken.</strong></em> Der Ring hat 5\nLadungen und regeneriert täglich bei Sonnenaufgang 1W4 + 1 verbrauchte Ladungen. Während du den Ring trägst,\nkannst du einen Zauber von ihm wirken. Wähle den Zauber aus der Liste der\nverfügbaren Zauber, basierend auf der Elementarebene, mit der der Ring verbunden ist, wie\nin der folgenden Tabelle gezeigt. Die Tabelle gibt an, wie viele Ladungen du\naufwenden musst, um den Zauber zu wirken, der einen Rettungswurf-SG von\n18 hat.</p><table><thead><tr><th\nstyle=\"min-width:50px\"><p>Ebene</p></th><th><p>Zauber\n(Ladungen)</p></th></tr></thead><tbody><tr><td><p>Wasser</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplCreateorDe]{Create\nor Destroy Water} (1 Ladung),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00]{Ice Storm} (2\nLadungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplTsunami000]{Tsunami}\n(5 Ladungen), @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofIce0]{Wall\nof Ice} (3 Ladungen),\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWaterWalk0]{Water Walk} (2\nLadungen)</p></td></tr></tbody></table>",
+    "activities": {
+      "Elemental Compulsion": "Elementarer Zwang"
+    },
+    "effects": {
+      "cN85nWiTzfGzWR7D": "Bezaubert",
+      "T2Ca1y3uMstuVanT": "Wasser-Fokus"
+    }
+  },
+  "dmgRodOfLordlyMi": {
+    "name": "Stab der Herrschergewalt",
+    "description": "<p><em>Stab, Legendär (Benötigt Einstimmung)</em></p><p>Dieser Stab hat einen\ngeflanschten Kopf und fungiert als magischer Streitkolben, der einen Bonus von +3 auf\nAngriffs- und Schadenswürfe gewährt, die damit gemacht werden. Der Stab hat Eigenschaften,\ndie mit sechs verschiedenen Knöpfen verbunden sind, die in einer Reihe entlang des\nSchafts angeordnet sind. Er hat auch drei weitere Eigenschaften, die unten\ndetailliert sind.</p><p><em><strong>Knöpfe</strong></em>. Du kannst einen der\nfolgenden Knöpfe als Bonusaktion drücken; die Wirkung eines Knopfes hält an, bis du\neinen anderen Knopf drückst oder bis du denselben Knopf erneut drückst, was\ndazu führt, dass der Stab in seine normale Form zurückkehrt:</p><details><summary>Knopf-Effekte</summary><p><strong>Knopf 1.</strong> Eine feurige Klinge sprießt aus\ndem Ende gegenüber dem geflanschten Kopf des Stabes. Die Flammen spenden helles Licht in einem\nRadius von 12 m und dämmriges Licht für weitere 12 m, und die Klinge\nfungiert als magisches Langschwert oder Kurzschwert (deine Wahl), das einen\nzusätzlichen 2W6 Feuerschaden bei einem Treffer verursacht.</p><p><strong>Knopf 2.</strong> Der\ngeflanschte Kopf des Stabes klappt herunter und zwei halbmondförmige Klingen springen heraus,\nwodurch der Stab zu einer magischen Streitaxt wird, die einen Bonus von +3 auf\nAngriffs- und Schadenswürfe gewährt, die damit gemacht werden.</p><p><strong>Knopf\n3.</strong> Der geflanschte Kopf des Stabes klappt herunter, eine Speerspitze springt aus\nder Spitze des Stabes, und der Griff des Stabes verlängert sich zu einem 1,8 m langen Schaft,\nwodurch der Stab zu einem magischen Speer wird, der einen Bonus von +3 auf Angriffs-\nund Schadenswürfe gewährt, die damit gemacht werden.</p><p><strong>Knopf 4.</strong> Der\nStab verwandelt sich in eine Kletterstange von bis zu 15 m Länge (du gibst die\nLänge an), wobei die Knöpfe des Stabes in deiner Reichweite bleiben. In Oberflächen, die so\nhart wie Granit sind, verankern ein Dorn am unteren Ende und drei Haken am oberen Ende\ndie Stange. Horizontale, 7,6 cm lange Stangen klappen von den Seiten aus, 0,3 m\nvoneinander entfernt, und bilden eine Leiter. Die Stange kann bis zu 4.000 Pfund tragen. Mehr Gewicht\noder mangelnde feste Verankerung führt dazu, dass der Stab in seine normale\nForm zurückkehrt.</p><p><strong>Knopf 5.</strong> Der Stab verwandelt sich in einen handgehaltenen\nRammbock und gewährt seinem Benutzer einen Bonus von +10 auf Stärke (Athletik)-\nWürfe, die zum Durchbrechen von Türen, Barrikaden und anderen\nBarrieren gemacht werden.</p><p><strong>Knopf 6.</strong> Der Stab nimmt seine normale Form an oder\nbehält sie bei und zeigt den magnetischen Norden an. (Nichts geschieht, wenn diese\nFunktion des Stabes an einem Ort verwendet wird, der keinen magnetischen Norden hat.) Der\nStab gibt dir auch Kenntnis über deine ungefähre Tiefe unter der Erde\noder deine Höhe darüber.</p></details><p><strong>Lebensentzug.</strong> Wenn\ndu eine Kreatur mit einem Nahkampfangriff mit dem Stab triffst, kannst du das\nZiel zwingen, einen SG 17 Konstitutions-Rettungswurf zu machen. Bei einem misslungenen Rettungswurf erleidet das\nZiel zusätzlichen 4W6 nekrotischen Schaden, und du regenerierst eine Anzahl von Trefferpunkten,\ndie der Hälfte dieses nekrotischen Schadens entspricht. Einmal verwendet, kann diese Eigenschaft erst\nwieder bei der nächsten Morgendämmerung eingesetzt werden.</p><p><strong>Paralyse.</strong> Wenn\ndu eine Kreatur mit einem Nahkampfangriff mit dem Stab triffst, kannst du das\nZiel zwingen, einen SG 17 Konstitutions-Rettungswurf zu machen. Bei einem misslungenen Rettungswurf hat das\nZiel den Zustand &amp;Reference[Paralyzed apply=false] für 1\nMinute. Das Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge,\nund beendet den Effekt bei einem Erfolg. Einmal verwendet, kann diese Eigenschaft erst\nwieder bei der nächsten Morgendämmerung eingesetzt werden.</p><p><strong>Einschüchtern.</strong> Während du den\nStab hältst, kannst du eine Magie-Aktion ausführen, um jede Kreatur, die du\ninnerhalb von 9 m von dir sehen kannst, zu zwingen, einen SG 17 Weisheits-Rettungswurf zu machen. Bei einem\nmisslungenen Rettungswurf hat ein Ziel den Zustand &amp;Reference[Frightened apply=false]\nfür 1 Minute. Ein Verängstigtes Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge,\nund beendet den Effekt bei einem Erfolg. Einmal verwendet,\nkann diese Eigenschaft erst wieder bei der nächsten Morgendämmerung eingesetzt werden.</p><section\nclass=\"secret\" id=\"secret-o1BCgF1HX5lyWN4U\"><p><strong>Foundry-\nHinweis</strong></p><p>Für jeden nutzbaren Knopf wurde eine Aktivität hinzugefügt,\ndie den Angriff mit den entsprechenden Boni implementiert.</p><p>Die Eigenschaften sind\nauch als Aktivitäten implementiert und verfolgen ihre eigenen Verwendungen pro\nMorgendämmerung.</p><p>Bei Verwendung von Knopf 5 kannst du manuell einen Bonus von +10 im\nFeld 'Situativer Bonus' hinzufügen, wenn du den Wurf machst.</p></section>",
+    "activities": {
+      "Button 1 Attack": "Knopf 1 Angriff",
+      "Button 2 Attack": "Knopf 2 Angriff",
+      "Button 2 Versatile Attack": "Knopf 2 Vielseitiger Angriff",
+      "Button 3 Attack": "Knopf 3 Angriff",
+      "Drain Life": "Lebensentzug",
+      "Paralyze": "Paralyse",
+      "Terrify": "Einschüchtern"
+    },
+    "effects": {
+      "cBnYRJkAGVoHDyiN": "Verängstigt",
+      "vi5lX9Cyx51e2fNs": "Gelähmt"
+    }
+  },
+  "dmgRodOfResurrec": {
+    "name": "Stab der Wiederauferstehung",
+    "description": "<p><em>Stab, Legendär (Benötigt Einstimmung)</em></p><p>Der Stab hat 5\nLadungen. Während du ihn hältst, kannst du einen der folgenden Zauber von\nihm wirken: @UUID[Compendium.dnd5e.spells24.Item.phbsplHeal000000]{Heal} (verbraucht\n1 Ladung) oder\n@UUID[Compendium.dnd5e.spells24.Item.phbsplResurrecti]{Resurrection}\n(verbraucht 5 Ladungen).</p><p>Der Stab regeneriert täglich bei Sonnenaufgang 1 verbrauchte Ladung.\nWenn du die letzte Ladung verbrauchst, würfle [[/r 1d20]]. Bei einer 1 verschwindet der Stab\nin einem harmlosen Strahlenglanz.</p>"
+  },
+  "dmgRopeOfClimbin": {
+    "name": "Kletterseil",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Dieses 18 m lange Seil kann bis zu 3.000 Pfund tragen. Während du ein Ende des Seils hältst, kannst du eine Magie-Aktion ausführen, um dem anderen Ende des Seils zu befehlen, sich zu beleben und sich auf ein von dir gewähltes Ziel zuzubewegen, bis zur Länge des Seils von dir entfernt. Dieses Ende bewegt sich 3 m in deinem Zug, wenn du es zum ersten Mal befiehlst, und 3 m zu Beginn jedes deiner folgenden Züge, bis es sein Ziel erreicht oder bis du ihm sagst, es solle anhalten. Du kannst dem Seil auch befehlen, sich sicher an einem Objekt zu befestigen oder sich zu lösen, sich zu verknoten oder zu entknoten, oder sich zum Tragen aufzuwickeln.</p><p>Wenn du dem Seil befiehlst, sich zu verknoten, erscheinen große Knoten in Abständen von 0,3 m entlang des Seils. Während es verknotet ist, verkürzt sich das Seil auf eine Länge von 15 m und gewährt Vorteil auf Fertigkeitswürfe, die zum Klettern mit dem Seil gemacht werden.</p><p>Das Seil hat RK 20, 20 TP und Immunität gegen Gift- und Psychischen Schaden. Es regeneriert 1 Trefferpunkt alle 5 Minuten, solange es mindestens 1 Trefferpunkt hat. Wenn das Seil auf 0 Trefferpunkte fällt, wird es zerstört.</p><section class=\"secret\"\nid=\"secret-S4xxCILbyoIPQL7g\"><p><strong>Foundry-Hinweis</strong></p><p>Der Gegenstand enthält 20 Anwendungen zur Verfolgung seiner TP. Die Aktion <strong>Seil beschädigen</strong> kann verwendet werden, um Schaden zuzufügen, und die Aktion <strong>Seil reparieren</strong> kann verwendet werden, um seine TP wiederherzustellen.</p></section>",
+    "activities": {
+      "Command": "Befehlen",
+      "Damage Rope": "Seil beschädigen",
+      "Repair Rope": "Seil reparieren"
+    }
+  },
+  "dmgRopeOfEntangl": {
+    "name": "Seil der Verstrickung",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieses Seil ist 9 m lang. Während du ein Ende des Seils hältst, kannst du eine Magie-Aktion ausführen, um dem anderen Ende zu befehlen, vorzuschnellen und eine Kreatur, die du innerhalb von 6 m von dir sehen kannst, zu verstricken. Das Ziel muss einen Rettungswurf auf Geschicklichkeit SG 15 bestehen oder den Zustand &amp;Reference[Restrained apply=false] haben. Du kannst das Ziel freigeben, indem du dein Ende des Seils loslässt (wodurch sich das Seil im Raum des Ziels aufwickelt) oder indem du eine Bonusaktion verwendest, um den Befehl zu wiederholen (wodurch sich das Seil in deiner Hand aufwickelt).</p><p>Ein durch das Seil Fesselndes Ziel kann eine Aktion ausführen, um einen Stärke (Athletik) oder Geschicklichkeit (Akrobatik) Wurf SG 15 zu machen. Bei einem erfolgreichen Wurf ist das Ziel nicht länger durch das Seil Fesselnd. Wenn du das Seil noch hältst, wenn ein Ziel daraus entkommt, kannst du eine Reaktion ausführen, um dem Seil zu befehlen, sich in deiner Hand aufzuwickeln; andernfalls wickelt sich das Seil im Raum des Ziels auf.</p><p>Das Seil hat RK 20, 20 TP und Immunität gegen Gift- und Psychischen Schaden. Es regeneriert 1 Trefferpunkt alle 5 Minuten, solange es mindestens 1 Trefferpunkt hat. Wenn das Seil auf 0 Trefferpunkte fällt, wird es zerstört.</p><section class=\"secret\"\nid=\"secret-7RGkmfY1bTmeeb5L\"><p><strong>Foundry-Hinweis</strong></p><p>Der Gegenstand enthält 20 Anwendungen zur Verfolgung seiner TP. Die Aktion <strong>Seil beschädigen</strong> kann verwendet werden, um Schaden zuzufügen, und die Aktion <strong>Seil reparieren</strong> kann verwendet werden, um seine TP wiederherzustellen.</p><p>Die Aktion <strong>Entkommen</strong> kann verwendet werden, um einen Athletik- und Geschicklichkeitswurf in den Chat zu senden, damit das Ziel seinen Entkommen-Wurf machen kann.</p></section>",
+    "activities": {
+      "Damage Rope": "Seil beschädigen",
+      "Entangle": "Verstricken",
+      "Escape": "Entkommen",
+      "Repair Rope": "Seil reparieren"
+    }
+  },
+  "dmgScarabOfProte": {
+    "name": "Skarabäus des Schutzes",
+    "description": "<p><em>Wundersamer Gegenstand, Legendär (Benötigt Einstimmung)</em></p><p>Dieses käferförmige Medaillon bietet drei Vorteile, solange es sich an deiner Person befindet.</p><p><em><strong>Verteidigung.</strong></em> Du erhältst einen Bonus von +1 auf die Rüstungsklasse (RK).</p><p><em><strong>Bewahrung.</strong></em> Der Skarabäus hat 12 Ladungen. Wenn du einen Rettungswurf gegen einen Nekromantiezauber oder einen schädlichen Effekt, der von einem Untoten ausgeht, misslingst, kannst du eine Reaktion ausführen, um 1 Ladung zu verbrauchen und den misslungenen Rettungswurf in einen erfolgreichen umzuwandeln. Der Skarabäus zerfällt zu Pulver und wird zerstört, wenn seine letzte Ladung verbraucht ist.</p><p><em><strong>Zauberresistenz.</strong></em> Du hast Vorteil auf Rettungswürfe gegen Zauber.</p>",
+    "activities": {
+      "Preserve": "Bewahren"
+    }
+  },
+  "dmgSendingStones": {
+    "name": "Sendesteine",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p><em>Sendesteine</em> kommen paarweise vor, wobei jeder Stein so geschnitzt ist, dass er zum anderen passt, sodass die Paarung leicht zu erkennen ist. Während du einen Stein berührst, kannst du @UUID[Compendium.dnd5e.spells24.Item.phbsplSending000]{Sending} von ihm aus wirken. Das Ziel ist der Träger des anderen Steins. Wenn keine Kreatur den anderen Stein trägt, weißt du das, sobald du den Stein benutzt, und du wirkst den Zauber nicht.</p><p>Sobald <em>Botschaft</em> mit einem der Steine gewirkt wurde, können die Steine erst wieder bei der nächsten Morgendämmerung verwendet werden. Wenn einer der Steine eines Paares zerstört wird, wird der andere nichtmagisch.</p>"
+  },
+  "dmgStoneOfContro": {
+    "name": "Stein der Kontrolle über Erd-Elementare",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Während du diesen 5 Pfund schweren Stein auf den Boden legst, kannst du eine Magie-Aktion ausführen, um einen <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmEarthElemental]{Earth\nElemental}</strong> zu beschwören. Das Elementar erscheint in einem unbesetzten Raum deiner Wahl innerhalb von 9 m von dir, gehorcht deinen Befehlen und macht seinen Zug unmittelbar nach dir auf deinem Initiativwert. Das Elementar verschwindet nach 1 Stunde, wenn es stirbt oder wenn du es als Bonusaktion entlässt. Der Stein kann auf diese Weise erst wieder bei der nächsten Morgendämmerung verwendet werden.</p>",
+    "activities": {
+      "Summon Elemental": "Elementar beschwören"
+    }
+  },
+  "dmgTalismanOfPur": {
+    "name": "Talisman des reinen Guten",
+    "description": "<p><em>Wundersamer Gegenstand, Legendär (Benötigt Einstimmung durch einen Kleriker oder Paladin)</em></p><p>Dieser Talisman ist ein mächtiges Symbol des Guten. Ein Unhold oder Untoter, der den Talisman berührt, erleidet 8W6 gleißenden Schaden und erleidet den Schaden erneut, jedes Mal, wenn er seinen Zug beendet, während er den Talisman hält oder trägt.</p><p><em><strong>Heiliges Symbol.</strong></em> Du kannst den Talisman als Heiliges Symbol verwenden. Du erhältst einen Bonus von +2 auf Zauberangriffswürfe, während du ihn trägst oder hältst.</p><p><em><strong>Reiner Tadel.</strong></em> Der Talisman hat 7 Ladungen. Während du den Talisman trägst oder hältst, kannst du eine Magie-Aktion ausführen, um 1 Ladung zu verbrauchen und eine Kreatur anzuvisieren, die du auf dem Boden innerhalb von 36 m von dir sehen kannst. Eine flammende Spalte öffnet sich unter dem Ziel, und das Ziel macht einen Rettungswurf auf Geschicklichkeit SG 20. Wenn das Ziel ein Unhold oder ein Untoter ist, hat es Nachteil auf den Rettungswurf. Bei einem misslungenen Rettungswurf fällt das Ziel in die Spalte und wird zerstört, ohne Spuren zu hinterlassen. Bei einem erfolgreichen Rettungswurf wird das Ziel nicht in die Spalte geworfen, erleidet aber 4W6 psychischen Schaden durch die Tortur. In beiden Fällen schließt sich die Spalte dann und hinterlässt keine Spur ihrer Existenz. Wenn du die letzte Ladung verbrauchst, löst sich der Talisman in goldene Lichtpartikel auf und wird zerstört.</p>",
+    "activities": {
+      "Fiend and Undead Damage": "Schaden für Unholde und Untote",
+      "Pure Rebuke": "Reiner Tadel"
+    }
+  },
+  "dmgTalismanOfUlt": {
+    "name": "Talisman des ultimativen Bösen",
+    "description": "<p><em>Wundersamer Gegenstand, Legendär (Benötigt Einstimmung)</em></p><p>Dieser Gegenstand symbolisiert unbußfertiges Böses. Eine Kreatur, die kein Unhold oder Untoter ist und den Talisman berührt, erleidet 8W6 nekrotischen Schaden und erleidet den Schaden erneut, jedes Mal, wenn sie ihren Zug beendet, während sie den Talisman hält oder trägt.</p><p><em><strong>Heiliges Symbol.</strong></em> Du kannst den Talisman als Heiliges Symbol verwenden. Du erhältst einen Bonus von +2 auf Zauberangriffswürfe, während du ihn trägst oder hältst.</p><p><em><strong>Ultimatives Ende.</strong></em> Der Talisman hat 6 Ladungen. Während du den Talisman trägst oder hältst, kannst du eine Magie-Aktion ausführen, um 1 Ladung zu verbrauchen und eine Kreatur anzuvisieren, die du auf dem Boden innerhalb von 36 m von dir sehen kannst. Eine flammende Spalte öffnet sich unter dem Ziel, und das Ziel macht einen Rettungswurf auf Geschicklichkeit SG 20. Wenn das Ziel ein Himmlischer ist, hat es Nachteil auf den Rettungswurf. Bei einem misslungenen Rettungswurf fällt das Ziel in die Spalte und wird zerstört, ohne Spuren zu hinterlassen. Bei einem erfolgreichen Rettungswurf wird das Ziel nicht in die Spalte geworfen, erleidet aber 4W6 psychischen Schaden durch die Tortur. In beiden Fällen schließt sich die Spalte dann und hinterlässt keine Spur ihrer Existenz. Wenn du die letzte Ladung verbrauchst, löst sich der Talisman in übelriechenden Schleim auf und wird zerstört.</p>",
+    "activities": {
+      "Non-Fiend or Undead Damage": "Schaden für Nicht-Unholde oder Untote",
+      "Ultimate End": "Ultimatives Ende"
+    }
+  },
+  "dmgTomeOfClearTh": {
+    "name": "Wälzer des klaren Denkens",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Dieses Buch enthält Gedächtnis- und Logikübungen, und seine Worte sind mit Magie aufgeladen. Wenn du 48 Stunden über einen Zeitraum von 6 Tagen oder weniger damit verbringst, den Inhalt des Buches zu studieren und seine Richtlinien zu praktizieren, erhöht sich deine Intelligenz um 2, bis zu einem Maximum von 30. Das Handbuch verliert dann seine Magie, erlangt sie aber in einem Jahrhundert wieder.</p><section class=\"secret\"\nid=\"secret-IEz5CmdQakntpRWJ\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand enthält maximal 48 Anwendungen zur Verfolgung der gelesenen Stunden.</p><p>Die Aktion <strong>Lesen</strong> enthält einen Skalierungswert, mit dem du die Anzahl der gelesenen Stunden eingeben kannst. Sobald du 48 erreicht hast, kannst du den enthaltenen Aktiven Effekt verwenden, um deine Intelligenz zu erhöhen.</p><p>Die Aktion <strong>Fortschritt zurücksetzen</strong> setzt deine Anwendungen auf 0 zurück, wenn du das Buch nicht innerhalb von 6 Tagen abschließt und von vorne beginnen musst.</p></section>",
+    "activities": {
+      "Read": "Lesen",
+      "Reset Progress": "Fortschritt zurücksetzen"
+    }
+  },
+  "dmgTomeOfLeaders": {
+    "name": "Wälzer der Führung und des Einflusses",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Dieses Buch enthält Richtlinien, um andere zu beeinflussen und zu bezaubern, und seine Worte sind mit Magie erfüllt. Wenn du 48 Stunden über einen Zeitraum von 6 Tagen oder weniger damit verbringst, den Inhalt des Buches zu studieren und seine Richtlinien zu praktizieren, erhöht sich dein Charisma um 2, bis zu einem Maximum von 30. Das Handbuch verliert dann seine Magie, gewinnt sie aber in einem Jahrhundert wieder.</p><section class=\"secret\"\nid=\"secret-3CB9QWRmYLF6zQFy\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand beinhaltet 48 maximale Anwendungen, um die gelesenen Stunden zu verfolgen.</p><p>Die Aktivität <strong>Lesen</strong> beinhaltet einen skalierenden Wert, der es dir ermöglicht, die Anzahl der gelesenen Stunden einzugeben. Sobald du 48 erreicht hast, kannst du den enthaltenen Aktiven Effekt verwenden, um dein Charisma zu erhöhen.</p><p>Die Aktivität <strong>Fortschritt zurücksetzen</strong> setzt deine Anwendungen auf 0 zurück, falls du das Buch nicht innerhalb von 6 Tagen abschließt und von vorne beginnen musst.</p></section>",
+    "activities": {
+      "Read": "Lesen",
+      "Reset Progress": "Fortschritt zurücksetzen"
+    },
+    "effects": {
+      "9npFjYvEL3twc99F": "Anführer"
+    }
+  },
+  "dmgTomeOfUnderst": {
+    "name": "Wälzer des Verständnisses",
+    "description": "<p><em>Wundersamer Gegenstand, Sehr Selten</em></p><p>Dieses Buch enthält Übungen für Intuition und Einsicht, und seine Worte sind mit Magie erfüllt. Wenn du 48 Stunden über einen Zeitraum von 6 Tagen oder weniger damit verbringst, den Inhalt des Buches zu studieren und seine Richtlinien zu praktizieren, erhöht sich deine Weisheit um 2, bis zu einem Maximum von 30. Das Handbuch verliert dann seine Magie, gewinnt sie aber in einem Jahrhundert wieder.</p><section\nclass=\"secret\" id=\"secret-geGQeemrI6uIgb0R\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand beinhaltet 48 maximale Anwendungen, um die gelesenen Stunden zu verfolgen.</p><p>Die Aktivität <strong>Lesen</strong> beinhaltet einen skalierenden Wert, der es dir ermöglicht, die Anzahl der gelesenen Stunden einzugeben. Sobald du 48 erreicht hast, kannst du den enthaltenen Aktiven Effekt verwenden, um deine Weisheit zu erhöhen.</p><p>Die Aktivität <strong>Fortschritt zurücksetzen</strong> setzt deine Anwendungen auf 0 zurück, falls du das Buch nicht innerhalb von 6 Tagen abschließt und von vorne beginnen musst.</p></section>",
+    "activities": {
+      "Read": "Lesen",
+      "Reset Progress": "Fortschritt zurücksetzen"
+    },
+    "effects": {
+      "jXvtCEBoDCydH8fa": "Verständnis"
+    }
+  },
+  "dmg1WandOfTheWar": {
+    "name": "Stab des Kriegszauberers, +1, +2 oder +3",
+    "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcWand000000]{Wand}, Ungewöhnlich (+1), Selten (+2) oder Sehr Selten (+3) (Erfordert Einstimmung durch einen Zauberwirker)</em></p><p>Solange du diesen Stab hältst, erhältst du einen Bonus auf Zauberangriffswürfe, der durch die Seltenheit des Stabes bestimmt wird. Zusätzlich ignorierst du &amp;Reference[HalfCover], wenn du einen Zauberangriffswurf machst.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Wand of the War Mage, +1, +2, or +3": "Stab des Kriegszauberers, +1, +2 oder +3"
+    },
+    "effects": {
+      "7Pcy0FgaAr30JUBV": "Kriegszauberer +1",
+      "MFwYWOar805EHkdX": "Kriegszauberer +2",
+      "kejXxpJFzlSWcpm1": "Kriegszauberer +3"
+    }
+  },
+  "dmgWellOfManyWor": {
+    "name": "Brunnen vieler Welten",
+    "description": "<p><em>Wundersamer Gegenstand, Legendär</em></p><p>Dieses feine schwarze Tuch, weich wie Seide, ist auf die Größe eines Taschentuchs zusammengefaltet. Es entfaltet sich zu einem kreisförmigen Tuch von 1,8 m Durchmesser.</p><p>Du kannst eine Magie-Aktion ausführen, um den <em>Brunnen vieler Welten</em> zu entfalten und auf eine feste Oberfläche zu legen, woraufhin er ein zweiseitiges, 1,8 m Durchmesser großes, kreisförmiges Portal zu einer anderen Welt oder Existenzebene bildet. Jedes Mal, wenn der Gegenstand ein Portal öffnet, entscheidet der SL, wohin es führt. Das Portal bleibt offen, bis eine Kreatur innerhalb von 1,5 m Entfernung eine Magie-Aktion ausführt, um es zu schließen, indem sie die Ränder des Tuchs ergreift und es zusammenfaltet.</p><p>Sobald der <em>Brunnen vieler Welten</em> ein Portal geöffnet hat, kann er dies für [[/r 1d8 # Stunden]] Stunden nicht erneut tun.</p>",
+    "activities": {
+      "Unfold": "Entfalten"
+    }
+  },
+  "dmgWindFan000000": {
+    "name": "Windfächer",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Solange du diesen Fächer hältst, kannst du @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind} (SG 13) von ihm wirken. Jedes weitere Mal, wenn der Fächer vor der nächsten Morgendämmerung benutzt wird, besteht eine kumulative Chance von 20 Prozent, dass er nicht funktioniert; wenn der Fächer nicht funktioniert, zerreißt er zu nutzlosen, nicht-magischen Fetzen.</p><p><strong>Würfle für die Chance, dass er nicht funktioniert:</strong> [[/r 1d5cs&gt;@item.uses.spent]]</p><section class=\"secret\"\nid=\"secret-hNmHToEJ6Gg4usEf\"><p><strong>Foundry-Hinweis</strong></p><p>Jede Anwendung von Windstoß verbraucht eine Nutzung dieses Gegenstands und wird bei Morgendämmerung zurückgesetzt. Der obige Inline-Wurf würfelt 1W5 und prüft, ob der Wert höher ist als die Anzahl der Anwendungen, um die kumulative 20-prozentige Chance des Nichtfunktionierens zu handhaben. Er gibt „1“ zurück, wenn er erfolgreich ist, und „0“, wenn er fehlschlägt.</p></section>",
+    "activities": {
+      "Gust of Wind": "Windstoß"
+    }
+  },
+  "dmgClawedGauntle": {
+    "name": "Klauenbewehrter Handschuh",
+    "description": "<p><em>Siehe: @UUID[Compendium.dnd5e.equipment24.Item.dmgDemonArmor000]</em></p><p>Die klauenbewehrten Handschuhe der Rüstung ermöglichen es deinen unbewaffneten Schlägen, 1W8 Hiebschaden anstelle des üblichen Wuchtschadens zu verursachen, und du erhältst einen Bonus von +1 auf die Angriffs- und Schadenswürfe deiner unbewaffneten Schläge.</p>"
+  },
+  "dmgsupRingofResi": {
+    "name": "Ring"
+  },
+  "dmgsupBasicScrol": {
+    "name": "Schriftrolle"
+  },
+  "phbgstDice000000": {
+    "name": "Würfel",
+    "description": "<p><strong>Attribut:</strong> Weisheit</p><p\nclass=\"phb-meta\"><strong>Nutzen:</strong> Erkennen, ob jemand\nschummelt (SG 10), oder das Spiel gewinnen (SG 20)</p>",
+    "activities": {
+      "Catch Cheating": "Schummeln erkennen",
+      "Play to Win": "Auf Sieg spielen"
+    }
+  },
+  "phbgstDragonches": {
+    "name": "Drachenschach",
+    "description": "<p><strong>Attribut:</strong> Weisheit</p><p\nclass=\"phb-meta\"><strong>Nutzen:</strong> Erkennen, ob jemand\nschummelt (SG 10), oder das Spiel gewinnen (SG 20)</p>",
+    "activities": {
+      "Catch Cheating": "Schummeln erkennen",
+      "Play to Win": "Auf Sieg spielen"
+    }
+  },
+  "phbgstPlayingcar": {
+    "name": "Spielkarten",
+    "description": "<p><strong>Attribut:</strong> Weisheit</p><p\nclass=\"phb-meta\"><strong>Nutzen:</strong> Erkennen, ob jemand\nschummelt (SG 10), oder das Spiel gewinnen (SG 20)</p>",
+    "activities": {
+      "Catch Cheating": "Schummeln erkennen",
+      "Play to Win": "Auf Sieg spielen"
+    }
+  },
+  "phbgstThreedrago": {
+    "name": "Drei-Drachen-Ante",
+    "description": "<p><strong>Attribut:</strong> Weisheit</p><p\nclass=\"phb-meta\"><strong>Nutzen:</strong> Erkennen, ob jemand\nschummelt (SG 10), oder das Spiel gewinnen (SG 20)</p>",
+    "activities": {
+      "Catch Cheating": "Schummeln erkennen",
+      "Play to Win": "Auf Sieg spielen"
+    }
+  },
+  "dmgBerserkerAxe0": {
+    "name": "Berserkeraxt",
+    "description": "<div><p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepBattleaxe0]{Battleaxe},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreataxe00]{Greataxe}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepHalberd000]{Halberd}), Selten\n(Benötigt Einstimmung)</em></p><p>Du erhältst einen Bonus von +1 auf Angriffs- und\nSchadenswürfe, die mit dieser magischen Waffe gemacht werden. Solange du an\ndiese Waffe eingestimmt bist, erhöht sich dein maximaler Trefferpunkte um 1 für jede\nStufe, die du erreicht hast.</p><section class=\"secret\"\nid=\"secret-kIoBCQDeN3tTKast\"><p><strong>Fluch.</strong> Diese Waffe ist\nverflucht, und die Einstimmung auf sie überträgt den Fluch auf dich. Solange\ndu verflucht bleibst, bist du nicht bereit, dich von der Waffe zu trennen, und hältst sie\njederzeit in Reichweite. Du hast außerdem Nachteil auf Angriffswürfe mit\nanderen Waffen als dieser.</p><p>Immer wenn eine andere Kreatur dir Schaden\nzufügt, während du die Waffe besitzt, musst du einen erfolgreichen [[/save\nability=wis dc=15 format=long]] ablegen oder in einen Berserkerrausch verfallen. Dieser Berserkerrausch endet,\nwenn du deinen Zug beginnst und keine Kreaturen innerhalb von 18 m von dir\nsind, die du sehen oder hören kannst.</p><p>Während du im Berserkerrausch bist, betrachtest du die Kreatur,\ndie dir am nächsten ist und die du sehen oder hören kannst, als deinen Feind. Wenn es\nmehrere mögliche Kreaturen gibt, wähle eine zufällig aus. In jedem deiner Züge,\nmusst du dich der Kreatur so weit wie möglich nähern und die Aktion Angriff\nausführen, wobei du die Kreatur als Ziel wählst. Wenn du nicht nah genug an die\nKreatur herankommst, um sie mit der Waffe anzugreifen, endet dein Zug, nachdem du\ndeine gesamte verfügbare Bewegung aufgebraucht hast. Wenn die Kreatur stirbt oder von dir nicht mehr\ngesehen oder gehört werden kann, wird die nächste Kreatur, die du sehen oder\nhören kannst, dein neues Ziel.</p></section></div><p>\n@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Berserker Axe": "Berserkeraxt"
+    },
+    "effects": {
+      "J4bEaPvFwAGKSrPm": "Berserker TP-Erhöhung"
+    }
+  },
+  "dmgDancingSword0": {
+    "name": "Tanzendes Schwert",
+    "description": "<div><p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}),\nSehr Selten (Benötigt Einstimmung)</em></p></div><p>Du kannst eine Bonusaktion nutzen,\num diese magische Waffe in die Luft zu werfen. Wenn du dies tust, beginnt die Waffe\nzu schweben, fliegt bis zu 9 m weit und greift eine Kreatur deiner\nWahl innerhalb von 1,5 m von sich selbst an. Die Waffe verwendet deinen Angriffswurf und addiert\ndeinen Attributsmodifikator zu den Schadenswürfen.</p><p>Während die Waffe schwebt, kannst du\neine Bonusaktion nutzen, um sie bis zu 9 m weit zu einem anderen Punkt\ninnerhalb von 9 m von dir fliegen zu lassen. Als Teil derselben Bonusaktion kannst du die\nWaffe eine Kreatur innerhalb von 1,5 m von der Waffe angreifen lassen.</p><p>Nachdem die\nschwebende Waffe zum vierten Mal angegriffen hat, fliegt sie zu dir zurück und\nversucht, in deine Hand zurückzukehren. Wenn du keine Hand frei hast, fällt die Waffe\nin deinem Feld zu Boden. Wenn die Waffe keinen freien Weg zu\ndir hat, bewegt sie sich so nah wie möglich an dich heran und fällt dann zu Boden. Sie\nhört auch auf zu schweben, wenn du sie ergreifst oder mehr als 9 m von\nihr entfernt bist.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Activate Sword: Dexterity": "Schwert aktivieren: Geschicklichkeit",
+      "Activate Sword: Stength": "Schwert aktivieren: Stärke",
+      "Dancing Sword": "Tanzendes Schwert"
+    }
+  },
+  "dmgDefender00000": {
+    "name": "Verteidiger",
+    "description": "<p><em>Waffe (Beliebige Nahkampfwaffe), Legendär (Benötigt\nEinstimmung)</em></p><p>Du erhältst einen Bonus von +3 auf Angriffs- und Schadenswürfe,\ndie mit dieser magischen Waffe gemacht werden.</p><p>Das erste Mal, wenn du\nin jedem deiner Züge mit der Waffe angreifst, kannst du einen Teil oder den gesamten\nBonus der Waffe auf deine Rüstungsklasse übertragen. Zum Beispiel könntest du den\nBonus auf deine Angriffs- und Schadenswürfe auf +1 reduzieren und einen Bonus von +2 auf\ndie Rüstungsklasse erhalten. Die angepassten Boni bleiben bis zum Beginn deines\nnächsten Zuges in Kraft, obwohl du die Waffe halten musst, um einen RK-Bonus von\nihr zu erhalten.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Defender": "Verteidiger"
+    },
+    "effects": {
+      "yBwZfNAoRtuUk5mz": "Übertragener RK-Bonus: 1",
+      "jiyXZKFtvIRlZfh2": "Übertragener RK-Bonus: 2",
+      "v3JBpJJorZfV3fXj": "Übertragener RK-Bonus: 3"
+    }
+  },
+  "dmgDragonSlayer0": {
+    "name": "Drachentöter",
+    "description": "<p><em>Waffe (Beliebige Einfache oder Kriegswaffe), Selten</em></p><p>Du erhältst einen Bonus\nvon +1 auf Angriffs- und Schadenswürfe, die mit dieser magischen Waffe gemacht werden.</p><p>Die\nWaffe verursacht zusätzlich 3W6 Schaden des Waffentyps, wenn das Ziel ein\nDrache ist.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Dragon Slayer": "Drachentöter"
+    }
+  },
+  "dmgEnergyBow0000": {
+    "name": "Energiebogen",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongbow000]{Longbow} oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}), Sehr\nSelten (Benötigt Einstimmung)</em></p><p>Du erhältst einen Bonus von +1 auf Angriffs-\nund Schadenswürfe, die du mit dieser magischen Waffe machst, die keine Sehne besitzt. Jedes\nMal, wenn du deinen Arm in einer Schussbewegung zurückziehst, erscheint ein magischer Pfeil aus\ngoldener Energie, der eingelegt und schussbereit ist. Ein von dieser\nWaffe erzeugter Pfeil verursacht bei einem Treffer Energieschaden anstelle von Stichschaden und\nverschwindet, nachdem er sein Ziel getroffen oder verfehlt hat. Bis er verschwindet, strahlt der\nPfeil helles Licht in einem Radius von 6 m und schwaches Licht für weitere\n6 m aus.</p><p>Diese Waffe besitzt die folgenden zusätzlichen\nEigenschaften.</p><details><summary><strong>Pfeil der\nFesselung.</strong></summary><p>Wann immer du diese Waffe benutzt, um einen\nFernkampfangriff gegen eine Kreatur zu machen, kannst du versuchen, das Ziel zu\nfesseln, anstatt ihm Schaden zuzufügen. Wenn der Pfeil trifft, muss das Ziel einen\nerfolgreichen [[/save ability=str dc=15 format=long]] ablegen oder ist für 1 Minute\n&amp;Reference[Restrained apply=false]. Als\nAktion kann eine Kreatur, die durch einen Pfeil gefesselt ist, einen [[/check ability=str\nskill=ath dc=20 format=long]] ablegen, um zu versuchen, die Fesselung zu brechen, wodurch der\nEffekt bei einem erfolgreichen Wurf auf sich selbst\nendet.</p></details><details><summary><strong>Pfeil des\nTransports.</strong></summary><p>Als Magie-Aktion kannst du einen Energiepfeil\nvon dieser Waffe auf ein Ziel abfeuern, das du innerhalb von 18 m von dir sehen kannst.\nDas Ziel kann entweder eine willige Kreatur der Größe Mittel oder kleiner sein oder ein Gegenstand,\nder nicht getragen oder gehalten wird, vorausgesetzt, der Gegenstand ist klein genug, um\nin einen 5-Fuß-Würfel zu passen. Der Pfeil teleportiert das Ziel zu einem unbesetzten\nFeld, das du innerhalb von 3 m von dir sehen\nkannst.</p></details><details><summary><strong>Energieleiter.</strong></summary><p>Als Magie-Aktion kannst du einen Hagel von\nEnergiepfeilen von dieser Waffe auf eine Wand bis zu 18 m von dir entfernt abfeuern.\nDie Pfeile werden zu leuchtenden Sprossen, die aus der Wand ragen und eine\nmagische Leiter von bis zu 18 m Länge an der Wand bilden. Diese Leiter hält 1\nMinute lang, bevor sie verschwindet.</p></details><p>\n@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Arrow of Restraint": "Pfeil der Fesselung",
+      "Arrow of Transport": "Pfeil des Transports",
+      "Energy Bow": "Energiebogen",
+      "Energy Ladder": "Energieleiter"
+    },
+    "effects": {
+      "Yw1oocFffwM4cePn": "Gefesselt (Pfeil der Fesselung)"
+    }
+  },
+  "dmgFlameTongue00": {
+    "name": "Flammenzunge",
+    "description": "<p><em>Waffe (Beliebige Nahkampfwaffe), Selten (Benötigt\nEinstimmung)</em></p><p>Während du diese magische Waffe hältst, kannst du eine\nBonusaktion ausführen und ein Befehlswort verwenden, um Flammen den <span\nclass=\"no-break\">Schaden</span> verursachenden Teil der Waffe umhüllen zu lassen. Diese Flammen\nspenden helles Licht in einem Radius von 12 m und schwaches Licht für weitere 12 m. Solange die Waffe brennt, verursacht sie bei einem Treffer zusätzlich 2W6 Feuerschaden.\nDie Flammen halten an, bis du eine Bonusaktion ausführst, um den Befehl\nerneut zu geben, oder bis du die Waffe fallen lässt, verstaust oder\neinsteckst.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Engulf in Flames": "In Flammen hüllen",
+      "Flame Tongue": "Flammenzunge"
+    }
+  },
+  "dmgFrostBrand000": {
+    "name": "Frostbrand",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}),\nSehr Selten (Benötigt Einstimmung)</em></p><p>Wenn du mit einem Angriffs-\nwurf mit dieser magischen Waffe triffst, erleidet das Ziel zusätzlich 1W6 Kälteschaden.\nZusätzlich hast du, während du die Waffe hältst, Resistenz gegen Feuerschaden.</p><p>Bei eisigen Temperaturen spendet die Waffe helles Licht in einem\nRadius von 3 m und schwaches Licht für weitere 3 m.</p><p>Wenn du\ndiese Waffe ziehst, kannst du alle nicht-magischen Flammen innerhalb von 9 m\nvon dir löschen. Einmal verwendet, kann diese Eigenschaft 1\nStunde lang nicht wieder verwendet werden.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Frost Brand": "Frostbrand"
+    },
+    "effects": {
+      "6iBMqwU8is1D54T3": "Feuerresistenz"
+    }
+  },
+  "dmgGiantSlayer00": {
+    "name": "Riesentöter",
+    "description": "<p><em>Waffe (Beliebige Einfache oder Kriegswaffe), Selten</em></p><p>Du erhältst einen Bonus von +1\nauf Angriffs- und Schadenswürfe, die du mit dieser magischen Waffe machst.</p><p>Wenn\ndu einen Riesen mit dieser Waffe triffst, erleidet der Riese zusätzlich 2W6 Schaden des\nWaffentyps und muss einen erfolgreichen SG 15 Stärke-Rettungswurf ablegen oder\nist im Zustand Liegend.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Attack vs Giant": "Angriff gegen Riesen",
+      "Giant Slayer": "Riesentöter"
+    }
+  },
+  "dmgHolyAvenger00": {
+    "name": "Heiliger Rächer",
+    "description": "<p><em>Waffe (Beliebige Einfache oder Kriegswaffe), Legendär (Benötigt Einstimmung durch einen\nPaladin)</em></p><p>Du erhältst einen Bonus von +3 auf Angriffs- und Schadenswürfe,\ndie du mit dieser magischen Waffe machst. Wenn du einen Feind oder einen Untoten damit triffst,\nerleidet diese Kreatur zusätzlich 2W10 gleißenden Schaden.</p><p>Während du die\ngezogene Waffe hältst, erzeugt sie eine 3 m große Emanation, die von dir ausgeht. Du und\nalle dir freundlich gesinnten Kreaturen in der Emanation haben Vorteil auf Rettungswürfe\ngegen Zauber und andere magische Effekte. Wenn du 17 oder mehr\nStufen in der Paladinklasse hast, erhöht sich die Größe der Emanation auf 9 m.</p><p>[[10 + floor(@classes.paladin.levels / 17) * 20]]{Emanationsgröße\n(Fuß)}</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Holy Avenger": "Heiliger Rächer"
+    }
+  },
+  "dmgLuckBlade0000": {
+    "name": "Glücksklinge",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSickle0000]{Sickle}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}),\nLegendär (Benötigt Einstimmung)</em></p><p>Du erhältst einen Bonus von +1 auf Angriffs-\nund Schadenswürfe, die du mit dieser magischen Waffe machst. Solange die Waffe bei\ndir ist, erhältst du außerdem einen Bonus von +1 auf Rettungswürfe.</p><p><strong>Glück.</strong> Wenn die Waffe bei dir ist, kannst du\nihr Glück herbeirufen (keine Aktion erforderlich), um einen fehlgeschlagenen W20-Wurf zu wiederholen,\nfalls du nicht den Zustand Handlungsunfähig hast. Du musst den zweiten Wurf verwenden.\nEinmal verwendet, kann diese Eigenschaft erst wieder bei der nächsten\nMorgendämmerung verwendet werden.</p><p><strong>Wunsch.</strong> Die Waffe hat [[/r 1d3#Anfängliche\nLadungen]] Ladungen. Während du sie hältst, kannst du 1 Ladung verbrauchen und\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em> von\nihr wirken. Einmal verwendet, kann diese Eigenschaft erst wieder bei der nächsten Morgendämmerung verwendet werden. Die\nWaffe verliert diese Eigenschaft, wenn sie keine Ladungen mehr\nhat.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Luck": "Glück",
+      "Luck Blade": "Glücksklinge"
+    },
+    "effects": {
+      "bDZufQP0jaHOUY6j": "Bonus auf Rettungswürfe"
+    }
+  },
+  "dmgNineLivesStea": {
+    "name": "Neun-Leben-Stehler",
+    "description": "<p><em>Waffe (Beliebige Einfache oder Kriegswaffe), Sehr Selten (Benötigt\nEinstimmung)</em></p><p>Du erhältst einen Bonus von +2 auf Angriffs- und Schadenswürfe,\ndie du mit dieser magischen Waffe machst.</p><p><strong>Lebensraub.</strong>\nDie Waffe hat [[/r 1d8 + 1]] Ladungen. Wenn du eine Kreatur mit weniger als 100 Trefferpunkten\nmit dieser Waffe angreifst und eine 20 auf dem W20 für den Angriffswurf würfelst, muss die Kreatur einen\nerfolgreichen SG 15 Konstitutions-Rettungswurf ablegen oder wird sofort getötet, da das Schwert ihre Lebenskraft aus ihrem\nKörper reißt. Konstrukte und Untote bestehen den Rettungswurf automatisch. Die Waffe\nverliert 1 Ladung, wenn die Kreatur getötet wird. Wenn die Waffe keine Ladungen\nmehr hat, verliert sie diese Eigenschaft.</p><section class=\"secret\"\nid=\"secret-vSYC0gYqNiDynkjf\"><p><strong>Foundry-Hinweis</strong></p><p>Die\n<strong>Lebensraub</strong>-Aktivität sollte mit ihrer maximalen\nNutzung auf die Anzahl der gewürfelten Ladungen aktualisiert werden.</p></section><p>\n@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Life Stealing": "Lebensraub",
+      "Nine Lives Stealer": "Neun-Leben-Stehler"
+    }
+  },
+  "dmgQuarterstaffO": {
+    "name": "Akrobaten-Langstab",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}),\nSehr Selten (Benötigt Einstimmung)</em></p><p>Du hast einen Bonus von +2 auf Angriffs-\nund Schadenswürfe, die du mit dieser magischen Waffe machst.</p><p>Während du diese Waffe hältst,\nkannst du sie dazu bringen, grünes schwaches Licht bis zu 3 m weit auszustrahlen,\nentweder als Bonusaktion oder nachdem du die Initiative gewürfelt hast, oder du kannst das Licht als Bonusaktion löschen.</p><p>Während du diese Waffe hältst,\nkannst du eine Bonusaktion ausführen, um ihre Form zu ändern, sie in einen 6-Zoll-Stab (zur einfachen Aufbewahrung)\noder eine 10-Fuß-Stange zu verwandeln oder sie in einen Langstab zurückzuverwandeln; die Waffe verlängert sich nur so weit,\nwie der umgebende Raum es zulässt.</p><p>In bestimmten Formen besitzt die Waffe die folgenden\nzusätzlichen Eigenschaften.</p><p><em><strong>Akrobatische Unterstützung (Nur Langstab- oder\n10-Fuß-Stangenformen).</strong></em> Während du diese Waffe hältst, hast du\nVorteil auf Geschicklichkeit (Akrobatik)-Würfe.</p><p><em><strong>Angriffsabwehr (Nur Langstabform).</strong></em> Wenn du von einem\nAngriff getroffen wirst, während du die Waffe hältst, kannst du eine Reaktion ausführen, um die\nWaffe um dich herumzuwirbeln, wodurch du einen Bonus von +5 auf deine Rüstungsklasse gegen den\nauslösenden Angriff erhältst, was den Angriff möglicherweise dazu bringt, dich zu verfehlen. Du kannst\ndiese Eigenschaft erst wieder verwenden, nachdem du eine kurze oder lange\nRast beendet hast.</p><p><em><strong>Fernkampfwaffe (Nur Langstabform).</strong></em> Diese Waffe hat die Eigenschaft Werfbar mit einer normalen\nReichweite von 9 m und einer langen Reichweite von 36 m. Unmittelbar nachdem du einen\nFernkampfangriff mit der Waffe ausgeführt hast, fliegt sie in deine Hand zurück.</p>",
+    "activities": {
+      "Attack Deflection": "Angriffsabwehr"
+    }
+  },
+  "dmgSwordOfLifeSt": {
+    "name": "Schwert des Lebensentzugs",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}),\nSelten (Benötigt Einstimmung)</em></p><p>Wenn du eine Kreatur mit dieser\nmagischen Waffe angreifst und bei dem Angriffswurf eine 20 auf dem W20 würfelst, erleidet das Ziel\nzusätzlich 15 nekrotischen Schaden, wenn es kein Konstrukt oder Untoter ist,\nund du erhältst temporäre Trefferpunkte in Höhe des erlittenen nekrotischen Schadens.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Sword of Life Stealing": "Schwert des Lebensentzugs"
+    }
+  },
+  "dmgSwordOfSharpn": {
+    "name": "Schwert der Schärfe",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}), Sehr\nselten (Benötigt Einstimmung)</em></p><p>Wenn du ein Objekt mit dieser\nmagischen Waffe angreifst und triffst, maximierst du deine Waffenschadenswürfel gegen das\nZiel.</p><p>Wenn du eine Kreatur mit dieser Waffe angreifst und bei dem Angriffswurf eine 20 auf\ndem W20 würfelst, erleidet das Ziel zusätzlich 14 Hiebschaden\nund erhält <span class=\"no-break\">1 &amp;Reference[Exhaustion]</span>\nStufe.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Sword of Sharpness": "Schwert der Schärfe"
+    }
+  },
+  "dmgSwordOfWoundi": {
+    "name": "Schwert der Verwundung",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepRapier0000]{Rapier},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortsword]{Shortsword}),\nSelten (Benötigt Einstimmung)</em></p><p>Wenn du eine Kreatur mit einem\nAngriff mit dieser magischen Waffe triffst, erleidet das Ziel zusätzlich 2W6 nekrotischen\nSchaden und muss einen Rettungswurf auf Konstitution gegen SG 15 bestehen, oder es kann\n1 Stunde lang keine Trefferpunkte zurückgewinnen. Das Ziel wiederholt den Rettungswurf am Ende jedes\nseiner Züge und beendet den Effekt bei einem\nErfolg.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Sword of Wounding": "Schwert der Verwundung",
+      "Sword of Wounding Save": "Rettungswurf des Schwertes der Verwundung"
+    },
+    "effects": {
+      "UeuDQeM3fRIB0aMN": "Verwundet und kann nicht heilen"
+    }
+  },
+  "dmgThunderousGre": {
+    "name": "Donnernder Großknüppel",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatclub0]{Greatclub}),\nSehr selten (Benötigt Einstimmung)</em></p><p>Solange du an diese\nmagische Waffe eingestimmt bist, beträgt deine Stärke 20, es sei denn, deine Stärke ist bereits gleich\noder größer als dieser Wert. Die Waffe verursacht zusätzlich 1W8 Donnerschaden\nbei jeder Kreatur, die sie trifft, und zusätzlich 3W8 Donnerschaden bei Objekten, die sie trifft\nund die nicht getragen werden.</p><p>Die Waffe hat die folgenden\nzusätzlichen Eigenschaften.</p><p><em><strong>Donnerschlag.</strong></em> Als\neine Magische Aktion kannst du die Waffe gegen eine harte Oberfläche schlagen, um\neinen lauten Donnerschlag zu erzeugen, der bis zu 90 m weit hörbar ist. Du erzeugst außerdem einen 9 m\ngroßen Kegel aus donnernder Energie. Jede Kreatur im Kegel muss einen Rettungswurf auf\nStärke gegen SG 15 bestehen oder erhält den Zustand Liegend. Nichtmagische Objekte\nim Kegel, die nicht getragen werden, erleiden [[/damage 3d8\ntype=thunder]] Schaden.</p><p><em><strong>Erdbeben.</strong></em> Als eine\nMagische Aktion kannst du die Waffe gegen den Boden schlagen, um eine\nintensive seismische Störung in einem Kreis von 15 m Radius zu erzeugen, der auf dem\nEinschlagpunkt zentriert ist. Strukturen, die in diesem Bereich mit dem Boden in Kontakt sind, erleiden\n50 Wuchtschaden, und jede Kreatur auf dem Boden in diesem Bereich muss\neinen Rettungswurf auf Geschicklichkeit gegen SG 20 bestehen oder erhält den Zustand Liegend. Wenn\ndiese Kreatur auch konzentriert, muss sie einen [[/save con 20]]\nRettungswurf bestehen, oder ihre Konzentration wird gebrochen. Zusätzlich kannst du eine\n9 m tiefe, 3 m breite Spalte im Boden an einer beliebigen Stelle in\ndiesem Bereich öffnen lassen. Jede Kreatur an einer Stelle, an der sich die Spalte öffnet, muss einen\nRettungswurf auf Geschicklichkeit gegen SG 20 bestehen; bei einem misslungenen Rettungswurf fällt sie in die Spalte,\nbei einem erfolgreichen bewegt sie sich mit dem Rand der Spalte. Jede Struktur an einer\nStelle, an der sich die Spalte öffnet, stürzt in die Spalte. Sobald du diese\nEigenschaft benutzt hast, kann sie erst nach der nächsten Morgendämmerung wieder verwendet werden.</p>",
+    "activities": {
+      "Clap of Thunder": "Donnerschlag",
+      "Earthquake: Concentration Save": "Erdbeben: Konzentrations-Rettungswurf",
+      "Earthquake: Fissure": "Erdbeben: Spalte",
+      "Earthquake: Object Damage": "Erdbeben: Objektschaden",
+      "Earthquake: Save": "Erdbeben: Rettungswurf"
+    },
+    "effects": {
+      "c8qf2gTNGwdg4hTP": "Donnernde Stärke",
+      "Rg9qnmIespepasJN": "Liegend"
+    }
+  },
+  "dmgViciousWeapon": {
+    "name": "Bösartige Waffe",
+    "description": "<p><em>Waffe (Beliebig Einfach oder Militärisch), Selten</em></p><p>Diese magische Waffe\nverursacht zusätzlich 2W6 Schaden bei jeder Kreatur, die sie trifft. Dieser zusätzliche Schaden ist vom\ngleichen Typ wie der normale Schaden der\nWaffe.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Vicious Weapon": "Bösartige Waffe"
+    }
+  },
+  "dmgVorpalSword00": {
+    "name": "Vorpal-Schwert",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGlaive0000]{Glaive},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatsword]{Greatsword},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepLongsword0]{Longsword}, oder\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}),\nLegendär (Benötigt Einstimmung)</em></p><p>Du erhältst einen Bonus von +3 auf Angriffs-\nund Schadenswürfe, die mit dieser magischen Waffe gemacht werden. Zusätzlich\nignoriert die Waffe Resistenzen gegen Hiebschaden.</p><p>Wenn du diese\nWaffe benutzt, um eine Kreatur anzugreifen, die mindestens einen Kopf hat, und bei dem Angriffswurf eine 20 auf\ndem W20 würfelst, schneidest du einen der Köpfe der Kreatur ab. Die\nKreatur stirbt, wenn sie ohne den verlorenen Kopf nicht überleben kann. Eine Kreatur ist\nimmun gegen diesen Effekt, wenn sie Immunität gegen Hiebschaden besitzt, wenn sie keinen\nKopf hat oder braucht, oder wenn der SL entscheidet, dass die Kreatur zu groß ist, um\nihren Kopf mit dieser Waffe abzuschneiden. Eine solche Kreatur erleidet stattdessen\nzusätzlich 30 Hiebschaden durch den Treffer. Wenn die Kreatur Legendäre\nResistenz besitzt, kann sie eine tägliche Anwendung dieser Eigenschaft aufwenden, um den Verlust ihres\nKopfes zu vermeiden und stattdessen den zusätzlichen Schaden zu\nerleiden.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Vorpal Sword": "Vorpal-Schwert"
+    }
+  },
+  "dmgWeapon12or300": {
+    "name": "Waffe, +1, +2 oder +3",
+    "description": "<p><em>Waffe (Beliebig Einfach oder Militärisch), Ungewöhnlich (+1), Selten (+2) oder Sehr\nselten (+3)</em></p><p>Du erhältst einen Bonus auf Angriffs- und Schadenswürfe,\ndie mit dieser magischen Waffe gemacht werden. Der Bonus wird durch die\nSeltenheit der Waffe bestimmt.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Weapon, +1, +2, or +3": "Waffe, +1, +2 oder +3"
+    }
+  },
+  "dmgWeaponOfWarni": {
+    "name": "Waffe der Warnung",
+    "description": "<p><em>Waffe (Beliebig Einfach oder Militärisch), Ungewöhnlich (Benötigt\nEinstimmung)</em></p><p>Solange diese Waffe in deiner Reichweite ist und du\nan sie eingestimmt bist, erhalten du und Verbündete innerhalb von 9 m von dir die folgenden\nVorteile.</p><p><strong>Alarm.</strong> Die Waffe weckt magisch jedes\nSubjekt, das natürlich schläft, wenn der Kampf beginnt. Dieser Vorteil weckt ein\nSubjekt nicht aus magisch induziertem Schlaf.</p><p><strong>Übernatürliche\nBereitschaft.</strong> Jedes Subjekt hat Vorteil auf seine Initiativwürfe.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "activities": {
+      "Weapon of Warning": "Waffe der Warnung"
+    },
+    "effects": {
+      "n5EfmSzKBsi01b7Z": "Übernatürliche Bereitschaft: Vorteil auf Initiative"
+    }
+  },
+  "phbwepMusket0000": {
+    "name": "Muskete"
+  },
+  "phbwepPistol0000": {
+    "name": "Pistole"
   }
 };
