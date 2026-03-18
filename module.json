@@ -23,6 +23,9 @@
     "scripts/babele-register.js",
     "scripts/init.js"
   ],
+  "styles": [
+    "styles/modesto-font-fix.css"
+  ],
   "packs": [
     {
       "name": "dnd5e55-de-tooltips",
