@@ -359,6 +359,44 @@ function convertOriginDistanceContainerUnitsRuntime(originalValue, _entryTransla
   return translated;
 }
 
+function getActorDistanceContextUnit(data) {
+  const movementUnits = String(data?.system?.attributes?.movement?.units ?? "").toLowerCase();
+  if (DISTANCE_UNIT_MAP[movementUnits]) return movementUnits;
+  const sensesUnits = String(data?.system?.attributes?.senses?.units ?? "").toLowerCase();
+  if (DISTANCE_UNIT_MAP[sensesUnits]) return sensesUnits;
+  return "ft";
+}
+
+function convertActorDistanceMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  if (originalValue === null || originalValue === undefined || originalValue === "") return originalValue;
+  return convertDistanceValueByUnit(originalValue, getActorDistanceContextUnit(data));
+}
+
+function convertActorDistanceUnitMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  return "m";
+}
+
+function convertItemRangeMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const units = String(data?.system?.range?.units ?? "").toLowerCase();
+  if (!DISTANCE_UNIT_MAP[units]) return originalValue;
+  if (originalValue === null || originalValue === undefined || originalValue === "") return originalValue;
+  return convertDistanceValueByUnit(originalValue, units);
+}
+
+function convertItemRangeUnitMetricRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const units = String(data?.system?.range?.units ?? originalValue ?? "").toLowerCase();
+  if (!DISTANCE_UNIT_MAP[units]) return originalValue;
+  return convertDistanceUnit(units);
+}
+
 function translateMaterialsRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
@@ -528,6 +566,21 @@ function translateEmbeddedItemsRuntime(originalValue, _entryTranslation, _data) 
       item.system.activities = translateActivitiesRuntime(item.system.activities, null, item);
     }
 
+    if (item?.system?.range && typeof item.system.range === "object") {
+      if ("reach" in item.system.range) {
+        item.system.range.reach = convertItemRangeMetricRuntime(item.system.range.reach, null, item);
+      }
+      if ("value" in item.system.range) {
+        item.system.range.value = convertItemRangeMetricRuntime(item.system.range.value, null, item);
+      }
+      if ("long" in item.system.range) {
+        item.system.range.long = convertItemRangeMetricRuntime(item.system.range.long, null, item);
+      }
+      if ("units" in item.system.range) {
+        item.system.range.units = convertItemRangeUnitMetricRuntime(item.system.range.units, null, item);
+      }
+    }
+
     if (Array.isArray(item?.effects)) {
       item.effects = translateEffectsRuntime(item.effects, null, item);
     }
@@ -635,6 +688,10 @@ Hooks.once("init", () => {
     dnd5e55OriginDistanceMetricRuntime: convertOriginDistanceMetricRuntime,
     dnd5e55OriginDistanceUnitMetricRuntime: convertOriginDistanceUnitMetricRuntime,
     dnd5e55OriginDistanceContainerUnitsRuntime: convertOriginDistanceContainerUnitsRuntime,
+    dnd5e55ActorDistanceMetricRuntime: convertActorDistanceMetricRuntime,
+    dnd5e55ActorDistanceUnitMetricRuntime: convertActorDistanceUnitMetricRuntime,
+    dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,
+    dnd5e55ItemRangeUnitMetricRuntime: convertItemRangeUnitMetricRuntime,
     dnd5e55SpellTargetAffectsSpecialDeRuntime: translateSpellTargetAffectsSpecialRuntime,
     dnd5e55SpellUnidentifiedDescriptionDeRuntime: translateSpellUnidentifiedDescriptionRuntime,
     dnd5e55ActivitiesRangeMetricRuntime: convertActivitiesRangeRuntime,

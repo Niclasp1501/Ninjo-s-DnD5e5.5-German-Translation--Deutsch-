@@ -17,6 +17,22 @@
       "path": "system.activities",
       "converter": "dnd5e55ActivitiesDeRuntime"
     },
+    "rangeReach": {
+      "path": "system.range.reach",
+      "converter": "dnd5e55ItemRangeMetricRuntime"
+    },
+    "rangeValue": {
+      "path": "system.range.value",
+      "converter": "dnd5e55ItemRangeMetricRuntime"
+    },
+    "rangeLong": {
+      "path": "system.range.long",
+      "converter": "dnd5e55ItemRangeMetricRuntime"
+    },
+    "rangeUnits": {
+      "path": "system.range.units",
+      "converter": "dnd5e55ItemRangeUnitMetricRuntime"
+    },
     "effects": {
       "path": "effects",
       "converter": "dnd5e55EffectsDeRuntime"
