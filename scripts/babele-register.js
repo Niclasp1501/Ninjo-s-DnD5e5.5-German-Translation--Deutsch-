@@ -61,6 +61,14 @@ function getOverrideById(data) {
   return CURATED_OVERRIDES_BY_ID[itemId] || MODERN_OVERRIDES_BY_ID[itemId] || LEGACY_OVERRIDES_BY_ID[itemId] || null;
 }
 
+function getOverrideScalarString(data, key) {
+  const override = getOverrideById(data);
+  const scalars = override?.scalarStrings;
+  if (!scalars || typeof scalars !== "object") return "";
+  const value = scalars[key];
+  return typeof value === "string" && value.trim() ? fixMojibakeRuntime(value) : "";
+}
+
 function roundMetric(value) {
   const n = Number(value);
   if (!Number.isFinite(n)) return value;
@@ -492,7 +500,8 @@ function translateActorLanguagesRuntime(originalValue, _entryTranslation, data) 
 
   const translated = foundry.utils.deepClone(originalValue);
   if (typeof translated.custom === "string" && translated.custom.trim()) {
-    translated.custom = translateActorLanguageText(translated.custom);
+    translated.custom =
+      getOverrideScalarString(data, "system.traits.languages.custom") || translateActorLanguageText(translated.custom);
   }
   if (typeof translated.special === "string" && translated.special.trim()) {
     translated.special = translateActorLanguageText(translated.special);
@@ -507,6 +516,43 @@ function translateActorLanguagesRuntime(originalValue, _entryTranslation, data) 
     }
     if (tel.units !== null && tel.units !== undefined && tel.units !== "") {
       tel.units = convertDistanceUnit(unitKey);
+    }
+  }
+  return translated;
+}
+
+function translateActorLanguagesCustomRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  if (typeof originalValue !== "string" || !originalValue.trim()) return originalValue;
+  return getOverrideScalarString(data, "system.traits.languages.custom") || translateActorLanguageText(originalValue);
+}
+
+function translateActorHabitatCustomRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  if (typeof originalValue !== "string") return originalValue;
+  return getOverrideScalarString(data, "system.details.habitat.custom") || fixMojibakeRuntime(originalValue);
+}
+
+function translateActorHabitatValueRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  if (!Array.isArray(originalValue)) return originalValue;
+
+  const translated = foundry.utils.deepClone(originalValue);
+  for (let i = 0; i < translated.length; i += 1) {
+    const row = translated[i];
+    if (!row || typeof row !== "object") continue;
+    const key = `system.details.habitat.value.${i}.subtype`;
+    const translatedSubtype = getOverrideScalarString(data, key);
+    if (translatedSubtype && typeof row.subtype === "string") {
+      row.subtype = translatedSubtype;
+    } else if (typeof row.subtype === "string") {
+      row.subtype = fixMojibakeRuntime(row.subtype);
     }
   }
   return translated;
@@ -823,6 +869,9 @@ Hooks.once("init", () => {
     dnd5e55ActorMovementMetricRuntime: convertActorMovementMetricRuntime,
     dnd5e55ActorSensesMetricRuntime: convertActorSensesMetricRuntime,
     dnd5e55ActorLanguagesDeRuntime: translateActorLanguagesRuntime,
+    dnd5e55ActorLanguagesCustomDeRuntime: translateActorLanguagesCustomRuntime,
+    dnd5e55ActorHabitatCustomDeRuntime: translateActorHabitatCustomRuntime,
+    dnd5e55ActorHabitatValueDeRuntime: translateActorHabitatValueRuntime,
     dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,
     dnd5e55ItemRangeUnitMetricRuntime: convertItemRangeUnitMetricRuntime,
     dnd5e55SpellTargetAffectsSpecialDeRuntime: translateSpellTargetAffectsSpecialRuntime,

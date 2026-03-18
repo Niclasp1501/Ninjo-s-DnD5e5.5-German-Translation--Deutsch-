@@ -50,6 +50,18 @@
       "path": "system.traits.languages",
       "converter": "dnd5e55ActorLanguagesDeRuntime"
     },
+    "languagesCustom": {
+      "path": "system.traits.languages.custom",
+      "converter": "dnd5e55ActorLanguagesCustomDeRuntime"
+    },
+    "habitatCustom": {
+      "path": "system.details.habitat.custom",
+      "converter": "dnd5e55ActorHabitatCustomDeRuntime"
+    },
+    "habitatValue": {
+      "path": "system.details.habitat.value",
+      "converter": "dnd5e55ActorHabitatValueDeRuntime"
+    },
     "senseDarkvisionLegacy": {
       "path": "system.attributes.senses.darkvision",
       "converter": "dnd5e55ActorDistanceMetricRuntime"

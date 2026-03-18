@@ -4935,11 +4935,11 @@
         "Grassland": "Grasland",
         "Hill": "Hügel",
         "Mountain": "Gebirge",
-        "Planar": "Planar",
+        "Planar": "Ebenen",
         "Swamp": "Sumpf",
         "Underdark": "Unterreich",
         "Underwater": "Unterwasser",
-        "Urban": "Urban"
+        "Urban": "Städtisch"
       },
       "Configuration": {
         "Custom": "Benutzerdefiniert",
@@ -5024,7 +5024,7 @@
         "Sylvan": "Sylvan",
         "Terran": "Terran",
         "ThievesCant": "Gaunersprache",
-        "Undercommon": "Undercommon"
+        "Undercommon": "Untergemeinsprache"
       }
     },
     "LegendaryAction": {
