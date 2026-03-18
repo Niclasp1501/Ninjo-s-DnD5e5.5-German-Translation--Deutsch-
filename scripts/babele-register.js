@@ -504,6 +504,89 @@ function translateEffectsRuntime(originalValue, _entryTranslation, data) {
   return translated;
 }
 
+function translateEmbeddedItemsRuntime(originalValue, _entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (!Array.isArray(originalValue)) return originalValue;
+
+  const translated = foundry.utils.deepClone(originalValue);
+  for (const item of translated) {
+    if (!item || typeof item !== "object") continue;
+
+    const override = getOverrideById(item);
+    if (!override) continue;
+
+    if (typeof override.name === "string" && override.name.trim()) {
+      item.name = fixMojibakeRuntime(override.name);
+    }
+
+    const desc = item?.system?.description?.value;
+    if (typeof desc === "string") {
+      item.system.description.value = translateDescriptionRuntime(desc, null, item);
+    }
+
+    if (item?.system?.activities && typeof item.system.activities === "object") {
+      item.system.activities = translateActivitiesRuntime(item.system.activities, null, item);
+    }
+
+    if (Array.isArray(item?.effects)) {
+      item.effects = translateEffectsRuntime(item.effects, null, item);
+    }
+
+    if (Array.isArray(item?.system?.advancement)) {
+      item.system.advancement = translateAdvancementRuntime(item.system.advancement, null, item);
+    }
+
+    if (typeof override.activationCondition === "string" && override.activationCondition.trim() && item?.system?.activation) {
+      item.system.activation.condition = fixMojibakeRuntime(override.activationCondition);
+    }
+    if (typeof override.rangeSpecial === "string" && override.rangeSpecial.trim() && item?.system?.range) {
+      item.system.range.special = fixMojibakeRuntime(override.rangeSpecial);
+    }
+    if (typeof override.durationSpecial === "string" && override.durationSpecial.trim() && item?.system?.duration) {
+      item.system.duration.special = fixMojibakeRuntime(override.durationSpecial);
+    }
+    if (
+      typeof override.targetAffectsSpecial === "string" &&
+      override.targetAffectsSpecial.trim() &&
+      item?.system?.target?.affects
+    ) {
+      item.system.target.affects.special = fixMojibakeRuntime(override.targetAffectsSpecial);
+    }
+    if (
+      typeof override.unidentifiedDescription === "string" &&
+      override.unidentifiedDescription.trim() &&
+      item?.system?.unidentified
+    ) {
+      item.system.unidentified.description = fixMojibakeRuntime(override.unidentifiedDescription);
+    }
+  }
+
+  return translated;
+}
+
+function translateRollTableResultsRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  if (!Array.isArray(originalValue)) return originalValue;
+
+  const override = getOverrideById(data);
+  const resultMap = override?.tableResults;
+  if (!resultMap || typeof resultMap !== "object") return originalValue;
+
+  const translated = foundry.utils.deepClone(originalValue);
+  for (const result of translated) {
+    if (!result || typeof result !== "object") continue;
+    const rid = String(result._id ?? "");
+    const rr = Array.isArray(result.range) && result.range.length >= 2 ? `${result.range[0]}-${result.range[1]}` : "";
+    const mapped = resultMap[rid] || resultMap[rr] || null;
+    if (typeof mapped !== "string" || !mapped.trim()) continue;
+
+    const normalized = fixMojibakeRuntime(mapped);
+    if (typeof result.description === "string") result.description = normalized;
+    if (typeof result.text === "string") result.text = normalized;
+  }
+  return translated;
+}
+
 Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
 
@@ -555,7 +638,9 @@ Hooks.once("init", () => {
     dnd5e55SpellTargetAffectsSpecialDeRuntime: translateSpellTargetAffectsSpecialRuntime,
     dnd5e55SpellUnidentifiedDescriptionDeRuntime: translateSpellUnidentifiedDescriptionRuntime,
     dnd5e55ActivitiesRangeMetricRuntime: convertActivitiesRangeRuntime,
-    dnd5e55EffectsDeRuntime: translateEffectsRuntime
+    dnd5e55EffectsDeRuntime: translateEffectsRuntime,
+    dnd5e55EmbeddedItemsDeRuntime: translateEmbeddedItemsRuntime,
+    dnd5e55RollTableResultsDeRuntime: translateRollTableResultsRuntime
   });
 
   console.log(`[${MODULE_ID}] Babele runtime mappings registered with strict legacy/modern separation.`);

@@ -1,0 +1,55 @@
+{
+  "label": "Akteure (Modern, DE)",
+  "types": [
+    "npc",
+    "character",
+    "vehicle"
+  ],
+  "mapping": {
+    "name": {
+      "path": "name",
+      "converter": "dnd5e55NameDeRuntime"
+    },
+    "biography": {
+      "path": "system.details.biography.value",
+      "converter": "dnd5e55DescriptionDeRuntime"
+    },
+    "items": {
+      "path": "items",
+      "converter": "dnd5e55EmbeddedItemsDeRuntime"
+    }
+  },
+  "folders": {
+    "Aberration": "Aberrationen",
+    "Animated Objects": "Belebte Objekte",
+    "Beast": "Tiere",
+    "Celestial": "Himmlische",
+    "Companions": "Begleiter",
+    "Conjurations": "Beschwörungen",
+    "Conjured Elementals": "Beschworene Elementare",
+    "Construct": "Konstrukte",
+    "Dragon": "Drachen",
+    "Elemental": "Elementare",
+    "Fey": "Feenwesen",
+    "Fiend": "Unholde",
+    "Giant": "Riesen",
+    "Giant Insects": "Rieseninsekten",
+    "Humanoid": "Humanoide",
+    "Level 1": "Stufe 1",
+    "Level 5": "Stufe 5",
+    "Level 11": "Stufe 11",
+    "Level 17": "Stufe 17",
+    "Magic Items": "Magische Gegenstände",
+    "Monstrosity": "Monstrositäten",
+    "Ooze": "Schlicke",
+    "Otherworldly Steeds": "Übernatürliche Reittiere",
+    "Plant": "Pflanzen",
+    "Premades": "Vorgefertigt",
+    "Summon Templates": "Beschwörungs-Vorlagen",
+    "Summons": "Beschwörungen",
+    "Swarm": "Schwärme",
+    "Undead": "Untote",
+    "Vehicles": "Fahrzeuge"
+  },
+  "entries": {}
+}

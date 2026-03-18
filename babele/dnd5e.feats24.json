@@ -57,7 +57,13 @@
     "The Fiend Features": "Der Unhold Merkmale",
     "Wizard": "Magier",
     "Wizard Features": "Magier Merkmale",
-    "School of Evocation Features": "Schule der Hervorrufungsmagie Merkmale"
+    "School of Evocation Features": "Schule der Hervorrufungsmagie Merkmale",
+    "Epic Boon Feats": "Talente der epischen Gaben",
+    "Fighting Style Feats": "Kampfstil-Talente",
+    "General Feats": "Allgemeine Talente",
+    "Origin Feats": "Herkunfts-Talente",
+    "Epic Boons": "Epische Gaben",
+    "Fighting Styles Feats": "Kampfstil-Talente"
   },
   "entries": {}
 }

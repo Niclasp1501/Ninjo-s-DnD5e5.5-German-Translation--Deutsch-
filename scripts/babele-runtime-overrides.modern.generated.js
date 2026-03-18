@@ -97,7 +97,25 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgCandleOfInvoc": {
     "name": "Kerze der Anrufung",
-    "description": "<p>Dieser schlanke Kegel ist einer Gottheit gewidmet und teilt sich die Gesinnung dieser Gottheit. Die Gesinnung der Kerze kann mit dem Zauber @Compendium[dnd5e.spells.Mzh95utKDPIrjiH8]{Gutes und BÃ¶ses entdecken} herausgefunden werden. Der Spielleiter wÃ¤hlt den Gott und die damit verbundene Gesinnung oder bestimmt die Gesinnung nach dem Zufallsprinzip.</p>\n<table>\n<thead>\n<tr>\n<th>W20</th>\n<th>Gesinnung</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1-2</td>\n<td>Chaotisch bÃ¶se</td>\n</tr>\n<tr>\n<td>3-4</td>\n<td>Chaotisch neutral</td>\n</tr>\n<tr>\n<td>5-7</td>\n<td>Chaotisch gut</td>\n</tr>\n<tr>\n<td>8-9</td>\n<td>Neutral bÃ¶se</td>\n</tr>\n<tr>\n<td>10-11</td>\n<td>Neutral</td>\n</tr>\n<tr>\n<td>12-13</td>\n<td>Neutral gut</td>\n</tr>\n<tr>\n<td>14-15</td>\n<td>Rechtschaffen bÃ¶se</td>\n</tr>\n<tr>\n<td>16-17</td>\n<td>Rechtschaffen</td>\n</tr>\n<tr>\n<td>18-20</td>\n<td>Rechtschaffen gut</td>\n</tr>\n</tbody>\n</table>\n<p>Die Magie der Kerze wird aktiviert, wenn die Kerze angezÃ¼ndet wird, was eine Aktion erfordert. Nachdem sie fÃ¼r 4 Stunden brannte, ist die Kerze zerstÃ¶rt. Du kannst sie frÃ¼her ausblasen, um sie zu einem spÃ¤teren Zeitpunkt nochmal einzusetzen. Ziehe die Zeit, die sie bisher brannte, in Schritten von je 1 Minute von der gesamten Brenndauer der Kerze ab.</p>\n<p>WÃ¤hrend sie leuchtet, verstrÃ¶mt die Kerze ein schwaches Licht in einem Radius von 9 m. Jede Kreatur in diesem Licht, deren Gesinnung der der Kerze entspricht, hat einen Vorteil auf Angriffs-, Rettungs- und AttributswÃ¼rfe. ZusÃ¤tzlich kÃ¶nnen Kleriker oder Druiden im Licht, insofern ihre Gesinnung mit der Kerze Ã¼bereinstimmt, einen Zauber des Grads 1 wirken, ohne einen Zauberplatz zu verlieren, wenn der Zauber vorher vorbereitet wurde. Der Effekt des Zaubers wirkt dennoch, aks wÃ¤re ein Zauberplatz von Grad 1 dafÃ¼r eingesetzt wurden.</p>\n<p>Alternativ kann beim AnzÃ¼nden der Kerze der Zauber @Compendium[dnd5e.spells.XbwGq5kDJNvAxNXV]{Tor} mit der Kerze gewirkt werden. Wenn dies getan wird, wird die Kerze zerstÃ¶rt.</p>"
+    "description": "<p>Dieser schlanke Kegel ist einer Gottheit gewidmet und teilt sich die Gesinnung dieser Gottheit. Die Gesinnung der Kerze kann mit dem Zauber @Compendium[dnd5e.spells.Mzh95utKDPIrjiH8]{Gutes und BÃ¶ses entdecken} herausgefunden werden. Der Spielleiter wÃ¤hlt den Gott und die damit verbundene Gesinnung oder bestimmt die Gesinnung nach dem Zufallsprinzip.</p>\n<table>\n<thead>\n<tr>\n<th>W20</th>\n<th>Gesinnung</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1-2</td>\n<td>Chaotisch bÃ¶se</td>\n</tr>\n<tr>\n<td>3-4</td>\n<td>Chaotisch neutral</td>\n</tr>\n<tr>\n<td>5-7</td>\n<td>Chaotisch gut</td>\n</tr>\n<tr>\n<td>8-9</td>\n<td>Neutral bÃ¶se</td>\n</tr>\n<tr>\n<td>10-11</td>\n<td>Neutral</td>\n</tr>\n<tr>\n<td>12-13</td>\n<td>Neutral gut</td>\n</tr>\n<tr>\n<td>14-15</td>\n<td>Rechtschaffen bÃ¶se</td>\n</tr>\n<tr>\n<td>16-17</td>\n<td>Rechtschaffen</td>\n</tr>\n<tr>\n<td>18-20</td>\n<td>Rechtschaffen gut</td>\n</tr>\n</tbody>\n</table>\n<p>Die Magie der Kerze wird aktiviert, wenn die Kerze angezÃ¼ndet wird, was eine Aktion erfordert. Nachdem sie fÃ¼r 4 Stunden brannte, ist die Kerze zerstÃ¶rt. Du kannst sie frÃ¼her ausblasen, um sie zu einem spÃ¤teren Zeitpunkt nochmal einzusetzen. Ziehe die Zeit, die sie bisher brannte, in Schritten von je 1 Minute von der gesamten Brenndauer der Kerze ab.</p>\n<p>WÃ¤hrend sie leuchtet, verstrÃ¶mt die Kerze ein schwaches Licht in einem Radius von 9 m. Jede Kreatur in diesem Licht, deren Gesinnung der der Kerze entspricht, hat einen Vorteil auf Angriffs-, Rettungs- und AttributswÃ¼rfe. ZusÃ¤tzlich kÃ¶nnen Kleriker oder Druiden im Licht, insofern ihre Gesinnung mit der Kerze Ã¼bereinstimmt, einen Zauber des Grads 1 wirken, ohne einen Zauberplatz zu verlieren, wenn der Zauber vorher vorbereitet wurde. Der Effekt des Zaubers wirkt dennoch, aks wÃ¤re ein Zauberplatz von Grad 1 dafÃ¼r eingesetzt wurden.</p>\n<p>Alternativ kann beim AnzÃ¼nden der Kerze der Zauber @Compendium[dnd5e.spells.XbwGq5kDJNvAxNXV]{Tor} mit der Kerze gewirkt werden. Wenn dies getan wird, wird die Kerze zerstÃ¶rt.</p>",
+    "tableResults": {
+      "ag0urHCE1g8iDteP": "Abgrund",
+      "pCP4ICaQKzln5zTc": "Gehenna",
+      "OZ1lU2EWqnzeBQqm": "Acheron",
+      "vXez4BUgXFHAayCM": "Hades",
+      "jCH8BtBFKvOxQKe5": "Arborea",
+      "36NsH0b08cWRJ5S3": "Limbo",
+      "hMMK8Z1s2frHXEYN": "Arkadien",
+      "q7ketUvAJCoLBkHc": "Mechanus",
+      "vctndF7xPiru2vGe": "Bestienlande",
+      "dmCLeLfvwj5jLDnN": "Berg Celestia",
+      "5ajkPx3j34og3PQq": "Bytopia",
+      "FNEgnQ7Zo62CbsSo": "Neun Höllen",
+      "ToqvjVmLEWuqyXV8": "Carceri",
+      "5VNozBp2PgScksuZ": "Pandämonium",
+      "efnExAQ7h5U5JY9c": "Elysium",
+      "NPXTuTLfn13GTU2j": "Ysgard"
+    }
   },
   "dmgDustOfDisappe": {
     "name": "Staub des Verschwindens",
@@ -133,7 +151,14 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgAmuletOfThePl": {
     "name": "Amulett der Ebenen",
-    "description": "<p><em>Wundersamer Gegenstand, sehr selten (benÃ¶tigt Einstimmung)</em></p>\n<p>WÃ¤hrend du dieses Amulett trÃ¤gst, kannst du eine Aktion benutzen und einen Ort auf einer anderen existierenden Ebene nennen, mit dem du vertraut bist. Dann fÃ¼hre einen Wurf auf Intelligenz gegen SG 15 durch.</p>\n<p>Ist dieser erfolgreich, wirkst du den Zauber @Compendium[dnd5e.spells.J6Jpw5XzB5aTeqnz]{Ebenenwechsel}. Wenn er misslingt, reisen du und jede Kreatur und jedes Objekt in einem Radius von 4,50 Meter zu einem willkÃ¼rlichen Ort. Wirf einen W100. Bei einer 1-60 reist ihr zu einem willkÃ¼rlichen Ort auf der Ebene, die du genannt hattest. Bei einer 61-100 reist ihr zu einer zufÃ¤llig festgelegten existierenden Ebene.</p>"
+    "description": "<p><em>Wundersamer Gegenstand, sehr selten (benÃ¶tigt Einstimmung)</em></p>\n<p>WÃ¤hrend du dieses Amulett trÃ¤gst, kannst du eine Aktion benutzen und einen Ort auf einer anderen existierenden Ebene nennen, mit dem du vertraut bist. Dann fÃ¼hre einen Wurf auf Intelligenz gegen SG 15 durch.</p>\n<p>Ist dieser erfolgreich, wirkst du den Zauber @Compendium[dnd5e.spells.J6Jpw5XzB5aTeqnz]{Ebenenwechsel}. Wenn er misslingt, reisen du und jede Kreatur und jedes Objekt in einem Radius von 4,50 Meter zu einem willkÃ¼rlichen Ort. Wirf einen W100. Bei einer 1-60 reist ihr zu einem willkÃ¼rlichen Ort auf der Ebene, die du genannt hattest. Bei einer 61-100 reist ihr zu einer zufÃ¤llig festgelegten existierenden Ebene.</p>",
+    "tableResults": {
+      "m2UKvzZf0ZibczrG": "Zufälliger Ort auf der von dir benannten Ebene",
+      "vH6t70BzwrR0dfnM": "Zufälliger Ort auf einer Inneren Ebene, bestimmt durch einen Wurf von [[/r 1d6]]: bei einer 1, die Ebene der Luft; bei einer 2, die Ebene der Erde; bei einer 3, die Ebene des Feuers; bei einer 4, die Ebene des Wassers; bei einer 5, die Feenwildnis; bei einer 6, die Schattenfell",
+      "k7P9te8NuEctUdxE": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, Arborea; bei einer 2, Arkadien; bei einer 3, die Bestienlande; bei einer 4, Bytopia; bei einer 5, Elysium; bei einer 6, Mechanus; bei einer 7, Berg Celestia; bei einer 8, Ysgard",
+      "iMtDiN65JNwyr8oG": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, der Abyss; bei einer 2, Acheron; bei einer 3, Carceri; bei einer 4, Gehenna; bei einer 5, Hades; bei einer 6, Limbo; bei einer 7, die Neun Höllen; bei einer 8, Pandämonium",
+      "nF1GNDH2Vmrg1HM0": "Zufälliger Ort auf der Astralebene"
+    }
   },
   "dmgBeltOfDwarven": {
     "name": "ZwergengÃ¼rtel",
@@ -1674,7 +1699,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   "phbsplUnseenServ": {
     "name": "Unsichtbarer Diener",
     "description": "<p>Dieser Zauber erschafft eine unsichtbare, geistlose, formlose, mittelgroÃŸe Kraft, die auf dein Kommando hin einfache Aufgaben ausfÃ¼hrt, bis der Zauber endet. Der Diener entsteht in einem unbesetzten Feld auf dem Boden innerhalb der Reichweite. Er hat RK 10, 1 Trefferpunkt und eine StÃ¤rke von 2 und kann nicht angreifen. Wenn er auf 0 Trefferpunkte fÃ¤llt, endet der Zauber.</p><p>Einmal in jedem deiner ZÃ¼ge als Bonusaktion kannst du dem Diener mental befehlen, sich bis zu 15 FuÃŸ zu bewegen und mit einem Objekt zu interagieren. Der Diener kann einfache Aufgaben ausfÃ¼hren, die ein Mensch tun kÃ¶nnte, wie Dinge holen, putzen, flicken, Kleidung falten, Feuer anzÃ¼nden, Essen servieren und GetrÃ¤nke einschenken. Sobald du den Befehl gibst, fÃ¼hrt der Diener die Aufgabe nach besten KrÃ¤ften aus, bis er sie abgeschlossen hat, und wartet dann auf deinen nÃ¤chsten Befehl.</p><p>Wenn du dem Diener befiehlst, eine Aufgabe auszufÃ¼hren, die ihn mehr als 60 FuÃŸ von dir wegbewegen wÃ¼rde, endet der Zauber.</p>",
-    "materials": "ein StÃ¼ckchen Schnur und Holz"
+    "materials": "ein StÃ¼ckchen Schnur und Holz",
+    "effects": {
+      "dnd5einvisible00": "Unsichtbar"
+    }
   },
   "phbsplMelfsAcidA": {
     "name": "SÃ¤urepfeil",
@@ -1873,7 +1901,15 @@ export const MODERN_OVERRIDES_BY_ID = {
   "phbsplFlamingSph": {
     "name": "FlammensphÃ¤re",
     "description": "<p>Du erschaffst eine Feuerkugel mit 5 FuÃŸ Durchmesser in einem unbesetzten Bereich auf dem Boden innerhalb der Reichweite. Sie hÃ¤lt fÃ¼r die Wirkungsdauer an. Jede Kreatur, die ihren Zug innerhalb von 5 FuÃŸ Entfernung von der SphÃ¤re beendet, muss einen [[/save ability=dex dc=@attributes.spell.dc]] Rettungswurf ablegen und erleidet bei einem misslungenen Rettungswurf 2W6 Feuerschaden oder die HÃ¤lfte davon bei einem erfolgreichen.</p><p>Als Bonusaktion kannst du die SphÃ¤re bis zu 30 FuÃŸ weit bewegen, indem du sie Ã¼ber den Boden rollst. Wenn du die SphÃ¤re in den Bereich einer Kreatur bewegst, muss diese Kreatur den Rettungswurf gegen die SphÃ¤re ablegen, und die SphÃ¤re stoppt ihre Bewegung fÃ¼r diesen Zug.</p><p>Wenn du die SphÃ¤re bewegst, kannst du sie Ã¼ber Barrieren von bis zu 5 FuÃŸ HÃ¶he lenken und Ã¼ber Gruben von bis zu 10 FuÃŸ Breite springen lassen. Brennbare Objekte, die nicht getragen oder in der Hand gehalten werden, fangen Feuer, wenn sie von der SphÃ¤re berÃ¼hrt werden, und sie spendet helles Licht in einem Radius von 20 FuÃŸ und dÃ¤mmriges Licht fÃ¼r weitere 20 FuÃŸ.</p><p><strong>Einsatz eines Zauberplatzes hÃ¶heren Grades.</strong> Der Schaden erhÃ¶ht sich um 1W6 fÃ¼r jeden Zauberplatzgrad Ã¼ber dem 2. Grad.</p>",
-    "materials": "eine Wachskugel"
+    "materials": "eine Wachskugel",
+    "activities": {
+      "dnd5eactivity000": "Rettungswurf"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "activationCondition": "Jede Kreatur beendet ihren Zug innerhalb der Reichweite"
+      }
+    }
   },
   "phbsplGentleRepo": {
     "name": "Sanfte Ruhe",
@@ -2402,7 +2438,18 @@ export const MODERN_OVERRIDES_BY_ID = {
   "phbsplArcaneEye0": {
     "name": "Arkanes Auge",
     "description": "<p>Du erzeugst ein Unsichtbares, unverwundbares Auge innerhalb der Reichweite, das fÃ¼r die Dauer schwebt. Du empfÃ¤ngst mental visuelle Informationen vom Auge, das in jede Richtung sehen kann. Es hat auch Dunkelsicht mit einer Reichweite von 9 m.</p><p>Als Bonusaktion kannst du das Auge bis zu 9 m in jede Richtung bewegen. Eine feste Barriere blockiert die Bewegung des Auges, aber das Auge kann durch eine Ã–ffnung von nur 1 Zoll Durchmesser passieren.</p>",
-    "materials": "ein StÃ¼ckchen Fledermausfell"
+    "materials": "ein StÃ¼ckchen Fledermausfell",
+    "activities": {
+      "move": "Bewegen"
+    },
+    "effects": {
+      "dnd5einvisible00": "Unsichtbar"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "activationCondition": "Bonusaktion, vom Beschwörer verwendet"
+      }
+    }
   },
   "phbsplAuraofLife": {
     "name": "Aura des Lebens",
@@ -2546,7 +2593,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplGuardianof": {
     "name": "WÃ¤chter des Glaubens",
-    "description": "<p>Ein GroÃŸer spektraler WÃ¤chter erscheint und schwebt fÃ¼r die Dauer in einem unbesetzten Raum, den du innerhalb der Reichweite sehen kannst. Der WÃ¤chter nimmt diesen Raum ein und ist unverwundbar, und er erscheint in einer Form, die fÃ¼r deine Gottheit oder dein Pantheon angemessen ist.</p><p>Jeder Feind, der zum ersten Mal in einem Zug in einen Raum innerhalb von 3 m des WÃ¤chters zieht oder seinen Zug dort beginnt, muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem misslungenen Rettungswurf nimmt er 20 gleiÃŸenden Schaden, bei einem erfolgreichen Rettungswurf die HÃ¤lfte davon. Der WÃ¤chter verschwindet, wenn er insgesamt 60 Schaden verursacht hat.</p>"
+    "description": "<p>Ein GroÃŸer spektraler WÃ¤chter erscheint und schwebt fÃ¼r die Dauer in einem unbesetzten Raum, den du innerhalb der Reichweite sehen kannst. Der WÃ¤chter nimmt diesen Raum ein und ist unverwundbar, und er erscheint in einer Form, die fÃ¼r deine Gottheit oder dein Pantheon angemessen ist.</p><p>Jeder Feind, der zum ersten Mal in einem Zug in einen Raum innerhalb von 3 m des WÃ¤chters zieht oder seinen Zug dort beginnt, muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem misslungenen Rettungswurf nimmt er 20 gleiÃŸenden Schaden, bei einem erfolgreichen Rettungswurf die HÃ¤lfte davon. Der WÃ¤chter verschwindet, wenn er insgesamt 60 Schaden verursacht hat.</p>",
+    "activities": {
+      "dnd5eactivity000": "Rettungswurf",
+      "xF7Bakh7m5dqmubn": "Schadenspool verbrauchen"
+    }
   },
   "phbsplHallucinat": {
     "name": "Halluzinatorisches GelÃ¤nde",
@@ -2813,7 +2864,19 @@ export const MODERN_OVERRIDES_BY_ID = {
   "phbsplReincarnat": {
     "name": "Reinkarnation",
     "description": "<p>Du berÃ¼hrst einen toten Humanoiden oder ein StÃ¼ck davon. Wenn die Kreatur nicht lÃ¤nger als 10 Tage tot war, bildet der Zauber einen neuen KÃ¶rper fÃ¼r sie und ruft die Seele auf, diesen KÃ¶rper zu betreten.\n@Embed[Compendium.dnd5e.tables24.RollTable.phbsplReincarnat rollable\nclasses=\"caption-top\"]</p><p>Die reinkarnierte Kreatur trifft alle Entscheidungen, die die Beschreibung einer Spezies bietet, und die Kreatur erinnert sich an ihr frÃ¼heres Leben. Sie behÃ¤lt die FÃ¤higkeiten, die sie in ihrer ursprÃ¼nglichen Form hatte, verliert jedoch die Merkmale ihrer vorherigen Spezies und erhÃ¤lt die Merkmale ihrer neuen.</p>",
-    "materials": "seltene Ã–le im Wert von 1.000+ GM, die vom Zauber verbraucht werden"
+    "materials": "seltene Ã–le im Wert von 1.000+ GM, die vom Zauber verbraucht werden",
+    "tableResults": {
+      "DLKTRYgF1vpG4ons": "Aasimar",
+      "lCG2E5mLJL43oGk4": "Drachenblütiger",
+      "Ym4LPQm1DMZ3iUBH": "Zwerg",
+      "9FtTDJCOwnD97SOu": "Goliath",
+      "RI73kNpd5iAababR": "Halbling",
+      "6L3KbE75ugKNdbhg": "Mensch",
+      "xNcsrma8ucsEEgz3": "Ork",
+      "8g4dm4vqB60zPWw5": "Elfische Abstammung",
+      "PkXN8vlW5cXx8vbB": "Teuflisches Erbe",
+      "ncs8GLvSuavCJAqf": "Gnomische Abstammung"
+    }
   },
   "phbsplScrying000": {
     "name": "AusspÃ¤hung",
@@ -6968,6 +7031,5131 @@ export const MODERN_OVERRIDES_BY_ID = {
           "End Vibrations": "Vibrationen beenden"
         }
       }
+    }
+  },
+  "dmgCollapsingRoo": {
+    "name": "Einstürzendes Dach",
+    "description": "<div><p><em>Tödliche Falle (Stufen 1–4)</em></p><p><strong>Auslöser:</strong>\nEine Kreatur überquert einen Stolperdraht</p><p><strong>Dauer:</strong>\nAugenblicklich</p><p>Diese Falle verwendet einen Stolperdraht, um einen instabilen\nDeckenabschnitt zum Einsturz zu bringen. Der Stolperdraht befindet sich 7,6 cm über dem Boden und spannt sich\nzwischen zwei schwachen Stützen, die umfallen, wenn der Stolperdraht\ngezogen wird.</p><p>Die erste Kreatur, die den Stolperdraht überquert, bringt die\nStützen zum Umfallen und den instabilen Deckenabschnitt zum Einsturz. Jede\nKreatur unter dem instabilen Deckenabschnitt muss einen Rettungswurf auf Geschicklichkeit SG 13\nbestehen. Bei einem misslungenen Rettungswurf erleidet sie 11 (2W10) Wuchtschaden, bei einem erfolgreichen\nRettungswurf halb so viel Schaden. Schutt vom Einsturz\nverwandelt den Fallenbereich in &amp;Reference[Difficult\nTerrain].</p><p><em><strong>Entdecken und Entschärfen.</strong></em> Als Suchaktion\nkann eine Kreatur den Fallenbereich untersuchen und einen [[/check prc\n11]] Wurf machen. Bei einem erfolgreichen Wurf entdeckt sie den Stolperdraht und den instabilen Deckenabschnitt.\nSobald er entdeckt wurde, kann der Stolperdraht leicht durchgeschnitten oder\numgangen werden (kein Fertigkeitswurf erforderlich).</p><p><em><strong>Auf höheren\nStufen.</strong></em> Du kannst die Falle für höhere Stufen anpassen, indem du\nden Schaden und den Rettungswurf-SG erhöhst, wie in der folgenden\nTabelle gezeigt.</p><table><thead><tr><th><p>Stufen</p></th><th><p>Wuchtschaden</p></th><th><p>Rettungswurf-SG</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22\n(4W10)</p></td><td><p>15</p></td></tr><tr><td><p>11–16</p></td><td><p>55\n(10W10)</p></td><td><p>17</p></td></tr><tr><td><p>17–20</p></td><td><p>99\n(18W10)</p></td><td><p>19</p></td></tr></tbody></table></div>",
+    "activities": {
+      "Trigger (1-4)": "Auslöser (1-4)",
+      "Trigger (11-16)": "Auslöser (11-16)",
+      "Trigger (17-20)": "Auslöser (17-20)",
+      "Trigger (5-10)": "Auslöser (5-10)"
+    }
+  },
+  "dmgFallingNet000": {
+    "name": "Fallnetz",
+    "description": "<div><p><em>Ärgerliche Falle (Stufen\n1–4)</em></p><p><strong>Auslöser:</strong> Eine Kreatur überquert einen Stolperdraht</p><p><strong>Dauer:</strong> Augenblicklich</p><p>Eine Fallnetz-Falle\nverwendet einen Stolperdraht, um ein beschwertes, 3 m im Quadrat großes Netz freizugeben,\ndas von der Decke hängt. Der Stolperdraht befindet sich 7,6 cm über dem Boden und spannt sich\nzwischen zwei Säulen oder Bäumen.</p><p>Die erste Kreatur, die den\nStolperdraht überquert, lässt das Netz auf sie fallen. Das Ziel muss einen Rettungswurf auf Geschicklichkeit SG 10\nbestehen oder den Zustand &amp;Reference[Restrained] haben,\nbis es entkommt. Das Ziel ist automatisch erfolgreich, wenn es Riesig oder\ngrößer ist. Eine Kreatur kann eine Aktion aufwenden, um einen Stärke (Athletik)\nWurf SG 10 zu machen und sich selbst oder eine andere Kreatur in ihrer Reichweite aus dem Netz zu befreien,\nbei einem erfolgreichen Wurf.</p><p><em><strong>Entdecken und Entschärfen.</strong></em> Als\nSuchaktion kann eine Kreatur den Fallenbereich untersuchen und einen\n[[/check prc 11]] Wurf machen. Bei einem erfolgreichen Wurf entdeckt sie den Stolperdraht und das hängende\n@UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000]{Net}.\nSobald er entdeckt wurde, kann der Stolperdraht leicht durchgeschnitten oder\numgangen werden (kein Fertigkeitswurf erforderlich).</p><p><em><strong>Das Netz\nzerstören.</strong></em> Das Netz auf 0 Trefferpunkte zu reduzieren, befreit jede Kreatur,\ndie darin gefangen ist (siehe\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.xIDcbjgXOndS8zRl]{Adventuring\nGear} für die Werte des Netzes).</p><p><em><strong>Die Falle\nstellen.</strong></em> Eine Kreatur, die Diebeswerkzeuge und alle Fallenkomponenten (einschließlich eines Netzes) besitzt,\nkann versuchen, eine Fallnetz-Falle zu stellen, indem sie einen erfolgreichen Geschicklichkeit (Fingerfertigkeit) Wurf SG 13 macht. Jeder Versuch,\ndiese Falle zu stellen, dauert 10 Minuten.</p><p><em><strong>Auf höheren\nStufen.</strong></em> Du kannst die Falle für höhere Stufen anpassen, indem du\ndas Gewicht des Netzes erhöhst, was den Rettungswurf-SG und den SG\ndes Stärke (Athletik) Wurfs wie folgt erhöht: SG 12 auf Stufen 5–10, SG 14\nauf Stufen 11–16 oder SG 16 auf Stufen 17–20.</p></div>",
+    "activities": {
+      "Escape Check (1-4)": "Entkommen (1-4)",
+      "Escape Check (11-16)": "Entkommen (11-16)",
+      "Escape Check (17-20)": "Entkommen (17-20)",
+      "Escape Check (5-10)": "Entkommen (5-10)",
+      "Set Trap": "Falle stellen",
+      "Trigger (1-4)": "Auslöser (1-4)",
+      "Trigger (11-16)": "Auslöser (11-16)",
+      "Trigger (17-20)": "Auslöser (17-20)",
+      "Trigger (5-10)": "Auslöser (5-10)"
+    }
+  },
+  "dmgFirecastingSt": {
+    "name": "Feuerspeiende Statue",
+    "description": "<div><p><em>Tödliche Falle (Stufen 1–4)</em></p><p><strong>Auslöser:</strong>\nEine Kreatur bewegt sich auf eine Druckplatte</p><p><strong>Dauer:</strong>\nAugenblicklich, und die Falle wird zu Beginn des nächsten\nZuges zurückgesetzt</p><p>Wenn eine Kreatur zum ersten Mal in einem Zug auf die Druckplatte dieser Falle tritt oder ihren Zug dort beginnt, speit eine nahegelegene Statue einen\n4,5 m großen Kegel aus magischen Flammen. Die Statue kann wie alles Mögliche aussehen, zum Beispiel\nwie ein Drache oder ein Zauberer. Jede Kreatur im Kegel muss einen Rettungswurf auf Geschicklichkeit SG 15\nbestehen. Bei einem misslungenen Rettungswurf erleidet sie 11 (2W10) Feuerschaden, bei einem erfolgreichen Rettungswurf\nhalb so viel Schaden.</p><p><em><strong>Entdecken und\nEntschärfen.</strong></em> Ein <em>Magie entdecken</em> Zauber enthüllt eine Aura von\nHervorrufungs-Magie um die Statue. Als Suchaktion kann eine Kreatur innerhalb von 1,5 m um die Statue diese untersuchen und einen [[/check DC prc 10]] Wurf machen,\nbei einem erfolgreichen Wurf entdeckt sie ein winziges Glyphe auf der Statue. Sobald das Glyphe\ngefunden wurde, kann ein Charakter eine Studienaktion aufwenden, um es zu untersuchen und einen\n[[/check arc 15]] Wurf zu machen, wobei er bei einem erfolgreichen Wurf feststellt, dass das Glyphe „Feuer“ bedeutet.\nAls Aktion kann ein Charakter ein scharfes Werkzeug verwenden, um das Glyphe zu entstellen,\nwas die Falle entschärft.</p><p>Als Suchaktion kann eine Kreatur\nden Bodenabschnitt untersuchen, der die Druckplatte bildet, und einen\n[[/check prc 15]] Wurf machen. Bei einem erfolgreichen Wurf entdeckt sie die Druckplatte. Das Einklemmen eines Eisendorns oder eines ähnlichen Objekts unter die Druckplatte\nverhindert, dass die Falle ausgelöst wird.</p><p><em><strong>Auf höheren\nStufen.</strong></em> Du kannst die Falle für höhere Stufen anpassen, indem du\nden Schaden und den Wirkungsbereich erhöhst, wie in der folgenden\nTabelle gezeigt.</p><table><thead><tr><th><p>Stufen</p></th><th><p>Feuerschaden</p></th><th><p>Wirkungsbereich</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22\n(4W10)</p></td><td><p>9 m\nKegel</p></td></tr><tr><td><p>11–16</p></td><td><p>55\n(10W10)</p></td><td><p>18 m\nKegel</p></td></tr><tr><td><p>17–20</p></td><td><p>99\n(18W10)</p></td><td><p>36 m Kegel</p></td></tr></tbody></table></div>",
+    "activities": {
+      "Trigger (1-4)": "Auslöser (1-4)",
+      "Trigger (11-16)": "Auslöser (11-16)",
+      "Trigger (17-20)": "Auslöser (17-20)",
+      "Trigger (5-10)": "Auslöser (5-10)"
+    }
+  },
+  "dmgHiddenPit0000": {
+    "name": "Versteckte Grube",
+    "description": "<div><p><em>Ärgerliche Falle (Stufen\n1–4)</em></p><p><strong>Auslöser:</strong> Eine Kreatur bewegt sich auf den Deckel der Grube</p><p><strong>Dauer:</strong> Augenblicklich</p><p>Diese 3 m tiefe\nGrube hat einen aufklappbaren Deckel, der aus Material gefertigt ist, das dem\numgebenden Boden gleicht. Wenn eine Kreatur auf den Deckel tritt, schwingt er wie\neine Falltür auf und lässt die Kreatur in die Grube fallen. Der Deckel bleibt\ndanach offen.</p><p>Eine Kreatur, die in die Grube fällt, erleidet 3 (1W6)\nWuchtschaden durch den Fall.</p><p><em><strong>Entdecken und\nEntschärfen.</strong></em> Als Studienaktion kann eine Kreatur den\nBodenabschnitt untersuchen, der den Deckel der Grube bildet, und einen [[/check inv 15]]\nWurf machen. Bei einem erfolgreichen Wurf entdeckt sie die Grube. Sobald die Grube entdeckt wurde,\nkann ein Eisendorn oder ein ähnliches Objekt zwischen den Deckel der Grube und\nden umgebenden Boden geklemmt werden, um zu verhindern, dass der Deckel sich öffnet, wodurch das Überqueren sicher wird.\nDer Deckel kann auch mit <em>Arkanes Schloss</em>\noder ähnlicher Magie verschlossen gehalten werden.</p><p><em><strong>Entkommen.</strong></em> Eine Kreatur benötigt\neine Klettergeschwindigkeit, Kletterausrüstung oder Magie wie <em>Spinnenklettern</em>,\num die glatten Wände der Grube zu erklimmen. Du kannst die Grube leichter entkommen lassen, indem du\nRisse in den Wänden hinzufügst, die groß genug sind, um als Hand- und\nFußgriffe zu dienen.</p><p><em><strong>Auf höheren Stufen.</strong></em> Du kannst die Falle für höhere Stufen anpassen,\nindem du die Tiefe und den Schaden der Grube erhöhst, wie\nin der folgenden\nTabelle gezeigt.</p><table><thead><tr><th><p>Stufen</p></th><th><p>Grubentiefe</p></th><th><p>Wuchtschaden</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>9 m</p></td><td><p>10\n(3W6)</p></td></tr><tr><td><p>11–16</p></td><td><p>18 m</p></td><td><p>21\n(6W6)</p></td></tr><tr><td><p>17–20</p></td><td><p>36 m</p></td><td><p>42 (12W6)</p></td></tr></tbody></table></div>",
+    "activities": {
+      "Trigger (1-4)": "Auslöser (1-4)",
+      "Trigger (11-16)": "Auslöser (11-16)",
+      "Trigger (17-20)": "Auslöser (17-20)",
+      "Trigger (5-10)": "Auslöser (5-10)"
+    }
+  },
+  "dmgPoisonedDarts": {
+    "name": "Vergiftete Wurfpfeile",
+    "description": "<div><p><em>Tödliche Falle (Stufen 1–4)</em></p><p><strong>Auslöser:</strong>\nEine Kreatur bewegt sich auf eine Druckplatte</p><p><strong>Dauer:</strong>\nAugenblicklich, und die Falle wird zu Beginn des nächsten Zuges zurückgesetzt, wenn sie\nweniger als dreimal ausgelöst wurde</p><p>Wenn eine Kreatur zum ersten Mal in einem Zug auf die\nDruckplatte dieser Falle tritt, schießen vergiftete Wurfpfeile\naus Rohren, die in den umgebenden Wänden eingelassen sind. Die Löcher, in denen sich diese\nRohre befinden, sind durch Staub und Spinnweben verdeckt oder geschickt zwischen\nBasreliefs, Wandgemälden oder Fresken versteckt.</p><p>Jede Kreatur im Pfad der Wurfpfeile\nmuss einen Rettungswurf auf Geschicklichkeit SG 13 bestehen oder wird von [[/r 1d3]]\nWurfpfeilen getroffen und erleidet 3 (1W6) Giftschaden pro Wurfpfeil.</p><p><em><strong>Entdecken und\nEntschärfen.</strong></em> Als Suchaktion kann eine Kreatur die Wände\nuntersuchen und eine [[/check prc 15]]-Probe ablegen, wobei sie die Löcher bei einer erfolgreichen\nProbe entdeckt. Das Verstopfen aller Löcher mit Wachs, Stoff oder Schutt verhindert das\nAbfeuern der Wurfpfeile.</p><p>Als Suchaktion kann eine Kreatur den\nBodenbereich untersuchen, der die Druckplatte bildet, und eine [[/check prc\n15]]-Probe ablegen, wobei sie die Druckplatte bei einer erfolgreichen Probe entdeckt. Das Einklemmen eines\nEisenstifts oder eines ähnlichen Objekts unter die Druckplatte verhindert, dass die Falle\nausgelöst wird.</p><p><em><strong>Auf höheren Stufen.</strong></em> Du kannst\ndie Falle für höhere Stufen skalieren, indem du den Giftschaden jedes Wurfpfeils\nwie folgt erhöhst: 7 (2W6) auf Stufen 5–10, 14 (4W6) auf Stufen 11–16 oder 24 (7W6)\nauf Stufen 17–20.</p></div>",
+    "activities": {
+      "Trigger (1-4)": "Auslösen (1-4)",
+      "Trigger (11-16)": "Auslösen (11-16)",
+      "Trigger (17-20)": "Auslösen (17-20)",
+      "Trigger (5-10)": "Auslösen (5-10)"
+    }
+  },
+  "dmgPoisonedNeedl": {
+    "name": "Vergiftete Nadel",
+    "description": "<div><p><em>Ärgerliche Falle (Stufen\n1–4)</em></p><p><strong>Auslöser:</strong> Eine Kreatur öffnet das Schloss der Falle\nunsachgemäß oder scheitert beim Entschärfen der Falle</p><p><strong>Dauer:</strong>\nAugenblicklich</p><p>Eine vergiftete Nadel ist in einem Schloss versteckt. Wenn eine Kreatur\ndas Schloss mit einem anderen Gegenstand als dem richtigen Schlüssel öffnet, schnellt die Nadel\nheraus und sticht die Kreatur. Die Kreatur muss einen Rettungswurf auf Konstitution SG 11 ablegen.\nBei einem misslungenen Rettungswurf erleidet die Kreatur 5 (1W10)\nGiftschaden und hat den Zustand &amp;Reference[Poisoned apply=false]\nfür 1 Stunde. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur nur halb so viel Schaden.</p><p><em><strong>Vermeiden.</strong></em> Die Falle wird nicht ausgelöst, wenn\ndas Schloss mit einem <em>Klopfzauber</em> oder ähnlicher\nMagie geöffnet wird.</p><p><em><strong>Entdecken und Entschärfen.</strong></em> Als Suchaktion\nkann eine Kreatur das präparierte Schloss untersuchen und eine [[/check prc\n15]]-Probe ablegen, wobei sie die Nadel bei einer erfolgreichen Probe entdeckt. Sobald die Falle\nentdeckt wurde, kann ein Charakter eine Aktion aufwenden, um zu versuchen, die Falle zu entschärfen, was\nmit einer erfolgreichen [[/check slt 15]]-Probe gelingt. Bei einer misslungenen Probe löst die\nKreatur die Falle aus.</p><p><em><strong>Auf höheren\nStufen.</strong></em> Du kannst die Falle für höhere Stufen skalieren, indem du\nden Schaden und den Rettungswurf-SG erhöhst, wie in der folgenden\nTabelle gezeigt.</p><table><thead><tr><th><p>Stufen</p></th><th><p>Giftschaden</p></th><th><p>Rettungswurf-SG</p></th><th></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11\n(2W10)</p></td><td><p>13</p></td><td></td></tr><tr><td><p>11–16</p></td><td><p>22\n(4W10)</p></td><td><p>15</p></td><td></td></tr><tr><td><p>17–20</p></td><td><p>55\n(10W10)</p></td><td><p>17</p></td><td></td></tr></tbody></table></div>",
+    "activities": {
+      "Trigger (1-4)": "Auslösen (1-4)",
+      "Trigger (11-16)": "Auslösen (11-16)",
+      "Trigger (17-20)": "Auslösen (17-20)",
+      "Trigger (5-10)": "Auslösen (5-10)"
+    },
+    "effects": {
+      "waWQ0QcVncE6pU5B": "Vergiftete Nadel"
+    }
+  },
+  "dmgRollingStone0": {
+    "name": "Rollender Stein",
+    "description": "<div><p ><em>Tödliche Falle (Stufen 11–16) oder Ärgerliche Falle (Stufen\n17–20)</em></p><p><strong>Auslöser:</strong> Eine Kreatur bewegt sich auf eine\nDruckplatte</p><p><strong>Dauer:</strong> Bis der Stein aufhört\nzu rollen</p><p>Wenn eine Kreatur auf eine versteckte Druckplatte tritt, wird eine\n1,5 m Radius große Kugel aus massivem Stein aus einem geheimen Fach freigegeben und\nbeginnt zu rollen. Der Stein und alle Kreaturen in der Nähe würfeln Initiative; der\nStein erhält einen [[/r 1d20 + 8]]{+8} Bonus auf seinen Initiativwurf.</p><p>In\nseinem Zug bewegt sich der Stein 18 m in eine Richtung und ändert seinen Kurs, wenn\ner durch ein Hindernis umgelenkt wird. Der Stein kann sich durch die Felder von Kreaturen bewegen,\nund Kreaturen können sich durch das Feld des Steins bewegen und ihn als\n&amp;Reference[Difficult Terrain] behandeln. Immer wenn der Stein zum ersten Mal in einem Zug das Feld einer Kreatur\nbetritt oder eine Kreatur das Feld des Steins betritt, während der Stein rollt, muss diese Kreatur\neinen Rettungswurf auf Geschicklichkeit SG 15 bestehen oder erleidet 55 (10W10) Wuchtschaden und hat den\nZustand &amp;Reference[Prone apply=false].</p><p>Der Stein stoppt, wenn er\neine Wand oder eine ähnliche Barriere trifft. Er kann keine Ecken umrunden, aber kreative\nDungeon-Baumeister integrieren gekrümmte Kurven in nahegelegene Gänge, die es dem Stein\nermöglichen, sich weiterzubewegen.</p><p><em><strong>Entdecken und\nEntschärfen.</strong></em> Als Studienaktion kann eine Kreatur den\nBodenbereich untersuchen, der die Druckplatte bildet, und eine [[/check inv\n15]]-Probe ablegen, wobei sie die Funktion der Druckplatte bei einer erfolgreichen Probe ableitet.\nDas Einklemmen eines Eisenstifts oder eines ähnlichen Objekts unter die Druckplatte\nverhindert, dass die Falle ausgelöst wird.</p><p><em><strong>Den Stein\nzerstören.</strong></em> Der Stein ist ein Großes Objekt mit RK 17, 100 TP, einer\nSchadensschwelle von 10 und Immunität gegen Gift- und Psychischen\nSchaden.</p><p><em><strong>Den Stein verlangsamen.</strong></em> Als Aktion kann eine\nKreatur versuchen, den Stein mit einer Stärke (Athletik)-Probe SG 20 zu verlangsamen.\nIst die Probe erfolgreich, wird die Strecke, die der Stein in seinem\nZug zurücklegt, um 4,5 m reduziert. Fällt diese Strecke auf 0, hört er auf sich zu bewegen\nund stellt keine Bedrohung mehr dar.</p></div>",
+    "activities": {
+      "Slow": "Verlangsamen"
+    }
+  },
+  "dmgSpikedPit0000": {
+    "name": "Stachelgrube",
+    "description": "<div><p><em>Tödliche Falle (Stufen 1–4)</em></p><p><strong>Auslöser:</strong>\nEine Kreatur bewegt sich auf den Deckel der Grube</p><p><strong>Dauer:</strong>\nAugenblicklich</p><p>Eine 3 m tiefe Grube hat einen aufklappbaren Deckel, der aus\nMaterial besteht, das dem umgebenden Boden gleicht. Wenn eine Kreatur auf\nden Deckel tritt, schwingt er wie eine Falltür auf, wodurch die Kreatur in\ndie Grube fällt, die am Boden geschärfte Holz- oder Metallspieße hat. Der Deckel\nbleibt danach offen.</p><p>Eine Kreatur, die in die Grube fällt, landet am\nBoden und erleidet 3 (1W6) Wuchtschaden durch den Fall plus 9 (2W8)\nStichschaden durch die Spieße.</p><p><em><strong>Entdecken und\nEntschärfen.</strong></em> Als Studienaktion kann eine Kreatur den\nBodenbereich untersuchen, der den Deckel der Grube bildet, und eine [[/check inv 15]]\n-Probe ablegen, wobei sie die Grube bei einer erfolgreichen Probe entdeckt. Sobald die versteckte Grube\nentdeckt wurde, kann ein Eisenstachel oder ein ähnliches Objekt zwischen den\nDeckel der Grube und den umgebenden Boden geklemmt werden, um zu verhindern, dass der Deckel sich öffnet,\ndadurch wird er sicher zu überqueren. Die Abdeckung kann auch mit einem\n<em>Arkanes Schloss</em>-Zauber oder ähnlicher\nMagie geschlossen gehalten werden.</p><p><em><strong>Entkommen.</strong></em> Eine Kreatur benötigt eine Klettergeschwindigkeit,\nKletterausrüstung oder Magie wie einen <em>Spinnenklettern</em>-Zauber, um\ndie glatten Wände der Grube zu erklimmen. Du kannst das Entkommen aus der Grube erleichtern, indem du\nRisse in den Wänden hinzufügst, die groß genug sind, um als Hand- und\nFußgriffe zu dienen.</p><p><em><strong>Auf höheren Stufen.</strong></em> Du kannst\ndie Falle für höhere Stufen skalieren, indem du die Tiefe und den Schaden der Grube erhöhst, wie\nin der folgenden\nTabelle gezeigt.</p><table><thead><tr><th><p>Stufen</p></th><th><p>Grubentiefe</p></th><th><p>Schaden</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>9 m</p></td><td><p>10 (3W6) Wuchtschaden plus 13 (3W8)\nStichschaden</p></td></tr><tr><td><p>11–16</p></td><td><p>18 m</p></td><td><p>21 (6W6) Wuchtschaden plus 36 (8W8)\nStichschaden</p></td></tr><tr><td><p>17–20</p></td><td><p>36 m</p></td><td><p>42 (12W6) Wuchtschaden plus 57 (13W8)\nStichschaden</p></td></tr></tbody></table></div>",
+    "activities": {
+      "Trigger (1-4)": "Auslösen (1-4)",
+      "Trigger (11-16)": "Auslösen (11-16)",
+      "Trigger (17-20)": "Auslösen (17-20)",
+      "Trigger (5-10)": "Auslösen (5-10)"
+    }
+  },
+  "mmAboleth0000000": {
+    "name": "Aboleth",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmChuul000000000": {
+    "name": "Chuul",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmCloaker0000000": {
+    "name": "Mantel",
+    "description": "<p class=\"feature\">Solange er sich in hellem Licht befindet, hat der [[lookup @name lowercase]]{monster} Nachteil auf Angriffswürfe.</p>"
+  },
+  "mmDarkmantle0000": {
+    "name": "Dunkelmantel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und der [[lookup @name lowercase]]{monster} heftet sich an das Ziel. Ist das Ziel eine mittelgroße oder kleinere Kreatur und hatte der [[lookup @name lowercase]]{monster} Vorteil auf den Angriffswurf, bedeckt er das Ziel, das den Zustand &amp;Reference[Blinded apply=false] erhält und &amp;Reference[suffocating apply=false]{suffocating} ist, solange der [[lookup @name lowercase]]{monster} auf diese Weise angeheftet ist.</p><p\n    class=\"feature\">Solange er an ein Ziel angeheftet ist, kann der [[lookup @name lowercase]]{monster} nur dieses Ziel angreifen, hat aber Vorteil auf seine Angriffswürfe. Seine Bewegungsrate wird 0, er kann von keinem Bonus auf seine Bewegungsrate profitieren und bewegt sich mit dem Ziel.</p><p class=\"feature\">Eine Kreatur kann eine Aktion aufwenden, um zu versuchen, den [[lookup @name lowercase]]{monster} von sich zu lösen, indem sie einen erfolgreichen [[/check format=long]] ablegt. In seinem Zug kann sich der [[lookup @name lowercase]]{monster} selbst lösen, indem er 1,5 m Bewegung aufwendet.</p>"
+  },
+  "mmGibberingMouth": {
+    "name": "Sabbernder Schlund",
+    "description": "<p>Der Boden in einer [[lookup @target.template.size\n    activity=zVznqPXgYjETqpQz]]-Fuß-Emanation, die vom\n    [[lookup @name]]{monster} ausgeht, ist &amp;Reference[Difficult Terrain].</p>"
+  },
+  "mmGrick000000000": {
+    "name": "Grick",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item Beak]]-Angriff\n    und einen [[/item Tentacles]]-Angriff aus.</p>"
+  },
+  "mmGrimlock000000": {
+    "name": "Grimlock",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmOtyugh00000000": {
+    "name": "Otyugh",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item Bite]]-Angriff\n    und zwei [[/item Tentacle]]-Angriffe aus.</p>"
+  },
+  "mmRoper000000000": {
+    "name": "Roper",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "mmAllosaurus0000": {
+    "name": "Allosaurus",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Große oder kleinere Kreatur und der [[lookup @name lowercase]]{monster} hat sich unmittelbar vor dem Treffer 30+ Fuß geradlinig auf es zubewegt, erhält das Ziel den Zustand &amp;Reference[Prone apply=false], und der [[lookup @name lowercase]]{monster} kann einen [[/item .mmBite0000000000]] Angriff gegen es ausführen.</p>"
+  },
+  "mmAnkylosaurus00": {
+    "name": "Ankylosaurus",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmTail0000000000]] Angriffe aus.</p>"
+  },
+  "mmApe00000000000": {
+    "name": "Affe",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmFist0000000000]] Angriffe aus.</p>"
+  },
+  "mmArchelon000000": {
+    "name": "Archelon",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>\n  chat: ''\nidentifier: amphibious\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmBaboon00000000": {
+    "name": "Pavian",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m zur Kreatur ist und der Verbündete nicht den Zustand 'Handlungsunfähig' hat.</p>\n  chat: ''\nidentifier: pack-tactics\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: Ally within 1,5 m of attack target\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmBadger00000000": {
+    "name": "Dachs",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmBat00000000000": {
+    "name": "Fledermaus",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmBlackBear00000": {
+    "name": "Schwarzbär",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]]-Angriffe aus.</p>"
+  },
+  "mmBloodHawk00000": {
+    "name": "Bluthabicht",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand 'Handlungsunfähig' hat.</p>"
+  },
+  "mmBoar0000000000": {
+    "name": "Eber",
+    "description": "<p>Solange &amp;Reference[Bloodied], hat der [[lookup @name lowercase]]{monster} Vorteil auf Angriffswürfe.</p>"
+  },
+  "mmBrownBear00000": {
+    "name": "Braunbär",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item .mmBite0000000000]]-Angriff und einen [[/item .mmClaw0000000000]]-Angriff aus.</p>"
+  },
+  "mmCamel000000000": {
+    "name": "Kamel",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmCat00000000000": {
+    "name": "Katze",
+    "description": "<p class=\"feature\">Die Sprungweite der [[lookup @name lowercase]]{monster} wird anhand ihrer Geschicklichkeit statt ihrer Stärke bestimmt.</p>"
+  },
+  "mmConstrictorSna": {
+    "name": "Würgeschlange",
+    "description": "<p><em>Stärke-Rettungswurf:</em><span class=\"Heading-4\"> </span>SG\n    [[lookup @save.dc.value activity=IgOMjRxAt7UISkJq]], eine [[lookup\n    @target.affects.special activity=IgOMjRxAt7UISkJq]] Kreatur, die die\n    [[lookup @name lowercase]]{monster} innerhalb von [[lookup\n    @range.value activity=IgOMjRxAt7UISkJq]] Fuß sehen kann.</p><p><em>Misserfolg:</em>\n    [[/damage average]] Schaden, und das Ziel erhält den Zustand\n    &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup\n    @skills.ath.passive]]).</p>"
+  },
+  "mmCrab0000000000": {
+    "name": "Krabbe",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmCrocodile00000": {
+    "name": "Krokodil",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann den Atem für 1 Stunde anhalten.</p>"
+  },
+  "mmDeer0000000000": {
+    "name": "Hirsch",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} provoziert keinen &amp;Reference[opportunityattacks]{Opportunity Attack}, wenn es sich aus der Reichweite eines Feindes bewegt.</p>"
+  },
+  "mmDireWolf000000": {
+    "name": "Schreckenswolf",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand 'Handlungsunfähig' hat.</p>",
+    "activationCondition": "Verbündeter innerhalb von 1,5 m des Angriffsziels"
+  },
+  "mmDraftHorse0000": {
+    "name": "Zugpferd",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmEagle000000000": {
+    "name": "Adler",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmElephant000000": {
+    "name": "Elefant",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item\n    .mmGore0000000000]] Angriffe aus.</p>"
+  },
+  "mmElk00000000000": {
+    "name": "Elch",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].\n    Wenn das Ziel eine [[lookup @target.affects.special\n    activity=z58sUDUmqxECJgT3]] Kreatur ist und der [[lookup @name\n    lowercase]]{monster} sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf sie zubewegt hat, erleidet das Ziel zusätzlich [[/damage 1d6 bludgeoning\n    average]] Wuchtschaden und erhält den Zustand &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmFrog0000000000": {
+    "name": "Frosch",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und\n    Wasser atmen.</p>"
+  },
+  "mmGiantApe000000": {
+    "name": "Riesenaffe",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmFist0000000000]] Angriffe aus.</p>"
+  },
+  "mmGiantBadger000": {
+    "name": "Riesen-Dachs",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmGiantBat000000": {
+    "name": "Riesen-Fledermaus",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmGiantBoar00000": {
+    "name": "Riesen-Eber",
+    "description": "<p>Solange &amp;Reference[Bloodied], hat der [[lookup @name lowercase]]{monster} Vorteil auf Angriffswürfe.</p>"
+  },
+  "mmGiantCentipede": {
+    "name": "Riesentausendfüßer",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], und das Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster}.</p>"
+  },
+  "mmGiantConstrict": {
+    "name": "Riesenwürgeschlange",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} führt einen [[/item .mmBite0000000000]]-Angriff aus und setzt [[/item .mmConstrict00000]] ein.</p>"
+  },
+  "mmGiantCrab00000": {
+    "name": "Riesenkrabbe",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann an Land und unter Wasser atmen.</p>"
+  },
+  "mmGiantCrocodile": {
+    "name": "Riesenkrokodil",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann den Atem für 1 Stunde anhalten.</p>"
+  },
+  "mmGiantFireBeetl": {
+    "name": "Riesen-Feuerkäfer",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} erzeugt helles Licht in einem Radius von 3 m und schwaches Licht für weitere 3 m.</p>"
+  },
+  "mmGiantFrog00000": {
+    "name": "Riesenfrosch",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmGiantGoat00000": {
+    "name": "Riesen-Ziege",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].\n    Ist das Ziel eine [[lookup @target.affects.special\n    activity=z58sUDUmqxECJgT3]] Kreatur und die [[lookup @name\n    lowercase]]{monster} sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf sie zubewegt hat, erleidet das Ziel zusätzlich [[/damage 2d4 bludgeoning\n    average]] Schaden und erhält den Zustand &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmGiantHyena0000": {
+    "name": "Riesenhyäne",
+    "description": "<p class=\"feature\">Unmittelbar nachdem sie einer Kreatur Schaden zugefügt hat, die bereits &amp;Reference[Bloodied] ist, bewegt sich die [[lookup @name\n    lowercase]]{monster} bis zur Hälfte ihrer Bewegungsrate und führt einen [[/item .mmBite0000000000]] Angriff aus.</p>"
+  },
+  "mmGiantLizard000": {
+    "name": "Rieseneidechse",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "mmGiantOctopus00": {
+    "name": "Riesenoktopus",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann nur unter Wasser atmen. Außerhalb des Wassers kann er den Atem 1 Stunde lang anhalten.</p>"
+  },
+  "mmGiantRat000000": {
+    "name": "Riesenratte",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten der [[lookup @name lowercase]]{monster} innerhalb von 1,5 m von der Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmGiantScorpion0": {
+    "name": "Riesenskorpion",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmClaw0000000000]] Angriffe und einen [[/item .mmSting000000000]] Angriff aus.</p>"
+  },
+  "mmGiantSeahorse0": {
+    "name": "Riesenseepferd",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], oder [[/damage average activity=YI7aqJ7iiFSYAT7z]] Schaden, wenn das Seepferd sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf das Ziel zubewegt hat.</p>"
+  },
+  "mmGiantShark0000": {
+    "name": "Riesenhai",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann nur unter Wasser atmen. Er kann seinen Atem für {duration} außerhalb des Wassers anhalten.</p>"
+  },
+  "mmGiantSpider000": {
+    "name": "Riesenspinne",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "mmGiantToad00000": {
+    "name": "Riesenkröte",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmGiantVenomousS": {
+    "name": "Riesige Giftschlange",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmGiantWasp00000": {
+    "name": "Riesenwespe",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} provoziert keinen\n    &amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn sie aus der\n    Reichweite eines Feindes fliegt.</p>\n  chat: ''\nidentifier: flyby\nsource:\n  revision: 1\n  rules: '2024'\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: Fliegt aus der Reichweite eines Feindes\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmGiantWeasel000": {
+    "name": "Riesenwiesel",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmGiantWolfSpide": {
+    "name": "Riesenwolfspinne",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann schwierige\n    Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf\n    machen zu müssen.</p>\n  chat: ''\nidentifier: spider-climb\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmGoat0000000000": {
+    "name": "Ziege",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], oder [[/damage\n    average activity=kJRbpcMr4MaYs4JL]] Schaden, wenn die Ziege sich unmittelbar vor dem Treffer 20 oder mehr Fuß geradlinig auf das Ziel zubewegt hat.</p>"
+  },
+  "mmHawk0000000000": {
+    "name": "Falke",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmHippopotamus00": {
+    "name": "Flusspferd",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann den Atem 10 Minuten lang anhalten.</p>"
+  },
+  "mmHunterShark000": {
+    "name": "Jägerhai",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann nur unter Wasser atmen.</p>"
+  },
+  "mmHyena000000000": {
+    "name": "Hyäne",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten der [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmJackal00000000": {
+    "name": "Schakal",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmKillerWhale000": {
+    "name": "Orca",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann seinen Atem 30 Minuten lang anhalten.</p>"
+  },
+  "mmLion0000000000": {
+    "name": "Löwe",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmLizard00000000": {
+    "name": "Eidechse",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Attributswurf machen zu müssen.</p>"
+  },
+  "mmMammoth0000000": {
+    "name": "Mammut",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} führt zwei [[/item .mmGore0000000000]] Angriffe aus.</p>"
+  },
+  "mmMastiff0000000": {
+    "name": "Dogge",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Kreatur der Größe Mittel oder kleiner, erhält es den Zustand &amp;Reference[Prone\n    apply=false].</p>"
+  },
+  "mmMule0000000000": {
+    "name": "Maultier",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} zählt als eine Größenkategorie größer, um seine Tragfähigkeit zu bestimmen.</p>"
+  },
+  "mmOctopus0000000": {
+    "name": "Oktopus",
+    "description": "<p><em>Auslöser:</em> Eine Kreatur beendet ihren Zug innerhalb von 1,5 m um den Oktopus, während dieser unter Wasser ist. <em>Reaktion:</em> Der Oktopus stößt Tinte aus, die einen 5-Fuß-Würfel füllt, der auf ihn selbst zentriert ist, und der Oktopus bewegt sich bis zu seiner Schwimmgeschwindigkeit. Der Würfel ist &amp;Reference[heavilyobscured] für 1 Minute oder bis eine starke Strömung oder ein ähnlicher Effekt die Tinte zerstreut.</p>",
+    "activities": {
+      "Obscure Area": "Bereich verdecken"
+    },
+    "activationCondition": "eine Kreatur beendet ihren Zug innerhalb von 1,5 m um den Oktopus, während dieser unter Wasser ist"
+  },
+  "mmOwl00000000000": {
+    "name": "Eule",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} provoziert keinen &amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn sie aus der Reichweite eines Feindes fliegt.</p>"
+  },
+  "mmPanther0000000": {
+    "name": "Panther",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt die Aktion &amp;Reference[Disengage] oder &amp;Reference[Hide] aus.</p>"
+  },
+  "mmPiranha0000000": {
+    "name": "Piranha",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann nur unter Wasser atmen.</p>"
+  },
+  "mmPlesiosaurus00": {
+    "name": "Plesiosaurus",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann den Atem 1 Stunde lang anhalten.</p>"
+  },
+  "mmPolarBear00000": {
+    "name": "Eisbär",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item\n    .mmRend0000000000]]-Angriffe aus.</p>"
+  },
+  "mmPony0000000000": {
+    "name": "Pony",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmPteranodon0000": {
+    "name": "Pteranodon",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} provoziert keinen\n    &amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn er\n    aus der Reichweite eines Feindes fliegt.</p>",
+    "activationCondition": "Fliegt aus der Reichweite eines Feindes"
+  },
+  "mmRat00000000000": {
+    "name": "Ratte",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} provoziert keinen &amp;Reference[opportunityattacks]{Opportunity Attack}, wenn sie sich aus der Reichweite eines Feindes bewegt.</p>"
+  },
+  "mmRaven000000000": {
+    "name": "Rabe",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann einfache Geräusche nachahmen, die er gehört hat, wie ein Flüstern oder Zwitschern. Ein Zuhörer kann mit einem erfolgreichen [[/check format=long]] erkennen, dass die Geräusche Imitationen sind.</p>"
+  },
+  "mmReefShark00000": {
+    "name": "Riffhai",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m zur Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmRhinoceros0000": {
+    "name": "Nashorn",
+    "description": "<p>[[/attack extended]]. [[/damage extended average]]. Wenn das Ziel eine [[lookup @target.affects.special activity=iBenqFiBu40bUxkH]] Kreatur ist und das [[lookup @name lowercase]]{monster} sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf es zubewegt hat, erleidet das Ziel zusätzlichen [[/damage 2d8 average type=piercing]] Schaden und hat den Zustand &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmRidingHorse000": {
+    "name": "Reitpferd",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSabertoothedTi": {
+    "name": "Säbelzahntiger",
+    "description": "<p class=\"feature\">Mit einem Anlauf von 3 m kann der [[lookup @name\n    lowercase]]{monster} bis zu 7,5 m weit springen.</p>\n  chat: ''\nidentifier: running-leap\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmScorpion000000": {
+    "name": "Skorpion",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSeahorse000000": {
+    "name": "Seepferdchen",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann nur unter Wasser atmen. </p>\n  chat: ''\nidentifier: water-breathing\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmSpider00000000": {
+    "name": "Spinne",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Attributswurf machen zu müssen.</p>"
+  },
+  "mmTiger000000000": {
+    "name": "Tiger",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Große oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Prone\n    apply=false].</p>"
+  },
+  "mmTriceratops000": {
+    "name": "Triceratops",
+    "description": "<p> Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmGore0000000000]] Angriffe aus.</p>"
+  },
+  "mmTyrannosaurusR": {
+    "name": "Tyrannosaurus Rex",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item .mmBite0000000000]] Angriff und einen [[/item .mmTail0000000000]] Angriff aus.</p>"
+  },
+  "mmVenomousSnake0": {
+    "name": "Giftschlange",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmVulture0000000": {
+    "name": "Geier",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m zur Kreatur ist und der Verbündete nicht den Zustand 'Kampfunfähig' hat.</p>"
+  },
+  "mmWarhorse000000": {
+    "name": "Streitross",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Große oder kleinere Kreatur und das Pferd hat sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf sie zubewegt, erleidet das Ziel zusätzlich 5 (2W4) Wuchtschaden und hat den Zustand &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmWeasel00000000": {
+    "name": "Wiesel",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmWolf0000000000": {
+    "name": "Wolf",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand 'Handlungsunfähig' hat.</p>"
+  },
+  "mmCouatl00000000": {
+    "name": "Couatl",
+    "description": "<p class=\"feature\">Die Gedanken des [[lookup @name lowercase]]{monster} können auf keine Weise gelesen werden, und andere Kreaturen können nur telepathisch mit ihm kommunizieren, wenn es ihnen dies erlaubt.</p>"
+  },
+  "mmDeva0000000000": {
+    "name": "Deva",
+    "description": "<p class=\"feature\">Stirbt der [[lookup @name lowercase]]{monster} außerhalb des Berges Celestia, verschwindet sein Körper, und er erhält sofort einen neuen Körper, wobei er mit all seinen Trefferpunkten irgendwo auf dem Berg Celestia wiederbelebt wird.</p>"
+  },
+  "mmGiantEagle0000": {
+    "name": "Riesiger Adler",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item Rend]]-Angriffe aus.</p>"
+  },
+  "mmGiantElk000000": {
+    "name": "Riesenelch",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].\n    Ist das Ziel eine riesige oder kleinere Kreatur und hat der Elch sich unmittelbar vor dem Treffer 6 m oder mehr geradlinig bewegt, erleidet das Ziel zusätzlich\n    [[/damage average activity=i9cI4yuGrjw1or1q]] Schaden und erhält den Zustand\n    &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmGiantOwl000000": {
+    "name": "Rieseneule",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} provoziert keinen\n    &amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn sie aus der Reichweite eines Feindes fliegt.</p>"
+  },
+  "mmGuardianNaga00": {
+    "name": "Wächter-Naga",
+    "description": "<p>Stirbt die [[lookup @name lowercase]]{monster}, kehrt sie in [[/r 1d6#Days]] Tagen ins Leben zurück und erhält alle ihre Trefferpunkte zurück, es sei denn,\n    <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelEvil]</em> wird\n    auf ihre Überreste gewirkt.</p>"
+  },
+  "mmPegasus0000000": {
+    "name": "Pegasus",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmPlanetar000000": {
+    "name": "Planetar",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} weiß, ob er eine Lüge hört.</p>"
+  },
+  "mmSolar000000000": {
+    "name": "Solar",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} weiß, ob er eine Lüge hört.</p>"
+  },
+  "mmSphinxOfLore00": {
+    "name": "Sphinx der Überlieferung",
+    "description": "<p class=\"feature\">Keine Magie kann die [[lookup @name lowercase]]{monster} aus der Ferne beobachten oder ihre Gedanken ohne ihre Erlaubnis entdecken. Weisheit (Einsicht)-Würfe, die gemacht werden, um ihre Absichten oder Aufrichtigkeit festzustellen, werden mit Nachteil ausgeführt.</p>"
+  },
+  "mmSphinxOfValor0": {
+    "name": "Sphinx des Mutes",
+    "description": "<p class=\"feature\">Keine Magie kann die [[lookup @name lowercase]]{monster} aus der Ferne beobachten oder ihre Gedanken ohne ihre Erlaubnis entdecken. Weisheit (Einsicht)-Würfe, die gemacht werden, um ihre Absichten oder Aufrichtigkeit festzustellen, werden mit Nachteil ausgeführt.</p>"
+  },
+  "mmSphinxOfWonder": {
+    "name": "Sphinx des Wunders",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>"
+  },
+  "mmUnicorn0000000": {
+    "name": "Einhorn",
+    "description": "<p>Wenn das [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann es stattdessen wählen, erfolgreich zu sein.</p>"
+  },
+  "phbostCelestial0": {
+    "name": "Himmlisches Ross",
+    "description": "<p> Wenn du Trefferpunkte durch einen Zauber der Stufe 1 oder höher zurückerhältst, erhält das Ross die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>"
+  },
+  "phbostFey0000000": {
+    "name": "Feenross",
+    "description": "<p> Wenn du Trefferpunkte durch einen Zauber der Stufe 1 oder höher zurückerhältst, erhält das Ross die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>"
+  },
+  "phbostFiend00000": {
+    "name": "Dämonisches Reittier",
+    "description": "<p> Wenn du Trefferpunkte durch einen Zauber des Grades 1 oder höher zurückerhältst, erhält das Reittier die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>"
+  },
+  "phbmobOtherworld": {
+    "name": "Jenseitiges Reittier",
+    "description": "<p> Wenn du Trefferpunkte durch einen Zauber des Grades 1 oder höher zurückerhältst, erhält das Reittier die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>"
+  },
+  "phbhaoAnimatedOb": {
+    "name": "Riesiges Beseeltes Objekt",
+    "description": "<p><em>Nahkampfangriffswurf:</em> Bonus entspricht deinem Zauberangriffsmodifikator, Reichweite 1,5 m. <em>Treffer:</em> Wuchtschaden in Höhe von 2W12 + 3 + deinem Zauberwirkungsmodifikator.</p>"
+  },
+  "phblaoAnimatedOb": {
+    "name": "Großes Beseeltes Objekt",
+    "description": "<p><em>Nahkampfangriffswurf:</em> Bonus entspricht deinem Zauberangriffsmodifikator, Reichweite 1,5 m. <em>Treffer:</em> Wuchtschaden in Höhe von 2W6 + 3 + deinem Zauberwirkungsmodifikator.</p>"
+  },
+  "phbmaoAnimatedOb": {
+    "name": "Mittleres Beseeltes Objekt",
+    "description": "<p><em>Nahkampfangriffswurf:</em> Bonus entspricht deinem Zauberangriffsmodifikator, Reichweite 1,5 m. <em>Treffer:</em> Wuchtschaden gleich 1W4 +\\_3.</p>"
+  },
+  "phbsaoAnimatedOb": {
+    "name": "Kleines Beseeltes Objekt",
+    "description": "<p><em>Nahkampfangriffswurf:</em> Bonus entspricht deinem Zauberangriffsmodifikator, Reichweite 1,5 m. <em>Treffer:</em> Wuchtschaden gleich 1W4 +\\_3.</p>"
+  },
+  "phbtaoAnimatedOb": {
+    "name": "Winziges Beseeltes Objekt",
+    "description": "<p><em>Nahkampfangriffswurf:</em> Bonus entspricht deinem Zauberangriffsmodifikator, Reichweite 1,5 m. <em>Treffer:</em> Wuchtschaden gleich 1W4 +\\_3.</p>"
+  },
+  "phbsplMordSword0": {
+    "name": "Arkanes Schwert",
+    "description": "<p>In deinen späteren Zügen kannst du eine Bonusaktion nutzen, um das Schwert bis zu 9 m weit an einen Ort zu bewegen, den du sehen kannst, und den Angriff gegen dasselbe oder ein anderes Ziel wiederholen. Bei einem Treffer erleidet das Ziel Wuchtschaden in Höhe von 4W12 plus deinem Zauberwirkungsmodifikator.</p>"
+  },
+  "phbSpectralAnima": {
+    "name": "Beschworene Tiere",
+    "description": "<p>Immer wenn das Rudel sich innerhalb von 3 m einer Kreatur bewegt, die du sehen kannst, und immer wenn eine Kreatur, die du sehen kannst, einen Bereich innerhalb von 3 m des Rudels betritt oder ihren Zug dort beendet, kannst du diese Kreatur zwingen, einen Geschicklichkeitsrettungswurf zu machen. Bei einem misslungenen Rettungswurf erleidet die Kreatur 3W10 Hiebschaden. Eine Kreatur macht diesen Rettungswurf nur einmal pro Zug.</p>",
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "activationCondition": "sichtbare Kreatur bewegt sich oder beendet ihren Zug innerhalb von 3 m des Rudels"
+      }
+    }
+  },
+  "phbsplConjuredEl": {
+    "name": "Beschworenes Luftelementar",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplConjureEle\n    caption=false]</p>",
+    "activities": {
+      "dnd5eactivity000": "Initialer Rettungswurf",
+      "OeBjTLqhK4uDBBuD": "Rettungswurf während Festhalten"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, betritt den Bereich des Geistes oder beginnt ihren Zug innerhalb von 1,5 m des Geistes"
+      },
+      "OeBjTLqhK4uDBBuD": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, betritt den Bereich des Geistes oder beginnt ihren Zug innerhalb von 1,5 m des Geistes"
+      }
+    }
+  },
+  "phbConjuredEarth": {
+    "name": "Beschworenes Erdelementar",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplConjureEle\n    caption=false]</p>\n  chat: ''\nsource:\n  custom: ''\n  rules: '2024'\n  revision: 1\n  book: ''\n  license: CC-BY-4.0\nuses:\n  max: ''\n  recovery: []\n  spent: 0\ntype:\n  value: monster\n  subtype: ''\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - mgc\nrequirements: ''\nactivities:",
+    "activities": {
+      "0JLDfejzSB5jOo1y": "Anfänglicher Rettungswurf",
+      "BpPMuUAvi25WtIqp": "Rettungswurf, während gefesselt"
+    },
+    "activitiesMeta": {
+      "0JLDfejzSB5jOo1y": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, den Raum des Geistes betritt oder ihren Zug innerhalb von 1,5 m des Geistes beginnt"
+      },
+      "BpPMuUAvi25WtIqp": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, den Raum des Geistes betritt oder ihren Zug innerhalb von 1,5 m des Geistes beginnt"
+      }
+    }
+  },
+  "phbConjuredFireE": {
+    "name": "Beschworenes Feuerelementar",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplConjureEle\n    caption=false]</p>\n  chat: ''\nsource:\n  custom: ''\n  rules: '2024'\n  revision: 1\n  book: ''\n  license: CC-BY-4.0\nuses:\n  max: ''\n  recovery: []\n  spent: 0\ntype:\n  value: monster\n  subtype: ''\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - mgc\nrequirements: ''\nactivities:",
+    "activities": {
+      "kKPSUm9WDEDhhQtt": "Anfänglicher Rettungswurf",
+      "5PCXGij7otAlYyL2": "Rettungswurf, während gefesselt"
+    },
+    "activitiesMeta": {
+      "kKPSUm9WDEDhhQtt": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, den Raum des Geistes betritt oder ihren Zug innerhalb von 1,5 m des Geistes beginnt"
+      },
+      "5PCXGij7otAlYyL2": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, den Raum des Geistes betritt oder ihren Zug innerhalb von 1,5 m des Geistes beginnt"
+      }
+    }
+  },
+  "phbConjuredWater": {
+    "name": "Beschworenes Wasserelementar",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplConjureEle\n    caption=false]</p>\n  chat: ''\nsource:\n  custom: ''\n  rules: '2024'\n  revision: 1\n  book: ''\n  license: CC-BY-4.0\nuses:\n  max: ''\n  recovery: []\n  spent: 0\ntype:\n  value: monster\n  subtype: ''\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - mgc\nrequirements: ''\nactivities:",
+    "activities": {
+      "XM6ZzB5ngT5Lr6Vw": "Anfänglicher Rettungswurf",
+      "K1lCqatPi2PsSDio": "Rettungswurf, während gefesselt"
+    },
+    "activitiesMeta": {
+      "XM6ZzB5ngT5Lr6Vw": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, den Raum des Geistes betritt oder ihren Zug innerhalb von 1,5 m des Geistes beginnt"
+      },
+      "K1lCqatPi2PsSDio": {
+        "activationCondition": "eine Kreatur, die du sehen kannst, den Raum des Geistes betritt oder ihren Zug innerhalb von 1,5 m des Geistes beginnt"
+      }
+    }
+  },
+  "phbsplConjuredFe": {
+    "name": "Beschworene Fee",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplConjureFey\n    caption=false]</p>\n  chat: ''\nactivities:",
+    "activities": {
+      "ooHKOg5gGPyp0Jzy": "Teleportieren und Angreifen"
+    },
+    "activitiesMeta": {
+      "4VrkFxTzZVmOFngx": {
+        "activationCondition": "beim Erscheinen"
+      }
+    }
+  },
+  "phbsplMediumDanc": {
+    "name": "Tanzendes Licht (Mittel)",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplDancingLig\ncaption=false]</p>"
+  },
+  "phbsplTinyDancin": {
+    "name": "Tanzendes Licht (Winzig)",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplDancingLig\ncaption=false]</p>"
+  },
+  "phbDuplicate0000": {
+    "name": "Duplikat"
+  },
+  "phbmobFaithfulHo": {
+    "name": "Treuer Hund",
+    "description": "<p>Zu Beginn jedes deiner Züge versucht der Hund, einen Feind innerhalb von 1,5 m von ihm zu beißen. Dieser Feind muss einen Rettungswurf auf Geschicklichkeit bestehen oder erleidet 4W8 Wuchtschaden.</p>",
+    "activities": {
+      "zrKZx3UXrGlDq2if": "Biss"
+    },
+    "effects": {
+      "dnd5einvisible00": "Unsichtbar"
+    },
+    "activitiesMeta": {
+      "zrKZx3UXrGlDq2if": {
+        "activationCondition": "Beginn deines Zuges"
+      }
+    }
+  },
+  "phbsplFloatingDi": {
+    "name": "Schwebende Scheibe",
+    "description": "<section id=\"secret-xvPfZzVKWfhDyIwx\"\n    class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand dient dazu, die berechnete Tragfähigkeit der Scheibe von 510 Pfund auf 500 Pfund gemäß der Zauberbeschreibung anzupassen.</p></section>"
+  },
+  "phbiluCreature00": {
+    "name": "Illusorische Kreatur"
+  },
+  "phbiluObject0000": {
+    "name": "Illusorisches Objekt"
+  },
+  "phbiluSensory000": {
+    "name": "Illusorisches Phänomen"
+  },
+  "phbInvisibleSens": {
+    "name": "Unsichtbarer Sensor",
+    "effects": {
+      "dnd5einvisible00": "Unsichtbar",
+      "9gxhNWiPY0SA7eV0": "Aktiver Sinn: Sicht",
+      "O96hoqlJot40eGqB": "Aktiver Sinn: Gehör"
+    }
+  },
+  "phbsumPhantomSte": {
+    "name": "Phantomross",
+    "description": "<p><em>Nahkampfangriffswurf:</em> +5, Reichweite 1,5 m. <em>Treffer: </em>7 (1d8 +\\_3) Wuchtschaden.</p>"
+  },
+  "phbsplSecretChes": {
+    "name": "Geheime Truhe",
+    "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplLeomundsSe\ncaption=false]</p>"
+  },
+  "mmAnimatedArmor0": {
+    "name": "Belebte Rüstung",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} führt zwei [[/item Slam]]-Angriffe aus.</p>"
+  },
+  "mmAnimatedFlying": {
+    "name": "Belebtes Fliegendes Schwert",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmAnimatedRugOfS": {
+    "name": "Belebter Erstickungsteppich",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine mittelgroße oder kleinere Kreatur, kann der [[lookup @name lowercase]]{monster} ihr stattdessen den Zustand &amp;Reference[Grappled\n    apply=false] (Entkommen SG [[lookup @skills.ath.passive]]) verleihen, anstatt Schaden zu verursachen. Solange der Griff anhält, hat das Ziel die Zustände &amp;Reference[Blinded apply=false] und &amp;Reference[Restrained\n    apply=false], ist &amp;Reference[Suffocating]{suffocating} und erleidet zu Beginn jedes seiner Züge [[/damage average]] Schaden. Der [[lookup @name lowercase]]{monster} kann nur eine Kreatur gleichzeitig ersticken.</p><p class=\"feature\">Solange der [[lookup @name lowercase]]{monster} das Ziel im Griff hat, kann er diese Aktion nicht ausführen, der [[lookup @name lowercase]]{monster} halbiert den erlittenen Schaden (abgerundet), und das Ziel erleidet den gleichen Schaden.</p>"
+  },
+  "mmClayGolem00000": {
+    "name": "Lehmgolem",
+    "description": "<p>Immer wenn der [[lookup @name lowercase]]{monster} &amp;Reference[Acid] Schaden erleidet, nimmt er keinen Schaden und stellt stattdessen eine Anzahl von Trefferpunkten wieder her, die dem zugefügten Säureschaden entspricht.</p>"
+  },
+  "mmFleshGolem0000": {
+    "name": "Fleischgolem",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} Feuerschaden erleidet, hat er Nachteil auf Angriffswürfe und Fertigkeitswürfe bis zum Ende seines nächsten Zuges.</p>"
+  },
+  "mmGorgon00000000": {
+    "name": "Gorgone",
+    "description": "<p>[[/attack extended]]. [[/damage extended average]]. Wenn das Ziel eine Große oder kleinere Kreatur ist und die [[lookup @name lowercase]]{monster} sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf sie zubewegt hat, hat das Ziel den Zustand &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmHomunculus0000": {
+    "name": "Homunkulus",
+    "description": "<p class=\"feature\">Solange der [[lookup @name lowercase]]{monster} auf derselben Existenzebene wie sein Meister ist, können die beiden telepathisch miteinander kommunizieren.</p>"
+  },
+  "mmIronGolem00000": {
+    "name": "Eisengolem",
+    "description": "<p class=\"feature\">Immer wenn der [[lookup @name lowercase]]{monster} Feuerschaden erleidet, erhält er eine Anzahl von Trefferpunkten zurück, die dem zugefügten Feuerschaden entspricht.</p>"
+  },
+  "mmShieldGuardian": {
+    "name": "Schildwächter",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} ist magisch an ein Amulett gebunden. Solange der [[lookup @name lowercase]]{monster} und sein Amulett auf derselben Existenzebene sind, kann der Träger des Amuletts den [[lookup @name lowercase]]{monster} telepathisch rufen, um zu ihm zu reisen, und der [[lookup @name lowercase]]{monster} kennt die Entfernung und Richtung zum Amulett. Wenn der [[lookup @name lowercase]]{monster} sich innerhalb von 18 m zum Träger des Amuletts befindet, wird die Hälfte des Schadens, den der Träger erleidet (aufgerundet), auf den [[lookup @name lowercase]]{monster} übertragen.</p>"
+  },
+  "mmStoneGolem0000": {
+    "name": "Steingolem",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann seine Gestalt nicht ändern.</p>",
+    "materials": "ein Tropfen Melasse"
+  },
+  "mmAdultBlackDrag": {
+    "name": "Erwachsener Schwarzer Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmAdultBlueDrago": {
+    "name": "Blauer Drache (Erwachsen)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAdultBrassDrag": {
+    "name": "Messingdrache (Erwachsen)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAdultBronzeDra": {
+    "name": "Bronzedrache (Erwachsen)",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmAdultCopperDra": {
+    "name": "Kupferdrache (Erwachsen)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAdultGoldDrago": {
+    "name": "Golddrache (Erwachsen)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} bei einem Rettungswurf scheitert, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAdultGreenDrag": {
+    "name": "Grüner Drache (Erwachsen)",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmAdultRedDragon": {
+    "name": "Roter Drache (Erwachsen)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} bei einem Rettungswurf scheitert, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAdultSilverDra": {
+    "name": "Silberdrache (Erwachsen)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} bei einem Rettungswurf scheitert, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAdultWhiteDrag": {
+    "name": "Weißer Drache (Erwachsen)",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen. Zusätzlich kostet &amp;Reference[Difficult Terrain], das aus Eis oder Schnee besteht, ihm keine zusätzliche Bewegung.</p>",
+    "materials": "eine weiße Feder"
+  },
+  "mmAncientBlackDr": {
+    "name": "Schwarzer Drache (Uralt)",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmAncientBlueDra": {
+    "name": "Blauer Drache (Uralt)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAncientBrassDr": {
+    "name": "Messingdrache (Uralt)",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAncientBronzeD": {
+    "name": "Uralter Bronzedrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>\n  chat: ''\nidentifier: amphibious\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmAncientCopperD": {
+    "name": "Uralter Kupferdrache",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>\n  chat: ''\nidentifier: legendary-resistance\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\ntype:\n  value: monster\n  subtype: ''\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmAncientGoldDra": {
+    "name": "Uralter Golddrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>\n  chat: ''\nidentifier: amphibious\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmAncientGreenDr": {
+    "name": "Uralter Grüner Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>\n  chat: ''\nidentifier: amphibious\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmAncientRedDrag": {
+    "name": "Uralter Roter Drache",
+    "description": "<p>Wenn dem [[lookup @name lowercase]]{monster} ein Rettungswurf misslingt, kann es stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmAncientSilverD": {
+    "name": "Uralter Silberdrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]]-Angriffe aus. Er kann einen Angriff durch den Einsatz von (A) [[/item .mmParalyzingBrea]] oder (B) Zauberwirken ersetzen, um [[/item .mmSpellcasting00.Activity.DJGcakjcAlCCOOFg]] (Version auf Grad 2) zu wirken.</p>"
+  },
+  "mmAncientWhiteDr": {
+    "name": "Uralter Weißer Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen. Zusätzlich kostet es &amp;Reference[Difficult Terrain] aus Eis oder Schnee keine zusätzliche Bewegung.</p>",
+    "materials": "eine weiße Feder"
+  },
+  "mmBlackDragonWyr": {
+    "name": "Schwarzes Drachenjunges",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmBlueDragonWyrm": {
+    "name": "Blauer Drachenwelpe",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
+  },
+  "mmBrassDragonWyr": {
+    "name": "Messingdrachenwelpe",
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], jedes [[lookup @target.affects.type activity=bDqgmtLG3zcVuqdi]] in einer [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]] Fuß langen, [[lookup @target.template.width activity=bDqgmtLG3zcVuqdi]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmBronzeDragonWy": {
+    "name": "Bronzedrachenwelpe",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
+  },
+  "mmCopperDragonWy": {
+    "name": "Kupferdrachenwelpe",
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=qNI6W02jCUQbPpYE]], jedes [[lookup @target.affects.type activity=qNI6W02jCUQbPpYE]] in einer [[lookup @target.template.size activity=qNI6W02jCUQbPpYE]] Fuß langen, [[lookup @target.template.width activity=qNI6W02jCUQbPpYE]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> [[lookup @damage.onSave capitalize activity=qNI6W02jCUQbPpYE]] Schaden.</p>"
+  },
+  "mmDragonTurtle00": {
+    "name": "Drachenschildkröte",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmGoldDragonWyrm": {
+    "name": "Golddrachenjunges",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmGreenDragonWyr": {
+    "name": "Gründrachenjunges",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmHalfdragon0000": {
+    "name": "Halbdrache",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} ist mit einem Drachentyp verwandt, der mit einer der folgenden Schadensarten (Wahl des SL) verbunden ist: Säure, Kälte, Feuer, Blitz oder Gift. Diese Wahl beeinflusst andere Aspekte des Werteblocks.</p><section class=\"secret\"\n    id=\"secret-9qS4XvlccQjIsypM\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft bietet einen Aktiven Effekt zur Verwaltung von <strong>Schadensresistenzen</strong> im Reiter 'Effekte' des Charakterbogens. Die aufgeführten Resistenzen müssen manuell aktiviert/deaktiviert werden.</p></section>"
+  },
+  "mmKoboldWarrior0": {
+    "name": "Koboldkrieger",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m zur Kreatur ist und der Verbündete nicht den Zustand 'Handlungsunfähig' hat.</p>"
+  },
+  "mmPseudodragon00": {
+    "name": "Pseudodrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>"
+  },
+  "mmRedDragonWyrml": {
+    "name": "Rotdrachenjunges",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
+  },
+  "mmSilverDragonWy": {
+    "name": "Silberdrachenjunges",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
+  },
+  "mmWhiteDragonWyr": {
+    "name": "Weißer Drachenwelpe",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen. Zusätzlich kostet es ihn &amp;Reference[Difficult Terrain], wenn er sich durch Eis oder Schnee bewegt, keine zusätzliche Bewegung.</p>"
+  },
+  "mmWyvern00000000": {
+    "name": "Wyvern",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item\n    .mmBite0000000000]]-Angriff und einen [[/item .mmSting000000000]]-Angriff aus.</p>"
+  },
+  "mmYoungBlackDrag": {
+    "name": "Junger Schwarzer Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmYoungBlueDrago": {
+    "name": "Junger Blauer Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item\n    .mmRend0000000000]]-Angriffe aus.</p>"
+  },
+  "mmYoungBrassDrag": {
+    "name": "Junger Messingdrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]]-Angriffe aus. Es kann zwei Angriffe durch den Einsatz von [[/item .mmSleepBreath000]] ersetzen.</p>"
+  },
+  "mmYoungBronzeDra": {
+    "name": "Junger Bronzedrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmYoungCopperDra": {
+    "name": "Junger Kupferdrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]]-Angriffe aus. Es kann einen Angriff durch den Einsatz von [[/item .mmSlowingBreath0]] ersetzen.</p>"
+  },
+  "mmYoungGoldDrago": {
+    "name": "Junger Golddrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]]-Angriffe aus. Es kann einen Angriff durch den Einsatz von [[/item .mmWeakeningBreat]] ersetzen.</p>"
+  },
+  "mmYoungGreenDrag": {
+    "name": "Junger Grüner Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmYoungRedDragon": {
+    "name": "Junger Roter Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]] Angriffe aus.</p>"
+  },
+  "mmYoungSilverDra": {
+    "name": "Junger Silberdrache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]] Angriffe aus. Er kann einen Angriff durch den Einsatz von [[/item .mmParalyzingBrea]] ersetzen.</p>"
+  },
+  "mmYoungWhiteDrag": {
+    "name": "Junger Weißer Drache",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Attributswurf ablegen zu müssen. Zusätzlich kostet &amp;Reference[Difficult Terrain], das aus Eis oder Schnee besteht, ihm keine zusätzliche Bewegung.</p>"
+  },
+  "mmAirElemental00": {
+    "name": "Luftelementar",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann den Raum einer Kreatur betreten und dort anhalten. Es kann sich durch einen Raum bewegen, der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmAzerSentinel00": {
+    "name": "Azer-Wächter",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden, es sei denn, das [[lookup @name lowercase]]{monster} hat den Zustand Handlungsunfähig.</p>"
+  },
+  "mmDjinni00000000": {
+    "name": "Dschinni",
+    "description": "<p class=\"feature\">Stirbt der [[lookup @name lowercase]]{monster} außerhalb der Elementarebene der Luft, löst sich sein Körper in Schmutz auf, und er erhält in [[/r 1d4#Days]] Tagen einen neuen Körper, wobei er mit all seinen Trefferpunkten irgendwo auf der Ebene der Luft wiederbelebt wird.</p>"
+  },
+  "mmDustMephit0000": {
+    "name": "Staubmephit",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Rettungswurf auf Geschicklichkeit: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "materials": "eine Prise Sand oder Rosenblüten"
+  },
+  "mmEarthElemental": {
+    "name": "Erd-Elementar",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann sich durch unmagische, unbearbeitete Erde und Stein graben. Dabei stört das [[lookup @name lowercase]]{monster} das Material nicht, durch das es sich bewegt.</p>"
+  },
+  "mmEfreeti0000000": {
+    "name": "Efreet",
+    "description": "<p class=\"feature\">Wenn der [[lookup @name lowercase]]{monster} [[lookup @item.requirements]], löst sich sein Körper in Schmutz auf, und er erhält in [[/r 1d4#Days]] Tagen einen neuen Körper, wobei er mit all seinen Trefferpunkten irgendwo auf der Elementarebene des Feuers wiederbelebt wird.</p>"
+  },
+  "mmFireElemental0": {
+    "name": "Feuer-Elementar",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} nimmt jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden. <span style=\"font-family:'Roboto\n    Condensed', sans-serif\">Kreaturen und brennbare Objekte in der Emanation fangen Feuer.</span></p>"
+  },
+  "mmGargoyle000000": {
+    "name": "Gargyl",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} provoziert keinen &amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn er aus der Reichweite eines Feindes fliegt.</p>"
+  },
+  "mmIceMephit00000": {
+    "name": "Eismephit",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition\n    activity=1SfqWSp7RSyHgG4b]].</p><p><em>Rettungswurf auf Konstitution:\n    </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jedes\n    [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer\n    [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß\n    Emanation, die vom [[lookup @name\n    lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]]\n    Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmInvisibleStalk": {
+    "name": "Unsichtbarer Pircher",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann den Raum eines Feindes betreten\n    und dort anhalten. Er kann sich durch einen Raum bewegen, der nur 2,5 cm\n    breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>",
+    "effects": {
+      "dnd5einvisible00": "Unsichtbar"
+    }
+  },
+  "mmMagmaMephit000": {
+    "name": "Magmamephit",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Rettungswurf auf Geschicklichkeit: </em>SG [[lookup @save.dc.value\n    activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type\n    activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size\n    activity=1SfqWSp7RSyHgG4b]]-Fuß-Emanation, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage\n    average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmMagmin00000000": {
+    "name": "Magmin",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Rettungswurf auf Geschicklichkeit: </em>SG [[lookup @save.dc.value\n    activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type\n    activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size\n    activity=1SfqWSp7RSyHgG4b]]-Fuß-Emanation, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage\n    average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmMerfolkSkirmis": {
+    "name": "Meervolk-Plänkler",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmSalamander0000": {
+    "name": "Salamander",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+  },
+  "mmSteamMephit000": {
+    "name": "Dampf-Mephit",
+    "description": "<p>Angriffswürfe gegen den [[lookup @name lowercase]]{monster} werden mit Nachteil ausgeführt, es sei denn, der [[lookup @name lowercase]]{monster} hat den Zustand Handlungsunfähig.</p>"
+  },
+  "mmWaterElemental": {
+    "name": "Wasserelementar",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} Kälteschaden erleidet, verringert sich seine Bewegungsrate um 6 m bis zum Ende seines nächsten Zuges.</p>"
+  },
+  "mmXorn0000000000": {
+    "name": "Xorn",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann sich durch unmagische, unbearbeitete Erde und Stein graben. Dabei stört der [[lookup @name lowercase]]{monster} das Material nicht, durch das er sich bewegt.</p>"
+  },
+  "mmBlinkDog000000": {
+    "name": "Blinkhund",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} teleportiert sich bis zu [[lookup @range.value activity=dnoRMdFzhUUku26D]] Fuß weit an einen unbesetzten Ort, den er sehen kann.</p>"
+  },
+  "mmBugbearStalker": {
+    "name": "Bugbear-Pirschjäger",
+    "description": "<p><em>Nahkampfangriffswurf:</em> [[/attack]] ([[lookup @activation.condition activity=QIpweawAzbt4xw5h]]), Reichweite [[lookup @range.value activity=QIpweawAzbt4xw5h]] Fuß. [[/damage average extended]]</p>",
+    "activitiesMeta": {
+      "QIpweawAzbt4xw5h": {
+        "activationCondition": "mit Vorteil, wenn das Ziel vom Bugbear ergriffen ist"
+      }
+    }
+  },
+  "mmBugbearWarrior": {
+    "name": "Bugbear-Krieger",
+    "description": "<p><em>Nah- oder Fernkampfangriffswurf:</em> [[/attack]] ([[lookup @activation.condition activity=FHmD55OJjrFoBkHr]]), Reichweite [[lookup @item.range.reach item=ST0XpSUdRn52jAF0]] Fuß oder Reichweite [[lookup @item.range.value item=ST0XpSUdRn52jAF0]]/[[lookup @item.range.long item=ST0XpSUdRn52jAF0]] Fuß. [[/damage average extended]]</p>",
+    "activitiesMeta": {
+      "FHmD55OJjrFoBkHr": {
+        "activationCondition": "mit Vorteil, wenn das Ziel vom Bugbear ergriffen ist"
+      }
+    }
+  },
+  "mmCentaurTrooper": {
+    "name": "Zentauren-Soldat",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er\n    [[/item .XMKFiS5XUEC4fLCr]] oder [[/item .4C5jy0VkmoTdrbTC]] in beliebiger\n    Kombination verwendet.</p>"
+  },
+  "mmDryad000000000": {
+    "name": "Dryade",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe\n    gegen Zauber und andere magische Effekte.</p>",
+    "materials": "ein Bissen Nahrung"
+  },
+  "mmGoblinBoss0000": {
+    "name": "Goblin-Boss",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], plus [[/damage\n    1d4 slashing average]] Schaden, wenn der Angriffswurf Vorteil hatte.</p>",
+    "activities": {
+      "Hrmzb66QMA8iWGzN": "Angriff mit Vorteil"
+    }
+  },
+  "mmGoblinMinion00": {
+    "name": "Goblin-Scherge",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt die Aktion\n    &amp;Reference[Disengage] oder &amp;Reference[Hide] aus.</p>"
+  },
+  "mmGoblinWarrior0": {
+    "name": "Goblin-Krieger",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], plus [[/damage\n    1d4 slashing average]] Schaden, falls der Angriffswurf Vorteil hatte.</p>",
+    "activities": {
+      "YOx3cikY6oPu6Ojh": "Angriff",
+      "U2GucmlwJ3rhKAz6": "Angriff mit Vorteil"
+    }
+  },
+  "mmGreenHag000000": {
+    "name": "Grüne Hexe",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann Luft und\n    Wasser atmen.</p>",
+    "materials": ">-"
+  },
+  "mmHobgoblinCapta": {
+    "name": "Hobgoblin-Hauptmann",
+    "description": "<p>Solange sie sich in einer [[lookup @target.template.size\n    activity=dE4lg9tZyXtoCb5x]] Fuß großen Emanation befindet, die vom\n    [[lookup @name lowercase]]{monster} ausgeht, haben der [[lookup @name\n    lowercase]]{monster} und seine Verbündeten Vorteil auf Angriffswürfe und\n    Rettungswürfe, vorausgesetzt, der [[lookup @name lowercase]]{monster}\n    hat nicht den Zustand &amp;Reference[Incapacitated apply=false].</p>"
+  },
+  "mmHobgoblinWarri": {
+    "name": "Hobgoblin-Krieger",
+    "description": "<p>Du erhältst den Rüstungsklassen-Vorteil eines Schildes nur, wenn du im Umgang damit geübt bist.</p>"
+  },
+  "mmSatyr000000000": {
+    "name": "Satyr",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>"
+  },
+  "mmSeaHag00000000": {
+    "name": "Meereshexe",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmSprite00000000": {
+    "name": "Sprite",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>",
+    "materials": "eine Wimper in Gummi arabicum"
+  },
+  "mmWorg0000000000": {
+    "name": "Worg",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], und der nächste Angriffswurf, der gegen das Ziel vor Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster} gemacht wird, hat Vorteil.</p>"
+  },
+  "mmBalor000000000": {
+    "name": "Balor",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} explodiert, wenn er stirbt.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=jTq2czA8KQITUK4c]], jede Kreatur in einer [[lookup @target.template.size activity=jTq2czA8KQITUK4c]]-Fuß-Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p class=\"feature\"><em>Misserfolg oder Erfolg:</em> Wenn der [[lookup @name lowercase]]{monster} außerhalb des Abgrunds stirbt, erhält er sofort einen neuen Körper und wird mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt.</p>"
+  },
+  "mmBarbedDevil000": {
+    "name": "Stacheltufel",
+    "description": "<p>Zu Beginn jedes seiner Züge fügt der [[lookup @name lowercase]]{monster} jeder Kreatur [[lookup @target.affects.special activity=1O5eyc72vPW0UxYZ]] [[/damage average]] Schaden zu.</p>"
+  },
+  "mmBeardedDevil00": {
+    "name": "Bärtiger Teufel",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>"
+  },
+  "mmBoneDevil00000": {
+    "name": "Knochenteufel",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} außerhalb der Neun Höllen stirbt, verschwindet sein Körper in schwefeligem Rauch, und er erhält sofort einen neuen Körper, der mit all seinen Trefferpunkten irgendwo in den Neun Höllen wiederbelebt wird.</p>"
+  },
+  "mmChainDevil0000": {
+    "name": "Ketten-Teufel",
+    "description": "<p>Stirbt der [[lookup @name lowercase]]{monster} außerhalb der Neun\n    Höllen, verschwindet sein Körper in schwefeligem Rauch, und er erhält\n    sofort einen neuen Körper, der mit all seinen Trefferpunkten irgendwo\n    in den Neun Höllen wiederbelebt wird.</p>"
+  },
+  "mmDretch00000000": {
+    "name": "Dretch",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n    @save.dc.value activity=vRnhmBCQqIwIlfS4]], jede Kreatur in einer\n    [[lookup @target.template.size activity=vRnhmBCQqIwIlfS4]]-Fuß\n    Emanation, die vom [[lookup @name\n    lowercase]]{monster} ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> Das\n    Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum\n    Ende seines nächsten Zuges. Solange die Kreatur vergiftet ist, kann sie\n    in ihrem Zug entweder eine Aktion oder eine Bonusaktion ausführen, nicht\n    beides, und sie kann keine Reaktionen ausführen.</p>"
+  },
+  "mmErinyes0000000": {
+    "name": "Erinye",
+    "description": "<p>Stirbt die [[lookup @name lowercase]]{monster} außerhalb der Neun\n    Höllen, verschwindet ihr Körper in schwefeligem Rauch, und sie erhält\n    sofort einen neuen Körper, der mit all ihren Trefferpunkten irgendwo\n    in den Neun Höllen wiederbelebt wird.</p>"
+  },
+  "mmGlabrezu000000": {
+    "name": "Glabrezu",
+    "description": "<p>Stirbt der [[lookup @name lowercase]]{monster} außerhalb des Abgrunds,\n    löst sich sein Körper in Ichor auf, und er erhält sofort einen neuen\n    Körper, der mit all seinen Trefferpunkten irgendwo im Abgrund\n    wiederbelebt wird.</p>",
+    "materials": "Fledermausfell und ein Stück Kohle"
+  },
+  "mmGnollWarrior00": {
+    "name": "Gnoll-Krieger",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmHellHound00000": {
+    "name": "Höllenhund",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand 'Handlungsunfähig' hat.</p>\n  chat: ''\nidentifier: pack-tactics\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: Ally within 1,5 m of attack target\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmHezrou00000000": {
+    "name": "Hezrou",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} außerhalb des Abgrunds stirbt, löst sich sein Körper in Ichor auf, und er erhält sofort einen neuen Körper, der mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt wird.</p>\n  chat: ''\nidentifier: demonic-restoration\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties: []\nrequirements: Dies outside the Abyss\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmHornedDevil000": {
+    "name": "Gehörnter Teufel",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} außerhalb der Neun Höllen stirbt, verschwindet sein Körper in schwefeligem Rauch, und er erhält sofort einen neuen Körper, der mit all seinen Trefferpunkten irgendwo in den Neun Höllen wiederbelebt wird.</p>\n  chat: ''\nidentifier: diabolical-restoration\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties: []\nrequirements: Dies outside the Nine Hells\nadvancement: {}\ncover: null\ncrewed: false"
+  },
+  "mmIceDevil000000": {
+    "name": "Eisteufel",
+    "description": "<p>Stirbt der [[lookup @name lowercase]]{monster} außerhalb der Neun Höllen, verschwindet sein Körper in schwefeligem Rauch, und er erhält sofort einen neuen Körper, der mit all seinen Trefferpunkten irgendwo in den Neun Höllen wiederbelebt wird.</p>",
+    "materials": "ein Stück Quarz"
+  },
+  "mmImp00000000000": {
+    "name": "Wichtel",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>",
+    "materials": "eine Wimper in Gummi arabicum"
+  },
+  "mmIncubus0000000": {
+    "name": "Inkubus",
+    "description": "<p class=\"feature\">Wenn der [[lookup @name lowercase]]{monster} eine Lange Rast beendet, kann er sich in eine <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}</strong> verwandeln und deren Werteblock anstelle seines eigenen verwenden. Jegliche Ausrüstung, die er trägt oder bei sich führt, wird nicht verwandelt.</p>"
+  },
+  "mmLamia000000000": {
+    "name": "Lamia",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} führt zwei [[/item .mmClaw0000000000]]-Angriffe aus. Sie kann einen Angriff durch den Einsatz von [[/item .mmCorruptingTouc]] ersetzen.</p>"
+  },
+  "mmLemure00000000": {
+    "name": "Lemure",
+    "description": "<p class=\"feature\">Stirbt die [[lookup @name lowercase]]{monster} in den Neun Höllen, belebt sie sich mit all ihren Trefferpunkten in [[/r 1d10]] Tagen wieder, es sei denn, sie wird von einer Kreatur getötet, die unter den Auswirkungen eines <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Bless}</em> Zaubers steht, oder ihre Überreste werden mit Weihwasser besprengt.</p>"
+  },
+  "mmMarilith000000": {
+    "name": "Marilith",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>"
+  },
+  "mmNalfeshnee0000": {
+    "name": "Nalfeshnee",
+    "description": "<p>Stirbt der [[lookup @name lowercase]]{monster} außerhalb des Abgrunds, löst sich sein Körper in Ichor auf, und er erhält sofort einen neuen Körper, der mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt wird.</p>"
+  },
+  "mmNightHag000000": {
+    "name": "Nachthexe",
+    "description": "<p class=\"feature\">Solange sie sich innerhalb von 9 m von mindestens zwei Hexen-Verbündeten befindet, kann die [[lookup @name lowercase]]{monster} einen der folgenden Zauber wirken, ohne Materialkomponenten zu benötigen, unter Verwendung der normalen Zauberzeit des Zaubers und unter Verwendung von Intelligenz als Zauberfähigkeit (Zauber-SG [[lookup @abilities.int.dc]]): <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAugury0000]{Augury}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find\n    Familiar}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identify}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLocateObje]{Locate\n    Object}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>, oder <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplUnseenServ]{Unseen\n    Servant}</em>. Die [[lookup @name lowercase]]{monster} muss eine Lange Rast beenden, bevor sie diese Eigenschaft erneut verwendet, um diesen Zauber zu wirken.</p>",
+    "materials": ">-"
+  },
+  "mmNightmare00000": {
+    "name": "Alptraum",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann einem Reiter Feuerresistenz verleihen, solange dieser auf dem [[lookup @name lowercase]]{monster} sitzt.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Di6rSDXgFkxAGsFE": "Bewusstlos"
+    }
+  },
+  "mmOni00000000000": {
+    "name": "Oni",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} erhält zu Beginn jedes seiner Züge [[lookup @healing.formula activity=5cGvjZJIJVicjJ3d]] Trefferpunkte zurück, wenn er mindestens 1 Trefferpunkt hat.</p>",
+    "materials": "eine Wimper in Gummi arabicum"
+  },
+  "mmPitFiend000000": {
+    "name": "Höllenpfuhlteufel",
+    "description": "<p>Stirbt der [[lookup @name lowercase]]{monster} außerhalb der Neun Höllen, verschwindet sein Körper in schwefeligem Rauch, und er erhält sofort einen neuen Körper, der mit all seinen Trefferpunkten irgendwo in den Neun Höllen wiederbelebt wird.</p>",
+    "materials": "eine Kugel Fledermausguano und Schwefel"
+  },
+  "mmQuasit00000000": {
+    "name": "Quasit",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>",
+    "materials": "eine Wimper in Gummi arabicum"
+  },
+  "mmRakshasa000000": {
+    "name": "Rakshasa",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} gelingt automatisch Rettungswürfe gegen Zauber und andere magische Effekte, und die Angriffswürfe von Zaubern verfehlen ihn automatisch. Ohne die Erlaubnis des [[lookup @name lowercase]]{monster} kann kein Zauber den [[lookup @name lowercase]]{monster} aus der Ferne beobachten oder seine Gedanken, Kreaturenart oder Gesinnung entdecken.</p>"
+  },
+  "mmSahuaginWarrio": {
+    "name": "Sahuagin-Krieger",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf Angriffswürfe gegen jede Kreatur, die nicht alle ihre Trefferpunkte hat.</p>"
+  },
+  "mmSpiritNaga0000": {
+    "name": "Geist-Naga",
+    "description": "<p> Stirbt sie, kehrt die [[lookup @name lowercase]]{monster} in [[/r 1d6]] Tagen ins Leben zurück und erlangt alle ihre Trefferpunkte zurück. Nur ein <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em> Zauber kann verhindern, dass diese Eigenschaft funktioniert.</p>"
+  },
+  "mmSuccubus000000": {
+    "name": "Sukkubus",
+    "description": "<p class=\"feature\">Wenn die [[lookup @name lowercase]]{monster} eine Lange Rast beendet, kann sie sich in einen <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}</strong> verwandeln und dessen Werteblock anstelle ihres eigenen verwenden.</p>"
+  },
+  "mmVrock000000000": {
+    "name": "Vrock",
+    "description": "<p>Stirbt der [[lookup @name lowercase]]{monster} außerhalb des Abgrunds,\n    löst sich sein Körper in Ichor auf, und er erhält sofort einen neuen Körper,\n    wobei er mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt wird.</p>"
+  },
+  "mmCloudGiant0000": {
+    "name": "Wolkenriese",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt zwei\n    Angriffe aus, wobei er [[/item .mmThunderousMace]] oder [[/item\n    .mmThundercloud00]] in beliebiger Kombination verwendet. Er kann einen Angriff durch\n    den Einsatz von Zauberwirken ersetzen, um <em>[[/item\n    .mmSpellcasting00.Activity.NdueMCpXRc7fLDFa]]</em> zu wirken.</p>"
+  },
+  "mmEttin000000000": {
+    "name": "Ettin",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel\n    eine Große oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Prone\n    apply=false].</p>"
+  },
+  "mmFireGiant00000": {
+    "name": "Feuerriese",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt zwei\n    Angriffe aus, wobei er [[/item .mmFlameSword0000]] oder [[/item\n    .mmHammerThrow000]] in beliebiger Kombination verwendet.</p>"
+  },
+  "mmFrostGiant0000": {
+    "name": "Frostriese",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .mmFrostAxe000000]] oder [[/item .mmGreatBow000000]] in beliebiger Kombination einsetzt.</p>"
+  },
+  "mmHillGiant00000": {
+    "name": "Hügelriese",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .mmTreeClub000000]] oder [[/item .mmTrashLob000000]] in beliebiger Kombination einsetzt.</p>"
+  },
+  "mmOgre0000000000": {
+    "name": "Oger",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmStoneGiant0000": {
+    "name": "Steinriese",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .mmStoneClub00000]] oder [[/item .mmBoulder0000000]] in beliebiger Kombination einsetzt.</p>"
+  },
+  "mmStormGiant0000": {
+    "name": "Sturmriese",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmTrollLimb00000": {
+    "name": "Trollglied",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} erhält zu Beginn jedes seiner Züge [[lookup @healing.formula activity=5cGvjZJIJVicjJ3d]] Trefferpunkte zurück, wenn es mindestens 1 Trefferpunkt hat.</p>"
+  },
+  "mmTroll000000000": {
+    "name": "Troll",
+    "description": "<p class=\"feature\">Wenn der [[lookup @name lowercase]]{monster} einen Zug Verwundet beendet und in diesem Zug 15+ Hiebschaden erlitten hat, wird eines der Gliedmaßen des [[lookup @name lowercase]]{monster} abgetrennt, fällt in den Bereich des [[lookup @name lowercase]]{monster} und wird zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTrollLimb00000]{Troll\n    Limb}</strong>. Das Gliedmaß agiert unmittelbar nach dem Zug des [[lookup @name lowercase]]{monster}. Der [[lookup @name lowercase]]{monster} hat 1 &amp;Reference[Exhaustion apply=false] Erschöpfungsstufe für jedes fehlende Gliedmaß, und es wachsen ihm neue Gliedmaßen, wenn er das nächste Mal Trefferpunkte zurückerhält.</p><section class=\"secret\"\n    id=\"secret-01PBOuaZ8xS1KYt6\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft bietet eine <strong>Bedingung für einen Aktiven Effekt</strong> im Reiter 'Effekte' des Charakterbogens, um jede Stufe der Erschöpfung zu aktivieren. Da die Bedingung mehrfach angewendet werden kann, muss der Spielleiter die Erschöpfungsstufe manuell verwalten. Für jede Erschöpfungsstufe ist ein aktiver Effekt verfügbar.</p></section>"
+  },
+  "mmArchmage000000": {
+    "name": "Erzmagier",
+    "description": "<p>Ein @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane\n    Focus} ist mit Juwelen besetzt oder geschnitzt, um arkane Magie zu kanalisieren. Ein Zauberer, Hexenmeister oder Magier kann einen solchen Gegenstand als Zauberfokus verwenden.</p>"
+  },
+  "mmAssassin000000": {
+    "name": "Assassine",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], und das Ziel\n    hat den Zustand &amp;Reference[Poisoned apply=false] bis zum Beginn\n    des nächsten Zugs des Assassinen.</p>"
+  },
+  "mmBanditCaptain0": {
+    "name": "Banditenhauptmann",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er\n    [[/item .w3cX0piuU875Hc2M]] und [[/item .2TB9ZSIbtbi4UtSv]] in beliebiger\n    Kombination verwendet.</p>"
+  },
+  "mmBandit00000000": {
+    "name": "Bandit",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmBerserker00000": {
+    "name": "Berserker",
+    "description": "<p>Solange &amp;Reference[Bloodied], hat der [[lookup @name\n    lowercase]]{monster} Vorteil auf Angriffswürfe und Rettungswürfe.</p>"
+  },
+  "mmCommoner000000": {
+    "name": "Bürger",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} ist in einer Fertigkeit nach Wahl des SL geübt und hat Vorteil, wann immer er eine Attributsprobe mit dieser Fertigkeit ablegt.</p>"
+  },
+  "mmCultistFanatic": {
+    "name": "Kultistenfanatiker",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmCultist0000000": {
+    "name": "Kultist",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmDruid000000000": {
+    "name": "Druide",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .mmVineStaff00000]] oder [[/item .mmVerdantWisp000]] in beliebiger Kombination verwendet.</p>"
+  },
+  "mmGladiator00000": {
+    "name": "Gladiator",
+    "description": "<p>Du erhältst den Rüstungsklassen-Vorteil eines Schildes nur, wenn du im Umgang damit geübt bist.</p>"
+  },
+  "mmGuardCaptain00": {
+    "name": "Hauptmann der Wache",
+    "description": "<p>Du erhältst den Rüstungsklassen-Vorteil eines Schildes nur, wenn du im Umgang damit geübt bist.</p>"
+  },
+  "mmGuard000000000": {
+    "name": "Wache",
+    "description": "<p>Du erhältst den Rüstungsklassen-Vorteil eines Schildes nur, wenn du im Umgang damit geübt bist.</p>"
+  },
+  "mmKnight00000000": {
+    "name": "Ritter",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .qFzUqCv1LU1T2l9W]] oder [[/item .iqOpigRADMF7BFDu]] in beliebiger Kombination verwendet.</p>"
+  },
+  "mmMage0000000000": {
+    "name": "Magier",
+    "description": "<p>Ein @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane\n    Focus} ist mit Juwelen besetzt oder geschnitzt, um arkane Magie zu kanalisieren. Ein Zauberer, Hexenmeister oder Magier kann einen solchen Gegenstand als Zauberfokus verwenden.</p>"
+  },
+  "mmNoble000000000": {
+    "name": "Adliger",
+    "description": "<p><em>Auslöser:</em> Der [[lookup @name lowercase]]{monster} ist [[lookup @activation.condition activity=aLG3BRZL7P6OEjwd]]. <em>Reaktion:</em> Der [[lookup @name lowercase]]{monster} addiert [[lookup @roll.formula activity=aLG3BRZL7P6OEjwd]] zu seiner RK gegen diesen Angriff, wodurch dieser möglicherweise verfehlt wird.</p>"
+  },
+  "mmPirateCaptain0": {
+    "name": "Piratenkapitän",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], und der [[lookup @name lowercase]]{monster} hat Vorteil auf den nächsten Angriffswurf, den er vor dem Ende dieses Zuges macht.</p>"
+  },
+  "mmPirate00000000": {
+    "name": "Pirat",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .MC6uJTSfGDW6jSdI]] Angriffe aus. Er kann einen Angriff durch den Einsatz von [[/item .mmEnthrallingPan]] ersetzen.</p>"
+  },
+  "mmPriestAcolyte0": {
+    "name": "Priesterakolyth",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>",
+    "materials": "ein Heiliges Symbol im Wert von 5+ GM"
+  },
+  "mmPriest00000000": {
+    "name": "Priester",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .hRwqUlEyM9TjOmHy]] oder [[/item .mmRadiantFlame00]] in beliebiger Kombination verwendet.</p>",
+    "materials": "ein Heiliges Symbol im Wert von 5+ GM"
+  },
+  "mmScout000000000": {
+    "name": "Kundschafter",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .jdOlqVzYs89JuqTB]] und [[/item .qhM3PIWgXdyRCeul]] in beliebiger Kombination verwendet.</p>"
+  },
+  "mmSpy00000000000": {
+    "name": "Spion",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt die Aktion &amp;Reference[Dash apply=false], die Aktion &amp;Reference[Disengage\n    apply=false] oder die Aktion &amp;Reference[Hide apply=false] aus.</p>"
+  },
+  "mmToughBoss00000": {
+    "name": "Zäher Boss",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]]. Ist das Ziel eine Große oder kleinere Kreatur, stößt der [[lookup @name lowercase]]{monster} das Ziel bis zu 3 m direkt von sich weg.</p>"
+  },
+  "mmTough000000000": {
+    "name": "Zäh",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmVampireFamilia": {
+    "name": "Vampir-Vertrauter",
+    "description": "<p class=\"feature\">Solange der [[lookup @name lowercase]]{monster} und sein Vampirmeister auf derselben Existenzebene sind, kann der Vampir telepathisch mit dem [[lookup @name lowercase]]{monster} kommunizieren, und der Vampir kann durch die Sinne des [[lookup @name lowercase]]{monster} wahrnehmen.</p>"
+  },
+  "mmWarriorInfantr": {
+    "name": "Krieger-Infanterie",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten der [[lookup @name lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmWarriorVeteran": {
+    "name": "Kriegerveteran",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .KkRkIIhD17sL5x30]] oder [[/item .0nNkeR6HNC1e2uQ3]] Angriffe aus.</p>"
+  },
+  "dmgApparatusofKw": {
+    "name": "Apparat des Krebses",
+    "description": "<p>Jede ausgefahrene Klaue führt den folgenden Nahkampfangriff aus: +8 zum Treffen,\n    Reichweite 1,5 m. <em>Treffer:</em> 7 (2W6) Wuchtschaden.</p>"
+  },
+  "dmgAvatarofDeath": {
+    "name": "Avatar des Todes",
+    "description": "<p>Der Avatar kann sich durch andere Kreaturen und Objekte bewegen, als wären sie &amp;Reference[DifficultTerrain]. Es erleidet 5 (1W10) Energieschaden,\n    wenn es seinen Zug innerhalb <span class=\"no-break\">eines Objekts beendet.</span></p>",
+    "activities": {
+      "NHizvKWvHz8sNorD": "Selbstschaden"
+    },
+    "activitiesMeta": {
+      "NHizvKWvHz8sNorD": {
+        "activationCondition": "der Avatar seinen Zug innerhalb eines Objekts beendet."
+      }
+    }
+  },
+  "dmg3x5CarpetofFl": {
+    "name": "Fliegender Teppich (0,9 mal 1,5 m)",
+    "description": "<p>Dieser Gegenstand dient dazu, die berechnete Tragfähigkeit des Teppichs\n    entsprechend seinen Abmessungen auszugleichen.</p>",
+    "effects": {
+      "OOJj1Gc67HwjhG7Q": "Überladen"
+    }
+  },
+  "dmg4x6CarpetofFl": {
+    "name": "Fliegender Teppich (4 mal 1,8 m)",
+    "description": "<p>Dieser Gegenstand dient dazu, die berechnete Tragfähigkeit des Teppichs entsprechend seinen Abmessungen auszugleichen.</p>\n  chat: ''\nidentifier: carry-weight-adjustment\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nidentified: true\nunidentified:\n  description: ''\ncontainer: null\nquantity: 1\nweight:\n  value: 5\n  units: lb\nprice:\n  value: 0\n  denomination: gp\nrarity: ''\nproperties: []\ntype:\n  value: ''\n  subtype: ''",
+    "effects": {
+      "2MQnteT8igejUV4G": "Überladen"
+    }
+  },
+  "dmg5x7CarpetofFl": {
+    "name": "Fliegender Teppich (5 mal 2,1 m)",
+    "effects": {
+      "x31gxhzQK4X86k0a": "Überladen"
+    }
+  },
+  "dmg6x9CarpetofFl": {
+    "name": "Fliegender Teppich (6 mal 2,7 m)",
+    "description": "<p>Dieser Gegenstand dient dazu, die berechnete Tragfähigkeit des Teppichs entsprechend seinen Abmessungen auszugleichen.</p>\n  chat: ''\nidentifier: carry-weight-adjustment\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nidentified: true\nunidentified:\n  description: ''\ncontainer: null\nquantity: 2\nweight:\n  value: 5\n  units: lb\nprice:\n  value: 0\n  denomination: gp\nrarity: ''\nproperties: []\ntype:\n  value: ''\n  subtype: ''",
+    "effects": {
+      "XDasfDlazbjtYP26": "Überladen"
+    }
+  },
+  "dmggwsDancingSwo": {
+    "name": "Tanzendes Schwert"
+  },
+  "dmgqftFloatingWh": {
+    "name": "Schwebende Peitsche"
+  },
+  "dmgGiantFly00000": {
+    "name": "Riesenfliege"
+  },
+  "dmgGoatofTraveli": {
+    "name": "Reiseziege",
+    "description": "<p><em>Nahkampfangriffswurf:</em> +5, Reichweite 1,5 m. <em>Treffer: </em>7 (1W8 +\\_3) Wuchtschaden.</p>"
+  },
+  "dmgIllusoryCreat": {
+    "name": "Illusorisches Geschöpf"
+  },
+  "mmAnkheg00000000": {
+    "name": "Ankheg",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann sich mit halber Grabgeschwindigkeit durch festes Gestein graben und hinterlässt einen Tunnel mit 3 m Durchmesser.</p>"
+  },
+  "mmAxeBeak0000000": {
+    "name": "Axtschnabel",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmBasilisk000000": {
+    "name": "Basilisk",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mN9aF1WkHQWLIN4B]], jedes [[lookup @target.affects.type activity=mN9aF1WkHQWLIN4B]] in einem [[lookup @target.template.size activity=mN9aF1WkHQWLIN4B]] Fuß [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]]. Wenn der [[lookup @name lowercase]]{monster} sein Spiegelbild im [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]] sieht, muss der [[lookup @name lowercase]]{monster} diesen Rettungswurf ablegen. </p><p\n    class=\"feature\"><em>Erster Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am Ende seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt bei einem Erfolg für sich selbst endet. </p><p class=\"feature\"><em>Zweiter Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Petrified apply=false] anstelle des Zustands Festhalten.</p>"
+  },
+  "mmBehir000000000": {
+    "name": "Behir",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item .mmBite0000000000]]-Angriff aus und setzt [[/item .mmConstrict00000]] ein.</p>"
+  },
+  "mmBulette0000000": {
+    "name": "Bulette",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} führt zwei [[/item .mmBite0000000000]] Angriffe aus.</p>"
+  },
+  "mmChimera0000000": {
+    "name": "Chimäre",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} führt einen [[/item .mmRam00000000000]]-Angriff, einen [[/item .mmBite0000000000]]-Angriff und einen [[/item .mmClaw0000000000]]-Angriff aus. Sie kann den Klauenangriff durch den Einsatz von [[/item .mmFireBreath0000]] ersetzen, falls verfügbar.</p>"
+  },
+  "mmCockatrice0000": {
+    "name": "Cockatrice",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Kreatur, unterliegt es dem folgenden Effekt.</p><p class=\"feature\"><em>Konstitutions-Rettungswurf:</em> SG [[lookup @save.dc.value activity=udF9lrpAQMvL0b9J]].</p><p\n    class=\"feature\"><em>Erster Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am Ende seines nächsten Zuges, falls es noch Festhalten ist, wobei der Effekt bei einem Erfolg für sich selbst endet.</p><p class=\"feature\"><em>Zweiter Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Petrified apply=false] anstelle des Zustands Festhalten.</p>"
+  },
+  "mmDeathDog000000": {
+    "name": "Todeshund",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmBite0000000000]] Angriffe aus.</p>"
+  },
+  "mmDoppelganger00": {
+    "name": "Doppelgänger",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmSlam0000000000]]-Angriffe aus und setzt [[/item .mmUnsettlingVisa]] ein, falls verfügbar.</p>",
+    "materials": "1 Kupferstück"
+  },
+  "mmDrider00000000": {
+    "name": "Drider",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen.</p>",
+    "materials": "Fledermausfell und ein Stück Kohle"
+  },
+  "mmEttercap000000": {
+    "name": "Ettercap",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen.</p>"
+  },
+  "mmFlyingSnake000": {
+    "name": "Fliegende Schlange",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} provoziert keine &amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn sie aus der Reichweite eines Feindes fliegt.</p>"
+  },
+  "mmGiantVulture00": {
+    "name": "Riesengeier",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} sich innerhalb von 1,5 m von der Kreatur befindet und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmGriffon0000000": {
+    "name": "Greif",
+    "description": "<p><span style=\"font-family:'Roboto Condensed', sans-serif\">Der\n    </span>[[lookup @name lowercase]]{monster} <span\n    style=\"font-family:'Roboto Condensed', sans-serif\">führt zwei</span>\n    [[/item .mmRend0000000000]] <span style=\"font-family:'Roboto\n    Condensed', sans-serif\">Angriffe aus.</span></p>"
+  },
+  "mmHarpy000000000": {
+    "name": "Harpyie",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} singt eine magische Melodie, die anhält, bis die Konzentration der [[lookup @name lowercase]]{monster} darauf endet.</p><p\n    class=\"feature\"><em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=dxxqZP7Vo01te3QB]], jedes [[lookup @target.affects.special activity=dxxqZP7Vo01te3QB]] in einer [[lookup @target.template.size activity=dxxqZP7Vo01te3QB]] Fuß großen Emanation, die von der [[lookup @name lowercase]]{monster} ausgeht, wenn das Lied beginnt.</p><p class=\"feature\"><em>Fehlschlag:</em> Das Ziel hat den Zustand &amp;Reference[Charmed apply=false] bis das Lied endet und wiederholt den Rettungswurf am Ende jedes seiner Züge. Solange es Bezaubert ist, hat das Ziel den Zustand &amp;Reference[Incapacitated apply=false] und ignoriert den Lockgesang anderer Harpyien.</p><p class=\"feature\">Wenn das Ziel mehr als 1,5 m von der [[lookup @name lowercase]]{monster} entfernt ist, bewegt sich das Ziel in seinem Zug auf die [[lookup @name lowercase]]{monster} zu, auf dem direktesten Weg, um in Reichweite von 1,5 m zur [[lookup @name lowercase]]{monster} zu gelangen. Es vermeidet keine &amp;Reference[OpportunityAttacks]; jedoch, bevor es sich in schädigendes Gelände (wie Lava oder eine Grube) bewegt und wann immer es Schaden von einer anderen Quelle als der [[lookup @name lowercase]]{monster} erleidet, wiederholt das Ziel den Rettungswurf.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen den Lockgesang dieser [[lookup @name lowercase]]{monster}.</p>"
+  },
+  "mmHippogriff0000": {
+    "name": "Hippogreif",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} provoziert keinen &amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn er aus der Reichweite eines Feindes fliegt.</p>"
+  },
+  "mmHydra000000000": {
+    "name": "Hydra",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} kann 1 Stunde lang den Atem anhalten.</p>"
+  },
+  "mmKraken00000000": {
+    "name": "Krake",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmManticore00000": {
+    "name": "Mantikor",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei Angriffe aus, wobei er [[/item .mmRend0000000000]] oder [[/item .mmTailSpike00000]] in beliebiger Kombination einsetzt.</p>"
+  },
+  "mmMedusa00000000": {
+    "name": "Medusa",
+    "description": "<p><span style=\"font-family:'Roboto Condensed', sans-serif\">Die\n    </span>[[lookup @name lowercase]]{monster}<span\n    style=\"font-family:'Roboto Condensed', sans-serif\"> führt zwei\n    </span>[[/item .mmClaw0000000000]]<span style=\"font-family:'Roboto\n    Condensed', sans-serif\">-Angriffe und einen </span>[[/item\n    .mmSnakeHair00000]]<span style=\"font-family:'Roboto Condensed',\n    sans-serif\">-Angriff aus, oder sie führt drei </span>[[/item\n    .mmPoisonRay00000]]<span style=\"font-family:'Roboto Condensed',\n    sans-serif\">-Angriffe aus.</span></p>"
+  },
+  "mmMerrow00000000": {
+    "name": "Merrow",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmMimic000000000": {
+    "name": "Mimik",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} haftet an allem, was es berührt. Eine riesige oder kleinere Kreatur, die an der [[lookup @name lowercase]]{monster} haftet, hat den Zustand &amp;Reference[Grappled\n    apply=false] (SG zum Entkommen [[lookup @skills.ath.passive]]).\n    Fertigkeitswürfe, um diesem Griff zu entkommen, haben Nachteil.</p>"
+  },
+  "mmMinotaurOfBaph": {
+    "name": "Minotaurus des Baphomet",
+    "description": "<p>[[/attack extended]]. [[/damage extended average]]. Wenn das Ziel\n    eine [[lookup @target.affects.special activity=iBenqFiBu40bUxkH]]\n    Kreatur ist und der [[lookup @name lowercase]]{monster} [[lookup\n    @activation.condition activity=iBenqFiBu40bUxkH]] unmittelbar vor dem Treffer geradewegs auf es zugestürmt ist,\n    erleidet das Ziel zusätzlich [[/damage 3d6\n    type=piercing average]] Stichschaden und hat den Zustand &amp;Reference[Prone\n    apply=false].</p>"
+  },
+  "mmOwlbear0000000": {
+    "name": "Eulenbär",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item\n    .mmRend0000000000]] Angriffe aus.</p>"
+  },
+  "mmPhaseSpider000": {
+    "name": "Phasenspinne",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} kann 18 m weit in die Ätherebene sehen, wenn sie sich auf der Materiellen Ebene befindet.</p>"
+  },
+  "mmPurpleWorm0000": {
+    "name": "Purpurwurm",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item .mmBite0000000000]]-Angriff und einen [[/item .mmTailStinger000]]-Angriff aus.</p>"
+  },
+  "mmRemorhaz000000": {
+    "name": "Remorhaz",
+    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+  },
+  "mmRoc00000000000": {
+    "name": "Roc",
+    "description": "<p><span style=\"font-family:'Roboto Condensed', sans-serif\">Der </span>[[lookup @name lowercase]]{monster} <span\n    style=\"font-family:'Roboto Condensed', sans-serif\"> führt zwei </span> [[/item .mmBeak0000000000]]<span style=\"font-family:'Roboto\n    Condensed', sans-serif\">-Angriffe aus. Er kann einen Angriff durch einen </span> [[/item .mmTalons00000000]]<span style=\"font-family:'Roboto\n    Condensed', sans-serif\">-Angriff ersetzen.</span></p>"
+  },
+  "mmRustMonster000": {
+    "name": "Rostmonster",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann den Standort von [[lookup @target.affects.special activity=I1ppxiVO5CS6tKj0]] innerhalb von [[lookup @target.template.size activity=I1ppxiVO5CS6tKj0]] Fuß von sich aus bestimmen.</p>"
+  },
+  "mmStirge00000000": {
+    "name": "Stirge",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Kreatur<span style=\"font-family:'Roboto\n    Condensed', sans-serif\">, und die </span>[[lookup @name lowercase]]{monster}<span style=\"font-family:'Roboto Condensed',\n    sans-serif\"> heftet sich an das Ziel. Solange sie angeheftet ist, kann die </span>[[lookup @name lowercase]]{monster}<span\n    style=\"font-family:'Roboto Condensed', sans-serif\"> keine Rüssel-Angriffe ausführen, und das Ziel erleidet [[/damage average activity=5xwoPMBiaRBqjFav]] Schaden zu Beginn jedes der </span>[[lookup @name lowercase]]{monster} Züge<span\n    style=\"font-family:'Roboto Condensed', sans-serif\">. </span></p><p class=\"feature\"><span style=\"font-family:'Roboto\n    Condensed', sans-serif\">Die </span>[[lookup @name lowercase]]{monster}<span style=\"font-family:'Roboto Condensed',\n    sans-serif\"> kann sich lösen, indem sie 1,5 m ihrer Bewegung aufwendet. Das Ziel oder eine Kreatur innerhalb von 1,5 m von ihm kann die </span>[[lookup @name lowercase]]{monster}<span\n    style=\"font-family:'Roboto Condensed', sans-serif\"> als Aktion lösen.</span></p>"
+  },
+  "mmTarrasque00000": {
+    "name": "Tarrasque",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, erfolgreich zu sein.</p>"
+  },
+  "mmWerebear000000": {
+    "name": "Werbär",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .JIRP6xpVCOyZotXc]]{Handaxe} oder [[/item .mmRend0000000000]]{Rend} in beliebiger Kombination verwendet. Er kann einen Angriff durch einen [[/item .mmBite0000000000]]{Bite}-Angriff ersetzen.</p>"
+  },
+  "mmWereboar000000": {
+    "name": "Werber",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .hhfnX7eT1ZFun8oQ]]{Javelin} oder [[/item .mmTusk0000000000]]{Tusk} in beliebiger Kombination einsetzt. Er kann einen Angriff durch einen [[/item .mmGore0000000000]]{Gore} Angriff ersetzen.</p>"
+  },
+  "mmWererat0000000": {
+    "name": "Werratte"
+  },
+  "mmWeretiger00000": {
+    "name": "Wertiger",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er [[/item .mmScratch0000000]]{Scratch} oder [[/item .Spw5gbTlI2AKsGWd]]{Longbow} in beliebiger Kombination einsetzt. Er kann einen Angriff durch einen [[/item .mmBite0000000000]]{Bite} Angriff ersetzen.</p>"
+  },
+  "mmWerewolf000000": {
+    "name": "Werwolf",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m zur Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmWinterWolf0000": {
+    "name": "Winterwolf",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf\n    gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name\n    lowercase]]{monster} innerhalb von 1,5 m der Kreatur ist und der\n    Verbündete nicht den Zustand 'Handlungsunfähig' hat.</p>"
+  },
+  "mmBlackPudding00": {
+    "name": "Schwarzer Pudding",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich durch einen Raum bewegen,\n    der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmGelatinousCube": {
+    "name": "Gallertwürfel",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} füllt seinen\n    gesamten Raum aus und ist transparent. Andere Kreaturen können diesen Raum\n    betreten, aber eine Kreatur, die dies tut, wird dem Verschlingen des [[lookup @name\n    lowercase]]{monster} unterworfen und hat Nachteil auf den Rettungswurf.</p><p class=\"feature\">Kreaturen im Inneren des [[lookup @name\n    lowercase]]{monster} haben &amp;Reference[Total Cover], und der\n    [[lookup @name lowercase]]{monster} kann eine Große Kreatur oder bis\n    zu vier Mittelgroße oder Kleine Kreaturen gleichzeitig in sich halten.</p><p\n    class=\"feature\">Als Aktion kann eine Kreatur innerhalb von [[lookup @range.value\n    activity=EcTOfXWsDJRHLydy]] [[lookup @range.units\n    activity=EcTOfXWsDJRHLydy]]. des [[lookup @name\n    lowercase]]{monster} eine Kreatur oder ein Objekt aus dem\n    [[lookup @name lowercase]]{monster} ziehen, indem sie einen [[/check dc=12\n    ability=str skill=ath format=long]] erfolgreich ablegt, und der Ziehende erleidet [[/damage\n    average activity=PMCvyqxfUYiPzNK8]] Schaden.</p>"
+  },
+  "mmGrayOoze000000": {
+    "name": "Grauer Schleim",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich durch einen Raum bewegen,\n    der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmOchreJelly0000": {
+    "name": "Ockergelee",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann sich durch einen Raum bewegen, der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmAwakenedShrub0": {
+    "name": "Erwachter Strauch",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage extended]].</p>"
+  },
+  "mmAwakenedTree00": {
+    "name": "Erwachter Baum",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmShamblingMound": {
+    "name": "Wankender Haufen",
+    "description": "<p class=\"feature\">Immer wenn der [[lookup @name lowercase]]{monster} Blitzschaden erleidet, erhält er eine Anzahl von Trefferpunkten zurück, die dem zugefügten Blitzschaden entspricht.</p>"
+  },
+  "mmShriekerFungus": {
+    "name": "Schreipilz",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine [[lookup @target.affects.type\n    activity=Tlv3gcYk5KfdtV7c]] oder eine Quelle hellen Lichts bewegt sich innerhalb von\n    [[lookup @range.value activity=Tlv3gcYk5KfdtV7c]] Fuß des [[lookup\n    @name lowercase]]{monster}. <em>Reaktion:</em> Der [[lookup @name\n    lowercase]]{monster} stößt einen Schrei aus, der innerhalb von [[lookup\n    @target.template.size activity=Tlv3gcYk5KfdtV7c]] Fuß von ihm hörbar ist, für\n    [[lookup @duration.value activity=Tlv3gcYk5KfdtV7c]] Minute oder bis der [[lookup @name lowercase]]{monster} stirbt.</p>"
+  },
+  "mmTreant00000000": {
+    "name": "Baumhirte",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} verursacht doppelten Schaden an\n    Objekten und Gebäuden.</p>"
+  },
+  "mmVioletFungus00": {
+    "name": "Violetter Pilz",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item\n    .mmRottingTouch00]] Angriffe aus.</p>"
+  },
+  "AkraLv0100000000": {
+    "name": "Akra",
+    "description": "<p class=\"phb-meta\"><strong>Attribut:</strong> Geschicklichkeit</p><p\n    class=\"phb-meta\"><strong>Nutzen:</strong> Texte mit beeindruckenden\n    Verzierungen schreiben, die vor Fälschungen schützen (SG 15)</p><p\n    class=\"phb-meta\"><strong>Herstellen:</strong>\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagInk00000000]{Ink},\n    <em>Zauberschriftrolle</em></p>"
+  },
+  "AothLv0100000000": {
+    "name": "Aoth",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHuman000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"human-traits\">Menschliche Eigenschaften</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,6-1,2 m groß), wählbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate: </strong>9 m</p><p>Als Mensch besitzt du diese besonderen Eigenschaften.</p><p><strong>Einfallsreich. </strong>Du erhältst Heldenhafte Inspiration, wann immer du eine Lange Rast beendest.</p><p><strong>Geschickt. </strong>Du erhältst Übung in einer Fertigkeit deiner Wahl.</p><p><strong>Vielseitig.</strong> Du erhältst ein Ursprungs-Talent deiner Wahl (siehe Kapitel 5). Geschickt wird empfohlen.</p>",
+    "advancement": {
+      "dLxv96vt2B2KOEe2": {
+        "hint": "Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,6-1,2 m groß), wählbar bei der Auswahl dieser Spezies"
+      },
+      "2H3yQa0PfjBgXw2W": {
+        "title": "Menschliche Eigenschaften"
+      },
+      "xIdIaWtTj1cBERln": {
+        "title": "Geschickt",
+        "hint": "Du erhältst Übung in einer Fertigkeit deiner Wahl."
+      },
+      "KB8IQLwyuL6SOFnv": {
+        "title": "Vielseitig",
+        "hint": "Du erhältst ein Ursprungs-Talent deiner Wahl. Geschickt wird empfohlen."
+      }
+    }
+  },
+  "BeiroLv010000000": {
+    "name": "Beiro",
+    "description": "<p><strong>Attributswerte:</strong> Geschicklichkeit, Konstitution, Charisma</p><p><strong>Talent:</strong> Magiebegabung (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Akrobatik, Auftreten</p><p><strong>Werkzeugübung:</strong> <em>Wähle ein Musikinstrument</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B: </em>(A) Musikinstrument (wie oben), 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000],\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]]; oder (B) [[/award 50gp]]</p>"
+  },
+  "KruskLv010000000": {
+    "name": "Krusk",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution, Charisma</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeitsübungen:</strong> Tierumgang, Überleben</p><p><strong>Werkzeugübung:</strong> <em>Wähle eine Art von Handwerkerwerkzeugen</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:\n    </em>(A) Handwerkerwerkzeuge (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "MerricLv01000000": {
+    "name": "Merric",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution, Charisma</p><p><strong>Talent:</strong> Wilder Angreifer</p><p><strong>Fertigkeitsübungen:</strong> Athletik, Einsicht</p><p><strong>Werkzeugübung:</strong> <em>Wähle eine Art von Handwerkerwerkzeugen</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:\n    </em>(A) Handwerkerwerkzeuge (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "MorthosLv0100000": {
+    "name": "Morthos",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"infernal\">Infernal</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"tiefling-traits\">Tiefling-Merkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>Größe: </strong>Mittel (ca. 1,2–2,1 Meter groß) oder Klein (ca. 0,9–1,2 Meter groß), wählbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong> Du besitzt Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, erlernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist dein Zauberwirkungsattribut für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du das Erbe auswählst).</p><p><strong>Jenseitige Präsenz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit diesem Merkmal wirkst, verwendet der Zauber dasselbe Zauberwirkungsattribut, das du für dein Merkmal Teuflisches Erbe verwendest.</p><table><caption>Teuflische Vermächtnisse</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Fire Bolt} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Hellish\n    Rebuke}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table>",
+    "advancement": {
+      "lskxIeib6rIreZ1h": {
+        "hint": "Mittel (ca. 1,2–2,1 Meter groß) oder Klein (ca. 0,9–1,2 Meter groß)"
+      },
+      "T8T6H9TudTleafUL": {
+        "title": "Tiefling-Merkmale"
+      },
+      "bD2XFMWGPkFJLr2w": {
+        "title": "Jenseitige Präsenz"
+      },
+      "9V9xGP0Fsqh3NDsB": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": "Du hast Resistenz gegen Feuerschaden."
+      },
+      "gMovXMwHeD9cCL99": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist dein Zauberwirkungsattribut für die Zauber, die du mit diesem Merkmal wirkst."
+      },
+      "ol3SWLw2FTNEiXrb": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist dein Zauberwirkungsattribut für die Zauber, die du mit diesem Merkmal wirkst."
+      },
+      "cj8h25IH0Zvdy3Bm": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist dein Zauberwirkungsattribut für die Zauber, die du mit diesem Merkmal wirkst."
+      }
+    }
+  },
+  "PerrinLv01000000": {
+    "name": "Perrin",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHalfling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"halfling-traits\">Halbling-Merkmale</h3><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>Größe: </strong>Klein (ca. 0,6–0,9 Meter groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Halbling besitzt du diese besonderen Merkmale.</p><p><strong>Mutig.</strong> Du hast Vorteil auf Rettungswürfe, die du machst, um den Zustand Verängstigt zu vermeiden oder zu beenden.</p><p><strong>Halbling-Flinkheit.</strong> Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größenkategorie größer ist als du, aber du kannst nicht im selben Raum anhalten.</p><p><strong>Glück.</strong> Wenn du bei einem W20-Wurf eine 1 würfelst, kannst du den Würfel neu werfen, und du musst das neue Ergebnis verwenden.</p><p><strong>Natürlich heimlich.</strong> Du kannst die Aktion Verstecken ausführen, selbst wenn du nur durch eine Kreatur verdeckt bist, die mindestens eine Größenkategorie größer ist als du.</p>",
+    "materials": "ein Heiliges Symbol im Wert von 5+ GM",
+    "advancement": {
+      "GYp1vi82hSEoe3mO": {
+        "hint": "Klein (ca. 0,6–0,9 Meter groß)"
+      },
+      "GFHErdA52SfUBvB5": {
+        "title": "Halbling-Merkmale"
+      }
+    }
+  },
+  "QuillatheLv01000": {
+    "name": "Quillathe",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Geschicklichkeit, Stärke</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeits-Übungen:</strong> Nachforschungen, Naturkunde</p><p><strong>Werkzeug-Übung:</strong> Kräuterkunde-Set</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B: </em>(A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK], @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], @UUID[Compendium.dnd5e.equipment24.Item.phbagHuntingTrap], @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000], [[/award 37gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "RandalLv01000000": {
+    "name": "Randal",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\n    Attacker}</p><p><strong>Fertigkeits-Übungen:</strong> Athletik und Einschüchtern</p><p><strong>Werkzeug-Übung:</strong> <em>Wähle eine Art von</em> <em>Glücksspiel-Set</em> (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n    6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben), @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's\n    Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's\n    Clothes}, 14 GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\n    inline classes=\"free-rules-embed\"]</p>",
+    "advancement": {
+      "5hLHlmqxzoAta0uf": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "y4FZ4I6wU0F8DEjO": {
+        "title": "Hintergrund-Übungen",
+        "hint": "Dein Hintergrund verleiht dir Übung in Athletik und Einschüchtern. Er verleiht dir auch Übung mit jedem Glücksspiel-Set."
+      },
+      "tk8CFgIW7fXL0mlu": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Wilder Angreifer."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter kennt mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "RiswynnLv0100000": {
+    "name": "Riswynn",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDwarf000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"dwarf-traits\">Zwergenmerkmale</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2–1,5 Meter\n    groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Zwerg besitzt du\n    diese besonderen Merkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt\n    Dunkelsicht mit einer Reichweite von 36 m.</p><p><strong>Zwergische\n    Widerstandsfähigkeit.</strong> Du besitzt Resistenz gegen Giftschaden. Außerdem\n    hast du Vorteil auf Rettungswürfe, die du machst, um die Vergiftet-Bedingung\n    zu vermeiden oder zu beenden.</p><p><strong>Zwergische Zähigkeit.</strong> Dein maximaler\n    Trefferpunktewert erhöht sich um 1, und er erhöht sich jedes Mal um 1,\n    wenn du eine Stufe aufsteigst.</p><p><strong>Steingespür.</strong> Als Bonusaktion erhältst du\n    für 10 Minuten Erschütterungssinn mit einer Reichweite von 18 m. Du\n    musst dich auf einer Steinoberfläche befinden oder eine Steinoberfläche\n    berühren, um diesen Erschütterungssinn zu nutzen. Der Stein kann\n    natürlich oder bearbeitet sein. Du kannst diese Bonusaktion eine Anzahl\n    von Malen einsetzen, die deinem Übungsbonus entspricht, und du erhältst\n    alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast\n    beendest.</p>",
+    "advancement": {
+      "6HdONjMD4UozXSfC": {
+        "hint": "Mittel (etwa 1,2–1,5 Meter groß)"
+      },
+      "PphNMhWLl5mEgAZf": {
+        "title": "Zwergenmerkmale"
+      },
+      "S3kro3b0bq0Ks6Y8": {
+        "title": "Zwergische Widerstandsfähigkeit",
+        "hint": "Du besitzt Resistenz gegen Giftschaden."
+      }
+    }
+  },
+  "SefrisLv01000000": {
+    "name": "Sefris",
+    "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiative-Übung.</strong> Wenn du die Initiative würfelst, kannst du deinen\n    Übungsbonus auf den Wurf addieren.</p><p><strong>Initiativtausch.</strong>\n    Unmittelbar nachdem du die Initiative gewürfelt hast, kannst du deine\n    Initiative mit der Initiative eines willigen Verbündeten im selben Kampf\n    tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der\n    Verbündete die &amp;Reference[Incapacitated] Bedingung hat.</p><section\n    id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet automatisch den Bonus auf\n    deine Initiative.</p></section>",
+    "materials": "ein bisschen Phosphor"
+  },
+  "ZannaLv010000000": {
+    "name": "Zanna",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanes und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
+    "advancement": {
+      "3O61L5uTy5jRCqJb": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Konstitutions-, Intelligenz- und Weisheitswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "DMd8rikwPlZdpP1l": {
+        "title": "Hintergrund-Übungen",
+        "hint": "Dein Hintergrund gewährt dir Übung in Arkanes und Geschichte. Er gewährt dir auch Übung mit Kalligrafenbedarf."
+      },
+      "kKt7VMmZUuRr35dP": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund gewährt dir das Talent Magiebegabung (Zauberer)."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "AkraLv1100000000": {
+    "name": "Akra",
+    "description": "<p class=\"phb-meta\"><strong>Attribut:</strong> Geschicklichkeit</p><p\n    class=\"phb-meta\"><strong>Nutzen:</strong> Texte mit beeindruckenden\n    Verzierungen schreiben, die vor Fälschungen schützen (SG 15)</p><p\n    class=\"phb-meta\"><strong>Herstellen:</strong>\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagInk00000000]{Ink},\n    <em>Zauberrolle</em></p>"
+  },
+  "AothLv1100000000": {
+    "name": "Aoth",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHuman000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"human-traits\">Menschliche Eigenschaften</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-2,1 m\n    groß) oder Klein (etwa 0,6-1,2 m groß), wählbar bei der Auswahl dieser\n    Spezies</p><p><strong>Bewegungsrate: </strong>9 m</p><p>Als Mensch besitzt du\n    diese besonderen Eigenschaften.</p><p><strong>Einfallsreich. </strong>Du\n    erhältst Heldenhafte Inspiration, wann immer du eine Lange\n    Rast beendest.</p><p><strong>Geschickt. </strong>Du erhältst Übung in einer\n    Fertigkeit deiner Wahl.</p><p><strong>Vielseitig.</strong> Du erhältst ein\n    Ursprungs-Talent deiner Wahl (siehe Kapitel 5). Geschickt wird\n    empfohlen.</p>\n  chat: ''",
+    "advancement": {
+      "dLxv96vt2B2KOEe2": {
+        "hint": "Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,6-1,2 m groß), wählbar bei der Auswahl dieser Spezies"
+      },
+      "2H3yQa0PfjBgXw2W": {
+        "title": "Menschliche Eigenschaften"
+      },
+      "xIdIaWtTj1cBERln": {
+        "title": "Geschickt",
+        "hint": "Du erhältst Übung in einer Fertigkeit deiner Wahl."
+      },
+      "KB8IQLwyuL6SOFnv": {
+        "title": "Vielseitig",
+        "hint": "Du erhältst ein Ursprungs-Talent deiner Wahl. Geschickt wird empfohlen."
+      }
+    }
+  },
+  "BeiroLv110000000": {
+    "name": "Beiro",
+    "description": "<p><strong>Attributswerte:</strong> Geschicklichkeit, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Magiebegabung\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Akrobatik,\n    Auftreten</p><p><strong>Werkzeugübung:</strong> <em>Wähle ein\n    Musikinstrument</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A\n    oder B: </em>(A) Musikinstrument (wie oben), 2\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000],\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]]; oder (B) [[/award 50gp]]</p>\n  chat: ''"
+  },
+  "KruskLv110000000": {
+    "name": "Krusk",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeitsübungen:\n    </strong> Umgang mit Tieren, Überleben</p><p><strong>Werkzeugübung:\n    </strong> <em>Wähle eine Art von Handwerkzeug</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:\n    </em>(A) Handwerkzeug (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>\n  chat: ''"
+  },
+  "MerricLv11000000": {
+    "name": "Merric",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Wilder\n    Angreifer</p><p><strong>Fertigkeitsübungen:</strong> Athletik,\n    Einsicht</p><p><strong>Werkzeugübung:</strong> <em>Wähle eine Art\n    von Handwerkzeug</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A\n    oder B: </em>(A) Handwerkzeug (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>\n  chat: ''",
+    "materials": "eine Prise Eisenpulver"
+  },
+  "MorthosLv1100000": {
+    "name": "Morthos",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"infernal\">Infernal</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"tiefling-traits\">Tiefling-Merkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,9-1,2 m groß), wählbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong>Du besitzt Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du das Erbe auswählst).</p><p><strong>Jenseitige Präsenz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit diesem Merkmal wirkst, verwendet der Zauber dasselbe Zauberattribut, das du für dein Merkmal Teuflisches Erbe verwendest.</p><table><caption>Teuflische Vermächtnisse</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Fire Bolt} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Hellish\n    Rebuke}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table>",
+    "advancement": {
+      "lskxIeib6rIreZ1h": {
+        "hint": "Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,9-1,2 m groß)"
+      },
+      "T8T6H9TudTleafUL": {
+        "title": "Tiefling-Merkmale"
+      },
+      "bD2XFMWGPkFJLr2w": {
+        "title": "Jenseitige Präsenz"
+      },
+      "9V9xGP0Fsqh3NDsB": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Du hast Resistenz gegen Feuerschaden."
+      },
+      "gMovXMwHeD9cCL99": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst."
+      },
+      "ol3SWLw2FTNEiXrb": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst."
+      },
+      "cj8h25IH0Zvdy3Bm": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst."
+      }
+    }
+  },
+  "PerrinLv11000000": {
+    "name": "Perrin",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHalfling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"halfling-traits\">Halbling-Merkmale</h3><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>Größe: </strong>Klein (etwa 0,6-0,9 m groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Halbling besitzt du diese besonderen Merkmale.</p><p><strong>Tapfer.</strong> Du hast Vorteil auf Rettungswürfe, die du machst, um den Zustand Verängstigt zu vermeiden oder zu beenden.</p><p><strong>Halbling-Flinkheit.</strong> Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größe größer ist als du, aber du kannst nicht im selben Raum anhalten.</p><p><strong>Glück.</strong> Wenn du bei einem W20-Wurf eine 1 würfelst, kannst du den Würfel neu werfen und musst das neue Ergebnis verwenden.</p><p><strong>Natürlich heimlich.</strong> Du kannst die Aktion Verstecken ausführen, selbst wenn du nur durch eine Kreatur verdeckt bist, die mindestens eine Größe größer ist als du.</p>",
+    "materials": "ein Heiliges Symbol im Wert von 5+ GM",
+    "advancement": {
+      "GYp1vi82hSEoe3mO": {
+        "hint": "Klein (etwa 0,6-0,9 m groß)"
+      },
+      "GFHErdA52SfUBvB5": {
+        "title": "Halbling-Merkmale"
+      }
+    }
+  },
+  "QuillatheLv11000": {
+    "name": "Quillathe",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Geschicklichkeit, Stärke</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeits-Übungen:</strong> Nachforschungen, Naturkunde</p><p><strong>Werkzeug-Übung:</strong> Kräuterkunde-Set</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B: </em>(A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK], @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], @UUID[Compendium.dnd5e.equipment24.Item.phbagHuntingTrap], @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000], [[/award 37gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "RandalLv11000000": {
+    "name": "Randal",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\n    Attacker}</p><p><strong>Fertigkeits-Übungen:</strong> Athletik und Einschüchtern</p><p><strong>Werkzeug-Übung:</strong> <em>Wähle eine Art von</em> <em>Glücksspiel-Set</em> (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n    6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben), @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's\n    Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's\n    Clothes}, 14 GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\n    inline classes=\"free-rules-embed\"]</p>",
+    "advancement": {
+      "5hLHlmqxzoAta0uf": {
+        "title": "Attributsverbesserung durch Hintergrund",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "y4FZ4I6wU0F8DEjO": {
+        "title": "Hintergrund-Übungen",
+        "hint": "Dein Hintergrund verleiht dir Übung in Athletik und Einschüchtern. Er verleiht dir auch Übung mit jedem Glücksspiel-Set."
+      },
+      "tk8CFgIW7fXL0mlu": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Wilder Angreifer."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter kennt mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "RiswynnLv1100000": {
+    "name": "Riswynn",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDwarf000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"dwarf-traits\">Zwergenmerkmale</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2–1,5 Meter\n    groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Zwerg besitzt du\n    diese besonderen Merkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt\n    Dunkelsicht mit einer Reichweite von 36 m.</p><p><strong>Zwergische\n    Widerstandsfähigkeit.</strong> Du hast Resistenz gegen Giftschaden. Du hast auch\n    Vorteil auf Rettungswürfe, die du machst, um der Vergiftet-Bedingung zu\n    entgehen oder sie zu beenden.</p><p><strong>Zwergische Zähigkeit.</strong> Dein maximaler Trefferpunkte-Wert\n    erhöht sich um 1, und er erhöht sich erneut um 1, wann immer du eine\n    Stufe aufsteigst.</p><p><strong>Steingespür.</strong> Als Bonusaktion erhältst du\n    für 10 Minuten Erschütterungssinn mit einer Reichweite von 18 m. Du\n    musst dich auf einer Steinoberfläche befinden oder eine Steinoberfläche\n    berühren, um diesen Erschütterungssinn zu nutzen. Der Stein kann\n    natürlich oder bearbeitet sein. Du kannst diese Bonusaktion eine Anzahl\n    von Malen einsetzen, die deinem Übungsbonus entspricht, und du erhältst\n    alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast\n    beendest.</p>",
+    "advancement": {
+      "6HdONjMD4UozXSfC": {
+        "hint": "Mittel (etwa 1,2–1,5 Meter groß)"
+      },
+      "PphNMhWLl5mEgAZf": {
+        "title": "Zwergenmerkmale"
+      },
+      "S3kro3b0bq0Ks6Y8": {
+        "title": "Zwergische Widerstandsfähigkeit",
+        "hint": "Du hast Resistenz gegen Giftschaden."
+      }
+    }
+  },
+  "SefrisLv11000000": {
+    "name": "Sefris",
+    "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiative-Übung.</strong> Wenn du Initiative würfelst, kannst du deinen\n    Übungsbonus zum Wurf addieren.</p><p><strong>Initiative-Tausch.</strong>\n    Unmittelbar nachdem du Initiative gewürfelt hast, kannst du deine\n    Initiative mit der Initiative eines willigen Verbündeten im selben Kampf\n    tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der\n    Verbündete die &amp;Reference[Incapacitated] Bedingung hat.</p><section\n    id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet automatisch den Bonus auf\n    deine Initiative.</p></section>",
+    "materials": "ein bisschen Phosphor"
+  },
+  "ZannaLv110000000": {
+    "name": "Zanna",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanakunde und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
+    "advancement": {
+      "3O61L5uTy5jRCqJb": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Konstitution, Intelligenz und Weisheit zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "DMd8rikwPlZdpP1l": {
+        "title": "Hintergrund-Übungen",
+        "hint": "Dein Hintergrund gewährt dir Übung in Arkanakunde und Geschichte. Er gewährt dir auch Übung mit Kalligrafenbedarf."
+      },
+      "kKt7VMmZUuRr35dP": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund gewährt dir das Talent Magiebegabung (Zauberer)."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "AkraLv1700000000": {
+    "name": "Akra",
+    "description": "<p class=\"phb-meta\"><strong>Attribut:</strong> Geschicklichkeit</p><p\n    class=\"phb-meta\"><strong>Nutzen:</strong> Text mit beeindruckenden\n    Verzierungen schreiben, die vor Fälschungen schützen (SG 15)</p><p\n    class=\"phb-meta\"><strong>Herstellen:</strong>\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagInk00000000]{Ink},\n    <em>Zauberrolle</em></p>"
+  },
+  "AothLv1700000000": {
+    "name": "Aoth",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHuman000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"human-traits\">Menschliche Eigenschaften</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-2,1 m\n    groß) oder Klein (etwa 0,6-1,2 m groß), wählbar bei der Auswahl dieser\n    Spezies</p><p><strong>Bewegungsrate: </strong>9 m</p><p>Als Mensch besitzt du\n    diese besonderen Eigenschaften.</p><p><strong>Einfallsreich. </strong>Du\n    erhältst Heldenhafte Inspiration, wann immer du eine Lange\n    Rast beendest.</p><p><strong>Geschickt. </strong>Du erhältst Übung in einer\n    Fertigkeit deiner Wahl.</p><p><strong>Vielseitig.</strong> Du erhältst ein\n    Ursprungs-Talent deiner Wahl (siehe Kapitel 5). Geschickt wird\n    empfohlen.</p>",
+    "advancement": {
+      "dLxv96vt2B2KOEe2": {
+        "hint": "Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,6-1,2 m groß), wählbar bei der Auswahl dieser Spezies"
+      },
+      "2H3yQa0PfjBgXw2W": {
+        "title": "Menschliche Eigenschaften"
+      },
+      "xIdIaWtTj1cBERln": {
+        "title": "Geschickt",
+        "hint": "Du erhältst Übung in einer Fertigkeit deiner Wahl."
+      },
+      "KB8IQLwyuL6SOFnv": {
+        "title": "Vielseitig",
+        "hint": "Du erhältst ein Ursprungs-Talent deiner Wahl. Geschickt wird empfohlen."
+      }
+    }
+  },
+  "BeiroLv170000000": {
+    "name": "Beiro",
+    "description": "<p><strong>Attributswerte:</strong> Geschicklichkeit, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Magiebegabung\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Akrobatik,\n    Auftreten</p><p><strong>Werkzeugübung:</strong> <em>Wähle ein\n    Musikinstrument</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A\n    oder B: </em>(A) Musikinstrument (wie oben), 2\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000],\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]]; oder (B) [[/award 50gp]]</p>"
+  },
+  "KruskLv170000000": {
+    "name": "Krusk",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeitsübungen:\n    </strong> Tierumgang, Überleben</p><p><strong>Werkzeugübung:\n    </strong> <em>Wähle eine Art von Handwerkzeug</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:\n    </em>(A) Handwerkzeug (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "MerricLv17000000": {
+    "name": "Merric",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Wilder\n    Angreifer</p><p><strong>Fertigkeitsübungen:</strong> Athletik,\n    Einsicht</p><p><strong>Werkzeugübung:</strong> <em>Wähle eine Art\n    von Handwerkzeug</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A\n    oder B: </em>(A) Handwerkzeug (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>",
+    "materials": "eine Prise Eisenpulver"
+  },
+  "MorthosLv1700000": {
+    "name": "Morthos",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"infernal\">Infernal-Tiefling-Eigenschaften</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"tiefling-traits\">Tiefling-Eigenschaften</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,9-1,2 m groß), wählbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Eigenschaften.</p><p><strong>Dunkelsicht.</strong>Du besitzt Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst (wähle die Fähigkeit, wenn du das Erbe auswählst).</p><p><strong>Jenseitige Präsenz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit dieser Eigenschaft wirkst, verwendet der Zauber dieselbe Zauberfähigkeit, die du für deine Eigenschaft Teuflisches Erbe verwendest.</p><table><caption>Teuflische Erben</caption><thead><tr><td>Grad 1</td><td>Grad 3</td><td>Grad 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Fire Bolt} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Hellish\n    Rebuke}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table>",
+    "advancement": {
+      "lskxIeib6rIreZ1h": {
+        "hint": "Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,9-1,2 m groß)"
+      },
+      "T8T6H9TudTleafUL": {
+        "title": "Tiefling-Eigenschaften"
+      },
+      "bD2XFMWGPkFJLr2w": {
+        "title": "Jenseitige Präsenz"
+      },
+      "9V9xGP0Fsqh3NDsB": {
+        "title": "Infernal-Tiefling-Eigenschaften",
+        "hint": "Du hast Resistenz gegen Feuerschaden."
+      },
+      "gMovXMwHeD9cCL99": {
+        "title": "Infernal-Tiefling-Eigenschaften",
+        "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst."
+      },
+      "ol3SWLw2FTNEiXrb": {
+        "title": "Infernal-Tiefling-Eigenschaften",
+        "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst."
+      },
+      "cj8h25IH0Zvdy3Bm": {
+        "title": "Infernal-Tiefling-Eigenschaften",
+        "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst."
+      }
+    }
+  },
+  "PerrinLv17000000": {
+    "name": "Perrin",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHalfling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"halfling-traits\">Halbling-Eigenschaften</h3><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>Größe: </strong>Klein (etwa 0,6-0,9 m groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Halbling besitzt du diese besonderen Eigenschaften.</p><p><strong>Mutig.</strong> Du hast Vorteil auf Rettungswürfe, die du machst, um den Zustand 'Verängstigt' zu vermeiden oder zu beenden.</p><p><strong>Halbling-Flinkheit.</strong> Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größe größer ist als du, aber du kannst nicht im selben Raum anhalten.</p><p><strong>Glück.</strong> Wenn du bei einem W20-Wurf eine 1 würfelst, kannst du den Würfel neu werfen und musst das neue Ergebnis verwenden.</p><p><strong>Natürlich heimlich.</strong> Du kannst die Aktion 'Verstecken' ausführen, selbst wenn du nur durch eine Kreatur verdeckt bist, die mindestens eine Größe größer ist als du.</p>",
+    "materials": "ein Heiliges Symbol im Wert von 5+ GM",
+    "advancement": {
+      "GYp1vi82hSEoe3mO": {
+        "hint": "Klein (etwa 0,6-0,9 m groß)"
+      },
+      "GFHErdA52SfUBvB5": {
+        "title": "Halbling-Eigenschaften"
+      }
+    }
+  },
+  "QuillatheLv17000": {
+    "name": "Quillathe",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Geschicklichkeit, Stärke</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeiten:</strong> Nachforschungen, Naturkunde</p><p><strong>Werkzeug-Profizienz:</strong> Kräuterkunde-Set</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B: </em>(A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK], @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], @UUID[Compendium.dnd5e.equipment24.Item.phbagHuntingTrap], @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000], [[/award 37gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "RandalLv17000000": {
+    "name": "Randal",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\n    Attacker}</p><p><strong>Fertigkeiten:</strong> Athletik und Einschüchtern</p><p><strong>Werkzeug-Profizienz:</strong> <em>Wähle eine Art von</em> <em>Glücksspiel-Set</em> (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n    6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben), @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's\n    Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's\n    Clothes}, 14 GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\n    inline classes=\"free-rules-embed\"]</p>",
+    "materials": "eine Kugel Fledermausguano und Schwefel",
+    "advancement": {
+      "5hLHlmqxzoAta0uf": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "y4FZ4I6wU0F8DEjO": {
+        "title": "Hintergrund-Profizienzen",
+        "hint": "Dein Hintergrund verleiht dir Übung in Athletik und Einschüchtern. Er verleiht dir auch Übung mit jedem Glücksspiel-Set."
+      },
+      "tk8CFgIW7fXL0mlu": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent 'Wilder Angreifer'."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "RiswynnLv1700000": {
+    "name": "Riswynn",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDwarf000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"dwarf-traits\">Zwergenmerkmale</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-1,5 m\n    groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Zwerg besitzt du\n    diese besonderen Merkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt\n    Dunkelsicht mit einer Reichweite von 36 m.</p><p><strong>Zwergische\n    Widerstandsfähigkeit.</strong> Du hast Resistenz gegen Giftschaden. Du hast außerdem\n    Vorteil bei Rettungswürfen, die du machst, um den Zustand Vergiftet\n    zu vermeiden oder zu beenden.</p><p><strong>Zwergische Zähigkeit.</strong> Dein maximaler Trefferpunkte-Wert\n    erhöht sich um 1, und er erhöht sich jedes Mal um 1, wenn du eine\n    Stufe aufsteigst.</p><p><strong>Steingespür.</strong> Als Bonusaktion erhältst du\n    für 10 Minuten Erschütterungssinn mit einer Reichweite von 18 m. Du musst dich\n    auf einer Steinoberfläche befinden oder eine Steinoberfläche berühren, um diesen\n    Erschütterungssinn zu nutzen. Der Stein kann natürlich oder bearbeitet sein. Du kannst diese Bonusaktion so oft einsetzen, wie es deinem Übungsbonus entspricht, und du\n    erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest.</p>",
+    "advancement": {
+      "6HdONjMD4UozXSfC": {
+        "hint": "Mittel (etwa 1,2-1,5 m groß)"
+      },
+      "PphNMhWLl5mEgAZf": {
+        "title": "Zwergenmerkmale"
+      },
+      "S3kro3b0bq0Ks6Y8": {
+        "title": "Zwergische Widerstandsfähigkeit",
+        "hint": "Du hast Resistenz gegen Giftschaden."
+      }
+    }
+  },
+  "SefrisLv17000000": {
+    "name": "Sefris",
+    "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiative-Übung.</strong> Wenn du die Initiative würfelst, kannst du deinen\n    Übungsbonus zum Wurf addieren.</p><p><strong>Initiativtausch.</strong>\n    Unmittelbar nachdem du die Initiative gewürfelt hast, kannst du deine Initiative\n    mit der Initiative eines willigen Verbündeten im selben Kampf tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der Verbündete den\n    &amp;Reference[Incapacitated] Zustand hat.</p><section\n    id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet automatisch den Bonus auf\n    deine Initiative.</p></section>",
+    "materials": "ein bisschen Phosphor"
+  },
+  "ZannaLv170000000": {
+    "name": "Zanna",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkane Kunde und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blatt),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
+    "advancement": {
+      "3O61L5uTy5jRCqJb": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Konstitutions-, Intelligenz- und Weisheitswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "DMd8rikwPlZdpP1l": {
+        "title": "Hintergrund-Übungen",
+        "hint": "Dein Hintergrund verleiht dir Übung in Arkaner Kunde und Geschichte. Er verleiht dir auch Übung mit Kalligrafenbedarf."
+      },
+      "kKt7VMmZUuRr35dP": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Magiebegabung (Zauberer)."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "AkraLv0500000000": {
+    "name": "Akra",
+    "description": "<p class=\"phb-meta\"><strong>Attribut:</strong> Geschicklichkeit</p><p\n    class=\"phb-meta\"><strong>Nutzen:</strong> Text mit beeindruckenden\n    Verzierungen schreiben, die vor Fälschungen schützen (SG 15)</p><p\n    class=\"phb-meta\"><strong>Herstellen:</strong>\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagInk00000000]{Ink},\n    <em>Zauberrolle</em></p>"
+  },
+  "AothLv0500000000": {
+    "name": "Aoth",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHuman000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"human-traits\">Menschliche Eigenschaften</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (ca. 1,2-2,1 m\n    groß) oder Klein (ca. 0,6-1,2 m groß), wählbar bei der Auswahl dieser\n    Spezies</p><p><strong>Bewegungsrate: </strong>9 m</p><p>Als Mensch besitzt du\n    diese besonderen Eigenschaften.</p><p><strong>Einfallsreich. </strong>Du\n    erhältst Heldeninspiration, wann immer du eine Lange\n    Rast beendest.</p><p><strong>Geschickt. </strong>Du erhältst Übung in einer\n    Fertigkeit deiner Wahl.</p><p><strong>Vielseitig.</strong> Du erhältst ein\n    Ursprungs-Talent deiner Wahl (siehe Kapitel 5). 'Geschickt' wird\n    empfohlen.</p>",
+    "advancement": {
+      "dLxv96vt2B2KOEe2": {
+        "hint": "Mittel (ca. 1,2-2,1 m groß) oder Klein (ca. 0,6-1,2 m groß), wählbar bei der Auswahl dieser Spezies"
+      },
+      "2H3yQa0PfjBgXw2W": {
+        "title": "Menschliche Eigenschaften"
+      },
+      "xIdIaWtTj1cBERln": {
+        "title": "Geschickt",
+        "hint": "Du erhältst Übung in einer Fertigkeit deiner Wahl."
+      },
+      "KB8IQLwyuL6SOFnv": {
+        "title": "Vielseitig",
+        "hint": "Du erhältst ein Ursprungs-Talent deiner Wahl. 'Geschickt' wird empfohlen."
+      }
+    }
+  },
+  "BeiroLv050000000": {
+    "name": "Beiro",
+    "description": "<p><strong>Attributswerte:</strong> Geschicklichkeit, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Magiebegabung\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Akrobatik,\n    Auftreten</p><p><strong>Werkzeugübung:</strong> <em>Wähle ein\n    Musikinstrument</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A\n    oder B: </em>(A) Musikinstrument (wie oben), 2\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000],\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]]; oder (B) [[/award 50gp]]</p>"
+  },
+  "KruskLv050000000": {
+    "name": "Krusk",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeitsübungen:\n    </strong> Umgang mit Tieren, Überleben</p><p><strong>Werkzeugübung:\n    </strong> <em>Wähle eine Art von Handwerkzeug</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:\n    </em>(A) Handwerkzeug (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "MerricLv05000000": {
+    "name": "Merric",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Konstitution,\n    Charisma</p><p><strong>Talent:</strong> Wilder\n    Angreifer</p><p><strong>Fertigkeitsübungen:</strong> Athletik,\n    Einsicht</p><p><strong>Werkzeugübung:</strong> <em>Wähle eine Art\n    von Handwerkzeug</em></p><p><strong>Ausrüstung:</strong> <em>Wähle A\n    oder B: </em>(A) Handwerkzeug (wie oben),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 32gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "MorthosLv0500000": {
+    "name": "Morthos",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"infernal\">Infernal</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"tiefling-traits\">Tiefling-Merkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,9-1,2 m groß), wählbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong>Du besitzt Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du vom entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du das Erbe auswählst).</p><p><strong>Jenseitige Präsenz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit diesem Merkmal wirkst, verwendet der Zauber dieselbe Zauberfähigkeit, die du für dein Merkmal Teuflisches Erbe verwendest.</p><table><caption>Teuflische Vermächtnisse</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Fire Bolt} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Hellish\n    Rebuke}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table>",
+    "advancement": {
+      "lskxIeib6rIreZ1h": {
+        "hint": "Mittel (etwa 1,2-2,1 m groß) oder Klein (etwa 0,9-1,2 m groß)"
+      },
+      "T8T6H9TudTleafUL": {
+        "title": "Tiefling-Merkmale"
+      },
+      "bD2XFMWGPkFJLr2w": {
+        "title": "Jenseitige Präsenz"
+      },
+      "9V9xGP0Fsqh3NDsB": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Du hast Resistenz gegen Feuerschaden."
+      },
+      "gMovXMwHeD9cCL99": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+      },
+      "ol3SWLw2FTNEiXrb": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+      },
+      "cj8h25IH0Zvdy3Bm": {
+        "title": "Infernal-Tiefling-Merkmale",
+        "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+      }
+    }
+  },
+  "PerrinLv05000000": {
+    "name": "Perrin",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHalfling000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"halfling-traits\">Halbling-Merkmale</h3><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>Größe: </strong>Klein (etwa 0,6-0,9 m groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Halbling besitzt du diese besonderen Merkmale.</p><p><strong>Mutig.</strong> Du hast Vorteil auf Rettungswürfe, die du machst, um den Zustand Verängstigt zu vermeiden oder zu beenden.</p><p><strong>Halbling-Flinkheit.</strong> Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größe größer ist als du, aber du kannst nicht im selben Raum anhalten.</p><p><strong>Glück.</strong> Wenn du bei einem W20-Wurf eine 1 würfelst, kannst du den Würfel neu werfen, und du musst das neue Ergebnis verwenden.</p><p><strong>Natürlich heimlich.</strong> Du kannst die Aktion Verstecken ausführen, selbst wenn du nur durch eine Kreatur verdeckt bist, die mindestens eine Größe größer ist als du.</p>",
+    "materials": "ein Heiliges Symbol im Wert von 5+ GM",
+    "advancement": {
+      "GYp1vi82hSEoe3mO": {
+        "hint": "Klein (etwa 0,6-0,9 m groß)"
+      },
+      "GFHErdA52SfUBvB5": {
+        "title": "Halbling-Merkmale"
+      }
+    }
+  },
+  "QuillatheLv05000": {
+    "name": "Quillathe",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Geschicklichkeit, Stärke</p><p><strong>Talent:</strong> Wachsam</p><p><strong>Fertigkeits-Übungen:</strong> Nachforschungen, Naturkunde</p><p><strong>Werkzeug-Übung:</strong> Kräuterkunde-Set</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B: </em>(A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK], @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], @UUID[Compendium.dnd5e.equipment24.Item.phbagHuntingTrap], @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000], [[/award 37gp]] oder (B) [[/award 50gp]]</p>"
+  },
+  "RandalLv05000000": {
+    "name": "Randal",
+    "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\n    Attacker}</p><p><strong>Fertigkeits-Übungen:</strong> Athletik und Einschüchtern</p><p><strong>Werkzeug-Übung:</strong> <em>Wähle eine Art von</em> <em>Glücksspiel-Set</em> (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n    6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben), @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's\n    Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's\n    Clothes}, 14 GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\n    inline classes=\"free-rules-embed\"]</p>",
+    "advancement": {
+      "5hLHlmqxzoAta0uf": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "y4FZ4I6wU0F8DEjO": {
+        "title": "Hintergrund-Übungen",
+        "hint": "Dein Hintergrund verleiht dir Übung in Athletik und Einschüchtern. Er verleiht dir auch Übung mit jedem Glücksspiel-Set."
+      },
+      "tk8CFgIW7fXL0mlu": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Wilder Angreifer."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter kennt mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "RiswynnLv0500000": {
+    "name": "Riswynn",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDwarf000000\n    inline classes=\"free-rules-embed\"]</p><h3\n    data-anchor=\"dwarf-traits\">Zwergenmerkmale</h3><p><strong>Kreaturentyp:\n    </strong>Humanoider</p><p><strong>Größe: </strong>Mittel (etwa 1,2-1,5 m\n    groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Zwerg besitzt du\n    diese besonderen Merkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt\n    Dunkelsicht mit einer Reichweite von 36 m.</p><p><strong>Zwergische\n    Widerstandsfähigkeit.</strong> Du hast Resistenz gegen Giftschaden. Du hast auch\n    Vorteil auf Rettungswürfe, die du machst, um den Zustand Vergiftet\n    zu vermeiden oder zu beenden.</p><p><strong>Zwergische Zähigkeit.</strong> Dein maximaler Trefferpunkte-Wert\n    erhöht sich um 1, und er erhöht sich erneut um 1, wann immer du eine\n    Stufe aufsteigst.</p><p><strong>Steingespür.</strong> Als Bonusaktion erhältst du\n    für 10 Minuten Erschütterungssinn mit einer Reichweite von 18 m. Du musst dich\n    auf einer Steinoberfläche befinden oder eine Steinoberfläche berühren, um diesen\n    Erschütterungssinn zu nutzen. Der Stein kann natürlich oder bearbeitet sein.Du kannst diese Bonusaktion\n    eine Anzahl von Malen einsetzen, die deinem Übungsbonus entspricht, und du\n    erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest.</p>",
+    "advancement": {
+      "6HdONjMD4UozXSfC": {
+        "hint": "Mittel (etwa 1,2-1,5 m groß)"
+      },
+      "PphNMhWLl5mEgAZf": {
+        "title": "Zwergenmerkmale"
+      },
+      "S3kro3b0bq0Ks6Y8": {
+        "title": "Zwergische Widerstandsfähigkeit",
+        "hint": "Du hast Resistenz gegen Giftschaden."
+      }
+    }
+  },
+  "SefrisLv05000000": {
+    "name": "Sefris",
+    "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiative-Übung.</strong> Wenn du Initiative würfelst, kannst du deinen\n    Übungsbonus zum Wurf addieren.</p><p><strong>Initiative-Tausch.</strong>\n    Unmittelbar nachdem du Initiative gewürfelt hast, kannst du deine Initiative\n    mit der Initiative eines willigen Verbündeten im selben Kampf tauschen. Du kannst\n    diesen Tausch nicht vornehmen, wenn du oder der Verbündete den\n    &amp;Reference[Incapacitated] Zustand hat.</p><section\n    id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet automatisch den Bonus auf deine\n    Initiative.</p></section>",
+    "materials": "ein bisschen Phosphor"
+  },
+  "ZannaLv050000000": {
+    "name": "Zanna",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanes und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
+    "advancement": {
+      "3O61L5uTy5jRCqJb": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": "Dein Hintergrund erlaubt es dir, deine Konstitutions-, Intelligenz- und Weisheitswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
+      },
+      "DMd8rikwPlZdpP1l": {
+        "title": "Hintergrund-Übungen",
+        "hint": "Dein Hintergrund verleiht dir Übung in Arkanes und Geschichte. Er verleiht dir auch Übung mit Kalligrafenbedarf."
+      },
+      "kKt7VMmZUuRr35dP": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Magiebegabung (Zauberer)."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei Sprachen, die du würfelst oder aus der Tabelle der Standardsprachen wählst."
+      }
+    }
+  },
+  "phbmobDraconicSp": {
+    "name": "Drakonischer Geist",
+    "description": "<p>Wenn du den Geist beschwörst, wähle eine seiner Resistenzen. Du hast\n    &amp;Reference[damageresistance]{Resistance} gegen den gewählten Schadenstyp,\n    bis der Zauber endet.</p><section id=\"secret-FlNLM1mGXlBLAFfA\"\n    class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Aktive Effekte\n    und Aktivitäten, die diese Effekte auf diesem Gegenstand anwenden, werden zur\n    optionalen Anwendung der gewählten Resistenz bereitgestellt.</p></section>",
+    "activities": {
+      "Share Acid Resistance": "Säure-Resistenz teilen",
+      "Share Cold Resistance": "Kälte-Resistenz teilen",
+      "Share Fire Resistance": "Feuer-Resistenz teilen",
+      "Share Lightning Resistance": "Blitz-Resistenz teilen",
+      "Share Poison Resistance": "Gift-Resistenz teilen"
+    },
+    "activitiesMeta": {
+      "fSlF41kzEOJncuNi": {
+        "targetAffectsSpecial": "der Beschwörer des Geistes"
+      },
+      "C4cUtbVLP3UV4Hs3": {
+        "targetAffectsSpecial": "der Beschwörer des Geistes"
+      },
+      "gJEIvo5yMMyn5m3Z": {
+        "targetAffectsSpecial": "der Beschwörer des Geistes"
+      },
+      "1tEjIswvMncZjXLI": {
+        "targetAffectsSpecial": "der Beschwörer des Geistes"
+      },
+      "M9Fbgnnqeosilumb": {
+        "targetAffectsSpecial": "der Beschwörer des Geistes"
+      }
+    }
+  },
+  "phbginGiantCenti": {
+    "name": "Riesen-Hundertfüßer",
+    "description": "<p> Das Insekt kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "phbginGiantSpide": {
+    "name": "Riesenspinne",
+    "description": "<p> Das Insekt kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "phbginGiantWasp0": {
+    "name": "Riesenwespe",
+    "description": "<p> Das Insekt kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "phbmobGiantInsec": {
+    "name": "Rieseninsekt",
+    "description": "<p> Das Insekt kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "mmSwarmOfBats000": {
+    "name": "Fledermausschwarm",
+    "description": "<p>Der Schwarm kann den Raum einer anderen Kreatur einnehmen und umgekehrt, und der Schwarm kann sich durch jede Öffnung bewegen, die groß genug für eine winzige Fledermaus ist. Der Schwarm kann keine Trefferpunkte zurückgewinnen oder temporäre Trefferpunkte erhalten.</p>"
+  },
+  "mmSwarmOfCrawlin": {
+    "name": "Schwarm kriechender Klauen",
+    "description": "<p>Der Schwarm kann den Raum einer anderen Kreatur einnehmen und umgekehrt, und der Schwarm kann sich durch jede Öffnung bewegen, die groß genug für eine winzige Kreatur ist. Der Schwarm kann keine Trefferpunkte zurückgewinnen oder temporäre Trefferpunkte erhalten.</p>"
+  },
+  "mmSwarmOfInsects": {
+    "name": "Insektenschwarm",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "mmSwarmOfPiranha": {
+    "name": "Piranhaschwarm",
+    "description": "<p>Der Schwarm kann den Raum einer anderen Kreatur einnehmen und umgekehrt, und der Schwarm kann sich durch jede Öffnung bewegen, die groß genug für eine winzige Piranha ist. Der Schwarm kann keine Trefferpunkte zurückgewinnen oder temporäre Trefferpunkte erhalten.</p>"
+  },
+  "mmSwarmOfRats000": {
+    "name": "Rattenschwarm",
+    "description": "<p>Der Schwarm kann den Raum einer anderen Kreatur einnehmen und umgekehrt, und der Schwarm kann sich durch jede Öffnung bewegen, die groß genug für eine winzige Ratte ist. Der Schwarm kann keine Trefferpunkte zurückgewinnen oder temporäre Trefferpunkte erhalten.</p>"
+  },
+  "mmSwarmOfRavens0": {
+    "name": "Raben-Schwarm",
+    "description": "<p>Der Schwarm kann den Raum einer anderen Kreatur einnehmen und umgekehrt, und der Schwarm kann sich durch jede Öffnung bewegen, die groß genug für eine winzige Kreatur ist. Der Schwarm kann keine Trefferpunkte zurückgewinnen oder temporäre Trefferpunkte erhalten.</p>"
+  },
+  "mmSwarmOfVenomou": {
+    "name": "Schwarm Giftschlangen",
+    "description": "<p>Der Schwarm kann den Raum einer anderen Kreatur einnehmen und umgekehrt, und der Schwarm kann sich durch jede Öffnung bewegen, die groß genug für eine winzige Schlange ist. Der Schwarm kann keine Trefferpunkte zurückgewinnen oder temporäre Trefferpunkte erhalten.</p>"
+  },
+  "mmGhast000000000": {
+    "name": "Grauen",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mJbwhj3beOIB3Jgj]], jede Kreatur (außer einem [[lookup @name lowercase]]{monster}), die ihren Zug in einer [[lookup @target.template.size activity=mJbwhj3beOIB3Jgj]] Fuß großen Emanation beginnt, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum Beginn seines nächsten Zuges.</p><p><em>Erfolg:</em> Das Ziel ist 1 Stunde lang immun gegen den Gestank aller [[lookup @name lowercase]]{monster}.</p>"
+  },
+  "mmGhost000000000": {
+    "name": "Geist",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann 18 m weit in die Ätherebene sehen, wenn er sich auf der Materiellen Ebene befindet.</p>"
+  },
+  "mmGhoul000000000": {
+    "name": "Ghul",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mafdXNIx6EIRujnK]] Angriffe aus.</p>"
+  },
+  "mmLich0000000000": {
+    "name": "Lich",
+    "description": "<p>Ein Komponentenbeutel ist wasserdicht und mit Fächern gefüllt, die alle kostenlosen Materialkomponenten deiner Zauber aufnehmen.</p>"
+  },
+  "mmMinotaurSkelet": {
+    "name": "Minotaurusskelett",
+    "description": "<p>[[/attack extended]]. [[/damage extended average]]. Wenn das Ziel eine [[lookup @target.affects.special activity=iBenqFiBu40bUxkH]] Kreatur ist und das [[lookup @name lowercase]]{monster} sich unmittelbar vor dem Treffer 20+ Fuß geradlinig darauf zubewegt hat, erleidet das Ziel zusätzlichen [[/damage 2d8 piercing average]] Schaden und erhält den Zustand &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmMummyLord00000": {
+    "name": "Mumienfürst",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
+  },
+  "mmMummy000000000": {
+    "name": "Mumie",
+    "description": "<p>Die Mumie führt zwei [[/item .mmRottingFist000]] Angriffe aus und setzt [[/item .mmDreadfulGlare0]] ein.</p>"
+  },
+  "mmOgreZombie0000": {
+    "name": "Ogerzombie",
+    "description": "<p class=\"feature\">Wenn Schaden den [[lookup @name lowercase]]{monster} auf 0 Trefferpunkte reduziert, muss er einen Konstitutions-Rettungswurf (SG 5 plus erlittener Schaden) ablegen, es sei denn, der Schaden ist gleißend oder stammt von einem kritischen Treffer. Bei einem erfolgreichen Rettungswurf fällt der [[lookup @name lowercase]]{monster} stattdessen auf 1 Trefferpunkt.</p>"
+  },
+  "mmShadow00000000": {
+    "name": "Schatten",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich durch einen Raum bewegen, der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmSkeleton000000": {
+    "name": "Skelett",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSpecter0000000": {
+    "name": "Schemen",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich durch andere Kreaturen und Objekte bewegen, als wären sie &amp;Reference[Difficult\n    Terrain]. Es erleidet [[/damage 1d10 average type=force]] Schaden, wenn es seinen Zug in einem Objekt beendet.</p>"
+  },
+  "mmVampireSpawn00": {
+    "name": "Vampirbrut",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann schwierige Oberflächen, einschließlich Decken, erklimmen, ohne einen Fertigkeitswurf machen zu müssen.</p>"
+  },
+  "mmVampire0000000": {
+    "name": "Vampir",
+    "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, erfolgreich zu sein.</p>"
+  },
+  "mmWarhorseSkelet": {
+    "name": "Kriegspferdskelett",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Große oder kleinere Kreatur ist und das Skelett sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf es zubewegt hat, erhält das Ziel den Zustand &amp;Reference[Prone apply=false].</p>"
+  },
+  "mmWight000000000": {
+    "name": "Wicht",
+    "description": "<p>Im Sonnenlicht hat der [[lookup @name lowercase]]{monster} Nachteil auf Attributswürfe und Angriffswürfe.</p>"
+  },
+  "mmWillowisp00000": {
+    "name": "Irrlicht",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann nichts tragen oder mit sich führen.</p>"
+  },
+  "mmWraith00000000": {
+    "name": "Geist",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich durch andere Kreaturen und Objekte bewegen, als wären sie &amp;Reference[Difficult\n    Terrain]. Er erleidet [[/damage 1d10 average type=force]] Schaden, wenn er seinen Zug in einem Objekt beendet.</p>"
+  },
+  "mmZombie00000000": {
+    "name": "Zombie",
+    "description": "<p class=\"feature\">Wenn Schaden den [[lookup @name\n    lowercase]]{monster} auf 0 Trefferpunkte reduziert, macht es einen Konstitutionsrettungswurf (SG 5 plus erlittener Schaden), es sei denn, der Schaden ist gleißend oder stammt von einem Kritischen Treffer. Bei einem erfolgreichen Rettungswurf fällt der [[lookup @name\n    lowercase]]{monster} stattdessen auf 1 Trefferpunkt.</p>"
+  },
+  "VBTtG9kjHNQstG0a": {
+    "name": "Luftschiff",
+    "description": "<p><strong>Geschwindigkeit:</strong> 8 mph</p><p><strong>Besatzung:</strong>\n10</p><p><strong>Passagiere:</strong> 20</p><p><strong>Ladung\n(Tonnen):</strong> 1</p><p><strong>RK:</strong>\n13</p><p><strong>TP:</strong> 300</p><p><strong>Schadensschwelle:</strong> —</p><p><strong>Kosten:</strong> 40.000 GM</p>"
+  },
+  "phbmobGalley0000": {
+    "name": "Galeere",
+    "description": "<p><strong>Geschwindigkeit:</strong> 4 mph</p><p><strong>Besatzung:</strong>\n80</p><p><strong>Passagiere:</strong> —</p><p><strong>Ladung\n(Tonnen):</strong> 150</p><p><strong>RK:</strong>\n15</p><p><strong>TP:</strong> 500</p><p><strong>Schadensschwelle:</strong> 20</p><p><strong>Kosten:</strong> 30.000 GM</p>"
+  },
+  "phbmobKeelboat00": {
+    "name": "Kielboot",
+    "description": "<p><strong>Geschwindigkeit:</strong> 1 mph</p><p><strong>Besatzung:</strong>\n1</p><p><strong>Passagiere:</strong> —</p><p><strong>Ladung\n(Tonnen):</strong> 1/2</p><p><strong>RK:</strong>\n15</p><p><strong>TP:</strong> 100</p><p><strong>Schadensschwelle:</strong> 10</p><p><strong>Kosten:</strong> 3.000 GM</p>"
+  },
+  "phbmobLongship00": {
+    "name": "Langschiff",
+    "description": "<p><strong>Geschwindigkeit:</strong> 3 mph</p><p><strong>Besatzung:</strong>\n40</p><p><strong>Passagiere:</strong> 150</p><p><strong>Fracht\n(Tonnen):</strong> 10</p><p><strong>RK:</strong>\n15</p><p><strong>LP:</strong> 300</p><p><strong>Schadensschwelle:</strong> 15</p><p><strong>Kosten:</strong> 10.000 GM</p>"
+  },
+  "phbmobRowboat000": {
+    "name": "Ruderboot",
+    "description": "<p><strong>Geschwindigkeit:</strong> 1 1/2 mph</p><p><strong>Besatzung:</strong>\n1</p><p><strong>Passagiere:</strong> 3</p><p><strong>Fracht\n(Tonnen):</strong> —</p><p><strong>RK:</strong>\n11</p><p><strong>LP:</strong> 50</p><p><strong>Schadensschwelle:</strong> —</p><p><strong>Kosten:</strong> 50 GM</p>"
+  },
+  "phbmobSailingShi": {
+    "name": "Segelschiff",
+    "description": "<p><strong>Geschwindigkeit:</strong> 2 mph</p><p><strong>Besatzung:</strong>\n20</p><p><strong>Passagiere:</strong> 20</p><p><strong>Fracht\n(Tonnen):</strong> 100</p><p><strong>RK:</strong>\n15</p><p><strong>LP:</strong> 300</p><p><strong>Schadensschwelle:</strong> 15</p><p><strong>Kosten:</strong> 10.000 GM</p>"
+  },
+  "phbmobWarship000": {
+    "name": "Kriegsschiff",
+    "description": "<p><strong>Geschwindigkeit:</strong> 2 1/2 mph</p><p><strong>Besatzung:</strong>\n60</p><p><strong>Passagiere:</strong> 60</p><p><strong>Fracht\n(Tonnen):</strong> 200</p><p><strong>RK:</strong>\n15</p><p><strong>LP:</strong> 500</p><p><strong>Schadensschwelle:</strong> 20</p><p><strong>Kosten:</strong> 25.000 GM</p>"
+  },
+  "mmAcidBreath0000": {
+    "name": "Säureatem",
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value\nactivity=qNI6W02jCUQbPpYE]], jede/r [[lookup @target.affects.type\nactivity=qNI6W02jCUQbPpYE]] in einer [[lookup @target.template.size\nactivity=qNI6W02jCUQbPpYE]] Fuß langen, [[lookup @target.template.width\nactivity=qNI6W02jCUQbPpYE]] Fuß breiten Linie.</p><p><em>Misserfolg:\n</em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmAcidSpray00000": {
+    "name": "Säurespritzer",
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value\nactivity=20GU2JBM5zJfNPD1]], [[lookup @labels.description.affects\nactivity=20GU2JBM5zJfNPD1]] in einem [[lookup @labels.description.template\nactivity=20GU2JBM5zJfNPD1]]. <em>Misserfolg: </em>[[/damage average]] Schaden.\n<em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmAnimateTrees00": {
+    "name": "Bäume beleben",
+    "description": "<p>Der/Die [[lookup @name]]{monster} belebt auf magische Weise bis zu zwei Bäume, die er/sie\ninnerhalb von [[lookup @range.value activity=EceTNjzjKWdrMNAy]] Fuß Entfernung\nsehen kann. Jeder Baum verwendet den Werteblock eines <strong>Baumhirten</strong>, außer dass er\nIntelligenz- und Charismawerte von 1 hat, nicht sprechen kann und diese Aktion nicht besitzt.\nDer Baum ist sofort nach dem Baumhirten am selben Initiativzähler an der Reihe und gehorcht dem Baumhirten. Ein Baum bleibt 1 Tag lang belebt oder bis er stirbt, der Baumhirt stirbt oder er sich mehr als 36 m vom Baumhirten entfernt befindet. Der Baum schlägt dann Wurzeln, falls möglich.</p>",
+    "effects": {
+      "lPONVotWP8yhuuWe": "Bäume beleben"
+    }
+  },
+  "mmAntennae000000": {
+    "name": "Antennen",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} wählt ein [[lookup\n@target.affects.special activity=dcSC7EuknnM0uoqY]] Objekt – eine Rüstung oder eine\nWaffe –, das von einer Kreatur innerhalb von [[lookup @range.value\nactivity=dcSC7EuknnM0uoqY]] Fuß Entfernung getragen wird, als Ziel. <em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=dcSC7EuknnM0uoqY]], die\nKreatur mit dem Objekt. <em>Misserfolg:</em> Das Objekt erhält einen Malus von -1\nauf die RK, die es bietet (Rüstung), oder auf seine Angriffswürfe (Waffe). Rüstung wird\nzerstört, wenn der Malus ihre RK auf 10 reduziert, und eine Waffe wird zerstört,\nwenn ihr Malus -5 erreicht. Der Malus kann durch das Wirken des\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]</em> Zaubers auf\ndie Rüstung oder Waffe entfernt werden.</p><section class=\"secret\"\nid=\"secret-4QbvfWBnYI6ImcGC\"><p><strong>Foundry-Hinweis</strong></p><p>Diese\nEigenschaft bietet auch einen <strong>Beschädigt</strong>-Verzauberungseffekt, der\ndas Zielobjekt modifiziert. Da der Ausrüstungsmalus mehrfach angewendet\nwerden kann, muss die Verzauberung vom Reiter 'Effekte' dieses Gegenstands\nauf das Charakterblatt des Zielgegenstands gezogen werden.</p></section>"
+  },
+  "mmAquaticCharge0": {
+    "name": "Aquatischer Ansturm",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} schwimmt bis zu ihrer Schwimmgeschwindigkeit\ndirekt auf einen Feind zu, den sie sehen kann.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmArcaneBurst000": {
+    "name": "Arkaner Ausbruch",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmArcaneProwl000": {
+    "name": "Arkanes Pirschen",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann sich bis zu [[lookup\n@range.value activity=a3RqyzU0UqzLJif0]] Fuß weit an einen unbesetzten Ort\nteleportieren, den sie sehen kann, und führt einen [[/item Claw]]-Angriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmBalefulCommand": {
+    "name": "Unheilvoller Befehl",
+    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=SzU2lwdbqgoFMuBM]], jede/r [[lookup @target.affects.type\nactivity=SzU2lwdbqgoFMuBM]] in einer [[lookup @target.template.size\nactivity=SzU2lwdbqgoFMuBM]] Fuß großen Emanation, die von der [[lookup\n@name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel hat die Zustände &amp;Reference[Frightened apply=false] und\n&amp;Reference[Incapacitated apply=false] bis zum Beginn des nächsten Zuges\nder [[lookup @name lowercase]]{monster}.</p>",
+    "effects": {
+      "4GgIe9QPQ5oYRsHN": "Verängstigt & Handlungsunfähig"
+    }
+  },
+  "mmBanish00000000": {
+    "name": "Verbannen",
+    "description": "<p><em>Charisma-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=kWKwiAYgyeKBLMNJ]], eine Kreatur, die der/die/das [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=kWKwiAYgyeKBLMNJ]] Fuß sehen kann.</p><p><em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat den Zustand &amp;Reference[Incapacitated\napply=false] und wird in eine harmlose Halbebene transportiert, bis\nzum Beginn des nächsten Zuges des/der/des [[lookup @name lowercase]]{monster}, woraufhin es\nin einem unbesetzten Feld nach Wahl des/der/des [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=kWKwiAYgyeKBLMNJ]] Fuß des/der/des [[lookup @name\nlowercase]]{monster} wieder erscheint.</p><p><em>Misserfolg oder Erfolg:</em> Der/die/das [[lookup\n@name lowercase]]{monster} kann diese Aktion nicht erneut ausführen [[lookup\n@duration.special activity=kWKwiAYgyeKBLMNJ]].</p>",
+    "effects": {
+      "u5H85me3idut0t3u": "Verbannt: Handlungsunfähig"
+    }
+  },
+  "mmBeguile0000000": {
+    "name": "Betören",
+    "description": "<p>Der/die/das [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]</em>, benötigt\nkeine Zauberkomponenten und verwendet Charisma als Zauberfähigkeit (SG des\nRettungswurfs für Zauber [[lookup @abilities.cha.dc]]). Der/die/das [[lookup @name\nlowercase]]{monster} kann diese Aktion nicht erneut ausführen, bis der Beginn seines/ihres/ihres\nnächsten Zuges.</p>"
+  },
+  "mmBlindingBreath": {
+    "name": "Blendender Atem",
+    "description": "<p><em>Geschicklichkeits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=soAO2jRWos8FsxeU]], jede Kreatur in einem [[lookup\n@target.template.size activity=soAO2jRWos8FsxeU]] Fuß großen Kegel.\n<em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Blinded apply=false]\nbis zum Ende des nächsten Zuges des/der/des [[lookup @name lowercase]]{monster}.</p>",
+    "effects": {
+      "uNffaKFUEBaATXHm": "Blind"
+    }
+  },
+  "mmBlindingGaze00": {
+    "name": "Blendender Blick",
+    "description": "<p><em>Konstitutions-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=B6xM8C2pABIb5o7y]], eine Kreatur, die der/die/das [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=B6xM8C2pABIb5o7y]] Fuß sehen kann. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Blinded apply=false] für 1 Minute. <em>Misserfolg oder\nErfolg:</em> Der/die/das [[lookup @name lowercase]]{monster} kann diese\nAktion nicht erneut ausführen, bis der Beginn seines/ihres/ihres nächsten Zuges.</p>",
+    "effects": {
+      "F9aWhTVh3huuys3p": "Blind"
+    }
+  },
+  "mmBlindingSpittl": {
+    "name": "Blendender Speichel",
+    "description": "<p><em>Geschicklichkeits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=JfU8KFZkAJxWtrhk]], jede Kreatur in einer Kugel mit [[lookup\n@target.template.size activity=JfU8KFZkAJxWtrhk]] Fuß Radius,\ndie auf einen Punkt innerhalb von [[lookup @range.value\nactivity=JfU8KFZkAJxWtrhk]] Fuß zentriert ist. <em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel hat den Zustand &amp;Reference[Blinded apply=false]\nbis zum Ende des nächsten Zuges des/der/des [[lookup @name lowercase]]{monster}.</p>",
+    "effects": {
+      "ZsONDi9D0HnUuZKa": "Blind"
+    }
+  },
+  "mmBoulderToss000": {
+    "name": "Felsbrockenwurf",
+    "description": "<p>Der/die/das [[lookup @name lowercase]]{monster} schleudert einen Felsbrocken auf einen Punkt, den es/sie/er\ninnerhalb von [[lookup @range.value activity=jpC3fk7LJlhH4CDr]]\nFuß sehen kann.</p><p><em>Geschicklichkeits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=jpC3fk7LJlhH4CDr]], jede Kreatur in einer Kugel mit [[lookup\n@target.template.size activity=jpC3fk7LJlhH4CDr]] Fuß Radius,\ndie auf diesen Punkt zentriert ist.</p><p><em>Misserfolg:</em> [[/damage average]]. Ist\ndas Ziel eine Große oder kleinere Kreatur, hat es den\nZustand &amp;Reference[Prone].</p><p><em>Erfolg:</em> Nur halber Schaden.</p>"
+  },
+  "mmBubbleDash0000": {
+    "name": "Blasen-Sprint",
+    "description": "<p>Unter Wasser bewegt sich der/die/das [[lookup @name lowercase]]{monster} bis zu\nseiner/ihrer/ihrem Schwimmgeschwindigkeit, ohne &amp;Reference[Opportunity Attacks] zu provozieren.</p>"
+  },
+  "mmBurstofIngenui": {
+    "name": "Ausbruch des Einfallsreichtums",
+    "description": "<p><em>Auslöser:</em> Der/die/das [[lookup @name]]{monster} oder eine andere Kreatur\ninnerhalb von [[lookup @range.value activity=AyYipNx3cFaXA0LU]] Fuß legt eine\nAttributsprobe oder einen Rettungswurf ab. <em>Reaktion:</em> Die Sphinx addiert 2 zum\nWurf.</p>"
+  },
+  "mmCacophony00000": {
+    "name": "Kakophonie",
+    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=pyvvXqoxJsjkkP38]], eine Kreatur im Feld des\n[[lookup @name lowercase]]{monster}.<em>Misserfolg:</em> Das Ziel ist bis zum Beginn des\nnächsten Zugs des [[lookup @name lowercase]]{monster} &amp;Reference[Deafened apply=false]. Solange es taub ist, hat das\nZiel außerdem Nachteil auf Attributswürfe und Angriffswürfe.</p>",
+    "effects": {
+      "5cNk7YVIesN5RiIh": "Taub und benachteiligt"
+    }
+  },
+  "mmCaptainsCharm0": {
+    "name": "Kapitänsbann",
+    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=3o27u4Ww7SmCgc8k]], eine Kreatur, die der [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=3o27u4Ww7SmCgc8k]] Fuß sehen kann.</p><p><em>Misserfolg:</em> Das Ziel ist\nbis zum Beginn des nächsten Zugs des [[lookup @name lowercase]]{monster} &amp;Reference[Charmed apply=false].</p>",
+    "effects": {
+      "mEbtIO1mUEkMNvja": "Bezaubert"
+    }
+  },
+  "mmCharge00000000": {
+    "name": "Sturmangriff",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} bewegt sich bis zu [[lookup\n@range.special activity=Y2IncZu5BjB42z7l]] geradlinig auf einen Feind zu, den es sehen\nkann.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmChargingHorn00": {
+    "name": "Stürmendes Horn",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} bewegt sich bis zur Hälfte seiner Bewegungsrate,\nohne &amp;Reference[Opportunity Attacks] zu provozieren, und es führt einen\n[[/item Radiant Horn]]-Angriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmCharm000000000": {
+    "name": "Bann",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]</em>, benötigt\nkeine Zauberkomponenten und verwendet Charisma als Zauberattribut (SG des\nRettungswurfs [[lookup @abilities.cha.dc]]), und die Wirkungsdauer beträgt [[lookup\n@duration.value activity=fcRXSTOlFJShCl52]] Stunden. Das\n&amp;Reference[Charmed apply=false] Ziel ist ein williger Empfänger des\n[[lookup @name lowercase]]{monster}'s [[/item Bite]], dessen Schaden den Zauber nicht\nbeendet. Wenn der Zauber endet, ist sich das Ziel nicht bewusst, dass es vom\n[[lookup @name lowercase]]{monster} bezaubert wurde.</p>"
+  },
+  "mmCloakedFlight0": {
+    "name": "Verhüllter Flug",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} nutzt [[/item Spellcasting]], um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]</em> auf\nsich selbst zu wirken, und es kann bis zur Hälfte seiner Flugbewegungsrate\nfliegen. Der Drache kann diese Aktion erst wieder zu Beginn seines nächsten\nZugs ausführen.</p>"
+  },
+  "mmCloudOfInsects": {
+    "name": "Insektenwolke",
+    "description": "<p><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=0OkFhjOM80ipoNKy]], eine Kreatur, die der [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=0OkFhjOM80ipoNKy]] Fuß sehen kann.</p><p><em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat Nachteil auf Rettungswürfe, um\n&amp;Reference[Concentration] bis zum Ende seines nächsten\nZugs aufrechtzuerhalten.</p><p><em>Misserfolg oder Erfolg:</em> Das [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zugs ausführen.</p>",
+    "effects": {
+      "owuEyJBslYKvxqeX": "Umwölkt"
+    }
+  },
+  "mmColdBreath0000": {
+    "name": "Kalter Odem",
+    "description": "<p><em>Konstitutionsrettungswurf: </em>SG [[lookup @save.dc.value\nactivity=8P7hmd3Nron4RAIv]], jede [[lookup @target.affects.type\nactivity=8P7hmd3Nron4RAIv]] in einem [[lookup @target.template.size\nactivity=8P7hmd3Nron4RAIv]] Fuß-Kegel.</p><p><em>Misserfolg: </em>[[/damage\naverage]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmConjureInferna": {
+    "name": "Infernalische Kette beschwören",
+    "description": "<p class=\"feature\">Der Teufel beschwört eine feurige Kette, um eine Kreatur zu fesseln.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=9vCVJrzUZL0ra4w2]], [[lookup @target.affects.labels.statblock activity=9vCVJrzUZL0ra4w2]] die/den/das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=9vCVJrzUZL0ra4w2]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat den Zustand &amp;Reference[Restrained apply=false] bis zum Ende des nächsten Zuges des/der/des [[lookup @name lowercase]]{monster}, woraufhin die Kette verschwindet. Ist das Ziel Groß oder kleiner, zieht der Teufel das Ziel bis zu 9 m direkt auf sich zu.</p><p\nclass=\"feature\"><em>Erfolg:</em> Die Kette verschwindet.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Restrained": "Fesselung"
+    }
+  },
+  "mmConstrict00000": {
+    "name": "Umschlingen",
+    "description": "<p><em>Stärke-Rettungswurf:</em><span class=\"Heading-4\"> SG </span>[[lookup @save.dc.value activity=IgOMjRxAt7UISkJq]], eine [[lookup @target.affects.special activity=IgOMjRxAt7UISkJq]] Kreatur, die das/der/die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=IgOMjRxAt7UISkJq]] Fuß sehen kann. <em>Misserfolg:</em> [[/damage average]] Schaden. Das Ziel hat den Zustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup @skills.ath.passive]]), und es hat den Zustand &amp;Reference[Restrained apply=false], bis der Griff endet.</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf"
+    },
+    "effects": {
+      "Grappled and Restrained": "Gepackt und Fesselung"
+    }
+  },
+  "mmConsumeLife000": {
+    "name": "Leben verzehren",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=1Hy8CdhpwQlLxDPq]], [[lookup @target.affects.special activity=1Hy8CdhpwQlLxDPq]] die/den/das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=1Hy8CdhpwQlLxDPq]] Fuß sehen kann, die 0 Trefferpunkte hat. <em>Misserfolg:</em> Das Ziel stirbt, und das/der/die [[lookup @name lowercase]]{monster} erhält [[/healing average activity=1waYTjY3NAIGZgrI]] Trefferpunkte zurück.</p>",
+    "activities": {
+      "Save": "Rettungswurf",
+      "Wisp: Healing": "Irrlicht: Heilung"
+    },
+    "effects": {
+      "Failure: Dead": "Misserfolg: Tot"
+    }
+  },
+  "mmConsumeMemorie": {
+    "name": "Erinnerungen verzehren",
+    "description": "<p class=\"feature\"><em>Intelligenzrettungswurf:</em> SG [[lookup @save.dc.value activity=uI3HDQ1grN123Or3]], [[lookup @target.affects.labels.statblock activity=uI3HDQ1grN123Or3]] innerhalb von [[lookup @range.value activity=uI3HDQ1grN123Or3]] Fuß. [[lookup @target.affects.special activity=uI3HDQ1grN123Or3]] durch das/den/die [[lookup @name lowercase]]{monster}. <em>Misserfolg:</em> [[/damage average]] Schaden. <em>Erfolg:</em> [[lookup @damage.onSave capitalize activity=uI3HDQ1grN123Or3]] Schaden. <em>Misserfolg oder Erfolg:</em> Das/Der/Die [[lookup @name lowercase]]{monster} erhält die Erinnerungen des Ziels, wenn das Ziel ein Humanoider ist und durch diese Aktion auf 0 Trefferpunkte reduziert wird.</p>",
+    "activities": {
+      "Intelligence Saving Throw": "Intelligenzrettungswurf"
+    }
+  },
+  "mmCreateSpecter0": {
+    "name": "Schemen erschaffen",
+    "description": "<p class=\"feature\">Das/Der/Die [[lookup @name lowercase]]{monster} wählt eine humanoide Leiche innerhalb von [[lookup @range.value activity=ypIQdXr13u7LATUP]] Fuß von sich selbst als Ziel, die nicht länger als 1 Minute tot ist. Der Geist des Ziels erhebt sich als ein/e <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmSpecter0000000]{Specter}</strong> im Raum seiner Leiche oder im nächsten unbesetzten Raum. Der Schemen steht unter der Kontrolle des/der/des [[lookup @name lowercase]]{monster}. Das/Der/Die [[lookup @name lowercase]]{monster} kann nicht mehr als sieben Schemen gleichzeitig unter seiner/ihrer/dessen Kontrolle haben.</p>",
+    "activities": {
+      "Spirit Rises": "Geist erhebt sich"
+    }
+  },
+  "mmCreateWhirlwin": {
+    "name": "Wirbelwind erschaffen",
+    "description": "<p class=\"feature\">Das/Der/Die [[lookup @name lowercase]]{monster} beschwört einen Wirbelwind an einem Punkt, den es/sie/er innerhalb von 36 m sehen kann. Der Wirbelwind füllt einen [[lookup @target.template.size activity=TYNKL0QDItFpbR2G]] Fuß Radius, [[lookup @target.template.height activity=TYNKL0QDItFpbR2G]] Fuß hohen [[lookup @target.template.type capitalize activity=TYNKL0QDItFpbR2G]], der auf diesen Punkt zentriert ist. Der Wirbelwind hält an, bis die Konzentration des/der/des [[lookup @name lowercase]]{monster} darauf endet. Das/Der/Die [[lookup @name lowercase]]{monster} kann den Wirbelwind zu Beginn jedes seiner/ihrer/dessen Züge um bis zu 6 m bewegen.</p><p class=\"feature\">Immer wenn der Wirbelwind den Raum einer Kreatur betritt oder eine Kreatur den Wirbelwind betritt, ist diese Kreatur dem folgenden Effekt ausgesetzt.</p><p class=\"feature\"><em>Stärke-Rettungswurf:</em> SG [[lookup @save.dc.value activity=TYNKL0QDItFpbR2G]] (eine Kreatur macht diesen Rettungswurf nur einmal pro Zug, und das/der/die [[lookup @name lowercase]]{monster} ist unbetroffen).</p><p\nclass=\"feature\"><em>Misserfolg:</em> Während es sich im Wirbelwind befindet, hat das Ziel den Zustand &amp;Reference[Restrained apply=false] und bewegt sich mit dem Wirbelwind. Zu Beginn jedes seiner Züge erleidet das gefesselte Ziel [[/damage average]] Schaden. Am Ende jedes seiner Züge wiederholt das Ziel den Rettungswurf und beendet den Effekt bei Erfolg für sich selbst.</p>",
+    "activities": {
+      "Damage: Start of Turn": "Schaden: Beginn des Zuges",
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Restrained": "Fesselung"
+    }
+  },
+  "mmCunningAction0": {
+    "name": "Gerissene Aktion",
+    "description": "<p class=\"feature\">Das/Der/Die [[lookup @name lowercase]]{monster} führt die Aktion &amp;Reference[Dash apply=false], die Aktion &amp;Reference[Disengage\napply=false] oder die Aktion &amp;Reference[Hide apply=false] aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmDarknessAura00": {
+    "name": "Dunkelheitsaura",
+    "description": "<p>Magische Dunkelheit erfüllt eine [[lookup @target.template.size activity=amat5Ii4NydseA0h]] Fuß große Emanation, die vom/von der/vom [[lookup @name]]{monster} ausgeht. Dieser Effekt hält an, solange das/der/die [[lookup @name]]{monster} die Konzentration darauf aufrechterhält, bis zu [[lookup @duration.value activity=amat5Ii4NydseA0h]] Minuten. Dunkelsicht kann diesen Bereich nicht durchdringen, und kein Licht kann ihn erhellen.</p>"
+  },
+  "mmDeadlyLeap0000": {
+    "name": "Tödlicher Sprung",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} verbraucht 1,5 m Bewegung, um auf ein Feld innerhalb von 4,5 m zu springen, das eine oder mehrere Große oder kleinere Kreaturen enthält.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=IPCXEQoTuaAG5l52]], jede [[lookup @target.affects.type activity=IPCXEQoTuaAG5l52]] im Zielfeld des [[lookup @name lowercase]]{monster}.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat den Zustand &amp;Reference[Prone apply=false].</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden, und das Ziel wird 1,5 m direkt vom [[lookup @name lowercase]]{monster} weggestoßen.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "6922OmgCjpz242Ib": "Liegend"
+    }
+  },
+  "mmDeathGlare0000": {
+    "name": "Todesblick",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=3uA75vqvubgY300I]], [[lookup @target.affects.special activity=3uA75vqvubgY300I]] das der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=3uA75vqvubgY300I]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em> Wenn das Ziel 20 Trefferpunkte oder weniger hat, fällt es auf 0 Trefferpunkte. Andernfalls erleidet das Ziel [[/damage average]] Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmDeathlessAgili": {
+    "name": "Unsterbliche Agilität",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt die Aktion &amp;Reference[Dash] oder &amp;Reference[Disengage] aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmDeflectMissile": {
+    "name": "Geschoss ablenken",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Der [[lookup @name lowercase]]{monster} ist [[lookup @activation.condition activity=9T8cNbSBVACrrmRI]].</p><p class=\"feature\"><em>Reaktion:</em> Der [[lookup @name lowercase]]{monster} reduziert den Schaden, den er durch den Angriff erleidet, um [[/healing average]], und wenn dieser Schaden auf 0 reduziert wird, kann der [[lookup @name lowercase]]{monster} einen Teil der Angriffskraft umleiten.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=x0MjUmnv2OPAbm6y]], eine [[lookup @target.affects.type activity=x0MjUmnv2OPAbm6y]], die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=x0MjUmnv2OPAbm6y]] Fuß sehen kann. </p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p>",
+    "activities": {
+      "Reduce Damage": "Schaden reduzieren",
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmDestroyMetal00": {
+    "name": "Metall zerstören",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} [[lookup @range.special activity=GDJtelEYYTgc9jwr]] innerhalb von [[lookup @range.value activity=GDJtelEYYTgc9jwr]] Fuß von sich selbst [[lookup @target.affects.special activity=GDJtelEYYTgc9jwr]]. Die Berührung zerstört ein [[lookup @target.template.size activity=GDJtelEYYTgc9jwr]]-[[lookup @target.template.units activity=GDJtelEYYTgc9jwr]] [[lookup @target.template.type capitalize activity=GDJtelEYYTgc9jwr]] der [[lookup @target.affects.type activity=GDJtelEYYTgc9jwr]].</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmDivineAid00000": {
+    "name": "Göttliche Hilfe",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} wirkt <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Bless}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Dispel\nMagic}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor]{Healing\nWord}</em> oder <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser\nRestoration}</em> und verwendet dabei dieselbe Zauberfähigkeit wie beim Zauberwirken.</p>"
+  },
+  "mmDominateMind00": {
+    "name": "Geist beherrschen",
+    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=zdXAMnjaOcsVmLZP]], eine [[lookup @target.affects.type activity=zdXAMnjaOcsVmLZP]], die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=zdXAMnjaOcsVmLZP]] Fuß sehen kann.</p><p><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Charmed\napply=false], bis der [[lookup @name lowercase]]{monster} stirbt oder sich auf einer anderen Existenzebene als das Ziel befindet. Solange es bezaubert ist, agiert das Ziel als Verbündeter des [[lookup @name lowercase]]{monster} und steht unter dessen Kontrolle, solange es sich innerhalb von [[lookup @target.template.size activity=zdXAMnjaOcsVmLZP]] Fuß von ihm befindet. Zusätzlich können der [[lookup @name lowercase]]{monster} und das Ziel telepathisch über jede Entfernung miteinander kommunizieren.</p><p>Das Ziel wiederholt den Rettungswurf, wann immer es Schaden erleidet, sowie nach jeweils 24 Stunden, die es mindestens 1,6 km vom [[lookup @name lowercase]]{monster} entfernt verbringt, wobei der Effekt bei einem Erfolg für sich selbst endet.</p>",
+    "effects": {
+      "85n0EJTGfngNSLLl": "Beherrscht"
+    }
+  },
+  "mmDragonsBreath0": {
+    "name": "Drachenodem",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=YfxQb5tcONgLb2nD]], jede [[lookup @target.affects.type activity=YfxQb5tcONgLb2nD]] in einem [[lookup @target.template.size activity=YfxQb5tcONgLb2nD]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden des für das Merkmal Drakonischer Ursprung gewählten Typs.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmDrainingKiss00": {
+    "name": "Entziehender Kuss",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=kFyuof0SS3nohP0f]], eine [[lookup\n@target.affects.type activity=kFyuof0SS3nohP0f]], die vom [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=kFyuof0SS3nohP0f]] Fuß bezaubert ist.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average]] Schaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber\nSchaden.</p><p class=\"feature\"><em>Misserfolg oder Erfolg:</em> Das Maximum der\nTrefferpunkte des Ziels sinkt um einen Betrag, der dem erlittenen Schaden entspricht.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmDreadfulGlare0": {
+    "name": "Furchtbarer Blick",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=8LmlZfevSQkOxGSN]], eine [[lookup\n@target.affects.type activity=8LmlZfevSQkOxGSN]], die der [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=8LmlZfevSQkOxGSN]] Fuß sehen kann. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Frightened apply=false] bis zum Ende des\nnächsten Zuges des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist 24 Stunden lang immun gegen den Furchtbaren Blick dieses [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "hRSvOovTSlu4Dw8c": "Verängstigt"
+    }
+  },
+  "mmEngulf00000000": {
+    "name": "Verschlingen",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner\nBewegungsrate und kann sich durch die Felder von riesigen oder kleineren Kreaturen und\nObjekten bewegen.</p><p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup\n@save.dc.value activity=5o0Bh8PQaojx5XMx]], jede Kreatur oder jedes Objekt, dessen\nFeld der [[lookup @name lowercase]]{monster} während dieser Bewegung zum ersten Mal\nbetritt.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel wird\nverschlungen. Während es verschlungen ist, hat ein Ziel &amp;Reference[Total Cover] gegen\nAngriffe und andere Effekte außerhalb des [[lookup @name lowercase]]{monster},\nund wenn der [[lookup @name lowercase]]{monster} sich bewegt, bewegt sich das verschlungene\nZiel mit ihm. Ein nichtmagisches Objekt wird zerstört, nachdem es 1\nMinute lang verschlungen war.</p><p class=\"feature\">Während es verschlungen ist, erleidet eine Kreatur\n[[/damage average activity=Exfa4q7O4SvXjGt7]] Schaden zu Beginn jedes\nihrer Züge, ist &amp;Reference[Suffocating]{suffocating}, hat den\nZustand &amp;Reference[Restrained apply=long], und wiederholt den Rettungswurf am\nEnde jedes ihrer Züge. Eine verschlungene Kreatur, die auf 0\nTrefferpunkte reduziert wird, löst sich in Asche auf, die in die Astralebene geschleudert wird.</p><p\nclass=\"feature\"><em>Erfolg:</em> Das Ziel entkommt und betritt das\nnächste unbesetzte Feld.</p>",
+    "activities": {
+      "Engulfed: Damage": "Verschlungen: Schaden",
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "vsa7d6xWOAvWdOWM": "Volle Deckung, Erstickend & Fesselung"
+    }
+  },
+  "mmEntanglingRope": {
+    "name": "Fesselndes Seil",
+    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup\n@save.dc.value activity=n8nEah4vbrEPphNF]], eine Kreatur, die der [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=n8nEah4vbrEPphNF]] Fuß sehen kann. <em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel hat den Zustand &amp;Reference[Restrained apply=false],\nbis das Seil zerstört wird, der [[lookup @name\nlowercase]]{monster} eine Bonusaktion nutzt, um das Ziel freizugeben, oder der\n[[lookup @name lowercase]]{monster} Fesselndes Seil erneut einsetzt.</p>",
+    "effects": {
+      "bju3aUme0f8XYR3z": "Fesselung"
+    }
+  },
+  "mmEnthrallingPan": {
+    "name": "Fesselnde Eleganz",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=66IPjaLIJqqwvmrL]], [[lookup\n@target.affects.labels.statblock activity=66IPjaLIJqqwvmrL]], die der [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=66IPjaLIJqqwvmrL]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\nDas Ziel hat den Zustand &amp;Reference[Charmed apply=false] bis zum\nBeginn des nächsten Zuges des [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "sxNoZcfI2KVb3zHr": "Bezaubert"
+    }
+  },
+  "mmEtherealJaunt0": {
+    "name": "Ätherischer Sprung",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} teleportiert von\nder Materiellen Ebene auf die Ätherebene oder umgekehrt.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmEtherealStride": {
+    "name": "Ätherischer Schritt",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} und bis zu\n[[lookup @target.affects.labels.statblock activity=0EfvhIXAIPlYUiNE]]\ninnerhalb von [[lookup @range.value activity=0EfvhIXAIPlYUiNE]] [[lookup\n@range.units activity=0EfvhIXAIPlYUiNE]]. von ihm teleportieren von der Materiellen\nEbene auf die Ätherebene oder umgekehrt.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmEtherealness00": {
+    "name": "Ätherisches Wesen",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} wirkt den\nZauber <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplEtherealne]{Etherealness}</em>,\nbenötigt keine Zauberkomponenten und nutzt Charisma als die\nZauberfähigkeit. Der [[lookup @name lowercase]]{monster} ist sichtbar\nauf der Materiellen Ebene, während er sich auf der Äthergrenze befindet, und umgekehrt, aber er\nkann nichts auf der anderen Ebene beeinflussen oder von ihr beeinflusst werden.</p>",
+    "activities": {
+      "Etherealness": "Ätherisches Wesen"
+    }
+  },
+  "mmFetidCloud0000": {
+    "name": "Stinkende Wolke",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=vRnhmBCQqIwIlfS4]], jede Kreatur in einer [[lookup\n@target.template.size activity=vRnhmBCQqIwIlfS4]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel ist bis zum Ende seines nächsten\nZuges im Zustand &amp;Reference[Poisoned apply=false]. Solange die Kreatur vergiftet ist, kann sie in ihrem Zug entweder eine Aktion oder eine Bonusaktion ausführen, nicht beides, und sie kann keine Reaktionen ausführen.</p>",
+    "effects": {
+      "IqfKmepxiah2U3YT": "Vergiftet"
+    }
+  },
+  "mmFireBreath0000": {
+    "name": "Feueratem",
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value\nactivity=bDqgmtLG3zcVuqdi]], jedes [[lookup @target.affects.type\nactivity=bDqgmtLG3zcVuqdi]] in einer [[lookup @target.template.size\nactivity=bDqgmtLG3zcVuqdi]] Fuß langen, [[lookup @target.template.width\nactivity=bDqgmtLG3zcVuqdi]] Fuß breiten Linie.</p><p><em>Misserfolg:\n</em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmFling000000000": {
+    "name": "Schleudern",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} schleudert ein von ihm\nergriffenes [[lookup @target.affects.special activity=E7YKnUIWsavrnNzK]] auf ein\nFeld, das es innerhalb von [[lookup @range.value\nactivity=E7YKnUIWsavrnNzK]] Fuß von sich aus sehen kann [[lookup @range.special\nactivity=E7YKnUIWsavrnNzK]].</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=E7YKnUIWsavrnNzK]], die\ngeschleuderte Kreatur und jede Kreatur im Zielfeld.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel ist im Zustand &amp;Reference[Prone apply=false].</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "UovyViBfR9aAlt0y": "Liegend"
+    }
+  },
+  "mmFogCloud000000": {
+    "name": "Nebelwolke",
+    "description": "<p>Der Mephit wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFogCloud00]</em>,\nbenötigt keine Zauberkomponenten und verwendet Charisma als Zauberfähigkeit.</p>"
+  },
+  "mmFrostBreath000": {
+    "name": "Frostatem",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=ChLJgxjftTSMSRHe]], jedes [[lookup\n@target.affects.type activity=ChLJgxjftTSMSRHe]] in einem [[lookup\n@target.template.size activity=ChLJgxjftTSMSRHe]] Fuß großen Kegel.\n<em>Misserfolg:</em> [[/damage average]] Schaden. <em>Erfolg: </em>Halber\nSchaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmHasten00000000": {
+    "name": "Eilen",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} führt die\nAktionen &amp;Reference[Dash] und &amp;Reference[Disengage] aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmHeartSight0000": {
+    "name": "Herzensblick",
+    "description": "<p class=\"feature\"><em>Charismarettungswurf:</em> SG [[lookup\n@save.dc.value activity=NqVrZShDV1L3zBA3]], ein [[lookup\n@target.affects.type activity=NqVrZShDV1L3zBA3]] innerhalb von [[lookup\n@range.value activity=NqVrZShDV1L3zBA3]] <span style=\"font-family:'Roboto\nCondensed', sans-serif\">Fuß </span>, das das [[lookup @name\nlowercase]]{monster} sehen kann (Himmlische, Unholde und Untote misslingen den\nRettungswurf automatisch).</p><p class=\"feature\"><em>Misserfolg:</em> Das [[lookup @name\nlowercase]]{monster} kennt die Emotionen und Gesinnung des Ziels.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmHellfireSpellc": {
+    "name": "Höllenfeuer-Zauberwirken",
+    "description": "<p class=\"feature\">Der Grubenteufel wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}</em>\n(Version auf Grad 5) zweimal, benötigt keine Materialkomponenten und verwendet\nCharisma als Zauberfähigkeit (Zauber-SG [[lookup\n@abilities.cha.dc]]).. Er kann einen <em>Feuerball</em> durch\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]{Hold\nMonster}</em> (Version auf Grad 7) oder\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of\nFire}.</em></p>"
+  },
+  "mmHolyBurst00000": {
+    "name": "Heiliger Ausbruch",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=HrgMO1rsQla47fff]], jede/s [[lookup\n@target.affects.type activity=HrgMO1rsQla47fff]] in einer Kugel mit [[lookup\n@target.template.size activity=HrgMO1rsQla47fff]] Fuß Radius,\nzentriert auf einen Punkt, den der/die [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=HrgMO1rsQla47fff]] Fuß sehen kann. <em>Misserfolg:</em>\n[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmHorrificVisage": {
+    "name": "Schreckliches Antlitz",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=v8KiqUloIE5eocSu]], jede Kreatur in einem Kegel von [[lookup\n@target.template.size activity=v8KiqUloIE5eocSu]] Fuß, die den/die\n[[lookup @name lowercase]]{monster} sehen kann und kein Untoter ist.\n<em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat den\nZustand &amp;Reference[Frightened apply=false] bis zum Beginn des nächsten Zuges des/der\n[[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist 24 Stunden lang immun gegen das Schreckliche Antlitz dieses/dieser\n[[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "lx2ebHyyyaaWf8s1": "Verängstigt"
+    }
+  },
+  "mmHorrorNimbus00": {
+    "name": "Horror-Nimbus",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=GP5MnIyXCVZ4ZMTQ]], jede/s [[lookup\n@target.affects.type activity=GP5MnIyXCVZ4ZMTQ]] in einer [[lookup\n@target.template.size activity=GP5MnIyXCVZ4ZMTQ]]-<span\nstyle=\"font-family:'Roboto Condensed', sans-serif\">Fuß</span>-Emanation,\ndie von dem/der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] für\n[[lookup @duration.value activity=GP5MnIyXCVZ4ZMTQ]] [[lookup\n@duration.units activity=GP5MnIyXCVZ4ZMTQ]], bis es Schaden nimmt oder\nbis es seinen Zug beendet, während der/die [[lookup @name lowercase]]{monster} außer\nSichtweite ist.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist\n24 Stunden lang immun gegen den Horror-Nimbus dieses/dieser [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "ahNNQZ2FHPsRpYbH": "Verängstigt"
+    }
+  },
+  "mmIceWall0000000": {
+    "name": "Eiswand",
+    "description": "<p class=\"feature\">Der/Die [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofIce0]{Wall of\nIce}</em> (Version auf Grad 8), benötigt keine Zauberkomponenten und verwendet\nIntelligenz als Zauberfähigkeit (Zauber-SG [[lookup\n@abilities.int.dc]]).</p>"
+  },
+  "mmIgnitedIllumin": {
+    "name": "Entzündete Illumination",
+    "description": "<p class=\"feature\">Der/Die [[lookup @name lowercase]]{monster} setzt sich\nselbst in Brand oder löscht seine/ihre Flammen. Während er/sie brennt, spendet der/die [[lookup @name\nlowercase]]{monster} helles Licht in einem Radius von 3 m und dämmriges Licht\nfür weitere 3 m.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmIllusoryAppear": {
+    "name": "Illusorische Erscheinung",
+    "description": "<p class=\"feature\">Der/Die [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDisguiseSe]{Disguise\nSelf}</em> und verwendet Konstitution als Zauberfähigkeit (Zauber-SG\n[[lookup @attributes.spell.dc]]). Die Wirkungsdauer des Zaubers beträgt [[lookup\n@duration.value activity=qY8e7Xm7QYQDXqsd]] [[lookup @duration.units\nactivity=qY8e7Xm7QYQDXqsd]].</p>"
+  },
+  "mmInfernalTail00": {
+    "name": "Infernaler Schwanz",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=tJYeyUk3iPYJq9xM]], ein/e [[lookup\n@target.affects.type activity=tJYeyUk3iPYJq9xM]], den/die der/die [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=tJYeyUk3iPYJq9xM]] [[lookup @range.units\nactivity=tJYeyUk3iPYJq9xM]] sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average activity=tJYeyUk3iPYJq9xM]] Schaden, und das Ziel\nerleidet eine infernale Wunde, falls es noch keine hat. Solange es verwundet ist, verliert das\nZiel [[/damage average activity=zZfCQ0IeJZCjPLzE]] Trefferpunkte zu\nBeginn jedes seiner Züge. Die Wunde schließt sich nach [[lookup\n@duration.value activity=tJYeyUk3iPYJq9xM]] [[lookup @duration.units\nactivity=tJYeyUk3iPYJq9xM]], nachdem ein Zauber dem Ziel Trefferpunkte wiederherstellt,\noder nachdem das Ziel oder eine Kreatur innerhalb von 1,5 m von ihm eine\nAktion aufwendet, um die Wunde zu stillen, indem sie einen erfolgreichen [[/check dc=17\nability=wis skill=med format=long]] ablegt.</p>",
+    "activities": {
+      "Save": "Rettungswurf",
+      "Stanch Wound Check": "Wunde stillen (Wurf)",
+      "Target: HP Loss": "Ziel: TP-Verlust"
+    }
+  },
+  "mmInkCloud000000": {
+    "name": "Tintenwolke",
+    "description": "<p><em>Auslöser</em>: Der/Die [[lookup @name lowercase]]{monster} nimmt Schaden,\nwährend er/sie unter Wasser ist. </p><p><em>Reaktion</em>: Der/Die [[lookup @name\nlowercase]]{monster} stößt Tinte aus, die einen Würfel von [[lookup\n@target.template.size activity=1MiIPcVuCpfgBIkS]] Fuß, zentriert auf\nihn/sie selbst, füllt, und der/die [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner/ihrer Schwimmgeschwindigkeit.\nDer Würfel ist 1 Minute lang stark verdeckt oder bis eine starke Strömung\noder ein ähnlicher Effekt die Tinte zerstreut.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    },
+    "effects": {
+      "JttKvsdAlGpcrFx0": "Blind: Stark verdeckt"
+    }
+  },
+  "mmInvisibility00": {
+    "name": "Unsichtbarkeit",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility}</em>\nauf sich selbst, benötigt keine Zauberkomponenten und nutzt Charisma als die\nZauberfähigkeit.</p>"
+  },
+  "mmLeap0000000000": {
+    "name": "Sprung",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} springt bis zu [[lookup\n@range.value activity=C28C43DeD8iFtZMe]] Fuß weit, indem es [[lookup\n@activation.condition activity=C28C43DeD8iFtZMe]].</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmLifeDrain00000": {
+    "name": "Lebensentzug",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Kreatur, verringert sich dessen maximaler Trefferpunktwert um einen Betrag,\nder dem erlittenen Schaden entspricht.</p>"
+  },
+  "mmLightningBreat": {
+    "name": "Blitzatem",
+    "description": "<p><em>Rettungswurf auf Geschicklichkeit: </em>SG [[lookup @save.dc.value\nactivity=LpjgVwftzGNMgTUJ]], jede/r [[lookup @target.affects.type\nactivity=LpjgVwftzGNMgTUJ]] in einem [[lookup @target.template.size\nactivity=LpjgVwftzGNMgTUJ]] Fuß langen, [[lookup @target.template.width\nactivity=LpjgVwftzGNMgTUJ]] Fuß breiten [[lookup @target.template.type\ncapitalize activity=LpjgVwftzGNMgTUJ]].</p><p><em>Misserfolg: </em>[[/damage\naverage]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmLightningStorm": {
+    "name": "Blitzsturm",
+    "description": "<p class=\"feature\"><em>Rettungswurf auf Geschicklichkeit:</em> SG [[lookup\n@save.dc.value activity=YVri6iuieFUUiO1d]], jede Kreatur in einem [[lookup\n@target.template.size activity=YVri6iuieFUUiO1d]] Fuß Radius, [[lookup\n@target.template.height activity=YVri6iuieFUUiO1d]] Fuß hohen Zylinder,\nder von einem Punkt ausgeht, den das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=YVri6iuieFUUiO1d]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmLightningStrik": {
+    "name": "Blitzschlag",
+    "description": "<p class=\"feature\"><em>Rettungswurf auf Geschicklichkeit:</em> SG [[lookup\n@save.dc.value activity=v39JwGqgfaKiA4vc]], eine/n [[lookup\n@target.affects.type activity=v39JwGqgfaKiA4vc]], die/den das [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=v39JwGqgfaKiA4vc]] Fuß sehen kann. <em>Misserfolg:</em> [[/damage average]]\nSchaden. <em>Erfolg:</em>Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmLuringSong0000": {
+    "name": "Verführerisches Lied",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} singt eine magische\nMelodie, die anhält, bis die Konzentration des [[lookup @name lowercase]]{monster} darauf endet.</p><p class=\"feature\"><em>Rettungswurf auf\nWeisheit:</em> SG [[lookup @save.dc.value activity=dxxqZP7Vo01te3QB]], jede/r\n[[lookup @target.affects.special activity=dxxqZP7Vo01te3QB]] in einer [[lookup\n@target.template.size activity=dxxqZP7Vo01te3QB]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, wenn das Lied beginnt.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den\n&amp;Reference[Charmed apply=false] Zustand, bis das Lied endet, und\nwiederholt den Rettungswurf am Ende jedes seiner Züge. Solange es bezaubert ist, hat das\nZiel den &amp;Reference[Incapacitated apply=false] Zustand und\nignoriert das Verführerische Lied anderer Harpyien.</p><p class=\"feature\">Ist das\nZiel mehr als 1,5 m vom [[lookup @name lowercase]]{monster} entfernt,\nbewegt es sich in seinem Zug auf dem direktesten Weg auf das [[lookup @name\nlowercase]]{monster} zu und versucht, innerhalb von 1,5 m\nan das [[lookup @name lowercase]]{monster} heranzukommen. Es vermeidet\n&amp;Reference[OpportunityAttacks] nicht; jedoch, bevor es sich in schädigendes\nGelände (wie Lava oder eine Grube) bewegt und wann immer es Schaden von einer anderen\nQuelle als dem [[lookup @name lowercase]]{monster} erleidet, wiederholt das\nZiel den Rettungswurf.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen das\nVerführerische Lied dieses [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "gJscxYD5nf7GlEo8": "Bezaubert & Handlungsunfähig"
+    }
+  },
+  "mmMagicOfTheSpid": {
+    "name": "Magie der Spinnenkönigin",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</em>,\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie\nFire}</em> oder\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWeb0000000]{Web}</em>,\nbenötigt keine Materialkomponenten und nutzt Weisheit als die Zauberfähigkeit\n(Zauber-SG [[lookup @attributes.spell.dc]]).</p>"
+  },
+  "mmMindrendingRoa": {
+    "name": "Gedankenzerreißendes Gebrüll",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=zPMfwwIoTFzIrN5H]], jede/r [[lookup\n@target.affects.type activity=zPMfwwIoTFzIrN5H]] in einer [[lookup\n@target.template.size activity=zPMfwwIoTFzIrN5H]]-[[lookup\n@target.template.units activity=zPMfwwIoTFzIrN5H]]-Emanation, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat den Zustand &amp;Reference[Incapacitated\napply=false] bis zum Beginn des nächsten Zuges der/des [[lookup @name\nlowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "hHsI0Xo1J4XM4z5K": "Handlungsunfähig"
+    }
+  },
+  "mmMistyStep00000": {
+    "name": "Nebelgang",
+    "description": "<p class=\"feature\">Die/Der [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty\nStep}</em>, benötigt keine Zauberkomponenten und verwendet dieselbe Zauberfähigkeit\nwie Zauberwirken.</p>"
+  },
+  "mmMoan0000000000": {
+    "name": "Stöhnen",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Mng39fcFDc4I1AzY]], jede/r [[lookup\n@target.affects.type activity=Mng39fcFDc4I1AzY]] in einer [[lookup\n@target.template.size activity=Mng39fcFDc4I1AzY]]-[[lookup\n@target.template.units activity=Mng39fcFDc4I1AzY]]-Emanation, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel\nhat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende\ndes nächsten Zuges der/des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist für die nächsten 24 Stunden immun gegen das Stöhnen dieser/dieses [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "ozk8flGDR2kAITEI": "Verängstigt"
+    }
+  },
+  "mmMockery0000000": {
+    "name": "Spott",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=s5CMus4LOXBkt1Wn]], [[lookup\n@target.affects.labels.statblock activity=s5CMus4LOXBkt1Wn]], die/den die/der [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=s5CMus4LOXBkt1Wn]] <span style=\"font-family:'Roboto Condensed',\nsans-serif\">Fuß sehen kann.</span> <em>Misserfolg:</em> [[/damage average]] Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmMultiattack000": {
+    "name": "Mehrfachangriff",
+    "description": "<p>Die/Der [[lookup @name lowercase]]{monster} führt {count} [[/item]]-Angriffe aus\nund setzt [[/item]] ein.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    }
+  },
+  "mmNightmareHaunt": {
+    "name": "Albtraumhafte Heimsuchung",
+    "description": "<p class=\"feature\">Während sie/er sich auf der Ätherebene befindet, wirkt die/der [[lookup @name\nlowercase]]{monster}\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDream00000]{Dream}</em>,\nwobei sie/er dieselbe Zauberfähigkeit wie Zauberwirken verwendet. Nur die/der [[lookup\n@name lowercase]]{monster} kann als Bote des Zaubers dienen, und das\nZiel muss ein/e [[lookup @target.affects.type activity=4GGGVhvLSrHgHdb9]] sein,\ndie/den die/der [[lookup @name lowercase]]{monster} [[lookup\n@target.affects.special activity=4GGGVhvLSrHgHdb9]] sehen kann. Der Zauber schlägt fehl und\nist verschwendet, wenn das Ziel unter dem Effekt des\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbEvilAndGoodPr]{Protection from\nEvil and Good}</em>-Zaubers steht oder sich innerhalb eines\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicCircl]{Magic\nCircle}</em>-Zaubers befindet.</p><p class=\"feature\">Wenn das Ziel Schaden durch\nden <em>Traum</em>-Zauber erleidet, verringert sich das Maximum der Trefferpunkte des Ziels um einen\nBetrag, der diesem Schaden entspricht. Wenn der Zauber das Ziel tötet, ist dessen Seele\nim Seelensack der/des [[lookup @name lowercase]]{monster} gefangen, und das\nZiel kann nicht von den Toten auferweckt werden, bis seine Seele befreit ist.</p>"
+  },
+  "mmNimbleEscape00": {
+    "name": "Flinke Flucht",
+    "description": "<p class=\"feature\">Die/Der [[lookup @name lowercase]]{monster} führt die\nAktion &amp;Reference[Disengage] oder &amp;Reference[Hide] aus.</p>",
+    "activities": {
+      "Expend Use": "Verwenden"
+    },
+    "effects": {
+      "7U7Pe61lsMZgN7qh": "Verstecken-Aktion auf Ziel anwenden"
+    }
+  },
+  "mmParalyzingBrea": {
+    "name": "Lähmender Atem",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=r4MGqEq5U9aaseBh]], jede [[lookup\n@target.affects.type activity=r4MGqEq5U9aaseBh]] in einem [[lookup\n@target.template.size activity=r4MGqEq5U9aaseBh]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Erstes Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Incapacitated apply=false] bis zum Ende seines\nnächsten Zuges, dann wiederholt es den Rettungswurf.</p><p class=\"feature\"><em>Zweites\nScheitern:</em> Das Ziel hat den Zustand &amp;Reference[Paralyzed apply=false],\nund es wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der\nEffekt bei einem Erfolg für sich selbst endet. Nach 1 Minute gelingt es\nihm automatisch.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "MML0hjuixzKZ61FT": "Handlungsunfähig",
+      "qHhQi1VSyVic0Z22": "Gelähmt"
+    }
+  },
+  "mmParalyzingTent": {
+    "name": "Lähmende Tentakel",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=p157Iqz8s0M0VilW]], eine [[lookup\n@target.affects.type activity=p157Iqz8s0M0VilW]], die die [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @target.template.size\nactivity=p157Iqz8s0M0VilW]] Fuß sehen kann.</p><p class=\"feature\"><em>Scheitern:</em>\nDas Ziel hat den Zustand &amp;Reference[Poisoned apply=false] und\nwiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt\nbei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value\nactivity=p157Iqz8s0M0VilW]] [[lookup @duration.units\nactivity=p157Iqz8s0M0VilW]] gelingt es ihm automatisch. Während es\nvergiftet ist, hat das Ziel den Zustand &amp;Reference[Paralyzed apply=false].</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "5ReKSrBu11ume7GP": "Vergiftet & Gelähmt"
+    }
+  },
+  "mmParry000000000": {
+    "name": "Parieren",
+    "description": "<p><em>Auslöser:</em> Die [[lookup @name lowercase]]{monster} ist [[lookup\n@activation.condition activity=aLG3BRZL7P6OEjwd]]. <em>Reaktion:</em> Die\n[[lookup @name lowercase]]{monster} addiert [[lookup @roll.formula\nactivity=aLG3BRZL7P6OEjwd]] zu ihrer RK gegen diesen Angriff, wodurch\ndieser möglicherweise verfehlt.</p>",
+    "activities": {
+      "Use": "Nutzen"
+    }
+  },
+  "mmPetrifyingBrea": {
+    "name": "Versteinernder Atem",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=reU3RXAk0MdPmKCl]], jede [[lookup\n@target.affects.type activity=reU3RXAk0MdPmKCl]] in einem [[lookup\n@target.template.size activity=reU3RXAk0MdPmKCl]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Erstes</em> <em>Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am\nEnde seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt\nbei einem Erfolg für sich selbst endet.</p><p class=\"feature\"><em>Zweites</em>\n<em>Scheitern:</em> Das Ziel hat den Zustand &amp;Reference[Petrified apply=false]\nanstelle des Zustands Festhalten.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "ggyTZHJj11jkOFlX": "Versteinert",
+      "SY6t8UAImw8B9PVT": "Festhalten"
+    }
+  },
+  "mmPetrifyingGaze": {
+    "name": "Versteinernder Blick",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=mN9aF1WkHQWLIN4B]], jede [[lookup\n@target.affects.type activity=mN9aF1WkHQWLIN4B]] in einem [[lookup\n@target.template.size activity=mN9aF1WkHQWLIN4B]]-Fuß-[[lookup\n@target.template.type capitalize activity=mN9aF1WkHQWLIN4B]]. Wenn die\n[[lookup @name lowercase]]{monster} ihr Spiegelbild in der [[lookup\n@target.template.type capitalize activity=mN9aF1WkHQWLIN4B]] sieht, muss die [[lookup\n@name lowercase]]{monster} diesen Rettungswurf machen. </p><p\nclass=\"feature\"><em>Erstes Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am\nEnde seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt\nbei einem Erfolg für sich selbst endet. </p><p class=\"feature\"><em>Zweites Scheitern:</em> Das\nZiel hat den Zustand &amp;Reference[Petrified apply=false] anstelle von\ndem Zustand Festhalten.</p>",
+    "activities": {
+      "First Save": "Erster Rettungswurf",
+      "Second Save": "Zweiter Rettungswurf"
+    },
+    "effects": {
+      "a5kKgU7vfT0v17yF": "Festhalten",
+      "YLFv2Ujss9c0vtMQ": "Versteinert"
+    }
+  },
+  "mmPhantasms00000": {
+    "name": "Phantasmen",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} wirkt den\nZauber <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMirrorImag]{Mirror\nImage}</em>, benötigt keine Zauberkomponenten und verwendet Weisheit als die\nZauberfähigkeit. Der Zauber endet frühzeitig, wenn die [[lookup @name\nlowercase]]{monster} ihren Zug in hellem Licht beginnt oder beendet.</p>"
+  },
+  "mmPoisonBreath00": {
+    "name": "Giftatem",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=lnabW9bM51HoluPp]], jede Kreatur in einem [[lookup\n@target.template.size activity=lnabW9bM51HoluPp]]-Fuß-[[lookup\n@target.template.type capitalize activity=lnabW9bM51HoluPp]].</p><p\nclass=\"feature\"><em>Scheitern:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmPoisonousSpitt": {
+    "name": "Giftiger Speichel",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=r4plP8QiJxzFZZO7]], [[lookup\n@target.affects.labels.statblock activity=r4plP8QiJxzFZZO7]], die die [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=r4plP8QiJxzFZZO7]] Fuß sehen kann. <em>Scheitern:</em> 31 (7W8) Giftschaden,\nund das Ziel hat den Zustand &amp;Reference[Blinded apply=false]\nbis zum Beginn des nächsten Zuges der [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Nur halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "q1VTMWxbLg5ZnQ9W": "Blind"
+    }
+  },
+  "mmPossession0000": {
+    "name": "Besessenheit",
+    "description": "<p class=\"feature\"><em>Charisma-Rettungswurf:</em> SG [[lookup\n@save.dc.value activity=7gmNBVjwuYTyANMe]], ein [[lookup\n@target.affects.special activity=7gmNBVjwuYTyANMe]], das der [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=7gmNBVjwuYTyANMe]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\nDas Ziel wird von der [[lookup @name lowercase]]{monster} besessen;\ndie [[lookup @name lowercase]]{monster} verschwindet, und das Ziel erhält\nden Zustand &amp;Reference[Incapacitated apply=false] und verliert die Kontrolle über\nseinen Körper. Die [[lookup @name lowercase]]{monster} kontrolliert nun den\nKörper, aber das Ziel behält das Bewusstsein. Die [[lookup @name\nlowercase]]{monster} kann nicht von Angriffen, Zaubern oder anderen\nEffekten anvisiert werden, außer von solchen, die speziell Untote\nanvisieren. Die Spielwerte der [[lookup @name lowercase]]{monster} bleiben\ngleich, außer dass sie die Bewegungsrate des besessenen Ziels sowie dessen\nStärke-, Geschicklichkeits- und Konstitutionsmodifikatoren\nverwendet.</p><p class=\"feature\">Die Besessenheit dauert an, bis der Körper\nauf 0 Trefferpunkte fällt oder die [[lookup @name lowercase]]{monster} als\nBonusaktion den Körper verlässt. Wenn die Besessenheit endet, erscheint\ndie [[lookup @name lowercase]]{monster} in einem unbesetzten Feld innerhalb\nvon 1,5 m des Ziels, und das Ziel ist 24 Stunden lang immun gegen die\nBesessenheit dieses Geistes.</p><p class=\"feature\"><em>Erfolg:</em> Das\nZiel ist 24 Stunden lang immun gegen die Besessenheit dieser [[lookup @name\nlowercase]]{monster}.</p>",
+    "effects": {
+      "EeZIaR3X4cI5glMX": "Handlungsunfähig"
+    }
+  },
+  "mmProtection0000": {
+    "name": "Schutz",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Ein Angriffswurf trifft den Träger\ndes Amuletts der [[lookup @name lowercase]]{monster}, während sich der\nTräger innerhalb von 1,5 m der [[lookup @name lowercase]]{monster}\nbefindet.</p><p\nclass=\"feature\"><em>Reaktion:</em> Der Träger erhält\neinen Bonus von +5 auf die RK, auch gegen den auslösenden Angriff,\nwodurch dieser möglicherweise verfehlt, bis zum Beginn des nächsten Zuges\nder [[lookup @name lowercase]]{monster}.</p>",
+    "effects": {
+      "4neflArm7JowxOTM": "Geschützt"
+    }
+  },
+  "mmProtectiveMagi": {
+    "name": "Schutzmagie",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell}</em>\noder <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}</em>\nals Reaktion auf den Zauberauslöser, wobei sie dieselbe Zauberfähigkeit\nwie für das Zauberwirken verwendet.</p>"
+  },
+  "mmProwl000000000": {
+    "name": "Anschleichen (nur Tiger- oder Hybridform)",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} bewegt sich bis zu\nihrer Bewegungsrate, ohne &amp;Reference[OpportunityAttacks] zu provozieren. Am Ende dieser\nBewegung kann die [[lookup @name lowercase]]{monster} die Aktion &amp;Reference[Hide apply=false]\nausführen.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmPummel00000000": {
+    "name": "Prügeln",
+    "description": "<p class=\"feature\"><em>Geschicklichkeits-Rettungswurf:</em> SG [[lookup\n@save.dc.value activity=aae828c0Hue0XOMP]], eine Kreatur, die von der\n[[lookup @name lowercase]]{monster} im Griff gehalten\nwird.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]]\nSchaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber\nSchaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmPursuit0000000": {
+    "name": "Verfolgung",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine andere Kreatur, die die\n[[lookup @name lowercase]]{monster} sehen kann, beendet ihre Bewegung\ninnerhalb von [[lookup @range.value activity=blUXkjLhs9kD2ofo]] Fuß von der\n[[lookup @name lowercase]]{monster}. <em>Reaktion:</em> Die\n[[lookup @name lowercase]]{monster} nutzt Teleport, aber ihr Zielort muss\n[[lookup @target.affects.special activity=blUXkjLhs9kD2ofo]] sein.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmQuickGrapple00": {
+    "name": "Schneller Griff",
+    "description": "<p class=\"feature\"><em>Geschicklichkeits-Rettungswurf:</em> SG [[lookup\n@save.dc.value activity=aDWVHpJgsNPPNrDs]], [[lookup\n@target.affects.special activity=aDWVHpJgsNPPNrDs]], das die [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @target.template.size\nactivity=aDWVHpJgsNPPNrDs]] [[lookup @target.template.units\nactivity=aDWVHpJgsNPPNrDs]] sehen kann. <em>Misserfolg:</em> Das\nZiel erhält den Zustand &amp;Reference[Grappled] (Entkommen SG [[lookup\n@skills.ath.passive]]).</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf",
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "5yLzwp2Gu803QgI9": "Im Griff"
+    }
+  },
+  "mmRampage0000000": {
+    "name": "Amoklauf",
+    "description": "<p class=\"feature\">Unmittelbar nachdem es einer Kreatur, die bereits\n&amp;Reference[Bloodied] ist, Schaden zugefügt hat, bewegt sich die [[lookup @name\nlowercase]]{monster} bis zur Hälfte ihrer Bewegungsrate und führt einen\n{action}-Angriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmReadThoughts00": {
+    "name": "Gedanken lesen",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectThou]{Detect\nThoughts}</em>, benötigt keine Zauberkomponenten und nutzt Charisma als die\nZauberwirkungsfähigkeit (Zauber-SG [[lookup @abilities.cha.dc]]).</p>"
+  },
+  "mmRedirectAttack": {
+    "name": "Angriff umleiten",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine Kreatur, die das [[lookup @name\nlowercase]]{monster} sehen kann, macht einen Angriffswurf gegen es.</p><p\nclass=\"feature\"><em>Reaktion:</em> Das [[lookup @name lowercase]]{monster}\nwählt [[lookup @target.affects.special activity=pIlCmuPw8YUqAISY]]\ninnerhalb von [[lookup @range.value activity=pIlCmuPw8YUqAISY]] Fuß von sich selbst.\nDas [[lookup @name lowercase]]{monster} und das [[lookup\n@target.affects.type activity=pIlCmuPw8YUqAISY]] tauschen die Plätze, und das\n[[lookup @target.affects.type activity=pIlCmuPw8YUqAISY]] wird stattdessen zum\nZiel des Angriffs.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmReel0000000000": {
+    "name": "Einholen",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} zieht [[lookup\n@target.affects.labels.statblock activity=jWkEQYHBd7aht1kG]] innerhalb von\n[[lookup @range.value activity=jWkEQYHBd7aht1kG]] Fuß von sich selbst, das\ndurch seinen Netzstrang festgehalten ist, bis zu 7,5 m geradewegs zu sich heran.</p>"
+  },
+  "mmReflexiveAnten": {
+    "name": "Reflexive Antennen",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Ein Angriffswurf trifft das [[lookup\n@name lowercase]]{monster}. <em>Reaktion:</em> Das [[lookup @name\nlowercase]]{monster} setzt Antennen ein.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmRepulsionBreat": {
+    "name": "Abstoßender Atem",
+    "description": "<p class=\"feature\"><em>Stärke-Rettungswurf:</em> SG [[lookup\n@save.dc.value activity=zuf9EEVj4nI1joaH]], jede [[lookup\n@target.affects.type activity=zuf9EEVj4nI1joaH]] in einem [[lookup\n@target.template.size activity=zuf9EEVj4nI1joaH]] Fuß-Kegel. </p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel wird bis zu 9 m\ngeradewegs vom [[lookup @name lowercase]]{monster} weggestoßen und hat den\nZustand &amp;Reference[Prone apply=false].</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmRiposte0000000": {
+    "name": "Riposte",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Das [[lookup @name\nlowercase]]{monster} wird von einem Nahkampfangriffswurf getroffen, während es eine\nWaffe hält.</p><p class=\"feature\"><em>Reaktion:</em> Das [[lookup @name\nlowercase]]{monster} addiert 3 zu seiner RK gegen diesen Angriff, wodurch dieser\nmöglicherweise verfehlt. Bei einem Fehlschlag macht das [[lookup @name lowercase]]{monster}\neinen Rapier-Angriff gegen die auslösende Kreatur, falls diese in\nReichweite ist.</p><section class=\"secret\"\nid=\"secret-VqXu1b39RjadyOE4\"><p><strong>Foundry-Hinweis</strong></p><p>Diese\nEigenschaft bietet auch einen <strong>Aktiven Effekt (AE)</strong>, der die\n<strong>Rüstungsklasse (RK)</strong> dieser Kreatur modifiziert, wenn du die\nReaktion nutzt. Du kannst den AE im Effekte-Tab des Charakterbogens\naktivieren.</p></section>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmRoar0000000000": {
+    "name": "Brüllen",
+    "description": "<p class=\"feature\">Die Sphinx stößt ein magisches Brüllen aus. Jedes Mal, wenn sie brüllt, hat das\nBrüllen einen anderen Effekt, wie unten beschrieben (die Reihenfolge wird zurückgesetzt, wenn\nsie eine lange Rast macht):</p><p class=\"feature-trait\"><strong>Erstes\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=Igeu89TALGlNPXDg]], jeder Feind in einer [[lookup\n@target.template.size activity=Igeu89TALGlNPXDg]] Fuß-Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.\n<em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened\napply=false] für [[lookup @duration.value\nactivity=Igeu89TALGlNPXDg]] [[lookup @duration.units\nactivity=Igeu89TALGlNPXDg]].</p><p class=\"feature-trait\"><strong>Zweites\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=uFTndQPvULZVHT9R]], jede [[lookup @target.affects.type\nactivity=uFTndQPvULZVHT9R]] in einer [[lookup @target.template.size\nactivity=uFTndQPvULZVHT9R]] Fuß-Emanation, die vom [[lookup\n@name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Paralyzed apply=false], und es wiederholt den Rettungswurf\nam Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet.\nNach [[lookup @duration.value activity=uFTndQPvULZVHT9R]] [[lookup\n@duration.units activity=uFTndQPvULZVHT9R]] gelingt es ihm\nautomatisch.</p><p class=\"feature-trait\"><strong>Drittes Brüllen.</strong>\n<em>Konstitutions-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=Td8ArIMDfxWDLbE9]], jede [[lookup @target.affects.type\nactivity=Td8ArIMDfxWDLbE9]] in einer [[lookup @target.template.size\nactivity=Td8ArIMDfxWDLbE9]] Fuß-Emanation, die vom [[lookup\n@name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage average]] Schaden,\nund das Ziel hat den Zustand &amp;Reference[Prone apply=false].\n<em>Erfolg:</em> Nur [[lookup @damage.onSave capitalize\nactivity=Td8ArIMDfxWDLbE9]] Schaden.</p>",
+    "activities": {
+      "First Roar: Save": "Erstes Brüllen: Rettungswurf",
+      "Second Roar: Save": "Zweites Brüllen: Rettungswurf",
+      "Third Roar: Save": "Drittes Brüllen: Rettungswurf"
+    }
+  },
+  "mmScare000000000": {
+    "name": "Erschrecken",
+    "description": "<p class=\"feature\"><em>Weisheits-Rettungswurf:</em> SG [[lookup\n@save.dc.value activity=L6pjs2RafI3pF8b3]], eine Kreatur innerhalb von [[lookup\n@range.value activity=L6pjs2RafI3pF8b3]] Fuß.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Frightened apply=false]. Am Ende jedes seiner\nZüge wiederholt das Ziel den Rettungswurf, wobei der Effekt bei einem\nErfolg für sich selbst endet. Nach 1 Minute gelingt es ihm automatisch.</p>"
+  },
+  "mmShadowStealth0": {
+    "name": "Schattenpirsch",
+    "description": "<p class=\"feature\">Solange es sich in Dämmrigem Licht oder Dunkelheit befindet, führt der/die [[lookup @name\nlowercase]]{monster} die Aktion &amp;Reference[Hide] aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    },
+    "effects": {
+      "Hide": "Verstecken"
+    }
+  },
+  "mmShapeshift0000": {
+    "name": "Gestaltwandlung",
+    "description": "<p class=\"feature\">Der/Die [[lookup @name lowercase]]{monster} wandelt seine/ihre Gestalt\nin ein [[lookup @target.affects.special activity=EU2q25V5hIaM1ZlR]], oder er/sie\nkehrt zu seiner/ihrer wahren humanoiden Form zurück, oder er/sie kehrt zu seiner/ihrer wahren Form zurück. Seine/Ihre\nSpielwerte, abgesehen von seiner/ihrer Größe, sind in jeder Form gleich. Jegliche\nAusrüstung, die er/sie trägt oder bei sich führt, wird nicht verwandelt.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmShieldBash0000": {
+    "name": "Schildstoß",
+    "description": "<p class=\"feature\"><em>Rettungswurf auf Stärke:</em> SG [[lookup\n@save.dc.value activity=eIErvLccVVCXiCSl]], ein [[lookup\n@target.affects.type activity=eIErvLccVVCXiCSl]] innerhalb von [[lookup\n@range.value activity=eIErvLccVVCXiCSl]] [[lookup @range.units\nactivity=eIErvLccVVCXiCSl]], das der/die [[lookup @name lowercase]]{monster}\nsehen kann. <em>Misserfolg:</em> [[/damage average]] Schaden. Ist das Ziel eine\nmittelgroße oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Prone apply=false].\n</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Prone": "Liegend"
+    }
+  },
+  "mmShriek00000000": {
+    "name": "Schrei",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Ein [[lookup @target.affects.type\nactivity=Tlv3gcYk5KfdtV7c]] oder eine Quelle hellen Lichts bewegt sich innerhalb von\n[[lookup @range.value activity=Tlv3gcYk5KfdtV7c]] Fuß des/der [[lookup\n@name lowercase]]{monster}. <em>Reaktion:</em> Der/Die [[lookup @name\nlowercase]]{monster} stößt einen Schrei aus, der innerhalb von [[lookup\n@target.template.size activity=Tlv3gcYk5KfdtV7c]] Fuß für\n[[lookup @duration.value activity=Tlv3gcYk5KfdtV7c]] Minute hörbar ist oder bis der/die\n[[lookup @name lowercase]]{monster} stirbt.</p>",
+    "activities": {
+      "Use": "Einsatz"
+    }
+  },
+  "mmSlayingBow0000": {
+    "name": "Tötungsbogen",
+    "description": "<p class=\"feature\"><em>Rettungswurf auf Geschicklichkeit:</em> SG [[lookup\n@save.dc.value activity=C7BMf8hIfCjxRSWC]], ein [[lookup\n@target.affects.type activity=C7BMf8hIfCjxRSWC]], das der/die [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=C7BMf8hIfCjxRSWC]] [[lookup @range.units\nactivity=C7BMf8hIfCjxRSWC]] sehen kann. <em>Misserfolg:</em> Hat das [[lookup\n@target.affects.type activity=C7BMf8hIfCjxRSWC]] 100 Trefferpunkte oder\nweniger, stirbt es. Andernfalls erleidet es [[/damage average]] Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmSleepBreath000": {
+    "name": "Schlafhauch",
+    "description": "<p class=\"feature\"><em>Rettungswurf auf Konstitution:</em> SG [[lookup\n@save.dc.value activity=6ce9oevQRWomSVSF]], jede/r [[lookup\n@target.affects.type activity=6ce9oevQRWomSVSF]] in einem [[lookup\n@target.template.size activity=6ce9oevQRWomSVSF]] Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel erhält den\nZustand &amp;Reference[Incapacitated apply=false] bis zum Ende seines\nnächsten Zuges, woraufhin es den Rettungswurf wiederholt.</p><p\nclass=\"feature\"><em>Zweiter Misserfolg:</em> Das Ziel erhält den\nZustand &amp;Reference[Unconscious apply=false] für [[lookup\n@duration.value activity=EZma0lCmQeTuVuAL]] Minute. Dieser Effekt endet für\ndas Ziel, wenn es Schaden erleidet oder eine Kreatur innerhalb von 1,5 m von ihm eine\nAktion aufwendet, um es zu wecken.</p>",
+    "activities": {
+      "1st Save": "1. Rettungswurf",
+      "2nd Save": "2. Rettungswurf"
+    },
+    "effects": {
+      "Incapacitated": "Handlungsunfähig",
+      "Unconscious": "Bewusstlos"
+    }
+  },
+  "mmSleep000000000": {
+    "name": "Schlaf",
+    "description": "<p>Der/Die [[lookup @name lowercase]]{monster} wirkt den\nZauber @UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000], benötigt keine\nZauberkomponenten und verwendet Charisma als Zauberfähigkeit (SG des\nZauberrettungswurfs [[lookup @attributes.spell.dc]]).</p>"
+  },
+  "mmSlow0000000000": {
+    "name": "Verlangsamen",
+    "description": "<p class=\"feature\">Der/Die [[lookup @name lowercase]]{monster} wirkt den\nZauber <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Slow}</em>,\nbenötigt keine Zauberkomponenten und verwendet Konstitution als\nZauberfähigkeit (SG des Zauberrettungswurfs 17).</p>"
+  },
+  "mmSlowingBreath0": {
+    "name": "Verlangsamender Atem",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=teMMQNDDIE9XkPN3]], jede Kreatur in einem [[lookup\n@target.template.size activity=teMMQNDDIE9XkPN3]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel kann keine Reaktionen ausführen; seine\nBewegungsrate ist halbiert; und es kann in seinem Zug entweder eine Aktion oder eine Bonusaktion ausführen,\nnicht beides. Dieser Effekt hält bis zum Ende seines nächsten Zuges an.</p>",
+    "effects": {
+      "ztGUDHGfoUxlUY53": "1/2 Bewegungsrate | Aktionsbeschränkungen"
+    }
+  },
+  "mmSpellcasting00": {
+    "name": "Zauberwirken",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} wirkt einen der\nfolgenden Zauber, benötigt keine {type} Komponenten und verwendet {ability}\nals Zauberattribut (Zauber-SG [[lookup\n@attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>Beliebig\noft:</strong> <em>{spell}</em></p><p\nclass=\"feature-trait\"><strong>{count}/Tag jeweils:</strong>\n<em>{spell}</em></p>"
+  },
+  "mmSpiritualWeapo": {
+    "name": "Geistliche Waffe",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} wirkt den\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSpiritualW]{Spiritual\nWeapon}</em> Zauber, wobei es dasselbe Zauberattribut wie\nfür das Zauberwirken verwendet.</p>"
+  },
+  "mmSplit000000000": {
+    "name": "Teilen",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Während das [[lookup @name\nlowercase]]{monster} [[lookup @activation.condition\nactivity=zoXFSgzmWq8frUjI]] </p><p class=\"feature\"><em>Reaktion:</em> Das\n[[lookup @name lowercase]]{monster} teilt sich in zwei neue <strong>[[lookup\n@name capitalize]]{monster}</strong>. Jedes neue [[lookup @name\nlowercase]]{monster} ist eine Größenkategorie kleiner als das ursprüngliche [[lookup @name\nlowercase]]{monster} und agiert auf seiner Initiative. Die Trefferpunkte des ursprünglichen [[lookup\n@name lowercase]]{monster} werden gleichmäßig auf die neuen\n[[lookup @name lowercase]]{monster} (abgerundet) aufgeteilt.</p>",
+    "activities": {
+      "Split": "Teilen"
+    }
+  },
+  "mmSpores00000000": {
+    "name": "Sporen",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=voqQeTnihpy3BTFf]], jede Kreatur in einer [[lookup\n@target.template.size activity=voqQeTnihpy3BTFf]]-Fuß-Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Poisoned apply=false] und wiederholt den Rettungswurf am\nEnde jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Solange\nes vergiftet ist, erleidet das Ziel [[/damage average activity=ukZveNVmvvtwbDj0]]\nzu Beginn jedes seiner Züge. Das Entleeren einer Phiole mit Weihwasser auf das\nZiel beendet den Effekt vorzeitig.</p>",
+    "activities": {
+      "Damage While Poisoned": "Schaden während Vergiftung",
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "DeVYxc3BdGlZNeD9": "Vergiftet"
+    }
+  },
+  "mmSteamBreath000": {
+    "name": "Dampfatem",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=5iI1KQRWrdMGh9sy]], jede [[lookup\n@target.affects.type activity=5iI1KQRWrdMGh9sy]] in einem [[lookup\n@target.template.size activity=5iI1KQRWrdMGh9sy]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Unter Wasser zu sein, gewährt keine\nResistenz gegen diesen Feuerschaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmStormBolt00000": {
+    "name": "Sturmblitz",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Große oder kleinere Kreatur, hat es den Zustand &amp;Reference[Prone\napply=false].</p>",
+    "effects": {
+      "UXwZ02kqy96aH3dZ": "Liegend"
+    }
+  },
+  "mmStunningScreec": {
+    "name": "Betäubender Schrei",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=eoIikvnPayaj02oN]], jede Kreatur in einer [[lookup\n@target.template.size activity=eoIikvnPayaj02oN]]-Fuß-Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht (Dämonen gelingt der Wurf automatisch).</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat den Zustand &amp;Reference[Stunned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name\nlowercase]]{monster}.</p>",
+    "effects": {
+      "dQ635FV7U5Y5LUE7": "Betäubt"
+    }
+  },
+  "mmSwallow0000000": {
+    "name": "Verschlingen",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=YorssyWMumAsvzx3]], [[lookup\n@target.affects.special activity=YorssyWMumAsvzx3]] durch den/die/das [[lookup @name\nlowercase]]{monster} (der/die/das [[lookup @name lowercase]]{monster} kann\nimmer nur eine Kreatur verschlungen haben).</p><p\nclass=\"feature\"><em>Misserfolg:</em> Der/Die/Das [[lookup @name lowercase]]{monster}\nverschlingt das Ziel, das nicht länger Gepackt ist. Während es verschlungen ist, hat eine\nKreatur die Bedingungen &amp;Reference[Blinded apply=false] und\n&amp;Reference[Restrained apply=false], hat\n&amp;Reference[Total Cover] gegen Angriffe und andere Effekte außerhalb des/der/des\n[[lookup @name lowercase]]{monster}, und erleidet [[/damage average\nactivity=zrWNjO9mkbN28spL]] Schaden zu Beginn jedes Zuges des/der/des [[lookup\n@name lowercase]]{monster}.</p><p class=\"feature\">Wenn der/die/das [[lookup\n@name lowercase]]{monster} in einem einzigen Zug 30 oder mehr Schaden\ndurch die verschlungene Kreatur erleidet, muss der/die/das [[lookup @name lowercase]]{monster}\nam Ende dieses Zuges einen [[/save format=long activity=rGeGukkm2t2fXsoy]] schaffen\noder die Kreatur auswürgen, die in einem Feld innerhalb von\n[[lookup @range.value activity=rGeGukkm2t2fXsoy]] [[lookup @range.units\nactivity=rGeGukkm2t2fXsoy]] des/der/des [[lookup @name lowercase]]{monster}\nfällt und die Bedingung &amp;Reference[Prone apply=false] hat. Wenn der/die/das [[lookup\n@name lowercase]]{monster} stirbt, ist eine verschlungene Kreatur nicht länger\nFesselnd und kann aus dem Leichnam entkommen, indem sie 4,5 m Bewegung verbraucht\nund danach Liegend ist.</p>",
+    "activities": {
+      "Damage: Swallowed": "Schaden: Verschlungen",
+      "Regurgitate: Save": "Auswürgen: Rettungswurf",
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "VOHv1LyO3hHolZXo": "Blind, Fesselung und Volle Deckung",
+      "aS5FyMP72vn3OKf1": "Liegend"
+    }
+  },
+  "mmSwoop000000000": {
+    "name": "Sturzflug",
+    "description": "<p class=\"feature\">Wenn der/die/das [[lookup @name lowercase]]{monster} eine\nKreatur gepackt hat, fliegt der/die/das [[lookup @name lowercase]]{monster} bis zur\nHälfte seiner/ihrer Fluggeschwindigkeit, ohne &amp;Reference[OpportunityAttacks] zu provozieren,\nund lässt diese Kreatur fallen.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmTeleport000000": {
+    "name": "Teleportieren",
+    "description": "<p class=\"feature\">Der/Die/Das [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=dnoRMdFzhUUku26D]] Fuß weit auf ein unbesetztes\nFeld, das es sehen kann.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmTentacleSlam00": {
+    "name": "Tentakelschlag",
+    "description": "<p><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=VC2iSwNPNaZ7M2bT]], [[lookup @target.affects.special\nactivity=VC2iSwNPNaZ7M2bT]] durch den/die/das [[lookup @name lowercase]]{monster}.\n<em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat die\nBedingung &amp;Reference[Stunned apply=false] bis zum Beginn des\nnächsten Zuges des/der/des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Nur\nhalber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "CdqwzfboHBLC0vIk": "Betäubt"
+    }
+  },
+  "mmThunderousBell": {
+    "name": "Donnerndes Brüllen",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=RWBqtTjGSlEgQWCl]], [[lookup\n@target.affects.special activity=RWBqtTjGSlEgQWCl]] in einem [[lookup\n@target.template.size activity=RWBqtTjGSlEgQWCl]]-[[lookup\n@target.template.units activity=RWBqtTjGSlEgQWCl]]. [[lookup\n@target.template.type capitalize activity=RWBqtTjGSlEgQWCl]].</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat die Bedingungen &amp;Reference[Deafened apply=false] und\n&amp;Reference[Frightened apply=false] bis zum Ende seines\nnächsten Zuges.</p><p class=\"feature\"><em>Erfolg:</em> Nur halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "DDrzXcjt2wWiTS9J": "Taub & Verängstigt"
+    }
+  },
+  "mmTrample0000000": {
+    "name": "Zertrampeln",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=QckCIpsC3BdEHycI]], [[lookup\n@target.affects.labels.statblock activity=QckCIpsC3BdEHycI]] innerhalb von\n[[lookup @range.value activity=QckCIpsC3BdEHycI]] Fuß, die die Bedingung Liegend haben.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]]\nSchaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmTramplingCharg": {
+    "name": "Trampelnder Ansturm",
+    "description": "<p class=\"feature\">Der/Die/Das [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner/ihrer\nGeschwindigkeit, ohne &amp;Reference[OpportunityAttacks] zu provozieren, und kann sich\ndurch die Felder von [[lookup @target.affects.special\nactivity=FG9rAj3Q8UTxbGLF]] bewegen. Jede/r [[lookup @target.affects.type\nactivity=FG9rAj3Q8UTxbGLF]], deren/dessen Feld der/die/das [[lookup @name\nlowercase]]{monster} betritt, wird einmal vom folgenden Effekt betroffen.\n</p><p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup\n@save.dc.value activity=FG9rAj3Q8UTxbGLF]]. </p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat die Bedingung &amp;Reference[Prone apply=false].</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "OY3B1NBPgGcFmHGi": "Liegend"
+    }
+  },
+  "mmTreeStride0000": {
+    "name": "Baumschritt",
+    "description": "<p>Wenn innerhalb von [[lookup @range.value activity=8av8Lh1jNLCrOJny]] Fuß eines\n[[lookup @range.special activity=8av8Lh1jNLCrOJny]], teleportiert sich der/die/das [[lookup @name\nlowercase]]{monster} auf ein unbesetztes Feld innerhalb von [[lookup\n@range.value activity=8av8Lh1jNLCrOJny]] Fuß eines zweiten [[lookup\n@target.affects.special activity=8av8Lh1jNLCrOJny]], der sich innerhalb von 18 m\ndes vorherigen Baumes befindet.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmUnicornsBlessi": {
+    "name": "Segen des Einhorns",
+    "description": "<p>Das [[lookup @name]]{monster} berührt eine andere Kreatur mit seinem Horn und wirkt <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure\nWounds}</em> oder <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser\nRestoration}</em> auf diese Kreatur, wobei es dieselbe Zauberfähigkeit wie Zauberwirken verwendet.</p>"
+  },
+  "mmUnnervingGaze0": {
+    "name": "Beunruhigender Blick",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine [[lookup @target.affects.type activity=btp6NZvx465nxWTF]], die das [[lookup @name lowercase]]{monster} sehen kann, beginnt ihren Zug innerhalb von [[lookup @target.template.size activity=btp6NZvx465nxWTF]] Fuß des [[lookup @name lowercase]]{monster} und kann das [[lookup @name lowercase]]{monster} sehen.</p><p class=\"feature\"><em>Reaktion – Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=btp6NZvx465nxWTF]], die auslösende [[lookup @target.affects.type activity=btp6NZvx465nxWTF]].</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende seines Zuges.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen den Beunruhigenden Blick dieses [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Frightened": "Verängstigt"
+    }
+  },
+  "mmUnsettlingVisa": {
+    "name": "Beunruhigendes Antlitz",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=USxIbGZPLvfPnnoI]], jede [[lookup @target.affects.type activity=USxIbGZPLvfPnnoI]] in einer [[lookup @target.template.size activity=USxIbGZPLvfPnnoI]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht und das [[lookup @name lowercase]]{monster} sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] und wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=USxIbGZPLvfPnnoI]] [[lookup @duration.units activity=USxIbGZPLvfPnnoI]] gelingt es ihm automatisch.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Frightened": "Verängstigt"
+    }
+  },
+  "mmVanish00000000": {
+    "name": "Verschwinden",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} und sein Licht haben den Zustand &amp;Reference[Invisible apply=false], bis die &amp;Reference[Concentration] des [[lookup @name lowercase]]{monster} diesen Effekt beendet, der sofort vorzeitig endet, nachdem das [[lookup @name lowercase]]{monster} einen Angriffswurf macht oder Lebensenergie verbraucht.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    },
+    "effects": {
+      "Invisible": "Unsichtbar"
+    }
+  },
+  "mmVortex00000000": {
+    "name": "Wirbel",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], eine [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] im Raum des [[lookup @name lowercase]]{monster}. <em>Misserfolg:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] Schaden, und das Ziel hat den Zustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup @skills.ath.passive]]). Bis der Griff endet, kann das Ziel keine Zauber mit einer verbalen Komponente wirken und erleidet [[/damage average activity=kDz92inkRCjGrPiz]] Schaden zu Beginn jedes Zuges des [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Damage: Grappled": "Schaden: Ergriffen",
+      "Escape Check": "Entkommen-Wurf",
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Grappled": "Ergriffen"
+    }
+  },
+  "mmWarCry00000000": {
+    "name": "Kriegsschrei",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} oder eine [[lookup @target.affects.type activity=uN0VTW2Fqig7YAs9]] seiner Wahl, die es sehen oder hören kann, erhält [[/healing average temp]] und hat Vorteil auf Angriffswürfe bis zum Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Temp. Healing": "Temporäre Heilung"
+    },
+    "effects": {
+      "Attack: Advantage": "Angriff: Vorteil"
+    }
+  },
+  "mmWeakeningBreat": {
+    "name": "Schwächender Atem",
+    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=EGZ4bS4HpJkfNG9s]], jede Kreatur, die derzeit nicht von diesem Atem betroffen ist, in einem [[lookup @target.template.size activity=EGZ4bS4HpJkfNG9s]] Fuß großen Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat Nachteil bei Stärke-basierten W20-Würfen und zieht 3 ([[/r 1d6]]) von seinen Schadenswürfen ab. Es wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=EGZ4bS4HpJkfNG9s]] Minute gelingt es ihm automatisch.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Weakened": "Geschwächt"
+    }
+  },
+  "mmWebStrand00000": {
+    "name": "Netzfaden",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=Ln5NXBaHGKlwdoiP]], eine Große oder kleinere [[lookup @target.affects.type activity=Ln5NXBaHGKlwdoiP]], die das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=Ln5NXBaHGKlwdoiP]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Restrained apply=false], bis das Netz zerstört ist (RK 10; TP 5; Verwundbarkeit gegen Feuerschaden; Immunität gegen Wucht-, Gift- und Psychischen Schaden).</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "Restrained": "Festhalten"
+    }
+  },
+  "mmWeb00000000000": {
+    "name": "Netz",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf</em>: SG [[lookup\n@save.dc.value activity=6iMoUgxwYlvfKTXr]], eine Kreatur, die das [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=6iMoUgxwYlvfKTXr]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg</em>:\nDas Ziel hat den Zustand &amp;Reference[Restrained apply=false], bis\ndas Netz zerstört wird (RK 10; LP 5; Verwundbarkeit gegen Feuerschaden; Immunität\ngegen Gift- und psychischen Schaden).</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "fihuYABujdt7o9uo": "Fesselung"
+    }
+  },
+  "mmWhelm000000000": {
+    "name": "Überwältigen",
+    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup\n@save.dc.value activity=TQchFj2VXXJgU7Lq]], jede [[lookup\n@target.affects.type activity=TQchFj2VXXJgU7Lq]] im Feld des [[lookup @name\nlowercase]]{monster}.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average activity=TQchFj2VXXJgU7Lq]] Schaden. Ist das Ziel eine\nGroße oder kleinere Kreatur, hat es den Zustand &amp;Reference[Grappled apply=false]\n(Entkommen SG [[lookup @skills.ath.passive]]). Bis der Griff endet,\nhat das Ziel den Zustand &amp;Reference[Restrained apply=false], ist\n&amp;Reference[suffocating]{suffocating}, es sei denn, es kann unter Wasser atmen,\nund erleidet zu Beginn jedes Zuges des [[lookup @name lowercase]]{monster}\n[[/damage average activity=khxVwH3AB0sx1qRG]] Schaden. Das\n[[lookup @name lowercase]]{monster} kann mit Überwältigen eine Große Kreatur oder bis\nzu zwei Mittlere oder kleinere Kreaturen gleichzeitig im Griff halten.</p><p\nclass=\"feature\">Als Aktion kann eine Kreatur innerhalb von 1,5 m des [[lookup\n@name lowercase]]{monster} eine Kreatur daraus ziehen, indem sie einen erfolgreichen\n[[/check ath dc=@skills.ath.passive format=long]] ablegt.</p><p\nclass=\"feature\"><em>Erfolg:</em> Nur halber Schaden.</p>",
+    "activities": {
+      "Damage: Start of Turn": "Schaden: Beginn des Zuges",
+      "Escape Check": "Entkommen-Wurf",
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "rN76liiHkUoMRMJN": "Im Griff & Fesselung"
+    }
+  },
+  "mmWhirlwindOfSan": {
+    "name": "Sandwirbel",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Das [[lookup @name\nlowercase]]{monster} wird von einem Angriffswurf getroffen. <em>Reaktion:</em> Das\n[[lookup @name lowercase]]{monster} addiert 2 zu seiner RK gegen den Angriff,\nwodurch der Angriff möglicherweise verfehlt, und das [[lookup @name\nlowercase]]{monster} teleportiert sich bis zu [[lookup @range.value\nactivity=EsBmMUQMO4b0g6Yw]] [[lookup @range.units\nactivity=EsBmMUQMO4b0g6Yw]]. [[lookup @target.affects.special\nactivity=EsBmMUQMO4b0g6Yw]]. Jede Kreatur seiner Wahl, die es innerhalb von\n[[lookup @target.template.size activity=EsBmMUQMO4b0g6Yw]] [[lookup\n@target.template.units activity=EsBmMUQMO4b0g6Yw]]. ihres Zielbereichs sehen kann,\nhat den Zustand &amp;Reference[Blinded apply=false] bis zum Ende\ndes nächsten Zuges des [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    },
+    "effects": {
+      "Xy0tzgObrMRF2lHm": "+2 RK",
+      "MMp7IK5bYYPYtSdL": "Blindheit"
+    }
+  },
+  "mmWhirlwind00000": {
+    "name": "Wirbelwind",
+    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup\n@save.dc.value activity=GQzr4EMMm6kkZVdC]], jede Mittlere oder kleinere\n[[lookup @target.affects.type activity=GQzr4EMMm6kkZVdC]] im Feld des [[lookup\n@name lowercase]]{monster}. <em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel wird bis zu 6 m direkt vom\n[[lookup @name lowercase]]{monster} weggestoßen und hat den Zustand &amp;Reference[Prone\napply=false]. <em>Erfolg:</em> Nur halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "qihlGD6RZ55pZY9n": "Liegen"
+    }
+  },
+  "mmAbyssalGlaive0": {
+    "name": "Abyssisches Glefen",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmAttach00000000": {
+    "name": "Anheften",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine\nGroße oder kleinere Kreatur, heftet sich das [[lookup @name lowercase]]{monster}\nan sie. Solange das [[lookup @name lowercase]]{monster} angeheftet ist,\nhat das Ziel den Zustand &amp;Reference[Blinded apply=false], und das\n[[lookup @name lowercase]]{monster} kann keine Bissangriffe gegen andere\nZiele ausführen. Zusätzlich halbiert das [[lookup @name lowercase]]{monster} den\nSchaden, den es erleidet (abgerundet), und das Ziel erleidet den gleichen\nSchaden.</p><p>Das [[lookup @name lowercase]]{monster} kann sich lösen,\nindem es 1,5 m Bewegung aufwendet. Das Ziel oder eine Kreatur innerhalb von [[lookup\n@range.value activity=6iLqAufAeEqDOlGs]] Fuß davon kann eine Aktion aufwenden,\num zu versuchen, das [[lookup @name lowercase]]{monster} zu lösen,\nindem sie einen erfolgreichen SG [[lookup @check.dc.value activity=6iLqAufAeEqDOlGs]]\nStärke (Athletik) Wurf ablegt.</p>",
+    "activities": {
+      "Detach Attempt": "Lösungsversuch"
+    },
+    "effects": {
+      "m1rBdxxAM8FGk5gI": "Angeheftet: Blindheit"
+    }
+  },
+  "mmBeak0000000000": {
+    "name": "Schnabel",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmBeaks000000000": {
+    "name": "Schnäbel",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]], oder [[/damage\naverage activity=3m1SLqBeMGQF3UaQ]], falls [[lookup @activation.condition\nactivity=3m1SLqBeMGQF3UaQ]]</p>",
+    "activities": {
+      "Bloodied Attack": "Blutiger Angriff"
+    }
+  },
+  "mmBeard000000000": {
+    "name": "Bart",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]], und das Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster}. Solange dieses Gift anhält, kann das Ziel keine Trefferpunkte zurückgewinnen.</p>",
+    "effects": {
+      "dnpr0RaXDWfSZOYz": "Vergiftet"
+    }
+  },
+  "mmBite0000000000": {
+    "name": "Biss",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]].</p>"
+  },
+  "mmBites000000000": {
+    "name": "Bisse",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]], oder [[/Schaden durchschnittlich Aktivität=3Yo83eZUNwX51AcE]] falls [[lookup @activation.condition Aktivität=3Yo83eZUNwX51AcE]]</p>",
+    "activities": {
+      "Bloodied Attack": "Blutiger Angriff"
+    }
+  },
+  "mmBladedArm00000": {
+    "name": "Klingenarm",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]].</p>"
+  },
+  "mmBoneBow0000000": {
+    "name": "Knochenbogen",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]].</p>"
+  },
+  "mmBoneCudgel0000": {
+    "name": "Knochenkeule",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]].</p>"
+  },
+  "mmBoulder0000000": {
+    "name": "Felsbrocken",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]]. Ist das Ziel eine Große oder kleinere Kreatur, hat es den Zustand &amp;Reference[Prone].</p>",
+    "effects": {
+      "BCkl5LkP4M1bkVpt": "Liegend"
+    }
+  },
+  "mmBurn0000000000": {
+    "name": "Verbrennen",
+    "description": "<p>[[/Angriff erweitert]]. [[/Schaden durchschnittlich erweitert]]. Ist das Ziel eine Kreatur oder ein brennbares Objekt, beginnt es &amp;Reference[burning].</p>",
+    "effects": {
+      "ePppPvhLU1DnHySS": "Brennend"
+    }
+  },
+  "mmBurningHammer0": {
+    "name": "Brennender Hammer",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmChain000000000": {
+    "name": "Kette",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Wenn\ndas Ziel eine Kreatur der Größe Groß oder kleiner ist, hat es den\nZustand &amp;Reference[Grappled apply=false] (SG zum Entkommen [[lookup\n@skills.ath.passive]]) durch eine von zwei Ketten, und es hat den\nZustand &amp;Reference[Restrained apply=false], bis der Griff\nendet.</p>",
+    "effects": {
+      "07IW8bZzgQ4Jk3sW": "Ergriffen & Gefesselt"
+    }
+  },
+  "mmChannelNegativ": {
+    "name": "Negative Energie kanalisieren",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmChargedTendril": {
+    "name": "Geladene Ranke",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine\nKreatur der Größe Mittel oder kleiner ist, zieht die [[lookup @name lowercase]]{monster}\ndas Ziel 1,5 Meter direkt zu sich heran.</p>"
+  },
+  "mmClaw0000000000": {
+    "name": "Klaue",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmClaws000000000": {
+    "name": "Klauen",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine\nKreatur der Größe Groß oder kleiner ist, hat es den Zustand &amp;Reference[Grappled apply=false]\n(SG zum Entkommen [[lookup @skills.ath.passive]]), und es hat den\nZustand &amp;Reference[Restrained apply=false], bis der Griff\nendet.</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf"
+    },
+    "effects": {
+      "MpjWPflcv7Jqd7Tu": "Ergriffen und Gefesselt"
+    }
+  },
+  "mmCorruptingTouc": {
+    "name": "Verderbender Hauch",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmCrush000000000": {
+    "name": "Zerquetschen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndie [[lookup @name lowercase]]{monster} haftet am Ziel. Wenn das\nZiel eine Kreatur der Größe Mittel oder kleiner ist und die [[lookup @name\nlowercase]]{monster} Vorteil auf den Angriffswurf hatte, bedeckt sie das\nZiel, das den Zustand &amp;Reference[Blinded apply=false] hat und\n&amp;Reference[suffocating apply=false]{suffocating} ist, solange die [[lookup\n@name lowercase]]{monster} auf diese Weise haftet.</p><p\nclass=\"feature\">Solange sie an einem Ziel haftet, kann die [[lookup @name\nlowercase]]{monster} nur das Ziel angreifen, hat aber Vorteil auf ihre\nAngriffswürfe. Ihre Bewegungsrate wird 0, sie kann nicht von Boni auf ihre\nBewegungsrate profitieren und sie bewegt sich mit dem Ziel.</p><p class=\"feature\">Eine Kreatur kann\neine Aktion aufwenden, um zu versuchen, die [[lookup @name lowercase]]{monster}\nvon sich zu lösen, was ihr bei einem erfolgreichen [[/check format=long]] gelingt. In ihrem\nZug kann die [[lookup @name lowercase]]{monster} sich lösen, indem sie 1,5\nMeter Bewegung aufwendet.</p>",
+    "effects": {
+      "xoOyjbkZSz44HMbD": "Blind & Erstickend",
+      "ca1RtYs4i9JuL9sV": "Selbst: Angriffsvorteil/0 Bewegungsrate"
+    }
+  },
+  "mmCursedTouch000": {
+    "name": "Verfluchter Hieb",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Kreatur, wird es verflucht. Solange es verflucht ist, erhält das Ziel keinen Vorteil durch das Beenden einer kurzen oder langen Rast.</p>",
+    "effects": {
+      "Bl2zQN1xGAUjeiR1": "Verflucht"
+    }
+  },
+  "mmDevilishClaw00": {
+    "name": "Teuflische Klaue",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmDissolvingPseu": {
+    "name": "Auflösender Pseudopod",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Nichtmagische Rüstung, die das Ziel trägt, erhält einen Malus von -1 auf die RK, die sie bietet. Die Rüstung wird zerstört, wenn der Malus ihre RK auf 10 reduziert. Der Malus kann durch das Wirken des\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending}</em>\nZaubers auf die Rüstung entfernt werden.</p>",
+    "effects": {
+      "qYzNNpsYbmdB2cg6": "Beschädigt: -1 RK"
+    }
+  },
+  "mmDrainingSwipe0": {
+    "name": "Entziehender Hieb",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\nder Stärkewert des Ziels sinkt um [[/r 1d4]]. Das Ziel stirbt, wenn\ndies seinen Wert auf 0 reduziert. Wird ein Humanoider durch diesen Angriff getötet, erhebt sich ein\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmShadow00000000]{Shadow}</strong>\n[[/r 1d4]] Stunden später aus der Leiche.</p><section\nid=\"secret-qqwbOYJqDuTP2N5e\" class=\"secret\"><p><strong>Foundry\nHinweis</strong></p><p>Diese Funktion bietet einen aktiven Effekt im Reiter „Effekte“, um den Stärkewert des Ziel-SCs zu ändern. Da diese Stärkereduzierung mehrfach angewendet werden kann, muss der SL den aktiven Effekt im Reiter „Effekte“ dieses Gegenstands auf das Charakterblatt des SCs ziehen. Von dort aus muss der SL zum Reiter „Effekte“ auf dem Blatt des SCs navigieren, um den Effektwert, dem ein negatives Symbol vorangestellt ist (z.B. -3), zu ändern. Derzeit ist er auf -1 eingestellt.</p></section>",
+    "activities": {
+      "STR Score -1d4": "STÄ-Wert -1W4",
+      "Shadow Rises": "Schatten erhebt sich"
+    },
+    "effects": {
+      "6AjyMN83LppkkgC3": "Treffer: STÄ-Wert -1W4"
+    }
+  },
+  "mmEldritchBurst0": {
+    "name": "Ätherischer Ausbruch",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmEnchantingBow0": {
+    "name": "Verzaubernder Bogen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel hat den Zustand &amp;Reference[Charmed apply=false] bis zum Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster}.</p>",
+    "effects": {
+      "Z32WWCg4waNTB1wp": "Bezaubert"
+    }
+  },
+  "mmFiendishTouch0": {
+    "name": "Teuflische Berührung",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmFieryBolt00000": {
+    "name": "Feuriger Bolzen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmFieryMace00000": {
+    "name": "Flammenstreitkolben",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmFist0000000000": {
+    "name": "Faust",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmFlameSpear0000": {
+    "name": "Flammenspeer",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].\n<em>Treffer oder Fehlschlag:</em> Der Speer kehrt nach einem Fernkampfangriff sofort auf magische Weise in die Hand des [[lookup @name\nlowercase]]{monster} zurück.</p>"
+  },
+  "mmFlameSword0000": {
+    "name": "Flammenschwert",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmFlameWhip00000": {
+    "name": "Flammenpeitsche",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine riesige oder kleinere Kreatur, zieht die [[lookup @name\nlowercase]]{monster} das Ziel bis zu 7,5 m direkt zu sich heran, und das Ziel erhält den Zustand &amp;Reference[Prone apply=false].\n</p>",
+    "effects": {
+      "ZjYcf64z7AHBBoj5": "Liegend"
+    }
+  },
+  "mmFlyingSword000": {
+    "name": "Fliegendes Schwert",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].\n<em>Treffer oder Fehlschlag:</em> Das Schwert kehrt nach einem Fernkampfangriff sofort auf magische Weise in die Hand des [[lookup @name\nlowercase]]{monster} zurück oder schwebt innerhalb von 1,5 m um den [[lookup @name\nlowercase]]{monster}.\n</p>"
+  },
+  "mmForceBolt00000": {
+    "name": "Kraftblitz",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmForeleg0000000": {
+    "name": "Vorderbein",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmFrostAxe000000": {
+    "name": "Frostaxt",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmGore0000000000": {
+    "name": "Aufspießen",
+    "description": "<p>[[/attack extended]]. [[/damage extended average]]. Ist das Ziel eine\n[[lookup @target.affects.special activity=iBenqFiBu40bUxkH]] Kreatur und\ndie [[lookup @name lowercase]]{monster} sich unmittelbar vor dem Treffer {NN}+ Fuß geradlinig auf sie zubewegt hat, erleidet das Ziel zusätzlich [[/damage 2d8\naverage type=piercing]] Schaden und erhält den Zustand &amp;Reference[Prone\napply=false].</p>",
+    "activities": {
+      "Attack": "Angriff",
+      "Moving Attack": "Angriff aus der Bewegung"
+    },
+    "effects": {
+      "dgfff9ONKHAUcthM": "Liegend"
+    }
+  },
+  "mmGouge000000000": {
+    "name": "Ausstechen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel erhält den Zustand &amp;Reference[Poisoned apply=false] bis zum\nEnde seines nächsten Zuges.</p>",
+    "effects": {
+      "Bu9GvjGYEnGjbq3U": "Vergiftet"
+    }
+  },
+  "mmGrab0000000000": {
+    "name": "Greifen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine mittelgroße oder kleinere Kreatur, erhält es den\nZustand &amp;Reference[Grappled apply=false] (SG zum Entkommen [[lookup\n@skills.ath.passive]]).</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf"
+    },
+    "effects": {
+      "2N5R5UunQHBncwF3": "Im Haltegriff"
+    }
+  },
+  "mmGreatBow000000": {
+    "name": "Großer Bogen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndie Bewegungsrate des Ziels verringert sich bis zum Ende seines nächsten\nZuges um 3 m.</p>",
+    "effects": {
+      "cGogXX8DEY06laQN": "Bewegungsrate: -3 m"
+    }
+  },
+  "mmHailOfBark0000": {
+    "name": "Rindenhagel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmHammerThrow000": {
+    "name": "Hammerwurf",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel wird bis zu 4,5 m geradlinig von der [[lookup @name\nlowercase]]{monster} weggestoßen und hat Nachteil auf den nächsten Angriffswurf, den es\nvor dem Ende seines nächsten Zuges macht.</p>",
+    "effects": {
+      "Jvy5UeJBi7Y0WmAp": "Nachteil: Angriffe"
+    }
+  },
+  "mmHarpoon0000000": {
+    "name": "Harpune",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine große oder kleinere Kreatur, zieht die [[lookup @name\nlowercase]]{monster} das Ziel bis zu 4,5 m geradlinig zu\nsich heran.</p>"
+  },
+  "mmHeatedBlade000": {
+    "name": "Erhitzte Klinge",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmHolyMace000000": {
+    "name": "Heiliger Streitkolben",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmHooves00000000": {
+    "name": "Hufe",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmHurlFlame00000": {
+    "name": "Flamme schleudern",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel ein brennbares Objekt, das nicht getragen oder mitgeführt wird, so\nbeginnt es zu brennen.</p>"
+  },
+  "mmIceSpear000000": {
+    "name": "Eisspeer",
+    "description": "<p class=\"feature\">[[/attack extended]].</p><p\nclass=\"feature\"><em>Treffer:</em> [[/damage average]] Schaden. Bis zum Ende seines\nnächsten Zuges kann das Ziel keine &amp;Reference[Bonus Action] oder\n&amp;Reference[Reaction] ausführen, seine Bewegungsrate verringert sich um 3 m, und es kann\nin seinem Zug entweder sich bewegen oder eine Aktion ausführen, nicht beides.</p><p class=\"feature\"><em>Treffer oder\nFehlschlag:</em> Der Speer kehrt nach einem Fernkampfangriff sofort auf magische Weise in die Hand des [[lookup @name\nlowercase]]{monster} zurück.</p>",
+    "effects": {
+      "273sG6C6R7qUcL2v": "Bewegungsrate -10"
+    }
+  },
+  "mmInfernalGlaive": {
+    "name": "Infernalische Glefe",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Kreatur und hat noch keine infernalische Wunde, ist es dem\nfolgenden Effekt unterworfen. <em>Konstitutionsrettungswurf:</em> SG\n[[lookup @save.dc.value activity=4qy3fKL086OAE1xR]]. <em>Misserfolg:</em> Das\nZiel erhält eine infernalische Wunde. Solange es verwundet ist, verliert das Ziel zu Beginn\njedes seiner Züge [[/damage average activity=IS4utGV80LpDrjvt]] Trefferpunkte.\nDie Wunde schließt sich nach 1 Minute, nachdem ein Zauber dem Ziel\nTrefferpunkte wiederherstellt, oder nachdem das Ziel oder eine Kreatur innerhalb von 1,5 m\nvon ihm eine Aktion aufwendet, um die Wunde zu stillen, indem es einen\n[[/check format=long activity=KNWa0TFhANjmQCds]] erfolgreich ablegt.</p>",
+    "activities": {
+      "Check: Stanch Wound": "Wurf: Wunde stillen",
+      "Damage: Infernal Wound": "Schaden: Infernalische Wunde"
+    }
+  },
+  "mmInfernalSting0": {
+    "name": "Infernalischer Stachel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum\nBeginn des nächsten Zuges des [[lookup @name lowercase]]{monster}. Solange\nes vergiftet ist, kann das Ziel keine Trefferpunkte zurückgewinnen.</p>",
+    "effects": {
+      "96f41YwmHtjW8P0o": "Vergiftet"
+    }
+  },
+  "mmLightningBlade": {
+    "name": "Blitzklinge",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel kann bis zum Beginn des nächsten Zuges des\n[[lookup @name lowercase]]{monster} keine &amp;Reference[Reaction] ausführen.</p>"
+  },
+  "mmNecroticBow000": {
+    "name": "Nekrotischer Bogen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmNecroticRay000": {
+    "name": "Nekrotischer Strahl",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmNecroticSword0": {
+    "name": "Nekrotisches Schwert",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmNeedleSword000": {
+    "name": "Nadelschwert",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmNightmareRay00": {
+    "name": "Albtraumstrahl",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel den Zustand &amp;Reference[Frightened apply=false] bis zum\nBeginn des nächsten Zugs des [[lookup @name lowercase]]{monster} hat.</p>",
+    "effects": {
+      "1W7nCxww2CjUF5Bh": "Verängstigt"
+    }
+  },
+  "mmOceanSpear0000": {
+    "name": "Ozeanspeer",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Kreatur, verringert sich ihre Bewegungsrate bis zum Ende ihres\nnächsten Zugs um 3 m. <em>Treffer oder Fehlschlag:</em> Der Speer kehrt auf magische Weise\nunmittelbar nach einem Fernkampfangriff in die Hand des\n[[lookup @name lowercase]]{monster} zurück.</p>",
+    "effects": {
+      "JXXj1j2cUhRFmmaN": "Bewegungsrate: -3 m"
+    }
+  },
+  "mmPactBlade00000": {
+    "name": "Paktklinge",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmParalyzingTouc": {
+    "name": "Lähmende Berührung",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel den Zustand &amp;Reference[Paralyzed apply=false] bis zum\nBeginn des nächsten Zugs des [[lookup @name lowercase]]{monster} hat.</p>",
+    "effects": {
+      "XONucKj1fLr03vaU": "Gelähmt"
+    }
+  },
+  "mmPetrifyingBite": {
+    "name": "Versteinernder Biss",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Kreatur, unterliegt es dem folgenden Effekt.</p><p\nclass=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=udF9lrpAQMvL0b9J]].</p><p\nclass=\"feature\"><em>Erstes Scheitern:</em> Das Ziel hat den\n&amp;Reference[Restrained apply=false] Zustand und wiederholt den Rettungswurf am\nEnde seines nächsten Zuges, falls es noch Festhalten ist, und beendet den Effekt bei\neinem Erfolg für sich selbst.</p><p class=\"feature\"><em>Zweites Scheitern:</em> Das\nZiel hat stattdessen den Zustand &amp;Reference[Petrified apply=false] anstelle\ndes Zustands Festhalten.</p>",
+    "activities": {
+      "First Save": "Erster Rettungswurf",
+      "Second Save": "Zweiter Rettungswurf"
+    },
+    "effects": {
+      "9dBgxzdq0cmzyhfR": "Festhalten",
+      "ScizgnitVoBvVzPx": "Versteinert"
+    }
+  },
+  "mmPincer00000000": {
+    "name": "Zange",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Große oder kleinere Kreatur, hat es den\n&amp;Reference[Grappled apply=false] Zustand (Entkommen SG [[lookup\n@skills.ath.passive]]) von einer der beiden Zangen.</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf"
+    },
+    "effects": {
+      "GCED8YlF6qXTgEkd": "Gepackt"
+    }
+  },
+  "mmPoisonBurst000": {
+    "name": "Giftstoß",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmPoisonRay00000": {
+    "name": "Giftstrahl",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmProboscis00000": {
+    "name": "Rüssel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Kreatur, verringert sich sein maximaler Trefferpunkte um einen Betrag,\nder dem erlittenen Nekrotischen Schaden entspricht.</p>"
+  },
+  "mmPseudopod00000": {
+    "name": "Pseudopod",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmRadiantFlame00": {
+    "name": "Strahlende Flamme",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmRadiantHorn000": {
+    "name": "Strahlendes Horn",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmRadiantSword00": {
+    "name": "Strahlendes Schwert",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmRake0000000000": {
+    "name": "Reißen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage extended]].</p>"
+  },
+  "mmRam00000000000": {
+    "name": "Rammen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine [[lookup @target.affects.special\nactivity=z58sUDUmqxECJgT3]] Kreatur, erhält es den Zustand &amp;Reference[Prone\napply=false].</p>",
+    "effects": {
+      "HUmtXTzr92ZaAvf3": "Liegend"
+    }
+  },
+  "mmRend0000000000": {
+    "name": "Zerreißen",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmRestlessTouch0": {
+    "name": "Ruhelose Berührung",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel ist für 24 Stunden verflucht oder bis der/die [[lookup @name\nlowercase]]{monster} stirbt. Solange der Fluch andauert, erhält das Ziel keinen\nVorteil durch das Beenden von Kurzen Rasten.</p>",
+    "effects": {
+      "BvP51cOd6lyrhEgq": "Verflucht"
+    }
+  },
+  "mmRitualSickle00": {
+    "name": "Ritual-Sichel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmRockLaunch0000": {
+    "name": "Felswurf",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Große oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Prone\napply=false].</p>",
+    "effects": {
+      "fdpMlJbmkKQfJlME": "Liegend"
+    }
+  },
+  "mmRock0000000000": {
+    "name": "Stein",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmRottingFist000": {
+    "name": "Verrottende Faust",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine Kreatur, ist es verflucht. Solange es verflucht ist, kann das Ziel keine Trefferpunkte zurückgewinnen, sein maximales Trefferpunkte-Limit kehrt nach einer langen Rast nicht zum Normalwert zurück, und sein maximales Trefferpunkte-Limit verringert sich alle 24 Stunden um [[/r 3d6#HP Max Decrease]]{10 (3d6)}. Eine Kreatur stirbt und zerfällt zu Staub, wenn sie durch diesen Angriff auf 0 Trefferpunkte reduziert wird.</p>",
+    "activities": {
+      "HP Max Decr.": "TP-Max. Verringerung"
+    },
+    "effects": {
+      "B1S4dZd1Lz0jokIo": "Verflucht"
+    }
+  },
+  "mmRottingTouch00": {
+    "name": "Verrottende Berührung",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmScratch0000000": {
+    "name": "Kratzer",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSearingFork000": {
+    "name": "Sengende Gabel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmShock000000000": {
+    "name": "Schock",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmShred000000000": {
+    "name": "Zerfetzen",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSlam0000000000": {
+    "name": "Schlag",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSlash000000000": {
+    "name": "Hieb",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSmother0000000": {
+    "name": "Ersticken",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine mittelgroße oder kleinere Kreatur, kann der [[lookup @name lowercase]]{monster} ihm den Zustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup @skills.ath.passive]]) verleihen, anstatt Schaden zu verursachen. Bis der Griff endet, hat das Ziel die Zustände &amp;Reference[Blinded\napply=false] und &amp;Reference[Restrained apply=false], ist &amp;Reference[Suffocating]{suffocating} und erleidet zu Beginn jedes seiner Züge [[/damage average]] Schaden. Der [[lookup @name lowercase]]{monster} Teppich kann nur eine Kreatur gleichzeitig ersticken.</p><p\nclass=\"feature\">Während es das Ziel im Griff hat, kann der [[lookup @name lowercase]]{monster} diese Aktion nicht ausführen, der [[lookup @name lowercase]]{monster} halbiert den Schaden, den er erleidet (abgerundet), und das Ziel erleidet den gleichen Schaden.</p>",
+    "activities": {
+      "Grappled: Damage": "Im Griff: Schaden"
+    },
+    "effects": {
+      "wfTA3WUcjBVzGa2H": "Im Griff + Andere Zustände"
+    }
+  },
+  "mmSnakeHair00000": {
+    "name": "Schlangenhaar",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSting000000000": {
+    "name": "Stich",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmStoneClub00000": {
+    "name": "Steinkeule",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmStormBlade0000": {
+    "name": "Sturmklinge",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmStormSword0000": {
+    "name": "Sturmschwert",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmSwarmOfGraspin": {
+    "name": "Schwärmende Greifhände",
+    "description": "<p class=\"feature\">[[/attack extended activity=rO8NirkWF6w9GXTc]].\n[[/damage average extended activity=rO8NirkWF6w9GXTc]], oder [[/damage\naverage activity=hzeHzcSKHC4AvIJQ]] Schaden, wenn der Schwarm\n&amp;Reference[Bloodied apply=false] ist. Ist das Ziel eine mittelgroße oder kleinere\nKreatur, hat es den Zustand &amp;Reference[Prone apply=false].</p>",
+    "activities": {
+      "Bloodied Attack": "Blutiger Angriff"
+    },
+    "effects": {
+      "WJe5ci1Tiu0hQCb8": "Liegend"
+    }
+  },
+  "mmTailSpike00000": {
+    "name": "Schwanzstachel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmTailStinger000": {
+    "name": "Schwanzstachel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmTail0000000000": {
+    "name": "Schwanz",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine\n{size} oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Prone apply=false].\n</p>",
+    "effects": {
+      "uAvQlHXKSwnCjRtt": "Liegend"
+    }
+  },
+  "mmTalons00000000": {
+    "name": "Klauen",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmTentacle000000": {
+    "name": "Tentakel",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine\n{size} oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Grappled\napply=false] (Entkommen SG [[lookup @skills.ath.passive]]) von einem\nder {count} Tentakel.</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf"
+    },
+    "effects": {
+      "KxcWsIHohpNmagLJ": "Gepackt"
+    }
+  },
+  "mmTentacles00000": {
+    "name": "Tentakel",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine mittelgroße oder kleinere Kreatur, erhält es den\nZustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup\n@skills.ath.passive]]) von allen vier Tentakeln.</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf"
+    },
+    "effects": {
+      "GyZrmzBP0NB8oRZI": "Gepackt"
+    }
+  },
+  "mmThornBurst0000": {
+    "name": "Dornenexplosion",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmThunderbolt000": {
+    "name": "Donnerblitz",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel erhält die Zustände &amp;Reference[Blinded apply=false] und\n&amp;Reference[Deafened apply=false] bis zum Beginn des\n[[lookup @name lowercase]]{monster}'s nächsten Zuges.</p>",
+    "effects": {
+      "R2yhnEJ7lKT4VSvK": "Blind & Taub"
+    }
+  },
+  "mmThundercloud00": {
+    "name": "Donnerwolke",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
+    "effects": {
+      "zntfQrOQz4iBlh22": "Handlungsunfähig"
+    }
+  },
+  "mmThunderousMace": {
+    "name": "Donnerkeule",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmThunderousSlam": {
+    "name": "Donnerschlag",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmTouch000000000": {
+    "name": "Berührung",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Falls\ndas Ziel eine Kreatur oder ein brennbarer Gegenstand ist, der nicht getragen oder\nmitgeführt wird, fängt es an zu brennen.</p>"
+  },
+  "mmTrashLob000000": {
+    "name": "Müllwurf",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], und\ndas Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum\nEnde seines nächsten Zuges.</p>",
+    "effects": {
+      "BMs7Yw88gCikNkXO": "Vergiftet"
+    }
+  },
+  "mmTreeClub000000": {
+    "name": "Baumkeule",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Falls das Ziel eine\nGroße oder kleinere Kreatur ist, hat es den Zustand &amp;Reference[Prone apply=false].\n</p>",
+    "effects": {
+      "7GhARrr7f6zhJjqy": "Liegend"
+    }
+  },
+  "mmUmbralDagger00": {
+    "name": "Schattenklinge",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Falls\ndas Ziel durch diesen Angriff auf 0 Trefferpunkte reduziert wird, wird das Ziel\nstabil, hat aber den Zustand &amp;Reference[Poisoned apply=false] für 1\nStunde. Solange es den Zustand Vergiftet hat, hat das Ziel den\nZustand &amp;Reference[Paralyzed apply=false].</p>",
+    "effects": {
+      "dsK5sPtkUMySmyvw": "Vergiftet & Gelähmt"
+    }
+  },
+  "mmVerdantWisp000": {
+    "name": "Grüner Irrlicht",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmVileSlime00000": {
+    "name": "Abscheulicher Schleim",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmVineLash000000": {
+    "name": "Rankenpeitsche",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmVineStaff00000": {
+    "name": "Rankenstab",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmWindSwipe00000": {
+    "name": "Windstreich",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmWitheringSword": {
+    "name": "Verwelkendes Schwert",
+    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmWitheringTouch": {
+    "name": "Verwelkender Griff",
+    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+  },
+  "mmBlazingLight00": {
+    "name": "Loderndes Licht",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} nutzt Zauberwirken, um\n<em>[[/item Scorching Ray]]</em> zu wirken.</p>"
+  },
+  "mmChill000000000": {
+    "name": "Kälte",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} nutzt [[/item Spellcasting]], um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]</em> zu wirken. Der\nDrache kann diese Aktion erst wieder zu Beginn seines nächsten Zuges einsetzen.</p>"
+  },
+  "mmColdGale000000": {
+    "name": "Kalter Sturm",
+    "description": "<p><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=pVs8BTVDNh54CZ0a]], jede Kreatur in einer [[lookup\n@target.template.size activity=pVs8BTVDNh54CZ0a]] Fuß langen, [[lookup\n@target.template.width activity=pVs8BTVDNh54CZ0a]] Fuß breiten\nLinie.</p><p><em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel\nwird bis zu 9 m direkt von dem [[lookup @name\nlowercase]]{monster} weggeschoben.</p><p><em>Erfolg:</em> Nur halber Schaden.\n</p><p><em>Misserfolg oder Erfolg:</em> Das [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges einsetzen.</p>"
+  },
+  "mmCommandingPres": {
+    "name": "Befehlende Präsenz",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} nutzt [[/item\nSpellcasting]], um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em>\n(Version auf Grad 2) zu wirken. Die [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn ihres nächsten Zuges ausführen.</p>"
+  },
+  "mmDeathlessStrik": {
+    "name": "Todesloser Schlag",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} bewegt sich bis zu\nder Hälfte ihrer Bewegungsrate und führt einen Grabschlag-Angriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmDeathlyTelepor": {
+    "name": "Tödlicher Teleport",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=zvj61Na7MlcIN2xw]] [[lookup @range.units\nactivity=zvj61Na7MlcIN2xw]]. [[lookup @range.special\nactivity=zvj61Na7MlcIN2xw]], und jedes [[lookup @target.affects.type\nactivity=zvj61Na7MlcIN2xw]] innerhalb von [[lookup @target.template.size\nactivity=zvj61Na7MlcIN2xw]] [[lookup @target.template.units\nactivity=zvj61Na7MlcIN2xw]]. des von ihr verlassenen Feldes erleidet [[/damage\naverage]] Schaden.</p>"
+  },
+  "mmDisruptLife000": {
+    "name": "Lebensstörung",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=qSz7l1czwIc5j9gP]], jedes [[lookup\n@target.affects.type activity=qSz7l1czwIc5j9gP]], das kein Untoter ist, in einer\n[[lookup @target.template.size activity=qSz7l1czwIc5j9gP]] Fuß großen Emanation,\ndie von der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmDreadCommand00": {
+    "name": "Schreckensbefehl",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em>\n(Version auf Grad 2), wobei sie dieselbe Zauberfähigkeit wie für Zauberwirken verwendet.\nDie [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn\nihres nächsten Zuges ausführen.</p>",
+    "activities": {
+      "Command": "Befehl"
+    }
+  },
+  "mmFieryRays00000": {
+    "name": "Feurige Strahlen",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} nutzt [[/item\nSpellcasting]], um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching\nRay}</em> zu wirken. Die [[lookup @name lowercase]]{monster} kann diese Aktion\nerst wieder zu Beginn ihres nächsten Zuges ausführen.</p>"
+  },
+  "mmFreezingBurst0": {
+    "name": "Gefrierender Stoß",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=U2i9u4ELjeLQfePP]], jedes [[lookup\n@target.affects.type activity=U2i9u4ELjeLQfePP]] in einer Kugel mit [[lookup\n@target.template.size activity=U2i9u4ELjeLQfePP]] Fuß Radius,\ndie auf einen Punkt zentriert ist, den die [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=U2i9u4ELjeLQfePP]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und die\nBewegungsrate des Ziels ist 0 bis zum Ende des nächsten Zuges des Ziels.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "q6bYdkYCIAqlHO3d": "0 m Bewegungsrate"
+    }
+  },
+  "mmFrighteningGaz": {
+    "name": "Furchterregender Blick",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFear000000]{Fear}</em>,\nwobei sie dieselbe Zauberfähigkeit wie für Zauberwirken verwendet. Die [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>"
+  },
+  "mmFrightfulPrese": {
+    "name": "Furchteinflößende Präsenz",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} wirkt\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFear000000]{Fear}</em>,\nbenötigt keine Materialkomponenten und nutzt Charisma als Zauberfähigkeit\n(Zauber-SG [[lookup @abilities.cha.dc]]). Das [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>"
+  },
+  "mmGigglingMagic0": {
+    "name": "Kichernde Magie",
+    "description": "<p class=\"feature\"><em>Charisma-Rettungswurf:</em> SG [[lookup\n@save.dc.value activity=Ttrajc4RC5Ut7pkj]], [[lookup\n@target.affects.labels.statblock activity=Ttrajc4RC5Ut7pkj]], die das [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=Ttrajc4RC5Ut7pkj]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average]] Schaden. Bis zum Ende seines nächsten Zuges würfelt das Ziel\n[[/r 1d6]], wann immer es einen Attributswurf oder Angriffswurf macht, und\nzieht die gewürfelte Zahl vom W20-Test ab.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Das [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "3W5EIHf9CRJQ3NyK": "Kichern"
+    }
+  },
+  "mmGlare000000000": {
+    "name": "Blick",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} setzt [[/item\n.mmEyeRays0000000]] ein.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmGuidingLight00": {
+    "name": "Führendes Licht",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} nutzt\nZauberwirken, um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidingBol]{Guiding\nBolt}</em> (Version auf Grad 2).</p>"
+  },
+  "mmLash0000000000": {
+    "name": "Peitschenhieb",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} führt einen\nTentakelangriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmMindInvasion00": {
+    "name": "Gedankeninvasion",
+    "description": "<p class=\"feature\">Der Drache nutzt [[/item Spellcasting]], um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind\nSpike}</em> (Version auf Grad 3).</p>"
+  },
+  "mmMindJolt000000": {
+    "name": "Gedankenstoß",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} nutzt\nZauberwirken, um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind\nSpike}</em> (Version auf Grad 4). Das [[lookup @name lowercase]]{monster}\nkann diese Aktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>"
+  },
+  "mmNecroticStrike": {
+    "name": "Nekrotischer Schlag",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} führt einen\nAngriff mit Verrottender Faust oder Kanalisierung Negativer Energie aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmNoxiousMiasma0": {
+    "name": "Schädliches Miasma",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Blm8nddvCOH69bL8]], jede [[lookup\n@target.affects.type activity=Blm8nddvCOH69bL8]] in einer Kugel mit [[lookup\n@target.template.size activity=Blm8nddvCOH69bL8]] Fuß Radius,\nzentriert auf einen Punkt, den das [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=Blm8nddvCOH69bL8]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel erleidet einen Malus von −2 auf die RK bis zum Ende seines nächsten Zuges.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Das [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "TSWsGeApnMgxOyIF": "Beschädigt: −2 RK"
+    }
+  },
+  "mmOnslaught00000": {
+    "name": "Ansturm",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} bewegt sich bis zur\nHälfte seiner Bewegungsrate und führt einen Klauen- oder Schwanzangriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmPounce00000000": {
+    "name": "Anspringen",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} bewegt sich bis zur Hälfte seiner Bewegungsrate und\nführt einen [[/item Rend]]-Angriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauchter Einsatz"
+    }
+  },
+  "mmPsychicDrain00": {
+    "name": "Psychischer Entzug",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} mindestens\neine Kreatur bezaubert oder im Haltegriff hat, nutzt es Erinnerungen Konsumieren und stellt\n[[/healing average]] wieder her.</p>"
+  },
+  "mmRadiantTelepor": {
+    "name": "Strahlender Teleport",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=HtsFBK1PYKjvy9mn]] Fuß weit zu einem unbesetzten\nFeld, das es sehen kann.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em>\nSG [[lookup @save.dc.value activity=HtsFBK1PYKjvy9mn]], jede Kreatur in einer\n[[lookup @target.template.size activity=HtsFBK1PYKjvy9mn]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} an seinem\nZielfeld ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage\naverage]] Schaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    }
+  },
+  "mmScorchingSands": {
+    "name": "Sengender Sand",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=g5fxAWhrpwohtETl]], [[lookup\n@target.affects.labels.statblock activity=g5fxAWhrpwohtETl]] die das [[lookup\n@name lowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=g5fxAWhrpwohtETl]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average]] Schaden, und die Bewegungsrate des Ziels wird bis zum Ende\nseines nächsten Zuges halbiert.</p><p class=\"feature\"><em>Misserfolg oder Erfolg:</em> Das\n[[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "n3I76HfSH6eKLALf": "1/2 Bewegungsrate"
+    }
+  },
+  "mmShimmeringShie": {
+    "name": "Schimmernder Schild",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} wählt sich selbst oder eine [[lookup\n@target.affects.type activity=sl8NoPhB0e5z6jmK]], die es innerhalb von\n[[lookup @range.value activity=sl8NoPhB0e5z6jmK]] Fuß von sich sehen kann, als Ziel. Das\nZiel erhält [[/healing average temp]] temporäre Trefferpunkte, und seine RK erhöht sich um 2 bis\nzum Ende des nächsten Zuges des [[lookup @name lowercase]]{monster}. Das\n[[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
+    "activities": {
+      "Temporary Healing": "Temporäre Heilung"
+    },
+    "effects": {
+      "sGQwUaOCcVnE2PA7": "Abgeschirmt"
+    }
+  },
+  "mmSonicBoom00000": {
+    "name": "Schallknall",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} nutzt\nZauberwirken, um\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShatter000]{Shatter}</em> zu wirken.\nDas [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>"
+  },
+  "mmTailSwipe00000": {
+    "name": "Schwanzschlag",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} führt einen\n[[/item Rend]]-Angriff aus.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmThunderclap000": {
+    "name": "Donnerschlag",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Lq6GexegvlEVB6Dh]], jedes [[lookup\n@target.affects.type activity=Lq6GexegvlEVB6Dh]] in einer Kugel mit [[lookup\n@target.template.size activity=Lq6GexegvlEVB6Dh]] Fuß Radius, die auf einen\nPunkt zentriert ist, den das [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=Lq6GexegvlEVB6Dh]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Deafened apply=false] bis zum\nEnde seines nächsten Zuges.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "QyuBYDW1zznn0OS4": "Taub"
+    }
+  },
+  "mmToxicInk000000": {
+    "name": "Giftige Tinte",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Kquf9zADg0jtKBqw]], jedes [[lookup\n@target.affects.type activity=Kquf9zADg0jtKBqw]] in einer [[lookup\n@target.template.size activity=Kquf9zADg0jtKBqw]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, während es unter\nWasser ist.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat die\nZustände &amp;Reference[Blinded apply=false] und &amp;Reference[Poisoned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name\nlowercase]]{monster}. Das [[lookup @name lowercase]]{monster}\nbewegt sich dann bis zu seiner Bewegungsrate.</p><p class=\"feature\"><em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
+    "activities": {
+      "Save": "Rettungswurf"
+    },
+    "effects": {
+      "6eeusiffMtDU3C3c": "Blind & Vergiftet"
+    }
+  },
+  "mmWeightOfYears0": {
+    "name": "Last der Jahre",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=xZul1ImCP658OBv3]], ein [[lookup\n@target.affects.type activity=xZul1ImCP658OBv3]], das das [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @range.value\nactivity=xZul1ImCP658OBv3]] Fuß sehen kann. <em>Misserfolg:</em> Das Ziel erhält 1\nStufe &amp;Reference[Exhaustion apply=false]. Solange das Ziel\nErschöpfungsstufen hat, erscheint es [[/r 3d10]] Jahre älter. <em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
+    "activities": {
+      "Save": "Rettungswurf",
+      "Years Older": "Jahre älter"
+    },
+    "effects": {
+      "Bf6DExMyhKyPPV4x": "Erschöpfung"
+    }
+  },
+  "mmWorldshakingMo": {
+    "name": "Welterschütternde Bewegung",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner\nBewegungsrate. Am Ende dieser Bewegung erzeugt das [[lookup @name\nlowercase]]{monster} eine augenblickliche Schockwelle in einer [[lookup\n@target.template.size activity=g4W0ovZxBeUrZKb8]]-[[lookup\n@target.template.units activity=g4W0ovZxBeUrZKb8]]-Emanation, die von\nihm selbst ausgeht. Kreaturen in diesem Bereich verlieren &amp;Reference[Concentration]\nund haben, falls sie mittelgroß oder kleiner sind, den Zustand &amp;Reference[Prone apply=false].\nDas [[lookup @name lowercase]]{monster} kann diese Aktion\nerst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    },
+    "effects": {
+      "ERWPInrx4mXsqrwL": "Liegend"
+    }
+  },
+  "mmAbduct00000000": {
+    "name": "Entführen",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} muss keine zusätzliche Bewegung aufwenden, um\neine Kreatur zu bewegen, die es im Griff hat.</p>"
+  },
+  "mmAberrantGround": {
+    "name": "Abartiger Boden",
+    "description": "<p>Der Boden in einer [[lookup @target.template.size\nactivity=zVznqPXgYjETqpQz]] Fuß großen Emanation, die vom [[lookup\n@name]]{monster} ausgeht, ist &amp;Reference[Difficult Terrain].</p>",
+    "activities": {
+      "Place Emanation": "Emanation platzieren"
+    }
+  },
+  "mmAcidAbsorption": {
+    "name": "Säureabsorption",
+    "description": "<p>Immer wenn das [[lookup @name lowercase]]{monster} &amp;Reference[Acid] Schaden\nerleidet, nimmt es keinen Schaden und stellt stattdessen eine\nAnzahl von Trefferpunkten wieder her, die dem zugefügten Säureschaden entspricht.</p>",
+    "effects": {
+      "2G2gdLkIBFrb71Iv": "Säureabsorption"
+    }
+  },
+  "mmAdhesive000000": {
+    "name": "Haftend (Nur Objektform)",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} haftet an allem, was es berührt. Eine Riesige oder kleinere Kreatur, die an dem [[lookup @name lowercase]]{monster} haftet, hat den Zustand &amp;Reference[Grappled\napply=false] (Entkommen SG [[lookup @skills.ath.passive]]). Fertigkeitswürfe, die zum Entkommen aus diesem Griff gemacht werden, haben Nachteil.</p>",
+    "activities": {
+      "Escape Check": "Entkommen-Wurf",
+      "Expend Use": "Verbrauch nutzen"
+    },
+    "effects": {
+      "PTmNYKeeD3d7EbJn": "Gepackt"
+    }
+  },
+  "mmAgile000000000": {
+    "name": "Flink",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} provoziert keinen &amp;Reference[opportunityattacks]{Opportunity Attack}, wenn es sich aus der Reichweite eines Feindes bewegt.</p>"
+  },
+  "mmAirForm0000000": {
+    "name": "Luftform",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann den Raum eines Feindes betreten und dort anhalten. Es kann sich durch einen Raum bewegen, der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmAmorphous00000": {
+    "name": "Amorph",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann sich durch einen Raum bewegen, der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmAmphibious0000": {
+    "name": "Amphibisch",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
+  },
+  "mmAuraOfAuthorit": {
+    "name": "Aura der Autorität",
+    "description": "<p>Solange es sich in einer [[lookup @target.template.size\nactivity=dE4lg9tZyXtoCb5x]] Fuß großen Emanation befindet, die von dem [[lookup\n@name lowercase]]{monster} ausgeht, haben das [[lookup @name lowercase]]{monster} und\nseine Verbündeten Vorteil auf Angriffswürfe und Rettungswürfe, vorausgesetzt, das\n[[lookup @name lowercase]]{monster} hat nicht den\n&amp;Reference[Incapacitated apply=false] Zustand.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmAversionToFire": {
+    "name": "Abneigung gegen Feuer",
+    "description": "<p>Wenn das [[lookup @name lowercase]]{monster} Feuerschaden erleidet, hat es Nachteil auf Angriffswürfe und Fertigkeitswürfe bis zum Ende seines nächsten Zuges.</p>",
+    "effects": {
+      "kJYNjmfI0RpvF7CQ": "Abgeneigt"
+    }
+  },
+  "mmBarbedHide0000": {
+    "name": "Stachelige Haut",
+    "description": "<p>Zu Beginn jedes seiner Züge fügt das [[lookup @name\nlowercase]]{monster} jeder Kreatur, die [[lookup @target.affects.special activity=1O5eyc72vPW0UxYZ]], [[/damage average]] Schaden zu.</p>"
+  },
+  "mmBeastOfBurden0": {
+    "name": "Lasttier",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} gilt für die Bestimmung seiner Tragfähigkeit als eine Größenkategorie größer.</p>",
+    "effects": {
+      "VW9jjwa34EHjrXBB": "Lasttier"
+    }
+  },
+  "mmBerserk0000000": {
+    "name": "Berserker",
+    "description": "<p>Immer wenn das [[lookup @name lowercase]]{monster} seinen Zug &amp;Reference[Bloodied] beginnt, würfelt es [[/r 1d6]]. Bei einer 6 gerät das [[lookup @name lowercase]]{monster} in Berserkerwut. In jedem seiner Züge, während es in Berserkerwut ist, greift das [[lookup @name lowercase]]{monster} die nächste Kreatur an, die es sehen kann. Wenn keine Kreatur nahe genug ist, um sie zu erreichen und anzugreifen, greift das [[lookup @name lowercase]]{monster} ein Objekt an. Sobald das [[lookup @name lowercase]]{monster} in Berserkerwut gerät, bleibt es so, bis es zerstört wird oder nicht mehr Verletzt ist.</p><p>Der Erschaffer des [[lookup @name lowercase]]{monster}, wenn er sich innerhalb von [[lookup @range.value activity=tnkOsrSwEElO2kZM]] Fuß des in Berserkerwut befindlichen [[lookup @name lowercase]]{monster} befindet, kann versuchen, es zu beruhigen, indem er eine Aktion aufwendet, um eine [[/check ability=cha skill=per dc=@abilities.str.dc]] Fertigkeitsprüfung auf Charisma (Überzeugen) SG 15 abzulegen; der Golem muss seinen Erschaffer hören können. Gelingt diese Prüfung, hört der Golem auf, in Berserkerwut zu sein, bis zum Beginn seines nächsten Zuges, woraufhin er wieder für das Merkmal Berserker würfelt, wenn er noch Verletzt ist.</p>",
+    "activities": {
+      "Berserk Check": "Berserker-Prüfung",
+      "Calm Check": "Beruhigungs-Prüfung"
+    },
+    "effects": {
+      "8SBNBxgUqwEyYJcK": "Berserkerwut"
+    }
+  },
+  "mmBloodFrenzy000": {
+    "name": "Blutrausch",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} hat Vorteil auf Angriffswürfe gegen jede Kreatur, die nicht alle ihre Trefferpunkte hat.</p>"
+  },
+  "mmBloodiedFrenzy": {
+    "name": "Verletzter Rausch",
+    "description": "<p>Solange es &amp;Reference[Bloodied] ist, hat das [[lookup @name lowercase]]{monster} Vorteil auf Angriffswürfe und Rettungswürfe.</p>"
+  },
+  "mmBloodiedFury00": {
+    "name": "Verletzte Wut",
+    "description": "<p>Solange es &amp;Reference[Bloodied] ist, hat das [[lookup @name lowercase]]{monster} Vorteil auf Angriffswürfe.</p>"
+  },
+  "mmBlurredForm000": {
+    "name": "Verschwommene Gestalt",
+    "description": "<p>Angriffswürfe gegen das [[lookup @name lowercase]]{monster} werden mit Nachteil ausgeführt, es sei denn, das [[lookup @name lowercase]]{monster} ist Handlungsunfähig.</p>"
+  },
+  "mmBound000000000": {
+    "name": "Gebunden",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} ist magisch an ein Amulett gebunden. Solange das [[lookup @name lowercase]]{monster} und sein Amulett auf derselben Existenzebene sind, kann der Träger des Amuletts das [[lookup @name lowercase]]{monster} telepathisch rufen, damit es zu ihm reist, und das [[lookup @name lowercase]]{monster} kennt die Entfernung und Richtung zum Amulett. Wenn das [[lookup @name lowercase]]{monster} sich innerhalb von 18 m des Amulettträgers befindet, wird die Hälfte des Schadens, den der Träger erleidet (aufgerundet), auf das [[lookup @name lowercase]]{monster} übertragen.</p>"
+  },
+  "mmCelestialResto": {
+    "name": "Himmlische Wiederherstellung",
+    "description": "<p>Stirbt das [[lookup @name lowercase]]{monster}, kehrt es in [[/r 1d6#Tagen]] Tagen ins Leben zurück und erhält alle seine Trefferpunkte zurück, es sei denn, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelEvil]</em> wird auf seine Überreste gewirkt.</p>"
+  },
+  "mmCompression000": {
+    "name": "Kompression",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann sich durch einen nur 2,5 cm breiten Raum bewegen, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmConferFireResi": {
+    "name": "Feuerresistenz verleihen",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann einem Reiter, der sich auf dem [[lookup @name lowercase]]{monster} befindet, Resistenz gegen Feuerschaden verleihen.</p>",
+    "effects": {
+      "uf0s4DJcB5yQbQvN": "Resistenz: Feuer"
+    }
+  },
+  "mmCorrosiveForm0": {
+    "name": "Ätzende Form",
+    "description": "<p class=\"feature\">Eine Kreatur, die das [[lookup @name lowercase]]{monster} mit einem Nahkampfangriff trifft, erleidet [[/damage average]] Schaden. Nichtmagische Munition wird sofort zerstört, nachdem sie das [[lookup @name lowercase]]{monster} getroffen und Schaden verursacht hat. Jede nichtmagische Waffe erhält sofort nach dem Verursachen von Schaden am [[lookup @name lowercase]]{monster} und dem Kontakt damit einen kumulativen Malus von −1 auf Angriffswürfe. Die Waffe wird zerstört, wenn der Malus −5 erreicht. Der Malus kann durch das Wirken des\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending}</em>\nZaubers auf die Waffe entfernt werden.</p><p class=\"feature\">Innerhalb von 1 Minute kann das [[lookup @name lowercase]]{monster} 0,6 m nichtmagisches Holz oder Metall zerfressen.</p><section id=\"secret-NtgKYdQoCuiAaxOa\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft\nbietet einen <strong>Angriffs-Malus</strong> aktiven Effekt, der eine gezielte Waffe modifiziert. Da dieser Malus mehrfach auf mehrere nichtmagische Waffen angewendet werden kann, muss dieser aktive Effekt vom Effekt-Tab dieses Gegenstands auf die Waffen des Zielgegenstands gezogen werden.</p></section>"
+  },
+  "mmCovenMagic0000": {
+    "name": "Hexenzirkelmagie",
+    "description": "<p class=\"feature\">Solange es sich innerhalb von 9 m von mindestens zwei Hexen-Verbündeten befindet, kann das\n[[lookup @name lowercase]]{monster} einen der folgenden Zauber wirken, ohne Materialkomponenten zu benötigen, unter Verwendung der normalen Zauberzeit des Zaubers\nund unter Verwendung von Intelligenz als Zauberfähigkeit (Zauber-SG [[lookup\n@abilities.int.dc]]):\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAugury0000]{Augury}</em>,\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find\nFamiliar}</em>,\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identify}</em>,\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLocateObje]{Locate\nObject}</em>,\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>,\noder <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplUnseenServ]{Unseen\nServant}</em>. Das [[lookup @name lowercase]]{monster} muss eine Lange\nRast beenden, bevor es diese Eigenschaft erneut zum Wirken dieses Zaubers verwenden kann.</p>"
+  },
+  "mmDeathBurst0000": {
+    "name": "Todesstoß",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} explodiert [[lookup\n@activation.condition activity=1SfqWSp7RSyHgG4b]]. <em>Geschicklichkeits-Rettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede\n[[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup\n@target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:\n</em>[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>"
+  },
+  "mmDeathThroes000": {
+    "name": "Todeszuckungen",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} explodiert, wenn\nes stirbt.</p><p class=\"feature\"><em>Geschicklichkeits-Rettungswurf:</em> SG\n[[lookup @save.dc.value activity=jTq2czA8KQITUK4c]], jede Kreatur in einer\n[[lookup @target.template.size activity=jTq2czA8KQITUK4c]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Stirbt das [[lookup @name\nlowercase]]{monster} außerhalb des Abgrunds, erhält es sofort einen neuen Körper\nund wird mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt.</p>"
+  },
+  "mmDemonicRestora": {
+    "name": "Dämonische Wiederherstellung",
+    "description": "<p>Stirbt das [[lookup @name lowercase]]{monster} außerhalb des Abgrunds, löst sich sein\nKörper in Ichor auf, und es erhält sofort einen neuen Körper, der\nmit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt wird.</p>"
+  },
+  "mmDiabolicalRest": {
+    "name": "Diabolische Wiederherstellung",
+    "description": "<p>Stirbt das [[lookup @name lowercase]]{monster} außerhalb der Neun Höllen,\nverschwindet sein Körper in schwefeligem Rauch, und es erhält sofort einen neuen Körper,\nder mit all seinen Trefferpunkten irgendwo in den Neun Höllen wiederbelebt wird.</p>"
+  },
+  "mmDivineAwarenes": {
+    "name": "Göttliches Bewusstsein",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} weiß, ob es eine Lüge hört.</p>"
+  },
+  "mmDraconicOrigin": {
+    "name": "Drakonischer Ursprung",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} ist mit einer Drachenart verwandt, die mit einer der folgenden Schadensarten (Wahl des SL) verbunden ist: Säure, Kälte, Feuer, Blitz oder Gift. Diese Wahl beeinflusst andere Aspekte des Werteblocks.</p><section class=\"secret\"\nid=\"secret-9qS4XvlccQjIsypM\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft bietet einen Aktiven Effekt zur Verwaltung von <strong>Schadensresistenzen</strong> im Reiter „Effekte“ des Charakterbogens. Die aufgeführten Resistenzen müssen manuell aktiviert/deaktiviert werden.</p></section>",
+    "effects": {
+      "3r3OTgMSHx0rQ8Wf": "Säureresistenz",
+      "bhvmkZAA605sA3cw": "Kälteresistenz",
+      "pz5r0ksOuMpJTH7q": "Feuerresistenz",
+      "BYHSCmIwcOd5tA1O": "Giftresistenz",
+      "XfAztVHPpKrgYrnD": "Blitzresistenz"
+    }
+  },
+  "mmEarthGlide0000": {
+    "name": "Erdschweben",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann sich durch nichtmagische, unbearbeitete Erde und Stein graben. Dabei stört das [[lookup @name lowercase]]{monster} das Material, durch das es sich bewegt, nicht.</p>"
+  },
+  "mmEldritchRestor": {
+    "name": "Unheimliche Wiederherstellung",
+    "description": "<p class=\"feature\">Wird es zerstört, erhält das [[lookup @name lowercase]]{monster} in [[/r 5d10]] Tagen einen neuen Körper und erwacht mit all seinen Trefferpunkten im Fernen Reich oder an einem anderen vom SL gewählten Ort.</p>",
+    "activities": {
+      "Days: New Body": "Tage: Neuer Körper"
+    }
+  },
+  "mmElementalResto": {
+    "name": "Elementare Wiederherstellung",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} [[lookup @item.requirements]], löst sich sein Körper in Erde auf, und es erhält in [[/r 1d4#Tage]] Tagen einen neuen Körper, wobei es mit all seinen Trefferpunkten irgendwo auf der Ebene der Erde wiederbelebt wird.</p>"
+  },
+  "mmEphemeral00000": {
+    "name": "Vergänglich",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann nichts tragen oder mit sich führen.</p>"
+  },
+  "mmEtherealSight0": {
+    "name": "Ätherische Sicht",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann 18 m weit in die Ätherebene sehen, wenn es sich auf der Materiellen Ebene befindet.</p>"
+  },
+  "mmEvasion0000000": {
+    "name": "Entrinnen",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} von einem Effekt betroffen ist, der ihm einen Geschicklichkeitsrettungswurf erlaubt, um nur halben Schaden zu erleiden, erleidet das [[lookup @name lowercase]]{monster} stattdessen keinen Schaden, wenn es den Rettungswurf besteht, und nur halben Schaden, wenn es ihn nicht besteht. Es kann diese Eigenschaft nicht nutzen, wenn es den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmExaltedRestora": {
+    "name": "Erhabene Wiederherstellung",
+    "description": "<p class=\"feature\">Stirbt das [[lookup @name lowercase]]{monster} außerhalb des Berges Celestia, verschwindet sein Körper, und es erhält sofort einen neuen Körper, wobei es mit all seinen Trefferpunkten irgendwo im Berg Celestia wiederbelebt wird.</p>"
+  },
+  "mmFearAura000000": {
+    "name": "Furchtaura",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} strahlt eine Aura in einer [[lookup @target.template.size activity=oT8238p9jXwVy76c]]-Fuß-Emanation aus, solange es nicht den Zustand Handlungsunfähig hat.</p><p\nclass=\"feature\"><em>Rettungswurf auf Weisheit:</em> SG [[lookup @save.dc.value\nactivity=oT8238p9jXwVy76c]], [[lookup @target.affects.special\nactivity=oT8238p9jXwVy76c]].</p><p class=\"feature\"><em>Misserfolg:</em> Das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] bis zum\nBeginn seines nächsten Zuges.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel\nist 24 Stunden lang immun gegen die Aura dieses [[lookup @name lowercase]]{monster}.</p>",
+    "effects": {
+      "Sb7G5OyhGbjLUoWo": "Verängstigt"
+    }
+  },
+  "mmFiendishRestor": {
+    "name": "Teuflische Wiederherstellung",
+    "description": "<p>Stirbt das [[lookup @name lowercase]]{monster} außerhalb Gehennas, löst sich sein Körper in Ichor auf, und es erhält sofort einen neuen Körper und wird mit all seinen Trefferpunkten in Gehenna wiederbelebt.</p>"
+  },
+  "mmFireAbsorption": {
+    "name": "Feuerabsorption",
+    "description": "<p class=\"feature\">Immer wenn das [[lookup @name lowercase]]{monster} Feuerschaden erleidet, erhält es eine Anzahl von Trefferpunkten zurück, die dem zugefügten Feuerschaden entspricht.</p>"
+  },
+  "mmFireAura000000": {
+    "name": "Feueraura",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]]-Fuß-Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage\naverage]] Schaden.</p>"
+  },
+  "mmFireForm000000": {
+    "name": "Feuergestalt",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann sich durch einen nur 2,5 cm breiten Raum bewegen, ohne dafür zusätzliche Bewegung aufzuwenden, und es kann den Raum einer Kreatur betreten und dort anhalten. Das erste Mal, dass es in einem Zug den Raum einer Kreatur betritt, erleidet diese Kreatur [[/damage\naverage]] Schaden.</p>"
+  },
+  "mmFlyby000000000": {
+    "name": "Vorbeiflug",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} provoziert keinen\n&amp;Reference[OpportunityAttacks]{Opportunity Attack}, wenn es aus der\nReichweite eines Feindes fliegt.</p>"
+  },
+  "mmFreeze00000000": {
+    "name": "Einfrieren",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} Kälteschaden erleidet, verringert sich seine Bewegungsrate um 6 m bis zum Ende seines nächsten Zuges.</p>",
+    "activities": {
+      "Use": "Benutzen"
+    },
+    "effects": {
+      "B3otZdkyUcUlgrmk": "Bewegungsrate: -6 m"
+    }
+  },
+  "mmGibbering00000": {
+    "name": "Gebrabbel",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} brabbelt zusammenhanglos, solange es nicht den Zustand Handlungsunfähig hat. <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=PyGOI84k0PPYrru8]], jede [[lookup @target.affects.type activity=PyGOI84k0PPYrru8]], die ihren Zug innerhalb von [[lookup @target.template.size activity=PyGOI84k0PPYrru8]] Fuß des [[lookup @name lowercase]]{monster} beginnt, während es brabbelt. <em>Misserfolg:</em> Das Ziel würfelt [[/r 1d8]], um zu bestimmen, was es in diesem Zug tut:</p><p class=\"feature-trait\"><strong>1–4.</strong> Das Ziel tut nichts.</p><p class=\"feature-trait\"><strong>5–6.</strong> Das Ziel führt keine Aktion oder Bonusaktion aus und nutzt seine gesamte Bewegung, um sich in eine zufällige Richtung zu bewegen.</p><p\nclass=\"feature-trait\"><strong>7–8.</strong> Das Ziel führt einen Nahkampfangriff gegen eine zufällig bestimmte Kreatur in seiner Reichweite aus oder tut nichts, wenn es keinen solchen Angriff ausführen kann.</p>",
+    "activities": {
+      "Roll d8": "Würfel W8"
+    }
+  },
+  "mmGreaterMagicRe": {
+    "name": "Größere Magieresistenz",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} besteht automatisch Rettungswürfe gegen Zauber und andere magische Effekte, und die Angriffswürfe von Zaubern verfehlen es automatisch. Ohne die Erlaubnis des [[lookup @name lowercase]]{monster} kann kein Zauber das [[lookup @name lowercase]]{monster} aus der Ferne beobachten oder seine Gedanken, Kreaturenart oder Gesinnung entdecken.</p>"
+  },
+  "mmHeatAura000000": {
+    "name": "Hitzeaura",
+    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+  },
+  "mmHellishRestora": {
+    "name": "Höllische Wiederherstellung",
+    "description": "<p class=\"feature\">Stirbt das [[lookup @name lowercase]]{monster} in den Neun Höllen, wird es in [[/r 1d10]] Tagen mit all seinen Trefferpunkten wiederbelebt, es sei denn, es wird von einer Kreatur getötet, die unter den Effekten eines <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Bless}</em> Zaubers steht, oder seine Überreste werden mit Weihwasser besprengt.</p>",
+    "activities": {
+      "Revive: Days": "Wiederbelebung: Tage"
+    }
+  },
+  "mmHoldBreath0000": {
+    "name": "Atem anhalten",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann seinen Atem für {N} {Units} anhalten.</p>"
+  },
+  "mmIceWalk0000000": {
+    "name": "Eisgang",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen. Zusätzlich kostet &amp;Reference[Difficult Terrain], das aus Eis oder Schnee besteht, keine zusätzliche Bewegung.</p>"
+  },
+  "mmIllumination00": {
+    "name": "Beleuchtung",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} spendet helles Licht in einem Radius von {m} Fuß und dämmriges Licht für weitere {n} Fuß.</p>"
+  },
+  "mmImmutableForm0": {
+    "name": "Unveränderliche Gestalt",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann seine Gestalt nicht ändern.</p>"
+  },
+  "mmIncorporealMov": {
+    "name": "Körperlose Bewegung",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann sich durch andere Kreaturen und Objekte bewegen, als wären sie &amp;Reference[Difficult Terrain]. Es erleidet [[/damage 1d10 average type=force]] Wuchtschaden, wenn es seinen Zug in einem Objekt beendet.</p>"
+  },
+  "mmIncubusForm000": {
+    "name": "Inkubus-Form",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} eine Lange Rast beendet, kann es die Gestalt eines <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}</strong> annehmen und dessen Werteblock anstelle dieses verwenden.</p>",
+    "activities": {
+      "Incubus": "Inkubus"
+    }
+  },
+  "mmInscrutable000": {
+    "name": "Unergründlich",
+    "description": "<p class=\"feature\">Keine Magie kann das [[lookup @name lowercase]]{monster} aus der Ferne beobachten oder seine Gedanken ohne seine Erlaubnis entdecken. Fertigkeitswürfe auf Weisheit (Einsicht), die gemacht werden, um seine Absichten oder Aufrichtigkeit festzustellen, werden mit Nachteil ausgeführt.</p>"
+  },
+  "mmIronScent00000": {
+    "name": "Eisengeruch",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann den Standort von [[lookup @target.affects.special activity=I1ppxiVO5CS6tKj0]] innerhalb von [[lookup @target.template.size activity=I1ppxiVO5CS6tKj0]] Fuß von sich aus bestimmen.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmJumper00000000": {
+    "name": "Springer",
+    "description": "<p class=\"feature\">Die Sprungweite des [[lookup @name lowercase]]{monster} wird anhand seiner Geschicklichkeit anstatt seiner Stärke bestimmt.</p>"
+  },
+  "mmLegendaryResis": {
+    "name": "Legendäre Widerstandsfähigkeit",
+    "description": "<p>Wenn das [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann es stattdessen wählen, ihn zu bestehen.</p>",
+    "activities": {
+      "Expend Use": "Verbrauch nutzen"
+    }
+  },
+  "mmLightSensitivi": {
+    "name": "Lichtempfindlichkeit",
+    "description": "<p class=\"feature\">Solange es sich in hellem Licht befindet, hat das [[lookup @name lowercase]]{monster} Nachteil auf Angriffswürfe.</p>"
+  },
+  "mmLightningAbsor": {
+    "name": "Blitzabsorption",
+    "description": "<p class=\"feature\">Immer wenn das [[lookup @name lowercase]]{monster} Blitzschaden erleidet, erhält es eine Anzahl von Trefferpunkten zurück, die dem zugefügten Blitzschaden entspricht.</p>"
+  },
+  "mmLimitedAmphibi": {
+    "name": "Begrenzte Amphibienfähigkeit",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen, muss aber mindestens einmal alle 4 Stunden untergetaucht werden, um nicht außerhalb des Wassers zu ersticken.</p>"
+  },
+  "mmLoathsomeLimbs": {
+    "name": "Abscheuliche Gliedmaßen",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} einen Zug Blutend beendet und in diesem Zug 15 oder mehr Hiebschaden erlitten hat, wird eine der Gliedmaßen des [[lookup @name lowercase]]{monster} abgetrennt, fällt in den Raum des [[lookup @name lowercase]]{monster} und wird zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTrollLimb00000]{Troll\nLimb}</strong>. Die Gliedmaße handelt sofort nach dem Zug des [[lookup @name lowercase]]{monster}. Das [[lookup @name lowercase]]{monster} hat 1 &amp;Reference[Exhaustion apply=false] Stufe für jede fehlende Gliedmaße, und es wachsen Ersatzgliedmaßen nach, wenn es das nächste Mal Trefferpunkte zurückerhält.</p><section\nclass=\"secret\" id=\"secret-01PBOuaZ8xS1KYt6\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft bietet einen Zustand des Aktiven Effekts im Effekte-Reiter des Charakterbogens, um jede Stufe der Erschöpfung zu aktivieren. Da der Zustand mehrfach angewendet werden kann, muss der SL die Stufe der Erschöpfung manuell verwalten. Für jede Stufe der Erschöpfung ist ein aktiver Effekt verfügbar.</p></section>",
+    "activities": {
+      "Troll Limb": "Troll-Gliedmaße"
+    },
+    "effects": {
+      "PFledLQkQ75osOlZ": "Erschöpfung 1",
+      "AVZPkC07GONXpRMe": "Erschöpfung 2",
+      "l1PiPpfAiF9TWs88": "Erschöpfung 3",
+      "DCB7xWKhKSEmZHNn": "Erschöpfung 4",
+      "9Tc60NhDJH43WdEU": "Erschöpfung 5",
+      "drQriWAwmwosemzp": "Erschöpfung: Tod"
+    }
+  },
+  "mmMagicResistanc": {
+    "name": "Magieresistenz",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>"
+  },
+  "mmMagicRope00000": {
+    "name": "Magisches Seil",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} besitzt ein magisches Seil. Solange es dieses trägt, kann das [[lookup @name lowercase]]{monster} die Aktion 'Verwickelndes Seil' einsetzen. Das Seil hat RK 20, 90 TP und Immunität gegen Gift- und Psychoschaden. Das Seil zerfällt zu Staub, wenn es auf 0 Trefferpunkte reduziert wird, wenn es 1 Stunde oder länger 5 oder mehr Fuß vom [[lookup @name lowercase]]{monster} entfernt ist oder wenn das [[lookup @name lowercase]]{monster} stirbt. Wenn das Seil beschädigt oder zerstört wird, kann das [[lookup @name lowercase]]{monster} es vollständig wiederherstellen, wenn es eine kurze oder lange Rast beendet.</p>"
+  },
+  "mmMimicry0000000": {
+    "name": "Mimikry",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann einfache Geräusche nachahmen, die es gehört hat, wie ein Flüstern oder Zwitschern. Ein Zuhörer kann mit einem erfolgreichen [[/check format=long]] erkennen, dass die Geräusche Imitationen sind.</p>"
+  },
+  "mmMistyEscape000": {
+    "name": "Nebelhafte Flucht",
+    "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} außerhalb seines Ruheplatzes auf 0 Trefferpunkte fällt, setzt das [[lookup @name lowercase]]{monster} Gestaltwandlung ein, um zu Nebel zu werden (keine Aktion erforderlich). Wenn es keine Gestaltwandlung einsetzen kann, wird es vernichtet.</p><p class=\"feature\">Solange es in Nebelform 0 Trefferpunkte hat, kann es nicht in seine Vampirform zurückkehren und muss seinen Ruheplatz innerhalb von 2 Stunden erreichen oder wird vernichtet. Sobald es an seinem Ruheplatz ist, kehrt es in seine Vampirform zurück und hat den Zustand &amp;Reference[Paralyzed apply=false], bis es Trefferpunkte zurückerhält, und es erhält 1 Trefferpunkt zurück, nachdem es 1 Stunde dort verbracht hat.</p>",
+    "activities": {
+      "Paralyzed": "Gelähmt"
+    },
+    "effects": {
+      "SGrTBpl938UIe4e3": "Gelähmt"
+    }
+  },
+  "mmMucusCloud0000": {
+    "name": "Schleimwolke",
+    "description": "<p class=\"feature\">Unter Wasser ist das [[lookup @name lowercase]]{monster} von Schleim umgeben.</p><p\nclass=\"feature\"><em>Konstitutionsrettungswurf:</em> SG 14, jedes [[lookup @target.affects.type activity=clFFG8uDBSFzxIo8]] in einer [[lookup @target.template.size activity=clFFG8uDBSFzxIo8]]-[[lookup @target.template.units activity=clFFG8uDBSFzxIo8]]-Emanation, die vom [[lookup @name lowercase]]{monster} am Ende des Zuges des [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist verflucht. Bis der Fluch endet, wird die Haut des Ziels schleimig, das Ziel kann Luft und Wasser atmen und kann keine Trefferpunkte zurückerhalten, es sei denn, es ist unter Wasser.</p><p class=\"feature\">Solange die verfluchte Kreatur sich außerhalb eines Gewässers befindet, erleidet die Kreatur am Ende jeder 10 Minuten [[/damage average activity=JrxCVyCOsBAMVZS7]] Schaden, es sei denn, Feuchtigkeit wird auf ihre Haut aufgetragen, bevor diese Minuten vergangen sind.</p>",
+    "activities": {
+      "Damage: Outside Water": "Schaden: Außerhalb des Wassers"
+    },
+    "effects": {
+      "VesaHwtQEHKpxdAB": "Verflucht"
+    }
+  },
+  "mmMultipleHeads0": {
+    "name": "Mehrere Köpfe",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} hat fünf Köpfe. Immer wenn das [[lookup @name lowercase]]{monster} in einem einzigen Zug 25 oder mehr Schaden erleidet, stirbt einer seiner Köpfe. Das [[lookup @name lowercase]]{monster} stirbt, wenn alle seine Köpfe tot sind. Am Ende jedes seiner Züge, wenn es mindestens einen lebenden Kopf hat, wachsen dem [[lookup @name lowercase]]{monster} zwei Köpfe für jeden seiner Köpfe nach, der seit seinem letzten Zug gestorben ist, es sei denn, es hat seit seinem letzten Zug Feuerschaden erlitten. Das [[lookup @name lowercase]]{monster} erhält 20 Trefferpunkte zurück, wenn es neue Köpfe wachsen lässt.</p>"
+  },
+  "mmOozeCube000000": {
+    "name": "Schleimwürfel",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} füllt seinen gesamten Raum aus und ist transparent. Andere Kreaturen können diesen Raum betreten, aber eine Kreatur, die dies tut, wird dem Verschlingen des [[lookup @name lowercase]]{monster} unterworfen und hat Nachteil auf den Rettungswurf.</p><p class=\"feature\">Kreaturen im Inneren des [[lookup @name lowercase]]{monster} haben &amp;Reference[Total Cover], und der [[lookup @name lowercase]]{monster} kann eine Große Kreatur oder bis zu vier Mittelgroße oder Kleine Kreaturen gleichzeitig in sich halten.</p><p\nclass=\"feature\">Als Aktion kann eine Kreatur, die sich innerhalb von [[lookup @range.value activity=EcTOfXWsDJRHLydy]] [[lookup @range.units activity=EcTOfXWsDJRHLydy]]. des [[lookup @name lowercase]]{monster} befindet, eine Kreatur oder ein Objekt aus dem [[lookup @name lowercase]]{monster} ziehen, indem sie einen erfolgreichen [[/check dc=12 ability=str skill=ath format=long]] ablegt, und der Ziehende erleidet [[/damage average activity=PMCvyqxfUYiPzNK8]] Schaden.</p>",
+    "activities": {
+      "Pull Check": "Zug-Wurf",
+      "Puller Damage": "Schaden für Ziehenden",
+      "Total Cover": "Volle Deckung"
+    },
+    "effects": {
+      "Nqpxg74Yw9uEVMxQ": "Volle Deckung"
+    }
+  },
+  "mmPackTactics000": {
+    "name": "Rudel-Taktik",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn mindestens einer der Verbündeten des [[lookup @name lowercase]]{monster} innerhalb von 1,5 m um die Kreatur ist und der Verbündete nicht den Zustand Handlungsunfähig hat.</p>"
+  },
+  "mmProbingTelepat": {
+    "name": "Sondierende Telepathie",
+    "description": "<p class=\"feature\">Wenn eine Kreatur, die der [[lookup @name lowercase]]{monster} sehen kann, telepathisch mit dem [[lookup @name lowercase]]{monster} kommuniziert, erfährt der [[lookup @name lowercase]]{monster} die größten Wünsche der Kreatur.</p>"
+  },
+  "mmReactiveHeads0": {
+    "name": "Reaktive Köpfe",
+    "description": "<p class=\"feature\">Für jeden Kopf, den der [[lookup @name lowercase]]{monster} über den ersten hinaus hat, erhält er eine zusätzliche &amp;Reference[Reaction], die nur für &amp;Reference[OpportunityAttacks] verwendet werden kann.</p>"
+  },
+  "mmReactive000000": {
+    "name": "Reaktiv",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kann in jeder Kampfrunde eine &amp;Reference[Reaction] ausführen.</p>"
+  },
+  "mmReflectiveCara": {
+    "name": "Reflektierender Panzer",
+    "description": "<p class=\"feature\">Wenn der [[lookup @name lowercase]]{monster} von einem <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic\nMissile}</em> Zauber oder einem Zauber, der einen Fernangriffswurf erfordert, anvisiert wird, würfle [[/r 1d6]].</p><p class=\"feature\">Bei einer <strong>1–5</strong> ist der [[lookup @name lowercase]]{monster} unbeeinflusst.</p><p class=\"feature\">Bei einer <strong>6</strong> ist der [[lookup @name lowercase]]{monster} unbeeinflusst und reflektiert den Zauber, wodurch der Zaubernde zum Ziel wird.</p>",
+    "activities": {
+      "Roll d6": "Würfle W6"
+    }
+  },
+  "mmRegeneration00": {
+    "name": "Regeneration",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} erhält [[lookup @healing.formula activity=5cGvjZJIJVicjJ3d]] Trefferpunkte zu Beginn jedes seiner Züge zurück, wenn er mindestens 1 Trefferpunkt hat.</p>"
+  },
+  "mmRunningLeap000": {
+    "name": "Anlaufender Sprung",
+    "description": "<p class=\"feature\">Mit einem Anlauf von 3 m kann der [[lookup @name lowercase]]{monster} bis zu 7,5 m weit springen.</p>"
+  },
+  "mmSenseMagic0000": {
+    "name": "Magie erspüren",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} erspürt Magie\nin einem Umkreis von 36 m. Diese Eigenschaft funktioniert ansonsten wie der\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect\nMagic}</em> Zauber, ist aber selbst nicht magisch.</p>"
+  },
+  "mmSharkTelepathy": {
+    "name": "Haitelepathie",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann Haie\nin einem Umkreis von 36 m magisch kontrollieren, indem es eine spezielle Telepathie nutzt.</p>"
+  },
+  "mmShieldedMind00": {
+    "name": "Abgeschirmter Geist",
+    "description": "<p class=\"feature\">Die Gedanken des [[lookup @name lowercase]]{monster}\nkönnen auf keine Weise gelesen werden, und andere Kreaturen können nur telepathisch mit ihm kommunizieren,\nwenn es ihnen dies erlaubt.</p>"
+  },
+  "mmSiegeMonster00": {
+    "name": "Belagerungsmonster",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} verursacht doppelten Schaden an Objekten\nund Gebäuden.</p>"
+  },
+  "mmSoulBag0000000": {
+    "name": "Seelensack",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} besitzt einen Seelensack.\nSolange es den Sack hält oder trägt, kann das [[lookup @name lowercase]]{monster}\nseine Aktion Albtraumhafte Heimsuchung einsetzen.</p><p class=\"feature\">Der Sack hat\nRK 15, 20 Trefferpunkte und Resistenz gegen alle Arten von Schaden. Der Sack zerfällt zu Staub,\nwenn er auf 0 Trefferpunkte reduziert wird. Wird der Sack zerstört, werden alle Seelen, die der Sack\nenthält, freigelassen. Das [[lookup @name lowercase]]{monster} kann nach 7 Tagen einen\nneuen Sack erschaffen.</p>"
+  },
+  "mmSpeakWithBeast": {
+    "name": "Mit Tieren und Pflanzen sprechen",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann mit\nTieren und Pflanzen kommunizieren, als ob sie eine gemeinsame Sprache hätten.</p>"
+  },
+  "mmSpellStoring00": {
+    "name": "Zauberspeicherung",
+    "description": "<p class=\"feature\">Ein Zauberwirker, der das Amulett des [[lookup @name\nlowercase]]{monster} trägt, kann das [[lookup @name\nlowercase]]{monster} dazu bringen, einen Zauber des 4. Grades oder niedriger zu speichern. Dazu muss der\nTräger den Zauber auf das [[lookup @name lowercase]]{monster}\nwirken, während er sich innerhalb von 1,5 m davon befindet. Der Zauber hat keine Wirkung, wird aber im\n[[lookup @name lowercase]]{monster} gespeichert. Jeder zuvor gespeicherte Zauber geht\nverloren, wenn ein neuer Zauber gespeichert wird. Das [[lookup @name lowercase]]{monster}\nkann den gespeicherten Zauber mit allen vom ursprünglichen Zauberwirker festgelegten Parametern wirken,\nohne Zauberkomponenten zu benötigen und unter Verwendung der Zauberwirkungsfähigkeit des Zauberwirkers.\nDer gespeicherte Zauber geht dann verloren.</p>"
+  },
+  "mmSpiderClimb000": {
+    "name": "Spinnenklettern",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} kann schwierige Oberflächen\nemporklettern, auch an Decken entlang, ohne einen Fertigkeitswurf ablegen zu müssen.</p>"
+  },
+  "mmSpiritJar00000": {
+    "name": "Geistergefäß",
+    "description": "<p class=\"feature\">Wird es zerstört, bildet sich das [[lookup @name lowercase]]{monster} in [[/r 1d10]] Tagen neu, falls es ein Geistergefäß besitzt, und erwacht mit all seinen Trefferpunkten. Der neue Körper erscheint in einem unbesetzten Feld innerhalb des Unterschlupfs des [[lookup @name lowercase]]{monster}.</p>",
+    "activities": {
+      "Days to Reform": "Tage bis zur Neuentstehung"
+    }
+  },
+  "mmStandingLeap00": {
+    "name": "Stehender Sprung",
+    "description": "<p class=\"feature\">Der Weitsprung des [[lookup @name lowercase]]{monster} beträgt bis zu 6 m und sein Hochsprung bis zu 3 m, mit oder ohne Anlauf.</p>"
+  },
+  "mmStench00000000": {
+    "name": "Gestank",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mJbwhj3beOIB3Jgj]], jede Kreatur (außer einem [[lookup @name lowercase]]{monster}), die ihren Zug in einer [[lookup @target.template.size activity=mJbwhj3beOIB3Jgj]] Fuß großen Emanation beginnt, die vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist bis zum Beginn seines nächsten Zuges &amp;Reference[Poisoned apply=false] vergiftet. <em>Erfolg:</em> Das Ziel ist 1 Stunde lang immun gegen den Gestank aller [[lookup @name lowercase]]{monster}.</p>"
+  },
+  "mmSuccubusForm00": {
+    "name": "Sukkubus-Form",
+    "description": "<p class=\"feature\">Wenn der [[lookup @name lowercase]]{monster} eine lange Rast beendet, kann er sich in eine <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}</strong> verwandeln und deren Werteblock anstelle dieses verwenden. Jegliche Ausrüstung, die er trägt oder bei sich hat, wird nicht verwandelt.</p>",
+    "activities": {
+      "Shape-Shift: Succubus": "Gestaltwandlung: Sukkubus"
+    }
+  },
+  "mmSunlightSensit": {
+    "name": "Sonnenlichtempfindlichkeit",
+    "description": "<p>Im Sonnenlicht hat das [[lookup @name lowercase]]{monster} Nachteil auf Attributswürfe und Angriffswürfe.</p>"
+  },
+  "mmSunlightWeakne": {
+    "name": "Sonnenlichtschwäche",
+    "description": "<p class=\"feature\">Im Sonnenlicht hat das [[lookup @name lowercase]]{monster} Nachteil auf W20-Würfe.</p>"
+  },
+  "mmSwarm000000000": {
+    "name": "Schwarm",
+    "description": "<p>Der Schwarm kann den Raum einer anderen Kreatur einnehmen und umgekehrt, und der Schwarm kann sich durch jede Öffnung bewegen, die groß genug für ein {creature size and type} ist. Der Schwarm kann keine Trefferpunkte zurückgewinnen oder temporäre Trefferpunkte erhalten.</p>"
+  },
+  "mmTelepathicBond": {
+    "name": "Telepathische Verbindung",
+    "description": "<p class=\"feature\">Solange das [[lookup @name lowercase]]{monster} auf derselben Existenzebene wie sein Meister ist, können die beiden telepathisch miteinander kommunizieren.</p>"
+  },
+  "mmTraining000000": {
+    "name": "Training",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} ist in einer Fertigkeit nach Wahl des Spielleiters geübt und hat Vorteil, wann immer es eine Fertigkeitsprüfung mit dieser Fertigkeit ablegt.</p>"
+  },
+  "mmTransparent000": {
+    "name": "Transparent",
+    "description": "<p class=\"feature\">Selbst wenn das [[lookup @name lowercase]]{monster} in vollem Sichtfeld ist, muss eine Kreatur einen [[/check dc=15 ability=wis skill=prc format=long]] bestehen, um das [[lookup @name lowercase]]{monster} zu bemerken, wenn die Kreatur das [[lookup @name lowercase]]{monster} nicht hat sich bewegen oder anderweitig handeln sehen.</p>"
+  },
+  "mmTreasureSense0": {
+    "name": "Schatzgespür",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann den genauen Standort von Edelmetallen und -steinen innerhalb von 18 m um sich herum bestimmen.</p>"
+  },
+  "mmTrollSpawn0000": {
+    "name": "Trollbrut",
+    "description": "<p class=\"feature\">Das Gliedmaß besitzt auf unheimliche Weise dieselben Sinne wie ein ganzer [[lookup @name lowercase]]{monster}. Wird das Gliedmaß nicht innerhalb von 24 Stunden zerstört, wirf [[/r 1d12#Bei einer 12 verwandelt sich das Gliedmaß in einen Troll]]{wirf 1d12}. Bei einer 12 verwandelt sich das Gliedmaß in einen <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]{Troll}</strong>. Andernfalls verdorrt das Gliedmaß.</p>",
+    "activities": {
+      "Troll": "Troll"
+    }
+  },
+  "mmTunneler000000": {
+    "name": "Tunnelgräber",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann sich mit der halben Geschwindigkeit seiner Grabgeschwindigkeit durch massives Gestein graben und hinterlässt einen Tunnel mit 3 m Durchmesser.</p>"
+  },
+  "mmUndeadFortitud": {
+    "name": "Untote Zähigkeit",
+    "description": "<p class=\"feature\">Wenn Schaden das [[lookup @name lowercase]]{monster} auf 0 Trefferpunkte reduziert, legt es einen Konstitutionsrettungswurf (SG 5 plus erlittener Schaden) ab, es sei denn, der Schaden ist gleißend oder stammt von einem Kritischen Treffer. Bei einem erfolgreichen Rettungswurf fällt das [[lookup @name lowercase]]{monster} stattdessen auf 1 Trefferpunkt.</p>"
+  },
+  "mmUndeadRestorat": {
+    "name": "Untote Wiederherstellung",
+    "description": "<p class=\"feature\">Wird das [[lookup @name lowercase]]{monster} zerstört, bevor es für sein Übel büßt, erhält es in [[/r 1d10]] Tagen einen neuen Körper und erwacht mit all seinen Trefferpunkten. Der neue Körper erscheint an einem für das [[lookup @name lowercase]]{monster} bedeutsamen Ort.</p>",
+    "activities": {
+      "Days: New Body": "Tage: Neuer Körper"
+    }
+  },
+  "mmVampireWeaknes": {
+    "name": "Vampirschwächen",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} hat folgende Schwächen:</p><p class=\"feature-trait\"><strong>Verbot.</strong> Das [[lookup @name lowercase]]{monster} kann ein Wohnhaus nicht ohne Einladung eines Bewohners betreten.</p><p class=\"feature-trait\"><strong>Fließendes Wasser.</strong> Das [[lookup @name lowercase]]{monster} erleidet 20 Säureschaden, wenn es seinen Zug in fließendem Wasser beendet.</p><p\nclass=\"feature-trait\"><strong>Pfählung des Herzens.</strong> Das [[lookup @name lowercase]]{monster} wird zerstört, wenn eine Waffe, die Stichschaden verursacht, in das Herz des [[lookup @name lowercase]]{monster} getrieben wird, während das [[lookup @name lowercase]]{monster} den Zustand 'Handlungsunfähig' hat.</p><p class=\"feature-trait\"><strong>Sonnenlicht.</strong> Das [[lookup @name lowercase]]{monster} erleidet 20 gleißenden Schaden, wenn es seinen Zug im Sonnenlicht beginnt. Im Sonnenlicht hat es Nachteil auf Angriffswürfe und Fertigkeitsprüfungen.</p>",
+    "activities": {
+      "Damage: Running Water": "Schaden: Fließendes Wasser",
+      "Damage: Sunlight": "Schaden: Sonnenlicht",
+      "Staked to the Heart": "Pfählung des Herzens"
+    },
+    "effects": {
+      "v2EdEMrtcddO1p8U": "Nachteil auf Angriffe & Prüfungen"
+    }
+  },
+  "mmVampiricConnec": {
+    "name": "Vampirische Verbindung",
+    "description": "<p class=\"feature\">Solange die [[lookup @name lowercase]]{monster} und ihr Vampirmeister auf derselben Existenzebene sind, kann der Vampir telepathisch mit der [[lookup @name lowercase]]{monster} kommunizieren, und der Vampir kann durch die Sinne der [[lookup @name lowercase]]{monster} wahrnehmen.</p>"
+  },
+  "mmVileAppearance": {
+    "name": "Abscheuliches Aussehen",
+    "description": "<p class=\"feature\"><em>Rettungswurf auf Weisheit:</em> SG [[lookup\n@save.dc.value activity=FR0ETDHBas1Z5LfF]], jedes [[lookup\n@target.affects.special activity=FR0ETDHBas1Z5LfF]], das seinen Zug\ninnerhalb von [[lookup @range.value activity=FR0ETDHBas1Z5LfF]] Fuß von der\n[[lookup @name lowercase]]{monster} beginnt und die wahre Form der [[lookup @name\nlowercase]]{monster} sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\nDas Ziel ist bis zum Beginn seines nächsten Zuges dem Zustand &amp;Reference[Frightened apply=false] unterworfen.</p><p class=\"feature\"><em>Erfolg:</em> Das\nZiel ist 24 Stunden lang immun gegen das Abscheuliche Aussehen dieser [[lookup @name lowercase]]{monster}.</p>",
+    "effects": {
+      "CiH2KTuvmdGmuz20": "Verängstigt"
+    }
+  },
+  "mmWaterBreathing": {
+    "name": "Wasseratmung",
+    "description": "<p>Die [[lookup @name lowercase]]{monster} kann nur unter Wasser atmen. Sie\nkann ihren Atem für {duration} außerhalb des Wassers anhalten.</p>"
+  },
+  "mmWaterForm00000": {
+    "name": "Wasserform",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} kann den Raum eines\nFeindes betreten und dort anhalten. Sie kann sich durch einen Raum von nur 2,5 cm Breite bewegen, ohne dafür zusätzliche Bewegung aufzuwenden.</p>"
+  },
+  "mmWaterSusceptib": {
+    "name": "Wasserempfindlichkeit",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} erleidet 3 (1W6)\nKälteschaden für alle 1,5 m, die die [[lookup @name\nlowercase]]{monster} sich im Wasser bewegt, oder für jede Gallone Wasser, die auf sie gespritzt wird.</p><section class=\"secret\"\nid=\"secret-8tKSKGttxgiryprr\"><p><strong>Foundry-Hinweis</strong></p><p>Die Skalierung ist so konfiguriert, dass die korrekte Anzahl von\nWürfeln basierend auf der im Wasser zurückgelegten Distanz gewürfelt wird. 1 ist Standard für 1,5 m, 2 ist für 3 m und so weiter.</p></section>",
+    "activities": {
+      "Cold Damage": "Kälteschaden"
+    }
+  },
+  "mmWebWalker00000": {
+    "name": "Netzläufer",
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} ignoriert\nBewegungsbeschränkungen, die durch Netze verursacht werden, und die [[lookup @name\nlowercase]]{monster} kennt den Standort jeder anderen Kreatur, die mit demselben Netz in Kontakt ist.</p>"
+  },
+  "mmWishes00000000": {
+    "name": "Wünsche",
+    "activities": {
+      "Cast Wish": "Wunsch wirken"
+    }
+  },
+  "phbStandardLangu": {
+    "name": "Standardsprachen",
+    "tableResults": {
+      "rViHFEn5WjhRbElK": "<strong>Sprache:</strong> Gemeinsprache. <strong>Herkunft:</strong> Sigil."
+    }
+  },
+  "phbSublanguageTa": {
+    "name": "Tabelle der Untersprachen",
+    "tableResults": {
+      "pyVRbUOfHAgtAvnf": "<strong>Sprache:</strong> Allgemeine Gebärdensprache. <strong>Herkunft:</strong> Sigil.",
+      "LoCbKgBhdONPEPVB": "<strong>Sprache:</strong> Drakonisch. <strong>Herkunft:</strong> Drachen.",
+      "0uKZmKF7znJNVuzU": "<strong>Sprache:</strong> Zwergisch. <strong>Herkunft:</strong> Zwerge.",
+      "llH2J2NFDJ7eTCim": "<strong>Sprache:</strong> Elfisch. <strong>Herkunft:</strong> Elfen.",
+      "ldceHBQUUr4q4wxq": "<strong>Sprache:</strong> Riesisch. <strong>Herkunft:</strong> Riesen.",
+      "K6WzOtBKakv6WBWo": "<strong>Sprache:</strong> Gnomisch. <strong>Herkunft:</strong> Gnome.",
+      "8jwF2ojzhkWpRtUw": "<strong>Sprache:</strong> Goblinisch. <strong>Herkunft:</strong> Goblinoide.",
+      "b0CKmtsTQ7J2GBz0": "<strong>Sprache:</strong> Halblingisch. <strong>Herkunft:</strong> Halblinge.",
+      "0ax92ObMEQPSC2fm": "<strong>Sprache:</strong> Orkisch. <strong>Herkunft:</strong> Orks."
+    }
+  },
+  "phbStartingTrink": {
+    "name": "Kleinigkeiten"
+  },
+  "dmgGrayBagOfTric": {
+    "name": "Grauer Beutel voller Tricks",
+    "tableResults": {
+      "wHuva8KyJqk0ks9t": "Wiesel",
+      "z4mqTXpfNseZDTT6": "Riesenratte",
+      "y0mm0I94cSaTbkk6": "Dachs",
+      "v65tOkYcYXbUplIe": "Wildschwein",
+      "HRPWtZTeg5oK5ImY": "Panther",
+      "3Qtoly9mgrhZ8UW4": "Riesendachs",
+      "LumSf2zPMkOkfFLE": "Schreckenswolf",
+      "GaLvOBWWFIj4RQIO": "Riesenelch"
+    }
+  },
+  "dmgRustBagOfTric": {
+    "name": "Rostfarbener Beutel voller Tricks",
+    "tableResults": {
+      "XAwjD2CKetY0vDzS": "Ratte",
+      "GHibWDnM5Q0a2JtC": "Eule",
+      "1miaa3ePalyErX8y": "Dogge",
+      "uhxub63WB4H7yROY": "Ziege",
+      "D9qG1cIKGxRGMdm7": "Riesenziege",
+      "SvVflxSVAZgZiUZz": "Riesenkeiler",
+      "SyT5zrUhk8Zh98rX": "Löwe",
+      "SzMeDSCvraNzAqcm": "Braunbär"
+    }
+  },
+  "dmgTanBagOfTrick": {
+    "name": "Hellbrauner Beutel voller Tricks",
+    "tableResults": {
+      "1nEUEa3WUmsNMDFC": "Schakal",
+      "B2uTmg4glLwbt7OE": "Affe",
+      "kDI3PFkVjvrFOI7G": "Pavian",
+      "dGC8E7S2XXliLPjy": "Axtschnabel",
+      "SEhoRaQ3DYPJpgis": "Schwarzbär",
+      "aQ0vAp1BNIGLUZa0": "Riesenwiesel",
+      "GlIp7jcoqnfbWWqc": "Riesenhyäne",
+      "dQ9za3nwnBnEltRF": "Tiger"
+    }
+  },
+  "dmgSlayingAmmuni": {
+    "name": "Munition der Tötung: Kreaturentyp",
+    "tableResults": {
+      "f4AT66qY6IpW9XGE": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4GIkMFeZQHZnfjvq]",
+      "bBzSzzTMgsRu2p9m": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.70bFeuTndNorjLBe]",
+      "5IAfN2gE45YNRnH5": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.o4aDyFCK0ekd9w8j]",
+      "7gOENkePCrW02UwC": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.AvExH8PizzJN0jSM]",
+      "tlAU84ok29YhTp9I": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.VRMET3XgPTjBG91L]",
+      "NjnaG5MkLXwiOFD8": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ku2JX8rDga8GUBul]",
+      "x3ELDvpdCuJRDeDg": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ZssaQ07jWS7jFiej]",
+      "x7mSfJ8AjeVv3NRI": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3JnW3nSByOVKu1LW]",
+      "w8UkRFQNaRdjewAd": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ulADMO3yope7gn5R]",
+      "NfUynzHOgrEO5mmb": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.MKSR9zEe2s3qVILa]",
+      "WQ8bqLhZbWxPsP0b": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.cFNisqoGRSTHYDI4]",
+      "4WNFaBpWyeDphNcG": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3mSYXVx987sezjuS]",
+      "aL8OS42JpqroJaaW": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.BsXM9mDyGJ1R754S]",
+      "evZ08L9NQb1evYe9": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4NXhqKrNtDQjBcc8]"
+    }
+  },
+  "dmgArmorOfResist": {
+    "name": "Rüstung des Widerstands: Typ",
+    "tableResults": {
+      "whhI1ElflkCbBJ3U": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.YreDFSu9z9mGCWt1]",
+      "HJhUoa9dRFWS20cE": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.CfxFdUSiXkOUXym6]",
+      "MWsbp9Vjx5ZFyydf": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.LTByr2rsRPBLLOA0]",
+      "En1vnLK0ysLhxisl": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.VST1qNRu1dHDzkD2]",
+      "eJkcua7kOtectwDX": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.MqubvD3XEwB7DRST]",
+      "LrupslmEYeqxfFWP": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.mmp5O2pZOxJUc2vq]",
+      "MQVpjSCnzqIKWNu2": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.lsPKUk288Jkvahsp]",
+      "vhvfqW7O1Gzc4xnK": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.jyWNVNHLYdxvCOQz]",
+      "tJKURr8q9I73BV2y": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.18IZ8X8zpDXyN33T]",
+      "ZdsE9Cp3Pt2i84xf": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.cbsuJ2tdbBuT5e8U]"
+    }
+  },
+  "dmgBagOfBeansEff": {
+    "name": "Sack der Bohnen: Effekt"
+  },
+  "dmgCarpetOfFlyin": {
+    "name": "Fliegender Teppich: Größe, Kapazität und Geschwindigkeit",
+    "tableResults": {
+      "NcFzEzCwypsVMRNM": "3 × 1,5 m | 200 Pfund Kapazität | 24 m Flugbewegungsrate",
+      "SeuSATVRfn9PNk5i": "4 × 1,8 m | 400 Pfund Kapazität | 18 m Flugbewegungsrate",
+      "jmCslHbnZ20wlGo7": "5 × 2,1 m | 600 Pfund Kapazität | 12 m Flugbewegungsrate",
+      "uhPivfkjbQ5TGQE5": "6 × 2,7 m | 800 Pfund Kapazität | 9 m Flugbewegungsrate"
+    }
+  },
+  "dmgDeckOfIllusio": {
+    "name": "Kartenstapel der Illusionen"
+  },
+  "dmgQuaalsFeather": {
+    "name": "Feder-Marken"
+  },
+  "dmgHatOfManySpel": {
+    "name": "Hut der vielen Zauber"
+  },
+  "dmgHornOfValhall": {
+    "name": "Horn von Valhalla: Typ und Anforderung"
+  },
+  "dmgIronFlaskCont": {
+    "name": "Inhalt der Eisenflasche"
+  },
+  "dmgManualOfGolem": {
+    "name": "Handbuch der Golems: Typ, Zeit und Kosten",
+    "tableResults": {
+      "7I6vQPv0T86eyaR4": "<strong>Golem:</strong> Lehmgolem<br /><strong>Zeit:</strong> 30 Tage<br\n/><strong>Kosten:</strong> 65.000 GM",
+      "OkN7NDendLyIZpeN": "<strong>Golem:</strong> Fleischgolem<br /><strong>Zeit:</strong> 60 Tage<br\n/><strong>Kosten:</strong> 50.000 GM",
+      "fDMIU1f5wTvvhGYg": "<strong>Golem:</strong> Eisengolem<br /><strong>Zeit:</strong> 120 Tage<br\n/><strong>Kosten:</strong> 100.000 GM",
+      "4Jv2P9MWTX6Hk8kO": "<strong>Golem:</strong> Steingolem<br /><strong>Zeit:</strong> 90 Tage<br\n/><strong>Kosten:</strong> 80.000 GM"
+    }
+  },
+  "dmgPotionOfResis": {
+    "name": "Trank des Widerstands: Typ",
+    "tableResults": {
+      "jYpzxdXBzoZCjllp": "Säure",
+      "3oIOKR8BgRYfKafk": "Kälte",
+      "XKHBRiYlsavqLLeO": "Feuer",
+      "RNYLvvsXg3HisLPS": "Wucht",
+      "yp10YxYVnVXwyUlZ": "Blitz",
+      "TwHkuphOIWzxjrfb": "Nekrotisch",
+      "3Kw9mPUhp1uLXn0d": "Gift",
+      "3lYokZU6Ne0J9HkI": "Psychisch",
+      "Uyak5Ygg0HNnRFiE": "Strahlend",
+      "RcsCTzBmpfhAxfuw": "Donner"
+    }
+  },
+  "dmgRingOfResista": {
+    "name": "Ring des Widerstands: Schadensart und Edelstein"
+  },
+  "dmgSphereOfAnnih": {
+    "name": "Kugel der Vernichtung: Interaktionsergebnisse"
+  },
+  "dmgWandOfWonderE": {
+    "name": "Effekte des Wunderstabs"
+  },
+  "dmg13CardDeckOfM": {
+    "name": "Geheimnisvolles Deck: 13 Karten",
+    "tableResults": {
+      "v5WZsl3D7AcVp8kv": "Euryale",
+      "imEKznlZEE0rSsLx": "Flammen",
+      "Tzf8H1DJyFsmBqaN": "Narr",
+      "AEVEm8pwZd8HZEaf": "Schlüssel",
+      "H6PRkRifUyITp5Ph": "Ritter",
+      "q7k0kww4KOcCQh8Z": "Mond",
+      "7h9jMXFIxBKzjivk": "Schurke",
+      "EiuOGVBwrd5dzY1O": "Verderben",
+      "sT9ULq3ZPnBuh0AY": "Schädel",
+      "ckQqX5zhGyji2SBo": "Stern",
+      "XoGa3OMCvqVJ1iUS": "Sonne",
+      "oRpNqb5LQrTBwcdV": "Thron",
+      "xzCuVY29JwIHHgbB": "Leere"
+    }
+  },
+  "dmg22CardDeckOfM": {
+    "name": "Geheimnisvolles Deck: 22 Karten",
+    "tableResults": {
+      "5WGqQRDzxKVqIgoI": "Gleichgewicht",
+      "k0SXf6JEb7Eairsz": "Komet",
+      "APmmNA5Z3jQQG2U0": "Verlies",
+      "JT3pbm7yJ23CiCqT": "Euryale",
+      "JIVjZDR7dWYLBJi4": "Schicksale",
+      "kGl8BbIhwg7Ptesu": "Flammen",
+      "dG8deoNGQdNwnJRf": "Narr",
+      "GUJztKPsgSVX7R39": "Edelstein",
+      "trQNDzdEF19fadQK": "Hofnarr",
+      "D9Z08jw6cnu1UMjo": "Schlüssel",
+      "bEMGelUnEQGCNIch": "Ritter",
+      "sxKB8VQEBh0roKnc": "Mond",
+      "1HtTelpxxOAc4vID": "Rätsel",
+      "9isSpLlYLL5h2Aoa": "Schurke",
+      "nIAzWt9uXY5U3kSz": "Ruine",
+      "nvT66fqxT99k5jKd": "Weiser",
+      "DAzY7u6xTitMeoB6": "Schädel",
+      "petFp3KELvvag9R3": "Stern",
+      "WN6avNTrKLMyCRVD": "Sonne",
+      "xVsjx6HCackwxQ1O": "Klauen",
+      "rMJiKI5wApRiSebO": "Thron",
+      "93Y3C0JT1dJtoFwW": "Leere"
+    }
+  },
+  "dmg14RandomMagic": {
+    "name": "Stufe 1-4",
+    "tableResults": {
+      "Gg7nCEigZCqf4nyB": "Gewöhnlich",
+      "sJKMwd6smS2MRi1P": "Ungewöhnlich",
+      "MACKprVCqnKad9M3": "Selten"
+    }
+  },
+  "dmg1116RandomMag": {
+    "name": "Stufe 11-16",
+    "tableResults": {
+      "61n4jrBVj6TnA0jy": "Gewöhnlich",
+      "hAbp3qGIHSaiOHKt": "Ungewöhnlich",
+      "TP7sKSXl0vmTmsmz": "Selten",
+      "FI2rkXDgk1wOpIXY": "Sehr Selten",
+      "hG3yZoeUz7ey3Nbz": "Legendär"
+    }
+  },
+  "dmg1720RandomMag": {
+    "name": "Stufe 17-20",
+    "tableResults": {
+      "9KZ1W2N2TeA0Nviv": "Selten",
+      "XYaGJR9QsX4QheAN": "Sehr Selten",
+      "AhqH3sbaz4qji2jI": "Legendär"
+    }
+  },
+  "dmg510RandomMagi": {
+    "name": "Stufe 5-10",
+    "tableResults": {
+      "BfCedvnPTTAwkb1N": "Gewöhnlich",
+      "IwfBiK8JLRPOzRVP": "Ungewöhnlich",
+      "Y59GJGrOrBcGmIMl": "Selten",
+      "rhVTXTughS2Dexzv": "Sehr Selten"
+    }
+  },
+  "dmgSenAlignment0": {
+    "name": "Gesinnung",
+    "tableResults": {
+      "HaGsk3odLNg4sF8C": "Rechtschaffen Gut",
+      "N2puDdiTsMaS2ZVa": "Neutral Gut",
+      "fO9KQdZ47YlokV5E": "Chaotisch Gut",
+      "kz8hcyPc2uE3K34P": "Rechtschaffen Neutral",
+      "OzctcEiStYZZ1HMS": "Neutral",
+      "pOEQJL67y863YIed": "Chaotisch Neutral",
+      "jbBP7ixoJDUANp8i": "Rechtschaffen Böse",
+      "v1Pl8lZvAkXB6z6X": "Neutral Böse",
+      "vzBNXh4m46S5Rr1X": "Chaotisch Böse"
+    }
+  },
+  "dmgSenCommunicat": {
+    "name": "Kommunikation",
+    "tableResults": {
+      "81Hqjkrnbx1sSwOJ": "Der Gegenstand kommuniziert, indem er Emotionen an die Kreatur übermittelt, die ihn trägt oder führt.",
+      "mO16jIRjET7lrS3e": "Der Gegenstand spricht eine oder mehrere Sprachen.",
+      "CZz643QK97uhNWCX": "Der Gegenstand spricht eine oder mehrere Sprachen. Zusätzlich kann der Gegenstand telepathisch mit jeder Kreatur kommunizieren, die ihn trägt oder führt."
+    }
+  },
+  "dmgPotionMiscibi": {
+    "name": "Mischbarkeit von Tränken"
+  },
+  "dmgSenSenses0000": {
+    "name": "Sinne",
+    "tableResults": {
+      "Ci8p2gyHULtiT1Uw": "Gehör und normale Sichtweite bis 9 m",
+      "ZTU8T3tLr5DEtyUi": "Gehör und normale Sichtweite bis 18 m",
+      "GEjkKdxm7q5XvDuM": "Gehör und normale Sichtweite bis 36 m",
+      "pOJu9D3HQQlGSpoQ": "Gehör und Dunkelsicht bis 36 m"
+    }
+  },
+  "dmgSenSpecialPur": {
+    "name": "Besonderer Zweck",
+    "tableResults": {
+      "R02Xt6fkm8XdbWLk": "<strong>Gesinnung.</strong> Das Objekt versucht, jene zu besiegen oder zu zerstören, die eine diametral entgegengesetzte Gesinnung haben. Ein solches Objekt ist niemals Neutral.",
+      "kRr85em4JParVCQy": "<strong>Bann.</strong> Das Objekt versucht, Kreaturen eines bestimmten Typs, wie Konstrukte, Unholde oder Untote, zu vereiteln oder zu zerstören.",
+      "SskIQAsN9L231Aip": "<strong>Schöpfersucher.</strong> Das Objekt sucht seinen Schöpfer und möchte verstehen, warum es erschaffen wurde.",
+      "8DsIidU6KrIK8aA3": "<strong>Schicksalssucher.</strong> Das Objekt glaubt, dass es und sein Träger Schlüsselrollen in zukünftigen Ereignissen spielen werden.",
+      "XH6KU6wUB5VOaUb6": "<strong>Zerstörer.</strong> Das Objekt giert nach Zerstörung und stachelt seinen Benutzer an, willkürlich zu kämpfen.",
+      "7JK4YLaze4s1z8ww": "<strong>Ruhmsucher.</strong> Das Objekt strebt nach Ruhm als das größte magische Objekt der Welt, indem es für seinen Benutzer Berühmtheit oder Bekanntheit erlangt.",
+      "FbFyLC891jvuiPLY": "<strong>Wissensucher.</strong> Das Objekt giert nach Wissen oder ist entschlossen, ein Geheimnis zu lüften, eine verborgene Wahrheit zu erfahren oder eine kryptische Prophezeiung zu entschlüsseln.",
+      "QKFHYR8MSe1IBVyW": "<strong>Beschützer.</strong> Das Objekt versucht, eine bestimmte Art von Kreatur zu verteidigen, wie Elfen oder Werwölfe.",
+      "8ymxZZK5xEeJVyR8": "<strong>Seelenverwandter-Sucher.</strong> Das Objekt sucht ein anderes empfindungsfähiges magisches Objekt, vielleicht eines, das ihm selbst ähnlich ist.",
+      "m3bxgqbRQWUJCSwh": "<strong>Templer.</strong> Das Objekt versucht, die Diener und Interessen einer bestimmten Gottheit zu verteidigen."
+    }
+  },
+  "phbgenCardinalDi": {
+    "name": "Himmelsrichtungen",
+    "tableResults": {
+      "DNSpGtmvbcTFYI70": "Norden",
+      "tKlkAqCz2QJZMRaB": "Osten",
+      "OkQWirC6VKB68BXa": "Süden",
+      "CyJrrodLJ2WzWGqT": "Westen"
+    }
+  },
+  "phbsplConfusionB": {
+    "name": "Verwirrungsverhalten",
+    "description": "<p>Verhalten für die Runde</p>",
+    "tableResults": {
+      "wOokSBLpTsUWBccD": "Das Ziel unternimmt keine Aktion und nutzt seine gesamte Bewegung, um sich zu bewegen.\nWürfle [[/r 1d4]] für die Richtung: 1, Norden; 2, Osten; 3, Süden; oder 4,\nWesten.",
+      "VTOEaomsUWS6eaCb": "Das Ziel bewegt sich nicht und unternimmt keine Aktionen.",
+      "usPRYhAMow3voSIj": "Das Ziel bewegt sich nicht und unternimmt die Aktion Angriff, um einen Nahkampfangriff gegen eine zufällige Kreatur in Reichweite auszuführen. Wenn keine in Reichweite ist, unternimmt das Ziel keine Aktion.",
+      "Vk9ifvOs3jxCZhvd": "Das Ziel wählt sein Verhalten.",
+      "8oHL5jQ0fXbXGpuf": "Himmelsrichtungen"
+    }
+  },
+  "phbPrismaticLaye": {
+    "name": "Prismatische Schichten"
+  },
+  "phbPrismaticRays": {
+    "name": "Prismatische Strahlen"
+  },
+  "phbElvenLineage0": {
+    "name": "Elfische Abstammung",
+    "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p>",
+    "tableResults": {
+      "BnLtNGVLIwk3q6Hf": "Elf, Drow",
+      "fRp61b2M2UirSn1B": "Elf, Hochelf",
+      "A4xbZelWo8bO7tfV": "Elf, Waldelf"
+    }
+  },
+  "phbFiendishLegac": {
+    "name": "Teuflisches Erbe",
+    "tableResults": {
+      "BDTDezjTIxlDKI0W": "Tiefling, Abyssal",
+      "az5LLssMmXKwVuVN": "Tiefling, Chthonisch",
+      "rgmgNUmrPVv1e7Dz": "Tiefling, Infernal"
+    }
+  },
+  "phbGnomishLineag": {
+    "name": "Gnomische Abstammung",
+    "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p>",
+    "tableResults": {
+      "AIWT6lRqac4IYvnv": "Gnom, Wald",
+      "tErs3uTFNYKl3gAu": "Gnom, Fels"
+    }
+  },
+  "phbsplTeleportMi": {
+    "name": "Teleportations-Missgeschick",
+    "tableResults": {
+      "RaCnOnLRcJPv11Vf": "<strong>Permanenter Kreis:</strong> Am Zielort",
+      "4W9YPHqIIDyt3WbV": "<strong>Verknüpftes Objekt:</strong> Am Zielort",
+      "MgxjepFoJzZqVf1M": "<strong>Sehr vertraut:</strong> Missgeschick",
+      "BtifMFAP26aAcDOx": "<strong>Sehr vertraut:</strong> Ähnlicher Bereich",
+      "K6jZpSdlRXI1Wg9Q": "<strong>Sehr vertraut:</strong> Ziel verfehlt",
+      "ZPWjjJxSnyLENM8O": "<strong>Sehr vertraut:</strong> Am Zielort",
+      "niANcATD48MDIE5s": "<strong>Gelegentlich gesehen:</strong> Missgeschick",
+      "rPgQoygHRRWRRmIK": "<strong>Gelegentlich gesehen:</strong> Ähnlicher Bereich",
+      "5hV5vL7SYu53EPvb": "<strong>Gelegentlich gesehen:</strong> Ziel verfehlt",
+      "KShVQqILsbEKwNQ1": "<strong>Gelegentlich gesehen:</strong> Ziel verfehlt",
+      "n7LhrgNZV6rYGYBv": "<strong>Gesehen oder beschrieben:</strong> Missgeschick",
+      "S3FXuqVgRazP23RK": "<strong>Gesehen oder beschrieben:</strong> Ähnlicher Bereich",
+      "LWWefv3FEwkukueE": "<strong>Gesehen oder beschrieben:</strong> Ziel verfehlt",
+      "K3Uun9ZfyGTdLNJl": "<strong>Gesehen oder beschrieben:</strong> Am Zielort",
+      "UH8N3zGLSGiLPObv": "<strong>Falsches Ziel:</strong> Missgeschick",
+      "yJ4FhyyZvenG7AJl": "<strong>Falsches Ziel:</strong> Ähnlicher Bereich"
     }
   }
 };

@@ -1,0 +1,29 @@
+{
+  "label": "Würfeltabellen (Modern, DE)",
+  "mapping": {
+    "name": {
+      "path": "name",
+      "converter": "dnd5e55NameDeRuntime"
+    },
+    "description": {
+      "path": "description",
+      "converter": "dnd5e55DescriptionDeRuntime"
+    },
+    "results": {
+      "path": "results",
+      "converter": "dnd5e55RollTableResultsDeRuntime"
+    }
+  },
+  "folders": {
+    "Bag of Tricks": "Beutel voller Tricks",
+    "Creating a Character": "Charaktererstellung",
+    "Item-Specific Tables": "Gegenstandsspezifische Tabellen",
+    "Magic Items": "Magische Gegenstände",
+    "Mysterious Deck": "Geheimnisvolles Deck",
+    "Random Magic Item Rarity by Level": "Zufällige Seltenheit magischer Gegenstände nach Stufe",
+    "Reincarnated Lineages": "Wiedergeborene Abstammungen",
+    "Sentient Item Attributes": "Eigenschaften empfindungsfähiger Gegenstände",
+    "Spells": "Zauber"
+  },
+  "entries": {}
+}

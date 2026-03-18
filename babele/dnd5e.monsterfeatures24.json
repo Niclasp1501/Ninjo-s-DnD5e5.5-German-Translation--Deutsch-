@@ -16,6 +16,10 @@
     "activities": {
       "path": "system.activities",
       "converter": "dnd5e55ActivitiesDeRuntime"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "dnd5e55EffectsDeRuntime"
     }
   },
   "folders": {
