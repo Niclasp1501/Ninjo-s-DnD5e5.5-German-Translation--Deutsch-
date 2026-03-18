@@ -3806,29 +3806,88 @@ export const MODERN_OVERRIDES_BY_ID = {
         "hint": "Dein Hintergrund erlaubt dir, Intelligenz, Weisheit und Charisma zu erhöhen: Erhöhe einen Wert um 2 und einen anderen um 1 oder alle drei um 1. Kein Wert darf dadurch über 20 steigen."
       },
       "Lk1ScjOCqRDtX2Tg": {
-        "title": "Hintergrund-Übungsboni",
-        "hint": "Dein Hintergrund gewährt dir Übung in Einsicht und Religion sowie Übung mit Kalligrafiebedarf."
+        "title": "Hintergrund-Fertigkeiten",
+        "hint": ">-"
       },
       "ygyW1bVUTnCnjxY2": {
         "title": "Hintergrund-Talent",
-        "hint": "Dein Hintergrund gewährt dir das Talent Magiekundiger (Kleriker)."
+        "hint": "Dein Hintergrund verleiht dir das Talent Magiekundiger (Kleriker)."
       },
       "McRHkSL3WnG2Po7g": {
         "title": "Sprachen wählen",
-        "hint": "Dein Charakter kennt mindestens drei Sprachen: Gemeinsprache plus zwei weitere Sprachen, die du aus der Tabelle der Standardsprachen auswählst oder erwürfelst."
+        "hint": ">-"
+      },
+      "kDI6zoUamHzFTnHG": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": ">-"
       }
     }
   },
   "phbbgCriminal000": {
-    "name": "Krimineller"
+    "name": "Krimineller",
+    "description": "<p><strong>Attributswerte:</strong> Geschicklichkeit, Konstitution, Intelligenz</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftAlert000000]{Alert}</p><p><strong>Fertigkeitsübungen:</strong> Fingerfertigkeit und Heimlichkeit</p><p><strong>Werkzeugübung:</strong> Diebeswerkzeuge</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes}, 16\\_GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgCriminal000 inline classes=\\\"free-rules-embed\\\"]</p>",
+    "advancement": {
+      "8gFHAigaFboVUSgH": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": ">-"
+      },
+      "WJA48TLxfqlc3ygz": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Wachsam."
+      },
+      "CdiCt0Cr9bP9FQNO": {
+        "title": "Hintergrund-Fertigkeiten",
+        "hint": ">-"
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": ">-"
+      }
+    }
   },
   "phbbgSage0000000": {
     "name": "Weiser",
-    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\nWeisheit</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n(Magier)</p><p><strong>FertigkeitsÃ¼bungen:</strong> Arkana und\nGeschichte</p><p><strong>WerkzeugÃ¼bung:</strong> Kalligrafenbedarf</p><p><strong>AusrÃ¼stung:</strong> <em>WÃ¤hle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\nSupplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n(Geschichte),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (8\nBlatt), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n8 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\ninline classes=\"free-rules-embed\"]</p>"
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\nWeisheit</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n(Magier)</p><p><strong>FertigkeitsÃ¼bungen:</strong> Arkana und\nGeschichte</p><p><strong>WerkzeugÃ¼bung:</strong> Kalligrafenbedarf</p><p><strong>AusrÃ¼stung:</strong> <em>WÃ¤hle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\nSupplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n(Geschichte),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (8\nBlatt), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n8 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\ninline classes=\"free-rules-embed\"]</p>",
+    "advancement": {
+      "3O61L5uTy5jRCqJb": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": ">-"
+      },
+      "DMd8rikwPlZdpP1l": {
+        "title": "Hintergrund-Fertigkeiten",
+        "hint": ">-"
+      },
+      "kKt7VMmZUuRr35dP": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Magiekundiger (Zauberer)."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": ">-"
+      }
+    }
   },
   "phbbgSoldier0000": {
     "name": "Soldat",
-    "description": "<p><strong>Attributswerte:</strong> StÃ¤rke, Geschicklichkeit,\nKonstitution</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\nAttacker}</p><p><strong>FertigkeitsÃ¼bungen:</strong> Athletik und\nEinschÃ¼chtern</p><p><strong>WerkzeugÃ¼bung:</strong> <em>WÃ¤hle eine Art\nvon</em> <em>GlÃ¼cksspiel-Set</em> (siehe\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n6})</p><p><strong>AusrÃ¼stung:</strong> <em>WÃ¤hle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20\n@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, GlÃ¼cksspiel-Set (wie oben),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},\n@UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes},\n14 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\ninline classes=\"free-rules-embed\"]</p>"
+    "description": "<p><strong>Attributswerte:</strong> StÃ¤rke, Geschicklichkeit,\nKonstitution</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\nAttacker}</p><p><strong>FertigkeitsÃ¼bungen:</strong> Athletik und\nEinschÃ¼chtern</p><p><strong>WerkzeugÃ¼bung:</strong> <em>WÃ¤hle eine Art\nvon</em> <em>GlÃ¼cksspiel-Set</em> (siehe\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n6})</p><p><strong>AusrÃ¼stung:</strong> <em>WÃ¤hle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20\n@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, GlÃ¼cksspiel-Set (wie oben),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},\n@UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes},\n14 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\ninline classes=\"free-rules-embed\"]</p>",
+    "advancement": {
+      "5hLHlmqxzoAta0uf": {
+        "title": "Hintergrund-Attributsverbesserung",
+        "hint": ">-"
+      },
+      "y4FZ4I6wU0F8DEjO": {
+        "title": "Hintergrund-Fertigkeiten",
+        "hint": ">-"
+      },
+      "tk8CFgIW7fXL0mlu": {
+        "title": "Hintergrund-Talent",
+        "hint": "Dein Hintergrund verleiht dir das Talent Wilder Angreifer."
+      },
+      "pLGiyOjTP7nwuwTl": {
+        "title": "Sprachen wählen",
+        "hint": ">-"
+      }
+    }
   },
   "phbspDragonborn0": {
     "name": "DrachenblÃ¼tiger",
@@ -3836,7 +3895,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "advancement": {
       "65BqBxGcj6z4S803": {
         "title": "Größe",
-        "hint": "Mittelgroß (etwa 1,5–2,1 m groß)"
+        "hint": "Mittelgroß (etwa 1,5–2,1 Meter groß)"
       },
       "XA1fKbmfBiCHnVzs": {
         "title": "Atemwaffe"
@@ -3846,7 +3905,7 @@ export const MODERN_OVERRIDES_BY_ID = {
       },
       "8maGZKJ9TOIgNR80": {
         "title": "Schadensresistenz",
-        "hint": "Du hast Resistenz gegen die Schadensart, die durch dein Merkmal Drakonische Abstammung bestimmt wird."
+        "hint": ">-"
       },
       "jOGAWKkPIAbshOpo": {
         "title": "Drakonischer Flug"
@@ -3855,15 +3914,75 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbspDwarf000000": {
     "name": "Zwerg",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDwarf000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"dwarf-traits\">Zwergenmerkmale</h3><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>GrÃ¶ÃŸe:\n</strong>Mittel (etwa 4â€“1,5 m groÃŸ)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Zwerg besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 36 m.</p><p><strong>Zwergische WiderstandsfÃ¤higkeit.</strong> Du hast\nResistenz gegen Giftschaden. AuÃŸerdem hast du Vorteil auf RettungswÃ¼rfe, die du\nmachst, um den Zustand Vergiftet zu vermeiden oder zu beenden.</p><p><strong>Zwergische\nZÃ¤higkeit.</strong> Dein Maximum an Trefferpunkten erhÃ¶ht sich um 1, und es\nerhÃ¶ht sich jedes Mal um 1, wenn du eine\nStufe aufsteigst.</p><p><strong>SteingespÃ¼r.</strong> Als Bonusaktion erhÃ¤ltst du\nErschÃ¼tterungssinn mit einer Reichweite von 18 m fÃ¼r 10 Minuten. Du musst dich auf einer Stein-\noberflÃ¤che befinden oder eine SteinoberflÃ¤che berÃ¼hren, um diesen ErschÃ¼tterungssinn zu nutzen. Der Stein kann\nnatÃ¼rlich oder bearbeitet sein.Du kannst diese Bonusaktion eine Anzahl von Malen einsetzen,\ndie deinem Ãœbungsbonus entspricht, und du erhÃ¤ltst alle verbrauchten Anwendungen zurÃ¼ck, wenn du\neine lange Rast beendest.</p>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDwarf000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"dwarf-traits\">Zwergenmerkmale</h3><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>GrÃ¶ÃŸe:\n</strong>Mittel (etwa 4â€“1,5 m groÃŸ)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Zwerg besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 36 m.</p><p><strong>Zwergische WiderstandsfÃ¤higkeit.</strong> Du hast\nResistenz gegen Giftschaden. AuÃŸerdem hast du Vorteil auf RettungswÃ¼rfe, die du\nmachst, um den Zustand Vergiftet zu vermeiden oder zu beenden.</p><p><strong>Zwergische\nZÃ¤higkeit.</strong> Dein Maximum an Trefferpunkten erhÃ¶ht sich um 1, und es\nerhÃ¶ht sich jedes Mal um 1, wenn du eine\nStufe aufsteigst.</p><p><strong>SteingespÃ¼r.</strong> Als Bonusaktion erhÃ¤ltst du\nErschÃ¼tterungssinn mit einer Reichweite von 18 m fÃ¼r 10 Minuten. Du musst dich auf einer Stein-\noberflÃ¤che befinden oder eine SteinoberflÃ¤che berÃ¼hren, um diesen ErschÃ¼tterungssinn zu nutzen. Der Stein kann\nnatÃ¼rlich oder bearbeitet sein.Du kannst diese Bonusaktion eine Anzahl von Malen einsetzen,\ndie deinem Ãœbungsbonus entspricht, und du erhÃ¤ltst alle verbrauchten Anwendungen zurÃ¼ck, wenn du\neine lange Rast beendest.</p>",
+    "advancement": {
+      "6HdONjMD4UozXSfC": {
+        "hint": "Mittelgroß (etwa 1,2–1,5 Meter groß)"
+      },
+      "PphNMhWLl5mEgAZf": {
+        "title": "Zwergenmerkmale"
+      },
+      "S3kro3b0bq0Ks6Y8": {
+        "title": "Zwergische Widerstandsfähigkeit",
+        "hint": "Du hast Resistenz gegen Giftschaden."
+      }
+    }
   },
   "phbspDrow0000000": {
     "name": "Elf, Drow",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"drow\">Drow</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDrow0000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"elf-traits\">Elfenmerkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe:\n</strong>Mittel (etwa 5â€“1,8 m groÃŸ)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Elf besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 18 m.</p><p><strong>Elfische Abstammung. </strong>Du bist Teil einer\nAbstammungslinie, die dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die\nCharakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der\nTabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne einen\nZauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du\neine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du\nauf dem entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist deine\nZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit diesem Merkmal wirkst (wÃ¤hle die\nFÃ¤higkeit, wenn du die Abstammung auswÃ¤hlst).</p><table><caption>Drow-Abstammungsmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe\n5</td></tr></thead><tbody><tr><td>Die Reichweite deiner Dunkelsicht erhÃ¶ht\nsich auf 36 m. Du kennst auÃŸerdem den\n@UUID[Compendium.dnd5e.spells24.Item.phbsplDancingLig]{Dancing Lights}\nZaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie\nFire}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table><p><strong>Feen-Abstammung.</strong> Du hast Vorteil auf RettungswÃ¼rfe, die du machst, um den Zustand\n&amp;Reference[Charmed] zu vermeiden oder zu beenden.</p><p><strong>Scharfe\nSinne.</strong> Du hast Ãœbung in der Fertigkeit Einsicht, Wahrnehmung oder\nÃœberleben.</p><p><strong>Trance.</strong> Du musst nicht schlafen,\nund Magie kann dich nicht einschlÃ¤fern. Du kannst eine lange Rast in 4 Stunden beenden, wenn\ndu diese Stunden in einer tranceartigen Meditation verbringst, wÃ¤hrend der du bei\nBewusstsein bleibst.</p>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"drow\">Drow</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDrow0000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"elf-traits\">Elfenmerkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe:\n</strong>Mittel (etwa 5â€“1,8 m groÃŸ)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Elf besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 18 m.</p><p><strong>Elfische Abstammung. </strong>Du bist Teil einer\nAbstammungslinie, die dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die\nCharakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der\nTabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne einen\nZauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du\neine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du\nauf dem entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist deine\nZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit diesem Merkmal wirkst (wÃ¤hle die\nFÃ¤higkeit, wenn du die Abstammung auswÃ¤hlst).</p><table><caption>Drow-Abstammungsmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe\n5</td></tr></thead><tbody><tr><td>Die Reichweite deiner Dunkelsicht erhÃ¶ht\nsich auf 36 m. Du kennst auÃŸerdem den\n@UUID[Compendium.dnd5e.spells24.Item.phbsplDancingLig]{Dancing Lights}\nZaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie\nFire}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table><p><strong>Feen-Abstammung.</strong> Du hast Vorteil auf RettungswÃ¼rfe, die du machst, um den Zustand\n&amp;Reference[Charmed] zu vermeiden oder zu beenden.</p><p><strong>Scharfe\nSinne.</strong> Du hast Ãœbung in der Fertigkeit Einsicht, Wahrnehmung oder\nÃœberleben.</p><p><strong>Trance.</strong> Du musst nicht schlafen,\nund Magie kann dich nicht einschlÃ¤fern. Du kannst eine lange Rast in 4 Stunden beenden, wenn\ndu diese Stunden in einer tranceartigen Meditation verbringst, wÃ¤hrend der du bei\nBewusstsein bleibst.</p>",
+    "advancement": {
+      "5w2FaHXRKiN7v1rE": {
+        "hint": "Mittelgroß (etwa 1,5–1,8 Meter groß)"
+      },
+      "boHzoT53gYPvJ9o2": {
+        "title": "Elfenmerkmale"
+      },
+      "nccRK77cXNtEHCHX": {
+        "title": "Scharfe Sinne",
+        "hint": "Du bist geübt in den Fertigkeiten Einsicht, Wahrnehmung oder Überleben."
+      },
+      "LWGXpgeZc3PwUgTg": {
+        "title": "Drow-Merkmale",
+        "hint": ">-"
+      },
+      "hIn6cR8fRweVWhTp": {
+        "title": "Drow-Merkmale",
+        "hint": ">-"
+      },
+      "18x2qczDE0MerZfa": {
+        "title": "Drow-Merkmale",
+        "hint": ">-"
+      }
+    }
   },
   "phbspHighElf0000": {
     "name": "Elf, Hochelf",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"high-elves\">Hochelfen</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHighElf0000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"elf-traits\">Elfenmerkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe:\n</strong>Mittel (etwa 5â€“1,8 m groÃŸ)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Elf besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 18 m.</p><p><strong>Elfische Abstammung. </strong>Du bist Teil einer\nAbstammungslinie, die dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die\nCharakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der\nTabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne einen\nZauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du\neine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du\nauf dem entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist deine\nZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit diesem Merkmal wirkst (wÃ¤hle die\nFÃ¤higkeit, wenn du die Abstammung auswÃ¤hlst).</p><table><caption>Hochelfen-Abstammungsmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe\n5</td></tr></thead><tbody><tr><td>Du kennst den\n@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Prestidigitation}\nZaubertrick. Immer wenn du eine lange Rast beendest, kannst du diesen Zaubertrick\ndurch einen anderen Zaubertrick aus der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard\nspell\nlist}.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect\nMagic}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty\nStep}</td></tr></tbody></table><p><strong>Feen-Abstammung.</strong> Du hast\nVorteil auf RettungswÃ¼rfe, die du machst, um den Zustand Bezaubert\nzu vermeiden oder zu beenden.</p><p><strong>Scharfe Sinne.</strong> Du hast Ãœbung in der\nFertigkeit Einsicht, Wahrnehmung oder Ãœberleben.</p><p><strong>Trance.</strong> Du\nmusst nicht schlafen, und Magie kann dich nicht einschlÃ¤fern. Du kannst eine\nlange Rast in 4 Stunden beenden, wenn du diese Stunden in einer tranceartigen Meditation\nverbringst, wÃ¤hrend der du bei Bewusstsein bleibst.</p>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"high-elves\">Hochelfen</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHighElf0000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"elf-traits\">Elfenmerkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe:\n</strong>Mittel (etwa 5â€“1,8 m groÃŸ)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Elf besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 18 m.</p><p><strong>Elfische Abstammung. </strong>Du bist Teil einer\nAbstammungslinie, die dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die\nCharakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der\nTabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne einen\nZauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du\neine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du\nauf dem entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist deine\nZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit diesem Merkmal wirkst (wÃ¤hle die\nFÃ¤higkeit, wenn du die Abstammung auswÃ¤hlst).</p><table><caption>Hochelfen-Abstammungsmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe\n5</td></tr></thead><tbody><tr><td>Du kennst den\n@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Prestidigitation}\nZaubertrick. Immer wenn du eine lange Rast beendest, kannst du diesen Zaubertrick\ndurch einen anderen Zaubertrick aus der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard\nspell\nlist}.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect\nMagic}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty\nStep}</td></tr></tbody></table><p><strong>Feen-Abstammung.</strong> Du hast\nVorteil auf RettungswÃ¼rfe, die du machst, um den Zustand Bezaubert\nzu vermeiden oder zu beenden.</p><p><strong>Scharfe Sinne.</strong> Du hast Ãœbung in der\nFertigkeit Einsicht, Wahrnehmung oder Ãœberleben.</p><p><strong>Trance.</strong> Du\nmusst nicht schlafen, und Magie kann dich nicht einschlÃ¤fern. Du kannst eine\nlange Rast in 4 Stunden beenden, wenn du diese Stunden in einer tranceartigen Meditation\nverbringst, wÃ¤hrend der du bei Bewusstsein bleibst.</p>",
+    "advancement": {
+      "5w2FaHXRKiN7v1rE": {
+        "hint": "Mittelgroß (etwa 1,5–1,8 Meter groß)"
+      },
+      "boHzoT53gYPvJ9o2": {
+        "title": "Elfenmerkmale"
+      },
+      "wyzOrBj4qIVsCKc7": {
+        "title": "Scharfe Sinne",
+        "hint": "Du bist geübt in den Fertigkeiten Einsicht, Wahrnehmung oder Überleben."
+      },
+      "hraql8YRB41ssDA6": {
+        "title": "Hochelfen-Merkmale",
+        "hint": ">-"
+      },
+      "iztB4GPENKXiA72M": {
+        "title": "Hochelfen-Merkmale",
+        "hint": ">-"
+      },
+      "1LZlC6uInez1oV7n": {
+        "title": "Hochelfen-Merkmale",
+        "hint": ">-"
+      }
+    }
   },
   "phbspWoodElf0000": {
     "name": "Elf, Waldelf",
@@ -3899,11 +4018,65 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbspChthonicTie": {
     "name": "Tiefling, Chthonisch",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"chthonic\">Chthonische</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspChthonicTie\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"tiefling-traits\">Tiefling-Eigenschaften</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe: </strong>Mittel (etwa 4â€“2,1 m groÃŸ) oder Klein (etwa 3â€“1,2 m groÃŸ), wÃ¤hlbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Eigenschaften.</p><p><strong>Dunkelsicht. </strong>Du hast Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der EmpfÃ¤nger eines Erbes, das dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine ZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit dieser Eigenschaft wirkst (wÃ¤hle die FÃ¤higkeit, wenn du das Erbe auswÃ¤hlst).</p><p><strong>Jenseitige PrÃ¤senz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit dieser Eigenschaft wirkst, verwendet der Zauber dieselbe ZauberfÃ¤higkeit, die du fÃ¼r deine Eigenschaft 'Teuflisches Erbe' verwendest.</p><table><caption>Teuflische Erbe</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Nekrotischen Schaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplChillTouch]{Chill Touch} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFalseLife0]{False\nLife}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRayofEnfee]{Ray\nof Enfeeblement}</td></tr></tbody></table>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"chthonic\">Chthonische</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspChthonicTie\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"tiefling-traits\">Tiefling-Eigenschaften</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe: </strong>Mittel (etwa 4â€“2,1 m groÃŸ) oder Klein (etwa 3â€“1,2 m groÃŸ), wÃ¤hlbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Eigenschaften.</p><p><strong>Dunkelsicht. </strong>Du hast Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der EmpfÃ¤nger eines Erbes, das dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine ZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit dieser Eigenschaft wirkst (wÃ¤hle die FÃ¤higkeit, wenn du das Erbe auswÃ¤hlst).</p><p><strong>Jenseitige PrÃ¤senz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit dieser Eigenschaft wirkst, verwendet der Zauber dieselbe ZauberfÃ¤higkeit, die du fÃ¼r deine Eigenschaft 'Teuflisches Erbe' verwendest.</p><table><caption>Teuflische Erbe</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Nekrotischen Schaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplChillTouch]{Chill Touch} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFalseLife0]{False\nLife}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRayofEnfee]{Ray\nof Enfeeblement}</td></tr></tbody></table>",
+    "advancement": {
+      "lskxIeib6rIreZ1h": {
+        "hint": "Mittel (ca. 1,20-2,10 Meter groß) oder Klein (ca. 0,90-1,20 Meter groß)"
+      },
+      "T8T6H9TudTleafUL": {
+        "title": "Tiefling-Merkmale"
+      },
+      "kcfmKwJkaV9btwJU": {
+        "title": "Jenseitige Präsenz"
+      },
+      "O6M9VGAwHx9Kkfhj": {
+        "title": "Chthonische Tiefling-Merkmale",
+        "hint": "Du hast Resistenz gegen Nekrotischen Schaden."
+      },
+      "pIi692Cevlw7qZRe": {
+        "title": "Chthonische Tiefling-Merkmale",
+        "hint": ">-"
+      },
+      "DU7Y6D1IJSSgObJK": {
+        "title": "Chthonische Tiefling-Merkmale",
+        "hint": ">-"
+      },
+      "R0k1RmQximNOQw1R": {
+        "title": "Chthonische Tiefling-Merkmale",
+        "hint": ">-"
+      }
+    }
   },
   "phbspInfernalTie": {
     "name": "Tiefling, Infernal",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"infernal\">Infernale</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"tiefling-traits\">Tiefling-Eigenschaften</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe: </strong>Mittel (etwa 4â€“2,1 m groÃŸ) oder Klein (etwa 3â€“1,2 m groÃŸ), wÃ¤hlbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Eigenschaften.</p><p><strong>Dunkelsicht. </strong>Du hast Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der EmpfÃ¤nger eines Erbes, das dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine ZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit dieser Eigenschaft wirkst (wÃ¤hle die FÃ¤higkeit, wenn du das Erbe auswÃ¤hlst).</p><p><strong>Jenseitige PrÃ¤senz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit dieser Eigenschaft wirkst, verwendet der Zauber dieselbe ZauberfÃ¤higkeit, die du fÃ¼r deine Eigenschaft 'Teuflisches Erbe' verwendest.</p><table><caption>Teuflische Erbe</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Fire Bolt} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Hellish\nRebuke}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"infernal\">Infernale</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"tiefling-traits\">Tiefling-Eigenschaften</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>GrÃ¶ÃŸe: </strong>Mittel (etwa 4â€“2,1 m groÃŸ) oder Klein (etwa 3â€“1,2 m groÃŸ), wÃ¤hlbar bei der Auswahl dieser Spezies</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Eigenschaften.</p><p><strong>Dunkelsicht. </strong>Du hast Dunkelsicht mit einer Reichweite von 18 m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der EmpfÃ¤nger eines Erbes, das dir Ã¼bernatÃ¼rliche FÃ¤higkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber hÃ¶heren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhÃ¤ltst die FÃ¤higkeit, ihn auf diese Weise zu wirken, zurÃ¼ck, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine ZauberfÃ¤higkeit fÃ¼r die Zauber, die du mit dieser Eigenschaft wirkst (wÃ¤hle die FÃ¤higkeit, wenn du das Erbe auswÃ¤hlst).</p><p><strong>Jenseitige PrÃ¤senz.</strong> Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy} Zaubertrick. Wenn du ihn mit dieser Eigenschaft wirkst, verwendet der Zauber dieselbe ZauberfÃ¤higkeit, die du fÃ¼r deine Eigenschaft 'Teuflisches Erbe' verwendest.</p><table><caption>Teuflische Erbe</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Fire Bolt} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Hellish\nRebuke}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table>",
+    "advancement": {
+      "lskxIeib6rIreZ1h": {
+        "hint": "Mittel (ca. 1,20-2,10 Meter groß) oder Klein (ca. 0,90-1,20 Meter groß)"
+      },
+      "T8T6H9TudTleafUL": {
+        "title": "Tiefling-Merkmale"
+      },
+      "bD2XFMWGPkFJLr2w": {
+        "title": "Jenseitige Präsenz"
+      },
+      "9V9xGP0Fsqh3NDsB": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": "Du hast Resistenz gegen Feuerschaden."
+      },
+      "gMovXMwHeD9cCL99": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": ">-"
+      },
+      "ol3SWLw2FTNEiXrb": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": ">-"
+      },
+      "cj8h25IH0Zvdy3Bm": {
+        "title": "Infernalische Tiefling-Merkmale",
+        "hint": ">-"
+      }
+    }
   },
   "phbsptBreathWeap": {
     "name": "Atemwaffe",
@@ -3979,6 +4152,12 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Als Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten Ort, den du sehen kannst.</p>",
     "activities": {
       "Cloud's Jaunt": "Wolken-Sprung"
+    },
+    "advancement": {
+      "phbsptCloudsJaun": {
+        "title": "Wolkenwanderung",
+        "hint": "Wolkenwanderung"
+      }
     }
   },
   "phbsptFiresBurn0": {
@@ -3986,6 +4165,12 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufÃ¼gst, kannst du diesem Ziel zusÃ¤tzlich 1W10 Feuerschaden zufÃ¼gen.</p>",
     "activities": {
       "Burn": "Brand"
+    },
+    "advancement": {
+      "phbsptFiresBurn0": {
+        "title": "Feuerbrand",
+        "hint": "Feuerbrand"
+      }
     }
   },
   "phbsptFrostsChil": {
@@ -3996,17 +4181,35 @@ export const MODERN_OVERRIDES_BY_ID = {
     },
     "effects": {
       "YHKgdj2KIbQRBZWW": "ErkÃ¤ltet"
+    },
+    "advancement": {
+      "phbsptFrostsChil": {
+        "title": "Frostkälte",
+        "hint": "Frostkälte"
+      }
     }
   },
   "phbsptGiantAnces": {
     "name": "Riesen-Abstammung",
-    "description": "<p>Du stammst von Riesen ab. WÃ¤hle einen der folgenden Vorteile â€“ eine Ã¼bernatÃ¼rliche Gabe deiner Abstammung; du kannst den gewÃ¤hlten Vorteil so oft nutzen, wie dein Ãœbungsbonus betrÃ¤gt, und du erhÃ¤ltst alle verbrauchten Anwendungen zurÃ¼ck, wenn du eine Lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten Ort, den du sehen kannst.</p><p><strong>Brand des Feuers (Feuerriese).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufÃ¼gst, kannst du diesem Ziel zusÃ¤tzlich 1W10 Feuerschaden zufÃ¼gen.</p><p><strong>KÃ¤lte des Frosts (Frostringe).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufÃ¼gst, kannst du diesem Ziel zusÃ¤tzlich 1W6 KÃ¤lteschaden zufÃ¼gen und seine Bewegungsrate bis zum Beginn deines nÃ¤chsten Zuges um 3 m reduzieren.</p><p><strong>HÃ¼gel-Sturz (HÃ¼gelriese). </strong>Wenn du eine GroÃŸe oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufÃ¼gst, kannst du diesem Ziel die Bedingung Liegend geben.</p><p><strong>Steinerne Ausdauer (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 wÃ¼rfeln. Addiere deinen Konstitutionsmodifikator zu dem gewÃ¼rfelten Wert und reduziere den Schaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von dir erleidest, kannst du als Reaktion 1W8 Donnerschaden an dieser Kreatur zufÃ¼gen.</p>"
+    "description": "<p>Du stammst von Riesen ab. WÃ¤hle einen der folgenden Vorteile â€“ eine Ã¼bernatÃ¼rliche Gabe deiner Abstammung; du kannst den gewÃ¤hlten Vorteil so oft nutzen, wie dein Ãœbungsbonus betrÃ¤gt, und du erhÃ¤ltst alle verbrauchten Anwendungen zurÃ¼ck, wenn du eine Lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten Ort, den du sehen kannst.</p><p><strong>Brand des Feuers (Feuerriese).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufÃ¼gst, kannst du diesem Ziel zusÃ¤tzlich 1W10 Feuerschaden zufÃ¼gen.</p><p><strong>KÃ¤lte des Frosts (Frostringe).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufÃ¼gst, kannst du diesem Ziel zusÃ¤tzlich 1W6 KÃ¤lteschaden zufÃ¼gen und seine Bewegungsrate bis zum Beginn deines nÃ¤chsten Zuges um 3 m reduzieren.</p><p><strong>HÃ¼gel-Sturz (HÃ¼gelriese). </strong>Wenn du eine GroÃŸe oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufÃ¼gst, kannst du diesem Ziel die Bedingung Liegend geben.</p><p><strong>Steinerne Ausdauer (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 wÃ¼rfeln. Addiere deinen Konstitutionsmodifikator zu dem gewÃ¼rfelten Wert und reduziere den Schaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von dir erleidest, kannst du als Reaktion 1W8 Donnerschaden an dieser Kreatur zufÃ¼gen.</p>",
+    "advancement": {
+      "phbsptGiantAnces": {
+        "title": "Riesenabstammung",
+        "hint": "Riesenabstammung"
+      }
+    }
   },
   "phbsptHillsTumbl": {
     "name": "HÃ¼gelsturz",
     "description": "<p>Wenn du eine GroÃŸe oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufÃ¼gst, kannst du diesem Ziel den Zustand &amp;Reference[Prone] verleihen.</p>",
     "activities": {
       "Hill's Tumble": "HÃ¼gelsturz"
+    },
+    "advancement": {
+      "phbsptHillsTumbl": {
+        "title": "Hügelsturz",
+        "hint": "Hügelsturz"
+      }
     }
   },
   "phbsptLargeForm0": {
@@ -4017,6 +4220,12 @@ export const MODERN_OVERRIDES_BY_ID = {
     },
     "effects": {
       "QI7POclNlvX9a8VD": "GroÃŸe Gestalt"
+    },
+    "advancement": {
+      "phbsptLargeForm0": {
+        "title": "Große Gestalt",
+        "hint": "Große Gestalt"
+      }
     }
   },
   "phbsptPowerfulBu": {
@@ -4024,11 +4233,23 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du hast Vorteil auf jeden Attributswurf, den du machst, um den Zustand &amp;Reference[Grappled apply=false] zu beenden. Du zÃ¤hlst auÃŸerdem als eine GrÃ¶ÃŸenkategorie grÃ¶ÃŸer, wenn du deine TragfÃ¤higkeit bestimmst.</p><section class=\"secret\"\nid=\"secret-7qaTRjmRe4PD41G3\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt, der deine GrÃ¶ÃŸe bei der Bestimmung der TragfÃ¤higkeit automatisch anpasst.</p></section>",
     "effects": {
       "ge1u3EIFvsoj3jZu": "MÃ¤chtiger KÃ¶rperbau"
+    },
+    "advancement": {
+      "phbsptPowerfulBu": {
+        "title": "Mächtiger Körperbau",
+        "hint": "Mächtiger Körperbau"
+      }
     }
   },
   "phbsptStonesEndu": {
     "name": "Steinerne Ausdauer",
-    "description": "<p>Wenn du Schaden erleidest, kannst du als Reaktion 1W12 wÃ¼rfeln. Addiere deinen Konstitutionsmodifikator zum Ergebnis und reduziere den Schaden um diese Summe.</p>"
+    "description": "<p>Wenn du Schaden erleidest, kannst du als Reaktion 1W12 wÃ¼rfeln. Addiere deinen Konstitutionsmodifikator zum Ergebnis und reduziere den Schaden um diese Summe.</p>",
+    "advancement": {
+      "phbsptStonesEndu": {
+        "title": "Steinhärte",
+        "hint": "Steinhärte"
+      }
+    }
   },
   "phbsptStormsThun": {
     "name": "Donner des Sturms",
@@ -4060,7 +4281,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du kannst die Aktion &amp;Reference[Hide] ausfÃ¼hren, selbst wenn du nur durch eine Kreatur verdeckt bist, die mindestens eine GrÃ¶ÃŸenkategorie grÃ¶ÃŸer ist als du.</p>"
   },
   "phbsptResourcefu": {
-    "name": "Einfallsreich"
+    "name": "Einfallsreich",
+    "description": "<p>Du erhältst Heldenhafte Inspiration, wann immer du eine Lange Rast beendest.</p>"
   },
   "phbsptSkillful00": {
     "name": "Geschickt",

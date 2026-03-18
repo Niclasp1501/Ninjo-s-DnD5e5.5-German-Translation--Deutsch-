@@ -163,7 +163,7 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
 
     if (override?.activities && sourceActivityName) {
       const mapped = override.activities[sourceActivityName];
-      if (mapped) activity.name = mapped;
+      if (mapped) activity.name = fixMojibakeRuntime(mapped);
     }
 
     const rangeUnits = String(activity?.range?.units ?? "").toLowerCase();
@@ -350,45 +350,54 @@ function convertOriginDistanceUnitMetricRuntime(originalValue, _entryTranslation
   return "m";
 }
 
+function convertOriginDistanceContainerUnitsRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  if (String(data?.type ?? "") !== "race") return originalValue;
+  if (!originalValue || typeof originalValue !== "object") return originalValue;
+  const translated = foundry.utils.deepClone(originalValue);
+  translated.units = "m";
+  return translated;
+}
+
 function translateMaterialsRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
-  return override?.materials || originalValue;
+  return fixMojibakeRuntime(override?.materials || originalValue);
 }
 
 function translateSpellActivationConditionRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (String(data?.type ?? "") !== "spell") return originalValue;
   const override = getOverrideById(data);
-  return override?.activationCondition || originalValue;
+  return fixMojibakeRuntime(override?.activationCondition || originalValue);
 }
 
 function translateSpellRangeSpecialRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (String(data?.type ?? "") !== "spell") return originalValue;
   const override = getOverrideById(data);
-  return override?.rangeSpecial || originalValue;
+  return fixMojibakeRuntime(override?.rangeSpecial || originalValue);
 }
 
 function translateSpellTargetAffectsSpecialRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (String(data?.type ?? "") !== "spell") return originalValue;
   const override = getOverrideById(data);
-  return override?.targetAffectsSpecial || originalValue;
+  return fixMojibakeRuntime(override?.targetAffectsSpecial || originalValue);
 }
 
 function translateSpellDurationSpecialRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (String(data?.type ?? "") !== "spell") return originalValue;
   const override = getOverrideById(data);
-  return override?.durationSpecial || originalValue;
+  return fixMojibakeRuntime(override?.durationSpecial || originalValue);
 }
 
 function translateSpellUnidentifiedDescriptionRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (String(data?.type ?? "") !== "spell") return originalValue;
   const override = getOverrideById(data);
-  return override?.unidentifiedDescription || originalValue;
+  return fixMojibakeRuntime(override?.unidentifiedDescription || originalValue);
 }
 
 function convertActivitiesRangeRuntime(originalValue, _entryTranslation, data) {
@@ -409,7 +418,7 @@ function convertActivitiesRangeRuntime(originalValue, _entryTranslation, data) {
 
     if (override?.activities && sourceActivityName) {
       const mapped = override.activities[sourceActivityName];
-      if (mapped) activity.name = mapped;
+      if (mapped) activity.name = fixMojibakeRuntime(mapped);
     }
 
     const rangeUnits = String(activity?.range?.units ?? "").toLowerCase();
@@ -426,23 +435,23 @@ function convertActivitiesRangeRuntime(originalValue, _entryTranslation, data) {
 
     if (activityMeta && typeof activityMeta === "object") {
       if (typeof activityMeta.chatFlavor === "string" && activityMeta.chatFlavor.trim() && activity?.description) {
-        activity.description.chatFlavor = activityMeta.chatFlavor;
+        activity.description.chatFlavor = fixMojibakeRuntime(activityMeta.chatFlavor);
       }
       if (typeof activityMeta.activationCondition === "string" && activityMeta.activationCondition.trim() && activity?.activation) {
-        activity.activation.condition = activityMeta.activationCondition;
+        activity.activation.condition = fixMojibakeRuntime(activityMeta.activationCondition);
       }
       if (typeof activityMeta.rangeSpecial === "string" && activityMeta.rangeSpecial.trim() && activity?.range) {
-        activity.range.special = activityMeta.rangeSpecial;
+        activity.range.special = fixMojibakeRuntime(activityMeta.rangeSpecial);
       }
       if (
         typeof activityMeta.targetAffectsSpecial === "string" &&
         activityMeta.targetAffectsSpecial.trim() &&
         activity?.target?.affects
       ) {
-        activity.target.affects.special = activityMeta.targetAffectsSpecial;
+        activity.target.affects.special = fixMojibakeRuntime(activityMeta.targetAffectsSpecial);
       }
       if (typeof activityMeta.durationSpecial === "string" && activityMeta.durationSpecial.trim() && activity?.duration) {
-        activity.duration.special = activityMeta.durationSpecial;
+        activity.duration.special = fixMojibakeRuntime(activityMeta.durationSpecial);
       }
 
       if (activityMeta.profileNames && typeof activityMeta.profileNames === "object" && Array.isArray(activity?.profiles)) {
@@ -450,7 +459,7 @@ function convertActivitiesRangeRuntime(originalValue, _entryTranslation, data) {
           if (!profile || typeof profile !== "object" || typeof profile.name !== "string") continue;
           const translatedName = activityMeta.profileNames[profile.name];
           if (typeof translatedName === "string" && translatedName.trim()) {
-            profile.name = translatedName;
+            profile.name = fixMojibakeRuntime(translatedName);
           }
         }
       }
@@ -542,6 +551,7 @@ Hooks.once("init", () => {
     dnd5e55SpellTemplateUnitMetricRuntime: convertSpellTargetTemplateUnitsRuntime,
     dnd5e55OriginDistanceMetricRuntime: convertOriginDistanceMetricRuntime,
     dnd5e55OriginDistanceUnitMetricRuntime: convertOriginDistanceUnitMetricRuntime,
+    dnd5e55OriginDistanceContainerUnitsRuntime: convertOriginDistanceContainerUnitsRuntime,
     dnd5e55SpellTargetAffectsSpecialDeRuntime: translateSpellTargetAffectsSpecialRuntime,
     dnd5e55SpellUnidentifiedDescriptionDeRuntime: translateSpellUnidentifiedDescriptionRuntime,
     dnd5e55ActivitiesRangeMetricRuntime: convertActivitiesRangeRuntime,
@@ -550,6 +560,8 @@ Hooks.once("init", () => {
 
   console.log(`[${MODULE_ID}] Babele runtime mappings registered with strict legacy/modern separation.`);
 });
+
+
 
 
 

@@ -20,6 +20,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Weitere Inhalte folgen schrittweise in kommenden Releases.
 - In `1.0.3` wurden viele weitere Modern-SRD-Inhalte ergänzt.
 - Hinweis: Die Modern-SRD/Kompendium-Übersetzung ist deutlich breiter abgedeckt, aber weiterhin beta und noch nicht vollständig.
+- In `1.0.4` wurden Origins-/Appendix-Probleme behoben (falsche Zuordnungen, Embed-Rekursionen) und die Stabilität verbessert.
+- Ebenfalls in `1.0.4`: verbesserte UTF-8/Zeichensatzbehandlung, inklusive korrekter Anzeige von `ß`, `ä`, `ö` und `ü`.
 
 ### Feedback
 - Feedback ist ausdrücklich willkommen und hilft direkt bei der Priorisierung der nächsten Übersetzungsbereiche.
@@ -56,6 +58,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - More content will be added step by step in upcoming releases.
 - `1.0.3` adds substantial modern SRD translation coverage across additional packs.
 - Note: modern SRD/compendium translation is now much broader, but still beta and not yet complete.
+- `1.0.4` fixes origins/appendix regressions (wrong content mapping, embed recursion issues) and improves runtime stability.
+- `1.0.4` also improves UTF-8 character handling, including reliable rendering of `ß`, `ä`, `ö`, and `ü`.
 
 ### Feedback
 - Feedback is very welcome and helps prioritize the next translation areas.

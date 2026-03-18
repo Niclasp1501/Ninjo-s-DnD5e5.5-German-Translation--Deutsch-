@@ -1,92 +1,102 @@
 ﻿{
-  "label": "Charakterherkünfte (Modern, DE)",
-  "types": [
-    "race",
-    "background",
-    "feat"
-  ],
-  "mapping": {
-    "name": {
-      "path": "name",
-      "converter": "dnd5e55NameDeRuntime"
-    },
-    "description": {
-      "path": "system.description.value",
-      "converter": "dnd5e55DescriptionDeRuntime"
-    },
-    "activities": {
-      "path": "system.activities",
-      "converter": "dnd5e55ActivitiesDeRuntime"
-    },
-    "advancement": {
-      "path": "system.advancement",
-      "converter": "dnd5e55AdvancementDeRuntime"
-    },
-    "movementWalk": {
-      "path": "system.movement.walk",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "movementBurrow": {
-      "path": "system.movement.burrow",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "movementClimb": {
-      "path": "system.movement.climb",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "movementFly": {
-      "path": "system.movement.fly",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "movementSwim": {
-      "path": "system.movement.swim",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "movementUnits": {
-      "path": "system.movement.units",
-      "converter": "dnd5e55OriginDistanceUnitMetricRuntime"
-    },
-    "senseDarkvision": {
-      "path": "system.senses.darkvision",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "senseBlindsight": {
-      "path": "system.senses.blindsight",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "senseTremorsense": {
-      "path": "system.senses.tremorsense",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "senseTruesight": {
-      "path": "system.senses.truesight",
-      "converter": "dnd5e55OriginDistanceMetricRuntime"
-    },
-    "senseUnits": {
-      "path": "system.senses.units",
-      "converter": "dnd5e55OriginDistanceUnitMetricRuntime"
-    }
-  },
-  "folders": {
-    "Backgrounds": "Hintergründe",
-    "Species": "Spezies",
-    "Traits": "Merkmale",
-    "Dragonborn": "Drachenblütige",
-    "Dragonborn Features": "Drachenblütige Merkmale",
-    "Dwarf": "Zwerge",
-    "Dwarf Features": "Zwergische Merkmale",
-    "Elf": "Elfen",
-    "Elf Features": "Elfische Merkmale",
-    "Gnome": "Gnome",
-    "Gnome Features": "Gnomische Merkmale",
-    "Halfling": "Halblinge",
-    "Halfling Features": "Halbling-Merkmale",
-    "Human": "Mensch",
-    "Human Features": "Menschliche Merkmale",
-    "Orc": "Ork",
-    "Orc Features": "Orkische Merkmale",
-    "Tiefling": "Tiefling",
-    "Tiefling Features": "Tiefling-Merkmale"
-  },
-  "entries": {}
+    "label":  "Charakterherkünfte (Modern, DE)",
+    "types":  [
+                  "race",
+                  "background",
+                  "feat"
+              ],
+    "mapping":  {
+                    "name":  {
+                                 "path":  "name",
+                                 "converter":  "dnd5e55NameDeRuntime"
+                             },
+                    "description":  {
+                                        "path":  "system.description.value",
+                                        "converter":  "dnd5e55DescriptionDeRuntime"
+                                    },
+                    "activities":  {
+                                       "path":  "system.activities",
+                                       "converter":  "dnd5e55ActivitiesDeRuntime"
+                                   },
+                    "advancement":  {
+                                        "path":  "system.advancement",
+                                        "converter":  "dnd5e55AdvancementDeRuntime"
+                                    },
+                    "movementContainerUnits":  {
+                                                   "path":  "system.movement",
+                                                   "converter":  "dnd5e55OriginDistanceContainerUnitsRuntime"
+                                               },
+                    "movementWalk":  {
+                                         "path":  "system.movement.walk",
+                                         "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                     },
+                    "movementBurrow":  {
+                                           "path":  "system.movement.burrow",
+                                           "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                       },
+                    "movementClimb":  {
+                                          "path":  "system.movement.climb",
+                                          "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                      },
+                    "movementFly":  {
+                                        "path":  "system.movement.fly",
+                                        "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                    },
+                    "movementSwim":  {
+                                         "path":  "system.movement.swim",
+                                         "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                     },
+                    "movementUnits":  {
+                                          "path":  "system.movement.units",
+                                          "converter":  "dnd5e55OriginDistanceUnitMetricRuntime"
+                                      },
+                    "sensesContainerUnits":  {
+                                                 "path":  "system.senses",
+                                                 "converter":  "dnd5e55OriginDistanceContainerUnitsRuntime"
+                                             },
+                    "senseDarkvision":  {
+                                            "path":  "system.senses.darkvision",
+                                            "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                        },
+                    "senseBlindsight":  {
+                                            "path":  "system.senses.blindsight",
+                                            "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                        },
+                    "senseTremorsense":  {
+                                             "path":  "system.senses.tremorsense",
+                                             "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                         },
+                    "senseTruesight":  {
+                                           "path":  "system.senses.truesight",
+                                           "converter":  "dnd5e55OriginDistanceMetricRuntime"
+                                       },
+                    "senseUnits":  {
+                                       "path":  "system.senses.units",
+                                       "converter":  "dnd5e55OriginDistanceUnitMetricRuntime"
+                                   }
+                },
+    "folders":  {
+                    "Backgrounds":  "Hintergründe",
+                    "Species":  "Spezies",
+                    "Traits":  "Merkmale",
+                    "Dragonborn":  "Drachenblütige",
+                    "Dragonborn Features":  "Drachenblütige Merkmale",
+                    "Dwarf":  "Zwerge",
+                    "Dwarf Features":  "Zwergische Merkmale",
+                    "Elf":  "Elfen",
+                    "Elf Features":  "Elfische Merkmale",
+                    "Gnome":  "Gnome",
+                    "Gnome Features":  "Gnomische Merkmale",
+                    "Halfling":  "Halblinge",
+                    "Halfling Features":  "Halbling-Merkmale",
+                    "Human":  "Mensch",
+                    "Human Features":  "Menschliche Merkmale",
+                    "Orc":  "Ork",
+                    "Orc Features":  "Orkische Merkmale",
+                    "Tiefling":  "Tiefling",
+                    "Tiefling Features":  "Tiefling-Merkmale"
+                },
+    "entries":  {
+
+                }
 }

@@ -5,6 +5,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-03-18
+### Changed
+- Expanded modern origins/content coverage and repaired appendix-based species/background localization paths.
+- Improved runtime handling for modern origins/class-related data and additional advancement text mapping.
+
+### Fixed
+- Fixed broken/misaligned appendix translations (e.g. wrong content assignments in species pages).
+- Prevented nested-embed recursion issues that could cause sluggish windows and repeated Foundry warnings.
+- Improved UTF-8/encoding handling in UI labels and item names, including robust display of `ß`, `ä`, `ö`, and `ü`.
+
 ## [1.0.3] - 2026-03-17
 ### Changed
 - Expanded modern SRD translation coverage across multiple packs (including substantial additions in spells, origins, classes/features, feats, and content journals).
