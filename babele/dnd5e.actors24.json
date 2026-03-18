@@ -46,6 +46,10 @@
       "path": "system.attributes.senses",
       "converter": "dnd5e55ActorSensesMetricRuntime"
     },
+    "languagesContainer": {
+      "path": "system.traits.languages",
+      "converter": "dnd5e55ActorLanguagesDeRuntime"
+    },
     "senseDarkvisionLegacy": {
       "path": "system.attributes.senses.darkvision",
       "converter": "dnd5e55ActorDistanceMetricRuntime"

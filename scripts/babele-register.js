@@ -17,6 +17,25 @@ const DISTANCE_UNIT_MAP = {
 const INLINE_TOKEN_RE = /@(UUID|Embed|Compendium)\[([\s\S]*?)\](\{[^}]*\})?/g;
 const AWARD_CMD_RE = /\[\[\s*\/award\s+([^\]]+)\]\]/gi;
 const LOOKUP_ACTIVITY_RE = /\[\[\s*lookup\s+([^\]]*?)\s+activity=([A-Za-z0-9_-]+)([^\]]*?)\]\]/gi;
+const ACTOR_LANGUAGE_TOKEN_MAP = {
+  "blink dog": "Blinkhund",
+  "common": "Gemeinsprache",
+  "elvish": "Elfisch",
+  "dwarvish": "Zwergisch",
+  "giant": "Riesisch",
+  "gnomish": "Gnomisch",
+  "goblin": "Goblin",
+  "halfling": "Halblingisch",
+  "orc": "Orkisch",
+  "draconic": "Drakonisch",
+  "sylvan": "Sylvan",
+  "abyssal": "Abyssisch",
+  "celestial": "Himmlisch",
+  "deep speech": "Tiefensprache",
+  "infernal": "Infernal",
+  "primordial": "Ursprache",
+  "undercommon": "Untergemeinsprache"
+};
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
@@ -133,6 +152,25 @@ function stripInvalidLookupActivityRefs(text, data) {
     const spaceRight = normalizedRight ? ` ${normalizedRight}` : "";
     return `[[lookup ${spaceLeft}${spaceRight}]]`.replace(/\s+\]\]$/, "]]").replace(/\s{2,}/g, " ");
   });
+}
+
+function translateActorLanguageText(text) {
+  if (typeof text !== "string" || !text.trim()) return text;
+  let out = fixMojibakeRuntime(text);
+  out = out
+    .replace(/\bunderstands\b/gi, "versteht")
+    .replace(/\bbut can(?:not|['’]t) speak them\b/gi, "kann sie aber nicht sprechen")
+    .replace(/\bbut can(?:not|['’]t) speak\b/gi, "kann es aber nicht sprechen")
+    .replace(/\ball languages\b/gi, "alle Sprachen")
+    .replace(/\bcan(?:not|['’]t) speak\b/gi, "kann nicht sprechen");
+
+  for (const [en, de] of Object.entries(ACTOR_LANGUAGE_TOKEN_MAP)) {
+    const re = new RegExp(`\\b${en.replace(/\s+/g, "\\s+")}\\b`, "gi");
+    out = out.replace(re, de);
+  }
+
+  out = out.replace(/\s{2,}/g, " ").trim();
+  return out;
 }
 
 function canonicalAwardUnit(unit) {
@@ -446,6 +484,34 @@ function convertActorSensesMetricRuntime(originalValue, _entryTranslation, data)
   return translated;
 }
 
+function translateActorLanguagesRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  const actorType = String(data?.type ?? "");
+  if (!["npc", "character", "vehicle"].includes(actorType)) return originalValue;
+  if (!originalValue || typeof originalValue !== "object") return originalValue;
+
+  const translated = foundry.utils.deepClone(originalValue);
+  if (typeof translated.custom === "string" && translated.custom.trim()) {
+    translated.custom = translateActorLanguageText(translated.custom);
+  }
+  if (typeof translated.special === "string" && translated.special.trim()) {
+    translated.special = translateActorLanguageText(translated.special);
+  }
+
+  const tel = translated?.communication?.telepathy;
+  if (tel && typeof tel === "object") {
+    const unit = String(tel.units ?? "ft").toLowerCase();
+    const unitKey = DISTANCE_UNIT_MAP[unit] ? unit : "ft";
+    if (tel.value !== null && tel.value !== undefined && tel.value !== "") {
+      tel.value = convertDistanceValueByUnit(tel.value, unitKey);
+    }
+    if (tel.units !== null && tel.units !== undefined && tel.units !== "") {
+      tel.units = convertDistanceUnit(unitKey);
+    }
+  }
+  return translated;
+}
+
 function convertItemRangeMetricRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const units = String(data?.system?.range?.units ?? "").toLowerCase();
@@ -756,6 +822,7 @@ Hooks.once("init", () => {
     dnd5e55ActorDistanceUnitMetricRuntime: convertActorDistanceUnitMetricRuntime,
     dnd5e55ActorMovementMetricRuntime: convertActorMovementMetricRuntime,
     dnd5e55ActorSensesMetricRuntime: convertActorSensesMetricRuntime,
+    dnd5e55ActorLanguagesDeRuntime: translateActorLanguagesRuntime,
     dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,
     dnd5e55ItemRangeUnitMetricRuntime: convertItemRangeUnitMetricRuntime,
     dnd5e55SpellTargetAffectsSpecialDeRuntime: translateSpellTargetAffectsSpecialRuntime,
