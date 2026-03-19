@@ -907,11 +907,24 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
     const rid = String(result._id ?? "");
     const rr = Array.isArray(result.range) && result.range.length >= 2 ? `${result.range[0]}-${result.range[1]}` : "";
     const mapped = resultMap[rid] || resultMap[rr] || null;
-    if (typeof mapped !== "string" || !mapped.trim()) continue;
+    if (typeof mapped === "string" && mapped.trim()) {
+      const normalized = fixMojibakeRuntime(mapped);
+      if (typeof result.description === "string") result.description = normalized;
+      if (typeof result.text === "string") result.text = normalized;
+      continue;
+    }
 
-    const normalized = fixMojibakeRuntime(mapped);
-    if (typeof result.description === "string") result.description = normalized;
-    if (typeof result.text === "string") result.text = normalized;
+    if (mapped && typeof mapped === "object") {
+      if (typeof mapped.name === "string" && mapped.name.trim()) {
+        result.name = fixMojibakeRuntime(mapped.name);
+      }
+      if (typeof mapped.description === "string" && mapped.description.trim()) {
+        const normalized = fixMojibakeRuntime(mapped.description);
+        if (typeof result.description === "string") result.description = normalized;
+        if (typeof result.text === "string") result.text = normalized;
+      }
+      continue;
+    }
   }
   return translated;
 }
