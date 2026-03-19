@@ -36,6 +36,19 @@ const ACTOR_LANGUAGE_TOKEN_MAP = {
   "primordial": "Ursprache",
   "undercommon": "Untergemeinsprache"
 };
+const EMBEDDED_ITEM_NAME_FALLBACK_MAP = {
+  "Move and Attack": "Bewegen und angreifen",
+  "Pack Damage": "Rudelschaden",
+  "Life Bond": "Lebensband",
+  "Otherworldly Slam": "Jenseitiger Hieb",
+  "Fell Glare": "Unheilvoller Blick"
+};
+const ACTOR_TYPE_CUSTOM_MAP = {
+  "Spectral Sword": "Spektralschwert",
+  "Nature Spirit": "Naturgeist",
+  "Otherworldly Steed": "Jenseitiges Reittier",
+  "Celestial, Fey, or Fiend (Your Choice)": "Himmlisch, Fee oder Unhold (deine Wahl)"
+};
 
 function isGermanUi() {
   return String(game.i18n?.lang ?? "").toLowerCase().startsWith("de");
@@ -166,6 +179,11 @@ function translateActorLanguageText(text) {
   if (typeof text !== "string" || !text.trim()) return text;
   let out = fixMojibakeRuntime(text);
   out = out
+    .replace(/\bworks only with you\b/gi, "funktioniert nur mit dir")
+    .replace(/\bunderstands the languages you know\b/gi, "versteht die Sprachen, die du kennst")
+    .replace(/\bthe languages you know\b/gi, "die Sprachen, die du kennst")
+    .replace(/\bplus five other languages\b/gi, "plus fünf weitere Sprachen")
+    .replace(/\bplus two languages\b/gi, "plus zwei Sprachen")
     .replace(/\bunderstands\b/gi, "versteht")
     .replace(/\bbut can(?:not|['’]t) speak them\b/gi, "kann sie aber nicht sprechen")
     .replace(/\bbut can(?:not|['’]t) speak\b/gi, "kann es aber nicht sprechen")
@@ -179,6 +197,23 @@ function translateActorLanguageText(text) {
 
   out = out.replace(/\s{2,}/g, " ").trim();
   return out;
+}
+
+function translateActorTypeCustomText(text) {
+  if (typeof text !== "string" || !text.trim()) return text;
+  const normalized = fixMojibakeRuntime(text).trim();
+  return ACTOR_TYPE_CUSTOM_MAP[normalized] || normalized;
+}
+
+function translateActorTypeCustomRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  return getOverrideScalarString(data, "system.details.type.custom") || translateActorTypeCustomText(originalValue);
+}
+
+function translateEmbeddedItemNameFallback(originalValue) {
+  if (typeof originalValue !== "string" || !originalValue.trim()) return originalValue;
+  const normalized = fixMojibakeRuntime(originalValue).trim();
+  return EMBEDDED_ITEM_NAME_FALLBACK_MAP[normalized] || normalized;
 }
 
 function canonicalAwardUnit(unit) {
@@ -214,7 +249,7 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
   if (!originalValue || typeof originalValue !== "object") return originalValue;
 
   const override = getOverrideById(data);
-  if (!override?.activities && !override?.activitiesMeta) return originalValue;
+  const activityNameMap = override?.activities && typeof override.activities === "object" ? override.activities : null;
 
   const translated = foundry.utils.deepClone(originalValue);
   for (const activity of Object.values(translated)) {
@@ -226,8 +261,8 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
       override?.activitiesMeta?.[sourceActivityName] ||
       null;
 
-    if (override?.activities && sourceActivityName) {
-      const mapped = override.activities[sourceActivityName];
+    if (activityNameMap && sourceActivityName) {
+      const mapped = activityNameMap[sourceActivityName];
       if (mapped) activity.name = fixMojibakeRuntime(mapped);
     }
 
@@ -727,10 +762,11 @@ function translateEmbeddedItemsRuntime(originalValue, _entryTranslation, _data) 
     if (!item || typeof item !== "object") continue;
 
     const override = getOverrideById(item);
-    if (!override) continue;
 
-    if (typeof override.name === "string" && override.name.trim()) {
+    if (typeof override?.name === "string" && override.name.trim()) {
       item.name = fixMojibakeRuntime(override.name);
+    } else if (typeof item.name === "string") {
+      item.name = translateEmbeddedItemNameFallback(item.name);
     }
 
     const desc = item?.system?.description?.value;
@@ -765,24 +801,24 @@ function translateEmbeddedItemsRuntime(originalValue, _entryTranslation, _data) 
       item.system.advancement = translateAdvancementRuntime(item.system.advancement, null, item);
     }
 
-    if (typeof override.activationCondition === "string" && override.activationCondition.trim() && item?.system?.activation) {
+    if (typeof override?.activationCondition === "string" && override.activationCondition.trim() && item?.system?.activation) {
       item.system.activation.condition = fixMojibakeRuntime(override.activationCondition);
     }
-    if (typeof override.rangeSpecial === "string" && override.rangeSpecial.trim() && item?.system?.range) {
+    if (typeof override?.rangeSpecial === "string" && override.rangeSpecial.trim() && item?.system?.range) {
       item.system.range.special = fixMojibakeRuntime(override.rangeSpecial);
     }
-    if (typeof override.durationSpecial === "string" && override.durationSpecial.trim() && item?.system?.duration) {
+    if (typeof override?.durationSpecial === "string" && override.durationSpecial.trim() && item?.system?.duration) {
       item.system.duration.special = fixMojibakeRuntime(override.durationSpecial);
     }
     if (
-      typeof override.targetAffectsSpecial === "string" &&
+      typeof override?.targetAffectsSpecial === "string" &&
       override.targetAffectsSpecial.trim() &&
       item?.system?.target?.affects
     ) {
       item.system.target.affects.special = fixMojibakeRuntime(override.targetAffectsSpecial);
     }
     if (
-      typeof override.unidentifiedDescription === "string" &&
+      typeof override?.unidentifiedDescription === "string" &&
       override.unidentifiedDescription.trim() &&
       item?.system?.unidentified
     ) {
@@ -791,6 +827,63 @@ function translateEmbeddedItemsRuntime(originalValue, _entryTranslation, _data) 
   }
 
   return translated;
+}
+
+function applyDamageLocalizationFallback() {
+  if (!isGermanUi()) return;
+
+  const damageTypeMap = {
+    Acid: "Säure",
+    Bludgeoning: "Wuchtschaden",
+    Cold: "Kälte",
+    Fire: "Feuer",
+    Force: "Wucht",
+    Lightning: "Blitz",
+    Necrotic: "Nekrotisch",
+    Piercing: "Durchschlagend",
+    Poison: "Gift",
+    Psychic: "Psychisch",
+    Radiant: "Strahlend",
+    Slashing: "Hieb",
+    Thunder: "Donner"
+  };
+
+  const translations = game.i18n?.translations;
+  if (!translations || typeof translations !== "object") return;
+
+  const dnd5e = (translations.DND5E ??= {});
+  const damage = (dnd5e.DAMAGE ??= {});
+  const damageTypes = (damage.Type ??= {});
+
+  for (const [key, value] of Object.entries(damageTypeMap)) {
+    const current = String(damageTypes[key] ?? "").trim();
+    if (!current || current === key) damageTypes[key] = value;
+  }
+
+  const bypass = (damage.PhysicalBypass ??= {});
+  if (!String(bypass.Label ?? "").trim() || String(bypass.Label).trim() === "Physical Bypasses") {
+    bypass.Label = "Physische Umgehungen";
+  }
+  if (!String(bypass.Title ?? "").trim() || String(bypass.Title).trim() === "Physical Bypasses") {
+    bypass.Title = "Physische Umgehungen";
+  }
+  if (
+    !String(bypass.Hint ?? "").trim() ||
+    /These weapon properties will bypass damage resistance for physical damage\./i.test(String(bypass.Hint))
+  ) {
+    bypass.Hint = "Diese Waffeneigenschaften umgehen den Widerstand gegen physischen Schaden.";
+  }
+
+  const configDamage = CONFIG?.DND5E?.damageTypes;
+  if (configDamage && typeof configDamage === "object") {
+    for (const [key, value] of Object.entries(damageTypeMap)) {
+      if (!configDamage[key] || typeof configDamage[key] !== "object") continue;
+      const current = String(configDamage[key].label ?? "").trim();
+      if (!current || current === key || current === `DND5E.DAMAGE.Type.${key}`) {
+        configDamage[key].label = value;
+      }
+    }
+  }
 }
 
 function translateRollTableResultsRuntime(originalValue, _entryTranslation, data) {
@@ -828,6 +921,7 @@ Hooks.once("init", () => {
     default: true,
     requiresReload: true
   });
+  applyDamageLocalizationFallback();
 
   if (!isCompendiumTranslationEnabled()) {
     console.log(`[${MODULE_ID}] Additional compendium translations are disabled by world setting.`);
@@ -870,6 +964,7 @@ Hooks.once("init", () => {
     dnd5e55ActorSensesMetricRuntime: convertActorSensesMetricRuntime,
     dnd5e55ActorLanguagesDeRuntime: translateActorLanguagesRuntime,
     dnd5e55ActorLanguagesCustomDeRuntime: translateActorLanguagesCustomRuntime,
+    dnd5e55ActorTypeCustomDeRuntime: translateActorTypeCustomRuntime,
     dnd5e55ActorHabitatCustomDeRuntime: translateActorHabitatCustomRuntime,
     dnd5e55ActorHabitatValueDeRuntime: translateActorHabitatValueRuntime,
     dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,
@@ -881,7 +976,6 @@ Hooks.once("init", () => {
     dnd5e55EmbeddedItemsDeRuntime: translateEmbeddedItemsRuntime,
     dnd5e55RollTableResultsDeRuntime: translateRollTableResultsRuntime
   });
-
   console.log(`[${MODULE_ID}] Babele runtime mappings registered with strict legacy/modern separation.`);
 });
 

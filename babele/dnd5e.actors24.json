@@ -54,6 +54,14 @@
       "path": "system.traits.languages.custom",
       "converter": "dnd5e55ActorLanguagesCustomDeRuntime"
     },
+    "typeCustom": {
+      "path": "system.details.type.custom",
+      "converter": "dnd5e55ActorTypeCustomDeRuntime"
+    },
+    "typeSubtype": {
+      "path": "system.details.type.subtype",
+      "converter": "dnd5e55ActorTypeCustomDeRuntime"
+    },
     "habitatCustom": {
       "path": "system.details.habitat.custom",
       "converter": "dnd5e55ActorHabitatCustomDeRuntime"
