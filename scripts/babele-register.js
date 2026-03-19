@@ -18,7 +18,7 @@ const INLINE_TOKEN_RE = /@(UUID|Embed|Compendium)\[([\s\S]*?)\](\{[^}]*\})?/g;
 const AWARD_CMD_RE = /\[\[\s*\/award\s+([^\]]+)\]\]/gi;
 const LOOKUP_ACTIVITY_RE = /\[\[\s*lookup\s+([^\]]*?)\s+activity=([A-Za-z0-9_-]+)([^\]]*?)\]\]/gi;
 const RICH_TOKEN_PROTECT_RE =
-  /(@(?:UUID|Embed|Compendium)\[[\s\S]*?\](?:\{[^}]*\})?|\[\[[\s\S]*?\]\]|&Reference\[[^\]]*\])/g;
+  /(@(?:UUID|Embed|Compendium)\[[\s\S]*?\](?:\{[^}]*\})?|\[\[[\s\S]*?\]\](?:\{[^}]*\})?|&Reference\[[^\]]*\])/g;
 const ACTOR_LANGUAGE_TOKEN_MAP = {
   "blink dog": "Blinkhund",
   "common": "Gemeinsprache",
@@ -183,6 +183,8 @@ function convertImperialUnitsInTextRuntime(text) {
     );
 
   out = out.replace(/__RT_PROTECTED_(\d+)__/g, (_m, idx) => protectedChunks[Number(idx)] ?? _m);
+  // Normalize malformed lookup labels that can appear as [[lookup ...]][label].
+  out = out.replace(/(\[\[\s*lookup[^\]]+\]\])\[([^\]\r\n]+)\]/gi, "$1{$2}");
   return out;
 }
 
