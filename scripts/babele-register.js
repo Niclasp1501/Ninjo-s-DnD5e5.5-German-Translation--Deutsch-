@@ -851,37 +851,44 @@ function applyDamageLocalizationFallback() {
   const translations = game.i18n?.translations;
   if (!translations || typeof translations !== "object") return;
 
+  const setRuntimeKey = (key, value) => {
+    if (!key || !value) return;
+    foundry.utils.setProperty(translations, key, value);
+    if (game.i18n?._fallback && typeof game.i18n._fallback === "object") {
+      const current = foundry.utils.getProperty(game.i18n._fallback, key);
+      if (!current || String(current).trim() === "" || String(current).trim() === key) {
+        foundry.utils.setProperty(game.i18n._fallback, key, value);
+      }
+    }
+  };
+
   const dnd5e = (translations.DND5E ??= {});
   const damage = (dnd5e.DAMAGE ??= {});
   const damageTypes = (damage.Type ??= {});
 
   for (const [key, value] of Object.entries(damageTypeMap)) {
-    const current = String(damageTypes[key] ?? "").trim();
-    if (!current || current === key) damageTypes[key] = value;
+    damageTypes[key] = value;
+    setRuntimeKey(`DND5E.DAMAGE.Type.${key}`, value);
   }
 
   const bypass = (damage.PhysicalBypass ??= {});
-  if (!String(bypass.Label ?? "").trim() || String(bypass.Label).trim() === "Physical Bypasses") {
-    bypass.Label = "Physische Umgehungen";
-  }
-  if (!String(bypass.Title ?? "").trim() || String(bypass.Title).trim() === "Physical Bypasses") {
-    bypass.Title = "Physische Umgehungen";
-  }
-  if (
-    !String(bypass.Hint ?? "").trim() ||
-    /These weapon properties will bypass damage resistance for physical damage\./i.test(String(bypass.Hint))
-  ) {
-    bypass.Hint = "Diese Waffeneigenschaften umgehen den Widerstand gegen physischen Schaden.";
-  }
+  bypass.Label = "Physische Umgehungen";
+  bypass.Title = "Physische Umgehungen";
+  bypass.Hint = "Diese Waffeneigenschaften umgehen den Widerstand gegen physischen Schaden.";
+  setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Label", bypass.Label);
+  setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Title", bypass.Title);
+  setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Hint", bypass.Hint);
+
+  // Used by the bypass checkbox list in trait editors.
+  setRuntimeKey("DND5E.ITEM.Property.Adamantine", "Adamantin");
+  setRuntimeKey("DND5E.ITEM.Property.Magic", "Magisch");
+  setRuntimeKey("DND5E.ITEM.Property.Silvered", "Versilbert");
 
   const configDamage = CONFIG?.DND5E?.damageTypes;
   if (configDamage && typeof configDamage === "object") {
     for (const [key, value] of Object.entries(damageTypeMap)) {
       if (!configDamage[key] || typeof configDamage[key] !== "object") continue;
-      const current = String(configDamage[key].label ?? "").trim();
-      if (!current || current === key || current === `DND5E.DAMAGE.Type.${key}`) {
-        configDamage[key].label = value;
-      }
+      configDamage[key].label = value;
     }
   }
 }
@@ -977,6 +984,10 @@ Hooks.once("init", () => {
     dnd5e55RollTableResultsDeRuntime: translateRollTableResultsRuntime
   });
   console.log(`[${MODULE_ID}] Babele runtime mappings registered with strict legacy/modern separation.`);
+});
+
+Hooks.once("ready", () => {
+  applyDamageLocalizationFallback();
 });
 
 
