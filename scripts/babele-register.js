@@ -1044,6 +1044,43 @@ function applyDamageLocalizationFallback() {
   }
 }
 
+function installDamageI18nLocalizeFallback() {
+  if (!isGermanUi()) return;
+  const i18n = game.i18n;
+  if (!i18n || typeof i18n.localize !== "function") return;
+  if (i18n.__dnd5e55DamageFallbackInstalled) return;
+
+  const keyMap = {
+    "DND5E.DAMAGE.Type.Acid": "Säure",
+    "DND5E.DAMAGE.Type.Bludgeoning": "Wuchtschaden",
+    "DND5E.DAMAGE.Type.Cold": "Kälte",
+    "DND5E.DAMAGE.Type.Fire": "Feuer",
+    "DND5E.DAMAGE.Type.Force": "Wucht",
+    "DND5E.DAMAGE.Type.Lightning": "Blitz",
+    "DND5E.DAMAGE.Type.Necrotic": "Nekrotisch",
+    "DND5E.DAMAGE.Type.Piercing": "Durchschlagend",
+    "DND5E.DAMAGE.Type.Poison": "Gift",
+    "DND5E.DAMAGE.Type.Psychic": "Psychisch",
+    "DND5E.DAMAGE.Type.Radiant": "Strahlend",
+    "DND5E.DAMAGE.Type.Slashing": "Hieb",
+    "DND5E.DAMAGE.Type.Thunder": "Donner",
+    "DND5E.DAMAGE.PhysicalBypass.Label": "Physische Umgehungen",
+    "DND5E.DAMAGE.PhysicalBypass.Title": "Physische Umgehungen",
+    "DND5E.DAMAGE.PhysicalBypass.Hint": "Diese Waffeneigenschaften umgehen den Widerstand gegen physischen Schaden.",
+    "DND5E.ITEM.Property.Adamantine": "Adamantin",
+    "DND5E.ITEM.Property.Magic": "Magisch",
+    "DND5E.ITEM.Property.Silvered": "Versilbert"
+  };
+
+  const originalLocalize = i18n.localize.bind(i18n);
+  i18n.localize = function dnd5e55LocalizedWithDamageFallback(key) {
+    const mapped = keyMap[String(key ?? "")];
+    if (mapped) return mapped;
+    return originalLocalize(key);
+  };
+  i18n.__dnd5e55DamageFallbackInstalled = true;
+}
+
 function translateRollTableResultsRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (!Array.isArray(originalValue)) return originalValue;
@@ -1083,6 +1120,7 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
 Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
   normalizeAllOverrideMapsRuntime();
+  installDamageI18nLocalizeFallback();
 
   game.settings.register(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS, {
     name: "Zusatzinhalte (Kompendien) übersetzen",
