@@ -5,6 +5,7 @@ Thumbs.db
 
 tools/__pycache__/
 tools/logs/
+tools/
 
 languages/*.suggestions.json
 tools/*report*.json
