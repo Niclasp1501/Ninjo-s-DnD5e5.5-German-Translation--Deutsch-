@@ -211,6 +211,21 @@ function convertImperialUnitsInTextRuntime(text) {
   return out;
 }
 
+function normalizeInlineRollCommandsRuntime(text) {
+  if (typeof text !== "string" || !text.includes("[[/")) return text;
+
+  return text.replace(/\[\[\s*\/([^\]]+)\]\]/g, (full, cmdBody) => {
+    let body = String(cmdBody ?? "");
+    body = body
+      .replace(/^\s*angriff\b/i, "attack")
+      .replace(/^\s*schaden\b/i, "damage")
+      .replace(/^\s*rettungswurf\b/i, "save")
+      .replace(/\bdurchschnittlich\b/gi, "average")
+      .replace(/\berweitert\b/gi, "extended");
+    return `[[/${body.trim()}]]`;
+  });
+}
+
 function fixMojibakeRuntime(text) {
   if (typeof text !== "string" || !text || !/[ÃÂâ]/.test(text)) return text;
   let current = text;
@@ -296,7 +311,9 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
   });
   const awardNormalized = normalizeAwardCommands(normalized);
   const lookupNormalized = stripInvalidLookupActivityRefs(awardNormalized, data);
-  if (!lookupNormalized.includes("@UUID[")) return convertImperialUnitsInTextRuntime(fixMojibakeRuntime(lookupNormalized));
+  if (!lookupNormalized.includes("@UUID[")) {
+    return normalizeInlineRollCommandsRuntime(convertImperialUnitsInTextRuntime(fixMojibakeRuntime(lookupNormalized)));
+  }
 
   const withUuidLabels = lookupNormalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
     const id = String(uuidPath).split(".").pop();
@@ -306,7 +323,7 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
     if (!deName || typeof deName !== "string" || !deName.trim()) return full;
     return `@UUID[${uuidPath}]{${deName}}`;
   });
-  return convertImperialUnitsInTextRuntime(fixMojibakeRuntime(withUuidLabels));
+  return normalizeInlineRollCommandsRuntime(convertImperialUnitsInTextRuntime(fixMojibakeRuntime(withUuidLabels)));
 }
 
 function stripInvalidLookupActivityRefs(text, data) {
@@ -1096,7 +1113,9 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
     const rr = Array.isArray(result.range) && result.range.length >= 2 ? `${result.range[0]}-${result.range[1]}` : "";
     const mapped = resultMap[rid] || resultMap[rr] || null;
     if (typeof mapped === "string" && mapped.trim()) {
-      const normalized = convertImperialUnitsInTextRuntime(fixMojibakeRuntime(mapped));
+      const normalized = normalizeInlineRollCommandsRuntime(
+        convertImperialUnitsInTextRuntime(fixMojibakeRuntime(mapped))
+      );
       if (typeof result.description === "string") result.description = normalized;
       if (typeof result.text === "string") result.text = normalized;
       continue;
@@ -1107,7 +1126,9 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
         result.name = fixMojibakeRuntime(mapped.name);
       }
       if (typeof mapped.description === "string" && mapped.description.trim()) {
-        const normalized = convertImperialUnitsInTextRuntime(fixMojibakeRuntime(mapped.description));
+        const normalized = normalizeInlineRollCommandsRuntime(
+          convertImperialUnitsInTextRuntime(fixMojibakeRuntime(mapped.description))
+        );
         if (typeof result.description === "string") result.description = normalized;
         if (typeof result.text === "string") result.text = normalized;
       }
