@@ -209,6 +209,29 @@ function fixMojibakeRuntime(text) {
     .replace(/Â/g, "");
 }
 
+function normalizeOverrideValueStringsRuntime(value) {
+  if (typeof value === "string") return fixMojibakeRuntime(value);
+  if (Array.isArray(value)) {
+    for (let i = 0; i < value.length; i += 1) {
+      value[i] = normalizeOverrideValueStringsRuntime(value[i]);
+    }
+    return value;
+  }
+  if (value && typeof value === "object") {
+    for (const [k, v] of Object.entries(value)) {
+      value[k] = normalizeOverrideValueStringsRuntime(v);
+    }
+    return value;
+  }
+  return value;
+}
+
+function normalizeAllOverrideMapsRuntime() {
+  normalizeOverrideValueStringsRuntime(CURATED_OVERRIDES_BY_ID);
+  normalizeOverrideValueStringsRuntime(MODERN_OVERRIDES_BY_ID);
+  normalizeOverrideValueStringsRuntime(LEGACY_OVERRIDES_BY_ID);
+}
+
 function translateNameRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
@@ -1020,6 +1043,7 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
 
 Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
+  normalizeAllOverrideMapsRuntime();
 
   game.settings.register(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS, {
     name: "Zusatzinhalte (Kompendien) übersetzen",
