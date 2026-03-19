@@ -1022,8 +1022,8 @@ Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
 
   game.settings.register(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS, {
-    name: "Zusatzinhalte (Kompendien) Ã¼bersetzen",
-    hint: "Aktiviert Laufzeit-Ãœbersetzungen fÃ¼r zusÃ¤tzliche dnd5e-Kompendiuminhalte Ã¼ber Babele. Deaktiviert: nur System/UI, Character-Sheets und Tooltips.",
+    name: "Zusatzinhalte (Kompendien) übersetzen",
+    hint: "Aktiviert Laufzeit-Übersetzungen für zusätzliche dnd5e-Kompendiuminhalte über Babele. Deaktiviert: nur System/UI, Character-Sheets und Tooltips.",
     scope: "world",
     config: true,
     type: Boolean,
