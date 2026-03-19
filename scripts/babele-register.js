@@ -202,6 +202,10 @@ function fixMojibakeRuntime(text) {
     .replace(/â€œ/g, "“")
     .replace(/â€\x9c/g, "“")
     .replace(/â€\x9d/g, "”")
+    .replace(/âˆ’/g, "-")
+    .replace(/ˆ’/g, "-")
+    .replace(/a`-(?=\d)/g, "-")
+    .replace(/−(?=\d)/g, "-")
     .replace(/Â/g, "");
 }
 
