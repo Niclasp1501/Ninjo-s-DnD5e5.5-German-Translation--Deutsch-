@@ -168,6 +168,29 @@ function convertImperialUnitsInTextRuntime(text) {
       return v === null ? _m : `${v} kg`;
     });
 
+  const damageWordMap = {
+    acid: "Säureschaden",
+    bludgeoning: "Wuchtschaden",
+    cold: "Kälteschaden",
+    fire: "Feuerschaden",
+    force: "Wuchtschaden",
+    lightning: "Blitzschaden",
+    necrotic: "nekrotischen Schaden",
+    piercing: "durchschlagenden Schaden",
+    poison: "Giftschaden",
+    psychic: "psychischen Schaden",
+    radiant: "gleißenden Schaden",
+    slashing: "Hiebschaden",
+    thunder: "Donnerschaden"
+  };
+  out = out.replace(
+    /\b(Acid|Bludgeoning|Cold|Fire|Force|Lightning|Necrotic|Piercing|Poison|Psychic|Radiant|Slashing|Thunder)\s+(damage|Schaden)\b/gi,
+    (_m, dtype) => {
+      const key = String(dtype).toLowerCase();
+      return damageWordMap[key] || _m;
+    }
+  );
+
   // Handle dynamic lookup tokens where numeric value is resolved at runtime in Foundry:
   // "[[lookup ...]] Fuß großen Emanation" -> "[[lookup ...]] m großen Emanation"
   // "[[lookup ...]]-Fuß-Emanation" -> "[[lookup ...]]-m-Emanation"
