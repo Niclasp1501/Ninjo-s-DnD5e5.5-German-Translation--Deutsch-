@@ -17,6 +17,8 @@ const DISTANCE_UNIT_MAP = {
 const INLINE_TOKEN_RE = /@(UUID|Embed|Compendium)\[([\s\S]*?)\](\{[^}]*\})?/g;
 const AWARD_CMD_RE = /\[\[\s*\/award\s+([^\]]+)\]\]/gi;
 const LOOKUP_ACTIVITY_RE = /\[\[\s*lookup\s+([^\]]*?)\s+activity=([A-Za-z0-9_-]+)([^\]]*?)\]\]/gi;
+const RICH_TOKEN_PROTECT_RE =
+  /(@(?:UUID|Embed|Compendium)\[[\s\S]*?\](?:\{[^}]*\})?|\[\[[\s\S]*?\]\]|&Reference\[[^\]]*\])/g;
 const ACTOR_LANGUAGE_TOKEN_MAP = {
   "blink dog": "Blinkhund",
   "common": "Gemeinsprache",
@@ -88,6 +90,88 @@ function roundMetric(value) {
   return Math.round((n / 2) * 10) / 10;
 }
 
+function parseLooseNumber(value) {
+  const n = Number(String(value ?? "").replace(",", "."));
+  return Number.isFinite(n) ? n : null;
+}
+
+function formatMetricNumber(value) {
+  if (!Number.isFinite(value)) return String(value);
+  const rounded = Math.round(value * 10) / 10;
+  if (Number.isInteger(rounded)) return String(rounded);
+  return String(rounded).replace(".", ",");
+}
+
+function convertUnitTextValue(rawValue, factor) {
+  const n = parseLooseNumber(rawValue);
+  if (n === null) return null;
+  return formatMetricNumber(n * factor);
+}
+
+function convertImperialUnitsInTextRuntime(text) {
+  if (typeof text !== "string" || !text.trim()) return text;
+  if (!/(feet|foot|ft\b|fuß|fuss|miles?|mile|mi\b|inches?|inch|lbs?\b|pounds?\b|zoll)/i.test(text)) return text;
+
+  const protectedChunks = [];
+  let out = text.replace(RICH_TOKEN_PROTECT_RE, (m) => {
+    const idx = protectedChunks.push(m) - 1;
+    return `__RT_PROTECTED_${idx}__`;
+  });
+
+  out = out.replace(
+    /(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)\s*(feet|foot|ft|fuß|fuss|miles|mile|mi|inches|inch|zoll|pounds|pound|lbs|lb)\b/gi,
+    (_m, a, b, unit) => {
+      const u = String(unit).toLowerCase();
+      const factor = /(mile|mi)/.test(u) ? 1.6 : /(inch|zoll)/.test(u) ? 2.5 : /(pound|lb)/.test(u) ? 0.5 : 0.3;
+      const suffix = /(mile|mi)/.test(u) ? "km" : /(inch|zoll)/.test(u) ? "cm" : /(pound|lb)/.test(u) ? "kg" : "m";
+      const av = convertUnitTextValue(a, factor);
+      const bv = convertUnitTextValue(b, factor);
+      if (av === null || bv === null) return _m;
+      return `${av}-${bv} ${suffix}`;
+    }
+  );
+
+  out = out.replace(
+    /(\d+(?:[.,]\d+)?)\s*-\s*(feet|foot|ft|fuß|fuss)\s*-\s*(square|cube|radius|cone|line|wide|tall|high|deep|long)\b/gi,
+    (_m, num, _unit, shape) => {
+      const v = convertUnitTextValue(num, 0.3);
+      if (v === null) return _m;
+      const s = String(shape).toLowerCase();
+      if (s === "square") return `${v} m × ${v} m`;
+      if (s === "cube") return `${v} m Würfel`;
+      if (s === "radius") return `${v} m Radius`;
+      if (s === "cone") return `${v} m Kegel`;
+      if (s === "line") return `${v} m Linie`;
+      if (s === "wide") return `${v} m breit`;
+      if (s === "tall" || s === "high") return `${v} m hoch`;
+      if (s === "deep") return `${v} m tief`;
+      if (s === "long") return `${v} m lang`;
+      return `${v} m`;
+    }
+  );
+
+  out = out
+    .replace(/(\d+(?:[.,]\d+)?)\s*(feet|foot|ft|fuß|fuss)\b/gi, (_m, num) => {
+      const v = convertUnitTextValue(num, 0.3);
+      return v === null ? _m : `${v} m`;
+    })
+    .replace(/(\d+(?:[.,]\d+)?)\s*(miles|mile|mi)\b/gi, (_m, num) => {
+      const v = convertUnitTextValue(num, 1.6);
+      return v === null ? _m : `${v} km`;
+    })
+    .replace(/(\d+(?:[.,]\d+)?)\s*(inches|inch|zoll)\b/gi, (_m, num) => {
+      const v = convertUnitTextValue(num, 2.5);
+      return v === null ? _m : `${v} cm`;
+    })
+    .replace(/(\d+(?:[.,]\d+)?)\s*(pounds|pound|lbs|lb)\b/gi, (_m, num) => {
+      const v = convertUnitTextValue(num, 0.5);
+      return v === null ? _m : `${v} kg`;
+    });
+
+  out = out.replace(/__RT_PROTECTED_(\d+)__/g, (_m, idx) => protectedChunks[Number(idx)] ?? _m);
+  return out;
+}
+
 function fixMojibakeRuntime(text) {
   if (typeof text !== "string" || !text || !/[ÃÂâ]/.test(text)) return text;
   let current = text;
@@ -146,9 +230,9 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
   });
   const awardNormalized = normalizeAwardCommands(normalized);
   const lookupNormalized = stripInvalidLookupActivityRefs(awardNormalized, data);
-  if (!lookupNormalized.includes("@UUID[")) return fixMojibakeRuntime(lookupNormalized);
+  if (!lookupNormalized.includes("@UUID[")) return convertImperialUnitsInTextRuntime(fixMojibakeRuntime(lookupNormalized));
 
-  return lookupNormalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
+  const withUuidLabels = lookupNormalized.replace(/@UUID\[([^\]]+)\](?:\{([^}]*)\})?/g, (full, uuidPath) => {
     const id = String(uuidPath).split(".").pop();
     if (!id) return full;
     const linked = CURATED_OVERRIDES_BY_ID[id] || MODERN_OVERRIDES_BY_ID[id] || LEGACY_OVERRIDES_BY_ID[id];
@@ -156,6 +240,7 @@ function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
     if (!deName || typeof deName !== "string" || !deName.trim()) return full;
     return `@UUID[${uuidPath}]{${deName}}`;
   });
+  return convertImperialUnitsInTextRuntime(fixMojibakeRuntime(withUuidLabels));
 }
 
 function stripInvalidLookupActivityRefs(text, data) {
@@ -908,7 +993,7 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
     const rr = Array.isArray(result.range) && result.range.length >= 2 ? `${result.range[0]}-${result.range[1]}` : "";
     const mapped = resultMap[rid] || resultMap[rr] || null;
     if (typeof mapped === "string" && mapped.trim()) {
-      const normalized = fixMojibakeRuntime(mapped);
+      const normalized = convertImperialUnitsInTextRuntime(fixMojibakeRuntime(mapped));
       if (typeof result.description === "string") result.description = normalized;
       if (typeof result.text === "string") result.text = normalized;
       continue;
@@ -919,7 +1004,7 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
         result.name = fixMojibakeRuntime(mapped.name);
       }
       if (typeof mapped.description === "string" && mapped.description.trim()) {
-        const normalized = fixMojibakeRuntime(mapped.description);
+        const normalized = convertImperialUnitsInTextRuntime(fixMojibakeRuntime(mapped.description));
         if (typeof result.description === "string") result.description = normalized;
         if (typeof result.text === "string") result.text = normalized;
       }
