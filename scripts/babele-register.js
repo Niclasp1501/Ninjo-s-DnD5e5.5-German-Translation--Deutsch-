@@ -110,7 +110,7 @@ function convertUnitTextValue(rawValue, factor) {
 
 function convertImperialUnitsInTextRuntime(text) {
   if (typeof text !== "string" || !text.trim()) return text;
-  if (!/(feet|foot|ft\b|fuß|fuss|miles?|mile|mi\b|inches?|inch|lbs?\b|pounds?\b|zoll)/i.test(text)) return text;
+  if (!/(feet|foot|ft|fuß|fuss|miles?|mile|mi|inches?|inch|lbs?|pounds?|zoll)/i.test(text)) return text;
 
   const protectedChunks = [];
   let out = text.replace(RICH_TOKEN_PROTECT_RE, (m) => {
@@ -119,7 +119,7 @@ function convertImperialUnitsInTextRuntime(text) {
   });
 
   out = out.replace(
-    /(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)\s*(feet|foot|ft|fuß|fuss|miles|mile|mi|inches|inch|zoll|pounds|pound|lbs|lb)\b/gi,
+    /(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)\s*(feet|foot|ft|fuß|fuss|miles|mile|mi|inches|inch|zoll|pounds|pound|lbs|lb)(?=$|[\s,.;:!?\)\]\}])/gi,
     (_m, a, b, unit) => {
       const u = String(unit).toLowerCase();
       const factor = /(mile|mi)/.test(u) ? 1.6 : /(inch|zoll)/.test(u) ? 2.5 : /(pound|lb)/.test(u) ? 0.5 : 0.3;
@@ -151,19 +151,19 @@ function convertImperialUnitsInTextRuntime(text) {
   );
 
   out = out
-    .replace(/(\d+(?:[.,]\d+)?)\s*(feet|foot|ft|fuß|fuss)\b/gi, (_m, num) => {
+    .replace(/(\d+(?:[.,]\d+)?)\s*(feet|foot|ft|fuß|fuss)(?=$|[\s,.;:!?\)\]\}])/gi, (_m, num) => {
       const v = convertUnitTextValue(num, 0.3);
       return v === null ? _m : `${v} m`;
     })
-    .replace(/(\d+(?:[.,]\d+)?)\s*(miles|mile|mi)\b/gi, (_m, num) => {
+    .replace(/(\d+(?:[.,]\d+)?)\s*(miles|mile|mi)(?=$|[\s,.;:!?\)\]\}])/gi, (_m, num) => {
       const v = convertUnitTextValue(num, 1.6);
       return v === null ? _m : `${v} km`;
     })
-    .replace(/(\d+(?:[.,]\d+)?)\s*(inches|inch|zoll)\b/gi, (_m, num) => {
+    .replace(/(\d+(?:[.,]\d+)?)\s*(inches|inch|zoll)(?=$|[\s,.;:!?\)\]\}])/gi, (_m, num) => {
       const v = convertUnitTextValue(num, 2.5);
       return v === null ? _m : `${v} cm`;
     })
-    .replace(/(\d+(?:[.,]\d+)?)\s*(pounds|pound|lbs|lb)\b/gi, (_m, num) => {
+    .replace(/(\d+(?:[.,]\d+)?)\s*(pounds|pound|lbs|lb)(?=$|[\s,.;:!?\)\]\}])/gi, (_m, num) => {
       const v = convertUnitTextValue(num, 0.5);
       return v === null ? _m : `${v} kg`;
     });
