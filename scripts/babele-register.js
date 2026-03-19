@@ -168,6 +168,20 @@ function convertImperialUnitsInTextRuntime(text) {
       return v === null ? _m : `${v} kg`;
     });
 
+  // Handle dynamic lookup tokens where numeric value is resolved at runtime in Foundry:
+  // "[[lookup ...]] Fuß großen Emanation" -> "[[lookup ...]] m großen Emanation"
+  // "[[lookup ...]]-Fuß-Emanation" -> "[[lookup ...]]-m-Emanation"
+  out = out
+    .replace(/(__RT_PROTECTED_\d+__)\s*(fuß|fuss|feet|foot|ft)(?=$|[\s,.;:!?\)\]\}])/gi, "$1 m")
+    .replace(
+      /(__RT_PROTECTED_\d+__)\s*-\s*(fuß|fuss|feet|foot|ft)\s*-\s*(emanation|radius|kegel|linie|cube|würfel)/gi,
+      "$1-m-$3"
+    )
+    .replace(
+      /\b(fuß|fuss|feet|foot|ft)\b(?=\s+(gro(?:ß|ss)e?n?|emanation|radius|kegel|linie|weit|entfernt|lang|breit|hoch|tief|durchmesser|würfel))/gi,
+      "m"
+    );
+
   out = out.replace(/__RT_PROTECTED_(\d+)__/g, (_m, idx) => protectedChunks[Number(idx)] ?? _m);
   return out;
 }
