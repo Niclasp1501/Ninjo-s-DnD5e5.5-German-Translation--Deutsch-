@@ -1,6 +1,5 @@
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
 const SETTING_ENABLE_COMPENDIUM_TRANSLATIONS = "enableCompendiumTranslations";
-const SETTING_AUTO_METRIC_IMPORT_NORMALIZATION = "autoMetricImportNormalization";
 const MODULE_PACK_NAME = "dnd5e55-de-tooltips";
 const MODULE_PACK_COLLECTION = `${MODULE_ID}.${MODULE_PACK_NAME}`;
 const LEGACY_UUID_PREFIX_MAP = new Map([
@@ -98,7 +97,6 @@ function isMetricLengthEnabled() {
 
 function shouldNormalizeMetricImports() {
   if (game.system.id !== "dnd5e") return false;
-  if (game.settings?.get(MODULE_ID, SETTING_AUTO_METRIC_IMPORT_NORMALIZATION) !== true) return false;
   return isMetricLengthEnabled();
 }
 
@@ -650,15 +648,6 @@ Hooks.once("init", () => {
     ui.notifications?.error("This module requires the official dnd5e system.");
     return;
   }
-
-  game.settings.register(MODULE_ID, SETTING_AUTO_METRIC_IMPORT_NORMALIZATION, {
-    name: "Importe metrisch normalisieren",
-    hint: "Konvertiert beim Erstellen/Import von dnd5e-Akteuren und -Gegenstaenden strukturierte Distanzfelder von ft/mi nach m/km, wenn die dnd5e-Einstellung fuer metrische Laengeneinheiten aktiv ist.",
-    scope: "world",
-    config: true,
-    type: Boolean,
-    default: true
-  });
 
   patchLegacyTooltipRendering();
   console.log(`[${MODULE_ID}] Initialized.`);

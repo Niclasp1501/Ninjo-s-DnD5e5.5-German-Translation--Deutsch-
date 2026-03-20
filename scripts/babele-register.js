@@ -1015,6 +1015,21 @@ function applyDamageLocalizationFallback() {
     Slashing: "Hieb",
     Thunder: "Donner"
   };
+  const damageTypeMapByConfigKey = {
+    acid: "Säure",
+    bludgeoning: "Wuchtschaden",
+    cold: "Kälte",
+    fire: "Feuer",
+    force: "Wucht",
+    lightning: "Blitz",
+    necrotic: "Nekrotisch",
+    piercing: "Durchschlagend",
+    poison: "Gift",
+    psychic: "Psychisch",
+    radiant: "Strahlend",
+    slashing: "Hieb",
+    thunder: "Donner"
+  };
 
   const translations = game.i18n?.translations;
   if (!translations || typeof translations !== "object") return;
@@ -1046,56 +1061,63 @@ function applyDamageLocalizationFallback() {
   setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Label", bypass.Label);
   setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Title", bypass.Title);
   setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Hint", bypass.Hint);
+  // Defensive aliases for mixed key casing used by some contexts/modules.
+  setRuntimeKey("DND5E.Damage.PhysicalBypass.Label", bypass.Label);
+  setRuntimeKey("DND5E.Damage.PhysicalBypass.Title", bypass.Title);
+  setRuntimeKey("DND5E.Damage.PhysicalBypass.Hint", bypass.Hint);
+  // Legacy flat keys used by dnd5e 5.2.x templates/dialogs.
+  setRuntimeKey("DND5E.DamagePhysicalBypass", bypass.Label);
+  setRuntimeKey("DND5E.DamagePhysicalBypassHint", bypass.Hint);
+  setRuntimeKey("DND5E.DamagePhysicalBypasses", "{damageTypes} von Angriffen, die nicht {bypassTypes} sind");
+  setRuntimeKey("DND5E.DamagePhysicalBypassesShort", "Umgegangen durch {type}-Quellen");
+  setRuntimeKey(
+    "DND5E.DamageModification.BypassHint",
+    "Diese Waffeneigenschaften umgehen die Schadensmodifikation für physischen Schaden."
+  );
+  // Legacy flat damage-type keys.
+  setRuntimeKey("DND5E.DamageAcid", "Säure");
+  setRuntimeKey("DND5E.DamageAll", "Gesamtschaden");
+  setRuntimeKey("DND5E.DamageBludgeoning", "Wuchtschaden");
+  setRuntimeKey("DND5E.DamageCold", "Kälte");
+  setRuntimeKey("DND5E.DamageFire", "Feuer");
+  setRuntimeKey("DND5E.DamageForce", "Wucht");
+  setRuntimeKey("DND5E.DamageLightning", "Blitz");
+  setRuntimeKey("DND5E.DamageNecrotic", "Nekrotisch");
+  setRuntimeKey("DND5E.DamagePiercing", "Durchschlagend");
+  setRuntimeKey("DND5E.DamagePhysical", "Nichtmagischer physischer Schaden");
+  setRuntimeKey("DND5E.DamagePoison", "Gift");
+  setRuntimeKey("DND5E.DamagePsychic", "Psychisch");
+  setRuntimeKey("DND5E.DamageRadiant", "Strahlend");
+  setRuntimeKey("DND5E.DamageSlashing", "Hieb");
+  setRuntimeKey("DND5E.DamageThunder", "Donner");
 
   // Used by the bypass checkbox list in trait editors.
   setRuntimeKey("DND5E.ITEM.Property.Adamantine", "Adamantin");
-  setRuntimeKey("DND5E.ITEM.Property.Magic", "Magisch");
+  setRuntimeKey("DND5E.ITEM.Property.Magical", "Magisch");
   setRuntimeKey("DND5E.ITEM.Property.Silvered", "Versilbert");
 
   const configDamage = CONFIG?.DND5E?.damageTypes;
   if (configDamage && typeof configDamage === "object") {
-    for (const [key, value] of Object.entries(damageTypeMap)) {
+    for (const [key, value] of Object.entries(damageTypeMapByConfigKey)) {
       if (!configDamage[key] || typeof configDamage[key] !== "object") continue;
       configDamage[key].label = value;
     }
   }
-}
 
-function installDamageI18nLocalizeFallback() {
-  if (!isGermanUi()) return;
-  const i18n = game.i18n;
-  if (!i18n || typeof i18n.localize !== "function") return;
-  if (i18n.__dnd5e55DamageFallbackInstalled) return;
-
-  const keyMap = {
-    "DND5E.DAMAGE.Type.Acid": "Säure",
-    "DND5E.DAMAGE.Type.Bludgeoning": "Wuchtschaden",
-    "DND5E.DAMAGE.Type.Cold": "Kälte",
-    "DND5E.DAMAGE.Type.Fire": "Feuer",
-    "DND5E.DAMAGE.Type.Force": "Wucht",
-    "DND5E.DAMAGE.Type.Lightning": "Blitz",
-    "DND5E.DAMAGE.Type.Necrotic": "Nekrotisch",
-    "DND5E.DAMAGE.Type.Piercing": "Durchschlagend",
-    "DND5E.DAMAGE.Type.Poison": "Gift",
-    "DND5E.DAMAGE.Type.Psychic": "Psychisch",
-    "DND5E.DAMAGE.Type.Radiant": "Strahlend",
-    "DND5E.DAMAGE.Type.Slashing": "Hieb",
-    "DND5E.DAMAGE.Type.Thunder": "Donner",
-    "DND5E.DAMAGE.PhysicalBypass.Label": "Physische Umgehungen",
-    "DND5E.DAMAGE.PhysicalBypass.Title": "Physische Umgehungen",
-    "DND5E.DAMAGE.PhysicalBypass.Hint": "Diese Waffeneigenschaften umgehen den Widerstand gegen physischen Schaden.",
-    "DND5E.ITEM.Property.Adamantine": "Adamantin",
-    "DND5E.ITEM.Property.Magic": "Magisch",
-    "DND5E.ITEM.Property.Silvered": "Versilbert"
-  };
-
-  const originalLocalize = i18n.localize.bind(i18n);
-  i18n.localize = function dnd5e55LocalizedWithDamageFallback(key) {
-    const mapped = keyMap[String(key ?? "")];
-    if (mapped) return mapped;
-    return originalLocalize(key);
-  };
-  i18n.__dnd5e55DamageFallbackInstalled = true;
+  const configItemProps = CONFIG?.DND5E?.itemProperties;
+  if (configItemProps && typeof configItemProps === "object") {
+    for (const entry of Object.values(configItemProps)) {
+      if (!entry || typeof entry !== "object") continue;
+      const current = String(entry.label ?? "").trim();
+      if (current === "DND5E.ITEM.Property.Adamantine" || /^adamantine$/i.test(current)) {
+        entry.label = "Adamantin";
+      } else if (current === "DND5E.ITEM.Property.Magical" || /^magical$/i.test(current)) {
+        entry.label = "Magisch";
+      } else if (current === "DND5E.ITEM.Property.Silvered" || /^silvered$/i.test(current)) {
+        entry.label = "Versilbert";
+      }
+    }
+  }
 }
 
 function translateRollTableResultsRuntime(originalValue, _entryTranslation, data) {
@@ -1141,7 +1163,6 @@ function translateRollTableResultsRuntime(originalValue, _entryTranslation, data
 Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
   normalizeAllOverrideMapsRuntime();
-  installDamageI18nLocalizeFallback();
 
   game.settings.register(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS, {
     name: "Zusatzinhalte (Kompendien) übersetzen",

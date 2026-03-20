@@ -5,6 +5,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-03-20
+### Changed
+- Expanded modern/legacy damage localization compatibility by adding key-safe coverage for both flat and nested dnd5e i18n key families used across 5.x.
+- Hardened runtime damage label mapping for resistance/immunity/vulnerability dialogs and physical bypass property labels.
+
+### Fixed
+- Fixed remaining English `Physical Bypasses`/hint text in damage trait dialogs by mapping the correct system keys instead of DOM-level rewrites.
+- Fixed untranslated legacy damage labels (e.g. `Acid`, `Fire`, `Bludgeoning`) in dialogs that still use flat `DND5E.Damage*` keys.
+- Kept Babele-safe behavior intact while removing brittle UI patching paths that could drift with system template changes.
+
 ## [1.0.4] - 2026-03-18
 ### Changed
 - Expanded modern origins/content coverage and repaired appendix-based species/background localization paths.
