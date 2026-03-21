@@ -19,11 +19,1780 @@
     "Creating a Character": "Charaktererstellung",
     "Item-Specific Tables": "Gegenstandsspezifische Tabellen",
     "Magic Items": "Magische Gegenstände",
+    "Monster Details": "Monsterdetails",
     "Mysterious Deck": "Geheimnisvolles Deck",
     "Random Magic Item Rarity by Level": "Zufällige Seltenheit magischer Gegenstände nach Stufe",
     "Reincarnated Lineages": "Wiedergeborene Abstammungen",
     "Sentient Item Attributes": "Eigenschaften empfindungsfähiger Gegenstände",
     "Spells": "Zauber"
   },
-  "entries": {}
+  "entries": {
+    "Animated Object Catalysts": {
+      "name": "Katalysatoren belebter Objekte"
+    },
+    "Bandit Motivations": {
+      "name": "Banditenmotive"
+    },
+    "Cult Symbols": {
+      "name": "Kultsymbole"
+    },
+    "Cult Symbols - Depictions": {
+      "name": "Kultsymbole - Darstellungen"
+    },
+    "Cultist Agendas": {
+      "name": "Ziele von Kultisten"
+    },
+    "Doppelganger Deceptions": {
+      "name": "Täuschungen von Doppelgängern"
+    },
+    "Fire Elemental Compositions": {
+      "name": "Zusammensetzungen von Feuerelementaren"
+    },
+    "Incubus Nightmares": {
+      "name": "Albträume des Inkubus"
+    },
+    "Mage Roles": {
+      "name": "Rollen von Magiern"
+    },
+    "Minotaur Mazes": {
+      "name": "Labyrinthe der Minotauren"
+    },
+    "Owlbear Den Features": {
+      "name": "Merkmale eines Eulenbärenbaus"
+    },
+    "Pseudodragon Treats": {
+      "name": "Leckereien für Pseudodrachen"
+    },
+    "Shadow Shapes": {
+      "name": "Schattenformen"
+    },
+    "Skeleton Pantomimes": {
+      "name": "Skelett-Pantomimen"
+    },
+    "Stirge Roosts": {
+      "name": "Stirge-Nester"
+    },
+    "Stone Golem Orders": {
+      "name": "Befehle von Steingolems"
+    },
+    "Standard Languages": {
+      "name": "Standardsprachen",
+      "results": {
+        "rViHFEn5WjhRbElK": {
+          "description": "<strong>Sprache:</strong> Gemeinsprache. <strong>Ursprung:</strong> Sigil."
+        },
+        "pzL0RD1tg43fqDTo": {
+          "name": "Unter-Sprachen-Tabelle"
+        },
+        "JpUuNwaf83gmUwV4": {
+          "name": "Unter-Sprachen-Tabelle"
+        }
+      }
+    },
+    "Sub-Languages Table": {
+      "name": "Unter-Sprachen-Tabelle",
+      "results": {
+        "pyVRbUOfHAgtAvnf": {
+          "description": "<strong>Sprache:</strong> Gemeinsame Gebärdensprache. <strong>Ursprung:</strong> Sigil."
+        },
+        "LoCbKgBhdONPEPVB": {
+          "description": "<strong>Sprache:</strong> Drakonisch. <strong>Ursprung:</strong> Drachen."
+        },
+        "0uKZmKF7znJNVuzU": {
+          "description": "<strong>Sprache:</strong> Zwergisch. <strong>Ursprung:</strong> Zwerge."
+        },
+        "llH2J2NFDJ7eTCim": {
+          "description": "<strong>Sprache:</strong> Elfisch. <strong>Ursprung:</strong> Elfen."
+        },
+        "ldceHBQUUr4q4wxq": {
+          "description": "<strong>Sprache:</strong> Riesisch. <strong>Ursprung:</strong> Riesen."
+        },
+        "K6WzOtBKakv6WBWo": {
+          "description": "<strong>Sprache:</strong> Gnomisch. <strong>Ursprung:</strong> Gnome."
+        },
+        "8jwF2ojzhkWpRtUw": {
+          "description": "<strong>Sprache:</strong> Goblinisch. <strong>Ursprung:</strong> Goblinoiden."
+        },
+        "b0CKmtsTQ7J2GBz0": {
+          "description": "<strong>Sprache:</strong> Halblingisch. <strong>Ursprung:</strong> Halblinge."
+        },
+        "0ax92ObMEQPSC2fm": {
+          "description": "<strong>Sprache:</strong> Orkisch. <strong>Ursprung:</strong> Orks."
+        }
+      }
+    },
+    "Trinkets": {
+      "name": "Nippes",
+      "results": {
+        "1UB86NcSDUIBykNm": {
+          "description": "Eine mumifizierte Goblinhand"
+        },
+        "M1IWLp8ChJcJvuO6": {
+          "description": "Ein Kristall, der im Mondlicht schwach leuchtet"
+        },
+        "XRqEMbHsMsA7J9VH": {
+          "description": "Eine Goldmünze, geprägt in einem unbekannten Land"
+        },
+        "VlXxfsGYaBWe8lmv": {
+          "description": "Ein Tagebuch, geschrieben in einer Sprache, die du nicht kennst"
+        },
+        "w5us6YeOVVr5CTzu": {
+          "description": "Ein Messingring, der niemals anläuft"
+        },
+        "zawsPbsknbRsAruh": {
+          "description": "Eine alte Schachfigur aus Glas"
+        },
+        "0Z5jMrvmiZ8HK8xd": {
+          "description": "Ein Paar Knochenwürfel, jeder mit einem Schädelsymbol auf der Seite, die normalerweise sechs Augen zeigen würde"
+        },
+        "doz8Ggqs6mdGLHHM": {
+          "description": "Ein kleines Idol, das eine alptraumhafte Kreatur darstellt und dir beunruhigende Träume beschert, wenn du in seiner Nähe schläfst"
+        },
+        "bMI91XR4KMvo4tjI": {
+          "description": "Eine Haarsträhne von jemandem"
+        },
+        "u8DhaWBstONiXblV": {
+          "description": "Die Urkunde für ein Stück Land in einem dir unbekannten Reich"
+        },
+        "C2uOPhK0TUu8dTXN": {
+          "description": "Ein 1-Unzen-Block aus einem unbekannten Material"
+        },
+        "OYKb6uraFnjRkgmd": {
+          "description": "Eine kleine Stoffpuppe, mit Nadeln gespickt"
+        },
+        "ln8C5RrIfteVeu3B": {
+          "description": "Ein Zahn von einem unbekannten Tier"
+        },
+        "SSpTgkp4wvU8lHWp": {
+          "description": "Eine riesige Schuppe, vielleicht von einem Drachen"
+        },
+        "uh2ybtxRs8M3VjmX": {
+          "description": "Eine leuchtend grüne Feder"
+        },
+        "wjOwLB6kmGbWP2qD": {
+          "description": "Eine alte Wahrsagekarte, die dein Abbild trägt"
+        },
+        "EY007jl51tPPREYT": {
+          "description": "Eine Glaskugel, gefüllt mit sich bewegendem Rauch"
+        },
+        "IDGi7ijU97dtydoh": {
+          "description": "Ein 1-Pfund-Ei mit einer leuchtend roten Schale"
+        },
+        "LvAMmmHYYZQu95th": {
+          "description": "Eine Pfeife, die Blasen bläst"
+        },
+        "ntkr8bH7QTevl9jA": {
+          "description": "Ein Glasgefäß, das ein Stück Fleisch enthält, das in Einlegeflüssigkeit schwimmt"
+        },
+        "SFJefOoyTvSYf2DW": {
+          "description": "Eine von Gnomen gefertigte Spieluhr, die ein Lied spielt, an das du dich vage aus deiner Kindheit erinnerst"
+        },
+        "0j3emj0PU8amfwS3": {
+          "description": "Eine hölzerne Statuette eines selbstgefälligen Halblings"
+        },
+        "3LTEcTwsUr9m5mGV": {
+          "description": "Eine Messingkugel, in die seltsame Runen geätzt sind"
+        },
+        "4Mrq1XRbsUJjKceK": {
+          "description": "Eine mehrfarbige Steinscheibe"
+        },
+        "kcyLpCJmO7UFWW2H": {
+          "description": "Eine silberne Ikone eines Raben"
+        },
+        "twUx2e03YCRFeN1f": {
+          "description": "Ein Beutel, der siebenundvierzig Zähne enthält, von denen einer verfault ist"
+        },
+        "McuVqsG6pSeSN7S6": {
+          "description": "Ein Obsidianfragment, das sich immer warm anfühlt"
+        },
+        "l1PHw7hxFHIJ6tUh": {
+          "description": "Eine Drachenkralle, aufgefädelt an einer Lederhalskette"
+        },
+        "o7vFqKnuUZ2sV10C": {
+          "description": "Ein Paar alter Socken"
+        },
+        "nMWe5i4J7zB89CWq": {
+          "description": "Ein leeres Buch, dessen Seiten keine Tinte, Kreide, Graphit oder andere Markierungen annehmen"
+        },
+        "mUigbGOt583dBuX4": {
+          "description": "Ein silbernes Abzeichen in Form eines fünfzackigen Sterns"
+        },
+        "K8IUYfsaAz2sdFwM": {
+          "description": "Ein Messer, das einem Verwandten gehörte"
+        },
+        "VBZ5z1IzyOMxWjh3": {
+          "description": "Ein Glasfläschchen, gefüllt mit Nagelresten"
+        },
+        "n1SWfDr140Czy7Dk": {
+          "description": "Ein rechteckiges Metallgerät mit zwei winzigen Metallbechern an einem Ende, das Funken sprüht, wenn es nass wird"
+        },
+        "vv4Ogu0Sc5byy86S": {
+          "description": "Ein weißer, paillettenbesetzter Handschuh in menschlicher Größe"
+        },
+        "G1WR64ROhRxe4SlZ": {
+          "description": "Eine Weste mit einhundert winzigen Taschen"
+        },
+        "xl1zdaiiFf991Iqt": {
+          "description": "Ein schwereloser Stein"
+        },
+        "G8H06tR6Rv6YweY1": {
+          "description": "Eine Skizze eines Goblins"
+        },
+        "QAjgAqeSpPQOAxbv": {
+          "description": "Ein leeres Glasfläschchen, das nach Parfüm riecht"
+        },
+        "K1CvAxT4EQIa1KqT": {
+          "description": "Ein Edelstein, der wie ein Stück Kohle aussieht, wenn er von jemand anderem als dir untersucht wird"
+        },
+        "WJN8tK4NZWbXPu6B": {
+          "description": "Ein Stofffetzen von einem alten Banner"
+        },
+        "VV9aOlIjb6Eeijk0": {
+          "description": "Ein Rangabzeichen eines verlorenen Legionärs"
+        },
+        "tCjByq1RqPKTMByr": {
+          "description": "Eine silberne Glocke ohne Klöppel"
+        },
+        "nKavwZYOnFrOHkG3": {
+          "description": "Ein mechanischer Kanarienvogel in einer Lampe"
+        },
+        "p4KCpZunRqNmEC9F": {
+          "description": "Eine Miniaturtruhe, die so geschnitzt ist, dass sie zahlreiche Füße an der Unterseite hat"
+        },
+        "iQYOjVF2WdcGGgxR": {
+          "description": "Ein toter Sprite in einer durchsichtigen Glasflasche"
+        },
+        "7JFlRuHhcNgFBQCL": {
+          "description": "Eine Metalldose ohne Öffnung, die klingt, als wäre sie mit Flüssigkeit, Sand, Spinnen oder zerbrochenem Glas gefüllt (deine Wahl)"
+        },
+        "JJewPitLKW29w7us": {
+          "description": "Eine Glaskugel, gefüllt mit Wasser, in der ein mechanischer Goldfisch schwimmt"
+        },
+        "sFUjvmAhIHtUIAwn": {
+          "description": "Ein silberner Löffel mit einem eingravierten M am Griff"
+        },
+        "agFIuW6qay5wyhR3": {
+          "description": "Eine Pfeife aus goldfarbenem Holz"
+        },
+        "CYeyOuA30ohcfPgd": {
+          "description": "Ein toter Skarabäus von der Größe deiner Hand"
+        },
+        "XyePtfYIngJ5suzP": {
+          "description": "Zwei Spielzeugsoldaten, einem fehlt der Kopf"
+        },
+        "YqT3ro2COewxvBQK": {
+          "description": "Eine kleine Schachtel, gefüllt mit Knöpfen unterschiedlicher Größe"
+        },
+        "6GFmEhglG9rjrj2G": {
+          "description": "Eine Kerze, die sich nicht anzünden lässt"
+        },
+        "BJ9OaK1OeRxCLcsm": {
+          "description": "Ein Miniaturkäfig ohne Tür"
+        },
+        "uDyEGNdkNoZflKJG": {
+          "description": "Ein alter Schlüssel"
+        },
+        "wCHlXVeLGW0nvsPp": {
+          "description": "Eine unentzifferbare Schatzkarte"
+        },
+        "C2EdF8CZHmvexHDX": {
+          "description": "Ein Griff von einem zerbrochenen Schwert"
+        },
+        "BoJHLiKzZPvCmkIf": {
+          "description": "Eine Hasenpfote"
+        },
+        "xhmkotcrYgtDq0jQ": {
+          "description": "Ein Glasauge"
+        },
+        "NMkW290csrmB9JGQ": {
+          "description": "Ein Kamee mit dem Bild einer abscheulichen Person"
+        },
+        "H16sxzL3mY0ab0SD": {
+          "description": "Ein silberner Schädel von der Größe einer Münze"
+        },
+        "9kaaUYVwfMkFfsjo": {
+          "description": "Eine Alabastermaske"
+        },
+        "yrZzanhn0D1p9Nyb": {
+          "description": "Ein Kegel aus klebrigem schwarzem Weihrauch, der stinkt"
+        },
+        "G2KxS5pdZuxtDf4D": {
+          "description": "Eine Schlafmütze, die dir angenehme Träume beschert, wenn du sie trägst"
+        },
+        "zYFlKKsvc4HPr7Ub": {
+          "description": "Ein einzelner Krähenfuß aus Knochen"
+        },
+        "RMfr9DqzeXVEYAtv": {
+          "description": "Ein goldener Monokelrahmen ohne Linse"
+        },
+        "uTzd9hG7fVG1nBZB": {
+          "description": "Ein 2,5 cm großer Würfel, jede Seite eine andere Farbe"
+        },
+        "xsWDSHfrSy9hQmk8": {
+          "description": "Ein kristallener Türknauf"
+        },
+        "OpI3dqeFnDcvRr75": {
+          "description": "Ein Päckchen gefüllt mit rosa Staub"
+        },
+        "TREYOVgNQppBKl9c": {
+          "description": "Ein Fragment eines wunderschönen Liedes, als Noten auf zwei Pergamentstücken geschrieben"
+        },
+        "rlRDpniFUS5xuWhG": {
+          "description": "Ein silberner Ohrring in Tropfenform, der eine echte Träne enthält"
+        },
+        "W0dQHJTZDRf2UAwp": {
+          "description": "Eine Eierschale, bemalt mit Szenen des Elends in verstörenden Details"
+        },
+        "K0MYrwt4UTvNMiP3": {
+          "description": "Ein Fächer, der, wenn er aufgeklappt wird, eine schläfrige Katze zeigt"
+        },
+        "qYB6PvEKrZYEV3Pw": {
+          "description": "Ein Satz Knochenpfeifen"
+        },
+        "QRxf4NB36YiWnfJ4": {
+          "description": "Ein vierblättriges Kleeblatt, gepresst in einem Buch über Manieren und Etikette"
+        },
+        "gUs56tkBL7gnr0Wa": {
+          "description": "Ein Blatt Pergament, auf dem eine mechanische Vorrichtung gezeichnet ist"
+        },
+        "DSfbe9YWWPwPT99n": {
+          "description": "Eine verzierte Scheide, die zu keiner Klinge passt, die du gefunden hast"
+        },
+        "GZbSniAp67RYeulU": {
+          "description": "Eine Einladung zu einer Party, auf der ein Mord geschah"
+        },
+        "37vysK5qfyjHWBWm": {
+          "description": "Ein bronzenes Pentakel mit einer Ätzung eines Rattenkopfes in seiner Mitte"
+        },
+        "r7gWpB24Slndb3wJ": {
+          "description": "Ein lilafarbenes Taschentuch, bestickt mit dem Namen eines Erzmagiers"
+        },
+        "yEot4MFFCGmRRTST": {
+          "description": "Ein halber Grundriss für einen Tempel, eine Burg oder ein anderes Bauwerk"
+        },
+        "vfO9PhxUuVH3Leb4": {
+          "description": "Ein Stück gefalteter Stoff, der sich beim Entfalten in eine stilvolle Mütze verwandelt"
+        },
+        "RzQeJWipC6ESuUrn": {
+          "description": "Eine Einzahlungsquittung von einer Bank in einer weit entfernten Stadt"
+        },
+        "H625UbkdnmJ64aw9": {
+          "description": "Ein Tagebuch mit sieben fehlenden Seiten"
+        },
+        "I0exL9dzZg0wthMa": {
+          "description": "Eine leere silberne Schnupftabakdose mit der Inschrift „Träume“ auf ihrem Deckel"
+        },
+        "z0tFDFVY2u9jXO68": {
+          "description": "Ein eisernes heiliges Symbol, das einem unbekannten Gott geweiht ist"
+        },
+        "rReB5FdOho5GjkDt": {
+          "description": "Ein Buch über den Aufstieg und Fall eines legendären Helden, bei dem das letzte Kapitel fehlt"
+        },
+        "axl0VE5AthESWIkd": {
+          "description": "Ein Fläschchen Drachenblut"
+        },
+        "x48dbt5uqwW7yvjG": {
+          "description": "Ein alter Pfeil elfischer Machart"
+        },
+        "Hpp4hV1sKIoFqzIf": {
+          "description": "Eine Nadel, die sich niemals verbiegt"
+        },
+        "Oa6sAjObddYMlClx": {
+          "description": "Eine verzierte Brosche zwergischer Machart"
+        },
+        "lyVvx6NPjT1Emz7v": {
+          "description": "Eine leere Weinflasche mit einem hübschen Etikett, auf dem steht: „Die Weinkellerei des Zauberers, Roter Drachenquetscher, 331422-W“"
+        },
+        "jzjeBPYKZviXaGE9": {
+          "description": "Eine Mosaikfliese mit einer mehrfarbigen, glasierten Oberfläche"
+        },
+        "fWWyjtohJHtz6NpV": {
+          "description": "Eine versteinerte Maus"
+        },
+        "tJILEUhHQJgZd3h7": {
+          "description": "Eine schwarze Piratenflagge, verziert mit einem Drachenschädel und gekreuzten Knochen"
+        },
+        "nlYHh9O5My9VbXb5": {
+          "description": "Eine winzige mechanische Krabbe oder Spinne, die sich bewegt, wenn sie nicht beobachtet wird"
+        },
+        "x3XWO1tRDDjc0Dyt": {
+          "description": "Ein Glasgefäß mit Schmalz und einem Etikett, auf dem steht: „Greifenfett“"
+        },
+        "99Zmqkbbj1YyO4Cm": {
+          "description": "Eine Holzkiste mit Keramikboden, die einen lebenden Wurm mit einem Kopf an jedem Ende seines Körpers enthält"
+        },
+        "BjTpLIR1DSNUQA7E": {
+          "description": "Eine Metallurne, die die Asche eines Helden enthält"
+        }
+      }
+    },
+    "Gray Bag of Tricks": {
+      "name": "Grauer Beutel voller Tricks",
+      "results": {
+        "wHuva8KyJqk0ks9t": {
+          "name": "Wiesel"
+        },
+        "z4mqTXpfNseZDTT6": {
+          "name": "Riesenratte"
+        },
+        "y0mm0I94cSaTbkk6": {
+          "name": "Dachs"
+        },
+        "v65tOkYcYXbUplIe": {
+          "name": "Eber"
+        },
+        "HRPWtZTeg5oK5ImY": {
+          "name": "Panther"
+        },
+        "3Qtoly9mgrhZ8UW4": {
+          "name": "Riesendachs"
+        },
+        "LumSf2zPMkOkfFLE": {
+          "name": "Grauenwolf"
+        },
+        "GaLvOBWWFIj4RQIO": {
+          "name": "Riesenelch"
+        }
+      }
+    },
+    "Rust Bag of Tricks": {
+      "name": "Rostfarbener Beutel voller Tricks",
+      "results": {
+        "XAwjD2CKetY0vDzS": {
+          "name": "Ratte"
+        },
+        "GHibWDnM5Q0a2JtC": {
+          "name": "Eule"
+        },
+        "1miaa3ePalyErX8y": {
+          "name": "Dogge"
+        },
+        "uhxub63WB4H7yROY": {
+          "name": "Ziege"
+        },
+        "D9qG1cIKGxRGMdm7": {
+          "name": "Riesenziege"
+        },
+        "SvVflxSVAZgZiUZz": {
+          "name": "Riesenkeiler"
+        },
+        "SyT5zrUhk8Zh98rX": {
+          "name": "Löwe"
+        },
+        "SzMeDSCvraNzAqcm": {
+          "name": "Braunbär"
+        }
+      }
+    },
+    "Tan Bag of Tricks": {
+      "name": "Hellbrauner Beutel voller Tricks",
+      "results": {
+        "1nEUEa3WUmsNMDFC": {
+          "name": "Schakal"
+        },
+        "B2uTmg4glLwbt7OE": {
+          "name": "Affe"
+        },
+        "kDI3PFkVjvrFOI7G": {
+          "name": "Pavian"
+        },
+        "dGC8E7S2XXliLPjy": {
+          "name": "Axtschnabel"
+        },
+        "SEhoRaQ3DYPJpgis": {
+          "name": "Schwarzbär"
+        },
+        "aQ0vAp1BNIGLUZa0": {
+          "name": "Riesenwiesel"
+        },
+        "GlIp7jcoqnfbWWqc": {
+          "name": "Riesenhyäne"
+        },
+        "dQ9za3nwnBnEltRF": {
+          "name": "Tiger"
+        }
+      }
+    },
+    "Ammunition of Slaying: Creature Type": {
+      "name": "Munition der Tötung: Kreaturentyp",
+      "results": {
+        "f4AT66qY6IpW9XGE": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4GIkMFeZQHZnfjvq]"
+        },
+        "bBzSzzTMgsRu2p9m": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.70bFeuTndNorjLBe]"
+        },
+        "5IAfN2gE45YNRnH5": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.o4aDyFCK0ekd9w8j]"
+        },
+        "7gOENkePCrW02UwC": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.AvExH8PizzJN0jSM]"
+        },
+        "tlAU84ok29YhTp9I": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.VRMET3XgPTjBG91L]"
+        },
+        "NjnaG5MkLXwiOFD8": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ku2JX8rDga8GUBul]"
+        },
+        "x3ELDvpdCuJRDeDg": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ZssaQ07jWS7jFiej]"
+        },
+        "x7mSfJ8AjeVv3NRI": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3JnW3nSByOVKu1LW]"
+        },
+        "w8UkRFQNaRdjewAd": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ulADMO3yope7gn5R]"
+        },
+        "NfUynzHOgrEO5mmb": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.MKSR9zEe2s3qVILa]"
+        },
+        "WQ8bqLhZbWxPsP0b": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.cFNisqoGRSTHYDI4]"
+        },
+        "4WNFaBpWyeDphNcG": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3mSYXVx987sezjuS]"
+        },
+        "aL8OS42JpqroJaaW": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.BsXM9mDyGJ1R754S]"
+        },
+        "evZ08L9NQb1evYe9": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4NXhqKrNtDQjBcc8]"
+        }
+      }
+    },
+    "Amulet of the Planes Destination": {
+      "name": "Amulett der Ebenen: Ziel",
+      "results": {
+        "m2UKvzZf0ZibczrG": {
+          "description": "Zufälliger Ort auf der von dir benannten Ebene"
+        },
+        "vH6t70BzwrR0dfnM": {
+          "description": "Zufälliger Ort auf einer Inneren Ebene, bestimmt durch einen Wurf von [[/r 1d6]]: bei 1 , die Ebene der Luft; bei 2 , die Ebene der Erde; bei 3 , die Ebene des Feuers; bei 4 , die Ebene des Wassers; bei 5 , die Feenwildnis; bei 6 , die Schattenfeste"
+        },
+        "k7P9te8NuEctUdxE": {
+          "description": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei 1 , Arborea; bei 2 , Arkadien; bei 3 , die Bestienlande; bei 4 , Bytopia; bei 5 , Elysium; bei 6 , Mechanus; bei 7 , der Berg Celestia; bei 8 , Ysgard"
+        },
+        "iMtDiN65JNwyr8oG": {
+          "description": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei 1 , dem Abyss; bei 2 , Acheron; bei 3 , Carceri; bei 4 , Gehenna; bei 5 , Hades; bei 6 , Limbo; bei 7 , den Neun Höllen; bei 8 , Pandemonium"
+        },
+        "nF1GNDH2Vmrg1HM0": {
+          "description": "Zufälliger Ort auf der Astralebene"
+        }
+      }
+    },
+    "Armor of Resistance Type": {
+      "name": "Rüstung des Widerstands: Typ",
+      "results": {
+        "whhI1ElflkCbBJ3U": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.YreDFSu9z9mGCWt1]"
+        },
+        "HJhUoa9dRFWS20cE": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.CfxFdUSiXkOUXym6]"
+        },
+        "MWsbp9Vjx5ZFyydf": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.LTByr2rsRPBLLOA0]"
+        },
+        "En1vnLK0ysLhxisl": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.VST1qNRu1dHDzkD2]"
+        },
+        "eJkcua7kOtectwDX": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.MqubvD3XEwB7DRST]"
+        },
+        "LrupslmEYeqxfFWP": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.mmp5O2pZOxJUc2vq]"
+        },
+        "MQVpjSCnzqIKWNu2": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.lsPKUk288Jkvahsp]"
+        },
+        "vhvfqW7O1Gzc4xnK": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.jyWNVNHLYdxvCOQz]"
+        },
+        "tJKURr8q9I73BV2y": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.18IZ8X8zpDXyN33T]"
+        },
+        "ZdsE9Cp3Pt2i84xf": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.cbsuJ2tdbBuT5e8U]"
+        }
+      }
+    },
+    "Bag of Beans Effect": {
+      "name": "Bohnensack: Effekt",
+      "results": {
+        "pzLmgpW1yj3mYwzX": {
+          "description": "[[/r 5d4#Toadstools]] Giftpilze sprießen. Wenn eine Kreatur einen Giftpilz isst, würfle [[/r 1d2#Toadstool side-effect]]{any die}. Bei einem ungeraden Wurf muss der Esser einen [[/save ability=con dc=15 format=long]] bestehen oder erleidet [[/damage 5d6 type=poison]] Schaden und hat den Zustand &amp;Reference[Poisoned] für 1 Stunde. Bei einem geraden Wurf erhält der Esser [[/healing 5d6 type=temphp]] für 1 Stunde."
+        },
+        "Jhz5rfNBanKmcBVS": {
+          "description": "Ein Geysir bricht aus und speit Wasser, Bier, Mayonnaise, Tee, Essig, Wein oder Öl (Wahl des SL) 9 m hoch in die Luft für [[/r 1d4#Geyser duration (minutes)]] Minuten."
+        },
+        "U8QzXRMnrYX14lFR": {
+          "description": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{Treant} sprießt. Würfle [[/r 1d2#Treant alignment]]{any die}. Bei einem ungeraden Wurf ist der Treant Chaotisch Böse. Bei einem geraden Wurf ist der Treant Chaotisch Gut."
+        },
+        "Y0w1OXdEMe9adHEU": {
+          "description": "Eine belebte, aber unbewegliche Steinstatue in deinem Abbild erhebt sich und stößt verbale Drohungen gegen dich aus. Wenn du sie verlässt und andere sich nähern, beschreibt sie dich als den abscheulichsten aller Schurken und weist die Neuankömmlinge an, dich zu finden und anzugreifen. Wenn du dich auf derselben Existenzebene wie die Statue befindest, weiß sie, wo du bist. Die Statue wird nach 24 Stunden unbelebt."
+        },
+        "uo7H3eT6dBXf1kas": {
+          "description": "Ein Lagerfeuer mit grünen Flammen springt hervor und brennt für 24 Stunden oder bis es gelöscht wird."
+        },
+        "2XUZ3pcRsXgZVNUs": {
+          "description": "Drei @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus]{Shrieker Fungi} sprießen."
+        },
+        "mr4qhK4Tkaotu5Lo": {
+          "description": "[[/r 1d4 + 4#Bright-pink toads]] leuchtend rosafarbene @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{toads} kriechen hervor. Wann immer eine Kröte berührt wird, verwandelt sie sich in ein Großes oder kleineres Monster nach Wahl des SL, das gemäß seiner Gesinnung und Natur handelt. Das Monster bleibt 1 Minute lang und verschwindet dann in einer Wolke aus leuchtend rosafarbenem Rauch."
+        },
+        "udTEwZi4QrPNpiRQ": {
+          "description": "Ein hungriger @UUID[Compendium.dnd5e.actors24.Actor.mmBulette0000000]{Bulette} gräbt sich nach oben und greift an."
+        },
+        "aynJXtHJBHMjXmzH": {
+          "description": "Ein Obstbaum wächst. Er trägt [[/r 1d10 + 20#Pieces of fruit]] Früchte, von denen [[/gmr 1d8#Fruits acting as Potions]] als zufällig bestimmte Tränke wirken. Der Baum verschwindet nach 1 Stunde. Gepflückte Früchte bleiben erhalten und behalten jegliche Magie für 30 Tage."
+        },
+        "0JjaduR8bN32lrRT": {
+          "description": "Ein Nest aus [[/r 1d4 + 3#Rainbow-colored eggs]] regenbogenfarbenen Eiern entsteht. Jede Kreatur, die ein Ei isst, macht einen [[/save ability=con dc=20 format=long]]. Bei einem erfolgreichen Rettungswurf erhöht eine Kreatur ihren niedrigsten Attributswert dauerhaft um 1, wobei sie zufällig unter gleich niedrigen Werten wählt. Bei einem misslungenen Rettungswurf erleidet die Kreatur [[/damage 10d6 type=force]] Schaden durch eine interne Explosion."
+        },
+        "JmBO5EE0A1artKn7": {
+          "description": "Eine Pyramide mit einer 18 m großen quadratischen Basis bricht nach oben hervor. Im Inneren befindet sich eine Grabkammer, die einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{Mummy}, einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{Mummy Lord} oder einen anderen Untoten nach Wahl des SL enthält. Ihr Sarkophag enthält einen Schatz nach Wahl des SL."
+        },
+        "1Ki8jM8135BzIQcF": {
+          "description": "Eine riesige Bohnenstange sprießt und wächst zu einer Höhe nach Wahl des SL. Die Spitze führt dorthin, wohin der SL wählt, zum Beispiel zu einer großartigen Aussicht, einem Wolkenriesenschloss oder einer anderen Existenzebene."
+        }
+      }
+    },
+    "Candle of Invocation: Outer Plane Destination": {
+      "name": "Kerze der Anrufung: Ziel der Äußeren Ebene",
+      "results": {
+        "ag0urHCE1g8iDteP": {
+          "description": "Abgrund"
+        },
+        "pCP4ICaQKzln5zTc": {
+          "description": "Gehenna"
+        },
+        "OZ1lU2EWqnzeBQqm": {
+          "description": "Acheron"
+        },
+        "vXez4BUgXFHAayCM": {
+          "description": "Hades"
+        },
+        "jCH8BtBFKvOxQKe5": {
+          "description": "Arborea"
+        },
+        "36NsH0b08cWRJ5S3": {
+          "description": "Limbo"
+        },
+        "hMMK8Z1s2frHXEYN": {
+          "description": "Arkadien"
+        },
+        "q7ketUvAJCoLBkHc": {
+          "description": "Mechanus"
+        },
+        "vctndF7xPiru2vGe": {
+          "description": "Bestienlande"
+        },
+        "dmCLeLfvwj5jLDnN": {
+          "description": "Berg Celestia"
+        },
+        "5ajkPx3j34og3PQq": {
+          "description": "Bytopia"
+        },
+        "FNEgnQ7Zo62CbsSo": {
+          "description": "Neun Höllen"
+        },
+        "ToqvjVmLEWuqyXV8": {
+          "description": "Carceri"
+        },
+        "5VNozBp2PgScksuZ": {
+          "description": "Pandämonium"
+        },
+        "efnExAQ7h5U5JY9c": {
+          "description": "Elysium"
+        },
+        "NPXTuTLfn13GTU2j": {
+          "description": "Ysgard"
+        }
+      }
+    },
+    "Carpet of Flying: Size, Capacity, and Speed": {
+      "name": "Fliegender Teppich: Größe, Kapazität und Geschwindigkeit",
+      "results": {
+        "NcFzEzCwypsVMRNM": {
+          "description": "3 × 1,5 m | 100 kg Tragfähigkeit | 24 m Flugbewegungsrate"
+        },
+        "SeuSATVRfn9PNk5i": {
+          "description": "4 × 1,8 m | 200 kg Tragfähigkeit | 18 m Flugbewegungsrate"
+        },
+        "jmCslHbnZ20wlGo7": {
+          "description": "5 × 2,1 m | 300 kg Tragfähigkeit | 12 m Flugbewegungsrate"
+        },
+        "uhPivfkjbQ5TGQE5": {
+          "description": "6 × 2,7 m | 400 kg Tragfähigkeit | 9 m Flugbewegungsrate"
+        }
+      }
+    },
+    "Deck of Illusions": {
+      "name": "Deck der Illusionen",
+      "results": {
+        "puCLY8CovjPcAHsR": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmAdultRedDragon]{Adult Red Dragon}"
+        },
+        "5A0gdVZp1RJ7kHGz": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmArchmage000000]{Archmage}"
+        },
+        "9JjUzTXBg0YpHTV4": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmAssassin000000]{Assassin}"
+        },
+        "zzuZN7Cma4EawVwM": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBanditCaptain0]{Bandit Captain}"
+        },
+        "3N6LHyqypWCulkAS": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBasilisk000000]{Basilisk}"
+        },
+        "aavJ9cIok4gO4dpR": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]{Berserker}"
+        },
+        "EBzG2RJaf4XU5pY4": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBugbearWarrior]{Bugbear Warrior}"
+        },
+        "q9xiE7m5VLdmBR5I": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmCloudGiant0000]{Cloud Giant}"
+        },
+        "rPXPnYkewTkeNGMC": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDruid000000000]{Druid}"
+        },
+        "6DiPdPHH1udqptb8": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinyes}"
+        },
+        "ql3nntZZ7VK6ihSL": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmEttin000000000]{Ettin}"
+        },
+        "sJmnRnsu66XzyZCi": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmFireGiant00000]{Fire Giant}"
+        },
+        "Jcvm2ZmszPFY2Okl": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmFrostGiant0000]{Frost Giant}"
+        },
+        "El0rFvUPS47tTY3D": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGnollWarrior00]{Gnoll Warrior}"
+        },
+        "4NCSDc0ymCJ9Wmkf": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGoblinWarrior0]{Goblin Warrior}"
+        },
+        "K7uYqee6btAO3aGK": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGuardianNaga00]{Guardian Naga}"
+        },
+        "0f0O7u5DRrP2h0de": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHillGiant00000]{Hill Giant}"
+        },
+        "XndgbB9hILAd946i": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHobgoblinWarri]{Hobgoblin Warrior}"
+        },
+        "lR1wCwCy9IcdW5VY": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}"
+        },
+        "PYc4DmzV4Qf9873j": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIronGolem00000]{Iron Golem}"
+        },
+        "F1rP3n27aAUn7ekR": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmKnight00000000]{Knight}"
+        },
+        "dkNG6ImYh80SPas0": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmKoboldWarrior0]{Kobold Warrior}"
+        },
+        "fXuD1hSPLqt3doLb": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmLich0000000000]{Lich}"
+        },
+        "ycJZ5CXizivL1Nbr": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmMedusa00000000]{Medusa}"
+        },
+        "YtZUrk6uPcbm36hL": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Night Hag}"
+        },
+        "3Bs89X7k7Ovm5M9O": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmOgre0000000000]{Ogre}"
+        },
+        "bHClgrl0sIZnTkJk": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmOni00000000000]{Oni}"
+        },
+        "LyKKtLVk4RDgX6el": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmPriest00000000]{Priest}"
+        },
+        "4qkqLeoZZLXiYqfX": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}"
+        },
+        "3kEeBBTlrfUV6aaF": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]{Troll}"
+        },
+        "9e55MWHgCZPcaSNX": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmWarriorVeteran]{Veteran Warrior}"
+        },
+        "2bU5kGh4wXfr8OwT": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmWyvern00000000]{Wyvern}"
+        },
+        "94rRs4dmQqaF7aGJ": {
+          "description": "Der Kartenzieher"
+        }
+      },
+      "description": "<p>Werteblöcke für diese Kreaturen (außer der ziehenden Person) findest du unter Monster.</p>"
+    },
+    "Efreeti Bottle": {
+      "name": "Efreeti-Flasche",
+      "results": {
+        "hIMFk3cFV5DvTi5P": {
+          "description": "Der Efreet greift dich an. Nach 5 Kampfrunden verschwindet der Efreet, und die Flasche verliert ihre Magie."
+        },
+        "2Qz1VaCKqhOTnHY0": {
+          "description": "Der Efreet versteht deine Sprachen und gehorcht deinen Befehlen für 1 Stunde, danach kehrt er in die Flasche zurück, und ein neuer Stopfen hält ihn gefangen. Der Stopfen kann für 24 Stunden nicht entfernt werden. Die nächsten zwei Male, wenn die Flasche geöffnet wird, tritt derselbe Effekt auf. Wird die Flasche ein viertes Mal geöffnet, entkommt der Efreet und verschwindet, und die Flasche verliert ihre Magie."
+        },
+        "o1BN0d6UGKqzFWvU": {
+          "description": "Der Efreet versteht deine Sprachen und kann <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em> einmal für dich wirken. Er verschwindet, wenn er den Wunsch erfüllt oder nach 1 Stunde, und die Flasche verliert ihre Magie."
+        }
+      },
+      "description": "<p>Beim ersten Öffnen der @UUID[Compendium.dnd5e.equipment24.Item.dmgEfreetiBottle]{Flasche} würfelt die Spielleitung auf der folgenden Tabelle, um zu bestimmen, was passiert.</p>"
+    },
+    "Feather Tokens": {
+      "name": "Feder-Marken",
+      "results": {
+        "6ts9sOOmi8asXRRY": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgAnchorQuaalsF]{Anchor (Uncommon)}"
+        },
+        "woWPcAMvykC0hSse": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBirdQuaalsFea]{Bird (Rare)}"
+        },
+        "uN2o6j8HCqjDSxin": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgFanQuaalsFeat]{Fan (Uncommon)}"
+        },
+        "07qegfRyfFxCLRcu": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSwanBoatQuaal]{Swan boat (Rare)}"
+        },
+        "PfCCS7GgUYI9rf5G": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgTreeQuaalsFea]{Tree (Uncommon)}"
+        },
+        "PdtTtSFdX9kIcD1O": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgWhipQuaalsFea]{Whip (Rare)}"
+        }
+      }
+    },
+    "Hat of Many Spells": {
+      "name": "Hut der vielen Zauber",
+      "results": {
+        "SEMlrVV4fhfPfPXM": {
+          "description": "Du wirkst einen zufälligen Zauber, der durch einen Wurf von [[/r 1d10]] bestimmt wird: bei einer 1, @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} (Vergrößerungseffekt); bei einer 2, Vergrößern/Verkleinern (Verkleinerungseffekt); bei einer 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire}; bei einer 4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}; bei einer 5, @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind}; bei einer 6, @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility} (auf dich selbst gewirkt); bei einer 7, @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt}; bei einer 8, @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Phantasmal Force}; bei einer 9, @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph}; bei einer 10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinking Cloud}."
+        },
+        "rObwGUYoOwdT0zZB": {
+          "description": "Du hast den Zustand &amp;Reference[Stunned] bis zum Ende deines nächsten Zuges, da du glaubst, dass etwas Fantastisches geschehen ist."
+        },
+        "mx2wCNIBI2owZwgT": {
+          "description": "Ein harmloser Schmetterlingsschwarm füllt einen 10-Fuß-Würfel innerhalb von 9 m um dich herum. Der Schwarm löst sich nach 1 Minute auf."
+        },
+        "jcTRxko4j2lpnPag": {
+          "description": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Wirf [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1, ein Fläschchen @UUID[Compendium.dnd5e.equipment24.Item.phbagAcid0000000]{Acid}; bei 2, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagAlchemistsF]{flask of Alchemist’s Fire}; bei 3, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}; bei 4, eine brennende @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Torch}."
+        },
+        "DgIRZyY9ddEJEJl1": {
+          "description": "Du leidest unter einem Anfall von „Magiekrankheit“ und hast den Zustand &amp;Reference[Poisoned] für 1 Stunde."
+        },
+        "7fE5iCFCTVcbkDSL": {
+          "description": "Du hast den Zustand &amp;Reference[Petrified] bis zum Ende deines nächsten Zuges."
+        },
+        "0L5mg4Y6U9VJlULX": {
+          "description": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Wirf [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1, ein @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}; bei 2, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope} mit einem @UUID[Compendium.dnd5e.equipment24.Item.phbagGrapplingHo]{Grappling Hook}, das an einem Ende befestigt ist; bei 3, ein Beutel @UUID[Compendium.dnd5e.equipment24.Item.phbagCaltrops000]{Caltrops}; bei 4, ein Edelstein im Wert von 50 GM."
+        },
+        "YxqEHizhmvT56Mo8": {
+          "description": "Eine Kreatur erscheint in einem unbesetzten Feld so nah wie möglich bei dir. Die Kreatur steht nicht unter deiner Kontrolle und handelt, wie sie es normalerweise tun würde, und sie verschwindet nach 1 Stunde oder wenn sie auf 0 Trefferpunkte fällt. Wirf [[/r 1d4]], um die Kreatur zu bestimmen: bei 1, ein @UUID[Compendium.dnd5e.actors24.Actor.mmCamel000000000]{Camel}; bei 2, ein @UUID[Compendium.dnd5e.actors24.Actor.mmConstrictorSna]{Constrictor Snake}; bei 3, ein @UUID[Compendium.dnd5e.actors24.Actor.mmElephant000000]{Elephant}; bei 4, ein @UUID[Compendium.dnd5e.actors24.Actor.mmMule0000000000]{Mule}."
+        },
+        "cHmj1WiPWe6BTZns": {
+          "description": "Ein feindlicher @UUID[Compendium.dnd5e.actors24.Actor.PcZ0QjIG6bHpffp9]{Swarm of Bats} fliegt aus dem Hut, besetzt dein Feld und greift dich an."
+        },
+        "rpeeI4CQhukJnIi8": {
+          "description": "Ein vertikales, 3 m Durchmesser großes, zweiseitiges Portal zu einer anderen Existenzebene öffnet sich in einem unbesetzten Feld innerhalb von 9 m um dich herum und bleibt bis zum Ende deines nächsten Zuges offen. Der SL bestimmt, wohin es führt."
+        },
+        "mJeNkGaZKY4xkHCV": {
+          "description": "Du ziehst einen magischen Gegenstand aus dem Hut. Wirf [[/r 1d6]], um die Seltenheit des Gegenstands zu bestimmen: bei 1–3, Gewöhnlich; bei 4–5, Ungewöhnlich; bei 6, Selten. Der SL wählt den Gegenstand aus, der nach 1 Stunde verschwindet, falls er nicht vorher verbraucht oder zerstört wird."
+        }
+      }
+    },
+    "Horn of Valhalla: Type and Requirement": {
+      "name": "Horn von Valhalla: Typ und Anforderung",
+      "results": {
+        "eWS51SY5F1OCOHOT": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSilverHornOfV]{Silver} (2 Geister); Keine Voraussetzung"
+        },
+        "vsuTVLSnSFqxIfeV": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBrassHornOfVa]{Brass} (3 Geister); Geübt im Umgang mit allen einfachen Waffen"
+        },
+        "IawBPbUJ4QPD80hH": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBronzeHornOfV]{Bronze} (4 Geister); Geübt im Umgang mit allen mittelschweren Rüstungen"
+        },
+        "znOdbmKsZl4MZ96Q": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgIronHornOfVal]{Iron} (5 Geister); Geübt im Umgang mit allen Kriegswaffen"
+        }
+      }
+    },
+    "Iron Flask Contents": {
+      "name": "Inhalt der Eisenflasche",
+      "results": {
+        "FzxlBkxfevasbrc3": {
+          "description": "Keine Kreatur"
+        },
+        "W4W6IJNT6teGMK8d": {
+          "description": "Arcanaloth"
+        },
+        "zpHwjd1YJow38mZB": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBoneDevil00000]{Bone Devil}"
+        },
+        "XqZtH1EFDI1q7sSR": {
+          "description": "Cambion"
+        },
+        "GA2oN1ONYtd2d1oM": {
+          "description": "Dao"
+        },
+        "b4NphZw4kd43WgoD": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDeva0000000000]{Deva}"
+        },
+        "8OiTu5NP3dChxsCJ": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDjinni00000000]{Djinni}"
+        },
+        "lrHMKxSlGjCLPuOZ": {
+          "description": "Efreet@UUID[Compendium.dnd5e.actors24.Actor.mmEfreeti0000000]{Efreeti}"
+        },
+        "kuilN1qOGLjst4Wl": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinyes}"
+        },
+        "obCOgvqVL9KjwcpP": {
+          "description": "Fomorianer"
+        },
+        "xHh95qbfKFKEq01U": {
+          "description": "Githyanki-Ritter"
+        },
+        "8FK8zuLGc0tDJm4p": {
+          "description": "Githzerai-Zerth"
+        },
+        "NzMZ2MpPTeoIJi2F": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGlabrezu000000]{Glabrezu}"
+        },
+        "WHHUs8y6pKDZ7uBv": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHezrou00000000]{Hezrou}"
+        },
+        "ZOcXFCF42vOPHsbg": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}"
+        },
+        "VqMOV26INyDc0A6O": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmInvisibleStalk]{Invisible Stalker}"
+        },
+        "zSaswLLoeZtDpkQv": {
+          "description": "Marid"
+        },
+        "kZ8HdRRcmHuMhKkE": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmMarilith000000]{Marilith}"
+        },
+        "znmeCmvYog5uU6lh": {
+          "description": "Mezzoloth"
+        },
+        "s07bwP0mZ7VjthM5": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNalfeshnee0000]{Nalfeshnee}"
+        },
+        "yJ7LJnX0RVRAJO63": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Night Hag}"
+        },
+        "qPWo77BQmkdMAG2C": {
+          "description": "Nycaloth"
+        },
+        "mk8RnOBZMpdVvsCH": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmPlanetar000000]{Planetar}"
+        },
+        "uwaotDWieh3D6R5g": {
+          "description": "Roter Slaad"
+        },
+        "QORMgdB0pFnRQhBA": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSalamander0000]{Salamander}"
+        },
+        "JdQs70UnIA9AiqbE": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSolar000000000]{Solar}"
+        },
+        "ENAbwd5BuTe2MSlN": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}"
+        },
+        "FNCHezQEOJoukpBO": {
+          "description": "Ultroloth"
+        },
+        "Rg4S4iYh5EZtrE39": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmVrock000000000]{Vrock}"
+        },
+        "Q2qN5Nx2eUTi61RL": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmXorn0000000000]{Xorn}"
+        }
+      }
+    },
+    "Manual of Golems: Type, Time, and Cost": {
+      "name": "Handbuch der Golems: Typ, Zeit und Kosten",
+      "results": {
+        "7I6vQPv0T86eyaR4": {
+          "description": "<strong>Golem:</strong> Lehmgolem<br /><strong>Zeit:</strong> 30 Tage<br /><strong>Kosten:</strong> 65.000 GM"
+        },
+        "OkN7NDendLyIZpeN": {
+          "description": "<strong>Golem:</strong> Fleischgolem<br /><strong>Zeit:</strong> 60 Tage<br /><strong>Kosten:</strong> 50.000 GM"
+        },
+        "fDMIU1f5wTvvhGYg": {
+          "description": "<strong>Golem:</strong> Eisengolem<br /><strong>Zeit:</strong> 120 Tage<br /><strong>Kosten:</strong> 100.000 GM"
+        },
+        "4Jv2P9MWTX6Hk8kO": {
+          "description": "<strong>Golem:</strong> Steingolem<br /><strong>Zeit:</strong> 90 Tage<br /><strong>Kosten:</strong> 80.000 GM"
+        }
+      }
+    },
+    "Necklace of Prayer Beads Type": {
+      "name": "Halskette der Gebetsperlen: Typ",
+      "results": {
+        "DGX7VRis7cyeKc3W": {
+          "description": "Segenskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Bless}"
+        },
+        "rO4l6hUX4STCaLnr": {
+          "description": "Heilungskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure Wounds} (Stufe-2-Version)"
+        },
+        "AYyoSc0yTxndZKvK": {
+          "description": "Perle der Gunst: @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration}"
+        },
+        "rLL2e4XBcPzZ10so": {
+          "description": "Perle des Zerschmetterns: @UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Shining Smite}"
+        },
+        "EIMC5cl350CzhRLU": {
+          "description": "Perle der Beschwörung: @UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]{Guardian of Faith}"
+        },
+        "b0h1ljFd14vqLQSO": {
+          "description": "Perle des Windwandels: @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWalk00]{Wind Walk}"
+        }
+      }
+    },
+    "Potion of Resistance Type": {
+      "name": "Trank des Widerstands: Typ",
+      "results": {
+        "jYpzxdXBzoZCjllp": {
+          "description": "Säure"
+        },
+        "3oIOBK8BgRYfKafk": {
+          "description": "Kälte"
+        },
+        "XKHBRiYlsavqLLeO": {
+          "description": "Feuer"
+        },
+        "RNYLvvsXg3HisLPS": {
+          "description": "Wucht"
+        },
+        "yp10YxYVnVXwyUlZ": {
+          "description": "Blitz"
+        },
+        "TwHkuphOIWzxjrfb": {
+          "description": "Nekrotisch"
+        },
+        "3Kw9mPUhp1uLXn0d": {
+          "description": "Gift"
+        },
+        "3lYokZU6Ne0J9HkI": {
+          "description": "Psychisch"
+        },
+        "Uyak5Ygg0HNnRFiE": {
+          "description": "Strahlend"
+        },
+        "RcsCTzBmpfhAxfuw": {
+          "description": "Donner"
+        }
+      }
+    },
+    "Ring of Resistance: Damage Type and Gemstone": {
+      "name": "Ring des Widerstands: Schadensart und Edelstein",
+      "results": {
+        "n5eFVZKGRo6Rxy4a": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.dBl3gfYXWn7YguDb]{Acid (Pearl)}"
+        },
+        "xnFb80dWJtRoNx7k": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.P5fYc9OEg5GKGgkR]{Fire (Garnet)}"
+        },
+        "e0N3YSm0uveQ1gWw": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.8IIAYzI3gqAJIBYo]{Fire (Garnet)}"
+        },
+        "97EfeVQ5Nh5wQhtY": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.ivnRnslXhD6UZH0L]{Force (Sapphire)}"
+        },
+        "J3sfMzhF6UTSGgGq": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.96wcenml9tk62g37]{Lightning (Citrine)}"
+        },
+        "sHcZrNeK31eYvQZC": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.9r8SX6QYbeLa780J]{Necrotic (Jet)}"
+        },
+        "W4X3OE4buVrrguLW": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.9r8SX6QYbeLa780J]{Poison (Amethyst)}"
+        },
+        "XqDcxMZ5OtPAXIJ6": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.ls5HwdyGS36zGNsf]{Psychic (Jade)}"
+        },
+        "xw4IIE7xXkMBNDyT": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.zgCVJEc1e9dCj7Ut]{Radiant (Topaz)}"
+        },
+        "UWx3HTlcdQYzQnI0": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.JA9aLSXZ6W3O0W9l]{Thunder (Spinel)}"
+        }
+      }
+    },
+    "Robe of Useful Items": {
+      "name": "Robe nützlicher Gegenstände",
+      "results": {
+        "OUgwmAmcltOGuJsv": {
+          "description": "Beutel mit [[/award 100gp]]"
+        },
+        "rELmjJyELlRSGiTq": {
+          "description": "Silbertruhe (30 cm lang, 15 cm breit und tief) im Wert von 500 GM"
+        },
+        "BoW7DYNLCYDUNXBh": {
+          "description": "Eisentür (bis zu 3 Meter breit und 3 Meter hoch, auf einer Seite deiner Wahl verriegelt), die du in eine Öffnung in deiner Reichweite platzieren kannst; sie passt sich der Öffnung an, befestigt und scharniert sich selbst."
+        },
+        "OLwbPjkoRICTyupR": {
+          "description": "10 Edelsteine im Wert von je 100 GM"
+        },
+        "5gwQ3GAy1yILxjoG": {
+          "description": "Holzleiter (7 Meter lang)"
+        },
+        "3WMrqVawmzUN3Mup": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Riding Horse} mit einem Reitsattel"
+        },
+        "af27HCC1qAytgiox": {
+          "description": "Offene Grube (ein 3 m großer Würfel), die du innerhalb von 3 m von dir auf dem Boden platzieren kannst"
+        },
+        "9A6nqy0pMCsnIUhN": {
+          "description": "4 @UUID[Compendium.dnd5e.equipment24.Item.phbagPotionofHea]{Potions of Healing}"
+        },
+        "7hpFhlBHSmTvOXym": {
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.phbmobRowboat000]{Rowboat} (3,6 m lang)"
+        },
+        "6cvuu0JdRm1kxS3d": {
+          "description": "Zauberspruchrolle, die einen Zauber des 1., 2. oder 3. Grades enthält (nach deiner Wahl)"
+        },
+        "gElJkfuYLWEebRy1": {
+          "description": "2 @UUID[Compendium.dnd5e.actors24.Actor.mmMastiff0000000]{Mastiffs}"
+        },
+        "0faRhBZEgCVjdAWS": {
+          "description": "Fenster (0,6 m mal 1,2 m, bis zu 0,6 m tief), das du auf einer vertikalen Oberfläche platzieren kannst, die du erreichen kannst"
+        },
+        "6ZmFv41sDSBniYqk": {
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.phbagRamPortable]"
+        }
+      }
+    },
+    "Sphere of Annihilation Interaction Results": {
+      "name": "Interaktionsergebnisse der Vernichtungssphäre",
+      "results": {
+        "jcbSwmojW07pbuSR": {
+          "description": "Die Sphäre wird zerstört."
+        },
+        "bjcgoj9e1pNuEgoz": {
+          "description": "Die Sphäre bewegt sich durch das Portal oder in den extradimensionalen Raum."
+        },
+        "Bzi6el4tj31VYJo6": {
+          "description": "Ein Raumriss schickt die Sphäre und jede Kreatur und jedes Objekt innerhalb von 54 m um die Sphäre auf eine zufällige Existenzebene."
+        }
+      }
+    },
+    "Wand of Wonder Effects": {
+      "name": "Effekte des Wunderstabs",
+      "results": {
+        "2I7bZrYZgzKuOSf6": {
+          "description": "Du wirkst einen Zauber, der von dem gewählten Punkt ausgeht. Wirf 1W10, um den Zauber zu bestimmen: bei 1–2, @UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}; bei 3–4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire}; bei 5–6, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}; bei 7–8, @UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Slow}; bei 9–10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinking Cloud}."
+        },
+        "MgohXc5L0ALOJ9J1": {
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen hast du den Zustand &amp;Reference[Stunned] bis zum Beginn deines nächsten Zuges, da du glaubst, etwas Großartiges sei gerade geschehen."
+        },
+        "NdZZ0RbaqUnMmpsZ": {
+          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
+        },
+        "AOZqEKwIPSsmYlWH": {
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen erleidest du [[/damage 1d6 type=psychic]] Schaden."
+        },
+        "By7IyRJgT1XLmT7p": {
+          "description": "Starker Regen fällt für 1 Minute in einem 36 m hohen, 18 m Radius großen Zylinder, der auf den gewählten Ursprungspunkt zentriert ist. Während dieser Zeit ist der Wirkungsbereich &amp;Reference[Lightly Obscured]."
+        },
+        "VTPznWLFXBljIIpo": {
+          "description": "Eine Wolke aus 600 übergroßen Schmetterlingen füllt einen 18 m hohen, 9 m Radius großen Zylinder, der auf den gewählten Ursprungspunkt zentriert ist. Die Schmetterlinge bleiben 10 Minuten lang, wobei der Wirkungsbereich während dieser Zeit &amp;Reference[Heavily Obscured] ist."
+        },
+        "tJmickpM5EOCde6g": {
+          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
+        },
+        "mHnstASeHRgEcEam": {
+          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, wird vergrößert, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} auf sie gewirkt. Wenn das Ziel nicht du bist und nicht von diesem Zauber betroffen werden kann, wirst stattdessen du zum Ziel."
+        },
+        "8G9Ky0WzPb8UnJQF": {
+          "description": "Eine magisch geformte Kreatur erscheint in einem unbesetzten Feld, so nah wie möglich am gewählten Ursprungspunkt. Die Kreatur steht nicht unter deiner Kontrolle, handelt wie gewöhnlich und verschwindet nach 1 Stunde oder wenn ihre Trefferpunkte auf 0 sinken. Wirf [[/r 1d4]], um zu bestimmen, welche Kreatur erscheint. Bei einer 1 erscheint ein Nashorn; bei einer 2 erscheint ein Elefant; und bei 3–4 erscheint eine Ratte."
+        },
+        "oHSWbZhRqZmbGK8c": {
+          "description": "Gras bedeckt einen 18 m Radius großen Kreis des Bodens, dessen Mittelpunkt so nah wie möglich am gewählten Ursprungspunkt liegt. Bereits vorhandenes Gras wächst auf das Zehnfache seiner normalen Größe und bleibt 1 Minute lang überwuchert."
+        },
+        "SEbtgSxovGRCQ4Dq": {
+          "description": "Ein vom SL gewähltes Objekt verschwindet in die Ätherebene. Das Objekt darf weder getragen noch gehalten werden, muss sich innerhalb von 36 m des gewählten Ursprungspunkts befinden und darf in keiner Dimension größer als 3 m sein. Wenn sich keine solchen Objekte in Reichweite befinden, geschieht nichts."
+        },
+        "caPlRb51hUbh7kir": {
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen schrumpfst du, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} auf dich selbst gewirkt, und bleibst 1 Minute lang in diesem Zustand."
+        },
+        "Fhw5JKvvrZgJOOz7": {
+          "description": "Blätter wachsen aus der Kreatur, die dem gewählten Ursprungspunkt am nächsten ist. Sofern sie nicht abgezupft werden, werden die Blätter nach 24 Stunden braun und fallen ab."
+        },
+        "ydNv7BubjEfpgVDa": {
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen breitet sich ein Ausbruch von farbenfrohem, schimmerndem Licht in einer 9 m großen Emanation von dir aus. Jede Kreatur in dem Bereich muss einen [[/save con 15]] Rettungswurf bestehen oder erhält den Zustand &amp;Reference[Blinded] für 1 Minute. Eine Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt bei Erfolg für sich selbst."
+        },
+        "AnmrUluiTuPEDidg": {
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen wirkst du @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility} auf dich selbst."
+        },
+        "A5UAwk4VoCaxFJ5F": {
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen schießt ein Strom von [[/r 1d4*10 #Gems]] Edelsteinen, jeder im Wert von 1 GM, aus der Spitze des Zauberstabs in einer 9 m langen und 1,5 m breiten Linie in Richtung des gewählten Ursprungspunkts. Jeder Edelstein verursacht [[/damage 1 type=bludgeoning]] Schaden, und der Gesamtschaden der Edelsteine wird gleichmäßig auf alle Kreaturen in der Linie aufgeteilt."
+        },
+        "0oGFkNQHSlt9HzJY": {
+          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph} auf die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist. Wirf [[/r 1d4]], um die neue Form des Ziels zu bestimmen. Bei einer 1 ist die neue Form ein Schwarzbär; bei einer 2 ist die neue Form eine Riesenwespe; bei einer 3–4 ist die neue Form ein Frosch."
+        },
+        "4cFS9yfJW2gakbcA": {
+          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, muss einen [[/save con 15]] Rettungswurf ablegen. Bei einem misslungenen Rettungswurf erhält die Kreatur den Zustand &amp;Reference[Restrained] und beginnt, zu Stein zu werden. Solange sie auf diese Weise Festhalten ist, wiederholt die Kreatur den Rettungswurf am Ende ihres nächsten Zuges. Bei einem erfolgreichen Rettungswurf endet der Effekt. Bei einem misslungenen Rettungswurf erhält die Kreatur stattdessen den Zustand &amp;Reference[Petrified] anstelle des Zustands Festhalten. Die Versteinerung dauert an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration} oder ähnliche Magie befreit wird."
+        }
+      },
+      "description": "<p>Eine Würfeltabelle mit Effekten für den @UUID[Compendium.dnd5e.equipment24.Item.dmgWandOfWonder0]{Zauberstab der Wunder}, die diese Effekte soweit möglich als Aktivitäten umsetzt.</p>"
+    },
+    "Mysterious Deck: 13 Cards": {
+      "name": "Mysteriöses Deck: 13 Karten",
+      "results": {
+        "v5WZsl3D7AcVp8kv": {
+          "name": "Euryale"
+        },
+        "imEKznlZEE0rSsLx": {
+          "name": "Flammen"
+        },
+        "Tzf8H1DJyFsmBqaN": {
+          "name": "Narr"
+        },
+        "AEVEm8pwZd8HZEaf": {
+          "name": "Schlüssel"
+        },
+        "H6PRkRifUyITp5Ph": {
+          "name": "Ritter"
+        },
+        "q7k0kww4KOcCQh8Z": {
+          "name": "Mond"
+        },
+        "7h9jMXFIxBKzjivk": {
+          "name": "Schurke"
+        },
+        "EiuOGVBwrd5dzY1O": {
+          "name": "Ruine"
+        },
+        "sT9ULq3ZPnBuh0AY": {
+          "name": "Schädel"
+        },
+        "ckQqX5zhGyji2SBo": {
+          "name": "Stern"
+        },
+        "XoGa3OMCvqVJ1iUS": {
+          "name": "Sonne"
+        },
+        "oRpNqb5LQrTBwcdV": {
+          "name": "Thron"
+        },
+        "xzCuVY29JwIHHgbB": {
+          "name": "Leere"
+        }
+      }
+    },
+    "Mysterious Deck: 22 Cards": {
+      "name": "Mysteriöses Deck: 22 Karten",
+      "results": {
+        "5WGqQRDzxKVqIgoI": {
+          "name": "Gleichgewicht"
+        },
+        "k0SXf6JEb7Eairsz": {
+          "name": "Komet"
+        },
+        "APmmNA5Z3jQQG2U0": {
+          "name": "Donjon"
+        },
+        "JT3pbm7yJ23CiCqT": {
+          "name": "Euryale"
+        },
+        "JIVjZDR7dWYLBJi4": {
+          "name": "Schicksale"
+        },
+        "kGl8BbIhwg7Ptesu": {
+          "name": "Flammen"
+        },
+        "dG8deoNGQdNwnJRf": {
+          "name": "Narr"
+        },
+        "GUJztKPsgSVX7R39": {
+          "name": "Edelstein"
+        },
+        "trQNDzdEF19fadQK": {
+          "name": "Hofnarr"
+        },
+        "D9Z08jw6cnu1UMjo": {
+          "name": "Schlüssel"
+        },
+        "bEMGelUnEQGCNIch": {
+          "name": "Ritter"
+        },
+        "sxKB8VQEBh0roKnc": {
+          "name": "Mond"
+        },
+        "1HtTelpxxOAc4vID": {
+          "name": "Rätsel"
+        },
+        "9isSpLlYLL5h2Aoa": {
+          "name": "Schurke"
+        },
+        "nIAzWt9uXY5U3kSz": {
+          "name": "Ruine"
+        },
+        "nvT66fqxT99k5jKd": {
+          "name": "Weiser"
+        },
+        "DAzY7u6xTitMeoB6": {
+          "name": "Schädel"
+        },
+        "petFp3KELvvag9R3": {
+          "name": "Stern"
+        },
+        "WN6avNTrKLMyCRVD": {
+          "name": "Sonne"
+        },
+        "xVsjx6HCackwxQ1O": {
+          "name": "Krallen"
+        },
+        "rMJiKI5wApRiSebO": {
+          "name": "Thron"
+        },
+        "93Y3C0JT1dJtoFwW": {
+          "name": "Leere"
+        }
+      }
+    },
+    "Level 1-4": {
+      "name": "Level 1-4",
+      "results": {
+        "Gg7nCEigZCqf4nyB": {
+          "description": "Gewöhnlich"
+        },
+        "sJKMwd6smS2MRi1P": {
+          "description": "Ungewöhnlich"
+        },
+        "MACKprVCqnKad9M3": {
+          "description": "Selten"
+        }
+      }
+    },
+    "Level 11-16": {
+      "name": "Level 11-16",
+      "results": {
+        "61n4jrBVj6TnA0jy": {
+          "description": "Gewöhnlich"
+        },
+        "hAbp3qGIHSaiOHKt": {
+          "description": "Ungewöhnlich"
+        },
+        "TP7sKSXl0vmTmsmz": {
+          "description": "Selten"
+        },
+        "FI2rkXDgk1wOpIXY": {
+          "description": "Sehr Selten"
+        },
+        "hG3yZoeUz7ey3Nbz": {
+          "description": "Legendär"
+        }
+      }
+    },
+    "Level 17-20": {
+      "name": "Level 17-20",
+      "results": {
+        "9KZ1W2N2TeA0Nviv": {
+          "description": "Selten"
+        },
+        "XYaGJR9QsX4QheAN": {
+          "description": "Sehr Selten"
+        },
+        "AhqH3sbaz4qji2jI": {
+          "description": "Legendär"
+        }
+      }
+    },
+    "Level 5-10": {
+      "name": "Level 5-10",
+      "results": {
+        "BfCedvnPTTAwkb1N": {
+          "description": "Gewöhnlich"
+        },
+        "IwfBiK8JLRPOzRVP": {
+          "description": "Ungewöhnlich"
+        },
+        "Y59GJGrOrBcGmIMl": {
+          "description": "Selten"
+        },
+        "rhVTXTughS2Dexzv": {
+          "description": "Sehr Selten"
+        }
+      }
+    },
+    "Alignment": {
+      "name": "Gesinnung",
+      "results": {
+        "HaGsk3odLNg4sF8C": {
+          "description": "Rechtschaffen Gut"
+        },
+        "N2puDdiTsMaS2ZVa": {
+          "description": "Neutral Gut"
+        },
+        "fO9KQdZ47YlokV5E": {
+          "description": "Chaotisch Gut"
+        },
+        "kz8hcyPc2uE3K34P": {
+          "description": "Rechtschaffen Neutral"
+        },
+        "OzctcEiStYZZ1HMS": {
+          "description": "Neutral"
+        },
+        "pOEQJL67y863YIed": {
+          "description": "Chaotisch Neutral"
+        },
+        "jbBP7ixoJDUANp8i": {
+          "description": "Rechtschaffen Böse"
+        },
+        "v1Pl8lZvAkXB6z6X": {
+          "description": "Neutral Böse"
+        },
+        "vzBNXh4m46S5Rr1X": {
+          "description": "Chaotisch Böse"
+        }
+      }
+    },
+    "Communication": {
+      "name": "Kommunikation",
+      "results": {
+        "81Hqjkrnbx1sSwOJ": {
+          "description": "Der Gegenstand kommuniziert, indem er Emotionen an die Kreatur übermittelt, die ihn trägt oder führt."
+        },
+        "mO16jIRjET7lrS3e": {
+          "description": "Der Gegenstand spricht eine oder mehrere Sprachen."
+        },
+        "CZz643QK97uhNWCX": {
+          "description": "Der Gegenstand spricht eine oder mehrere Sprachen. Zusätzlich kann der Gegenstand telepathisch mit jeder Kreatur kommunizieren, die ihn trägt oder führt."
+        }
+      }
+    },
+    "Potion Miscibility": {
+      "name": "Trank-Mischbarkeit",
+      "results": {
+        "nzczvt9tOAWk3pcO": {
+          "description": "Beide Tränke verlieren ihre Wirkung, und die Mischung erzeugt eine magische Explosion in einer Kugel mit 1,5 m Radius, die auf sich selbst zentriert ist. Jede Kreatur in diesem Bereich erleidet [[/damage 4d10 type=force]] Schaden."
+        },
+        "YOg721h1c08NTssm": {
+          "description": "Beide Tränke verlieren ihre Wirkung, und die Mischung wird zu einem eingenommenen Gift deiner Wahl (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.dmgDmsToolbox000.JournalEntryPage.UfAEdm3LbTzvQHC5]{Poison})."
+        },
+        "fMSHjSMweAnnZYsn": {
+          "description": "Beide Tränke verlieren ihre Wirkung."
+        },
+        "KxvMJW5a8Nr7wWCg": {
+          "description": "Ein Trank verliert seine Wirkung."
+        },
+        "QqB2o1VFtAJmFrCD": {
+          "description": "Beide Tränke wirken, aber ihre numerischen Effekte und Wirkdauern sind halbiert. Wenn ein Trank keinen numerischen Effekt und keine Wirkdauer hat, verliert er stattdessen seine Wirkung."
+        },
+        "OuMyVYWmto2IanjY": {
+          "description": "Beide Tränke wirken normal."
+        },
+        "bSAO3Vx0LrbFecwI": {
+          "description": "Beide Tränke wirken, aber die numerischen Effekte und die Wirkdauer eines Tranks sind <span>verdoppelt</span>. Wenn keiner der Tränke auf diese Weise etwas zu verdoppeln hat, wirken sie normal."
+        },
+        "TsdsAf1A9DydPzVQ": {
+          "description": "Nur ein Trank wirkt, aber seine Effekte sind permanent. Wähle den einfachsten Effekt, um ihn permanent zu machen, oder den, der am meisten Spaß verspricht. Zum Beispiel könnte ein Heiltrank das Maximum der Trefferpunkte des Trinkers um [[/roll 2d4 + 2]] erhöhen, oder ein Trank der Unsichtbarkeit könnte dem Trinker den Zustand Unsichtbar auf unbestimmte Zeit verleihen. Nach deinem Ermessen könnte ein Zauber wie Magie bannen oder ähnliche Magie diesen dauerhaften Effekt beenden."
+        }
+      }
+    },
+    "Senses": {
+      "name": "Sinne",
+      "results": {
+        "Ci8p2gyHULtiT1Uw": {
+          "description": "Gehör und normale Sichtweite bis zu 9 m"
+        },
+        "ZTU8T3tLr5DEtyUi": {
+          "description": "Gehör und normale Sichtweite bis zu 18 m"
+        },
+        "GEjkKdxm7q5XvDuM": {
+          "description": "Gehör und normale Sichtweite bis zu 36 m"
+        },
+        "pOJu9D3HQQlGSpoQ": {
+          "description": "Gehör und Dunkelsicht bis zu 36 m"
+        }
+      }
+    },
+    "Special Purpose": {
+      "name": "Besonderer Zweck",
+      "results": {
+        "R02Xt6fkm8XdbWLk": {
+          "description": "<strong>Gesinnung.</strong> Der Gegenstand versucht, jene mit einer diametral entgegengesetzten Gesinnung zu besiegen oder zu zerstören. Ein solcher Gegenstand ist niemals Neutral."
+        },
+        "kRr85em4JParVCQy": {
+          "description": "<strong>Fluch.</strong> Der Gegenstand versucht, Kreaturen eines bestimmten Typs, wie Konstrukte, Unholde oder Untote, zu vereiteln oder zu zerstören."
+        },
+        "SskIQAsN9L231Aip": {
+          "description": "<strong>Schöpfersucher.</strong> Der Gegenstand sucht seinen Schöpfer und möchte verstehen, warum er erschaffen wurde."
+        },
+        "8DsIidU6KrIK8aA3": {
+          "description": "<strong>Schicksalssucher.</strong> Der Gegenstand glaubt, dass er und sein Träger eine Schlüsselrolle bei zukünftigen Ereignissen spielen werden."
+        },
+        "XH6KU6wUB5VOaUb6": {
+          "description": "<strong>Zerstörer.</strong> Der Gegenstand giert nach Zerstörung und stachelt seinen Benutzer an, willkürlich zu kämpfen."
+        },
+        "7JK4YLaze4s1z8ww": {
+          "description": "<strong>Ruhmsucher.</strong> Der Gegenstand strebt danach, als größter magischer Gegenstand der Welt bekannt zu werden, indem er Ruhm oder Berühmtheit für seinen Benutzer erlangt."
+        },
+        "FbFyLC891jvuiPLY": {
+          "description": "<strong>Wissenssucher.</strong> Der Gegenstand giert nach Wissen oder ist entschlossen, ein Geheimnis zu lüften, ein Geheimnis zu erfahren oder eine kryptische Prophezeiung zu entschlüsseln."
+        },
+        "QKFHYR8MSe1IBVyW": {
+          "description": "<strong>Beschützer.</strong> Der Gegenstand versucht, eine bestimmte Art von Kreatur zu verteidigen, wie Elfen oder Werwölfe."
+        },
+        "8ymxZZK5xEeJVyR8": {
+          "description": "<strong>Seelenverwandten-Sucher.</strong> Der Gegenstand sucht einen anderen intelligenten magischen Gegenstand, vielleicht einen, der ihm selbst ähnlich ist."
+        },
+        "m3bxgqbRQWUJCSwh": {
+          "description": "<strong>Templer.</strong> Der Gegenstand versucht, die Diener und Interessen einer bestimmten Gottheit zu verteidigen."
+        }
+      }
+    },
+    "Cardinal Directions": {
+      "name": "Himmelsrichtungen",
+      "results": {
+        "DNSpGtmvbcTFYI70": {
+          "description": "Norden"
+        },
+        "tKlkAqCz2QJZMRaB": {
+          "description": "Osten"
+        },
+        "OkQWirC6VKB68BXa": {
+          "description": "Süden"
+        },
+        "CyJrrodLJ2WzWGqT": {
+          "description": "Westen"
+        }
+      }
+    },
+    "Confusion Behavior": {
+      "name": "Verwirrungsverhalten",
+      "results": {
+        "wOokSBLpTsUWBccD": {
+          "description": "Das Ziel führt keine Aktion aus und nutzt seine gesamte Bewegung, um sich zu bewegen. Wirf [[/r 1d4]] für die Richtung: 1, Norden; 2, Osten; 3, Süden; oder 4, Westen."
+        },
+        "VTOEaomsUWS6eaCb": {
+          "description": "Das Ziel bewegt sich nicht und führt keine Aktionen aus."
+        },
+        "usPRYhAMow3voSIj": {
+          "description": "Das Ziel bewegt sich nicht und führt die Aktion Angriff aus, um einen Nahkampfangriff gegen eine zufällige Kreatur in Reichweite zu machen. Befindet sich keine Kreatur in Reichweite, führt das Ziel keine Aktion aus."
+        },
+        "Vk9ifvOs3jxCZhvd": {
+          "description": "Das Ziel wählt sein Verhalten."
+        },
+        "8oHL5jQ0fXbXGpuf": {
+          "name": "Himmelsrichtungen"
+        }
+      },
+      "description": "<p>Verhalten für den Zug</p>"
+    },
+    "Prismatic Layers": {
+      "name": "Prismatische Schichten",
+      "results": {
+        "t0CrtbVhYtW3a7Lt": {
+          "name": "Rot",
+          "description": "<p><em>Rettungswurf misslungen:</em> [[/damage 12d6 fire]] Schaden.</p><p><em>Rettungswurf gelungen:</em> Halber Schaden.</p><p><em>Zusätzliche Effekte</em>: Nichtmagische Fernkampfangriffe können diese Schicht nicht durchdringen. Sie wird zerstört, wenn sie mindestens 25 Kälteschaden erleidet.</p>"
+        },
+        "jAjDgUISYpf5GnE5": {
+          "name": "Orange",
+          "description": "<p><em>Rettungswurf misslungen:</em> [[/damage 12d6 acid]] Schaden.</p><p><em>Rettungswurf gelungen:</em> Halber Schaden.</p><p><em>Zusätzliche Effekte:</em> Magische Fernkampfangriffe können diese Schicht nicht durchdringen. Sie wird durch starken Wind (wie den, der durch <em>Windstoß</em> erzeugt wird) zerstört.</p>"
+        },
+        "6ofDupJRAkCwQL5d": {
+          "name": "Gelb",
+          "description": "<p><em>Rettungswurf misslungen:</em> [[/damage 12d6 lightning]] Schaden.</p><p><em>Rettungswurf gelungen:</em> Halber Schaden.</p><p><em>Zusätzliche Effekte:</em> Die Schicht wird zerstört, wenn sie mindestens 60 Wuchtschaden erleidet.</p>"
+        },
+        "uA69bAczU0ATdEt4": {
+          "name": "Grün",
+          "description": "<p><em>Rettungswurf misslungen:</em> [[/damage 12d6 poison]] Schaden.</p><p><em>Rettungswurf gelungen:</em> Halber Schaden.</p><p><em>Zusätzliche Effekte:</em> Ein Zauber wie <em>Wanddurchgang</em> oder ein anderer Zauber gleichen oder höheren Grades, der ein Portal auf einer festen Oberfläche öffnen kann, zerstört diese Schicht.</p>"
+        },
+        "0UVk1kE4Nz7qMSlj": {
+          "name": "Blau",
+          "description": "<p><em>Rettungswurf misslungen:</em> [[/damage 12d6 cold]] Schaden.</p><p><em>Rettungswurf gelungen:</em> Halber Schaden.</p><p><em>Zusätzliche Effekte:</em> Die Schicht wird zerstört, wenn sie mindestens 25 Feuerschaden erleidet.</p>"
+        },
+        "b1ryx7FwWLGwgQiQ": {
+          "name": "Indigo",
+          "description": "<p><em>Rettungswurf misslungen:</em> Das Ziel hat den Zustand &amp;Reference[Restrained] und muss am Ende jedes seiner Züge einen [[/save con]] Rettungswurf ablegen. Gelingt ihm der Rettungswurf dreimal, endet der Zustand. Misslingt er dreimal, hat es den Zustand &amp;Reference[Petrified], bis es durch einen Effekt wie den Zauber <em>Höhere Genesung</em> befreit wird. Die Erfolge und Misserfolge müssen nicht aufeinanderfolgend sein; verfolge beides, bis das Ziel drei gleiche Ergebnisse gesammelt hat.</p><p><em>Zusätzliche Effekte:</em> Zauber können diese Schicht nicht durchdringen. Sie wird durch helles Licht zerstört, das vom Zauber <em>Tageslicht</em> ausgestrahlt wird.</p>"
+        },
+        "cbfHzGC7oLI48i1F": {
+          "name": "Violett",
+          "description": "<p><em>Rettungswurf misslungen:</em> Das Ziel hat den Zustand &amp;Reference[Blinded] und muss zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf ablegen. Bei einem gelungenen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand ebenfalls, und die Kreatur wird auf eine andere Existenzebene teleportiert (Wahl des SL).</p><p><em>Zusätzliche Effekte:</em> Diese Schicht wird durch <em>Bannmagie</em> zerstört.</p>"
+        }
+      }
+    },
+    "Prismatic Rays": {
+      "name": "Prismatische Strahlen",
+      "results": {
+        "Yh9bG6idhWWwUmdS": {
+          "name": "Rot",
+          "description": "<p><em>Rettungswurf misslungen:</em> [[/damage 12d6 fire]] Schaden.</p><p><em>Rettungswurf gelungen:</em> Halber Schaden.</p>"
+        },
+        "WtYqe4zm1DJyXmI5": {
+          "name": "Orange",
+          "description": "<p><em>Rettungswurf misslungen:</em> [[/damage 12d6]] Säureschaden.</p><p><em>Rettungswurf gelungen:</em> Halber Schaden.</p>"
+        },
+        "DYdvoPQwjzkQAmOz": {
+          "name": "Gelb",
+          "description": "<p><em>Misslungener Rettungswurf:</em> [[/damage 12d6 lightning]] Schaden.</p><p><em>Gelungener Rettungswurf:</em> Halber Schaden.</p>"
+        },
+        "VJ0WNUsuWtNqlr7M": {
+          "name": "Grün",
+          "description": "<p><em>Misslungener Rettungswurf:</em> [[/damage 12d6 poison]] Schaden.</p><p><em>Gelungener Rettungswurf:</em> Halber Schaden.</p>"
+        },
+        "xZgEE34Oi8lV3z8S": {
+          "name": "Blau",
+          "description": "<p><em>Misslungener Rettungswurf:</em> [[/damage 12d6 cold]] Schaden.</p><p><em>Gelungener Rettungswurf:</em> Halber Schaden.</p>"
+        },
+        "9roEeqKHIauLWYsP": {
+          "name": "Indigo",
+          "description": "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Restrained] und muss am Ende jedes seiner Züge einen [[/save con]] Rettungswurf ablegen. Gelingt ihm dreimal ein Rettungswurf, endet der Zustand. Misslingt ihm dreimal ein Rettungswurf, ist es im Zustand &amp;Reference[Petrified], bis es durch einen Effekt wie den Zauber <em>Größere Wiederherstellung</em> befreit wird. Die Erfolge und Misserfolge müssen nicht aufeinanderfolgend sein; verfolge beides, bis das Ziel drei gleiche gesammelt hat.</p>"
+        },
+        "YRy23VFeS34ZU0kN": {
+          "name": "Violett",
+          "description": "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Blinded] und muss zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf ablegen. Bei einem gelungenen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand, und die Kreatur wird auf eine andere Existenzebene teleportiert (Wahl des SL).</p>"
+        },
+        "w7WNMlR1c0Bmsj1l": {
+          "name": "Spezial",
+          "description": "<p>Das Ziel wird von zwei Strahlen getroffen. Würfle zweimal und wiederhole jede 8.</p>"
+        }
+      }
+    },
+    "Elven Lineage": {
+      "name": "Elfische Abstammung",
+      "results": {
+        "BnLtNGVLIwk3q6Hf": {
+          "name": "Elf, Drow"
+        },
+        "fRp61b2M2UirSn1B": {
+          "name": "Elf, Hochelf"
+        },
+        "A4xbZelWo8bO7tfV": {
+          "name": "Elf, Waldelf"
+        }
+      },
+      "description": "<p>Du gehörst zu einer Abstammungslinie, die dir übernatürliche Fähigkeiten verleiht.</p>"
+    },
+    "Fiendish Legacy": {
+      "name": "Teuflisches Erbe",
+      "results": {
+        "BDTDezjTIxlDKI0W": {
+          "name": "Tiefling, Abyssisch"
+        },
+        "az5LLssMmXKwVuVN": {
+          "name": "Tiefling, Chthonisch"
+        },
+        "rgmgNUmrPVv1e7Dz": {
+          "name": "Tiefling, Infernalisch"
+        }
+      },
+      "description": "<p>Du bist Trägerin oder Träger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p>"
+    },
+    "Gnomish Lineage": {
+      "name": "Gnomische Abstammung",
+      "results": {
+        "AIWT6lRqac4IYvnv": {
+          "name": "Waldgnom"
+        },
+        "tErs3uTFNYKl3gAu": {
+          "name": "Felsengnom"
+        }
+      },
+      "description": "<p>Du gehörst zu einer Abstammungslinie, die dir übernatürliche Fähigkeiten verleiht.</p>"
+    },
+    "Reincarnated Species": {
+      "name": "Reinkarnierte Spezies",
+      "results": {
+        "DLKTRYgF1vpG4ons": {
+          "description": "Aasimar"
+        },
+        "lCG2E5mLJL43oGk4": {
+          "name": "Drachenblütiger"
+        },
+        "Ym4LPQm1DMZ3iUBH": {
+          "name": "Zwerg"
+        },
+        "9FtTDJCOwnD97SOu": {
+          "name": "Goliath"
+        },
+        "RI73kNpd5iAababR": {
+          "name": "Halbling"
+        },
+        "6L3KbE75ugKNdbhg": {
+          "name": "Mensch"
+        },
+        "xNcsrma8ucsEEgz3": {
+          "name": "Ork"
+        },
+        "8g4dm4vqB60zPWw5": {
+          "name": "Elfische Abstammung"
+        },
+        "PkXN8vlW5cXx8vbB": {
+          "name": "Teuflisches Erbe"
+        },
+        "ncs8GLvSuavCJAqf": {
+          "name": "Gnomische Abstammung"
+        }
+      },
+      "description": "<p>Würfle [[/r 1d10]] und konsultiere die folgende Tabelle, um die Spezies des Körpers zu bestimmen, oder die Spielleitung wählt eine andere spielbare Spezies.</p>"
+    },
+    "Teleport Mishap": {
+      "name": "Teleport-Missgeschick",
+      "results": {
+        "RaCnOnLRcJPv11Vf": {
+          "description": "<strong>Permanenter Kreis:</strong> Am Ziel"
+        },
+        "4W9YPHqIIDyt3WbV": {
+          "description": "<strong>Verknüpftes Objekt:</strong> Am Ziel"
+        },
+        "MgxjepFoJzZqVf1M": {
+          "description": "<strong>Sehr vertraut:</strong> Missgeschick"
+        },
+        "BtifMFAP26aAcDOx": {
+          "description": "<strong>Sehr vertraut:</strong> Ähnlicher Bereich"
+        },
+        "K6jZpSdlRXI1Wg9Q": {
+          "description": "<strong>Sehr vertraut:</strong> Ziel verfehlt"
+        },
+        "ZPWjjJxSnyLENM8O": {
+          "description": "<strong>Sehr vertraut:</strong> Am Ziel"
+        },
+        "niANcATD48MDIE5s": {
+          "description": "<strong>Gelegentlich gesehen:</strong> Missgeschick"
+        },
+        "rPgQoygHRRWRRmIK": {
+          "description": "<strong>Gelegentlich gesehen:</strong> Ähnlicher Bereich"
+        },
+        "5hV5vL7SYu53EPvb": {
+          "description": "<strong>Gelegentlich gesehen:</strong> Ziel verfehlt"
+        },
+        "KShVQqILsbEKwNQ1": {
+          "description": "<strong>Gelegentlich gesehen:</strong> Ziel verfehlt"
+        },
+        "n7LhrgNZV6rYGYBv": {
+          "description": "<strong>Gesehen oder beschrieben:</strong> Missgeschick"
+        },
+        "S3FXuqVgRazP23RK": {
+          "description": "<strong>Gesehen oder beschrieben:</strong> Ähnlicher Bereich"
+        },
+        "LWWefv3FEwkukueE": {
+          "description": "<strong>Gesehen oder beschrieben:</strong> Ziel verfehlt"
+        },
+        "K3Uun9ZfyGTdLNJl": {
+          "description": "<strong>Gesehen oder beschrieben:</strong> Ziel getroffen"
+        },
+        "UH8N3zGLSGiLPObv": {
+          "description": "<strong>Falsches Ziel:</strong> Missgeschick"
+        },
+        "yJ4FhyyZvenG7AJl": {
+          "description": "<strong>Falsches Ziel:</strong> Ähnlicher Bereich"
+        }
+      },
+      "description": "<p><strong>Patzer-Schaden:</strong> [[/damage 3d10 type=force]]</p><p><strong>Entfernung vom Ziel:</strong> [[/r 2d12#Meilen]]{2d12 Meilen} [[/r 1d8#Richtung]]{Richtung}</p>"
+    }
+  }
 }

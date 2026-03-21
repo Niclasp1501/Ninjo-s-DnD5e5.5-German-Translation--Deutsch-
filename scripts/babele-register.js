@@ -289,16 +289,20 @@ function normalizeAllOverrideMapsRuntime() {
   normalizeOverrideValueStringsRuntime(LEGACY_OVERRIDES_BY_ID);
 }
 
-function translateNameRuntime(originalValue, _entryTranslation, data) {
+function translateNameRuntime(originalValue, entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
-  return fixMojibakeRuntime(override?.name || originalValue);
+  const fromEntry =
+    typeof entryTranslation === "string" && entryTranslation.trim() ? fixMojibakeRuntime(entryTranslation) : "";
+  return fixMojibakeRuntime(override?.name || fromEntry || originalValue);
 }
 
-function translateDescriptionRuntime(originalValue, _entryTranslation, data) {
+function translateDescriptionRuntime(originalValue, entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const override = getOverrideById(data);
-  const description = fixMojibakeRuntime(override?.description || originalValue);
+  const fromEntry =
+    typeof entryTranslation === "string" && entryTranslation.trim() ? fixMojibakeRuntime(entryTranslation) : "";
+  const description = fixMojibakeRuntime(override?.description || fromEntry || originalValue);
   if (typeof description !== "string") return description;
 
   const normalized = description.replace(INLINE_TOKEN_RE, (_full, kind, inner, suffix = "") => {
@@ -1123,12 +1127,18 @@ function applyDamageLocalizationFallback() {
   }
 }
 
-function translateRollTableResultsRuntime(originalValue, _entryTranslation, data) {
+function translateRollTableResultsRuntime(originalValue, entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (!Array.isArray(originalValue)) return originalValue;
 
   const override = getOverrideById(data);
-  const resultMap = override?.tableResults;
+  const resultMap =
+    (override?.tableResults && typeof override.tableResults === "object" && !Array.isArray(override.tableResults)
+      ? override.tableResults
+      : null) ||
+    (entryTranslation && typeof entryTranslation === "object" && !Array.isArray(entryTranslation)
+      ? entryTranslation
+      : null);
   if (!resultMap || typeof resultMap !== "object") return originalValue;
 
   const translated = foundry.utils.deepClone(originalValue);
