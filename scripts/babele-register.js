@@ -1185,6 +1185,43 @@ function translateRollTableResultsRuntime(originalValue, entryTranslation, data)
   return translated;
 }
 
+function translateJournalPagesRuntime(originalValue, entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (!Array.isArray(originalValue)) return originalValue;
+  if (!entryTranslation || typeof entryTranslation !== "object" || Array.isArray(entryTranslation)) return originalValue;
+
+  return originalValue.map((data) => {
+    const translation = entryTranslation[data?._id] || entryTranslation[data?.name];
+    if (!translation || typeof translation !== "object") return data;
+
+    const mapped = foundry.utils.mergeObject(foundry.utils.deepClone(data), {
+      name: translation.name,
+      image: { caption: translation.caption ?? data?.image?.caption },
+      src: translation.src ?? data?.src,
+      text: { content: translation.text ?? data?.text?.content },
+      video: {
+        width: translation.width ?? data?.video?.width,
+        height: translation.height ?? data?.video?.height
+      },
+      translated: true
+    });
+
+    const hasClassAppendixEmbed =
+      typeof translation.description === "string" &&
+      /@Embed\[Compendium\.dnd5e\.content24\.JournalEntry\.phbAppendixClass\.JournalEntryPage\./.test(translation.description);
+
+    if (hasClassAppendixEmbed) {
+      const currentDescription = typeof mapped?.system?.description?.value === "string" ? mapped.system.description.value : "";
+      mapped.system = mapped.system && typeof mapped.system === "object" ? mapped.system : {};
+      mapped.system.description = {
+        value: translateDescriptionRuntime(currentDescription, translation.description, mapped)
+      };
+    }
+
+    return mapped;
+  });
+}
+
 Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") return;
   normalizeAllOverrideMapsRuntime();
@@ -1251,6 +1288,7 @@ Hooks.once("init", () => {
     dnd5e55ActivitiesRangeMetricRuntime: convertActivitiesRangeRuntime,
     dnd5e55EffectsDeRuntime: translateEffectsRuntime,
     dnd5e55EmbeddedItemsDeRuntime: translateEmbeddedItemsRuntime,
+    dnd5e55JournalPagesDeRuntime: translateJournalPagesRuntime,
     dnd5e55RollTableResultsDeRuntime: translateRollTableResultsRuntime
   });
   console.log(`[${MODULE_ID}] Babele runtime mappings registered with strict legacy/modern separation.`);

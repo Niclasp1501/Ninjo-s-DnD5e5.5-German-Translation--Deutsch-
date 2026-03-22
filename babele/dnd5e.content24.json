@@ -1947,7 +1947,8 @@
       "pages": {
         "Sorcerer": {
           "name": "Zauberer",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Zauberer werden</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus der Tabelle der Kernmerkmale des Zauberers.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Zauberers, die in der Tabelle der Zauberer-Merkmale aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte den Trefferwürfel aus der Tabelle der Kernmerkmale des Zauberers.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Zauberers, die in der Tabelle der Zauberer-Merkmale aufgeführt sind. Siehe die Multiklassen-Regeln in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Draconic Sorcery": {
           "name": "Drakonische Zauberei",
@@ -1969,7 +1970,8 @@
       "pages": {
         "Warlock": {
           "name": "Hexenmeister",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwlkWarlock000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Hexenmeister werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle „Grundlegende Hexenmeister-Merkmale“.</p></li><li><p>Erhalte die Merkmale des Hexenmeisters der\n1. Stufe, die in der Tabelle „Hexenmeister-Merkmale“ aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndie folgenden Merkmale aus der Tabelle „Grundlegende Hexenmeister-Merkmale“: Trefferwürfel\nund Übung mit leichter Rüstung.</p></li><li><p>Erhalte die Merkmale des Hexenmeisters der\n1. Stufe, die in der Tabelle „Hexenmeister-Merkmale“ aufgeführt sind. Siehe die\nRegeln für Multiklassen in Kapitel 2, um deine verfügbaren Zauberplätze\nzu bestimmen.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwlkWarlock000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwlkWarlock000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Fiend Patron": {
           "name": "Erzfeind-Pakt",
@@ -2913,7 +2915,8 @@
         },
         "Barbarian": {
           "name": "Barbar",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrbBarbarian0\ninline classes=\"free-rules-embed\"]</p><h2>Ein Barbar werden …</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus der Tabelle der Kernmerkmale des Barbaren.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Barbaren, die in der Tabelle der Barbarenmerkmale aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte die folgenden Merkmale aus der Tabelle der Kernmerkmale des Barbaren: Trefferwürfel, Übung mit Kriegswaffen und Ausbildung mit Schilden.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Barbaren, die in der Tabelle der Barbarenmerkmale aufgeführt sind.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrbBarbarian0\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrbBarbarian0\ninline classes=\"free-rules-embed\"]</p>"
         }
       },
       "flags": {
@@ -2927,7 +2930,8 @@
       "pages": {
         "Bard": {
           "name": "Barde",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Barde werden …</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus der Tabelle der Kernmerkmale des Barden.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Barden, die in der Tabelle der Bardenmerkmale aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte die folgenden Merkmale aus der Tabelle der Kernmerkmale des Barden: Trefferwürfel, Übung in einer Fertigkeit deiner Wahl, Übung mit einem Musikinstrument deiner Wahl und Ausbildung mit Leichter Rüstung.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Barden, die in der Tabelle der Bardenmerkmale aufgeführt sind. Siehe die Multiklassen-Regeln in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "College of Lore": {
           "name": "Kollegium der Überlieferung",
@@ -2945,7 +2949,8 @@
       "pages": {
         "Cleric": {
           "name": "Kleriker",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Kleriker werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><p>Erhaltet alle Merkmale aus der\nTabelle „Grundlegende Kleriker-Merkmale“.</p><ul><li><p>Erhaltet die Merkmale des Klerikers der 1.\nStufe, die in der Tabelle „Kleriker-Merkmale“\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhaltet\ndie folgenden Merkmale aus der Tabelle „Grundlegende Kleriker-Merkmale“:\nTrefferwürfel und Übung mit leichter und mittlerer Rüstung sowie\nSchilden.</p></li><li><p>Erhaltet die Merkmale des Klerikers der 1. Stufe, die\nin der Tabelle „Kleriker-Merkmale“ aufgeführt sind. Beachtet die\nMultiklassen-Regeln in Kapitel 2, um eure verfügbaren Zauberplätze zu\nbestimmen.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Life Domain": {
           "name": "Domäne des Lebens",
@@ -2963,7 +2968,8 @@
       "pages": {
         "Druid": {
           "name": "Druide",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Druide werden\n…</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle der Kern-Druidenmerkmale.</p></li><li><p>Erhalte die Stufe-1-Merkmale\ndes Druiden, die in der Tabelle der Druidenmerkmale\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndie folgenden Merkmale aus der Tabelle der Kern-Druidenmerkmale: Trefferwürfel\nund Übung mit Leichter Rüstung und Schilden.</p></li><li><p>Erhalte die\nStufe-1-Merkmale des Druiden, die in der Tabelle der Druidenmerkmale\naufgeführt sind. Siehe die Regeln für Multiklassen in Kapitel 2, um deine\nverfügbaren Zauberplätze zu bestimmen.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Circle of Land": {
           "name": "Zirkel des Landes",
@@ -2981,7 +2987,8 @@
       "pages": {
         "Fighter": {
           "name": "Kämpfer",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbftrFighter000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Kämpfer werden\n…</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle der Kernmerkmale des Kämpfers.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften\ndes Kämpfers, die in der Tabelle der Kämpfer-Eigenschaften\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndie folgenden Merkmale aus der Tabelle der Kernmerkmale des Kämpfers: Trefferwürfel,\nÜbung mit Kriegswaffen und Ausbildung mit Leichter und\nMittlerer Rüstung sowie Schilden.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften\ndes Kämpfers, die in der Tabelle der Kämpfer-Eigenschaften\naufgeführt sind.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbftrFighter000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbftrFighter000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Champion": {
           "name": "Champion",
@@ -2999,7 +3006,8 @@
       "pages": {
         "Monk": {
           "name": "Mönch",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Mönch werden\n…</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle der Kernmerkmale des Mönchs.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften\ndes Mönchs, die in der Tabelle der Mönchs-Eigenschaften\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndas Merkmal Trefferwürfel aus der Tabelle der Kernmerkmale des Mönchs.</p></li><li><p>Erhalte die Stufe-1-Eigenschaften des Mönchs, die in\nder Tabelle der Mönchs-Eigenschaften aufgeführt sind.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Warrior of the Open Hand": {
           "name": "Krieger der Offenen Hand",
@@ -3017,7 +3025,8 @@
       "pages": {
         "Paladin": {
           "name": "Paladin",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000\ninline classes=\"free-rules-embed\"]</p> <aside\nclass=\"notable\"><h3>Den Eid brechen</h3><p>Ein Paladin versucht, die höchsten Verhaltensstandards einzuhalten, doch selbst die engagiertesten sind fehlbar. Manchmal überschreitet ein Paladin seinen Eid.</p><p>Ein Paladin, der ein Gelübde gebrochen hat, sucht typischerweise Absolution, indem er eine Nachtwache als Zeichen der Buße verbringt oder fastet. Nach einem Vergebungsritual beginnt der Paladin von Neuem.</p><p>Wenn dein Paladin seinen Eid reuelos verletzt, sprich mit deinem SL. Dein Paladin sollte wahrscheinlich eine passendere Unterklasse wählen oder sogar die Klasse aufgeben und eine andere annehmen.</p></aside><h2>Ein Paladin werden …</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Merkmale aus der Tabelle der Kern-Paladin-Merkmale.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Paladins, die in der Tabelle der Paladin-Merkmale aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte die folgenden Merkmale aus der Tabelle der Kern-Paladin-Merkmale: Trefferwürfel, Übung mit Kriegswaffen und Ausbildung mit Leichter und Mittlerer Rüstung sowie Schilden.</p></li><li><p>Erhalte die Stufe-1-Merkmale des Paladins, die in der Tabelle der Paladin-Merkmale aufgeführt sind. Siehe die Multiklassenregeln in Kapitel 2, um deine verfügbaren Zauberplätze zu bestimmen.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Oath of Devotion": {
           "name": "Eid der Hingabe",
@@ -3035,7 +3044,8 @@
       "pages": {
         "Ranger": {
           "name": "Waldläufer",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgrRanger0000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Waldläufer werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle der Kernmerkmale des Waldläufers.</p></li><li><p>Erhalte die Merkmale des Waldläufers der 1.\nStufe, die in der Tabelle der Waldläufer-Merkmale\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndie folgenden Merkmale aus der Tabelle der Kernmerkmale des Waldläufers: Trefferwürfel,\nÜbung mit Kriegswaffen, Übung in einer Fertigkeit deiner\nWahl aus der Fertigkeitenliste des Waldläufers und Ausbildung mit Leichter und\nMittlerer Rüstung sowie Schilden.</p></li><li><p>Erhalte die Merkmale des Waldläufers der 1.\nStufe, die in der Tabelle der Waldläufer-Merkmale aufgeführt sind. Siehe die\nMultiklassen-Regeln in Kapitel 2, um deine verfügbaren Zauberplätze\nzu bestimmen.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgrRanger0000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgrRanger0000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Hunter": {
           "name": "Jäger",
@@ -3053,7 +3063,8 @@
       "pages": {
         "Rogue": {
           "name": "Schurke",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Schurke werden\n…</h2><h3>Als Charakter der 1. Stufe</h3><ul><li><p>Erhalte alle Merkmale aus\nder Tabelle der Kernmerkmale des Schurken.</p></li><li><p>Erhalte die Merkmale des Schurken der 1.\nStufe, die in der Tabelle der Schurken-Merkmale\naufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Erhalte\ndie folgenden Merkmale aus der Tabelle der Kernmerkmale des Schurken: Trefferwürfel,\nÜbung in einer Fertigkeit deiner Wahl aus der Fertigkeitenliste des Schurken,\nÜbung mit Diebeswerkzeugen und Ausbildung mit Leichter\nRüstung.</p></li><li><p>Erhalte die Merkmale des Schurken der 1. Stufe, die in der\nTabelle der Schurken-Merkmale aufgeführt sind.</p></li></ul>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Thief": {
           "name": "Dieb",
@@ -3071,7 +3082,8 @@
       "pages": {
         "Wizard": {
           "name": "Magier",
-          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000\ninline classes=\"free-rules-embed\"]</p> <h2>Ein Magier werden\n…</h2><h3>Als Charakter der Stufe 1</h3><ul><li><p>Du erhältst alle Merkmale aus\nder Tabelle „Grundmerkmale des Magiers“.</p></li><li><p>Du erhältst die Merkmale des Magiers der Stufe 1,\ndie in der Tabelle „Merkmale des Magiers“ aufgeführt sind.</p></li></ul><h3>Als Multiklassen-Charakter</h3><ul><li><p>Du erhältst\nden Trefferwürfel aus der Tabelle „Grundmerkmale des Magiers“\n.</p></li><li><p>Du erhältst die Merkmale des Magiers der Stufe 1, die in\nder Tabelle „Merkmale des Magiers“ aufgeführt sind. Siehe die Multiklassen-Regeln in\nKapitel 2, um deine verfügbaren Zauberplätze zu bestimmen\n.</p></li></ul><p><strong>Ein Zauberbuch erweitern und ersetzen</strong></p><aside class=\"notable\"><p>Die Zauber, die du deinem Zauberbuch hinzufügst, während du Stufen aufsteigst, spiegeln deine fortlaufende magische Forschung wider, aber du könntest während deiner Abenteuer auch andere Zauber finden, die du dem Buch hinzufügen kannst. Du könntest zum Beispiel einen Zaubererspruch auf einer Spruchrolle entdecken und ihn dann in dein Zauberbuch kopieren.</p><p><strong>Einen Zauber ins Buch kopieren.</strong> Wenn\ndu einen Zaubererspruch der Stufe 1+ findest, kannst du ihn in dein Zauberbuch kopieren,\nwenn er von einer Stufe ist, die du vorbereiten kannst, und wenn du Zeit hast, ihn zu kopieren.\nFür jede Stufe des Zaubers dauert die Abschrift 2 Stunden und kostet\n50 GM. Danach kannst du den Zauber wie die anderen Zauber in\ndeinem Zauberbuch vorbereiten.</p><p><strong>Das Buch kopieren.</strong> Du kannst\neinen Zauber aus deinem Zauberbuch in ein anderes Buch kopieren. Das ist wie das Kopieren eines\nneuen Zaubers in dein Zauberbuch, aber schneller, da du bereits weißt, wie\nman den Zauber wirkt. Du musst nur 1 Stunde und 10 GM für jede Stufe\ndes kopierten Zaubers aufwenden.</p><p>Wenn du dein Zauberbuch verlierst, kannst du das\ngleiche Verfahren anwenden, um die Zauberersprüche, die du vorbereitet hast,\nin ein neues Zauberbuch zu übertragen. Um den Rest des neuen Buches zu füllen,\nmusst du neue Zauber finden. Aus diesem Grund führen viele\nMagier ein Ersatz-Zauberbuch.</p></aside>"
+          "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000\ninline classes=\"free-rules-embed\"]</p>",
+          "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000\ninline classes=\"free-rules-embed\"]</p>"
         },
         "Evoker": {
           "name": "Evokationsmagier",
@@ -3803,6 +3815,12 @@
           "text": "<p>Das infernale Erbe verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den tobenden Schlachtfeldern des Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein leichter Geruch nach Schwefel oder Rauch sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten ihre Abstammung auf Teufel zurückführen.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter die Creative Commons Lizenz fällt und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
         }
       }
+    }
+  },
+  "mapping": {
+    "pages": {
+      "path": "pages",
+      "converter": "dnd5e55JournalPagesDeRuntime"
     }
   }
 }
