@@ -6,7 +6,7 @@ Thumbs.db
 tools/__pycache__/
 tools/logs/
 tools/
-
+aktuellerstand-jsons/
 languages/*.suggestions.json
 tools/*report*.json
 tools/missing-*.json
