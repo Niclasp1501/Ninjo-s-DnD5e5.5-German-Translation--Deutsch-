@@ -243,6 +243,18 @@ function fixMojibakeRuntime(text) {
   }
   // Fallback for mixed/double-encoded fragments that survived the UTF-8 decode pass.
   return current
+    // Handle mixed mojibake variants (Windows codepage artifacts)
+    .replace(/\u00C3\u0178/g, "ß") // "ÃŸ"
+    .replace(/\u00C3\u0153/g, "Ü") // "Ãœ"
+    .replace(/\u00C3\u201E/g, "Ä") // "Ã„"
+    .replace(/\u00C3\u2013/g, "Ö") // "Ã–"
+    .replace(/\u00C3\u0192\u00C2\u00A4/g, "ä") // "ÃƒÂ¤"
+    .replace(/\u00C3\u0192\u00C2\u00B6/g, "ö") // "ÃƒÂ¶"
+    .replace(/\u00C3\u0192\u00C2\u00BC/g, "ü") // "ÃƒÂ¼"
+    .replace(/\u00C3\u0192\u00C5\u00B8/g, "ß") // "ÃƒÅ¸"
+    .replace(/\u00C3\u0192\u00E2\u20AC\u017E/g, "Ä") // "Ãƒâ€ž"
+    .replace(/\u00C3\u0192\u00E2\u20AC\u201C/g, "Ö") // "Ãƒâ€“"
+    .replace(/\u00C3\u0192\u00C5\u201C/g, "Ü") // "ÃƒÅœ"
     .replace(/Ã„/g, "Ä")
     .replace(/Ã–/g, "Ö")
     .replace(/Ãœ/g, "Ü")

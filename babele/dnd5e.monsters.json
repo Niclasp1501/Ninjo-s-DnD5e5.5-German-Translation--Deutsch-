@@ -105,7 +105,7 @@
         {
           "id": "Club",
           "name": "Keule",
-          "description": "<section class=\"secret\"><p><em>Nahkampf-Waffenangriff:</em> +2 zum Treffen, Reichweite 1,5 Meter / 5 ft. Ein Ziel. Treffer: <strong>2 (1d4) Wuchtschaden</strong>.</p></section><p>Der Akolyth greift mit seiner Keule an.</p>"
+          "description": "<section class=\"secret\"><p><em>Nahkampf-Waffenangriff:</em> +2 zum Treffen, Reichweite 1,5 m. Ein Ziel. Treffer: <strong>2 (1d4) Wuchtschaden</strong>.</p></section><p>Der Akolyth greift mit seiner Keule an.</p>"
         }
       ]
     },
@@ -4450,7 +4450,7 @@
         },
         {
           "id": "Keen Hearing and Sight",
-          "name": "Scharfes Geh?r und Sicht",
+          "name": "Scharfes Gehör und scharfe Sicht",
           "description": "<p>Die Eule hat einen Vorteil bei Würfen auf Weisheit (Wahrnehmung), die mit Sicht oder dem Gehör zusammenhängen.</p>"
         },
         {
@@ -7313,7 +7313,7 @@
         {
           "id": "Beak",
           "name": "Schnabel",
-          "description": "<section class=\"secret\"><p><em>Nahkampf-Waffenangriff:</em> +4 zum Treffen, Reichweite: 1,5 m, Ein Ziel. Treffer:<strong> 1 <em>Stichschaden</em>.</strong></p></section><p>The Raven attacks with its Beak.</p>"
+          "description": "<section class=\"secret\"><p><em>Nahkampf-Waffenangriff:</em> +4 zum Treffen, Reichweite: 1,5 m, Ein Ziel. Treffer:<strong> 1 <em>Stichschaden</em>.</strong></p></section><p>Der Rabe greift mit seinem Schnabel an.</p>"
         }
       ]
     },
