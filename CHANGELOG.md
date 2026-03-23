@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-03-23
+### Fixed
+- Added missing spells folder mappings for `Cantrips` and `Supplemental Items` in both modern and legacy spell packs.
+- Folder labels now resolve to German consistently in the sidebar:
+  - `Cantrips` -> `Zaubertricks`
+  - `Supplemental Items` -> `Zusätzliche Inhalte`
+
 ## [1.0.6] - 2026-03-23
 ### Fixed
 - Restored class chapter subsection rendering in modern rules content (`content24`), so class TOC entries like `Ein ... werden ...`, `Als Charakter der Stufe 1`, and `Als Multiklassen-Charakter` are available consistently across all core classes.

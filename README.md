@@ -1,6 +1,6 @@
 ﻿# Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Version:** 1.0.6  
+**Version:** 1.0.7  
 **Status:** Beta
 
 Dieses Modul Ã¼bersetzt das Foundry-`dnd5e`-System (5.x) fÃ¼r Foundry v13 ins Deutsche.
@@ -24,6 +24,7 @@ Dieses Modul Ã¼bersetzt das Foundry-`dnd5e`-System (5.x) fÃ¼r Foundry v13 in
 - Ebenfalls in `1.0.4`: verbesserte UTF-8/Zeichensatzbehandlung, inklusive korrekter Anzeige von `ÃŸ`, `Ã¤`, `Ã¶` und `Ã¼`.
 - In `1.0.5` wurden verbliebene englische Schadens-/Bypass-Texte über korrekte dnd5e-i18n-Keys behoben (ohne UI-Hacks), inkl. `Physical Bypasses` und Legacy-`Damage*`-Labels.
 - In `1.0.6` wurden Klassenkapitel im Regelwerk stabilisiert: fehlende `phbAppendixClass`-Unterseiten wurden ergänzt, damit TOC-Abschnitte wie `Ein ... werden ...` wieder für alle Kernklassen konsistent erscheinen.
+- In `1.0.7` wurden fehlende Zauber-Ordnernamen ergänzt (`Cantrips`, `Supplemental Items`) und korrekt auf Deutsch gemappt (`Zaubertricks`, `Zusätzliche Inhalte`).
 
 ### Feedback
 - Feedback ist ausdrÃ¼cklich willkommen und hilft direkt bei der Priorisierung der nÃ¤chsten Ãœbersetzungsbereiche.
@@ -65,6 +66,7 @@ Dieses Modul Ã¼bersetzt das Foundry-`dnd5e`-System (5.x) fÃ¼r Foundry v13 in
 - `1.0.4` also improves UTF-8 character handling, including reliable rendering of `ÃŸ`, `Ã¤`, `Ã¶`, and `Ã¼`.
 - `1.0.5` fixes remaining English damage/bypass labels via correct dnd5e i18n keys (no DOM hack), including `Physical Bypasses` and legacy flat `Damage*` labels.
 - `1.0.6` stabilizes class chapter rendering in rules content by completing missing `phbAppendixClass` class pages, restoring consistent TOC subsections across all core classes.
+- `1.0.7` adds missing spells folder mappings for `Cantrips` and `Supplemental Items`, ensuring consistent German folder labels in the sidebar.
 
 ### Feedback
 - Feedback is very welcome and helps prioritize the next translation areas.
