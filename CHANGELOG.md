@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.6] - 2026-03-23
+### Fixed
+- Restored class chapter subsection rendering in modern rules content (`content24`), so class TOC entries like `Ein ... werden ...`, `Als Charakter der Stufe 1`, and `Als Multiklassen-Charakter` are available consistently across all core classes.
+- Added missing `phbAppendixClass` class-specific page mappings referenced by chapter embeds, eliminating class-specific gaps where only Barbarian showed the expected subsection blocks.
+
+### Changed
+- Synchronized appendix-backed class chapter structure with existing German class translations to keep chapter navigation and in-page heading anchors stable.
+
 ## [1.0.5] - 2026-03-20
 ### Changed
 - Expanded modern/legacy damage localization compatibility by adding key-safe coverage for both flat and nested dnd5e i18n key families used across 5.x.
