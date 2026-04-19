@@ -31,7 +31,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
 
 ### Voraussetzungen
 - Foundry VTT v13 oder v14
-- `dnd5e` System 5.3.x oder neuer (aktiv in der Welt)
+- `dnd5e` System 5.x (aktiv in der Welt)
+- Für Foundry v14 wird `dnd5e` 5.3.x oder neuer empfohlen.
 - Babele 2.7.5 oder neuer
 
 ### Optional empfohlen
@@ -73,7 +74,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
 
 ### Requirements
 - Foundry VTT v13 or v14
-- `dnd5e` system 5.3.x or newer (active in world)
+- `dnd5e` system 5.x (active in world)
+- For Foundry v14, `dnd5e` 5.3.x or newer is recommended.
 - Babele 2.7.5 or newer
 
 ### Optional recommendation
