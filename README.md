@@ -3,7 +3,7 @@
 **Version:** 1.0.7  
 **Status:** Beta
 
-Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins Deutsche.
+Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 ins Deutsche.
 
 ## Deutsch (zuerst)
 
@@ -30,8 +30,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Feedback ist ausdrücklich willkommen und hilft direkt bei der Priorisierung der nächsten Übersetzungsbereiche.
 
 ### Voraussetzungen
-- Foundry VTT v13
-- `dnd5e` System 5.x (aktiv in der Welt)
+- Foundry VTT v13 oder v14
+- `dnd5e` System 5.3.x oder neuer (aktiv in der Welt)
 - Babele 2.7.5 oder neuer
 
 ### Optional empfohlen
@@ -72,8 +72,8 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13 ins De
 - Feedback is very welcome and helps prioritize the next translation areas.
 
 ### Requirements
-- Foundry VTT v13
-- `dnd5e` system 5.x (active in world)
+- Foundry VTT v13 or v14
+- `dnd5e` system 5.3.x or newer (active in world)
 - Babele 2.7.5 or newer
 
 ### Optional recommendation
