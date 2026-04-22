@@ -518,15 +518,20 @@ function installLegacyUuidBridge() {
     true
   );
 
-  Hooks.on("renderApplication", (_app, html) => {
-    const element = html?.[0] ?? html;
+  const localizeRenderedApplication = (_app, html) => {
+    const element = html?.[0] ?? html?.element?.[0] ?? html?.element ?? html;
+    if (!element?.querySelectorAll && !element?.shadowRoot) return;
     localizeTree(element);
 
     // Some dnd5e apps update content asynchronously after initial render.
     for (const delay of [50, 250, 1000]) {
       window.setTimeout(() => localizeTree(element), delay);
     }
-  });
+  };
+
+  // Keep V1 + V2 app rendering paths covered.
+  Hooks.on("renderApplication", localizeRenderedApplication);
+  Hooks.on("renderApplicationV2", localizeRenderedApplication);
 
   // Some dnd5e table-of-contents blocks are rendered asynchronously after the
   // application render hook. Observe added DOM nodes and localize them on arrival.
@@ -711,7 +716,8 @@ Hooks.once("ready", async () => {
 
 Hooks.on("renderCompendiumDirectory", (_app, html) => {
   if (game.system.id !== "dnd5e" || !isGermanUi()) return;
-  const element = html?.[0] ?? html;
+  const element = html?.[0] ?? html?.element?.[0] ?? html?.element ?? html;
+  if (!element?.querySelectorAll) return;
   localizeCompendiumSidebarInElement(element);
   for (const delay of [50, 250, 1000]) {
     window.setTimeout(() => localizeCompendiumSidebarInElement(element), delay);

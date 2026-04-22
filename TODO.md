@@ -1,7 +1,7 @@
 # TODO
 
 ## Release Tracking
-- [x] Latest release: `1.0.2` (2026-03-15)
+- [x] Latest release: `14.0.0` (2026-04-22)
 
 ## Next Releases
 - [x] Strict-provenance Babele migration baseline (legacy/modern split + allowlist + gap report).
@@ -12,7 +12,9 @@
 - [ ] Add a lightweight smoke-test checklist for Foundry v13 sheet views.
 
 ## Process
-- [ ] Keep patch-version release flow (`x.y.z` -> increment `z` only for regular translation updates).
+- [ ] Keep Foundry-visible release flow:
+  - `<foundry-major>.<minor>.<patch>` (example: `14.0.0` for the first v14-verified line)
+  - increment `patch` for regular translation updates within the same Foundry-major line
 - [ ] For every version bump update:
   - `module.json`
   - `README.md`

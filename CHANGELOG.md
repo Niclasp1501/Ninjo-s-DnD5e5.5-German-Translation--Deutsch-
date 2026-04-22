@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [14.0.0] - 2026-04-22
+### Changed
+- Adopted Foundry-visible versioning (`14.x.y`) to make target compatibility generation immediately recognizable in releases.
+- Bumped module release version to `14.0.0` for the first Foundry-v14-verified line.
+- Kept dual support contract: `compatibility.minimum = 13`, `compatibility.verified = 14`, and `dnd5e` requirement at `5.x`.
+- Added dual render-hook coverage (`renderApplication` + `renderApplicationV2`) for runtime localization passes in mixed V13/V14 app paths.
+
 ## [1.0.7] - 2026-03-23
 ### Fixed
 - Added missing spells folder mappings for `Cantrips` and `Supplemental Items` in both modern and legacy spell packs.
