@@ -7,6 +7,7 @@ on:
 
 jobs:
   package-and-release:
+    if: ${{ !contains(github.ref_name, '-beta') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,11 +15,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Read module version
+      - name: Read module metadata
         id: version
         run: |
-          VERSION=$(python -c "import json; print(json.load(open('module.json', encoding='utf-8'))['version'])")
+          VERSION=$(python -c "import json; d=json.load(open('module.json', encoding='utf-8')); print(d['version'])")
+          COMPAT_MIN=$(python -c "import json; d=json.load(open('module.json', encoding='utf-8')); print(d.get('compatibility', {}).get('minimum', ''))")
+          COMPAT_VERIFIED=$(python -c "import json; d=json.load(open('module.json', encoding='utf-8')); print(d.get('compatibility', {}).get('verified', ''))")
+          COMPAT_MAX=$(python -c "import json; d=json.load(open('module.json', encoding='utf-8')); print(d.get('compatibility', {}).get('maximum', ''))")
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "compat_min=$COMPAT_MIN" >> $GITHUB_OUTPUT
+          echo "compat_verified=$COMPAT_VERIFIED" >> $GITHUB_OUTPUT
+          echo "compat_max=$COMPAT_MAX" >> $GITHUB_OUTPUT
 
       - name: Verify tag matches module version
         run: |
@@ -73,9 +80,9 @@ jobs:
                 \"manifest\": \"${MANIFEST_URL}\",
                 \"notes\": \"${NOTES_URL}\",
                 \"compatibility\": {
-                  \"minimum\": \"13\",
-                  \"verified\": \"13\",
-                  \"maximum\": \"\"
+                  \"minimum\": \"${{ steps.version.outputs.compat_min }}\",
+                  \"verified\": \"${{ steps.version.outputs.compat_verified }}\",
+                  \"maximum\": \"${{ steps.version.outputs.compat_max }}\"
                 }
               }
             }"
@@ -100,9 +107,9 @@ jobs:
                 \"manifest\": \"${MANIFEST_URL}\",
                 \"notes\": \"${NOTES_URL}\",
                 \"compatibility\": {
-                  \"minimum\": \"13\",
-                  \"verified\": \"13\",
-                  \"maximum\": \"\"
+                  \"minimum\": \"${{ steps.version.outputs.compat_min }}\",
+                  \"verified\": \"${{ steps.version.outputs.compat_verified }}\",
+                  \"maximum\": \"${{ steps.version.outputs.compat_max }}\"
                 }
               }
             }"

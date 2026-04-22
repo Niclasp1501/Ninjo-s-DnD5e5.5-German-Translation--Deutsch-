@@ -1,0 +1,58 @@
+name: Beta Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*-beta*"
+
+jobs:
+  package-and-prerelease:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read module version
+        id: version
+        run: |
+          VERSION=$(python -c "import json; print(json.load(open('module.json', encoding='utf-8'))['version'])")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Verify beta tag matches module version
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          VERSION="${{ steps.version.outputs.version }}"
+          if [ "$TAG" != "v$VERSION" ]; then
+            echo "Beta tag $TAG does not match module.json version v$VERSION"
+            exit 1
+          fi
+          if [[ "$TAG" != *"-beta"* ]]; then
+            echo "Tag $TAG is not a beta tag"
+            exit 1
+          fi
+
+      - name: Build module.zip
+        run: |
+          mkdir -p dist
+          INCLUDE_FILES="module.json README.md CHANGELOG.md LICENSE"
+          INCLUDE_DIRS="languages scripts babele packs templates styles assets"
+
+          ZIP_INPUTS="$INCLUDE_FILES"
+          for d in $INCLUDE_DIRS; do
+            if [ -d "$d" ]; then
+              ZIP_INPUTS="$ZIP_INPUTS $d"
+            fi
+          done
+
+          zip -r dist/module.zip $ZIP_INPUTS
+
+      - name: Publish GitHub Pre-Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          prerelease: true
+          files: |
+            module.json
+            dist/module.zip
