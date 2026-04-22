@@ -1,6 +1,6 @@
 ﻿# Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Version:** 1.0.7  
+**Version:** 14.0.0  
 **Status:** Beta
 
 Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 ins Deutsche.
@@ -34,6 +34,11 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
 - `dnd5e` System 5.x (aktiv in der Welt)
 - Für Foundry v14 wird `dnd5e` 5.3.x oder neuer empfohlen.
 - Babele 2.7.5 oder neuer
+
+### Versionsschema
+- Das Modul nutzt ein Foundry-erkennbares Schema:
+  - `14.x.y` = für Foundry v14 verifiziert (bei weiterhin `minimum: 13` für Dual-Support)
+  - `13.x.y` = für Foundry v13 verifiziert
 
 ### Optional empfohlen
 - `metric-ruler-labels` (separates Modul) für zusätzliche metrische Anzeigen im Lineal/Messwerkzeug.
@@ -77,6 +82,11 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
 - `dnd5e` system 5.x (active in world)
 - For Foundry v14, `dnd5e` 5.3.x or newer is recommended.
 - Babele 2.7.5 or newer
+
+### Versioning
+- The module uses a Foundry-visible scheme:
+  - `14.x.y` = verified for Foundry v14 (while keeping `minimum: 13` for dual support)
+  - `13.x.y` = verified for Foundry v13
 
 ### Optional recommendation
 - `metric-ruler-labels` (separate module) for additional metric labels in ruler/measuring tool overlays.
