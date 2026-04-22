@@ -51,6 +51,18 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
    `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
 4. Modul installieren, Foundry neu starten, Modul in der Welt aktivieren.
 
+### Beta-Teilnahme (optional)
+- Für Vorabtests können Beta-Releases genutzt werden (GitHub **Pre-Release** mit `-beta` im Tag).
+- Empfehlung:
+  - nur in Testwelt/Testserver einsetzen
+  - vorab Welt-/Data-Backup erstellen
+  - Modul-/System-Updates nicht ungeprüft in Produktivwelten übernehmen
+- Risiken bei Beta-Versionen:
+  - unvollständige oder fehlerhafte Übersetzungen in Randbereichen
+  - temporäre UI-/Tooltip-Regressions nach dnd5e-/Foundry-Änderungen
+  - notwendige Hotfixes zwischen Beta-Builds
+- Feedback aus Beta-Tests ist sehr hilfreich und fließt direkt in die nächste stabile Version ein.
+
 ---
 
 ## English
@@ -98,6 +110,18 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
 3. Paste manifest URL:
    `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
 4. Install, restart Foundry, enable module in your world.
+
+### Beta Participation (optional)
+- For early testing, you can use beta builds (GitHub **Pre-Release** tags containing `-beta`).
+- Recommendation:
+  - use only in a test world/test server
+  - create a world/data backup first
+  - do not roll module/system updates into production worlds without validation
+- Beta risks:
+  - incomplete or incorrect translations in edge cases
+  - temporary UI/tooltip regressions after dnd5e/Foundry changes
+  - possible hotfix cadence between beta builds
+- Feedback from beta testing is highly valuable and is fed into the next stable release.
 
 ## License
 MIT License, see [LICENSE](LICENSE).
