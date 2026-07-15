@@ -5,51 +5,43 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-### Fixed — offizielle Ulisses-Begriffe (Schadensarten & Zustände)
+### Fixed
 
-Die Begriffe standen an drei Stellen (`languages/de.json`, Regelglossar und
-Schadensart-Tabelle in `babele/dnd5e.content24.json`) und widersprachen sich.
-Alle Änderungen sind gegen das offizielle Wörterbuch belegt
-(dnddeutsch.de/uebersetzer, PHB(de) S.196 / S.290–292 / S.201).
+Damage types and conditions now follow the official German (Ulisses) terminology.
+The terms were maintained in three places -- `languages/de.json`, the rules
+glossary and the damage type table in `babele/dnd5e.content24.json` -- and had
+drifted apart. Every change is backed by the official dictionary
+(dnddeutsch.de/uebersetzer): damage types PHB(de) p. 196, conditions p. 290-292,
+spell level p. 201.
 
-- **Force**: hieß `Wucht` — dieselbe Bezeichnung wie Bludgeoning
-  (`Wuchtschaden`), im UI also nicht unterscheidbar. Im Regelglossar zusätzlich
-  `Magische Energie`. → **Energie**
-- **Piercing**: `Durchschlagend` / `Durchbohrend` → **Stich**
-- **Bludgeoning**: Typ-Bezeichner `Wuchtschaden` → **Wucht** (Grundform wie bei
-  Hieb/Stich). Die Schadenswendung „Wuchtschaden" im Fließtext bleibt korrekt.
-- **Radiant**: `Strahlend` → **Gleißend**
-- **Thunder**: `Donner` → **Schall**
-- **Restrained**: hatte drei Namen (`Festhalten`, `Fesselnd`, `Festgesetzt`);
-  `Festhalten` bezeichnete an einer Stelle sogar Grappled. → **Festgesetzt**
-- **Grappled**: `Ergriffen` / `Festhalten` → **Gepackt**
-- **Incapacitated**: `Handlungsunfähig` → **Kampfunfähig**
-- **Exhaustion**: `Erschöpft` → **Erschöpfung** (der Zustand ist ein Substantiv)
-- **Spell Level**: `Zauberstufe` → **Zaubergrad**
+Most severe: **Force** was translated as `Wucht`, the same term used for
+Bludgeoning (`Wuchtschaden`). Both were indistinguishable in the damage type
+dropdown. The rules glossary additionally called it `Magische Energie`.
 
-Bewusst unverändert: „Wuchtschaden"/„Stichschaden"/„Hiebschaden" im Fließtext
-(korrekte Komposita, u. a. 164× in `monsters.json`), „das Festhalten an der
-Magie des Zaubers" (Prosa), „im Ringkampf festzuhalten" (Verb), „rollenden
-Donner" (Prosa) und `Verzaubert` in `de.json` (Item-Enchantment, nicht der
-Zustand Charmed).
+| Term | Was | Now |
+| --- | --- | --- |
+| Force | `Wucht` / `Magische Energie` | `Energie` |
+| Piercing | `Durchschlagend` / `Durchbohrend` | `Stich` |
+| Bludgeoning (type label) | `Wuchtschaden` | `Wucht` |
+| Radiant | `Strahlend` | `Gleißend` |
+| Thunder | `Donner` | `Schall` |
+| Restrained | `Festhalten` / `Fesselnd` | `Festgesetzt` |
+| Grappled | `Ergriffen` / `Festhalten` | `Gepackt` |
+| Incapacitated | `Handlungsunfähig` | `Kampfunfähig` |
+| Exhaustion | `Erschöpft` | `Erschöpfung` |
+| Spell level | `Zauberstufe` | `Zaubergrad` |
 
-### Added — Glossar-Gate in der CI
+`Festhalten` was used for both Restrained and Grappled in different places --
+a genuine mix-up that only surfaced in context.
 
-`config/glossary.json` war leer (`{"terms": []}`) und wurde nur auf gültiges
-JSON geprüft — dadurch konnten die Begriffe überhaupt erst auseinanderlaufen.
+Deliberately left unchanged:
 
-- `config/glossary.json` enthält jetzt 42 belegte Begriffe (Quelle + Seite),
-  generiert aus dem Master-Glossar via `tools/build-glossary.py`.
-- `tools/check-glossary.py` prüft dreifach und läuft in der CI:
-  1. **Key-Mapping** — `DND5E.DAMAGE.Type.<EN>` muss dem offiziellen Begriff
-     entsprechen (fängt genau den Force-Fehler).
-  2. **Kollision** — keine zwei Typen dürfen denselben deutschen Namen tragen.
-  3. **Verbotene Varianten** im Volltext, mit `allowedContext` für Wörter, die
-     kontextabhängig korrekt sind.
-
-Mehrdeutige Wörter stehen bewusst nicht in den Verbotslisten: „Wucht" ist als
-Bludgeoning richtig und nur als Force falsch — eine Fehl*zuordnung* lässt sich
-nicht per Textsuche finden, sondern nur auf Schlüsselebene.
+- `Wuchtschaden` / `Stichschaden` / `Hiebschaden` in running text (correct
+  compounds, 164 occurrences in `monsters.json` alone). Only the type labels
+  were normalised to the official base form.
+- `das Festhalten an der Magie des Zaubers` -- prose, not a condition.
+- `rollenden Donner` -- prose, not a damage type.
+- `Verzaubert` in `de.json` -- item enchantment, not the Charmed condition.
 
 ## [Unreleased]
 ### Changed

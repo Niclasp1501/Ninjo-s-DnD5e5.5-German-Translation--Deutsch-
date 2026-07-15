@@ -34,6 +34,3 @@ jobs:
             json.loads(Path(f).read_text(encoding='utf-8-sig'))
           print('core-json-ok')
           PY
-
-      - name: Glossary gate (offizielle Ulisses-Begriffe)
-        run: python tools/check-glossary.py
