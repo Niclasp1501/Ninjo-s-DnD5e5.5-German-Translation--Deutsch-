@@ -646,7 +646,7 @@
             "label": "Skalentyp"
           }
         },
-        "Hint": "Ein einzelner Wert, der sich ändert, wenn eine Klasse im Level aufsteigt und in Würfelformeln verfügbar gemacht wird (z.B. der Kampfkunst-Würfel eines Mönchs).",
+        "Hint": "Ein einzelner Wert, der sich ändert, wenn eine Klasse eine Stufe aufsteigt und in Würfelformeln verfügbar gemacht wird (z.B. der Kampfkunst-Würfel eines Mönchs).",
         "Title": "Skalierungswert"
       },
       "Size": {
@@ -737,7 +737,7 @@
             "hint": "Wenn der gesamte Fortschritt als optional markiert ist, können Spieler auf einen der folgenden Gegenstände verzichten; andernfalls werden alle nicht-optionalen Gegenstände vergeben."
           }
         },
-        "Hint": "Vergibt dem Charakter Gegenstände (wie Ausrüstung, Merkmale oder Zauber), wenn er ein bestimmtes Level erreicht.",
+        "Hint": "Vergibt dem Charakter Gegenstände (wie Ausrüstung, Merkmale oder Zauber), wenn er eine bestimmte Stufe erreicht.",
         "Title": "Gegenstände vergeben",
         "Warning": {
           "Container": "Inhalte von Behältern werden nicht zusammen mit den Behältern hinzugefügt.",

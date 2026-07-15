@@ -43,6 +43,29 @@ Deliberately left unchanged:
 - `rollenden Donner` -- prose, not a damage type.
 - `Verzaubert` in `de.json` -- item enchantment, not the Charmed condition.
 
+### Changed
+
+Terminology aligned with the German Player's Handbook 2024 and kept in sync
+with the Spielerhandbuch-Deutsch module.
+
+- `Tiers of Play`: **Spielstufen** -> **Stufenbereiche**. The section headings
+  read "Stufe 1 (Stufen 1–4)", using "Stufe" for both the tier and the
+  character level. No official German term could be sourced: the D3 dictionary
+  covers the 2014 PHB only (Weapon Mastery, Bastion, Heroic Inspiration and
+  Epic Boon all return no match), the D3 errata database lists no PHB24, and
+  the German SRD is 5.1. Term is marked `derived` / `needs-official-check` in
+  the master glossary; "Spielstufen" is retained as `altDe`.
+- `Emanation`: **Ausstrahlung** -> **Ausströmung** (8x)
+- Prose using "Level" for a character level -> "Stufe"
+
+The last two are sourced from reviews of the German 2024 edition
+(teilzeithelden.de, buffed.de), not from the book itself, and are tagged
+`needs-official-check`.
+
+Babele keys (`Emanation`, `Tiers of Play`, `Spell Level`, `Level 1`) are
+untouched — only values changed.
+
+
 ## [Unreleased]
 ### Changed
 - README: added optional beta participation guidance, including practical risk notes for test-only usage and backup recommendations.
