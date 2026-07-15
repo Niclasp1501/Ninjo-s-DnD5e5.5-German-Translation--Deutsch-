@@ -1087,10 +1087,10 @@
           "description": "Psychisch"
         },
         "Uyak5Ygg0HNnRFiE": {
-          "description": "Strahlend"
+          "description": "Gleißend"
         },
         "RcsCTzBmpfhAxfuw": {
-          "description": "Donner"
+          "description": "Schall"
         }
       }
     },
@@ -1242,7 +1242,7 @@
           "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph} auf die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist. Wirf [[/r 1d4]], um die neue Form des Ziels zu bestimmen. Bei einer 1 ist die neue Form ein Schwarzbär; bei einer 2 ist die neue Form eine Riesenwespe; bei einer 3–4 ist die neue Form ein Frosch."
         },
         "4cFS9yfJW2gakbcA": {
-          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, muss einen [[/save con 15]] Rettungswurf ablegen. Bei einem misslungenen Rettungswurf erhält die Kreatur den Zustand &amp;Reference[Restrained] und beginnt, zu Stein zu werden. Solange sie auf diese Weise Festhalten ist, wiederholt die Kreatur den Rettungswurf am Ende ihres nächsten Zuges. Bei einem erfolgreichen Rettungswurf endet der Effekt. Bei einem misslungenen Rettungswurf erhält die Kreatur stattdessen den Zustand &amp;Reference[Petrified] anstelle des Zustands Festhalten. Die Versteinerung dauert an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration} oder ähnliche Magie befreit wird."
+          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, muss einen [[/save con 15]] Rettungswurf ablegen. Bei einem misslungenen Rettungswurf erhält die Kreatur den Zustand &amp;Reference[Restrained] und beginnt, zu Stein zu werden. Solange sie auf diese Weise festgesetzt ist, wiederholt die Kreatur den Rettungswurf am Ende ihres nächsten Zuges. Bei einem erfolgreichen Rettungswurf endet der Effekt. Bei einem misslungenen Rettungswurf erhält die Kreatur stattdessen den Zustand &amp;Reference[Petrified] anstelle des Zustands Festgesetzt. Die Versteinerung dauert an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration} oder ähnliche Magie befreit wird."
         }
       },
       "description": "<p>Eine Würfeltabelle mit Effekten für den @UUID[Compendium.dnd5e.equipment24.Item.dmgWandOfWonder0]{Zauberstab der Wunder}, die diese Effekte soweit möglich als Aktivitäten umsetzt.</p>"

@@ -35,4 +35,5 @@ jobs:
           print('core-json-ok')
           PY
 
-
+      - name: Glossary gate (offizielle Ulisses-Begriffe)
+        run: python tools/check-glossary.py

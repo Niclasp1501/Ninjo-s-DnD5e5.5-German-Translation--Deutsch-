@@ -8,7 +8,7 @@
 - [x] Expand modern rules TOC heading localization coverage (overview chapter headings).
 - [ ] Translate remaining high-impact UI namespaces (`DND5E.CALENDAR`, `DND5E.FACILITY`, `DND5E.TRANSFORM`).
 - [ ] Add stricter placeholder checks for pluralization variants and ICU-style patterns.
-- [ ] Add optional glossary enforcement in CI.
+- [x] Add optional glossary enforcement in CI. (`tools/check-glossary.py`, prueft Key-Mapping, Kollisionen und verbotene Varianten gegen `config/glossary.json`)
 - [ ] Add a lightweight smoke-test checklist for Foundry v13 sheet views.
 
 ## Process

@@ -3,6 +3,54 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Fixed — offizielle Ulisses-Begriffe (Schadensarten & Zustände)
+
+Die Begriffe standen an drei Stellen (`languages/de.json`, Regelglossar und
+Schadensart-Tabelle in `babele/dnd5e.content24.json`) und widersprachen sich.
+Alle Änderungen sind gegen das offizielle Wörterbuch belegt
+(dnddeutsch.de/uebersetzer, PHB(de) S.196 / S.290–292 / S.201).
+
+- **Force**: hieß `Wucht` — dieselbe Bezeichnung wie Bludgeoning
+  (`Wuchtschaden`), im UI also nicht unterscheidbar. Im Regelglossar zusätzlich
+  `Magische Energie`. → **Energie**
+- **Piercing**: `Durchschlagend` / `Durchbohrend` → **Stich**
+- **Bludgeoning**: Typ-Bezeichner `Wuchtschaden` → **Wucht** (Grundform wie bei
+  Hieb/Stich). Die Schadenswendung „Wuchtschaden" im Fließtext bleibt korrekt.
+- **Radiant**: `Strahlend` → **Gleißend**
+- **Thunder**: `Donner` → **Schall**
+- **Restrained**: hatte drei Namen (`Festhalten`, `Fesselnd`, `Festgesetzt`);
+  `Festhalten` bezeichnete an einer Stelle sogar Grappled. → **Festgesetzt**
+- **Grappled**: `Ergriffen` / `Festhalten` → **Gepackt**
+- **Incapacitated**: `Handlungsunfähig` → **Kampfunfähig**
+- **Exhaustion**: `Erschöpft` → **Erschöpfung** (der Zustand ist ein Substantiv)
+- **Spell Level**: `Zauberstufe` → **Zaubergrad**
+
+Bewusst unverändert: „Wuchtschaden"/„Stichschaden"/„Hiebschaden" im Fließtext
+(korrekte Komposita, u. a. 164× in `monsters.json`), „das Festhalten an der
+Magie des Zaubers" (Prosa), „im Ringkampf festzuhalten" (Verb), „rollenden
+Donner" (Prosa) und `Verzaubert` in `de.json` (Item-Enchantment, nicht der
+Zustand Charmed).
+
+### Added — Glossar-Gate in der CI
+
+`config/glossary.json` war leer (`{"terms": []}`) und wurde nur auf gültiges
+JSON geprüft — dadurch konnten die Begriffe überhaupt erst auseinanderlaufen.
+
+- `config/glossary.json` enthält jetzt 42 belegte Begriffe (Quelle + Seite),
+  generiert aus dem Master-Glossar via `tools/build-glossary.py`.
+- `tools/check-glossary.py` prüft dreifach und läuft in der CI:
+  1. **Key-Mapping** — `DND5E.DAMAGE.Type.<EN>` muss dem offiziellen Begriff
+     entsprechen (fängt genau den Force-Fehler).
+  2. **Kollision** — keine zwei Typen dürfen denselben deutschen Namen tragen.
+  3. **Verbotene Varianten** im Volltext, mit `allowedContext` für Wörter, die
+     kontextabhängig korrekt sind.
+
+Mehrdeutige Wörter stehen bewusst nicht in den Verbotslisten: „Wucht" ist als
+Bludgeoning richtig und nur als Force falsch — eine Fehl*zuordnung* lässt sich
+nicht per Textsuche finden, sondern nur auf Schlüsselebene.
+
 ## [Unreleased]
 ### Changed
 - README: added optional beta participation guidance, including practical risk notes for test-only usage and backup recommendations.
