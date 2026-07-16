@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Fixed
 
-Kept in sync with Spielerhandbuch-Deutsch 2.2.3:
+Kept in sync with Spielerhandbuch-Deutsch 2.2.0.1:
 
 | Term | Was | Now | Evidence |
 | --- | --- | --- | --- |
