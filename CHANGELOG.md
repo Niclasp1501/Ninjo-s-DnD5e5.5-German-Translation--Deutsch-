@@ -3,6 +3,53 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.4] - 2026-07-17
+
+### Fixed
+
+Kept in sync with Spielerhandbuch-Deutsch 2.2.0.6, which unified the feat
+vocabulary against the official German SRD 5.2.1. This module said different
+things than the handbook for the same terms:
+
+| Term | Was | Now | Evidence |
+| --- | --- | --- | --- |
+| `Origin feat` | `Ursprungstalent`, `Herkunfts-Talent`, and the untranslated `Origin feat` | `Herkunftstalent` | SRD 12x |
+| `Epic Boon feat` | `Talente der epischen Gaben`, untranslated `Epic Boon feat` | `Epische-Gabe-Talent` | SRD 21x |
+| `Fighting Style feat` | untranslated `Fighting Style feat` | `Kampfstil-Talent` | SRD 6x |
+| `Ability Score Improvement` | `Attributsverbesserung` - including the feat's own name | `Attributswerterhöhung` | SRD 84x |
+| `Skilled` | `Geübt` | `Begabt` | SRD 2x; `Geübt` 0x |
+| `Magic Initiate` | `Magiekundiger` | `Eingeweihter der Magie` | SRD 3x; `Magiekundiger` 0x |
+
+The English leftovers all shared one tell: a line break inside the link label -
+`{Origin
+feat}`, `{Epic
+Boon feat}`, `{Fighting
+Style feat}`. The newline broke
+the lookup of whatever translated the rest, so exactly those were skipped.
+
+### Deliberately not changed
+
+- **`geübt`, 168 places.** That is *proficient* ("in der Fertigkeit Akrobatik geübt")
+  and correct. Only the 3 places where `Geübt` was the name of the feat *Skilled*
+  were touched, anchored on the feat id `phbftSkilled0000`, never on the word.
+- **`Inkarnation`, 2 places.** In the Barbarian text it is ordinary German - "eine
+  Inkarnation der Wildheit eines Raubtiers" - not the Eldritch Invocation.
+- **All Babele keys.** They are English and are how Babele finds the document to
+  translate; only values were changed. Key counts verified unchanged after every
+  edit: content24 2788, feats24 folders 46, de.json 3584, the runtime dictionaries
+  2174 and 2114 entries, and both still import.
+
+### Known limitations
+
+70 link labels in the runtime dictionary are still English, all with the same line
+break defect: `Figurine of
+Wondrous Power` (9x), `Gust of
+Wind` (5x), `Pact of the
+Blade` (3x), `Boon of Dimensional
+Travel` (3x), `Pact of the Tome` (2x), `Book of
+Shadows` (2x). Those are magic items, spells and warlock invocations - a separate
+family, to be done with the SRD and the glossary rather than folded in here.
+
 ## [14.0.3] - 2026-07-16
 
 ### Fixed

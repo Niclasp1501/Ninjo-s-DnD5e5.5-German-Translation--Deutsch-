@@ -366,7 +366,7 @@
         },
         "Feat": {
           "Hint": "Talent hierher ziehen um es statt einer Erhöhung der Attributswerte zu wählen.",
-          "ASIName": "Talent zur Attributsverbesserung"
+          "ASIName": "Talent Attributswerterhöhung"
         },
         "FIELDS": {
           "cap": {
@@ -417,8 +417,8 @@
           "DescriptionEpic": "<p>Du erhältst ein Talent für eine Epische Gabe oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.</p>",
           "DescriptionEpicRecommendation": "<p>Du erhältst ein Talent für eine Epische Gabe oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. {recommendation} wird empfohlen.</p>",
           "DescriptionLegacy": "<p>Wenn du die {firstLevelOrdinal}. Stufe erreichst und erneut auf der {otherLevelsOrdinal}. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl um 1 erhöhen. Normalerweise kannst du einen Attributswert mit dieser Funktion nicht über {maxAbilityScore} erhöhen.</p><p>Wenn du die optionale Talentregel verwendest, kannst du auf diese Funktion verzichten, um stattdessen ein Talent deiner Wahl zu wählen.</p>",
-          "DescriptionModern": "<p>Du erhältst das Talent Attributsverbesserung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst diese Funktion erneut auf den {class}-Stufen {otherLevels}.</p>",
-          "Name": "Attributsverbesserung"
+          "DescriptionModern": "<p>Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du die Voraussetzungen erfüllst. Du erhältst diese Funktion erneut auf den {class}-Stufen {otherLevels}.</p>",
+          "Name": "Attributswerterhöhung"
         },
         "TitleEpic": "Epische Gabe"
       },
@@ -5923,7 +5923,7 @@
         "Label": "Variantenregeln konfigurieren",
         "Name": "Variantenregeln",
         "AllowFeats": {
-          "Hint": "Erlaube Spielern, ein Talent zu wählen, anstatt eine Attributsverbesserung während des Klassenaufstiegs zu nehmen, wenn die Legacy-Regeln verwendet werden.",
+          "Hint": "Erlaube Spielern, ein Talent zu wählen, anstatt eine Attributswerterhöhung während des Klassenaufstiegs zu nehmen, wenn die Legacy-Regeln verwendet werden.",
           "Name": "Talente erlauben"
         },
         "CurrencyWeight": {

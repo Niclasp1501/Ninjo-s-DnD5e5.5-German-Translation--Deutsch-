@@ -3862,7 +3862,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbbgAcolyte0000": {
     "name": "Akolyt",
-    "description": "<p><strong>Attributswerte:</strong> Intelligenz, Weisheit,\nCharisma</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n(Kleriker)</p><p><strong>Fertigkeitsübungen:</strong> Einsicht und\nReligion</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\nSupplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n(Gebete), @UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy\nSymbol},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (10\nBlatt), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n8 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgAcolyte0000\ninline classes=\"free-rules-embed\"]</p>",
+    "description": "<p><strong>Attributswerte:</strong> Intelligenz, Weisheit,\nCharisma</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Eingeweihter der Magie}\n(Kleriker)</p><p><strong>Fertigkeitsübungen:</strong> Einsicht und\nReligion</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\nSupplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n(Gebete), @UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy\nSymbol},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (10\nBlatt), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n8 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgAcolyte0000\ninline classes=\"free-rules-embed\"]</p>",
     "advancement": {
       "kDI6zoUamHzFTvHG": {
         "title": "Hintergrund-Attributswerterhöhung",
@@ -3881,7 +3881,7 @@ export const MODERN_OVERRIDES_BY_ID = {
         "hint": ">-"
       },
       "kDI6zoUamHzFTnHG": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": ">-"
       }
     }
@@ -3891,7 +3891,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p><strong>Attributswerte:</strong> Geschicklichkeit, Konstitution, Intelligenz</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftAlert000000]{Alert}</p><p><strong>Fertigkeitsübungen:</strong> Fingerfertigkeit und Heimlichkeit</p><p><strong>Werkzeugübung:</strong> Diebeswerkzeuge</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes}, 16\\_GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgCriminal000 inline classes=\\\"free-rules-embed\\\"]</p>",
     "advancement": {
       "8gFHAigaFboVUSgH": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": ">-"
       },
       "WJA48TLxfqlc3ygz": {
@@ -3910,10 +3910,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbbgSage0000000": {
     "name": "Weiser",
-    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\nWeisheit</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n(Magier)</p><p><strong>Fertigkeitsübungen:</strong> Arkana und\nGeschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\nSupplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n(Geschichte),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (8\nBlatt), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n8 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\ninline classes=\"free-rules-embed\"]</p>",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\nWeisheit</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Eingeweihter der Magie}\n(Magier)</p><p><strong>Fertigkeitsübungen:</strong> Arkana und\nGeschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n@UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\nSupplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n(Geschichte),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (8\nBlatt), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},\n8 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\ninline classes=\"free-rules-embed\"]</p>",
     "advancement": {
       "3O61L5uTy5jRCqJb": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": ">-"
       },
       "DMd8rikwPlZdpP1l": {
@@ -3935,7 +3935,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit,\nKonstitution</p><p><strong>Talent:</strong>\n@UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\nAttacker}</p><p><strong>Fertigkeitsübungen:</strong> Athletik und\nEinschüchtern</p><p><strong>Werkzeugübung:</strong> <em>Wähle eine Art\nvon</em> <em>Glücksspiel-Set</em> (siehe\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear},\n@UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20\n@UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben),\n@UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit},\n@UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},\n@UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes},\n14 GM; oder (B) 50\nGM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\ninline classes=\"free-rules-embed\"]</p>",
     "advancement": {
       "5hLHlmqxzoAta0uf": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": ">-"
       },
       "y4FZ4I6wU0F8DEjO": {
@@ -4353,7 +4353,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsptVersatile0": {
     "name": "Vielseitig",
-    "description": "<p>Du erhältst eine @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.otAeQs0TLHYIBNuj]{Origin\nfeat} deiner Wahl. @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{Skilled} wird empfohlen.</p><section id=\"secret-9E1yve6WHohyBage\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst zu deiner Wahl aufgefordert, wenn du diese Spezies auswählst.</p></section>"
+    "description": "<p>Du erhältst eine @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.otAeQs0TLHYIBNuj]{Herkunftstalent} deiner Wahl. @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{Begabt} wird empfohlen.</p><section id=\"secret-9E1yve6WHohyBage\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst zu deiner Wahl aufgefordert, wenn du diese Spezies auswählst.</p></section>"
   },
   "phbsptAdrenaline": {
     "name": "Adrenalinstoß",
@@ -4401,7 +4401,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbbrbEpicBoon00": {
     "name": "Epischer Segen",
-    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofIrresis]{Boon of Irresistible\nOffense} wird empfohlen.</p>"
+    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofIrresis]{Boon of Irresistible\nOffense} wird empfohlen.</p>"
   },
   "phbbrbExtraAttac": {
     "name": "Zusätzlicher Angriff",
@@ -4642,7 +4642,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbclcEpicBoon00": {
     "name": "Epischer Segen",
-    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofFate000]{Boon of Fate} wird empfohlen.</p>"
+    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofFate000]{Boon of Fate} wird empfohlen.</p>"
   },
   "phbclcGreaterDiv": {
     "name": "Größere Göttliche Intervention",
@@ -4722,7 +4722,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbdrdEpicBoon00": {
     "name": "Epische Gabe",
-    "description": "<p>Du erhältst eine\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofDimensi]{Boon of Dimensional\nTravel} wird empfohlen.</p>"
+    "description": "<p>Du erhältst eine\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofDimensi]{Boon of Dimensional\nTravel} wird empfohlen.</p>"
   },
   "phbdrdImprovedEl": {
     "name": "Verbesserte Elementare Wut",
@@ -4811,7 +4811,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbftrEpicBoon00": {
     "name": "Epischer Segen",
-    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofCombatP]{Boon of Combat\nProwess} wird empfohlen.</p>"
+    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofCombatP]{Boon of Combat\nProwess} wird empfohlen.</p>"
   },
   "phbftrExtraAttac": {
     "name": "Zusätzlicher Angriff",
@@ -4819,7 +4819,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbftrFightingSt": {
     "name": "Kampfstil",
-    "description": "<p>Du hast deine Kampfkunst verfeinert und erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Fighting\nStyle feat} deiner Wahl. @UUID[Compendium.dnd5e.feats24.Item.phbfstDefense000]{Defense} wird empfohlen.</p><p>Wann immer du einen Kämpferlevel erreichst, kannst du das von dir gewählte Talent durch ein anderes Kampfstil-Talent ersetzen.</p>"
+    "description": "<p>Du hast deine Kampfkunst verfeinert und erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Kampfstil-Talent} deiner Wahl. @UUID[Compendium.dnd5e.feats24.Item.phbfstDefense000]{Defense} wird empfohlen.</p><p>Wann immer du einen Kämpferlevel erreichst, kannst du das von dir gewählte Talent durch ein anderes Kampfstil-Talent ersetzen.</p>"
   },
   "phbftrIndomitabl": {
     "name": "Unbezwingbar",
@@ -4865,7 +4865,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbftrAdditional": {
     "name": "Zusätzlicher Kampfstil",
-    "description": "<p>Du erhältst einen weiteren @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Fighting\nStyle feat} deiner Wahl.</p>"
+    "description": "<p>Du erhältst einen weiteren @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Kampfstil-Talent} deiner Wahl.</p>"
   },
   "phbftrHeroicWarr": {
     "name": "Heroischer Krieger",
@@ -4939,7 +4939,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbmnkEpicBoon00": {
     "name": "Epische Gabe",
-    "description": "<p>Du erhältst eine @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst. @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC#boon-of-irresistible-offense]{Boon\nof Irresistible Offense} wird empfohlen.</p><section\nid=\"secret-jF1SP5ddqgocevbp\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst beim Aufsteigen zu einer Wahl aufgefordert.</p></section>"
+    "description": "<p>Du erhältst eine @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst. @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC#boon-of-irresistible-offense]{Boon\nof Irresistible Offense} wird empfohlen.</p><section\nid=\"secret-jF1SP5ddqgocevbp\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst beim Aufsteigen zu einer Wahl aufgefordert.</p></section>"
   },
   "phbmnkEvasion000": {
     "name": "Entrinnen",
@@ -5099,7 +5099,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbpdnEpicBoon00": {
     "name": "Epischer Segen",
-    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofTruesig]{Boon of Truesight} wird empfohlen.</p><section class=\"secret\"\nid=\"secret-KoLcW2QoxzD8LnAY\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst beim Aufsteigen aufgefordert, eine Wahl zu treffen.</p></section>"
+    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder ein anderes Talent deiner Wahl, für das du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonofTruesig]{Boon of Truesight} wird empfohlen.</p><section class=\"secret\"\nid=\"secret-KoLcW2QoxzD8LnAY\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst beim Aufsteigen aufgefordert, eine Wahl zu treffen.</p></section>"
   },
   "phbpdnExtraAttac": {
     "name": "Zusätzlicher Angriff",
@@ -5111,7 +5111,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbpdnFightingSt": {
     "name": "Kampfstil",
-    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Fighting\nStyle feat} deiner Wahl. Anstatt eines dieser Talente zu wählen, kannst du die untenstehende Option wählen.</p><hr\n/><p>@Embed[Compendium.dnd5e.classes24.Item.phbfstBlessedWar\ncaption=false]</p>"
+    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Kampfstil-Talent} deiner Wahl. Anstatt eines dieser Talente zu wählen, kannst du die untenstehende Option wählen.</p><hr\n/><p>@Embed[Compendium.dnd5e.classes24.Item.phbfstBlessedWar\ncaption=false]</p>"
   },
   "phbpdnLayOnHands": {
     "name": "Handauflegen",
@@ -5186,7 +5186,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbrgrEpicBoon00": {
     "name": "Epische Gabe",
-    "description": "<p>Du erhältst eine\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofDimensi]{Boon of Dimensional\nTravel} wird empfohlen.</p><section id=\"secret-YoYODjOrhZ9UwOVg\"\nclass=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Du wirst beim\nStufenaufstieg zur Auswahl aufgefordert.</p></section>"
+    "description": "<p>Du erhältst eine\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofDimensi]{Boon of Dimensional\nTravel} wird empfohlen.</p><section id=\"secret-YoYODjOrhZ9UwOVg\"\nclass=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Du wirst beim\nStufenaufstieg zur Auswahl aufgefordert.</p></section>"
   },
   "phbrgrExpertise0": {
     "name": "Expertise",
@@ -5209,7 +5209,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbrgrFightingSt": {
     "name": "Kampfstil",
-    "description": "<p>Du erhältst einen\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Fighting\nStyle feat} deiner Wahl. Anstatt eines dieser Talente zu wählen, kannst du\ndie untenstehende Option wählen.</p><hr\n/><p>@Embed[Compendium.dnd5e.classes24.Item.phbfstDruidicWar\ncaption=false]</p>"
+    "description": "<p>Du erhältst einen\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Kampfstil-Talent} deiner Wahl. Anstatt eines dieser Talente zu wählen, kannst du\ndie untenstehende Option wählen.</p><hr\n/><p>@Embed[Compendium.dnd5e.classes24.Item.phbfstDruidicWar\ncaption=false]</p>"
   },
   "phbrgrFoeSlayer0": {
     "name": "Feindschlächter",
@@ -5322,7 +5322,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbrgeEpicBoon00": {
     "name": "Epischer Segen",
-    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonoftheNigh]{Boon of the Night\nSpirit} wird empfohlen.</p><section class=\"secret\"\nid=\"secret-Wpt1OtuMYQJ7BwK8\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst beim Stufenaufstieg zur Auswahl aufgefordert.</p></section>"
+    "description": "<p>Du erhältst einen @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst. @UUID[Compendium.dnd5e.feats24.Item.phbBoonoftheNigh]{Boon of the Night\nSpirit} wird empfohlen.</p><section class=\"secret\"\nid=\"secret-Wpt1OtuMYQJ7BwK8\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst beim Stufenaufstieg zur Auswahl aufgefordert.</p></section>"
   },
   "phbrgeEvasion000": {
     "name": "Entrinnen",
@@ -5577,7 +5577,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbwlkEpicBoon00": {
     "name": "Epische Gabe",
-    "description": "<p>Du erhältst eine\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofFate000]{Boon of Fate} wird\nempfohlen.</p><section class=\"secret\"\nid=\"secret-3jLCwJ5kXU8LAeU2\"><p><strong>Foundry-Hinweis</strong></p><p>Du\nwirst beim Stufenaufstieg zur Auswahl aufgefordert.</p></section>"
+    "description": "<p>Du erhältst eine\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofFate000]{Boon of Fate} wird\nempfohlen.</p><section class=\"secret\"\nid=\"secret-3jLCwJ5kXU8LAeU2\"><p><strong>Foundry-Hinweis</strong></p><p>Du\nwirst beim Stufenaufstieg zur Auswahl aufgefordert.</p></section>"
   },
   "phbwlkMagicalCun": {
     "name": "Magische Gerissenheit",
@@ -5702,7 +5702,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbinvLessonsoft": {
     "name": "Lehren der Ersten",
-    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 2+</p></blockquote><p>Du hast\nWissen von einer älteren Entität des Multiversums erhalten, das dir erlaubt,\neine @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.otAeQs0TLHYIBNuj]{Origin\nfeat} deiner Wahl zu erlangen.</p><p><strong>Wiederholbar. </strong>Du kannst diese\nAnrufung mehr als einmal erhalten. Jedes Mal, wenn du dies tust, wähle eine andere\nUrsprungs-Eigenschaft.</p>"
+    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 2+</p></blockquote><p>Du hast\nWissen von einer älteren Entität des Multiversums erhalten, das dir erlaubt,\neine @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.otAeQs0TLHYIBNuj]{Herkunftstalent} deiner Wahl zu erlangen.</p><p><strong>Wiederholbar. </strong>Du kannst diese\nAnrufung mehr als einmal erhalten. Jedes Mal, wenn du dies tust, wähle eine andere\nUrsprungs-Eigenschaft.</p>"
   },
   "phbinvLifedrinke": {
     "name": "Lebenssauger",
@@ -5847,7 +5847,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbwzdEpicBoon00": {
     "name": "Epischer Segen",
-    "description": "<p>Du erhältst einen\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epic\nBoon feat} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofSpellRe]{Boon of Spell\nRecall} wird empfohlen.</p><section class=\"secret\"\nid=\"secret-L2SpZgJc0oDT7wWU\"><p><strong>Foundry-Hinweis</strong></p><p>Du\nwirst beim Aufsteigen zu einer Wahl aufgefordert.</p></section>"
+    "description": "<p>Du erhältst einen\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.GxfrwkJbrIvn7reC]{Epische-Gabe-Talent} oder eine andere Heldentat deiner Wahl, für die du dich qualifizierst.\n@UUID[Compendium.dnd5e.feats24.Item.phbBoonofSpellRe]{Boon of Spell\nRecall} wird empfohlen.</p><section class=\"secret\"\nid=\"secret-L2SpZgJc0oDT7wWU\"><p><strong>Foundry-Hinweis</strong></p><p>Du\nwirst beim Aufsteigen zu einer Wahl aufgefordert.</p></section>"
   },
   "phbwzdMemorizeSp": {
     "name": "Zauber memorieren",
@@ -6985,7 +6985,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p><em>(Voraussetzung: Kampfstil-Merkmal)</em></p><p>Wenn du einen zusätzlichen Angriff ausführst, weil du eine Waffe mit der Eigenschaft 'Leicht' benutzt, kannst du deinen Attributsmodifikator zum Schaden dieses Angriffs hinzufügen, falls du ihn nicht bereits zum Schaden hinzufügst.</p><section class=\"secret\"\nid=\"secret-hYptyfGCa0gLDQRT\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Feature ist nicht automatisiert. Du kannst deinen Modifikator im Feld 'Situational Bonus' des Schadenswurfs hinzufügen.</p></section>"
   },
   "phbftAbilityScor": {
-    "name": "Attributsverbesserung",
+    "name": "Attributswerterhöhung",
     "description": "<p><em>Allgemeines Talent (Voraussetzung: Stufe 4+)</em></p><p>Erhöhe einen Attributswert deiner Wahl um 2, oder erhöhe zwei Attributswerte deiner Wahl um 1. Dieses Talent kann einen Attributswert nicht über 20 erhöhen.</p><p><strong>Wiederholbar.</strong> Du kannst dieses Talent mehr als einmal wählen.</p>"
   },
   "phbftGrappler000": {
@@ -9023,7 +9023,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\n    Attacker}</p><p><strong>Fertigkeits-Übungen:</strong> Athletik und Einschüchtern</p><p><strong>Werkzeug-Übung:</strong> <em>Wähle eine Art von</em> <em>Glücksspiel-Set</em> (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n    6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben), @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's\n    Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's\n    Clothes}, 14 GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\n    inline classes=\"free-rules-embed\"]</p>",
     "advancement": {
       "5hLHlmqxzoAta0uf": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "y4FZ4I6wU0F8DEjO": {
@@ -9063,11 +9063,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "ZannaLv010000000": {
     "name": "Zanna",
-    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanes und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Eingeweihter der Magie}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanes und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
     "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
     "advancement": {
       "3O61L5uTy5jRCqJb": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Konstitutions-, Intelligenz- und Weisheitswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "DMd8rikwPlZdpP1l": {
@@ -9174,7 +9174,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\n    Attacker}</p><p><strong>Fertigkeits-Übungen:</strong> Athletik und Einschüchtern</p><p><strong>Werkzeug-Übung:</strong> <em>Wähle eine Art von</em> <em>Glücksspiel-Set</em> (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n    6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben), @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's\n    Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's\n    Clothes}, 14 GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\n    inline classes=\"free-rules-embed\"]</p>",
     "advancement": {
       "5hLHlmqxzoAta0uf": {
-        "title": "Attributsverbesserung durch Hintergrund",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "y4FZ4I6wU0F8DEjO": {
@@ -9214,11 +9214,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "ZannaLv110000000": {
     "name": "Zanna",
-    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanakunde und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Eingeweihter der Magie}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanakunde und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
     "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
     "advancement": {
       "3O61L5uTy5jRCqJb": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Konstitution, Intelligenz und Weisheit zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "DMd8rikwPlZdpP1l": {
@@ -9326,7 +9326,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "eine Kugel Fledermausguano und Schwefel",
     "advancement": {
       "5hLHlmqxzoAta0uf": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "y4FZ4I6wU0F8DEjO": {
@@ -9366,11 +9366,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "ZannaLv170000000": {
     "name": "Zanna",
-    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkane Kunde und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blatt),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Eingeweihter der Magie}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkane Kunde und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blatt),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
     "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
     "advancement": {
       "3O61L5uTy5jRCqJb": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Konstitutions-, Intelligenz- und Weisheitswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "DMd8rikwPlZdpP1l": {
@@ -9476,7 +9476,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage\n    Attacker}</p><p><strong>Fertigkeits-Übungen:</strong> Athletik und Einschüchtern</p><p><strong>Werkzeug-Übung:</strong> <em>Wähle eine Art von</em> <em>Glücksspiel-Set</em> (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.GCvg8n7Q7ltSPRxe#gaming-set-(varies)]{chapter\n    6})</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Glücksspiel-Set (wie oben), @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's\n    Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's\n    Clothes}, 14 GM; oder (B) 50 GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000\n    inline classes=\"free-rules-embed\"]</p>",
     "advancement": {
       "5hLHlmqxzoAta0uf": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "y4FZ4I6wU0F8DEjO": {
@@ -9516,11 +9516,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "ZannaLv050000000": {
     "name": "Zanna",
-    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanes und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
+    "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz,\n    Weisheit</p><p><strong>Talent:</strong>\n    @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Eingeweihter der Magie}\n    (Zauberer)</p><p><strong>Fertigkeitsübungen:</strong> Arkanes und\n    Geschichte</p><p><strong>Werkzeugübung:</strong> Kalligrafenbedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A)\n    @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's\n    Supplies},\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}\n    (Geschichte),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}\n    (8 Blätter),\n    @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, 8 GM;\n    oder (B) 50\n    GM</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSage0000000\n    inline classes=\"free-rules-embed\"]</p>",
     "materials": "eine Waffe, mit der du geübt bist und die 1+ KP wert ist",
     "advancement": {
       "3O61L5uTy5jRCqJb": {
-        "title": "Hintergrund-Attributsverbesserung",
+        "title": "Hintergrund: Attributswerterhöhung",
         "hint": "Dein Hintergrund erlaubt es dir, deine Konstitutions-, Intelligenz- und Weisheitswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 anheben."
       },
       "DMd8rikwPlZdpP1l": {
