@@ -1,6 +1,6 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Version:** 14.0.2  
+**Version:** 14.0.3  
 **Status:** Beta
 
 Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 ins Deutsche.

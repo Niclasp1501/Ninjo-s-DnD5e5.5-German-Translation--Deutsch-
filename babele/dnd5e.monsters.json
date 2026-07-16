@@ -2030,7 +2030,7 @@
         {
           "id": "Illumination",
           "name": "Beleuchtung",
-          "description": "<p>Der Azer gibt in einem Radius von 3 m helles Licht und in einem Radius von weiteren 3 m schwaches Licht ab.</p>"
+          "description": "<p>Der Azer gibt in einem Radius von 3 m helles Licht und in einem Radius von weiteren 3 m dämmriges Licht ab.</p>"
         },
         {
           "id": "Warhammer",
@@ -3813,7 +3813,7 @@
         {
           "id": "Illumination",
           "name": "Beleuchtung",
-          "description": "<p>Der Elementar gibt in einem Radius von 9 m helles Licht und in einem Radius von weiteren 9 m schwaches Licht ab.</p>"
+          "description": "<p>Der Elementar gibt in einem Radius von 9 m helles Licht und in einem Radius von weiteren 9 m dämmriges Licht ab.</p>"
         },
         {
           "id": "Water Susceptibility",
@@ -4325,7 +4325,7 @@
         {
           "id": "Illumination",
           "name": "Beleuchtung",
-          "description": "<p>Der Käfer gibt in einem Radius von 3 m helles Licht und in einem Radius von weiteren 3 m schwaches Licht ab.</p>"
+          "description": "<p>Der Käfer gibt in einem Radius von 3 m helles Licht und in einem Radius von weiteren 3 m dämmriges Licht ab.</p>"
         }
       ],
       "source": "MH S. 329"
@@ -6643,7 +6643,7 @@
         {
           "id": "Illumination",
           "name": "Beleuchtung",
-          "description": "<p>Der Nachtmahr gibt in einem Radius von 3 m helles Licht und in einem Radius von weiteren 3 m schwaches Licht ab.</p>"
+          "description": "<p>Der Nachtmahr gibt in einem Radius von 3 m helles Licht und in einem Radius von weiteren 3 m dämmriges Licht ab.</p>"
         },
         {
           "id": "Hooves",
@@ -9371,7 +9371,7 @@
         {
           "id": "Variable Illumination",
           "name": "Variable Beleuchtung",
-          "description": "<p>Das Irrlicht gibt helles Licht in einem Radius zwischen 1,5 m und 6 m ab, und schwaches Licht in einem zusätzlichen Radius gleich dem gewählten Radius. Das Irrlicht kann den Radius als Bonusaktion anpassen.</p>"
+          "description": "<p>Das Irrlicht gibt helles Licht in einem Radius zwischen 1,5 m und 6 m ab, und dämmriges Licht in einem zusätzlichen Radius gleich dem gewählten Radius. Das Irrlicht kann den Radius als Bonusaktion anpassen.</p>"
         },
         {
           "id": "Shock",
