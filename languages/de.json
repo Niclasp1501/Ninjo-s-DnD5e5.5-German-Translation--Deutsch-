@@ -594,7 +594,7 @@
                 "label": "Anzahl"
               }
             },
-            "Hint": "Verwenden Sie dies für Würfelwerte wie Bardeninspiration, Hinterhältiger Angriff oder Überlegenheitswürfel.",
+            "Hint": "Verwenden Sie dies für Würfelwerte wie Bardische Inspiration, Hinterhältiger Angriff oder Überlegenheitswürfel.",
             "Identifier": "Dieser Skalierungswert für die aktuelle Stufe ist in einer Formel verfügbar unter:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - ganze Formel (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - ganzer Würfel (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - Anzahl der Würfel (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - Anzahl der Seiten (<code>6</code>)",
             "Label": "Würfel"
           },

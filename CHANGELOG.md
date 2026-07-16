@@ -3,6 +3,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.2] - 2026-07-16
+
+### Fixed
+
+Kept in sync with the Spielerhandbuch-Deutsch module, which was unified against
+the official German SRD 5.2.1 in the same pass. Six terms diverged:
+
+| Term | Was | Now | Evidence |
+| --- | --- | --- | --- |
+| Armor Training | `Rüstungstraining` | `Rüstungsvertrautheit` | SRD 18x |
+| Waterskin | `Wasserschlauch` | `Trinkschlauch` | SRD 8x |
+| Tinderbox | `Zunderbüchse` | `Zunderkästchen` | SRD 11x |
+| Bardic Inspiration | `Bardeninspiration` | `Bardische Inspiration` | SRD 5x |
+| Greater Restoration | `Größere Wiederherstellung` | `Vollständige Genesung` | SRD 19x |
+| Halfling Nimbleness | `Halbling-Flinkheit` | `Halblingsgewandtheit` | SRD 1x |
+
+Deliberately left unchanged after checking: `"id": "Multiattack"` and the other
+143 `id` values in `babele/dnd5e.monsters.json`. These are Babele's English
+matching keys, not display names -- the German name sits next to them and is
+already correct (`{"id": "Multiattack", "name": "Mehrfachangriff"}`). Renaming
+them would silently disable those translations. `id` is now treated as a key.
+
+Babele keys verified byte-stable against git: `languages/de.json` 4798,
+`babele/dnd5e.content24.json` 2788, `babele/dnd5e.rules.json` 1350,
+`babele/dnd5e.tables24.json` 1194 -- none added, none removed.
+
 ## [14.0.1] - 2026-07-16
 
 ### Fixed

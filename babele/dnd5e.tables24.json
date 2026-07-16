@@ -1650,7 +1650,7 @@
         },
         "9roEeqKHIauLWYsP": {
           "name": "Indigo",
-          "description": "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Restrained] und muss am Ende jedes seiner Züge einen [[/save con]] Rettungswurf ablegen. Gelingt ihm dreimal ein Rettungswurf, endet der Zustand. Misslingt ihm dreimal ein Rettungswurf, ist es im Zustand &amp;Reference[Petrified], bis es durch einen Effekt wie den Zauber <em>Größere Wiederherstellung</em> befreit wird. Die Erfolge und Misserfolge müssen nicht aufeinanderfolgend sein; verfolge beides, bis das Ziel drei gleiche gesammelt hat.</p>"
+          "description": "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Restrained] und muss am Ende jedes seiner Züge einen [[/save con]] Rettungswurf ablegen. Gelingt ihm dreimal ein Rettungswurf, endet der Zustand. Misslingt ihm dreimal ein Rettungswurf, ist es im Zustand &amp;Reference[Petrified], bis es durch einen Effekt wie den Zauber <em>Vollständige Genesung</em> befreit wird. Die Erfolge und Misserfolge müssen nicht aufeinanderfolgend sein; verfolge beides, bis das Ziel drei gleiche gesammelt hat.</p>"
         },
         "YRy23VFeS34ZU0kN": {
           "name": "Violett",
