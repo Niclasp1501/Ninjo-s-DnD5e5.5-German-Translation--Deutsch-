@@ -3,72 +3,77 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [14.0.1] - 2026-07-16
 
 ### Fixed
 
-Damage types and conditions now follow the official German (Ulisses) terminology.
-The terms were maintained in three places -- `languages/de.json`, the rules
-glossary and the damage type table in `babele/dnd5e.content24.json` -- and had
-drifted apart. Every change is backed by the official dictionary
-(dnddeutsch.de/uebersetzer): damage types PHB(de) p. 196, conditions p. 290-292,
-spell level p. 201.
+Terminology now follows the **official German System Reference Document 5.2.1**,
+published by Wizards of the Coast on 2025-12-08 under CC-BY-4.0. It covers the
+2024 rules edition this module translates:
 
-Most severe: **Force** was translated as `Wucht`, the same term used for
-Bludgeoning (`Wuchtschaden`). Both were indistinguishable in the damage type
-dropdown. The rules glossary additionally called it `Magische Energie`.
+    https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf
 
-| Term | Was | Now |
-| --- | --- | --- |
-| Force | `Wucht` / `Magische Energie` | `Energie` |
-| Piercing | `Durchschlagend` / `Durchbohrend` | `Stich` |
-| Bludgeoning (type label) | `Wuchtschaden` | `Wucht` |
-| Radiant | `Strahlend` | `Gleißend` |
-| Thunder | `Donner` | `Schall` |
-| Restrained | `Festhalten` / `Fesselnd` | `Festgesetzt` |
-| Grappled | `Ergriffen` / `Festhalten` | `Gepackt` |
-| Incapacitated | `Handlungsunfähig` | `Kampfunfähig` |
-| Exhaustion | `Erschöpft` | `Erschöpfung` |
-| Spell level | `Zauberstufe` | `Zaubergrad` |
+This source was previously believed not to exist, and terms were derived instead
+(see the correction under *Changed* below). Every entry here is now backed by a
+literal quotation from it.
 
-`Festhalten` was used for both Restrained and Grappled in different places --
-a genuine mix-up that only surfaced in context.
+| Term | Was | Now | Evidence in SRD 5.2.1 (de) |
+| --- | --- | --- | --- |
+| D20 Test | `D20 Test` / `W20-Probe` / `W20-Test` | `W20-Prüfung` | "Solche Würfe heißen W20-Prüfungen." (39x) |
+| Weapon Mastery | `Waffenmeisterschaft` | `Waffenbeherrschung` | "1. Stufe: Waffenbeherrschung" (15x) |
+| Multiclassing | `Mehrklassigkeit` | `Klassenkombination` | 28x |
+| condition (before a condition name) | `die Bedingung Vergiftet` | `den Zustand Vergiftet` | `Zustand` 215x |
+
+Damage types and conditions from the previous entry were re-checked against the
+SRD 5.2.1 and are all confirmed: `Wucht`, `Stich`, `Hieb`, `Feuer`, `Kälte`,
+`Blitz`, `Schall`, `Säure`, `Gift`, `Nekrotisch`, `Gleißend`, `Energie`,
+`Psychisch`, and all 15 condition names. `Zaubergrad` is confirmed (64x).
+
+**`Attributswurf` was already correct here and is unchanged.** The sibling
+Spielerhandbuch-Deutsch module had been unified onto `Attributsprobe`, a term
+that appears 0x in the official SRD; that module was corrected to match this
+one, not the other way round.
 
 Deliberately left unchanged:
 
-- `Wuchtschaden` / `Stichschaden` / `Hiebschaden` in running text (correct
-  compounds, 164 occurrences in `monsters.json` alone). Only the type labels
-  were normalised to the official base form.
-- `das Festhalten an der Magie des Zaubers` -- prose, not a condition.
-- `rollenden Donner` -- prose, not a damage type.
-- `Verzaubert` in `de.json` -- item enchantment, not the Charmed condition.
+- `Fertigkeitsübung(en)`. The SRD's term is the class-table heading
+  "Fertigkeiten, in denen du geübt bist" — a full sentence. In this module the
+  word is a UI checkbox label (`DND5E.TRANSFORM.Setting.Keep.Skills.Label`) and
+  running prose ("die Fertigkeitsübungen eines Monsters"). Substituting the
+  sentence would wreck both.
+- `Bedingung` as ordinary German ("ungesunden Bedingungen", "unter den
+  Bedingungen der Creative Commons"). It appears 16x in the SRD in this sense.
+  Only occurrences directly preceding a condition name were changed.
+
+Babele keys are byte-stable: `languages/de.json` 4798 keys and
+`babele/dnd5e.content24.json` 2788 keys before and after, none added, none
+removed. `D20 Test` and `D20 Tests` remain as keys — only their labels and
+values were translated.
 
 ### Changed
 
-Terminology aligned with the German Player's Handbook 2024 and kept in sync
-with the Spielerhandbuch-Deutsch module.
+- README: documents SRD 5.2.1 conformance and the evidence rule for terminology.
+- README: added optional beta participation guidance, including practical risk
+  notes for test-only usage and backup recommendations.
 
-- `Tiers of Play`: **Spielstufen** -> **Stufenbereiche**. The section headings
-  read "Stufe 1 (Stufen 1–4)", using "Stufe" for both the tier and the
-  character level. No official German term could be sourced: the D3 dictionary
-  covers the 2014 PHB only (Weapon Mastery, Bastion, Heroic Inspiration and
-  Epic Boon all return no match), the D3 errata database lists no PHB24, and
-  the German SRD is 5.1. Term is marked `derived` / `needs-official-check` in
-  the master glossary; "Spielstufen" is retained as `altDe`.
-- `Emanation`: **Ausstrahlung** -> **Ausströmung** (8x)
-- Prose using "Level" for a character level -> "Stufe"
+### Corrected
 
-The last two are sourced from reviews of the German 2024 edition
-(teilzeithelden.de, buffed.de), not from the book itself, and are tagged
-`needs-official-check`.
+The previous entry stated that no official German source could be sourced for
+the 2024 terminology — "the D3 dictionary covers the 2014 PHB only, the D3
+errata database lists no PHB24, and the German SRD is 5.1" — and tagged several
+terms `derived` / `needs-official-check`. **That is no longer true.** The German
+SRD 5.2.1 was published on 2025-12-08 and confirms all of them:
 
-Babele keys (`Emanation`, `Tiers of Play`, `Spell Level`, `Level 1`) are
-untouched — only values changed.
+| Term | Status then | SRD 5.2.1 (de) |
+| --- | --- | --- |
+| Tier of Play -> `Stufenbereich` | `derived`, unsourced | confirmed, 13x |
+| Emanation -> `Ausströmung` | from reviews only | confirmed, 91x |
+| Heroic Inspiration -> `Heldische Inspiration` | from reviews only | confirmed, 15x |
 
+The master glossary has been updated accordingly: 523 entries are now tagged
+`srd-5.2.1` with the source recorded, and the `needs-official-check` backlog
+dropped from 29 to 24.
 
-## [Unreleased]
-### Changed
-- README: added optional beta participation guidance, including practical risk notes for test-only usage and backup recommendations.
 
 ## [14.0.0] - 2026-04-22
 ### Changed

@@ -3671,7 +3671,7 @@
         },
         "mastery": {
           "label": "Meisterschaft",
-          "hint": "Spezielles Waffenattribut für Charaktere freigeschaltet, die die Waffenmeisterschaft oder ein verwandtes Merkmal besitzen."
+          "hint": "Spezielles Waffenattribut für Charaktere freigeschaltet, die die Waffenbeherrschung oder ein verwandtes Merkmal besitzen."
         },
         "armor": {
           "value": {
@@ -3680,7 +3680,7 @@
         }
       },
       "Mastery": {
-        "Label": "Waffenmeisterschaft",
+        "Label": "Waffenbeherrschung",
         "Flavor": "Meisterschaft",
         "Cleave": "Spalten",
         "Graze": "Streifen",

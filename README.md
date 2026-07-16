@@ -1,6 +1,6 @@
-﻿# Ninjo's DnD5e5.5 German Translation (Deutsch)
+# Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Version:** 14.0.0  
+**Version:** 14.0.1  
 **Status:** Beta
 
 Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 ins Deutsche.
@@ -28,6 +28,27 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
 
 ### Feedback
 - Feedback ist ausdrücklich willkommen und hilft direkt bei der Priorisierung der nächsten Übersetzungsbereiche.
+
+### Begriffe: SRD-5.2.1-konform
+Die Regelbegriffe dieses Moduls folgen dem **offiziellen deutschen
+Systemreferenzdokument 5.2.1** (Wizards of the Coast, 08.12.2025, CC-BY-4.0):
+
+> https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf
+
+Das SRD 5.2.1 deckt die 2024er Regeledition ab -- also genau die, die dieses Modul
+übersetzt. Es ist damit die maßgebliche Quelle und ersetzt das D3-Wörterbuch
+(dnddeutsch.de), das nur das Spielerhandbuch 2014 abdeckt.
+
+**Arbeitsregel:** Jeder Regelbegriff wird am SRD belegt, nicht abgeleitet. Belegt sind
+unter anderem alle 15 Zustände, alle 13 Schadensarten, alle 18 Fertigkeitsnamen sowie
+`Attributswurf`, `W20-Prüfung`, `Waffenbeherrschung`, `Klassenkombination`,
+`Kampfrausch`, `Zaubergrad` und `Stufenbereich`. Das Schwestermodul
+[Ninjo's DnD5e5.5 Spielerhandbuch-Deutsch](https://github.com/Niclasp1501) benutzt
+dieselben Begriffe; die gemeinsame Master-Tabelle führt die Belegstellen mit.
+
+Wo das SRD einen Begriff nicht kennt (Inhalte ausserhalb des SRD, Foundry-Eigenheiten),
+entscheidet die modulinterne Einheitlichkeit. Solche Einträge sind in der Master-Tabelle
+als `needs-official-check` markiert.
 
 ### Voraussetzungen
 - Foundry VTT v13 oder v14
@@ -88,6 +109,27 @@ Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 in
 
 ### Feedback
 - Feedback is very welcome and helps prioritize the next translation areas.
+
+### Terminology: SRD 5.2.1 conformant
+The rules terminology of this module follows the **official German System Reference
+Document 5.2.1** (Wizards of the Coast, 2025-12-08, CC-BY-4.0):
+
+> https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf
+
+SRD 5.2.1 covers the 2024 rules edition -- exactly the one this module translates. It
+is therefore the authoritative source and supersedes the D3 dictionary
+(dnddeutsch.de), which only covers the 2014 Player's Handbook.
+
+**Working rule:** every rules term is evidenced against the SRD, not derived. Confirmed
+terms include all 15 conditions, all 13 damage types, all 18 skill names, plus
+`Attributswurf`, `W20-Prüfung`, `Waffenbeherrschung`, `Klassenkombination`,
+`Kampfrausch`, `Zaubergrad` and `Stufenbereich`. The sibling module
+[Ninjo's DnD5e5.5 Spielerhandbuch-Deutsch](https://github.com/Niclasp1501) uses the
+same terms; the shared master glossary records the evidence.
+
+Where the SRD does not cover a term (non-SRD content, Foundry specifics), internal
+consistency decides. Such entries are tagged `needs-official-check` in the master
+glossary.
 
 ### Requirements
 - Foundry VTT v13 or v14
