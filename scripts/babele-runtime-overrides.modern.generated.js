@@ -6997,7 +6997,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiative-Fertigkeit.</strong> Wenn du Initiative würfelst, kannst du deinen Übungsbonus auf den Wurf addieren.</p><p><strong>Initiativetausch.</strong> Unmittelbar nachdem du Initiative gewürfelt hast, kannst du deine Initiative mit der Initiative eines willigen Verbündeten im selben Kampf tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der Verbündete den Zustand &amp;Reference[Incapacitated] hat.</p><section id=\"secret-yzfXk3D5M1jv9ixH\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet automatisch den Bonus auf deine Initiative.</p></section>"
   },
   "phbftMagicInitia": {
-    "name": "Magiekundiger",
+    "name": "Eingeweihter der Magie",
     "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Zwei Zaubertricks.</strong> Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Cleric}, @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druid} oder @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard}. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber dieses Talents (wähle dies, wenn du dieses Talent auswählst).</p><p><strong>Zauber des 1. Grades.</strong> Wähle einen Zauber des 1. Grades aus derselben Liste, die du für die Zaubertricks dieses Talents ausgewählt hast. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du hast.</p><p><strong>Zauberwechsel.</strong> Immer wenn du eine neue Stufe erreichst, kannst du einen der Zauber, die du für dieses Talent gewählt hast, durch einen anderen Zauber desselben Grades aus der gewählten Zauberliste ersetzen.</p><p><strong>Wiederholbar.</strong> Du kannst dieses Talent mehr als einmal wählen, aber du musst jedes Mal eine andere Zauberliste wählen.</p>"
   },
   "phbftSavageAttac": {
@@ -7005,7 +7005,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du hast trainiert, besonders schädliche Schläge auszuteilen. Einmal pro Zug, wenn du ein Ziel mit einer Waffe triffst, kannst du die Schadenswürfel der Waffe zweimal würfeln und einen der Würfe gegen das Ziel verwenden.</p>"
   },
   "phbftSkilled0000": {
-    "name": "Geübt",
+    "name": "Begabt",
     "description": "<p>Du erhältst Übung in einer beliebigen Kombination aus drei Fertigkeiten oder Werkzeugen deiner Wahl.</p><p><strong>Wiederholbar.</strong> Du kannst dieses Talent mehr als einmal wählen.</p>"
   },
   "phbmnkQuiveringP": {

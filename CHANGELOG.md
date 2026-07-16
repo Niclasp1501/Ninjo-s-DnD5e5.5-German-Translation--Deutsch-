@@ -3,6 +3,33 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.5] - 2026-07-17
+
+### Fixed
+
+14.0.4 renamed the two feats where they were *mentioned*, but not where they are
+*named*. The runtime dictionary carries the feat's own `name` field, and it still
+said the old thing, so the compendium entry itself was unchanged:
+
+    phbftSkilled0000   name: Geübt         -> Begabt
+    phbftMagicInitia   name: Magiekundiger -> Eingeweihter der Magie
+
+Caught by asking the running game what the feats are called rather than by reading
+the file - the file looked done.
+
+Why `Begabt` and not `Geübt`, given that *proficient* is `geübt` everywhere: the
+SRD entry answers it.
+
+    EN   Skilled / Origin Feat / You gain proficiency in any combination of three
+         skills or tools of your choice.
+    DE   Begabt / Herkunftstalent / Du bist in drei Fertigkeiten oder Werkzeugen
+         deiner Wahl in beliebiger Kombination geübt.
+
+The feat is `Begabt`; `geübt` inside its own description is *proficient*. Naming
+the feat `Geübt` would collide with the word its own text needs. Four terms, four
+words: proficient = geübt, Proficiency Bonus = Übungsbonus, Skill = Fertigkeit,
+Skilled = Begabt.
+
 ## [14.0.4] - 2026-07-17
 
 ### Fixed
