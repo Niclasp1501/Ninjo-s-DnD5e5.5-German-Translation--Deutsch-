@@ -1089,7 +1089,7 @@
           },
           "associated": {
             "label": "Assoziierte Fertigkeiten oder Werkzeuge",
-            "hint": "Führe die Attributsproben anhand Übung und Boni mit diesen Fertigkeiten und Werkzeugen durch."
+            "hint": "Führe die Attributswürfe anhand Übung und Boni mit diesen Fertigkeiten und Werkzeugen durch."
           },
           "dc": {
             "label": "Schwierigkeitsgrad",

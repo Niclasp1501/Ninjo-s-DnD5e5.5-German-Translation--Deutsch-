@@ -1504,8 +1504,8 @@
      "text": "<p>Manche Kreaturen können schweben, wie in ihren Werteblöcken vermerkt, und manche Zauber und andere Effekte verleihen die Fähigkeit zu schweben. Das Schweben während des Fliegens verhindert, dass du unter bestimmten Umständen fällst. <em>Siehe auch </em>@UUID[.ozHhbP8JVHCJAx0b]{Fliegen}.</p>"
     },
     "Ability Check": {
-     "name": "Attributsprobe",
-     "text": "<p>Eine Attributsprobe ist ein W20-Prüfung, der die Verwendung eines der sechs Attribute – oder einer spezifischen Fertigkeit, die mit einem Attribut verbunden ist – darstellt, um eine Herausforderung zu meistern.</p>"
+     "name": "Attributswurf",
+     "text": "<p>Ein Attributswurf ist eine W20-Prüfung, die die Verwendung eines der sechs Attribute – oder einer spezifischen Fertigkeit, die mit einem Attribut verbunden ist – darstellt, um eine Herausforderung zu meistern.</p>"
     },
     "Ability Score and Modifier": {
      "name": "Attributswert und Modifikator",

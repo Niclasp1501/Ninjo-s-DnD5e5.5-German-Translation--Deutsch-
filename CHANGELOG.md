@@ -3,6 +3,50 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.6] - 2026-07-17
+
+### Fixed - the runtime dictionaries had never been included
+
+The terminology passes 14.0.1 through 14.0.3 cleaned `babele/*.json` and
+`languages/de.json` and never touched
+`scripts/babele-runtime-overrides.{modern,legacy}.generated.js` - 3 MB together,
+imported by `babele-register.js` and therefore live. Those entries said what this
+module said a year ago:
+
+| Term | Was | Now | Evidence |
+| --- | --- | --- | --- |
+| Bardic Inspiration | `Bardeninspiration` (11x) | `Bardische Inspiration` | SRD 5x |
+| Bardic Inspiration die | `Bardeninspirationswürfel` (9x) | `Bardische-Inspiration-Würfel` | SRD, with hyphens |
+| Armor Training | `Rüstungstraining` (13x) | `Rüstungsvertrautheit` | SRD 18x |
+| Tinderbox | `Zunderbüchse` (8x) | `Zunderkästchen` | SRD 11x |
+| Epic Boon | `Epischer Segen` (7x) | `Epische Gabe` | SRD 26x |
+| Waterskin | `Wasserschlauch` (5x) | `Trinkschlauch` | SRD 8x |
+| Ability Check | `Attributsprobe` (7x) | `Attributswurf` | SRD 48x; `Attributsprobe` 0x |
+| Greater Restoration | `Größere Wiederherstellung` (2x) | `Vollständige Genesung` | SRD 19x |
+| Multiclassing | `Mehrklassigkeit` | `Klassenkombination` | SRD 28x |
+
+Half of these change gender, so the article had to travel with them - "**eine**
+Zunderbüchse" is "**ein** Zunderkästchen", "**eine** Attributsprobe" is "**einen**
+Attributswurf". Each was read in place first. The definition of Ability Check was
+doubly wrong and is now right in both respects:
+
+    was  Eine Attributsprobe ist ein W20-Prüfung, der die Verwendung …
+    now  Ein Attributswurf ist eine W20-Prüfung, die die Verwendung …
+
+### Fixed - Ring Mail said the wrong armor
+
+    EN   This armor is leather armor with heavy rings sewn into it.
+    was  Bei dieser Rüstung handelt es sich um einen Lederpanzer, in dem …
+    now  Bei dieser Rüstung handelt es sich um eine Lederrüstung, in die …
+
+`Lederpanzer` appears 0x in the SRD. It is tempting to read it as Hide Armor -
+`Fellrüstung` - because that item used to be called `Lederpanzer` in the handbook.
+It is not: here it renders *leather armor*, which is `Lederrüstung` (SRD 25x).
+Fellrüstung would have been a confident, wrong answer.
+
+Key counts verified after every edit: content24 2788, rules 1350, de.json 4798;
+both runtime dictionaries still import with 2174 and 2114 entries.
+
 ## [14.0.5] - 2026-07-17
 
 ### Fixed

@@ -345,7 +345,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
   },
   "nsXZejlmgalj4he9": {
     "name": "Ringpanzer",
-    "description": "<p>Bei dieser Rüstung handelt es sich um einen Lederpanzer, in dem schwere Ringe eingenäht sind. Die Ringe verstärken die Rüstung gegen Hiebe von Schwertern und Äxten. Ringpanzer sind dem Kettenpanzer unterlegen und werden meist nur von denen getragen, die sich keine bessere Rüstung leisten können.</p>"
+    "description": "<p>Bei dieser Rüstung handelt es sich um eine Lederrüstung, in die schwere Ringe eingenäht sind. Die Ringe verstärken die Rüstung gegen Hiebe von Schwertern und Äxten. Ringpanzer sind dem Kettenpanzer unterlegen und werden meist nur von denen getragen, die sich keine bessere Rüstung leisten können.</p>"
   },
   "aDEAwKwttl35dWaB": {
     "name": "Schuppenpanzer +1",
