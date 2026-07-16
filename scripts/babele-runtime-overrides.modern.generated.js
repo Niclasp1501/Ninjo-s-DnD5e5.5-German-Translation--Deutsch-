@@ -1022,7 +1022,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbarmRingMail00": {
     "name": "Ringpanzer",
-    "description": "<p>Bei dieser Rüstung handelt es sich um eine Lederrüstung, in dem schwere Ringe eingenäht sind. Die Ringe verstärken die Rüstung gegen Hiebe von Schwertern und Äxten. Ringpanzer sind dem Kettenpanzer unterlegen und werden meist nur von denen getragen, die sich keine bessere Rüstung leisten können.</p>"
+    "description": "<p>Bei dieser Rüstung handelt es sich um eine Lederrüstung, in die schwere Ringe eingenäht sind. Die Ringe verstärken die Rüstung gegen Hiebe von Schwertern und Äxten. Ringpanzer sind dem Kettenpanzer unterlegen und werden meist nur von denen getragen, die sich keine bessere Rüstung leisten können.</p>"
   },
   "phbarmSplintArmo": {
     "name": "Schienenpanzer",
