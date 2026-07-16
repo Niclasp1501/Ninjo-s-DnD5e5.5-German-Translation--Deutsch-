@@ -21,11 +21,8 @@ things than the handbook for the same terms:
 | `Magic Initiate` | `Magiekundiger` | `Eingeweihter der Magie` | SRD 3x; `Magiekundiger` 0x |
 
 The English leftovers all shared one tell: a line break inside the link label -
-`{Origin
-feat}`, `{Epic
-Boon feat}`, `{Fighting
-Style feat}`. The newline broke
-the lookup of whatever translated the rest, so exactly those were skipped.
+`{Origin\nfeat}`, `{Epic\nBoon feat}`, `{Fighting\nStyle feat}`. The newline
+broke the lookup of whatever translated the rest, so exactly those were skipped.
 
 ### Deliberately not changed
 
@@ -42,12 +39,9 @@ the lookup of whatever translated the rest, so exactly those were skipped.
 ### Known limitations
 
 70 link labels in the runtime dictionary are still English, all with the same line
-break defect: `Figurine of
-Wondrous Power` (9x), `Gust of
-Wind` (5x), `Pact of the
-Blade` (3x), `Boon of Dimensional
-Travel` (3x), `Pact of the Tome` (2x), `Book of
-Shadows` (2x). Those are magic items, spells and warlock invocations - a separate
+break defect: `Figurine of\nWondrous Power` (9x), `Gust of\nWind` (5x), `Pact of the
+Blade` (3x), `Boon of Dimensional\nTravel` (3x), `Pact of the Tome` (2x),
+`Book of Shadows` (2x). Those are magic items, spells and warlock invocations - a separate
 family, to be done with the SRD and the glossary rather than folded in here.
 
 ## [14.0.3] - 2026-07-16
