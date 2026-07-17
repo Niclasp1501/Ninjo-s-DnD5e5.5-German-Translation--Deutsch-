@@ -4264,9 +4264,9 @@
           "Template": "Meter"
         },
         "Mile": {
-          "Abbreviation": "km",
-          "Label": "Kilometer",
-          "Template": "Kilometer"
+          "Abbreviation": "mi",
+          "Label": "Meilen",
+          "Template": "Meilen"
         }
       },
       "TIME": {
@@ -4312,28 +4312,28 @@
       "TRAVEL": {
         "Kilometer": {
           "AbbreviationHour": "km/h",
-          "AbbreviationDay": "km/d",
+          "AbbreviationDay": "km/T",
           "Label": "Kilometer"
         },
         "Label": "Reiseeinheit",
         "Mile": {
-          "AbbreviationDay": "km/T",
-          "AbbreviationHour": "km/h",
-          "Label": "Kilometer"
+          "AbbreviationDay": "mi/T",
+          "AbbreviationHour": "mi/h",
+          "Label": "Meilen"
         }
       },
       "VOLUME": {
         "Label": "Volumeneinheiten",
         "CubicFoot": {
-          "Abbreviation": "m³",
+          "Abbreviation": "ft³",
           "Counted": {
             "narrow": {
-              "one": "{number}m³",
-              "other": "{number}m³"
+              "one": "{number}ft³",
+              "other": "{number}ft³"
             },
             "short": {
-              "other": "{number} cu ft",
-              "one": "{number} m³"
+              "other": "{number} ft³",
+              "one": "{number} ft³"
             },
             "long": {
               "one": "{number} Kubikfuß",

@@ -3,6 +3,41 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.7] - 2026-07-17
+
+### Fixed - imperial units were labelled with metric names
+
+A mile is 1.6 km and a cubic foot is 0.028 m³. These keys are **labels**, not
+conversions - they name a value without changing it. So `10 mi` displayed as
+"10 Kilometer" while meaning 16 km, and `mi` and `km` became indistinguishable in
+the interface: `CONFIG.DND5E.movementUnits` showed *Kilometer / km* for both.
+
+| Key | Original | Was | Now |
+| --- | --- | --- | --- |
+| `DISTANCE.Mile.Label` | Miles | `Kilometer` | `Meilen` |
+| `DISTANCE.Mile.Abbreviation` | mi | `km` | `mi` |
+| `DISTANCE.Mile.Template` | Miles | `Kilometer` | `Meilen` |
+| `TRAVEL.Mile.Label` | Miles | `Kilometer` | `Meilen` |
+| `TRAVEL.Mile.AbbreviationDay` | mi/d | `km/T` | `mi/T` |
+| `TRAVEL.Mile.AbbreviationHour` | mph | `km/h` | `mi/h` |
+| `VOLUME.CubicFoot.Abbreviation` | ft³ | `m³` | `ft³` |
+| `VOLUME.CubicFoot.Counted.narrow` | {number}ft³ | `{number}m³` | `{number}ft³` |
+| `VOLUME.CubicFoot.Counted.short` | {number} cu ft | `{number} m³` / untranslated | `{number} ft³` |
+
+The module contradicted itself, which is what settles it: `Foot` is `Fuß` / `ft`,
+`CubicFoot.Label` is `Kubikfuß`, and `DND5E.DistMi` already renders *Miles* as
+`Meilen`. Only these keys pulled the other way.
+
+Converting to metric is what the world setting **Metrische Längeneinheiten
+verwenden** (`dnd5e.metricLengthUnits`) is for - it changes the number, using the
+system's factor of 3.333, which is the SRD's own: 30 feet = 9 m. Renaming the unit
+does not convert anything; it only makes the sheet lie.
+
+Also `TRAVEL.Kilometer.AbbreviationDay` was `km/d` - the *d* is *day*, and the mile
+key already used `/T`. Now `km/T`.
+
+Key count verified unchanged: `languages/de.json` 3584.
+
 ## [14.0.6] - 2026-07-17
 
 ### Fixed - the runtime dictionaries had never been included
