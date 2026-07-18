@@ -3,6 +3,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.11] - 2026-07-18
+
+### Fixed - Incapacitated/Frightened labels: capitalised remnants (SRD)
+
+14.0.10 only caught the lowercase predicate forms; the runtime override still carried the
+capitalised condition labels/names. Found via a terminology audit of this module:
+
+    Incapacitated   "Handlungsunfähig" -> "Kampfunfähig"   50x (mapping entry, effect labels,
+                    "den Zustand Handlungsunfähig", combined labels like "Bezaubert & …")
+    Frightened      "Eingeschüchtert"  -> "Verängstigt"     1x (effect label under Rage)
+
+All in scripts/babele-runtime-overrides.modern.generated.js. The module already used
+"Kampfunfähig" 20x correctly alongside. Verified counts; residual 0.
+
+Still open in this module (noted for a follow-up): "Bedingung"->"Zustand" for ~14 real
+game-state cases; Restrained "Gefesselt" vs "Festgesetzt" (per-case); and the base-monster
+alignment field is not translated at all (declared Babele "alignment" converter is missing).
+
 ## [14.0.10] - 2026-07-18
 
 ### Fixed - Incapacitated: handlungsunfähig → kampfunfähig (in sync with the handbook)
