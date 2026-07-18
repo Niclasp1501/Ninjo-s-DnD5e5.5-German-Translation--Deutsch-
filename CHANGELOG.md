@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.9] - 2026-07-18
+
+### Fixed - Ink Pen name onto the official SRD term (in sync with the handbook)
+
+    Ink Pen   Schreibfeder -> Tintenfüller   (SRD 5.2.1: "Tintenfüller" 6x, "Schreibfeder" 0x)
+
+Item name in the legacy runtime override (3x). The Barbarian's "Inkarnation der Wildheit"
+(incarnation of ferocity) is legitimate German and was left as is. A broader "Bedingung"->
+"Zustand" pass over the Babele translation (56 occurrences, mostly trigger/weather conditions
+that must stay) is deferred to a dedicated audit.
+
 ## [14.0.8] - 2026-07-18
 
 ### Fixed - species-feature names pulled onto the official SRD 5.2.1 forms (in sync with the handbook)

@@ -836,7 +836,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Eine kleine Flasche mit Tinte zum Schreiben auf Papier.</p>"
   },
   "uVm7MiB71QblfnoY": {
-    "name": "Schreibfeder",
+    "name": "Tintenfüller",
     "description": "<p>Ein Werkzeug, das in Verbindung mit Tinte zum Schreiben oder Zeichnen auf einem Blatt Papier verwendet wird.</p>"
   },
   "eQTKbhnpkrtXUfwN": {
@@ -3184,7 +3184,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Eine kleine Flasche mit Tinte zum Schreiben auf Papier.</p>"
   },
   "8Fe9YSSe4ymQq8UM": {
-    "name": "Schreibfeder",
+    "name": "Tintenfüller",
     "description": "<p>Ein Werkzeug, das in Verbindung mit Tinte zum Schreiben oder Zeichnen auf einem Blatt Papier verwendet wird.</p>"
   },
   "vmymwrmE730l3pKh": {
@@ -3360,7 +3360,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Eine kleine Flasche mit Tinte zum Schreiben auf Papier.</p>"
   },
   "ybeLtyIloDvKhDz8": {
-    "name": "Schreibfeder",
+    "name": "Tintenfüller",
     "description": "<p>Ein Werkzeug, das in Verbindung mit Tinte zum Schreiben oder Zeichnen auf einem Blatt Papier verwendet wird.</p>"
   },
   "9c0CHs90xqPw81iP": {
