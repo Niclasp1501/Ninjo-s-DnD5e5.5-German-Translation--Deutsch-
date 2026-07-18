@@ -3,6 +3,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.12] - 2026-07-18
+
+### Fixed - "Bedingung" → "Zustand" for real game states; two Restrained remnants
+
+Only where an actual game-state condition is meant (SRD term "Zustand"). Trigger/weather/
+requirement/licence "Bedingungen" (Control Weather tables, Geas/Imprisonment triggers, activation
+conditions, CC-licence terms — 41 in total) correctly stay.
+
+    Bedingung -> Zustand   15 spots in the modern runtime override, genus-aware (die Bedingung ->
+                           den/der Zustand, die Bedingungen -> die Zustände, der Bedingung [dat.]
+                           -> dem Zustand). Includes "&Reference[condition] Bedingung hat" restruc-
+                           tured to "den Zustand &Reference[condition] hat".
+    Restrained             removed MT glue "&Reference[Restrained]Gefesselt__" -> "&Reference[
+                           Restrained]"; "den Zustand 'Gefesselt'" -> "den Zustand 'Festgesetzt'".
+
+Ambiguous "Gefesselt"/"Bewegungsunfähig" effect labels (Entangle/net/chain flavour) were left —
+"bound" is plausibly intentional there. Verified counts; JS syntax re-checked.
+
 ## [14.0.11] - 2026-07-18
 
 ### Fixed - Incapacitated/Frightened labels: capitalised remnants (SRD)
