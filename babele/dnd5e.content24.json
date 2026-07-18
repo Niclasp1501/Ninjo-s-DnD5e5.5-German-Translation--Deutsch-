@@ -1369,7 +1369,7 @@
     },
     "Incapacitated": {
      "name": "Kampfunfähig",
-     "text": "<p>Solange du den Zustand &amp;Reference[incapacitated] hast, erlebst du die folgenden Effekte.</p><p><em><strong>Inaktiv.</strong></em> Du kannst keine @UUID[.SsIXfzS2ZttwAaKj]{action}, @UUID[.EjR3KL7KLTwjWBS0]{Bonusaktion} oder @UUID[.OhSIWaQ61dOp7S8M]{Reaktion} ausführen.</p><p><em><strong>Keine Konzentration.</strong></em> Deine @UUID[.0a2umg2mJMAzM9Q3]{Konzentration} ist gebrochen.</p><p><em><strong>Sprachlos.</strong></em> Du kannst nicht sprechen.</p><p><em><strong>Überrascht.</strong></em> Wenn du handlungsunfähig bist, wenn du die Initiative würfelst, hast du &amp;Reference[Disadvantage] auf den Wurf.</p>"
+     "text": "<p>Solange du den Zustand &amp;Reference[incapacitated] hast, erlebst du die folgenden Effekte.</p><p><em><strong>Inaktiv.</strong></em> Du kannst keine @UUID[.SsIXfzS2ZttwAaKj]{action}, @UUID[.EjR3KL7KLTwjWBS0]{Bonusaktion} oder @UUID[.OhSIWaQ61dOp7S8M]{Reaktion} ausführen.</p><p><em><strong>Keine Konzentration.</strong></em> Deine @UUID[.0a2umg2mJMAzM9Q3]{Konzentration} ist gebrochen.</p><p><em><strong>Sprachlos.</strong></em> Du kannst nicht sprechen.</p><p><em><strong>Überrascht.</strong></em> Wenn du kampfunfähig bist, wenn du die Initiative würfelst, hast du &amp;Reference[Disadvantage] auf den Wurf.</p>"
     },
     "Invisible": {
      "name": "Unsichtbar",

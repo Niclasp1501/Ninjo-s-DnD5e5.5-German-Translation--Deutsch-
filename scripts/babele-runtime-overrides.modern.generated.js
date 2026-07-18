@@ -4394,7 +4394,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbbrbDangerSens": {
     "name": "Gefahrensinn",
-    "description": "<p>Du entwickelst ein unheimliches Gespür dafür, wann etwas nicht stimmt, was dir einen Vorteil verschafft, wenn du Gefahren ausweichst. Du hast Vorteil auf Geschicklichkeitsrettungswürfe, es sei denn, du hast den Zustand &amp;Reference[Incapacitated].</p><section id=\"secret-gIJELszWrIqRFCxF\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft automatisiert den Vorteil auf Geschicklichkeitsrettungswürfe, wird aber nicht automatisch deaktiviert, wenn du handlungsunfähig bist. Sie kann vorübergehend im Reiter 'Effekte' deaktiviert werden.</p></section>",
+    "description": "<p>Du entwickelst ein unheimliches Gespür dafür, wann etwas nicht stimmt, was dir einen Vorteil verschafft, wenn du Gefahren ausweichst. Du hast Vorteil auf Geschicklichkeitsrettungswürfe, es sei denn, du hast den Zustand &amp;Reference[Incapacitated].</p><section id=\"secret-gIJELszWrIqRFCxF\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft automatisiert den Vorteil auf Geschicklichkeitsrettungswürfe, wird aber nicht automatisch deaktiviert, wenn du kampfunfähig bist. Sie kann vorübergehend im Reiter 'Effekte' deaktiviert werden.</p></section>",
     "effects": {
       "lTOwmIJoE8GLm1oy": "Gefahrensinn"
     }

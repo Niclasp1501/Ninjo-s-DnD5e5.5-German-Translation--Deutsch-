@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.10] - 2026-07-18
+
+### Fixed - Incapacitated: handlungsunfähig → kampfunfähig (in sync with the handbook)
+
+    Incapacitated   handlungsunfähig -> kampfunfähig   (SRD 5.2.1: "Kampfunfähig"; running text
+                    lowercase. "handlungsunfähig" 0x in the SRD.)
+
+Two predicate uses ("wenn du handlungsunfähig bist") in content24 + the modern runtime override.
+
 ## [14.0.9] - 2026-07-18
 
 ### Fixed - Ink Pen name onto the official SRD term (in sync with the handbook)
