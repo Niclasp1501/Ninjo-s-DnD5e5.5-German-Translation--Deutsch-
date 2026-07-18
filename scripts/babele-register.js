@@ -780,6 +780,28 @@ function translateActorHabitatValueRuntime(originalValue, _entryTranslation, dat
   return translated;
 }
 
+// SRD 5.2.1 alignment terms (two-word: first word capitalised, "gut/böse/neutral" lowercase;
+// "gesinnungslos" lowercase). Keys are lowercased for case-insensitive lookup.
+const MONSTER_ALIGNMENT_MAP = {
+  "unaligned": "gesinnungslos",
+  "lawful good": "Rechtschaffen gut",
+  "neutral good": "Neutral gut",
+  "chaotic good": "Chaotisch gut",
+  "lawful neutral": "Rechtschaffen neutral",
+  "neutral": "Neutral",
+  "true neutral": "Neutral",
+  "chaotic neutral": "Chaotisch neutral",
+  "lawful evil": "Rechtschaffen böse",
+  "neutral evil": "Neutral böse",
+  "chaotic evil": "Chaotisch böse"
+};
+
+function convertMonsterAlignmentRuntime(originalValue, _entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  if (typeof originalValue !== "string") return originalValue;
+  return MONSTER_ALIGNMENT_MAP[originalValue.trim().toLowerCase()] ?? originalValue;
+}
+
 function convertItemRangeMetricRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const units = String(data?.system?.range?.units ?? "").toLowerCase();
@@ -1279,6 +1301,7 @@ Hooks.once("init", () => {
     dnd5e55ActorLanguagesDeRuntime: translateActorLanguagesRuntime,
     dnd5e55ActorLanguagesCustomDeRuntime: translateActorLanguagesCustomRuntime,
     dnd5e55ActorTypeCustomDeRuntime: translateActorTypeCustomRuntime,
+    alignment: convertMonsterAlignmentRuntime,
     dnd5e55ActorHabitatCustomDeRuntime: translateActorHabitatCustomRuntime,
     dnd5e55ActorHabitatValueDeRuntime: translateActorHabitatValueRuntime,
     dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,

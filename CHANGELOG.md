@@ -3,6 +3,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.13] - 2026-07-19
+
+### Fixed - base-monster alignment now translated (missing Babele converter)
+
+The monster mapping (babele/dnd5e.monsters.json) declared `{"converter": "alignment"}` for
+system.details.alignment, but no converter of that name was ever registered — so all ~325
+base-system monsters showed English alignment ("Unaligned", "Lawful Evil", …).
+
+Added `convertMonsterAlignmentRuntime` (SRD 5.2.1 map: Unaligned -> gesinnungslos, Lawful ->
+Rechtschaffen, Chaotic -> Chaotisch, Good -> gut, Evil -> böse; two-word first-word-capitalised)
+and registered it under the name `alignment`. Case-insensitive; unknown values pass through
+unchanged; only applies on a German UI. Mirrors the handbook's own creatures (2.2.0.32).
+
+Note: languages/race/environment/source/token converters for the same mapping are likewise
+unregistered — those monster fields remain untranslated (separate follow-up).
+
 ## [14.0.12] - 2026-07-18
 
 ### Fixed - "Bedingung" → "Zustand" for real game states; two Restrained remnants
