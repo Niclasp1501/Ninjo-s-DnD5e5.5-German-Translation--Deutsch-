@@ -3,6 +3,25 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.8] - 2026-07-18
+
+### Fixed - species-feature names pulled onto the official SRD 5.2.1 forms (in sync with the handbook)
+
+The standalone handbook module unified these names to the official SRD 5.2.1 (its v2.2.0.27);
+this brings the Babele translation of the core dnd5e system onto the same terms. Verified in
+the German SRD species sections:
+
+    Otherworldly Presence  Jenseitige Präsenz     -> Außerweltliche Präsenz   (Tiefling)
+    Stone's Endurance      Steinerne Ausdauer     -> Felsenfestigkeit         (Goliath, „(Steinriese)“ stays)
+    Relentless Endurance   Unerbittliche Ausdauer -> Durchhaltevermögen       (Ork; other spots already said so)
+    Powerful Build         Mächtiger Körperbau    -> Kräftiger Körperbau      (Goliath)
+    Drow (flavor/tables)   Dunkelelf(e/en)        -> Drow
+
+Patched in the Babele sources (content24, tables) AND the generated runtime overrides
+(modern + legacy) that babele-register.js loads live, plus one label in languages/de.json.
+Every rule verified with an exact expected count; JSON re-validated. Legitimate prose
+("geschärfte Sinne", "scharfe Sinne") left untouched.
+
 ## [14.0.7] - 2026-07-17
 
 ### Fixed - imperial units were labelled with metric names
