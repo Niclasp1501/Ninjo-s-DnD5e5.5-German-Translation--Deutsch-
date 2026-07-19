@@ -802,6 +802,140 @@ function convertMonsterAlignmentRuntime(originalValue, _entryTranslation, data) 
   return MONSTER_ALIGNMENT_MAP[originalValue.trim().toLowerCase()] ?? originalValue;
 }
 
+// --- Legacy-Monsterpack (dnd5e.monsters): Konverter, die dessen Mapping verlangt ---
+// Die Begriffe stammen aus dem eigenen deutschen Monster-Handbuch bzw. Spielerhandbuch,
+// damit hier kein zweiter, abweichender Wortschatz entsteht.
+const LEGACY_MONSTER_TYPE_MAP = {
+  "aberration": "Aberration",
+  "beast": "Tier",
+  "celestial": "Himmlisches Wesen",
+  "construct": "Konstrukt",
+  "dragon": "Drache",
+  "elemental": "Elementar",
+  "fey": "Feenwesen",
+  "fiend": "Unhold",
+  "giant": "Riese",
+  "humanoid": "Humanoid",
+  "monstrosity": "Monstrosität",
+  "ooze": "Schleim",
+  "plant": "Pflanze",
+  "swarm": "Schwarm",
+  "undead": "Untoter"
+};
+
+const LEGACY_MONSTER_RACE_MAP = {
+  "aasimar": "Aasimar",
+  "dragonborn": "Drachenblütiger",
+  "dwarf": "Zwerg",
+  "hill dwarf": "Hügelzwerg",
+  "mountain dwarf": "Gebirgszwerg",
+  "elf": "Elf",
+  "high elf": "Hochelf",
+  "wood elf": "Waldelf",
+  "drow": "Drow",
+  "gnome": "Gnom",
+  "rock gnome": "Felsgnom",
+  "forest gnome": "Waldgnom",
+  "goliath": "Goliath",
+  "half elf": "Halbelf",
+  "half-elf": "Halbelf",
+  "halfling": "Halbling",
+  "lightfoot halfling": "Leichtfuß-Halbling",
+  "stout halfling": "Robuster Halbling",
+  "half orc": "Halbork",
+  "half-orc": "Halbork",
+  "human": "Mensch",
+  "variant human": "Mensch (Variante)",
+  "orc": "Ork",
+  "tiefling": "Tiefling"
+};
+
+function translateLegacyMonsterTypeText(text) {
+  const key = String(text).trim().toLowerCase();
+  return LEGACY_MONSTER_TYPE_MAP[key] ?? null;
+}
+
+function convertLegacyMonsterTypeRuntime(originalValue, entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (originalValue === null || originalValue === undefined) return originalValue;
+
+  if (typeof originalValue === "string") {
+    if (originalValue.includes(",")) {
+      return originalValue
+        .split(",")
+        .map((part) => translateLegacyMonsterTypeText(part) ?? part.trim())
+        .join(", ");
+    }
+    return translateLegacyMonsterTypeText(originalValue) ?? entryTranslation ?? originalValue;
+  }
+
+  if (typeof originalValue === "object") {
+    const out = foundry.utils.deepClone(originalValue);
+    if (typeof out.value === "string") out.value = translateLegacyMonsterTypeText(out.value) ?? out.value;
+    if (typeof out.subtype === "string" && out.subtype) {
+      out.subtype = translateLegacyMonsterTypeText(out.subtype) ?? translateActorTypeCustomText(out.subtype);
+    }
+    if (typeof out.custom === "string" && out.custom) out.custom = translateActorTypeCustomText(out.custom);
+    return out;
+  }
+
+  return entryTranslation ?? originalValue;
+}
+
+function convertLegacyMonsterRaceRuntime(originalValue, entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (typeof originalValue !== "string" || !originalValue.trim()) return originalValue;
+  return LEGACY_MONSTER_RACE_MAP[originalValue.trim().toLowerCase()] ?? entryTranslation ?? originalValue;
+}
+
+// Sprachen stehen im Legacy-Pack semikolongetrennt; die Token-Übersetzung teilt sich den
+// Wortschatz mit dem modernen Konverter (ACTOR_LANGUAGE_TOKEN_MAP).
+function convertLegacyMonsterLanguagesRuntime(originalValue, entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (typeof originalValue !== "string" || !originalValue.trim()) return originalValue;
+  if (typeof entryTranslation === "string" && entryTranslation.trim()) return entryTranslation;
+  return originalValue
+    .split(";")
+    .map((part) => translateActorLanguageText(part.trim()))
+    .filter((part) => typeof part === "string" && part.length > 0)
+    .join("; ");
+}
+
+function convertLegacyMonsterNameRuntime(originalValue, entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (typeof entryTranslation === "string" && entryTranslation.trim()) return entryTranslation;
+  return typeof originalValue === "string" ? fixMojibakeRuntime(originalValue) : originalValue;
+}
+
+function convertLegacyMonsterEnvironmentRuntime(originalValue, entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (typeof entryTranslation === "string" && entryTranslation.trim()) return entryTranslation;
+  return typeof originalValue === "string" ? fixMojibakeRuntime(originalValue) : originalValue;
+}
+
+function convertLegacyMonsterSourceRuntime(originalValue, entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (originalValue && typeof originalValue === "object") {
+    const out = foundry.utils.deepClone(originalValue);
+    if (typeof out.book === "string" && typeof entryTranslation === "string" && entryTranslation.trim()) {
+      out.book = entryTranslation;
+    }
+    return out;
+  }
+  if (typeof entryTranslation === "string" && entryTranslation.trim()) return entryTranslation;
+  return originalValue;
+}
+
+function convertLegacyMonsterTokenRuntime(originalValue, entryTranslation, data) {
+  if (!isGermanUi()) return originalValue;
+  if (!originalValue || typeof originalValue !== "object") return originalValue;
+  const out = foundry.utils.deepClone(originalValue);
+  if (typeof out.name === "string" && out.name) {
+    out.name = convertLegacyMonsterNameRuntime(out.name, entryTranslation, data);
+  }
+  return out;
+}
+
 function convertItemRangeMetricRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   const units = String(data?.system?.range?.units ?? "").toLowerCase();
@@ -1302,6 +1436,13 @@ Hooks.once("init", () => {
     dnd5e55ActorLanguagesCustomDeRuntime: translateActorLanguagesCustomRuntime,
     dnd5e55ActorTypeCustomDeRuntime: translateActorTypeCustomRuntime,
     alignment: convertMonsterAlignmentRuntime,
+    type: convertLegacyMonsterTypeRuntime,
+    race: convertLegacyMonsterRaceRuntime,
+    languages: convertLegacyMonsterLanguagesRuntime,
+    monstername: convertLegacyMonsterNameRuntime,
+    monsterenvironment: convertLegacyMonsterEnvironmentRuntime,
+    source: convertLegacyMonsterSourceRuntime,
+    monstertoken: convertLegacyMonsterTokenRuntime,
     dnd5e55ActorHabitatCustomDeRuntime: translateActorHabitatCustomRuntime,
     dnd5e55ActorHabitatValueDeRuntime: translateActorHabitatValueRuntime,
     dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,

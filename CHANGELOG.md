@@ -3,6 +3,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.17] - 2026-07-20
+
+### Fixed - 7 Konverter des Legacy-Monsterpacks waren nie registriert
+
+`babele/dnd5e.monsters.json` verlangt in seinem Mapping neun Konverter, registriert waren davon
+nur zwei. Die übrigen sieben — `type`, `race`, `languages`, `monstername`, `monsterenvironment`,
+`source`, `monstertoken` — fehlten in `registerConverters`, sodass Babele diese Felder still
+unübersetzt ließ: Kreaturentyp, Volk, Sprachen, Lebensraum, Quellenangabe und der Token-Name
+blieben englisch, obwohl für alle 325 Einträge deutsche Übersetzungen vorlagen.
+
+Alle sieben ergänzt. Die Begriffe sind **nicht** neu erfunden, sondern aus den eigenen Modulen
+belegt: die Kreaturentypen aus der Ordnerstruktur des deutschen Monster-Handbuchs
+(Aberration, Tier, Himmlisches Wesen, Konstrukt, Drache, Elementar, Feenwesen, Unhold, Riese,
+Humanoid, Monstrosität, Schleim, Pflanze, Schwarm, Untoter), die Völker aus dem Spielerhandbuch
+(Drachenblütiger, Felsgnom, Waldgnom, Waldelf, Drow …). Der Sprachen-Konverter teilt sich den
+Wortschatz mit dem modernen Gegenstück (`ACTOR_LANGUAGE_TOKEN_MAP`), damit nicht zwei
+unterschiedliche deutsche Wörter für dieselbe Sprache entstehen.
+
+Gegenprobe: 42 von den Mappings verlangte Konverter, 42 registriert, 0 Lücken; alle registrierten
+Namen zeigen auf existierende Funktionen; `node --check` für alle drei Skripte grün.
+
 ## [14.0.16] - 2026-07-20
 
 ### Fixed - "Windstoss" → "Windstoß"
