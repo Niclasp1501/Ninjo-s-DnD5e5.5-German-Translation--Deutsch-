@@ -3,6 +3,33 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.14] - 2026-07-19
+
+### Fixed - 350 kaputte Link-Beschriftungen mit Zeilenumbruch-Defekt (\n) repariert
+
+Über die gesamten Live-Wörterbücher (`babele-runtime-overrides.modern.generated.js`,
+`babele/dnd5e.content24.json`, `babele/dnd5e.rules.json`) trugen 350 `@UUID`-Links
+englische Beschriftungen mit einem `\n` mitten im Text (z. B. `{Gust of\nWind}`,
+`{Figurine of\nWondrous Power}`, `{Calligrapher's\nSupplies}`) — ein Alt-Artefakt der
+Wörterbuch-Generierung. In Foundry zerbrach das die Anzeige über zwei Zeilen und
+verhinderte jede Übersetzung.
+
+Auflösung nach Arbeitsregel #1 (Label = was der Link öffnet):
+- **284× über die Ziel-ID** zum deutschen Namen der Zielseite aufgelöst (Windstoß,
+  Magisches Geschoss, Magie bannen, Kalligraphiewerkzeuge, Vollständige Genesung …).
+- **1× über den Babele-Eintragsnamen** (Charaktererschaffung).
+- **65× kuratiert** für editoriale Verweise (35 einzigartige), jeweils am SRD/Glossar
+  belegt: Kapitel N, X-Zauberliste / X-Merkmalstabelle / X-Merkmale (Klassennamen
+  deutsch), Regeln zur Klassenkombination, Regeln zum Zauberwirken, Epische Gabe,
+  Optionen der Schauerlichen Anrufungen, Schule der Hervorrufung, Abenteuerausrüstung …
+
+Rest-`\n`-Labels danach: **0**. Alle drei Wörterbuch-Skripte bestehen `node --check`,
+beide JSON-Dateien sind gültig. Das `\n` beweist auto-generierte (nicht handkuratierte)
+Labels — Ziel-Auflösung ist hier eindeutig korrekt.
+
+Bekannt/ausgenommen: zwei rein deutsche Nicht-Link-Labels mit Umbruch
+(`Emanationsgröße\n(Fuß)` Tabellenkopf, `1d10 ×\n10` Würfelformel) bleiben unangetastet.
+
 ## [14.0.13] - 2026-07-19
 
 ### Fixed - base-monster alignment now translated (missing Babele converter)
