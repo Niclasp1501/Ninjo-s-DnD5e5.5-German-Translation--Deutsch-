@@ -3,6 +3,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.15] - 2026-07-19
+
+### Fixed - 513 englische System-Kompendium-Link-Labels deutsch (Ziel-aufgelöst)
+
+Nach dem Zeilenumbruch-Fix (14.0.14) blieben ~680 `@UUID[Compendium.dnd5e…]`-Links mit
+rein englischer Beschriftung (Fireball, Wish, Longsword, Darkness, Quiver, Scimitar,
+Succubus, Traveler's Clothes, Pact of the Blade …). Jedes Label pro Vorkommen am echten
+Ziel aufgelöst (Arbeitsregel #1: Label = deutscher Name der Zielseite): **513 Vorkommen /
+248 einzigartige Labels** übersetzt. Enthält 7 maschinenübersetzungs-beschädigte
+Reste, denen die Umlaute/ß fehlten (Giftsprhsto → Giftsprühstoß, Grere Wiederherstellung
+→ Vollständige Genesung, Hllische Zurechtweisung → Höllische Zurechtweisung …).
+
+Sicherheit: Eine Agenten-Klassifikation trennte echte englische Namen von Fallen; jede
+Entscheidung gegengeprüft. **Bewusst NICHT angefasst:**
+- **Fragment-Spaltenwerte** (16), deren Ziel ein Container-Item ist: Größen
+  (Tiny/Small/Large/Huge → „… Beseeltes Objekt"), Ioun-Stein-Qualitäten
+  (Agility/Strength/… → „Ionenstein der/des …"), Horn-Materialien (Silver/Brass/Iron)
+  und Elementarjuwelen (Emerald) — sie sind Tabellenspalten, nicht Eigennamen.
+- **Deutsche Grammatik-/Numerus-Varianten** (Pfeilen, Dolche, Wurfspeere) — Numerus/Fall
+  ändern würde den Satz zerstören.
+- **Generische deutsche Wörter / Falschziele** (Tabelle → „Fliegender Teppich", Netz,
+  Bolzen, „leichte Armbrust", hill/frost/stone → „Trank der Riesenstärke").
+
+Verbleibend: 151 ASCII-Labels — überwiegend genau diese bewusst gelassenen. Alle drei
+Wörterbuch-Skripte `node --check` OK, JSON gültig.
+
 ## [14.0.14] - 2026-07-19
 
 ### Fixed - 350 kaputte Link-Beschriftungen mit Zeilenumbruch-Defekt (\n) repariert

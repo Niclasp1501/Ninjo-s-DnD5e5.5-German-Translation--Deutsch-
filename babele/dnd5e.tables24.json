@@ -625,7 +625,7 @@
           "description": "Ein Geysir bricht aus und speit Wasser, Bier, Mayonnaise, Tee, Essig, Wein oder Öl (Wahl des SL) 9 m hoch in die Luft für [[/r 1d4#Geyser duration (minutes)]] Minuten."
         },
         "U8QzXRMnrYX14lFR": {
-          "description": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{Treant} sprießt. Würfle [[/r 1d2#Treant alignment]]{any die}. Bei einem ungeraden Wurf ist der Treant Chaotisch Böse. Bei einem geraden Wurf ist der Treant Chaotisch Gut."
+          "description": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{Baumhirte} sprießt. Würfle [[/r 1d2#Treant alignment]]{any die}. Bei einem ungeraden Wurf ist der Treant Chaotisch Böse. Bei einem geraden Wurf ist der Treant Chaotisch Gut."
         },
         "Y0w1OXdEMe9adHEU": {
           "description": "Eine belebte, aber unbewegliche Steinstatue in deinem Abbild erhebt sich und stößt verbale Drohungen gegen dich aus. Wenn du sie verlässt und andere sich nähern, beschreibt sie dich als den abscheulichsten aller Schurken und weist die Neuankömmlinge an, dich zu finden und anzugreifen. Wenn du dich auf derselben Existenzebene wie die Statue befindest, weiß sie, wo du bist. Die Statue wird nach 24 Stunden unbelebt."
@@ -634,7 +634,7 @@
           "description": "Ein Lagerfeuer mit grünen Flammen springt hervor und brennt für 24 Stunden oder bis es gelöscht wird."
         },
         "2XUZ3pcRsXgZVNUs": {
-          "description": "Drei @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus]{Shrieker Fungi} sprießen."
+          "description": "Drei @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus]{Schreipilz} sprießen."
         },
         "mr4qhK4Tkaotu5Lo": {
           "description": "[[/r 1d4 + 4#Bright-pink toads]] leuchtend rosafarbene @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{toads} kriechen hervor. Wann immer eine Kröte berührt wird, verwandelt sie sich in ein Großes oder kleineres Monster nach Wahl des SL, das gemäß seiner Gesinnung und Natur handelt. Das Monster bleibt 1 Minute lang und verschwindet dann in einer Wolke aus leuchtend rosafarbenem Rauch."
@@ -649,7 +649,7 @@
           "description": "Ein Nest aus [[/r 1d4 + 3#Rainbow-colored eggs]] regenbogenfarbenen Eiern entsteht. Jede Kreatur, die ein Ei isst, macht einen [[/save ability=con dc=20 format=long]]. Bei einem erfolgreichen Rettungswurf erhöht eine Kreatur ihren niedrigsten Attributswert dauerhaft um 1, wobei sie zufällig unter gleich niedrigen Werten wählt. Bei einem misslungenen Rettungswurf erleidet die Kreatur [[/damage 10d6 type=force]] Schaden durch eine interne Explosion."
         },
         "JmBO5EE0A1artKn7": {
-          "description": "Eine Pyramide mit einer 18 m großen quadratischen Basis bricht nach oben hervor. Im Inneren befindet sich eine Grabkammer, die einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{Mummy}, einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{Mummy Lord} oder einen anderen Untoten nach Wahl des SL enthält. Ihr Sarkophag enthält einen Schatz nach Wahl des SL."
+          "description": "Eine Pyramide mit einer 18 m großen quadratischen Basis bricht nach oben hervor. Im Inneren befindet sich eine Grabkammer, die einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{Mumie}, einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{Mumienfürst} oder einen anderen Untoten nach Wahl des SL enthält. Ihr Sarkophag enthält einen Schatz nach Wahl des SL."
         },
         "1Ki8jM8135BzIQcF": {
           "description": "Eine riesige Bohnenstange sprießt und wächst zu einer Höhe nach Wahl des SL. Die Spitze führt dorthin, wohin der SL wählt, zum Beispiel zu einer großartigen Aussicht, einem Wolkenriesenschloss oder einer anderen Existenzebene."
@@ -730,16 +730,16 @@
       "name": "Deck der Illusionen",
       "results": {
         "puCLY8CovjPcAHsR": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmAdultRedDragon]{Adult Red Dragon}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmAdultRedDragon]{Roter Drache (Erwachsen)}"
         },
         "5A0gdVZp1RJ7kHGz": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmArchmage000000]{Archmage}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmArchmage000000]{Erzmagier}"
         },
         "9JjUzTXBg0YpHTV4": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmAssassin000000]{Assassin}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmAssassin000000]{Assassine}"
         },
         "zzuZN7Cma4EawVwM": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBanditCaptain0]{Bandit Captain}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBanditCaptain0]{Banditenhauptmann}"
         },
         "3N6LHyqypWCulkAS": {
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBasilisk000000]{Basilisk}"
@@ -748,52 +748,52 @@
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]{Berserker}"
         },
         "EBzG2RJaf4XU5pY4": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBugbearWarrior]{Bugbear Warrior}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBugbearWarrior]{Bugbear-Krieger}"
         },
         "q9xiE7m5VLdmBR5I": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmCloudGiant0000]{Cloud Giant}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmCloudGiant0000]{Wolkenriese}"
         },
         "rPXPnYkewTkeNGMC": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDruid000000000]{Druid}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDruid000000000]{Druide}"
         },
         "6DiPdPHH1udqptb8": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinyes}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinye}"
         },
         "ql3nntZZ7VK6ihSL": {
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmEttin000000000]{Ettin}"
         },
         "sJmnRnsu66XzyZCi": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmFireGiant00000]{Fire Giant}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmFireGiant00000]{Feuerriese}"
         },
         "Jcvm2ZmszPFY2Okl": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmFrostGiant0000]{Frost Giant}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmFrostGiant0000]{Frostriese}"
         },
         "El0rFvUPS47tTY3D": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGnollWarrior00]{Gnoll Warrior}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGnollWarrior00]{Gnoll-Krieger}"
         },
         "4NCSDc0ymCJ9Wmkf": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGoblinWarrior0]{Goblin Warrior}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGoblinWarrior0]{Goblin-Krieger}"
         },
         "K7uYqee6btAO3aGK": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGuardianNaga00]{Guardian Naga}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmGuardianNaga00]{Wächter-Naga}"
         },
         "0f0O7u5DRrP2h0de": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHillGiant00000]{Hill Giant}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHillGiant00000]{Hügelriese}"
         },
         "XndgbB9hILAd946i": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHobgoblinWarri]{Hobgoblin Warrior}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHobgoblinWarri]{Hobgoblin-Krieger}"
         },
         "lR1wCwCy9IcdW5VY": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Inkubus}"
         },
         "PYc4DmzV4Qf9873j": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIronGolem00000]{Iron Golem}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIronGolem00000]{Eisengolem}"
         },
         "F1rP3n27aAUn7ekR": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmKnight00000000]{Knight}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmKnight00000000]{Ritter}"
         },
         "dkNG6ImYh80SPas0": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmKoboldWarrior0]{Kobold Warrior}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmKoboldWarrior0]{Koboldkrieger}"
         },
         "fXuD1hSPLqt3doLb": {
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmLich0000000000]{Lich}"
@@ -802,25 +802,25 @@
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmMedusa00000000]{Medusa}"
         },
         "YtZUrk6uPcbm36hL": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Night Hag}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Nachthexe}"
         },
         "3Bs89X7k7Ovm5M9O": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmOgre0000000000]{Ogre}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmOgre0000000000]{Oger}"
         },
         "bHClgrl0sIZnTkJk": {
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmOni00000000000]{Oni}"
         },
         "LyKKtLVk4RDgX6el": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmPriest00000000]{Priest}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmPriest00000000]{Priester}"
         },
         "4qkqLeoZZLXiYqfX": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Sukkubus}"
         },
         "3kEeBBTlrfUV6aaF": {
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]{Troll}"
         },
         "9e55MWHgCZPcaSNX": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmWarriorVeteran]{Veteran Warrior}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmWarriorVeteran]{Kriegerveteran}"
         },
         "2bU5kGh4wXfr8OwT": {
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmWyvern00000000]{Wyvern}"
@@ -841,7 +841,7 @@
           "description": "Der Efreet versteht deine Sprachen und gehorcht deinen Befehlen für 1 Stunde, danach kehrt er in die Flasche zurück, und ein neuer Stopfen hält ihn gefangen. Der Stopfen kann für 24 Stunden nicht entfernt werden. Die nächsten zwei Male, wenn die Flasche geöffnet wird, tritt derselbe Effekt auf. Wird die Flasche ein viertes Mal geöffnet, entkommt der Efreet und verschwindet, und die Flasche verliert ihre Magie."
         },
         "o1BN0d6UGKqzFWvU": {
-          "description": "Der Efreet versteht deine Sprachen und kann <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em> einmal für dich wirken. Er verschwindet, wenn er den Wunsch erfüllt oder nach 1 Stunde, und die Flasche verliert ihre Magie."
+          "description": "Der Efreet versteht deine Sprachen und kann <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wunsch}</em> einmal für dich wirken. Er verschwindet, wenn er den Wunsch erfüllt oder nach 1 Stunde, und die Flasche verliert ihre Magie."
         }
       },
       "description": "<p>Beim ersten Öffnen der @UUID[Compendium.dnd5e.equipment24.Item.dmgEfreetiBottle]{Flasche} würfelt die Spielleitung auf der folgenden Tabelle, um zu bestimmen, was passiert.</p>"
@@ -850,22 +850,22 @@
       "name": "Feder-Marken",
       "results": {
         "6ts9sOOmi8asXRRY": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgAnchorQuaalsF]{Anchor (Uncommon)}"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgAnchorQuaalsF]{Federzeichen (Anker)}"
         },
         "woWPcAMvykC0hSse": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBirdQuaalsFea]{Bird (Rare)}"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBirdQuaalsFea]{Federzeichen (Vogel)}"
         },
         "uN2o6j8HCqjDSxin": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgFanQuaalsFeat]{Fan (Uncommon)}"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgFanQuaalsFeat]{Federzeichen (Fächer)}"
         },
         "07qegfRyfFxCLRcu": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSwanBoatQuaal]{Swan boat (Rare)}"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSwanBoatQuaal]{Federzeichen (Schwanenboot)}"
         },
         "PfCCS7GgUYI9rf5G": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgTreeQuaalsFea]{Tree (Uncommon)}"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgTreeQuaalsFea]{Federzeichen (Baum)}"
         },
         "PdtTtSFdX9kIcD1O": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgWhipQuaalsFea]{Whip (Rare)}"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgWhipQuaalsFea]{Federzeichen (Peitsche)}"
         }
       }
     },
@@ -873,7 +873,7 @@
       "name": "Hut der vielen Zauber",
       "results": {
         "SEMlrVV4fhfPfPXM": {
-          "description": "Du wirkst einen zufälligen Zauber, der durch einen Wurf von [[/r 1d10]] bestimmt wird: bei einer 1, @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} (Vergrößerungseffekt); bei einer 2, Vergrößern/Verkleinern (Verkleinerungseffekt); bei einer 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire}; bei einer 4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}; bei einer 5, @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind}; bei einer 6, @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility} (auf dich selbst gewirkt); bei einer 7, @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt}; bei einer 8, @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Phantasmal Force}; bei einer 9, @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph}; bei einer 10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinking Cloud}."
+          "description": "Du wirkst einen zufälligen Zauber, der durch einen Wurf von [[/r 1d10]] bestimmt wird: bei einer 1, @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} (Vergrößerungseffekt); bei einer 2, Vergrößern/Verkleinern (Verkleinerungseffekt); bei einer 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feuer des Feenvolks}; bei einer 4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}; bei einer 5, @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Windstoß}; bei einer 6, @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Unsichtbarkeit} (auf dich selbst gewirkt); bei einer 7, @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitzschlag}; bei einer 8, @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Phantasie-Kraft}; bei einer 9, @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph}; bei einer 10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}."
         },
         "rObwGUYoOwdT0zZB": {
           "description": "Du hast den Zustand &amp;Reference[Stunned] bis zum Ende deines nächsten Zuges, da du glaubst, dass etwas Fantastisches geschehen ist."
@@ -882,7 +882,7 @@
           "description": "Ein harmloser Schmetterlingsschwarm füllt einen 10-Fuß-Würfel innerhalb von 9 m um dich herum. Der Schwarm löst sich nach 1 Minute auf."
         },
         "jcTRxko4j2lpnPag": {
-          "description": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Wirf [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1, ein Fläschchen @UUID[Compendium.dnd5e.equipment24.Item.phbagAcid0000000]{Acid}; bei 2, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagAlchemistsF]{flask of Alchemist’s Fire}; bei 3, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}; bei 4, eine brennende @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Torch}."
+          "description": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Wirf [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1, ein Fläschchen @UUID[Compendium.dnd5e.equipment24.Item.phbagAcid0000000]{Säure}; bei 2, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagAlchemistsF]{flask of Alchemist’s Fire}; bei 3, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Brechstange}; bei 4, eine brennende @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Fackel}."
         },
         "DgIRZyY9ddEJEJl1": {
           "description": "Du leidest unter einem Anfall von „Magiekrankheit“ und hast den Zustand &amp;Reference[Poisoned] für 1 Stunde."
@@ -891,13 +891,13 @@
           "description": "Du hast den Zustand &amp;Reference[Petrified] bis zum Ende deines nächsten Zuges."
         },
         "0L5mg4Y6U9VJlULX": {
-          "description": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Wirf [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1, ein @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}; bei 2, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope} mit einem @UUID[Compendium.dnd5e.equipment24.Item.phbagGrapplingHo]{Grappling Hook}, das an einem Ende befestigt ist; bei 3, ein Beutel @UUID[Compendium.dnd5e.equipment24.Item.phbagCaltrops000]{Caltrops}; bei 4, ein Edelstein im Wert von 50 GM."
+          "description": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Wirf [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1, ein @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dolch}; bei 2, ein @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Seil} mit einem @UUID[Compendium.dnd5e.equipment24.Item.phbagGrapplingHo]{Enterhaken}, das an einem Ende befestigt ist; bei 3, ein Beutel @UUID[Compendium.dnd5e.equipment24.Item.phbagCaltrops000]{Krähenfüsse}; bei 4, ein Edelstein im Wert von 50 GM."
         },
         "YxqEHizhmvT56Mo8": {
-          "description": "Eine Kreatur erscheint in einem unbesetzten Feld so nah wie möglich bei dir. Die Kreatur steht nicht unter deiner Kontrolle und handelt, wie sie es normalerweise tun würde, und sie verschwindet nach 1 Stunde oder wenn sie auf 0 Trefferpunkte fällt. Wirf [[/r 1d4]], um die Kreatur zu bestimmen: bei 1, ein @UUID[Compendium.dnd5e.actors24.Actor.mmCamel000000000]{Camel}; bei 2, ein @UUID[Compendium.dnd5e.actors24.Actor.mmConstrictorSna]{Constrictor Snake}; bei 3, ein @UUID[Compendium.dnd5e.actors24.Actor.mmElephant000000]{Elephant}; bei 4, ein @UUID[Compendium.dnd5e.actors24.Actor.mmMule0000000000]{Mule}."
+          "description": "Eine Kreatur erscheint in einem unbesetzten Feld so nah wie möglich bei dir. Die Kreatur steht nicht unter deiner Kontrolle und handelt, wie sie es normalerweise tun würde, und sie verschwindet nach 1 Stunde oder wenn sie auf 0 Trefferpunkte fällt. Wirf [[/r 1d4]], um die Kreatur zu bestimmen: bei 1, ein @UUID[Compendium.dnd5e.actors24.Actor.mmCamel000000000]{Kamel}; bei 2, ein @UUID[Compendium.dnd5e.actors24.Actor.mmConstrictorSna]{Würgeschlange}; bei 3, ein @UUID[Compendium.dnd5e.actors24.Actor.mmElephant000000]{Elefant}; bei 4, ein @UUID[Compendium.dnd5e.actors24.Actor.mmMule0000000000]{Maultier}."
         },
         "cHmj1WiPWe6BTZns": {
-          "description": "Ein feindlicher @UUID[Compendium.dnd5e.actors24.Actor.PcZ0QjIG6bHpffp9]{Swarm of Bats} fliegt aus dem Hut, besetzt dein Feld und greift dich an."
+          "description": "Ein feindlicher @UUID[Compendium.dnd5e.actors24.Actor.PcZ0QjIG6bHpffp9]{Schwarm von Fledermäusen} fliegt aus dem Hut, besetzt dein Feld und greift dich an."
         },
         "rpeeI4CQhukJnIi8": {
           "description": "Ein vertikales, 3 m Durchmesser großes, zweiseitiges Portal zu einer anderen Existenzebene öffnet sich in einem unbesetzten Feld innerhalb von 9 m um dich herum und bleibt bis zum Ende deines nächsten Zuges offen. Der SL bestimmt, wohin es führt."
@@ -914,13 +914,13 @@
           "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSilverHornOfV]{Silver} (2 Geister); Keine Voraussetzung"
         },
         "vsuTVLSnSFqxIfeV": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBrassHornOfVa]{Brass} (3 Geister); Geübt im Umgang mit allen einfachen Waffen"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBrassHornOfVa]{Messinghorn von Valhalla} (3 Geister); Geübt im Umgang mit allen einfachen Waffen"
         },
         "IawBPbUJ4QPD80hH": {
           "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBronzeHornOfV]{Bronze} (4 Geister); Geübt im Umgang mit allen mittelschweren Rüstungen"
         },
         "znOdbmKsZl4MZ96Q": {
-          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgIronHornOfVal]{Iron} (5 Geister); Geübt im Umgang mit allen Kriegswaffen"
+          "description": "@UUID[Compendium.dnd5e.equipment24.Item.dmgIronHornOfVal]{Eisenhorn von Valhalla} (5 Geister); Geübt im Umgang mit allen Kriegswaffen"
         }
       }
     },
@@ -934,7 +934,7 @@
           "description": "Arcanaloth"
         },
         "zpHwjd1YJow38mZB": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBoneDevil00000]{Bone Devil}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmBoneDevil00000]{Knochenteufel}"
         },
         "XqZtH1EFDI1q7sSR": {
           "description": "Cambion"
@@ -946,13 +946,13 @@
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDeva0000000000]{Deva}"
         },
         "8OiTu5NP3dChxsCJ": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDjinni00000000]{Djinni}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmDjinni00000000]{Dschinni}"
         },
         "lrHMKxSlGjCLPuOZ": {
-          "description": "Efreet@UUID[Compendium.dnd5e.actors24.Actor.mmEfreeti0000000]{Efreeti}"
+          "description": "Efreet@UUID[Compendium.dnd5e.actors24.Actor.mmEfreeti0000000]{Efreet}"
         },
         "kuilN1qOGLjst4Wl": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinyes}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinye}"
         },
         "obCOgvqVL9KjwcpP": {
           "description": "Fomorianer"
@@ -970,10 +970,10 @@
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmHezrou00000000]{Hezrou}"
         },
         "ZOcXFCF42vOPHsbg": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Inkubus}"
         },
         "VqMOV26INyDc0A6O": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmInvisibleStalk]{Invisible Stalker}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmInvisibleStalk]{Unsichtbarer Pircher}"
         },
         "zSaswLLoeZtDpkQv": {
           "description": "Marid"
@@ -988,7 +988,7 @@
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNalfeshnee0000]{Nalfeshnee}"
         },
         "yJ7LJnX0RVRAJO63": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Night Hag}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Nachthexe}"
         },
         "qPWo77BQmkdMAG2C": {
           "description": "Nycaloth"
@@ -1006,7 +1006,7 @@
           "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSolar000000000]{Solar}"
         },
         "ENAbwd5BuTe2MSlN": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Sukkubus}"
         },
         "FNCHezQEOJoukpBO": {
           "description": "Ultroloth"
@@ -1040,22 +1040,22 @@
       "name": "Halskette der Gebetsperlen: Typ",
       "results": {
         "DGX7VRis7cyeKc3W": {
-          "description": "Segenskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Bless}"
+          "description": "Segenskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Segen}"
         },
         "rO4l6hUX4STCaLnr": {
-          "description": "Heilungskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure Wounds} (Stufe-2-Version)"
+          "description": "Heilungskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Wunden heilen} (Stufe-2-Version)"
         },
         "AYyoSc0yTxndZKvK": {
-          "description": "Perle der Gunst: @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration}"
+          "description": "Perle der Gunst: @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Vollständige Genesung}"
         },
         "rLL2e4XBcPzZ10so": {
-          "description": "Perle des Zerschmetterns: @UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Shining Smite}"
+          "description": "Perle des Zerschmetterns: @UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Leuchtender Schlag}"
         },
         "EIMC5cl350CzhRLU": {
-          "description": "Perle der Beschwörung: @UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]{Guardian of Faith}"
+          "description": "Perle der Beschwörung: @UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]{Wächter des Glaubens}"
         },
         "b0h1ljFd14vqLQSO": {
-          "description": "Perle des Windwandels: @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWalk00]{Wind Walk}"
+          "description": "Perle des Windwandels: @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWalk00]{Windwandeln}"
         }
       }
     },
@@ -1148,22 +1148,22 @@
           "description": "Holzleiter (7 Meter lang)"
         },
         "3WMrqVawmzUN3Mup": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Riding Horse} mit einem Reitsattel"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd} mit einem Reitsattel"
         },
         "af27HCC1qAytgiox": {
           "description": "Offene Grube (ein 3 m großer Würfel), die du innerhalb von 3 m von dir auf dem Boden platzieren kannst"
         },
         "9A6nqy0pMCsnIUhN": {
-          "description": "4 @UUID[Compendium.dnd5e.equipment24.Item.phbagPotionofHea]{Potions of Healing}"
+          "description": "4 @UUID[Compendium.dnd5e.equipment24.Item.phbagPotionofHea]{Heiltrank}"
         },
         "7hpFhlBHSmTvOXym": {
-          "description": "@UUID[Compendium.dnd5e.actors24.Actor.phbmobRowboat000]{Rowboat} (3,6 m lang)"
+          "description": "@UUID[Compendium.dnd5e.actors24.Actor.phbmobRowboat000]{Ruderboot} (3,6 m lang)"
         },
         "6cvuu0JdRm1kxS3d": {
           "description": "Zauberspruchrolle, die einen Zauber des 1., 2. oder 3. Grades enthält (nach deiner Wahl)"
         },
         "gElJkfuYLWEebRy1": {
-          "description": "2 @UUID[Compendium.dnd5e.actors24.Actor.mmMastiff0000000]{Mastiffs}"
+          "description": "2 @UUID[Compendium.dnd5e.actors24.Actor.mmMastiff0000000]{Dogge}"
         },
         "0faRhBZEgCVjdAWS": {
           "description": "Fenster (0,6 m mal 1,2 m, bis zu 0,6 m tief), das du auf einer vertikalen Oberfläche platzieren kannst, die du erreichen kannst"
@@ -1191,13 +1191,13 @@
       "name": "Effekte des Wunderstabs",
       "results": {
         "2I7bZrYZgzKuOSf6": {
-          "description": "Du wirkst einen Zauber, der von dem gewählten Punkt ausgeht. Wirf 1W10, um den Zauber zu bestimmen: bei 1–2, @UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}; bei 3–4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire}; bei 5–6, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}; bei 7–8, @UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Slow}; bei 9–10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinking Cloud}."
+          "description": "Du wirkst einen Zauber, der von dem gewählten Punkt ausgeht. Wirf 1W10, um den Zauber zu bestimmen: bei 1–2, @UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Dunkelheit}; bei 3–4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feuer des Feenvolks}; bei 5–6, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}; bei 7–8, @UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Verlangsamen}; bei 9–10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}."
         },
         "MgohXc5L0ALOJ9J1": {
           "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen hast du den Zustand &amp;Reference[Stunned] bis zum Beginn deines nächsten Zuges, da du glaubst, etwas Großartiges sei gerade geschehen."
         },
         "NdZZ0RbaqUnMmpsZ": {
-          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
+          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Windstoß}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
         },
         "AOZqEKwIPSsmYlWH": {
           "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen erleidest du [[/damage 1d6 type=psychic]] Schaden."
@@ -1209,10 +1209,10 @@
           "description": "Eine Wolke aus 600 übergroßen Schmetterlingen füllt einen 18 m hohen, 9 m Radius großen Zylinder, der auf den gewählten Ursprungspunkt zentriert ist. Die Schmetterlinge bleiben 10 Minuten lang, wobei der Wirkungsbereich während dieser Zeit &amp;Reference[Heavily Obscured] ist."
         },
         "tJmickpM5EOCde6g": {
-          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
+          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitzschlag}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
         },
         "mHnstASeHRgEcEam": {
-          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, wird vergrößert, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} auf sie gewirkt. Wenn das Ziel nicht du bist und nicht von diesem Zauber betroffen werden kann, wirst stattdessen du zum Ziel."
+          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, wird vergrößert, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} auf sie gewirkt. Wenn das Ziel nicht du bist und nicht von diesem Zauber betroffen werden kann, wirst stattdessen du zum Ziel."
         },
         "8G9Ky0WzPb8UnJQF": {
           "description": "Eine magisch geformte Kreatur erscheint in einem unbesetzten Feld, so nah wie möglich am gewählten Ursprungspunkt. Die Kreatur steht nicht unter deiner Kontrolle, handelt wie gewöhnlich und verschwindet nach 1 Stunde oder wenn ihre Trefferpunkte auf 0 sinken. Wirf [[/r 1d4]], um zu bestimmen, welche Kreatur erscheint. Bei einer 1 erscheint ein Nashorn; bei einer 2 erscheint ein Elefant; und bei 3–4 erscheint eine Ratte."
@@ -1224,7 +1224,7 @@
           "description": "Ein vom SL gewähltes Objekt verschwindet in die Ätherebene. Das Objekt darf weder getragen noch gehalten werden, muss sich innerhalb von 36 m des gewählten Ursprungspunkts befinden und darf in keiner Dimension größer als 3 m sein. Wenn sich keine solchen Objekte in Reichweite befinden, geschieht nichts."
         },
         "caPlRb51hUbh7kir": {
-          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen schrumpfst du, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} auf dich selbst gewirkt, und bleibst 1 Minute lang in diesem Zustand."
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen schrumpfst du, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} auf dich selbst gewirkt, und bleibst 1 Minute lang in diesem Zustand."
         },
         "Fhw5JKvvrZgJOOz7": {
           "description": "Blätter wachsen aus der Kreatur, die dem gewählten Ursprungspunkt am nächsten ist. Sofern sie nicht abgezupft werden, werden die Blätter nach 24 Stunden braun und fallen ab."
@@ -1233,7 +1233,7 @@
           "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen breitet sich ein Ausbruch von farbenfrohem, schimmerndem Licht in einer 9 m großen Emanation von dir aus. Jede Kreatur in dem Bereich muss einen [[/save con 15]] Rettungswurf bestehen oder erhält den Zustand &amp;Reference[Blinded] für 1 Minute. Eine Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge und beendet den Effekt bei Erfolg für sich selbst."
         },
         "AnmrUluiTuPEDidg": {
-          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen wirkst du @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility} auf dich selbst."
+          "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen wirkst du @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Unsichtbarkeit} auf dich selbst."
         },
         "A5UAwk4VoCaxFJ5F": {
           "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen schießt ein Strom von [[/r 1d4*10 #Gems]] Edelsteinen, jeder im Wert von 1 GM, aus der Spitze des Zauberstabs in einer 9 m langen und 1,5 m breiten Linie in Richtung des gewählten Ursprungspunkts. Jeder Edelstein verursacht [[/damage 1 type=bludgeoning]] Schaden, und der Gesamtschaden der Edelsteine wird gleichmäßig auf alle Kreaturen in der Linie aufgeteilt."
@@ -1242,7 +1242,7 @@
           "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph} auf die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist. Wirf [[/r 1d4]], um die neue Form des Ziels zu bestimmen. Bei einer 1 ist die neue Form ein Schwarzbär; bei einer 2 ist die neue Form eine Riesenwespe; bei einer 3–4 ist die neue Form ein Frosch."
         },
         "4cFS9yfJW2gakbcA": {
-          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, muss einen [[/save con 15]] Rettungswurf ablegen. Bei einem misslungenen Rettungswurf erhält die Kreatur den Zustand &amp;Reference[Restrained] und beginnt, zu Stein zu werden. Solange sie auf diese Weise festgesetzt ist, wiederholt die Kreatur den Rettungswurf am Ende ihres nächsten Zuges. Bei einem erfolgreichen Rettungswurf endet der Effekt. Bei einem misslungenen Rettungswurf erhält die Kreatur stattdessen den Zustand &amp;Reference[Petrified] anstelle des Zustands Festgesetzt. Die Versteinerung dauert an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration} oder ähnliche Magie befreit wird."
+          "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, muss einen [[/save con 15]] Rettungswurf ablegen. Bei einem misslungenen Rettungswurf erhält die Kreatur den Zustand &amp;Reference[Restrained] und beginnt, zu Stein zu werden. Solange sie auf diese Weise festgesetzt ist, wiederholt die Kreatur den Rettungswurf am Ende ihres nächsten Zuges. Bei einem erfolgreichen Rettungswurf endet der Effekt. Bei einem misslungenen Rettungswurf erhält die Kreatur stattdessen den Zustand &amp;Reference[Petrified] anstelle des Zustands Festgesetzt. Die Versteinerung dauert an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Vollständige Genesung} oder ähnliche Magie befreit wird."
         }
       },
       "description": "<p>Eine Würfeltabelle mit Effekten für den @UUID[Compendium.dnd5e.equipment24.Item.dmgWandOfWonder0]{Zauberstab der Wunder}, die diese Effekte soweit möglich als Aktivitäten umsetzt.</p>"
