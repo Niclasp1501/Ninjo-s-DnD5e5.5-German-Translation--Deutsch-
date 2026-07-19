@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.16] - 2026-07-20
+
+### Fixed - "Windstoss" → "Windstoß"
+
+Der Zauber *Gust of Wind* (`FSMy6VAjDnXY9vWz`) stand hier in der Schweizer Schreibung ohne ß --
+sowohl als Zaubername in den Runtime-Overrides als auch in fünf Link-Labels der Regeln-Journale.
+Offiziell (und im Glossar als Hauptform hinterlegt) ist **Windstoß**; das Spielerhandbuch schreibt
+es an allen 10 Stellen bereits so.
+
+6 Vorkommen korrigiert (`babele/dnd5e.rules.json` 4×, `scripts/babele-runtime-overrides.legacy.generated.js` 2×).
+Gleicher Begriff parallel im deutschen Monster-Manual (3 Stellen) und im Glossar-`quickLookup`
+nachgezogen, damit alle drei Orte denselben Begriff führen.
+
 ## [14.0.15] - 2026-07-19
 
 ### Fixed - 513 englische System-Kompendium-Link-Labels deutsch (Ziel-aufgelöst)
