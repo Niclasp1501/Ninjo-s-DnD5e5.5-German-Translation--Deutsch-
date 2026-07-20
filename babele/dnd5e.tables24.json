@@ -570,10 +570,10 @@
           "description": "Zufälliger Ort auf einer Inneren Ebene, bestimmt durch einen Wurf von [[/r 1d6]]: bei 1 , die Ebene der Luft; bei 2 , die Ebene der Erde; bei 3 , die Ebene des Feuers; bei 4 , die Ebene des Wassers; bei 5 , die Feenwildnis; bei 6 , die Schattenfeste"
         },
         "k7P9te8NuEctUdxE": {
-          "description": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei 1 , Arborea; bei 2 , Arkadien; bei 3 , die Bestienlande; bei 4 , Bytopia; bei 5 , Elysium; bei 6 , Mechanus; bei 7 , der Berg Celestia; bei 8 , Ysgard"
+          "description": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei 1 , Arborea; bei 2 , Arcadia; bei 3 , die Bestienlande; bei 4 , Bytopia; bei 5 , Elysium; bei 6 , Mechanus; bei 7 , der Berg Celestia; bei 8 , Ysgard"
         },
         "iMtDiN65JNwyr8oG": {
-          "description": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei 1 , dem Abyss; bei 2 , Acheron; bei 3 , Carceri; bei 4 , Gehenna; bei 5 , Hades; bei 6 , Limbo; bei 7 , den Neun Höllen; bei 8 , Pandemonium"
+          "description": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei 1 , dem Abyss; bei 2 , Acheron; bei 3 , Carceri; bei 4 , Gehenna; bei 5 , Hades; bei 6 , Limbus; bei 7 , den Neun Höllen; bei 8 , Pandämonium"
         },
         "nF1GNDH2Vmrg1HM0": {
           "description": "Zufälliger Ort auf der Astralebene"
@@ -675,10 +675,10 @@
           "description": "Arborea"
         },
         "36NsH0b08cWRJ5S3": {
-          "description": "Limbo"
+          "description": "Limbus"
         },
         "hMMK8Z1s2frHXEYN": {
-          "description": "Arkadien"
+          "description": "Arcadia"
         },
         "q7ketUvAJCoLBkHc": {
           "description": "Mechanus"

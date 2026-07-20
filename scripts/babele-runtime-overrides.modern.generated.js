@@ -104,8 +104,8 @@ export const MODERN_OVERRIDES_BY_ID = {
       "OZ1lU2EWqnzeBQqm": "Acheron",
       "vXez4BUgXFHAayCM": "Hades",
       "jCH8BtBFKvOxQKe5": "Arborea",
-      "36NsH0b08cWRJ5S3": "Limbo",
-      "hMMK8Z1s2frHXEYN": "Arkadien",
+      "36NsH0b08cWRJ5S3": "Limbus",
+      "hMMK8Z1s2frHXEYN": "Arcadia",
       "q7ketUvAJCoLBkHc": "Mechanus",
       "vctndF7xPiru2vGe": "Bestienlande",
       "dmCLeLfvwj5jLDnN": "Berg Celestia",
@@ -155,8 +155,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "tableResults": {
       "m2UKvzZf0ZibczrG": "Zufälliger Ort auf der von dir benannten Ebene",
       "vH6t70BzwrR0dfnM": "Zufälliger Ort auf einer Inneren Ebene, bestimmt durch einen Wurf von [[/r 1d6]]: bei einer 1, die Ebene der Luft; bei einer 2, die Ebene der Erde; bei einer 3, die Ebene des Feuers; bei einer 4, die Ebene des Wassers; bei einer 5, die Feenwildnis; bei einer 6, die Schattenfell",
-      "k7P9te8NuEctUdxE": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, Arborea; bei einer 2, Arkadien; bei einer 3, die Bestienlande; bei einer 4, Bytopia; bei einer 5, Elysium; bei einer 6, Mechanus; bei einer 7, Berg Celestia; bei einer 8, Ysgard",
-      "iMtDiN65JNwyr8oG": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, der Abyss; bei einer 2, Acheron; bei einer 3, Carceri; bei einer 4, Gehenna; bei einer 5, Hades; bei einer 6, Limbo; bei einer 7, die Neun Höllen; bei einer 8, Pandämonium",
+      "k7P9te8NuEctUdxE": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, Arborea; bei einer 2, Arcadia; bei einer 3, die Bestienlande; bei einer 4, Bytopia; bei einer 5, Elysium; bei einer 6, Mechanus; bei einer 7, Berg Celestia; bei einer 8, Ysgard",
+      "iMtDiN65JNwyr8oG": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, der Abyss; bei einer 2, Acheron; bei einer 3, Carceri; bei einer 4, Gehenna; bei einer 5, Hades; bei einer 6, Limbus; bei einer 7, die Neun Höllen; bei einer 8, Pandämonium",
       "nF1GNDH2Vmrg1HM0": "Zufälliger Ort auf der Astralebene"
     }
   },
@@ -2750,7 +2750,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplDispelEvil": {
     "name": "Böses und Gutes bannen",
-    "description": "<p>Für die Wirkungsdauer haben Himmlische, Elementare, Feen, Unholde und Untote\nNachteil auf Angriffswürfe gegen dich. Du kannst den Zauber vorzeitig beenden,\nindem du eine der folgenden Spezialfunktionen nutzt.</p><p><strong>Bann\nbrechen.</strong> Als Magische Aktion berührst du eine Kreatur, die\nbesessen ist oder den Zustand &amp;Reference[Charmed] oder\n&amp;Reference[Frightened] von einer oder mehreren Kreaturen der\noben genannten Typen hat. Das Ziel ist nicht länger besessen, bezaubert oder verängstigt von\nsolchen Kreaturen.</p><p><strong>Entlassung.</strong> Als Magische Aktion wählst du\neine Kreatur, die du innerhalb von 1,5 m um dich herum sehen kannst und die einen der\noben genannten Kreaturentypen hat. Das Ziel muss einen Rettungswurf auf Charisma bestehen\noder auf seine Heimatebene zurückgeschickt werden, falls es sich nicht bereits dort befindet. Wenn sie\nnicht auf ihrer Heimatebene sind, werden Untote ins Schattenfell und Feen ins Feenwild\ngeschickt.</p>",
+    "description": "<p>Für die Wirkungsdauer haben Himmlische, Elementare, Feen, Unholde und Untote\nNachteil auf Angriffswürfe gegen dich. Du kannst den Zauber vorzeitig beenden,\nindem du eine der folgenden Spezialfunktionen nutzt.</p><p><strong>Bann\nbrechen.</strong> Als Magische Aktion berührst du eine Kreatur, die\nbesessen ist oder den Zustand &amp;Reference[Charmed] oder\n&amp;Reference[Frightened] von einer oder mehreren Kreaturen der\noben genannten Typen hat. Das Ziel ist nicht länger besessen, bezaubert oder verängstigt von\nsolchen Kreaturen.</p><p><strong>Entlassung.</strong> Als Magische Aktion wählst du\neine Kreatur, die du innerhalb von 1,5 m um dich herum sehen kannst und die einen der\noben genannten Kreaturentypen hat. Das Ziel muss einen Rettungswurf auf Charisma bestehen\noder auf seine Heimatebene zurückgeschickt werden, falls es sich nicht bereits dort befindet. Wenn sie\nnicht auf ihrer Heimatebene sind, werden Untote ins Schattenfell und Feen in die Feenwildnis\ngeschickt.</p>",
     "activities": {
       "Break Enchantment": "Bann brechen",
       "Cast": "Wirken",
@@ -7575,7 +7575,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Einhorn",
     "description": "<p>Wenn das [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann es stattdessen wählen, erfolgreich zu sein.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.1.subtype": "Feywild"
+      "system.details.habitat.value.1.subtype": "Feenwildnis"
     }
   },
   "phbostCelestial0": {
@@ -8144,7 +8144,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Blinkhund",
     "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} teleportiert sich bis zu [[lookup @range.value activity=dnoRMdFzhUUku26D]] Fuß weit an einen unbesetzten Ort, den er sehen kann.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.1.subtype": "Feywild",
+      "system.details.habitat.value.1.subtype": "Feenwildnis",
       "system.traits.languages.custom": "Blinkhund; versteht Elfisch und Sylvan kann sie aber nicht sprechen"
     }
   },
@@ -8157,7 +8157,7 @@ export const MODERN_OVERRIDES_BY_ID = {
       }
     },
     "scalarStrings": {
-      "system.details.habitat.value.2.subtype": "Feywild"
+      "system.details.habitat.value.2.subtype": "Feenwildnis"
     }
   },
   "mmBugbearWarrior": {
@@ -8169,14 +8169,14 @@ export const MODERN_OVERRIDES_BY_ID = {
       }
     },
     "scalarStrings": {
-      "system.details.habitat.value.2.subtype": "Feywild"
+      "system.details.habitat.value.2.subtype": "Feenwildnis"
     }
   },
   "mmCentaurTrooper": {
     "name": "Zentauren-Soldat",
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei Angriffe aus, wobei er\n    [[/item .XMKFiS5XUEC4fLCr]] oder [[/item .4C5jy0VkmoTdrbTC]] in beliebiger\n    Kombination verwendet.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.2.subtype": "Feywild"
+      "system.details.habitat.value.2.subtype": "Feenwildnis"
     }
   },
   "mmDryad000000000": {
@@ -8235,7 +8235,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Satyr",
     "description": "<p>Der [[lookup @name lowercase]]{monster} hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.1.subtype": "Feywild"
+      "system.details.habitat.value.1.subtype": "Feenwildnis"
     }
   },
   "mmSeaHag00000000": {
@@ -8247,14 +8247,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>",
     "materials": "eine Wimper in Gummi arabicum",
     "scalarStrings": {
-      "system.details.habitat.value.1.subtype": "Feywild"
+      "system.details.habitat.value.1.subtype": "Feenwildnis"
     }
   },
   "mmWorg0000000000": {
     "name": "Worg",
     "description": "<p>[[/attack extended]]. [[/damage average extended]], und der nächste Angriffswurf, der gegen das Ziel vor Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster} gemacht wird, hat Vorteil.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.3.subtype": "Feywild",
+      "system.details.habitat.value.3.subtype": "Feenwildnis",
       "system.traits.languages.custom": "Worg"
     }
   },
@@ -9647,7 +9647,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Minotaurusskelett",
     "description": "<p>[[/attack extended]]. [[/damage extended average]]. Wenn das Ziel eine [[lookup @target.affects.special activity=iBenqFiBu40bUxkH]] Kreatur ist und das [[lookup @name lowercase]]{monster} sich unmittelbar vor dem Treffer 20+ Fuß geradlinig darauf zubewegt hat, erleidet das Ziel zusätzlichen [[/damage 2d8 piercing average]] Schaden und erhält den Zustand &amp;Reference[Prone apply=false].</p>",
     "scalarStrings": {
-      "system.details.habitat.value.0.subtype": "Shadowfell",
+      "system.details.habitat.value.0.subtype": "Schattensaum",
       "system.traits.languages.custom": "versteht Abyssisch kann nicht sprechen"
     }
   },
@@ -9669,7 +9669,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Ogerzombie",
     "description": "<p class=\"feature\">Wenn Schaden den [[lookup @name lowercase]]{monster} auf 0 Trefferpunkte reduziert, muss er einen Konstitutions-Rettungswurf (SG 5 plus erlittener Schaden) ablegen, es sei denn, der Schaden ist gleißend oder stammt von einem kritischen Treffer. Bei einem erfolgreichen Rettungswurf fällt der [[lookup @name lowercase]]{monster} stattdessen auf 1 Trefferpunkt.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.0.subtype": "Shadowfell",
+      "system.details.habitat.value.0.subtype": "Schattensaum",
       "system.traits.languages.custom": "versteht Gemeinsprache und Giant kann nicht sprechen"
     }
   },
@@ -9677,14 +9677,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Schatten",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich durch einen Raum bewegen, der nur 2,5 cm breit ist, ohne dafür zusätzliche Bewegung aufzuwenden.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.0.subtype": "Shadowfell"
+      "system.details.habitat.value.0.subtype": "Schattensaum"
     }
   },
   "mmSkeleton000000": {
     "name": "Skelett",
     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
     "scalarStrings": {
-      "system.details.habitat.value.0.subtype": "Shadowfell",
+      "system.details.habitat.value.0.subtype": "Schattensaum",
       "system.traits.languages.custom": "versteht Gemeinsprache plus eine weitere Sprache kann nicht sprechen"
     }
   },
@@ -9713,14 +9713,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Kriegspferdskelett",
     "description": "<p>[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Große oder kleinere Kreatur ist und das Skelett sich unmittelbar vor dem Treffer 20+ Fuß geradlinig auf es zubewegt hat, erhält das Ziel den Zustand &amp;Reference[Prone apply=false].</p>",
     "scalarStrings": {
-      "system.details.habitat.value.0.subtype": "Shadowfell"
+      "system.details.habitat.value.0.subtype": "Schattensaum"
     }
   },
   "mmWight000000000": {
     "name": "Wicht",
     "description": "<p>Im Sonnenlicht hat der [[lookup @name lowercase]]{monster} Nachteil auf Attributswürfe und Angriffswürfe.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.1.subtype": "Shadowfell",
+      "system.details.habitat.value.1.subtype": "Schattensaum",
       "system.traits.languages.custom": "Gemeinsprache plus eine weitere Sprache"
     }
   },
@@ -9735,7 +9735,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Geist",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich durch andere Kreaturen und Objekte bewegen, als wären sie &amp;Reference[Difficult\n    Terrain]. Er erleidet [[/damage 1d10 average type=force]] Schaden, wenn er seinen Zug in einem Objekt beendet.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.0.subtype": "Shadowfell",
+      "system.details.habitat.value.0.subtype": "Schattensaum",
       "system.traits.languages.custom": "Gemeinsprache plus zwei weitere Sprachen"
     }
   },
@@ -9743,7 +9743,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Zombie",
     "description": "<p class=\"feature\">Wenn Schaden den [[lookup @name\n    lowercase]]{monster} auf 0 Trefferpunkte reduziert, macht es einen Konstitutionsrettungswurf (SG 5 plus erlittener Schaden), es sei denn, der Schaden ist gleißend oder stammt von einem Kritischen Treffer. Bei einem erfolgreichen Rettungswurf fällt der [[lookup @name\n    lowercase]]{monster} stattdessen auf 1 Trefferpunkt.</p>",
     "scalarStrings": {
-      "system.details.habitat.value.0.subtype": "Shadowfell",
+      "system.details.habitat.value.0.subtype": "Schattensaum",
       "system.traits.languages.custom": "versteht Gemeinsprache plus eine weitere Sprache kann nicht sprechen"
     }
   },
