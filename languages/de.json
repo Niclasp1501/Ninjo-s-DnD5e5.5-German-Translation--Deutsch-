@@ -987,7 +987,7 @@
       "Message": "{name} wurde {award} verliehen.",
       "NoDestinations": "Kein Ziel verfügbar",
       "NoPrimaryParty": "Keine primäre Gruppe festgelegt, zeigt stattdessen die den Spielern zugewiesenen Charaktere.",
-      "NotGMError": "Der /award Befehl ist nur für SL verfügbar.",
+      "NotGMError": "Der /award Befehl ist nur für DM verfügbar.",
       "UnrecognizedWarning": "Kann {commands} nicht parsen. Der Befehl /award sollte mit XP und Währungen verwendet werden wie '/award 10gp 50xp'"
     },
     "Background": "Hintergrund",
@@ -1260,7 +1260,7 @@
     "Concentration": "Konzentration",
     "ConcentrationAbbr": "K",
     "ConcentrationBreak": "Breche Konzentration",
-    "ConcentrationBreakWarning": "Das Brechen der Konzentration auf einen Effekt, der bei anderen Kreaturen aktiv ist, erfordert die Anwesenheit eines aktiven SL.",
+    "ConcentrationBreakWarning": "Das Brechen der Konzentration auf einen Effekt, der bei anderen Kreaturen aktiv ist, erfordert die Anwesenheit eines aktiven DM.",
     "ConcentrationBonus": "Konzentrationsbonus",
     "ConcentrationDuration": "Konzentration, bis zu {duration}",
     "ConcentratingOn": "Du hältst die Konzentration auf die Effekte von '{Name}' {Typ} aufrecht.",
@@ -3858,7 +3858,7 @@
         "Year": "Jahr"
       },
       "Configuration": {
-        "DisabledMessage": "Der SL muss die Kalender-Oberfläche aktivieren, bevor sie von Spielern verwendet werden kann.",
+        "DisabledMessage": "Der DM muss die Kalender-Oberfläche aktivieren, bevor sie von Spielern verwendet werden kann.",
         "Hint": "Steuert, ob das Kalender-HUD angezeigt wird und wie es funktioniert.",
         "Label": "Kalender konfigurieren",
         "Name": "Kalender",
@@ -5854,7 +5854,7 @@
           "Hint": "Verwende den Initiativwert einer Kreatur (10 + Bonus) anstatt für die Initiative zu würfeln.",
           "All": "Initiativwert für alle verwenden",
           "None": "Immer für die Initiative würfeln",
-          "NPCs": "Verwende Wert für SL-NSCs"
+          "NPCs": "Verwende Wert für DM-NSCs"
         }
       },
       "CRITICAL": {
@@ -5985,7 +5985,7 @@
           "Player": "Nur von anderen Spielern anzeigen"
         },
         "ItemDescriptions": {
-          "Hint": "Verstecke die Beschreibungen von NSC-Gegenständen vor Spielern, wenn sie vom SL in den Chat gepostet werden. Dies verbirgt nur Beschreibungen für Gegenstände, die keine Chat-Beschreibung festgelegt haben.",
+          "Hint": "Verstecke die Beschreibungen von NSC-Gegenständen vor Spielern, wenn sie vom DM in den Chat gepostet werden. Dies verbirgt nur Beschreibungen für Gegenstände, die keine Chat-Beschreibung festgelegt haben.",
           "Name": "NSC-Beschreibungen verbergen"
         }
       }

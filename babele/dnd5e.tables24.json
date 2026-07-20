@@ -622,7 +622,7 @@
           "description": "[[/r 5d4#Toadstools]] Giftpilze sprießen. Wenn eine Kreatur einen Giftpilz isst, würfle [[/r 1d2#Toadstool side-effect]]{any die}. Bei einem ungeraden Wurf muss der Esser einen [[/save ability=con dc=15 format=long]] bestehen oder erleidet [[/damage 5d6 type=poison]] Schaden und hat den Zustand &amp;Reference[Poisoned] für 1 Stunde. Bei einem geraden Wurf erhält der Esser [[/healing 5d6 type=temphp]] für 1 Stunde."
         },
         "Jhz5rfNBanKmcBVS": {
-          "description": "Ein Geysir bricht aus und speit Wasser, Bier, Mayonnaise, Tee, Essig, Wein oder Öl (Wahl des SL) 9 m hoch in die Luft für [[/r 1d4#Geyser duration (minutes)]] Minuten."
+          "description": "Ein Geysir bricht aus und speit Wasser, Bier, Mayonnaise, Tee, Essig, Wein oder Öl (Wahl des DM) 9 m hoch in die Luft für [[/r 1d4#Geyser duration (minutes)]] Minuten."
         },
         "U8QzXRMnrYX14lFR": {
           "description": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{Baumhirte} sprießt. Würfle [[/r 1d2#Treant alignment]]{any die}. Bei einem ungeraden Wurf ist der Treant Chaotisch Böse. Bei einem geraden Wurf ist der Treant Chaotisch Gut."
@@ -637,7 +637,7 @@
           "description": "Drei @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus]{Schreipilz} sprießen."
         },
         "mr4qhK4Tkaotu5Lo": {
-          "description": "[[/r 1d4 + 4#Bright-pink toads]] leuchtend rosafarbene @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{toads} kriechen hervor. Wann immer eine Kröte berührt wird, verwandelt sie sich in ein Großes oder kleineres Monster nach Wahl des SL, das gemäß seiner Gesinnung und Natur handelt. Das Monster bleibt 1 Minute lang und verschwindet dann in einer Wolke aus leuchtend rosafarbenem Rauch."
+          "description": "[[/r 1d4 + 4#Bright-pink toads]] leuchtend rosafarbene @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{toads} kriechen hervor. Wann immer eine Kröte berührt wird, verwandelt sie sich in ein Großes oder kleineres Monster nach Wahl des DM, das gemäß seiner Gesinnung und Natur handelt. Das Monster bleibt 1 Minute lang und verschwindet dann in einer Wolke aus leuchtend rosafarbenem Rauch."
         },
         "udTEwZi4QrPNpiRQ": {
           "description": "Ein hungriger @UUID[Compendium.dnd5e.actors24.Actor.mmBulette0000000]{Bulette} gräbt sich nach oben und greift an."
@@ -649,10 +649,10 @@
           "description": "Ein Nest aus [[/r 1d4 + 3#Rainbow-colored eggs]] regenbogenfarbenen Eiern entsteht. Jede Kreatur, die ein Ei isst, macht einen [[/save ability=con dc=20 format=long]]. Bei einem erfolgreichen Rettungswurf erhöht eine Kreatur ihren niedrigsten Attributswert dauerhaft um 1, wobei sie zufällig unter gleich niedrigen Werten wählt. Bei einem misslungenen Rettungswurf erleidet die Kreatur [[/damage 10d6 type=force]] Schaden durch eine interne Explosion."
         },
         "JmBO5EE0A1artKn7": {
-          "description": "Eine Pyramide mit einer 18 m großen quadratischen Basis bricht nach oben hervor. Im Inneren befindet sich eine Grabkammer, die einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{Mumie}, einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{Mumienfürst} oder einen anderen Untoten nach Wahl des SL enthält. Ihr Sarkophag enthält einen Schatz nach Wahl des SL."
+          "description": "Eine Pyramide mit einer 18 m großen quadratischen Basis bricht nach oben hervor. Im Inneren befindet sich eine Grabkammer, die einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{Mumie}, einen @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{Mumienfürst} oder einen anderen Untoten nach Wahl des DM enthält. Ihr Sarkophag enthält einen Schatz nach Wahl des DM."
         },
         "1Ki8jM8135BzIQcF": {
-          "description": "Eine riesige Bohnenstange sprießt und wächst zu einer Höhe nach Wahl des SL. Die Spitze führt dorthin, wohin der SL wählt, zum Beispiel zu einer großartigen Aussicht, einem Wolkenriesenschloss oder einer anderen Existenzebene."
+          "description": "Eine riesige Bohnenstange sprießt und wächst zu einer Höhe nach Wahl des DM. Die Spitze führt dorthin, wohin der DM wählt, zum Beispiel zu einer großartigen Aussicht, einem Wolkenriesenschloss oder einer anderen Existenzebene."
         }
       }
     },
@@ -900,10 +900,10 @@
           "description": "Ein feindlicher @UUID[Compendium.dnd5e.actors24.Actor.PcZ0QjIG6bHpffp9]{Schwarm von Fledermäusen} fliegt aus dem Hut, besetzt dein Feld und greift dich an."
         },
         "rpeeI4CQhukJnIi8": {
-          "description": "Ein vertikales, 3 m Durchmesser großes, zweiseitiges Portal zu einer anderen Existenzebene öffnet sich in einem unbesetzten Feld innerhalb von 9 m um dich herum und bleibt bis zum Ende deines nächsten Zuges offen. Der SL bestimmt, wohin es führt."
+          "description": "Ein vertikales, 3 m Durchmesser großes, zweiseitiges Portal zu einer anderen Existenzebene öffnet sich in einem unbesetzten Feld innerhalb von 9 m um dich herum und bleibt bis zum Ende deines nächsten Zuges offen. Der DM bestimmt, wohin es führt."
         },
         "mJeNkGaZKY4xkHCV": {
-          "description": "Du ziehst einen magischen Gegenstand aus dem Hut. Wirf [[/r 1d6]], um die Seltenheit des Gegenstands zu bestimmen: bei 1–3, Gewöhnlich; bei 4–5, Ungewöhnlich; bei 6, Selten. Der SL wählt den Gegenstand aus, der nach 1 Stunde verschwindet, falls er nicht vorher verbraucht oder zerstört wird."
+          "description": "Du ziehst einen magischen Gegenstand aus dem Hut. Wirf [[/r 1d6]], um die Seltenheit des Gegenstands zu bestimmen: bei 1–3, Gewöhnlich; bei 4–5, Ungewöhnlich; bei 6, Selten. Der DM wählt den Gegenstand aus, der nach 1 Stunde verschwindet, falls er nicht vorher verbraucht oder zerstört wird."
         }
       }
     },
@@ -1221,7 +1221,7 @@
           "description": "Gras bedeckt einen 18 m Radius großen Kreis des Bodens, dessen Mittelpunkt so nah wie möglich am gewählten Ursprungspunkt liegt. Bereits vorhandenes Gras wächst auf das Zehnfache seiner normalen Größe und bleibt 1 Minute lang überwuchert."
         },
         "SEbtgSxovGRCQ4Dq": {
-          "description": "Ein vom SL gewähltes Objekt verschwindet in die Ätherebene. Das Objekt darf weder getragen noch gehalten werden, muss sich innerhalb von 36 m des gewählten Ursprungspunkts befinden und darf in keiner Dimension größer als 3 m sein. Wenn sich keine solchen Objekte in Reichweite befinden, geschieht nichts."
+          "description": "Ein vom DM gewähltes Objekt verschwindet in die Ätherebene. Das Objekt darf weder getragen noch gehalten werden, muss sich innerhalb von 36 m des gewählten Ursprungspunkts befinden und darf in keiner Dimension größer als 3 m sein. Wenn sich keine solchen Objekte in Reichweite befinden, geschieht nichts."
         },
         "caPlRb51hUbh7kir": {
           "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen schrumpfst du, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} auf dich selbst gewirkt, und bleibst 1 Minute lang in diesem Zustand."
@@ -1621,7 +1621,7 @@
         },
         "cbfHzGC7oLI48i1F": {
           "name": "Violett",
-          "description": "<p><em>Rettungswurf misslungen:</em> Das Ziel hat den Zustand &amp;Reference[Blinded] und muss zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf ablegen. Bei einem gelungenen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand ebenfalls, und die Kreatur wird auf eine andere Existenzebene teleportiert (Wahl des SL).</p><p><em>Zusätzliche Effekte:</em> Diese Schicht wird durch <em>Bannmagie</em> zerstört.</p>"
+          "description": "<p><em>Rettungswurf misslungen:</em> Das Ziel hat den Zustand &amp;Reference[Blinded] und muss zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf ablegen. Bei einem gelungenen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand ebenfalls, und die Kreatur wird auf eine andere Existenzebene teleportiert (Wahl des DM).</p><p><em>Zusätzliche Effekte:</em> Diese Schicht wird durch <em>Bannmagie</em> zerstört.</p>"
         }
       }
     },
@@ -1654,7 +1654,7 @@
         },
         "YRy23VFeS34ZU0kN": {
           "name": "Violett",
-          "description": "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Blinded] und muss zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf ablegen. Bei einem gelungenen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand, und die Kreatur wird auf eine andere Existenzebene teleportiert (Wahl des SL).</p>"
+          "description": "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Blinded] und muss zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf ablegen. Bei einem gelungenen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand, und die Kreatur wird auf eine andere Existenzebene teleportiert (Wahl des DM).</p>"
         },
         "w7WNMlR1c0Bmsj1l": {
           "name": "Spezial",

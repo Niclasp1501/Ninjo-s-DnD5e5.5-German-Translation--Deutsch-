@@ -3,6 +3,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.19] - 2026-07-20
+
+### Changed - Spielleiter-Abkuerzung: SL -> DM (Angleichung ans Handbuch)
+
+Das Spielerhandbuch nutzt seit 2.2.0.63 durchgaengig **DM**; hier standen dagegen 348x "SL"
+gegen 5x "DM". Angeglichen, damit im selben Foundry nicht zwei Abkuerzungen fuer dieselbe Person
+nebeneinander stehen -- im Handbuch "der DM", im Regelglossar daneben "der SL".
+
+348 Vorkommen in `babele/dnd5e.content24.json` (111), `babele/dnd5e.rules.json` (91),
+`scripts/babele-runtime-overrides.legacy.generated.js` (66),
+`scripts/babele-runtime-overrides.modern.generated.js` (54), `dnd5e.tables24.json` (11),
+`dnd5e.tables.json` (7), `languages/de.json` (5), `babele-runtime-overrides.js` (2),
+`dnd5e.monsters.json` (1).
+
+**Grammatik mitgezogen**, sonst waere Unsinn entstanden: 85 Stellen schrieben "die SL" bzw.
+"deine SL" (feminin) -- alle 85 im Nominativ, jetzt "der DM" / "dein DM". Genau **eine** Stelle
+war Akkusativ und heisst jetzt "den DM": *"Eine Spieler*in koennte auch den DM fragen, ob die
+Uebung in einer bestimmten Fertigkeit anwendbar ist."* Sie war zunaechst durchgerutscht, weil im
+Rohtext `&nbsp;`-Entities zwischen den Woertern stehen.
+
+Gegenprobe: 0 verbleibende "SL", 0 falsche Kongruenzen ("die DM", "deine DM"); Babele-Schluessel
+unberuehrt (SL kam dort nie vor); alle Skripte `node --check` OK, alle JSON gueltig.
+
 ## [14.0.18] - 2026-07-20
 
 ### Fixed - Zwei Zaubernamen am Glossar korrigiert

@@ -77,7 +77,7 @@
       cbfHzGC7oLI48i1F: {
         name: "Violett",
         description:
-          "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Blinded] und führt zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf aus. Bei einem erfolgreichen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand, und die Kreatur teleportiert sich auf eine andere Existenzebene (Wahl des SL).</p><p><em>Zusätzliche Effekte:</em> Diese Schicht wird durch <em>Dispel Magic</em> zerstört.</p>"
+          "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Blinded] und führt zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf aus. Bei einem erfolgreichen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand, und die Kreatur teleportiert sich auf eine andere Existenzebene (Wahl des DM).</p><p><em>Zusätzliche Effekte:</em> Diese Schicht wird durch <em>Dispel Magic</em> zerstört.</p>"
       }
     }
   },
@@ -117,7 +117,7 @@
       YRy23VFeS34ZU0kN: {
         name: "Violett",
         description:
-          "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Blinded] und führt zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf aus. Bei einem erfolgreichen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand, und die Kreatur teleportiert sich auf eine andere Existenzebene (Wahl des SL).</p>"
+          "<p><em>Misslungener Rettungswurf:</em> Das Ziel erhält den Zustand &amp;Reference[Blinded] und führt zu Beginn deines nächsten Zuges einen [[/save wis]] Rettungswurf aus. Bei einem erfolgreichen Rettungswurf endet der Zustand. Bei einem misslungenen Rettungswurf endet der Zustand, und die Kreatur teleportiert sich auf eine andere Existenzebene (Wahl des DM).</p>"
       },
       w7WNMlR1c0Bmsj1l: {
         name: "Besonderes",
