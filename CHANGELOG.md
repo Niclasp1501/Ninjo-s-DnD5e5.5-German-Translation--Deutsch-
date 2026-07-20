@@ -3,6 +3,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.18] - 2026-07-20
+
+### Fixed - Zwei Zaubernamen am Glossar korrigiert
+
+- **Druidcraft**: hiess hier "Druidenzauber", laut Glossar aber **Druidenkunst**. Korrigiert wurden
+  ausschliesslich die Stellen, die tatsaechlich den Zaubertrick meinen -- also der Eintrag unter
+  `phbsplDruidcraft` und die Link-Beschriftungen dahinter. Die uebrigen ~20 Vorkommen von
+  "Druidenzauber" bleiben: dort heisst es schlicht *Zauber des Druiden* ("Druidenzauberliste",
+  "deine Druidenzauber", "Druidenzaubertrick") und ist voellig richtig.
+- **Chill Touch**: hiess "Kalter Griff", laut Glossar **Kalte Hand**. Ebenfalls ID-verankert
+  korrigiert (`phbsplChillTouch`), 4 Stellen.
+
+9 Vorkommen in `babele/dnd5e.content24.json` und
+`scripts/babele-runtime-overrides.modern.generated.js`. Alle Skripte `node --check` OK, JSON gueltig.
+Das Spielerhandbuch schreibt beide Namen bereits korrekt.
+
 ## [14.0.17] - 2026-07-20
 
 ### Fixed - 7 Konverter des Legacy-Monsterpacks waren nie registriert
