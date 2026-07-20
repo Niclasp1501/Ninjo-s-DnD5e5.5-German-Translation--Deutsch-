@@ -5538,7 +5538,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Drachengefährte",
     "description": "<p>Du kannst @UUID[Compendium.dnd5e.spells24.Item.phbsplSummonDrag]{Drachen beschwören} ohne materielle Komponente wirken. Du kannst ihn auch einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest.</p><p>Wann immer du beginnst, den Zauber zu wirken, kannst du ihn so modifizieren, dass er keine Konzentration erfordert. Wenn du dies tust, beträgt die Wirkungsdauer des Zaubers für diesen Wurf 1 Minute.</p><section\nid=\"secret-dxl0rjuVblJvTXgy\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft kann verwendet werden, um deine kostenlose Nutzung zu verfolgen. Wenn du den Zauber wirkst, kannst du das Kästchen „Verbrauch“ und optional das Kästchen „Konzentration“ deaktivieren.</p></section>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "phbscrDragonWing": {
@@ -9798,7 +9798,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Aquatischer Ansturm",
     "description": "<p>Die [[lookup @name lowercase]]{monster} schwimmt bis zu ihrer Schwimmgeschwindigkeit\ndirekt auf einen Feind zu, den sie sehen kann.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmArcaneBurst000": {
@@ -9809,7 +9809,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Arkanes Pirschen",
     "description": "<p>Die [[lookup @name lowercase]]{monster} kann sich bis zu [[lookup\n@range.value activity=a3RqyzU0UqzLJif0]] Fuß weit an einen unbesetzten Ort\nteleportieren, den sie sehen kann, und führt einen [[/item Claw]]-Angriff aus.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmBalefulCommand": {
@@ -9924,7 +9924,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Umschlingen",
     "description": "<p><em>Stärke-Rettungswurf:</em><span class=\"Heading-4\"> SG </span>[[lookup @save.dc.value activity=IgOMjRxAt7UISkJq]], eine [[lookup @target.affects.special activity=IgOMjRxAt7UISkJq]] Kreatur, die das/der/die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=IgOMjRxAt7UISkJq]] Fuß sehen kann. <em>Misserfolg:</em> [[/damage average]] Schaden. Das Ziel hat den Zustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup @skills.ath.passive]]), und es hat den Zustand &amp;Reference[Restrained apply=false], bis der Griff endet.</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf"
+      "Escape Check": "Entkommen-Probe"
     },
     "effects": {
       "Grappled and Restrained": "Gepackt und Fesselung"
@@ -9998,7 +9998,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Unsterbliche Agilität",
     "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} führt die Aktion &amp;Reference[Dash] oder &amp;Reference[Disengage] aus.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmDeflectMissile": {
@@ -10013,7 +10013,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Metall zerstören",
     "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} [[lookup @range.special activity=GDJtelEYYTgc9jwr]] innerhalb von [[lookup @range.value activity=GDJtelEYYTgc9jwr]] Fuß von sich selbst [[lookup @target.affects.special activity=GDJtelEYYTgc9jwr]]. Die Berührung zerstört ein [[lookup @target.template.size activity=GDJtelEYYTgc9jwr]]-[[lookup @target.template.units activity=GDJtelEYYTgc9jwr]] [[lookup @target.template.type capitalize activity=GDJtelEYYTgc9jwr]] der [[lookup @target.affects.type activity=GDJtelEYYTgc9jwr]].</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmDivineAid00000": {
@@ -10083,14 +10083,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Ätherischer Sprung",
     "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} teleportiert von\nder Materiellen Ebene auf die Ätherebene oder umgekehrt.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmEtherealStride": {
     "name": "Ätherischer Schritt",
     "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} und bis zu\n[[lookup @target.affects.labels.statblock activity=0EfvhIXAIPlYUiNE]]\ninnerhalb von [[lookup @range.value activity=0EfvhIXAIPlYUiNE]] [[lookup\n@range.units activity=0EfvhIXAIPlYUiNE]]. von ihm teleportieren von der Materiellen\nEbene auf die Ätherebene oder umgekehrt.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmEtherealness00": {
@@ -10185,7 +10185,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Entzündete Illumination",
     "description": "<p class=\"feature\">Der/Die [[lookup @name lowercase]]{monster} setzt sich\nselbst in Brand oder löscht seine/ihre Flammen. Während er/sie brennt, spendet der/die [[lookup @name\nlowercase]]{monster} helles Licht in einem Radius von 3 m und dämmriges Licht\nfür weitere 3 m.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmIllusoryAppear": {
@@ -10205,7 +10205,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Tintenwolke",
     "description": "<p><em>Auslöser</em>: Der/Die [[lookup @name lowercase]]{monster} nimmt Schaden,\nwährend er/sie unter Wasser ist. </p><p><em>Reaktion</em>: Der/Die [[lookup @name\nlowercase]]{monster} stößt Tinte aus, die einen Würfel von [[lookup\n@target.template.size activity=1MiIPcVuCpfgBIkS]] Fuß, zentriert auf\nihn/sie selbst, füllt, und der/die [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner/ihrer Schwimmgeschwindigkeit.\nDer Würfel ist 1 Minute lang stark verdeckt oder bis eine starke Strömung\noder ein ähnlicher Effekt die Tinte zerstreut.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     },
     "effects": {
       "JttKvsdAlGpcrFx0": "Blind: Stark verdeckt"
@@ -10219,7 +10219,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Sprung",
     "description": "<p>Das [[lookup @name lowercase]]{monster} springt bis zu [[lookup\n@range.value activity=C28C43DeD8iFtZMe]] Fuß weit, indem es [[lookup\n@activation.condition activity=C28C43DeD8iFtZMe]].</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmLifeDrain00000": {
@@ -10425,7 +10425,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Schneller Griff",
     "description": "<p class=\"feature\"><em>Geschicklichkeits-Rettungswurf:</em> SG [[lookup\n@save.dc.value activity=aDWVHpJgsNPPNrDs]], [[lookup\n@target.affects.special activity=aDWVHpJgsNPPNrDs]], das die [[lookup @name\nlowercase]]{monster} innerhalb von [[lookup @target.template.size\nactivity=aDWVHpJgsNPPNrDs]] [[lookup @target.template.units\nactivity=aDWVHpJgsNPPNrDs]] sehen kann. <em>Misserfolg:</em> Das\nZiel erhält den Zustand &amp;Reference[Grappled] (Entkommen SG [[lookup\n@skills.ath.passive]]).</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf",
+      "Escape Check": "Entkommen-Probe",
       "Save": "Rettungswurf"
     },
     "effects": {
@@ -10447,7 +10447,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Angriff umleiten",
     "description": "<p class=\"feature\"><em>Auslöser:</em> Eine Kreatur, die das [[lookup @name\nlowercase]]{monster} sehen kann, macht einen Angriffswurf gegen es.</p><p\nclass=\"feature\"><em>Reaktion:</em> Das [[lookup @name lowercase]]{monster}\nwählt [[lookup @target.affects.special activity=pIlCmuPw8YUqAISY]]\ninnerhalb von [[lookup @range.value activity=pIlCmuPw8YUqAISY]] Fuß von sich selbst.\nDas [[lookup @name lowercase]]{monster} und das [[lookup\n@target.affects.type activity=pIlCmuPw8YUqAISY]] tauschen die Plätze, und das\n[[lookup @target.affects.type activity=pIlCmuPw8YUqAISY]] wird stattdessen zum\nZiel des Angriffs.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmReel0000000000": {
@@ -10458,7 +10458,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Reflexive Antennen",
     "description": "<p class=\"feature\"><em>Auslöser:</em> Ein Angriffswurf trifft das [[lookup\n@name lowercase]]{monster}. <em>Reaktion:</em> Das [[lookup @name\nlowercase]]{monster} setzt Antennen ein.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmRepulsionBreat": {
@@ -10472,7 +10472,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Riposte",
     "description": "<p class=\"feature\"><em>Auslöser:</em> Das [[lookup @name\nlowercase]]{monster} wird von einem Nahkampfangriffswurf getroffen, während es eine\nWaffe hält.</p><p class=\"feature\"><em>Reaktion:</em> Das [[lookup @name\nlowercase]]{monster} addiert 3 zu seiner RK gegen diesen Angriff, wodurch dieser\nmöglicherweise verfehlt. Bei einem Fehlschlag macht das [[lookup @name lowercase]]{monster}\neinen Rapier-Angriff gegen die auslösende Kreatur, falls diese in\nReichweite ist.</p><section class=\"secret\"\nid=\"secret-VqXu1b39RjadyOE4\"><p><strong>Foundry-Hinweis</strong></p><p>Diese\nEigenschaft bietet auch einen <strong>Aktiven Effekt (AE)</strong>, der die\n<strong>Rüstungsklasse (RK)</strong> dieser Kreatur modifiziert, wenn du die\nReaktion nutzt. Du kannst den AE im Effekte-Tab des Charakterbogens\naktivieren.</p></section>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmRoar0000000000": {
@@ -10620,14 +10620,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Sturzflug",
     "description": "<p class=\"feature\">Wenn der/die/das [[lookup @name lowercase]]{monster} eine\nKreatur gepackt hat, fliegt der/die/das [[lookup @name lowercase]]{monster} bis zur\nHälfte seiner/ihrer Fluggeschwindigkeit, ohne &amp;Reference[OpportunityAttacks] zu provozieren,\nund lässt diese Kreatur fallen.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmTeleport000000": {
     "name": "Teleportieren",
     "description": "<p class=\"feature\">Der/Die/Das [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=dnoRMdFzhUUku26D]] Fuß weit auf ein unbesetztes\nFeld, das es sehen kann.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmTentacleSlam00": {
@@ -10671,7 +10671,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Baumschritt",
     "description": "<p>Wenn innerhalb von [[lookup @range.value activity=8av8Lh1jNLCrOJny]] Fuß eines\n[[lookup @range.special activity=8av8Lh1jNLCrOJny]], teleportiert sich der/die/das [[lookup @name\nlowercase]]{monster} auf ein unbesetztes Feld innerhalb von [[lookup\n@range.value activity=8av8Lh1jNLCrOJny]] Fuß eines zweiten [[lookup\n@target.affects.special activity=8av8Lh1jNLCrOJny]], der sich innerhalb von 18 m\ndes vorherigen Baumes befindet.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmUnicornsBlessi": {
@@ -10713,7 +10713,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], eine [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] im Raum des [[lookup @name lowercase]]{monster}. <em>Misserfolg:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] Schaden, und das Ziel hat den Zustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup @skills.ath.passive]]). Bis der Griff endet, kann das Ziel keine Zauber mit einer verbalen Komponente wirken und erleidet [[/damage average activity=kDz92inkRCjGrPiz]] Schaden zu Beginn jedes Zuges des [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Damage: Grappled": "Schaden: Ergriffen",
-      "Escape Check": "Entkommen-Wurf",
+      "Escape Check": "Entkommen-Probe",
       "Save": "Rettungswurf"
     },
     "effects": {
@@ -10765,7 +10765,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup\n@save.dc.value activity=TQchFj2VXXJgU7Lq]], jede [[lookup\n@target.affects.type activity=TQchFj2VXXJgU7Lq]] im Feld des [[lookup @name\nlowercase]]{monster}.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average activity=TQchFj2VXXJgU7Lq]] Schaden. Ist das Ziel eine\nGroße oder kleinere Kreatur, hat es den Zustand &amp;Reference[Grappled apply=false]\n(Entkommen SG [[lookup @skills.ath.passive]]). Bis der Griff endet,\nhat das Ziel den Zustand &amp;Reference[Restrained apply=false], ist\n&amp;Reference[suffocating]{suffocating}, es sei denn, es kann unter Wasser atmen,\nund erleidet zu Beginn jedes Zuges des [[lookup @name lowercase]]{monster}\n[[/damage average activity=khxVwH3AB0sx1qRG]] Schaden. Das\n[[lookup @name lowercase]]{monster} kann mit Überwältigen eine Große Kreatur oder bis\nzu zwei Mittlere oder kleinere Kreaturen gleichzeitig im Griff halten.</p><p\nclass=\"feature\">Als Aktion kann eine Kreatur innerhalb von 1,5 m des [[lookup\n@name lowercase]]{monster} eine Kreatur daraus ziehen, indem sie einen erfolgreichen\n[[/check ath dc=@skills.ath.passive format=long]] ablegt.</p><p\nclass=\"feature\"><em>Erfolg:</em> Nur halber Schaden.</p>",
     "activities": {
       "Damage: Start of Turn": "Schaden: Beginn des Zuges",
-      "Escape Check": "Entkommen-Wurf",
+      "Escape Check": "Entkommen-Probe",
       "Save": "Rettungswurf"
     },
     "effects": {
@@ -10889,7 +10889,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Klauen",
     "description": "<p>[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine\nKreatur der Größe Groß oder kleiner ist, hat es den Zustand &amp;Reference[Grappled apply=false]\n(SG zum Entkommen [[lookup @skills.ath.passive]]), und es hat den\nZustand &amp;Reference[Restrained apply=false], bis der Griff\nendet.</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf"
+      "Escape Check": "Entkommen-Probe"
     },
     "effects": {
       "MpjWPflcv7Jqd7Tu": "Ergriffen und Gefesselt"
@@ -11016,7 +11016,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Greifen",
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine mittelgroße oder kleinere Kreatur, erhält es den\nZustand &amp;Reference[Grappled apply=false] (SG zum Entkommen [[lookup\n@skills.ath.passive]]).</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf"
+      "Escape Check": "Entkommen-Probe"
     },
     "effects": {
       "2N5R5UunQHBncwF3": "Im Haltegriff"
@@ -11143,7 +11143,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Zange",
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine Große oder kleinere Kreatur, hat es den\n&amp;Reference[Grappled apply=false] Zustand (Entkommen SG [[lookup\n@skills.ath.passive]]) von einer der beiden Zangen.</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf"
+      "Escape Check": "Entkommen-Probe"
     },
     "effects": {
       "GCED8YlF6qXTgEkd": "Gepackt"
@@ -11315,7 +11315,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Tentakel",
     "description": "<p>[[/attack extended]]. [[/damage average extended]]. Ist das Ziel eine\n{size} oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Grappled\napply=false] (Entkommen SG [[lookup @skills.ath.passive]]) von einem\nder {count} Tentakel.</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf"
+      "Escape Check": "Entkommen-Probe"
     },
     "effects": {
       "KxcWsIHohpNmagLJ": "Gepackt"
@@ -11325,7 +11325,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Tentakel",
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Ist\ndas Ziel eine mittelgroße oder kleinere Kreatur, erhält es den\nZustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup\n@skills.ath.passive]]) von allen vier Tentakeln.</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf"
+      "Escape Check": "Entkommen-Probe"
     },
     "effects": {
       "GyZrmzBP0NB8oRZI": "Gepackt"
@@ -11430,7 +11430,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Todesloser Schlag",
     "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} bewegt sich bis zu\nder Hälfte ihrer Bewegungsrate und führt einen Grabschlag-Angriff aus.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmDeathlyTelepor": {
@@ -11579,7 +11579,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Schwanzschlag",
     "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} führt einen\n[[/item Rend]]-Angriff aus.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmThunderclap000": {
@@ -11617,7 +11617,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Welterschütternde Bewegung",
     "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner\nBewegungsrate. Am Ende dieser Bewegung erzeugt das [[lookup @name\nlowercase]]{monster} eine augenblickliche Schockwelle in einer [[lookup\n@target.template.size activity=g4W0ovZxBeUrZKb8]]-[[lookup\n@target.template.units activity=g4W0ovZxBeUrZKb8]]-Emanation, die von\nihm selbst ausgeht. Kreaturen in diesem Bereich verlieren &amp;Reference[Concentration]\nund haben, falls sie mittelgroß oder kleiner sind, den Zustand &amp;Reference[Prone apply=false].\nDas [[lookup @name lowercase]]{monster} kann diese Aktion\nerst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     },
     "effects": {
       "ERWPInrx4mXsqrwL": "Liegend"
@@ -11645,8 +11645,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Haftend (Nur Objektform)",
     "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} haftet an allem, was es berührt. Eine Riesige oder kleinere Kreatur, die an dem [[lookup @name lowercase]]{monster} haftet, hat den Zustand &amp;Reference[Grappled\napply=false] (Entkommen SG [[lookup @skills.ath.passive]]). Fertigkeitswürfe, die zum Entkommen aus diesem Griff gemacht werden, haben Nachteil.</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf",
-      "Expend Use": "Verbrauch nutzen"
+      "Escape Check": "Entkommen-Probe",
+      "Expend Use": "Einsatz verbrauchen"
     },
     "effects": {
       "PTmNYKeeD3d7EbJn": "Gepackt"
@@ -11672,7 +11672,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Aura der Autorität",
     "description": "<p>Solange es sich in einer [[lookup @target.template.size\nactivity=dE4lg9tZyXtoCb5x]] Fuß großen Emanation befindet, die von dem [[lookup\n@name lowercase]]{monster} ausgeht, haben das [[lookup @name lowercase]]{monster} und\nseine Verbündeten Vorteil auf Angriffswürfe und Rettungswürfe, vorausgesetzt, das\n[[lookup @name lowercase]]{monster} hat nicht den\n&amp;Reference[Incapacitated apply=false] Zustand.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmAversionToFire": {
@@ -11903,7 +11903,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Eisengeruch",
     "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann den Standort von [[lookup @target.affects.special activity=I1ppxiVO5CS6tKj0]] innerhalb von [[lookup @target.template.size activity=I1ppxiVO5CS6tKj0]] Fuß von sich aus bestimmen.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmJumper00000000": {
@@ -11914,7 +11914,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Legendäre Widerstandsfähigkeit",
     "description": "<p>Wenn das [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann es stattdessen wählen, ihn zu bestehen.</p>",
     "activities": {
-      "Expend Use": "Verbrauch nutzen"
+      "Expend Use": "Einsatz verbrauchen"
     }
   },
   "mmLightSensitivi": {
@@ -12905,7 +12905,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Als Aktion Nutzen kannst du mit einem Seil einen Knoten binden, wenn dir ein erfolgreicher SG 10 Geschicklichkeit (Fingerfertigkeit)-Wurf gelingt. Das Seil kann mit einem erfolgreichen SG 20 Stärke (Athletik)-Wurf zerrissen werden.</p><p>Du kannst eine widerwillige Kreatur nur mit dem Seil fesseln, wenn die Kreatur den Zustand &amp;Reference[Grappled], &amp;Reference[Incapacitated] oder &amp;Reference[Restrained] hat. Sind die Beine der Kreatur gefesselt, hat die Kreatur den Zustand Fesselung, bis sie entkommt. Um dem Seil zu entkommen, muss die Kreatur als Aktion einen erfolgreichen SG 15 Geschicklichkeit (Akrobatik)-Wurf ablegen.</p>",
     "activities": {
       "Burst Rope": "Seil zerreißen",
-      "Escape Check": "Entkommen-Wurf",
+      "Escape Check": "Entkommen-Probe",
       "Tie Knot": "Knoten binden"
     }
   },
@@ -14154,7 +14154,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Tragbares Loch",
     "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieses feine schwarze Tuch, weich wie Seide,\nist auf die Größe eines Taschentuchs zusammengefaltet. Es entfaltet sich zu einem\nkreisförmigen Tuch mit 1,8 m Durchmesser.</p><p>Du kannst eine Magie-Aktion ausführen, um\nein <em>Tragbares Loch</em> zu entfalten und es auf oder an eine feste\nOberfläche zu legen, woraufhin das <em>Tragbare Loch</em> ein extradimensionales\nLoch von 3 m Tiefe erzeugt. Der zylindrische Raum innerhalb des Lochs existiert auf einer\nanderen Existenzebene, daher kann er nicht verwendet werden, um offene Passagen zu schaffen.\nJede Kreatur in einem offenen <em>Tragbaren Loch</em> kann das Loch verlassen,\nindem sie herausklettert.</p><p>Du kannst eine Magie-Aktion ausführen, um ein\n<em>Tragbares Loch</em> zu schließen, indem du die Ränder des Tuchs festhältst und\nes zusammenfaltest. Das Zusammenfalten des Tuchs schließt das Loch, und alle Kreaturen oder\nObjekte darin verbleiben im extradimensionalen Raum. Egal was sich darin befindet,\ndas Loch wiegt so gut wie nichts.</p><p>Wenn das Loch zusammengefaltet ist, kann eine\nKreatur innerhalb des extradimensionalen Raums des Lochs eine Aktion ausführen, um\neinen SG 10 Stärke (Athletik)-Wurf zu machen. Bei einem erfolgreichen Wurf\ndrängt sich die Kreatur heraus und erscheint innerhalb von 1,5 m des <em>Tragbaren\nLochs</em>. Ein geschlossenes <em>Tragbares Loch</em> enthält genug Luft für 1 Stunde\nAtmung, geteilt durch die Anzahl der atmenden Kreaturen\ndarin.</p><p>Das Platzieren eines <em>Tragbaren Lochs</em> in einem extradimensionalen\nRaum, der von einem <em>Beutel der Verwahrung</em>, einem <em>Praktischen Beutel</em> oder\neinem ähnlichen Gegenstand geschaffen wurde, zerstört sofort beide Gegenstände und öffnet ein Tor zur Astralebene.\nDas Tor entsteht dort, wo der eine Gegenstand in den anderen gelegt wurde.\nJede Kreatur innerhalb von 3 m des Tors, die sich nicht hinter\n&amp;Reference[Total Cover] befindet, wird hindurchgesaugt und an einem zufälligen\nOrt auf der Astralebene abgesetzt. Das Tor schließt sich dann. Das Tor ist nur eine Einbahnstraße\nund kann nicht wieder geöffnet werden.</p>",
     "activities": {
-      "Escape Check": "Entkommen-Wurf",
+      "Escape Check": "Entkommen-Probe",
       "Unfold Portable Hole": "Tragbares Loch entfalten"
     }
   },
@@ -14238,7 +14238,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgRopeOfEntangl": {
     "name": "Seil der Verstrickung",
-    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieses Seil ist 9 m lang. Während du ein Ende des Seils hältst, kannst du eine Magie-Aktion ausführen, um dem anderen Ende zu befehlen, vorzuschnellen und eine Kreatur, die du innerhalb von 6 m von dir sehen kannst, zu verstricken. Das Ziel muss einen Rettungswurf auf Geschicklichkeit SG 15 bestehen oder den Zustand &amp;Reference[Restrained apply=false] haben. Du kannst das Ziel freigeben, indem du dein Ende des Seils loslässt (wodurch sich das Seil im Raum des Ziels aufwickelt) oder indem du eine Bonusaktion verwendest, um den Befehl zu wiederholen (wodurch sich das Seil in deiner Hand aufwickelt).</p><p>Ein durch das Seil Fesselndes Ziel kann eine Aktion ausführen, um einen Stärke (Athletik) oder Geschicklichkeit (Akrobatik) Wurf SG 15 zu machen. Bei einem erfolgreichen Wurf ist das Ziel nicht länger durch das Seil Fesselnd. Wenn du das Seil noch hältst, wenn ein Ziel daraus entkommt, kannst du eine Reaktion ausführen, um dem Seil zu befehlen, sich in deiner Hand aufzuwickeln; andernfalls wickelt sich das Seil im Raum des Ziels auf.</p><p>Das Seil hat RK 20, 20 TP und Immunität gegen Gift- und Psychischen Schaden. Es regeneriert 1 Trefferpunkt alle 5 Minuten, solange es mindestens 1 Trefferpunkt hat. Wenn das Seil auf 0 Trefferpunkte fällt, wird es zerstört.</p><section class=\"secret\"\nid=\"secret-7RGkmfY1bTmeeb5L\"><p><strong>Foundry-Hinweis</strong></p><p>Der Gegenstand enthält 20 Anwendungen zur Verfolgung seiner TP. Die Aktion <strong>Seil beschädigen</strong> kann verwendet werden, um Schaden zuzufügen, und die Aktion <strong>Seil reparieren</strong> kann verwendet werden, um seine TP wiederherzustellen.</p><p>Die Aktion <strong>Entkommen</strong> kann verwendet werden, um einen Athletik- und Geschicklichkeitswurf in den Chat zu senden, damit das Ziel seinen Entkommen-Wurf machen kann.</p></section>",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Dieses Seil ist 9 m lang. Während du ein Ende des Seils hältst, kannst du eine Magie-Aktion ausführen, um dem anderen Ende zu befehlen, vorzuschnellen und eine Kreatur, die du innerhalb von 6 m von dir sehen kannst, zu verstricken. Das Ziel muss einen Rettungswurf auf Geschicklichkeit SG 15 bestehen oder den Zustand &amp;Reference[Restrained apply=false] haben. Du kannst das Ziel freigeben, indem du dein Ende des Seils loslässt (wodurch sich das Seil im Raum des Ziels aufwickelt) oder indem du eine Bonusaktion verwendest, um den Befehl zu wiederholen (wodurch sich das Seil in deiner Hand aufwickelt).</p><p>Ein durch das Seil Fesselndes Ziel kann eine Aktion ausführen, um einen Stärke (Athletik) oder Geschicklichkeit (Akrobatik) Wurf SG 15 zu machen. Bei einem erfolgreichen Wurf ist das Ziel nicht länger durch das Seil Fesselnd. Wenn du das Seil noch hältst, wenn ein Ziel daraus entkommt, kannst du eine Reaktion ausführen, um dem Seil zu befehlen, sich in deiner Hand aufzuwickeln; andernfalls wickelt sich das Seil im Raum des Ziels auf.</p><p>Das Seil hat RK 20, 20 TP und Immunität gegen Gift- und Psychischen Schaden. Es regeneriert 1 Trefferpunkt alle 5 Minuten, solange es mindestens 1 Trefferpunkt hat. Wenn das Seil auf 0 Trefferpunkte fällt, wird es zerstört.</p><section class=\"secret\"\nid=\"secret-7RGkmfY1bTmeeb5L\"><p><strong>Foundry-Hinweis</strong></p><p>Der Gegenstand enthält 20 Anwendungen zur Verfolgung seiner TP. Die Aktion <strong>Seil beschädigen</strong> kann verwendet werden, um Schaden zuzufügen, und die Aktion <strong>Seil reparieren</strong> kann verwendet werden, um seine TP wiederherzustellen.</p><p>Die Aktion <strong>Entkommen</strong> kann verwendet werden, um einen Athletik- und Geschicklichkeitswurf in den Chat zu senden, damit das Ziel seinen Entkommen-Probe machen kann.</p></section>",
     "activities": {
       "Damage Rope": "Seil beschädigen",
       "Entangle": "Verstricken",
