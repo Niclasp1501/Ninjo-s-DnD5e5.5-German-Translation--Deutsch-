@@ -3786,7 +3786,7 @@
      "text": "<p>Du hast dein Leben in dunklen Gassen gefristet, Geldbörsen gestohlen oder Läden ausgeraubt. Vielleicht warst du Teil einer kleinen Bande gleichgesinnter Übeltäter, die aufeinander aufgepasst haben. Oder vielleicht warst du ein Einzelgänger, der sich allein gegen die örtliche Diebesgilde und furchterregendere Gesetzesbrecher durchschlagen musste.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter der Creative Commons Lizenz steht und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbbgSage0000000": {
-     "name": "phbHintergrWeiser0000000",
+     "name": "Weiser",
      "text": "<p>Du hast deine prägenden Jahre damit verbracht, zwischen Herrenhäusern und Klöstern zu reisen und verschiedene Gelegenheitsarbeiten und Dienste zu verrichten, im Austausch für den Zugang zu deren Bibliotheken. Du hast viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferungen des Multiversums zu lernen – sogar die Grundlagen der Magie – und dein Geist sehnt sich nach mehr.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter der Creative Commons Lizenz steht und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbbgSoldier0000": {
@@ -3799,7 +3799,7 @@
    "name": "Anhang: Speziesdetails",
    "pages": {
     "phbspDragonborn0": {
-     "name": "phbspDrachenblütige0",
+     "name": "Drachenblütiger",
      "text": "<p>Die Vorfahren der Drachenblütigen schlüpften aus den Eiern chromatischer und metallischer Drachen. Eine Geschichte besagt, dass diese Eier von den Drachengöttern Bahamut und Tiamat gesegnet wurden, die das Multiversum mit Völkern bevölkern wollten, die nach ihrem Ebenbild geschaffen waren. Eine andere Geschichte behauptet, dass Drachen die ersten Drachenblütigen ohne den Segen der Götter erschufen. Was auch immer ihr Ursprung sein mag, Drachenblütige haben sich auf der Materiellen Ebene eine Heimat geschaffen.</p><p>Drachenblütige sehen aus wie flügellose, zweibeinige Drachen – schuppig, mit leuchtenden Augen und dicken Knochen, mit Hörnern auf dem Kopf – und ihre Färbung sowie andere Merkmale erinnern an ihre drakonischen Vorfahren.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist kostenloser Regelinhalt, der nicht unter die Creative Commons-Lizenz fällt und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspDwarf000000": {
@@ -3811,15 +3811,15 @@
      "text": "<p>Erschaffen vom Gott Corellon, konnten die ersten Elfen ihre Gestalt nach Belieben ändern. Sie verloren diese Fähigkeit, als Corellon sie verfluchte, weil sie mit der Gottheit Lolth paktierten, die versuchte und scheiterte, Corellons Herrschaft an sich zu reißen. Als Lolth in den Abyss verbannt wurde, sagten sich die meisten Elfen von ihr los und verdienten Corellons Vergebung, doch das, was Corellon ihnen genommen hatte, war für immer verloren.</p><p>Da sie ihre Gestalt nicht mehr nach Belieben ändern konnten, zogen sich die Elfen ins Feywild zurück, wo ihr Kummer durch den Einfluss dieser Ebene noch vertieft wurde. Mit der Zeit führte die Neugier viele von ihnen dazu, andere Existenzebenen zu erkunden, darunter Welten auf der Materiellen Ebene.</p><p>Elfen haben spitze Ohren und keine Gesichts- oder Körperbehaarung. Sie leben etwa 750 Jahre lang und schlafen nicht, sondern treten in einen Trancezustand ein, wenn sie sich ausruhen müssen. In diesem Zustand bleiben sie sich ihrer Umgebung bewusst, während sie in Erinnerungen und Meditationen versinken.</p><p>Eine Umgebung verwandelt Elfen subtil, nachdem sie diese ein Jahrtausend oder länger bewohnt haben, und verleiht ihnen bestimmte Arten von Magie. Drow, Hochelfen und Waldelfen sind Beispiele für Elfen, die auf diese Weise verwandelt wurden.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter der Creative Commons Lizenz steht und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspDrow0000000": {
-     "name": "phbspDrow0000000",
+     "name": "Elf, Drow",
      "text": "<p>Drow leben typischerweise im Unterreich und wurden von ihm geformt. Einige Drow-Individuen und -Gesellschaften meiden das Unterreich gänzlich, tragen aber dennoch dessen Magie in sich. Im Eberron-Setting zum Beispiel leben Drow in Regenwäldern und zyklopischen Ruinen auf dem Kontinent Xen'drik.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter der Creative Commons Lizenz steht und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspHighElf0000": {
-     "name": "phbspHochelf0000",
+     "name": "Elf, Hochelf",
      "text": "<p>Hochelfen wurden mit der Magie der Übergänge zwischen der Feenwildnis und der Materiellen Ebene durchdrungen. Auf manchen Welten bezeichnen sich Hochelfen mit anderen Namen. Zum Beispiel nennen sie sich Sonnen- oder Mondelfen im Setting der Vergessenen Reiche, Silvanesti und Qualinesti im Dragonlance-Setting und Aereni im Eberron-Setting.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter die Creative-Commons-Lizenz fällt und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspWoodElf0000": {
-     "name": "phbspWaldelf0000",
+     "name": "Elf, Waldelf",
      "text": "<p>Waldelfen tragen die Magie der Urwälder in sich. Sie sind unter vielen anderen Namen bekannt, darunter Wildelfen, Grünelfen und Waldelfen. Grugach sind zurückgezogene Waldelfen des Greyhawk-Settings, während die Kagonesti und die Tairnadal Waldelfen des Dragonlance- bzw. Eberron-Settings sind.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter die Creative-Commons-Lizenz fällt und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspGnome000000": {
@@ -3847,15 +3847,15 @@
      "text": "<p>Tieflinge werden entweder auf den Unteren Ebenen geboren oder haben teuflische Vorfahren, die dort ihren Ursprung hatten. Ein Tiefling (ausgesprochen TIE-fling) ist durch Blut mit einem Teufel, einem Dämon oder einem anderen Unhold verbunden. Diese Verbindung zu den Unteren Ebenen ist das teuflische Erbe des Tieflings, das das Versprechen von Macht mit sich bringt, aber keinen Einfluss auf die moralische Einstellung des Tieflings hat.</p><p>Ein Tiefling entscheidet, ob er sein teuflisches Erbe annimmt oder beklagt.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter die Creative Commons Lizenz fällt und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspAbyssalTief": {
-     "name": "Abyssischer Tiefling",
+     "name": "Tiefling, Abyssisch",
      "text": "<p>Die Entropie des Abyss, das Chaos des Pandemoniums und die Verzweiflung Carceris rufen Tieflinge, die das abyssale Erbe in sich tragen. Hörner, Fell, Hauer und eigentümliche Gerüche sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten das Blut von Dämonen in ihren Adern haben.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter der Creative Commons Lizenz steht und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspChthonicTie": {
-     "name": "Chthonischer Tiefling",
+     "name": "Tiefling, Chthonisch",
      "text": "<p>Tieflinge, die das chthonische Erbe in sich tragen, spüren nicht nur den Sog Carceris, sondern auch die Gier Gehennas und die Düsternis des Hades. Manche dieser Tieflinge sehen leichenhaft aus. Andere besitzen die überirdische Schönheit einer Sukkubus, oder sie weisen körperliche Merkmale auf, die sie mit einer Nachthaue, einem Yugoloth oder einem anderen Neutral Bösen teuflischen Vorfahren gemein haben.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter der Creative Commons Lizenz steht und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     },
     "phbspInfernalTie": {
-     "name": "phbspInfernalerTiefling",
+     "name": "Tiefling, Infernalisch",
      "text": "<p>Das infernale Erbe verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den tobenden Schlachtfeldern des Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein leichter Geruch nach Schwefel oder Rauch sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten ihre Abstammung auf Teufel zurückführen.</p><div class=\"fvtt advice hide-in-embed\"><figure class=\"icon\"><img src=\"icons/svg/door-locked-outline.svg\" class=\"round\" /></figure><p>Dies ist freier Regelinhalt, der nicht unter die Creative Commons Lizenz fällt und außerhalb des Spielsystems nicht weiterverbreitet werden darf.</p></div>"
     }
    }
