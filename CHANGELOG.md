@@ -3,6 +3,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.24] - 2026-07-23
+
+### Hinzugefügt - &Reference löst jetzt auf das deutsche Glossar auf
+
+Bisher zeigte `&Reference[prone]` und Ähnliches auf die **englischen** Regelseiten des Systems,
+während alle `@UUID`-Verweise im Handbuch (2211 Stück) längst auf das **deutsche** Glossar
+zeigen. Grund: das Modul bog schon die *Fertigkeits*-Referenzen um (`applySkillReferenceMapping`),
+die *Zustände* und *Regeln* aber nicht.
+
+Neu ist `applyGlossaryReferenceMapping()`, analog zur bestehenden Skill-Lösung. Sie biegt im
+`ready`-Hook `CONFIG.DND5E.conditionTypes[…].reference` und `CONFIG.DND5E.rules[…]` auf das
+Glossar-Journal `mFRNYJCXrMxqgnkv` im Spielerhandbuch-Modul um. Das ist ohne Begriffstabelle
+möglich, weil die **Seiten-IDs mit denen des englischen Systemanhangs identisch** sind — es
+genügt, die letzte UUID-Komponente in den deutschen Journal-Pfad einzusetzen.
+
+**Defensiv:** umgebogen wird nur, wenn die Zielseite im Glossar tatsächlich existiert. Fehlt
+das Spielerhandbuch-Modul, bleibt alles bei den englischen Referenzen, damit die Verweise nicht
+ins Leere zeigen. 19 der 21 Zustände haben eine deutsche Seite (`diseased` und `falling` nicht).
+
+Wirkung über die Module hinaus: auch Inhalte, die `&Reference` benutzen (Spielleiterhandbuch,
+Abenteuer), schlagen damit deutsch auf.
+
 ## [14.0.19] - 2026-07-20
 
 ### Changed - Spielleiter-Abkuerzung: SL -> DM (Angleichung ans Handbuch)

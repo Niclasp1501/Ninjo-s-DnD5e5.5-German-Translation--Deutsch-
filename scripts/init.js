@@ -2,6 +2,13 @@ const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
 const SETTING_ENABLE_COMPENDIUM_TRANSLATIONS = "enableCompendiumTranslations";
 const MODULE_PACK_NAME = "dnd5e55-de-tooltips";
 const MODULE_PACK_COLLECTION = `${MODULE_ID}.${MODULE_PACK_NAME}`;
+
+// Das deutsche Regelglossar liegt im Spielerhandbuch-Modul, ein Journal mit denselben
+// Seiten-IDs wie der englische Systemanhang. Darauf zeigen bereits alle 2211 @UUID-Verweise.
+// Damit `&Reference[prone]` denselben Weg nimmt, werden die condition/rule-Referenzen des
+// Systems auf dieses Glossar umgebogen -- aber nur, wenn es installiert und geladen ist.
+const GLOSSARY_PACK = "dnd-players-handbook-deutsch.playerhandbuch-deutsch";
+const GLOSSARY_JOURNAL_ID = "mFRNYJCXrMxqgnkv";
 const LEGACY_UUID_PREFIX_MAP = new Map([
   ["Compendium.dnd-players-handbook.content.", "Compendium.dnd5e.content24."],
   ["Compendium.dnd-players-handbook.equipment.", "Compendium.dnd5e.equipment24."],
@@ -648,6 +655,63 @@ function applySkillReferenceMapping(pageBySkill) {
   return applied;
 }
 
+// Biegt condition- und rule-Referenzen des Systems auf das deutsche Glossar um, sodass
+// &Reference[...] denselben Weg nimmt wie die @UUID-Verweise im Handbuch. Die Seiten-IDs sind
+// identisch mit denen des englischen Systemanhangs, deshalb reicht es, die letzte
+// UUID-Komponente in den deutschen Journal-Pfad einzusetzen -- aber nur, wenn diese Seite im
+// Glossar wirklich existiert. Fehlt das Handbuch-Modul, bleibt alles bei den englischen
+// Referenzen, damit die Verweise nicht ins Leere zeigen.
+async function applyGlossaryReferenceMapping() {
+  const pack = game.packs?.get(GLOSSARY_PACK);
+  if (!pack) {
+    console.log(`[${MODULE_ID}] Glossar-Pack nicht gefunden (${GLOSSARY_PACK}); &Reference bleibt englisch.`);
+    return 0;
+  }
+
+  let journal;
+  try {
+    journal = await pack.getDocument(GLOSSARY_JOURNAL_ID);
+  } catch (_err) {
+    journal = null;
+  }
+  if (!journal) {
+    console.warn(`[${MODULE_ID}] Glossar-Journal ${GLOSSARY_JOURNAL_ID} nicht ladbar.`);
+    return 0;
+  }
+
+  const pageIds = new Set(journal.pages.map(page => page.id));
+  const base = `Compendium.${GLOSSARY_PACK}.JournalEntry.${GLOSSARY_JOURNAL_ID}.JournalEntryPage.`;
+
+  const remap = source => {
+    // source ist entweder eine UUID (rules) oder ein Objekt mit .reference (conditionTypes)
+    const uuid = foundry.utils.getType(source) === "Object" ? source?.reference : source;
+    if (typeof uuid !== "string" || !uuid) return null;
+    const pageId = uuid.split(".").pop();
+    if (!pageIds.has(pageId)) return null;
+    return base + pageId;
+  };
+
+  let applied = 0;
+  for (const config of Object.values(CONFIG.DND5E?.conditionTypes ?? {})) {
+    const mapped = remap(config);
+    if (mapped && config.reference !== mapped) {
+      config.reference = mapped;
+      applied += 1;
+    }
+  }
+  const rules = CONFIG.DND5E?.rules ?? {};
+  for (const [ruleKey, uuid] of Object.entries(rules)) {
+    const mapped = remap(uuid);
+    if (mapped && rules[ruleKey] !== mapped) {
+      rules[ruleKey] = mapped;
+      applied += 1;
+    }
+  }
+
+  console.log(`[${MODULE_ID}] ${applied} &Reference-Ziele auf das deutsche Glossar umgebogen.`);
+  return applied;
+}
+
 Hooks.once("init", () => {
   if (game.system.id !== "dnd5e") {
     ui.notifications?.error("This module requires the official dnd5e system.");
@@ -687,6 +751,12 @@ Hooks.once("ready", async () => {
     installLegacyUuidBridge();
   } else {
     console.log(`[${MODULE_ID}] Additional compendium translations are disabled by world setting.`);
+  }
+
+  try {
+    await applyGlossaryReferenceMapping();
+  } catch (err) {
+    console.error(`[${MODULE_ID}] Failed to map &Reference targets to the German glossary`, err);
   }
 
   try {
