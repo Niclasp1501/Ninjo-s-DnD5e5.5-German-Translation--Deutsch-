@@ -12414,15 +12414,15 @@ export const MODERN_OVERRIDES_BY_ID = {
   "dmgSenAlignment0": {
     "name": "Gesinnung",
     "tableResults": {
-      "HaGsk3odLNg4sF8C": "Rechtschaffen Gut",
-      "N2puDdiTsMaS2ZVa": "Neutral Gut",
-      "fO9KQdZ47YlokV5E": "Chaotisch Gut",
-      "kz8hcyPc2uE3K34P": "Rechtschaffen Neutral",
+      "HaGsk3odLNg4sF8C": "Rechtschaffen gut",
+      "N2puDdiTsMaS2ZVa": "Neutral gut",
+      "fO9KQdZ47YlokV5E": "Chaotisch gut",
+      "kz8hcyPc2uE3K34P": "Rechtschaffen neutral",
       "OzctcEiStYZZ1HMS": "Neutral",
-      "pOEQJL67y863YIed": "Chaotisch Neutral",
-      "jbBP7ixoJDUANp8i": "Rechtschaffen Böse",
-      "v1Pl8lZvAkXB6z6X": "Neutral Böse",
-      "vzBNXh4m46S5Rr1X": "Chaotisch Böse"
+      "pOEQJL67y863YIed": "Chaotisch neutral",
+      "jbBP7ixoJDUANp8i": "Rechtschaffen böse",
+      "v1Pl8lZvAkXB6z6X": "Neutral böse",
+      "vzBNXh4m46S5Rr1X": "Chaotisch böse"
     }
   },
   "dmgSenCommunicat": {

@@ -625,7 +625,7 @@
           "description": "Ein Geysir bricht aus und speit Wasser, Bier, Mayonnaise, Tee, Essig, Wein oder Öl (Wahl des DM) 9 m hoch in die Luft für [[/r 1d4#Geyser duration (minutes)]] Minuten."
         },
         "U8QzXRMnrYX14lFR": {
-          "description": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{Baumhirte} sprießt. Würfle [[/r 1d2#Treant alignment]]{any die}. Bei einem ungeraden Wurf ist der Treant Chaotisch Böse. Bei einem geraden Wurf ist der Treant Chaotisch Gut."
+          "description": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{Baumhirte} sprießt. Würfle [[/r 1d2#Treant alignment]]{any die}. Bei einem ungeraden Wurf ist der Treant chaotisch böse. Bei einem geraden Wurf ist der Treant chaotisch gut."
         },
         "Y0w1OXdEMe9adHEU": {
           "description": "Eine belebte, aber unbewegliche Steinstatue in deinem Abbild erhebt sich und stößt verbale Drohungen gegen dich aus. Wenn du sie verlässt und andere sich nähern, beschreibt sie dich als den abscheulichsten aller Schurken und weist die Neuankömmlinge an, dich zu finden und anzugreifen. Wenn du dich auf derselben Existenzebene wie die Statue befindest, weiß sie, wo du bist. Die Statue wird nach 24 Stunden unbelebt."
@@ -1431,31 +1431,31 @@
       "name": "Gesinnung",
       "results": {
         "HaGsk3odLNg4sF8C": {
-          "description": "Rechtschaffen Gut"
+          "description": "Rechtschaffen gut"
         },
         "N2puDdiTsMaS2ZVa": {
-          "description": "Neutral Gut"
+          "description": "Neutral gut"
         },
         "fO9KQdZ47YlokV5E": {
-          "description": "Chaotisch Gut"
+          "description": "Chaotisch gut"
         },
         "kz8hcyPc2uE3K34P": {
-          "description": "Rechtschaffen Neutral"
+          "description": "Rechtschaffen neutral"
         },
         "OzctcEiStYZZ1HMS": {
           "description": "Neutral"
         },
         "pOEQJL67y863YIed": {
-          "description": "Chaotisch Neutral"
+          "description": "Chaotisch neutral"
         },
         "jbBP7ixoJDUANp8i": {
-          "description": "Rechtschaffen Böse"
+          "description": "Rechtschaffen böse"
         },
         "v1Pl8lZvAkXB6z6X": {
-          "description": "Neutral Böse"
+          "description": "Neutral böse"
         },
         "vzBNXh4m46S5Rr1X": {
-          "description": "Chaotisch Böse"
+          "description": "Chaotisch böse"
         }
       }
     },

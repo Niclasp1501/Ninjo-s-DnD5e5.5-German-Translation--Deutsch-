@@ -3,6 +3,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.25] - 2026-07-24
+
+### Fixed - Gesinnungen folgen jetzt der SRD-Schreibung
+
+Das Gesinnungs-Auswahlfeld zeigte *„Chaotisch Böse"*, der Gesinnungsabschnitt schrieb
+*„Rechtschaffen Gute Kreaturen"*. Beides widerspricht dem offiziellen deutschen SRD 5.2.1,
+das denselben Abschnitt so setzt:
+
+> Chaotisch böse (CB): Chaotisch böse Kreaturen handeln mit brutaler…
+> …der nach Belieben raubt und mordet, ist wahrscheinlich neutral böse.
+
+Im ganzen SRD steht das zweite Wort **0×** groß. Daraus zwei Regeln, kontextgerecht
+angewandt auf 61 Stellen in vier Dateien:
+
+1. Das zweite Wort ist immer klein.
+2. Das erste ist groß am Satzanfang, als Lemma und im Auswahlfeld — klein mitten im Satz
+   (*„ist wahrscheinlich chaotisch gut."*, exakt die neun Beispielsätze des SRD).
+
+Betrifft `languages/de.json` (die 9 Auswahl-Beschriftungen), `babele/dnd5e.content24.json`
+(den Gesinnungsabschnitt), `babele/dnd5e.tables24.json` und die generierten Overrides —
+alle drei Orte des Dreifach-Syncs zusammen mit Handbuch 2.2.5.1 und Monsterhandbuch 1.4.7.0.
+
+
 ## [14.0.24] - 2026-07-23
 
 ### Hinzugefügt - &Reference löst jetzt auf das deutsche Glossar auf
