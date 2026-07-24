@@ -3,6 +3,38 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.26] - 2026-07-24
+
+### Fixed - Die Statblock-Kopfzeile wird hier gebaut, und sie war dreifach falsch
+
+Das System setzt die Kopfzeile jedes Monsters aus einer Vorlage dieses Moduls zusammen:
+
+    DND5E.CreatureTag = "{size} {type}, {alignment}"
+
+Alle drei Bausteine wichen vom SRD 5.2.1 ab. Gerendert stand dort
+*„Mittelgross Humanoider, Chaotisch böse"* statt *„Mittelgroßer Humanoide, chaotisch böse"*.
+
+| Schlüssel | war | ist | Beleg |
+|---|---|---|---|
+| `CreatureHumanoid` | Humanoider | **Humanoide** | SRD 26× „mittelgroßer Humanoide", 0× „Humanoider" |
+| `SizeMedium` | Mittelgross | **Mittelgroß** | deutsches ß; zwei Zeilen darüber steht „Größe" bereits korrekt |
+| `SizeLarge` | Gross | **Groß** | dito |
+
+`CreatureHumanoid` steuert die Kopfzeile **aller humanoiden Monster** — die Stelle war beim
+Dreifach-Sync von 2.2.5.1 übersehen worden, während daneben 5 Einzelstellen geändert wurden.
+
+### Fixed - „ungesinnt" gegen „gesinnungslos"
+
+Der Gesinnungsabschnitt schrieb *„Ungesinnte Kreaturen"* und *„sie sind ungesinnt"* — im SRD
+steht im wortgleichen Abschnitt **„gesinnungslos"** (132×, „ungesinnt" 0×), und genau dieses
+Wort tragen inzwischen 199 Aktoren. Der Textblock war in 14.0.25 angefasst worden, das Wort
+daneben blieb stehen.
+
+Ausdrücklich geprüft und unverändert: `CreatureOoze` = **Schlick** stimmt mit dem SRD überein
+(die Vermutung „Schleim" war falsch), und für `CreatureCelestial` gibt das SRD nichts her —
+„Celestisch" kommt dort nur als Sprachname vor.
+
+
 ## [14.0.25] - 2026-07-24
 
 ### Fixed - Gesinnungen folgen jetzt der SRD-Schreibung
