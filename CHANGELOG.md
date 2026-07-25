@@ -3,6 +3,43 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.28] - 2026-07-25
+
+### Changed - „Rettungswurf auf Konstitution" heisst „Konstitutionsrettungswurf"
+
+Beim Nachbauen der Seite *Finstere Gaben* standen zwei Fassungen nebeneinander:
+*Rettungswurf auf Weisheit* und *Weisheitsrettungswurf*. Das SRD 5.2.1 entscheidet das
+eindeutig — **411 Komposita, keine einzige Praepositionalfuegung**. Auch bei mehreren
+Attributen: es schreibt *„Intelligenz- und in Weisheitsrettungswuerfen"*, also mit
+Bindestrich-Ellipse.
+
+Vereinheitlicht ueber alle drei Module, **298 Stellen** in 16 Wortformen:
+
+| | |
+|---|---|
+| Rettungswurf auf Konstitution | **Konstitutionsrettungswurf** |
+| Rettungswuerfe auf Weisheit | **Weisheitsrettungswuerfe** |
+| Rettungswuerfen auf Staerke, Geschicklichkeit und Konstitution | **Staerke-, Geschicklichkeits- und Konstitutionsrettungswuerfen** |
+| Rettungswurf auf Intelligenz, Weisheit oder Charisma | **Intelligenz-, Weisheits- oder Charismarettungswurf** |
+
+Die Flexion zieht mit — *Rettungswuerfen auf Staerke* wird zu *Staerkerettungswuerfen*, nicht
+zu *…wurf*. Genus und Kasus bleiben gleich (*der* Rettungswurf → *der*
+Konstitutionsrettungswurf), Artikel und Adjektive davor stimmen also weiter.
+
+Zwei Stellen fehlten zunaechst: dort steht der Zeilenumbruch als Escape-Folge, deren
+literales `n` direkt am Wort klebt — die Wortgrenze im Suchmuster griff nicht. Nachgezogen.
+
+Im Sprachmodul **79 Stellen**: 18 in `babele/dnd5e.content24.json`, 61 in den generierten
+Overrides `scripts/babele-runtime-overrides.modern.generated.js`. Die Werkzeug- und
+Sicherungsdateien unter `tools/` sowie der Referenzstand `oldmod_ref_20260315/` sind
+absichtlich unberuehrt — die sollen den alten Stand zeigen.
+
+### Verified
+
+Babele-Schluesselzahl unveraendert (2.788), kein Pfad verschwunden oder hinzugekommen,
+JSON und JS-Syntax gueltig. Alte Form: **0**.
+
+
 ## [14.0.27] - 2026-07-25
 
 ### Fixed - Dieselben acht Regelbegriffe, dritter Ort

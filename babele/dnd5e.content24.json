@@ -581,7 +581,7 @@
     },
     "Shoving a Creature": {
      "name": "Kreatur stoßen",
-     "text": "<p>Mit der Aktion Angriff kannst du einen speziellen Nahkampfangriff ausführen, um eine Kreatur zu stoßen, entweder um sie zu Boden zu werfen oder von dir wegzustoßen. Das Ziel muss einen Rettungswurf auf Stärke oder Geschicklichkeit bestehen (es wählt selbst), andernfalls stößt du es 1,5 Meter weit weg oder es erhält den Zustand &amp;Reference[Prone]. Der SG für den Rettungswurf entspricht 8 plus deinem Stärkemodifikator und deinem Übungsbonus. Dieser Stoß ist nur möglich, wenn das Ziel nicht mehr als eine Größenkategorie größer ist als du.</p>"
+     "text": "<p>Mit der Aktion Angriff kannst du einen speziellen Nahkampfangriff ausführen, um eine Kreatur zu stoßen, entweder um sie zu Boden zu werfen oder von dir wegzustoßen. Das Ziel muss einen Stärke- oder Geschicklichkeitsrettungswurf bestehen (es wählt selbst), andernfalls stößt du es 1,5 Meter weit weg oder es erhält den Zustand &amp;Reference[Prone]. Der SG für den Rettungswurf entspricht 8 plus deinem Stärkemodifikator und deinem Übungsbonus. Dieser Stoß ist nur möglich, wenn das Ziel nicht mehr als eine Größenkategorie größer ist als du.</p>"
     },
     "Ending a Grapple": {
      "name": "Einen Griff beenden",
@@ -605,11 +605,11 @@
     },
     "Half Cover": {
      "name": "Halbe Deckung",
-     "text": "<p>Ein Ziel mit <strong>halber Deckung</strong> erhält einen Bonus von +2 auf die RK und auf Rettungswürfe auf Geschicklichkeit.</p>"
+     "text": "<p>Ein Ziel mit <strong>halber Deckung</strong> erhält einen Bonus von +2 auf die RK und auf Geschicklichkeitsrettungswürfe.</p>"
     },
     "Three-Quarters Cover": {
      "name": "Dreiviertel-Deckung",
-     "text": "<p>Ein Ziel mit <strong>Dreiviertel-Deckung</strong> erhält einen Bonus von +5 auf die RK und auf Rettungswürfe auf Geschicklichkeit.</p>"
+     "text": "<p>Ein Ziel mit <strong>Dreiviertel-Deckung</strong> erhält einen Bonus von +5 auf die RK und auf Geschicklichkeitsrettungswürfe.</p>"
     },
     "Total Cover": {
      "name": "Volle Deckung",
@@ -817,7 +817,7 @@
     },
     "Going Mad (2014)": {
      "name": "Wahnsinnig werden (2014)",
-     "text": "<p>Verschiedene magische Effekte können Wahnsinn in einem ansonsten stabilen\nGeist hervorrufen. Bestimmte Zauber, wie\n@UUID[Compendium.dnd5e.spells24.Item.phbsplContactOth]{Kontakt zu anderer Ebene} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplSymbol0000]{Symbol}, können\nWahnsinn verursachen, und du kannst die hier beschriebenen Wahnsinnsregeln anstelle der\nZaubereffekte dieser Zauber verwenden. Krankheiten, Gifte und planare Effekte\nwie psychischer Wind oder die heulenden Winde des Pandämoniums können alle\nWahnsinn hervorrufen. Manche Artefakte können auch die Psyche eines Charakters brechen, der\nsie benutzt oder sich mit ihnen einstimmt.</p><p>Einem wahnsinnsinduzierenden\nEffekt zu widerstehen, erfordert gewöhnlich einen Rettungswurf auf Weisheit oder Charisma.</p>"
+     "text": "<p>Verschiedene magische Effekte können Wahnsinn in einem ansonsten stabilen\nGeist hervorrufen. Bestimmte Zauber, wie\n@UUID[Compendium.dnd5e.spells24.Item.phbsplContactOth]{Kontakt zu anderer Ebene} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplSymbol0000]{Symbol}, können\nWahnsinn verursachen, und du kannst die hier beschriebenen Wahnsinnsregeln anstelle der\nZaubereffekte dieser Zauber verwenden. Krankheiten, Gifte und planare Effekte\nwie psychischer Wind oder die heulenden Winde des Pandämoniums können alle\nWahnsinn hervorrufen. Manche Artefakte können auch die Psyche eines Charakters brechen, der\nsie benutzt oder sich mit ihnen einstimmt.</p><p>Einem wahnsinnsinduzierenden\nEffekt zu widerstehen, erfordert gewöhnlich einen Weisheits- oder Charismarettungswurf.</p>"
     },
     "Madness Effects (2014)": {
      "name": "Wahnsinnseffekte (2014)",
@@ -1060,7 +1060,7 @@
      "text": "<p>Lege einen Intelligenz-Rettungswurf ab, um eine Illusion als Fälschung zu erkennen.</p>"
     },
     "Constitution Saving Throw": {
-     "name": "Rettungswurf auf Konstitution",
+     "name": "Konstitutionsrettungswurf",
      "text": "<p>Jede Waffe besitzt eine Meisterschaftseigenschaft, die nur von einem Charakter genutzt werden kann, der ein Merkmal, wie z.B. Waffenbeherrschung, besitzt, das die Eigenschaft für den Charakter freischaltet. Die Eigenschaften sind unten definiert.</p><h3>Spalten</h3><p>@Embed[.ULDpodOdTxTTiNEx\ninline]</p><h3>Streifen</h3><p>@Embed[.PPnaXKPsQvAZp0J4\ninline]</p><h3>Kerben</h3><p>@Embed[.l0uao3UVco5ptQso\ninline]</p><h3>Stoßen</h3><p>@Embed[.BPD7ScnLyuPwl145\ninline]</p><h3>Entkräften</h3><p>@Embed[.fPkZQ7TkKCCA3nTc\ninline]</p><h3>Verlangsamen</h3><p>@Embed[.OQQ7hAp6OAxX1rXY\ninline]</p><h3>Umwerfen</h3><p>@Embed[.IMnpuysdrSalmZJg\ninline]</p><h3>Ärgern</h3><p>@Embed[.hg3adn9O1O5Z2QxL inline]</p>"
     },
     "Graze": {
@@ -1172,16 +1172,16 @@
      "text": "<p><strong>Eingenommen.</strong> Eine Kreatur muss eine ganze Dosis eingenommenen Gifts schlucken, um dessen Effekte zu erleiden. Die Dosis kann in Nahrung oder einer Flüssigkeit verabreicht werden. Du kannst entscheiden, dass eine Teildosis eine reduzierte Wirkung hat, z.B. Vorteil auf den Rettungswurf gewährt oder bei einem misslungenen Rettungswurf nur halb so viel Schaden verursacht.</p>"
     },
     "Wisdom Saving Throw": {
-     "name": "Rettungswurf auf Weisheit",
-     "text": "<p>Lege einen Rettungswurf auf Weisheit ab, um einem mentalen Angriff zu widerstehen.</p>"
+     "name": "Weisheitsrettungswurf",
+     "text": "<p>Lege einen Weisheitsrettungswurf ab, um einem mentalen Angriff zu widerstehen.</p>"
     },
     "Intelligence Saving Throw": {
-     "name": "Rettungswurf auf Intelligenz",
-     "text": "<p>Lege einen Rettungswurf auf Intelligenz ab, um eine Illusion als falsch zu erkennen.</p>"
+     "name": "Intelligenzrettungswurf",
+     "text": "<p>Lege einen Intelligenzrettungswurf ab, um eine Illusion als falsch zu erkennen.</p>"
     },
     "Dexterity Saving Throw": {
-     "name": "Rettungswurf auf Geschicklichkeit",
-     "text": "<p>Lege einen Rettungswurf auf Geschicklichkeit ab, um einem Schaden auszuweichen.</p>"
+     "name": "Geschicklichkeitsrettungswurf",
+     "text": "<p>Lege einen Geschicklichkeitsrettungswurf ab, um einem Schaden auszuweichen.</p>"
     },
     "Weapon Masteries": {
      "name": "Waffenbeherrschungen",
@@ -1301,7 +1301,7 @@
     },
     "Dodge": {
      "name": "Ausweichen",
-     "text": "<p>Wenn du die Aktion Ausweichen ausführst, erhältst du die folgenden Vorteile: Bis zum Beginn deines nächsten Zuges hat jeder Angriffswurf, der gegen dich ausgeführt wird, &amp;Reference[Disadvantage], wenn du den Angreifer sehen kannst, und du legst Rettungswürfe auf Geschicklichkeit mit &amp;Reference[Advantage] ab.</p><p>Du verlierst diese Vorteile, wenn du den Zustand Kampfunfähig hast oder deine Bewegungsrate 0 ist.</p>"
+     "text": "<p>Wenn du die Aktion Ausweichen ausführst, erhältst du die folgenden Vorteile: Bis zum Beginn deines nächsten Zuges hat jeder Angriffswurf, der gegen dich ausgeführt wird, &amp;Reference[Disadvantage], wenn du den Angreifer sehen kannst, und du legst Geschicklichkeitsrettungswürfe mit &amp;Reference[Advantage] ab.</p><p>Du verlierst diese Vorteile, wenn du den Zustand Kampfunfähig hast oder deine Bewegungsrate 0 ist.</p>"
     },
     "Help": {
      "name": "Helfen",
@@ -1377,11 +1377,11 @@
     },
     "Paralyzed": {
      "name": "Gelähmt",
-     "text": "<p>Solange du den Zustand Gelähmt hast, erfährst du die folgenden Effekte.</p><p><em><strong>Kampfunfähig.</strong></em> Du hast den Zustand &amp;Reference[Incapacitated].</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine Bewegungsrate ist 0 und kann nicht erhöht werden.</p><p><em><strong>Betroffene Rettungswürfe.</strong></em> Du scheiterst automatisch an Rettungswürfen auf Stärke und Geschicklichkeit.</p><p><em><strong>Betroffene Angriffe.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p><p><em><strong>Automatische Kritische Treffer.</strong></em> Jeder Angriffswurf, der dich trifft, ist ein Kritischer Treffer, wenn der Angreifer sich innerhalb von 1,5 Metern von dir befindet.</p>"
+     "text": "<p>Solange du den Zustand Gelähmt hast, erfährst du die folgenden Effekte.</p><p><em><strong>Kampfunfähig.</strong></em> Du hast den Zustand &amp;Reference[Incapacitated].</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine Bewegungsrate ist 0 und kann nicht erhöht werden.</p><p><em><strong>Betroffene Rettungswürfe.</strong></em> Du scheiterst automatisch an Stärke- und Geschicklichkeitsrettungswürfen.</p><p><em><strong>Betroffene Angriffe.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p><p><em><strong>Automatische Kritische Treffer.</strong></em> Jeder Angriffswurf, der dich trifft, ist ein Kritischer Treffer, wenn der Angreifer sich innerhalb von 1,5 Metern von dir befindet.</p>"
     },
     "Petrified": {
      "name": "Versteinert",
-     "text": "<p>Solange du den Zustand Versteinert hast, erfährst du die folgenden Effekte.</p><p><em><strong>In unbelebte Substanz verwandelt.</strong></em> Du wirst zusammen mit allen nichtmagischen Gegenständen, die du trägst und bei dir hast, in eine feste, unbelebte Substanz (gewöhnlich Stein) verwandelt. Dein Gewicht erhöht sich um das Zehnfache, und du hörst auf zu altern.</p><p><em><strong>Kampfunfähig.</strong></em> Du hast den Zustand &amp;Reference[Incapacitated].</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine Bewegungsrate ist 0 und kann nicht erhöht werden.</p><p><em><strong>Betroffene Angriffe.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p><p><em><strong>Betroffene Rettungswürfe.</strong></em> Du scheiterst automatisch an Rettungswürfen auf Stärke und Geschicklichkeit.</p><p><em><strong>Schadensresistenz.</strong></em> Du hast &amp;Reference[Resistance] gegen allen Schaden.</p><p><em><strong>Immunität gegen Gift.</strong></em> Du hast Immunität gegen den Zustand &amp;Reference[Poisoned].</p>"
+     "text": "<p>Solange du den Zustand Versteinert hast, erfährst du die folgenden Effekte.</p><p><em><strong>In unbelebte Substanz verwandelt.</strong></em> Du wirst zusammen mit allen nichtmagischen Gegenständen, die du trägst und bei dir hast, in eine feste, unbelebte Substanz (gewöhnlich Stein) verwandelt. Dein Gewicht erhöht sich um das Zehnfache, und du hörst auf zu altern.</p><p><em><strong>Kampfunfähig.</strong></em> Du hast den Zustand &amp;Reference[Incapacitated].</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine Bewegungsrate ist 0 und kann nicht erhöht werden.</p><p><em><strong>Betroffene Angriffe.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p><p><em><strong>Betroffene Rettungswürfe.</strong></em> Du scheiterst automatisch an Stärke- und Geschicklichkeitsrettungswürfen.</p><p><em><strong>Schadensresistenz.</strong></em> Du hast &amp;Reference[Resistance] gegen allen Schaden.</p><p><em><strong>Immunität gegen Gift.</strong></em> Du hast Immunität gegen den Zustand &amp;Reference[Poisoned].</p>"
     },
     "Poisoned": {
      "name": "Vergiftet",
@@ -1393,15 +1393,15 @@
     },
     "Restrained": {
      "name": "Festgesetzt",
-     "text": "<p>Solange du den Zustand Festgesetzt hast, erfährst du die folgenden Effekte.</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine &amp;Reference[Speed] ist 0 und kann nicht erhöht werden.</p><p><em><strong>Angriffe betroffen.</strong></em> Angriffswürfe gegen dich haben Vorteil, und deine Angriffswürfe haben &amp;Reference[Disadvantage].</p><p><em><strong>Rettungswürfe betroffen.</strong></em> Du hast Nachteil auf Rettungswürfe auf Geschicklichkeit.</p>"
+     "text": "<p>Solange du den Zustand Festgesetzt hast, erfährst du die folgenden Effekte.</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine &amp;Reference[Speed] ist 0 und kann nicht erhöht werden.</p><p><em><strong>Angriffe betroffen.</strong></em> Angriffswürfe gegen dich haben Vorteil, und deine Angriffswürfe haben &amp;Reference[Disadvantage].</p><p><em><strong>Rettungswürfe betroffen.</strong></em> Du hast Nachteil auf Geschicklichkeitsrettungswürfe.</p>"
     },
     "Stunned": {
      "name": "Betäubt",
-     "text": "<p>Wenn du den Zustand Betäubt hast, erleidest du die folgenden Effekte.</p><p><em><strong>Kampfunfähig.</strong></em> Du hast den Zustand\n@UUID[.4i3G895hy99piand]{Kampfunfähig}\n.</p><p><em><strong>Betroffene Rettungswürfe.</strong></em> Du scheiterst automatisch an Rettungswürfen auf Stärke und Geschicklichkeit.</p><p><em><strong>Betroffene Angriffe.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p>"
+     "text": "<p>Wenn du den Zustand Betäubt hast, erleidest du die folgenden Effekte.</p><p><em><strong>Kampfunfähig.</strong></em> Du hast den Zustand\n@UUID[.4i3G895hy99piand]{Kampfunfähig}\n.</p><p><em><strong>Betroffene Rettungswürfe.</strong></em> Du scheiterst automatisch an Stärke- und Geschicklichkeitsrettungswürfen.</p><p><em><strong>Betroffene Angriffe.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p>"
     },
     "Unconscious": {
      "name": "Bewusstlos",
-     "text": "<p>Solange du den Zustand Bewusstlos hast, erfährst du die folgenden Effekte.</p><p><em><strong>Träge.</strong></em> Du hast die Zustände &amp;Reference[Incapacitated] und &amp;Reference[Prone] und lässt fallen, was immer du hältst. Wenn dieser Zustand endet, bleibst du Liegend.</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine &amp;Reference[Speed] ist 0 und kann nicht erhöht werden.</p><p><em><strong>Angriffe betroffen.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p><p><em><strong>Rettungswürfe betroffen.</strong></em> Du scheiterst automatisch an Rettungswürfen auf Stärke und Geschicklichkeit.</p><p><em><strong>Automatische Kritische Treffer.</strong></em> Jeder Angriffswurf, der dich trifft, ist ein Kritischer Treffer, wenn der Angreifer sich innerhalb von 1,5 Metern von dir befindet.</p>"
+     "text": "<p>Solange du den Zustand Bewusstlos hast, erfährst du die folgenden Effekte.</p><p><em><strong>Träge.</strong></em> Du hast die Zustände &amp;Reference[Incapacitated] und &amp;Reference[Prone] und lässt fallen, was immer du hältst. Wenn dieser Zustand endet, bleibst du Liegend.</p><p><em><strong>Bewegungsrate 0.</strong></em> Deine &amp;Reference[Speed] ist 0 und kann nicht erhöht werden.</p><p><em><strong>Angriffe betroffen.</strong></em> Angriffswürfe gegen dich haben &amp;Reference[Advantage].</p><p><em><strong>Rettungswürfe betroffen.</strong></em> Du scheiterst automatisch an Stärke- und Geschicklichkeitsrettungswürfen.</p><p><em><strong>Automatische Kritische Treffer.</strong></em> Jeder Angriffswurf, der dich trifft, ist ein Kritischer Treffer, wenn der Angreifer sich innerhalb von 1,5 Metern von dir befindet.</p>"
     },
     "Hazard": {
      "name": "Gefahr",
@@ -2053,7 +2053,7 @@
     },
     "Gnome": {
      "name": "Gnom",
-     "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGnome000000\ninline classes=\"free-rules-embed\"]</p><h2>Gnomische Eigenschaften</h2><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>Größe: </strong>Klein (etwa 0,9–1,2 Meter groß)</p><p><strong>Bewegungsrate:</strong> 9 Meter</p><p>Als Gnom besitzt du diese besonderen Eigenschaften.</p><p><em><strong>Dunkelsicht. </strong></em>Du besitzt Dunkelsicht mit einer Reichweite von 18 Metern.</p><p><em><strong>Gnomische Gerissenheit.</strong></em> Du hast Vorteil auf Rettungswürfe auf Intelligenz, Weisheit und Charisma.</p><p><em><strong>Gnomische Abstammung.</strong></em> Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht. Wähle eine der folgenden Optionen; welche auch immer du wählst, Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst (wähle die Fähigkeit, wenn du die Abstammung auswählst):</p><p><strong>Waldgnom.</strong> Du kennst den Zaubertrick @UUID[Compendium.dnd5e.spells24.Item.phbsplMinorIllus]{Geringere Illusion}. Du hast außerdem den Zauber Mit Tieren sprechen immer vorbereitet. Du kannst ihn ohne Zauberplatz so oft wirken, wie dein Übungsbonus beträgt, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du hast.</p><p><strong>Felsengnom.</strong> Du kennst die Zaubertricks @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Ausbessern} und @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Prästidigitation}. Zusätzlich kannst du 10 Minuten damit verbringen, Fingerfertigkeit zu wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu erschaffen, wie ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn du das Gerät erschaffst, bestimmst du seine Funktion, indem du einen Effekt aus <em>Fingerfertigkeit</em> wählst; das Gerät erzeugt diesen Effekt, wann immer du oder eine andere Kreatur eine Bonusaktion nutzt, um es durch Berührung zu aktivieren. Wenn der gewählte Effekt Optionen enthält, wählst du eine dieser Optionen für das Gerät, wenn du es erschaffst. Wenn du zum Beispiel den Entzünden-Löschen-Effekt des Zaubers wählst, bestimmst du, ob das Gerät Feuer entzündet oder löscht; das Gerät tut nicht beides. Du kannst drei solcher Geräte gleichzeitig existieren lassen, und jedes zerfällt 8 Stunden nach seiner Erschaffung oder wenn du es mit einer Berührung als Aktion „Nutzen“ demontierst.</p>"
+     "text": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGnome000000\ninline classes=\"free-rules-embed\"]</p><h2>Gnomische Eigenschaften</h2><p><strong>Kreaturentyp: </strong>Humanoider</p><p><strong>Größe: </strong>Klein (etwa 0,9–1,2 Meter groß)</p><p><strong>Bewegungsrate:</strong> 9 Meter</p><p>Als Gnom besitzt du diese besonderen Eigenschaften.</p><p><em><strong>Dunkelsicht. </strong></em>Du besitzt Dunkelsicht mit einer Reichweite von 18 Metern.</p><p><em><strong>Gnomische Gerissenheit.</strong></em> Du hast Vorteil auf Intelligenz-, Weisheits- und Charismarettungswürfe.</p><p><em><strong>Gnomische Abstammung.</strong></em> Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht. Wähle eine der folgenden Optionen; welche auch immer du wählst, Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst (wähle die Fähigkeit, wenn du die Abstammung auswählst):</p><p><strong>Waldgnom.</strong> Du kennst den Zaubertrick @UUID[Compendium.dnd5e.spells24.Item.phbsplMinorIllus]{Geringere Illusion}. Du hast außerdem den Zauber Mit Tieren sprechen immer vorbereitet. Du kannst ihn ohne Zauberplatz so oft wirken, wie dein Übungsbonus beträgt, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du hast.</p><p><strong>Felsengnom.</strong> Du kennst die Zaubertricks @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Ausbessern} und @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Prästidigitation}. Zusätzlich kannst du 10 Minuten damit verbringen, Fingerfertigkeit zu wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu erschaffen, wie ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn du das Gerät erschaffst, bestimmst du seine Funktion, indem du einen Effekt aus <em>Fingerfertigkeit</em> wählst; das Gerät erzeugt diesen Effekt, wann immer du oder eine andere Kreatur eine Bonusaktion nutzt, um es durch Berührung zu aktivieren. Wenn der gewählte Effekt Optionen enthält, wählst du eine dieser Optionen für das Gerät, wenn du es erschaffst. Wenn du zum Beispiel den Entzünden-Löschen-Effekt des Zaubers wählst, bestimmst du, ob das Gerät Feuer entzündet oder löscht; das Gerät tut nicht beides. Du kannst drei solcher Geräte gleichzeitig existieren lassen, und jedes zerfällt 8 Stunden nach seiner Erschaffung oder wenn du es mit einer Berührung als Aktion „Nutzen“ demontierst.</p>"
     },
     "Goliath": {
      "name": "Goliath",
