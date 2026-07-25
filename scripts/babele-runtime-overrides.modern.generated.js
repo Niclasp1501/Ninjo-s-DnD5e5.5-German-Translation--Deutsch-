@@ -1449,19 +1449,19 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplEnsnaringS": {
     "name": "Fesselnder Schlag",
-    "description": "<p>Wenn du das Ziel triffst, erscheinen greifende Ranken an ihm, und es macht einen\nStärke-Rettungswurf. Eine Große oder größere Kreatur hat Vorteil auf diesen\nWurf. Bei einem misslungenen Wurf hat das Ziel den <span\nstyle=\"font-family:Signika, sans-serif\">&amp;Reference[restrained\napply=false] </span>Zustand, bis der Zauber endet. Bei einem erfolgreichen Wurf\nverdorren die Ranken, und der Zauber endet.</p><p>Solange es Gefesselt ist, erleidet das\nZiel zu Beginn jedes seiner Züge 1W6 Stichschaden. Das Ziel oder eine Kreatur in\nReichweite kann eine Aktion aufwenden, um einen\n[[/check ability=str skill=ath dc=@attributes.spell.dc]] Wurf gegen\ndeinen Zauber-SG zu machen. Bei Erfolg endet der Zauber.</p><p><strong>Verwendung eines\nZauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W6 für jeden\nZauberplatzgrad über dem 1. Grad.</p>",
+    "description": "<p>Wenn du das Ziel triffst, erscheinen greifende Ranken an ihm, und es macht einen\nStärke-Rettungswurf. Eine Große oder größere Kreatur hat Vorteil auf diesen\nWurf. Bei einem misslungenen Wurf hat das Ziel den <span\nstyle=\"font-family:Signika, sans-serif\">&amp;Reference[restrained\napply=false] </span>Zustand, bis der Zauber endet. Bei einem erfolgreichen Wurf\nverdorren die Ranken, und der Zauber endet.</p><p>Solange es Festgesetzt ist, erleidet das\nZiel zu Beginn jedes seiner Züge 1W6 Stichschaden. Das Ziel oder eine Kreatur in\nReichweite kann eine Aktion aufwenden, um einen\n[[/check ability=str skill=ath dc=@attributes.spell.dc]] Wurf gegen\ndeinen Zauber-SG zu machen. Bei Erfolg endet der Zauber.</p><p><strong>Verwendung eines\nZauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W6 für jeden\nZauberplatzgrad über dem 1. Grad.</p>",
     "activities": {
       "Start of Turn Damage": "Schaden zu Beginn des Zuges"
     },
     "effects": {
-      "tFGMG3cjQTEeAhv2": "Gefesselt"
+      "tFGMG3cjQTEeAhv2": "Festgesetzt"
     }
   },
   "phbsplEntangle00": {
     "name": "Fesseln",
     "description": "<p>Greifende Pflanzen sprießen aus dem Boden in einem 20-Fuß-Quadrat innerhalb\nder Reichweite. Für die Dauer verwandeln diese Pflanzen den Boden in dem Bereich in\n&amp;Reference[difficultterrain]. Sie verschwinden, wenn der Zauber\nendet.</p><p>Jede Kreatur (außer dir) in dem Bereich, wenn du den Zauber wirkst,\n muss einen Stärke-Rettungswurf bestehen oder den\n&amp;Reference[restrained apply=false] Zustand haben, bis der Zauber endet. Eine\ngefesselte Kreatur kann eine Aktion aufwenden, um einen [[/check ability=str\nskill=ath dc=@attributes.spell.dc]] Wurf gegen deinen Zauber-SG zu machen. Bei einem\nErfolg befreit sie sich von den greifenden Pflanzen und ist nicht länger\nvon ihnen gefesselt.</p>",
     "effects": {
-      "wn7K2m4XhXhItgPT": "Gefesselt"
+      "wn7K2m4XhXhItgPT": "Festgesetzt"
     }
   },
   "phbsplExpeditiou": {
@@ -2474,7 +2474,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Sich windende, ebenholzfarbene Tentakel füllen ein 20-Fuß-Quadrat auf dem Boden, das du innerhalb der Reichweite sehen kannst. Für die Dauer des Zaubers verwandeln diese Tentakel den Boden in diesem Bereich in &amp;Reference[DifficultTerrain]schwieriges Gelände.</p><p>Jede Kreatur in diesem Bereich muss einen Stärke-Rettungswurf ablegen. Bei einem misslungenen Rettungswurf erleidet sie 3W6 Wuchtschaden und erhält den Zustand &amp;Reference[Restrained apply=false], bis der Zauber endet. Eine Kreatur legt diesen Rettungswurf auch ab, wenn sie den Bereich betritt oder ihren Zug dort beendet. Eine Kreatur legt diesen Rettungswurf nur einmal pro Zug ab.</p><p>Eine gefesselte Kreatur kann eine Aktion aufwenden, um einen [[/check ability=str skill=ath dc=@attributes.spell.dc]]-Wurf gegen deinen Zauber-SG abzulegen. Bei einem Erfolg beendet sie den Zustand für sich selbst.</p>",
     "materials": "ein Tentakel",
     "effects": {
-      "NDytclFrNmC418CS": "Gefesselt"
+      "NDytclFrNmC418CS": "Festgesetzt"
     }
   },
   "phbsplBlight0000": {
@@ -2558,7 +2558,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbFaithfulHound": {
     "name": "Treuer Wachhund",
-    "description": "<p>Du beschwörst einen Phantom-Wachhund in einem unbesetzten Raum, den du innerhalb der Reichweite sehen kannst. Der Hund bleibt für die Dauer oder bis ihr beide mehr als 90 m voneinander entfernt seid.</p><p>Niemand außer dir kann den Hund sehen, und er ist immateriell und unverwundbar. Wenn eine Kleine oder größere Kreatur innerhalb von 9 m an ihn herankommt, ohne zuvor das Passwort zu sprechen, das du beim Wirken dieses Zaubers angibst, beginnt der Hund laut zu bellen. Der Hund hat Wahre Sicht mit einer Reichweite von 9 m.</p><p>Zu Beginn jedes deiner Züge versucht der Hund, einen Feind innerhalb von 1,5 m von ihm zu beißen. Dieser Feind muss einen Geschicklichkeitsrettungswurf bestehen oder nimmt 4W8 Wuchtschaden.</p><p>In deinen späteren Zügen kannst du eine Magie-Aktion ausführen, um den Hund bis zu 9 m zu bewegen.</p>",
+    "description": "<p>Du beschwörst einen Phantom-Wachhund in einem unbesetzten Raum, den du innerhalb der Reichweite sehen kannst. Der Hund bleibt für die Dauer oder bis ihr beide mehr als 90 m voneinander entfernt seid.</p><p>Niemand außer dir kann den Hund sehen, und er ist immateriell und unverwundbar. Wenn eine Kleine oder größere Kreatur innerhalb von 9 m an ihn herankommt, ohne zuvor das Passwort zu sprechen, das du beim Wirken dieses Zaubers angibst, beginnt der Hund laut zu bellen. Der Hund hat Wahrer Blick mit einer Reichweite von 9 m.</p><p>Zu Beginn jedes deiner Züge versucht der Hund, einen Feind innerhalb von 1,5 m von ihm zu beißen. Dieser Feind muss einen Geschicklichkeitsrettungswurf bestehen oder nimmt 4W8 Wuchtschaden.</p><p>In deinen späteren Zügen kannst du eine Magie-Aktion ausführen, um den Hund bis zu 9 m zu bewegen.</p>",
     "activities": {
       "Move Hound": "Hund bewegen"
     },
@@ -3160,14 +3160,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Dieser Zauber erschafft eine magische Verbindung zwischen einer großen oder größeren unbelebten Pflanze innerhalb der Reichweite und einer anderen Pflanze, in beliebiger Entfernung, auf derselben Existenzebene. Du musst die Zielpflanze mindestens einmal zuvor gesehen oder berührt haben. Für die Dauer kann jede Kreatur in die Zielpflanze treten und aus der Zielpflanze austreten, indem sie 1,5 m Bewegung verwendet.</p>"
   },
   "phbsplTrueSeeing": {
-    "name": "Wahre Sicht",
-    "description": "<p>Für die Dauer hat die bereitwillige Kreatur, die du berührst, Wahre Sicht mit einer Reichweite von 36 m.</p>",
+    "name": "Wahrer Blick",
+    "description": "<p>Für die Dauer hat die bereitwillige Kreatur, die du berührst, Wahrer Blick mit einer Reichweite von 36 m.</p>",
     "activities": {
-      "Grant Truesight": "Wahre Sicht gewähren"
+      "Grant Truesight": "Wahrer Blick gewähren"
     },
     "materials": "Pilzpulver im Wert von 25+ GM, das der Zauber verbraucht",
     "effects": {
-      "nW7Dh0S9wT7QHWCj": "Wahre Sicht"
+      "nW7Dh0S9wT7QHWCj": "Wahrer Blick"
     }
   },
   "phbsplWallofIce0": {
@@ -4061,7 +4061,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbspGoliath0000": {
     "name": "Goliath",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGoliath0000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"goliath-traits\">Goliath-Merkmale</h3><p><strong>Kreaturentyp:\n</strong>Humanoider</p><p><strong>Größe: </strong>Mittelgroß (etwa 2,1–2,4 m\ngroß)</p><p><strong>Bewegungsrate:</strong> 10,5 m</p><p>Als Goliath besitzt du\ndiese besonderen Merkmale.</p><p><strong>Riesen-Abstammung.</strong> Du stammst\nvon Riesen ab. Wähle einen der folgenden Vorteile – eine übernatürliche\nGabe deiner Abstammung; du kannst den gewählten Vorteil eine Anzahl von Malen\neinsetzen, die deinem Übungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du\neine lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als\neine Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten\nOrt, den du sehen kannst.</p><p><strong>Feuerbrand (Feuerriese).</strong> Wenn\ndu ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel\nzusätzlich 1W10 Feuerschaden zufügen.</p><p><strong>Frostkälte (Frostring).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden\nzufügst, kannst du diesem Ziel zusätzlich 1W6 Kälteschaden zufügen und seine\nBewegungsrate bis zum Beginn deines nächsten Zuges um 3 m reduzieren.</p><p><strong>Hügel-Sturz (Hügelriese). </strong>Wenn du eine Große oder kleinere Kreatur\nmit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den\n&amp;Reference[Prone] Zustand verleihen.</p><p><strong>Stein-Ausdauer (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 würfeln.\nAddiere deinen Konstitutionsmodifikator zu dem gewürfelten Wert und reduziere den\nSchaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von\ndir erleidest, kannst du als Reaktion 1W8 Donnerschaden an dieser\nKreatur verursachen.</p><p><strong>Große Form.</strong> Ab Charakterstufe\n5 kannst du deine Größe als Bonusaktion auf Groß ändern, wenn du dich in einem ausreichend\ngroßen Raum befindest. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest\n(keine Aktion erforderlich). Für diese Dauer hast du Vorteil auf Stärke-\nWürfe, und deine Bewegungsrate erhöht sich um 3 m. Sobald du dieses Merkmal\neingesetzt hast, kannst du es erst wieder verwenden, wenn du eine lange Rast beendest.</p><p><strong>Mächtiger\nKörperbau.</strong> Du hast Vorteil auf jeden Attributswurf, den du machst, um den\nZustand Ergriffen zu beenden. Du zählst auch als eine Größenkategorie größer, wenn du deine\nTragfähigkeit bestimmst.</p>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGoliath0000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"goliath-traits\">Goliath-Merkmale</h3><p><strong>Kreaturentyp:\n</strong>Humanoider</p><p><strong>Größe: </strong>Mittelgroß (etwa 2,1–2,4 m\ngroß)</p><p><strong>Bewegungsrate:</strong> 10,5 m</p><p>Als Goliath besitzt du\ndiese besonderen Merkmale.</p><p><strong>Riesen-Abstammung.</strong> Du stammst\nvon Riesen ab. Wähle einen der folgenden Vorteile – eine übernatürliche\nGabe deiner Abstammung; du kannst den gewählten Vorteil eine Anzahl von Malen\neinsetzen, die deinem Übungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du\neine lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als\neine Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten\nOrt, den du sehen kannst.</p><p><strong>Feuerbrand (Feuerriese).</strong> Wenn\ndu ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel\nzusätzlich 1W10 Feuerschaden zufügen.</p><p><strong>Frostkälte (Frostring).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden\nzufügst, kannst du diesem Ziel zusätzlich 1W6 Kälteschaden zufügen und seine\nBewegungsrate bis zum Beginn deines nächsten Zuges um 3 m reduzieren.</p><p><strong>Hügel-Sturz (Hügelriese). </strong>Wenn du eine Große oder kleinere Kreatur\nmit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den\n&amp;Reference[Prone] Zustand verleihen.</p><p><strong>Stein-Ausdauer (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 würfeln.\nAddiere deinen Konstitutionsmodifikator zu dem gewürfelten Wert und reduziere den\nSchaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von\ndir erleidest, kannst du als Reaktion 1W8 Donnerschaden an dieser\nKreatur verursachen.</p><p><strong>Große Form.</strong> Ab Charakterstufe\n5 kannst du deine Größe als Bonusaktion auf Groß ändern, wenn du dich in einem ausreichend\ngroßen Raum befindest. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest\n(keine Aktion erforderlich). Für diese Dauer hast du Vorteil auf Stärke-\nWürfe, und deine Bewegungsrate erhöht sich um 3 m. Sobald du dieses Merkmal\neingesetzt hast, kannst du es erst wieder verwenden, wenn du eine lange Rast beendest.</p><p><strong>Mächtiger\nKörperbau.</strong> Du hast Vorteil auf jeden Attributswurf, den du machst, um den\nZustand Gepackt zu beenden. Du zählst auch als eine Größenkategorie größer, wenn du deine\nTragfähigkeit bestimmst.</p>"
   },
   "phbspHalfling000": {
     "name": "Halbling",
@@ -5795,7 +5795,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbinvWitchSight": {
     "name": "Hexensicht",
-    "description": "<blockquote><p>Voraussetzung: Hexenmeister (Stufe 15+)</p></blockquote><p>Du hast\nWahre Sicht mit einer Reichweite von 9 m.</p><section\nid=\"secret-yUE0N1X1QX3kZHcx\" class=\"secret\"><p><strong>Foundry-\nHinweis</strong></p><p>Diese Fähigkeit beinhaltet einen aktiven Effekt, der dir\nautomatisch Wahre Sicht gewährt.</p></section>",
+    "description": "<blockquote><p>Voraussetzung: Hexenmeister (Stufe 15+)</p></blockquote><p>Du hast\nWahre Sicht mit einer Reichweite von 9 m.</p><section\nid=\"secret-yUE0N1X1QX3kZHcx\" class=\"secret\"><p><strong>Foundry-\nHinweis</strong></p><p>Diese Fähigkeit beinhaltet einen aktiven Effekt, der dir\nautomatisch Wahrer Blick gewährt.</p></section>",
     "effects": {
       "CkC8PmrUFz70FTwS": "Hexensicht"
     }
@@ -6966,7 +6966,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbBoonofTruesig": {
     "name": "Gunst der Wahren Sicht",
-    "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Attributswerterhöhung.</strong> Erhöhe einen Attributswert deiner Wahl um 1, bis zu einem Maximum von 30.</p><p><strong>Wahre Sicht.</strong> Du hast Wahre Sicht mit einer Reichweite von 18 m.</p><section id=\"secret-MmPASAH8hA8METnP\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Feature beinhaltet einen aktiven Effekt, der dir Wahre Sicht mit einer Reichweite von 18 m gewährt.</p></section>"
+    "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Attributswerterhöhung.</strong> Erhöhe einen Attributswert deiner Wahl um 1, bis zu einem Maximum von 30.</p><p><strong>Wahrer Blick.</strong> Du hast Wahrer Blick mit einer Reichweite von 18 m.</p><section id=\"secret-MmPASAH8hA8METnP\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Feature beinhaltet einen aktiven Effekt, der dir Wahrer Blick mit einer Reichweite von 18 m gewährt.</p></section>"
   },
   "phbfstArchery000": {
     "name": "Bogenschießen",
@@ -10293,7 +10293,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Mehrfachangriff",
     "description": "<p>Die/Der [[lookup @name lowercase]]{monster} führt {count} [[/item]]-Angriffe aus\nund setzt [[/item]] ein.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     }
   },
   "mmNightmareHaunt": {
@@ -10712,12 +10712,12 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Wirbel",
     "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], eine [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] im Raum des [[lookup @name lowercase]]{monster}. <em>Misserfolg:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] Schaden, und das Ziel hat den Zustand &amp;Reference[Grappled apply=false] (Entkommen SG [[lookup @skills.ath.passive]]). Bis der Griff endet, kann das Ziel keine Zauber mit einer verbalen Komponente wirken und erleidet [[/damage average activity=kDz92inkRCjGrPiz]] Schaden zu Beginn jedes Zuges des [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
-      "Damage: Grappled": "Schaden: Ergriffen",
+      "Damage: Grappled": "Schaden: Gepackt",
       "Escape Check": "Entkommen-Probe",
       "Save": "Rettungswurf"
     },
     "effects": {
-      "Grappled": "Ergriffen"
+      "Grappled": "Gepackt"
     }
   },
   "mmWarCry00000000": {
@@ -10870,7 +10870,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Kette",
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Wenn\ndas Ziel eine Kreatur der Größe Groß oder kleiner ist, hat es den\nZustand &amp;Reference[Grappled apply=false] (SG zum Entkommen [[lookup\n@skills.ath.passive]]) durch eine von zwei Ketten, und es hat den\nZustand &amp;Reference[Restrained apply=false], bis der Griff\nendet.</p>",
     "effects": {
-      "07IW8bZzgQ4Jk3sW": "Ergriffen & Gefesselt"
+      "07IW8bZzgQ4Jk3sW": "Gepackt & Festgesetzt"
     }
   },
   "mmChannelNegativ": {
@@ -10892,7 +10892,7 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Escape Check": "Entkommen-Probe"
     },
     "effects": {
-      "MpjWPflcv7Jqd7Tu": "Ergriffen und Gefesselt"
+      "MpjWPflcv7Jqd7Tu": "Gepackt und Festgesetzt"
     }
   },
   "mmCorruptingTouc": {
@@ -11840,7 +11840,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Einfrieren",
     "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} Kälteschaden erleidet, verringert sich seine Bewegungsrate um 6 m bis zum Ende seines nächsten Zuges.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     },
     "effects": {
       "B3otZdkyUcUlgrmk": "Bewegungsrate: -6 m"
@@ -13107,7 +13107,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Federzeichen (Anker)",
     "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen an ein Boot oder Schiff zu halten. Für die nächsten 24 Stunden kann das Gefährt auf keine Weise bewegt werden. Das erneute Berühren des Zeichens am Gefährt beendet den Effekt. Wenn der Effekt endet, verschwindet das Zeichen.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     },
     "effects": {
       "Fvj9Ua7rVEqdfPz5": "Anker"
@@ -13117,14 +13117,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Federzeichen (Vogel)",
     "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen 1,5 m in die Luft zu werfen. Das Zeichen verschwindet und ein riesiger, vielfarbiger Vogel nimmt seinen Platz ein. Der Vogel hat die Werte eines\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRoc00000000000]{Roc}</strong>, kann aber nicht angreifen. Er gehorcht deinen einfachen Befehlen und kann bis zu 500 Pfund tragen, während er mit seiner Höchstgeschwindigkeit fliegt (25,6 km pro Stunde für maximal 230,4 km pro Tag, mit einer 1-stündigen Pause für alle 3 Stunden Flug) oder 1.000 Pfund mit halber Geschwindigkeit. Der Vogel verschwindet, nachdem er seine maximale Tagesdistanz geflogen ist oder wenn er auf 0 Trefferpunkte fällt. Du kannst den Vogel als Magie-Aktion entlassen.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     }
   },
   "dmgFanQuaalsFeat": {
     "name": "Federzeichen (Fächer)",
     "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Wenn du dich auf einem Boot oder Schiff befindest, kannst du eine Magie-Aktion ausführen, um das Zeichen bis zu 3 m in die Luft zu werfen. Das Zeichen verschwindet, und ein riesiger, flatternder Fächer nimmt seinen Platz ein. Der Fächer schwebt und erzeugt einen starken Wind. Dieser Wind kann die Segel eines Schiffes füllen und dessen Geschwindigkeit für 8 Stunden um 8 km pro Stunde erhöhen. Du kannst den Fächer als Magie-Aktion entlassen.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     },
     "effects": {
       "xCyHeKeepXMk3KXZ": "Federzeichen: Fächer"
@@ -13134,21 +13134,21 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Federzeichen (Schwanenboot)",
     "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen an ein Gewässer mit mindestens 18 m Durchmesser zu halten. Das Zeichen verschwindet, und ein 15 m langes, 6 m breites Boot in Form eines Schwans nimmt seinen Platz ein. Das Boot ist selbstfahrend und bewegt sich mit einer Geschwindigkeit von 9,6 km pro Stunde über Wasser. Du kannst eine Magie-Aktion ausführen, während du auf dem Boot bist, um es zu befehlen, sich zu bewegen oder sich um bis zu 90 Grad zu drehen. Das Boot bleibt 24 Stunden lang und verschwindet dann. Du kannst das Boot als Magie-Aktion entlassen.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     }
   },
   "dmgTreeQuaalsFea": {
     "name": "Federzeichen (Baum)",
     "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du musst dich im Freien befinden, um dieses Zeichen zu verwenden. Du kannst eine Magie-Aktion ausführen, um es an ein unbesetztes Feld auf dem Boden zu halten. Das Zeichen verschwindet, und an seiner Stelle entsteht ein nichtmagischer Eichenbaum. Der Baum ist 18 m hoch und hat einen Stamm mit 1,5 m Durchmesser, und seine Äste an der Spitze breiten sich in einem Radius von 6 m aus.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     }
   },
   "dmgWhipQuaalsFea": {
     "name": "Federzeichen (Peitsche)",
     "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magie-Aktion ausführen, um das Zeichen auf einen Punkt innerhalb von 3 m von dir zu werfen. Das Zeichen verschwindet, und eine\n@UUID[Compendium.dnd5e.actors24.Actor.dmgqftFloatingWh]{floating whip} nimmt seinen Platz ein. Du kannst dann eine Bonusaktion ausführen, um einen Nahkampfzauberangriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu machen, mit einem Angriffsbonus von +9. Bei einem Treffer erleidet das Ziel 1W6 + 5 Wuchtschaden.</p><p>Als Bonusaktion kannst du die Peitsche anweisen, bis zu 6 m zu fliegen und den Angriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu wiederholen. Die Peitsche verschwindet nach 1 Stunde, wenn du eine Magie-Aktion ausführst, um sie zu entlassen, oder wenn du stirbst oder den Zustand 'Kampfunfähig' hast.</p>",
     "activities": {
-      "Use": "Benutzen"
+      "Use": "Verwenden"
     }
   },
   "dmgAssassinsBloo": {
@@ -13622,7 +13622,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgTrueSeeingCry": {
     "name": "Kristallkugel der Wahren Sicht",
-    "description": "<div><p><em>Wundersamer Gegenstand, Legendär (Benötigt\nEinstimmung)</em></p></div><p>Während du diese Kristallkugel berührst, kannst du damit\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Ausspähung}</em>\n(SG 17) wirken. Zusätzlich hast du Wahre Sicht mit einer Reichweite von 36 m, zentriert auf den Zaubersensor.</p>"
+    "description": "<div><p><em>Wundersamer Gegenstand, Legendär (Benötigt\nEinstimmung)</em></p></div><p>Während du diese Kristallkugel berührst, kannst du damit\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Ausspähung}</em>\n(SG 17) wirken. Zusätzlich hast du Wahrer Blick mit einer Reichweite von 36 m, zentriert auf den Zaubersensor.</p>"
   },
   "dmgCrystalBall00": {
     "name": "Kristallkugel",
@@ -13743,7 +13743,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Edelstein des Sehens",
     "description": "<p><em>Wundersamer Gegenstand, Selten (Benötigt Einstimmung)</em></p><p>Dieser Edelstein hat 3\nLadungen. Als Magie-Aktion kannst du 1 Ladung verbrauchen. Für die nächsten 10\nMinuten hast du &amp;Reference[Truesight] bis zu 36 m, wenn du\ndurch den Edelstein blickst.</p><p>Der Edelstein erhält täglich bei\nSonnenaufgang 1W3 verbrauchte Ladungen zurück.</p>",
     "activities": {
-      "Gain Truesight": "Wahre Sicht erhalten"
+      "Gain Truesight": "Wahrer Blick erhalten"
     },
     "effects": {
       "z8fm5PbP5qz4iJuP": "Sehen"
@@ -13849,7 +13849,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgIounStone0000": {
     "name": "Ioun-Stein",
-    "description": "<p><em>Wundersamer Gegenstand, Seltenheit variiert (Benötigt\nEinstimmung)</em></p><p>Ungefähr marmorgroß, sind <em>Ioun-Steine</em> nach Ioun benannt, einem Gott des Wissens und der Prophezeiung, der auf einigen Welten verehrt wird.\nViele Arten von <em>Ioun-Steinen</em> existieren, jede Art eine eigene Kombination\naus Form und Farbe.</p><p>Wenn du eine Magie-Aktion ausführst, um einen <em>Ioun-\nStein</em> in die Luft zu werfen, umkreist der Stein deinen Kopf in einem Abstand von 1W3\nFuß und gewährt dir dabei seinen Vorteil. Du kannst bis zu\ndrei <em>Ioun-Steine</em> gleichzeitig um deinen Kopf kreisen lassen.</p><p>Jeder\n<em>Ioun-Stein</em>, der deinen Kopf umkreist, gilt als ein Gegenstand, den du\nträgst. Der umkreisende Stein vermeidet Kontakt mit anderen Kreaturen und\nObjekten, passt seine Umlaufbahn an, um Kollisionen zu vermeiden, und vereitelt alle\nVersuche anderer Kreaturen, ihn anzugreifen oder zu schnappen.</p><p>Als Benutzen-\nAktion kannst du beliebig viele <em>Ioun-Steine</em>, die deinen Kopf umkreisen,\nergreifen und verstauen. Wenn deine Einstimmung auf einen <em>Ioun-Stein</em> endet, während er\ndeinen Kopf umkreist, fällt der Stein, als hättest du ihn fallen\ngelassen.</p><p>Die Art des Steins bestimmt seine Seltenheit und\nWirkung.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAbsorptionIou]{Absorption}\n(Sehr Selten).</strong> Während dieses blassviolette Ellipsoid deinen Kopf umkreist,\nkannst du eine Reaktion ausführen, um einen Zauber des 4. Grades oder niedriger, der von einer\nKreatur gewirkt wurde, die du sehen kannst, aufzuheben. Ein aufgehobener Zauber hat keine\nWirkung, und alle zum Wirken verwendeten Ressourcen sind verschwendet. Sobald der Stein 20 Zaubergrade\naufgehoben hat, brennt er aus, wird mattgrau und verliert seine\nMagie.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAgilityIounSt]{Agility}\n(Sehr Selten).</strong> Deine Geschicklichkeit erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese tiefrote Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAwarenessIoun]{Awareness}\n(Selten).</strong> Während dieses dunkelblaue Rhomboid deinen Kopf umkreist, hast du\nVorteil auf Initiativewürfe und Weisheit (Wahrnehmung)-\nWürfe.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgFortitudeIoun]{Fortitude}\n(Sehr Selten).</strong> Deine Konstitution erhöht sich um 2, bis zu einem Maximum von\n20, während dieses pinkfarbene Rhomboid deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgGreaterAbsorp]{Ionenstein der höheren Absorption} (Legendär).</strong> Während dieses marmorierte lavendel- und grüne\nEllipsoid deinen Kopf umkreist, kannst du eine Reaktion ausführen, um einen Zauber des\n8. Grades oder niedriger, der von einer Kreatur gewirkt wurde, die du sehen kannst, aufzuheben. Ein aufgehobener Zauber hat keine\nWirkung, und alle zum Wirken verwendeten Ressourcen sind verschwendet. Sobald der Stein\n20 Zaubergrade aufgehoben hat, brennt er aus, wird mattgrau und verliert seine\nMagie.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgInsightIounSt]{Insight}\n(Sehr Selten).</strong> Deine Weisheit erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese glühend blaue Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgIntellectIoun]{Intellect}\n(Sehr Selten).</strong> Deine Intelligenz erhöht sich um 2, bis zu einem Maximum von\n20, während diese marmorierte scharlachrote und blaue Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgLeadershipIou]{Leadership}\n(Sehr Selten).</strong> Dein Charisma erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese marmorierte pinkfarbene und grüne Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgMasteryIounSt]{Mastery}\n(Legendär).</strong> Dein Übungsbonus erhöht sich um 1, während dieses\nblassgrüne Prisma deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgProtectionIou]{Protection}\n(Selten).</strong> Du erhältst einen Bonus von +1 auf die Rüstungsklasse, während dieses staubrosafarbene\nPrisma deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgRegnerationIo]{Regeneration}\n(Legendär).</strong> Du erhältst 15 Trefferpunkte am Ende jeder Stunde zurück,\nwährend diese perlmuttweiße Spindel deinen Kopf umkreist, wenn du mindestens 1 Trefferpunkt\nhast.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgReserveIounSt]{Reserve}\n(Selten).</strong> Dieses leuchtend violette Prisma speichert Zauber, die in es gewirkt werden,\nund hält sie, bis du sie verwendest. Der Stein kann bis zu 4 Zaubergrade\ngleichzeitig speichern. Wenn er gefunden wird, enthält er 1W4 Grade gespeicherter Zauber,\ndie vom DM gewählt werden.</p><p>Jede Kreatur kann einen Zauber des 1. bis 4.\nGrades in den Stein wirken, indem sie ihn beim Wirken des Zaubers berührt. Der Zauber hat keine\nWirkung, außer im Stein gespeichert zu werden. Wenn der Stein den\nZauber nicht halten kann, wird der Zauber ohne Wirkung verbraucht. Der Grad des Zauberplatzes, der zum\nWirken des Zaubers verwendet wurde, bestimmt, wie viel Platz er verbraucht.</p><p>Während dieser Stein\ndeinen Kopf umkreist, kannst du jeden darin gespeicherten Zauber wirken. Der Zauber verwendet den\nZauberplatzgrad, den SG für den Zauberrettungswurf, den Zauberangriffsbonus und die Zauberwirkungsfähigkeit des\nursprünglichen Wirkers, wird aber ansonsten so behandelt, als hättest du den Zauber gewirkt. Der\naus dem Stein gewirkte Zauber ist nicht mehr darin gespeichert, wodurch Platz\nfreigegeben wird.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgStrengthIounS]{Strength}\n(Sehr Selten).</strong> Deine Stärke erhöht sich um 2, bis zu einem Maximum von 20,\nwährend dieses blassblaue Rhomboid deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgSustenanceIou]{Sustenance}\n(Selten).</strong> Du musst nicht essen oder trinken, während diese klare Spindel\ndeinen Kopf umkreist.</p>"
+    "description": "<p><em>Wundersamer Gegenstand, Seltenheit variiert (Benötigt\nEinstimmung)</em></p><p>Ungefähr marmorgroß, sind <em>Ioun-Steine</em> nach Ioun benannt, einem Gott des Wissens und der Prophezeiung, der auf einigen Welten verehrt wird.\nViele Arten von <em>Ioun-Steinen</em> existieren, jede Art eine eigene Kombination\naus Form und Farbe.</p><p>Wenn du eine Magie-Aktion ausführst, um einen <em>Ioun-\nStein</em> in die Luft zu werfen, umkreist der Stein deinen Kopf in einem Abstand von 1W3\nFuß und gewährt dir dabei seinen Vorteil. Du kannst bis zu\ndrei <em>Ioun-Steine</em> gleichzeitig um deinen Kopf kreisen lassen.</p><p>Jeder\n<em>Ioun-Stein</em>, der deinen Kopf umkreist, gilt als ein Gegenstand, den du\nträgst. Der umkreisende Stein vermeidet Kontakt mit anderen Kreaturen und\nObjekten, passt seine Umlaufbahn an, um Kollisionen zu vermeiden, und vereitelt alle\nVersuche anderer Kreaturen, ihn anzugreifen oder zu schnappen.</p><p>Als Verwenden-\nAktion kannst du beliebig viele <em>Ioun-Steine</em>, die deinen Kopf umkreisen,\nergreifen und verstauen. Wenn deine Einstimmung auf einen <em>Ioun-Stein</em> endet, während er\ndeinen Kopf umkreist, fällt der Stein, als hättest du ihn fallen\ngelassen.</p><p>Die Art des Steins bestimmt seine Seltenheit und\nWirkung.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAbsorptionIou]{Absorption}\n(Sehr Selten).</strong> Während dieses blassviolette Ellipsoid deinen Kopf umkreist,\nkannst du eine Reaktion ausführen, um einen Zauber des 4. Grades oder niedriger, der von einer\nKreatur gewirkt wurde, die du sehen kannst, aufzuheben. Ein aufgehobener Zauber hat keine\nWirkung, und alle zum Wirken verwendeten Ressourcen sind verschwendet. Sobald der Stein 20 Zaubergrade\naufgehoben hat, brennt er aus, wird mattgrau und verliert seine\nMagie.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAgilityIounSt]{Agility}\n(Sehr Selten).</strong> Deine Geschicklichkeit erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese tiefrote Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgAwarenessIoun]{Awareness}\n(Selten).</strong> Während dieses dunkelblaue Rhomboid deinen Kopf umkreist, hast du\nVorteil auf Initiativewürfe und Weisheit (Wahrnehmung)-\nWürfe.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgFortitudeIoun]{Fortitude}\n(Sehr Selten).</strong> Deine Konstitution erhöht sich um 2, bis zu einem Maximum von\n20, während dieses pinkfarbene Rhomboid deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgGreaterAbsorp]{Ionenstein der höheren Absorption} (Legendär).</strong> Während dieses marmorierte lavendel- und grüne\nEllipsoid deinen Kopf umkreist, kannst du eine Reaktion ausführen, um einen Zauber des\n8. Grades oder niedriger, der von einer Kreatur gewirkt wurde, die du sehen kannst, aufzuheben. Ein aufgehobener Zauber hat keine\nWirkung, und alle zum Wirken verwendeten Ressourcen sind verschwendet. Sobald der Stein\n20 Zaubergrade aufgehoben hat, brennt er aus, wird mattgrau und verliert seine\nMagie.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgInsightIounSt]{Insight}\n(Sehr Selten).</strong> Deine Weisheit erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese glühend blaue Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgIntellectIoun]{Intellect}\n(Sehr Selten).</strong> Deine Intelligenz erhöht sich um 2, bis zu einem Maximum von\n20, während diese marmorierte scharlachrote und blaue Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgLeadershipIou]{Leadership}\n(Sehr Selten).</strong> Dein Charisma erhöht sich um 2, bis zu einem Maximum von 20,\nwährend diese marmorierte pinkfarbene und grüne Kugel deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgMasteryIounSt]{Mastery}\n(Legendär).</strong> Dein Übungsbonus erhöht sich um 1, während dieses\nblassgrüne Prisma deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgProtectionIou]{Protection}\n(Selten).</strong> Du erhältst einen Bonus von +1 auf die Rüstungsklasse, während dieses staubrosafarbene\nPrisma deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgRegnerationIo]{Regeneration}\n(Legendär).</strong> Du erhältst 15 Trefferpunkte am Ende jeder Stunde zurück,\nwährend diese perlmuttweiße Spindel deinen Kopf umkreist, wenn du mindestens 1 Trefferpunkt\nhast.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgReserveIounSt]{Reserve}\n(Selten).</strong> Dieses leuchtend violette Prisma speichert Zauber, die in es gewirkt werden,\nund hält sie, bis du sie verwendest. Der Stein kann bis zu 4 Zaubergrade\ngleichzeitig speichern. Wenn er gefunden wird, enthält er 1W4 Grade gespeicherter Zauber,\ndie vom DM gewählt werden.</p><p>Jede Kreatur kann einen Zauber des 1. bis 4.\nGrades in den Stein wirken, indem sie ihn beim Wirken des Zaubers berührt. Der Zauber hat keine\nWirkung, außer im Stein gespeichert zu werden. Wenn der Stein den\nZauber nicht halten kann, wird der Zauber ohne Wirkung verbraucht. Der Grad des Zauberplatzes, der zum\nWirken des Zaubers verwendet wurde, bestimmt, wie viel Platz er verbraucht.</p><p>Während dieser Stein\ndeinen Kopf umkreist, kannst du jeden darin gespeicherten Zauber wirken. Der Zauber verwendet den\nZauberplatzgrad, den SG für den Zauberrettungswurf, den Zauberangriffsbonus und die Zauberwirkungsfähigkeit des\nursprünglichen Wirkers, wird aber ansonsten so behandelt, als hättest du den Zauber gewirkt. Der\naus dem Stein gewirkte Zauber ist nicht mehr darin gespeichert, wodurch Platz\nfreigegeben wird.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgStrengthIounS]{Strength}\n(Sehr Selten).</strong> Deine Stärke erhöht sich um 2, bis zu einem Maximum von 20,\nwährend dieses blassblaue Rhomboid deinen\nKopf umkreist.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgSustenanceIou]{Sustenance}\n(Selten).</strong> Du musst nicht essen oder trinken, während diese klare Spindel\ndeinen Kopf umkreist.</p>"
   },
   "dmgIronBandsOfBi": {
     "name": "Eisenbänder",
@@ -13873,7 +13873,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgLanternOfReve": {
     "name": "Laterne der Enthüllung",
-    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Solange sie leuchtet, brennt diese Kapuzenlaterne\n6 Stunden lang mit 1 Pinte Öl und spendet helles Licht in einem Radius von 9 m\nund dämmriges Licht für weitere 9 m. &amp;Reference[Invisible\napply=false] Kreaturen und Objekte sind sichtbar, solange sie sich im\nhellen Licht der Laterne befinden. Du kannst eine Benutzen-Aktion ausführen, um die Kapuze\nherunterzulassen, wodurch das Licht der Laterne auf dämmriges Licht in einem Radius von 1,5 m reduziert wird.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p><p>Solange sie leuchtet, brennt diese Kapuzenlaterne\n6 Stunden lang mit 1 Pinte Öl und spendet helles Licht in einem Radius von 9 m\nund dämmriges Licht für weitere 9 m. &amp;Reference[Invisible\napply=false] Kreaturen und Objekte sind sichtbar, solange sie sich im\nhellen Licht der Laterne befinden. Du kannst eine Verwenden-Aktion ausführen, um die Kapuze\nherunterzulassen, wodurch das Licht der Laterne auf dämmriges Licht in einem Radius von 1,5 m reduziert wird.</p>",
     "activities": {
       "Consume Oil": "Öl verbrauchen"
     }
@@ -14426,7 +14426,7 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Energy Ladder": "Energieleiter"
     },
     "effects": {
-      "Yw1oocFffwM4cePn": "Gefesselt (Pfeil der Fesselung)"
+      "Yw1oocFffwM4cePn": "Festgesetzt (Pfeil der Fesselung)"
     }
   },
   "dmgFlameTongue00": {

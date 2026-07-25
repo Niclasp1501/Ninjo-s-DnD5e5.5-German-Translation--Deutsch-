@@ -3,6 +3,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.27] - 2026-07-25
+
+### Fixed - Dieselben acht Regelbegriffe, dritter Ort
+
+Der Dreifach-Sync zu Handbuch 2.2.9.0 und Monsterhandbuch 1.4.12.0. Betroffen waren
+`languages/de.json` (1), `babele/dnd5e.content24.json` (13), `babele/dnd5e.rules.json` (2)
+und die generierten Overrides (33) — zusammen 49 Stellen.
+
+`Benutzen` → **Verwenden** · `Handlungsunfähig` → **Kampfunfähig** ·
+`Gefesselt` → **Festgesetzt** · `Ergriffen` → **Gepackt** ·
+`Wahrsicht` / `Wahre Sicht` → **Wahrer Blick** · `Attributsprobe` → **Attributswurf**
+
+Jede Form ist am deutschen SRD 5.2.1 belegt; die jeweils ersetzte kommt dort **0×** vor.
+Besonders wichtig hier: `dnd5e.rules.json` ist nach englischem Zustandsnamen verschlüsselt und
+speist die `&Reference`-Verweise — dort standen zwei Zustände noch in der alten Fassung.
+
+
 ## [14.0.26] - 2026-07-24
 
 ### Fixed - Die Statblock-Kopfzeile wird hier gebaut, und sie war dreifach falsch
