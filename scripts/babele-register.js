@@ -173,15 +173,15 @@ function convertImperialUnitsInTextRuntime(text) {
     bludgeoning: "Wuchtschaden",
     cold: "Kälteschaden",
     fire: "Feuerschaden",
-    force: "Wuchtschaden",
+    force: "Energieschaden",
     lightning: "Blitzschaden",
     necrotic: "nekrotischen Schaden",
-    piercing: "durchschlagenden Schaden",
+    piercing: "Stichschaden",
     poison: "Giftschaden",
     psychic: "psychischen Schaden",
     radiant: "gleißenden Schaden",
     slashing: "Hiebschaden",
-    thunder: "Donnerschaden"
+    thunder: "Schallschaden"
   };
   out = out.replace(
     /\b(Acid|Bludgeoning|Cold|Fire|Force|Lightning|Necrotic|Piercing|Poison|Psychic|Radiant|Slashing|Thunder)\s+(damage|Schaden)\b/gi,
@@ -1177,42 +1177,61 @@ function applyDamageLocalizationFallback() {
 
   const damageTypeMap = {
     Acid: "Säure",
-    Bludgeoning: "Wuchtschaden",
+    Bludgeoning: "Wucht",
     Cold: "Kälte",
     Fire: "Feuer",
-    Force: "Wucht",
+    Force: "Energie",
     Lightning: "Blitz",
     Necrotic: "Nekrotisch",
-    Piercing: "Durchschlagend",
+    Piercing: "Stich",
     Poison: "Gift",
     Psychic: "Psychisch",
-    Radiant: "Strahlend",
+    Radiant: "Gleißend",
     Slashing: "Hieb",
-    Thunder: "Donner"
+    Thunder: "Schall"
   };
   const damageTypeMapByConfigKey = {
     acid: "Säure",
-    bludgeoning: "Wuchtschaden",
+    bludgeoning: "Wucht",
     cold: "Kälte",
     fire: "Feuer",
-    force: "Wucht",
+    force: "Energie",
     lightning: "Blitz",
     necrotic: "Nekrotisch",
-    piercing: "Durchschlagend",
+    piercing: "Stich",
     poison: "Gift",
     psychic: "Psychisch",
-    radiant: "Strahlend",
+    radiant: "Gleißend",
     slashing: "Hieb",
-    thunder: "Donner"
+    thunder: "Schall"
   };
 
   const translations = game.i18n?.translations;
   if (!translations || typeof translations !== "object") return;
 
+  // Ein Zwischenglied im Pfad kann im System ein String sein — `DND5E.Damage` ist "Schaden".
+  // `setProperty` wirft dort ("Cannot create property 'X' on string"), und weil das eine
+  // Ausnahme ist, reisst ein einziger Fehlpfad alle folgenden Zuweisungen mit. Deshalb vorher
+  // prüfen statt hinterher aufräumen.
+  const beschreibbar = (ziel, key) => {
+    let o = ziel;
+    for (const teil of key.split(".").slice(0, -1)) {
+      if (o[teil] === undefined) return true;
+      if (typeof o[teil] !== "object" || o[teil] === null) return false;
+      o = o[teil];
+    }
+    return true;
+  };
+
   const setRuntimeKey = (key, value) => {
     if (!key || !value) return;
+    if (!beschreibbar(translations, key)) {
+      console.warn(`dnd5e55-lang-de | ${key} übersprungen: ein Zwischenglied ist kein Objekt.`);
+      return;
+    }
     foundry.utils.setProperty(translations, key, value);
-    if (game.i18n?._fallback && typeof game.i18n._fallback === "object") {
+    if (game.i18n?._fallback && typeof game.i18n._fallback === "object"
+        && beschreibbar(game.i18n._fallback, key)) {
       const current = foundry.utils.getProperty(game.i18n._fallback, key);
       if (!current || String(current).trim() === "" || String(current).trim() === key) {
         foundry.utils.setProperty(game.i18n._fallback, key, value);
@@ -1236,10 +1255,9 @@ function applyDamageLocalizationFallback() {
   setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Label", bypass.Label);
   setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Title", bypass.Title);
   setRuntimeKey("DND5E.DAMAGE.PhysicalBypass.Hint", bypass.Hint);
-  // Defensive aliases for mixed key casing used by some contexts/modules.
-  setRuntimeKey("DND5E.Damage.PhysicalBypass.Label", bypass.Label);
-  setRuntimeKey("DND5E.Damage.PhysicalBypass.Title", bypass.Title);
-  setRuntimeKey("DND5E.Damage.PhysicalBypass.Hint", bypass.Hint);
+  // Hier standen drei Aliase auf `DND5E.Damage.PhysicalBypass.*` — gedacht als Absicherung
+  // gegen gemischte Schreibweise. Dieser Pfad kann es nicht geben: `DND5E.Damage` ist im
+  // System der String "Damage" (bei uns "Schaden"), nur `DND5E.DAMAGE` ist ein Objekt.
   // Legacy flat keys used by dnd5e 5.2.x templates/dialogs.
   setRuntimeKey("DND5E.DamagePhysicalBypass", bypass.Label);
   setRuntimeKey("DND5E.DamagePhysicalBypassHint", bypass.Hint);
@@ -1252,19 +1270,19 @@ function applyDamageLocalizationFallback() {
   // Legacy flat damage-type keys.
   setRuntimeKey("DND5E.DamageAcid", "Säure");
   setRuntimeKey("DND5E.DamageAll", "Gesamtschaden");
-  setRuntimeKey("DND5E.DamageBludgeoning", "Wuchtschaden");
+  setRuntimeKey("DND5E.DamageBludgeoning", "Wucht");
   setRuntimeKey("DND5E.DamageCold", "Kälte");
   setRuntimeKey("DND5E.DamageFire", "Feuer");
-  setRuntimeKey("DND5E.DamageForce", "Wucht");
+  setRuntimeKey("DND5E.DamageForce", "Energie");
   setRuntimeKey("DND5E.DamageLightning", "Blitz");
   setRuntimeKey("DND5E.DamageNecrotic", "Nekrotisch");
-  setRuntimeKey("DND5E.DamagePiercing", "Durchschlagend");
+  setRuntimeKey("DND5E.DamagePiercing", "Stich");
   setRuntimeKey("DND5E.DamagePhysical", "Nichtmagischer physischer Schaden");
   setRuntimeKey("DND5E.DamagePoison", "Gift");
   setRuntimeKey("DND5E.DamagePsychic", "Psychisch");
-  setRuntimeKey("DND5E.DamageRadiant", "Strahlend");
+  setRuntimeKey("DND5E.DamageRadiant", "Gleißend");
   setRuntimeKey("DND5E.DamageSlashing", "Hieb");
-  setRuntimeKey("DND5E.DamageThunder", "Donner");
+  setRuntimeKey("DND5E.DamageThunder", "Schall");
 
   // Used by the bypass checkbox list in trait editors.
   setRuntimeKey("DND5E.ITEM.Property.Adamantine", "Adamantin");

@@ -3,6 +3,60 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.29] - 2026-07-25
+
+### Fixed - Ein Absturz beim Weltstart riss 23 Zuweisungen mit
+
+Gemeldet: *„Cannot create property 'PhysicalBypass' on string 'Schaden'"*. Drei Aufrufe
+schrieben auf den Pfad `DND5E.Damage.PhysicalBypass.*` — den kann es nicht geben: `DND5E.Damage`
+ist im System der String „Damage" (bei uns „Schaden"), nur `DND5E.DAMAGE` ist ein Objekt. Die
+drei standen als Absicherung gegen gemischte Schreibweise da und waren nie ein gueltiger Pfad.
+
+Schlimmer als die Meldung war die Folge: `setProperty` **wirft**, also brach die Funktion an
+dieser Stelle ab. **Alles danach lief nie** — 23 weitere Zuweisungen, darunter saemtliche
+flachen Schadensart-Schluessel und, am Ende der Funktion, die Uebergabe der deutschen
+Beschriftungen an `CONFIG.DND5E.damageTypes` und `CONFIG.DND5E.itemProperties`
+(*Adamantin*, *Magisch*, *Versilbert*).
+
+Die drei Aufrufe sind entfernt. Zusaetzlich prueft `setRuntimeKey` jetzt vorher, ob ein
+Zwischenglied des Pfades ein String ist, und ueberspringt mit einer Warnung statt zu werfen —
+damit kann ein einzelner Fehlpfad nie wieder den Rest mitreissen.
+
+### Fixed - Energieschaden kam als Wuchtschaden heraus
+
+Der schwerste Fund. In der Fliesstext-Zuordnung des Sprachmoduls standen **bludgeoning und
+force beide auf „Wuchtschaden"**. Jeder *force damage* wurde damit zu Wuchtschaden — wer
+Resistenz gegen Wucht hat, zieht den falschen Schaden ab. Das ist ein Regelfehler, kein
+Sprachfehler.
+
+Dazu widersprachen sich Skript und Sprachdatei bei vier weiteren Arten. Das SRD 5.2.1
+entscheidet jede eindeutig:
+
+| | Skript sagte | SRD | Nennungen |
+|---|---|---|---|
+| force | Wuchtschaden | **Energieschaden** | 61 |
+| piercing | Durchschlagend | **Stich** | 215 |
+| radiant | Strahlend | **Gleissend** | 17 (Strahlend: 0) |
+| thunder | Donner | **Schall** | 26 |
+| bludgeoning | Wuchtschaden | **Wucht** | 146 |
+
+Angeglichen in allen drei Zuordnungen (Fliesstext, Beschriftung, CONFIG-Schluessel) und den
+Altschluesseln. Gegenprobe: 13 Schadensarten, 13 verschiedene Woerter — keine zieht mehr auf
+das Wort einer anderen.
+
+### Changed - `Magie-Aktion` -> `Magieaktion`, 105 Stellen
+
+Handbuch und Monsterhandbuch sind laengst einheitlich (38 bzw. 161 Nennungen, Bindestrichform
+**0**). Das Sprachmodul stand bei 12 : 105 — der Abgleich ueber alle drei Orte war damals nicht
+nachgezogen worden.
+
+### Verified
+
+`babele-register.js` syntaktisch gueltig, alle JSON-Dateien gueltig. Kein `setRuntimeKey`
+schreibt mehr auf einen String-Elternpfad (vorher 3). Keine der 13 Schadensarten teilt sich
+noch ein Wort mit einer anderen.
+
+
 ## [14.0.28] - 2026-07-25
 
 ### Changed - „Rettungswurf auf Konstitution" heisst „Konstitutionsrettungswurf"
