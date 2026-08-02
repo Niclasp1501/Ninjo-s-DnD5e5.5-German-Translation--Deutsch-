@@ -1694,7 +1694,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplThunderwav": {
     "name": "Donnerwelle",
-    "description": "<p>Du entfesselst eine Welle donnernder Energie. Jede Kreatur in einem 15-Fuß-Würfel, der von dir ausgeht, muss einen Konstitutionsrettungswurf ablegen. Bei einem misslungenen Wurf erleidet eine Kreatur 2W8 Donnerschaden und wird 10 Fuß von dir weggestoßen. Bei einem erfolgreichen Wurf erleidet eine Kreatur nur den halben Schaden.</p><p>Zusätzlich werden ungesicherte Objekte, die sich vollständig innerhalb des Würfels befinden, 10 Fuß von dir weggestoßen, und ein donnernder Knall ist innerhalb von 300 Fuß hörbar.</p><p><strong>Einsatz eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 1. Grad.</p>"
+    "description": "<p>Du entfesselst eine Welle donnernder Energie. Jede Kreatur in einem 15-Fuß-Würfel, der von dir ausgeht, muss einen Konstitutionsrettungswurf ablegen. Bei einem misslungenen Wurf erleidet eine Kreatur 2W8 Schallschaden und wird 10 Fuß von dir weggestoßen. Bei einem erfolgreichen Wurf erleidet eine Kreatur nur den halben Schaden.</p><p>Zusätzlich werden ungesicherte Objekte, die sich vollständig innerhalb des Würfels befinden, 10 Fuß von dir weggestoßen, und ein donnernder Knall ist innerhalb von 300 Fuß hörbar.</p><p><strong>Einsatz eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 1. Grad.</p>"
   },
   "phbsplUnseenServ": {
     "name": "Unsichtbarer Diener",
@@ -2087,7 +2087,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplShatter000": {
     "name": "Zersplittern",
-    "description": "<p>Ein lautes Geräusch bricht von einem Punkt deiner Wahl in Reichweite aus. Jede Kreatur in einer Kugel mit 10 Fuß Radius, die dort zentriert ist, muss einen Konstitutionsrettungswurf ablegen. Bei einem misslungenen Rettungswurf erleidet sie 3W8 Donnerschaden oder die Hälfte davon bei einem erfolgreichen Rettungswurf. Ein Konstrukt hat Nachteil auf den Rettungswurf.</p><p>Ein nichtmagischer Gegenstand, der nicht getragen oder mitgeführt wird, erleidet ebenfalls den Schaden, wenn er sich im Wirkungsbereich des Zaubers befindet.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 2.</p>",
+    "description": "<p>Ein lautes Geräusch bricht von einem Punkt deiner Wahl in Reichweite aus. Jede Kreatur in einer Kugel mit 10 Fuß Radius, die dort zentriert ist, muss einen Konstitutionsrettungswurf ablegen. Bei einem misslungenen Rettungswurf erleidet sie 3W8 Schallschaden oder die Hälfte davon bei einem erfolgreichen Rettungswurf. Ein Konstrukt hat Nachteil auf den Rettungswurf.</p><p>Ein nichtmagischer Gegenstand, der nicht getragen oder mitgeführt wird, erleidet ebenfalls den Schaden, wenn er sich im Wirkungsbereich des Zaubers befindet.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 2.</p>",
     "materials": "ein Glimmerstück"
   },
   "phbsplShiningSmi": {
@@ -2099,7 +2099,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplSilence000": {
     "name": "Stille",
-    "description": "<p>Für die Wirkungsdauer kann kein Geräusch innerhalb einer Kugel mit 20 Fuß Radius, die auf einen von dir gewählten Punkt in Reichweite zentriert ist, erzeugt werden oder diese durchdringen. Jede Kreatur oder jedes Objekt, das sich vollständig innerhalb der Kugel befindet, hat Immunität gegen Donnerschaden, und Kreaturen haben den Zustand &amp;Reference[deafened apply=false], solange sie sich vollständig darin befinden. Das Wirken eines Zaubers, der eine verbale Komponente enthält, ist dort unmöglich.</p>",
+    "description": "<p>Für die Wirkungsdauer kann kein Geräusch innerhalb einer Kugel mit 20 Fuß Radius, die auf einen von dir gewählten Punkt in Reichweite zentriert ist, erzeugt werden oder diese durchdringen. Jede Kreatur oder jedes Objekt, das sich vollständig innerhalb der Kugel befindet, hat Immunität gegen Schallschaden, und Kreaturen haben den Zustand &amp;Reference[deafened apply=false], solange sie sich vollständig darin befinden. Das Wirken eines Zaubers, der eine verbale Komponente enthält, ist dort unmöglich.</p>",
     "effects": {
       "kjbKMAk1y5VUyEoT": "Zum Schweigen gebracht"
     }
@@ -3621,7 +3621,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplStormofVen": {
     "name": "Sturm der Rache",
-    "description": "<p>Eine brodelnde Sturmwolke bildet sich für die Wirkungsdauer, zentriert auf einen Punkt innerhalb der Reichweite und breitet sich in einem Radius von 90 m aus. Jede Kreatur unter der Wolke, wenn sie erscheint, muss einen Konstitutionsrettungswurf bestehen oder erleidet 2W6 Donnerschaden und erhält den Zustand &amp;Reference[Deafened apply=false] für die Wirkungsdauer.</p><p>Zu Beginn jedes deiner späteren Züge erzeugt der Sturm verschiedene Effekte, wie unten beschrieben.</p><p><strong>Zug 2.</strong> Saurer Regen fällt. Jede Kreatur und jedes Objekt unter der Wolke erleidet 4W6 Säureschaden.</p><p><strong>Zug 3.</strong> Du rufst sechs Blitze aus der Wolke herab, um sechs verschiedene Kreaturen oder Objekte unter ihr zu treffen. Jedes Ziel macht einen Geschicklichkeitsrettungswurf und erleidet bei einem misslungenen Wurf 10W6 Blitzschaden oder die Hälfte davon bei einem erfolgreichen Wurf.</p><p><strong>Zug 4.</strong> Hagelkörner regnen herab. Jede Kreatur unter der Wolke erleidet 2W6 Wuchtschaden.</p><p><strong>Züge 5–10.</strong> Böen und gefrierender Regen suchen das Gebiet unter der Wolke heim. Jede Kreatur dort erleidet 1W6 Kälteschaden. Bis der Zauber endet, ist das Gebiet &amp;Reference[DifficultTerrain] und &amp;Reference[HeavilyObscured], Fernkampfangriffe mit Waffen sind dort unmöglich, und starker Wind weht durch das Gebiet.</p>",
+    "description": "<p>Eine brodelnde Sturmwolke bildet sich für die Wirkungsdauer, zentriert auf einen Punkt innerhalb der Reichweite und breitet sich in einem Radius von 90 m aus. Jede Kreatur unter der Wolke, wenn sie erscheint, muss einen Konstitutionsrettungswurf bestehen oder erleidet 2W6 Schallschaden und erhält den Zustand &amp;Reference[Deafened apply=false] für die Wirkungsdauer.</p><p>Zu Beginn jedes deiner späteren Züge erzeugt der Sturm verschiedene Effekte, wie unten beschrieben.</p><p><strong>Zug 2.</strong> Saurer Regen fällt. Jede Kreatur und jedes Objekt unter der Wolke erleidet 4W6 Säureschaden.</p><p><strong>Zug 3.</strong> Du rufst sechs Blitze aus der Wolke herab, um sechs verschiedene Kreaturen oder Objekte unter ihr zu treffen. Jedes Ziel macht einen Geschicklichkeitsrettungswurf und erleidet bei einem misslungenen Wurf 10W6 Blitzschaden oder die Hälfte davon bei einem erfolgreichen Wurf.</p><p><strong>Zug 4.</strong> Hagelkörner regnen herab. Jede Kreatur unter der Wolke erleidet 2W6 Wuchtschaden.</p><p><strong>Züge 5–10.</strong> Böen und gefrierender Regen suchen das Gebiet unter der Wolke heim. Jede Kreatur dort erleidet 1W6 Kälteschaden. Bis der Zauber endet, ist das Gebiet &amp;Reference[DifficultTerrain] und &amp;Reference[HeavilyObscured], Fernkampfangriffe mit Waffen sind dort unmöglich, und starker Wind weht durch das Gebiet.</p>",
     "activities": {
       "Create Storm": "Sturm erschaffen",
       "Turn 2: Acid Rain": "Zug 2: Saurer Regen",
@@ -3780,7 +3780,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplResistance": {
     "name": "Widerstand",
-    "description": "<p>Du berührst eine willige Kreatur und wählst eine Schadensart: Säure, Wuchtschaden, Kälte, Feuer, Blitz, Nekrotisch, Stichschaden, Gift, Strahlend, Hiebschaden oder Donner. Wenn die Kreatur Schaden der gewählten Art erleidet, bevor der Zauber endet, reduziert die Kreatur den gesamten erlittenen Schaden um 1W4. Eine Kreatur kann von diesem Zauber nur einmal pro Zug profitieren.</p>",
+    "description": "<p>Du berührst eine willige Kreatur und wählst eine Schadensart: Säure, Wucht, Kälte, Feuer, Blitz, Nekrotisch, Stich, Gift, Gleißend, Hieb oder Schall. Wenn die Kreatur Schaden der gewählten Art erleidet, bevor der Zauber endet, reduziert die Kreatur den gesamten erlittenen Schaden um 1W4. Eine Kreatur kann von diesem Zauber nur einmal pro Zug profitieren.</p>",
     "effects": {
       "u2mf5JowVgwqCARq": "Säureschutz",
       "XYOXUUgKLjXXGt9W": "Wuchtschadenschutz",
@@ -4061,7 +4061,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbspGoliath0000": {
     "name": "Goliath",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGoliath0000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"goliath-traits\">Goliath-Merkmale</h3><p><strong>Kreaturentyp:\n</strong>Humanoider</p><p><strong>Größe: </strong>Mittelgroß (etwa 2,1–2,4 m\ngroß)</p><p><strong>Bewegungsrate:</strong> 10,5 m</p><p>Als Goliath besitzt du\ndiese besonderen Merkmale.</p><p><strong>Riesen-Abstammung.</strong> Du stammst\nvon Riesen ab. Wähle einen der folgenden Vorteile – eine übernatürliche\nGabe deiner Abstammung; du kannst den gewählten Vorteil eine Anzahl von Malen\neinsetzen, die deinem Übungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du\neine lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als\neine Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten\nOrt, den du sehen kannst.</p><p><strong>Feuerbrand (Feuerriese).</strong> Wenn\ndu ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel\nzusätzlich 1W10 Feuerschaden zufügen.</p><p><strong>Frostkälte (Frostring).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden\nzufügst, kannst du diesem Ziel zusätzlich 1W6 Kälteschaden zufügen und seine\nBewegungsrate bis zum Beginn deines nächsten Zuges um 3 m reduzieren.</p><p><strong>Hügel-Sturz (Hügelriese). </strong>Wenn du eine Große oder kleinere Kreatur\nmit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den\n&amp;Reference[Prone] Zustand verleihen.</p><p><strong>Stein-Ausdauer (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 würfeln.\nAddiere deinen Konstitutionsmodifikator zu dem gewürfelten Wert und reduziere den\nSchaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von\ndir erleidest, kannst du als Reaktion 1W8 Donnerschaden an dieser\nKreatur verursachen.</p><p><strong>Große Form.</strong> Ab Charakterstufe\n5 kannst du deine Größe als Bonusaktion auf Groß ändern, wenn du dich in einem ausreichend\ngroßen Raum befindest. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest\n(keine Aktion erforderlich). Für diese Dauer hast du Vorteil auf Stärke-\nWürfe, und deine Bewegungsrate erhöht sich um 3 m. Sobald du dieses Merkmal\neingesetzt hast, kannst du es erst wieder verwenden, wenn du eine lange Rast beendest.</p><p><strong>Mächtiger\nKörperbau.</strong> Du hast Vorteil auf jeden Attributswurf, den du machst, um den\nZustand Gepackt zu beenden. Du zählst auch als eine Größenkategorie größer, wenn du deine\nTragfähigkeit bestimmst.</p>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGoliath0000\ninline classes=\"free-rules-embed\"]</p><h3\ndata-anchor=\"goliath-traits\">Goliath-Merkmale</h3><p><strong>Kreaturentyp:\n</strong>Humanoider</p><p><strong>Größe: </strong>Mittelgroß (etwa 2,1–2,4 m\ngroß)</p><p><strong>Bewegungsrate:</strong> 10,5 m</p><p>Als Goliath besitzt du\ndiese besonderen Merkmale.</p><p><strong>Riesen-Abstammung.</strong> Du stammst\nvon Riesen ab. Wähle einen der folgenden Vorteile – eine übernatürliche\nGabe deiner Abstammung; du kannst den gewählten Vorteil eine Anzahl von Malen\neinsetzen, die deinem Übungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du\neine lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als\neine Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten\nOrt, den du sehen kannst.</p><p><strong>Feuerbrand (Feuerriese).</strong> Wenn\ndu ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel\nzusätzlich 1W10 Feuerschaden zufügen.</p><p><strong>Frostkälte (Frostring).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden\nzufügst, kannst du diesem Ziel zusätzlich 1W6 Kälteschaden zufügen und seine\nBewegungsrate bis zum Beginn deines nächsten Zuges um 3 m reduzieren.</p><p><strong>Hügel-Sturz (Hügelriese). </strong>Wenn du eine Große oder kleinere Kreatur\nmit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den\n&amp;Reference[Prone] Zustand verleihen.</p><p><strong>Stein-Ausdauer (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 würfeln.\nAddiere deinen Konstitutionsmodifikator zu dem gewürfelten Wert und reduziere den\nSchaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von\ndir erleidest, kannst du als Reaktion 1W8 Schallschaden an dieser\nKreatur verursachen.</p><p><strong>Große Form.</strong> Ab Charakterstufe\n5 kannst du deine Größe als Bonusaktion auf Groß ändern, wenn du dich in einem ausreichend\ngroßen Raum befindest. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest\n(keine Aktion erforderlich). Für diese Dauer hast du Vorteil auf Stärke-\nWürfe, und deine Bewegungsrate erhöht sich um 3 m. Sobald du dieses Merkmal\neingesetzt hast, kannst du es erst wieder verwenden, wenn du eine lange Rast beendest.</p><p><strong>Mächtiger\nKörperbau.</strong> Du hast Vorteil auf jeden Attributswurf, den du machst, um den\nZustand Gepackt zu beenden. Du zählst auch als eine Größenkategorie größer, wenn du deine\nTragfähigkeit bestimmst.</p>"
   },
   "phbspHalfling000": {
     "name": "Halbling",
@@ -4254,7 +4254,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsptGiantAnces": {
     "name": "Riesen-Abstammung",
-    "description": "<p>Du stammst von Riesen ab. Wähle einen der folgenden Vorteile – eine übernatürliche Gabe deiner Abstammung; du kannst den gewählten Vorteil so oft nutzen, wie dein Übungsbonus beträgt, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten Ort, den du sehen kannst.</p><p><strong>Brand des Feuers (Feuerriese).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel zusätzlich 1W10 Feuerschaden zufügen.</p><p><strong>Kälte des Frosts (Frostringe).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel zusätzlich 1W6 Kälteschaden zufügen und seine Bewegungsrate bis zum Beginn deines nächsten Zuges um 3 m reduzieren.</p><p><strong>Hügel-Sturz (Hügelriese). </strong>Wenn du eine Große oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den Zustand Liegend geben.</p><p><strong>Felsenfestigkeit (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 würfeln. Addiere deinen Konstitutionsmodifikator zu dem gewürfelten Wert und reduziere den Schaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von dir erleidest, kannst du als Reaktion 1W8 Donnerschaden an dieser Kreatur zufügen.</p>",
+    "description": "<p>Du stammst von Riesen ab. Wähle einen der folgenden Vorteile – eine übernatürliche Gabe deiner Abstammung; du kannst den gewählten Vorteil so oft nutzen, wie dein Übungsbonus beträgt, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest:</p><p><strong>Wolken-Sprung (Wolkenriese). </strong>Als Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten Ort, den du sehen kannst.</p><p><strong>Brand des Feuers (Feuerriese).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel zusätzlich 1W10 Feuerschaden zufügen.</p><p><strong>Kälte des Frosts (Frostringe).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel zusätzlich 1W6 Kälteschaden zufügen und seine Bewegungsrate bis zum Beginn deines nächsten Zuges um 3 m reduzieren.</p><p><strong>Hügel-Sturz (Hügelriese). </strong>Wenn du eine Große oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den Zustand Liegend geben.</p><p><strong>Felsenfestigkeit (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion 1W12 würfeln. Addiere deinen Konstitutionsmodifikator zu dem gewürfelten Wert und reduziere den Schaden um diese Summe.</p><p><strong>Sturm-Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur innerhalb von 18 m von dir erleidest, kannst du als Reaktion 1W8 Schallschaden an dieser Kreatur zufügen.</p>",
     "advancement": {
       "phbsptGiantAnces": {
         "title": "Riesenabstammung",
@@ -4316,7 +4316,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsptStormsThun": {
     "name": "Donner des Sturms",
-    "description": "<p>Wenn du Schaden von einer Kreatur innerhalb von 18 m Entfernung erleidest, kannst du als Reaktion 1W8 Donnerschaden an dieser Kreatur verursachen.</p>",
+    "description": "<p>Wenn du Schaden von einer Kreatur innerhalb von 18 m Entfernung erleidest, kannst du als Reaktion 1W8 Schallschaden an dieser Kreatur verursachen.</p>",
     "activities": {
       "Storm's Thunder": "Donner des Sturms"
     }
@@ -5125,10 +5125,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du hast den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplDivineSmit]{Göttlicher Schlag} immer vorbereitet. Außerdem kannst du ihn wirken, ohne einen Zauberplatz zu verbrauchen, aber du musst eine Lange Rast beenden, bevor du ihn auf diese Weise erneut wirken kannst.</p><section id=\"secret-47mDL7wHB8aQP7SD\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Wenn du diese Stufe erreichst, wird der Zauber Göttliches Zerschmettern deiner Zauberliste als immer vorbereitet und mit einer kostenlosen Anwendung hinzugefügt.</p></section>"
   },
   "phbpdnRadiantStr": {
-    "name": "Strahlende Schläge",
+    "name": "Gleißende Schläge",
     "description": "<p>Deine Schläge tragen nun übernatürliche Kraft. Wenn du ein Ziel mit einem Angriffswurf triffst, der eine Nahkampfwaffe oder einen waffenlosen Schlag verwendet, erleidet das Ziel zusätzlichen 1W8 gleißenden Schaden.</p><section class=\"secret\"\nid=\"secret-fSg1MH5IBJqfecX2\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal enthält einen Aktiven Effekt, der den gleißenden Schaden automatisch zu allen Schadenswürfen hinzufügt, die mit deinen Nahkampfwaffenangriffen und waffenlosen Schlägen gemacht werden.</p></section>",
     "effects": {
-      "peNRQizvyp2vL84H": "Strahlende Schläge"
+      "peNRQizvyp2vL84H": "Gleißende Schläge"
     }
   },
   "phbpdnRestoringT": {
@@ -5706,7 +5706,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbinvLifedrinke": {
     "name": "Lebenssauger",
-    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 9+,\n@UUID[Compendium.dnd5e.classes24.Item.phbinvPactBlade0]{Pakt der Klinge}\nAnrufung</p></blockquote><p>Einmal pro Zug, wenn du eine Kreatur mit\ndeiner Paktwaffe triffst, kannst du der Kreatur zusätzlich 1W6 nekrotischen, psychischen\noder strahlenden Schaden (deiner Wahl) zufügen, und du kannst einen deiner Trefferwürfel\nausgeben, um ihn zu würfeln und eine Anzahl von Trefferpunkten gleich dem Wurf\nplus deinem Konstitutionsmodifikator (mindestens 1 Trefferpunkt) zurückzugewinnen.</p><section\nclass=\"secret\" id=\"secret-1Hta9I4donszrwIQ\"><p><strong>Foundry-\nHinweis</strong></p><p>Die <strong>Schaden</strong> Aktion ermöglicht es dir,\ndie Art des Schadens im Dialog des Wurfs zu wählen. Sie wird deine Wahl für die\nZukunft speichern.</p><p>Die <strong>Heilen (Größter Trefferwürfel)</strong>\nund <strong>Kleinster Trefferwürfel</strong> Aktionen verbrauchen den entsprechenden Trefferwürfel\nund bieten einen Heilungswurf mit deinem Konstitutionsmodifikator. Welche du wählst,\nist nur relevant, wenn du multiklassig mit mehreren Trefferwürfeltypen bist.</p></section>",
+    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 9+,\n@UUID[Compendium.dnd5e.classes24.Item.phbinvPactBlade0]{Pakt der Klinge}\nAnrufung</p></blockquote><p>Einmal pro Zug, wenn du eine Kreatur mit\ndeiner Paktwaffe triffst, kannst du der Kreatur zusätzlich 1W6 nekrotischen, psychischen\noder gleißenden Schaden (deiner Wahl) zufügen, und du kannst einen deiner Trefferwürfel\nausgeben, um ihn zu würfeln und eine Anzahl von Trefferpunkten gleich dem Wurf\nplus deinem Konstitutionsmodifikator (mindestens 1 Trefferpunkt) zurückzugewinnen.</p><section\nclass=\"secret\" id=\"secret-1Hta9I4donszrwIQ\"><p><strong>Foundry-\nHinweis</strong></p><p>Die <strong>Schaden</strong> Aktion ermöglicht es dir,\ndie Art des Schadens im Dialog des Wurfs zu wählen. Sie wird deine Wahl für die\nZukunft speichern.</p><p>Die <strong>Heilen (Größter Trefferwürfel)</strong>\nund <strong>Kleinster Trefferwürfel</strong> Aktionen verbrauchen den entsprechenden Trefferwürfel\nund bieten einen Heilungswurf mit deinem Konstitutionsmodifikator. Welche du wählst,\nist nur relevant, wenn du multiklassig mit mehreren Trefferwürfeltypen bist.</p></section>",
     "activities": {
       "Heal (Largest Hit Die)": "Heilen (Größter Trefferwürfel)",
       "Heal (Smallest Hit Die)": "Heilen (Kleinster Trefferwürfel)"
@@ -5820,17 +5820,17 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Wähle eine Schadensart, außer Energieschaden, wann immer du eine Kurze\noder Lange Rast beendest. Du hast Resistenz gegen diese Schadensart, bis du mit dieser\nFähigkeit eine andere wählst.</p><section class=\"secret\"\nid=\"secret-MG3loWptcg4gpsdG\"><p><strong>Foundry-Hinweis</strong></p><p>Diese\nFähigkeit enthält einen Aktiven Effekt für jede Schadensart, der dir die korrekte\nResistenz gewährt. Wende die Effekte bei Bedarf an und deaktiviere sie,\nwenn du die Art wechselst.</p></section>",
     "effects": {
       "JdULzod722VVpgZx": "Teuflische Widerstandsfähigkeit: Säure",
-      "JjA9Jda2qeK6Tpxk": "Teuflische Widerstandsfähigkeit: Wuchtschaden",
+      "JjA9Jda2qeK6Tpxk": "Teuflische Widerstandsfähigkeit: Wucht",
       "rhUc7IVz5XTphPRp": "Teuflische Widerstandsfähigkeit: Kälte",
       "GvzW5wzRBfjFqye7": "Teuflische Widerstandsfähigkeit: Feuer",
       "UZ00jXoUKfevQhxQ": "Teuflische Widerstandsfähigkeit: Blitz",
       "iMBfFAs7UwqdgSI5": "Teuflische Widerstandsfähigkeit: Nekrotisch",
-      "G0Ed5szAi1vUFCf7": "Teuflische Widerstandsfähigkeit: Stichschaden",
+      "G0Ed5szAi1vUFCf7": "Teuflische Widerstandsfähigkeit: Stich",
       "3Uw7a9ldJtxHam1x": "Teuflische Widerstandsfähigkeit: Gift",
       "loTaIaBwUsMSzpdW": "Teuflische Widerstandsfähigkeit: Psychisch",
-      "F8szMcfuxVxXJ7sf": "Teuflische Widerstandsfähigkeit: Strahlend",
-      "7oATkYAfEZzx6F5P": "Teuflische Widerstandsfähigkeit: Hiebschaden",
-      "6BHlD7hrfHUEfum5": "Teuflische Widerstandsfähigkeit: Donner"
+      "F8szMcfuxVxXJ7sf": "Teuflische Widerstandsfähigkeit: Gleißend",
+      "7oATkYAfEZzx6F5P": "Teuflische Widerstandsfähigkeit: Hieb",
+      "6BHlD7hrfHUEfum5": "Teuflische Widerstandsfähigkeit: Schall"
     }
   },
   "phbwlkHurlThroug": {
@@ -11166,15 +11166,15 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
   },
   "mmRadiantFlame00": {
-    "name": "Strahlende Flamme",
+    "name": "Gleißende Flamme",
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
   },
   "mmRadiantHorn000": {
-    "name": "Strahlendes Horn",
+    "name": "Gleißendes Horn",
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
   },
   "mmRadiantSword00": {
-    "name": "Strahlendes Schwert",
+    "name": "Gleißendes Schwert",
     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
   },
   "mmRake0000000000": {
@@ -11545,7 +11545,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p class=\"feature\">Wenn das [[lookup @name lowercase]]{monster} mindestens\neine Kreatur bezaubert oder im Haltegriff hat, nutzt es Erinnerungen Konsumieren und stellt\n[[/healing average]] wieder her.</p>"
   },
   "mmRadiantTelepor": {
-    "name": "Strahlender Teleport",
+    "name": "Gleißendes Teleportieren",
     "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=HtsFBK1PYKjvy9mn]] Fuß weit zu einem unbesetzten\nFeld, das es sehen kann.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em>\nSG [[lookup @save.dc.value activity=HtsFBK1PYKjvy9mn]], jede Kreatur in einer\n[[lookup @target.template.size activity=HtsFBK1PYKjvy9mn]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} an seinem\nZielfeld ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage\naverage]] Schaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
@@ -12318,8 +12318,8 @@ export const MODERN_OVERRIDES_BY_ID = {
       "TwHkuphOIWzxjrfb": "Nekrotisch",
       "3Kw9mPUhp1uLXn0d": "Gift",
       "3lYokZU6Ne0J9HkI": "Psychisch",
-      "Uyak5Ygg0HNnRFiE": "Strahlend",
-      "RcsCTzBmpfhAxfuw": "Donner"
+      "Uyak5Ygg0HNnRFiE": "Gleißend",
+      "RcsCTzBmpfhAxfuw": "Schall"
     }
   },
   "dmgRingOfResista": {
@@ -13758,7 +13758,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgHornOfBlastin": {
     "name": "Horn des Schmetterns",
-    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Du kannst eine Magieaktion ausführen, um das\nHorn zu blasen, das einen donnernden Stoß in einem 9 m großen Kegel aussendet,\nder bis zu 180 m weit hörbar ist. Jede Kreatur im Kegel macht einen Konstitutions-\nRettungswurf SG 15. Bei einem misslungenen Rettungswurf erleidet eine Kreatur 5W8 Donnerschaden und\nhat den Zustand &amp;Reference[Deafened apply=false] für 1 Minute. Bei einem\nerfolgreichen Rettungswurf erleidet eine Kreatur nur halb so viel Schaden. Glas- oder\nKristallobjekte im Kegel, die nicht getragen oder gehalten werden, erleiden 10W8\nDonnerschaden.</p><p>Jede Nutzung der Magie des Horns hat eine 20-prozentige Chance,\ndass das Horn explodiert. Die Explosion verursacht 10W6 Wuchtschaden am\nBenutzer und zerstört das Horn.</p><section class=\"secret\"\nid=\"secret-rkHeC2mFJBKqNOh0\"><p><strong>Foundry-Hinweis</strong></p><p>Die\n<strong>Würfel auf Explosionschance</strong> Aktivität gibt 1 zurück, wenn es\nexplodiert, ansonsten 0.</p></section>",
+    "description": "<p><em>Wundersamer Gegenstand, Selten</em></p><p>Du kannst eine Magieaktion ausführen, um das\nHorn zu blasen, das einen donnernden Stoß in einem 9 m großen Kegel aussendet,\nder bis zu 180 m weit hörbar ist. Jede Kreatur im Kegel macht einen Konstitutions-\nRettungswurf SG 15. Bei einem misslungenen Rettungswurf erleidet eine Kreatur 5W8 Schallschaden und\nhat den Zustand &amp;Reference[Deafened apply=false] für 1 Minute. Bei einem\nerfolgreichen Rettungswurf erleidet eine Kreatur nur halb so viel Schaden. Glas- oder\nKristallobjekte im Kegel, die nicht getragen oder gehalten werden, erleiden 10W8\nSchallschaden.</p><p>Jede Nutzung der Magie des Horns hat eine 20-prozentige Chance,\ndass das Horn explodiert. Die Explosion verursacht 10W6 Wuchtschaden am\nBenutzer und zerstört das Horn.</p><section class=\"secret\"\nid=\"secret-rkHeC2mFJBKqNOh0\"><p><strong>Foundry-Hinweis</strong></p><p>Die\n<strong>Würfel auf Explosionschance</strong> Aktivität gibt 1 zurück, wenn es\nexplodiert, ansonsten 0.</p></section>",
     "activities": {
       "Blow Horn": "Horn blasen",
       "Explosion Damage": "Explosionsschaden",
@@ -14515,7 +14515,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgThunderousGre": {
     "name": "Donnernder Großknüppel",
-    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatclub0]{Zweihandknüppel}),\nSehr selten (Benötigt Einstimmung)</em></p><p>Solange du an diese\nmagische Waffe eingestimmt bist, beträgt deine Stärke 20, es sei denn, deine Stärke ist bereits gleich\noder größer als dieser Wert. Die Waffe verursacht zusätzlich 1W8 Donnerschaden\nbei jeder Kreatur, die sie trifft, und zusätzlich 3W8 Donnerschaden bei Objekten, die sie trifft\nund die nicht getragen werden.</p><p>Die Waffe hat die folgenden\nzusätzlichen Eigenschaften.</p><p><em><strong>Donnerschlag.</strong></em> Als\neine Magische Aktion kannst du die Waffe gegen eine harte Oberfläche schlagen, um\neinen lauten Donnerschlag zu erzeugen, der bis zu 90 m weit hörbar ist. Du erzeugst außerdem einen 9 m\ngroßen Kegel aus donnernder Energie. Jede Kreatur im Kegel muss einen Stärkerettungswurf gegen SG 15 bestehen oder erhält den Zustand Liegend. Nichtmagische Objekte\nim Kegel, die nicht getragen werden, erleiden [[/damage 3d8\ntype=thunder]] Schaden.</p><p><em><strong>Erdbeben.</strong></em> Als eine\nMagische Aktion kannst du die Waffe gegen den Boden schlagen, um eine\nintensive seismische Störung in einem Kreis von 15 m Radius zu erzeugen, der auf dem\nEinschlagpunkt zentriert ist. Strukturen, die in diesem Bereich mit dem Boden in Kontakt sind, erleiden\n50 Wuchtschaden, und jede Kreatur auf dem Boden in diesem Bereich muss\neinen Geschicklichkeitsrettungswurf gegen SG 20 bestehen oder erhält den Zustand Liegend. Wenn\ndiese Kreatur auch konzentriert, muss sie einen [[/save con 20]]\nRettungswurf bestehen, oder ihre Konzentration wird gebrochen. Zusätzlich kannst du eine\n9 m tiefe, 3 m breite Spalte im Boden an einer beliebigen Stelle in\ndiesem Bereich öffnen lassen. Jede Kreatur an einer Stelle, an der sich die Spalte öffnet, muss einen\nGeschicklichkeitsrettungswurf gegen SG 20 bestehen; bei einem misslungenen Rettungswurf fällt sie in die Spalte,\nbei einem erfolgreichen bewegt sie sich mit dem Rand der Spalte. Jede Struktur an einer\nStelle, an der sich die Spalte öffnet, stürzt in die Spalte. Sobald du diese\nEigenschaft benutzt hast, kann sie erst nach der nächsten Morgendämmerung wieder verwendet werden.</p>",
+    "description": "<p><em>Waffe\n(@UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatclub0]{Zweihandknüppel}),\nSehr selten (Benötigt Einstimmung)</em></p><p>Solange du an diese\nmagische Waffe eingestimmt bist, beträgt deine Stärke 20, es sei denn, deine Stärke ist bereits gleich\noder größer als dieser Wert. Die Waffe verursacht zusätzlich 1W8 Schallschaden\nbei jeder Kreatur, die sie trifft, und zusätzlich 3W8 Schallschaden bei Objekten, die sie trifft\nund die nicht getragen werden.</p><p>Die Waffe hat die folgenden\nzusätzlichen Eigenschaften.</p><p><em><strong>Donnerschlag.</strong></em> Als\neine Magische Aktion kannst du die Waffe gegen eine harte Oberfläche schlagen, um\neinen lauten Donnerschlag zu erzeugen, der bis zu 90 m weit hörbar ist. Du erzeugst außerdem einen 9 m\ngroßen Kegel aus donnernder Energie. Jede Kreatur im Kegel muss einen Stärkerettungswurf gegen SG 15 bestehen oder erhält den Zustand Liegend. Nichtmagische Objekte\nim Kegel, die nicht getragen werden, erleiden [[/damage 3d8\ntype=thunder]] Schaden.</p><p><em><strong>Erdbeben.</strong></em> Als eine\nMagische Aktion kannst du die Waffe gegen den Boden schlagen, um eine\nintensive seismische Störung in einem Kreis von 15 m Radius zu erzeugen, der auf dem\nEinschlagpunkt zentriert ist. Strukturen, die in diesem Bereich mit dem Boden in Kontakt sind, erleiden\n50 Wuchtschaden, und jede Kreatur auf dem Boden in diesem Bereich muss\neinen Geschicklichkeitsrettungswurf gegen SG 20 bestehen oder erhält den Zustand Liegend. Wenn\ndiese Kreatur auch konzentriert, muss sie einen [[/save con 20]]\nRettungswurf bestehen, oder ihre Konzentration wird gebrochen. Zusätzlich kannst du eine\n9 m tiefe, 3 m breite Spalte im Boden an einer beliebigen Stelle in\ndiesem Bereich öffnen lassen. Jede Kreatur an einer Stelle, an der sich die Spalte öffnet, muss einen\nGeschicklichkeitsrettungswurf gegen SG 20 bestehen; bei einem misslungenen Rettungswurf fällt sie in die Spalte,\nbei einem erfolgreichen bewegt sie sich mit dem Rand der Spalte. Jede Struktur an einer\nStelle, an der sich die Spalte öffnet, stürzt in die Spalte. Sobald du diese\nEigenschaft benutzt hast, kann sie erst nach der nächsten Morgendämmerung wieder verwendet werden.</p>",
     "activities": {
       "Clap of Thunder": "Donnerschlag",
       "Earthquake: Concentration Save": "Erdbeben: Konzentrations-Rettungswurf",

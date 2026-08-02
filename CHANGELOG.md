@@ -3,6 +3,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.30] - 2026-08-03
+
+### Fixed - Die Uebersetzungen der englischen Originalmodule hingen bei radiant zurueck
+
+Die generierten Overrides uebersetzen auch die **englischen** Module — der dritte Ort der
+Dreifach-Regel, und dort standen die alten Begriffe noch:
+
+- **5 Radiant-Namen**: Gleissende Schlaege (2x), Gleissende Flamme, Gleissendes Horn,
+  Gleissendes Schwert, Gleissendes Teleportieren.
+- **11x „Donnerschaden"** -> Schallschaden, 1x „strahlenden Schaden" -> gleissenden Schaden,
+  1x „Strahlendem Schaden" -> Gleissendem (content24).
+- **Zwei Typnamen-Reihen** nutzten Fliesstext-Komposita und Altbegriffe als Typnamen: die
+  Auswahlliste der Widerstands-Gegenstaende („Saeure, Wuchtschaden, …, Strahlend, … oder
+  Donner") und die Effektnamen *Teuflische Widerstandsfaehigkeit: X* — beide stehen jetzt auf
+  den 13 SRD-Typnamen (Wucht, Stich, Hieb, Gleissend, Schall …), ebenso die
+  Ring-der-Widerstandsfaehigkeit-Effektliste.
+
+Unangetastet: „strahlendem Licht/Feuer" als Prosa (SRD-Wortlaut) und die Paladin-Flavourzeile
+„Streiter in strahlender Ruestung" (SRD woertlich).
+
+### Verified
+
+JS-Syntax und JSON gueltig; verbleibende „strahlend"-Treffer in den Live-Dateien sind
+ausschliesslich Prosa ohne radiant-Bezug (modern 4, legacy 3).
+
+
 ## [14.0.29] - 2026-07-25
 
 ### Fixed - Ein Absturz beim Weltstart riss 23 Zuweisungen mit
