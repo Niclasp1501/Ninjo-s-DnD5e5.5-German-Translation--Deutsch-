@@ -192,6 +192,72 @@ Betrifft `languages/de.json` (die 9 Auswahl-Beschriftungen), `babele/dnd5e.conte
 alle drei Orte des Dreifach-Syncs zusammen mit Handbuch 2.2.5.1 und Monsterhandbuch 1.4.7.0.
 
 
+## [14.0.20] - 2026-07-20
+
+*Eintrag am 28.08.2026 aus der Commit-Historie nachgetragen.*
+
+### Fixed - 13 Kennungen standen als Anzeigename da
+
+In `babele/dnd5e.content24.json` waren 19 Anzeigenamen Pseudo-Kennungen: ein frueherer Lauf
+hatte die **IDs** uebersetzt statt der Namen (`phbbgAcolyte0000` wurde zu
+`phbbgAkolyth0000`). Im Spiel stand ueber der Zwergen-Seite woertlich „phbspZwerg000000".
+13 davon sind eindeutig und korrigiert, belegt an den englischen Originalnamen aus dem
+System-Pack. Sechs blieben zunaechst zurueckgehalten, weil dort eine Konventionsfrage steckte
+(Komma-Schreibweise bei Elf, und *Sage*) — sie folgen in 14.0.21.
+
+### Fixed - 11 Werte wichen vom SRD ab
+
+Die generierten Overrides ueberschreiben zur Laufzeit die Pack-Namen — was Spieler sehen,
+kommt von dort. Elf Werte gingen auseinander:
+
+- `phbsplWindWall00` hiess *Windwand*; das SRD schreibt an allen drei Stellen exakt
+  **Windwall**. Auch die zwei Linktexte nachgezogen.
+- `phbinvAgonizingB` hiess *Qualvoller Stoss*, waehrend der eigene Linktext im selben Modul
+  **Qualvoller Strahl** sagte — so auch das SRD.
+- `phbwlkEldritchMa` *Eldritch-Meister* -> **Mystischer Meister** (SRD).
+- 2x *Wasser (Pint)* -> **Wasser (0,5 l)** (das SRD metriert Pint zu 0,5 Liter).
+- Tiefling: *Abyssal/Infernal* -> **Abyssisch/Infernalisch**, jeweils Name und Text.
+
+## [14.0.21] - 2026-07-20
+
+*Eintrag am 28.08.2026 aus der Commit-Historie nachgetragen.*
+
+### Fixed - 18 Groessenspannen, bei denen nur die zweite Zahl umgerechnet war
+
+Eine ganze Fehlerklasse, aufgefallen beim Pruefen der Speziesseiten: *„Mittel (etwa 5–2,1 m
+gross)"* — die 5 stand noch in Fuss. Alle **18** korrigiert (erste Zahl x0,3). Dazu 31
+Groessenkategorien *Mittel* -> **Mittelgross** und 2 *Drachengeboren\** -> **Drachenbluetig\***.
+
+### Changed - Die sechs zurueckgehaltenen Bezeichnernamen
+
+Gesetzt im Komma-Schema des Originals (*Elf, Drow* / *Elf, Hochelf* / *Elf, Waldelf* /
+*Tiefling, Abyssisch* …), damit die Untertypen unter ihrer Spezies sortieren; die zwei bereits
+deutschen Tiefling-Seiten ziehen mit. Der *Sage*-Hintergrund heisst **Weiser** — der kaputte
+Wert lautete „phbHintergrWeiser0000000", der fruehere Autor hatte also dasselbe gemeint.
+
+## [14.0.22] - 2026-07-20
+
+*Eintrag am 28.08.2026 aus der Commit-Historie nachgetragen.*
+
+### Changed - „Expend Use" und „Escape Check" wie im Monster-Handbuch
+
+36 Stellen: *Verbrauch nutzen* -> **Einsatz verbrauchen** (23x), *Entkommen-Wurf* ->
+**Entkommen-Probe** (13x). Das SRD schreibt durchgehend „entkommen", nie „entweichen", und
+eine Attributspruefung heisst Probe, nicht Wurf. Dazu die im babele-Ordner liegengebliebene
+Sicherungsdatei entfernt.
+
+## [14.0.23] - 2026-07-20
+
+*Eintrag am 28.08.2026 aus der Commit-Historie nachgetragen.*
+
+### Changed - Ebenennamen aufs SRD
+
+Feenwildnis, Schattensaum, Limbus, Pandaemonium, Berg Celestia, Neun Hoellen — und
+**Arkadien -> Arcadia**, so schreibt es das SRD.
+
+Nur Werte, keine Babele-Schluessel: Schluesselzahl vorher wie nachher 10.734, JSON und
+ES-Modul-Syntax geprueft.
+
 ## [14.0.24] - 2026-07-23
 
 ### Hinzugefügt - &Reference löst jetzt auf das deutsche Glossar auf
