@@ -3,6 +3,37 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.31] - 2026-09-03
+
+### Fixed - Tooltips fuer Regeln, Zustaende und Fertigkeiten blieben leer
+
+Gemeldet: Beim Hovern auf dem Bogen kam nichts mehr. Reproduziert am Hover-Handler von
+dnd5e: *„Cannot destructure property 'content' of undefined"*.
+
+Die Ursache liegt in unserem eigenen Tooltip-Patch (seit v0.1.4). dnd5e hovert so:
+
+    await (doc.richTooltip?.() ?? doc.system?.richTooltip?.() ?? {})
+
+Sobald `richTooltip` auf dem Seiten-Prototyp existiert, nimmt dnd5e **immer** diesen Zweig —
+der Rueckfall auf `system.richTooltip()` kommt nie mehr dran. Unser Patch haengt genau dort
+und reichte fuer alle Seiten ausserhalb des eigenen Tooltip-Packs an ein `original` weiter, das
+es nicht gibt: Weder der Foundry-Kern (0 Treffer in `foundry.mjs`) noch `JournalEntryPage5e`
+definieren `richTooltip` selbst. Ergebnis: `undefined` fuer jede Glossar-, Regel- und
+Systemseite, waehrend `page.system.richTooltip()` bei denselben Seiten Inhalt liefert
+(*Bezaubert*: 655 Zeichen).
+
+Der Patch baut den Rueckfall jetzt selbst nach: erst `original` (falls es je eines gibt), dann
+`system.richTooltip()`, und fuer Fremdseiten nie mehr `undefined`, sondern `{}` — genau das,
+was dnd5e ohne uns bekaeme. Nur fuer Seiten aus dem eigenen Pack greift weiterhin die
+Vorlage `page-rule-tooltip.hbs`.
+
+### Verified
+
+Im laufenden Spiel: Glossarseite *Bezaubert* liefert ueber `richTooltip()` Inhalt, der
+dnd5e-Hover-Handler wirft nicht mehr, die Fertigkeits-Tooltips aus dem eigenen Pack rendern
+unveraendert.
+
+
 ## [14.0.30] - 2026-08-03
 
 ### Fixed - Die Uebersetzungen der englischen Originalmodule hingen bei radiant zurueck

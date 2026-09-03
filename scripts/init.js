@@ -572,15 +572,31 @@ function patchLegacyTooltipRendering() {
 
   const original = proto.richTooltip;
 
-  proto.richTooltip = async function richTooltipPatched(enrichmentOptions = {}) {
-    if (this.pack !== MODULE_PACK_COLLECTION) {
-      return original?.call(this, enrichmentOptions);
-    }
-
+  // dnd5e hovert so:  await (doc.richTooltip?.() ?? doc.system?.richTooltip?.() ?? {})
+  // Sobald richTooltip auf dem Prototyp existiert, nimmt dnd5e IMMER diesen Zweig; der
+  // Rueckfall auf system.richTooltip() findet dann nie mehr statt. Weder der Foundry-Kern
+  // noch JournalEntryPage5e definieren richTooltip selbst, `original` ist also undefined.
+  // Fuer jede Seite ausserhalb unseres Packs lieferte der Patch damit undefined, dnd5e
+  // destrukturierte undefined, und der Tooltip blieb leer (Zustaende, Regeln, Fertigkeiten
+  // aus dem deutschen Glossar). Deshalb bauen wir den Rueckfall hier selbst nach.
+  const nativeTooltip = async (page, options) => {
     if (typeof original === "function") {
-      const native = await original.call(this, enrichmentOptions);
-      if (native?.content) return native;
+      const r = await original.call(page, options);
+      if (r?.content) return r;
     }
+    if (typeof page.system?.richTooltip === "function") {
+      const r = await page.system.richTooltip(options);
+      if (r?.content) return r;
+    }
+    return null;
+  };
+
+  proto.richTooltip = async function richTooltipPatched(enrichmentOptions = {}) {
+    const native = await nativeTooltip(this, enrichmentOptions);
+    if (this.pack !== MODULE_PACK_COLLECTION) {
+      return native ?? {};
+    }
+    if (native) return native;
 
     const textEditor = foundry.applications.ux.TextEditor.implementation;
     const enriched = await textEditor.enrichHTML(this.text?.content ?? "", {
