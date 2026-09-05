@@ -1,3 +1,5 @@
+import { willkommenEinrichten, willkommenZeigen } from "./willkommen.js";
+
 const MODULE_ID = "foundryvtt-dnd5e55-lang-de";
 const SETTING_ENABLE_COMPENDIUM_TRANSLATIONS = "enableCompendiumTranslations";
 const MODULE_PACK_NAME = "dnd5e55-de-tooltips";
@@ -809,3 +811,6 @@ Hooks.on("renderCompendiumDirectory", (_app, html) => {
     window.setTimeout(() => localizeCompendiumSidebarInElement(element), delay);
   }
 });
+
+Hooks.once("init", () => willkommenEinrichten());
+Hooks.once("ready", () => willkommenZeigen());

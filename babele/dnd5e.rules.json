@@ -1646,7 +1646,7 @@
           "text": "<p><strong>Riesen</strong> sind viel größer als Menschen und ihresgleichen. Ihre Gestalt ist humanoid, doch einige haben mehrere Köpfe (Ettin) oder weisen Deformationen auf (Fomorianer), Echte Riesen gibt es in sechs Varianten: Hügelriesen, Steinriesen, Frostriesen, Feuerriesen, Wolkenriesen und Sturmriesen. Darüber hinaus zählen auch Kreaturen wie Oger und Trolle zu den Riesen.</p>"
         },
         "Humanoids": {
-          "name": "Menschen",
+          "name": "Humanoide",
           "text": "Humanoide, zivilisiert oder wild, stellen in Fantasy-Spielwelten die Hauptvölker. Nicht nur Menschen gehören dazu, sondern auch eine enorme Vielfalt weiterer Spezies. Humanoide verfügen über Sprache und Kultur, aber nur selten über natürliche magische Fähigkeiten (wobei die meisten Humanoiden das Zauberwirken erlernen können). Sie sind von zweibeiniger aufrechter Gestalt. Die häufigsten humanoiden Völker eignen sich zugleich am besten als Spielercharaktere: Menschen, Zwerge, Elfen und Halblinge. Kaum weniger zahlreich, aber viel wilder, brutaler und fast immer böse sind hingegen Goblinoide (Goblins, Hobgoblins und Grottenschrate), Orks, Gnolle, Echsenmenschen und Kobolde."
         },
         "Monstrosities": {
@@ -1662,7 +1662,7 @@
           "text": "<p><strong>Pflanzen</strong> als Kreaturentyp sind vegetabile Kreaturen und keine gewöhnliche Flora. Die meisten können sich fortbewegen, und einige sind Fleischfresser. Zu den typischen Pflanzenkreaturen gehören modernde Schlurfer sowie Baumhirten. Auch Pilzkreaturen wie Gassporen und Mykoniden gehören in diese Kategorie.</p>"
         },
         "Undead": {
-          "name": "Undead",
+          "name": "Untote",
           "text": "<p><strong>Untote</strong> sind ehemals lebendige Kreaturen, die durch Nekromantie oder unheilige Flüche in einen schrecklichen untoten Zustand versetzt wurden. Zu ihnen gehören wandelnde Leichen wie Vampire und Zombies, aber auch körperlose Kreaturen wie Geister und Schreckgespenster.</p>"
         },
         "Tags": {

@@ -1,0 +1,12 @@
+{
+  "DND5EDE.Willkommen.Setting": "Welcome window",
+  "DND5EDE.Willkommen.Untertitel": "German translation for dnd5e 5.x",
+  "DND5EDE.Willkommen.Einleitung": "This translation sits on top of the dnd5e system: the interface and character sheets appear in German without anything in the system itself being changed.",
+  "DND5EDE.Willkommen.Punkt1": "<strong>Interface and character sheets</strong> — fully translated and proven in everyday play. That is the part you look at every session.",
+  "DND5EDE.Willkommen.Punkt2": "<strong>SRD and compendiums</strong> — far along, by way of Babele. The odd entry may still be in English; the gaps are being closed continuously.",
+  "DND5EDE.Willkommen.Punkt3": "<strong>The system stays untouched</strong> — translation happens through language files and Babele, not by patching the system. A system update does not undo the work.",
+  "DND5EDE.Willkommen.Start": "To begin: nothing else to do — set Foundry to <strong>German</strong> and the interface follows. Babele must also be active for the compendiums.",
+  "DND5EDE.Willkommen.ForgeZeile": "Every module, its documentation and the German translations in one place — open the module page",
+  "DND5EDE.Willkommen.Nie": "Don't show again",
+  "DND5EDE.Willkommen.Spaeter": "Later"
+}

@@ -3,6 +3,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.32] - 2026-09-05
+
+### Fixed - Zwei Kreaturentyp-Regelseiten trugen den falschen Titel
+
+Beim Pruefen der Bogen-Tooltips aufgefallen: Der Hover auf dem Kreaturentyp *Humanoide* zeigte
+als Ueberschrift **„Menschen“**, waehrend der Text darunter korrekt mit „Humanoide, zivilisiert
+oder wild …“ beginnt. Zwei Seitentitel in `babele/dnd5e.rules.json` wichen von der
+Kreaturentypliste des SRD 5.2.1 ab:
+
+| Seite | war | ist |
+|---|---|---|
+| `Humanoids` | Menschen | **Humanoide** (SRD 58x, „Menschen“ ist *Humans*) |
+| `Undead` | Undead | **Untote** (war gar nicht uebersetzt; SRD 36x) |
+
+Die uebrigen zwoelf Kreaturentypen und alle fuenfzehn Zustandsseiten stimmen mit unserer
+`languages/de.json` ueberein — gegengeprueft, nicht gestichprobt.
+
+### Verified
+
+`babele/dnd5e.rules.json` weiterhin gueltiges JSON, Schluesselzahl unveraendert (1.350). Im
+laufenden Spiel liefert der Kreaturentyp-Hover 932 Zeichen deutschen Text.
+
+
 ## [14.0.31] - 2026-09-03
 
 ### Fixed - Tooltips fuer Regeln, Zustaende und Fertigkeiten blieben leer
