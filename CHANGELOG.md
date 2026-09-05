@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [14.0.33] - 2026-09-05
+## [14.2609.1] - 2026-09-05
 
 ### Fixed - Elvish heißt Elfisch, nicht Elbisch
 
@@ -17,6 +17,12 @@ Die Kompendien beider Handbücher waren nicht betroffen — dort kam keine der b
 Formen vor.
 
 Gefunden und gemeldet von **Fylson**. Danke dafür.
+
+Mit dieser Auslieferung folgt das Modul dem Versionsschema der übrigen Foundry-Module:
+`<Foundry-Generation>.<Jahr+Monat>.<laufend>`. Aus 14.0.33 wird damit 14.2609.1 — die
+Nummer sagt jetzt, aus welchem Monat der Stand ist. Die Zählung bleibt aufsteigend,
+Updates werden also wie gewohnt angeboten. Die Zwischenstände 14.0.32 und 14.0.33 hatten
+kein eigenes Release und gehen in dieser Version auf.
 
 ## [14.0.32] - 2026-09-05
 
