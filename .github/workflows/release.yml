@@ -51,10 +51,16 @@ jobs:
 
           zip -r dist/module.zip $ZIP_INPUTS
 
+      - name: Extract release notes from CHANGELOG
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: python .github/scripts/release_notes.py
+
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name }}
+          body_path: release-notes.md
           files: |
             module.json
             dist/module.zip
