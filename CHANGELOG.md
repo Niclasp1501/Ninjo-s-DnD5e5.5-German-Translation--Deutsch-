@@ -3,6 +3,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.0.33] - 2026-09-05
+
+### Fixed - Elvish heißt Elfisch, nicht Elbisch
+
+Die Standardsprache `Elvish` stand als „Elbisch" in der Sprachliste. Das ist die
+Tolkien-Form aus dem deutschen *Herr der Ringe* — in D&D heißt sie *Elfisch*. Das
+deutsche SRD 5.2.1 schreibt durchgehend „Elfisch" (17×) und „Elbisch" kein einziges
+Mal; ebenso „Elfen" statt „Elben". Geändert in `languages/de.json` und in der
+Vorschlagsliste `languages/de.suggestions.json`.
+
+Die Kompendien beider Handbücher waren nicht betroffen — dort kam keine der beiden
+Formen vor.
+
+Gefunden und gemeldet von **Fylson**. Danke dafür.
+
 ## [14.0.32] - 2026-09-05
 
 ### Fixed - Zwei Kreaturentyp-Regelseiten trugen den falschen Titel
