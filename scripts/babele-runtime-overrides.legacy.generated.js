@@ -4301,7 +4301,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
   },
   "dp6xny4v8PDoIGjh": {
     "name": "Einswerden mit der Natur",
-    "description": "<p>Du wirst für einen Augenblick eins mit der Natur und erlangst Wissen über die Umgebung. Im Freien wirkt der Zauber auf das Land, das dich innerhalb von 4,5 km umgibt. In Höhlen und anderen unterirdischen Plätzen sinkt der Radius auf 90 m. Der Zauber funktioniert nur an natürlichen Orten, nicht in Gebieten, die vollständig durch Bebauung entstanden sind, wie Kerker oder Städte.</p>\n<p>Du erlangst sofort Wissen über bis zu drei Fakten deiner Wahl zu einem der folgenden Themen bezüglich der Umgebung:</p>\n<ul>\n<li>Gelände und Gewässer,</li>\n<li>vorherrschende Pflanzen, Mineralien, Tiere oder Bewohner,</li>\n<li>mächtige celestische Wesen, Feen, Unholde, Elementare oder Untote,</li>\n<li>Einflussnahmen von anderen Existenzebenen,</li>\n<li>Bauwerke.</li>\n</ul>\n<p>Beispielsweise könntest du herausfinden, wo sich in dieser Gegend ein mächtiger Untoter aufhält, sich wichtige Quellen von Trinkwasser befinden und nahe Städte liegen.</p>"
+    "description": "<p>Du wirst für einen Augenblick eins mit der Natur und erlangst Wissen über die Umgebung. Im Freien wirkt der Zauber auf das Land, das dich innerhalb von 4,5 km umgibt. In Höhlen und anderen unterirdischen Plätzen sinkt der Radius auf 90 m. Der Zauber funktioniert nur an natürlichen Orten, nicht in Gebieten, die vollständig durch Bebauung entstanden sind, wie Kerker oder Städte.</p>\n<p>Du erlangst sofort Wissen über bis zu drei Fakten deiner Wahl zu einem der folgenden Themen bezüglich der Umgebung:</p>\n<ul>\n<li>Gelände und Gewässer,</li>\n<li>vorherrschende Pflanzen, Mineralien, Tiere oder Bewohner,</li>\n<li>mächtige celestische Wesen, Feenwesen, Unholde, Elementare oder Untote,</li>\n<li>Einflussnahmen von anderen Existenzebenen,</li>\n<li>Bauwerke.</li>\n</ul>\n<p>Beispielsweise könntest du herausfinden, wo sich in dieser Gegend ein mächtiger Untoter aufhält, sich wichtige Quellen von Trinkwasser befinden und nahe Städte liegen.</p>"
   },
   "d54VDyFulD9xxY7J": {
     "name": "Heiliges Gespräch",
@@ -5593,7 +5593,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
   },
   "OTvrJSJSUgAwXrWX": {
     "name": "Schutz der Natur",
-    "description": "<p>Mit Erreichen der 10. Stufe kannst du nicht mehr von Feen oder Elementaren bezaubert oder verängstigt werden. Außerdem bist du immun gegen Gifte und Krankheiten.</p>"
+    "description": "<p>Mit Erreichen der 10. Stufe kannst du nicht mehr von Feenwesen oder Elementaren bezaubert oder verängstigt werden. Außerdem bist du immun gegen Gifte und Krankheiten.</p>"
   },
   "ip4bvmGoz3qkoqes": {
     "name": "Erzdruide",
