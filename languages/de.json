@@ -4962,10 +4962,10 @@
       },
       "Configuration": {
         "Custom": "Benutzerdefiniert",
-        "Label": "Habitat",
+        "Label": "Lebensraum",
         "Legend": "Kategorien",
         "Subtype": "{type} Untertyp",
-        "Title": "Habitat konfigurieren"
+        "Title": "Lebensraum konfigurieren"
       },
       "Subtype": "{type} ({subtype})"
     },
