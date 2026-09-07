@@ -19,24 +19,40 @@ const AWARD_CMD_RE = /\[\[\s*\/award\s+([^\]]+)\]\]/gi;
 const LOOKUP_ACTIVITY_RE = /\[\[\s*lookup\s+([^\]]*?)\s+activity=([A-Za-z0-9_-]+)([^\]]*?)\]\]/gi;
 const RICH_TOKEN_PROTECT_RE =
   /(@(?:UUID|Embed|Compendium)\[[\s\S]*?\](?:\{[^}]*\})?|\[\[[\s\S]*?\]\](?:\{[^}]*\})?|&Reference\[[^\]]*\])/g;
+// Sprachnamen nach den Tabellen „Standardsprachen" und „Seltene Sprachen" des deutschen
+// SRD 5.2.1. Sechs Eintraege standen vorher daneben: goblin hiess „Goblin" (das ist das
+// Volk, die Sprache ist „Goblinisch"), sylvan und infernal waren gar nicht uebersetzt,
+// celestial hiess „Himmlisch" (im SRD 0x, dort durchgehend „Celestisch"), primordial
+// „Ursprache" statt „Urtuemlich" und undercommon „Untergemeinsprache" statt
+// „Gemeinsprache der Unterreiche". Die vier Dialekte des Urtuemlichen heissen im SRD
+// Aqual, Aural, Ignal und Terral, nicht Aquan/Auran/Ignan/Terran.
 const ACTOR_LANGUAGE_TOKEN_MAP = {
   "blink dog": "Blinkhund",
   "common": "Gemeinsprache",
+  "common sign language": "Gebärden-Gemeinsprache",
   "elvish": "Elfisch",
   "dwarvish": "Zwergisch",
   "giant": "Riesisch",
   "gnomish": "Gnomisch",
-  "goblin": "Goblin",
+  "gnoll": "Gnollisch",
+  "goblin": "Goblinisch",
   "halfling": "Halblingisch",
   "orc": "Orkisch",
   "draconic": "Drakonisch",
-  "sylvan": "Sylvan",
+  "druidic": "Druidisch",
+  "sylvan": "Sylvanisch",
   "abyssal": "Abyssisch",
-  "celestial": "Himmlisch",
+  "celestial": "Celestisch",
   "deep speech": "Tiefensprache",
-  "infernal": "Infernal",
-  "primordial": "Ursprache",
-  "undercommon": "Untergemeinsprache"
+  "infernal": "Infernalisch",
+  "primordial": "Urtümlich",
+  "aquan": "Aqual",
+  "auran": "Aural",
+  "ignan": "Ignal",
+  "terran": "Terral",
+  "thieves' cant": "Diebessprache",
+  "thieves cant": "Diebessprache",
+  "undercommon": "Gemeinsprache der Unterreiche"
 };
 const EMBEDDED_ITEM_NAME_FALLBACK_MAP = {
   "Move and Attack": "Bewegen und angreifen",
@@ -49,7 +65,7 @@ const ACTOR_TYPE_CUSTOM_MAP = {
   "Spectral Sword": "Spektralschwert",
   "Nature Spirit": "Naturgeist",
   "Otherworldly Steed": "Jenseitiges Reittier",
-  "Celestial, Fey, or Fiend (Your Choice)": "Himmlisch, Fee oder Unhold (deine Wahl)"
+  "Celestial, Fey, or Fiend (Your Choice)": "Celestisches Wesen, Feenwesen oder Unhold (deine Wahl)"
 };
 
 function isGermanUi() {

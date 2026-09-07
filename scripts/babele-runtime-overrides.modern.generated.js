@@ -1819,7 +1819,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplDarkness00": {
     "name": "Dunkelheit",
-    "description": "<p>Für die Wirkungsdauer breitet sich magische &amp;Reference[darkness] von einem Punkt innerhalb der Reichweite aus und füllt eine Kugel mit 15 Fuß Radius. Dunkelsicht kann nicht hindurchsehen, und nichtmagisches Licht kann sie nicht erhellen.</p><p>Alternativ wirkst du den Zauber auf einen Gegenstand, der nicht getragen oder gehalten wird, wodurch die Dunkelheit eine 15-Fuß-Emanation füllt, die von diesem Gegenstand ausgeht. Das Abdecken dieses Gegenstands mit etwas Undurchsichtigem, wie einer Schale oder einem Helm, blockiert die Dunkelheit.</p><p>Wenn ein Bereich dieses Zaubers mit einem Bereich von hellem Licht oder dämmrigem Licht überlappt, der durch einen Zauber des 2. Grades oder niedriger erzeugt wurde, wird dieser andere Zauber gebannt.</p>",
+    "description": "<p>Für die Wirkungsdauer breitet sich magische &amp;Reference[darkness] von einem Punkt innerhalb der Reichweite aus und füllt eine Kugel mit 15 Fuß Radius. Dunkelsicht kann nicht hindurchsehen, und nichtmagisches Licht kann sie nicht erhellen.</p><p>Alternativ wirkst du den Zauber auf einen Gegenstand, der nicht getragen oder gehalten wird, wodurch die Dunkelheit eine 15-Fuß-Ausströmung füllt, die von diesem Gegenstand ausgeht. Das Abdecken dieses Gegenstands mit etwas Undurchsichtigem, wie einer Schale oder einem Helm, blockiert die Dunkelheit.</p><p>Wenn ein Bereich dieses Zaubers mit einem Bereich von hellem Licht oder dämmrigem Licht überlappt, der durch einen Zauber des 2. Grades oder niedriger erzeugt wurde, wird dieser andere Zauber gebannt.</p>",
     "materials": "Fledermausfell und ein Stück Kohle"
   },
   "phbsplDarkvision": {
@@ -2024,7 +2024,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplPasswithou": {
     "name": "Spurlos vorübergehen",
-    "description": "<p>Du strahlst für die Dauer eine verbergende Aura in einer 30 Fuß großen Emanation aus.\nSolange du dich in der Aura befindest, haben du und jede Kreatur, die du wählst, einen Bonus von +10 auf\n[[/check ability=dex skill=ste]]-Würfe und hinterlassen keine Spuren.</p>",
+    "description": "<p>Du strahlst für die Dauer eine verbergende Aura in einer 30 Fuß großen Ausströmung aus.\nSolange du dich in der Aura befindest, haben du und jede Kreatur, die du wählst, einen Bonus von +10 auf\n[[/check ability=dex skill=ste]]-Würfe und hinterlassen keine Spuren.</p>",
     "materials": "Asche von verbrannter Mistel",
     "effects": {
       "MDdoug4Lfu8klZRO": "Verborgen"
@@ -2212,7 +2212,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplDaylight00": {
     "name": "Tageslicht",
-    "description": "<p>Für die Wirkungsdauer breitet sich Sonnenlicht von einem Punkt innerhalb der Reichweite aus und füllt\neine Kugel mit 18 m Radius. Der Bereich des Sonnenlichts ist helles Licht und spendet dämmriges\nLicht für weitere 18 m.</p><p>Alternativ wirkst du den Zauber\nauf ein Objekt, das nicht getragen oder gehalten wird, wodurch das Sonnenlicht eine\n18 m große Emanation füllt, die von diesem Objekt ausgeht. Das Abdecken dieses\nObjekts mit etwas Undurchsichtigem, wie einer Schale oder einem Helm, blockiert das\nSonnenlicht.</p><p>Wenn ein Bereich dieses Zaubers mit einem Bereich der\nDunkelheit überlappt, der durch einen Zauber des 3. Grades oder niedriger erzeugt wurde,\nwird dieser andere Zauber gebannt.</p>"
+    "description": "<p>Für die Wirkungsdauer breitet sich Sonnenlicht von einem Punkt innerhalb der Reichweite aus und füllt\neine Kugel mit 18 m Radius. Der Bereich des Sonnenlichts ist helles Licht und spendet dämmriges\nLicht für weitere 18 m.</p><p>Alternativ wirkst du den Zauber\nauf ein Objekt, das nicht getragen oder gehalten wird, wodurch das Sonnenlicht eine\n18 m große Ausströmung füllt, die von diesem Objekt ausgeht. Das Abdecken dieses\nObjekts mit etwas Undurchsichtigem, wie einer Schale oder einem Helm, blockiert das\nSonnenlicht.</p><p>Wenn ein Bereich dieses Zaubers mit einem Bereich der\nDunkelheit überlappt, der durch einen Zauber des 3. Grades oder niedriger erzeugt wurde,\nwird dieser andere Zauber gebannt.</p>"
   },
   "phbsplDispelMagi": {
     "name": "Magie bannen"
@@ -2364,17 +2364,17 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplSpeakwithP": {
     "name": "Mit Pflanzen sprechen",
-    "description": "<p>Du erfüllst Pflanzen in einer unbeweglichen 30-Fuß-Emanation mit begrenzter Empfindungsfähigkeit und Animation, wodurch sie mit dir kommunizieren und deinen einfachen Befehlen folgen können. Du kannst Pflanzen über Ereignisse im Wirkungsbereich des Zaubers innerhalb des letzten Tages befragen und so Informationen über vorbeiziehende Kreaturen, das Wetter und andere Umstände erhalten.</p><p>Du kannst auch &amp;Reference[difficultterrain], die durch Pflanzenwachstum verursacht wurden (wie Dickichte und Unterholz), in gewöhnliches Gelände verwandeln, das für die Dauer anhält. Oder du kannst gewöhnliches Gelände, in dem Pflanzen vorhanden sind, in Schwieriges Gelände verwandeln, das für die Dauer anhält.</p><p>Der Zauber ermöglicht es Pflanzen nicht, sich selbst zu entwurzeln und sich zu bewegen, aber sie können ihre Äste, Ranken und Stängel für dich bewegen.</p><p>Wenn sich eine Pflanzenkreatur im Bereich befindet, kannst du mit ihr kommunizieren, als würdet ihr eine gemeinsame Sprache teilen.</p>",
+    "description": "<p>Du erfüllst Pflanzen in einer unbeweglichen 30-Fuß-Ausströmung mit begrenzter Empfindungsfähigkeit und Animation, wodurch sie mit dir kommunizieren und deinen einfachen Befehlen folgen können. Du kannst Pflanzen über Ereignisse im Wirkungsbereich des Zaubers innerhalb des letzten Tages befragen und so Informationen über vorbeiziehende Kreaturen, das Wetter und andere Umstände erhalten.</p><p>Du kannst auch &amp;Reference[difficultterrain], die durch Pflanzenwachstum verursacht wurden (wie Dickichte und Unterholz), in gewöhnliches Gelände verwandeln, das für die Dauer anhält. Oder du kannst gewöhnliches Gelände, in dem Pflanzen vorhanden sind, in Schwieriges Gelände verwandeln, das für die Dauer anhält.</p><p>Der Zauber ermöglicht es Pflanzen nicht, sich selbst zu entwurzeln und sich zu bewegen, aber sie können ihre Äste, Ranken und Stängel für dich bewegen.</p><p>Wenn sich eine Pflanzenkreatur im Bereich befindet, kannst du mit ihr kommunizieren, als würdet ihr eine gemeinsame Sprache teilen.</p>",
     "effects": {
       "cByepuCx1dcWTEa7": "Mit Pflanzen sprechen"
     }
   },
   "phbsplSpiritGuar": {
     "name": "Geisterwächter",
-    "description": "<p>Schutzgeister flattern für die Dauer in einer 15-Fuß-Emanation um dich herum. Wenn du gut oder neutral bist, erscheint ihre spektrale Form engelsgleich oder feenhaft (deine Wahl). Wenn du böse bist, erscheinen sie teuflisch.</p><p>Wenn du diesen Zauber wirkst, kannst du Kreaturen bestimmen, die von ihm unberührt bleiben. Die Bewegungsrate jeder anderen Kreatur wird in der Emanation halbiert, und wann immer die Emanation in den Raum einer Kreatur eindringt und wann immer eine Kreatur die Emanation betritt oder ihren Zug dort beendet, muss die Kreatur einen Weisheitsrettungswurf ablegen. Bei einem misslungenen Rettungswurf erleidet die Kreatur 3W8 gleißenden Schaden (wenn du gut oder neutral bist) oder 3W8 nekrotischen Schaden (wenn du böse bist). Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden. Eine Kreatur legt diesen Rettungswurf nur einmal pro Zug ab.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 3.</p>",
+    "description": "<p>Schutzgeister flattern für die Dauer in einer 15-Fuß-Ausströmung um dich herum. Wenn du gut oder neutral bist, erscheint ihre spektrale Form engelsgleich oder feenhaft (deine Wahl). Wenn du böse bist, erscheinen sie teuflisch.</p><p>Wenn du diesen Zauber wirkst, kannst du Kreaturen bestimmen, die von ihm unberührt bleiben. Die Bewegungsrate jeder anderen Kreatur wird in der Ausströmung halbiert, und wann immer die Ausströmung in den Raum einer Kreatur eindringt und wann immer eine Kreatur die Ausströmung betritt oder ihren Zug dort beendet, muss die Kreatur einen Weisheitsrettungswurf ablegen. Bei einem misslungenen Rettungswurf erleidet die Kreatur 3W8 gleißenden Schaden (wenn du gut oder neutral bist) oder 3W8 nekrotischen Schaden (wenn du böse bist). Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden. Eine Kreatur legt diesen Rettungswurf nur einmal pro Zug ab.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 3.</p>",
     "activities": {
       "Cast": "Wirken",
-      "Emanation Save": "Emanations-Rettungswurf"
+      "Ausströmung Save": "Ausströmungs-Rettungswurf"
     },
     "materials": "eine Gebetsrolle",
     "effects": {
@@ -2395,7 +2395,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplLeomundsTi": {
     "name": "Leomunds Winzige Hütte",
-    "description": "<p>Eine 10-Fuß-Emanation entsteht um dich herum und bleibt für die Dauer stationär. Der Zauber schlägt fehl, wenn du ihn wirkst, falls die Emanation nicht groß genug ist, um alle Kreaturen in ihrem Bereich vollständig einzuschließen.</p><p>Kreaturen und Objekte innerhalb der Emanation, wenn du den Zauber wirkst, können sich frei durch sie bewegen. Alle anderen Kreaturen und Objekte sind daran gehindert, hindurchzugehen. Zauber des 3. Grades oder niedriger können nicht durch sie gewirkt werden, und die Effekte solcher Zauber können sich nicht in sie hinein erstrecken.</p><p>Die Atmosphäre innerhalb der Emanation ist angenehm und trocken, unabhängig vom Wetter draußen. Bis der Zauber endet, kannst du befehlen, dass das Innere &amp;Reference[dimlight] oder &amp;Reference[darkness] hat (keine Aktion erforderlich). Die Emanation ist von außen undurchsichtig und in jeder von dir gewählten Farbe, aber von innen transparent.</p><p>Der Zauber endet vorzeitig, wenn du die Emanation verlässt oder wenn du ihn erneut wirkst.</p>",
+    "description": "<p>Eine 10-Fuß-Ausströmung entsteht um dich herum und bleibt für die Dauer stationär. Der Zauber schlägt fehl, wenn du ihn wirkst, falls die Ausströmung nicht groß genug ist, um alle Kreaturen in ihrem Bereich vollständig einzuschließen.</p><p>Kreaturen und Objekte innerhalb der Ausströmung, wenn du den Zauber wirkst, können sich frei durch sie bewegen. Alle anderen Kreaturen und Objekte sind daran gehindert, hindurchzugehen. Zauber des 3. Grades oder niedriger können nicht durch sie gewirkt werden, und die Effekte solcher Zauber können sich nicht in sie hinein erstrecken.</p><p>Die Atmosphäre innerhalb der Ausströmung ist angenehm und trocken, unabhängig vom Wetter draußen. Bis der Zauber endet, kannst du befehlen, dass das Innere &amp;Reference[dimlight] oder &amp;Reference[darkness] hat (keine Aktion erforderlich). Die Ausströmung ist von außen undurchsichtig und in jeder von dir gewählten Farbe, aber von innen transparent.</p><p>Der Zauber endet vorzeitig, wenn du die Ausströmung verlässt oder wenn du ihn erneut wirkst.</p>",
     "materials": "eine Kristallperle"
   },
   "phbsplTongues000": {
@@ -2453,7 +2453,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplAuraofLife": {
     "name": "Aura des Lebens",
-    "description": "<p>Eine Aura strahlt für die Dauer in einer 30-Fuß-Emanation von dir aus. Solange du dich in der Aura befindest, haben du und deine Verbündeten Resistenz gegen nekrotischen Schaden, und eure maximalen Trefferpunkte können nicht reduziert werden. Wenn ein Verbündeter mit 0 Trefferpunkten seinen Zug in der Aura beginnt, erhält dieser Verbündete 1 Trefferpunkt zurück.</p>",
+    "description": "<p>Eine Aura strahlt für die Dauer in einer 30-Fuß-Ausströmung von dir aus. Solange du dich in der Aura befindest, haben du und deine Verbündeten Resistenz gegen nekrotischen Schaden, und eure maximalen Trefferpunkte können nicht reduziert werden. Wenn ein Verbündeter mit 0 Trefferpunkten seinen Zug in der Aura beginnt, erhält dieser Verbündete 1 Trefferpunkt zurück.</p>",
     "activities": {
       "Create Aura": "Aura erzeugen"
     },
@@ -2505,7 +2505,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplConjureMin": {
     "name": "Geringere Elementare beschwören",
-    "description": "<p>Du beschwörst Geister von den Elementarebenen, die für die Dauer des Zaubers in einer 15-Fuß-Emanation um dich herumschwirren. Bis der Zauber endet, verursacht jeder Angriff, den du ausführst, zusätzlichen 2W8 Schaden, wenn du eine Kreatur in der Emanation triffst. Dieser Schaden ist Säure-, Kälte-, Feuer- oder Blitzschaden (deine Wahl, wenn du den Angriff ausführst).</p><p>Zusätzlich ist der Boden in der Emanation &amp;Reference[DifficultTerrain]schwieriges Gelände__ für deine Feinde.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 4. Grad.</p>",
+    "description": "<p>Du beschwörst Geister von den Elementarebenen, die für die Dauer des Zaubers in einer 15-Fuß-Ausströmung um dich herumschwirren. Bis der Zauber endet, verursacht jeder Angriff, den du ausführst, zusätzlichen 2W8 Schaden, wenn du eine Kreatur in der Ausströmung triffst. Dieser Schaden ist Säure-, Kälte-, Feuer- oder Blitzschaden (deine Wahl, wenn du den Angriff ausführst).</p><p>Zusätzlich ist der Boden in der Ausströmung &amp;Reference[DifficultTerrain]schwieriges Gelände__ für deine Feinde.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 4. Grad.</p>",
     "activities": {
       "Bonus Attack Damage": "Bonus-Angriffsschaden",
       "Cast": "Wirken"
@@ -2513,11 +2513,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplConjureWoo": {
     "name": "Waldwesen beschwören",
-    "description": "<p>Du beschwörst Naturgeister, die für die Dauer des Zaubers in einer 10-Fuß-Emanation um dich herumschwirren. Wann immer die Emanation den Raum einer Kreatur betritt, die du sehen kannst, und wann immer eine Kreatur, die du sehen kannst, die Emanation betritt oder ihren Zug dort beendet, kannst du diese Kreatur zwingen, einen Weisheits-Rettungswurf abzulegen. Die Kreatur erleidet 5W8 Energieschaden bei einem misslungenen Rettungswurf oder halb so viel Schaden bei einem erfolgreichen. Eine Kreatur legt diesen Rettungswurf nur einmal pro Zug ab.</p><p>Zusätzlich kannst du die Aktion &amp;Reference[Disengage]Rückzug__ als Bonusaktion für die Dauer des Zaubers ausführen.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 4. Grad.</p>",
+    "description": "<p>Du beschwörst Naturgeister, die für die Dauer des Zaubers in einer 10-Fuß-Ausströmung um dich herumschwirren. Wann immer die Ausströmung den Raum einer Kreatur betritt, die du sehen kannst, und wann immer eine Kreatur, die du sehen kannst, die Ausströmung betritt oder ihren Zug dort beendet, kannst du diese Kreatur zwingen, einen Weisheits-Rettungswurf abzulegen. Die Kreatur erleidet 5W8 Energieschaden bei einem misslungenen Rettungswurf oder halb so viel Schaden bei einem erfolgreichen. Eine Kreatur legt diesen Rettungswurf nur einmal pro Zug ab.</p><p>Zusätzlich kannst du die Aktion &amp;Reference[Disengage]Rückzug__ als Bonusaktion für die Dauer des Zaubers ausführen.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 4. Grad.</p>",
     "activities": {
       "Cast": "Wirken",
       "Disengage": "Rückzug",
-      "Emanation Save": "Emanations-Rettungswurf"
+      "Ausströmung Save": "Ausströmungs-Rettungswurf"
     }
   },
   "phbsplControlWat": {
@@ -2687,7 +2687,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplAntilifeSh": {
     "name": "Antilebenshülle",
-    "description": "<p>Eine Aura erstreckt sich für die Wirkungsdauer in einer 3 m großen Emanation von dir. Die Aura verhindert, dass Kreaturen außer Konstrukten und Untoten sie durchqueren oder durch sie hindurchgreifen können. Eine betroffene Kreatur kann Zauber wirken oder Angriffe mit Fern- oder Reichweitenwaffen durch die Barriere hindurch ausführen.</p><p>Wenn du dich so bewegst, dass eine betroffene Kreatur gezwungen ist, die Barriere zu durchqueren, endet der Zauber.</p>",
+    "description": "<p>Eine Aura erstreckt sich für die Wirkungsdauer in einer 3 m großen Ausströmung von dir. Die Aura verhindert, dass Kreaturen außer Konstrukten und Untoten sie durchqueren oder durch sie hindurchgreifen können. Eine betroffene Kreatur kann Zauber wirken oder Angriffe mit Fern- oder Reichweitenwaffen durch die Barriere hindurch ausführen.</p><p>Wenn du dich so bewegst, dass eine betroffene Kreatur gezwungen ist, die Barriere zu durchqueren, endet der Zauber.</p>",
     "effects": {
       "IrE5td3goSQtcc0U": "Antilebenshülle"
     }
@@ -3401,7 +3401,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplAntimagicF": {
     "name": "Antimagisches Feld",
-    "description": "<p>Eine Aura der Antimagie umgibt dich in einer 3 m großen Emanation. Niemand kann innerhalb der Aura Zauber wirken, Magieaktionen ausführen oder andere magische Effekte erzeugen, und diese Dinge können nichts innerhalb der Aura anvisieren oder anderweitig beeinflussen. Magische Eigenschaften von magischen Gegenständen funktionieren innerhalb der Aura oder auf etwas innerhalb der Aura nicht.</p><p>Wirkungsbereiche, die durch Zauber oder andere Magie erzeugt werden, können sich nicht in die Aura ausdehnen, und niemand kann in sie hinein- oder aus ihr herausteleportieren oder dort Ebenenreisen nutzen. Portale schließen sich vorübergehend, während sie sich in der Aura befinden.</p><p>Andauernde Zauber, außer jenen, die von einem Artefakt oder einer Gottheit gewirkt wurden, werden in dem Bereich unterdrückt. Während ein Effekt unterdrückt ist, funktioniert er nicht, aber die Zeit, die er unterdrückt ist, zählt gegen seine Wirkungsdauer.</p><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Magie bannen}</em> hat keine Auswirkung auf die Aura, und die Auren, die durch verschiedene <em>Antimagisches Feld</em> Zauber erzeugt werden, heben sich nicht gegenseitig auf.</p>",
+    "description": "<p>Eine Aura der Antimagie umgibt dich in einer 3 m großen Ausströmung. Niemand kann innerhalb der Aura Zauber wirken, Magieaktionen ausführen oder andere magische Effekte erzeugen, und diese Dinge können nichts innerhalb der Aura anvisieren oder anderweitig beeinflussen. Magische Eigenschaften von magischen Gegenständen funktionieren innerhalb der Aura oder auf etwas innerhalb der Aura nicht.</p><p>Wirkungsbereiche, die durch Zauber oder andere Magie erzeugt werden, können sich nicht in die Aura ausdehnen, und niemand kann in sie hinein- oder aus ihr herausteleportieren oder dort Ebenenreisen nutzen. Portale schließen sich vorübergehend, während sie sich in der Aura befinden.</p><p>Andauernde Zauber, außer jenen, die von einem Artefakt oder einer Gottheit gewirkt wurden, werden in dem Bereich unterdrückt. Während ein Effekt unterdrückt ist, funktioniert er nicht, aber die Zeit, die er unterdrückt ist, zählt gegen seine Wirkungsdauer.</p><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Magie bannen}</em> hat keine Auswirkung auf die Aura, und die Auren, die durch verschiedene <em>Antimagisches Feld</em> Zauber erzeugt werden, heben sich nicht gegenseitig auf.</p>",
     "materials": "Eisenfeilspäne"
   },
   "phbsplAntipathyS": {
@@ -3475,7 +3475,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplHolyAura00": {
     "name": "Heilige Aura",
-    "description": "<p>Für die Wirkungsdauer strahlst du eine Aura in einer 9 m großen Emanation aus. Während sie sich in der Aura befinden, haben Kreaturen deiner Wahl Vorteil auf alle Rettungswürfe, und andere Kreaturen haben Nachteil auf Angriffswürfe gegen sie. Zusätzlich, wenn ein Unhold oder ein Untoter eine betroffene Kreatur mit einem Nahkampfangriffswurf trifft, muss der Angreifer einen Konstitutions-Rettungswurf bestehen oder hat den Zustand &amp;Reference[Blinded apply=false] bis zum Ende seines nächsten Zuges.</p>",
+    "description": "<p>Für die Wirkungsdauer strahlst du eine Aura in einer 9 m großen Ausströmung aus. Während sie sich in der Aura befinden, haben Kreaturen deiner Wahl Vorteil auf alle Rettungswürfe, und andere Kreaturen haben Nachteil auf Angriffswürfe gegen sie. Zusätzlich, wenn ein Unhold oder ein Untoter eine betroffene Kreatur mit einem Nahkampfangriffswurf trifft, muss der Angreifer einen Konstitutions-Rettungswurf bestehen oder hat den Zustand &amp;Reference[Blinded apply=false] bis zum Ende seines nächsten Zuges.</p>",
     "activities": {
       "Create Aura": "Aura erschaffen",
       "Fiend/Undead Save": "Unhold/Untoter Rettungswurf"
@@ -4500,7 +4500,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbbrbIntimidati": {
     "name": "Einschüchternde Präsenz",
-    "description": "<p>Als Bonusaktion kannst du mit deiner bedrohlichen Präsenz und urzeitlichen Kraft anderen Schrecken einjagen. Wenn du dies tust, muss jede Kreatur deiner Wahl in einer 9 m großen Emanation, die von dir ausgeht, einen Weisheits-Rettungswurf (SG 8 plus dein Stärke-Modifikator und Übungsbonus) ablegen. Bei einem misslungenen Rettungswurf hat eine Kreatur den Zustand Verängstigt für 1 Minute. Am Ende jedes Zuges der &amp;Reference[Frightened] Kreatur wiederholt die Kreatur den Rettungswurf und beendet den Effekt bei Erfolg für sich selbst.</p><p>Sobald du diese Eigenschaft verwendet hast, kannst du sie erst wieder verwenden, wenn du eine lange Rast beendet hast, es sei denn, du verbrauchst eine Anwendung deiner Wut (keine Aktion erforderlich), um ihre Anwendung wiederherzustellen.</p><section class=\"secret\"\nid=\"secret-vRQdGrtACAbxH4Tm\"><p><strong>Foundry-Hinweis</strong></p><p>Die <strong>Rettungswurf</strong>-Aktivität beinhaltet einen Aktiven Effekt, der den Zustand Verängstigt hinzufügt.</p><p>Die <strong>Aufladen</strong>-Aktivität verbraucht eine Anwendung von Wut und lädt deine Anwendung von Einschüchternde Präsenz wieder auf.</p></section>",
+    "description": "<p>Als Bonusaktion kannst du mit deiner bedrohlichen Präsenz und urzeitlichen Kraft anderen Schrecken einjagen. Wenn du dies tust, muss jede Kreatur deiner Wahl in einer 9 m großen Ausströmung, die von dir ausgeht, einen Weisheits-Rettungswurf (SG 8 plus dein Stärke-Modifikator und Übungsbonus) ablegen. Bei einem misslungenen Rettungswurf hat eine Kreatur den Zustand Verängstigt für 1 Minute. Am Ende jedes Zuges der &amp;Reference[Frightened] Kreatur wiederholt die Kreatur den Rettungswurf und beendet den Effekt bei Erfolg für sich selbst.</p><p>Sobald du diese Eigenschaft verwendet hast, kannst du sie erst wieder verwenden, wenn du eine lange Rast beendet hast, es sei denn, du verbrauchst eine Anwendung deiner Wut (keine Aktion erforderlich), um ihre Anwendung wiederherzustellen.</p><section class=\"secret\"\nid=\"secret-vRQdGrtACAbxH4Tm\"><p><strong>Foundry-Hinweis</strong></p><p>Die <strong>Rettungswurf</strong>-Aktivität beinhaltet einen Aktiven Effekt, der den Zustand Verängstigt hinzufügt.</p><p>Die <strong>Aufladen</strong>-Aktivität verbraucht eine Anwendung von Wut und lädt deine Anwendung von Einschüchternde Präsenz wieder auf.</p></section>",
     "activities": {
       "Recharge with Rage": "Mit Wut aufladen"
     },
@@ -5061,7 +5061,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbpdnAuraExpans": {
     "name": "Aura-Erweiterung",
-    "description": "<p>Deine Aura des Schutzes ist nun eine 9 m große Emanation.</p><section\nid=\"secret-gH6lYObbkvAgLL2q\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die Reichweite deiner Auren aktualisiert sich automatisch, wenn du im Level aufsteigst.</p></section>"
+    "description": "<p>Deine Aura des Schutzes ist nun eine 9 m große Ausströmung.</p><section\nid=\"secret-gH6lYObbkvAgLL2q\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die Reichweite deiner Auren aktualisiert sich automatisch, wenn du im Level aufsteigst.</p></section>"
   },
   "phbpdnCourageAur": {
     "name": "Aura des Mutes",
@@ -5075,7 +5075,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbpdnProtection": {
     "name": "Aura des Schutzes",
-    "description": "<p>Du strahlst eine schützende, unsichtbare Aura in einer 3 Meter großen Emanation aus, die von dir ausgeht. Die Aura ist inaktiv, solange du den Zustand &amp;Reference[Incapacitated apply=false] hast.</p><p>Du und deine Verbündeten in der Aura erhalten einen Bonus auf Rettungswürfe in Höhe deines Charisma-Modifikators (Mindestbonus von +1, derzeit [[lookup @abilities.cha.mod]]).</p><p>Wenn ein anderer Paladin anwesend ist, kann eine Kreatur nur von einer Aura des Schutzes gleichzeitig profitieren; die Kreatur wählt, welche Aura sie nutzt, solange sie sich darin befindet.</p><section class=\"secret\"\nid=\"secret-PEdASVYFq26DP4Fq\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal enthält einen Aktiven Effekt, der deine Rettungswürfe automatisch verbessert, sollte aber nicht für andere betroffene Charaktere verwendet werden, da er deren Charisma-Modifikator und nicht den des Paladins hinzufügt. Sie sollten deinen Modifikator manuell hinzufügen.</p></section>",
+    "description": "<p>Du strahlst eine schützende, unsichtbare Aura in einer 3 Meter großen Ausströmung aus, die von dir ausgeht. Die Aura ist inaktiv, solange du den Zustand &amp;Reference[Incapacitated apply=false] hast.</p><p>Du und deine Verbündeten in der Aura erhalten einen Bonus auf Rettungswürfe in Höhe deines Charisma-Modifikators (Mindestbonus von +1, derzeit [[lookup @abilities.cha.mod]]).</p><p>Wenn ein anderer Paladin anwesend ist, kann eine Kreatur nur von einer Aura des Schutzes gleichzeitig profitieren; die Kreatur wählt, welche Aura sie nutzt, solange sie sich darin befindet.</p><section class=\"secret\"\nid=\"secret-PEdASVYFq26DP4Fq\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal enthält einen Aktiven Effekt, der deine Rettungswürfe automatisch verbessert, sollte aber nicht für andere betroffene Charaktere verwendet werden, da er deren Charisma-Modifikator und nicht den des Paladins hinzufügt. Sie sollten deinen Modifikator manuell hinzufügen.</p></section>",
     "activities": {
       "Aura of Protection": "Aura des Schutzes"
     },
@@ -7139,7 +7139,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmGibberingMouth": {
     "name": "Sabbernder Schlund",
-    "description": "<p>Der Boden in einer [[lookup @target.template.size\n    activity=zVznqPXgYjETqpQz]]-Fuß-Emanation, die vom\n    [[lookup @name]]{monster} ausgeht, ist &amp;Reference[Difficult Terrain].</p>"
+    "description": "<p>Der Boden in einer [[lookup @target.template.size\n    activity=zVznqPXgYjETqpQz]]-Fuß-Ausströmung, die vom\n    [[lookup @name]]{monster} ausgeht, ist &amp;Reference[Difficult Terrain].</p>"
   },
   "mmGrick000000000": {
     "name": "Grick",
@@ -8035,7 +8035,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmAzerSentinel00": {
     "name": "Azer-Wächter",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden, es sei denn, das [[lookup @name lowercase]]{monster} hat den Zustand Kampfunfähig.</p>",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden, es sei denn, das [[lookup @name lowercase]]{monster} hat den Zustand Kampfunfähig.</p>",
     "scalarStrings": {
       "system.details.habitat.value.1.subtype": "Elementarebene des Feuers"
     }
@@ -8049,7 +8049,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDustMephit0000": {
     "name": "Staubmephit",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "materials": "eine Prise Sand oder Rosenblüten",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elemental planes"
@@ -8071,7 +8071,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFireElemental0": {
     "name": "Feuer-Elementar",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} nimmt jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden. <span style=\"font-family:'Roboto\n    Condensed', sans-serif\">Kreaturen und brennbare Objekte in der Emanation fangen Feuer.</span></p>",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} nimmt jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden. <span style=\"font-family:'Roboto\n    Condensed', sans-serif\">Kreaturen und brennbare Objekte in der Ausströmung fangen Feuer.</span></p>",
     "scalarStrings": {
       "system.details.habitat.value.1.subtype": "Elementarebene des Feuers"
     }
@@ -8082,7 +8082,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmIceMephit00000": {
     "name": "Eismephit",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition\n    activity=1SfqWSp7RSyHgG4b]].</p><p><em>Konstitutionsrettungswurf:\n    </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jedes\n    [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer\n    [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß\n    Emanation, die vom [[lookup @name\n    lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]]\n    Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition\n    activity=1SfqWSp7RSyHgG4b]].</p><p><em>Konstitutionsrettungswurf:\n    </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jedes\n    [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer\n    [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß\n    Ausströmung, die vom [[lookup @name\n    lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]]\n    Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elemental planes"
     }
@@ -8096,14 +8096,14 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMagmaMephit000": {
     "name": "Magmamephit",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value\n    activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type\n    activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size\n    activity=1SfqWSp7RSyHgG4b]]-Fuß-Emanation, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage\n    average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value\n    activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type\n    activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size\n    activity=1SfqWSp7RSyHgG4b]]-Fuß-Ausströmung, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage\n    average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elemental planes"
     }
   },
   "mmMagmin00000000": {
     "name": "Magmin",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value\n    activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type\n    activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size\n    activity=1SfqWSp7RSyHgG4b]]-Fuß-Emanation, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage\n    average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup\n    @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value\n    activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type\n    activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size\n    activity=1SfqWSp7RSyHgG4b]]-Fuß-Ausströmung, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage\n    average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elementarebene des Feuers"
     }
@@ -8114,7 +8114,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmSalamander0000": {
     "name": "Salamander",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elementarebene des Feuers"
     }
@@ -8219,7 +8219,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHobgoblinCapta": {
     "name": "Hobgoblin-Hauptmann",
-    "description": "<p>Solange sie sich in einer [[lookup @target.template.size\n    activity=dE4lg9tZyXtoCb5x]] Fuß großen Emanation befindet, die vom\n    [[lookup @name lowercase]]{monster} ausgeht, haben der [[lookup @name\n    lowercase]]{monster} und seine Verbündeten Vorteil auf Angriffswürfe und\n    Rettungswürfe, vorausgesetzt, der [[lookup @name lowercase]]{monster}\n    hat nicht den Zustand &amp;Reference[Incapacitated apply=false].</p>",
+    "description": "<p>Solange sie sich in einer [[lookup @target.template.size\n    activity=dE4lg9tZyXtoCb5x]] Fuß großen Ausströmung befindet, die vom\n    [[lookup @name lowercase]]{monster} ausgeht, haben der [[lookup @name\n    lowercase]]{monster} und seine Verbündeten Vorteil auf Angriffswürfe und\n    Rettungswürfe, vorausgesetzt, der [[lookup @name lowercase]]{monster}\n    hat nicht den Zustand &amp;Reference[Incapacitated apply=false].</p>",
     "scalarStrings": {
       "system.details.habitat.value.5.subtype": "Acheron"
     }
@@ -8260,7 +8260,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmBalor000000000": {
     "name": "Balor",
-    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} explodiert, wenn er stirbt.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=jTq2czA8KQITUK4c]], jede Kreatur in einer [[lookup @target.template.size activity=jTq2czA8KQITUK4c]]-Fuß-Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p class=\"feature\"><em>Misserfolg oder Erfolg:</em> Wenn der [[lookup @name lowercase]]{monster} außerhalb des Abgrunds stirbt, erhält er sofort einen neuen Körper und wird mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt.</p>",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} explodiert, wenn er stirbt.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=jTq2czA8KQITUK4c]], jede Kreatur in einer [[lookup @target.template.size activity=jTq2czA8KQITUK4c]]-Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p class=\"feature\"><em>Misserfolg oder Erfolg:</em> Wenn der [[lookup @name lowercase]]{monster} außerhalb des Abgrunds stirbt, erhält er sofort einen neuen Körper und wird mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Abyss"
     }
@@ -8295,7 +8295,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDretch00000000": {
     "name": "Dretch",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n    @save.dc.value activity=vRnhmBCQqIwIlfS4]], jede Kreatur in einer\n    [[lookup @target.template.size activity=vRnhmBCQqIwIlfS4]]-Fuß\n    Emanation, die vom [[lookup @name\n    lowercase]]{monster} ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> Das\n    Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum\n    Ende seines nächsten Zuges. Solange die Kreatur vergiftet ist, kann sie\n    in ihrem Zug entweder eine Aktion oder eine Bonusaktion ausführen, nicht\n    beides, und sie kann keine Reaktionen ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n    @save.dc.value activity=vRnhmBCQqIwIlfS4]], jede Kreatur in einer\n    [[lookup @target.template.size activity=vRnhmBCQqIwIlfS4]]-Fuß\n    Ausströmung, die vom [[lookup @name\n    lowercase]]{monster} ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> Das\n    Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum\n    Ende seines nächsten Zuges. Solange die Kreatur vergiftet ist, kann sie\n    in ihrem Zug entweder eine Aktion oder eine Bonusaktion ausführen, nicht\n    beides, und sie kann keine Reaktionen ausführen.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Abyss"
     }
@@ -8775,7 +8775,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHarpy000000000": {
     "name": "Harpyie",
-    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} singt eine magische Melodie, die anhält, bis die Konzentration der [[lookup @name lowercase]]{monster} darauf endet.</p><p\n    class=\"feature\"><em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=dxxqZP7Vo01te3QB]], jedes [[lookup @target.affects.special activity=dxxqZP7Vo01te3QB]] in einer [[lookup @target.template.size activity=dxxqZP7Vo01te3QB]] Fuß großen Emanation, die von der [[lookup @name lowercase]]{monster} ausgeht, wenn das Lied beginnt.</p><p class=\"feature\"><em>Fehlschlag:</em> Das Ziel hat den Zustand &amp;Reference[Charmed apply=false] bis das Lied endet und wiederholt den Rettungswurf am Ende jedes seiner Züge. Solange es Bezaubert ist, hat das Ziel den Zustand &amp;Reference[Incapacitated apply=false] und ignoriert den Lockgesang anderer Harpyien.</p><p class=\"feature\">Wenn das Ziel mehr als 1,5 m von der [[lookup @name lowercase]]{monster} entfernt ist, bewegt sich das Ziel in seinem Zug auf die [[lookup @name lowercase]]{monster} zu, auf dem direktesten Weg, um in Reichweite von 1,5 m zur [[lookup @name lowercase]]{monster} zu gelangen. Es vermeidet keine &amp;Reference[OpportunityAttacks]; jedoch, bevor es sich in schädigendes Gelände (wie Lava oder eine Grube) bewegt und wann immer es Schaden von einer anderen Quelle als der [[lookup @name lowercase]]{monster} erleidet, wiederholt das Ziel den Rettungswurf.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen den Lockgesang dieser [[lookup @name lowercase]]{monster}.</p>"
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} singt eine magische Melodie, die anhält, bis die Konzentration der [[lookup @name lowercase]]{monster} darauf endet.</p><p\n    class=\"feature\"><em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=dxxqZP7Vo01te3QB]], jedes [[lookup @target.affects.special activity=dxxqZP7Vo01te3QB]] in einer [[lookup @target.template.size activity=dxxqZP7Vo01te3QB]] Fuß großen Ausströmung, die von der [[lookup @name lowercase]]{monster} ausgeht, wenn das Lied beginnt.</p><p class=\"feature\"><em>Fehlschlag:</em> Das Ziel hat den Zustand &amp;Reference[Charmed apply=false] bis das Lied endet und wiederholt den Rettungswurf am Ende jedes seiner Züge. Solange es Bezaubert ist, hat das Ziel den Zustand &amp;Reference[Incapacitated apply=false] und ignoriert den Lockgesang anderer Harpyien.</p><p class=\"feature\">Wenn das Ziel mehr als 1,5 m von der [[lookup @name lowercase]]{monster} entfernt ist, bewegt sich das Ziel in seinem Zug auf die [[lookup @name lowercase]]{monster} zu, auf dem direktesten Weg, um in Reichweite von 1,5 m zur [[lookup @name lowercase]]{monster} zu gelangen. Es vermeidet keine &amp;Reference[OpportunityAttacks]; jedoch, bevor es sich in schädigendes Gelände (wie Lava oder eine Grube) bewegt und wann immer es Schaden von einer anderen Quelle als der [[lookup @name lowercase]]{monster} erleidet, wiederholt das Ziel den Rettungswurf.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen den Lockgesang dieser [[lookup @name lowercase]]{monster}.</p>"
   },
   "mmHippogriff0000": {
     "name": "Hippogreif",
@@ -8832,7 +8832,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmRemorhaz000000": {
     "name": "Remorhaz",
-    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
   },
   "mmRoc00000000000": {
     "name": "Roc",
@@ -9626,7 +9626,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmGhast000000000": {
     "name": "Grauen",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mJbwhj3beOIB3Jgj]], jede Kreatur (außer einem [[lookup @name lowercase]]{monster}), die ihren Zug in einer [[lookup @target.template.size activity=mJbwhj3beOIB3Jgj]] Fuß großen Emanation beginnt, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum Beginn seines nächsten Zuges.</p><p><em>Erfolg:</em> Das Ziel ist 1 Stunde lang immun gegen den Gestank aller [[lookup @name lowercase]]{monster}.</p>"
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mJbwhj3beOIB3Jgj]], jede Kreatur (außer einem [[lookup @name lowercase]]{monster}), die ihren Zug in einer [[lookup @target.template.size activity=mJbwhj3beOIB3Jgj]] Fuß großen Ausströmung beginnt, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Poisoned apply=false] bis zum Beginn seines nächsten Zuges.</p><p><em>Erfolg:</em> Das Ziel ist 1 Stunde lang immun gegen den Gestank aller [[lookup @name lowercase]]{monster}.</p>"
   },
   "mmGhost000000000": {
     "name": "Geist",
@@ -9814,7 +9814,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmBalefulCommand": {
     "name": "Unheilvoller Befehl",
-    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=SzU2lwdbqgoFMuBM]], jede/r [[lookup @target.affects.type\nactivity=SzU2lwdbqgoFMuBM]] in einer [[lookup @target.template.size\nactivity=SzU2lwdbqgoFMuBM]] Fuß großen Emanation, die von der [[lookup\n@name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel hat die Zustände &amp;Reference[Frightened apply=false] und\n&amp;Reference[Incapacitated apply=false] bis zum Beginn des nächsten Zuges\nder [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=SzU2lwdbqgoFMuBM]], jede/r [[lookup @target.affects.type\nactivity=SzU2lwdbqgoFMuBM]] in einer [[lookup @target.template.size\nactivity=SzU2lwdbqgoFMuBM]] Fuß großen Ausströmung, die von der [[lookup\n@name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel hat die Zustände &amp;Reference[Frightened apply=false] und\n&amp;Reference[Incapacitated apply=false] bis zum Beginn des nächsten Zuges\nder [[lookup @name lowercase]]{monster}.</p>",
     "effects": {
       "4GgIe9QPQ5oYRsHN": "Verängstigt & Kampfunfähig"
     }
@@ -9975,7 +9975,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDarknessAura00": {
     "name": "Dunkelheitsaura",
-    "description": "<p>Magische Dunkelheit erfüllt eine [[lookup @target.template.size activity=amat5Ii4NydseA0h]] Fuß große Emanation, die vom/von der/vom [[lookup @name]]{monster} ausgeht. Dieser Effekt hält an, solange das/der/die [[lookup @name]]{monster} die Konzentration darauf aufrechterhält, bis zu [[lookup @duration.value activity=amat5Ii4NydseA0h]] Minuten. Dunkelsicht kann diesen Bereich nicht durchdringen, und kein Licht kann ihn erhellen.</p>"
+    "description": "<p>Magische Dunkelheit erfüllt eine [[lookup @target.template.size activity=amat5Ii4NydseA0h]] Fuß große Ausströmung, die vom/von der/vom [[lookup @name]]{monster} ausgeht. Dieser Effekt hält an, solange das/der/die [[lookup @name]]{monster} die Konzentration darauf aufrechterhält, bis zu [[lookup @duration.value activity=amat5Ii4NydseA0h]] Minuten. Dunkelsicht kann diesen Bereich nicht durchdringen, und kein Licht kann ihn erhellen.</p>"
   },
   "mmDeadlyLeap0000": {
     "name": "Tödlicher Sprung",
@@ -10102,7 +10102,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFetidCloud0000": {
     "name": "Stinkende Wolke",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=vRnhmBCQqIwIlfS4]], jede Kreatur in einer [[lookup\n@target.template.size activity=vRnhmBCQqIwIlfS4]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel ist bis zum Ende seines nächsten\nZuges im Zustand &amp;Reference[Poisoned apply=false]. Solange die Kreatur vergiftet ist, kann sie in ihrem Zug entweder eine Aktion oder eine Bonusaktion ausführen, nicht beides, und sie kann keine Reaktionen ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=vRnhmBCQqIwIlfS4]], jede Kreatur in einer [[lookup\n@target.template.size activity=vRnhmBCQqIwIlfS4]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel ist bis zum Ende seines nächsten\nZuges im Zustand &amp;Reference[Poisoned apply=false]. Solange die Kreatur vergiftet ist, kann sie in ihrem Zug entweder eine Aktion oder eine Bonusaktion ausführen, nicht beides, und sie kann keine Reaktionen ausführen.</p>",
     "effects": {
       "IqfKmepxiah2U3YT": "Vergiftet"
     }
@@ -10169,7 +10169,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHorrorNimbus00": {
     "name": "Horror-Nimbus",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=GP5MnIyXCVZ4ZMTQ]], jede/s [[lookup\n@target.affects.type activity=GP5MnIyXCVZ4ZMTQ]] in einer [[lookup\n@target.template.size activity=GP5MnIyXCVZ4ZMTQ]]-<span\nstyle=\"font-family:'Roboto Condensed', sans-serif\">Fuß</span>-Emanation,\ndie von dem/der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] für\n[[lookup @duration.value activity=GP5MnIyXCVZ4ZMTQ]] [[lookup\n@duration.units activity=GP5MnIyXCVZ4ZMTQ]], bis es Schaden nimmt oder\nbis es seinen Zug beendet, während der/die [[lookup @name lowercase]]{monster} außer\nSichtweite ist.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist\n24 Stunden lang immun gegen den Horror-Nimbus dieses/dieser [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=GP5MnIyXCVZ4ZMTQ]], jede/s [[lookup\n@target.affects.type activity=GP5MnIyXCVZ4ZMTQ]] in einer [[lookup\n@target.template.size activity=GP5MnIyXCVZ4ZMTQ]]-<span\nstyle=\"font-family:'Roboto Condensed', sans-serif\">Fuß</span>-Ausströmung,\ndie von dem/der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] für\n[[lookup @duration.value activity=GP5MnIyXCVZ4ZMTQ]] [[lookup\n@duration.units activity=GP5MnIyXCVZ4ZMTQ]], bis es Schaden nimmt oder\nbis es seinen Zug beendet, während der/die [[lookup @name lowercase]]{monster} außer\nSichtweite ist.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist\n24 Stunden lang immun gegen den Horror-Nimbus dieses/dieser [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10246,7 +10246,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmLuringSong0000": {
     "name": "Verführerisches Lied",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} singt eine magische\nMelodie, die anhält, bis die Konzentration des [[lookup @name lowercase]]{monster} darauf endet.</p><p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=dxxqZP7Vo01te3QB]], jede/r\n[[lookup @target.affects.special activity=dxxqZP7Vo01te3QB]] in einer [[lookup\n@target.template.size activity=dxxqZP7Vo01te3QB]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, wenn das Lied beginnt.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den\n&amp;Reference[Charmed apply=false] Zustand, bis das Lied endet, und\nwiederholt den Rettungswurf am Ende jedes seiner Züge. Solange es bezaubert ist, hat das\nZiel den &amp;Reference[Incapacitated apply=false] Zustand und\nignoriert das Verführerische Lied anderer Harpyien.</p><p class=\"feature\">Ist das\nZiel mehr als 1,5 m vom [[lookup @name lowercase]]{monster} entfernt,\nbewegt es sich in seinem Zug auf dem direktesten Weg auf das [[lookup @name\nlowercase]]{monster} zu und versucht, innerhalb von 1,5 m\nan das [[lookup @name lowercase]]{monster} heranzukommen. Es vermeidet\n&amp;Reference[OpportunityAttacks] nicht; jedoch, bevor es sich in schädigendes\nGelände (wie Lava oder eine Grube) bewegt und wann immer es Schaden von einer anderen\nQuelle als dem [[lookup @name lowercase]]{monster} erleidet, wiederholt das\nZiel den Rettungswurf.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen das\nVerführerische Lied dieses [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} singt eine magische\nMelodie, die anhält, bis die Konzentration des [[lookup @name lowercase]]{monster} darauf endet.</p><p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=dxxqZP7Vo01te3QB]], jede/r\n[[lookup @target.affects.special activity=dxxqZP7Vo01te3QB]] in einer [[lookup\n@target.template.size activity=dxxqZP7Vo01te3QB]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, wenn das Lied beginnt.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den\n&amp;Reference[Charmed apply=false] Zustand, bis das Lied endet, und\nwiederholt den Rettungswurf am Ende jedes seiner Züge. Solange es bezaubert ist, hat das\nZiel den &amp;Reference[Incapacitated apply=false] Zustand und\nignoriert das Verführerische Lied anderer Harpyien.</p><p class=\"feature\">Ist das\nZiel mehr als 1,5 m vom [[lookup @name lowercase]]{monster} entfernt,\nbewegt es sich in seinem Zug auf dem direktesten Weg auf das [[lookup @name\nlowercase]]{monster} zu und versucht, innerhalb von 1,5 m\nan das [[lookup @name lowercase]]{monster} heranzukommen. Es vermeidet\n&amp;Reference[OpportunityAttacks] nicht; jedoch, bevor es sich in schädigendes\nGelände (wie Lava oder eine Grube) bewegt und wann immer es Schaden von einer anderen\nQuelle als dem [[lookup @name lowercase]]{monster} erleidet, wiederholt das\nZiel den Rettungswurf.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen das\nVerführerische Lied dieses [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10260,7 +10260,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMindrendingRoa": {
     "name": "Gedankenzerreißendes Gebrüll",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=zPMfwwIoTFzIrN5H]], jede/r [[lookup\n@target.affects.type activity=zPMfwwIoTFzIrN5H]] in einer [[lookup\n@target.template.size activity=zPMfwwIoTFzIrN5H]]-[[lookup\n@target.template.units activity=zPMfwwIoTFzIrN5H]]-Emanation, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat den Zustand &amp;Reference[Incapacitated\napply=false] bis zum Beginn des nächsten Zuges der/des [[lookup @name\nlowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=zPMfwwIoTFzIrN5H]], jede/r [[lookup\n@target.affects.type activity=zPMfwwIoTFzIrN5H]] in einer [[lookup\n@target.template.size activity=zPMfwwIoTFzIrN5H]]-[[lookup\n@target.template.units activity=zPMfwwIoTFzIrN5H]]-Ausströmung, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat den Zustand &amp;Reference[Incapacitated\napply=false] bis zum Beginn des nächsten Zuges der/des [[lookup @name\nlowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10274,7 +10274,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMoan0000000000": {
     "name": "Stöhnen",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Mng39fcFDc4I1AzY]], jede/r [[lookup\n@target.affects.type activity=Mng39fcFDc4I1AzY]] in einer [[lookup\n@target.template.size activity=Mng39fcFDc4I1AzY]]-[[lookup\n@target.template.units activity=Mng39fcFDc4I1AzY]]-Emanation, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel\nhat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende\ndes nächsten Zuges der/des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist für die nächsten 24 Stunden immun gegen das Stöhnen dieser/dieses [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Mng39fcFDc4I1AzY]], jede/r [[lookup\n@target.affects.type activity=Mng39fcFDc4I1AzY]] in einer [[lookup\n@target.template.size activity=Mng39fcFDc4I1AzY]]-[[lookup\n@target.template.units activity=Mng39fcFDc4I1AzY]]-Ausströmung, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel\nhat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende\ndes nächsten Zuges der/des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist für die nächsten 24 Stunden immun gegen das Stöhnen dieser/dieses [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10477,7 +10477,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmRoar0000000000": {
     "name": "Brüllen",
-    "description": "<p class=\"feature\">Die Sphinx stößt ein magisches Brüllen aus. Jedes Mal, wenn sie brüllt, hat das\nBrüllen einen anderen Effekt, wie unten beschrieben (die Reihenfolge wird zurückgesetzt, wenn\nsie eine lange Rast macht):</p><p class=\"feature-trait\"><strong>Erstes\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=Igeu89TALGlNPXDg]], jeder Feind in einer [[lookup\n@target.template.size activity=Igeu89TALGlNPXDg]] Fuß-Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.\n<em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened\napply=false] für [[lookup @duration.value\nactivity=Igeu89TALGlNPXDg]] [[lookup @duration.units\nactivity=Igeu89TALGlNPXDg]].</p><p class=\"feature-trait\"><strong>Zweites\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=uFTndQPvULZVHT9R]], jede [[lookup @target.affects.type\nactivity=uFTndQPvULZVHT9R]] in einer [[lookup @target.template.size\nactivity=uFTndQPvULZVHT9R]] Fuß-Emanation, die vom [[lookup\n@name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Paralyzed apply=false], und es wiederholt den Rettungswurf\nam Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet.\nNach [[lookup @duration.value activity=uFTndQPvULZVHT9R]] [[lookup\n@duration.units activity=uFTndQPvULZVHT9R]] gelingt es ihm\nautomatisch.</p><p class=\"feature-trait\"><strong>Drittes Brüllen.</strong>\n<em>Konstitutions-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=Td8ArIMDfxWDLbE9]], jede [[lookup @target.affects.type\nactivity=Td8ArIMDfxWDLbE9]] in einer [[lookup @target.template.size\nactivity=Td8ArIMDfxWDLbE9]] Fuß-Emanation, die vom [[lookup\n@name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage average]] Schaden,\nund das Ziel hat den Zustand &amp;Reference[Prone apply=false].\n<em>Erfolg:</em> Nur [[lookup @damage.onSave capitalize\nactivity=Td8ArIMDfxWDLbE9]] Schaden.</p>",
+    "description": "<p class=\"feature\">Die Sphinx stößt ein magisches Brüllen aus. Jedes Mal, wenn sie brüllt, hat das\nBrüllen einen anderen Effekt, wie unten beschrieben (die Reihenfolge wird zurückgesetzt, wenn\nsie eine lange Rast macht):</p><p class=\"feature-trait\"><strong>Erstes\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=Igeu89TALGlNPXDg]], jeder Feind in einer [[lookup\n@target.template.size activity=Igeu89TALGlNPXDg]] Fuß-Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.\n<em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened\napply=false] für [[lookup @duration.value\nactivity=Igeu89TALGlNPXDg]] [[lookup @duration.units\nactivity=Igeu89TALGlNPXDg]].</p><p class=\"feature-trait\"><strong>Zweites\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=uFTndQPvULZVHT9R]], jede [[lookup @target.affects.type\nactivity=uFTndQPvULZVHT9R]] in einer [[lookup @target.template.size\nactivity=uFTndQPvULZVHT9R]] Fuß-Ausströmung, die vom [[lookup\n@name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Paralyzed apply=false], und es wiederholt den Rettungswurf\nam Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet.\nNach [[lookup @duration.value activity=uFTndQPvULZVHT9R]] [[lookup\n@duration.units activity=uFTndQPvULZVHT9R]] gelingt es ihm\nautomatisch.</p><p class=\"feature-trait\"><strong>Drittes Brüllen.</strong>\n<em>Konstitutions-Rettungswurf:</em> SG [[lookup @save.dc.value\nactivity=Td8ArIMDfxWDLbE9]], jede [[lookup @target.affects.type\nactivity=Td8ArIMDfxWDLbE9]] in einer [[lookup @target.template.size\nactivity=Td8ArIMDfxWDLbE9]] Fuß-Ausströmung, die vom [[lookup\n@name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage average]] Schaden,\nund das Ziel hat den Zustand &amp;Reference[Prone apply=false].\n<em>Erfolg:</em> Nur [[lookup @damage.onSave capitalize\nactivity=Td8ArIMDfxWDLbE9]] Schaden.</p>",
     "activities": {
       "First Roar: Save": "Erstes Brüllen: Rettungswurf",
       "Second Roar: Save": "Zweites Brüllen: Rettungswurf",
@@ -10573,7 +10573,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmSpores00000000": {
     "name": "Sporen",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=voqQeTnihpy3BTFf]], jede Kreatur in einer [[lookup\n@target.template.size activity=voqQeTnihpy3BTFf]]-Fuß-Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Poisoned apply=false] und wiederholt den Rettungswurf am\nEnde jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Solange\nes vergiftet ist, erleidet das Ziel [[/damage average activity=ukZveNVmvvtwbDj0]]\nzu Beginn jedes seiner Züge. Das Entleeren einer Phiole mit Weihwasser auf das\nZiel beendet den Effekt vorzeitig.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=voqQeTnihpy3BTFf]], jede Kreatur in einer [[lookup\n@target.template.size activity=voqQeTnihpy3BTFf]]-Fuß-Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Poisoned apply=false] und wiederholt den Rettungswurf am\nEnde jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Solange\nes vergiftet ist, erleidet das Ziel [[/damage average activity=ukZveNVmvvtwbDj0]]\nzu Beginn jedes seiner Züge. Das Entleeren einer Phiole mit Weihwasser auf das\nZiel beendet den Effekt vorzeitig.</p>",
     "activities": {
       "Damage While Poisoned": "Schaden während Vergiftung",
       "Save": "Rettungswurf"
@@ -10598,7 +10598,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmStunningScreec": {
     "name": "Betäubender Schrei",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=eoIikvnPayaj02oN]], jede Kreatur in einer [[lookup\n@target.template.size activity=eoIikvnPayaj02oN]]-Fuß-Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht (Dämonen gelingt der Wurf automatisch).</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat den Zustand &amp;Reference[Stunned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name\nlowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=eoIikvnPayaj02oN]], jede Kreatur in einer [[lookup\n@target.template.size activity=eoIikvnPayaj02oN]]-Fuß-Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht (Dämonen gelingt der Wurf automatisch).</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage\naverage]] Schaden, und das Ziel hat den Zustand &amp;Reference[Stunned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name\nlowercase]]{monster}.</p>",
     "effects": {
       "dQ635FV7U5Y5LUE7": "Betäubt"
     }
@@ -10690,7 +10690,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmUnsettlingVisa": {
     "name": "Beunruhigendes Antlitz",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=USxIbGZPLvfPnnoI]], jede [[lookup @target.affects.type activity=USxIbGZPLvfPnnoI]] in einer [[lookup @target.template.size activity=USxIbGZPLvfPnnoI]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht und das [[lookup @name lowercase]]{monster} sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] und wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=USxIbGZPLvfPnnoI]] [[lookup @duration.units activity=USxIbGZPLvfPnnoI]] gelingt es ihm automatisch.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=USxIbGZPLvfPnnoI]], jede [[lookup @target.affects.type activity=USxIbGZPLvfPnnoI]] in einer [[lookup @target.template.size activity=USxIbGZPLvfPnnoI]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht und das [[lookup @name lowercase]]{monster} sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] und wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=USxIbGZPLvfPnnoI]] [[lookup @duration.units activity=USxIbGZPLvfPnnoI]] gelingt es ihm automatisch.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -11439,7 +11439,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDisruptLife000": {
     "name": "Lebensstörung",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=qSz7l1czwIc5j9gP]], jedes [[lookup\n@target.affects.type activity=qSz7l1czwIc5j9gP]], das kein Untoter ist, in einer\n[[lookup @target.template.size activity=qSz7l1czwIc5j9gP]] Fuß großen Emanation,\ndie von der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=qSz7l1czwIc5j9gP]], jedes [[lookup\n@target.affects.type activity=qSz7l1czwIc5j9gP]], das kein Untoter ist, in einer\n[[lookup @target.template.size activity=qSz7l1czwIc5j9gP]] Fuß großen Ausströmung,\ndie von der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name\nlowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -11546,7 +11546,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmRadiantTelepor": {
     "name": "Gleißendes Teleportieren",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=HtsFBK1PYKjvy9mn]] Fuß weit zu einem unbesetzten\nFeld, das es sehen kann.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em>\nSG [[lookup @save.dc.value activity=HtsFBK1PYKjvy9mn]], jede Kreatur in einer\n[[lookup @target.template.size activity=HtsFBK1PYKjvy9mn]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} an seinem\nZielfeld ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage\naverage]] Schaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=HtsFBK1PYKjvy9mn]] Fuß weit zu einem unbesetzten\nFeld, das es sehen kann.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em>\nSG [[lookup @save.dc.value activity=HtsFBK1PYKjvy9mn]], jede Kreatur in einer\n[[lookup @target.template.size activity=HtsFBK1PYKjvy9mn]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} an seinem\nZielfeld ausgeht.</p><p class=\"feature\"><em>Misserfolg:</em> [[/damage\naverage]] Schaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -11594,7 +11594,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmToxicInk000000": {
     "name": "Giftige Tinte",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Kquf9zADg0jtKBqw]], jedes [[lookup\n@target.affects.type activity=Kquf9zADg0jtKBqw]] in einer [[lookup\n@target.template.size activity=Kquf9zADg0jtKBqw]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, während es unter\nWasser ist.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat die\nZustände &amp;Reference[Blinded apply=false] und &amp;Reference[Poisoned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name\nlowercase]]{monster}. Das [[lookup @name lowercase]]{monster}\nbewegt sich dann bis zu seiner Bewegungsrate.</p><p class=\"feature\"><em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup\n@save.dc.value activity=Kquf9zADg0jtKBqw]], jedes [[lookup\n@target.affects.type activity=Kquf9zADg0jtKBqw]] in einer [[lookup\n@target.template.size activity=Kquf9zADg0jtKBqw]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, während es unter\nWasser ist.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat die\nZustände &amp;Reference[Blinded apply=false] und &amp;Reference[Poisoned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name\nlowercase]]{monster}. Das [[lookup @name lowercase]]{monster}\nbewegt sich dann bis zu seiner Bewegungsrate.</p><p class=\"feature\"><em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -11615,7 +11615,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmWorldshakingMo": {
     "name": "Welterschütternde Bewegung",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner\nBewegungsrate. Am Ende dieser Bewegung erzeugt das [[lookup @name\nlowercase]]{monster} eine augenblickliche Schockwelle in einer [[lookup\n@target.template.size activity=g4W0ovZxBeUrZKb8]]-[[lookup\n@target.template.units activity=g4W0ovZxBeUrZKb8]]-Emanation, die von\nihm selbst ausgeht. Kreaturen in diesem Bereich verlieren &amp;Reference[Concentration]\nund haben, falls sie mittelgroß oder kleiner sind, den Zustand &amp;Reference[Prone apply=false].\nDas [[lookup @name lowercase]]{monster} kann diese Aktion\nerst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner\nBewegungsrate. Am Ende dieser Bewegung erzeugt das [[lookup @name\nlowercase]]{monster} eine augenblickliche Schockwelle in einer [[lookup\n@target.template.size activity=g4W0ovZxBeUrZKb8]]-[[lookup\n@target.template.units activity=g4W0ovZxBeUrZKb8]]-Ausströmung, die von\nihm selbst ausgeht. Kreaturen in diesem Bereich verlieren &amp;Reference[Concentration]\nund haben, falls sie mittelgroß oder kleiner sind, den Zustand &amp;Reference[Prone apply=false].\nDas [[lookup @name lowercase]]{monster} kann diese Aktion\nerst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
     "activities": {
       "Expend Use": "Einsatz verbrauchen"
     },
@@ -11629,9 +11629,9 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmAberrantGround": {
     "name": "Abartiger Boden",
-    "description": "<p>Der Boden in einer [[lookup @target.template.size\nactivity=zVznqPXgYjETqpQz]] Fuß großen Emanation, die vom [[lookup\n@name]]{monster} ausgeht, ist &amp;Reference[Difficult Terrain].</p>",
+    "description": "<p>Der Boden in einer [[lookup @target.template.size\nactivity=zVznqPXgYjETqpQz]] Fuß großen Ausströmung, die vom [[lookup\n@name]]{monster} ausgeht, ist &amp;Reference[Difficult Terrain].</p>",
     "activities": {
-      "Place Emanation": "Emanation platzieren"
+      "Place Ausströmung": "Ausströmung platzieren"
     }
   },
   "mmAcidAbsorption": {
@@ -11670,7 +11670,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmAuraOfAuthorit": {
     "name": "Aura der Autorität",
-    "description": "<p>Solange es sich in einer [[lookup @target.template.size\nactivity=dE4lg9tZyXtoCb5x]] Fuß großen Emanation befindet, die von dem [[lookup\n@name lowercase]]{monster} ausgeht, haben das [[lookup @name lowercase]]{monster} und\nseine Verbündeten Vorteil auf Angriffswürfe und Rettungswürfe, vorausgesetzt, das\n[[lookup @name lowercase]]{monster} hat nicht den\n&amp;Reference[Incapacitated apply=false] Zustand.</p>",
+    "description": "<p>Solange es sich in einer [[lookup @target.template.size\nactivity=dE4lg9tZyXtoCb5x]] Fuß großen Ausströmung befindet, die von dem [[lookup\n@name lowercase]]{monster} ausgeht, haben das [[lookup @name lowercase]]{monster} und\nseine Verbündeten Vorteil auf Angriffswürfe und Rettungswürfe, vorausgesetzt, das\n[[lookup @name lowercase]]{monster} hat nicht den\n&amp;Reference[Incapacitated apply=false] Zustand.</p>",
     "activities": {
       "Expend Use": "Einsatz verbrauchen"
     }
@@ -11749,11 +11749,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDeathBurst0000": {
     "name": "Todesstoß",
-    "description": "<p>Das [[lookup @name lowercase]]{monster} explodiert [[lookup\n@activation.condition activity=1SfqWSp7RSyHgG4b]]. <em>Geschicklichkeits-Rettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede\n[[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup\n@target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:\n</em>[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>"
+    "description": "<p>Das [[lookup @name lowercase]]{monster} explodiert [[lookup\n@activation.condition activity=1SfqWSp7RSyHgG4b]]. <em>Geschicklichkeits-Rettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede\n[[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup\n@target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:\n</em>[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmDeathThroes000": {
     "name": "Todeszuckungen",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} explodiert, wenn\nes stirbt.</p><p class=\"feature\"><em>Geschicklichkeits-Rettungswurf:</em> SG\n[[lookup @save.dc.value activity=jTq2czA8KQITUK4c]], jede Kreatur in einer\n[[lookup @target.template.size activity=jTq2czA8KQITUK4c]] Fuß großen Emanation,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Stirbt das [[lookup @name\nlowercase]]{monster} außerhalb des Abgrunds, erhält es sofort einen neuen Körper\nund wird mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt.</p>"
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} explodiert, wenn\nes stirbt.</p><p class=\"feature\"><em>Geschicklichkeits-Rettungswurf:</em> SG\n[[lookup @save.dc.value activity=jTq2czA8KQITUK4c]], jede Kreatur in einer\n[[lookup @target.template.size activity=jTq2czA8KQITUK4c]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Stirbt das [[lookup @name\nlowercase]]{monster} außerhalb des Abgrunds, erhält es sofort einen neuen Körper\nund wird mit all seinen Trefferpunkten irgendwo im Abgrund wiederbelebt.</p>"
   },
   "mmDemonicRestora": {
     "name": "Dämonische Wiederherstellung",
@@ -11811,7 +11811,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFearAura000000": {
     "name": "Furchtaura",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} strahlt eine Aura in einer [[lookup @target.template.size activity=oT8238p9jXwVy76c]]-Fuß-Emanation aus, solange es nicht den Zustand Kampfunfähig hat.</p><p\nclass=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=oT8238p9jXwVy76c]], [[lookup @target.affects.special\nactivity=oT8238p9jXwVy76c]].</p><p class=\"feature\"><em>Misserfolg:</em> Das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] bis zum\nBeginn seines nächsten Zuges.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel\nist 24 Stunden lang immun gegen die Aura dieses [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} strahlt eine Aura in einer [[lookup @target.template.size activity=oT8238p9jXwVy76c]]-Fuß-Ausströmung aus, solange es nicht den Zustand Kampfunfähig hat.</p><p\nclass=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value\nactivity=oT8238p9jXwVy76c]], [[lookup @target.affects.special\nactivity=oT8238p9jXwVy76c]].</p><p class=\"feature\"><em>Misserfolg:</em> Das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] bis zum\nBeginn seines nächsten Zuges.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel\nist 24 Stunden lang immun gegen die Aura dieses [[lookup @name lowercase]]{monster}.</p>",
     "effects": {
       "Sb7G5OyhGbjLUoWo": "Verängstigt"
     }
@@ -11826,7 +11826,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFireAura000000": {
     "name": "Feueraura",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]]-Fuß-Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage\naverage]] Schaden.</p>"
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]]-Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage\naverage]] Schaden.</p>"
   },
   "mmFireForm000000": {
     "name": "Feuergestalt",
@@ -11859,7 +11859,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHeatAura000000": {
     "name": "Hitzeaura",
-    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Emanation, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
   },
   "mmHellishRestora": {
     "name": "Höllische Wiederherstellung",
@@ -11968,7 +11968,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMucusCloud0000": {
     "name": "Schleimwolke",
-    "description": "<p class=\"feature\">Unter Wasser ist das [[lookup @name lowercase]]{monster} von Schleim umgeben.</p><p\nclass=\"feature\"><em>Konstitutionsrettungswurf:</em> SG 14, jedes [[lookup @target.affects.type activity=clFFG8uDBSFzxIo8]] in einer [[lookup @target.template.size activity=clFFG8uDBSFzxIo8]]-[[lookup @target.template.units activity=clFFG8uDBSFzxIo8]]-Emanation, die vom [[lookup @name lowercase]]{monster} am Ende des Zuges des [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist verflucht. Bis der Fluch endet, wird die Haut des Ziels schleimig, das Ziel kann Luft und Wasser atmen und kann keine Trefferpunkte zurückerhalten, es sei denn, es ist unter Wasser.</p><p class=\"feature\">Solange die verfluchte Kreatur sich außerhalb eines Gewässers befindet, erleidet die Kreatur am Ende jeder 10 Minuten [[/damage average activity=JrxCVyCOsBAMVZS7]] Schaden, es sei denn, Feuchtigkeit wird auf ihre Haut aufgetragen, bevor diese Minuten vergangen sind.</p>",
+    "description": "<p class=\"feature\">Unter Wasser ist das [[lookup @name lowercase]]{monster} von Schleim umgeben.</p><p\nclass=\"feature\"><em>Konstitutionsrettungswurf:</em> SG 14, jedes [[lookup @target.affects.type activity=clFFG8uDBSFzxIo8]] in einer [[lookup @target.template.size activity=clFFG8uDBSFzxIo8]]-[[lookup @target.template.units activity=clFFG8uDBSFzxIo8]]-Ausströmung, die vom [[lookup @name lowercase]]{monster} am Ende des Zuges des [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist verflucht. Bis der Fluch endet, wird die Haut des Ziels schleimig, das Ziel kann Luft und Wasser atmen und kann keine Trefferpunkte zurückerhalten, es sei denn, es ist unter Wasser.</p><p class=\"feature\">Solange die verfluchte Kreatur sich außerhalb eines Gewässers befindet, erleidet die Kreatur am Ende jeder 10 Minuten [[/damage average activity=JrxCVyCOsBAMVZS7]] Schaden, es sei denn, Feuchtigkeit wird auf ihre Haut aufgetragen, bevor diese Minuten vergangen sind.</p>",
     "activities": {
       "Damage: Outside Water": "Schaden: Außerhalb des Wassers"
     },
@@ -12068,7 +12068,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmStench00000000": {
     "name": "Gestank",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mJbwhj3beOIB3Jgj]], jede Kreatur (außer einem [[lookup @name lowercase]]{monster}), die ihren Zug in einer [[lookup @target.template.size activity=mJbwhj3beOIB3Jgj]] Fuß großen Emanation beginnt, die vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist bis zum Beginn seines nächsten Zuges &amp;Reference[Poisoned apply=false] vergiftet. <em>Erfolg:</em> Das Ziel ist 1 Stunde lang immun gegen den Gestank aller [[lookup @name lowercase]]{monster}.</p>"
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mJbwhj3beOIB3Jgj]], jede Kreatur (außer einem [[lookup @name lowercase]]{monster}), die ihren Zug in einer [[lookup @target.template.size activity=mJbwhj3beOIB3Jgj]] Fuß großen Ausströmung beginnt, die vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist bis zum Beginn seines nächsten Zuges &amp;Reference[Poisoned apply=false] vergiftet. <em>Erfolg:</em> Das Ziel ist 1 Stunde lang immun gegen den Gestank aller [[lookup @name lowercase]]{monster}.</p>"
   },
   "mmSuccubusForm00": {
     "name": "Sukkubus-Form",
@@ -13040,7 +13040,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgShieldOfTheCa": {
     "name": "Schild des Kavaliers",
-    "description": "<p><em>Rüstung (Schild), Sehr Selten (Benötigt Einstimmung)</em></p><p>Solange\ndu diesen Schild hältst, hast du einen Bonus von +2 auf deine Rüstungsklasse. Dieser Bonus kommt\nzusätzlich zum normalen Bonus des Schildes auf die RK.</p><p>Der Schild hat die\nfolgenden zusätzlichen Eigenschaften, die du nutzen kannst, während du ihn\nhältst.</p><p><em><strong>Wuchtiger Stoß</strong></em><strong>.</strong> Wenn\ndu die Angriffsaktion ausführst, kannst du einen der Angriffswürfe mit dem\nSchild gegen ein Ziel innerhalb von 1,5 m von dir machen. Wende deinen Übungsbonus\nund deinen Stärkemodifikator auf den Angriffswurf an. Bei einem Treffer fügt der Schild\ndem Ziel Wuchtschaden in Höhe von 2W6 + 2 plus deinem Stärkemodifikator\nzu, und wenn das Ziel eine Kreatur ist, kannst du sie bis zu 3 m direkt\nvon dir wegstoßen. Wenn die Kreatur deine Größe oder kleiner ist, kannst du sie auch\nzu Boden werfen, wodurch sie den Zustand Liegend erhält.</p><p><em><strong>Schutzfeld.</strong></em> Als Reaktion, wenn du oder ein Verbündeter, den du innerhalb\nvon 1,5 m von dir sehen kannst, von einem Angriff anvisiert wird oder einen Rettungswurf gegen einen\nFlächeneffekt macht, kannst du den Schild verwenden, um eine unbewegliche 5-Fuß-\nEmanation zu erzeugen, die von dir ausgeht. Wenn die Emanation erscheint, werden alle Kreaturen\noder Objekte, die nicht vollständig darin enthalten sind, in die nächsten\nunbesetzten Felder außerhalb davon geschoben. Der Angriff oder Flächeneffekt, der die\nReaktion ausgelöst hat, hat keine Wirkung auf Kreaturen und Objekte innerhalb der Emanation,\ndie so lange anhält, wie du die Konzentration aufrechterhältst, bis zu 1 Minute. Nichts\nkann in die Emanation hinein oder aus ihr heraus gelangen. Eine Kreatur oder ein Objekt innerhalb der\nEmanation kann nicht durch Angriffe oder Effekte von außen beschädigt werden,\nnoch kann eine Kreatur innerhalb der Emanation etwas außerhalb beschädigen. Sobald\ndiese Eigenschaft verwendet wurde, kann sie erst nach der nächsten Morgendämmerung wieder verwendet werden.</p>",
+    "description": "<p><em>Rüstung (Schild), Sehr Selten (Benötigt Einstimmung)</em></p><p>Solange\ndu diesen Schild hältst, hast du einen Bonus von +2 auf deine Rüstungsklasse. Dieser Bonus kommt\nzusätzlich zum normalen Bonus des Schildes auf die RK.</p><p>Der Schild hat die\nfolgenden zusätzlichen Eigenschaften, die du nutzen kannst, während du ihn\nhältst.</p><p><em><strong>Wuchtiger Stoß</strong></em><strong>.</strong> Wenn\ndu die Angriffsaktion ausführst, kannst du einen der Angriffswürfe mit dem\nSchild gegen ein Ziel innerhalb von 1,5 m von dir machen. Wende deinen Übungsbonus\nund deinen Stärkemodifikator auf den Angriffswurf an. Bei einem Treffer fügt der Schild\ndem Ziel Wuchtschaden in Höhe von 2W6 + 2 plus deinem Stärkemodifikator\nzu, und wenn das Ziel eine Kreatur ist, kannst du sie bis zu 3 m direkt\nvon dir wegstoßen. Wenn die Kreatur deine Größe oder kleiner ist, kannst du sie auch\nzu Boden werfen, wodurch sie den Zustand Liegend erhält.</p><p><em><strong>Schutzfeld.</strong></em> Als Reaktion, wenn du oder ein Verbündeter, den du innerhalb\nvon 1,5 m von dir sehen kannst, von einem Angriff anvisiert wird oder einen Rettungswurf gegen einen\nFlächeneffekt macht, kannst du den Schild verwenden, um eine unbewegliche 5-Fuß-\nAusströmung zu erzeugen, die von dir ausgeht. Wenn die Ausströmung erscheint, werden alle Kreaturen\noder Objekte, die nicht vollständig darin enthalten sind, in die nächsten\nunbesetzten Felder außerhalb davon geschoben. Der Angriff oder Flächeneffekt, der die\nReaktion ausgelöst hat, hat keine Wirkung auf Kreaturen und Objekte innerhalb der Ausströmung,\ndie so lange anhält, wie du die Konzentration aufrechterhältst, bis zu 1 Minute. Nichts\nkann in die Ausströmung hinein oder aus ihr heraus gelangen. Eine Kreatur oder ein Objekt innerhalb der\nAusströmung kann nicht durch Angriffe oder Effekte von außen beschädigt werden,\nnoch kann eine Kreatur innerhalb der Ausströmung etwas außerhalb beschädigen. Sobald\ndiese Eigenschaft verwendet wurde, kann sie erst nach der nächsten Morgendämmerung wieder verwendet werden.</p>",
     "activities": {
       "Forceful Bash": "Wuchtiger Stoß",
       "Protective Field": "Schutzfeld"
@@ -13669,7 +13669,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgEversmokingBo": {
     "name": "Flasche des ewigen Rauchs",
-    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p></div><p>Als Magieaktion kannst du diese Flasche öffnen oder schließen.</p><p>Das Öffnen der Flasche lässt dichten Rauch hervorquellen, der eine Wolke bildet, die eine 18 m große Emanation füllt, die von der Flasche ausgeht. Der Bereich innerhalb des Rauchs ist &amp;Reference[HeavilyObscured].</p><p>Jede Minute, die die Flasche offen bleibt, erhöht sich die Größe der Emanation um 3 m, bis sie ihre maximale Größe von 36 m erreicht.</p><p>Das Schließen der Flasche bewirkt, dass die Wolke an Ort und Stelle fixiert wird, bis sie sich nach 10 Minuten auflöst. Ein starker Wind (wie der, der durch den Zauber <em>Windstoß</em> erzeugt wird) löst die Wolke nach 1 Minute auf.</p><section class=\"secret\"\nid=\"secret-O7B8LCiiU4CnDjQw\"><p><strong>Foundry-Hinweis</strong></p><p>Der Skalierungsregler der Aktion <strong>Flasche öffnen</strong> steuert die Größe der erzeugten Emanation von 18 m bei Skalierungswert 1 bis 36 m bei Skalierungswert 7 (Schritte von 3 m).</p></section>",
+    "description": "<div><p><em>Wundersamer Gegenstand, Ungewöhnlich</em></p></div><p>Als Magieaktion kannst du diese Flasche öffnen oder schließen.</p><p>Das Öffnen der Flasche lässt dichten Rauch hervorquellen, der eine Wolke bildet, die eine 18 m große Ausströmung füllt, die von der Flasche ausgeht. Der Bereich innerhalb des Rauchs ist &amp;Reference[HeavilyObscured].</p><p>Jede Minute, die die Flasche offen bleibt, erhöht sich die Größe der Ausströmung um 3 m, bis sie ihre maximale Größe von 36 m erreicht.</p><p>Das Schließen der Flasche bewirkt, dass die Wolke an Ort und Stelle fixiert wird, bis sie sich nach 10 Minuten auflöst. Ein starker Wind (wie der, der durch den Zauber <em>Windstoß</em> erzeugt wird) löst die Wolke nach 1 Minute auf.</p><section class=\"secret\"\nid=\"secret-O7B8LCiiU4CnDjQw\"><p><strong>Foundry-Hinweis</strong></p><p>Der Skalierungsregler der Aktion <strong>Flasche öffnen</strong> steuert die Größe der erzeugten Ausströmung von 18 m bei Skalierungswert 1 bis 36 m bei Skalierungswert 7 (Schritte von 3 m).</p></section>",
     "activities": {
       "Open Bottle": "Flasche öffnen"
     }
@@ -13696,7 +13696,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgFwpIvoryGoats": {
     "name": "Elfenbeinzicklein",
-    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figur der wundersamen Macht}</em></p><p>Diese Elfenbeinstatuetten von Ziegen werden immer\nin Dreiersets erschaffen. Jede Ziege sieht einzigartig aus und\nfunktioniert anders als die anderen. Ihre Eigenschaften sind wie\nfolgt:</p><p><strong>Ziege des Schreckens.</strong> Diese Figur kann für bis zu 3\nStunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantGoat00000]{Riesen-Ziege}</strong> werden. Die Ziege kann nicht angreifen, aber\ndu kannst ihre Hörner (harmlos) entfernen und als Waffen verwenden. Ein\nHorn wird zu einer <em>+1 Lanze</em>, und das andere wird zu einem <em>+2\nLangschwert</em>. Das Entfernen eines Horns erfordert eine Magieaktion,\nund die Waffen verschwinden und die Hörner kehren zurück, wenn die Ziege\nin ihre Figurenform zurückkehrt. Während du die Ziege reitest, muss jede\nfeindliche Kreatur, die ihren Zug innerhalb einer 9 m großen Emanation\nbeginnt, die von der Ziege ausgeht, einen erfolgreichen Weisheitsrettungswurf\ngegen SG 15 ablegen oder erhält den Zustand Verängstigt für 1 Minute, bis\ndu die Ziege nicht mehr reitest oder bis die Ziege in ihre Figurenform\nzurückkehrt. Die verängstigte Kreatur wiederholt den Rettungswurf am Ende\njedes ihrer Züge und beendet den Effekt bei einem Erfolg. Sobald sie den\nRettungswurf erfolgreich abgelegt hat, ist eine Kreatur für die nächsten\n24 Stunden immun gegen diesen Effekt. Sobald die Figur benutzt wurde, kann\nsie erst nach 15 Tagen wieder verwendet werden.</p><p><strong>Ziege des\nReisens.</strong> Diese Figur kann zu einer Großen Ziege mit denselben Werten\nwie ein <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd}</strong> werden. Sie hat 24 Ladungen, und jede Stunde oder\njeder Teil davon, die sie in Ziegenform verbringt, kostet 1 Ladung. Solange\nsie Ladungen hat, kannst du sie so oft verwenden, wie du möchtest. Wenn ihr\ndie Ladungen ausgehen, kehrt sie in eine Figur zurück und kann erst nach 7\nTagen wieder verwendet werden, wenn sie alle verbrauchten Ladungen\nzurückerhält.</p><section class=\"secret\"\nid=\"secret-Bzl0aaerk0Ql0uOm\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nAktivität <strong>Ziege des Reisens zurückverwandeln oder zurückrufen</strong> wird\noptional bereitgestellt, um die Verfolgung der nicht zusammenhängenden 24\nStunden zu erleichtern, die die Figur in Ziegenform bleiben kann. Wenn sie\nin eine Figur zurückverwandelt wird, stellt der Skalierungswert für den\nVerbrauch die Anzahl der Stunden dar, die in Ziegenform verbracht wurden.\nWenn die Figur in Ziegenform zurückgerufen wird, deaktiviere das\nKontrollkästchen „Gegenstandsverwendung verbrauchen?“ bei der Verwendung\ndieser Aktivität.</p></section><p><strong>Ziege der Mühsal.</strong> Diese\nFigur kann für bis zu 3 Stunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantGoat00000]{Riesen-Ziege}</strong> werden. Sobald sie\nbenutzt wurde, kann sie erst nach 30 Tagen wieder verwendet werden.</p>",
+    "description": "<p><em>Siehe\n@UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figur der wundersamen Macht}</em></p><p>Diese Elfenbeinstatuetten von Ziegen werden immer\nin Dreiersets erschaffen. Jede Ziege sieht einzigartig aus und\nfunktioniert anders als die anderen. Ihre Eigenschaften sind wie\nfolgt:</p><p><strong>Ziege des Schreckens.</strong> Diese Figur kann für bis zu 3\nStunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantGoat00000]{Riesen-Ziege}</strong> werden. Die Ziege kann nicht angreifen, aber\ndu kannst ihre Hörner (harmlos) entfernen und als Waffen verwenden. Ein\nHorn wird zu einer <em>+1 Lanze</em>, und das andere wird zu einem <em>+2\nLangschwert</em>. Das Entfernen eines Horns erfordert eine Magieaktion,\nund die Waffen verschwinden und die Hörner kehren zurück, wenn die Ziege\nin ihre Figurenform zurückkehrt. Während du die Ziege reitest, muss jede\nfeindliche Kreatur, die ihren Zug innerhalb einer 9 m großen Ausströmung\nbeginnt, die von der Ziege ausgeht, einen erfolgreichen Weisheitsrettungswurf\ngegen SG 15 ablegen oder erhält den Zustand Verängstigt für 1 Minute, bis\ndu die Ziege nicht mehr reitest oder bis die Ziege in ihre Figurenform\nzurückkehrt. Die verängstigte Kreatur wiederholt den Rettungswurf am Ende\njedes ihrer Züge und beendet den Effekt bei einem Erfolg. Sobald sie den\nRettungswurf erfolgreich abgelegt hat, ist eine Kreatur für die nächsten\n24 Stunden immun gegen diesen Effekt. Sobald die Figur benutzt wurde, kann\nsie erst nach 15 Tagen wieder verwendet werden.</p><p><strong>Ziege des\nReisens.</strong> Diese Figur kann zu einer Großen Ziege mit denselben Werten\nwie ein <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd}</strong> werden. Sie hat 24 Ladungen, und jede Stunde oder\njeder Teil davon, die sie in Ziegenform verbringt, kostet 1 Ladung. Solange\nsie Ladungen hat, kannst du sie so oft verwenden, wie du möchtest. Wenn ihr\ndie Ladungen ausgehen, kehrt sie in eine Figur zurück und kann erst nach 7\nTagen wieder verwendet werden, wenn sie alle verbrauchten Ladungen\nzurückerhält.</p><section class=\"secret\"\nid=\"secret-Bzl0aaerk0Ql0uOm\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nAktivität <strong>Ziege des Reisens zurückverwandeln oder zurückrufen</strong> wird\noptional bereitgestellt, um die Verfolgung der nicht zusammenhängenden 24\nStunden zu erleichtern, die die Figur in Ziegenform bleiben kann. Wenn sie\nin eine Figur zurückverwandelt wird, stellt der Skalierungswert für den\nVerbrauch die Anzahl der Stunden dar, die in Ziegenform verbracht wurden.\nWenn die Figur in Ziegenform zurückgerufen wird, deaktiviere das\nKontrollkästchen „Gegenstandsverwendung verbrauchen?“ bei der Verwendung\ndieser Aktivität.</p></section><p><strong>Ziege der Mühsal.</strong> Diese\nFigur kann für bis zu 3 Stunden zu einem <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantGoat00000]{Riesen-Ziege}</strong> werden. Sobald sie\nbenutzt wurde, kann sie erst nach 30 Tagen wieder verwendet werden.</p>",
     "activities": {
       "Goat of Terror": "Ziege des Schreckens",
       "Goat of Travail": "Ziege der Mühsal",
@@ -14457,7 +14457,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgHolyAvenger00": {
     "name": "Heiliger Rächer",
-    "description": "<p><em>Waffe (Beliebige Einfache oder Kriegswaffe), Legendär (Benötigt Einstimmung durch einen\nPaladin)</em></p><p>Du erhältst einen Bonus von +3 auf Angriffs- und Schadenswürfe,\ndie du mit dieser magischen Waffe machst. Wenn du einen Feind oder einen Untoten damit triffst,\nerleidet diese Kreatur zusätzlich 2W10 gleißenden Schaden.</p><p>Während du die\ngezogene Waffe hältst, erzeugt sie eine 3 m große Emanation, die von dir ausgeht. Du und\nalle dir freundlich gesinnten Kreaturen in der Emanation haben Vorteil auf Rettungswürfe\ngegen Zauber und andere magische Effekte. Wenn du 17 oder mehr\nStufen in der Paladinklasse hast, erhöht sich die Größe der Emanation auf 9 m.</p><p>[[10 + floor(@classes.paladin.levels / 17) * 20]]{Emanationsgröße\n(Fuß)}</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "description": "<p><em>Waffe (Beliebige Einfache oder Kriegswaffe), Legendär (Benötigt Einstimmung durch einen\nPaladin)</em></p><p>Du erhältst einen Bonus von +3 auf Angriffs- und Schadenswürfe,\ndie du mit dieser magischen Waffe machst. Wenn du einen Feind oder einen Untoten damit triffst,\nerleidet diese Kreatur zusätzlich 2W10 gleißenden Schaden.</p><p>Während du die\ngezogene Waffe hältst, erzeugt sie eine 3 m große Ausströmung, die von dir ausgeht. Du und\nalle dir freundlich gesinnten Kreaturen in der Ausströmung haben Vorteil auf Rettungswürfe\ngegen Zauber und andere magische Effekte. Wenn du 17 oder mehr\nStufen in der Paladinklasse hast, erhöht sich die Größe der Ausströmung auf 9 m.</p><p>[[10 + floor(@classes.paladin.levels / 17) * 20]]{Ausströmungsgröße\n(Fuß)}</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
     "activities": {
       "Holy Avenger": "Heiliger Rächer"
     }

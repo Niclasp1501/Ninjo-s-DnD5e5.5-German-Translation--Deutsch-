@@ -1525,8 +1525,8 @@
     "CreatureAberrationPl": "Aberrationen",
     "CreatureBeast": "Tier",
     "CreatureBeastPl": "Tiere",
-    "CreatureCelestial": "Himmlisches Wesen",
-    "CreatureCelestialPl": "Himmlische Wesen",
+    "CreatureCelestial": "Celestisches Wesen",
+    "CreatureCelestialPl": "Celestische Wesen",
     "CreatureConstruct": "Konstrukt",
     "CreatureConstructPl": "Konstrukte",
     "CreatureDragon": "Drache",
@@ -3178,7 +3178,7 @@
             },
             "stationary": {
               "label": "Stationär",
-              "hint": "Emanation kann nicht bewegt werden, nachdem sie platziert wurde."
+              "hint": "Ausströmung kann nicht bewegt werden, nachdem sie platziert wurde."
             }
           }
         }
@@ -3262,12 +3262,12 @@
           }
         },
         "Emanation": {
-          "Label": "Emanation",
+          "Label": "Ausströmung",
           "Counted": {
-            "one": "{number} Emanation",
-            "other": "{number} Emanationen",
-            "oneSized": "{sizes} Emanation",
-            "otherSized": "{number} {sizes} Emanationen"
+            "one": "{number} Ausströmung",
+            "other": "{number} Ausströmungen",
+            "oneSized": "{sizes} Ausströmung",
+            "otherSized": "{number} {sizes} Ausströmungen"
           }
         },
         "Enemy": {
@@ -4071,7 +4071,7 @@
         "Physical": "Physisch"
       },
       "Property": {
-        "Adamantine": "Adamantine",
+        "Adamantine": "Adamant",
         "Ammunition": "Munition",
         "Concentration": "Konzentration",
         "Finesse": "Finte",
@@ -5019,12 +5019,12 @@
       },
       "Language": {
         "Aarakocra": "Aarakocra",
-        "Abyssal": "Abyssal",
-        "Aquan": "Aquan",
-        "Auran": "Auran",
-        "Celestial": "Himmlisch",
+        "Abyssal": "Abyssisch",
+        "Aquan": "Aqual",
+        "Auran": "Aural",
+        "Celestial": "Celestisch",
         "Common": "Gemeinsprache",
-        "CommonSign": "Gemeinsame Gebärdensprache",
+        "CommonSign": "Gebärden-Gemeinsprache",
         "DeepSpeech": "Tiefensprache",
         "Draconic": "Drakonisch",
         "Druidic": "Druidisch",
@@ -5034,16 +5034,16 @@
         "Gith": "Gith",
         "Gnoll": "Gnollisch",
         "Gnomish": "Gnomisch",
-        "Goblin": "Goblin",
-        "Halfling": "Halbling",
-        "Ignan": "Ignan",
-        "Infernal": "Infernal",
-        "Orc": "Ork",
-        "Primordial": "Primordial",
-        "Sylvan": "Sylvan",
-        "Terran": "Terran",
-        "ThievesCant": "Gaunersprache",
-        "Undercommon": "Untergemeinsprache"
+        "Goblin": "Goblinisch",
+        "Halfling": "Halblingisch",
+        "Ignan": "Ignal",
+        "Infernal": "Infernalisch",
+        "Orc": "Orkisch",
+        "Primordial": "Urtümlich",
+        "Sylvan": "Sylvanisch",
+        "Terran": "Terral",
+        "ThievesCant": "Diebessprache",
+        "Undercommon": "Gemeinsprache der Unterreiche"
       }
     },
     "LegendaryAction": {
@@ -5275,8 +5275,10 @@
         "Fly": "Fliegen",
         "Speed": "Geschwindigkeit",
         "Swim": "Schwimmen",
-        "Walk": "Gehen"
-      }
+        "Walk": "Gehen",
+        "Jump": "Springen"
+      },
+      "HoverSpeed": "{speed} (schwebend)"
     },
     "SavingThrowShort": "Rettung",
     "SkillRoll": "Würfel {ability} ({skill}) Wurf",
@@ -6030,5 +6032,16 @@
       "Nie": "Nicht mehr anzeigen",
       "Spaeter": "Später"
     }
+  },
+  "COMMON": {
+    "AreYouSure": "Bist du sicher?",
+    "Cancel": "Abbrechen",
+    "Confirm": "Bestätigen",
+    "Default": "Standard",
+    "Delete": "Löschen",
+    "No": "Nein",
+    "None": "Keine",
+    "Unknown": "Unbekannt",
+    "Yes": "Ja"
   }
 }
