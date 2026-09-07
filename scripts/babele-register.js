@@ -1453,14 +1453,23 @@ Hooks.once("init", () => {
     dnd5e55ActorLanguagesDeRuntime: translateActorLanguagesRuntime,
     dnd5e55ActorLanguagesCustomDeRuntime: translateActorLanguagesCustomRuntime,
     dnd5e55ActorTypeCustomDeRuntime: translateActorTypeCustomRuntime,
-    alignment: convertMonsterAlignmentRuntime,
-    type: convertLegacyMonsterTypeRuntime,
-    race: convertLegacyMonsterRaceRuntime,
-    languages: convertLegacyMonsterLanguagesRuntime,
-    monstername: convertLegacyMonsterNameRuntime,
-    monsterenvironment: convertLegacyMonsterEnvironmentRuntime,
-    source: convertLegacyMonsterSourceRuntime,
-    monstertoken: convertLegacyMonsterTokenRuntime,
+    // Diese acht hiessen bis 14.2609.2 schlicht "alignment", "type", "race",
+    // "languages", "source", "monstername", "monsterenvironment" und "monstertoken".
+    // Babele fuehrt seine Konverter in EINER globalen Liste: Wer einen Namen zweimal
+    // registriert, ueberschreibt den anderen. Genau diese acht Namen benutzen auch die
+    // verbreiteten deutschen Babele-Pakete fuer Abenteuermodule — dort wurden dann
+    // unsere dnd5e-Monsterfunktionen auf fremde Inhalte losgelassen, und weil etwa
+    // convertMonsterAlignmentRuntime die mitgelieferte Uebersetzung gar nicht ansieht,
+    // blieb die fremde Uebersetzung wirkungslos. Mit Modulpraefix kann das nicht mehr
+    // passieren (gemeldet in Issue #2).
+    dnd5e55MonsterAlignmentDeRuntime: convertMonsterAlignmentRuntime,
+    dnd5e55MonsterTypeDeRuntime: convertLegacyMonsterTypeRuntime,
+    dnd5e55MonsterRaceDeRuntime: convertLegacyMonsterRaceRuntime,
+    dnd5e55MonsterLanguagesDeRuntime: convertLegacyMonsterLanguagesRuntime,
+    dnd5e55MonsterNameDeRuntime: convertLegacyMonsterNameRuntime,
+    dnd5e55MonsterEnvironmentDeRuntime: convertLegacyMonsterEnvironmentRuntime,
+    dnd5e55MonsterSourceDeRuntime: convertLegacyMonsterSourceRuntime,
+    dnd5e55MonsterTokenDeRuntime: convertLegacyMonsterTokenRuntime,
     dnd5e55ActorHabitatCustomDeRuntime: translateActorHabitatCustomRuntime,
     dnd5e55ActorHabitatValueDeRuntime: translateActorHabitatValueRuntime,
     dnd5e55ItemRangeMetricRuntime: convertItemRangeMetricRuntime,

@@ -9899,39 +9899,39 @@
   "label": "Monster (SRD, DE)",
   "mapping": {
     "name": {
-      "converter": "monstername",
+      "converter": "dnd5e55MonsterNameDeRuntime",
       "path": "name"
     },
     "alignment": {
-      "converter": "alignment",
+      "converter": "dnd5e55MonsterAlignmentDeRuntime",
       "path": "system.details.alignment"
     },
     "environment": {
-      "converter": "monsterenvironment",
+      "converter": "dnd5e55MonsterEnvironmentDeRuntime",
       "path": "system.details.environment"
     },
     "languages": {
-      "converter": "languages",
+      "converter": "dnd5e55MonsterLanguagesDeRuntime",
       "path": "system.traits.languages.custom"
     },
     "race": {
-      "converter": "race",
+      "converter": "dnd5e55MonsterRaceDeRuntime",
       "path": "system.details.race"
     },
     "source": {
-      "converter": "source",
+      "converter": "dnd5e55MonsterSourceDeRuntime",
       "path": "system.details.source"
     },
     "token": {
-      "converter": "monstertoken",
+      "converter": "dnd5e55MonsterTokenDeRuntime",
       "path": "token"
     },
     "type": {
-      "converter": "type",
+      "converter": "dnd5e55MonsterTypeDeRuntime",
       "path": "system.details.type"
     },
     "subtype": {
-      "converter": "type",
+      "converter": "dnd5e55MonsterTypeDeRuntime",
       "path": "system.details.type.subtype"
     }
   }

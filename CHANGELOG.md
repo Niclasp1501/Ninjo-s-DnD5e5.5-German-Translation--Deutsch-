@@ -3,6 +3,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.2] - 2026-09-07
+
+### Fixed - Acht Babele-Konverter trugen Allerweltsnamen und störten fremde Übersetzungen
+
+Babele führt seine Konverter in **einer globalen Liste**. Wer einen Namen registriert,
+den ein anderes Modul auch benutzt, überschreibt ihn — je nach Ladereihenfolge in der
+einen oder der anderen Richtung. Dieses Modul registrierte acht Konverter unter
+`alignment`, `type`, `race`, `languages`, `source`, `monstername`, `monsterenvironment`
+und `monstertoken`. Das sind genau die Namen, die auch die verbreiteten deutschen
+Babele-Pakete für Abenteuermodule verwenden.
+
+Die Folge: Beim Übersetzen fremder Inhalte liefen unsere auf dnd5e-Monster
+zugeschnittenen Funktionen. Zwei davon geben der mitgelieferten Übersetzung nicht
+einmal den Vortritt — `alignment` sieht sie gar nicht an und schlägt stattdessen in
+seiner eigenen Tabelle nach, `type` fragt sie erst, wenn die eigene Tabelle nichts
+findet. Wer eine eigene Babele-Übersetzung für ein Abenteuer gebaut hatte, sah Teile
+davon deshalb nur, wenn er *Zusatzinhalte (Kompendien) übersetzen* abschaltete.
+
+Alle acht heißen jetzt `dnd5e55Monster…DeRuntime` wie die übrigen 40 Konverter des
+Moduls. Damit kann kein fremdes Paket mehr getroffen werden. Die Namen wurden nur von
+unserer eigenen `babele/dnd5e.monsters.json` benutzt; an der Übersetzung selbst ändert
+sich nichts.
+
+Gemeldet von **coffiarts** in Issue #2. Danke fürs Nachfragen — die Frage nach der
+Einstellung hat einen Fehler aufgedeckt, der seit der ersten Fassung drinsteckte.
+
 ## [14.2609.1] - 2026-09-05
 
 ### Fixed - Elvish heißt Elfisch, nicht Elbisch
