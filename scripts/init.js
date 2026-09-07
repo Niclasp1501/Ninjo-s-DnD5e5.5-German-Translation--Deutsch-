@@ -444,12 +444,33 @@ function localizeCompendiumSidebarInElement(rootElement) {
   return changed;
 }
 
+// Welche Kompendiumsordner gehoeren dem dnd5e-System? Gesammelt wird ueber die Packs
+// selbst, nicht ueber ihre Namen: Jeder Ordner, in dem ein Systempack liegt, und dessen
+// Elternordner mit dazu — „Items & Spells" steckt in „D&D Modern Content", beide sollen
+// uebersetzt werden.
+//
+// Vorher lief die Umbenennung ueber saemtliche Kompendiumsordner der Welt und ging nach
+// dem Namen. Wer selbst einen Ordner „Monsters" oder „Player's Handbook" angelegt hatte,
+// fand ihn danach umbenannt — und das wird dauerhaft in die Welt geschrieben. Ein
+// Uebersetzungsmodul hat in fremden Ordnern nichts zu suchen (Issue #2).
+function dnd5eCompendiumFolderIds() {
+  const ids = new Set();
+  for (const pack of game.packs ?? []) {
+    if (pack.metadata?.packageType !== "system") continue;
+    if (pack.metadata?.packageName !== game.system?.id) continue;
+    for (let folder = pack.folder; folder; folder = folder.folder) ids.add(folder.id);
+  }
+  return ids;
+}
+
 async function localizeCompendiumFolderDocuments() {
   if (!game.user?.isGM) return 0;
 
+  const eigene = dnd5eCompendiumFolderIds();
   const updates = [];
   for (const folder of game.folders ?? []) {
     if (folder.type !== "Compendium") continue;
+    if (!eigene.has(folder.id)) continue;
     const localized = localizeCompendiumLabel(folder.name);
     if (localized === folder.name) continue;
     updates.push({ _id: folder.id, name: localized });
@@ -491,6 +512,13 @@ function patchTableOfContentsCompendiumContext() {
     proto._prepareContext = async function patchedPrepareContext(...args) {
       const context = await original.apply(this, args);
       if (!isGermanUi()) return context;
+
+      // Der Patch haengt am Prototyp der Anzeigeklasse, und die gehoert nicht uns: Ein
+      // Abenteuermodul mit Buchkompendium bringt dieselbe Klasse mit. Ohne diese Pruefung
+      // wuerden dort ebenfalls Kapitelueberschriften uebersetzt, sobald sie zufaellig eine
+      // unserer 16 englischen Vorlagen treffen — „Spells", „Equipment", „Feats" (Issue #2).
+      const packId = this.document?.pack ?? this.pack ?? null;
+      if (typeof packId !== "string" || !packId.startsWith(`${game.system?.id}.`)) return context;
 
       if (context?.header?.title) context.header.title = localizeTocHeading(context.header.title);
       for (const chapter of context?.chapters ?? []) {

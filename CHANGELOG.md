@@ -3,6 +3,34 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.4] - 2026-09-07
+
+### Fixed - Zwei Stellen fassten Kompendien an, die dem Modul nicht gehören
+
+Beide hingen nicht am Schalter für die Kompendiumsübersetzung, liefen also auch dann,
+wenn er ausgeschaltet war.
+
+**Kompendiumsordner.** Die Umbenennung lief über *sämtliche* Ordner der Welt und
+entschied nach dem Namen: Hieß einer „Monsters" oder „Player's Handbook", wurde er
+übersetzt — gleich, zu welchem Modul er gehörte. Und das wird dauerhaft in die Welt
+geschrieben. Jetzt werden nur noch Ordner angefasst, in denen tatsächlich Kompendien des
+dnd5e-Systems liegen, samt ihrer Elternordner; ermittelt über die Packs selbst statt über
+Namen.
+
+Am Beispiel dieser Welt: Von sechs Ordnern, die die alte Fassung umbenannt hätte, gehört
+einer dem deutschen Spielerhandbuch-Modul. Die neue Fassung lässt ihn in Ruhe und trifft
+die fünf des Systems.
+
+**Kapitelüberschriften.** Der Patch für das Inhaltsverzeichnis hängt am Prototyp der
+Anzeigeklasse — und die gehört nicht uns, ein Abenteuermodul mit Buchkompendium bringt
+dieselbe mit. Dort wurden ebenfalls Überschriften übersetzt, sobald sie zufällig eine
+unserer 16 englischen Vorlagen trafen (*Spells*, *Equipment*, *Feats*). Der Patch prüft
+jetzt, ob die angezeigte Seite überhaupt aus einem Kompendium des Systems stammt.
+
+Aufgefallen beim Nachgehen von Issue #2: coffiarts hatte gefragt, ob unsere Übersetzung
+mit seinen eigenen kollidieren kann. Für die Kompendiumsinhalte war die Antwort nein —
+für diese beiden Stellen war sie ja.
+
 ## [14.2609.3] - 2026-09-07
 
 ### Changed - Die Einstellung heißt jetzt, was sie tut
