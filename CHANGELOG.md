@@ -3,6 +3,48 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.6] - 2026-09-07
+
+### Fixed - Ein Wort je Kreaturentyp, belegt am deutschen SRD
+
+Für *Celestial* standen fünf verschiedene deutsche Wörter im Modul: Himmlisch,
+Celestier, Celestials, Himmelswesen und Himmelsbewohner. Das SRD 5.2.1 kennt genau
+eines, nämlich **celestisches Wesen**, und schreibt „himmlisch" kein einziges Mal.
+
+Ebenso vereinheitlicht:
+
+| Typ | stand im Modul | SRD |
+|---|---|---|
+| Elemental | Elementarwesen | **Elementar**, 64 Belege |
+| Fey | Fey, Feen | **Feenwesen**, 40 Belege |
+| Fiend | Fiend, Teufel, einmal Feind | **Unhold**, 54 Belege |
+
+„Teufel" ist für sich genommen richtig, es ist die Übersetzung von *Devil* und steht
+im SRD 44-mal. Falsch war es nur in den Typenaufzählungen, wo im Englischen *fiend*
+steht. Ersetzt wurden deshalb ganze Wendungen und keine einzelnen Wörter, damit ein
+echter Teufel seinen Namen behält.
+
+Der Zauber heißt im SRD **Feenwesen beschwören**, nicht „Feen beschwören".
+
+### Fixed - Sprachnamen, Ausströmung und die fehlenden Dialogtexte
+
+Fünfzehn Sprachnamen wichen vom SRD ab, darunter zwei, die den Namen des Volkes
+trugen statt den der Sprache: „Ork" statt **Orkisch**, „Halbling" statt
+**Halblingisch**. Das ist derselbe Fehler, den Fylson für *Elvish* gemeldet hat.
+Ebenfalls berichtigt: Abyssisch, Aqual, Aural, Ignal, Terral, Celestisch,
+Goblinisch, Urtümlich, Sylvanisch, Infernalisch, Diebessprache, Gemeinsprache der
+Unterreiche und Gebärden-Gemeinsprache.
+
+*Emanation* heißt auf Deutsch **Ausströmung**. Das SRD benutzt das Wort 91-mal und
+definiert es als Wirkungsbereich neben Kegel, Kugel, Linie, Würfel und Zylinder;
+„Emanation" kommt dort nicht vor.
+
+Elf Schlüssel fehlten ganz. Neun davon sind `COMMON.*`-Texte, die in Dialogen
+erscheinen (Abbrechen, Bestätigen, Löschen, Ja, Nein), dazu zwei Bewegungsarten.
+
+Außerdem heißt *Adamantine* jetzt **Adamant** und *Habitat* heißt **Lebensraum**,
+so wie es in 240 Statblocks des deutschen Monsterhandbuchs bereits steht.
+
 ## [14.2609.5] - 2026-09-07
 
 ### Changed - Der Schalter heißt jetzt schlicht „SRD-Kompendien übersetzen"
