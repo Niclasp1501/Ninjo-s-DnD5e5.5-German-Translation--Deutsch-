@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.5] - 2026-09-07
+
+### Changed - Der Schalter heißt jetzt schlicht „SRD-Kompendien übersetzen"
+
+Zwischenschritt 14.2609.3 hatte ihn auf „Kompendien des dnd5e-Systems übersetzen"
+gebracht. Richtig, aber umständlich: Worum es geht, ist das SRD — und genau das Wort
+fehlte im Namen. Der Hinweistext sagt jetzt außerdem ausdrücklich, dass Kompendien
+anderer Module sich bei Babele selbst anmelden und von diesem Schalter unberührt
+bleiben. Das war die eigentliche Sorge hinter Issue #2.
+
 ## [14.2609.4] - 2026-09-07
 
 ### Fixed - Zwei Stellen fassten Kompendien an, die dem Modul nicht gehören
