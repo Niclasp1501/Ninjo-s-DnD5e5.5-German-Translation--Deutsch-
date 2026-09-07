@@ -6012,6 +6012,12 @@
     }
   },
   "DND5EDE": {
+    "Einstellung": {
+      "Kompendien": {
+        "name": "Kompendien des dnd5e-Systems übersetzen",
+        "hint": "Übersetzt die SRD-Kompendien, die das dnd5e-System mitbringt — Zauber, Monster, Ausrüstung, Regeln und weitere. Übersetzt werden nur diese; die Kompendien anderer Module erfasst Babele hierüber nicht. Abgeschaltet bleibt die Oberfläche deutsch und die Kompendien im Original."
+      }
+    },
     "Willkommen": {
       "Setting": "Willkommensfenster",
       "Untertitel": "Deutsche Übersetzung für dnd5e 5.x",

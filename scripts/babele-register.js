@@ -1401,8 +1401,12 @@ Hooks.once("init", () => {
   normalizeAllOverrideMapsRuntime();
 
   game.settings.register(MODULE_ID, SETTING_ENABLE_COMPENDIUM_TRANSLATIONS, {
-    name: "Zusatzinhalte (Kompendien) übersetzen",
-    hint: "Aktiviert Laufzeit-Übersetzungen für zusätzliche dnd5e-Kompendiuminhalte über Babele. Deaktiviert: nur System/UI, Character-Sheets und Tooltips.",
+    // Hiess bis 14.2609.2 "Zusatzinhalte (Kompendien) übersetzen". Gemeint waren damals
+    // Kompendien gekaufter Module — die kamen nie hinzu, weil dafuer die Zustimmung von
+    // Wizards of the Coast noetig gewesen waere. Geblieben war ein Name, der etwas
+    // Fremdes verspricht, obwohl der Schalter die SRD-Kompendien des Systems steuert.
+    name: "DND5EDE.Einstellung.Kompendien.name",
+    hint: "DND5EDE.Einstellung.Kompendien.hint",
     scope: "world",
     config: true,
     type: Boolean,

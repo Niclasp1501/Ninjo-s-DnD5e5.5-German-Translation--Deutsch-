@@ -3,6 +3,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.3] - 2026-09-07
+
+### Changed - Die Einstellung heißt jetzt, was sie tut
+
+Der Schalter hieß „Zusatzinhalte (Kompendien) übersetzen". Gemeint waren damit einmal
+die Kompendien gekaufter Module — die kamen nie hinzu, weil dafür die Zustimmung von
+Wizards of the Coast nötig gewesen wäre. Geblieben war ein Name, der etwas Fremdes
+verspricht, obwohl der Schalter die SRD-Kompendien des Systems steuert. Genau daran
+entzündete sich die Frage in Issue #2.
+
+Er heißt jetzt **„Kompendien des dnd5e-Systems übersetzen"**, und der Hinweistext sagt,
+welche gemeint sind und was abgeschaltet übrig bleibt. Beides liegt erstmals in
+`de.json` und `en.json` statt hartkodiert im Skript — ein englischer Client sah bisher
+deutschen Text.
+
+### Fixed - Abhängigkeiten sagen jetzt, welches dnd5e gemeint ist
+
+`dnd5e` stand unter `requires` statt unter `relationships.systems`; dort steht es jetzt
+und blendet das Modul in fremden Systemen gar nicht erst ein. Beide Abhängigkeiten
+nennen zusätzlich die Fassung, gegen die geprüft wurde — bisher stand nur ein Minimum
+da, und niemand konnte sehen, worauf sich das bezieht:
+
+* **dnd5e** — mindestens 5.0.0, geprüft gegen **5.3.3**
+* **Babele** — mindestens 2.7.5, geprüft gegen **2.9.1**, mit Begründung, was ohne
+  Babele fehlt
+
 ## [14.2609.2] - 2026-09-07
 
 ### Fixed - Acht Babele-Konverter trugen Allerweltsnamen und störten fremde Übersetzungen

@@ -1,4 +1,6 @@
 {
+  "DND5EDE.Einstellung.Kompendien.name": "Translate the dnd5e system compendiums",
+  "DND5EDE.Einstellung.Kompendien.hint": "Translates the SRD compendiums shipped with the dnd5e system — spells, monsters, equipment, rules and others. These only; compendiums belonging to other modules are not covered by it. Switched off, the interface stays German and the compendiums stay in the original.",
   "DND5EDE.Willkommen.Setting": "Welcome window",
   "DND5EDE.Willkommen.Untertitel": "German translation for dnd5e 5.x",
   "DND5EDE.Willkommen.Einleitung": "This translation sits on top of the dnd5e system: the interface and character sheets appear in German without anything in the system itself being changed.",
