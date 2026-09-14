@@ -694,7 +694,20 @@ function convertActorMovementMetricRuntime(originalValue, _entryTranslation, dat
   const translated = foundry.utils.deepClone(originalValue);
   const sourceUnit = String(translated.units ?? getActorDistanceContextUnit(data) ?? "ft").toLowerCase();
   const unitKey = DISTANCE_UNIT_MAP[sourceUnit] ? sourceUnit : "ft";
-  for (const key of ["walk", "fly", "swim", "climb", "burrow"]) {
+
+  // dnd5e 6.0 hat die Geschwindigkeiten nach movement.speeds verschoben. Babele uebersetzt das
+  // bereits aufgebaute Dokument (toObject), sieht unter 6.0 also nur noch speeds. Ohne diesen Zweig
+  // wurde die Einheit auf Meter gesetzt, der Wert aber nicht umgerechnet: aus 30 Fuss wurden 30 m.
+  if (translated.speeds && typeof translated.speeds === "object") {
+    for (const [key, value] of Object.entries(translated.speeds)) {
+      if (value !== null && value !== undefined && value !== "") {
+        translated.speeds[key] = convertDistanceValueByUnit(value, unitKey);
+      }
+    }
+  }
+
+  // Flache Form bis dnd5e 5.x
+  for (const key of ["walk", "fly", "swim", "climb", "burrow", "jump"]) {
     if (translated[key] !== null && translated[key] !== undefined && translated[key] !== "") {
       translated[key] = convertDistanceValueByUnit(translated[key], unitKey);
     }

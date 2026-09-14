@@ -11870,7 +11870,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHoldBreath0000": {
     "name": "Atem anhalten",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann seinen Atem für {N} {Units} anhalten.</p>"
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} kann seinen Atem 10 Minuten lang anhalten.</p>"
   },
   "mmIceWalk0000000": {
     "name": "Eisgang",

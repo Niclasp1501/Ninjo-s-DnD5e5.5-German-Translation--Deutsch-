@@ -28,6 +28,25 @@ Athlete* hat sich die Regel selbst geändert. Ein Schlüssel kann nur eine Fassu
 tragen. Deshalb steht in `de.json` die Fassung für 6.0, und das Modul setzt beim
 Start unter dnd5e 5.x die bisherige deutsche Fassung wieder ein.
 
+### Fixed - Geschwindigkeiten der 2024-Kreaturen wieder in Metern
+
+Beim Test unter dnd5e 6.0.1 zeigte das Flusspferd „30 m" Gehen, obwohl 30 Fuß im
+Kompendium stehen und 9 m richtig sind. Die Einheit wurde umgestellt, der Wert nicht.
+
+dnd5e 6.0 hat die Geschwindigkeiten von `movement.walk` nach `movement.speeds.walk`
+verschoben. Babele übersetzt das bereits aufgebaute Dokument, sieht unter 6.0 also nur
+noch die neue Stelle. Der Konverter las nur die alte. Er rechnet jetzt beide Formen um
+und bleibt damit auch unter 5.x richtig. Betroffen waren alle Kreaturen im Kompendium
+„Akteure (Modern, DE)" mit eigener Geschwindigkeit.
+
+Die übrigen Verschiebungen in dnd5e 6.0 betreffen Attributsboni, die dieses Modul
+nicht übersetzt. Reichweite und Wirkungsbereich sind unverändert aufgebaut.
+
+### Fixed - Atem anhalten
+
+Beim Flusspferd stand „kann seinen Atem für {N} {Units} anhalten". Das Original sagt
+zehn Minuten, und so steht es jetzt da.
+
 ### Fixed - Wurf statt Probe
 
 18 Texte sagten „Probe", etwa „Probenbonus" oder „{tool}-Probe". Das SRD kennt das
