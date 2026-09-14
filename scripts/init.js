@@ -840,5 +840,80 @@ Hooks.on("renderCompendiumDirectory", (_app, html) => {
   }
 });
 
+// dnd5e 6.0 hat 53 Texte inhaltlich geaendert, der Schluessel blieb derselbe. Bei 38 Zielangaben
+// ist dabei der Platzhalter {number} weggefallen, bei Remarkable Athlete hat sich die Regel selbst
+// geaendert. de.json traegt die Fassung fuer 6.0. Laeuft noch dnd5e 5.x, setzen wir hier die
+// bisherige deutsche Fassung wieder ein, damit das Modul in beiden Versionen richtig anzeigt.
+const DND5E_5X_TEXTE = {
+  "DND5E.ABILITY.SECTIONS.Bonuses.Hint": "Diese Boni gelten für Attributs- und Rettungswürfe, die sich auf {ability} beziehen.",
+  "DND5E.ABILITY.SECTIONS.Global.Hint": "Diese Boni gelten für Attributs- und Rettungswürfe, die sich auf beliebige Attribute beziehen.",
+  "DND5E.ADVANCEMENT.ItemChoice.FIELDS.restriction.level.Available": "Jede verfügbare Stufe",
+  "DND5E.CAST.FIELDS.spell.spellbook.label": "Im Zauberbuch anzeigen",
+  "DND5E.CAST.FIELDS.spell.spellbook.hint": "Den Zauber im Zauber Reiter des Charakterbogens anzeigen.",
+  "DND5E.FACILITY.Trade.Creatures.Buy": "Ziehe Tiere, die du kaufen möchtest, in die Felder oben, und aktualisiere die Kosten entsprechend unten.",
+  "DND5E.FACILITY.Trade.Price.Hint": "Wählen Sie aus, welchen Bestand Sie verkaufen möchten, und geben Sie den Grundpreis oben ein.",
+  "DND5E.FlagsRemarkableAthleteHint": "Halber Übungsbonus (aufgerundet) auf körperliche Fertigkeitswürfe und Initiative.",
+  "DND5E.TARGET.Type.Ally.Counted.one": "{number} Verbündeter",
+  "DND5E.TARGET.Type.Ally.Counted.other": "{number} Verbündete",
+  "DND5E.TARGET.Type.Circle.Counted.one": "{number} Kreis",
+  "DND5E.TARGET.Type.Circle.Counted.other": "{number} Kreise",
+  "DND5E.TARGET.Type.Cone.Counted.one": "{number} Kegel",
+  "DND5E.TARGET.Type.Cone.Counted.other": "{number} Kegel",
+  "DND5E.TARGET.Type.Creature.Counted.one": "{number} Kreatur",
+  "DND5E.TARGET.Type.Creature.Counted.other": "{number} Kreaturen",
+  "DND5E.TARGET.Type.CreatureOrObject.Counted.one": "{number} Kreatur oder Objekt",
+  "DND5E.TARGET.Type.CreatureOrObject.Counted.other": "{number} Kreaturen oder Objekte",
+  "DND5E.TARGET.Type.Cube.Counted.one": "{number} Würfel",
+  "DND5E.TARGET.Type.Cube.Counted.other": "{number} Würfel",
+  "DND5E.TARGET.Type.Cylinder.Counted.one": "{number} Zylinder",
+  "DND5E.TARGET.Type.Cylinder.Counted.other": "{number} Zylinder",
+  "DND5E.TARGET.Type.Emanation.Counted.one": "{number} Ausströmung",
+  "DND5E.TARGET.Type.Emanation.Counted.other": "{number} Ausströmungen",
+  "DND5E.TARGET.Type.Enemy.Counted.one": "{number} Gegner",
+  "DND5E.TARGET.Type.Enemy.Counted.other": "{number} Gegner",
+  "DND5E.TARGET.Type.Line.Counted.one": "{number} Linie",
+  "DND5E.TARGET.Type.Line.Counted.other": "{number} Linien",
+  "DND5E.TARGET.Type.Object.Counted.one": "{number} Objekt",
+  "DND5E.TARGET.Type.Object.Counted.other": "{number} Objekte",
+  "DND5E.TARGET.Type.Radius.Counted.one": "{number} Radius",
+  "DND5E.TARGET.Type.Radius.Counted.other": "{number} Radien",
+  "DND5E.TARGET.Type.Space.Counted.one": "{number} Feld",
+  "DND5E.TARGET.Type.Space.Counted.other": "{number} Felder",
+  "DND5E.TARGET.Type.Sphere.Counted.one": "{number} Kugel",
+  "DND5E.TARGET.Type.Sphere.Counted.other": "{number} Kugeln",
+  "DND5E.TARGET.Type.Special.Counted.one": "{number} {special}",
+  "DND5E.TARGET.Type.Special.Counted.other": "{number} {special}",
+  "DND5E.TARGET.Type.Square.Counted.one": "{number} Quadrat",
+  "DND5E.TARGET.Type.Square.Counted.other": "{number} Quadrate",
+  "DND5E.TARGET.Type.Target.Counted.one": "{number} Ziel",
+  "DND5E.TARGET.Type.Target.Counted.other": "{number} Ziele",
+  "DND5E.TARGET.Type.Wall.Counted.one": "{number} Mauer",
+  "DND5E.TARGET.Type.Wall.Counted.other": "{number} Mauern",
+  "DND5E.TARGET.Type.WillingCreature.Counted.one": "{number} willige Kreatur",
+  "DND5E.TARGET.Type.WillingCreature.Counted.other": "{number} willige Kreaturen",
+  "DND5E.TRANSFORM.FIELDS.transform.mode.hint": "Legt fest, wie die Quellkreaturen der Verwandlung ausgewählt werden.",
+  "DND5E.TRANSFORM.FIELDS.transform.mode.CR": "Nach Herausforderungsgrad",
+  "DND5E.TRANSFORM.FIELDS.transform.mode.Direct": "Per Direktlink",
+  "EDITOR.DND5E.Inline.DamageExtended": "<em>Treffer:</em> {damage} Schaden",
+  "EDITOR.DND5E.Inline.DamageLong": "{average} ({formula}) {type}",
+  "SETTINGS.DND5E.BLOODIED.All": "Anzeigen für Verbündete und Feinde",
+  "SETTINGS.DND5E.BLOODIED.Player": "Nur für Verbündete Anzeigen"
+};
+
+Hooks.once("i18nInit", () => {
+  if (game.system?.id !== "dnd5e" || !isGermanUi()) return;
+  if (!foundry.utils.isNewerVersion("6.0.0", game.system.version)) return;
+  let gesetzt = 0;
+  for (const [key, value] of Object.entries(DND5E_5X_TEXTE)) {
+    try {
+      foundry.utils.setProperty(game.i18n.translations, key, value);
+      gesetzt += 1;
+    } catch (_err) {
+      // Ein Zwischenglied ist kein Objekt; dann bleibt die 6.0-Fassung stehen.
+    }
+  }
+  console.log(`[${MODULE_ID}] dnd5e ${game.system.version}: ${gesetzt} Texte auf die 5.x-Fassung gesetzt.`);
+});
+
 Hooks.once("init", () => willkommenEinrichten());
 Hooks.once("ready", () => willkommenZeigen());

@@ -3,6 +3,46 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.7] - 2026-09-14
+
+### Added - Vorbereitet auf dnd5e 6.0
+
+dnd5e 6.0 bringt 695 neue Oberflächentexte mit, vor allem für Effekte, Würfe,
+Rüstungsklasse, das Inhaltsverzeichnis, den Willkommensbildschirm und 38 neue
+Einstellungen. Alle sind übersetzt. 200 davon trugen denselben englischen Text wie
+ein bisheriger Schlüssel und übernehmen dessen deutsche Fassung.
+
+Neue Regelbegriffe nach dem SRD 5.2.1: **blutig** für *Bloodied*,
+**Meisterschaftseigenschaft** für *Weapon Mastery*, **Traglast** und **belastet**,
+**Zauberangriff**, **Übung in Rettungswürfen**. Nicht im SRD belegt und deshalb frei
+gewählt: **Rüstungsausbildung** für *Armor Training* und **Frömmigkeit** für *Piety*.
+
+### Changed - Abwärtskompatibel mit dnd5e 5.x
+
+Nichts wurde entfernt. Die 212 Schlüssel, die dnd5e 6.0 nicht mehr kennt, bleiben
+stehen und werden unter 5.x weiter gebraucht.
+
+53 Texte hat dnd5e 6.0 unter demselben Schlüssel inhaltlich geändert. Bei 38
+Zielangaben ist der Platzhalter für die Anzahl weggefallen, und bei *Remarkable
+Athlete* hat sich die Regel selbst geändert. Ein Schlüssel kann nur eine Fassung
+tragen. Deshalb steht in `de.json` die Fassung für 6.0, und das Modul setzt beim
+Start unter dnd5e 5.x die bisherige deutsche Fassung wieder ein.
+
+### Fixed - Wurf statt Probe
+
+18 Texte sagten „Probe", etwa „Probenbonus" oder „{tool}-Probe". Das SRD kennt das
+Wort nicht und schreibt durchgehend **Wurf**. Mit dem Wort wechselt auch der Artikel,
+aus „die Probe" wird „der Wurf".
+
+Außerdem hieß *Disposition* an zwei Stellen „Gesinnung". Das ist die Übersetzung von
+*Alignment*, zwei englische Begriffe teilten sich also ein deutsches Wort. Es heißt
+jetzt **Haltung**.
+
+Zwei übernommene Texte waren fehlerhaft und sind berichtigt: Bei der Konzentration
+waren die Platzhalter mitübersetzt (`{Name}` statt `{name}`), und bei der
+durchschnittlichen Schadensangabe fehlte das Element, mit dem dnd5e die Formel
+formatiert.
+
 ## [14.2609.6] - 2026-09-07
 
 ### Fixed - Ein Wort je Kreaturentyp, belegt am deutschen SRD
