@@ -34,3 +34,6 @@ jobs:
             json.loads(Path(f).read_text(encoding='utf-8-sig'))
           print('core-json-ok')
           PY
+
+      - name: Check language files load completely in Foundry
+        run: python .github/scripts/check_language_keys.py languages/de.json languages/en.json

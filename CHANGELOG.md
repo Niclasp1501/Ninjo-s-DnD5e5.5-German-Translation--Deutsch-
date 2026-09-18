@@ -3,6 +3,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.8] - 2026-09-18
+
+### Fixed - Über 1600 Texte wieder deutsch
+
+Mit 14.2609.7 standen 1611 Texte der Oberfläche wieder auf Englisch, obwohl sie in der
+Sprachdatei deutsch waren. Betroffen waren vor allem ältere Einstellungen wie
+*Loyalty Score*, *Allow Individual Rests* oder *Use Metric Length Units*, dazu
+Zielangaben, Beschwörung, Verwandlung, Kalender und Bastionen.
+
+Die Ursache lag in der Sprachdatei selbst. Die neuen Texte für dnd5e 6.0 waren als
+Schlüssel mit Punkten wie `SETTINGS.DND5E` eingetragen. Foundry setzt einen solchen
+Schlüssel beim Laden als Ganzes ein und ersetzt damit den bisherigen Block gleichen
+Namens. Die neuen Texte waren deshalb deutsch und die alten daneben verschwunden.
+Jetzt steht alles in einem Block, und beim Laden geht kein Text mehr verloren.
+
+Eine neue Prüfung im Build rechnet die Sprachdateien so zusammen wie Foundry und
+schlägt fehl, sobald dabei ein Text verloren ginge.
+
+### Changed - Geprüft mit dnd5e 6.0.2
+
+dnd5e 6.0.2 bringt keine neuen oder geänderten Texte mit. Die Bestätigung einer
+Bastionsrunde war unter 5.x ein einzelner Text und ist unter 6.0 zweigeteilt. Unter
+5.x setzt das Modul die bisherige deutsche Fassung beim Start wieder ein.
+
 ## [14.2609.7] - 2026-09-14
 
 ### Added - Vorbereitet auf dnd5e 6.0

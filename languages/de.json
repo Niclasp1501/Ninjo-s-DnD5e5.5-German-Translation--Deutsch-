@@ -6,7 +6,9 @@
         "SelectType": "{name}-Type muss für die Erstellung ausgewählt sein."
       },
       "Advancement": "Fortschritt"
-    }
+    },
+    "Activity": "Aktivität",
+    "Advancement": "Fortschritt"
   },
   "TYPES": {
     "Actor": {
@@ -66,19 +68,24 @@
       "request": "Anfragenachricht",
       "rest": "Rastnachricht",
       "turn": "Kampfzugnachricht",
-      "usage": "Nutzungsnachricht"
+      "usage": "Nutzungsnachricht",
+      "item": "Gegenstandsnachricht",
+      "prompt": "Aufforderungsnachricht",
+      "timePassed": "Nachricht über vergangene Zeit"
     },
     "RegionBehavior": {
       "dnd5e": {
         "difficultTerrain": "Schwieriges Gelände",
-        "rotateArea": "Bereich drehen"
+        "rotateArea": "Bereich drehen",
+        "applyActiveEffect": "Aktiven Effekt anwenden (5e)"
       }
     },
     "HINTS": {
       "RegionBehavior": {
         "dnd5e": {
           "difficultTerrain": "Markiert eine Region als schwieriges Gelände und legt ihren Typ sowie die Betroffenen fest.",
-          "rotateArea": "Dreht Marker, Kacheln, Wände und andere Objekte um einen zentralen Drehpunkt."
+          "rotateArea": "Dreht Marker, Kacheln, Wände und andere Objekte um einen zentralen Drehpunkt.",
+          "applyActiveEffect": "Wendet Aktive Effekte auf Tokens an, solange sie sich in der Region befinden und bestimmte Bedingungen erfüllen."
         }
       }
     }
@@ -97,18 +104,96 @@
       "Configure": {
         "Title": "{ability} bearbeiten",
         "CheckLabel": "{ability}-Wurf",
-        "SaveLabel": "{ability}-Rettungswurf"
+        "SaveLabel": "{ability}-Rettungswurf",
+        "AttackLabel": "Angriff mit {ability}"
       },
       "SECTIONS": {
         "Bonuses": {
           "Label": "{ability} Boni",
-          "Hint": "Diese Boni gelten für Attributs- und Rettungswürfe, die sich auf {ability} beziehen."
+          "Hint": "Diese Boni gelten für Angriffe, Attributs- und Rettungswürfe mit {ability}."
         },
         "Global": {
           "Label": "Globale Boni",
-          "Hint": "Diese Boni gelten für Attributs- und Rettungswürfe, die sich auf beliebige Attribute beziehen."
+          "Hint": "Diese Boni gelten für Attributs- und Rettungswürfe mit einem beliebigen Attribut."
         },
         "Score": "{ability}wert"
+      },
+      "FIELDS": {
+        "abilities": {
+          "element": {
+            "attack": {
+              "roll": {
+                "max": {
+                  "label": "Höchster Angriffswurf"
+                },
+                "min": {
+                  "label": "Niedrigster Angriffswurf"
+                },
+                "mode": {
+                  "label": "Vorteilmodus für Angriffe"
+                },
+                "bonus": {
+                  "label": "Angriffsbonus"
+                }
+              }
+            },
+            "check": {
+              "roll": {
+                "max": {
+                  "label": "Höchster Attributswurf"
+                },
+                "min": {
+                  "label": "Niedrigster Attributswurf"
+                },
+                "mode": {
+                  "label": "Vorteilmodus für Attributswürfe"
+                },
+                "bonus": {
+                  "label": "Wurfbonus"
+                }
+              }
+            },
+            "save": {
+              "roll": {
+                "bonus": {
+                  "label": "Rettungswurfbonus"
+                },
+                "max": {
+                  "label": "Höchster Rettungswurf"
+                },
+                "min": {
+                  "label": "Niedrigster Rettungswurf"
+                },
+                "mode": {
+                  "label": "Vorteilmodus für Rettungswürfe"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Formatter": {
+        "Attack": {
+          "AdvantageMode": "Vorteilmodus für Angriffe mit {name}",
+          "Bonus": "Angriffsbonus mit {name}",
+          "Maximum": "Höchster Angriffswurf mit {name}",
+          "Minimum": "Niedrigster Angriffswurf mit {name}"
+        },
+        "Check": {
+          "AdvantageMode": "Vorteilmodus für Würfe auf {name}",
+          "Bonus": "Wurfbonus auf {name}",
+          "Maximum": "Höchster Wurf auf {name}",
+          "Minimum": "Niedrigster Wurf auf {name}"
+        },
+        "Maximum": "Höchstwert für {name}",
+        "Save": {
+          "AdvantageMode": "Vorteilmodus für Rettungswürfe auf {name}",
+          "Bonus": "Rettungswurfbonus auf {name}",
+          "Maximum": "Höchster Rettungswurf auf {name}",
+          "Minimum": "Niedrigster Rettungswurf auf {name}",
+          "Proficiency": "Übung in Rettungswürfen auf {name}"
+        },
+        "Score": "{name}-Wert"
       }
     },
     "Ability": "Attribut",
@@ -339,6 +424,24 @@
             "hint": "Die Aktivität ist nicht nutzbar, wenn Magie nicht verfügbar ist.",
             "label": "Magie erforderlich"
           }
+        },
+        "behaviors": {
+          "element": {
+            "level": {
+              "label": "Stufenbegrenzung",
+              "hint": "Stufenbereich, der nötig ist, damit dieses Verhalten angewendet wird.",
+              "max": {
+                "label": "Höchststufe"
+              },
+              "min": {
+                "label": "Mindeststufe"
+              }
+            },
+            "name": {
+              "label": "Name"
+            }
+          },
+          "label": "Verhalten des Wirkungsbereichs"
         }
       },
       "SECTIONS": {
@@ -466,11 +569,17 @@
         "Delete": "Fortschritt löschen",
         "Duplicate": "Fortschritt duplizieren",
         "Edit": "Fortschritt bearbeiten",
-        "View": "Fortschritt ansehen"
+        "View": "Fortschritt ansehen",
+        "ModifyChoices": "Auswahl ändern"
       },
       "Config": {
         "AnyLevel": "Beliebig",
-        "Details": "Fortschrittsdetails"
+        "Details": "Fortschrittsdetails",
+        "Status": {
+          "Complete": "Vollständig konfiguriert",
+          "Incomplete": "Nicht konfiguriert"
+        },
+        "Title": "{item} Fortschritt bearbeiten"
       },
       "Defaults": {
         "BackgroundFeat": "Hintergrundtalent",
@@ -546,9 +655,10 @@
           },
           "restriction": {
             "level": {
-              "Available": "Jede verfügbare Stufe",
+              "Available": "Jede verfügbare Stufe (einschließlich Zaubertricks)",
               "hint": "Nur Auswahlmöglichkeiten aus Zaubern dieser Stufe erlauben.",
-              "label": "Zaubergrad"
+              "label": "Zaubergrad",
+              "AvailableNoCantrips": "Jede verfügbare Stufe (ohne Zaubertricks)"
             },
             "list": {
               "hint": "Nur Zauber aus diesen Listen erlauben.",
@@ -559,12 +669,19 @@
             },
             "type": {
               "label": "Typ"
+            },
+            "school": {
+              "hint": "Nur Zauber aus diesen Schulen erlauben.",
+              "label": "Zauberschulen"
             }
           },
           "type": {
             "Any": "Alles",
             "hint": "Beschränkt, welche Gegenstandstypen ausgewählt werden können.",
             "label": "Gegenstandstyp"
+          },
+          "sorting": {
+            "label": "Sortierung"
           }
         },
         "Hint": "Bietet dem Spieler eine Auswahl an Gegenständen (wie Ausrüstung, Merkmale oder Zauber), die er für seinen Charakter auf einer oder mehreren Stufen wählen kann.",
@@ -580,7 +697,8 @@
           "NoOriginal": "Zuvor getroffene Auswahl steht nicht mehr zum Ersetzen zur Verfügung.",
           "SpellLevelAvailable": "Nur Zauber der Stufe {level} oder niedriger können für diese Entwicklung gewählt werden.",
           "SpellLevelSpecific": "Nur Zauber der Stufe {level} können für diese Entwicklung gewählt werden.",
-          "SpellList": "Nur Zauber, die auf der Zauberliste {lists} verfügbar sind, können für diese Entwicklung gewählt werden."
+          "SpellList": "Nur Zauber, die auf der Zauberliste {lists} verfügbar sind, können für diese Entwicklung gewählt werden.",
+          "SpellSchool": "Für diesen Fortschritt können nur Zauber der Schule {schools} gewählt werden."
         }
       },
       "ScaleValue": {
@@ -624,6 +742,18 @@
             },
             "Hint": "Verwende dies, um die Herausforderungsgrade von Kreaturen für Funktionen wie Wilde Gestalt darzustellen.",
             "Label": "Herausforderungsgrad"
+          },
+          "Usage": {
+            "FIELDS": {
+              "period": {
+                "label": "Zeitraum"
+              },
+              "value": {
+                "label": "Anwendungen"
+              }
+            },
+            "Hint": "Hiermit werden Anwendungen eines Gegenstands über einen bestimmten Zeitraum abgebildet.",
+            "Label": "Nutzung"
           }
         },
         "Action": {
@@ -647,7 +777,10 @@
           }
         },
         "Hint": "Ein einzelner Wert, der sich ändert, wenn eine Klasse eine Stufe aufsteigt und in Würfelformeln verfügbar gemacht wird (z.B. der Kampfkunst-Würfel eines Mönchs).",
-        "Title": "Skalierungswert"
+        "Title": "Skalierungswert",
+        "Warning": {
+          "DuplicateIdentifier": "Mehrere Skalierungswerte haben denselben Bezeichner {identifier}."
+        }
       },
       "Size": {
         "Action": {
@@ -735,6 +868,9 @@
           "optional": {
             "label": "Optional",
             "hint": "Wenn der gesamte Fortschritt als optional markiert ist, können Spieler auf einen der folgenden Gegenstände verzichten; andernfalls werden alle nicht-optionalen Gegenstände vergeben."
+          },
+          "sorting": {
+            "label": "Sortierung"
           }
         },
         "Hint": "Vergibt dem Charakter Gegenstände (wie Ausrüstung, Merkmale oder Zauber), wenn er eine bestimmte Stufe erreicht.",
@@ -742,7 +878,8 @@
         "Warning": {
           "Container": "Inhalte von Behältern werden nicht zusammen mit den Behältern hinzugefügt.",
           "Duplicate": "Dieser Gegenstand existiert bereits in diesem Fortschritt.",
-          "Recursive": "Du kannst einen Gegenstand nicht in seinem eigenen Fortschritt vergeben."
+          "Recursive": "Du kannst einen Gegenstand nicht in seinem eigenen Fortschritt vergeben.",
+          "Type": "Items vom Typ {type} können nicht mit diesem Fortschrittstyp hinzugefügt werden."
         }
       },
       "Migration": {
@@ -779,6 +916,59 @@
           "LevelNewClass": "Klasse hinzufügen",
           "ModifyChoices": "Auswahl ändern"
         }
+      },
+      "ModifyItem": {
+        "Action": {
+          "AddChange": "Änderung hinzufügen",
+          "DeleteChange": "Änderung löschen"
+        },
+        "DropHint": "Verzauberung hier ablegen",
+        "Empty": {
+          "WithDropdown": "Keine Änderungen. Erstelle eine mit der Schaltfläche <i class=\"fa-solid fa-plus\"></i> oben oder wähle einen vorhandenen Effekt aus der Liste.",
+          "WithoutDropdown": "Keine Änderungen. Erstelle eine mit der Schaltfläche <i class=\"fa-solid fa-plus\"></i> oben."
+        },
+        "FIELDS": {
+          "changes": {
+            "element": {
+              "enchantment": {
+                "label": "Angewendete Verzauberung"
+              },
+              "identifiers": {
+                "hint": "Bezeichner der Gegenstände, die diese Verzauberung verändert. Bezeichnern kann die Gegenstandsart vorangestellt werden (z. B. \"spell:mage-hand\").",
+                "label": "Veränderte Gegenstände"
+              }
+            },
+            "label": "Item Anpassungen"
+          }
+        },
+        "Hint": "Vorhandene Gegenstände mit einer Verzauberung verändern.",
+        "Title": "Gegenstände verändern"
+      },
+      "FIELDS": {
+        "classRestriction": {
+          "label": "Klassenbeschränkung",
+          "none": "Alle Klassen",
+          "primary": "Nur ursprüngliche Klasse",
+          "secondary": "Nur Klassenkombinationen"
+        },
+        "hint": {
+          "label": "Hinweis"
+        },
+        "img": {
+          "label": "Eigenes Icon"
+        },
+        "level": {
+          "label": "Stufe"
+        },
+        "name": {
+          "label": "Eigener Titel"
+        }
+      },
+      "Label": "Fortschritt",
+      "Level": {
+        "Any": "Jede Stufe",
+        "None": "Keine Stufe",
+        "Specific": "Stufe {level}"
       }
     },
     "AdvancementChoices": "Auswahl",
@@ -918,6 +1108,9 @@
               "label": "Angriffsklassifizierung",
               "hint": "Handelt es sich um einen waffenlosen, einen Waffen- oder einen Zauberangriff?"
             }
+          },
+          "abilities": {
+            "label": "Attributsoptionen"
           }
         },
         "damage": {
@@ -1006,7 +1199,8 @@
     "BonusTitle": "Bearbeite Spielercharakter-Boni",
     "CAST": {
       "Action": {
-        "RemoveSpell": "Zauber entfernen"
+        "RemoveSpell": "Zauber entfernen",
+        "DropSpell": "Zauber hier ablegen"
       },
       "Enchantment": {
         "Name": "Änderungen am Zauber"
@@ -1037,8 +1231,8 @@
             "hint": "Zauberkomponenten und Eigenschaften, die beim Zaubern ignoriert werden."
           },
           "spellbook": {
-            "label": "Im Zauberbuch anzeigen",
-            "hint": "Den Zauber im Zauber Reiter des Charakterbogens anzeigen."
+            "label": "Im Reiter Zauber anzeigen",
+            "hint": "Den Zauber im Reiter Zauber des Charakterbogens anzeigen. Gegenstände brauchen die Eigenschaft Magisch und müssen eingestimmt sein, falls sie Einstimmung erfordern."
           },
           "uuid": {
             "label": "Zauber der gewirkt wird"
@@ -1101,6 +1295,14 @@
               "label": "SG Formel",
               "hint": "Eigene Formel oder fester Wert für den SG des Wurfs."
             }
+          },
+          "bonus": {
+            "hint": "Bonus auf alle Würfe, die mit dieser Aktivität gemacht werden.",
+            "label": "Wurfbonus"
+          },
+          "visible": {
+            "label": "Sichtbar für Alle",
+            "hint": "Soll der Wurfknopf für alle Spieler sichtbar sein?"
           }
         }
       },
@@ -1303,6 +1505,42 @@
           "replace": {
             "label": "Ersetze Waffenschaden",
             "hint": "Ersetze den Basis-Waffenschaden mit diesem Schaden anstatt ihn zu erhöhen."
+          },
+          "base": {
+            "bonus": {
+              "label": "Grundschadensbonus"
+            },
+            "custom": {
+              "enabled": {
+                "label": "Eigene Formel für den Grundschaden verwenden"
+              },
+              "formula": {
+                "label": "Eigene Formel für den Grundschaden"
+              }
+            },
+            "denomination": {
+              "label": "Würfelart des Grundschadens"
+            },
+            "number": {
+              "label": "Würfelanzahl des Grundschadens"
+            },
+            "scaling": {
+              "formula": {
+                "label": "Skalierungsformel des Grundschadens"
+              },
+              "mode": {
+                "label": "Skalierungsart des Grundschadens"
+              },
+              "number": {
+                "label": "Skalierungswert des Grundschadens"
+              }
+            },
+            "types": {
+              "label": "Schadensarten des Grundschadens"
+            }
+          },
+          "bonus": {
+            "label": "Schadensbonus"
           }
         },
         "magicalBonus": {
@@ -1510,7 +1748,8 @@
         "None": "Kein {type} verfügbar zum verbrauchen, {cost} benötigt",
         "NotEnough": "Nicht genug {type} verfügbar zum verbrauchen, {cost} benötigt und nur {available} verfügbar.",
         "WillDestroy": "Wenn Sie {item} benutzen, wird seine letzte Verwendung verbraucht und es wird zerstört."
-      }
+      },
+      "Empty": "Kein Verbrauch zugeordnet. Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben Verbrauchsziele hinzu."
     },
     "Consumed": "Verbraucht",
     "Copy": "Text kopieren",
@@ -1653,6 +1892,10 @@
               "types": {
                 "label": "Schadensarten",
                 "hint": "Art des zugefügten Schadens oder mehrere zur Auswahl für den Nutzer."
+              },
+              "modifiers": {
+                "label": "Modifikatoren",
+                "hint": "Wurfmodifikatoren, die dem Grundwürfel hinzugefügt werden."
               }
             }
           }
@@ -1694,7 +1937,9 @@
         "Radiant": "Gleißend",
         "Slashing": "Hieb",
         "Thunder": "Schall"
-      }
+      },
+      "Empty": "Kein Schaden eingerichtet. Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben Schadensteile hinzu.",
+      "EmptyExceptBase": "Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben weitere Schadensteile hinzu."
     },
     "DamImm": "Schadensimmunitäten",
     "DamMod": "Schadensmodifikation",
@@ -1710,12 +1955,25 @@
         "Threshold": "Schadensschwelle"
       },
       "Downgrading": "{source} runterstufen zu Resistenz",
-      "Ignoring": "Ignoriere {source}"
+      "Ignoring": "Ignoriere {source}",
+      "Back": "Zurück zur vorigen Ansicht",
+      "Multiplier": "Schadensmultiplikator",
+      "Section": {
+        "Changes": "Auf dieses Ziel angewendet",
+        "Targets": "Ziele in dieser Gruppe",
+        "Multiplier": "Multiplikator"
+      },
+      "State": {
+        "active": "Angewendet",
+        "downgrade": "Herabgestuft",
+        "ignore": "Ignoriert"
+      }
     },
     "DamageModification": {
       "Label": "Schadensmodifikation",
       "Hint": "Formeln für die Mengen, die zu dem typisierten Schaden, der auf diesen Akteur angewendet wird, addiert werden. Negative Werte verringern den erlittenen Schaden.",
-      "BypassHint": "Diese Waffeneigenschaften umgehen die Schadensmodifikation für physischen Schaden."
+      "BypassHint": "Diese Waffeneigenschaften umgehen die Schadensmodifikation für physischen Schaden.",
+      "Formatter": "Schadensmodifikation für {name}"
     },
     "DamageRoll": "Schadenswurf",
     "DamageThreshold": "Schadensgrenzwert",
@@ -1817,6 +2075,10 @@
           "value": {
             "label": "Dauer Wert",
             "hint": "Wert der Dauer in den angegebenen Einheiten, falls zutreffend."
+          },
+          "expiry": {
+            "label": "Ablaufereignis",
+            "hint": "Ereignis, mit dem die Anwendung endet."
           }
         }
       }
@@ -1834,14 +2096,177 @@
       "Action": {
         "Create": "Erstelle Effekt",
         "Delete": "Entferne Effekt",
-        "Dissociate": "Trenne Effekt"
+        "Dissociate": "Trenne Effekt",
+        "AddChange": "Änderung hinzufügen",
+        "CreateEffect": "Effekt erstellen",
+        "DeleteEffect": "Effekt löschen",
+        "DeleteChange": "Änderung löschen",
+        "EditChange": "Änderung bearbeiten",
+        "PanToToken": "Zum Token schwenken",
+        "RemoveStatus": {
+          "all": "Alle Quellen",
+          "label": "Quelle"
+        },
+        "Apply": "Anwenden",
+        "DisableEffect": "Effekt deaktivieren",
+        "DissociateEffect": "Trenne Effekt",
+        "EditEffect": "Effekt bearbeiten",
+        "EnableEffect": "Effekt aktivieren",
+        "Search": "Effekte durchsuchen"
       },
       "Empty": "Kein verbundener Effekt. Verwende den <i class=\"fas fa-plus\"></i> Knopf, um einen zu erstellen, oder wähle einen vorhandenen Effekt aus dem Dropdown-Menü aus.",
       "Label": "Verbundene Effekte",
       "RIDER": {
         "Activity": "Begleitaktivität der Verzauberung",
-        "Effect": "Begleiteffekt der Verzauberung"
-      }
+        "Effect": "Begleiteffekt der Verzauberung",
+        "FIELDS": {
+          "rider": {
+            "statuses": {
+              "hint": "Wenn dieser Aktive Effekt angewendet wird, werden diese zusätzlichen Zustände separat angewendet.",
+              "label": "Getrennte Zustandsbedingungen"
+            }
+          }
+        }
+      },
+      "AdditionalChanges": "Weitere Änderungen",
+      "AttributeKeyTooltip": "Eine Liste gängiger Schlüssel und ihrer erlaubten Werte steht im <a href=\"{url}\">Wiki</a>.",
+      "BASE": {
+        "FIELDS": {
+          "changes": {
+            "element": {
+              "conditions": {
+                "hint": "Bedingung, die erfüllt sein muss, damit diese Änderung gilt.",
+                "label": "Bedingungen der Änderung"
+              },
+              "key": {
+                "label": "Attributschlüssel"
+              },
+              "phase": {
+                "hint": "Der Zeitpunkt in der Datenaufbereitung oder ein anderes Ereignis, zu dem die Änderung angewendet wird.",
+                "label": "Phase"
+              },
+              "priority": {
+                "label": "Priorität"
+              },
+              "replacement": {
+                "label": "Ersetzung",
+                "hint": "Legt fest, ob Wurfdaten im Wert vor der Anwendung ersetzt werden und wessen Daten dafür dienen."
+              },
+              "type": {
+                "label": "Typ"
+              },
+              "value": {
+                "label": "Wert"
+              }
+            }
+          },
+          "conditions": {
+            "hint": "Bedingungen, die steuern, wann der Effekt angewendet wird.",
+            "label": "Bedingungen des Effekts"
+          },
+          "magical": {
+            "hint": "Dieser Effekt stammt aus einer magischen Quelle und sollte ausgeschaltet werden, wo keine Magie verfügbar ist.",
+            "label": "Magisch"
+          }
+        }
+      },
+      "Change": {
+        "Configuration": "Änderung einrichten",
+        "Group": {
+          "Rules": "Regeln",
+          "Standard": "Standard",
+          "Custom": "Benutzerdefiniert"
+        },
+        "Title": "{effect}: Änderung Nr. {number}",
+        "Type": {
+          "Bonus": {
+            "Label": "Bonus"
+          },
+          "Maximum": {
+            "Label": "Wurf-Höchstwert"
+          },
+          "Minimum": {
+            "Label": "Wurf-Mindestwert"
+          },
+          "Advantage": {
+            "Label": "Vorteilmodus"
+          }
+        },
+        "Label": "Ändern"
+      },
+      "DisabledTooltip": {
+        "Disabled": "Dieser Effekt ist in mindestens einer Aktivität seines Gegenstands ausgewählt und kann deshalb nicht ausgesetzt werden.",
+        "Transfer": "Dieser Effekt ist in mindestens einer Aktivität seines Gegenstands ausgewählt und kann deshalb nicht passiv auf den Akteur des Gegenstands wirken."
+      },
+      "DropHint": "Aktiven Effekt hier ablegen",
+      "Expired": "Abgelaufen",
+      "Expiry": {
+        "Abbreviation": {
+          "End": "Ende",
+          "Start": "Beginn"
+        },
+        "Group": {
+          "Specific": "Bestimmt",
+          "General": "Allgemein"
+        },
+        "Type": {
+          "LongRest": "Ende einer Langen Rast",
+          "ShortRest": "Ende einer Kurzen Rast",
+          "SourceEnd": "Ende des nächsten Zuges der Quelle",
+          "SourceStart": "Beginn des nächsten Zuges der Quelle",
+          "TargetEnd": "Ende des nächsten Zuges des Ziels",
+          "TargetStart": "Beginn des nächsten Zuges des Ziels",
+          "YourEnd": "Ende deines nächsten Zuges",
+          "YourStart": "Beginn deines nächsten Zuges"
+        }
+      },
+      "Replacement": {
+        "NoChange": "Keine Änderung",
+        "Origin": "Ursprung",
+        "Target": "Ziel"
+      },
+      "Status": {
+        "ChangeActive": "Änderung aktiv",
+        "ChangeInactive": "Änderung inaktiv",
+        "DeleteDialog": {
+          "hint": "Dieser Zustand wirkt aus mehr als einer Quelle auf dich. Wähle, welcher Effekt enden soll.",
+          "title": "Effekt entfernen"
+        },
+        "Inactive": "Inaktiv",
+        "Passive": "Passiv",
+        "Temporary": "Temporär",
+        "Unavailable": "Nicht verfügbar"
+      },
+      "Warning": {
+        "RollCondition": "Bedingungen eines Effekts dürfen nicht auf 'roll.'-Eigenschaften verweisen. Verschiebe diese Bedingung in die einzelnen Änderungen, damit der Effekt angewendet wird.",
+        "StatusCondition": "Effekte, die Zustände verleihen, dürfen nicht selbst von Zuständen abhängen. Verschiebe diese Bedingung in die einzelnen Änderungen, damit der Effekt angewendet wird."
+      },
+      "Application": {
+        "Action": {
+          "ApplyTokens": "Auf ausgewählte Token anwenden"
+        },
+        "Header": "Effekte",
+        "Warning": {
+          "Ownership": "Effekte können nicht auf Token angewandt werden, deren Besitzer man nicht ist."
+        }
+      },
+      "Category": {
+        "Temporary": "Temporäre Effekte",
+        "Passive": "Passive Effekte",
+        "Inactive": "Inaktive Effekte",
+        "Unavailable": "Nicht verfügbare Effekte"
+      },
+      "FIELDS": {
+        "statuses": {
+          "label": "Zustände",
+          "hint": "Solange dieser Aktive Effekt wirkt, wird das Ziel so behandelt, als hätte es diese zusätzlichen Zustände."
+        }
+      },
+      "New": "Neuer Effekt",
+      "Suppressed": {
+        "Hint": "Quellen-Item muss ausgerüstet oder eingestimmt sein, um diese zu aktivieren"
+      },
+      "Tab": "Effekte"
     },
     "EffectsApplyTokens": "Auf ausgewählte Token anwenden",
     "EffectApplyWarningConcentration": "Das Anwenden eines Effekts, auf den sich ein anderer Charakter konzentriert, erfordert die Erlaubnis des SLs.",
@@ -1916,7 +2341,8 @@
       "Enchantment": {
         "Action": {
           "Create": "Erstelle Verzauberung",
-          "Delete": "Entferne Verzauberung"
+          "Delete": "Entferne Verzauberung",
+          "Dissociate": "Verzauberung lösen"
         },
         "Empty": "Keine zugehörigen Verzauberungen. Verwende die Schaltfläche <i class=\"fas fa-plus\"></i> oben, um eine zu erstellen, oder wähle eine vorhandene Verzauberung aus dem Dropdown-Menü aus.",
         "Active": "{name} (aktiv)"
@@ -1963,6 +2389,10 @@
               "hint": "Wie oft können Verzauberungen dieser Art auf verschiedene Items übertragen werden?"
             }
           }
+        },
+        "magical": {
+          "hint": "Diese Verzauberung ist magisch und sollte ausgeschaltet werden, wo keine Magie verfügbar ist.",
+          "label": "Magisch"
         }
       },
       "Items": {
@@ -1978,6 +2408,11 @@
         "LongRest": "Lange Rast",
         "Never": "Niemals",
         "ShortRest": "Kurze Rast"
+      },
+      "Transfer": {
+        "DisabledTooltip": "Diese Verzauberung ist in mindestens einer Verzauberungsaktivität ihres Gegenstands ausgewählt und kann deshalb nicht direkt auf den Gegenstand wirken.",
+        "Hint": "Wenn aktiviert, wird diese Verzauberung direkt auf ihren übergeordneten Gegenstand angewendet.",
+        "Label": "Verzauberung auf den Gegenstand anwenden"
       }
     },
     "Environment": "Umgebung",
@@ -2062,7 +2497,8 @@
       },
       "Vehicle": {
         "Label": "Fahrzeugmerkmal"
-      }
+      },
+      "PietyTrait": "Frömmigkeitsmerkmal"
     },
     "Focus": {
       "Label": "Zauberfokus",
@@ -2140,6 +2576,10 @@
       "EnhancedDualWielding": {
         "Name": "Verbesserte Beidhändigkeit",
         "Hint": "Erlaube Bonusaktionen für zusätzliche Angriffe mit jeder Nahkampfwaffe ohne die Zweihändig Eigenschaft."
+      },
+      "IgnoreArmorSpeedReduction": {
+        "Name": "Verringerte Geschwindigkeit durch Rüstung ignorieren",
+        "Hint": "Ignoriert die verringerte Geschwindigkeit beim Tragen einer Rüstung, deren Stärkeanforderung nicht erfüllt ist."
       }
     },
     "FlagsInstructions": "Bearbeite Charaktermerkmale und Talente, die das Verhalten des D&D5e-Systems ändern.",
@@ -2165,7 +2605,7 @@
     "FlagsReliableTalent": "Verlässliches Talent",
     "FlagsReliableTalentHint": "Schurkenmerkmal Verlässliches Talent.",
     "FlagsRemarkableAthlete": "Bemerkenswerter Athlet.",
-    "FlagsRemarkableAthleteHint": "Halber Übungsbonus (aufgerundet) auf körperliche Fertigkeitswürfe und Initiative.",
+    "FlagsRemarkableAthleteHint": "Vorteil bei Initiativewürfen und Stärkewürfen (Athletik).",
     "FlagsWeaponCritThreshold": "Kritischer Treffer Schwellwert (Waffen)",
     "FlagsWeaponCritThresholdHint": "Erweiterter Schwellwert für kritische Treffer bei Angriffen mit Waffen.",
     "FlagsSpellCritThreshold": "Kritischer Treffer Schwellwert (Zauber)",
@@ -2498,16 +2938,20 @@
         "prerequisites": {
           "level": {
             "hint": "Charakter- oder Klassenstufe, die für die Auswahl dieses Merkmals beim Stufenaufstieg erforderlich ist.",
-            "label": "Benötigte Stufe"
+            "label": "Benötigte Stufe",
+            "display": "Stufe {level}+",
+            "displayLegacy": "{levelOrdinal} Stufe"
           },
           "items": {
             "hint": "Identifikatoren für Gegenstände, die der Charakter haben muss, bevor er diesen Gegenstand auswählt.",
-            "label": "Erforderliche Gegenstände"
+            "label": "Erforderliche Gegenstände",
+            "display": "{items}"
           },
           "label": "Voraussetzungen",
           "repeatable": {
             "hint": "Dieses Merkmal kann mehr als einmal gewählt werden.",
-            "label": "Wiederholbar"
+            "label": "Wiederholbar",
+            "display": "Noch nicht gewählt"
           }
         }
       },
@@ -2516,6 +2960,11 @@
         "Message": "{actor} {requirements}, um diese/diesen {type} zu wählen.",
         "MissingItem": "muss {items} zuvor gewählt haben",
         "NotRepeatable": "darf {name} nicht zuvor gewählt haben"
+      },
+      "Status": {
+        "Invalid": "Voraussetzungen nicht erfüllt",
+        "Unknown": "Prüfung der Voraussetzungen unvollständig",
+        "Valid": "Voraussetzungen erfüllt"
       }
     },
     "Price": "Preis",
@@ -2600,7 +3049,220 @@
         "Minimum": "Minimaler Wurf"
       },
       "Section": "{label} Würfe",
-      "Status": "Status"
+      "Status": "Status",
+      "Bonus": "Wurfbonus",
+      "Description": {
+        "ability": "Attribut des Wurfs",
+        "attack": {
+          "type": "Angriffsart",
+          "classification": "Angriffsklassifizierung",
+          "mode": "Angriffsmodus"
+        },
+        "skill": "Gewürfelte Fertigkeit",
+        "tool": "Verwendetes Werkzeug",
+        "type": "Wurfart",
+        "damage": {
+          "type": "Schadensart"
+        },
+        "proficient": "Geübt"
+      },
+      "FIELDS": {
+        "rolls": {
+          "ability": {
+            "check": {
+              "max": {
+                "label": "Höchster Attributswurf (global)"
+              },
+              "min": {
+                "label": "Niedrigster Attributswurf (global)"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Attributswürfe (global)"
+              },
+              "proficiency": {
+                "label": "Übung in Attributswürfen (global)"
+              },
+              "bonus": {
+                "label": "Globaler Attributswurf-Bonus"
+              }
+            },
+            "label": "Anpassung von Attributswürfen",
+            "save": {
+              "bonus": {
+                "label": "Rettungswurfbonus (global)"
+              },
+              "max": {
+                "label": "Höchster Rettungswurf (global)"
+              },
+              "min": {
+                "label": "Niedrigster Rettungswurf (global)"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Rettungswürfe (global)"
+              },
+              "proficiency": {
+                "label": "Übung in Rettungswürfen (global)"
+              }
+            },
+            "skill": {
+              "max": {
+                "label": "Höchster Fertigkeitswurf (global)"
+              },
+              "min": {
+                "label": "Niedrigster Fertigkeitswurf (global)"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Fertigkeitswürfe (global)"
+              },
+              "proficiency": {
+                "label": "Übung in Fertigkeitswürfen (global)"
+              },
+              "bonus": {
+                "label": "Globaler Fertigkeitswurf-Bonus"
+              }
+            },
+            "tool": {
+              "bonus": {
+                "label": "Werkzeugwurfbonus (global)"
+              },
+              "max": {
+                "label": "Höchster Werkzeugwurf (global)"
+              },
+              "min": {
+                "label": "Niedrigster Werkzeugwurf (global)"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Werkzeugwürfe (global)"
+              },
+              "proficiency": {
+                "label": "Übung in Werkzeugwürfen (global)"
+              }
+            }
+          },
+          "attack": {
+            "bonus": {
+              "label": "Angriffsbonus (global)"
+            },
+            "label": "Anpassung von Angriffswürfen",
+            "max": {
+              "label": "Höchster Angriffswurf (global)"
+            },
+            "min": {
+              "label": "Niedrigster Angriffswurf (global)"
+            },
+            "mode": {
+              "label": "Vorteilmodus für Angriffe (global)"
+            },
+            "msak": {
+              "max": {
+                "label": "Höchster Wurf für Nahkampfzauberangriffe"
+              },
+              "min": {
+                "label": "Niedrigster Wurf für Nahkampfzauberangriffe"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Nahkampfzauberangriffe"
+              },
+              "bonus": {
+                "label": "Nahkampf-Zauberangriffsbonus"
+              }
+            },
+            "mwak": {
+              "max": {
+                "label": "Höchster Wurf für Nahkampfwaffenangriffe"
+              },
+              "min": {
+                "label": "Niedrigster Wurf für Nahkampfwaffenangriffe"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Nahkampfwaffenangriffe"
+              },
+              "bonus": {
+                "label": "Nahkampfwaffenangriffsbonus"
+              }
+            },
+            "rsak": {
+              "max": {
+                "label": "Höchster Wurf für Fernkampfzauberangriffe"
+              },
+              "min": {
+                "label": "Niedrigster Wurf für Fernkampfzauberangriffe"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Fernkampfzauberangriffe"
+              },
+              "bonus": {
+                "label": "Fernkampf-Zauberangriffsbonus"
+              }
+            },
+            "rwak": {
+              "max": {
+                "label": "Höchster Wurf für Fernkampfwaffenangriffe"
+              },
+              "min": {
+                "label": "Niedrigster Wurf für Fernkampfwaffenangriffe"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Fernkampfwaffenangriffe"
+              },
+              "bonus": {
+                "label": "Fernkampf-Waffenangriffsbonus"
+              }
+            }
+          },
+          "damage": {
+            "label": "Anpassung von Schadenswürfen",
+            "msak": {
+              "bonus": {
+                "label": "Schadensbonus für Nahkampfzauberangriffe"
+              }
+            },
+            "mwak": {
+              "bonus": {
+                "label": "Schadensbonus für Nahkampfwaffenangriffe"
+              }
+            },
+            "rsak": {
+              "bonus": {
+                "label": "Schadensbonus für Fernkampfzauberangriffe"
+              }
+            },
+            "rwak": {
+              "bonus": {
+                "label": "Schadensbonus für Fernkampfwaffenangriffe"
+              }
+            }
+          }
+        }
+      },
+      "Formatter": {
+        "AdvantageMode": "Vorteilmodus für {name}",
+        "Bonus": "Wurfbonus für {name}",
+        "Maximum": "Höchster Wurf für {name}",
+        "Minimum": "Niedrigster Wurf für {name}",
+        "ModifierAbility": "Attribut für den Modifikator von {name}"
+      },
+      "Generic": {
+        "D20": {
+          "bonus": {
+            "label": "Wurfbonus"
+          },
+          "max": {
+            "label": "Maximaler Wurf"
+          },
+          "min": {
+            "label": "Minimaler Wurf"
+          },
+          "mode": {
+            "label": "Vorteilmodus"
+          }
+        },
+        "Damage": {
+          "bonus": {
+            "label": "Schadensbonus"
+          }
+        }
+      }
     },
     "Roll": "Wurf",
     "RollConfiguration": {
@@ -2659,7 +3321,18 @@
               "hint": "Eigene Formel oder fester Wert zur Definition Rettungs-SG."
             },
             "CustomFormula": "Eigene Formel",
-            "DefaultFormula": "8 + @mod + @prof"
+            "DefaultFormula": "8 + @mod + @prof",
+            "bonus": {
+              "label": "SG-Bonus"
+            }
+          },
+          "bonus": {
+            "label": "Rettungswurfbonus",
+            "hint": "Bonus auf alle Rettungswürfe, die mit dieser Aktivität gemacht werden."
+          },
+          "visible": {
+            "label": "Sichtbar für Alle",
+            "hint": "Soll der Wurfknopf für alle Spieler sichtbar sein?"
           }
         }
       },
@@ -2739,6 +3412,31 @@
           "Label": "Globale Boni",
           "Hint": "Diese Boni gelten für Würfe mit einer beliebigen Fertigkeit."
         }
+      },
+      "FIELDS": {
+        "skills": {
+          "element": {
+            "roll": {
+              "bonus": {
+                "label": "Fertigkeitswurfbonus"
+              },
+              "max": {
+                "label": "Höchster Fertigkeitswurf"
+              },
+              "min": {
+                "label": "Niedrigster Fertigkeitswurf"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Fertigkeitswürfe"
+              }
+            }
+          }
+        }
+      },
+      "Formatter": {
+        "CheckBonus": "Wurfbonus auf {name}",
+        "PassiveBonus": "Bonus auf den Passivwert von {name}",
+        "Proficiency": "Übung in {name}"
       }
     },
     "Skill": "Fertigkeit",
@@ -3068,6 +3766,14 @@
         "tempHP": {
           "label": "Temporäre TP",
           "hint": "Gewährt der beschworenen Kreatur temporäre TP und ersetzt alle vorhandenen temporären TP."
+        },
+        "flat": {
+          "attack": {
+            "label": "Fester Angriffsbonus"
+          },
+          "save": {
+            "label": "Fester Rettungswurf-SG"
+          }
         }
       },
       "Action": {
@@ -3103,7 +3809,8 @@
       "Warning": {
         "NoOwnership": "Du musst Eigentümer von '{Akteur}' sein, um ihn beschwören zu können.",
         "NoProfile": "Das Beschwörungsprofil {profileId} für '{item}' konnte nicht gefunden werden.",
-        "Wildcard": "Sie müssen über die Berechtigung 'Dateien durchsuchen' verfügen, um Kreaturen mit Platzhalterbildern zu beschwören."
+        "Wildcard": "Sie müssen über die Berechtigung 'Dateien durchsuchen' verfügen, um Kreaturen mit Platzhalterbildern zu beschwören.",
+        "PlaceTokens": "Die beschworenen Kreaturen konnten nicht in der Szene platziert werden."
       },
       "Hint": "Beschwört eine neue Kreatur auf die Szene."
     },
@@ -3198,8 +3905,8 @@
             "any": "beliebige Verbündete",
             "each": "jeder Verbündete",
             "every": "jeder Verbündete",
-            "one": "{number} Verbündeter",
-            "other": "{number} Verbündete"
+            "one": "Verbündeter",
+            "other": "Verbündete"
           }
         },
         "Any": {
@@ -3208,8 +3915,8 @@
         "Circle": {
           "Label": "Kreis",
           "Counted": {
-            "one": "{number} Kreis",
-            "other": "{number} Kreise",
+            "one": "Kreis",
+            "other": "Kreise",
             "oneSized": "{sizes} Kreis",
             "otherSized": "{number} {sizes} Kreise"
           }
@@ -3217,8 +3924,8 @@
         "Cone": {
           "Label": "Kegel",
           "Counted": {
-            "one": "{number} Kegel",
-            "other": "{number} Kegel",
+            "one": "Kegel",
+            "other": "Kegel",
             "oneSized": "{sizes} Kegel",
             "otherSized": "{number} {sizes} Kegel"
           }
@@ -3229,8 +3936,8 @@
             "any": "beliebige Kreaturen",
             "each": "jede Kreatur",
             "every": "jede Kreatur",
-            "one": "{number} Kreatur",
-            "other": "{number} Kreaturen"
+            "one": "Kreatur",
+            "other": "Kreaturen"
           }
         },
         "CreatureOrObject": {
@@ -3239,15 +3946,15 @@
             "any": "beliebige Kreaturen oder Objekte",
             "each": "jede Kreatur oder jedes Objekt",
             "every": "jede Kreatur oder jedes Objekt",
-            "one": "{number} Kreatur oder Objekt",
-            "other": "{number} Kreaturen oder Objekte"
+            "one": "Kreatur oder Objekt",
+            "other": "Kreaturen oder Objekte"
           }
         },
         "Cube": {
           "Label": "Würfel",
           "Counted": {
-            "one": "{number} Würfel",
-            "other": "{number} Würfel",
+            "one": "Würfel",
+            "other": "Würfel",
             "oneSized": "{sizes} Würfel",
             "otherSized": "{number} {sizes} Würfel"
           }
@@ -3255,8 +3962,8 @@
         "Cylinder": {
           "Label": "Zylinder",
           "Counted": {
-            "one": "{number} Zylinder",
-            "other": "{number} Zylinder",
+            "one": "Zylinder",
+            "other": "Zylinder",
             "oneSized": "{sizes} Zylinder",
             "otherSized": "{number} {sizes} Zylinder"
           }
@@ -3264,8 +3971,8 @@
         "Emanation": {
           "Label": "Ausströmung",
           "Counted": {
-            "one": "{number} Ausströmung",
-            "other": "{number} Ausströmungen",
+            "one": "Ausströmung",
+            "other": "Ausströmungen",
             "oneSized": "{sizes} Ausströmung",
             "otherSized": "{number} {sizes} Ausströmungen"
           }
@@ -3276,15 +3983,15 @@
             "any": "beliebige Gegner",
             "each": "jeder Gegner",
             "every": "jeder Gegner",
-            "one": "{number} Gegner",
-            "other": "{number} Gegner"
+            "one": "Gegner",
+            "other": "Gegner"
           }
         },
         "Line": {
           "Label": "Linie",
           "Counted": {
-            "one": "{number} Linie",
-            "other": "{number} Linien",
+            "one": "Linie",
+            "other": "Linien",
             "oneSized": "{sizes} Linie",
             "otherSized": "{number} {sizes} Linien"
           }
@@ -3295,15 +4002,15 @@
             "any": "beliebige Objekte",
             "each": "jedes Objekt",
             "every": "jedes Objekt",
-            "one": "{number} Objekt",
-            "other": "{number} Objekte"
+            "one": "Objekt",
+            "other": "Objekte"
           }
         },
         "Radius": {
           "Label": "Radius",
           "Counted": {
-            "one": "{number} Radius",
-            "other": "{number} Radien",
+            "one": "Radius",
+            "other": "Radien",
             "oneSized": "{sizes} Radius",
             "otherSized": "{number} {sizes} Radien"
           }
@@ -3317,15 +4024,15 @@
             "any": "beliebige Felder",
             "each": "jedes Feld",
             "every": "jedes Feld",
-            "one": "{number} Feld",
-            "other": "{number} Felder"
+            "one": "Feld",
+            "other": "Felder"
           }
         },
         "Sphere": {
           "Label": "Kugel",
           "Counted": {
-            "one": "{number} Kugel",
-            "other": "{number} Kugeln",
+            "one": "Kugel",
+            "other": "Kugeln",
             "oneSized": "{sizes} Kugel",
             "otherSized": "{number} {sizes} Kugeln"
           }
@@ -3336,15 +4043,15 @@
             "any": "beliebige {special}",
             "each": "jedes {special}",
             "every": "alle {special}",
-            "one": "{number} {special}",
-            "other": "{number} {special}"
+            "one": "{special}",
+            "other": "{special}"
           }
         },
         "Square": {
           "Label": "Quadrat",
           "Counted": {
-            "one": "{number} Quadrat",
-            "other": "{number} Quadrate",
+            "one": "Quadrat",
+            "other": "Quadrate",
             "oneSized": "{sizes} Quadrat",
             "otherSized": "{number} {sizes} Felder"
           }
@@ -3355,15 +4062,15 @@
             "any": "beliebige Ziele",
             "each": "jedes Ziel",
             "every": "alle Ziele",
-            "one": "{number} Ziel",
-            "other": "{number} Ziele"
+            "one": "Ziel",
+            "other": "Ziele"
           }
         },
         "Wall": {
           "Label": "Mauer",
           "Counted": {
-            "one": "{number} Mauer",
-            "other": "{number} Mauern",
+            "one": "Mauer",
+            "other": "Mauern",
             "oneSized": "{sizes} Wand",
             "otherSized": "{number} {sizes} Wände"
           }
@@ -3374,8 +4081,17 @@
             "any": "beliebige willige Geschöpfe",
             "each": "jedes willige Geschöpf",
             "every": "jede willige Kreatur",
-            "one": "{number} willige Kreatur",
-            "other": "{number} willige Kreaturen"
+            "one": "willige Kreatur",
+            "other": "willige Kreaturen"
+          }
+        },
+        "Ring": {
+          "Label": "Ring",
+          "Counted": {
+            "one": "Ring",
+            "other": "Ringe",
+            "oneSized": "{sizes} Ring",
+            "otherSized": "{number} {sizes} Ringe"
           }
         }
       }
@@ -3412,7 +4128,8 @@
       "NoneSelected": "Kein Token ausgewählt",
       "NoneTargeted": "Kein Token anvisiert",
       "Selected": "Ausgewählt",
-      "Targeted": "Anvisiert"
+      "Targeted": "Anvisiert",
+      "NoTargets": "Keine Ziele"
     },
     "ToggleDescription": "Beschreibung umschalten",
     "TOOL": {
@@ -3426,6 +4143,30 @@
           "Label": "Globale Boni",
           "Hint": "Diese Boni gelten für Würfe mit einem beliebigen Werkzeug."
         }
+      },
+      "FIELDS": {
+        "tools": {
+          "element": {
+            "roll": {
+              "bonus": {
+                "label": "Werkzeugwurfbonus"
+              },
+              "max": {
+                "label": "Höchster Werkzeugwurf"
+              },
+              "min": {
+                "label": "Niedrigster Werkzeugwurf"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Werkzeugwürfe"
+              }
+            }
+          }
+        }
+      },
+      "Formatter": {
+        "CheckBonus": "Wurfbonus auf {name}",
+        "Proficiency": "Übung mit {name}"
       }
     },
     "ToolArtisans": "Handwerkerausrüstung",
@@ -3621,7 +4362,8 @@
           }
         },
         "Special": "Spezial",
-        "Time": "Zeit"
+        "Time": "Zeit",
+        "Empty": "Keine Erholung festgelegt. Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben Erholungszeiträume hinzu."
       }
     },
     "UTILITY": {
@@ -3667,7 +4409,43 @@
           }
         },
         "damage": {
-          "hint": "Würfel für intrinsische Schäden der Waffe. Modifikatoren für Attribute und zusätzliche Schadensbestandteile werden beim Angriff automatisch bereitgestellt."
+          "hint": "Würfel für intrinsische Schäden der Waffe. Modifikatoren für Attribute und zusätzliche Schadensbestandteile werden beim Angriff automatisch bereitgestellt.",
+          "base": {
+            "bonus": {
+              "label": "Grundschadensbonus"
+            },
+            "custom": {
+              "enabled": {
+                "label": "Eigene Formel für den Grundschaden verwenden"
+              },
+              "formula": {
+                "label": "Eigene Formel für den Grundschaden"
+              }
+            },
+            "denomination": {
+              "label": "Würfelart des Grundschadens"
+            },
+            "number": {
+              "label": "Würfelanzahl des Grundschadens"
+            },
+            "scaling": {
+              "formula": {
+                "label": "Skalierungsformel des Grundschadens"
+              },
+              "mode": {
+                "label": "Skalierungsart des Grundschadens"
+              },
+              "number": {
+                "label": "Skalierungswert des Grundschadens"
+              }
+            },
+            "types": {
+              "label": "Schadensarten des Grundschadens"
+            }
+          },
+          "bonus": {
+            "label": "Schadensbonus"
+          }
         },
         "mastery": {
           "label": "Meisterschaft",
@@ -3730,7 +4508,9 @@
     },
     "Bastion": {
       "Action": {
-        "BastionTurn": "Bastionszug vorrücken"
+        "BastionTurn": "Bastionszug vorrücken",
+        "Maintain": "Bastion warten",
+        "Advance": "Bastionszug vorrücken"
       },
       "Attack": {
         "Automatic": "Automatisch auflösen",
@@ -3757,7 +4537,10 @@
         "Label": "Bastionen konfigurieren",
         "Hint": "Verschiedene Konfigurationsoptionen für das Bastion-System, wie im DMG 2024 vorgestellt."
       },
-      "Confirm": "Einen Bastionszug vorantreiben?",
+      "Confirm": {
+        "Advance": "Dadurch schreitet der Fortschritt aller Aufträge der Bastionseinrichtungen um {duration} voran. Alle untätigen Einrichtungen erhalten den Auftrag Warten, und ausgefallene Einrichtungen werden repariert. Möchtest du fortfahren?",
+        "Maintain": "Dadurch erhalten alle untätigen Bastionseinrichtungen den Auftrag Warten, und ausgefallene Einrichtungen werden repariert. Möchtest du fortfahren?"
+      },
       "Duration": {
         "Label": "Bastion-Zugdauer (Tage)"
       },
@@ -3780,6 +4563,28 @@
         "Cancel": "Ausstehenden Handel abbrechen",
         "Invalid": "Das Entfernen eines ausstehenden Handels macht deine Handelsbestellung ungültig.",
         "Pending": "Ausstehender Handel"
+      },
+      "FIELDS": {
+        "reminder": {
+          "hint": "Zeigt im Chat eine Erinnerung an, wenn nach der vergangenen Zeit die nächste Bastionsrunde ansteht.",
+          "label": "Automatische Rundenerinnerung"
+        },
+        "button": {
+          "hint": "Zeigt eine Schaltfläche zum Vorantreiben von Bastionszügen in der Hauptspieloberfläche an.",
+          "label": "Bastionszug-Schaltfläche anzeigen"
+        },
+        "duration": {
+          "label": "Bastion-Zugdauer (Tage)"
+        },
+        "enabled": {
+          "hint": "Wenn aktiviert, erhalten Spielercharaktere Zugriff auf einen neuen Bastion-Reiter auf ihren Charakterbögen, wenn sie Stufe 5 erreichen, und können Einrichtungen bauen und ihnen Befehle erteilen.",
+          "label": "Bastion-Funktionalität aktivieren"
+        }
+      },
+      "Reminder": {
+        "Elapsed": "Seit der letzten Bastionsrunde sind {time} vergangen.",
+        "Triggered": "Eine Bastionsrunde hat stattgefunden.",
+        "Unknown": "Seit der letzten Bastionsrunde ist einige Zeit vergangen."
       }
     },
     "BONUSES": {
@@ -3884,6 +4689,13 @@
         },
         "visible": {
           "label": "Kalender-HUD anzeigen"
+        },
+        "dailyRecovery": {
+          "calendar": "Über den Kalender (durch vergehende Zeit)",
+          "default": "Standard (folgt der Kalendereinstellung)",
+          "hint": "Legt fest, ob sich begrenzte Anwendungen mit täglicher Erholung, Erholung bei Tagesanbruch oder in der Abenddämmerung über den Weltkalender erholen oder über den Rastdialog.",
+          "label": "Tägliche Erholung",
+          "manual": "Von Hand (über den Rastdialog)"
         }
       },
       "Formatters": {
@@ -4063,6 +4875,17 @@
           "Autumn": "Herbst",
           "Winter": "Winter"
         }
+      },
+      "TimePassage": {
+        "Midnight": "Ein neuer Tag hat begonnen.",
+        "Sunrise": "Die Sonne ist aufgegangen.",
+        "Sunset": "Die Sonne ist untergegangen.",
+        "SunsetSunrise": "Die Sonne ist untergegangen, und ein neuer Tag bricht an.",
+        "TimePassed": {
+          "one": "{number} ist vergangen.",
+          "other": "{number} sind vergangen."
+        },
+        "Title": "Vergehende Zeit"
       }
     },
     "ITEM": {
@@ -4097,7 +4920,8 @@
         "TwoHanded": "Zweihändig",
         "Versatile": "Vielseitig",
         "Verbal": "Verbal",
-        "WeightlessContents": "Gewichtslose Inhalte"
+        "WeightlessContents": "Gewichtslose Inhalte",
+        "UnidentifiedContents": "Nicht identifizierten Inhalt verbergen"
       },
       "SECTIONS": {
         "Activities": "Aktivitäten",
@@ -4106,6 +4930,16 @@
         "Description": "Beschreibung",
         "Details": "Details",
         "Effects": "Effekte"
+      },
+      "Rarity": {
+        "Artifact": "Artefakt",
+        "Legendary": "Legendär",
+        "Mundane": "Nicht magisch",
+        "Rare": "Selten",
+        "Uncommon": "Ungewöhnlich",
+        "Varies": "Variiert",
+        "VeryRare": "Sehr selten",
+        "Common": "Gemeinsprache"
       }
     },
     "REST": {
@@ -4171,6 +5005,11 @@
       },
       "Warning": {
         "OnlyByRequest": "Rasten können nur auf Anfrage des Spielleiters durchgeführt werden."
+      },
+      "Duration": {
+        "Hint": "Zeit, die während der Rast vergeht.",
+        "UntilSunrise": "Bis Sonnenaufgang rasten",
+        "Label": "Dauer"
       }
     },
     "SheetClass": {
@@ -4190,7 +5029,9 @@
       "Rule": "D&D 5e Regel-Blatt",
       "SpellList": "D&D 5e Zauberlisten-Blatt",
       "Token": "D&D 5e Token-Blatt",
-      "Vehicle": "D&D 5e Fahrzeug-Blatt"
+      "Vehicle": "D&D 5e Fahrzeug-Blatt",
+      "ActiveEffect": "D&D-5e-Bogen für Aktive Effekte",
+      "AdventureImporter": "D&D-5e-Abenteuerimport"
     },
     "SPELLCASTING": {
       "METHODS": {
@@ -4587,6 +5428,10 @@
         "properties": {
           "label": "Behältereigenschaften"
         }
+      },
+      "UnidentifiedContentsWarning": {
+        "Title": "Nicht identifizierter Behälter",
+        "Message": "Dieser Behälter ist nicht identifiziert. Alles, was du hineinlegst, bleibt verborgen, bis er identifiziert ist. Fortfahren?"
       }
     },
     "Challenge": "Herausforderung",
@@ -4599,13 +5444,40 @@
       },
       "REQUEST": {
         "Action": {
-          "Handle": "Anfrage bearbeiten"
+          "Handle": "Anfrage bearbeiten",
+          "Post": "Anfrage senden"
         },
         "Complete": "Anfrage erfüllt",
-        "PartyMembers": "Gruppenmitglieder"
+        "PartyMembers": "Gruppenmitglieder",
+        "AnyOwner": "Beliebiger Besitzer",
+        "Title": "Anfrage"
       },
       "TURN": {
         "NoCombatant": "Der Kämpfer existiert nicht mehr!"
+      },
+      "Action": {
+        "SelectAll": "Alle Ergebnisse auswählen",
+        "SelectFailure": "Fehlschläge auswählen",
+        "SelectSuccess": "Erfolge auswählen"
+      },
+      "Button": {
+        "rollFormula": "Würfeln",
+        "rollAttack": "Angriff",
+        "rollCheck": "Attributswurf",
+        "rollDamage": "Schaden",
+        "rollSave": "Rettungswurf"
+      },
+      "Row": {
+        "Actions": "Gegenstandsaktionen",
+        "Properties": "Gegenstandseigenschaften",
+        "Roll": "Würfelwurf",
+        "rollCheck": "Attributswürfe",
+        "rollSave": "Rettungswürfe",
+        "Items": "Gegenstände",
+        "Targets": "Ziele"
+      },
+      "Targets": {
+        "Count": "{number}× {name}"
       }
     },
     "COMBAT": {
@@ -4694,7 +5566,8 @@
           "Label": "Basisgegenstand kaufen",
           "Hint": "Wenn ausgewählt, wird der Basisgegenstand zum vollen Preis gekauft, anstatt hergestellt zu werden."
         },
-        "Hint": "Die Gegenstände, die diese Einrichtung derzeit herstellt oder erntet, falls vorhanden."
+        "Hint": "Die Gegenstände, die diese Einrichtung derzeit herstellt oder erntet, falls vorhanden.",
+        "DropHint": "Gegenstand hier ablegen"
       },
       "Description": "Beschreibung",
       "FIELDS": {
@@ -4844,11 +5717,11 @@
           "Supplement": "Kaufen"
         },
         "Creatures": {
-          "Buy": "Ziehe Tiere, die du kaufen möchtest, in die Felder oben, und aktualisiere die Kosten entsprechend unten."
+          "Buy": "Ziehe Tiere, die du kaufen möchtest, in die Felder oben. Die Kosten ergeben sich aus ihren Einzelpreisen und lassen sich unten anpassen."
         },
         "Price": {
           "Label": "Grundpreis",
-          "Hint": "Wählen Sie aus, welchen Bestand Sie verkaufen möchten, und geben Sie den Grundpreis oben ein."
+          "Hint": "Wähle, welchen Bestand du verkaufen möchtest. Der Grundpreis ergibt sich aus den Einzelpreisen und lässt sich oben anpassen."
         },
         "Sell": {
           "Label": "Lagerbestand verkaufen",
@@ -4860,7 +5733,8 @@
         },
         "Stocked": {
           "Label": "Voller Bestand",
-          "Hint": "Geben Sie die erforderlichen Kosten ein, um diese Einrichtung vollständig zu bestücken."
+          "Hint": "Geben Sie die erforderlichen Kosten ein, um diese Einrichtung vollständig zu bestücken.",
+          "Supplement": "Voll bestückt"
         }
       },
       "Types": {
@@ -4930,6 +5804,19 @@
         },
         "type": {
           "label": "Merkmalstyp"
+        },
+        "enchant": {
+          "label": "Verzauberung Konfiguration",
+          "items": {
+            "max": {
+              "label": "Item Grenze",
+              "hint": "Formel für die maximale Anzahl von Verzauberungen dieser Art, die gleichzeitig aktiv sein können."
+            },
+            "period": {
+              "label": "Ersatz Periode",
+              "hint": "Wie oft können Verzauberungen dieser Art auf verschiedene Items übertragen werden?"
+            }
+          }
         }
       }
     },
@@ -4979,6 +5866,9 @@
       },
       "Other": {
         "label": "Weitere Optionen"
+      },
+      "Bloodied": {
+        "label": "Schwelle für blutig"
       }
     },
     "ItemFacilityDetails": "Einrichtungsdetails",
@@ -5243,6 +6133,26 @@
         "Warning": {
           "RecursiveRegion": "Kann dieselbe Region nicht drehen, die das Verhalten enthält."
         }
+      },
+      "APPLYACTIVEEFFECT": {
+        "FIELDS": {
+          "dispositions": {
+            "hint": "Wenn gesetzt, gelten die Effekte nur für Tokens mit dieser Haltung.",
+            "label": "Haltungen"
+          },
+          "effects": {
+            "hint": "Die Effekte, die auf Tokens in der Region angewendet werden.",
+            "label": "Effekte"
+          },
+          "sizes": {
+            "hint": "Wenn gesetzt, gelten die Effekte nur für Tokens dieser Größen.",
+            "label": "Größen"
+          },
+          "types": {
+            "hint": "Wenn gesetzt, gelten die Effekte nur für Tokens dieser Kreaturentypen.",
+            "label": "Typen"
+          }
+        }
       }
     },
     "Remaining": "Verbleibend",
@@ -5265,6 +6175,9 @@
         },
         "units": {
           "label": "Einheit"
+        },
+        "multiplier": {
+          "label": "Bewegungsmultiplikator"
         }
       },
       "Hover": "Schweben",
@@ -5365,12 +6278,17 @@
           },
           "mode": {
             "label": "Modus",
-            "hint": "Legt fest, wie die Quellkreaturen der Verwandlung ausgewählt werden.",
-            "CR": "Nach Herausforderungsgrad",
-            "Direct": "Per Direktlink"
+            "hint": "Legt fest, wie die Änderungen der Verwandlung bestimmt werden.",
+            "CR": "Kreaturenwerte (nach Herausforderungsgrad)",
+            "Direct": "Kreaturenwerte (per Direktlink)",
+            "Form": "Gestalt wählen"
           },
           "preset": {
             "label": "Voreinstellung"
+          },
+          "formless": {
+            "hint": "Erlaubt der Kreatur, alle Gestalten abzulegen und in ihren Grundzustand zurückzukehren.",
+            "label": "Gestaltlos"
           }
         }
       },
@@ -5536,7 +6454,8 @@
         "NoPermission": "Spielern wurde keine Transformationsberechtigung erteilt.",
         "OriginalActor": "Kein ursprünglicher Akteur wurde mit der ID '{reference}' gefunden.",
         "SourceActor": "Kein Akteur zur Transformation gefunden."
-      }
+      },
+      "NoForm": "Keine Gestalt"
     },
     "TRAVEL": {
       "FIELDS": {
@@ -5584,7 +6503,524 @@
         "Title": "Schatz konfigurieren"
       }
     },
-    "Unit": "Einheit"
+    "Unit": "Einheit",
+    "ADVENTURE": {
+      "Finished": {
+        "one": "{adventure} ist vorbereitet.",
+        "other": "{number} Abenteuer sind vorbereitet."
+      },
+      "ImportAction": {
+        "ActivateScene": "Startszene aktivieren",
+        "CustomizeWorld": "Weltdetails anpassen",
+        "DisplayJournal": "Einstiegsjournal anzeigen"
+      },
+      "Options": "Abenteueroptionen",
+      "Warning": {
+        "JournalMissing": "Der Journaleintrag `{id}` für {adventure} wurde nicht gefunden.",
+        "SceneMissing": "Die Szene `{id}` für {adventure} wurde nicht gefunden und kann nicht aktiviert werden."
+      }
+    },
+    "AttributeScores": "Attributswerte",
+    "ARMORCLASS": {
+      "Action": {
+        "CreateFormula": "Eigene Formel erstellen",
+        "DeleteFormula": "Eigene Formel löschen",
+        "Configure": "Rüstung bearbeiten"
+      },
+      "Condition": {
+        "Positive": "Mit {type}",
+        "Negative": "Ohne {type}"
+      },
+      "CurrentFormula": "Aktuelle Formel",
+      "CustomFormulas": {
+        "Empty": "Keine eigenen Formeln. Erstelle eine mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben."
+      },
+      "FIELDS": {
+        "attributes": {
+          "ac": {
+            "armor": {
+              "label": "Wert der angelegten Rüstung"
+            },
+            "base": {
+              "label": "Grundrüstungsklasse"
+            },
+            "bonus": {
+              "label": "RK-Bonus"
+            },
+            "calc": {
+              "label": "Berechnungsart der RK"
+            },
+            "calcs": {
+              "hint": "Diese Formeln werden zur Berechnung der Rüstungsklasse verwendet.",
+              "label": "Gewählte Formeln"
+            },
+            "cover": {
+              "label": "RK durch Deckung"
+            },
+            "flat": {
+              "hint": "Zahl, die über @attributes.ac.flat in einer Formel für die Rüstungsklasse verwendet werden kann.",
+              "label": "Fester Wert"
+            },
+            "formula": {
+              "label": "Zusätzliche RK-Formel"
+            },
+            "formulas": {
+              "element": {
+                "armored": {
+                  "excluded": "Ohne Rüstung",
+                  "label": "Mit Rüstung",
+                  "required": "Rüstung erforderlich"
+                },
+                "shielded": {
+                  "excluded": "Ohne Schild",
+                  "label": "Mit Schild",
+                  "required": "Schild erforderlich"
+                },
+                "formula": {
+                  "label": "Formel"
+                },
+                "label": {
+                  "label": "Name"
+                }
+              },
+              "label": "RK-Formeln"
+            },
+            "override": {
+              "hint": "Wert, der statt der berechneten Rüstungsklasse verwendet wird. Deckung, Schild und alle anderen Boni werden dabei ignoriert.",
+              "label": "Überschreiben"
+            },
+            "shield": {
+              "label": "Wert des angelegten Schilds"
+            },
+            "label": "Rüstungsklasse",
+            "min": {
+              "label": "Mindest-Rüstungsklasse"
+            }
+          }
+        }
+      },
+      "Flat": "Fest",
+      "Calculation": {
+        "Armored": "Angelegte Rüstung",
+        "Custom": "Benutzerdefiniert",
+        "Draconic": "Drakonische Widerstandskraft",
+        "Label": "Berechnung",
+        "Mage": "Magierrüstung",
+        "Natural": "Natürliche Rüstung",
+        "Unarmored": "Ungerüstet",
+        "UnarmoredBarbarian": "Ungerüstete Verteidigung (Barbar)",
+        "UnarmoredBard": "Ungerüstete Verteidigung (Barde)",
+        "UnarmoredMonk": "Ungerüstete Verteidigung (Mönch)"
+      },
+      "Configuration": "Konfiguration",
+      "Formula": "Formel"
+    },
+    "BaseItem": "Grundgegenstand",
+    "BASE": {
+      "Image": "Bild",
+      "Name": "Name"
+    },
+    "BEHAVIOR": {
+      "Action": {
+        "Create": "Verhalten erstellen",
+        "Delete": "Verhalten löschen"
+      },
+      "Empty": "Keine zugeordneten Verhalten. Erstelle eines mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben.",
+      "Hint": "Diese Verhalten gelten für jeden Wirkungsbereich, den diese Aktivität platziert.",
+      "Label": "Verhalten"
+    },
+    "CHARACTER": {
+      "FIELDS": {
+        "traits": {
+          "weaponProf": {
+            "mastery": {
+              "bonus": {
+                "label": "Zusätzliche Meisterschaftseigenschaften"
+              },
+              "value": {
+                "label": "Meisterschaftseigenschaften"
+              }
+            }
+          }
+        }
+      }
+    },
+    "CONCENTRATION": {
+      "Duration": {
+        "Special": "Konzentration, {durationLc}",
+        "Scalar": "Konzentration, bis zu {duration}"
+      },
+      "FIELDS": {
+        "attributes": {
+          "concentration": {
+            "roll": {
+              "ability": {
+                "label": "Attribut für Konzentration"
+              },
+              "max": {
+                "label": "Höchster Konzentrationswurf"
+              },
+              "min": {
+                "label": "Niedrigster Konzentrationswurf"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Konzentration"
+              },
+              "bonus": {
+                "label": "Konzentrationsbonus"
+              }
+            },
+            "label": "Konzentration",
+            "limit": {
+              "label": "Konzentrationsgrenze"
+            }
+          }
+        }
+      },
+      "Lost": "Konzentration verloren",
+      "Abbreviation": "K",
+      "Action": {
+        "Break": "Breche Konzentration",
+        "End": "Konzentration beenden"
+      },
+      "Description": "Du hältst die Konzentration auf die Effekte von '{name}' ({type}) aufrecht.",
+      "EndChoice": "Du konzentrierst dich auf Effekte aus mehr als einer Quelle. Wählen Sie aus, welche Effekte Sie beenden wollen.",
+      "Limit": {
+        "Hard": "Sie können sich nicht auf mehrere Effekte konzentrieren!",
+        "Optional": "Du kannst die Konzentration auf einen deiner aufrechterhaltenen Effekte beenden, um diesen Gegenstand zu benutzen.",
+        "Reached": "Du bist nicht in der Lage, dich auf einen zusätzlichen Effekt zu konzentrieren.",
+        "Zero": "Du bist nicht in der Lage, dich auf irgendwelche Effekte zu konzentrieren!"
+      },
+      "NoSource": "Konzentration ohne Quelle",
+      "Warning": {
+        "BreakWithoutGM": "Das Brechen der Konzentration auf einen Effekt, der bei anderen Kreaturen aktiv ist, erfordert die Anwesenheit eines aktiven DM.",
+        "MissingItem": "Die Effekte, auf die man sich konzentriert und die ersetzt werden sollen, gibt es nicht."
+      }
+    },
+    "DEATH": {
+      "FIELDS": {
+        "attributes": {
+          "death": {
+            "roll": {
+              "max": {
+                "label": "Höchster Todesrettungswurf"
+              },
+              "min": {
+                "label": "Niedrigster Todesrettungswurf"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Todesrettungswürfe"
+              },
+              "bonus": {
+                "label": "Todesrettungswurf-Bonus"
+              }
+            }
+          }
+        }
+      },
+      "Outcome": {
+        "death": "{name} hat 3 RW gg. Tod nicht geschafft und ist tot!",
+        "revive": "{name} hat den RW gg. Tod kritisch geschafft  und erhält 1 TP!",
+        "stable": "{name} hat 3 RW gg. Tod geschafft und ist jetzt stabil!"
+      }
+    },
+    "ENCUMBRANCE": {
+      "FIELDS": {
+        "attributes": {
+          "encumbrance": {
+            "bonuses": {
+              "encumbered": {
+                "label": "Bonus auf die Schwelle für belastet"
+              },
+              "heavilyEncumbered": {
+                "label": "Bonus auf die Schwelle für stark belastet"
+              },
+              "maximum": {
+                "label": "Bonus auf die maximale Traglast"
+              },
+              "overall": {
+                "label": "Bonus auf alle Belastungsschwellen"
+              }
+            },
+            "multipliers": {
+              "encumbered": {
+                "label": "Multiplikator der Schwelle für belastet"
+              },
+              "heavilyEncumbered": {
+                "label": "Multiplikator der Schwelle für stark belastet"
+              },
+              "maximum": {
+                "label": "Multiplikator der maximalen Traglast"
+              },
+              "overall": {
+                "label": "Multiplikator für alle Belastungsschwellen"
+              }
+            }
+          }
+        }
+      }
+    },
+    "FALLING": {
+      "DamageFlavor": "{distance} tief gestürzt",
+      "Warning": {
+        "NoLandingSurface": "{name} kann nicht stürzen. Darunter liegt keine Oberfläche."
+      },
+      "MovementAction": "Herbst"
+    },
+    "FILTER": {
+      "Action": {
+        "Edit": "Filter bearbeiten"
+      },
+      "Empty": "Keine Filter",
+      "Invalid": "Ungültiger Filter",
+      "Operator": {
+        "And": "und",
+        "Not": "nicht",
+        "Or": "oder"
+      }
+    },
+    "IdentifierCustom": "Eigener Bezeichner",
+    "INITIATIVE": {
+      "FIELDS": {
+        "attributes": {
+          "init": {
+            "roll": {
+              "max": {
+                "label": "Höchster Initiativewurf"
+              },
+              "min": {
+                "label": "Niedrigster Initiativewurf"
+              },
+              "mode": {
+                "label": "Vorteilmodus für Initiative"
+              },
+              "bonus": {
+                "label": "Initiativebonus"
+              }
+            }
+          }
+        }
+      }
+    },
+    "PIETY": {
+      "Configure": "Frömmigkeit einrichten",
+      "Label": "Frömmigkeit",
+      "FIELDS": {
+        "value": {
+          "label": "Frömmigkeitswert",
+          "hint": "Der aktuelle Frömmigkeitswert dieses Charakters."
+        }
+      }
+    },
+    "RollModifiers": "Modifikatoren",
+    "SplitStack": {
+      "Title": "Stapel teilen",
+      "Action": "Aufteilen"
+    },
+    "SubclassOf": "Unterklasse von {class}",
+    "TABLEOFCONTENTS": {
+      "Action": {
+        "Configure": "Inhaltsverzeichnis einrichten"
+      },
+      "FIELDS": {
+        "position": {
+          "label": "Position"
+        },
+        "showPages": {
+          "label": "Seiten anzeigen"
+        },
+        "title": {
+          "label": "Titel überschreiben"
+        },
+        "order": {
+          "label": "Reihenfolge"
+        },
+        "type": {
+          "label": "Typ"
+        }
+      },
+      "HiddenPages": "Verborgene Seiten",
+      "HideAllPages": "Alle Seiten verbergen",
+      "JournalEntry": "Journaleintrag",
+      "NoFolder": "Kein Ordner",
+      "Special": {
+        "After": "Nach {chapter}",
+        "End": "Ende des Inhaltsverzeichnisses"
+      },
+      "Title": "Inhaltsverzeichnis",
+      "Type": {
+        "Appendix": "Anhang",
+        "Chapter": "Kapitel",
+        "Header": "Kopfbereich",
+        "Special": "Sonderseite"
+      },
+      "Warning": {
+        "DuplicateHeader": "Nur ein Eintrag darf den Typ Kopfbereich haben.",
+        "DuplicatePosition": "Jedes Kapitel und jeder Anhang braucht eine eigene Position."
+      }
+    },
+    "TELEPORT": {
+      "Action": {
+        "Teleport": "Teleportieren"
+      },
+      "FIELDS": {
+        "teleport": {
+          "hint": "Legt die größte Teleportentfernung fest.",
+          "override": {
+            "label": "Überschreiben",
+            "hint": "Überschreibt die normale Reichweite der Aktivität und legt die größte Teleportentfernung von Hand fest."
+          },
+          "value": {
+            "label": "Größte Entfernung"
+          },
+          "label": "Distanz",
+          "units": {
+            "label": "Entfernungseinheit"
+          }
+        }
+      },
+      "Hint": "Teleportiert einen Token an ein gewähltes Ziel.",
+      "SECTIONS": {
+        "Teleport": "Teleportieren"
+      },
+      "Title": "Teleportieren",
+      "Warning": {
+        "InvalidDistance": "Teleportieren ist in Szenen ohne unterstützte Bewegungseinheiten nicht möglich."
+      }
+    },
+    "TOKEN": {
+      "Attribute": {
+        "Label": "Token: {attribute}",
+        "LightBrightRadius": "Radius des hellen Lichts",
+        "LightDimRadius": "Radius des dämmrigen Lichts"
+      },
+      "LockScale": {
+        "Hint": "Verhindert, dass der Token angepasst skaliert wird, wenn der Akteur klein ist.",
+        "Label": "Skalierung sperren"
+      },
+      "LockSize": {
+        "Hint": "Entsperren, um die Maße dieses Tokens von Hand einzugeben. Sie werden dann nicht mehr anhand der Kreaturengröße angepasst.",
+        "Label": "Größe sperren"
+      }
+    },
+    "TRAIT": {
+      "Armor": {
+        "one": "Rüstungsausbildung",
+        "other": "Rüstungsausbildung",
+        "title": "Rüstungsausbildung"
+      },
+      "ArmorLegacy": {
+        "other": "Übung mit Rüstungen",
+        "title": "Übung mit Rüstungen",
+        "one": "Übung mit Rüstung"
+      },
+      "Damage": {
+        "Modification": {
+          "one": "Schadensmodifikation",
+          "title": "Schadensmodifikation",
+          "other": "Schadensmodifikatoren"
+        },
+        "Immunity": {
+          "one": "Schadensimmunität",
+          "other": "Schadensimmunitäten",
+          "title": "Schadensimmunitäten"
+        },
+        "Resistance": {
+          "one": "Schadensresistenz",
+          "other": "Schadensresistenzen",
+          "title": "Schadensresistenzen"
+        },
+        "Vulnerability": {
+          "one": "Schadensanfälligkeit",
+          "other": "Schadensanfälligkeiten",
+          "title": "Schadensanfälligkeiten"
+        }
+      },
+      "Generic": {
+        "other": "Merkmale",
+        "title": "Merkmale",
+        "one": "Merkmal"
+      },
+      "Skill": {
+        "other": "Übung in Fertigkeiten",
+        "title": "Übung in Fertigkeiten",
+        "one": "Übung in Fertigkeit"
+      },
+      "Tool": {
+        "one": "Übung mit Werkzeug",
+        "other": "Übung mit Werkzeugen",
+        "title": "Übung mit Werkzeugen"
+      },
+      "Action": {
+        "Configure": "{trait} bearbeiten"
+      },
+      "All": "Alle {category}",
+      "Condition": {
+        "Immunity": {
+          "one": "Zustandsimmunität",
+          "other": "Zustandsimmunitäten",
+          "title": "Zustandsimmunitäten"
+        }
+      },
+      "Choose": {
+        "AnyCounted": "jede {count} {type}",
+        "AnyUncounted": "jede {type}",
+        "List": "{count} aus {list}",
+        "Other": "{count} andere {type}",
+        "Wrapper": "Wähle {choices}"
+      },
+      "Chosen": "Gewählte Eigenschaften",
+      "Language": {
+        "one": "Sprache",
+        "other": "Sprachen",
+        "title": "Sprachen"
+      },
+      "Save": {
+        "one": "Übung mit Rettungswurf",
+        "other": "Übung mit Rettungswürfen",
+        "title": "Übung mit Rettungswürfen"
+      },
+      "Weapon": {
+        "one": "Übung mit Waffe",
+        "other": "Übung mit Waffen",
+        "title": "Übung mit Waffen"
+      }
+    },
+    "WELCOME": {
+      "Button": "Willkommensbildschirm",
+      "Message": {
+        "Bugs": "<p>Auf einen Fehler gestoßen? Hilfe aus der Gemeinschaft gibt es im <a href=\"{discord}\">offiziellen Discord</a>. Fehler meldest du im <a href=\"{issues}\">Issue-Tracker</a> des Systems.</p>",
+        "Changes": "<p>Sieh dir die <a href=\"{changes}\">Änderungen</a> der neuesten Version an.</p>",
+        "Content": "<p>Im Reiter <strong>Offizielle Inhalte</strong> siehst du, welche D&D-5e-Bücher verfügbar sind, und kannst sie in dieser Welt aktivieren.</p>",
+        "Documentation": "<p>Ausführliche Informationen zur Bedienung des Systems stehen im <a href=\"{wiki}\">Dokumentations-Wiki</a>.</p>",
+        "Introduction": "<p>Willkommen beim offiziellen Spielsystem für <strong>Dungeons & Dragons Fifth Edition</strong>.</p>",
+        "MoreContent": "<p>Weitere Inhalte für Dungeons & Dragons Fifth Edition findest du auf dem offiziellen <a href=\"{marketplace}\">Foundry VTT Marketplace</a>.</p>"
+      },
+      "Module": {
+        "NotInstalled": "Nicht installiert",
+        "Enabled": "Aktiviert"
+      },
+      "Section": {
+        "adventures": "Abenteuer",
+        "core": "Grundregelwerke",
+        "expanded": "Erweiterungsregelwerke",
+        "more": "Weitere Inhalte"
+      },
+      "Settings": {
+        "Metric": {
+          "Hint": "Stellt Entfernungen, Gewichte und Volumen standardmäßig auf metrische Einheiten um.",
+          "Label": "Metrisches System verwenden"
+        },
+        "Label": "Einstellungen"
+      },
+      "Tab": {
+        "main": "Willkommen",
+        "modules": "Offizielle Inhalte"
+      },
+      "Title": "Willkommen bei D&D 5e"
+    },
+    "BiographyPublicEdit": "Bearbeite Öffentliche Biographie",
+    "FlagsRemarkableAthleteHintLegacy": "Halber Übungsbonus (aufgerundet) auf körperliche Fertigkeitswürfe und Initiative."
   },
   "EDITOR": {
     "DND5E": {
@@ -5594,7 +7030,7 @@
         "CheckShort": "{check}",
         "CheckLong": "{check} prüfung",
         "DamageShort": "{formula} {type}",
-        "DamageLong": "{average} ({formula}) {type}",
+        "DamageLong": "{damage} Schaden",
         "DC": "SG {dc} {check}",
         "DCPassiveShort": "SG {dc} passiver {check}",
         "DCPassiveLong": "passiver {check} Wert von {dc} oder höher",
@@ -5613,11 +7049,35 @@
         "AttackLong": "{formula} zum Treffen",
         "AttackShort": "{formula}",
         "CheckUsing": "{check} mit {tool}",
-        "DamageExtended": "<em>Treffer:</em> {damage} Schaden",
+        "DamageExtended": "<em>Treffer:</em> {damage}",
         "DamageDouble": "{first} plus {second}",
         "ItemActivity": "{item} ({activity})",
         "PassiveShort": "passiv {check}",
-        "PassiveLong": "passiver {check}-Wert"
+        "PassiveLong": "passiver {check}-Wert",
+        "DamageAverage": "{average} <span class=\"formula-group\">({formula})</span> {type}"
+      },
+      "Inserts": {
+        "Advice": "Allgemeiner Rat",
+        "EnrichersGroup": "D&D-Anreicherungen",
+        "FloatLeft": "Links umfließen",
+        "FloatRight": "Rechts umfließen",
+        "Group": "D&D-Blöcke",
+        "HabitatTreasure": "Lebensraum & Schatz",
+        "Item": "Gegenstand",
+        "Lookup": "Nachschlagen",
+        "Narrative": "Erzählung",
+        "Notable": "Bemerkenswert",
+        "Quest": "Auftrag",
+        "Quote": "Hervorgehobenes Zitat",
+        "Skill": "Fertigkeitswurf",
+        "VTTAdvice": "Rat für VTT",
+        "Attack": "Angriffswurf",
+        "Award": "Belohnung",
+        "Check": "Attributswurf",
+        "Damage": "Schaden",
+        "Healing": "Heilung",
+        "Reference": "Referenz",
+        "Save": "Rettungswurf"
       }
     }
   },
@@ -5779,7 +7239,9 @@
       "SkipDialogAdvantage": "Überspringe Dialog (Wurf mit Vorteil/Kritisch)",
       "SkipDialogDisadvantage": "Überspringe Dialog (Wurf mit Nachteil)",
       "DragCopy": "Kopieren beim Ziehen eines Dokuments erzwingen",
-      "DragMove": "Verschieben beim Ziehen eines Dokuments erzwingen"
+      "DragMove": "Verschieben beim Ziehen eines Dokuments erzwingen",
+      "ToggleSheetMode": "Bogenmodus umschalten",
+      "OpenCompendiumBrowser": "Kompendium Browser öffnen"
     }
   },
   "MACRO": {
@@ -5791,7 +7253,21 @@
   "MIGRATION": {
     "5eBegin": "Migriere DnD5E System zu Version {version}. Bitte Geduld haben und das Spiel nicht schließen oder beenden.",
     "5eComplete": "DnD5E System-Migration zu Version {version} abgeschlossen!",
-    "5eVersionTooOldWarning": "Die DnD5e-Systemdaten stammen von einer zu alten Foundry-Version und können nicht verlässlich migriert werden. Ein Versuch wird unternommen, aber Fehler können auftreten."
+    "5eVersionTooOldWarning": "Die DnD5e-Systemdaten stammen von einer zu alten Foundry-Version und können nicht verlässlich migriert werden. Ein Versuch wird unternommen, aber Fehler können auftreten.",
+    "DND5E": {
+      "Compendium": {
+        "Failed": "Migration des Kompendiums {compendium} fehlgeschlagen.",
+        "Migrate": "Kompendium {compendium} wird für Version {version} migriert.",
+        "Refresh": "Kompendium {compendium} wird aktualisiert."
+      },
+      "World": {
+        "Begin": "Migriere DnD5E System zu Version {version}. Bitte Geduld haben und das Spiel nicht schließen oder beenden.",
+        "Complete": "DnD5E System-Migration zu Version {version} abgeschlossen!"
+      },
+      "Warning": {
+        "VersionTooOld": "Die DnD5e-Systemdaten stammen von einer zu alten Foundry-Version und können nicht verlässlich migriert werden. Ein Versuch wird unternommen, aber Fehler können auftreten."
+      }
+    }
   },
   "SETTINGS": {
     "5eAutoCollapseCardL": "Objektkartenbeschreibungen im Chat-Protokoll automatisch zusammenklappen",
@@ -5808,8 +7284,8 @@
       "BLOODIED": {
         "Name": "Blutig Status",
         "Hint": "Konfiguriere, ob der Blutig Status automatisch verfolgt wird und dessen Sichtbarkeit.",
-        "All": "Anzeigen für Verbündete und Feinde",
-        "Player": "Nur für Verbündete Anzeigen",
+        "All": "Für freundliche, neutrale und feindliche Tokens anzeigen",
+        "Player": "Nur für freundliche Tokens anzeigen",
         "None": "Nicht anzeigen"
       },
       "COLLAPSETRAYS": {
@@ -5841,6 +7317,20 @@
           "Full": "Voll",
           "NoBlocking": "Teilweise",
           "None": "Keine"
+        },
+        "Autosize": {
+          "Hint": "Passt Maße und Skalierung eines Tokens automatisch an seine Größenkategorie an.",
+          "Name": "Tokengröße abgleichen"
+        },
+        "Falling": {
+          "Name": "Sturzautomatik ausschalten",
+          "Hint": "Den Sturzzustand von Tokens nicht verfolgen."
+        },
+        "SenseVision": {
+          "Name": "Sinne mit der Tokensicht abgleichen",
+          "Hint": "Richtet Sichtweite, Sichtmodus und Wahrnehmungsmodi des Tokens automatisch nach den Sinnen des Akteurs ein.",
+          "Notice": "Sicht und Wahrnehmung werden aus den {senses} dieses Akteurs übernommen.",
+          "Senses": "Sinnen"
         }
       },
       "COMBAT": {
@@ -5857,6 +7347,22 @@
           "All": "Initiativwert für alle verwenden",
           "None": "Immer für die Initiative würfeln",
           "NPCs": "Verwende Wert für DM-NSCs"
+        },
+        "AutoApplyDowned": {
+          "Name": "Außer Gefecht automatisch setzen",
+          "Hint": "Markiert eine Kreatur automatisch als tot oder bewusstlos, wenn sie im Kampf auf 0 TP sinkt. Unwichtige NSC werden als tot markiert. Wichtige NSC und SC werden zuerst bewusstlos und erst nach drei fehlgeschlagenen Todesrettungswürfen tot.",
+          "DeadOnly": "Für NSC (nur tot)",
+          "NPCs": "Für NSC (tot und bewusstlos)",
+          "All": "Immer",
+          "None": "Niemals"
+        },
+        "InitiativeGroupCombatants": {
+          "Name": "Kämpfer gruppieren",
+          "Hint": "Fasst Kämpfer mit gleichem Initiativewert in der Kampfleiste zusammen."
+        },
+        "InitiativeGroupRoll": {
+          "Name": "Einmal je Kreaturenart würfeln",
+          "Hint": "Gleiche Kreaturen verwenden denselben Initiativewurf."
         }
       },
       "CRITICAL": {
@@ -5918,6 +7424,14 @@
         "AllowTransformation": {
           "Hint": "Erlaube Spielern, ihre eigenen Akteure zu transformieren. Spieler müssen auch die Kernberechtigungen „Akteure erstellen“ und „Token erstellen“ besitzen.",
           "Name": "Transformation erlauben"
+        },
+        "AllowDamage": {
+          "Hint": "Spieler dürfen Schaden auf eigene Tokens anwenden.",
+          "Name": "Spielern das Anwenden von Schaden erlauben"
+        },
+        "AllowEffects": {
+          "Hint": "Spieler dürfen das Effektfach nutzen, wenn ein eigener Akteur Ziel eines Effekts ist.",
+          "Name": "Spielern das Anwenden von Effekten erlauben"
         }
       },
       "VARIANT": {
@@ -5990,8 +7504,40 @@
           "Hint": "Verstecke die Beschreibungen von NSC-Gegenständen vor Spielern, wenn sie vom DM in den Chat gepostet werden. Dies verbirgt nur Beschreibungen für Gegenstände, die keine Chat-Beschreibung festgelegt haben.",
           "Name": "NSC-Beschreibungen verbergen"
         }
+      },
+      "CHATLOG": {
+        "Hint": "Legt ein Design für den Chatverlauf fest. Standardmäßig wird das Design der Anwendung übernommen.",
+        "Name": "Design des Chatverlaufs",
+        "Options": {
+          "dark": "Dunkel",
+          "blank": "Standard",
+          "light": "Leicht"
+        }
+      },
+      "ENCOUNTERS": {
+        "EncounterPlacementBehavior": {
+          "Name": "Platzierungsoptionen",
+          "Hint": "Legt fest, ob Mitglieder einer Begegnung beim Platzieren in einer Szene dem Kampf hinzugefügt werden.",
+          "CreateCombatants": "Zum Kampf hinzufügen",
+          "None": "Nichts tun",
+          "RollInitiative": "Zum Kampf hinzufügen und Initiative würfeln"
+        },
+        "Name": "Begegnungen"
+      },
+      "PIETY": {
+        "Hint": "Schaltet die optionale Frömmigkeit für Spielercharaktere ein.",
+        "Name": "Frömmigkeitswert"
+      },
+      "SUMMARIZECHAT": {
+        "Hint": "Hängt bestimmte Ergebnisse als Zusammenfassung an statt als vollständige Chatkarte.",
+        "Name": "Zusammengefasste Chatkarten"
+      },
+      "CONDITIONS": {
+        "Name": "Zustände"
       }
-    }
+    },
+    "5eNoExhaustionN": "Erschöpfungsautomatik ausschalten",
+    "5eNoExhaustionL": "Schaltet die automatischen Erschöpfungseffekte des Systems aus."
   },
   "SHEETS": {
     "DND5E": {
@@ -6043,1915 +7589,5 @@
     "None": "Keine",
     "Unknown": "Unbekannt",
     "Yes": "Ja"
-  },
-  "TYPES.ChatMessage": {
-    "item": "Gegenstandsnachricht",
-    "prompt": "Aufforderungsnachricht",
-    "timePassed": "Nachricht über vergangene Zeit"
-  },
-  "TYPES.RegionBehavior": {
-    "dnd5e.applyActiveEffect": "Aktiven Effekt anwenden (5e)"
-  },
-  "TYPES.HINTS": {
-    "RegionBehavior": {
-      "dnd5e.applyActiveEffect": "Wendet Aktive Effekte auf Tokens an, solange sie sich in der Region befinden und bestimmte Bedingungen erfüllen."
-    }
-  },
-  "DND5E.ABILITY": {
-    "Configure": {
-      "AttackLabel": "Angriff mit {ability}"
-    },
-    "FIELDS": {
-      "abilities": {
-        "element": {
-          "attack": {
-            "roll": {
-              "max": {
-                "label": "Höchster Angriffswurf"
-              },
-              "min": {
-                "label": "Niedrigster Angriffswurf"
-              },
-              "mode": {
-                "label": "Vorteilmodus für Angriffe"
-              },
-              "bonus": {
-                "label": "Angriffsbonus"
-              }
-            }
-          },
-          "check": {
-            "roll": {
-              "max": {
-                "label": "Höchster Attributswurf"
-              },
-              "min": {
-                "label": "Niedrigster Attributswurf"
-              },
-              "mode": {
-                "label": "Vorteilmodus für Attributswürfe"
-              },
-              "bonus": {
-                "label": "Wurfbonus"
-              }
-            }
-          },
-          "save": {
-            "roll": {
-              "bonus": {
-                "label": "Rettungswurfbonus"
-              },
-              "max": {
-                "label": "Höchster Rettungswurf"
-              },
-              "min": {
-                "label": "Niedrigster Rettungswurf"
-              },
-              "mode": {
-                "label": "Vorteilmodus für Rettungswürfe"
-              }
-            }
-          }
-        }
-      }
-    },
-    "Formatter": {
-      "Attack": {
-        "AdvantageMode": "Vorteilmodus für Angriffe mit {name}",
-        "Bonus": "Angriffsbonus mit {name}",
-        "Maximum": "Höchster Angriffswurf mit {name}",
-        "Minimum": "Niedrigster Angriffswurf mit {name}"
-      },
-      "Check": {
-        "AdvantageMode": "Vorteilmodus für Würfe auf {name}",
-        "Bonus": "Wurfbonus auf {name}",
-        "Maximum": "Höchster Wurf auf {name}",
-        "Minimum": "Niedrigster Wurf auf {name}"
-      },
-      "Maximum": "Höchstwert für {name}",
-      "Save": {
-        "AdvantageMode": "Vorteilmodus für Rettungswürfe auf {name}",
-        "Bonus": "Rettungswurfbonus auf {name}",
-        "Maximum": "Höchster Rettungswurf auf {name}",
-        "Minimum": "Niedrigster Rettungswurf auf {name}",
-        "Proficiency": "Übung in Rettungswürfen auf {name}"
-      },
-      "Score": "{name}-Wert"
-    },
-    "SECTIONS": {
-      "Bonuses": {
-        "Hint": "Diese Boni gelten für Angriffe, Attributs- und Rettungswürfe mit {ability}."
-      },
-      "Global": {
-        "Hint": "Diese Boni gelten für Attributs- und Rettungswürfe mit einem beliebigen Attribut."
-      }
-    }
-  },
-  "DND5E.ACTIVITY": {
-    "FIELDS": {
-      "behaviors": {
-        "element": {
-          "level": {
-            "label": "Stufenbegrenzung",
-            "hint": "Stufenbereich, der nötig ist, damit dieses Verhalten angewendet wird.",
-            "max": {
-              "label": "Höchststufe"
-            },
-            "min": {
-              "label": "Mindeststufe"
-            }
-          },
-          "name": {
-            "label": "Name"
-          }
-        },
-        "label": "Verhalten des Wirkungsbereichs"
-      }
-    }
-  },
-  "DND5E.ADVANCEMENT": {
-    "ItemChoice": {
-      "FIELDS": {
-        "restriction": {
-          "level": {
-            "AvailableNoCantrips": "Jede verfügbare Stufe (ohne Zaubertricks)",
-            "Available": "Jede verfügbare Stufe (einschließlich Zaubertricks)"
-          },
-          "school": {
-            "hint": "Nur Zauber aus diesen Schulen erlauben.",
-            "label": "Zauberschulen"
-          }
-        },
-        "sorting": {
-          "label": "Sortierung"
-        }
-      },
-      "Warning": {
-        "SpellSchool": "Für diesen Fortschritt können nur Zauber der Schule {schools} gewählt werden."
-      }
-    },
-    "ItemGrant": {
-      "FIELDS": {
-        "sorting": {
-          "label": "Sortierung"
-        }
-      },
-      "Warning": {
-        "Type": "Items vom Typ {type} können nicht mit diesem Fortschrittstyp hinzugefügt werden."
-      }
-    },
-    "ModifyItem": {
-      "Action": {
-        "AddChange": "Änderung hinzufügen",
-        "DeleteChange": "Änderung löschen"
-      },
-      "DropHint": "Verzauberung hier ablegen",
-      "Empty": {
-        "WithDropdown": "Keine Änderungen. Erstelle eine mit der Schaltfläche <i class=\"fa-solid fa-plus\"></i> oben oder wähle einen vorhandenen Effekt aus der Liste.",
-        "WithoutDropdown": "Keine Änderungen. Erstelle eine mit der Schaltfläche <i class=\"fa-solid fa-plus\"></i> oben."
-      },
-      "FIELDS": {
-        "changes": {
-          "element": {
-            "enchantment": {
-              "label": "Angewendete Verzauberung"
-            },
-            "identifiers": {
-              "hint": "Bezeichner der Gegenstände, die diese Verzauberung verändert. Bezeichnern kann die Gegenstandsart vorangestellt werden (z. B. \"spell:mage-hand\").",
-              "label": "Veränderte Gegenstände"
-            }
-          },
-          "label": "Item Anpassungen"
-        }
-      },
-      "Hint": "Vorhandene Gegenstände mit einer Verzauberung verändern.",
-      "Title": "Gegenstände verändern"
-    },
-    "ScaleValue": {
-      "Type": {
-        "Usage": {
-          "FIELDS": {
-            "period": {
-              "label": "Zeitraum"
-            },
-            "value": {
-              "label": "Anwendungen"
-            }
-          },
-          "Hint": "Hiermit werden Anwendungen eines Gegenstands über einen bestimmten Zeitraum abgebildet.",
-          "Label": "Nutzung"
-        }
-      },
-      "Warning": {
-        "DuplicateIdentifier": "Mehrere Skalierungswerte haben denselben Bezeichner {identifier}."
-      }
-    },
-    "Action": {
-      "ModifyChoices": "Auswahl ändern"
-    },
-    "Config": {
-      "Status": {
-        "Complete": "Vollständig konfiguriert",
-        "Incomplete": "Nicht konfiguriert"
-      },
-      "Title": "{item} Fortschritt bearbeiten"
-    },
-    "FIELDS": {
-      "classRestriction": {
-        "label": "Klassenbeschränkung",
-        "none": "Alle Klassen",
-        "primary": "Nur ursprüngliche Klasse",
-        "secondary": "Nur Klassenkombinationen"
-      },
-      "hint": {
-        "label": "Hinweis"
-      },
-      "img": {
-        "label": "Eigenes Icon"
-      },
-      "level": {
-        "label": "Stufe"
-      },
-      "name": {
-        "label": "Eigener Titel"
-      }
-    },
-    "Label": "Fortschritt",
-    "Level": {
-      "Any": "Jede Stufe",
-      "None": "Keine Stufe",
-      "Specific": "Stufe {level}"
-    }
-  },
-  "DND5E.ADVENTURE": {
-    "Finished": {
-      "one": "{adventure} ist vorbereitet.",
-      "other": "{number} Abenteuer sind vorbereitet."
-    },
-    "ImportAction": {
-      "ActivateScene": "Startszene aktivieren",
-      "CustomizeWorld": "Weltdetails anpassen",
-      "DisplayJournal": "Einstiegsjournal anzeigen"
-    },
-    "Options": "Abenteueroptionen",
-    "Warning": {
-      "JournalMissing": "Der Journaleintrag `{id}` für {adventure} wurde nicht gefunden.",
-      "SceneMissing": "Die Szene `{id}` für {adventure} wurde nicht gefunden und kann nicht aktiviert werden."
-    }
-  },
-  "DND5E.AttributeScores": "Attributswerte",
-  "DND5E.ARMORCLASS": {
-    "Action": {
-      "CreateFormula": "Eigene Formel erstellen",
-      "DeleteFormula": "Eigene Formel löschen",
-      "Configure": "Rüstung bearbeiten"
-    },
-    "Condition": {
-      "Positive": "Mit {type}",
-      "Negative": "Ohne {type}"
-    },
-    "CurrentFormula": "Aktuelle Formel",
-    "CustomFormulas": {
-      "Empty": "Keine eigenen Formeln. Erstelle eine mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben."
-    },
-    "FIELDS": {
-      "attributes": {
-        "ac": {
-          "armor": {
-            "label": "Wert der angelegten Rüstung"
-          },
-          "base": {
-            "label": "Grundrüstungsklasse"
-          },
-          "bonus": {
-            "label": "RK-Bonus"
-          },
-          "calc": {
-            "label": "Berechnungsart der RK"
-          },
-          "calcs": {
-            "hint": "Diese Formeln werden zur Berechnung der Rüstungsklasse verwendet.",
-            "label": "Gewählte Formeln"
-          },
-          "cover": {
-            "label": "RK durch Deckung"
-          },
-          "flat": {
-            "hint": "Zahl, die über @attributes.ac.flat in einer Formel für die Rüstungsklasse verwendet werden kann.",
-            "label": "Fester Wert"
-          },
-          "formula": {
-            "label": "Zusätzliche RK-Formel"
-          },
-          "formulas": {
-            "element": {
-              "armored": {
-                "excluded": "Ohne Rüstung",
-                "label": "Mit Rüstung",
-                "required": "Rüstung erforderlich"
-              },
-              "shielded": {
-                "excluded": "Ohne Schild",
-                "label": "Mit Schild",
-                "required": "Schild erforderlich"
-              },
-              "formula": {
-                "label": "Formel"
-              },
-              "label": {
-                "label": "Name"
-              }
-            },
-            "label": "RK-Formeln"
-          },
-          "override": {
-            "hint": "Wert, der statt der berechneten Rüstungsklasse verwendet wird. Deckung, Schild und alle anderen Boni werden dabei ignoriert.",
-            "label": "Überschreiben"
-          },
-          "shield": {
-            "label": "Wert des angelegten Schilds"
-          },
-          "label": "Rüstungsklasse",
-          "min": {
-            "label": "Mindest-Rüstungsklasse"
-          }
-        }
-      }
-    },
-    "Flat": "Fest",
-    "Calculation": {
-      "Armored": "Angelegte Rüstung",
-      "Custom": "Benutzerdefiniert",
-      "Draconic": "Drakonische Widerstandskraft",
-      "Label": "Berechnung",
-      "Mage": "Magierrüstung",
-      "Natural": "Natürliche Rüstung",
-      "Unarmored": "Ungerüstet",
-      "UnarmoredBarbarian": "Ungerüstete Verteidigung (Barbar)",
-      "UnarmoredBard": "Ungerüstete Verteidigung (Barde)",
-      "UnarmoredMonk": "Ungerüstete Verteidigung (Mönch)"
-    },
-    "Configuration": "Konfiguration",
-    "Formula": "Formel"
-  },
-  "DND5E.ATTACK": {
-    "FIELDS": {
-      "attack": {
-        "abilities": {
-          "label": "Attributsoptionen"
-        }
-      }
-    }
-  },
-  "DND5E.BaseItem": "Grundgegenstand",
-  "DND5E.BASE": {
-    "Image": "Bild",
-    "Name": "Name"
-  },
-  "DND5E.Bastion": {
-    "Action": {
-      "Maintain": "Bastion warten",
-      "Advance": "Bastionszug vorrücken"
-    },
-    "Confirm": {
-      "Advance": "Dadurch schreitet der Fortschritt aller Aufträge der Bastionseinrichtungen um {duration} voran. Alle untätigen Einrichtungen erhalten den Auftrag Warten, und ausgefallene Einrichtungen werden repariert. Möchtest du fortfahren?",
-      "Maintain": "Dadurch erhalten alle untätigen Bastionseinrichtungen den Auftrag Warten, und ausgefallene Einrichtungen werden repariert. Möchtest du fortfahren?"
-    },
-    "FIELDS": {
-      "reminder": {
-        "hint": "Zeigt im Chat eine Erinnerung an, wenn nach der vergangenen Zeit die nächste Bastionsrunde ansteht.",
-        "label": "Automatische Rundenerinnerung"
-      },
-      "button": {
-        "hint": "Zeigt eine Schaltfläche zum Vorantreiben von Bastionszügen in der Hauptspieloberfläche an.",
-        "label": "Bastionszug-Schaltfläche anzeigen"
-      },
-      "duration": {
-        "label": "Bastion-Zugdauer (Tage)"
-      },
-      "enabled": {
-        "hint": "Wenn aktiviert, erhalten Spielercharaktere Zugriff auf einen neuen Bastion-Reiter auf ihren Charakterbögen, wenn sie Stufe 5 erreichen, und können Einrichtungen bauen und ihnen Befehle erteilen.",
-        "label": "Bastion-Funktionalität aktivieren"
-      }
-    },
-    "Reminder": {
-      "Elapsed": "Seit der letzten Bastionsrunde sind {time} vergangen.",
-      "Triggered": "Eine Bastionsrunde hat stattgefunden.",
-      "Unknown": "Seit der letzten Bastionsrunde ist einige Zeit vergangen."
-    }
-  },
-  "DND5E.BEHAVIOR": {
-    "Action": {
-      "Create": "Verhalten erstellen",
-      "Delete": "Verhalten löschen"
-    },
-    "Empty": "Keine zugeordneten Verhalten. Erstelle eines mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben.",
-    "Hint": "Diese Verhalten gelten für jeden Wirkungsbereich, den diese Aktivität platziert.",
-    "Label": "Verhalten"
-  },
-  "DND5E.CALENDAR": {
-    "FIELDS": {
-      "dailyRecovery": {
-        "calendar": "Über den Kalender (durch vergehende Zeit)",
-        "default": "Standard (folgt der Kalendereinstellung)",
-        "hint": "Legt fest, ob sich begrenzte Anwendungen mit täglicher Erholung, Erholung bei Tagesanbruch oder in der Abenddämmerung über den Weltkalender erholen oder über den Rastdialog.",
-        "label": "Tägliche Erholung",
-        "manual": "Von Hand (über den Rastdialog)"
-      }
-    },
-    "TimePassage": {
-      "Midnight": "Ein neuer Tag hat begonnen.",
-      "Sunrise": "Die Sonne ist aufgegangen.",
-      "Sunset": "Die Sonne ist untergegangen.",
-      "SunsetSunrise": "Die Sonne ist untergegangen, und ein neuer Tag bricht an.",
-      "TimePassed": {
-        "one": "{number} ist vergangen.",
-        "other": "{number} sind vergangen."
-      },
-      "Title": "Vergehende Zeit"
-    }
-  },
-  "DND5E.CAST": {
-    "Action": {
-      "DropSpell": "Zauber hier ablegen"
-    },
-    "FIELDS": {
-      "spell": {
-        "spellbook": {
-          "label": "Im Reiter Zauber anzeigen",
-          "hint": "Den Zauber im Reiter Zauber des Charakterbogens anzeigen. Gegenstände brauchen die Eigenschaft Magisch und müssen eingestimmt sein, falls sie Einstimmung erfordern."
-        }
-      }
-    }
-  },
-  "DND5E.CONTAINER": {
-    "UnidentifiedContentsWarning": {
-      "Title": "Nicht identifizierter Behälter",
-      "Message": "Dieser Behälter ist nicht identifiziert. Alles, was du hineinlegst, bleibt verborgen, bis er identifiziert ist. Fortfahren?"
-    }
-  },
-  "DND5E.CHARACTER": {
-    "FIELDS": {
-      "traits": {
-        "weaponProf": {
-          "mastery": {
-            "bonus": {
-              "label": "Zusätzliche Meisterschaftseigenschaften"
-            },
-            "value": {
-              "label": "Meisterschaftseigenschaften"
-            }
-          }
-        }
-      }
-    }
-  },
-  "DND5E.CHATMESSAGE": {
-    "Action": {
-      "SelectAll": "Alle Ergebnisse auswählen",
-      "SelectFailure": "Fehlschläge auswählen",
-      "SelectSuccess": "Erfolge auswählen"
-    },
-    "Button": {
-      "rollFormula": "Würfeln",
-      "rollAttack": "Angriff",
-      "rollCheck": "Attributswurf",
-      "rollDamage": "Schaden",
-      "rollSave": "Rettungswurf"
-    },
-    "REQUEST": {
-      "Action": {
-        "Post": "Anfrage senden"
-      },
-      "AnyOwner": "Beliebiger Besitzer",
-      "Title": "Anfrage"
-    },
-    "Row": {
-      "Actions": "Gegenstandsaktionen",
-      "Properties": "Gegenstandseigenschaften",
-      "Roll": "Würfelwurf",
-      "rollCheck": "Attributswürfe",
-      "rollSave": "Rettungswürfe",
-      "Items": "Gegenstände",
-      "Targets": "Ziele"
-    },
-    "Targets": {
-      "Count": "{number}× {name}"
-    }
-  },
-  "DND5E.CHECK": {
-    "FIELDS": {
-      "check": {
-        "bonus": {
-          "hint": "Bonus auf alle Würfe, die mit dieser Aktivität gemacht werden.",
-          "label": "Wurfbonus"
-        },
-        "visible": {
-          "label": "Sichtbar für Alle",
-          "hint": "Soll der Wurfknopf für alle Spieler sichtbar sein?"
-        }
-      }
-    }
-  },
-  "DND5E.CONCENTRATION": {
-    "Duration": {
-      "Special": "Konzentration, {durationLc}",
-      "Scalar": "Konzentration, bis zu {duration}"
-    },
-    "FIELDS": {
-      "attributes": {
-        "concentration": {
-          "roll": {
-            "ability": {
-              "label": "Attribut für Konzentration"
-            },
-            "max": {
-              "label": "Höchster Konzentrationswurf"
-            },
-            "min": {
-              "label": "Niedrigster Konzentrationswurf"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Konzentration"
-            },
-            "bonus": {
-              "label": "Konzentrationsbonus"
-            }
-          },
-          "label": "Konzentration",
-          "limit": {
-            "label": "Konzentrationsgrenze"
-          }
-        }
-      }
-    },
-    "Lost": "Konzentration verloren",
-    "Abbreviation": "K",
-    "Action": {
-      "Break": "Breche Konzentration",
-      "End": "Konzentration beenden"
-    },
-    "Description": "Du hältst die Konzentration auf die Effekte von '{name}' ({type}) aufrecht.",
-    "EndChoice": "Du konzentrierst dich auf Effekte aus mehr als einer Quelle. Wählen Sie aus, welche Effekte Sie beenden wollen.",
-    "Limit": {
-      "Hard": "Sie können sich nicht auf mehrere Effekte konzentrieren!",
-      "Optional": "Du kannst die Konzentration auf einen deiner aufrechterhaltenen Effekte beenden, um diesen Gegenstand zu benutzen.",
-      "Reached": "Du bist nicht in der Lage, dich auf einen zusätzlichen Effekt zu konzentrieren.",
-      "Zero": "Du bist nicht in der Lage, dich auf irgendwelche Effekte zu konzentrieren!"
-    },
-    "NoSource": "Konzentration ohne Quelle",
-    "Warning": {
-      "BreakWithoutGM": "Das Brechen der Konzentration auf einen Effekt, der bei anderen Kreaturen aktiv ist, erfordert die Anwesenheit eines aktiven DM.",
-      "MissingItem": "Die Effekte, auf die man sich konzentriert und die ersetzt werden sollen, gibt es nicht."
-    }
-  },
-  "DND5E.CONSUMABLE": {
-    "FIELDS": {
-      "damage": {
-        "base": {
-          "bonus": {
-            "label": "Grundschadensbonus"
-          },
-          "custom": {
-            "enabled": {
-              "label": "Eigene Formel für den Grundschaden verwenden"
-            },
-            "formula": {
-              "label": "Eigene Formel für den Grundschaden"
-            }
-          },
-          "denomination": {
-            "label": "Würfelart des Grundschadens"
-          },
-          "number": {
-            "label": "Würfelanzahl des Grundschadens"
-          },
-          "scaling": {
-            "formula": {
-              "label": "Skalierungsformel des Grundschadens"
-            },
-            "mode": {
-              "label": "Skalierungsart des Grundschadens"
-            },
-            "number": {
-              "label": "Skalierungswert des Grundschadens"
-            }
-          },
-          "types": {
-            "label": "Schadensarten des Grundschadens"
-          }
-        },
-        "bonus": {
-          "label": "Schadensbonus"
-        }
-      }
-    }
-  },
-  "DND5E.CONSUMPTION": {
-    "Empty": "Kein Verbrauch zugeordnet. Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben Verbrauchsziele hinzu."
-  },
-  "DND5E.DAMAGE": {
-    "FIELDS": {
-      "damage": {
-        "parts": {
-          "FIELDS": {
-            "modifiers": {
-              "label": "Modifikatoren",
-              "hint": "Wurfmodifikatoren, die dem Grundwürfel hinzugefügt werden."
-            }
-          }
-        }
-      }
-    },
-    "Empty": "Kein Schaden eingerichtet. Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben Schadensteile hinzu.",
-    "EmptyExceptBase": "Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben weitere Schadensteile hinzu."
-  },
-  "DND5E.DamageApplication": {
-    "Back": "Zurück zur vorigen Ansicht",
-    "Multiplier": "Schadensmultiplikator",
-    "Section": {
-      "Changes": "Auf dieses Ziel angewendet",
-      "Targets": "Ziele in dieser Gruppe",
-      "Multiplier": "Multiplikator"
-    },
-    "State": {
-      "active": "Angewendet",
-      "downgrade": "Herabgestuft",
-      "ignore": "Ignoriert"
-    }
-  },
-  "DND5E.DamageModification": {
-    "Formatter": "Schadensmodifikation für {name}"
-  },
-  "DND5E.DEATH": {
-    "FIELDS": {
-      "attributes": {
-        "death": {
-          "roll": {
-            "max": {
-              "label": "Höchster Todesrettungswurf"
-            },
-            "min": {
-              "label": "Niedrigster Todesrettungswurf"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Todesrettungswürfe"
-            },
-            "bonus": {
-              "label": "Todesrettungswurf-Bonus"
-            }
-          }
-        }
-      }
-    },
-    "Outcome": {
-      "death": "{name} hat 3 RW gg. Tod nicht geschafft und ist tot!",
-      "revive": "{name} hat den RW gg. Tod kritisch geschafft  und erhält 1 TP!",
-      "stable": "{name} hat 3 RW gg. Tod geschafft und ist jetzt stabil!"
-    }
-  },
-  "DND5E.DURATION": {
-    "FIELDS": {
-      "duration": {
-        "expiry": {
-          "label": "Ablaufereignis",
-          "hint": "Ereignis, mit dem die Anwendung endet."
-        }
-      }
-    }
-  },
-  "DND5E.EFFECT": {
-    "Action": {
-      "AddChange": "Änderung hinzufügen",
-      "CreateEffect": "Effekt erstellen",
-      "DeleteEffect": "Effekt löschen",
-      "DeleteChange": "Änderung löschen",
-      "EditChange": "Änderung bearbeiten",
-      "PanToToken": "Zum Token schwenken",
-      "RemoveStatus": {
-        "all": "Alle Quellen",
-        "label": "Quelle"
-      },
-      "Apply": "Anwenden",
-      "DisableEffect": "Effekt deaktivieren",
-      "DissociateEffect": "Trenne Effekt",
-      "EditEffect": "Effekt bearbeiten",
-      "EnableEffect": "Effekt aktivieren",
-      "Search": "Effekte durchsuchen"
-    },
-    "AdditionalChanges": "Weitere Änderungen",
-    "AttributeKeyTooltip": "Eine Liste gängiger Schlüssel und ihrer erlaubten Werte steht im <a href=\"{url}\">Wiki</a>.",
-    "BASE": {
-      "FIELDS": {
-        "changes": {
-          "element": {
-            "conditions": {
-              "hint": "Bedingung, die erfüllt sein muss, damit diese Änderung gilt.",
-              "label": "Bedingungen der Änderung"
-            },
-            "key": {
-              "label": "Attributschlüssel"
-            },
-            "phase": {
-              "hint": "Der Zeitpunkt in der Datenaufbereitung oder ein anderes Ereignis, zu dem die Änderung angewendet wird.",
-              "label": "Phase"
-            },
-            "priority": {
-              "label": "Priorität"
-            },
-            "replacement": {
-              "label": "Ersetzung",
-              "hint": "Legt fest, ob Wurfdaten im Wert vor der Anwendung ersetzt werden und wessen Daten dafür dienen."
-            },
-            "type": {
-              "label": "Typ"
-            },
-            "value": {
-              "label": "Wert"
-            }
-          }
-        },
-        "conditions": {
-          "hint": "Bedingungen, die steuern, wann der Effekt angewendet wird.",
-          "label": "Bedingungen des Effekts"
-        },
-        "magical": {
-          "hint": "Dieser Effekt stammt aus einer magischen Quelle und sollte ausgeschaltet werden, wo keine Magie verfügbar ist.",
-          "label": "Magisch"
-        }
-      }
-    },
-    "Change": {
-      "Configuration": "Änderung einrichten",
-      "Group": {
-        "Rules": "Regeln",
-        "Standard": "Standard",
-        "Custom": "Benutzerdefiniert"
-      },
-      "Title": "{effect}: Änderung Nr. {number}",
-      "Type": {
-        "Bonus": {
-          "Label": "Bonus"
-        },
-        "Maximum": {
-          "Label": "Wurf-Höchstwert"
-        },
-        "Minimum": {
-          "Label": "Wurf-Mindestwert"
-        },
-        "Advantage": {
-          "Label": "Vorteilmodus"
-        }
-      },
-      "Label": "Ändern"
-    },
-    "DisabledTooltip": {
-      "Disabled": "Dieser Effekt ist in mindestens einer Aktivität seines Gegenstands ausgewählt und kann deshalb nicht ausgesetzt werden.",
-      "Transfer": "Dieser Effekt ist in mindestens einer Aktivität seines Gegenstands ausgewählt und kann deshalb nicht passiv auf den Akteur des Gegenstands wirken."
-    },
-    "DropHint": "Aktiven Effekt hier ablegen",
-    "Expired": "Abgelaufen",
-    "Expiry": {
-      "Abbreviation": {
-        "End": "Ende",
-        "Start": "Beginn"
-      },
-      "Group": {
-        "Specific": "Bestimmt",
-        "General": "Allgemein"
-      },
-      "Type": {
-        "LongRest": "Ende einer Langen Rast",
-        "ShortRest": "Ende einer Kurzen Rast",
-        "SourceEnd": "Ende des nächsten Zuges der Quelle",
-        "SourceStart": "Beginn des nächsten Zuges der Quelle",
-        "TargetEnd": "Ende des nächsten Zuges des Ziels",
-        "TargetStart": "Beginn des nächsten Zuges des Ziels",
-        "YourEnd": "Ende deines nächsten Zuges",
-        "YourStart": "Beginn deines nächsten Zuges"
-      }
-    },
-    "Replacement": {
-      "NoChange": "Keine Änderung",
-      "Origin": "Ursprung",
-      "Target": "Ziel"
-    },
-    "Status": {
-      "ChangeActive": "Änderung aktiv",
-      "ChangeInactive": "Änderung inaktiv",
-      "DeleteDialog": {
-        "hint": "Dieser Zustand wirkt aus mehr als einer Quelle auf dich. Wähle, welcher Effekt enden soll.",
-        "title": "Effekt entfernen"
-      },
-      "Inactive": "Inaktiv",
-      "Passive": "Passiv",
-      "Temporary": "Temporär",
-      "Unavailable": "Nicht verfügbar"
-    },
-    "Warning": {
-      "RollCondition": "Bedingungen eines Effekts dürfen nicht auf 'roll.'-Eigenschaften verweisen. Verschiebe diese Bedingung in die einzelnen Änderungen, damit der Effekt angewendet wird.",
-      "StatusCondition": "Effekte, die Zustände verleihen, dürfen nicht selbst von Zuständen abhängen. Verschiebe diese Bedingung in die einzelnen Änderungen, damit der Effekt angewendet wird."
-    },
-    "Application": {
-      "Action": {
-        "ApplyTokens": "Auf ausgewählte Token anwenden"
-      },
-      "Header": "Effekte",
-      "Warning": {
-        "Ownership": "Effekte können nicht auf Token angewandt werden, deren Besitzer man nicht ist."
-      }
-    },
-    "Category": {
-      "Temporary": "Temporäre Effekte",
-      "Passive": "Passive Effekte",
-      "Inactive": "Inaktive Effekte",
-      "Unavailable": "Nicht verfügbare Effekte"
-    },
-    "FIELDS": {
-      "statuses": {
-        "label": "Zustände",
-        "hint": "Solange dieser Aktive Effekt wirkt, wird das Ziel so behandelt, als hätte es diese zusätzlichen Zustände."
-      }
-    },
-    "New": "Neuer Effekt",
-    "RIDER": {
-      "FIELDS": {
-        "rider": {
-          "statuses": {
-            "hint": "Wenn dieser Aktive Effekt angewendet wird, werden diese zusätzlichen Zustände separat angewendet.",
-            "label": "Getrennte Zustandsbedingungen"
-          }
-        }
-      }
-    },
-    "Suppressed": {
-      "Hint": "Quellen-Item muss ausgerüstet oder eingestimmt sein, um diese zu aktivieren"
-    },
-    "Tab": "Effekte"
-  },
-  "DND5E.ENCHANT": {
-    "Enchantment": {
-      "Action": {
-        "Dissociate": "Verzauberung lösen"
-      }
-    }
-  },
-  "DND5E.ENCHANTMENT": {
-    "FIELDS": {
-      "magical": {
-        "hint": "Diese Verzauberung ist magisch und sollte ausgeschaltet werden, wo keine Magie verfügbar ist.",
-        "label": "Magisch"
-      }
-    },
-    "Transfer": {
-      "DisabledTooltip": "Diese Verzauberung ist in mindestens einer Verzauberungsaktivität ihres Gegenstands ausgewählt und kann deshalb nicht direkt auf den Gegenstand wirken.",
-      "Hint": "Wenn aktiviert, wird diese Verzauberung direkt auf ihren übergeordneten Gegenstand angewendet.",
-      "Label": "Verzauberung auf den Gegenstand anwenden"
-    }
-  },
-  "DND5E.ENCUMBRANCE": {
-    "FIELDS": {
-      "attributes": {
-        "encumbrance": {
-          "bonuses": {
-            "encumbered": {
-              "label": "Bonus auf die Schwelle für belastet"
-            },
-            "heavilyEncumbered": {
-              "label": "Bonus auf die Schwelle für stark belastet"
-            },
-            "maximum": {
-              "label": "Bonus auf die maximale Traglast"
-            },
-            "overall": {
-              "label": "Bonus auf alle Belastungsschwellen"
-            }
-          },
-          "multipliers": {
-            "encumbered": {
-              "label": "Multiplikator der Schwelle für belastet"
-            },
-            "heavilyEncumbered": {
-              "label": "Multiplikator der Schwelle für stark belastet"
-            },
-            "maximum": {
-              "label": "Multiplikator der maximalen Traglast"
-            },
-            "overall": {
-              "label": "Multiplikator für alle Belastungsschwellen"
-            }
-          }
-        }
-      }
-    }
-  },
-  "DND5E.FACILITY": {
-    "Craft": {
-      "DropHint": "Gegenstand hier ablegen"
-    },
-    "Trade": {
-      "Stocked": {
-        "Supplement": "Voll bestückt"
-      },
-      "Creatures": {
-        "Buy": "Ziehe Tiere, die du kaufen möchtest, in die Felder oben. Die Kosten ergeben sich aus ihren Einzelpreisen und lassen sich unten anpassen."
-      },
-      "Price": {
-        "Hint": "Wähle, welchen Bestand du verkaufen möchtest. Der Grundpreis ergibt sich aus den Einzelpreisen und lässt sich oben anpassen."
-      }
-    }
-  },
-  "DND5E.FALLING": {
-    "DamageFlavor": "{distance} tief gestürzt",
-    "Warning": {
-      "NoLandingSurface": "{name} kann nicht stürzen. Darunter liegt keine Oberfläche."
-    },
-    "MovementAction": "Herbst"
-  },
-  "DND5E.Feature": {
-    "PietyTrait": "Frömmigkeitsmerkmal"
-  },
-  "DND5E.FILTER": {
-    "Action": {
-      "Edit": "Filter bearbeiten"
-    },
-    "Empty": "Keine Filter",
-    "Invalid": "Ungültiger Filter",
-    "Operator": {
-      "And": "und",
-      "Not": "nicht",
-      "Or": "oder"
-    }
-  },
-  "DND5E.FLAGS": {
-    "IgnoreArmorSpeedReduction": {
-      "Name": "Verringerte Geschwindigkeit durch Rüstung ignorieren",
-      "Hint": "Ignoriert die verringerte Geschwindigkeit beim Tragen einer Rüstung, deren Stärkeanforderung nicht erfüllt ist."
-    }
-  },
-  "DND5E.HITPOINTS": {
-    "Bloodied": {
-      "label": "Schwelle für blutig"
-    }
-  },
-  "DND5E.IdentifierCustom": "Eigener Bezeichner",
-  "DND5E.INITIATIVE": {
-    "FIELDS": {
-      "attributes": {
-        "init": {
-          "roll": {
-            "max": {
-              "label": "Höchster Initiativewurf"
-            },
-            "min": {
-              "label": "Niedrigster Initiativewurf"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Initiative"
-            },
-            "bonus": {
-              "label": "Initiativebonus"
-            }
-          }
-        }
-      }
-    }
-  },
-  "DND5E.ITEM": {
-    "Property": {
-      "UnidentifiedContents": "Nicht identifizierten Inhalt verbergen"
-    },
-    "Rarity": {
-      "Artifact": "Artefakt",
-      "Legendary": "Legendär",
-      "Mundane": "Nicht magisch",
-      "Rare": "Selten",
-      "Uncommon": "Ungewöhnlich",
-      "Varies": "Variiert",
-      "VeryRare": "Sehr selten",
-      "Common": "Gemeinsprache"
-    }
-  },
-  "DND5E.PIETY": {
-    "Configure": "Frömmigkeit einrichten",
-    "Label": "Frömmigkeit",
-    "FIELDS": {
-      "value": {
-        "label": "Frömmigkeitswert",
-        "hint": "Der aktuelle Frömmigkeitswert dieses Charakters."
-      }
-    }
-  },
-  "DND5E.Prerequisites": {
-    "FIELDS": {
-      "prerequisites": {
-        "items": {
-          "display": "{items}"
-        },
-        "level": {
-          "display": "Stufe {level}+",
-          "displayLegacy": "{levelOrdinal} Stufe"
-        },
-        "repeatable": {
-          "display": "Noch nicht gewählt"
-        }
-      }
-    },
-    "Status": {
-      "Invalid": "Voraussetzungen nicht erfüllt",
-      "Unknown": "Prüfung der Voraussetzungen unvollständig",
-      "Valid": "Voraussetzungen erfüllt"
-    }
-  },
-  "DND5E.REGIONBEHAVIORS": {
-    "APPLYACTIVEEFFECT": {
-      "FIELDS": {
-        "dispositions": {
-          "hint": "Wenn gesetzt, gelten die Effekte nur für Tokens mit dieser Haltung.",
-          "label": "Haltungen"
-        },
-        "effects": {
-          "hint": "Die Effekte, die auf Tokens in der Region angewendet werden.",
-          "label": "Effekte"
-        },
-        "sizes": {
-          "hint": "Wenn gesetzt, gelten die Effekte nur für Tokens dieser Größen.",
-          "label": "Größen"
-        },
-        "types": {
-          "hint": "Wenn gesetzt, gelten die Effekte nur für Tokens dieser Kreaturentypen.",
-          "label": "Typen"
-        }
-      }
-    }
-  },
-  "DND5E.REST": {
-    "Duration": {
-      "Hint": "Zeit, die während der Rast vergeht.",
-      "UntilSunrise": "Bis Sonnenaufgang rasten",
-      "Label": "Dauer"
-    }
-  },
-  "DND5E.ROLL": {
-    "Bonus": "Wurfbonus",
-    "Description": {
-      "ability": "Attribut des Wurfs",
-      "attack": {
-        "type": "Angriffsart",
-        "classification": "Angriffsklassifizierung",
-        "mode": "Angriffsmodus"
-      },
-      "skill": "Gewürfelte Fertigkeit",
-      "tool": "Verwendetes Werkzeug",
-      "type": "Wurfart",
-      "damage": {
-        "type": "Schadensart"
-      },
-      "proficient": "Geübt"
-    },
-    "FIELDS": {
-      "rolls": {
-        "ability": {
-          "check": {
-            "max": {
-              "label": "Höchster Attributswurf (global)"
-            },
-            "min": {
-              "label": "Niedrigster Attributswurf (global)"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Attributswürfe (global)"
-            },
-            "proficiency": {
-              "label": "Übung in Attributswürfen (global)"
-            },
-            "bonus": {
-              "label": "Globaler Attributswurf-Bonus"
-            }
-          },
-          "label": "Anpassung von Attributswürfen",
-          "save": {
-            "bonus": {
-              "label": "Rettungswurfbonus (global)"
-            },
-            "max": {
-              "label": "Höchster Rettungswurf (global)"
-            },
-            "min": {
-              "label": "Niedrigster Rettungswurf (global)"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Rettungswürfe (global)"
-            },
-            "proficiency": {
-              "label": "Übung in Rettungswürfen (global)"
-            }
-          },
-          "skill": {
-            "max": {
-              "label": "Höchster Fertigkeitswurf (global)"
-            },
-            "min": {
-              "label": "Niedrigster Fertigkeitswurf (global)"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Fertigkeitswürfe (global)"
-            },
-            "proficiency": {
-              "label": "Übung in Fertigkeitswürfen (global)"
-            },
-            "bonus": {
-              "label": "Globaler Fertigkeitswurf-Bonus"
-            }
-          },
-          "tool": {
-            "bonus": {
-              "label": "Werkzeugwurfbonus (global)"
-            },
-            "max": {
-              "label": "Höchster Werkzeugwurf (global)"
-            },
-            "min": {
-              "label": "Niedrigster Werkzeugwurf (global)"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Werkzeugwürfe (global)"
-            },
-            "proficiency": {
-              "label": "Übung in Werkzeugwürfen (global)"
-            }
-          }
-        },
-        "attack": {
-          "bonus": {
-            "label": "Angriffsbonus (global)"
-          },
-          "label": "Anpassung von Angriffswürfen",
-          "max": {
-            "label": "Höchster Angriffswurf (global)"
-          },
-          "min": {
-            "label": "Niedrigster Angriffswurf (global)"
-          },
-          "mode": {
-            "label": "Vorteilmodus für Angriffe (global)"
-          },
-          "msak": {
-            "max": {
-              "label": "Höchster Wurf für Nahkampfzauberangriffe"
-            },
-            "min": {
-              "label": "Niedrigster Wurf für Nahkampfzauberangriffe"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Nahkampfzauberangriffe"
-            },
-            "bonus": {
-              "label": "Nahkampf-Zauberangriffsbonus"
-            }
-          },
-          "mwak": {
-            "max": {
-              "label": "Höchster Wurf für Nahkampfwaffenangriffe"
-            },
-            "min": {
-              "label": "Niedrigster Wurf für Nahkampfwaffenangriffe"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Nahkampfwaffenangriffe"
-            },
-            "bonus": {
-              "label": "Nahkampfwaffenangriffsbonus"
-            }
-          },
-          "rsak": {
-            "max": {
-              "label": "Höchster Wurf für Fernkampfzauberangriffe"
-            },
-            "min": {
-              "label": "Niedrigster Wurf für Fernkampfzauberangriffe"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Fernkampfzauberangriffe"
-            },
-            "bonus": {
-              "label": "Fernkampf-Zauberangriffsbonus"
-            }
-          },
-          "rwak": {
-            "max": {
-              "label": "Höchster Wurf für Fernkampfwaffenangriffe"
-            },
-            "min": {
-              "label": "Niedrigster Wurf für Fernkampfwaffenangriffe"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Fernkampfwaffenangriffe"
-            },
-            "bonus": {
-              "label": "Fernkampf-Waffenangriffsbonus"
-            }
-          }
-        },
-        "damage": {
-          "label": "Anpassung von Schadenswürfen",
-          "msak": {
-            "bonus": {
-              "label": "Schadensbonus für Nahkampfzauberangriffe"
-            }
-          },
-          "mwak": {
-            "bonus": {
-              "label": "Schadensbonus für Nahkampfwaffenangriffe"
-            }
-          },
-          "rsak": {
-            "bonus": {
-              "label": "Schadensbonus für Fernkampfzauberangriffe"
-            }
-          },
-          "rwak": {
-            "bonus": {
-              "label": "Schadensbonus für Fernkampfwaffenangriffe"
-            }
-          }
-        }
-      }
-    },
-    "Formatter": {
-      "AdvantageMode": "Vorteilmodus für {name}",
-      "Bonus": "Wurfbonus für {name}",
-      "Maximum": "Höchster Wurf für {name}",
-      "Minimum": "Niedrigster Wurf für {name}",
-      "ModifierAbility": "Attribut für den Modifikator von {name}"
-    },
-    "Generic": {
-      "D20": {
-        "bonus": {
-          "label": "Wurfbonus"
-        },
-        "max": {
-          "label": "Maximaler Wurf"
-        },
-        "min": {
-          "label": "Minimaler Wurf"
-        },
-        "mode": {
-          "label": "Vorteilmodus"
-        }
-      },
-      "Damage": {
-        "bonus": {
-          "label": "Schadensbonus"
-        }
-      }
-    }
-  },
-  "DND5E.RollModifiers": "Modifikatoren",
-  "DND5E.MOVEMENT": {
-    "FIELDS": {
-      "multiplier": {
-        "label": "Bewegungsmultiplikator"
-      }
-    }
-  },
-  "DND5E.SAVE": {
-    "FIELDS": {
-      "save": {
-        "bonus": {
-          "label": "Rettungswurfbonus",
-          "hint": "Bonus auf alle Rettungswürfe, die mit dieser Aktivität gemacht werden."
-        },
-        "dc": {
-          "bonus": {
-            "label": "SG-Bonus"
-          }
-        },
-        "visible": {
-          "label": "Sichtbar für Alle",
-          "hint": "Soll der Wurfknopf für alle Spieler sichtbar sein?"
-        }
-      }
-    }
-  },
-  "DND5E.SheetClass": {
-    "ActiveEffect": "D&D-5e-Bogen für Aktive Effekte",
-    "AdventureImporter": "D&D-5e-Abenteuerimport"
-  },
-  "DND5E.SKILL": {
-    "FIELDS": {
-      "skills": {
-        "element": {
-          "roll": {
-            "bonus": {
-              "label": "Fertigkeitswurfbonus"
-            },
-            "max": {
-              "label": "Höchster Fertigkeitswurf"
-            },
-            "min": {
-              "label": "Niedrigster Fertigkeitswurf"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Fertigkeitswürfe"
-            }
-          }
-        }
-      }
-    },
-    "Formatter": {
-      "CheckBonus": "Wurfbonus auf {name}",
-      "PassiveBonus": "Bonus auf den Passivwert von {name}",
-      "Proficiency": "Übung in {name}"
-    }
-  },
-  "DND5E.SplitStack": {
-    "Title": "Stapel teilen",
-    "Action": "Aufteilen"
-  },
-  "DND5E.SubclassOf": "Unterklasse von {class}",
-  "DND5E.SUMMON": {
-    "FIELDS": {
-      "flat": {
-        "attack": {
-          "label": "Fester Angriffsbonus"
-        },
-        "save": {
-          "label": "Fester Rettungswurf-SG"
-        }
-      }
-    },
-    "Warning": {
-      "PlaceTokens": "Die beschworenen Kreaturen konnten nicht in der Szene platziert werden."
-    }
-  },
-  "DND5E.TABLEOFCONTENTS": {
-    "Action": {
-      "Configure": "Inhaltsverzeichnis einrichten"
-    },
-    "FIELDS": {
-      "position": {
-        "label": "Position"
-      },
-      "showPages": {
-        "label": "Seiten anzeigen"
-      },
-      "title": {
-        "label": "Titel überschreiben"
-      },
-      "order": {
-        "label": "Reihenfolge"
-      },
-      "type": {
-        "label": "Typ"
-      }
-    },
-    "HiddenPages": "Verborgene Seiten",
-    "HideAllPages": "Alle Seiten verbergen",
-    "JournalEntry": "Journaleintrag",
-    "NoFolder": "Kein Ordner",
-    "Special": {
-      "After": "Nach {chapter}",
-      "End": "Ende des Inhaltsverzeichnisses"
-    },
-    "Title": "Inhaltsverzeichnis",
-    "Type": {
-      "Appendix": "Anhang",
-      "Chapter": "Kapitel",
-      "Header": "Kopfbereich",
-      "Special": "Sonderseite"
-    },
-    "Warning": {
-      "DuplicateHeader": "Nur ein Eintrag darf den Typ Kopfbereich haben.",
-      "DuplicatePosition": "Jedes Kapitel und jeder Anhang braucht eine eigene Position."
-    }
-  },
-  "DND5E.TARGET": {
-    "Type": {
-      "Ring": {
-        "Label": "Ring",
-        "Counted": {
-          "one": "Ring",
-          "other": "Ringe",
-          "oneSized": "{sizes} Ring",
-          "otherSized": "{number} {sizes} Ringe"
-        }
-      },
-      "Ally": {
-        "Counted": {
-          "one": "Verbündeter",
-          "other": "Verbündete"
-        }
-      },
-      "Circle": {
-        "Counted": {
-          "one": "Kreis",
-          "other": "Kreise"
-        }
-      },
-      "Cone": {
-        "Counted": {
-          "one": "Kegel",
-          "other": "Kegel"
-        }
-      },
-      "Creature": {
-        "Counted": {
-          "one": "Kreatur",
-          "other": "Kreaturen"
-        }
-      },
-      "CreatureOrObject": {
-        "Counted": {
-          "one": "Kreatur oder Objekt",
-          "other": "Kreaturen oder Objekte"
-        }
-      },
-      "Cube": {
-        "Counted": {
-          "one": "Würfel",
-          "other": "Würfel"
-        }
-      },
-      "Cylinder": {
-        "Counted": {
-          "one": "Zylinder",
-          "other": "Zylinder"
-        }
-      },
-      "Emanation": {
-        "Counted": {
-          "one": "Ausströmung",
-          "other": "Ausströmungen"
-        }
-      },
-      "Enemy": {
-        "Counted": {
-          "one": "Gegner",
-          "other": "Gegner"
-        }
-      },
-      "Line": {
-        "Counted": {
-          "one": "Linie",
-          "other": "Linien"
-        }
-      },
-      "Object": {
-        "Counted": {
-          "one": "Objekt",
-          "other": "Objekte"
-        }
-      },
-      "Radius": {
-        "Counted": {
-          "one": "Radius",
-          "other": "Radien"
-        }
-      },
-      "Space": {
-        "Counted": {
-          "one": "Feld",
-          "other": "Felder"
-        }
-      },
-      "Sphere": {
-        "Counted": {
-          "one": "Kugel",
-          "other": "Kugeln"
-        }
-      },
-      "Special": {
-        "Counted": {
-          "one": "{special}",
-          "other": "{special}"
-        }
-      },
-      "Square": {
-        "Counted": {
-          "one": "Quadrat",
-          "other": "Quadrate"
-        }
-      },
-      "Target": {
-        "Counted": {
-          "one": "Ziel",
-          "other": "Ziele"
-        }
-      },
-      "Wall": {
-        "Counted": {
-          "one": "Mauer",
-          "other": "Mauern"
-        }
-      },
-      "WillingCreature": {
-        "Counted": {
-          "one": "willige Kreatur",
-          "other": "willige Kreaturen"
-        }
-      }
-    }
-  },
-  "DND5E.TELEPORT": {
-    "Action": {
-      "Teleport": "Teleportieren"
-    },
-    "FIELDS": {
-      "teleport": {
-        "hint": "Legt die größte Teleportentfernung fest.",
-        "override": {
-          "label": "Überschreiben",
-          "hint": "Überschreibt die normale Reichweite der Aktivität und legt die größte Teleportentfernung von Hand fest."
-        },
-        "value": {
-          "label": "Größte Entfernung"
-        },
-        "label": "Distanz",
-        "units": {
-          "label": "Entfernungseinheit"
-        }
-      }
-    },
-    "Hint": "Teleportiert einen Token an ein gewähltes Ziel.",
-    "SECTIONS": {
-      "Teleport": "Teleportieren"
-    },
-    "Title": "Teleportieren",
-    "Warning": {
-      "InvalidDistance": "Teleportieren ist in Szenen ohne unterstützte Bewegungseinheiten nicht möglich."
-    }
-  },
-  "DND5E.TOKEN": {
-    "Attribute": {
-      "Label": "Token: {attribute}",
-      "LightBrightRadius": "Radius des hellen Lichts",
-      "LightDimRadius": "Radius des dämmrigen Lichts"
-    },
-    "LockScale": {
-      "Hint": "Verhindert, dass der Token angepasst skaliert wird, wenn der Akteur klein ist.",
-      "Label": "Skalierung sperren"
-    },
-    "LockSize": {
-      "Hint": "Entsperren, um die Maße dieses Tokens von Hand einzugeben. Sie werden dann nicht mehr anhand der Kreaturengröße angepasst.",
-      "Label": "Größe sperren"
-    }
-  },
-  "DND5E.Tokens": {
-    "NoTargets": "Keine Ziele"
-  },
-  "DND5E.TOOL": {
-    "FIELDS": {
-      "tools": {
-        "element": {
-          "roll": {
-            "bonus": {
-              "label": "Werkzeugwurfbonus"
-            },
-            "max": {
-              "label": "Höchster Werkzeugwurf"
-            },
-            "min": {
-              "label": "Niedrigster Werkzeugwurf"
-            },
-            "mode": {
-              "label": "Vorteilmodus für Werkzeugwürfe"
-            }
-          }
-        }
-      }
-    },
-    "Formatter": {
-      "CheckBonus": "Wurfbonus auf {name}",
-      "Proficiency": "Übung mit {name}"
-    }
-  },
-  "DND5E.TRAIT": {
-    "Armor": {
-      "one": "Rüstungsausbildung",
-      "other": "Rüstungsausbildung",
-      "title": "Rüstungsausbildung"
-    },
-    "ArmorLegacy": {
-      "other": "Übung mit Rüstungen",
-      "title": "Übung mit Rüstungen",
-      "one": "Übung mit Rüstung"
-    },
-    "Damage": {
-      "Modification": {
-        "one": "Schadensmodifikation",
-        "title": "Schadensmodifikation",
-        "other": "Schadensmodifikatoren"
-      },
-      "Immunity": {
-        "one": "Schadensimmunität",
-        "other": "Schadensimmunitäten",
-        "title": "Schadensimmunitäten"
-      },
-      "Resistance": {
-        "one": "Schadensresistenz",
-        "other": "Schadensresistenzen",
-        "title": "Schadensresistenzen"
-      },
-      "Vulnerability": {
-        "one": "Schadensanfälligkeit",
-        "other": "Schadensanfälligkeiten",
-        "title": "Schadensanfälligkeiten"
-      }
-    },
-    "Generic": {
-      "other": "Merkmale",
-      "title": "Merkmale",
-      "one": "Merkmal"
-    },
-    "Skill": {
-      "other": "Übung in Fertigkeiten",
-      "title": "Übung in Fertigkeiten",
-      "one": "Übung in Fertigkeit"
-    },
-    "Tool": {
-      "one": "Übung mit Werkzeug",
-      "other": "Übung mit Werkzeugen",
-      "title": "Übung mit Werkzeugen"
-    },
-    "Action": {
-      "Configure": "{trait} bearbeiten"
-    },
-    "All": "Alle {category}",
-    "Condition": {
-      "Immunity": {
-        "one": "Zustandsimmunität",
-        "other": "Zustandsimmunitäten",
-        "title": "Zustandsimmunitäten"
-      }
-    },
-    "Choose": {
-      "AnyCounted": "jede {count} {type}",
-      "AnyUncounted": "jede {type}",
-      "List": "{count} aus {list}",
-      "Other": "{count} andere {type}",
-      "Wrapper": "Wähle {choices}"
-    },
-    "Chosen": "Gewählte Eigenschaften",
-    "Language": {
-      "one": "Sprache",
-      "other": "Sprachen",
-      "title": "Sprachen"
-    },
-    "Save": {
-      "one": "Übung mit Rettungswurf",
-      "other": "Übung mit Rettungswürfen",
-      "title": "Übung mit Rettungswürfen"
-    },
-    "Weapon": {
-      "one": "Übung mit Waffe",
-      "other": "Übung mit Waffen",
-      "title": "Übung mit Waffen"
-    }
-  },
-  "DND5E.TRANSFORM": {
-    "FIELDS": {
-      "transform": {
-        "formless": {
-          "hint": "Erlaubt der Kreatur, alle Gestalten abzulegen und in ihren Grundzustand zurückzukehren.",
-          "label": "Gestaltlos"
-        },
-        "mode": {
-          "Form": "Gestalt wählen",
-          "hint": "Legt fest, wie die Änderungen der Verwandlung bestimmt werden.",
-          "CR": "Kreaturenwerte (nach Herausforderungsgrad)",
-          "Direct": "Kreaturenwerte (per Direktlink)"
-        }
-      }
-    },
-    "NoForm": "Keine Gestalt"
-  },
-  "DND5E.USES": {
-    "Recovery": {
-      "Empty": "Keine Erholung festgelegt. Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben Erholungszeiträume hinzu."
-    }
-  },
-  "DND5E.WEAPON": {
-    "FIELDS": {
-      "damage": {
-        "base": {
-          "bonus": {
-            "label": "Grundschadensbonus"
-          },
-          "custom": {
-            "enabled": {
-              "label": "Eigene Formel für den Grundschaden verwenden"
-            },
-            "formula": {
-              "label": "Eigene Formel für den Grundschaden"
-            }
-          },
-          "denomination": {
-            "label": "Würfelart des Grundschadens"
-          },
-          "number": {
-            "label": "Würfelanzahl des Grundschadens"
-          },
-          "scaling": {
-            "formula": {
-              "label": "Skalierungsformel des Grundschadens"
-            },
-            "mode": {
-              "label": "Skalierungsart des Grundschadens"
-            },
-            "number": {
-              "label": "Skalierungswert des Grundschadens"
-            }
-          },
-          "types": {
-            "label": "Schadensarten des Grundschadens"
-          }
-        },
-        "bonus": {
-          "label": "Schadensbonus"
-        }
-      }
-    }
-  },
-  "DND5E.WELCOME": {
-    "Button": "Willkommensbildschirm",
-    "Message": {
-      "Bugs": "<p>Auf einen Fehler gestoßen? Hilfe aus der Gemeinschaft gibt es im <a href=\"{discord}\">offiziellen Discord</a>. Fehler meldest du im <a href=\"{issues}\">Issue-Tracker</a> des Systems.</p>",
-      "Changes": "<p>Sieh dir die <a href=\"{changes}\">Änderungen</a> der neuesten Version an.</p>",
-      "Content": "<p>Im Reiter <strong>Offizielle Inhalte</strong> siehst du, welche D&D-5e-Bücher verfügbar sind, und kannst sie in dieser Welt aktivieren.</p>",
-      "Documentation": "<p>Ausführliche Informationen zur Bedienung des Systems stehen im <a href=\"{wiki}\">Dokumentations-Wiki</a>.</p>",
-      "Introduction": "<p>Willkommen beim offiziellen Spielsystem für <strong>Dungeons & Dragons Fifth Edition</strong>.</p>",
-      "MoreContent": "<p>Weitere Inhalte für Dungeons & Dragons Fifth Edition findest du auf dem offiziellen <a href=\"{marketplace}\">Foundry VTT Marketplace</a>.</p>"
-    },
-    "Module": {
-      "NotInstalled": "Nicht installiert",
-      "Enabled": "Aktiviert"
-    },
-    "Section": {
-      "adventures": "Abenteuer",
-      "core": "Grundregelwerke",
-      "expanded": "Erweiterungsregelwerke",
-      "more": "Weitere Inhalte"
-    },
-    "Settings": {
-      "Metric": {
-        "Hint": "Stellt Entfernungen, Gewichte und Volumen standardmäßig auf metrische Einheiten um.",
-        "Label": "Metrisches System verwenden"
-      },
-      "Label": "Einstellungen"
-    },
-    "Tab": {
-      "main": "Willkommen",
-      "modules": "Offizielle Inhalte"
-    },
-    "Title": "Willkommen bei D&D 5e"
-  },
-  "EDITOR.DND5E.Inserts": {
-    "Advice": "Allgemeiner Rat",
-    "EnrichersGroup": "D&D-Anreicherungen",
-    "FloatLeft": "Links umfließen",
-    "FloatRight": "Rechts umfließen",
-    "Group": "D&D-Blöcke",
-    "HabitatTreasure": "Lebensraum & Schatz",
-    "Item": "Gegenstand",
-    "Lookup": "Nachschlagen",
-    "Narrative": "Erzählung",
-    "Notable": "Bemerkenswert",
-    "Quest": "Auftrag",
-    "Quote": "Hervorgehobenes Zitat",
-    "Skill": "Fertigkeitswurf",
-    "VTTAdvice": "Rat für VTT",
-    "Attack": "Angriffswurf",
-    "Award": "Belohnung",
-    "Check": "Attributswurf",
-    "Damage": "Schaden",
-    "Healing": "Heilung",
-    "Reference": "Referenz",
-    "Save": "Rettungswurf"
-  },
-  "KEYBINDINGS.DND5E.ToggleSheetMode": "Bogenmodus umschalten",
-  "MIGRATION.DND5E": {
-    "Compendium": {
-      "Failed": "Migration des Kompendiums {compendium} fehlgeschlagen.",
-      "Migrate": "Kompendium {compendium} wird für Version {version} migriert.",
-      "Refresh": "Kompendium {compendium} wird aktualisiert."
-    },
-    "World": {
-      "Begin": "Migriere DnD5E System zu Version {version}. Bitte Geduld haben und das Spiel nicht schließen oder beenden.",
-      "Complete": "DnD5E System-Migration zu Version {version} abgeschlossen!"
-    },
-    "Warning": {
-      "VersionTooOld": "Die DnD5e-Systemdaten stammen von einer zu alten Foundry-Version und können nicht verlässlich migriert werden. Ein Versuch wird unternommen, aber Fehler können auftreten."
-    }
-  },
-  "SETTINGS.5eNoExhaustionN": "Erschöpfungsautomatik ausschalten",
-  "SETTINGS.5eNoExhaustionL": "Schaltet die automatischen Erschöpfungseffekte des Systems aus.",
-  "SETTINGS.DND5E": {
-    "AUTOMATION": {
-      "Autosize": {
-        "Hint": "Passt Maße und Skalierung eines Tokens automatisch an seine Größenkategorie an.",
-        "Name": "Tokengröße abgleichen"
-      },
-      "Falling": {
-        "Name": "Sturzautomatik ausschalten",
-        "Hint": "Den Sturzzustand von Tokens nicht verfolgen."
-      },
-      "SenseVision": {
-        "Name": "Sinne mit der Tokensicht abgleichen",
-        "Hint": "Richtet Sichtweite, Sichtmodus und Wahrnehmungsmodi des Tokens automatisch nach den Sinnen des Akteurs ein.",
-        "Notice": "Sicht und Wahrnehmung werden aus den {senses} dieses Akteurs übernommen.",
-        "Senses": "Sinnen"
-      }
-    },
-    "CHATLOG": {
-      "Hint": "Legt ein Design für den Chatverlauf fest. Standardmäßig wird das Design der Anwendung übernommen.",
-      "Name": "Design des Chatverlaufs",
-      "Options": {
-        "dark": "Dunkel",
-        "blank": "Standard",
-        "light": "Leicht"
-      }
-    },
-    "COMBAT": {
-      "AutoApplyDowned": {
-        "Name": "Außer Gefecht automatisch setzen",
-        "Hint": "Markiert eine Kreatur automatisch als tot oder bewusstlos, wenn sie im Kampf auf 0 TP sinkt. Unwichtige NSC werden als tot markiert. Wichtige NSC und SC werden zuerst bewusstlos und erst nach drei fehlgeschlagenen Todesrettungswürfen tot.",
-        "DeadOnly": "Für NSC (nur tot)",
-        "NPCs": "Für NSC (tot und bewusstlos)",
-        "All": "Immer",
-        "None": "Niemals"
-      },
-      "InitiativeGroupCombatants": {
-        "Name": "Kämpfer gruppieren",
-        "Hint": "Fasst Kämpfer mit gleichem Initiativewert in der Kampfleiste zusammen."
-      },
-      "InitiativeGroupRoll": {
-        "Name": "Einmal je Kreaturenart würfeln",
-        "Hint": "Gleiche Kreaturen verwenden denselben Initiativewurf."
-      }
-    },
-    "ENCOUNTERS": {
-      "EncounterPlacementBehavior": {
-        "Name": "Platzierungsoptionen",
-        "Hint": "Legt fest, ob Mitglieder einer Begegnung beim Platzieren in einer Szene dem Kampf hinzugefügt werden.",
-        "CreateCombatants": "Zum Kampf hinzufügen",
-        "None": "Nichts tun",
-        "RollInitiative": "Zum Kampf hinzufügen und Initiative würfeln"
-      },
-      "Name": "Begegnungen"
-    },
-    "PIETY": {
-      "Hint": "Schaltet die optionale Frömmigkeit für Spielercharaktere ein.",
-      "Name": "Frömmigkeitswert"
-    },
-    "PERMISSIONS": {
-      "AllowDamage": {
-        "Hint": "Spieler dürfen Schaden auf eigene Tokens anwenden.",
-        "Name": "Spielern das Anwenden von Schaden erlauben"
-      },
-      "AllowEffects": {
-        "Hint": "Spieler dürfen das Effektfach nutzen, wenn ein eigener Akteur Ziel eines Effekts ist.",
-        "Name": "Spielern das Anwenden von Effekten erlauben"
-      }
-    },
-    "SUMMARIZECHAT": {
-      "Hint": "Hängt bestimmte Ergebnisse als Zusammenfassung an statt als vollständige Chatkarte.",
-      "Name": "Zusammengefasste Chatkarten"
-    },
-    "CONDITIONS": {
-      "Name": "Zustände"
-    },
-    "BLOODIED": {
-      "All": "Für freundliche, neutrale und feindliche Tokens anzeigen",
-      "Player": "Nur für freundliche Tokens anzeigen"
-    }
-  },
-  "DOCUMENT.Activity": "Aktivität",
-  "DOCUMENT.Advancement": "Fortschritt",
-  "DND5E.BiographyPublicEdit": "Bearbeite Öffentliche Biographie",
-  "DND5E.FEATURE": {
-    "FIELDS": {
-      "enchant": {
-        "label": "Verzauberung Konfiguration",
-        "items": {
-          "max": {
-            "label": "Item Grenze",
-            "hint": "Formel für die maximale Anzahl von Verzauberungen dieser Art, die gleichzeitig aktiv sein können."
-          },
-          "period": {
-            "label": "Ersatz Periode",
-            "hint": "Wie oft können Verzauberungen dieser Art auf verschiedene Items übertragen werden?"
-          }
-        }
-      }
-    }
-  },
-  "DND5E.FlagsRemarkableAthleteHintLegacy": "Halber Übungsbonus (aufgerundet) auf körperliche Fertigkeitswürfe und Initiative.",
-  "EDITOR.DND5E.Inline": {
-    "DamageAverage": "{average} <span class=\"formula-group\">({formula})</span> {type}",
-    "DamageExtended": "<em>Treffer:</em> {damage}",
-    "DamageLong": "{damage} Schaden"
-  },
-  "KEYBINDINGS.DND5E.OpenCompendiumBrowser": "Kompendium Browser öffnen",
-  "DND5E.FlagsRemarkableAthleteHint": "Vorteil bei Initiativewürfen und Stärkewürfen (Athletik)."
+  }
 }

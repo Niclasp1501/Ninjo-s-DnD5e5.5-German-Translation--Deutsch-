@@ -897,7 +897,9 @@ const DND5E_5X_TEXTE = {
   "EDITOR.DND5E.Inline.DamageExtended": "<em>Treffer:</em> {damage} Schaden",
   "EDITOR.DND5E.Inline.DamageLong": "{average} ({formula}) {type}",
   "SETTINGS.DND5E.BLOODIED.All": "Anzeigen für Verbündete und Feinde",
-  "SETTINGS.DND5E.BLOODIED.Player": "Nur für Verbündete Anzeigen"
+  "SETTINGS.DND5E.BLOODIED.Player": "Nur für Verbündete Anzeigen",
+  // Unter 5.x ein Text, unter 6.0 ein Block mit Advance und Maintain. de.json kann nur eins tragen.
+  "DND5E.Bastion.Confirm": "Einen Bastionszug vorantreiben?"
 };
 
 Hooks.once("i18nInit", () => {
