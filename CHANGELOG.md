@@ -21,9 +21,9 @@ Jetzt steht alles in einem Block, und beim Laden geht kein Text mehr verloren.
 Eine neue Prüfung im Build rechnet die Sprachdateien so zusammen wie Foundry und
 schlägt fehl, sobald dabei ein Text verloren ginge.
 
-### Changed - Geprüft mit dnd5e 6.0.2
+### Changed - Geprüft mit dnd5e 6.0.2 und 6.0.3
 
-dnd5e 6.0.2 bringt keine neuen oder geänderten Texte mit. Die Bestätigung einer
+dnd5e 6.0.2 und 6.0.3 bringen keine neuen oder geänderten Texte mit. Die Bestätigung einer
 Bastionsrunde war unter 5.x ein einzelner Text und ist unter 6.0 zweigeteilt. Unter
 5.x setzt das Modul die bisherige deutsche Fassung beim Start wieder ein.
 
