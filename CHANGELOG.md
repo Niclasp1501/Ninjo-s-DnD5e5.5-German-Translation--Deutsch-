@@ -5,6 +5,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [14.2609.8] - 2026-09-19
 
+### Fixed - Fehlende Werte in 16 Texten
+
+In 16 Texten fehlten Platzhalter, die das englische Original hat, oder sie waren
+mit übersetzt worden. Sichtbar war das so:
+
+- Der **Aufladewurf** nannte kein Ergebnis, man sah nicht, ob die Fähigkeit wieder bereit ist.
+- **Paktzauberplätze** standen ohne Grad und Anzahl da.
+- Die Verbrauchsdialoge für **Zauberplätze, Trefferwürfel, Anwendungen und Material** zeigten nicht, wie viel noch übrig ist.
+- Der Titel eines **Fertigkeitswurfs** nannte das Attribut nicht, und die Meldung **ohne freien Zauberplatz** weder Grad noch Zauber.
+- Die Beschwörungswarnung zeigte wörtlich „{Akteur}“ statt des Namens, die Auswahlwarnung im Kompendium-Browser „{document}“.
+
+Die Texte folgen jetzt dem englischen Stand von dnd5e 6.0.3. Absichtlich anders bleibt die
+Einleitung der Klassenmerkmale: Das Original setzt dort den Klassennamen klein ein, was im
+Deutschen „Als magier“ ergäbe.
+
 ### Fixed - Über 1600 Texte wieder deutsch
 
 Mit 14.2609.7 standen 1611 Texte der Oberfläche wieder auf Englisch, obwohl sie in der
