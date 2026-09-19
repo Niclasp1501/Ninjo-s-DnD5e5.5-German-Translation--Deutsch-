@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [14.2609.8] - 2026-09-19
+## [14.2609.9] - 2026-09-19
 
 ### Fixed - Fehlende Werte in 16 Texten
 
@@ -19,6 +19,8 @@ mit übersetzt worden. Sichtbar war das so:
 Die Texte folgen jetzt dem englischen Stand von dnd5e 6.0.3. Absichtlich anders bleibt die
 Einleitung der Klassenmerkmale: Das Original setzt dort den Klassennamen klein ein, was im
 Deutschen „Als magier“ ergäbe.
+
+## [14.2609.8] - 2026-09-19
 
 ### Fixed - Über 1600 Texte wieder deutsch
 
