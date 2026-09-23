@@ -1,169 +1,170 @@
 # Ninjo's DnD5e5.5 German Translation (Deutsch)
 
-**Version:** 14.0.3  
-**Status:** Beta
+Das System `dnd5e` in Foundry VTT auf Deutsch: Oberfläche, Charakterbögen und Kompendien, mit den
+Begriffen des offiziellen deutschen SRD 5.2.1.
 
-Dieses Modul übersetzt das Foundry-`dnd5e`-System (5.x) für Foundry v13/v14 ins Deutsche.
-
-## Deutsch (zuerst)
-
-### Zielbild
-- Kernfokus ist eine starke deutsche Systemübersetzung für:
-  - DnD5e-Moduloberfläche
-  - Character Sheets
-  - zentrale Spiel- und Bedienfunktionen
-- Diese Hauptfunktion ist bereits nutzbar.
-
-### Was ist Beta?
-- Beta betrifft primär Regel-/Kompendiumsinhalte (SRD und weitere Inhalte).
-- Aktuell ist in diesem Bereich vor allem **Ausrüstung** (Legacy + Modern) weit ausgebaut.
-- Weitere Inhalte folgen schrittweise in kommenden Releases.
-- In `1.0.3` wurden viele weitere Modern-SRD-Inhalte ergänzt.
-- Hinweis: Die Modern-SRD/Kompendium-Übersetzung ist deutlich breiter abgedeckt, aber weiterhin beta und noch nicht vollständig.
-- In `1.0.4` wurden Origins-/Appendix-Probleme behoben (falsche Zuordnungen, Embed-Rekursionen) und die Stabilität verbessert.
-- Ebenfalls in `1.0.4`: verbesserte UTF-8/Zeichensatzbehandlung, inklusive korrekter Anzeige von `ß`, `ä`, `ö` und `ü`.
-- In `1.0.5` wurden verbliebene englische Schadens-/Bypass-Texte über korrekte dnd5e-i18n-Keys behoben (ohne UI-Hacks), inkl. `Physical Bypasses` und Legacy-`Damage*`-Labels.
-- In `1.0.6` wurden Klassenkapitel im Regelwerk stabilisiert: fehlende `phbAppendixClass`-Unterseiten wurden ergänzt, damit TOC-Abschnitte wie `Ein ... werden ...` wieder für alle Kernklassen konsistent erscheinen.
-- In `1.0.7` wurden fehlende Zauber-Ordnernamen ergänzt (`Cantrips`, `Supplemental Items`) und korrekt auf Deutsch gemappt (`Zaubertricks`, `Zusätzliche Inhalte`).
-
-### Feedback
-- Feedback ist ausdrücklich willkommen und hilft direkt bei der Priorisierung der nächsten Übersetzungsbereiche.
-
-### Begriffe: SRD-5.2.1-konform
-Die Regelbegriffe dieses Moduls folgen dem **offiziellen deutschen
-Systemreferenzdokument 5.2.1** (Wizards of the Coast, 08.12.2025, CC-BY-4.0):
-
-> https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf
-
-Das SRD 5.2.1 deckt die 2024er Regeledition ab -- also genau die, die dieses Modul
-übersetzt. Es ist damit die maßgebliche Quelle und ersetzt das D3-Wörterbuch
-(dnddeutsch.de), das nur das Spielerhandbuch 2014 abdeckt.
-
-**Arbeitsregel:** Jeder Regelbegriff wird am SRD belegt, nicht abgeleitet. Belegt sind
-unter anderem alle 15 Zustände, alle 13 Schadensarten, alle 18 Fertigkeitsnamen sowie
-`Attributswurf`, `W20-Prüfung`, `Waffenbeherrschung`, `Klassenkombination`,
-`Kampfrausch`, `Zaubergrad` und `Stufenbereich`. Das Schwestermodul
-[Ninjo's DnD5e5.5 Spielerhandbuch-Deutsch](https://github.com/Niclasp1501) benutzt
-dieselben Begriffe; die gemeinsame Master-Tabelle führt die Belegstellen mit.
-
-Wo das SRD einen Begriff nicht kennt (Inhalte ausserhalb des SRD, Foundry-Eigenheiten),
-entscheidet die modulinterne Einheitlichkeit. Solche Einträge sind in der Master-Tabelle
-als `needs-official-check` markiert.
-
-### Voraussetzungen
-- Foundry VTT v13 oder v14
-- `dnd5e` System 5.x (aktiv in der Welt)
-- Für Foundry v14 wird `dnd5e` 5.3.x oder neuer empfohlen.
-- Babele 2.7.5 oder neuer
-
-### Versionsschema
-- Das Modul nutzt ein Foundry-erkennbares Schema:
-  - `14.x.y` = für Foundry v14 verifiziert (bei weiterhin `minimum: 13` für Dual-Support)
-  - `13.x.y` = für Foundry v13 verifiziert
-
-### Optional empfohlen
-- `metric-ruler-labels` (separates Modul) für zusätzliche metrische Anzeigen im Lineal/Messwerkzeug.
-- Hinweis: Distanz-/Reichweitenangaben werden standardmäßig metrisch behandelt (`m`/`km`), sofern `dnd5e.metricLengthUnits` aktiv ist.
-
-### Installation
-1. In Foundry auf **Add-on Modules** gehen.
-2. **Install Module** auswählen.
-3. Manifest einfügen:
-   `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
-4. Modul installieren, Foundry neu starten, Modul in der Welt aktivieren.
-
-### Beta-Teilnahme (optional)
-- Für Vorabtests können Beta-Releases genutzt werden (GitHub **Pre-Release** mit `-beta` im Tag).
-- Empfehlung:
-  - nur in Testwelt/Testserver einsetzen
-  - vorab Welt-/Data-Backup erstellen
-  - Modul-/System-Updates nicht ungeprüft in Produktivwelten übernehmen
-- Risiken bei Beta-Versionen:
-  - unvollständige oder fehlerhafte Übersetzungen in Randbereichen
-  - temporäre UI-/Tooltip-Regressions nach dnd5e-/Foundry-Änderungen
-  - notwendige Hotfixes zwischen Beta-Builds
-- Feedback aus Beta-Tests ist sehr hilfreich und fließt direkt in die nächste stabile Version ein.
+*(English version further down / Weiter unten auf Englisch)*
 
 ---
 
-## English
+## 🇩🇪 Deutsch
 
-### Project Goal
-- Primary goal is robust German system translation for:
-  - dnd5e module interface
-  - character sheets
-  - core gameplay-facing UI
-- This core function is already usable.
+D&D auf Deutsch zu spielen und dabei in Foundry ständig auf englische Begriffe zu stoßen, reißt
+einen immer wieder aus dem Spiel. Mit dieser Übersetzung sprechen das System `dnd5e`, die
+Charakterbögen und die mitgelieferten Kompendien Deutsch, und zwar mit genau den Begriffen, die
+auch in euren Büchern stehen.
 
-### What is Beta?
-- Beta currently applies mainly to rules/compendium content (SRD and additional content packs).
-- In that area, **equipment** (legacy + modern) is currently the most developed.
-- More content will be added step by step in upcoming releases.
-- `1.0.3` adds substantial modern SRD translation coverage across additional packs.
-- Note: modern SRD/compendium translation is now much broader, but still beta and not yet complete.
-- `1.0.4` fixes origins/appendix regressions (wrong content mapping, embed recursion issues) and improves runtime stability.
-- `1.0.4` also improves UTF-8 character handling, including reliable rendering of `ß`, `ä`, `ö`, and `ü`.
-- `1.0.5` fixes remaining English damage/bypass labels via correct dnd5e i18n keys (no DOM hack), including `Physical Bypasses` and legacy flat `Damage*` labels.
-- `1.0.6` stabilizes class chapter rendering in rules content by completing missing `phbAppendixClass` class pages, restoring consistent TOC subsections across all core classes.
-- `1.0.7` adds missing spells folder mappings for `Cantrips` and `Supplemental Items`, ensuring consistent German folder labels in the sidebar.
+### Die Begriffe aus dem offiziellen SRD
 
-### Feedback
-- Feedback is very welcome and helps prioritize the next translation areas.
+Jeder Regelbegriff ist am offiziellen deutschen Systemreferenzdokument 5.2.1 von Wizards of the
+Coast belegt, also an der deutschen Fassung der Regeln von 2024. Das gilt für alle Zustände,
+Schadensarten und Fertigkeiten ebenso wie für Begriffe wie Attributswurf, W20-Prüfung,
+Waffenbeherrschung oder Zaubergrad. So heißt im Bogen alles so, wie es im Buch steht, und niemand
+muss am Tisch übersetzen, was eine Fähigkeit eigentlich meint. Nur wo das SRD einen Begriff nicht
+kennt, etwa bei Eigenheiten von Foundry, entscheidet die Einheitlichkeit innerhalb des Moduls.
 
-### Terminology: SRD 5.2.1 conformant
-The rules terminology of this module follows the **official German System Reference
-Document 5.2.1** (Wizards of the Coast, 2025-12-08, CC-BY-4.0):
+### Was übersetzt ist
 
-> https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf
+Die Oberfläche des Systems und die Charakterbögen sind übersetzt und im Alltag erprobt. Für dnd5e 6.0 sind knapp siebenhundert neue Texte dazugekommen, alle bereits auf Deutsch.
 
-SRD 5.2.1 covers the 2024 rules edition -- exactly the one this module translates. It
-is therefore the authoritative source and supersedes the D3 dictionary
-(dnddeutsch.de), which only covers the 2014 Player's Handbook.
+Die Kompendien übersetzt das Modul mit Babele, und zwar sowohl die neuen Inhalte von 2024 als auch
+die älteren von 2014: Klassen und Unterklassen, Herkünfte und Hintergründe, Talente, Zauber,
+Ausrüstung und Gegenstände, Monster samt ihrer Fähigkeiten, Tabellen, Handelswaren, die fertigen
+Helden und die Regeln selbst. Die Abdeckung ist dabei sehr breit, aber nicht lückenlos. Einzelne
+Einträge können noch englisch sein, und wenn dir einer auffällt, ist ein Hinweis auf GitHub der
+schnellste Weg, ihn in die nächste Version zu bringen.
 
-**Working rule:** every rules term is evidenced against the SRD, not derived. Confirmed
-terms include all 15 conditions, all 13 damage types, all 18 skill names, plus
-`Attributswurf`, `W20-Prüfung`, `Waffenbeherrschung`, `Klassenkombination`,
-`Kampfrausch`, `Zaubergrad` and `Stufenbereich`. The sibling module
-[Ninjo's DnD5e5.5 Spielerhandbuch-Deutsch](https://github.com/Niclasp1501) uses the
-same terms; the shared master glossary records the evidence.
+### Kleine Dinge, die den Unterschied machen
 
-Where the SRD does not cover a term (non-SRD content, Foundry specifics), internal
-consistency decides. Such entries are tagged `needs-official-check` in the master
-glossary.
+Die Überschriftenschrift von dnd5e kennt keine Umlaute, sodass Ä, Ö, Ü und ß mitten im Wort in
+einer anderen Schrift erschienen. Das Modul ergänzt genau diese Zeichen, und deutsche Überschriften
+sehen wieder aus wie aus einem Guss.
 
-### Requirements
-- Foundry VTT v13 or v14
-- `dnd5e` system 5.x (active in world)
-- For Foundry v14, `dnd5e` 5.3.x or newer is recommended.
-- Babele 2.7.5 or newer
-
-### Versioning
-- The module uses a Foundry-visible scheme:
-  - `14.x.y` = verified for Foundry v14 (while keeping `minimum: 13` for dual support)
-  - `13.x.y` = verified for Foundry v13
-
-### Optional recommendation
-- `metric-ruler-labels` (separate module) for additional metric labels in ruler/measuring tool overlays.
-- Note: Distance/range values are handled in metric units (`m`/`km`) by default when `dnd5e.metricLengthUnits` is enabled.
+Spielst du mit Metern, schaltest du in den Einstellungen von dnd5e die metrischen Längeneinheiten
+ein. Dann rechnet das Modul Bewegung, Sinne und Reichweiten von Figuren und Gegenständen beim
+Import von Fuß in Meter und von Meilen in Kilometer um. Die Beschreibungstexte bleiben dabei
+unangetastet.
 
 ### Installation
-1. Open **Add-on Modules** in Foundry.
-2. Click **Install Module**.
-3. Paste manifest URL:
-   `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
-4. Install, restart Foundry, enable module in your world.
 
-### Beta Participation (optional)
-- For early testing, you can use beta builds (GitHub **Pre-Release** tags containing `-beta`).
-- Recommendation:
-  - use only in a test world/test server
-  - create a world/data backup first
-  - do not roll module/system updates into production worlds without validation
-- Beta risks:
-  - incomplete or incorrect translations in edge cases
-  - temporary UI/tooltip regressions after dnd5e/Foundry changes
-  - possible hotfix cadence between beta builds
-- Feedback from beta testing is highly valuable and is fed into the next stable release.
+Die Übersetzung steht im offiziellen Foundry-Paketkatalog. Öffne in Foundry den Reiter
+**Add-on-Module**, klicke auf **Modul installieren** und suche nach *Ninjo's DnD5e5.5 German
+Translation*. Das Modul braucht Babele, und Foundry bietet dir bei der Installation an, es gleich
+mitzuinstallieren. Danach aktivierst du beides in deiner Welt, stellst in den Einstellungen unter
+**Sprache** auf **Deutsch** um und lädst neu.
 
-## License
-MIT License, see [LICENSE](LICENSE).
+Du kannst auch diese Manifest-Adresse verwenden:
+`https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
+
+Du brauchst Foundry VTT v13 oder v14, das System `dnd5e` ab Version 5.0 (geprüft bis 6.0.3) und
+Babele ab Version 2.7.5.
+
+### Gut zu wissen
+
+Erscheint eine neue Version von dnd5e, können neue Texte eine Weile englisch bleiben, bis die
+Übersetzung nachgezogen hat. Andere Übersetzungen für dnd5e
+solltest du nicht gleichzeitig aktiv haben, denn sie überschreiben sich gegenseitig, und am Ende
+weiß niemand mehr, welcher Text woher kommt.
+
+---
+
+## 🇬🇧 English
+
+Playing D&D in German while Foundry keeps throwing English terms at you pulls everyone out of the
+game again and again. With this translation, the `dnd5e` system, the character sheets and the
+bundled compendiums speak German, using exactly the terms your German books use.
+
+### The terms from the official SRD
+
+Every rules term is checked against the official German System Reference Document 5.2.1 from
+Wizards of the Coast, the German edition of the 2024 rules. That goes for every condition, damage
+type and skill, just as it does for terms like Attributswurf, W20-Prüfung, Waffenbeherrschung or
+Zaubergrad. So everything on the sheet is called what it is called in the book, and nobody has to
+translate at the table what an ability actually means. Only where the SRD has no term, such as for
+Foundry specifics, does consistency within the module decide.
+
+### What is translated
+
+The system interface and the character sheets are translated and proven in regular play. dnd5e 6.0
+brought almost seven hundred new texts, and all of them are already in German.
+
+The module translates the compendiums through Babele, both the new 2024 content and the older 2014
+content: classes and subclasses, origins and backgrounds, feats, spells, equipment and items,
+monsters with their abilities, tables, trade goods, the premade heroes and the rules themselves.
+Coverage is very broad, but not complete. Individual entries may still be in English, and if you
+spot one, a note on GitHub is the quickest way to get it into the next version.
+
+### Small things that make a difference
+
+The heading font of dnd5e has no umlauts, so Ä, Ö, Ü and ß appeared in a different font in the
+middle of a word. The module adds exactly these characters, and German headings look all of a
+piece again.
+
+If you play with metres, switch on metric length units in the dnd5e settings. The module then
+converts movement, senses and ranges of actors and items from feet to metres and from miles to
+kilometres when they are imported. Description texts are left untouched.
+
+### Installation
+
+The translation is in the official Foundry package catalogue. In Foundry, open the **Add-on
+Modules** tab, click **Install Module** and search for *Ninjo's DnD5e5.5 German Translation*. The
+module needs Babele, and Foundry offers to install it along with it. Then enable both in your
+world, switch the **Language** setting to **Deutsch** and reload.
+
+You can also use this manifest URL:
+`https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
+
+You need Foundry VTT v13 or v14, the `dnd5e` system from version 5.0 (tested up to 6.0.3) and
+Babele from version 2.7.5.
+
+### Good to know
+
+When a new version of dnd5e comes out, new texts may stay in English for a while until the
+translation has caught up. You should not have other dnd5e translations active at the same time,
+because they overwrite each other, and in the end nobody knows which text comes from where.
+
+---
+
+## Technical notes
+
+### Terminology source
+
+The rules terms follow the official German System Reference Document 5.2.1 (Wizards of the
+Coast, 2025-12-08, CC-BY-4.0):
+https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf
+
+SRD 5.2.1 covers the 2024 rules edition, exactly the one this module translates, and therefore
+supersedes the D3 dictionary (dnddeutsch.de), which only covers the 2014 Player's Handbook. Every
+rules term is evidenced against the SRD, not derived. Where the SRD has no term (content outside
+the SRD, Foundry specifics), consistency within the module decides.
+
+### How it works
+
+Interface texts come from `languages/de.json`; a build check merges the language files the way
+Foundry does and fails as soon as a text would be lost. Compendium content is translated through
+Babele with the mappings in `babele/`, split into the legacy (2014) and modern (2024) packs. When
+`dnd5e.metricLengthUnits` is enabled, `preCreateActor` and `preCreateItem` convert structured
+distance fields (movement, senses, item and activity ranges) from `ft` to `m` and `mi` to `km`;
+free text is never rewritten. For extra metric labels on the ruler, the separate module
+`metric-ruler-labels` is a good companion.
+
+### Versions and beta builds
+
+Versions follow `<Foundry generation>.<YYMM>.<running number>`, for example `14.2609.9`: built for
+Foundry 14, September 2026, ninth release of the month.
+
+Beta builds are published as GitHub pre-releases with `-beta` in the tag. Use them only in a test
+world, back up your data first, and expect gaps or small regressions in edge cases after dnd5e or
+Foundry updates. Feedback from beta testing goes straight into the next stable release.
+
+---
+
+## License / Lizenz
+
+The code of this module is released under the [MIT License](LICENSE). The translated rules texts
+come from the SRD and, like it, are licensed under CC-BY-4.0. The Ninjo logo (`assets/ninjo.png`)
+is not covered by any of these licences.
+
+Der Code dieses Moduls steht unter der [MIT-Lizenz](LICENSE). Die übersetzten Regeltexte stammen
+aus dem SRD und stehen wie dieses unter CC-BY-4.0. Das Ninjo-Logo (`assets/ninjo.png`) fällt unter
+keine dieser Lizenzen.
