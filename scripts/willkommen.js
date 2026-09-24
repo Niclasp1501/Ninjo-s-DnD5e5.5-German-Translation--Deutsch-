@@ -43,6 +43,7 @@ const MODUL = {
 };
 
 const FORGE = "https://ninjos-forge.web.app";
+const PATREON = "https://www.patreon.com/ninjosforge";
 const EINSTELLUNG = "willkommenGesehen";
 
 /* ── Identical in every module from here on ───────────────────────── */
@@ -121,7 +122,7 @@ function stilEinhaengen() {
        oben und unten von der Marke eingefasst. */
     a.ninjo-willkommen-forge {
       display: flex; gap: 0.8rem; align-items: center;
-      margin: 1rem -0.5rem -0.5rem; padding: 0.75rem 0.9rem;
+      margin: 1rem -0.5rem 0; padding: 0.75rem 0.9rem;
       border-top: 2px solid #D4AF37;
       background: linear-gradient(180deg, #5e0000 0%, #8B0000 100%);
       color: #fff; text-decoration: none;
@@ -141,6 +142,20 @@ function stilEinhaengen() {
       color: rgb(255 255 255 / 88%); font-size: 0.8rem; line-height: 1.35;
     }
     a.ninjo-willkommen-forge > i:last-child { flex: 0 0 auto; color: #D4AF37; font-size: 1rem; }
+    /* Patreon als zweite, leisere Zeile im selben Streifen: ein Satz, kein
+       zweites Werbeschild. Wer das Fenster sieht, soll wissen, dass er die
+       Module unterstuetzen kann, ohne dass die Anleitung darueber kleiner
+       wird. */
+    a.ninjo-willkommen-patreon {
+      display: flex; gap: 0.55rem; align-items: center;
+      margin: 0 -0.5rem -0.5rem; padding: 0.45rem 0.9rem 0.55rem;
+      border-top: 1px solid rgb(212 175 55 / 35%);
+      background: #8B0000;
+      color: rgb(255 255 255 / 88%); font-size: 0.8rem; line-height: 1.35;
+      text-decoration: none; transition: filter 0.15s;
+    }
+    a.ninjo-willkommen-patreon:hover { filter: brightness(1.18); text-decoration: none; }
+    a.ninjo-willkommen-patreon > i { flex: 0 0 auto; color: #D4AF37; font-size: 0.95rem; }
   `;
   document.head.appendChild(s);
 }
@@ -171,6 +186,10 @@ export async function willkommenZeigen() {
           <span class="ninjo-willkommen-forge-zeile">${text("DND5EDE.Willkommen.ForgeZeile")}</span>
         </span>
         <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+      <a class="ninjo-willkommen-patreon" href="${PATREON}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-patreon" aria-hidden="true"></i>
+        <span>${text("DND5EDE.Willkommen.PatreonZeile")}</span>
       </a>
     </div>`;
 

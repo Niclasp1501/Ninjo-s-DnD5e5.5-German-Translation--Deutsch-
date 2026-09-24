@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added - Hinweis auf Patreon
+
+Unter dem Verweis auf Ninjo's Forge steht jetzt eine Zeile, dass die Module kostenlos sind
+und bleiben und dass man die Arbeit auf Patreon unterstützen kann. Das Fenster sehen
+weiterhin nur Spielleiter, und „Nicht mehr anzeigen“ blendet es für immer aus.
+
 ## [14.2609.9] - 2026-09-19
 
 ### Fixed - Fehlende Werte in 16 Texten
