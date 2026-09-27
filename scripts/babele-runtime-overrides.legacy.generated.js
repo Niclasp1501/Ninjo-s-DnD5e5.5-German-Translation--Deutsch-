@@ -64,35 +64,35 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Ein gehärteter Kieselstein, Knochen oder Metall, der mit einer Schleuder mit hoher Geschwindigkeit geschleudert werden kann.</p>"
   },
   "DevmObXWP9MfwE2c": {
-    "name": "Adamant Brustplatte",
+    "name": "Adamant-Brustplatte",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "n7fm71CN7qDIBEKk": {
-    "name": "Adamant Kettenpanzer",
+    "name": "Adamant-Kettenpanzer",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "kjTPoUeomTPWJ9h3": {
-    "name": "Adamant Kettenhemd",
+    "name": "Adamant-Kettenhemd",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "159agyOuBHCl2WKd": {
-    "name": "Adamant Plattenpanzer",
+    "name": "Adamant-Plattenpanzer",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "sP8CV5VNEcY1Yh1Q": {
-    "name": "Adamant Ritterrüstung",
+    "name": "Adamant-Ritterrüstung",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "UpHAWqwifZpiZzns": {
-    "name": "Adamant Ringpanzer",
+    "name": "Adamant-Ringpanzer",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "LdAj2ES9EzfnWcA1": {
-    "name": "Adamant Schuppenpanzer",
+    "name": "Adamant-Schuppenpanzer",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "LDuqUcosOK8Bf76S": {
-    "name": "Adamant Schienenrüstung",
+    "name": "Adamant-Schienenpanzer",
     "description": "<p>Die Rüstung ist mit Adamant verstärkt, eines der härtesten Materialien, die es gibt.</p>\n<p>Jeder kritischer Treffer, der dich trifft, wird zu einem normalen Treffer, während du dieses Rüstung trägst.</p>"
   },
   "NG8BlE2nwYJxCjWO": {
@@ -124,7 +124,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "lccm5AjIk91aIHbi": {
-    "name": "Brustplatte Rüstung des Widerstands",
+    "name": "Brustplatte der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "SK2HATQ4abKUlV8i": {
@@ -144,7 +144,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "BQw5lyopqLmf8B6u": {
-    "name": "Kettenpanzer Rüstung des Widerstands",
+    "name": "Kettenpanzer der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "rLMflzmxpe8JGTOA": {
@@ -164,7 +164,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "HF32aZSVw4P0MR4K": {
-    "name": "Kettenhemd Rüstung des Widerstands",
+    "name": "Kettenhemd der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "p2zChy24ZJdVqMSH": {
@@ -204,7 +204,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "lN1VbnGFo3HNZXNb": {
-    "name": "Plattenpanzer Rüstung des Widerstands",
+    "name": "Plattenpanzer der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "vsgmACFYINloIdPm": {
@@ -224,7 +224,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "VRT5GEusTFstOZdF": {
-    "name": "Fellrüstung Rüstung des Widerstands",
+    "name": "Fellrüstung der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "n1V07puo0RQxPGuF": {
@@ -244,44 +244,44 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "dRtb9Tg34NKX9mGF": {
-    "name": "Lederrüstung Rüstung des Widerstands",
+    "name": "Lederrüstung der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "WwdpHLXGX5r8uZu5": {
     "name": "Lederrüstung",
-    "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
+    "description": "<p>Das Brustteil und die Schulterstücke dieser Rüstung bestehen aus Leder, das durch Kochen in Öl gehärtet wurde. Der Rest der Rüstung besteht aus weicheren und flexibleren Materialien.</p>"
   },
   "CcTGZzQHejxEVLK1": {
-    "name": "Mithrilrüstung Brustplatte",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Brustplatte",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "YS9CRHg2yQlOVi3j": {
-    "name": "Mithrilrüstung Kettenpanzer",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Kettenpanzer",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "3h3ZU6qmQs18FfkA": {
-    "name": "Mithrilrüstung Kettenhemd",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Kettenhemd",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "qRMQH8lRE42JkugE": {
-    "name": "Mithrilrüstung Plattenrüstung",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Plattenpanzer",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "HVpXIU0zZw0a4Fb7": {
-    "name": "Mithrilrüstung Ritterrüstung",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Ritterrüstung",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "tJQXAJx92wL6GM1v": {
-    "name": "Mithrilrüstung Ringpanzer",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Ringpanzer",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "iRDmig2qZ7LdP0ug": {
-    "name": "Mithrilrüstung Schuppenpanzer",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Schuppenpanzer",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "GKQSxYvS3m9qKVac": {
-    "name": "Mithrilrüstung Schienenpanzer",
-    "description": "<p>Mithril ist ein leichtes, flexibles Metall. Ein Mithralkettenhemd oder eine Brustplatte kann unter normalen Kleidungsstücken getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithrilrüstung keines von beidem.</p>"
+    "name": "Mithral-Schienenpanzer",
+    "description": "<p>Mithral ist ein leichtes, flexibles Metall. Ein Mithral-Kettenhemd oder eine Mithral-Brustplatte kann unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise einen Nachteil bei Würfen auf Geschicklichkeit (Heimlichkeit) verursacht oder eine Stärkevoraussetzung hat, hat die Mithralrüstung keines von beidem.</p>"
   },
   "twRJhPtDQe1HceFt": {
     "name": "Gefütterte Rüstung +1",
@@ -296,7 +296,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "698gLyJ4JKVVMF53": {
-    "name": "Gefütterte Rüstung Rüstung des Widerstands",
+    "name": "Gefütterte Rüstung der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "GtKV1b5uqFQqpEni": {
@@ -320,7 +320,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Während du diese Rüstung trägst, kannst du als Aktion ihr Befehlswort sprechen und den Effekt des Zaubers @Compendium[dnd5e.spells.PQuEgKyCdovOvhqN]{Ätherische Gestalten} erhalten, der 10 Minuten andauert oder bis du die Rüstung ablegst, oder bis du mit einem Aktion das Befehlswort erneut sprichst.</p>\n<p>Die Eigenschaft der Rüstung kann vor der nächsten Morgendämmerung nicht erneut verwendet werden.</p>"
   },
   "azxwKFHrNmG3HpVy": {
-    "name": "Ritterrüstung Rüstung des Widerstands",
+    "name": "Ritterrüstung der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "OjkIqlW2UpgFcjZa": {
@@ -340,7 +340,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "Wo2Dkh191C4VmLmg": {
-    "name": "Ringpanzer Rüstung des Widerstands",
+    "name": "Ringpanzer der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "nsXZejlmgalj4he9": {
@@ -360,7 +360,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "f0I81P9k29Q1lV4S": {
-    "name": "Schuppenpanzer Rüstung des Widerstands",
+    "name": "Schuppenpanzer der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "XmnlF5fgIO3tg6TG": {
@@ -404,7 +404,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "JNkjtTxYmEC7W34O": {
-    "name": "Schienenpanzer Rüstung des Widerstands",
+    "name": "Schienenpanzer der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "cKpJmsJmU8YaiuqG": {
@@ -424,7 +424,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
   },
   "W1kDsFekjroIywuz": {
-    "name": "Beschlagene Lederrüstung Rüstung des Widerstands",
+    "name": "Beschlagene Lederrüstung der Resistenz",
     "description": "<p><em>(benötigt Einstimmung)</em></p>\n<p>Du hast Resistenz gegen eine Schadensart, solange du diese Rüstung trägst. Der Spielleiter bestimmt die Schadensart oder wählt sie nach der folgenden Tabelle zufällig aus.</p>\n<table>\n<thead>\n<tr>\n<th>W10</th>\n<th>Schadensart</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Säure</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Kälte</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Feuer</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Energie</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Blitz</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nekrotisch</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Gift</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Psychisch</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Gleißend</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Schall</td>\n</tr>\n</tbody>\n</table>"
   },
   "TIV3B1vbrVHIhQAm": {
@@ -10196,7 +10196,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "name": "Zauber A-Z"
   },
   "VRqG3F72ebgNHyVR": {
-    "name": "Rüstung des Widerstands"
+    "name": "Rüstung der Resistenz"
   },
   "4ryVFV5LPHPzRKxl": {
     "name": "Bohnenbeutel"
@@ -10253,13 +10253,13 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "name": "Tempeldiener - Persönlichkeitsmerkmal"
   },
   "JzLOE4IxcmxjLLuz": {
-    "name": "Trank des Widerstands"
+    "name": "Trank der Resistenz"
   },
   "eXu1QFMsFtTtoJBZ": {
     "name": "Reinkarnation"
   },
   "MdTxWyYVhTIgtNcG": {
-    "name": "Ring des Widerstands"
+    "name": "Ring der Resistenz"
   },
   "CTGxcd51szehUGBn": {
     "name": "Robe der nützlichen Dinge"

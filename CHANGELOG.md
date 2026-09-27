@@ -11,6 +11,34 @@ Unter dem Verweis auf Ninjo's Forge steht jetzt eine Zeile, dass die Module kost
 und bleiben und dass man die Arbeit auf Patreon unterstützen kann. Das Fenster sehen
 weiterhin nur Spielleiter, und „Nicht mehr anzeigen“ blendet es für immer aus.
 
+### Fixed - Die Lederrüstung beschreibt wieder sich selbst
+
+Die einfache Lederrüstung trug den Text einer magischen Rüstung: „mit mächtigen Runen
+verziert, in magischen Feuern hergestellt … der Bonus ist abhängig von dem
+Seltenheitsgrad". Jetzt steht dort wieder, woraus sie besteht. Der Fehler steckte in
+beiden Ausgaben, also unter dnd5e 6.x und unter 5.x.
+
+### Changed - Rüstungsnamen nach dem SRD 5.2.1
+
+Achtzehn Namen in den Kompendien für dnd5e 5.x hängten zwei Rüstungsbegriffe aneinander,
+etwa *Mithrilrüstung Ritterrüstung* oder *Ritterrüstung Rüstung des Widerstands*. Sie
+heißen jetzt **Mithral-Ritterrüstung** und **Ritterrüstung der Resistenz**.
+
+Dazu die Begriffe selbst: Das SRD schreibt **Mithral** statt Mithril, **Adamantrüstung**
+statt Adamantinharnisch und **Rüstung der Resistenz** statt Rüstung des Widerstands,
+ebenso Trank und Ring der Resistenz. *Adamant Schienenrüstung* heißt jetzt
+*Adamant-Schienenpanzer*, weil Splint Armor im SRD Schienenpanzer ist.
+
+Für die Varianten mit Material gibt das SRD keinen Namen vor, es kennt nur die allgemeine
+Mithralrüstung. Wir schreiben sie deshalb mit Bindestrich, also *Mithral-Brustplatte* und
+*Adamant-Kettenhemd*.
+
+### Fixed - Adamant- und Mithralrüstung schließen die Fellrüstung aus
+
+In beiden Beschreibungen stand „jede Mittlere oder Schwere, außer Lederharnisch". Gemeint
+ist *Hide Armor*, also die Fellrüstung. Eine Lederrüstung ist ohnehin leicht und kam als
+Ausnahme nie infrage.
+
 ## [14.2609.9] - 2026-09-19
 
 ### Fixed - Fehlende Werte in 16 Texten

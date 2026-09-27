@@ -1030,7 +1030,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbarmLeatherArm": {
     "name": "Lederrüstung",
-    "description": "<p><em>Diese Rüstung wurde mit mächtigen Runen verziert, in magischen Feuern hergestellt, von einem mächtigen Wesen gesegnet oder durch ein anderes Ereignis mit einem verbesserten Schutz für den Träger ausgestattet.</em></p>\n<p>Du hast einen Bonus auf die Rüstungsklasse, während du diese Rüstung trägst. Der Bonus ist abhängig von dem Seltenheitsgrad.</p>"
+    "description": "<p>Das Brustteil und die Schulterstücke dieser Rüstung bestehen aus Leder, das durch Kochen in Öl gehärtet wurde. Der Rest der Rüstung besteht aus weicheren und flexibleren Materialien.</p>"
   },
   "phbarmPaddedArmo": {
     "name": "Gefütterte Rüstung",
@@ -2745,7 +2745,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplCreation00": {
     "name": "Erschaffung",
-    "description": "<p>Du ziehst Schattenmaterial aus dem Schattenfell, um ein Objekt innerhalb der Reichweite zu erschaffen.\nEs ist entweder ein Objekt aus Pflanzenmaterial (weiche Güter, Seile, Holz und dergleichen)\noder mineralischem Material (Stein, Kristall, Metall und dergleichen). Das Objekt darf nicht größer als ein 5-Fuß-Würfel sein, und das\nObjekt muss eine Form und ein Material haben, die du gesehen hast.</p><p>Die\nWirkungsdauer des Zaubers hängt vom Material des Objekts ab, wie in der\nMaterialtabelle gezeigt. Wenn das Objekt aus mehreren Materialien besteht, verwende die\nkürzeste Dauer. Die Verwendung eines durch diesen Zauber erschaffenen Objekts als Materialkomponente\neines anderen Zaubers führt dazu, dass der andere Zauber\nfehlschlägt.</p><table><thead><tr><td>Material</td><td>Dauer</td></tr></thead><tbody><tr><td>Pflanzenmaterial</td><td>24 Stunden</td></tr><tr><td>Stein oder Kristall</td><td>12\nStunden</td></tr><tr><td>Edelmetalle</td><td>1\nStunde</td></tr><tr><td>Edelsteine</td><td>10 Minuten</td></tr><tr><td>Adamant oder Mithril</td><td>1 Minute</td></tr></tbody></table><p><strong>Wirken mit einem\nZauberplatz höheren Grades.</strong> Der Würfel vergrößert sich um 1,5 m für jeden\nZauberplatzgrad über dem 5. Grad.</p>",
+    "description": "<p>Du ziehst Schattenmaterial aus dem Schattenfell, um ein Objekt innerhalb der Reichweite zu erschaffen.\nEs ist entweder ein Objekt aus Pflanzenmaterial (weiche Güter, Seile, Holz und dergleichen)\noder mineralischem Material (Stein, Kristall, Metall und dergleichen). Das Objekt darf nicht größer als ein 5-Fuß-Würfel sein, und das\nObjekt muss eine Form und ein Material haben, die du gesehen hast.</p><p>Die\nWirkungsdauer des Zaubers hängt vom Material des Objekts ab, wie in der\nMaterialtabelle gezeigt. Wenn das Objekt aus mehreren Materialien besteht, verwende die\nkürzeste Dauer. Die Verwendung eines durch diesen Zauber erschaffenen Objekts als Materialkomponente\neines anderen Zaubers führt dazu, dass der andere Zauber\nfehlschlägt.</p><table><thead><tr><td>Material</td><td>Dauer</td></tr></thead><tbody><tr><td>Pflanzenmaterial</td><td>24 Stunden</td></tr><tr><td>Stein oder Kristall</td><td>12\nStunden</td></tr><tr><td>Edelmetalle</td><td>1\nStunde</td></tr><tr><td>Edelsteine</td><td>10 Minuten</td></tr><tr><td>Adamant oder Mithral</td><td>1 Minute</td></tr></tbody></table><p><strong>Wirken mit einem\nZauberplatz höheren Grades.</strong> Der Würfel vergrößert sich um 1,5 m für jeden\nZauberplatzgrad über dem 5. Grad.</p>",
     "materials": "ein Pinsel"
   },
   "phbsplDispelEvil": {
@@ -12257,7 +12257,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "dmgArmorOfResist": {
-    "name": "Rüstung des Widerstands: Typ",
+    "name": "Rüstung der Resistenz: Typ",
     "tableResults": {
       "whhI1ElflkCbBJ3U": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.YreDFSu9z9mGCWt1]",
       "HJhUoa9dRFWS20cE": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.CfxFdUSiXkOUXym6]",
@@ -12308,7 +12308,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "dmgPotionOfResis": {
-    "name": "Trank des Widerstands: Typ",
+    "name": "Trank der Resistenz: Typ",
     "tableResults": {
       "jYpzxdXBzoZCjllp": "Säure",
       "3oIOKR8BgRYfKafk": "Kälte",
@@ -12323,7 +12323,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "dmgRingOfResista": {
-    "name": "Ring des Widerstands: Schadensart und Edelstein"
+    "name": "Ring der Resistenz: Schadensart und Edelstein"
   },
   "dmgSphereOfAnnih": {
     "name": "Kugel der Vernichtung: Interaktionsergebnisse"
@@ -13004,10 +13004,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "dmgAdamantineArm": {
-    "name": "Adamantinharnisch",
-    "description": "<p><em>Rüstung (jede Mittlere oder Schwere, außer Lederharnisch),\nUngewöhnlich</em></p><p>Diese Rüstung ist mit Adamantin verstärkt, einer\nder härtesten Substanzen, die es gibt. Solange du sie trägst, wird jeder\n&amp;Reference[CriticalHits] gegen dich zu einem normalen\nTreffer.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "name": "Adamantrüstung",
+    "description": "<p><em>Rüstung (jede Mittlere oder Schwere, außer Fellrüstung),\nUngewöhnlich</em></p><p>Diese Rüstung ist mit Adamant verstärkt, einer\nder härtesten Substanzen, die es gibt. Solange du sie trägst, wird jeder\n&amp;Reference[CriticalHits] gegen dich zu einem normalen\nTreffer.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
     "activities": {
-      "Adamantine Armor": "Adamantinharnisch"
+      "Adamantine Armor": "Adamantrüstung"
     }
   },
   "dmgArmor12or3000": {
@@ -13019,7 +13019,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgMithralArmor0": {
     "name": "Mithralrüstung",
-    "description": "<p><em>Rüstung (jede Mittlere oder Schwere, außer Lederharnisch),\nUngewöhnlich</em></p><p>Mithral ist ein leichtes, flexibles Metall. Rüstungen aus dieser\nSubstanz können unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise\nNachteil auf Geschicklichkeit (Heimlichkeit)-Würfe auferlegt oder eine Stärkeanforderung hat,\ntut die Mithralversion der Rüstung\ndies nicht.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
+    "description": "<p><em>Rüstung (jede Mittlere oder Schwere, außer Fellrüstung),\nUngewöhnlich</em></p><p>Mithral ist ein leichtes, flexibles Metall. Rüstungen aus dieser\nSubstanz können unter normaler Kleidung getragen werden. Wenn die Rüstung normalerweise\nNachteil auf Geschicklichkeit (Heimlichkeit)-Würfe auferlegt oder eine Stärkeanforderung hat,\ntut die Mithralversion der Rüstung\ndies nicht.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE\ncite=false caption=false classes=\"hide-in-embed\"]</p>",
     "activities": {
       "Mithral Armor": "Mithralrüstung"
     }
