@@ -11,6 +11,19 @@ Unter dem Verweis auf Ninjo's Forge steht jetzt eine Zeile, dass die Module kost
 und bleiben und dass man die Arbeit auf Patreon unterstützen kann. Das Fenster sehen
 weiterhin nur Spielleiter, und „Nicht mehr anzeigen“ blendet es für immer aus.
 
+### Fixed - Gewöhnliche Gegenstände heißen nicht mehr Gemeinsprache
+
+Unter dem Bild eines Gegenstands zeigt dnd5e seine Seltenheit. Bei gewöhnlichen
+Gegenständen stand dort **Gemeinsprache**, also der Name der Sprache Common. Beide
+tragen im Englischen dasselbe Wort, und beim Übernehmen gleichlautender Texte ist die
+falsche Bedeutung mitgekommen. Jetzt steht dort **Gewöhnlich**. Die Sprache selbst heißt
+unverändert Gemeinsprache.
+
+Betroffen war jeder gewöhnliche magische Gegenstand, auch in fremden Kompendien. Die
+übrigen Wörter, die im Englischen doppelt vorkommen, sind geprüft: Riese und Riesisch,
+Celestisches Wesen und Celestisch, mittlere Rüstung und mittelgroß stehen richtig
+getrennt.
+
 ### Fixed - Die Lederrüstung beschreibt wieder sich selbst
 
 Die einfache Lederrüstung trug den Text einer magischen Rüstung: „mit mächtigen Runen
