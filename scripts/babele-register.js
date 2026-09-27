@@ -89,7 +89,15 @@ function getOverrideById(data) {
   if (!itemId) return null;
 
   // Priority: curated manual > modern generated > strict legacy generated.
-  return CURATED_OVERRIDES_BY_ID[itemId] || MODERN_OVERRIDES_BY_ID[itemId] || LEGACY_OVERRIDES_BY_ID[itemId] || null;
+  const override = CURATED_OVERRIDES_BY_ID[itemId] || MODERN_OVERRIDES_BY_ID[itemId] || LEGACY_OVERRIDES_BY_ID[itemId] || null;
+  // dnd5e vergibt 16 Kennungen doppelt, einmal fuer einen Gegenstand und einmal fuer dessen
+  // Wuerfeltabelle. Die oberste Ebene gehoert dem Gegenstand, die Tabelle steht unter "tabelle".
+  if (override?.tabelle && isRollTableData(data)) return override.tabelle;
+  return override;
+}
+
+function isRollTableData(data) {
+  return !data?.system && Array.isArray(data?.results);
 }
 
 function getOverrideScalarString(data, key) {

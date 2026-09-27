@@ -98,23 +98,26 @@ export const MODERN_OVERRIDES_BY_ID = {
   "dmgCandleOfInvoc": {
     "name": "Kerze der Anrufung",
     "description": "<p>Dieser schlanke Kegel ist einer Gottheit gewidmet und teilt sich die Gesinnung dieser Gottheit. Die Gesinnung der Kerze kann mit dem Zauber @Compendium[dnd5e.spells.Mzh95utKDPIrjiH8]{Gutes und Böses entdecken} herausgefunden werden. Der Spielleiter wählt den Gott und die damit verbundene Gesinnung oder bestimmt die Gesinnung nach dem Zufallsprinzip.</p>\n<table>\n<thead>\n<tr>\n<th>W20</th>\n<th>Gesinnung</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1-2</td>\n<td>Chaotisch böse</td>\n</tr>\n<tr>\n<td>3-4</td>\n<td>Chaotisch neutral</td>\n</tr>\n<tr>\n<td>5-7</td>\n<td>Chaotisch gut</td>\n</tr>\n<tr>\n<td>8-9</td>\n<td>Neutral böse</td>\n</tr>\n<tr>\n<td>10-11</td>\n<td>Neutral</td>\n</tr>\n<tr>\n<td>12-13</td>\n<td>Neutral gut</td>\n</tr>\n<tr>\n<td>14-15</td>\n<td>Rechtschaffen böse</td>\n</tr>\n<tr>\n<td>16-17</td>\n<td>Rechtschaffen</td>\n</tr>\n<tr>\n<td>18-20</td>\n<td>Rechtschaffen gut</td>\n</tr>\n</tbody>\n</table>\n<p>Die Magie der Kerze wird aktiviert, wenn die Kerze angezündet wird, was eine Aktion erfordert. Nachdem sie für 4 Stunden brannte, ist die Kerze zerstört. Du kannst sie früher ausblasen, um sie zu einem späteren Zeitpunkt nochmal einzusetzen. Ziehe die Zeit, die sie bisher brannte, in Schritten von je 1 Minute von der gesamten Brenndauer der Kerze ab.</p>\n<p>Während sie leuchtet, verströmt die Kerze ein schwaches Licht in einem Radius von 9 m. Jede Kreatur in diesem Licht, deren Gesinnung der der Kerze entspricht, hat einen Vorteil auf Angriffs-, Rettungs- und Attributswürfe. Zusätzlich können Kleriker oder Druiden im Licht, insofern ihre Gesinnung mit der Kerze übereinstimmt, einen Zauber des Grads 1 wirken, ohne einen Zauberplatz zu verlieren, wenn der Zauber vorher vorbereitet wurde. Der Effekt des Zaubers wirkt dennoch, aks wäre ein Zauberplatz von Grad 1 dafür eingesetzt wurden.</p>\n<p>Alternativ kann beim Anzünden der Kerze der Zauber @Compendium[dnd5e.spells.XbwGq5kDJNvAxNXV]{Tor} mit der Kerze gewirkt werden. Wenn dies getan wird, wird die Kerze zerstört.</p>",
-    "tableResults": {
-      "ag0urHCE1g8iDteP": "Abgrund",
-      "pCP4ICaQKzln5zTc": "Gehenna",
-      "OZ1lU2EWqnzeBQqm": "Acheron",
-      "vXez4BUgXFHAayCM": "Hades",
-      "jCH8BtBFKvOxQKe5": "Arborea",
-      "36NsH0b08cWRJ5S3": "Limbus",
-      "hMMK8Z1s2frHXEYN": "Arcadia",
-      "q7ketUvAJCoLBkHc": "Mechanus",
-      "vctndF7xPiru2vGe": "Bestienlande",
-      "dmCLeLfvwj5jLDnN": "Berg Celestia",
-      "5ajkPx3j34og3PQq": "Bytopia",
-      "FNEgnQ7Zo62CbsSo": "Neun Höllen",
-      "ToqvjVmLEWuqyXV8": "Carceri",
-      "5VNozBp2PgScksuZ": "Pandämonium",
-      "efnExAQ7h5U5JY9c": "Elysium",
-      "NPXTuTLfn13GTU2j": "Ysgard"
+    "tabelle": {
+      "name": "Kerze der Anrufung: Äußere Ebene als Ziel",
+      "tableResults": {
+        "ag0urHCE1g8iDteP": "Abgrund",
+        "pCP4ICaQKzln5zTc": "Gehenna",
+        "OZ1lU2EWqnzeBQqm": "Acheron",
+        "vXez4BUgXFHAayCM": "Hades",
+        "jCH8BtBFKvOxQKe5": "Arborea",
+        "36NsH0b08cWRJ5S3": "Limbus",
+        "hMMK8Z1s2frHXEYN": "Arcadia",
+        "q7ketUvAJCoLBkHc": "Mechanus",
+        "vctndF7xPiru2vGe": "Bestienlande",
+        "dmCLeLfvwj5jLDnN": "Berg Celestia",
+        "5ajkPx3j34og3PQq": "Bytopia",
+        "FNEgnQ7Zo62CbsSo": "Neun Höllen",
+        "ToqvjVmLEWuqyXV8": "Carceri",
+        "5VNozBp2PgScksuZ": "Pandämonium",
+        "efnExAQ7h5U5JY9c": "Elysium",
+        "NPXTuTLfn13GTU2j": "Ysgard"
+      }
     }
   },
   "dmgDustOfDisappe": {
@@ -152,12 +155,15 @@ export const MODERN_OVERRIDES_BY_ID = {
   "dmgAmuletOfThePl": {
     "name": "Amulett der Ebenen",
     "description": "<p><em>Wundersamer Gegenstand, sehr selten (benötigt Einstimmung)</em></p>\n<p>Während du dieses Amulett trägst, kannst du eine Aktion benutzen und einen Ort auf einer anderen existierenden Ebene nennen, mit dem du vertraut bist. Dann führe einen Wurf auf Intelligenz gegen SG 15 durch.</p>\n<p>Ist dieser erfolgreich, wirkst du den Zauber @Compendium[dnd5e.spells.J6Jpw5XzB5aTeqnz]{Ebenenwechsel}. Wenn er misslingt, reisen du und jede Kreatur und jedes Objekt in einem Radius von 4,50 Meter zu einem willkürlichen Ort. Wirf einen W100. Bei einer 1-60 reist ihr zu einem willkürlichen Ort auf der Ebene, die du genannt hattest. Bei einer 61-100 reist ihr zu einer zufällig festgelegten existierenden Ebene.</p>",
-    "tableResults": {
-      "m2UKvzZf0ZibczrG": "Zufälliger Ort auf der von dir benannten Ebene",
-      "vH6t70BzwrR0dfnM": "Zufälliger Ort auf einer Inneren Ebene, bestimmt durch einen Wurf von [[/r 1d6]]: bei einer 1, die Ebene der Luft; bei einer 2, die Ebene der Erde; bei einer 3, die Ebene des Feuers; bei einer 4, die Ebene des Wassers; bei einer 5, die Feenwildnis; bei einer 6, die Schattenfell",
-      "k7P9te8NuEctUdxE": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, Arborea; bei einer 2, Arcadia; bei einer 3, die Bestienlande; bei einer 4, Bytopia; bei einer 5, Elysium; bei einer 6, Mechanus; bei einer 7, Berg Celestia; bei einer 8, Ysgard",
-      "iMtDiN65JNwyr8oG": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, der Abyss; bei einer 2, Acheron; bei einer 3, Carceri; bei einer 4, Gehenna; bei einer 5, Hades; bei einer 6, Limbus; bei einer 7, die Neun Höllen; bei einer 8, Pandämonium",
-      "nF1GNDH2Vmrg1HM0": "Zufälliger Ort auf der Astralebene"
+    "tabelle": {
+      "name": "Amulett der Ebenen: Ziel",
+      "tableResults": {
+        "m2UKvzZf0ZibczrG": "Zufälliger Ort auf der von dir benannten Ebene",
+        "vH6t70BzwrR0dfnM": "Zufälliger Ort auf einer Inneren Ebene, bestimmt durch einen Wurf von [[/r 1d6]]: bei einer 1, die Ebene der Luft; bei einer 2, die Ebene der Erde; bei einer 3, die Ebene des Feuers; bei einer 4, die Ebene des Wassers; bei einer 5, die Feenwildnis; bei einer 6, die Schattenfell",
+        "k7P9te8NuEctUdxE": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, Arborea; bei einer 2, Arcadia; bei einer 3, die Bestienlande; bei einer 4, Bytopia; bei einer 5, Elysium; bei einer 6, Mechanus; bei einer 7, Berg Celestia; bei einer 8, Ysgard",
+        "iMtDiN65JNwyr8oG": "Zufälliger Ort auf einer Äußeren Ebene, bestimmt durch einen Wurf von [[/r 1d8]]: bei einer 1, der Abyss; bei einer 2, Acheron; bei einer 3, Carceri; bei einer 4, Gehenna; bei einer 5, Hades; bei einer 6, Limbus; bei einer 7, die Neun Höllen; bei einer 8, Pandämonium",
+        "nF1GNDH2Vmrg1HM0": "Zufälliger Ort auf der Astralebene"
+      }
     }
   },
   "dmgBeltOfDwarven": {
@@ -230,7 +236,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgEfreetiBottle": {
     "name": "Ifrit-Flasche",
-    "description": "<p><em>Wundersamer Gegenstand</em></p>\n<p>Diese bemalte Messingflasche wiegt 1 Pfund. Wenn du eine Aktion aufwendest, um den Korken zu entfernen, wird eine Wolke aus dickem Rauch aus der Flasche herausströmen. Am Ende deines Zugs verschwindet der Rauch in einem Auflodern harmlosen Feuers, und ein @Compendium[dnd5e.monsters.LTomFUTBrkRi0Pj5]{Ifrit} erscheint an einer freien Stelle innerhalb von 9 m zu dir.</p>\n<p>Wenn die Flasche das erste Mal geöffnet wird, würfelt der Spielleiter, um zu sehen, was passiert.</p>\n<table>\n<thead>\n<tr>\n<th>W100</th>\n<th>Effekt</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>01 - 10</td>\n<td>Der Ifrit greift dich an. Nach einem Kampf von 5 Runden wird der Ifrit verschwinden, und die Flasche verliert ihre Magie.</td>\n</tr>\n<tr>\n<td>11-90</td>\n<td>Der Ifrit dient dir für 1 Stunde und tut was du ihm befiehlst. Dann kehrt der Ifrit zurück in die Flasche und ein neuer Korken hält diese verschlossen. Der Korken kann 24 Stunden lang nicht entfernt werden. Für die nächsten beiden Male, wenn der Korken gezogen wird, tritt der selbe Effekt auf. Wenn die Flasche ein viertes Mal geöffnet wird, wird der Ifrit fliehen und verschwinden. Die Flasche verliert daraufhin ihren Effekt.</td>\n</tr>\n<tr>\n<td>91-00</td>\n<td>Der Ifrit kann den Zauber @Compendium[dnd5e.spells.3okM6Gn63zzEULkz]{Wunsch} dreimal für dich wirken. Er verschwindet, nachdem er den letzten Wunsch erfüllt hat, oder nach 1 Stunde. Die Flasche verliert daraufhin ihre Magie.</td>\n</tr>\n</tbody>\n</table>"
+    "description": "<p><em>Wundersamer Gegenstand</em></p>\n<p>Diese bemalte Messingflasche wiegt 1 Pfund. Wenn du eine Aktion aufwendest, um den Korken zu entfernen, wird eine Wolke aus dickem Rauch aus der Flasche herausströmen. Am Ende deines Zugs verschwindet der Rauch in einem Auflodern harmlosen Feuers, und ein @Compendium[dnd5e.monsters.LTomFUTBrkRi0Pj5]{Ifrit} erscheint an einer freien Stelle innerhalb von 9 m zu dir.</p>\n<p>Wenn die Flasche das erste Mal geöffnet wird, würfelt der Spielleiter, um zu sehen, was passiert.</p>\n<table>\n<thead>\n<tr>\n<th>W100</th>\n<th>Effekt</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>01 - 10</td>\n<td>Der Ifrit greift dich an. Nach einem Kampf von 5 Runden wird der Ifrit verschwinden, und die Flasche verliert ihre Magie.</td>\n</tr>\n<tr>\n<td>11-90</td>\n<td>Der Ifrit dient dir für 1 Stunde und tut was du ihm befiehlst. Dann kehrt der Ifrit zurück in die Flasche und ein neuer Korken hält diese verschlossen. Der Korken kann 24 Stunden lang nicht entfernt werden. Für die nächsten beiden Male, wenn der Korken gezogen wird, tritt der selbe Effekt auf. Wenn die Flasche ein viertes Mal geöffnet wird, wird der Ifrit fliehen und verschwinden. Die Flasche verliert daraufhin ihren Effekt.</td>\n</tr>\n<tr>\n<td>91-00</td>\n<td>Der Ifrit kann den Zauber @Compendium[dnd5e.spells.3okM6Gn63zzEULkz]{Wunsch} dreimal für dich wirken. Er verschwindet, nachdem er den letzten Wunsch erfüllt hat, oder nach 1 Stunde. Die Flasche verliert daraufhin ihre Magie.</td>\n</tr>\n</tbody>\n</table>",
+    "tabelle": {
+      "name": "Ifrit-Flasche"
+    }
   },
   "dmgEyesOfCharmin": {
     "name": "Bezauberungsaugen",
@@ -298,7 +307,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgNecklaceOfPra": {
     "name": "Halskette der Gebetsperlen",
-    "description": "<p><em>Wundersamer Gegenstand, (benötigt Einstimmung, durch einen Kleriker, Druiden oder Paladin)</em></p>\n<p>Diese Halskette hat 1d4 + 2 magische Perlen, die aus Aquamarin, schwarzen Perlen oder Topas gemacht sind. Sie hat außerdem viele nichtmagische Perlen, die aus Steinen wie Bernstein, Blutstein, Zitrin, Koralle, Jade, Perlen oder Quarz gemacht sind. Wenn eine magische Perle aus der Halskette entfernt wird, verliert sie ihre Magie.</p>\n<p>Sechs Arten von Zauberperlen existieren. Der Spielleiter entscheidet den Typ jeder Perle an der Kette oder wählt sie zufällig. Eine Halskette kann mehr als eine Perle derselben Art haben. Um eine zu benutzen, musst du die Halskette tragen. Jede Perle beinhaltet einen Zauber, den du damit als Bonusaktion wirken kannst, dabei wird dein Zauberrettungswurf Schwierigkeitsgrad verwendet, falls notwendig. Sobald der Zauber einer magischen Perle gewirkt wurde, kann diese Perle bis zur nächsten Morgendämmerung nicht erneut verwendet werden.</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">W20</th>\n<th>Perle des</th>\n<th>Zauber</th>\n<th style=\"text-align: right;\">Richtpreis pro Perle (GM)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">1-6</td>\n<td>Segens</td>\n<td>@Compendium[dnd5e.spells.8dzaICjGy6mTUaUr]{Segnen}</td>\n<td style=\"text-align: right;\">2.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">7-12</td>\n<td>Heilens</td>\n<td><p>@Compendium[dnd5e.spells.uUWb1wZgtMou0TVP]{Wunden heilen} (Grad 2)</p><p>oder @Compendium[dnd5e.spells.F0GsG0SJzsIOacwV]{Schwache Genesung}</p></td>\n<td style=\"text-align: right;\">4.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">13-16</td>\n<td>Gunstes</td>\n<td>@Compendium[dnd5e.spells.WzvJ7G3cqvIubsLk]{Vollständige Genesung}</td>\n<td style=\"text-align: right;\">32.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">17-18</td>\n<td>Niederstreckens</td>\n<td>@Compendium[dnd5e.spells.7UwUjJ6owIQkEPrs]{Brandmarkendes Niederstrecken}</td>\n<td style=\"text-align: right;\">1.500</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19</td>\n<td>Beschwörens</td>\n<td>@Compendium[dnd5e.spells.fkREcytuZ8sngWtC]{Verbündeter aus den Ebenen}</td>\n<td style=\"text-align: right;\">128.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20</td>\n<td>Windwandelns</td>\n<td>@Compendium[dnd5e.spells.8PJAsHmbu6UgDHC0]{Windwandeln}</td>\n<td style=\"text-align: right;\">96.000</td>\n</tr>\n</tbody>\n</table>\n<p><em><strong>Information</strong>: Die 6 Ladungen spiegeln die maximale Anzahl der Perlen wider, die gefunden werden können; bitte passe dies nach Bedarf an.</em></p>\n<p><em>Außerdem ist der Richtpreis nur ein Richtwert und sollte entsprechend angepasst werden, um die Welt des Spielleiters widerzuspiegeln.</em></p>"
+    "description": "<p><em>Wundersamer Gegenstand, (benötigt Einstimmung, durch einen Kleriker, Druiden oder Paladin)</em></p>\n<p>Diese Halskette hat 1d4 + 2 magische Perlen, die aus Aquamarin, schwarzen Perlen oder Topas gemacht sind. Sie hat außerdem viele nichtmagische Perlen, die aus Steinen wie Bernstein, Blutstein, Zitrin, Koralle, Jade, Perlen oder Quarz gemacht sind. Wenn eine magische Perle aus der Halskette entfernt wird, verliert sie ihre Magie.</p>\n<p>Sechs Arten von Zauberperlen existieren. Der Spielleiter entscheidet den Typ jeder Perle an der Kette oder wählt sie zufällig. Eine Halskette kann mehr als eine Perle derselben Art haben. Um eine zu benutzen, musst du die Halskette tragen. Jede Perle beinhaltet einen Zauber, den du damit als Bonusaktion wirken kannst, dabei wird dein Zauberrettungswurf Schwierigkeitsgrad verwendet, falls notwendig. Sobald der Zauber einer magischen Perle gewirkt wurde, kann diese Perle bis zur nächsten Morgendämmerung nicht erneut verwendet werden.</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">W20</th>\n<th>Perle des</th>\n<th>Zauber</th>\n<th style=\"text-align: right;\">Richtpreis pro Perle (GM)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">1-6</td>\n<td>Segens</td>\n<td>@Compendium[dnd5e.spells.8dzaICjGy6mTUaUr]{Segnen}</td>\n<td style=\"text-align: right;\">2.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">7-12</td>\n<td>Heilens</td>\n<td><p>@Compendium[dnd5e.spells.uUWb1wZgtMou0TVP]{Wunden heilen} (Grad 2)</p><p>oder @Compendium[dnd5e.spells.F0GsG0SJzsIOacwV]{Schwache Genesung}</p></td>\n<td style=\"text-align: right;\">4.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">13-16</td>\n<td>Gunstes</td>\n<td>@Compendium[dnd5e.spells.WzvJ7G3cqvIubsLk]{Vollständige Genesung}</td>\n<td style=\"text-align: right;\">32.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">17-18</td>\n<td>Niederstreckens</td>\n<td>@Compendium[dnd5e.spells.7UwUjJ6owIQkEPrs]{Brandmarkendes Niederstrecken}</td>\n<td style=\"text-align: right;\">1.500</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">19</td>\n<td>Beschwörens</td>\n<td>@Compendium[dnd5e.spells.fkREcytuZ8sngWtC]{Verbündeter aus den Ebenen}</td>\n<td style=\"text-align: right;\">128.000</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">20</td>\n<td>Windwandelns</td>\n<td>@Compendium[dnd5e.spells.8PJAsHmbu6UgDHC0]{Windwandeln}</td>\n<td style=\"text-align: right;\">96.000</td>\n</tr>\n</tbody>\n</table>\n<p><em><strong>Information</strong>: Die 6 Ladungen spiegeln die maximale Anzahl der Perlen wider, die gefunden werden können; bitte passe dies nach Bedarf an.</em></p>\n<p><em>Außerdem ist der Richtpreis nur ein Richtwert und sollte entsprechend angepasst werden, um die Welt des Spielleiters widerzuspiegeln.</em></p>",
+    "tabelle": {
+      "name": "Halskette der Gebetsperlen: Art"
+    }
   },
   "dmgPeriaptOfHeal": {
     "name": "Anhänger der Gesundheit",
@@ -330,7 +342,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgRobeOfUsefulI": {
     "name": "Robe der nützlichen Dinge",
-    "description": "<p><em>Wundersamer Gegenstand</em></p>\n<p>Diese Robe ist mit verschiedene Stoffflicken in verschiedene Formen und Farben bedeckt. Wenn du diese Robe trägst, kannst du mit einer Aktion einen der Stoffflicken ablösen und so bewirken, dass er zum dargestellten Objekt beziehungsweise zur dargestellten Kreatur wird. Sobald der letzte Stoffflicken entfernt ist entfernt ist, wird die Robe zu einem gewöhnlichen Kleidungsstück.</p>\n<p>Die Robe hat jeweils zwei der folgenden Stoffflicken:</p>\n<ul>\n<li>@Compendium[dnd5e.items.0E565kQUBmndJ1a2]{Dolch}</li>\n<li>@Compendium[dnd5e.items.UkWdyJYQTfVX2cJW]{Blendlaterne} (gefüllt und entzündet)</li>\n<li>@Compendium[dnd5e.items.HZsvDPmvysQKGzGy]{Stahlspiegel}</li>\n<li>@Compendium[dnd5e.items.tut1jbW3UCsrUjCG]{3-Meter-Stab}</li>\n<li>@Compendium[dnd5e.items.QXmaarJ4X8P0C1HV]{Hanfseil} (15 Meter, gewickelt)</li>\n<li>@Compendium[dnd5e.items.CNdDj8dsXVpRVpXt]{Sack}</li>\n</ul>\n<p>Darüber hinaus, hat die Robe 4W4 andere Stoffflicken. Der Spielleiter bestimmt diese Flicken oder wählt sie anhand des Zufallsprinzips.</p>\n<table>\n<thead>\n<tr>\n<th>W100</th>\n<th>Stofffleck</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>01-08</td>\n<td>Tasche mit 100 GM</td>\n</tr>\n<tr>\n<td>09-15</td>\n<td>Silbertruhe (0,30 Meter lang, 9 cm breit und hoch) im Wert von 500 GM</td>\n</tr>\n<tr>\n<td>16-22</td>\n<td>Eisentür (bis zu 3 Meter breit und 3 Meter hoch, auf einer Seite deiner Wahl vergittert), die du an einer erreichbaren Öffnung platzieren kannst; sie passt sich selbst der Öffnung an und hängt sich selbst ein</td>\n</tr>\n<tr>\n<td>23-30</td>\n<td>10 Edelsteine, die je 100 GM wert sind</td>\n</tr>\n<tr>\n<td>31-44</td>\n<td>Holzleiter (7,20 Meter lang)</td>\n</tr>\n<tr>\n<td>45-51</td>\n<td>Ein @Compendium[dnd5e.monsters.rz8UTUnFT87BsAFR]{Reitpferd} mit Satteltaschen</td>\n</tr>\n<tr>\n<td>52-59</td>\n<td>Grube (ein Würfel mit 3 Metern Seitenlänge), welche auf dem Boden innerhalb von 3 MEtern zu dir platziert werden kann</td>\n</tr>\n<tr>\n<td>60-68</td>\n<td>4 @Compendium[dnd5e.items.ytlsBjYsZ7OBSEBs]{Heiltränke}</td>\n</tr>\n<tr>\n<td>69-75</td>\n<td>Ruderboot (3,60 Meter lang)</td>\n</tr>\n<tr>\n<td>76-83</td>\n<td>Zauberschriftrolle, die einen Zauber auf Grad 1 bis 3 enthält</td>\n</tr>\n<tr>\n<td>84-90</td>\n<td>2 @Compendium[dnd5e.monsters.YTpL2c3NO4sOn2UA]{Doggen}</td>\n</tr>\n<tr>\n<td>91-96</td>\n<td>Fenster (0,60 Meter auf 1,20 Meter und bis zu 0,60 Meter tief), welches an einer erreichbaren vertikalen Oberfläche angebracht werden kann</td>\n</tr>\n<tr>\n<td>97-00</td>\n<td>@Compendium[dnd5e.items.srTRzwTfWKO5opOo]{Tragbarer Rammbock}</td>\n</tr>\n</tbody>\n</table>"
+    "description": "<p><em>Wundersamer Gegenstand</em></p>\n<p>Diese Robe ist mit verschiedene Stoffflicken in verschiedene Formen und Farben bedeckt. Wenn du diese Robe trägst, kannst du mit einer Aktion einen der Stoffflicken ablösen und so bewirken, dass er zum dargestellten Objekt beziehungsweise zur dargestellten Kreatur wird. Sobald der letzte Stoffflicken entfernt ist entfernt ist, wird die Robe zu einem gewöhnlichen Kleidungsstück.</p>\n<p>Die Robe hat jeweils zwei der folgenden Stoffflicken:</p>\n<ul>\n<li>@Compendium[dnd5e.items.0E565kQUBmndJ1a2]{Dolch}</li>\n<li>@Compendium[dnd5e.items.UkWdyJYQTfVX2cJW]{Blendlaterne} (gefüllt und entzündet)</li>\n<li>@Compendium[dnd5e.items.HZsvDPmvysQKGzGy]{Stahlspiegel}</li>\n<li>@Compendium[dnd5e.items.tut1jbW3UCsrUjCG]{3-Meter-Stab}</li>\n<li>@Compendium[dnd5e.items.QXmaarJ4X8P0C1HV]{Hanfseil} (15 Meter, gewickelt)</li>\n<li>@Compendium[dnd5e.items.CNdDj8dsXVpRVpXt]{Sack}</li>\n</ul>\n<p>Darüber hinaus, hat die Robe 4W4 andere Stoffflicken. Der Spielleiter bestimmt diese Flicken oder wählt sie anhand des Zufallsprinzips.</p>\n<table>\n<thead>\n<tr>\n<th>W100</th>\n<th>Stofffleck</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>01-08</td>\n<td>Tasche mit 100 GM</td>\n</tr>\n<tr>\n<td>09-15</td>\n<td>Silbertruhe (0,30 Meter lang, 9 cm breit und hoch) im Wert von 500 GM</td>\n</tr>\n<tr>\n<td>16-22</td>\n<td>Eisentür (bis zu 3 Meter breit und 3 Meter hoch, auf einer Seite deiner Wahl vergittert), die du an einer erreichbaren Öffnung platzieren kannst; sie passt sich selbst der Öffnung an und hängt sich selbst ein</td>\n</tr>\n<tr>\n<td>23-30</td>\n<td>10 Edelsteine, die je 100 GM wert sind</td>\n</tr>\n<tr>\n<td>31-44</td>\n<td>Holzleiter (7,20 Meter lang)</td>\n</tr>\n<tr>\n<td>45-51</td>\n<td>Ein @Compendium[dnd5e.monsters.rz8UTUnFT87BsAFR]{Reitpferd} mit Satteltaschen</td>\n</tr>\n<tr>\n<td>52-59</td>\n<td>Grube (ein Würfel mit 3 Metern Seitenlänge), welche auf dem Boden innerhalb von 3 MEtern zu dir platziert werden kann</td>\n</tr>\n<tr>\n<td>60-68</td>\n<td>4 @Compendium[dnd5e.items.ytlsBjYsZ7OBSEBs]{Heiltränke}</td>\n</tr>\n<tr>\n<td>69-75</td>\n<td>Ruderboot (3,60 Meter lang)</td>\n</tr>\n<tr>\n<td>76-83</td>\n<td>Zauberschriftrolle, die einen Zauber auf Grad 1 bis 3 enthält</td>\n</tr>\n<tr>\n<td>84-90</td>\n<td>2 @Compendium[dnd5e.monsters.YTpL2c3NO4sOn2UA]{Doggen}</td>\n</tr>\n<tr>\n<td>91-96</td>\n<td>Fenster (0,60 Meter auf 1,20 Meter und bis zu 0,60 Meter tief), welches an einer erreichbaren vertikalen Oberfläche angebracht werden kann</td>\n</tr>\n<tr>\n<td>97-00</td>\n<td>@Compendium[dnd5e.items.srTRzwTfWKO5opOo]{Tragbarer Rammbock}</td>\n</tr>\n</tbody>\n</table>",
+    "tabelle": {
+      "name": "Robe der nützlichen Dinge"
+    }
   },
   "dmgSlippersOfSpi": {
     "name": "Schuhe des Spinnenkletterns",
@@ -2865,17 +2880,20 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Reinkarnation",
     "description": "<p>Du berührst einen toten Humanoiden oder ein Stück davon. Wenn die Kreatur nicht länger als 10 Tage tot war, bildet der Zauber einen neuen Körper für sie und ruft die Seele auf, diesen Körper zu betreten.\n@Embed[Compendium.dnd5e.tables24.RollTable.phbsplReincarnat rollable\nclasses=\"caption-top\"]</p><p>Die reinkarnierte Kreatur trifft alle Entscheidungen, die die Beschreibung einer Spezies bietet, und die Kreatur erinnert sich an ihr früheres Leben. Sie behält die Fähigkeiten, die sie in ihrer ursprünglichen Form hatte, verliert jedoch die Merkmale ihrer vorherigen Spezies und erhält die Merkmale ihrer neuen.</p>",
     "materials": "seltene Öle im Wert von 1.000+ GM, die vom Zauber verbraucht werden",
-    "tableResults": {
-      "DLKTRYgF1vpG4ons": "Aasimar",
-      "lCG2E5mLJL43oGk4": "Drachenblütiger",
-      "Ym4LPQm1DMZ3iUBH": "Zwerg",
-      "9FtTDJCOwnD97SOu": "Goliath",
-      "RI73kNpd5iAababR": "Halbling",
-      "6L3KbE75ugKNdbhg": "Mensch",
-      "xNcsrma8ucsEEgz3": "Ork",
-      "8g4dm4vqB60zPWw5": "Elfische Abstammung",
-      "PkXN8vlW5cXx8vbB": "Teuflisches Erbe",
-      "ncs8GLvSuavCJAqf": "Gnomische Abstammung"
+    "tabelle": {
+      "name": "Reinkarnation: Spezies",
+      "tableResults": {
+        "DLKTRYgF1vpG4ons": "Aasimar",
+        "lCG2E5mLJL43oGk4": "Drachenblütiger",
+        "Ym4LPQm1DMZ3iUBH": "Zwerg",
+        "9FtTDJCOwnD97SOu": "Goliath",
+        "RI73kNpd5iAababR": "Halbling",
+        "6L3KbE75ugKNdbhg": "Mensch",
+        "xNcsrma8ucsEEgz3": "Ork",
+        "8g4dm4vqB60zPWw5": "Elfische Abstammung",
+        "PkXN8vlW5cXx8vbB": "Teuflisches Erbe",
+        "ncs8GLvSuavCJAqf": "Gnomische Abstammung"
+      }
     }
   },
   "phbsplScrying000": {
@@ -12238,59 +12256,83 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "dmgSlayingAmmuni": {
-    "name": "Munition der Tötung: Kreaturentyp",
-    "tableResults": {
-      "f4AT66qY6IpW9XGE": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4GIkMFeZQHZnfjvq]",
-      "bBzSzzTMgsRu2p9m": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.70bFeuTndNorjLBe]",
-      "5IAfN2gE45YNRnH5": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.o4aDyFCK0ekd9w8j]",
-      "7gOENkePCrW02UwC": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.AvExH8PizzJN0jSM]",
-      "tlAU84ok29YhTp9I": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.VRMET3XgPTjBG91L]",
-      "NjnaG5MkLXwiOFD8": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ku2JX8rDga8GUBul]",
-      "x3ELDvpdCuJRDeDg": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ZssaQ07jWS7jFiej]",
-      "x7mSfJ8AjeVv3NRI": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3JnW3nSByOVKu1LW]",
-      "w8UkRFQNaRdjewAd": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ulADMO3yope7gn5R]",
-      "NfUynzHOgrEO5mmb": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.MKSR9zEe2s3qVILa]",
-      "WQ8bqLhZbWxPsP0b": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.cFNisqoGRSTHYDI4]",
-      "4WNFaBpWyeDphNcG": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3mSYXVx987sezjuS]",
-      "aL8OS42JpqroJaaW": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.BsXM9mDyGJ1R754S]",
-      "evZ08L9NQb1evYe9": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4NXhqKrNtDQjBcc8]"
-    }
+    "name": "Geschoss des Tötens",
+    "tabelle": {
+      "name": "Geschoss des Tötens: Kreaturentyp",
+      "tableResults": {
+        "f4AT66qY6IpW9XGE": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4GIkMFeZQHZnfjvq]",
+        "bBzSzzTMgsRu2p9m": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.70bFeuTndNorjLBe]",
+        "5IAfN2gE45YNRnH5": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.o4aDyFCK0ekd9w8j]",
+        "7gOENkePCrW02UwC": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.AvExH8PizzJN0jSM]",
+        "tlAU84ok29YhTp9I": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.VRMET3XgPTjBG91L]",
+        "NjnaG5MkLXwiOFD8": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ku2JX8rDga8GUBul]",
+        "x3ELDvpdCuJRDeDg": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ZssaQ07jWS7jFiej]",
+        "x7mSfJ8AjeVv3NRI": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3JnW3nSByOVKu1LW]",
+        "w8UkRFQNaRdjewAd": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.ulADMO3yope7gn5R]",
+        "NfUynzHOgrEO5mmb": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.MKSR9zEe2s3qVILa]",
+        "WQ8bqLhZbWxPsP0b": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.cFNisqoGRSTHYDI4]",
+        "4WNFaBpWyeDphNcG": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.3mSYXVx987sezjuS]",
+        "aL8OS42JpqroJaaW": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.BsXM9mDyGJ1R754S]",
+        "evZ08L9NQb1evYe9": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSlayingAmmuni.ActiveEffect.4NXhqKrNtDQjBcc8]"
+      }
+    },
+    "description": "<p>Dieses magische Geschoss soll Kreaturen eines bestimmten Typs töten, den der SL auswählt oder zufällig bestimmt, indem er anhand der Tabelle unten würfelt. Wenn eine Kreatur dieses Typs Schaden durch das Geschoss erleidet, führt sie einen SG-17-Konstitutionsrettungswurf aus. Misslingt der Wurf, so erleidet sie zusätzlich 6W10 Energieschaden, anderenfalls die Hälfte.</p><p>Wenn das Geschoss einer Kreatur diesen zusätzlichen Schaden zugefügt hat, wird es nichtmagisch.</p><details><summary>Tabelle der Kreaturentypen (zum Aufklappen anklicken)</summary><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgSlayingAmmuni rollable]</p></details> <p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>"
   },
   "dmgArmorOfResist": {
-    "name": "Rüstung der Resistenz: Typ",
-    "tableResults": {
-      "whhI1ElflkCbBJ3U": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.YreDFSu9z9mGCWt1]",
-      "HJhUoa9dRFWS20cE": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.CfxFdUSiXkOUXym6]",
-      "MWsbp9Vjx5ZFyydf": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.LTByr2rsRPBLLOA0]",
-      "En1vnLK0ysLhxisl": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.VST1qNRu1dHDzkD2]",
-      "eJkcua7kOtectwDX": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.MqubvD3XEwB7DRST]",
-      "LrupslmEYeqxfFWP": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.mmp5O2pZOxJUc2vq]",
-      "MQVpjSCnzqIKWNu2": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.lsPKUk288Jkvahsp]",
-      "vhvfqW7O1Gzc4xnK": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.jyWNVNHLYdxvCOQz]",
-      "tJKURr8q9I73BV2y": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.18IZ8X8zpDXyN33T]",
-      "ZdsE9Cp3Pt2i84xf": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.cbsuJ2tdbBuT5e8U]"
-    }
+    "name": "Rüstung der Resistenz",
+    "tabelle": {
+      "name": "Rüstung der Resistenz: Typ",
+      "tableResults": {
+        "whhI1ElflkCbBJ3U": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.YreDFSu9z9mGCWt1]",
+        "HJhUoa9dRFWS20cE": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.CfxFdUSiXkOUXym6]",
+        "MWsbp9Vjx5ZFyydf": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.LTByr2rsRPBLLOA0]",
+        "En1vnLK0ysLhxisl": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.VST1qNRu1dHDzkD2]",
+        "eJkcua7kOtectwDX": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.MqubvD3XEwB7DRST]",
+        "LrupslmEYeqxfFWP": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.mmp5O2pZOxJUc2vq]",
+        "MQVpjSCnzqIKWNu2": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.lsPKUk288Jkvahsp]",
+        "vhvfqW7O1Gzc4xnK": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.jyWNVNHLYdxvCOQz]",
+        "tJKURr8q9I73BV2y": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.18IZ8X8zpDXyN33T]",
+        "ZdsE9Cp3Pt2i84xf": "@UUID[Compendium.dnd5e.equipment24.Item.dmgArmorOfResist.ActiveEffect.cbsuJ2tdbBuT5e8U]"
+      }
+    },
+    "description": "<p><em>Rüstung (beliebige leichte, mittelschwere oder schwere Rüstung), selten (erfordert Einstimmung)</em></p><p>Wenn du diese Rüstung trägst, bist du gegen eine Schadensart resistent. Der SL wählt die Schadensart aus oder bestimmt sie zufällig, indem er anhand der folgenden Tabelle würfelt.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgArmorOfResist rollable caption=false]</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>"
   },
   "dmgBagOfBeansEff": {
     "name": "Sack der Bohnen: Effekt"
   },
   "dmgCarpetOfFlyin": {
-    "name": "Fliegender Teppich: Größe, Kapazität und Geschwindigkeit",
-    "tableResults": {
-      "NcFzEzCwypsVMRNM": "3 × 1,5 m | 200 Pfund Kapazität | 24 m Flugbewegungsrate",
-      "SeuSATVRfn9PNk5i": "4 × 1,8 m | 400 Pfund Kapazität | 18 m Flugbewegungsrate",
-      "jmCslHbnZ20wlGo7": "5 × 2,1 m | 600 Pfund Kapazität | 12 m Flugbewegungsrate",
-      "uhPivfkjbQ5TGQE5": "6 × 2,7 m | 800 Pfund Kapazität | 9 m Flugbewegungsrate"
-    }
+    "name": "Fliegender Teppich",
+    "tabelle": {
+      "name": "Fliegender Teppich: Größe, Traglast und Flugbewegungsrate",
+      "tableResults": {
+        "NcFzEzCwypsVMRNM": "0,9 m × 1,5 m | 100 kg Traglast | 24 m Flugbewegungsrate",
+        "SeuSATVRfn9PNk5i": "1,2 m × 1,8 m | 200 kg Traglast | 18 m Flugbewegungsrate",
+        "jmCslHbnZ20wlGo7": "1,5 m × 2,1 m | 300 kg Traglast | 12 m Flugbewegungsrate",
+        "uhPivfkjbQ5TGQE5": "1,8 m × 2,7 m | 400 kg Traglast | 9 m Flugbewegungsrate"
+      }
+    },
+    "description": "<div><p><em>Wundersamer Gegenstand, sehr selten</em></p></div><p>Du kannst diesen Teppich schweben und fliegen lassen, indem du eine magische Aktion ausführst und das Befehlswort des Teppichs aussprichst. Er folgt deinen Anweisungen, solange du dich im Abstand von bis zu 9 m von ihm befindest.</p><p>Es gibt vier Größen des <em>Fliegenden Teppichs</em>. Der SL wählt die Größe eines bestimmten Teppichs aus oder bestimmt sie zufällig, indem er anhand der folgenden Tabelle würfelt. Ein Teppich kann das Doppelte der in der Tabelle angegebenen Traglast befördern. Seine Flugbewegungsrate ist jedoch halbiert, wenn er mehr als die angegebene Traglast befördert.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgCarpetOfFlyin rollable]</p><section class=\"secret\" id=\"secret-T3avxyNy4el35GqZ\"><p><strong>Foundry-Hinweis</strong></p><p>Die vier enthaltenen Beschwörungsaktivitäten stehen für die möglichen Größen des Teppichs. Sobald der SL eine Größe gewählt hat, sollten die drei Aktivitäten der übrigen Größen gelöscht werden.</p></section>"
   },
   "dmgDeckOfIllusio": {
-    "name": "Kartenstapel der Illusionen"
+    "name": "Karten der Illusionen",
+    "tabelle": {
+      "name": "Karten der Illusionen"
+    },
+    "description": "<div><p><em>Wundersamer Gegenstand, ungewöhnlich</em></p></div><p>Diese Schatulle enthält einen Satz Karten. Ein vollständiger Satz besteht aus 34 Karten. Davon stellen 32 bestimmte Kreaturen dar, und zwei haben eine spiegelnde Oberfläche. Wenn die Karten als Teil eines Schatzes gefunden werden, fehlen in der Regel [[/r 1d20 − 1#Missing cards]] Karten.</p><p>Die Magie des Kartensatzes funktioniert nur, wenn die Karten zufällig gezogen werden. Du kannst eine magische Aktion ausführen, um eine zufällige Karte aus dem Stapel zu ziehen und an einem Punkt im Abstand von bis zu 9 m von dir zu Boden zu werfen. Über dieser Karte manifestiert sich die Illusion einer Kreatur, welche durch Würfeln anhand der Tabelle „Karten der Illusionen“ ermittelt wird. Die Illusion bleibt bestehen, bis sie gebannt wird. Sie sieht aus und verhält sich wie eine echte Kreatur dieses Typs, kann allerdings keinen Schaden bewirken. Befindest du dich im Abstand von bis zu 36 m von der illusionären Kreatur und kannst sie sehen, so kannst du eine magische Aktion ausführen, um sie an einen anderen Ort im Abstand von bis zu 9 m von ihrer Karte zu bewegen.</p><p>Physische Interaktionen mit der illusionären Kreatur enttarnen sie, da Gegenstände sie durchdringen. Eine Kreatur kann eine Studieren-Aktion ausführen, um die illusionäre Kreatur visuell zu inspizieren. Sie erkennt sie als Illusion, wenn sie einen [[/check ability=int skill=inv dc=15 format=long]] besteht. Die Illusion bleibt bestehen, bis sie gebannt (mit dem Zauber <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Magie bannen}</em> oder einem ähnlichen Effekt) oder ihre Karte bewegt wird. Mit der Illusion verschwindet auch das Bild auf der entsprechenden Karte, und diese kann nicht erneut verwendet werden.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgDeckOfIllusio rollable]</p><section class=\"secret\" id=\"secret-dg7rbpSc8GfB0AXm\"><p><strong>Foundry-Hinweis</strong></p><p>Da jede Karte nur einmal verwendet werden kann, empfiehlt es sich, eine Kopie der @UUID[Compendium.dnd5e.tables24.RollTable.dmgDeckOfIllusio]{Tabelle} zu importieren und deren UUID oben in den @Embed-Enricher einzutragen.</p><p>Außerdem sollten der SL oder der Spieler beim ersten Fund die Aktivität <strong>Anzahl der Karten bestimmen</strong> verwenden, um die Gesamtzahl der im Stapel verbliebenen Karten zufällig zu ermitteln. Nach einmaliger Verwendung kann sie gelöscht werden.</p></section><p></p>"
   },
   "dmgQuaalsFeather": {
-    "name": "Feder-Marken"
+    "name": "Federfigur",
+    "tabelle": {
+      "name": "Federfiguren"
+    },
+    "description": "<p><em>Wundersamer Gegenstand, Seltenheit variiert</em></p><p>Dieser Gegenstand sieht wie eine Feder aus. Es gibt verschiedene Federfiguren, die jeweils einen eigenen einmaligen Effekt haben. Der SL wählt die Art der Feder aus oder bestimmt sie zufällig, indem er anhand der Tabelle „Federn“ würfelt. Die Art der Feder bestimmt ihre Seltenheit.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgQuaalsFeather caption=false rollable]</p>"
   },
   "dmgHatOfManySpel": {
-    "name": "Hut der vielen Zauber"
+    "name": "Hut der Vielen Zauber",
+    "tabelle": {
+      "name": "Hut der Vielen Zauber"
+    },
+    "description": "<p><em>Wundersamer Gegenstand, sehr selten (erfordert Einstimmung durch einen Magier)</em></p><p>Dieser spitze Hut hat die folgenden Eigenschaften:</p><p><em><strong>Zauberfokus.</strong></em> Wenn du den Hut hältst, kannst du ihn als Zauberfokus für deine Magierzauber verwenden. Jeder Zauber, den du mit dem Hut wirkst, hat eine besondere Gestenkomponente: Du musst in den Hut greifen und den Zauber „herausziehen“.</p><p><em><strong>Unbekannter Zauber.</strong></em> Wenn du den Hut hältst, kannst du versuchen, einen Zauber des mindestens 1. Grades zu wirken, den du nicht kennst. Der Zauber muss in der Zauberliste des Magiers enthalten sein. Er muss einen Grad aufweisen, den du wirken kannst, und er darf keine Materialkomponenten haben, die mehr als 1.000 GM kosten. Wenn du einen Zauber ausgewählt hast, musst du einen Zauberplatz verbrauchen, dessen Grad dem des Zaubers entspricht. Führe dann einen Intelligenzwurf (Arkane Kunde) aus (SG 10 plus Zaubergrad), um zu ermitteln, ob du den Zauber wirkst. Bei einem Erfolg wirkst du den Zauber mit dem normalen Zeitaufwand, und du kannst diese Eigenschaft erst erneut verwenden, wenn du eine kurze oder lange Rast beendet hast. Misslingt der Wurf, so misslingt auch der Zauber, und stattdessen tritt ein zufälliger Effekt auf, der durch Würfeln anhand der folgenden Tabelle ermittelt wird.</p><p>Jeder Zauber, den du mit dem Hut wirkst, verwendet deinen Zauberrettungswurf-SG und deinen Zauberangriffsbonus.</p><details><summary>Würfeltabelle</summary><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgHatOfManySpel caption=false rollable]</p></details>"
   },
   "dmgHornOfValhall": {
     "name": "Horn von Valhalla: Typ und Anforderung"
@@ -12299,34 +12341,50 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Inhalt der Eisenflasche"
   },
   "dmgManualOfGolem": {
-    "name": "Handbuch der Golems: Typ, Zeit und Kosten",
-    "tableResults": {
-      "7I6vQPv0T86eyaR4": "<strong>Golem:</strong> Lehmgolem<br /><strong>Zeit:</strong> 30 Tage<br\n/><strong>Kosten:</strong> 65.000 GM",
-      "OkN7NDendLyIZpeN": "<strong>Golem:</strong> Fleischgolem<br /><strong>Zeit:</strong> 60 Tage<br\n/><strong>Kosten:</strong> 50.000 GM",
-      "fDMIU1f5wTvvhGYg": "<strong>Golem:</strong> Eisengolem<br /><strong>Zeit:</strong> 120 Tage<br\n/><strong>Kosten:</strong> 100.000 GM",
-      "4Jv2P9MWTX6Hk8kO": "<strong>Golem:</strong> Steingolem<br /><strong>Zeit:</strong> 90 Tage<br\n/><strong>Kosten:</strong> 80.000 GM"
-    }
+    "name": "Handbuch der Golems",
+    "tabelle": {
+      "name": "Handbuch der Golems: Typ, Zeit und Kosten",
+      "tableResults": {
+        "7I6vQPv0T86eyaR4": "<strong>Golem:</strong> Lehmgolem<br /><strong>Zeit:</strong> 30 Tage<br\n/><strong>Kosten:</strong> 65.000 GM",
+        "OkN7NDendLyIZpeN": "<strong>Golem:</strong> Fleischgolem<br /><strong>Zeit:</strong> 60 Tage<br\n/><strong>Kosten:</strong> 50.000 GM",
+        "fDMIU1f5wTvvhGYg": "<strong>Golem:</strong> Eisengolem<br /><strong>Zeit:</strong> 120 Tage<br\n/><strong>Kosten:</strong> 100.000 GM",
+        "4Jv2P9MWTX6Hk8kO": "<strong>Golem:</strong> Steingolem<br /><strong>Zeit:</strong> 90 Tage<br\n/><strong>Kosten:</strong> 80.000 GM"
+      }
+    },
+    "description": "<p><em>Wundersamer Gegenstand, sehr selten</em></p><p>Dieser Foliant enthält die notwendigen Informationen und Beschwörungsformeln, um einen Golem eines bestimmten Typs zu erschaffen. Der SL wählt den Typ aus oder bestimmt ihn zufällig, indem er anhand der entsprechenden Tabelle würfelt. Um das Handbuch entziffern und verwenden zu können, musst du ein Zauberwirker sein und über mindestens zwei Zauberplätze des 5. Grades verfügen. Eine Kreatur, die ein <em>Handbuch der Golems</em> nicht verwenden kann und es dennoch zu lesen versucht, erleidet [[/damage 6d6 type=psychic]] Schaden.</p><p>Um einen Golem zu erschaffen, benötigst du die in der Tabelle angegebene Zeit. Dabei arbeitest du ohne Unterbrechung mit dem Handbuch zur Hand und ruhst dich höchstens acht Stunden pro Tag aus. Du musst außerdem die angegebenen Kosten für die Materialien bezahlen.</p><p>Sobald der Golem fertiggestellt ist, wird das Buch von mystischen Flammen verschlungen. Der Golem erwacht zum Leben, wenn die Asche des Handbuchs auf ihn gestreut wird. Den Wertekasten des Golems findest du im <em>Monsterhandbuch</em>. Der Golem steht unter deiner Kontrolle, versteht deine Befehle und gehorcht ihnen.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgManualOfGolem rollable]</p><section class=\"secret\" id=\"secret-8T2YtEsnAW7JZ5Bp\"><p><strong>Foundry-Hinweis</strong></p><p>Sobald feststeht, welchen Typ von Golem dieses Handbuch erschafft, kannst du die übrigen nicht benötigten Aktivitäten löschen.</p></section>"
   },
   "dmgPotionOfResis": {
-    "name": "Trank der Resistenz: Typ",
-    "tableResults": {
-      "jYpzxdXBzoZCjllp": "Säure",
-      "3oIOKR8BgRYfKafk": "Kälte",
-      "XKHBRiYlsavqLLeO": "Feuer",
-      "RNYLvvsXg3HisLPS": "Wucht",
-      "yp10YxYVnVXwyUlZ": "Blitz",
-      "TwHkuphOIWzxjrfb": "Nekrotisch",
-      "3Kw9mPUhp1uLXn0d": "Gift",
-      "3lYokZU6Ne0J9HkI": "Psychisch",
-      "Uyak5Ygg0HNnRFiE": "Gleißend",
-      "RcsCTzBmpfhAxfuw": "Schall"
-    }
+    "name": "Trank der Resistenz",
+    "tabelle": {
+      "name": "Trank der Resistenz: Typ",
+      "tableResults": {
+        "jYpzxdXBzoZCjllp": "Säure",
+        "3oIOKR8BgRYfKafk": "Kälte",
+        "XKHBRiYlsavqLLeO": "Feuer",
+        "RNYLvvsXg3HisLPS": "Energie",
+        "yp10YxYVnVXwyUlZ": "Blitz",
+        "TwHkuphOIWzxjrfb": "Nekrotisch",
+        "3Kw9mPUhp1uLXn0d": "Gift",
+        "3lYokZU6Ne0J9HkI": "Psychisch",
+        "Uyak5Ygg0HNnRFiE": "Gleißend",
+        "RcsCTzBmpfhAxfuw": "Schall"
+      }
+    },
+    "description": "<p><em>Trank, ungewöhnlich</em></p><p>Wenn du diesen Trank zu dir nimmst, bist du eine Stunde lang gegen eine Schadensart resistent. Der SL wählt die Schadensart aus oder bestimmt sie zufällig, indem er anhand der folgenden Tabelle würfelt.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgPotionOfResis caption=false rollable]</p><section class=\"secret\" id=\"secret-yI26znYuybVCz6iX\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Gegenstand enthält für jede Schadensart einen aktiven Effekt. Verwende den aktiven Effekt für die Schadensart, die dein SL gewählt hat.</p></section>"
   },
   "dmgRingOfResista": {
-    "name": "Ring der Resistenz: Schadensart und Edelstein"
+    "name": "Ring der Resistenz",
+    "tabelle": {
+      "name": "Ring der Resistenz: Schadensart und Edelstein"
+    },
+    "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.dmgsupRingofResi]{Ring}, selten</em></p><p>Wenn du diesen Ring trägst, bist du gegen eine Schadensart resistent. Der Edelstein am Ring (vom SL ausgewählt oder durch Würfeln anhand der folgenden Tabelle zufällig bestimmt) gibt die Schadensart an.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgRingOfResista rollable caption=false]</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>"
   },
   "dmgSphereOfAnnih": {
-    "name": "Kugel der Vernichtung: Interaktionsergebnisse"
+    "name": "Kugel der Auslöschung",
+    "tabelle": {
+      "name": "Kugel der Auslöschung: Interaktionsergebnisse"
+    },
+    "description": "<p><em>Wundersamer Gegenstand, legendär</em></p><p>Diese schwarze Kugel hat einen Durchmesser von 0,6 m. Sie ist ein Loch im Multiversum, das im Raum schwebt und durch ein umgebendes magisches Feld stabilisiert wird.</p><p>Die Kugel löscht alle Materie aus, die sie durchdringt oder die von ihr durchdrungen wird. Die einzige Ausnahme sind Artefakte. Sofern ein Artefakt nicht anfällig für Schaden durch eine <em>Kugel der Auslöschung</em> ist, passiert es die Kugel, ohne Schaden zu nehmen. Alles andere, was von der Kugel berührt, jedoch nicht vollständig von ihr umschlossen und damit ausgelöscht wird, erleidet 8W10 Energieschaden.</p><p><em><strong>Die Kugel kontrollieren.</strong></em> Eine <em>Kugel der Auslöschung</em> ist ortsfest, bis jemand die Kontrolle über sie übernimmt. Wenn du dich im Abstand von bis zu 18 m von einer solchen Kugel befindest, kannst du eine magische Aktion und einen SG-25-Intelligenzwurf (Arkane Kunde) ausführen. Bei einem Erfolg kontrollierst du die Kugel bis zum Beginn deines nächsten Zugs. Wenn sie unter der Kontrolle einer anderen Kreatur stand, verliert diese die Kontrolle über die Kugel. Misslingt der Wurf, so bewegt die Kugel sich 3 m weit in gerader Linie auf dich zu.</p><p>Wenn du die Kugel kontrollierst, kannst du eine Bonusaktion ausführen, um sie in eine Richtung deiner Wahl zu bewegen. Dabei kann sie eine Strecke in Höhe des 1,5-Fachen deines Intelligenzmodifikators in Metern (mindestens 1,5 m) zurücklegen. Eine Kreatur, in deren Bereich die Kugel gelangt, muss einen SG-19-Geschicklichkeitsrettungswurf bestehen, oder sie wird von der Kugel berührt und erleidet 8W10 Energieschaden. Wenn die Trefferpunkte der Kreatur durch diesen Schaden auf 0 sinken, wird die Kreatur ausgelöscht. Ihre Habseligkeiten bleiben zurück, jedoch keinerlei sterbliche Überreste.</p><p><em><strong>Interaktionen mit der Kugel.</strong></em> Wenn die Kugel ein Ebenenportal (wie das durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGate000000]{Tor} erzeugte) oder einen extradimensionalen Raum (wie den in einem @UUID[Compendium.dnd5e.equipment24.Item.dmgPortableHole0]{Tragbaren Loch}) berührt, entscheidet der SL mithilfe der folgenden Tabelle, was passiert.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgSphereOfAnnih]</p>"
   },
   "dmgWandOfWonderE": {
     "name": "Effekte des Wunderstabs"
@@ -13105,7 +13163,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgAnchorQuaalsF": {
     "name": "Federzeichen (Anker)",
-    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen an ein Boot oder Schiff zu halten. Für die nächsten 24 Stunden kann das Gefährt auf keine Weise bewegt werden. Das erneute Berühren des Zeichens am Gefährt beendet den Effekt. Wenn der Effekt endet, verschwindet das Zeichen.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Federfigur}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen an ein Boot oder Schiff zu halten. Für die nächsten 24 Stunden kann das Gefährt auf keine Weise bewegt werden. Das erneute Berühren des Zeichens am Gefährt beendet den Effekt. Wenn der Effekt endet, verschwindet das Zeichen.</p>",
     "activities": {
       "Use": "Verwenden"
     },
@@ -13115,14 +13173,14 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgBirdQuaalsFea": {
     "name": "Federzeichen (Vogel)",
-    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen 1,5 m in die Luft zu werfen. Das Zeichen verschwindet und ein riesiger, vielfarbiger Vogel nimmt seinen Platz ein. Der Vogel hat die Werte eines\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRoc00000000000]{Roc}</strong>, kann aber nicht angreifen. Er gehorcht deinen einfachen Befehlen und kann bis zu 500 Pfund tragen, während er mit seiner Höchstgeschwindigkeit fliegt (25,6 km pro Stunde für maximal 230,4 km pro Tag, mit einer 1-stündigen Pause für alle 3 Stunden Flug) oder 1.000 Pfund mit halber Geschwindigkeit. Der Vogel verschwindet, nachdem er seine maximale Tagesdistanz geflogen ist oder wenn er auf 0 Trefferpunkte fällt. Du kannst den Vogel als Magieaktion entlassen.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Federfigur}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen 1,5 m in die Luft zu werfen. Das Zeichen verschwindet und ein riesiger, vielfarbiger Vogel nimmt seinen Platz ein. Der Vogel hat die Werte eines\n<strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRoc00000000000]{Roc}</strong>, kann aber nicht angreifen. Er gehorcht deinen einfachen Befehlen und kann bis zu 500 Pfund tragen, während er mit seiner Höchstgeschwindigkeit fliegt (25,6 km pro Stunde für maximal 230,4 km pro Tag, mit einer 1-stündigen Pause für alle 3 Stunden Flug) oder 1.000 Pfund mit halber Geschwindigkeit. Der Vogel verschwindet, nachdem er seine maximale Tagesdistanz geflogen ist oder wenn er auf 0 Trefferpunkte fällt. Du kannst den Vogel als Magieaktion entlassen.</p>",
     "activities": {
       "Use": "Verwenden"
     }
   },
   "dmgFanQuaalsFeat": {
     "name": "Federzeichen (Fächer)",
-    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Wenn du dich auf einem Boot oder Schiff befindest, kannst du eine Magieaktion ausführen, um das Zeichen bis zu 3 m in die Luft zu werfen. Das Zeichen verschwindet, und ein riesiger, flatternder Fächer nimmt seinen Platz ein. Der Fächer schwebt und erzeugt einen starken Wind. Dieser Wind kann die Segel eines Schiffes füllen und dessen Geschwindigkeit für 8 Stunden um 8 km pro Stunde erhöhen. Du kannst den Fächer als Magieaktion entlassen.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Federfigur}</em></p><p>Wenn du dich auf einem Boot oder Schiff befindest, kannst du eine Magieaktion ausführen, um das Zeichen bis zu 3 m in die Luft zu werfen. Das Zeichen verschwindet, und ein riesiger, flatternder Fächer nimmt seinen Platz ein. Der Fächer schwebt und erzeugt einen starken Wind. Dieser Wind kann die Segel eines Schiffes füllen und dessen Geschwindigkeit für 8 Stunden um 8 km pro Stunde erhöhen. Du kannst den Fächer als Magieaktion entlassen.</p>",
     "activities": {
       "Use": "Verwenden"
     },
@@ -13132,21 +13190,21 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgSwanBoatQuaal": {
     "name": "Federzeichen (Schwanenboot)",
-    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen an ein Gewässer mit mindestens 18 m Durchmesser zu halten. Das Zeichen verschwindet, und ein 15 m langes, 6 m breites Boot in Form eines Schwans nimmt seinen Platz ein. Das Boot ist selbstfahrend und bewegt sich mit einer Geschwindigkeit von 9,6 km pro Stunde über Wasser. Du kannst eine Magieaktion ausführen, während du auf dem Boot bist, um es zu befehlen, sich zu bewegen oder sich um bis zu 90 Grad zu drehen. Das Boot bleibt 24 Stunden lang und verschwindet dann. Du kannst das Boot als Magieaktion entlassen.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Federfigur}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen an ein Gewässer mit mindestens 18 m Durchmesser zu halten. Das Zeichen verschwindet, und ein 15 m langes, 6 m breites Boot in Form eines Schwans nimmt seinen Platz ein. Das Boot ist selbstfahrend und bewegt sich mit einer Geschwindigkeit von 9,6 km pro Stunde über Wasser. Du kannst eine Magieaktion ausführen, während du auf dem Boot bist, um es zu befehlen, sich zu bewegen oder sich um bis zu 90 Grad zu drehen. Das Boot bleibt 24 Stunden lang und verschwindet dann. Du kannst das Boot als Magieaktion entlassen.</p>",
     "activities": {
       "Use": "Verwenden"
     }
   },
   "dmgTreeQuaalsFea": {
     "name": "Federzeichen (Baum)",
-    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du musst dich im Freien befinden, um dieses Zeichen zu verwenden. Du kannst eine Magieaktion ausführen, um es an ein unbesetztes Feld auf dem Boden zu halten. Das Zeichen verschwindet, und an seiner Stelle entsteht ein nichtmagischer Eichenbaum. Der Baum ist 18 m hoch und hat einen Stamm mit 1,5 m Durchmesser, und seine Äste an der Spitze breiten sich in einem Radius von 6 m aus.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Ungewöhnlich, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Federfigur}</em></p><p>Du musst dich im Freien befinden, um dieses Zeichen zu verwenden. Du kannst eine Magieaktion ausführen, um es an ein unbesetztes Feld auf dem Boden zu halten. Das Zeichen verschwindet, und an seiner Stelle entsteht ein nichtmagischer Eichenbaum. Der Baum ist 18 m hoch und hat einen Stamm mit 1,5 m Durchmesser, und seine Äste an der Spitze breiten sich in einem Radius von 6 m aus.</p>",
     "activities": {
       "Use": "Verwenden"
     }
   },
   "dmgWhipQuaalsFea": {
     "name": "Federzeichen (Peitsche)",
-    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Feder-Marken}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen auf einen Punkt innerhalb von 3 m von dir zu werfen. Das Zeichen verschwindet, und eine\n@UUID[Compendium.dnd5e.actors24.Actor.dmgqftFloatingWh]{floating whip} nimmt seinen Platz ein. Du kannst dann eine Bonusaktion ausführen, um einen Nahkampfzauberangriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu machen, mit einem Angriffsbonus von +9. Bei einem Treffer erleidet das Ziel 1W6 + 5 Wuchtschaden.</p><p>Als Bonusaktion kannst du die Peitsche anweisen, bis zu 6 m zu fliegen und den Angriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu wiederholen. Die Peitsche verschwindet nach 1 Stunde, wenn du eine Magieaktion ausführst, um sie zu entlassen, oder wenn du stirbst oder den Zustand 'Kampfunfähig' hast.</p>",
+    "description": "<p><em>Wundersamer Gegenstand, Selten, Siehe:\n@UUID[Compendium.dnd5e.equipment24.Item.dmgQuaalsFeather]{Federfigur}</em></p><p>Du kannst eine Magieaktion ausführen, um das Zeichen auf einen Punkt innerhalb von 3 m von dir zu werfen. Das Zeichen verschwindet, und eine\n@UUID[Compendium.dnd5e.actors24.Actor.dmgqftFloatingWh]{floating whip} nimmt seinen Platz ein. Du kannst dann eine Bonusaktion ausführen, um einen Nahkampfzauberangriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu machen, mit einem Angriffsbonus von +9. Bei einem Treffer erleidet das Ziel 1W6 + 5 Wuchtschaden.</p><p>Als Bonusaktion kannst du die Peitsche anweisen, bis zu 6 m zu fliegen und den Angriff gegen eine Kreatur innerhalb von 3 m der Peitsche zu wiederholen. Die Peitsche verschwindet nach 1 Stunde, wenn du eine Magieaktion ausführst, um sie zu entlassen, oder wenn du stirbst oder den Zustand 'Kampfunfähig' hast.</p>",
     "activities": {
       "Use": "Verwenden"
     }
@@ -14564,5 +14622,9 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbwepPistol0000": {
     "name": "Pistole"
+  },
+  "dmgPipeOfSmokeMo": {
+    "name": "Pfeife der Rauchmonster",
+    "description": "<p><em>Wundersamer Gegenstand, gewöhnlich</em></p><p>Während du diese Pfeife rauchst, kannst du eine magische Aktion ausführen, um eine Rauchwolke auszuatmen, die die Gestalt einer Kreatur annimmt, etwa die eines Drachen, eines Flumphs oder eines Slaads. Die Gestalt muss klein genug sein, um in einen Würfel mit 30 cm Kantenlänge zu passen. Sie verliert nach wenigen Sekunden ihre Form und wird zu einer gewöhnlichen Rauchwolke.</p>"
   }
 };

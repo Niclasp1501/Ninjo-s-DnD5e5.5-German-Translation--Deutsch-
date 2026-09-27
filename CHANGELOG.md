@@ -3,6 +3,36 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.12] - 2026-09-28
+
+### Fixed - Gegenstände hießen wie ihre Würfeltabelle
+
+dnd5e vergibt sechzehn Kennungen doppelt, einmal für einen magischen Gegenstand und
+einmal für seine Würfeltabelle. Das Modul hat beide über dieselbe Kennung übersetzt.
+Deshalb hieß zum Beispiel der Gegenstand *Potion of Resistance* „Trank der Resistenz:
+Typ“ und zeigte seine Beschreibung auf Englisch, oder umgekehrt trug die Tabelle den
+Namen des Gegenstands. Jetzt werden Gegenstand und Tabelle getrennt übersetzt.
+
+Zehn dieser Gegenstände hatten gar keine deutsche Beschreibung. Sie stehen jetzt im
+Wortlaut des SRD 5.2.1 da: Fliegender Teppich, Geschoss des Tötens, Handbuch der
+Golems, Hut der Vielen Zauber, Karten der Illusionen, Kugel der Auslöschung,
+Federfigur, Ring der Resistenz, Rüstung der Resistenz und Trank der Resistenz. Dazu
+kommt die *Pfeife der Rauchmonster*, die das SRD nicht enthält und die deshalb eng am
+Original übersetzt ist.
+
+Vier dieser Namen folgen dabei dem SRD statt dem bisherigen Bestand: **Karten der
+Illusionen** (vorher Kartenstapel der Illusionen), **Federfigur** (Feder-Marken),
+**Geschoss des Tötens** (Munition der Tötung) und **Kugel der Auslöschung** (Kugel der
+Vernichtung). Verweise auf die Federfigur sind nachgezogen.
+
+### Fixed - Zwei Tabellen mit falschen Werten
+
+- Beim *Trank der Resistenz* stand „Wucht“ für Force. Richtig ist **Energie**, Wucht ist
+  Bludgeoning.
+- Beim *Fliegenden Teppich* mischte die Tabelle Fuß und Meter („3 × 1,5 m“) und gab
+  die Traglast in Pfund an. Jetzt stehen dort die Werte des SRD, von 0,9 m × 1,5 m mit
+  100 kg Traglast bis 1,8 m × 2,7 m mit 400 kg.
+
 ## [14.2609.11] - 2026-09-28
 
 ### Fixed - Angriffe und Nachschlagewerte würfeln wieder
