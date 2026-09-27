@@ -36,7 +36,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Diese Munition wird für alle Arten von Armbrüsten verwendet und besteht in der Regel aus einem kurzen Metallschaft mit einer schmalen, durchdringenden Spitze. Sie wurde mit Magie durchdrungen.</p>\n<p>Du hast einen Bonus auf Angriffs- und Schadenswürfe mit dieser magischen Munition. Sobald es ein Ziel trifft, ist die Munition nicht mehr magisch.</p>"
   },
   "XXLznzi3rlanMhTM": {
-    "name": "Armbrustbolzen +2",
+    "name": "Armbrustbolzen +3",
     "description": "<p>Diese Munition wird für alle Arten von Armbrüsten verwendet und besteht in der Regel aus einem kurzen Metallschaft mit einer schmalen, durchdringenden Spitze. Sie wurde mit Magie durchdrungen.</p>\n<p>Du hast einen Bonus auf Angriffs- und Schadenswürfe mit dieser magischen Munition. Sobald es ein Ziel trifft, ist die Munition nicht mehr magisch.</p>"
   },
   "SItCnYBqhzqBoaWG": {
@@ -820,7 +820,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Diese Zusammenstellung beinhaltet eine Angelrute, Angelschnur, Korkschwimmer, Stahlhaken, Bleigewichte, Seidenköder und engmaschige Netze.</p>"
   },
   "tfDxZIKDpOkz6pbx": {
-    "name": "Kletterhaken",
+    "name": "Enterhaken",
     "description": "<p>Ein Gerät mit Eisenklauen, das mit einem Seil zum Ziehen oder Greifen verwendet werden kann.</p>"
   },
   "14pNRT4sZy9rgvhb": {
@@ -1868,7 +1868,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Öl wird üblicherweise in tönernen Flaschen verkauft, die 0,5 Liter enthalten. Als Aktion kannst du das Öl auf eine Kreatur innerhalb von 1,50 m schütten oder es bis zu 6 m weit werfen, wo das Fläschchen beim Aufprall zerbricht. In beiden Fällen führst du einen Fernkampfangriff gegen das Objekt oder die Kreatur aus, wobei das Ölfläschchen als improvisierte Waffe behandelt wird.</p>\n<p>Bei einem Treffer ist das Ziel mit Öl benetzt. Erleidet es Feuerschaden, bevor das Öl eintrocknet (nach 1 Minute), fügt ihm das Öl weitere 5 Punkte Feuerschaden zu. Du kannst ein Fläschchen auch auf dem Boden ausleeren und eine Fläche von 1,50 m x 1,50 m mit Öl bedecken, vorausgesetzt der Boden ist eben.</p>\n<p>Wird es entzündet, brennt das Öl für 2 Runden und fügt jeder Kreatur, die den Bereich betritt oder ihren Zug in diesem beendet, 5 Punkte Feuerschaden zu.</p>"
   },
   "44XNWmMGnwXn7bNW": {
-    "name": "Perle der Kraft",
+    "name": "Perle der Macht",
     "description": "<p><em>Wundersamer Gegenstand, (benötigt Einstimmung durch einen Zauberwirker)</em></p>\n<p>Während du diese Perle bei dir hast, kannst du eine Aktion aufwenden, um ihr Befehlswort zu sprechen und so einen verbrauchten Zauberplatz wiederzubekommen. Wenn der Zauberplatz von Grad 4 oder höher war, ist der neue Platz Grad 3.</p>\n<p>Sobald du die Perle benutzt hast, kann sie bis zur nächsten Morgendämmerung nicht erneut verwenden werden.</p>"
   },
   "oNLfJNRQgUHpU8c7": {
@@ -4368,7 +4368,7 @@ export const LEGACY_OVERRIDES_BY_ID = {
     "description": "<p>Benenne oder beschreibe eine Person, einen Ort oder einen Gegenstand. Der Zauber erfüllt deinen Verstand mit einer kurzen Zusammenfassung des bedeutenden Wissens über die ausgewählte Sache. Die Kunde könnte aus aktuellen Geschichten, vergessenen Erzählungen oder sogar geheimem Wissen bestehen, das niemals allgemein bekannt war. Wenn die Sache, die du ausgewählt hast, nicht von legendärer Bedeutung ist, erhältst du keine Informationen. Je mehr Informationen du bereits über die Sache zur Verfügung hast, umso präziser und detaillierter ist das Wissen, das du erhältst.</p>\n<p>Die Informationen, die dir zuteil werden, sind korrekt, könnten aber in bildhafte Sprache gehüllt sein. Wenn du beispielsweise eine geheimnisvolle magische Axt vor dir hast, könnte der Zauber dir Folgendes vermitteln: „Wehe dem Übeltäter, der die Axt berührt, denn selbst der Schaft zerschneidet die Hand der Bösen. Nur ein wahres Kind des Steins, Jünger und Schützling von Moradin, vermag die wahre Macht der Axt zu erwecken, und nur mit dem heiligen Wort Rudnogg auf den Lippen.“</p>"
   },
   "Pyzmm8R7rVsNAPsd": {
-    "name": "Massen-Wunden Heilen",
+    "name": "Massen-Wunden heilen",
     "description": "<p>Eine Woge heilender Energie entströmt einem Punkt deiner Wahl in Reichweite. Wähle bis zu sechs Kreaturen in einer Sphäre mit einem Radius von 9 m, die um den Zielpunkt zentriert ist. Jede Kreatur erhält Trefferpunkte zurück in Höhe von 3W8+ den Modifikator deines zum Zaubern relevanten Attributs. Der Zauber hat keine Auswirkungen auf Untote oder Konstrukte.</p><p><strong>Auf höheren Graden:</strong> Wenn du diesen Spruch mit einem Zauberplatz des 6. oder eines höheren Grades wirkst, steigen die geheilten Trefferpunkte für jeden Grad über den 5. hinaus um 1W8.</p>"
   },
   "MBMaQLwoy05qzMJ3": {

@@ -3,6 +3,57 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.11] - 2026-09-28
+
+### Fixed - Angriffe und Nachschlagewerte würfeln wieder
+
+In gut 200 Einträgen der Kompendien für dnd5e 6.x funktionierten die eingebauten Befehle
+nicht, vor allem in Monsterangriffen, Monstermerkmalen und Klassenmerkmalen. Foundry
+zeigte sie als rohen Text an, etwa `[[/damage average extended]]` mit einem
+Zeilenumbruch in der Mitte, und es wurde nichts gewürfelt. Zwei Ursachen:
+
+- Ein früherer Lauf hatte die Texte umbrochen, auch mitten in solchen Befehlen. dnd5e
+  erkennt einen Befehl aber nur, wenn seine Teile durch ein Leerzeichen getrennt sind.
+  Das betraf rund 470 Befehle.
+- In einigen Monsterangriffen waren die Befehle selbst übersetzt, zum Beispiel
+  „[[/Angriff erweitert]]“. Die heißen jetzt wieder so wie im Original.
+
+Dazu kamen kleinere Abweichungen vom Original: Die Startausrüstung der Klassen vergab
+Gold als „GM“, dnd5e erwartet dort das Kürzel „GP“. Und bei der *Arkanen Regeneration*
+des Magiers fehlte das Aufrunden der halben Stufe.
+
+Die deutschen Beschriftungen von Würfen bleiben erhalten, etwa die Zahl der Tage bei
+*Celestische Wiederherstellung*.
+
+### Fixed - Zauber mit dem Namen eines anderen Zaubers
+
+Sechs Zauber trugen den Namen eines anderen, sodass im Kompendium zweimal dasselbe stand:
+
+| Original | vorher | jetzt, nach dem SRD 5.2.1 |
+|---|---|---|
+| Befuddlement | Verwirrung | **Wirrnis** |
+| Entangle | Fesseln | **Verstricken** |
+| Hex | Fluch | **Verwünschung** |
+| Mass Cure Wounds | Massenheilung | **Massen-Wunden heilen** |
+| Mass Heal | Massenheilung | **Massen-Heilung** |
+| Sending | Botschaft | **Verständigung** |
+
+Die Verweise auf diese Zauber tragen jetzt ebenfalls den richtigen Namen.
+
+### Fixed - Ausrüstungspakete zählen ihren Inhalt auf
+
+Die sechs Ausrüstungspakete für dnd5e 6.x, von der Einbrecher- bis zur
+Gelehrtenausrüstung, beschrieben statt ihres Inhalts einen Rucksack. Jetzt steht dort,
+was darin ist, mit Verweisen auf jeden enthaltenen Gegenstand.
+
+### Fixed - Weitere Namen
+
+- *Pearl of Power* heißt jetzt **Perle der Macht**, nach dem SRD. Unter dnd5e 5.x hieß
+  sie wie *Bead of Force* „Perle der Kraft“.
+- *Grappling Hook* heißt unter 5.x jetzt **Enterhaken** statt Kletterhaken. Kletterhaken
+  bleibt für *Piton*.
+- *Crossbow Bolt +3* hieß unter 5.x „Armbrustbolzen +2“.
+
 ## [14.2609.10] - 2026-09-28
 
 ### Added - Hinweis auf Patreon
