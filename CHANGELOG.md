@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [14.2609.10] - 2026-09-28
 
 ### Added - Hinweis auf Patreon
 
@@ -51,6 +51,12 @@ Mithralrüstung. Wir schreiben sie deshalb mit Bindestrich, also *Mithral-Brustp
 In beiden Beschreibungen stand „jede Mittlere oder Schwere, außer Lederharnisch". Gemeint
 ist *Hide Armor*, also die Fellrüstung. Eine Lederrüstung ist ohnehin leicht und kam als
 Ausnahme nie infrage.
+
+### Changed - Geprüft mit dnd5e 6.0.5
+
+dnd5e 6.0.5 hat zwei Beschriftungen im Stufenaufstieg an eine neue Stelle verschoben,
+*Anzahl* und *Eigenschaften* bei der Auswahl von Merkmalen. Beide stehen jetzt auch dort.
+Die alten Stellen bleiben für ältere Versionen erhalten.
 
 ## [14.2609.9] - 2026-09-19
 
