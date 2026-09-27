@@ -131,6 +131,10 @@ Die Module sind kostenlos und bleiben es. Wenn sie deiner Runde helfen, kannst d
 
 The modules are free and stay free. If they help your group, you can support my work on [Patreon](https://www.patreon.com/ninjosforge) and get premium add-ons in return. What you get there is on the [premium page of Ninjo's Forge](https://ninjos-forge.web.app/en/premium).
 
+Danke an die [Legends](https://ninjos-forge.web.app/legends), die diese Module auf Patreon in der höchsten Stufe unterstützen: **AaronShep**.
+
+Thank you to the [Legends](https://ninjos-forge.web.app/en/legends) who support these modules on Patreon at the highest tier: **AaronShep**.
+
 ---
 
 ## Technical notes
