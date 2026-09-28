@@ -1587,7 +1587,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     },
     "effects": {
       "vPkln6UeePHnbLr4": "Zeichen des Jägers"
-    }
+    },
+    "description": "<p>Du markierst eine Kreatur in Reichweite, die du sehen kannst, auf magische Art als deine Beute. Für die Wirkungsdauer fügst du dem Ziel, wann immer du es mit einem Angriffswurf triffst, zusätzlich [[/damage]] Schaden zu. Außerdem bist du bei allen Würfen auf [[/check ability=wis skill=prc]] oder [[/check ability=wis skill=sur]] im Vorteil, die du ausführst, um das Ziel zu finden.</p><p>Wenn die Trefferpunkte des Ziels auf 0 sinken, bevor dieser Zauber endet, kannst du eine Bonusaktion ausführen, um das Zeichen auf eine andere Kreatur in Reichweite, die du sehen kannst, zu übertragen.</p><p><strong>Verwenden von Zauberplätzen höheren Grades.</strong> Deine Konzentration kann länger andauern: bei einem Zauberplatz des 3. und 4. Grades bis zu acht Stunden und bei einem Zauberplatz ab dem 5. Grad bis zu 24 Stunden.</p>"
   },
   "phbsplIceKnife00": {
     "name": "Eismesser",
@@ -1768,7 +1769,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "ein Bissen Nahrung",
     "effects": {
       "jubviBNu11G84UZd": "Trägt Nachricht"
-    }
+    },
+    "description": "<p>Ein winziges Tier deiner Wahl in Reichweite, das du sehen kannst, muss einen Charismarettungswurf bestehen (dies gelingt ihm automatisch, sofern sein Herausforderungsgrad nicht gleich null ist). Misslingt der Wurf, so muss das Ziel versuchen, in deinem Namen eine Botschaft zu überbringen. Bestimme einen Ort, an dem du schon einmal warst, und einen Empfänger, der einer allgemeinen Beschreibung wie „eine Person in Stadtwachenuniform“ oder „ein rothaariger Zwerg mit spitzem Hut“ entspricht. Dann kommunizierst du eine Botschaft mit bis zu 25 Worten. Das Tier reist für die Wirkungsdauer in Richtung Zielort, wobei es in 24 Stunden etwa 40 Kilometer zurücklegt, oder 80 Kilometer, wenn es fliegen kann.</p><p>Am Zielort übermittelt das Tier der Kreatur, die du beschrieben hast, deine Botschaft und imitiert dabei deine Art der Kommunikation. Erreicht das Tier während der Wirkungsdauer sein Ziel nicht, so geht die Botschaft verloren, und das Tier kehrt an den Ort zurück, an dem du den Zauber gewirkt hast.</p><p><strong>Verwenden von Zauberplätzen höheren Grades.</strong> Für jeden Zauberplatzgrad über dem 2. wird die Wirkungsdauer des Zaubers um 48 Stunden erhöht.</p>"
   },
   "phbsplArcaneLock": {
     "name": "Arkanes Schloss",
@@ -1899,7 +1901,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "effects": {
       "SgNNVLaKxZOVKyKx": "Fliegendes Reittier",
       "Flying Steed": "Fliegendes Reittier"
-    }
+    },
+    "description": "<p>Du rufst ein außerweltliches Wesen herbei, das sich als treues Reittier in einem freien Bereich deiner Wahl in Reichweite manifestiert. Es verwendet den Wertekasten <strong>@UUID[Compendium.dnd5e.actors24.Actor.phbmobOtherworld]{Außerweltliches Reittier}</strong>. Wenn du bereits über ein Reittier durch diesen Zauber verfügst, wird dieses durch das neue ersetzt.</p><p>Das Reittier sieht aus wie ein großes, reittaugliches Tier deiner Wahl, beispielsweise ein Pferd, ein Kamel, ein Schreckenswolf oder ein Elch. Wann immer du diesen Zauber wirkst, wählst du den Kreaturentyp des Reittieres aus: celestisches Wesen, Feenwesen oder Unhold. Der Typ beeinflusst bestimmte Merkmale im Wertekasten.</p><p><strong>Kampf.</strong> Das Reittier ist mit dir und deinen Verbündeten verbündet. Im Kampf nutzt es deinen Initiativewert und fungiert als &amp;Reference[controllingamount]{kontrolliertes Reittier}, während du es reitest (wie in den Regeln zu berittenem Kampf definiert). Wenn du kampfunfähig bist, ist das Reittier unmittelbar nach dir am Zug, agiert unabhängig und fokussiert sich darauf, dich zu beschützen.</p><p><strong>Verschwinden des Reittieres.</strong> Das Reittier verschwindet, wenn seine Trefferpunkte auf 0 sinken oder wenn du stirbst. Wenn es verschwindet, hinterlässt es alles, was es getragen oder gehalten hat. Wenn du diesen Zauber erneut wirkst, entscheidest du, ob du erneut das verschwundene Reittier oder ein anderes herbeirufst.</p><p><strong>Verwenden von Zauberplätzen höheren Grades.</strong> Verwende den Zauberplatzgrad als Zaubergrad im Wertekasten.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Neben der genannten Verwendung des Zaubergrades in den Merkmalen und Aktionen des Reittieres wirkt er sich auch auf die folgenden Werte aus.</p><table><caption>Außerweltliches Reittier</caption><tbody><tr><td><strong>RK</strong></td><td>10 + 1 pro Zaubergrad</td></tr><tr><td><strong>TP</strong></td><td>5 + 10 pro Zaubergrad (das Reittier verfügt über eine Anzahl von W10-Trefferwürfeln in Höhe des Zaubergrades)</td></tr><tr><td><strong>Bewegungsrate</strong></td><td>18 m, Fliegen 18 m (erfordert einen Zauber des mindestens 4. Grades)</td></tr><tr><td><strong>ÜB</strong></td><td>entspricht deinem Übungsbonus</td></tr></tbody></table></article></section><section class=\"secret\" id=\"secret-SI4qlfj05o21BBGg\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivität <strong>Fliegendes Reittier beschwören</strong> ist zu verwenden, wenn ein Zauberplatz des 4. oder höheren Grades verbraucht wird. Sie ist so eingerichtet, dass sie die Flugbewegungsrate anwendet.</p><p>Bei einem Zauberplatz des 2. oder 3. Grades ist stattdessen die Aktivität <strong>Reittier beschwören</strong> zu verwenden.</p></section>"
   },
   "phbsplFindTraps0": {
     "name": "Fallen finden",
@@ -1955,7 +1958,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "effects": {
       "PklwZi3SKQ3JU2M2": "Gelähmt",
       "Paralyzed": "Gelähmt"
-    }
+    },
+    "description": "<p>Wähle einen Humanoiden in Reichweite aus, den du sehen kannst. Das Ziel muss einen Weisheitsrettungswurf bestehen, oder es hat für die Wirkungsdauer den Zustand &amp;Reference[paralyzed apply=false]. Das Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge. Bei einem Erfolg endet der Zauber für dieses Ziel.</p><p><strong>Verwenden von Zauberplätzen höheren Grades.</strong> Für jeden Zauberplatzgrad über dem 2. kannst du auf einen weiteren Humanoiden zielen.</p>"
   },
   "phbsplInvisibili": {
     "name": "Unsichtbarkeit",
@@ -2230,7 +2234,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Für die Wirkungsdauer breitet sich Sonnenlicht von einem Punkt innerhalb der Reichweite aus und füllt\neine Kugel mit 18 m Radius. Der Bereich des Sonnenlichts ist helles Licht und spendet dämmriges\nLicht für weitere 18 m.</p><p>Alternativ wirkst du den Zauber\nauf ein Objekt, das nicht getragen oder gehalten wird, wodurch das Sonnenlicht eine\n18 m große Ausströmung füllt, die von diesem Objekt ausgeht. Das Abdecken dieses\nObjekts mit etwas Undurchsichtigem, wie einer Schale oder einem Helm, blockiert das\nSonnenlicht.</p><p>Wenn ein Bereich dieses Zaubers mit einem Bereich der\nDunkelheit überlappt, der durch einen Zauber des 3. Grades oder niedriger erzeugt wurde,\nwird dieser andere Zauber gebannt.</p>"
   },
   "phbsplDispelMagi": {
-    "name": "Magie bannen"
+    "name": "Magie bannen",
+    "description": "<p>Wähle eine Kreatur, einen Gegenstand oder einen magischen Effekt in Reichweite aus. Jeder Zauber des höchstens 3. Grades, der aktuell auf das Ziel wirkt, wird beendet. Führe für jeden Zauber des mindestens 4. Grades, der auf das Ziel wirkt, einen Attributswurf mit deinem Attribut zum Zauberwirken (SG 10 plus Zaubergrad) aus. Bei einem Erfolg endet der Zauber.</p><p><strong>Verwenden von Zauberplätzen höheren Grades.</strong> Du beendest automatisch einen Zauber, der auf das Ziel wirkt, wenn dessen Grad höchstens dem des Zauberplatzes entspricht, den du verwendest.</p>"
   },
   "phbsplFear000000": {
     "name": "Furcht",
@@ -2597,7 +2602,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplGiantInsec": {
-    "name": "Rieseninsekt"
+    "name": "Rieseninsekt",
+    "description": "<p>Du rufst einen Riesentausendfüßler, eine Riesenspinne oder eine Riesenwespe (nach deiner Wahl, wenn du den Zauber wirkst) herbei. Die Kreatur manifestiert sich in einem freien Bereich in Reichweite, den du sehen kannst, und verwendet den Wertekasten <strong>@UUID[Compendium.dnd5e.actors24.Actor.phbmobGiantInsec]{Rieseninsekt}</strong>. Einige Details im Wertekasten werden von der ausgewählten Gestalt bestimmt. Die Kreatur verschwindet, wenn ihre Trefferpunkte auf 0 sinken oder der Zauber endet.</p><p>Die Kreatur ist mit dir und deinen Verbündeten verbündet. Im Kampf nutzt sie deinen Initiativewert und ist direkt nach dir am Zug. Sie gehorcht deinen mündlichen Befehlen (keine Aktion deinerseits erforderlich). Befiehlst du ihr nichts, so führt sie die Aktion &amp;Reference[Dodge] aus und nutzt ihre Bewegung, um Gefahren zu vermeiden.</p><p><strong>Verwenden von Zauberplätzen höheren Grades.</strong> Verwende den Zauberplatzgrad als Zaubergrad im Wertekasten.</p><p>@Embed[Compendium.dnd5e.actors24.Actor.phbmobGiantInsec statblock caption=false]</p>"
   },
   "phbsplGreaterInv": {
     "name": "Mächtige Unsichtbarkeit",
@@ -3071,7 +3077,8 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplGlobeofInv": {
     "name": "Kugel der Unverwundbarkeit",
-    "materials": "eine Glasperle"
+    "materials": "eine Glasperle",
+    "description": "<p>In einer Ausströmung von drei Metern erscheint für die Wirkungsdauer eine unbewegliche schimmernde Barriere um dich herum.</p><p>Jeder Zauber des höchstens 5. Grades, der von außerhalb der Barriere gewirkt wird, hat keinen Effekt auf Kreaturen oder Gegenstände im Innern. Ein solcher Zauber kann Kreaturen und Gegenstände innerhalb der Barriere zum Ziel haben, hat jedoch keinen Effekt auf sie. Gleichermaßen ist der Bereich innerhalb der Barriere von Wirkungsbereichen solcher Zauber ausgeschlossen.</p><p><strong>Verwenden von Zauberplätzen höheren Grades.</strong> Für jeden Zauberplatzgrad über dem 6. blockiert die Barriere einen Grad höhere Zauber.</p><p><strong>Blockierte Zaubergrade:</strong>[[@item.level - 1]] und niedriger</p>"
   },
   "phbsplGuardsandW": {
     "name": "Wachen und Bann",
@@ -5583,8 +5590,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>In der Vergangenheit hast du deinen Patron normalerweise über Mittelsmänner kontaktiert.\nJetzt kannst du direkt kommunizieren; du hast den Zauber\n@UUID[Compendium.dnd5e.spells24.Item.phbsplContactOth]{Kontakt zu anderer Ebene} immer vorbereitet. Mit diesem Merkmal kannst du den Zauber wirken, ohne\neinen Zauberplatz zu verbrauchen, um deinen Patron zu kontaktieren, und du\nbestehst den Rettungswurf des Zaubers automatisch.</p><p>Sobald du den Zauber mit\ndiesem Merkmal gewirkt hast, kannst du dies erst wieder tun, nachdem du eine Lange\nRast beendet hast.</p><section class=\"secret\"\nid=\"secret-ZobRIiK6iB3SlCis\"><p><strong>Foundry-Hinweis</strong></p><p>Der\nZauber wird dir auf dieser Stufe automatisch mit einer kostenlosen\nAnwendung gewährt.</p></section>"
   },
   "phbwlkEldritchIn": {
-    "name": "Eldritch-Anrufungen",
-    "description": "<p>Du hast Eldritch-Anrufungen entdeckt, Stücke verbotenen Wissens,\ndie dich mit einer bleibenden magischen Fähigkeit oder anderen Lehren erfüllen. Du erhältst\neine Anrufung deiner Wahl, wie z.B.\n@UUID[Compendium.dnd5e.classes24.Item.phbinvPactTome00]{Pakt des Folianten}.\nAnrufungen werden im Abschnitt\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWarlock000000.JournalEntryPage.FA4hxx49eazhISIt]{Optionen der Schauerlichen Anrufungen} beschrieben.</p><p><strong>Voraussetzungen.</strong> Wenn eine\nAnrufung eine Voraussetzung hat, musst du diese erfüllen, um die Anrufung zu lernen.\nWenn eine Anrufung beispielsweise erfordert, dass du ein Hexenmeister der Stufe 5+ bist, kannst du\ndie Anrufung auswählen, sobald du Hexenmeisterstufe\n5 erreichst.</p><p><strong>Anrufungen ersetzen und erhalten.</strong> Jedes Mal, wenn du\neine Hexenmeisterstufe aufsteigst, kannst du eine deiner Anrufungen durch eine andere\nersetzen, für die du qualifiziert bist. Du kannst eine Anrufung nicht ersetzen, wenn sie eine\nVoraussetzung für eine andere Anrufung ist, die du besitzt.</p><p>Wenn du bestimmte\nHexenmeisterstufen erreichst, erhältst du weitere Anrufungen deiner Wahl, wie in der Spalte\n„Anrufungen“ der Tabelle „Hexenmeister-Merkmale“\ngezeigt.</p><p><strong>Aktuelle maximale Eldritch-Anrufungen:</strong> [[lookup @scale.warlock.invocations-known]]</p><p>Du kannst dieselbe\nAnrufung nicht mehr als einmal wählen, es sei denn, ihre Beschreibung besagt\netwas anderes.</p><section class=\"secret\"\nid=\"secret-Oe1om6AaBjTtabpK\"><p><strong>Foundry-Hinweis</strong></p><p>Du\nwirst beim Stufenaufstieg nach deinen Entscheidungen gefragt. Das Fortschrittssystem\nhindert dich nicht daran, Anrufungen zu wählen, stelle also sicher, dass du die\nAnforderungen erfüllst, bevor du eine auswählst.</p></section>"
+    "name": "Schauerliche Anrufungen",
+    "description": "<p>Du hast Schauerliche Anrufungen entdeckt, Stücke verbotenen Wissens,\ndie dich mit einer bleibenden magischen Fähigkeit oder anderen Lehren erfüllen. Du erhältst\neine Anrufung deiner Wahl, wie z.B.\n@UUID[Compendium.dnd5e.classes24.Item.phbinvPactTome00]{Pakt des Buches}.\nAnrufungen werden im Abschnitt\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWarlock000000.JournalEntryPage.FA4hxx49eazhISIt]{Optionen der Schauerlichen Anrufungen} beschrieben.</p><p><strong>Voraussetzungen.</strong> Wenn eine\nAnrufung eine Voraussetzung hat, musst du diese erfüllen, um die Anrufung zu lernen.\nWenn eine Anrufung beispielsweise erfordert, dass du ein Hexenmeister der Stufe 5+ bist, kannst du\ndie Anrufung auswählen, sobald du Hexenmeisterstufe\n5 erreichst.</p><p><strong>Anrufungen ersetzen und erhalten.</strong> Jedes Mal, wenn du\neine Hexenmeisterstufe aufsteigst, kannst du eine deiner Anrufungen durch eine andere\nersetzen, für die du qualifiziert bist. Du kannst eine Anrufung nicht ersetzen, wenn sie eine\nVoraussetzung für eine andere Anrufung ist, die du besitzt.</p><p>Wenn du bestimmte\nHexenmeisterstufen erreichst, erhältst du weitere Anrufungen deiner Wahl, wie in der Spalte\n„Anrufungen“ der Tabelle „Hexenmeister-Merkmale“\ngezeigt.</p><p><strong>Aktuelle maximale Schauerliche Anrufungen:</strong> [[lookup @scale.warlock.invocations-known]]</p><p>Du kannst dieselbe\nAnrufung nicht mehr als einmal wählen, es sei denn, ihre Beschreibung besagt\netwas anderes.</p><section class=\"secret\"\nid=\"secret-Oe1om6AaBjTtabpK\"><p><strong>Foundry-Hinweis</strong></p><p>Du\nwirst beim Stufenaufstieg nach deinen Entscheidungen gefragt. Das Fortschrittssystem\nhindert dich nicht daran, Anrufungen zu wählen, stelle also sicher, dass du die\nAnforderungen erfüllst, bevor du eine auswählst.</p></section>"
   },
   "phbwlkEldritchMa": {
     "name": "Mystischer Meister",
@@ -5685,7 +5692,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbinvGiftoftheP": {
     "name": "Gabe der Beschützer",
-    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 9+,\n@UUID[Compendium.dnd5e.classes24.Item.phbinvPactTome00]{Pakt des Folianten}\nAnrufung</p></blockquote><p>Eine neue Seite erscheint in deinem\n@UUID[Compendium.dnd5e.items.Item.CwWbeQ6XyqFzbMYw]{Buch der Schatten}, wenn\ndu es herbeizauberst. Mit deiner Erlaubnis kann eine Kreatur eine Aktion aufwenden,\num ihren Namen auf diese Seite zu schreiben, die eine Anzahl von Namen enthalten kann,\ndie deinem Charisma-Modifikator entspricht (mindestens ein Name).</p><p>Wenn eine Kreatur,\nderen Name auf der Seite steht, auf 0 Trefferpunkte reduziert wird, aber nicht sofort\ngetötet wird, fällt die Kreatur stattdessen magisch auf 1 Trefferpunkt. Sobald diese\nMagie ausgelöst wird, kann keine Kreatur davon profitieren, bis du eine\nlange Rast beendest.</p><p>Als Magieaktion kannst du einen Namen auf der Seite löschen,\nindem du ihn berührst.</p><section id=\"secret-VzLQ7nRPLs0fIkvE\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die\n<strong>Schützen</strong> Aktion verbraucht eine Nutzung ihrer Aktivität, die\nsich nach jeder langen Rast erneuert.</p><p>Die <strong>Namen schreiben</strong> Aktion\nverbraucht eine Nutzung des Gegenstands, die zur Verfolgung der Anzahl der von dir\ngeschriebenen Namen verwendet werden kann.</p><p>Die <strong>Namen löschen</strong> Aktion wird\neine Nutzung des Gegenstands wiederherstellen und ermöglicht es dir, einen weiteren\nNamen hinzuzufügen.</p></section>",
+    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 9+,\n@UUID[Compendium.dnd5e.classes24.Item.phbinvPactTome00]{Pakt des Buches}\nAnrufung</p></blockquote><p>Eine neue Seite erscheint in deinem\n@UUID[Compendium.dnd5e.items.Item.CwWbeQ6XyqFzbMYw]{Buch der Schatten}, wenn\ndu es herbeizauberst. Mit deiner Erlaubnis kann eine Kreatur eine Aktion aufwenden,\num ihren Namen auf diese Seite zu schreiben, die eine Anzahl von Namen enthalten kann,\ndie deinem Charisma-Modifikator entspricht (mindestens ein Name).</p><p>Wenn eine Kreatur,\nderen Name auf der Seite steht, auf 0 Trefferpunkte reduziert wird, aber nicht sofort\ngetötet wird, fällt die Kreatur stattdessen magisch auf 1 Trefferpunkt. Sobald diese\nMagie ausgelöst wird, kann keine Kreatur davon profitieren, bis du eine\nlange Rast beendest.</p><p>Als Magieaktion kannst du einen Namen auf der Seite löschen,\nindem du ihn berührst.</p><section id=\"secret-VzLQ7nRPLs0fIkvE\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die\n<strong>Schützen</strong> Aktion verbraucht eine Nutzung ihrer Aktivität, die\nsich nach jeder langen Rast erneuert.</p><p>Die <strong>Namen schreiben</strong> Aktion\nverbraucht eine Nutzung des Gegenstands, die zur Verfolgung der Anzahl der von dir\ngeschriebenen Namen verwendet werden kann.</p><p>Die <strong>Namen löschen</strong> Aktion wird\neine Nutzung des Gegenstands wiederherstellen und ermöglicht es dir, einen weiteren\nNamen hinzuzufügen.</p></section>",
     "activities": {
       "Erase Name": "Namen löschen",
       "Protect": "Schützen",
@@ -5786,7 +5793,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbinvPactTome00": {
-    "name": "Pakt des Folianten",
+    "name": "Pakt des Buches",
     "description": "<p>Indem du Schattenfäden zusammenfügst, zauberst du am Ende einer kurzen oder langen Rast ein Buch in deine Hand.\nDieses @UUID[Compendium.dnd5e.classes24.Item.phbwlkBookOfShad]{Buch der Schatten} (du bestimmst sein Aussehen) enthält unheimliche Magie, auf die nur du zugreifen kannst,\nund gewährt dir die unten aufgeführten Vorteile. Das Buch verschwindet, wenn du\nein anderes Buch mit dieser Fähigkeit herbeizauberst oder wenn du\nstirbst.</p><p><strong>Zaubertricks und Rituale.</strong> Wenn das Buch erscheint,\nwähle drei Zaubertricks und zwei Zauber des 1. Grades, die das Ritual-Tag haben.\nDie Zauber können aus der Zauberliste jeder Klasse stammen und müssen\nZauber sein, die du nicht bereits vorbereitet hast. Solange das Buch bei dir ist,\nhast du die gewählten Zauber vorbereitet, und sie funktionieren für dich als Hexenmeisterzauber.</p><p><strong>Zauberfokus.</strong> Du kannst das Buch\nals Zauberfokus verwenden.</p>"
   },
   "phbinvRepellingB": {
@@ -7600,28 +7607,28 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Celestisches Ross",
     "description": "<p> Wenn du Trefferpunkte durch einen Zauber der Stufe 1 oder höher zurückerhältst, erhält das Ross die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>",
     "scalarStrings": {
-      "system.traits.languages.custom": "Telepathie 1,6 km (works only with you)"
+      "system.traits.languages.custom": "Telepathie auf 1,6 Kilometer (nur mit dir)"
     }
   },
   "phbostFey0000000": {
     "name": "Feenross",
     "description": "<p> Wenn du Trefferpunkte durch einen Zauber der Stufe 1 oder höher zurückerhältst, erhält das Ross die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>",
     "scalarStrings": {
-      "system.traits.languages.custom": "Telepathie 1,6 km (works only with you)"
+      "system.traits.languages.custom": "Telepathie auf 1,6 Kilometer (nur mit dir)"
     }
   },
   "phbostFiend00000": {
     "name": "Dämonisches Reittier",
     "description": "<p> Wenn du Trefferpunkte durch einen Zauber des Grades 1 oder höher zurückerhältst, erhält das Reittier die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>",
     "scalarStrings": {
-      "system.traits.languages.custom": "Telepathie 1,6 km (works only with you)"
+      "system.traits.languages.custom": "Telepathie auf 1,6 Kilometer (nur mit dir)"
     }
   },
   "phbmobOtherworld": {
-    "name": "Jenseitiges Reittier",
+    "name": "Außerweltliches Reittier",
     "description": "<p> Wenn du Trefferpunkte durch einen Zauber des Grades 1 oder höher zurückerhältst, erhält das Reittier die gleiche Anzahl an Trefferpunkten zurück, wenn du dich innerhalb von 1,5 m von ihm befindest.</p>",
     "scalarStrings": {
-      "system.traits.languages.custom": "Telepathie 1,6 km (works only with you)"
+      "system.traits.languages.custom": "Telepathie auf 1,6 Kilometer (nur mit dir)"
     }
   },
   "phbhaoAnimatedOb": {
@@ -12191,7 +12198,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Wünsche",
     "activities": {
       "Cast Wish": "Wunsch wirken"
-    }
+    },
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} kennt mit [[/r 1d100cs&lt;31#Knows Wish on 1]]{30-prozentiger} Wahrscheinlichkeit den Zauber <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wunsch}</em>. Wenn der [[lookup @name lowercase]]{monster} ihn kennt, kann der [[lookup @name lowercase]]{monster} ihn nur für eine Kreatur wirken, die kein Dschinn ist und die einen Wunsch auf eine Weise kommuniziert, die der [[lookup @name lowercase]]{monster} verstehen kann. Wirkt der [[lookup @name lowercase]]{monster} den Zauber für diese Kreatur, so belastet der Zauber den [[lookup @name lowercase]]{monster} in keiner Weise. Wenn der [[lookup @name lowercase]]{monster} den Zauber dreimal gewirkt hat, kann der [[lookup @name lowercase]]{monster} dies erst nach 365 Tagen erneut tun.</p>"
   },
   "phbStandardLangu": {
     "name": "Standardsprachen",
@@ -12359,7 +12367,7 @@ export const MODERN_OVERRIDES_BY_ID = {
       "name": "Trank der Resistenz: Typ",
       "tableResults": {
         "jYpzxdXBzoZCjllp": "Säure",
-        "3oIOKR8BgRYfKafk": "Kälte",
+        "3oIOBK8BgRYfKafk": "Kälte",
         "XKHBRiYlsavqLLeO": "Feuer",
         "RNYLvvsXg3HisLPS": "Energie",
         "yp10YxYVnVXwyUlZ": "Blitz",
@@ -13516,7 +13524,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Wasser, Salzwasser (Pint)",
     "activities": {
       "Consume": "Verbrauchen"
-    }
+    },
+    "description": "<p>Ein halber Liter Salzwasser, etwa aus dem Meer. Zum Trinken taugt es nicht.</p>"
   },
   "dmgLongCompartme": {
     "name": "Langes Fach",
@@ -13543,13 +13552,16 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "dmgCentralPouch0": {
-    "name": "Zentraler Beutel"
+    "name": "Mittlere Tasche",
+    "description": "<p>Gehört zu: @UUID[Compendium.dnd5e.equipment24.Item.dmgHewardsHandyH]{Praktischer Rucksack}.</p><p>Die mittlere Tasche ist ein extradimensionaler Raum. Sie nimmt bis zu 250 Kilogramm Material mit einem Volumen von bis zu 1.800 Litern auf.</p>"
   },
   "dmgLeftPouch0000": {
-    "name": "Linker Beutel"
+    "name": "Linke Seitentasche",
+    "description": "<p>Gehört zu: @UUID[Compendium.dnd5e.equipment24.Item.dmgHewardsHandyH]{Praktischer Rucksack}.</p><p>Jede der beiden Seitentaschen ist ein extradimensionaler Raum. Sie nimmt bis zu 100 Kilogramm Material mit einem Volumen von bis zu 700 Litern auf.</p>"
   },
   "dmgRightPouch000": {
-    "name": "Rechter Beutel"
+    "name": "Rechte Seitentasche",
+    "description": "<p>Gehört zu: @UUID[Compendium.dnd5e.equipment24.Item.dmgHewardsHandyH]{Praktischer Rucksack}.</p><p>Jede der beiden Seitentaschen ist ein extradimensionaler Raum. Sie nimmt bis zu 100 Kilogramm Material mit einem Volumen von bis zu 700 Litern auf.</p>"
   },
   "dmgApparatusOfKw": {
     "name": "Apparat des Krebses",
@@ -14399,10 +14411,12 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p><em>Siehe: @UUID[Compendium.dnd5e.equipment24.Item.dmgDemonArmor000]</em></p><p>Die klauenbewehrten Handschuhe der Rüstung ermöglichen es deinen unbewaffneten Schlägen, 1W8 Hiebschaden anstelle des üblichen Wuchtschadens zu verursachen, und du erhältst einen Bonus von +1 auf die Angriffs- und Schadenswürfe deiner unbewaffneten Schläge.</p>"
   },
   "dmgsupRingofResi": {
-    "name": "Ring"
+    "name": "Ring",
+    "description": "<p>Ein schlichter Ring ohne magische Eigenschaften. Er ist das Ausgangsstück, aus dem ein @UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista]{Ring der Resistenz} hergestellt wird.</p>"
   },
   "dmgsupBasicScrol": {
-    "name": "Schriftrolle"
+    "name": "Schriftrolle",
+    "description": "<p>Eine leere Schriftrolle aus Pergament. Auf sie lässt sich ein Zauber schreiben, um daraus eine Zauberschriftrolle herzustellen.</p>"
   },
   "phbgstDice000000": {
     "name": "Würfel",
@@ -14618,13 +14632,19 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbwepMusket0000": {
-    "name": "Muskete"
+    "name": "Muskete",
+    "description": "<p>Eine Muskete ist ein langläufiges Feuerrohr, das mit Schwarzpulver und einer Bleikugel geladen wird. Sie trägt weit und durchschlägt Rüstung, braucht nach jedem Schuss aber Zeit zum Nachladen und ist am Tisch selten zu finden.</p>"
   },
   "phbwepPistol0000": {
-    "name": "Pistole"
+    "name": "Pistole",
+    "description": "<p>Eine Pistole ist ein kurzes Feuerrohr für eine Hand. Sie verschießt eine Bleikugel auf kurze Entfernung und muss nach jedem Schuss nachgeladen werden.</p>"
   },
   "dmgPipeOfSmokeMo": {
     "name": "Pfeife der Rauchmonster",
     "description": "<p><em>Wundersamer Gegenstand, gewöhnlich</em></p><p>Während du diese Pfeife rauchst, kannst du eine magische Aktion ausführen, um eine Rauchwolke auszuatmen, die die Gestalt einer Kreatur annimmt, etwa die eines Drachen, eines Flumphs oder eines Slaads. Die Gestalt muss klein genug sein, um in einen Würfel mit 30 cm Kantenlänge zu passen. Sie verliert nach wenigen Sekunden ihre Form und wird zu einer gewöhnlichen Rauchwolke.</p>"
+  },
+  "dmgEfreetiChain0": {
+    "name": "Ifrit-Rüstung",
+    "description": "<p><em>Rüstung (@UUID[Compendium.dnd5e.equipment24.Item.phbarmChainMail0]{Kettenpanzer} oder @UUID[Compendium.dnd5e.equipment24.Item.phbarmChainShirt]{Kettenhemd}), legendär (erfordert Einstimmung)</em></p><p>Wenn du diese Rüstung trägst, erhältst du einen Bonus von +3 auf deine RK, bist gegen Feuerschaden immun und beherrschst Urtümlich. Außerdem kannst du auf geschmolzenem Gestein stehen und dich darüber bewegen, als wäre es fester Boden.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>"
   }
 };

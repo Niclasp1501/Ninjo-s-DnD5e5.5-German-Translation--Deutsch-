@@ -57,14 +57,16 @@ const ACTOR_LANGUAGE_TOKEN_MAP = {
 const EMBEDDED_ITEM_NAME_FALLBACK_MAP = {
   "Move and Attack": "Bewegen und angreifen",
   "Pack Damage": "Rudelschaden",
-  "Life Bond": "Lebensband",
-  "Otherworldly Slam": "Jenseitiger Hieb",
-  "Fell Glare": "Unheilvoller Blick"
+  "Life Bond": "Lebensbindung",
+  "Otherworldly Slam": "Außerweltlicher Hieb",
+  "Fell Glare": "Böses Starren",
+  "Fey Step": "Feenschritt",
+  "Healing Touch": "Heilende Berührung"
 };
 const ACTOR_TYPE_CUSTOM_MAP = {
   "Spectral Sword": "Spektralschwert",
   "Nature Spirit": "Naturgeist",
-  "Otherworldly Steed": "Jenseitiges Reittier",
+  "Otherworldly Steed": "Außerweltliches Reittier",
   "Celestial, Fey, or Fiend (Your Choice)": "Celestisches Wesen, Feenwesen oder Unhold (deine Wahl)"
 };
 

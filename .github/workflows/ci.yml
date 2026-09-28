@@ -37,3 +37,10 @@ jobs:
 
       - name: Check language files load completely in Foundry
         run: python .github/scripts/check_language_keys.py languages/de.json languages/en.json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check compendium overrides (enrichers, placeholders, names, descriptions)
+        run: node .github/scripts/check_overrides.mjs

@@ -3,6 +3,50 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2609.13] - 2026-09-28
+
+### Fixed - Monstermerkmale zeigten „{creature}“
+
+In 239 Merkmalen der Monster für dnd5e 5.x stand statt des Monsters der rohe
+Platzhalter `{creature}` oder `{type}`, zusammen 459 Stellen. Man las etwa „um die
+{creature}“ oder „Der {type} atmet in einer Linie“. Dort steht jetzt **die Kreatur**, und
+die Pronomen im Satz sind mitgezogen: aus „in seinem Zug“ wurde „in ihrem Zug“. Wo das
+Original einen Kreaturentyp meint, etwa bei „jede Kreatur, die kein Untoter ist“, steht
+der Typ ausgeschrieben.
+
+### Fixed - Sieben Zauber und zwei weitere Einträge auf Englisch
+
+*Tierbote, Magie bannen, Reittier finden, Rieseninsekt, Kugel der Unverwundbarkeit,
+Person festhalten* und *Zeichen des Jägers* zeigten ihre Beschreibung auf Englisch,
+ebenso die *Ifrit-Rüstung* und das Monstermerkmal *Wünsche*. Alle stehen jetzt im
+Wortlaut des SRD 5.2.1 da.
+
+### Fixed - Gegenstände ohne Beschreibung
+
+Muskete, Pistole, Salzwasser, eine leere Schriftrolle, ein Rohling für den Ring der
+Resistenz und die drei Taschen des *Praktischen Rucksacks* hatten auch im Original
+keinen Text. Sie haben jetzt einen, die Taschen mit den Maßen aus dem SRD. Damit hat
+jeder Gegenstand im Kompendium für dnd5e 6.x eine deutsche Beschreibung.
+
+### Changed - Weitere Namen nach dem SRD 5.2.1
+
+- *Otherworldly Steed* heißt **Außerweltliches Reittier** statt Jenseitiges Reittier, mit
+  **Lebensbindung**, **Außerweltlicher Hieb**, **Böses Starren**, **Feenschritt** und
+  **Heilende Berührung**. Die Sprachzeile „Telepathie 1,6 km (works only with you)“ lautet
+  jetzt „Telepathie auf 1,6 Kilometer (nur mit dir)“.
+- *Pact of the Tome* heißt **Pakt des Buches** statt Pakt des Folianten.
+- *Eldritch Invocations* heißen auch in den Zählern **Schauerliche Anrufungen**.
+- Eine Tabellenzeile beim *Trank der Resistenz* zeigte „Cold“, weil ihre Kennung
+  vertippt war.
+
+### Added - Prüfung der Kompendium-Übersetzungen im Build
+
+Eine neue Prüfung schlägt fehl, sobald ein Befehl umbrochen oder übersetzt ist, ein
+roher Platzhalter sichtbar wäre, zwei verschiedene Zauber oder Gegenstände denselben
+Namen tragen oder ein Gegenstand ohne deutsche Beschreibung bleibt. Dazu gleicht sie mit
+der Liste aller Gegenstände und Zauber von dnd5e 6.0.5 ab, damit neue Einträge einer
+künftigen Version auffallen.
+
 ## [14.2609.12] - 2026-09-28
 
 ### Fixed - Gegenstände hießen wie ihre Würfeltabelle
