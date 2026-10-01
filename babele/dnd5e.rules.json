@@ -1145,11 +1145,11 @@
         },
         "Cover": {
           "name": "Deckung",
-          "text": "<p>Wände, Bäume, Kreaturen und andere Hindernisse können im Kampf Deckung bieten und es damit schwieriger machen, ein Ziel zu treffen. Eine Deckung ist nur wirksam, wenn der Angriff oder Effekt von der gegenüberliegenden Seite der Deckung kommt</p> <p>Es gibt drei Abstufungen von Deckungen. Befindet sich das Ziel hinter mehreren Deckungen, zählt nur die wirksamste Deckung. Die Deckungen addieren sich nicht. Beispiel: Steht ein Ziel hinter einer Kreatur, die halbe Deckung gibt, sowie gleichzeitig hinter einem Baum, der Dreivierteldeckung gibt, verfügt das Ziel über Dreivierteldeckung.</p> <p>@Embed[.hv0J61IAfofuhy3Q inline]</p> <p>@Embed[.zAMStUjUrPV10dFm inline]</p> <p>@Embed[.BKUAxXuPEzxiEOeL inline]</p>"
+          "text": "<p>Wände, Bäume, Kreaturen und andere Hindernisse können im Kampf Deckung bieten und es damit schwieriger machen, ein Ziel zu treffen. Eine Deckung ist nur wirksam, wenn der Angriff oder Effekt von der gegenüberliegenden Seite der Deckung kommt</p> <p>Es gibt drei Abstufungen von Deckungen. Befindet sich das Ziel hinter mehreren Deckungen, zählt nur die wirksamste Deckung. Die Deckungen addieren sich nicht. Beispiel: Steht ein Ziel hinter einer Kreatur, die Teildeckung gibt, sowie gleichzeitig hinter einem Baum, der Dreivierteldeckung gibt, verfügt das Ziel über Dreivierteldeckung.</p> <p>@Embed[.hv0J61IAfofuhy3Q inline]</p> <p>@Embed[.zAMStUjUrPV10dFm inline]</p> <p>@Embed[.BKUAxXuPEzxiEOeL inline]</p>"
         },
         "Half Cover": {
-          "name": "Halbe Deckung",
-          "text": "<p>Ein Ziel mit <strong>halber Deckung</strong> erhält einen Bonus von +2 auf RK und Geschicklichkeitsrettungswürfe. Das Ziel verfügt über halbe Deckung, wenn ein Hindernis mindestens die Hälfte seines Körpers verdeckt. Bei dem Hindernis kann es sich um eine niedrige Mauer, ein großes Möbelstück, einen schmalen Baumstamm oder eine Kreatur (Freund oder Feind) handeln.</p>"
+          "name": "Teildeckung",
+          "text": "<p>Ein Ziel mit <strong>Teildeckung</strong> erhält einen Bonus von +2 auf RK und Geschicklichkeitsrettungswürfe. Das Ziel verfügt über Teildeckung, wenn ein Hindernis mindestens die Hälfte seines Körpers verdeckt. Bei dem Hindernis kann es sich um eine niedrige Mauer, ein großes Möbelstück, einen schmalen Baumstamm oder eine Kreatur (Freund oder Feind) handeln.</p>"
         },
         "Three-Quarters Cover": {
           "name": "Dreivierteldeckung",

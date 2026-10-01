@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2610.1] - 2026-10-02
+
+### Changed - Deckung heißt wie im SRD 5.2.1
+
+Der Zustand am Token heißt jetzt **Teildeckung** statt „Halbe Deckung“. In der Auswahl
+der Deckung stehen die Grade wie in der Tabelle des SRD: Teil, Dreiviertel und
+Vollständig, vorher Halbe, Dreiviertel und Volle.
+
+Regelglossar, Regeltexte, Zauber und Merkmale sagen jetzt durchgehend Teildeckung,
+Dreivierteldeckung und vollständige Deckung. Daneben standen bisher „halbe Deckung“,
+„volle Deckung“ und „Dreiviertel-Deckung“, je nachdem, wer den Text übersetzt hatte. Bei
+*Heilige Flamme* heißt der Nutzen einer Deckung „Vorzug“, weil Vorteil ein eigener
+Regelbegriff ist.
+
 ## [14.2609.13] - 2026-09-28
 
 ### Fixed - Monstermerkmale zeigten „{creature}“
