@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2610.3] - 2026-10-04
+
+### Changed - Vier Magiermerkmale heißen wie im SRD 5.2.1
+
+*Arkane Regeneration* heißt jetzt **Arkane Erholung**, *Zauber memorieren* **Zauber
+auswendig lernen**, *Zaubermeisterung* **Zaubermeisterschaft** und *Signaturzauber*
+**Lieblingszauber**, wie im SRD und im deutschen Spielerhandbuch. Die Texte folgen dem SRD;
+vorher sprachen sie von „Zaubern des 3. Levels“ statt vom 3. Grad.
+
 ## [14.2610.2] - 2026-10-04
 
 ### Fixed - Stufenaufstieg und Stufenabstieg waren vertauscht
