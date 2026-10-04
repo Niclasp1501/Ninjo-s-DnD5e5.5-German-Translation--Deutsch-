@@ -3,6 +3,35 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2610.2] - 2026-10-04
+
+### Fixed - Stufenaufstieg und Stufenabstieg waren vertauscht
+
+Der Knopf neben der Klasse im Charakterbogen zeigte beim Aufsteigen „Stufenabstieg“ und
+umgekehrt. Gemeldet von **turastangras** in Issue #3, danke.
+
+### Fixed - Wände waren dicker und höher, als sie sein sollten
+
+Bei Zaubern wurden Größe und Einheit einer Schablone in Meter umgerechnet, Breite und
+Höhe aber nicht. Eine Feuerwand war dadurch 18 m lang, aber 1 m dick und 20 m hoch statt
+0,3 m und 6 m. Das Erdbeben riss eine Spalte von 10 m Breite statt 3 m. Betroffen waren
+21 Schablonen unter den Zaubern von 2024 und 6 unter denen von 2014, vor allem Wände, dazu
+Linien und Zylinder.
+
+Brüche rechnet die Übersetzung jetzt als Zahl um. Die Prismatische Wand ist 1/12 Fuß dick,
+also 2,5 cm. Bisher wurden Zähler und Nenner einzeln umgerechnet, der Wert blieb dabei
+gleich, und aus 1/12 Fuß wurde 1/12 Meter.
+
+### Added - Konverter nur für Meter
+
+`dnd5e55ActivitiesMetricOnlyRuntime` rechnet in Aktivitäten nur Reichweite und Schablone
+in Meter um und lässt alles andere unberührt. Er ist für Babele-Übersetzungen anderer
+Module gedacht: Das Spielerhandbuch von Wizards of the Coast verwendet dieselben
+Kennungen wie das SRD, und `dnd5e55ActivitiesRangeMetricRuntime` setzte deshalb dort
+unsere Aktivitätsnamen ein. Der neue Konverter gilt für jede Art von Gegenstand, nicht nur
+für Zauber, und steht auch dann bereit, wenn „SRD-Kompendien übersetzen“ ausgeschaltet
+ist. Vorgeschlagen von **turastangras** in Issue #4, danke.
+
 ## [14.2610.1] - 2026-10-02
 
 ### Changed - Deckung heißt wie im SRD 5.2.1

@@ -479,22 +479,7 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
       if (mapped) activity.name = fixMojibakeRuntime(mapped);
     }
 
-    const rangeUnits = String(activity?.range?.units ?? "").toLowerCase();
-    if (DISTANCE_UNIT_MAP[rangeUnits] && activity?.range?.value !== undefined && activity?.range?.value !== null) {
-      activity.range.value = convertDistanceValueByUnit(activity.range.value, rangeUnits);
-      activity.range.units = convertDistanceUnit(activity.range.units);
-    }
-
-    const tmplUnits = String(activity?.target?.template?.units ?? "").toLowerCase();
-    if (DISTANCE_UNIT_MAP[tmplUnits]) {
-      if (activity?.target?.template?.size !== undefined && activity?.target?.template?.size !== null) {
-        activity.target.template.size = convertDistanceValueByUnit(activity.target.template.size, tmplUnits);
-      }
-      if (activity?.target?.template?.width !== undefined && activity?.target?.template?.width !== null) {
-        activity.target.template.width = convertDistanceValueByUnit(activity.target.template.width, tmplUnits);
-      }
-      activity.target.template.units = convertDistanceUnit(activity.target.template.units);
-    }
+    convertActivityDistancesMetric(activity);
 
     if (activityMeta && typeof activityMeta === "object") {
       if (typeof activityMeta.chatFlavor === "string" && activityMeta.chatFlavor.trim() && activity?.description) {
@@ -599,6 +584,14 @@ function convertDistanceFormulaByUnit(value, unitKey) {
 function convertDistanceValueByUnit(value, unitKey) {
   const n = Number(value);
   if (Number.isFinite(n)) return convertDistanceByUnit(value, unitKey);
+  // Ein Bruch wie "1/12" ist eine Zahl, keine Formel: Zaehler und Nenner einzeln
+  // umzurechnen laesst den Wert unveraendert. So war die Prismatische Wand (1 Zoll)
+  // gut 8 cm dick statt 2,5 cm. Drei Nachkommastellen, weil solche Waende duenn sind.
+  const bruch = String(value ?? "").match(/^\s*(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*$/);
+  const rule = DISTANCE_UNIT_MAP[String(unitKey ?? "").toLowerCase()];
+  if (bruch && rule && Number(bruch[2]) !== 0) {
+    return Math.round((Number(bruch[1]) / Number(bruch[2])) * rule.factor * 1000) / 1000;
+  }
   return convertDistanceFormulaByUnit(value, unitKey);
 }
 
@@ -1031,6 +1024,48 @@ function translateSpellUnidentifiedDescriptionRuntime(originalValue, _entryTrans
   return fixMojibakeRuntime(override?.unidentifiedDescription || originalValue);
 }
 
+// Reichweite und Schablone einer Aktivitaet in Meter. Breite und Hoehe einer Schablone
+// stehen in derselben Einheit wie ihre Groesse: Wer nur Groesse und Einheit umstellt,
+// macht aus einer 30 cm dicken Feuerwand eine 1 m dicke. Bis 14.2610.1 traf das jede
+// Wand, Linie und jeden Zylinder unter den Zaubern.
+function convertActivityDistancesMetric(activity) {
+  const isSet = value => value !== undefined && value !== null && value !== "";
+
+  const range = activity?.range;
+  const rangeUnits = String(range?.units ?? "").toLowerCase();
+  if (range && DISTANCE_UNIT_MAP[rangeUnits] && isSet(range.value)) {
+    for (const key of ["value", "long", "reach"]) {
+      if (isSet(range[key])) range[key] = convertDistanceValueByUnit(range[key], rangeUnits);
+    }
+    range.units = convertDistanceUnit(range.units);
+  }
+
+  const template = activity?.target?.template;
+  const templateUnits = String(template?.units ?? "").toLowerCase();
+  if (template && DISTANCE_UNIT_MAP[templateUnits]) {
+    for (const key of ["size", "width", "height"]) {
+      if (isSet(template[key])) template[key] = convertDistanceValueByUnit(template[key], templateUnits);
+    }
+    template.units = convertDistanceUnit(template.units);
+  }
+}
+
+// Nur die Meter, ohne Namen, Chat-Texte oder sonst etwas aus unseren Uebersetzungen.
+// Fuer Babele-Uebersetzungen anderer Module: Das Spielerhandbuch von WotC verwendet
+// dieselben Kennungen wie das SRD, und dnd5e55ActivitiesRangeMetricRuntime setzt
+// deshalb dort unsere Aktivitaetsnamen ein (Issue #4). Gilt fuer jede Art von
+// Gegenstand, nicht nur fuer Zauber.
+function convertActivitiesMetricOnlyRuntime(originalValue, _entryTranslation, _data) {
+  if (!isGermanUi()) return originalValue;
+  if (!originalValue || typeof originalValue !== "object") return originalValue;
+
+  const converted = foundry.utils.deepClone(originalValue);
+  for (const activity of Object.values(converted)) {
+    if (activity && typeof activity === "object") convertActivityDistancesMetric(activity);
+  }
+  return converted;
+}
+
 function convertActivitiesRangeRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
   if (String(data?.type ?? "") !== "spell") return originalValue;
@@ -1052,17 +1087,7 @@ function convertActivitiesRangeRuntime(originalValue, _entryTranslation, data) {
       if (mapped) activity.name = fixMojibakeRuntime(mapped);
     }
 
-    const rangeUnits = String(activity?.range?.units ?? "").toLowerCase();
-    if (DISTANCE_UNIT_MAP[rangeUnits] && activity?.range?.value !== undefined && activity?.range?.value !== null) {
-      activity.range.value = convertDistanceValueByUnit(activity.range.value, rangeUnits);
-      activity.range.units = convertDistanceUnit(activity.range.units);
-    }
-
-    const tmplUnits = String(activity?.target?.template?.units ?? "").toLowerCase();
-    if (DISTANCE_UNIT_MAP[tmplUnits] && activity?.target?.template?.size !== undefined && activity?.target?.template?.size !== null) {
-      activity.target.template.size = convertDistanceValueByUnit(activity.target.template.size, tmplUnits);
-      activity.target.template.units = convertDistanceUnit(activity.target.template.units);
-    }
+    convertActivityDistancesMetric(activity);
 
     if (activityMeta && typeof activityMeta === "object") {
       if (typeof activityMeta.chatFlavor === "string" && activityMeta.chatFlavor.trim() && activity?.description) {
@@ -1453,6 +1478,14 @@ Hooks.once("init", () => {
     requiresReload: true
   });
   applyDamageLocalizationFallback();
+
+  // Fuer Uebersetzungen anderer Module gedacht, deshalb auch dann da, wenn die
+  // SRD-Kompendien hier abgeschaltet sind.
+  if (typeof Babele !== "undefined") {
+    Babele.get().registerConverters({
+      dnd5e55ActivitiesMetricOnlyRuntime: convertActivitiesMetricOnlyRuntime
+    });
+  }
 
   if (!isCompendiumTranslationEnabled()) {
     console.log(`[${MODULE_ID}] Additional compendium translations are disabled by world setting.`);

@@ -2886,8 +2886,8 @@
     "Languages": "Sprachen",
     "Level": "Stufe",
     "LevelPl": "Stufen",
-    "LevelActionDecrease": "Stufenaufstieg",
-    "LevelActionIncrease": "Stufenabstieg",
+    "LevelActionDecrease": "Stufenabstieg",
+    "LevelActionIncrease": "Stufenaufstieg",
     "LevelCount": "{ordinal} Stufe",
     "LevelLimit": {
       "Label": "Stufen Grenze",
