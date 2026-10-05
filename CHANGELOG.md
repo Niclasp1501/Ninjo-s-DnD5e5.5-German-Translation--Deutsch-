@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2610.5] - 2026-10-05
+
+### Fixed - „Utility (kostenloses zauberwirken)“
+
+Lässt ein Merkmal einen Zauber ohne Zauberplatz wirken, legt dnd5e dafür eine zweite
+Aktivität an und setzt ihren Namen aus dem Namen der Aktivität und dem Zusatz „Kostenloses
+Zauberwirken“ zusammen, den es kleinschreibt. Hatte die Aktivität keinen eigenen Namen, stand
+dort der unübersetzte Typ „Utility“, und heraus kam „Utility (kostenloses zauberwirken)“.
+Der Typ heißt jetzt **Anwenden**, der Zusatz **kostenlos**, die Aktivität also „Anwenden
+(kostenlos)“. Bereits angelegte Aktivitäten behalten ihren alten Namen.
+
+Ebenfalls übersetzt: die Aktionsart „Utility“ und „Utility Wurf“ in der Konfiguration.
+
 ## [14.2610.4] - 2026-10-05
 
 ### Fixed - „Level“ heißt Stufe oder Grad

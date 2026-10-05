@@ -250,7 +250,7 @@
     "ActionRWAK": "Fernkampf-Waffenangriff",
     "ActionSave": "Rettungswurf",
     "ActionSumm": "Beschwören",
-    "ActionUtil": "Utility",
+    "ActionUtil": "Anwenden",
     "ActionWarningNoItem": "Das angefragte Objekt {item} existiert nicht mehr bei Charakter {name}",
     "ActionWarningNoToken": "Um diese Option zu verwenden, brauchst du Kontrolle über mindestens eine Figur.",
     "ACTIVATION": {
@@ -526,7 +526,7 @@
         "TitleEpic": "Epische Gabe"
       },
       "SPELLCONFIG": {
-        "FreeCasting": "Kostenloses Zauberwirken",
+        "FreeCasting": "kostenlos",
         "FIELDS": {
           "spell": {
             "label": "Zauberdetails",
@@ -4377,7 +4377,7 @@
     "UTILITY": {
       "FIELDS": {
         "roll": {
-          "label": "Utility Wurf",
+          "label": "Wurf",
           "formula": {
             "label": "Wurf Formel",
             "hint": "Formel für einen beliebigen Wurf."
@@ -4387,7 +4387,7 @@
             "hint": "Beschiftung für den Wurfknopf"
           },
           "prompt": {
-            "label": "Utility Wurf Abfrage",
+            "label": "Wurf abfragen",
             "hint": "Sollte das Dialogfeld „Wurfkonfiguration“ beim Würfeln angezeigt werden?"
           },
           "visible": {
@@ -4396,7 +4396,7 @@
           }
         }
       },
-      "Title": "Utility",
+      "Title": "Anwenden",
       "Hint": "Führe einen beliebigen Wurf aus oder zeige an, dass eine andere Aktion ausgeführt wurde, die nicht durch andere Aktivitätstypen repräsentiert wird."
     },
     "Value": "Wert",
