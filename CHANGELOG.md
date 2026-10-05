@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2610.4] - 2026-10-05
+
+### Fixed - „Level“ heißt Stufe oder Grad
+
+An rund 30 Stellen stand noch „Level“ aus der ersten maschinellen Übersetzung. Im Deutschen
+hat ein Charakter eine **Stufe** und ein Zauber einen **Grad**. Betroffen waren vor allem die
+Charaktererschaffung („Trage dein Level ein“, „ein Charakter auf Level 1“), die Tabellen der
+magischen Gegenstände nach Stufe, Zaubertexte mit „Einsatz eines Höher-Level Zauberplatzes“,
+die Hexenmeisterstufe bei mehreren Merkmalen und der Titel „Charakter aufleveln“ im
+Fortschritt, der jetzt „Stufenaufstieg“ heißt.
+
 ## [14.2610.3] - 2026-10-04
 
 ### Changed - Vier Magiermerkmale heißen wie im SRD 5.2.1

@@ -920,7 +920,7 @@
         "Steps": "Schritt {current} von {total}",
         "Title": {
           "Default": "Fortschritt",
-          "LevelIncreased": "Charakter aufleveln",
+          "LevelIncreased": "Stufenaufstieg",
           "LevelNewClass": "Klasse hinzufügen",
           "ModifyChoices": "Auswahl ändern"
         }
@@ -6282,7 +6282,7 @@
           },
           "identifier": {
             "label": "Klassenbezeichner",
-            "hint": "Bezeichner, der festlegt, ob das Charakterlevel oder ein spezifisches Klassenlevel für die Level-Begrenzungen des Profils verwendet werden soll."
+            "hint": "Bezeichner, der festlegt, ob die Charakterstufe oder eine bestimmte Klassenstufe für die Stufengrenzen des Profils verwendet werden soll."
           },
           "mode": {
             "label": "Modus",
