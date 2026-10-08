@@ -4476,10 +4476,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du verkörperst urtümliche Macht. Deine Stärke- und Konstitutionswerte erhöhen sich um 4, bis zu einem Maximum von 25.</p>"
   },
   "phbbrbPrimalKnow": {
-    "name": "Uraltes Wissen",
+    "name": "Urwissen",
     "description": "<p>Du erhältst Übung in einer weiteren Fertigkeit deiner Wahl aus der Fertigkeitsliste, die Barbaren auf Stufe 1 zur Verfügung steht.</p><p>Zusätzlich kannst du, während deine Wut aktiv ist, urzeitliche Kraft kanalisieren, wenn du bestimmte Aufgaben versuchst; wann immer du eine Fertigkeitsprüfung mit einer der folgenden Fertigkeiten ablegst, kannst du sie als Stärke-Prüfung ablegen, selbst wenn sie normalerweise ein anderes Attribut verwendet: Akrobatik, Einschüchtern, Wahrnehmung, Heimlichkeit oder Überleben. Wenn du diese Fähigkeit nutzt, repräsentiert deine Stärke die urzeitliche Kraft, die durch dich strömt und deine Beweglichkeit, Haltung und Sinne schärft.</p><section class=\"secret\"\nid=\"secret-himIRZuFGInNkZgU\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt, der dazu führt, dass diese Fertigkeiten automatisch deinen Stärke-Modifikator verwenden, wenn dieser höher ist als der normale Attributswert, der mit der Fertigkeit verbunden ist.</p></section>",
     "effects": {
-      "ufbJRsGGW3REMmJm": "Uraltes Wissen"
+      "ufbJRsGGW3REMmJm": "Urwissen"
     }
   },
   "phbbrbRage000000": {
@@ -4930,7 +4930,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du hast deinen Körper und Geist zu neuen Höhen entwickelt. Deine Geschicklichkeits- und Weisheitswerte erhöhen sich um 4, bis zu einem Maximum von 25.</p>"
   },
   "phbmnkDeflectAtt": {
-    "name": "Angriffe ablenken",
+    "name": "Angriffe umleiten",
     "description": "<p>Wenn ein Angriffswurf dich trifft und sein Schaden Wucht-, Stich- oder Hiebschaden umfasst, kannst du eine Reaktion nutzen, um den Gesamtschaden des Angriffs gegen dich zu reduzieren. Die Reduzierung entspricht 1W10 plus deinem Geschicklichkeitsmodifikator und Mönchslevel.</p><p>Wenn du den Schaden auf 0 reduzierst, kannst du 1 Fokuspunkt ausgeben, um einen Teil der Angriffskraft umzulenken. Wenn du dies tust, wähle eine Kreatur, die du innerhalb von 1,5 m von dir sehen kannst, wenn es ein Nahkampfangriff war, oder eine Kreatur, die du innerhalb von 18 m von dir sehen kannst und die nicht hinter vollständiger Deckung ist, wenn es ein Fernkampfangriff war. Diese Kreatur muss einen Geschicklichkeitsrettungswurf bestehen oder erleidet Schaden in Höhe von zwei Würfen deines Kampfkunstwürfels plus deinem Geschicklichkeitsmodifikator. Der Schaden ist vom gleichen Typ wie der des Angriffs.</p><section\nclass=\"secret\" id=\"secret-zWGu1AEB09UqQ21D\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktion <strong>Reduzieren</strong> kann verwendet werden, um dich selbst zu heilen und den Gesamtschaden zu reduzieren, falls es nicht ausreicht, ihn auf 0 zu reduzieren.</p><p>Die Aktion <strong>Umleiten</strong> kann verwendet werden, um Schaden zu würfeln und einen deiner Fokuspunkte zu verbrauchen, wenn du den Schaden auf 0 reduzieren kannst. Du kannst den Schadenstyp im Würfeldialog auswählen. Die Würfel erhöhen sich automatisch, wenn du aufsteigst.</p></section>",
     "activities": {
       "Redirect": "Umleiten",
@@ -4938,8 +4938,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbmnkDeflectEne": {
-    "name": "Energie ablenken",
-    "description": "<p>Du kannst deine Fähigkeit Angriffe ablenken nun auch gegen Angriffe einsetzen, die jeglichen Schadenstyp verursachen, nicht nur Wucht-, Stich- oder Hiebschaden.</p><section\nclass=\"secret\" id=\"secret-XAQmFmc4TpSF2Oh1\"><p>Die Aktion <strong>Reduzieren</strong> kann verwendet werden, um dich selbst zu heilen und den Gesamtschaden zu reduzieren, falls es nicht ausreicht, ihn auf 0 zu reduzieren.</p><p>Die Aktion <strong>Umleiten</strong> kann verwendet werden, um Schaden zu würfeln und einen deiner Fokuspunkte zu verbrauchen, wenn du den Schaden auf 0 reduzieren kannst. Du kannst den Schadenstyp im Würfeldialog auswählen. Die Würfel erhöhen sich automatisch, wenn du aufsteigst.</p></section>",
+    "name": "Energie umleiten",
+    "description": "<p>Du kannst dein Merkmal Angriffe umleiten nun auch gegen Angriffe einsetzen, die jeglichen Schadenstyp verursachen, nicht nur Wucht-, Stich- oder Hiebschaden.</p><section\nclass=\"secret\" id=\"secret-XAQmFmc4TpSF2Oh1\"><p>Die Aktion <strong>Reduzieren</strong> kann verwendet werden, um dich selbst zu heilen und den Gesamtschaden zu reduzieren, falls es nicht ausreicht, ihn auf 0 zu reduzieren.</p><p>Die Aktion <strong>Umleiten</strong> kann verwendet werden, um Schaden zu würfeln und einen deiner Fokuspunkte zu verbrauchen, wenn du den Schaden auf 0 reduzieren kannst. Du kannst den Schadenstyp im Würfeldialog auswählen. Die Würfel erhöhen sich automatisch, wenn du aufsteigst.</p></section>",
     "activities": {
       "Redirect": "Umleiten",
       "Reduce": "Reduzieren"
@@ -4956,10 +4956,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbmnkEmpoweredS": {
-    "name": "Ermächtigte Schläge",
-    "description": "<p>Wann immer du mit deinem waffenlosen Schlag Schaden zufügst, kann dieser nach deiner Wahl Energieschaden oder seinen normalen Schadenstyp verursachen.</p><section\nclass=\"secret\" id=\"secret-Hg8UeaCyLgncM7iJ\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktion <strong>Ermächtigter Schlag</strong> dieser Fähigkeit ermöglicht es dir, im Würfeldialog zwischen Energieschaden und Wuchtschaden zu wählen. Deine Wahl wird für die Zukunft gespeichert.</p><p>Sie verwendet deinen Kampfkunstwürfel (derzeit [[lookup @scale.monk.die]] für Schaden) und wird automatisch aktualisiert, wenn du aufsteigst.</p></section>",
+    "name": "Mächtige Schläge",
+    "description": "<p>Wann immer du mit deinem waffenlosen Schlag Schaden zufügst, kann dieser nach deiner Wahl Energieschaden oder seinen normalen Schadenstyp verursachen.</p><section\nclass=\"secret\" id=\"secret-Hg8UeaCyLgncM7iJ\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktion <strong>Mächtiger Schlag</strong> dieser Fähigkeit ermöglicht es dir, im Würfeldialog zwischen Energieschaden und Wuchtschaden zu wählen. Deine Wahl wird für die Zukunft gespeichert.</p><p>Sie verwendet deinen Kampfkunstwürfel (derzeit [[lookup @scale.monk.die]] für Schaden) und wird automatisch aktualisiert, wenn du aufsteigst.</p></section>",
     "activities": {
-      "Empowered Strike": "Ermächtigter Schlag"
+      "Empowered Strike": "Mächtiger Schlag"
     }
   },
   "phbmnkEpicBoon00": {
@@ -5374,10 +5374,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du weißt, wie man subtil zuschlägt und die Ablenkung eines Gegners ausnutzt. Einmal pro Zug kannst du einer Kreatur, die du mit einem Angriffswurf triffst, zusätzlichen 1W6 Schaden zufügen, wenn du Vorteil auf den Wurf hast und der Angriff eine Finesse- oder Fernkampfwaffe verwendet. Der Typ des zusätzlichen Schadens ist derselbe wie der Typ der Waffe.</p><p>Du benötigst keinen Vorteil auf den Angriffswurf, wenn mindestens einer deiner Verbündeten innerhalb von 1,5 m zum Ziel ist, der Verbündete nicht den Zustand 'Kampfunfähig' hat und du keinen Nachteil auf den Angriffswurf hast.</p><p>Der zusätzliche Schaden erhöht sich, wenn du Schurkenstufen aufsteigst, wie in der Spalte 'Hinterhältiger Angriff' der Tabelle 'Schurkenmerkmale' gezeigt.</p><p><strong>Aktueller Hinterhältiger Angriffsschaden:</strong> [[lookup @scale.rogue.sneak-attack]]</p><section class=\"secret\"\nid=\"secret-ulLpai4CguAExpmN\"><p><strong>Foundry-Hinweis</strong></p><p>Dein Hinterhältiger Angriffsschaden skaliert automatisch mit deinem Stufenaufstieg. Du kannst den Schadensart im Dialogfeld des Schadenswurfs auswählen.</p></section>"
   },
   "phbrgeSteadyAim0": {
-    "name": "Sicheres Zielen",
+    "name": "Zielsicher",
     "description": "<p>Als Bonusaktion verschaffst du dir Vorteil auf deinen nächsten Angriffswurf in diesem Zug. Du kannst diese Funktion nur nutzen, wenn du dich in diesem Zug nicht bewegt hast, und nachdem du sie genutzt hast, ist deine Bewegungsrate bis zum Ende des aktuellen Zuges 0.</p>",
     "activities": {
-      "Steady Aim": "Sicheres Zielen"
+      "Steady Aim": "Zielsicher"
     }
   },
   "phbrgeStrokeOfLu": {
@@ -5977,7 +5977,7 @@ export const MODERN_OVERRIDES_BY_ID = {
         "title": "Klassenmerkmale"
       },
       "n7u8pfM928PJ8Mkd": {
-        "title": "Urtümliches Wissen"
+        "title": "Urwissen"
       },
       "joUosIRgww6atx7N": {
         "title": "Brutaler Schlag"

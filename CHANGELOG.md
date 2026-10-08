@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2610.6] - 2026-10-08
+
+### Changed - Fünf Klassenmerkmale heißen wie im SRD 5.2.1
+
+*Uraltes Wissen* heißt jetzt **Urwissen**, *Angriffe ablenken* **Angriffe umleiten**,
+*Energie ablenken* **Energie umleiten**, *Ermächtigte Schläge* **Mächtige Schläge** und
+*Sicheres Zielen* **Zielsicher**, wie im SRD und im deutschen Spielerhandbuch. Die Namen der
+Aktivitäten und der Fortschrittstitel beim Barbaren sind mitgezogen.
+
 ## [14.2610.5] - 2026-10-05
 
 ### Fixed - „Utility (kostenloses zauberwirken)“
