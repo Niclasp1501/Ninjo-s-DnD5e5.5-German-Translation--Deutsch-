@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [14.2610.7] - 2026-10-20
+
+### Fixed - Mönchsstufe statt Mönchsgrad
+
+*Bebende Handfläche* sprach zweimal vom „Mönchsgrad“. Gemeint ist die Klassenstufe, also die
+**Mönchsstufe**. „Grad“ gibt es nur bei Zaubern. Dieselbe Verwechslung stand an 16 Stellen im
+deutschen Spielerhandbuch und ist dort ebenfalls behoben.
+
 ## [14.2610.6] - 2026-10-08
 
 ### Changed - Fünf Klassenmerkmale heißen wie im SRD 5.2.1
