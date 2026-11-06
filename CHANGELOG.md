@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed - Letzte englische Texte von dnd5e 6.0.6
+
+Fünf Texte standen noch auf Englisch. Der Tooltip am Passivwert einer Fertigkeit heißt jetzt
+**Passivwert Wahrnehmung** bzw. **Passivwert Weisheit (Wahrnehmung)**, die Abschnitte im
+Fertigkeits- und Werkzeugfenster **Details zu {Name}**. In der Einstellung zur
+Übungsvariante stehen **Spielerhandbuch: fester Bonus** und **Spielleiterhandbuch: Würfel**
+mit deutscher Würfelschreibweise (1W4 statt 1d4).
+
 ## [14.2610.7] - 2026-10-20
 
 ### Fixed - Mönchsstufe statt Mönchsgrad

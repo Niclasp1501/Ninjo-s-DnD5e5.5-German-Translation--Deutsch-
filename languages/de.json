@@ -3411,7 +3411,7 @@
     "SizeTinyAbbr": "Wi",
     "SKILL": {
       "SECTIONS": {
-        "Details": "{label} Details",
+        "Details": "Details zu {label}",
         "Bonuses": {
           "Label": "{label} Boni",
           "Hint": "Diese Boni gelten für Passivwerte und Würfe mit {label}."
@@ -3477,8 +3477,8 @@
     "SkillConfigurationHint": "Übung in Fertigkeit und Boni bearbeiten.",
     "SkillGlobalBonusCheckHint": "Dieser Bonus gilt für alle Fertigkeitsproben dieses Akteurs.",
     "SkillModifierHint": "{skill}-Modifikator",
-    "SkillPassiveHint": "Passive {skill}",
-    "SkillPassiveSpecificHint": "Passive {ability} ({skill})",
+    "SkillPassiveHint": "Passivwert {skill}",
+    "SkillPassiveSpecificHint": "Passivwert {ability} ({skill})",
     "SkillPassiveScore": "Passiver {skill}wert",
     "SkillPassives": "Passive Fertigkeiten",
     "Skin": "Haut",
@@ -4142,7 +4142,7 @@
     "ToggleDescription": "Beschreibung umschalten",
     "TOOL": {
       "SECTIONS": {
-        "Details": "{label} Details",
+        "Details": "Details zu {label}",
         "Bonuses": {
           "Label": "{label} Boni",
           "Hint": "Diese Boni gelten für Würfe mit {label}."
@@ -7473,8 +7473,8 @@
           "XPBoons": "Erfahrungspunkte mit Epischen Gaben"
         },
         "ProficiencyModifier": {
-          "Bonus": "PHB: Bonus (+2, +3, +4, +5, +6)",
-          "Dice": "DMG: Würfel (1d4, 1d6, 1d8, 1d10, 1d12)",
+          "Bonus": "Spielerhandbuch: fester Bonus (+2, +3, +4, +5, +6)",
+          "Dice": "Spielleiterhandbuch: Würfel (1W4, 1W6, 1W8, 1W10, 1W12)",
           "Hint": "Konfiguriert den Übungsbonus-Modifikator, um einen festen Bonus oder einen Würfelwurf zu verwenden.",
           "Name": "Übungsvariante"
         },
