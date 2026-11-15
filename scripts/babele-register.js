@@ -585,7 +585,7 @@ function convertDistanceValueByUnit(value, unitKey) {
   const n = Number(value);
   if (Number.isFinite(n)) return convertDistanceByUnit(value, unitKey);
   // Ein Bruch wie "1/12" ist eine Zahl, keine Formel: Zaehler und Nenner einzeln
-  // umzurechnen laesst den Wert unveraendert. So war die Prismatische Wand (1 Zoll)
+  // umzurechnen laesst den Wert unveraendert. So war die Regenbogenwand (1 Zoll)
   // gut 8 cm dick statt 2,5 cm. Drei Nachkommastellen, weil solche Waende duenn sind.
   const bruch = String(value ?? "").match(/^\s*(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*$/);
   const rule = DISTANCE_UNIT_MAP[String(unitKey ?? "").toLowerCase()];

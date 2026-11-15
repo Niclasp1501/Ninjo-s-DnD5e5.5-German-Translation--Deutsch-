@@ -873,7 +873,7 @@
       "name": "Hut der vielen Zauber",
       "results": {
         "SEMlrVV4fhfPfPXM": {
-          "description": "Du wirkst einen zufälligen Zauber, der durch einen Wurf von [[/r 1d10]] bestimmt wird: bei einer 1, @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} (Vergrößerungseffekt); bei einer 2, Vergrößern/Verkleinern (Verkleinerungseffekt); bei einer 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feuer des Feenvolks}; bei einer 4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}; bei einer 5, @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Windstoß}; bei einer 6, @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Unsichtbarkeit} (auf dich selbst gewirkt); bei einer 7, @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitzschlag}; bei einer 8, @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Phantasie-Kraft}; bei einer 9, @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph}; bei einer 10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}."
+          "description": "Du wirkst einen zufälligen Zauber, der durch einen Wurf von [[/r 1d10]] bestimmt wird: bei einer 1, @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} (Vergrößerungseffekt); bei einer 2, Vergrößern/Verkleinern (Verkleinerungseffekt); bei einer 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feenfeuer}; bei einer 4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}; bei einer 5, @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Windstoß}; bei einer 6, @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Unsichtbarkeit} (auf dich selbst gewirkt); bei einer 7, @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitz}; bei einer 8, @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Macht der Vorstellungskraft}; bei einer 9, @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Verwandlung}; bei einer 10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}."
         },
         "rObwGUYoOwdT0zZB": {
           "description": "Du hast den Zustand &amp;Reference[Stunned] bis zum Ende deines nächsten Zuges, da du glaubst, dass etwas Fantastisches geschehen ist."
@@ -1040,7 +1040,7 @@
       "name": "Halskette der Gebetsperlen: Typ",
       "results": {
         "DGX7VRis7cyeKc3W": {
-          "description": "Segenskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Segen}"
+          "description": "Segenskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Segnen}"
         },
         "rO4l6hUX4STCaLnr": {
           "description": "Heilungskugel: @UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Wunden heilen} (Stufe-2-Version)"
@@ -1049,10 +1049,10 @@
           "description": "Perle der Gunst: @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Vollständige Genesung}"
         },
         "rLL2e4XBcPzZ10so": {
-          "description": "Perle des Zerschmetterns: @UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Leuchtender Schlag}"
+          "description": "Perle des Zerschmetterns: @UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Strahlendes Niederstrecken}"
         },
         "EIMC5cl350CzhRLU": {
-          "description": "Perle der Beschwörung: @UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]{Wächter des Glaubens}"
+          "description": "Perle der Beschwörung: @UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]{Hüter des Glaubens}"
         },
         "b0h1ljFd14vqLQSO": {
           "description": "Perle des Windwandels: @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWalk00]{Windwandeln}"
@@ -1191,7 +1191,7 @@
       "name": "Effekte des Wunderstabs",
       "results": {
         "2I7bZrYZgzKuOSf6": {
-          "description": "Du wirkst einen Zauber, der von dem gewählten Punkt ausgeht. Wirf 1W10, um den Zauber zu bestimmen: bei 1–2, @UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Dunkelheit}; bei 3–4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feuer des Feenvolks}; bei 5–6, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}; bei 7–8, @UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Verlangsamen}; bei 9–10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}."
+          "description": "Du wirkst einen Zauber, der von dem gewählten Punkt ausgeht. Wirf 1W10, um den Zauber zu bestimmen: bei 1–2, @UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Dunkelheit}; bei 3–4, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feenfeuer}; bei 5–6, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}; bei 7–8, @UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Verlangsamen}; bei 9–10, @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}."
         },
         "MgohXc5L0ALOJ9J1": {
           "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen hast du den Zustand &amp;Reference[Stunned] bis zum Beginn deines nächsten Zuges, da du glaubst, etwas Großartiges sei gerade geschehen."
@@ -1209,7 +1209,7 @@
           "description": "Eine Wolke aus 600 übergroßen Schmetterlingen füllt einen 18 m hohen, 9 m Radius großen Zylinder, der auf den gewählten Ursprungspunkt zentriert ist. Die Schmetterlinge bleiben 10 Minuten lang, wobei der Wirkungsbereich während dieser Zeit &amp;Reference[Heavily Obscured] ist."
         },
         "tJmickpM5EOCde6g": {
-          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitzschlag}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
+          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitz}. Die durch den Zauber erzeugte Linie erstreckt sich von dir bis zum gewählten Ursprungspunkt."
         },
         "mHnstASeHRgEcEam": {
           "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, wird vergrößert, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} auf sie gewirkt. Wenn das Ziel nicht du bist und nicht von diesem Zauber betroffen werden kann, wirst stattdessen du zum Ziel."
@@ -1239,7 +1239,7 @@
           "description": "Am gewählten Ursprungspunkt geschieht nichts. Stattdessen schießt ein Strom von [[/r 1d4*10 #Gems]] Edelsteinen, jeder im Wert von 1 GM, aus der Spitze des Zauberstabs in einer 9 m langen und 1,5 m breiten Linie in Richtung des gewählten Ursprungspunkts. Jeder Edelstein verursacht [[/damage 1 type=bludgeoning]] Schaden, und der Gesamtschaden der Edelsteine wird gleichmäßig auf alle Kreaturen in der Linie aufgeteilt."
         },
         "0oGFkNQHSlt9HzJY": {
-          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph} auf die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist. Wirf [[/r 1d4]], um die neue Form des Ziels zu bestimmen. Bei einer 1 ist die neue Form ein Schwarzbär; bei einer 2 ist die neue Form eine Riesenwespe; bei einer 3–4 ist die neue Form ein Frosch."
+          "description": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Verwandlung} auf die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist. Wirf [[/r 1d4]], um die neue Form des Ziels zu bestimmen. Bei einer 1 ist die neue Form ein Schwarzbär; bei einer 2 ist die neue Form eine Riesenwespe; bei einer 3–4 ist die neue Form ein Frosch."
         },
         "4cFS9yfJW2gakbcA": {
           "description": "Die Kreatur, die dem gewählten Ursprungspunkt am nächsten ist, muss einen [[/save con 15]] Rettungswurf ablegen. Bei einem misslungenen Rettungswurf erhält die Kreatur den Zustand &amp;Reference[Restrained] und beginnt, zu Stein zu werden. Solange sie auf diese Weise festgesetzt ist, wiederholt die Kreatur den Rettungswurf am Ende ihres nächsten Zuges. Bei einem erfolgreichen Rettungswurf endet der Effekt. Bei einem misslungenen Rettungswurf erhält die Kreatur stattdessen den Zustand &amp;Reference[Petrified] anstelle des Zustands Festgesetzt. Die Versteinerung dauert an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Vollständige Genesung} oder ähnliche Magie befreit wird."
