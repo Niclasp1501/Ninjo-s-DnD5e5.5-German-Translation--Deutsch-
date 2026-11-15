@@ -3,21 +3,25 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [14.2611.1] - 2026-11-15
+## [14.2611.1] - 2026-11-16
 
-### Fixed - 114 Zaubernamen der 2024er-Inhalte heißen wie im SRD 5.2.1
+### Fixed - Alle Zaubernamen der 2024er-Inhalte heißen wie im SRD 5.2.1
 
-114 Zauber aus den Inhalten von 2024 hießen anders als im deutschen SRD 5.2.1 und im
-deutschen Spielerhandbuch, zum Beispiel *Feuerblitz* statt **Feuerpfeil**,
-*Nebelgang* statt **Nebelschritt**, *Leitender Blitz* statt **Lenkendes Geschoss** und
-*Göttlicher Schlag* statt **Göttliches Niederstrecken**. Das Modul widersprach sich damit
-selbst, denn die Regeltexte nannten die Zauber schon richtig.
+147 Zauber aus den Inhalten von 2024 hießen anders als im deutschen SRD 5.2.1, zum
+Beispiel *Feuerblitz* statt **Feuerpfeil**, *Nebelgang* statt **Nebelschritt**,
+*Ältestenstrahl* statt **Schauriger Strahl** und *Göttlicher Schlag* statt
+**Göttliches Niederstrecken**. Das Modul widersprach sich damit selbst, denn die
+Regeltexte nannten die Zauber schon richtig.
 
-- Die Zauber heißen jetzt wie im SRD. Jeder Name ist im SRD belegt.
-- Verweise auf diese Zauber in anderen Einträgen (143), kursive Nennungen in Texten (22) und
-  die Namen der Zaubereffekte (11) sind mitgezogen.
-- Ebenso die Monsteraktion *Nebelschritt* und die Zauberlisten von vier Monstern
-  (**Gedanken wahrnehmen**, **Segnen**).
+- Alle 340 Zauber heißen jetzt wie die Zauberüberschriften im SRD. Die einzige Ausnahme
+  ist **Arkaner Kraftschub** (*Arcane Vigor*), der im SRD nicht vorkommt.
+- Zauber, die im Spielerhandbuch einen Erfinder im Namen tragen, heißen hier wie im SRD
+  ohne ihn: **Schwebende Scheibe**, **Fürchterlicher Lachanfall**, **Unwiderstehlicher
+  Tanz**. Das ist Absicht, denn diese Inhalte sind das SRD.
+- Verweise auf diese Zauber in anderen Einträgen, kursive Nennungen in Texten und die Namen
+  der Zaubereffekte und Aktivitäten sind mitgezogen.
+- Ebenso die Monsteraktionen **Nebelschritt** und **Baumwandeln**, das **Geisterross** und
+  die Zauberlisten von vier Monstern (**Gedanken wahrnehmen**, **Segnen**).
 - *Göttlicher Schlag* beim Kleriker bleibt: Das ist das Merkmal *Divine Strike*, nicht der
   Zauber.
 

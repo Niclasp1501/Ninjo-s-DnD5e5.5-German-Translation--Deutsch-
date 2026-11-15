@@ -1571,7 +1571,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplTashasHide": {
-    "name": "Tashas abscheuliches Gelächter",
+    "name": "Fürchterlicher Lachanfall",
     "description": "<p>Eine Kreatur deiner Wahl, die du innerhalb der Reichweite sehen kannst, muss einen Weisheitsrettungswurf ablegen. Bei einem misslungenen Rettungswurf hat sie für die Wirkungsdauer die Zustände &amp;Reference[prone\napply=false] und &amp;Reference[incapacitated apply=false]. Während dieser Zeit lacht sie unkontrolliert, wenn sie dazu fähig ist, und sie kann den Zustand Liegend (Prone) nicht selbst beenden.</p><p>Am Ende jedes ihrer Züge und jedes Mal, wenn sie Schaden erleidet, legt sie einen weiteren [[/save ability=wis dc=@attributes.spell.dc]] Rettungswurf ab. Das Ziel hat Vorteil auf den Rettungswurf, wenn dieser durch Schaden ausgelöst wird. Bei einem erfolgreichen Rettungswurf endet der Zauber.</p><p><strong>Einsatz eines Zauberplatzes höheren Grades.</strong> Du kannst eine zusätzliche Kreatur für jeden Zauberplatzgrad über dem 1. Grad anvisieren.</p>",
     "materials": "eine Torte und eine Feder",
     "effects": {
@@ -1609,7 +1609,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "Tinte im Wert von 10+ GM, die der Zauber verbraucht"
   },
   "phbsplInflictWou": {
-    "name": "Wunden zufügen",
+    "name": "Wunden verursachen",
     "description": "<p>Eine Kreatur, die du berührst, muss einen Konstitutionsrettungswurf ablegen. Bei einem misslungenen Rettungswurf erleidet sie 2W10 nekrotischen Schaden, bei einem gelungenen Rettungswurf halb so viel Schaden.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W10 für jeden Zauberplatzgrad über dem 1. Grad.</p>"
   },
   "phbsplJump000000": {
@@ -1666,7 +1666,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplSearingSmi": {
-    "name": "Sengender Schlag",
+    "name": "Sengendes Niederstrecken",
     "description": "<p>Wenn du das Ziel triffst, erleidet es zusätzlich 1W6 Feuerschaden durch den Angriff. Zu Beginn jedes seiner Züge, bis der Zauber endet, erleidet das Ziel 1W6 Feuerschaden und muss dann einen Konstitutionsrettungswurf ablegen. Bei einem misslungenen Rettungswurf dauert der Zauber an. Bei einem gelungenen Rettungswurf endet der Zauber.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades. </strong>Der gesamte Schaden erhöht sich um 1W6 für jeden Zauberplatzgrad über dem 1. Grad.</p>",
     "activities": {
       "Damage": "Schaden",
@@ -1778,7 +1778,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "Goldstaub im Wert von 25+ GM, den der Zauber verbraucht"
   },
   "phbsplArcaneVigo": {
-    "name": "Arkane Vitalität",
+    "name": "Arkaner Kraftschub",
     "description": "<p>Du greifst auf deine Lebenskraft zurück, um dich selbst zu heilen. Wirf einen oder zwei deiner ungenutzten Trefferwürfel und erhalte eine Anzahl von Trefferpunkten zurück, die der Summe des Wurfs plus deinem Zauberwirkungsmodifikator entspricht. Diese Würfel werden dann verbraucht.</p><p><strong>Einsatz eines Zauberplatzes höheren Grades.</strong> Die Anzahl der ungenutzten Trefferwürfel, die du werfen kannst, erhöht sich um eins für jeden Zauberplatzgrad über dem 2. Grad.</p><section id=\"secret-boiIVpDiaDqivdaw\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die <strong>dN Trefferwürfel verbrauchen</strong>-Aktionen sind so konfiguriert, dass sie mindestens 2 Trefferwürfel verbrauchen, während dein Modifikator nur einmal hinzugefügt wird.</p><p>Wenn das Verbrauchen eines <em>einzelnen</em> Trefferwürfels gewünscht ist, ziehe diesen bitte manuell ab, würfle und heile dich.</p></section><p></p>",
     "activities": {
       "Cast": "Wirken",
@@ -1789,7 +1789,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplNystulsMag": {
-    "name": "Arkanisten-Magieaura",
+    "name": "Magische Aura des Arkanisten",
     "description": "<p>Mit einer Berührung legst du eine Illusion auf eine willige Kreatur oder einen Gegenstand, der nicht getragen oder gehalten wird. Eine Kreatur erhält den unten beschriebenen Masken-Effekt, und ein Gegenstand erhält den unten beschriebenen Falsche-Aura-Effekt. Der Effekt hält für die Wirkungsdauer an. Wenn du den Zauber 30 Tage lang jeden Tag auf dasselbe Ziel wirkst, hält die Illusion an, bis sie gebannt wird.</p><p><strong>Maske (Kreatur). </strong>Wähle einen Kreaturentyp, der nicht der tatsächliche Typ des Ziels ist. Zauber und andere magische Effekte behandeln das Ziel, als wäre es eine Kreatur des gewählten Typs.</p><p><strong>Falsche Aura (Gegenstand). </strong>Du änderst, wie das Ziel Zaubern und magischen Effekten erscheint, die magische Auren entdecken, wie z.B. <em>Magie entdecken</em>. Du kannst einen nichtmagischen Gegenstand magisch erscheinen lassen, einen magischen Gegenstand nichtmagisch erscheinen lassen oder die Aura des Gegenstands so ändern, dass sie zu einer von dir gewählten Zauberschule zu gehören scheint.</p>",
     "materials": "ein kleines Stück Seide",
     "effects": {
@@ -2042,7 +2042,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "ein Mondsamblatt"
   },
   "phbsplPasswithou": {
-    "name": "Spurlos vorübergehen",
+    "name": "Spurloses Gehen",
     "description": "<p>Du strahlst für die Dauer eine verbergende Aura in einer 30 Fuß großen Ausströmung aus.\nSolange du dich in der Aura befindest, haben du und jede Kreatur, die du wählst, einen Bonus von +10 auf\n[[/check ability=dex skill=ste]]-Würfe und hinterlassen keine Spuren.</p>",
     "materials": "Asche von verbrannter Mistel",
     "effects": {
@@ -2097,11 +2097,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du schleuderst drei feurige Strahlen. Du kannst sie auf ein Ziel in Reichweite oder auf mehrere schleudern. Mache für jeden Strahl einen Fernkampf-Zauberangriff. Bei einem Treffer erleidet das Ziel 2W6 Feuerschaden.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Du erzeugst einen zusätzlichen Strahl für jeden Zauberplatzgrad über dem 2.</p><p>[[@item.level + 1]]{Gesamtzahl der Strahlen}</p>"
   },
   "phbsplSeeInvisib": {
-    "name": "Unsichtbares Sehen",
+    "name": "Unsichtbares sehen",
     "description": "<p>Für die Wirkungsdauer siehst du Kreaturen und Objekte, die den Zustand &amp;Reference[invisible apply=false] haben, als wären sie sichtbar, und du kannst in die Ätherebene sehen. Kreaturen und Objekte dort erscheinen geisterhaft.</p>",
     "materials": "eine Prise Talkum",
     "effects": {
-      "BRwB0T8buWhJAuDx": "Unsichtbares Sehen"
+      "BRwB0T8buWhJAuDx": "Unsichtbares sehen"
     }
   },
   "phbsplShatter000": {
@@ -2214,7 +2214,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplClairvoyan": {
     "name": "Hellsehen",
-    "description": "<p>Du erschaffst einen unsichtbaren Sensor innerhalb der Reichweite an einem dir vertrauten Ort (ein Ort, den du zuvor besucht oder gesehen hast) oder an einem offensichtlichen Ort, der dir unbekannt ist (wie hinter einer Tür, um eine Ecke oder in einem Baumhain). Der ungreifbare, unverwundbare Sensor bleibt für die Dauer an Ort und Stelle.</p><p>Wenn du den Zauber wirkst, wähle Sehen oder Hören. Du kannst den gewählten Sinn durch den Sensor nutzen, als wärst du an dessen Position. Als Bonusaktion kannst du zwischen Sehen und Hören wechseln.</p><p>Eine Kreatur, die den Sensor sieht (wie eine Kreatur, die von <em>Unsichtbares Sehen</em> oder &amp;Reference[truesight] profitiert), sieht eine leuchtende Kugel von der Größe deiner Faust.</p>",
+    "description": "<p>Du erschaffst einen unsichtbaren Sensor innerhalb der Reichweite an einem dir vertrauten Ort (ein Ort, den du zuvor besucht oder gesehen hast) oder an einem offensichtlichen Ort, der dir unbekannt ist (wie hinter einer Tür, um eine Ecke oder in einem Baumhain). Der ungreifbare, unverwundbare Sensor bleibt für die Dauer an Ort und Stelle.</p><p>Wenn du den Zauber wirkst, wähle Sehen oder Hören. Du kannst den gewählten Sinn durch den Sensor nutzen, als wärst du an dessen Position. Als Bonusaktion kannst du zwischen Sehen und Hören wechseln.</p><p>Eine Kreatur, die den Sensor sieht (wie eine Kreatur, die von <em>Unsichtbares sehen</em> oder &amp;Reference[truesight] profitiert), sieht eine leuchtende Kugel von der Größe deiner Faust.</p>",
     "materials": ">-"
   },
   "phbsplConjureAni": {
@@ -2328,8 +2328,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplPhantomSte": {
-    "name": "Phantomross",
-    "description": "<p>Ein Großes, quasi-reales @UUID[Compendium.dnd5e.actors24.Actor.phbsumPhantomSte]{Phantomross} erscheint auf dem Boden in einem unbesetzten Raum deiner Wahl innerhalb der Reichweite. Du bestimmst das Aussehen der Kreatur, und sie ist mit Sattel, Gebiss und Zaumzeug ausgestattet. Jede der durch den Zauber erschaffenen Ausrüstungsgegenstände verschwindet in einer Rauchwolke, wenn sie mehr als 3 m vom Ross entfernt getragen wird.</p><p>Für die Wirkungsdauer kannst du oder eine Kreatur deiner Wahl das Ross reiten. Das Ross verwendet den <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd}</strong> Werteblock (siehe Anhang B), außer dass es eine Bewegungsrate von 30 m hat und 20,8 km in einer Stunde zurücklegen kann. Wenn der Zauber endet, verblasst das Ross allmählich und gibt dem Reiter 1 Minute Zeit zum Absteigen. Der Zauber endet vorzeitig, wenn das Ross Schaden nimmt.</p>"
+    "name": "Geisterross",
+    "description": "<p>Ein Großes, quasi-reales @UUID[Compendium.dnd5e.actors24.Actor.phbsumPhantomSte]{Geisterross} erscheint auf dem Boden in einem unbesetzten Raum deiner Wahl innerhalb der Reichweite. Du bestimmst das Aussehen der Kreatur, und sie ist mit Sattel, Gebiss und Zaumzeug ausgestattet. Jede der durch den Zauber erschaffenen Ausrüstungsgegenstände verschwindet in einer Rauchwolke, wenn sie mehr als 3 m vom Ross entfernt getragen wird.</p><p>Für die Wirkungsdauer kannst du oder eine Kreatur deiner Wahl das Ross reiten. Das Ross verwendet den <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd}</strong> Werteblock (siehe Anhang B), außer dass es eine Bewegungsrate von 30 m hat und 20,8 km in einer Stunde zurücklegen kann. Wenn der Zauber endet, verblasst das Ross allmählich und gibt dem Reiter 1 Minute Zeit zum Absteigen. Der Zauber endet vorzeitig, wenn das Ross Schaden nimmt.</p>"
   },
   "phbsplPlantGrowt": {
     "name": "Pflanzenwachstum",
@@ -2414,7 +2414,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplLeomundsTi": {
-    "name": "Leomunds Winzige Hütte",
+    "name": "Winzige Hütte",
     "description": "<p>Eine 10-Fuß-Ausströmung entsteht um dich herum und bleibt für die Dauer stationär. Der Zauber schlägt fehl, wenn du ihn wirkst, falls die Ausströmung nicht groß genug ist, um alle Kreaturen in ihrem Bereich vollständig einzuschließen.</p><p>Kreaturen und Objekte innerhalb der Ausströmung, wenn du den Zauber wirkst, können sich frei durch sie bewegen. Alle anderen Kreaturen und Objekte sind daran gehindert, hindurchzugehen. Zauber des 3. Grades oder niedriger können nicht durch sie gewirkt werden, und die Effekte solcher Zauber können sich nicht in sie hinein erstrecken.</p><p>Die Atmosphäre innerhalb der Ausströmung ist angenehm und trocken, unabhängig vom Wetter draußen. Bis der Zauber endet, kannst du befehlen, dass das Innere &amp;Reference[dimlight] oder &amp;Reference[darkness] hat (keine Aktion erforderlich). Die Ausströmung ist von außen undurchsichtig und in jeder von dir gewählten Farbe, aber von innen transparent.</p><p>Der Zauber endet vorzeitig, wenn du die Ausströmung verlässt oder wenn du ihn erneut wirkst.</p>",
     "materials": "eine Kristallperle"
   },
@@ -2524,7 +2524,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplConjureMin": {
-    "name": "Geringere Elementare beschwören",
+    "name": "Schwache Elementare beschwören",
     "description": "<p>Du beschwörst Geister von den Elementarebenen, die für die Dauer des Zaubers in einer 15-Fuß-Ausströmung um dich herumschwirren. Bis der Zauber endet, verursacht jeder Angriff, den du ausführst, zusätzlichen 2W8 Schaden, wenn du eine Kreatur in der Ausströmung triffst. Dieser Schaden ist Säure-, Kälte-, Feuer- oder Blitzschaden (deine Wahl, wenn du den Angriff ausführst).</p><p>Zusätzlich ist der Boden in der Ausströmung &amp;Reference[DifficultTerrain]schwieriges Gelände__ für deine Feinde.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 4. Grad.</p>",
     "activities": {
       "Bonus Attack Damage": "Bonus-Angriffsschaden",
@@ -2532,7 +2532,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplConjureWoo": {
-    "name": "Waldwesen beschwören",
+    "name": "Wesen des Waldes beschwören",
     "description": "<p>Du beschwörst Naturgeister, die für die Dauer des Zaubers in einer 10-Fuß-Ausströmung um dich herumschwirren. Wann immer die Ausströmung den Raum einer Kreatur betritt, die du sehen kannst, und wann immer eine Kreatur, die du sehen kannst, die Ausströmung betritt oder ihren Zug dort beendet, kannst du diese Kreatur zwingen, einen Weisheits-Rettungswurf abzulegen. Die Kreatur erleidet 5W8 Energieschaden bei einem misslungenen Rettungswurf oder halb so viel Schaden bei einem erfolgreichen. Eine Kreatur legt diesen Rettungswurf nur einmal pro Zug ab.</p><p>Zusätzlich kannst du die Aktion &amp;Reference[Disengage]Rückzug__ als Bonusaktion für die Dauer des Zaubers ausführen.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 4. Grad.</p>",
     "activities": {
       "Cast": "Wirken",
@@ -2573,11 +2573,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplFabricate0": {
-    "name": "Fabrizieren",
+    "name": "Verarbeitung",
     "description": "<p>Du verwandelst Rohmaterialien in Produkte desselben Materials. Zum Beispiel kannst du eine Holzbrücke aus einer Baumgruppe, ein Seil aus einem Hanffeld oder Kleidung aus Flachs oder Wolle fabrizieren.</p><p>Wähle Rohmaterialien, die du innerhalb der Reichweite sehen kannst. Du kannst ein Großes oder kleineres Objekt (enthalten in einem 10-Fuß-Würfel oder acht verbundenen 5-Fuß-Würfeln) fabrizieren, sofern ausreichend Material vorhanden ist. Wenn du jedoch mit Metall, Stein oder einer anderen mineralischen Substanz arbeitest, kann das fabrizierte Objekt nicht größer als Mittel (enthalten in einem 5-Fuß-Würfel) sein. Die Qualität aller fabrizierter Objekte basiert auf der Qualität der Rohmaterialien.</p><p>Kreaturen und magische Gegenstände können mit diesem Zauber nicht erschaffen werden. Du kannst ihn auch nicht verwenden, um Gegenstände zu erschaffen, die ein hohes Maß an Geschicklichkeit erfordern – wie Waffen und Rüstungen – es sei denn, du bist mit der Art von Handwerkzeug vertraut, die zur Herstellung solcher Objekte verwendet wird.</p>"
   },
   "phbFaithfulHound": {
-    "name": "Treuer Wachhund",
+    "name": "Treuer Hund",
     "description": "<p>Du beschwörst einen Phantom-Wachhund in einem unbesetzten Raum, den du innerhalb der Reichweite sehen kannst. Der Hund bleibt für die Dauer oder bis ihr beide mehr als 90 m voneinander entfernt seid.</p><p>Niemand außer dir kann den Hund sehen, und er ist immateriell und unverwundbar. Wenn eine Kleine oder größere Kreatur innerhalb von 9 m an ihn herankommt, ohne zuvor das Passwort zu sprechen, das du beim Wirken dieses Zaubers angibst, beginnt der Hund laut zu bellen. Der Hund hat Wahrer Blick mit einer Reichweite von 9 m.</p><p>Zu Beginn jedes deiner Züge versucht der Hund, einen Feind innerhalb von 1,5 m von ihm zu beißen. Dieser Feind muss einen Geschicklichkeitsrettungswurf bestehen oder nimmt 4W8 Wuchtschaden.</p><p>In deinen späteren Zügen kannst du eine Magieaktion ausführen, um den Hund bis zu 9 m zu bewegen.</p>",
     "activities": {
       "Move Hound": "Hund bewegen"
@@ -2653,7 +2653,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "eine dünne Bleiplatte"
   },
   "phbsplOtilukesRe": {
-    "name": "Otilukes Widerstandsfähige Sphäre",
+    "name": "Unverwüstliche Sphäre",
     "description": "<p>Eine schimmernde Sphäre umschließt eine Große oder kleinere Kreatur oder ein Objekt innerhalb der Reichweite. Eine unwillige Kreatur muss einen Geschicklichkeitsrettungswurf bestehen, oder sie wird für die Wirkungsdauer eingeschlossen.</p><p>Nichts – weder physische Objekte, Energie noch andere Zaubereffekte – kann die Barriere durchdringen, weder hinein noch hinaus, obwohl eine Kreatur in der Sphäre dort atmen kann. Die Sphäre ist immun gegen jeglichen Schaden, und eine Kreatur oder ein Objekt im Inneren kann nicht durch Angriffe oder Effekte von außen beschädigt werden, noch kann eine Kreatur innerhalb der Sphäre etwas außerhalb beschädigen.</p><p>Die Sphäre ist schwerelos und gerade groß genug, um die Kreatur oder das Objekt im Inneren zu fassen. Eine eingeschlossene Kreatur kann eine Aktion aufwenden, um gegen die Wände der Sphäre zu drücken und die Sphäre so mit bis zu der Hälfte der Bewegungsrate der Kreatur zu rollen. Ebenso kann die Kugel von anderen Kreaturen aufgehoben und bewegt werden.</p><p>Ein\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDisintegra]{Auflösung}</em>\nZauber, der die Kugel anvisiert, zerstört sie, ohne etwas im Inneren zu beschädigen.</p>",
     "materials": "eine Glaskugel",
     "effects": {
@@ -2661,7 +2661,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplLeomundsSe": {
-    "name": "Leomunds Geheime Truhe",
+    "name": "Geheime Truhe",
     "description": "<p>Du versteckst eine Truhe und all ihren Inhalt auf der Ätherebene. Du musst die Truhe und die Miniaturreplik berühren, die als Materialkomponenten für den Zauber dienen. Die Truhe kann bis zu 12 Kubikfuß nicht-lebendes Material (0,9 m mal 0,6 m mal 0,6 m) enthalten.</p><p>Solange die Truhe auf der Ätherebene verbleibt, kannst du eine Magieaktion ausführen und die Replik berühren, um die Truhe zurückzurufen. Sie erscheint in einem unbesetzten Bereich auf dem Boden innerhalb von 1,5 m von dir. Du kannst die Truhe zurück auf die Ätherebene schicken, indem du eine Magieaktion ausführst, um die Truhe und die Replik zu berühren.</p><p>Nach 60 Tagen besteht am Ende jedes Tages eine kumulative Chance von 5 Prozent, dass der Zauber endet. Der Zauber endet auch, wenn du diesen Zauber erneut wirkst oder wenn die winzige Replik-Truhe zerstört wird. Wenn der Zauber endet und die größere Truhe auf der Ätherebene ist, bleibt die Truhe dort, damit du oder jemand anderes sie finden kann.</p><section class=\"secret\"\nid=\"secret-FLbvXAg0bRRjYr2v\"><p><strong>Foundry-Hinweis</strong></p><p>Die\n<strong>Truhe zurückrufen</strong> Aktivität beschwört einen verknüpften Akteur, der mit diesem spezifischen Zauber-Gegenstand verbunden ist, um als Truhe zu dienen.</p></section>",
     "activities": {
       "Hide Chest": "Truhe verstecken",
@@ -2707,10 +2707,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Objekte beleben sich auf dein Kommando hin. Wähle eine Anzahl nicht-magischer Objekte innerhalb der Reichweite, die nicht getragen oder gehalten werden, nicht an einer Oberfläche befestigt sind und nicht gigantisch sind. Die maximale Anzahl der Objekte entspricht deinem Modifikator für die Zauberfähigkeit; für diese Anzahl zählt ein Mittleres oder kleineres Ziel als ein Objekt, ein Großes Ziel als zwei und ein Riesiges Ziel als drei.</p><p>Jedes Ziel belebt sich, bekommt Beine und wird zu einem Konstrukt, das den Werteblock des <strong>Belebten Objekts</strong> verwendet; diese Kreatur steht unter deiner Kontrolle, bis der Zauber endet oder bis sie auf 0 Trefferpunkte reduziert wird. Jede Kreatur, die du mit diesem Zauber erschaffst, ist ein Verbündeter für dich und deine Verbündeten. Im Kampf teilt sie deine Initiative und ist sofort nach dir an der Reihe.</p><p>Bis der Zauber endet, kannst du eine Bonusaktion aufwenden, um jede Kreatur, die du mit diesem Zauber erschaffen hast, mental zu befehligen, wenn die Kreatur sich innerhalb von 150 m von dir befindet (wenn du mehrere Kreaturen kontrollierst, kannst du alle gleichzeitig befehligen und jedem denselben Befehl erteilen). Wenn du keine Befehle erteilst, führt die Kreatur die &amp;Reference[Dodge] Aktion aus und bewegt sich nur, um Schaden zu vermeiden. Wenn die Kreatur auf 0 Trefferpunkte fällt, kehrt sie in ihre Objektform zurück, und jeder verbleibende Schaden wird auf diese Form übertragen.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Wuchtschaden der Kreatur erhöht sich um 1W4 (Mittel oder kleiner), 1W6 (Groß) oder 1W12 (Riesig) für jeden Zauberplatzgrad über dem 5. Grad.</p><h3>Größen belebter Objekte</h3><p>@UUID[Compendium.dnd5e.actors24.Actor.phbtaoAnimatedOb]{Tiny},\n@UUID[Compendium.dnd5e.actors24.Actor.phbsaoAnimatedOb]{Small},\n@UUID[Compendium.dnd5e.actors24.Actor.phbmaoAnimatedOb]{Medium},\n@UUID[Compendium.dnd5e.actors24.Actor.phblaoAnimatedOb]{Large},\n@UUID[Compendium.dnd5e.actors24.Actor.phbhaoAnimatedOb]{Huge}</p>"
   },
   "phbsplAntilifeSh": {
-    "name": "Antilebenshülle",
+    "name": "Schutzhülle gegen Lebendes",
     "description": "<p>Eine Aura erstreckt sich für die Wirkungsdauer in einer 3 m großen Ausströmung von dir. Die Aura verhindert, dass Kreaturen außer Konstrukten und Untoten sie durchqueren oder durch sie hindurchgreifen können. Eine betroffene Kreatur kann Zauber wirken oder Angriffe mit Fern- oder Reichweitenwaffen durch die Barriere hindurch ausführen.</p><p>Wenn du dich so bewegst, dass eine betroffene Kreatur gezwungen ist, die Barriere zu durchqueren, endet der Zauber.</p>",
     "effects": {
-      "IrE5td3goSQtcc0U": "Antilebenshülle"
+      "IrE5td3goSQtcc0U": "Schutzhülle gegen Lebendes"
     }
   },
   "phbsplBigbysHand": {
@@ -2749,7 +2749,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplContactOth": {
-    "name": "Kontakt zu anderer Ebene",
+    "name": "Kontakt zu anderen Ebenen",
     "description": "<p>Du kontaktierst mental einen Halbgott, den Geist eines längst verstorbenen Weisen oder eine\nandere wissende Entität von einer anderen Ebene. Die Kontaktaufnahme mit dieser\nüberweltlichen Intelligenz kann deinen Verstand brechen. Wenn du diesen Zauber wirkst,\nlege einen Intelligenzrettungswurf gegen SG 15 ab. Bei einem erfolgreichen Wurf kannst du\nder Entität bis zu fünf Fragen stellen. Du musst deine Fragen stellen, bevor der\nZauber endet. Der DM beantwortet jede Frage mit einem Wort, wie „ja“,\n„nein“, „vielleicht“, „niemals“, „irrelevant“ oder „unklar“ (wenn die Entität die\nAntwort auf die Frage nicht kennt). Wenn eine Ein-Wort-Antwort\nirreführend wäre, könnte der DM stattdessen eine kurze Phrase als\nAntwort anbieten.</p><p>Bei einem misslungenen Wurf erleidest du 6W6 psychischen Schaden und hast den\nZustand &amp;Reference[Incapacitated], bis du eine Lange Rast beendest. Ein\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Vollständige Genesung}</em> Zauber, der auf dich gewirkt wird, beendet diesen Effekt.</p>"
   },
   "phbsplContagion0": {
@@ -2920,7 +2920,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": ">-"
   },
   "phbsplSeeming000": {
-    "name": "Schein",
+    "name": "Äußerlichkeiten",
     "description": "<p>Du verleihst jeder Kreatur deiner Wahl, die du innerhalb der Reichweite sehen kannst, ein illusorisches Aussehen. Ein unwilliges Ziel kann einen Charisma-Rettungswurf machen, und wenn es diesen besteht, ist es von diesem Zauber unbetroffen.</p><p>Du kannst den Zielen dasselbe oder unterschiedliche Aussehen verleihen. Der Zauber kann das Aussehen der Körper und der Ausrüstung der Ziele verändern. Du kannst jede Kreatur 0,3 m kleiner oder größer erscheinen lassen und schwerer oder leichter aussehen lassen. Das neue Aussehen eines Ziels muss dieselbe grundlegende Anordnung von Gliedmaßen wie das Ziel haben, aber der Umfang der Illusion liegt ansonsten bei dir. Der Zauber dauert für die Wirkungsdauer an.</p><p>Die durch diesen Zauber bewirkten Veränderungen halten einer physischen Untersuchung nicht stand. Wenn du diesen Zauber zum Beispiel verwendest, um einem Kreaturen-Outfit einen Hut hinzuzufügen, gehen Objekte durch den Hut hindurch.</p><p>Eine Kreatur, die die Aktion Studieren ausführt, um ein Ziel zu untersuchen, kann eine [[/check ability=int skill=inv dc=@attributes.spell.dc]]-Probe gegen deinen Zauber-SG machen. Wenn sie erfolgreich ist, wird sie sich bewusst, dass das Ziel verkleidet ist.</p>",
     "activities": {
       "Change Appearance": "Aussehen ändern",
@@ -2940,7 +2940,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du erhältst die Fähigkeit, Kreaturen oder Objekte durch Gedanken zu bewegen oder zu manipulieren. Wenn du den Zauber wirkst und als Magieaktion in deinen späteren Zügen, bevor der Zauber endet, kannst du deinen Willen auf eine Kreatur oder ein Objekt ausüben, das du innerhalb der Reichweite sehen kannst, wodurch der entsprechende Effekt unten eintritt. Du kannst dasselbe Ziel Runde für Runde beeinflussen oder jederzeit ein neues wählen. Wenn du das Ziel wechselst, ist das vorherige Ziel nicht länger von dem Zauber betroffen.</p><p><strong>Kreatur.</strong> Du kannst versuchen, eine riesige oder kleinere Kreatur zu bewegen. Das Ziel muss einen Stärke-Rettungswurf bestehen, oder du bewegst es bis zu 9 m in jede Richtung innerhalb der Reichweite des Zaubers. Bis zum Ende deines nächsten Zuges hat die Kreatur den Zustand &amp;Reference[Restrained], und wenn du sie in die Luft hebst, schwebt sie dort. Sie fällt am Ende deines nächsten Zuges, es sei denn, du verwendest diese Option erneut auf sie und sie scheitert am Rettungswurf.</p><p><strong>Objekt.</strong> Du kannst versuchen, ein riesiges oder kleineres Objekt zu bewegen. Wenn das Objekt nicht getragen wird, bewegst du es automatisch bis zu 9 m in jede Richtung innerhalb der Reichweite des Zaubers.</p><p>Wenn das Objekt von einer Kreatur getragen wird, muss diese Kreatur einen Stärke-Rettungswurf bestehen, oder du ziehst das Objekt weg und bewegst es bis zu 9 m in jede Richtung innerhalb der Reichweite des Zaubers.</p><p>Du kannst Objekte mit deinem telekinetischen Griff fein steuern, wie zum Beispiel ein einfaches Werkzeug manipulieren, eine Tür oder einen Behälter öffnen, einen Gegenstand aus einem offenen Behälter verstauen oder entnehmen oder den Inhalt aus einem Fläschchen gießen.</p>"
   },
   "phbsplRarysTelep": {
-    "name": "Telepathische Verbindung",
+    "name": "Telepathische Bindung",
     "description": "<p>Du schmiedest eine telepathische Verbindung zwischen bis zu acht willigen Kreaturen deiner Wahl innerhalb der Reichweite, die jede Kreatur für die Dauer psychisch mit allen anderen verbindet. Kreaturen, die in keiner Sprache kommunizieren können, sind von diesem Zauber nicht betroffen.</p><p>Bis der Zauber endet, können die Ziele telepathisch über die Verbindung kommunizieren, unabhängig davon, ob sie eine gemeinsame Sprache haben. Die Kommunikation ist über jede Entfernung möglich, kann sich jedoch nicht auf andere Existenzebenen erstrecken.</p>",
     "activities": {
       "Forge Telepathic Link": "Telepathische Verbindung schmieden"
@@ -2956,7 +2956,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "seltene Tinten im Wert von 50+ GM, die der Zauber verbraucht"
   },
   "phbsplTreeStride": {
-    "name": "Baumschritt",
+    "name": "Baumwandeln",
     "description": "<p>Du erhältst die Fähigkeit, einen Baum zu betreten und dich von dessen Inneren in das Innere eines anderen Baumes derselben Art innerhalb von 150 m zu bewegen. Beide Bäume müssen lebendig und mindestens so groß wie du sein. Du musst 1,5 m Bewegung aufwenden, um einen Baum zu betreten. Du kennst sofort den Standort aller anderen Bäume derselben Art innerhalb von 150 m und kannst, als Teil der Bewegung, die zum Betreten des Baumes verwendet wurde, entweder in einen dieser Bäume übergehen oder aus dem Baum heraustreten, in dem du dich befindest. Du erscheinst an einem Ort deiner Wahl innerhalb von 1,5 m um den Zielbaum und verbrauchst weitere 1,5 m Bewegung. Wenn du keine Bewegung mehr übrig hast, erscheinst du innerhalb von 1,5 m um den Baum, den du betreten hast.</p><p>Du kannst diese Transportfähigkeit nur einmal pro Zug nutzen. Du musst jeden Zug außerhalb eines Baumes beenden.</p>"
   },
   "phbsplWallofForc": {
@@ -3003,10 +3003,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplContingenc": {
-    "name": "Kontingenz",
-    "description": "<p>Wähle einen Zauber des 5. Grades oder niedriger, den du wirken kannst, der eine Wirkzeit von einer Aktion hat und der dich selbst zum Ziel haben kann. Du wirkst diesen Zauber – den Kontingenzzauber genannt – als Teil des Wirkens von <em>Kontingenz</em>, wobei du Zauberplätze für beide verbrauchst, aber der Kontingenzzauber tritt nicht sofort in Kraft. Stattdessen tritt er in Kraft, wenn ein bestimmter Auslöser eintritt. Du beschreibst diesen Auslöser, wenn du die beiden Zauber wirkst. Zum Beispiel könnte eine <em>Kontingenz</em>, die mit <em>Wasser atmen</em> gewirkt wird, festlegen, dass <em>Wasser atmen</em> in Kraft tritt, wenn du von Wasser oder einer ähnlichen Flüssigkeit verschlungen wirst.</p><p>Der Kontingenzzauber tritt sofort in Kraft, nachdem der Auslöser zum ersten Mal eingetreten ist, ob du es willst oder nicht, und dann endet <em>Kontingenz</em>.</p><p>Der Kontingenzzauber wirkt nur auf dich, selbst wenn er normalerweise andere Ziele haben könnte. Du kannst nur einen <em>Kontingenz</em>-Zauber gleichzeitig verwenden. Wenn du diesen Zauber erneut wirkst, endet der Effekt eines anderen <em>Kontingenz</em>-Zaubers auf dich. Außerdem endet <em>Kontingenz</em> auf dich, wenn seine Materialkomponente jemals nicht an deiner Person ist.</p><section class=\"secret\"\nid=\"secret-gnXQNvWGYfLGkrBe\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivität „Kontingenz erstellen“ ist so konfiguriert, dass sie optional eine Schriftrolle verzaubert, um den ausgelösten Zauber zu verfolgen und als solchen zu dienen. Erstelle eine Zauberrolle, indem du mit der rechten Maustaste auf einen Zauber in deiner Zauberliste klickst, einen Zauberplatz des Grades der erstellten Schriftrolle verbrauchst und die Schriftrolle verzauberst.</p></section>",
+    "name": "Notfall",
+    "description": "<p>Wähle einen Zauber des 5. Grades oder niedriger, den du wirken kannst, der eine Wirkzeit von einer Aktion hat und der dich selbst zum Ziel haben kann. Du wirkst diesen Zauber – den Notfallzauber genannt – als Teil des Wirkens von <em>Notfall</em>, wobei du Zauberplätze für beide verbrauchst, aber der Notfallzauber tritt nicht sofort in Kraft. Stattdessen tritt er in Kraft, wenn ein bestimmter Auslöser eintritt. Du beschreibst diesen Auslöser, wenn du die beiden Zauber wirkst. Zum Beispiel könnte eine <em>Notfall</em>, die mit <em>Wasser atmen</em> gewirkt wird, festlegen, dass <em>Wasser atmen</em> in Kraft tritt, wenn du von Wasser oder einer ähnlichen Flüssigkeit verschlungen wirst.</p><p>Der Notfallzauber tritt sofort in Kraft, nachdem der Auslöser zum ersten Mal eingetreten ist, ob du es willst oder nicht, und dann endet <em>Notfall</em>.</p><p>Der Notfallzauber wirkt nur auf dich, selbst wenn er normalerweise andere Ziele haben könnte. Du kannst nur einen <em>Notfall</em>-Zauber gleichzeitig verwenden. Wenn du diesen Zauber erneut wirkst, endet der Effekt eines anderen <em>Notfall</em>-Zaubers auf dich. Außerdem endet <em>Notfall</em> auf dich, wenn seine Materialkomponente jemals nicht an deiner Person ist.</p><section class=\"secret\"\nid=\"secret-gnXQNvWGYfLGkrBe\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivität „Notfall erstellen“ ist so konfiguriert, dass sie optional eine Schriftrolle verzaubert, um den ausgelösten Zauber zu verfolgen und als solchen zu dienen. Erstelle eine Zauberrolle, indem du mit der rechten Maustaste auf einen Zauber in deiner Zauberliste klickst, einen Zauberplatz des Grades der erstellten Schriftrolle verbrauchst und die Schriftrolle verzauberst.</p></section>",
     "activities": {
-      "Create Contingency": "Kontingenz erstellen"
+      "Create Contingency": "Notfall erstellen"
     },
     "materials": "eine mit Edelsteinen besetzte Statuette von dir selbst im Wert von 1.500+ GM"
   },
@@ -3062,7 +3062,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "Rubinstaub im Wert von 1.000+ GM"
   },
   "phbsplOtilukesFr": {
-    "name": "Otilukes Gefrierkugel",
+    "name": "Frostsphäre",
     "description": "<p>Eine eisige Kugel schießt von dir zu einem Punkt deiner Wahl innerhalb der Reichweite, wo sie in einer Kugel mit 18 m Radius explodiert. Jede Kreatur in diesem Gebiet muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem misslungenen Rettungswurf 10W6 Kälteschaden oder die Hälfte davon bei einem erfolgreichen.</p><p>Wenn die Kugel ein Gewässer trifft, gefriert sie das Wasser bis zu einer Tiefe von 6 Zoll über einer Fläche von 9 m im Quadrat. Dieses Eis hält 1 Minute lang. Kreaturen, die auf der Oberfläche des gefrorenen Wassers schwammen, sind im Eis gefangen und haben den Zustand &amp;Reference[Restrained apply=false]. Eine gefangene Kreatur kann eine Aktion aufwenden, um einen [[/check ability=str skill=ath dc=@attributes.spell.dc]]-Wurf gegen deinen Zauber-SG zu machen, um sich zu befreien.</p><p>Du kannst darauf verzichten, die Kugel abzufeuern, nachdem du das Wirken des Zaubers abgeschlossen hast. Wenn du dies tust, erscheint eine Kugel von der Größe eines Schleudergeschosses, kühl auf der Haut, in deiner Hand. Jederzeit kannst du oder eine Kreatur, der du die Kugel gibst, die Kugel werfen (bis zu einer Reichweite von 12 m) oder sie mit einer Schleuder schleudern (bis zur normalen Reichweite der Schleuder). Sie zerspringt beim Aufprall mit demselben Effekt wie ein normales Wirken des Zaubers. Du kannst die Kugel auch ablegen, ohne sie zu zerbrechen. Nach 1 Minute, wenn die Kugel noch nicht zerbrochen ist, explodiert sie.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W6 für jeden Zauberplatzgrad über dem 6.</p>",
     "activities": {
       "Cast and Fire": "Wirken und Abfeuern",
@@ -3106,7 +3106,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplDrawmijsIn": {
-    "name": "Spontane Beschwörung",
+    "name": "Sofortige Beschwörung",
     "description": "<p>Du berührst den bei der Zauberwirkung verwendeten Saphir und einen Gegenstand, der 10 Pfund oder weniger wiegt und dessen längste Dimension 1,8 m oder weniger beträgt. Der Zauber hinterlässt eine unsichtbare Markierung auf diesem Gegenstand und schreibt den Namen des Gegenstands unsichtbar auf den Saphir. Jedes Mal, wenn du diesen Zauber wirkst, musst du einen anderen Saphir verwenden.</p><p>Danach kannst du eine Magische Aktion ausführen, um den Namen des Gegenstands zu sprechen und den Saphir zu zerdrücken. Der Gegenstand erscheint sofort in deiner Hand, unabhängig von physischen oder planaren Entfernungen, und der Zauber endet.</p><p>Wenn eine andere Kreatur den Gegenstand hält oder trägt, transportiert das Zerdrücken des Saphirs ihn nicht, stattdessen erfährst du, wer diese Kreatur ist und wo sich diese Kreatur derzeit befindet.</p><section\nid=\"secret-px4JJQv7QxLmPdka\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die begrenzten Verwendungen dieses Zaubers sind so konfiguriert, dass sie die Anzahl der eingeschriebenen Objekte verfolgen, wobei die Aktivitäten „Markierung einschreiben“ und „Objekt zurückrufen“ die Verwendungen entsprechend wiederherstellen und verbrauchen.</p></section>",
     "activities": {
       "Inscribe Mark": "Markierung einschreiben",
@@ -3115,7 +3115,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "ein Saphir im Wert von 1.000+ GM"
   },
   "phbsplOttosIrres": {
-    "name": "Ottos unwiderstehlicher Tanz",
+    "name": "Unwiderstehlicher Tanz",
     "description": "<p>Eine Kreatur, die du innerhalb der Reichweite sehen kannst, muss einen Weisheitsrettungswurf ablegen. Bei einem erfolgreichen Rettungswurf tanzt das Ziel komisch bis zum Ende seines nächsten Zuges, wobei es seine gesamte Bewegung aufwenden muss, um an Ort und Stelle zu tanzen.</p><p>Bei einem misslungenen Rettungswurf hat das Ziel für die Dauer den Zustand Bezaubert. Während es bezaubert ist, tanzt das Ziel komisch, muss seine gesamte Bewegung aufwenden, um an Ort und Stelle zu tanzen, und hat Nachteil auf Geschicklichkeitsrettungswürfe und Angriffswürfe, und andere Kreaturen haben Vorteil auf Angriffswürfe gegen es. In jedem seiner Züge kann das Ziel eine Aktion ausführen, um sich zu sammeln und den Rettungswurf zu wiederholen, wodurch der Zauber bei Erfolg für sich selbst endet.</p>",
     "effects": {
       "MpToumiJ2o3S16K7": "Unwiderstehlicher Tanz",
@@ -3154,7 +3154,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "eine Miniaturschaufel"
   },
   "phbsplPlanarAlly": {
-    "name": "Planarer Verbündeter",
+    "name": "Verbündeter aus den Ebenen",
     "description": "<p>Du flehst eine außerweltliche Entität um Hilfe an. Das Wesen muss dir bekannt sein: ein Gott, ein Dämonenprinz oder ein anderes Wesen kosmischer Macht. Diese Entität sendet einen ihr loyalen celestischen Wesen, Elementar oder Teufel, um dir zu helfen, wobei die Kreatur in einem unbesetzten Raum innerhalb der Reichweite erscheint. Wenn du den Namen einer bestimmten Kreatur kennst, kannst du diesen Namen sprechen, wenn du diesen Zauber wirkst, um diese Kreatur anzufordern, obwohl du möglicherweise trotzdem eine andere Kreatur erhältst (Entscheidung des Spielleiters).</p><p>Wenn die Kreatur erscheint, ist sie nicht gezwungen, sich auf eine bestimmte Weise zu verhalten. Du kannst sie bitten, einen Dienst gegen Bezahlung zu leisten, aber sie ist nicht dazu verpflichtet. Die angeforderte Aufgabe könnte von einfach (fliege uns über den Abgrund oder hilf uns in einem Kampf) bis komplex (spioniere unsere Feinde aus oder beschütze uns während unseres Vorstoßes in den Dungeon). Du musst in der Lage sein, mit der Kreatur zu kommunizieren, um ihre Dienste auszuhandeln.</p><p>Die Bezahlung kann verschiedene Formen annehmen. Ein celestisches Wesen könnte eine beträchtliche Spende von Gold oder magischen Gegenständen an einen verbündeten Tempel verlangen, während ein Teufel ein lebendes Opfer oder ein Schatzgeschenk fordern könnte. Einige Kreaturen könnten ihren Dienst gegen eine von dir unternommene Quest eintauschen.</p><p>Eine Aufgabe, die in Minuten gemessen werden kann, erfordert eine Bezahlung im Wert von 100 GM pro Minute. Eine Aufgabe, die in Stunden gemessen wird, erfordert 1.000 GM pro Stunde. Und eine Aufgabe, die in Tagen gemessen wird (bis zu 10 Tage), erfordert 10.000 GM pro Tag. Der Spielleiter kann diese Zahlungen an die Umstände anpassen, unter denen du den Zauber wirkst. Wenn die Aufgabe mit dem Ethos der Kreatur übereinstimmt, könnte die Zahlung halbiert oder sogar erlassen werden. Ungefährliche Aufgaben erfordern typischerweise nur die Hälfte der vorgeschlagenen Zahlung, während besonders gefährliche Aufgaben ein größeres Geschenk erfordern könnten. Kreaturen akzeptieren selten Aufgaben, die selbstmörderisch erscheinen.</p><p>Nachdem die Kreatur die Aufgabe abgeschlossen hat oder wenn die vereinbarte Dienstleistungsdauer abläuft, kehrt die Kreatur in ihre Heimatebene zurück, nachdem sie sich, wenn möglich, bei dir gemeldet hat. Wenn du dich nicht auf einen Preis für den Dienst der Kreatur einigen kannst, kehrt die Kreatur sofort in ihre Heimatebene zurück.</p>",
     "activities": {
       "Beseech Entity": "Entität anflehen"
@@ -3227,7 +3227,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplWordofReca": {
-    "name": "Wort der Rückrufung",
+    "name": "Wort des Rückrufs",
     "description": "<p>Du und bis zu fünf willige Kreaturen innerhalb von 1,5 m von dir teleportieren sofort zu einem zuvor bestimmten Zufluchtsort. Du und alle Kreaturen, die mit dir teleportieren, erscheinen im nächsten unbesetzten Raum zu dem Punkt, den du bei der Vorbereitung deines Zufluchtsortes bestimmt hast (siehe unten). Wenn du diesen Zauber wirkst, ohne zuvor einen Zufluchtsort vorbereitet zu haben, hat der Zauber keine Wirkung.</p><p>Du musst einen Ort, wie einen Tempel, als Zufluchtsort bestimmen, indem du diesen Zauber dort wirkst.</p>",
     "activities": {
       "Designate Sanctuary": "Zufluchtsort bestimmen",
@@ -3307,7 +3307,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "Rubinpulver im Wert von 1.500+ GM, das der Zauber verbraucht"
   },
   "phbMagnificentMa": {
-    "name": "Prächtiges Anwesen",
+    "name": "Herrliches Herrenhaus",
     "description": "<div><p>Du beschwörst eine schimmernde Tür in Reichweite, die für die Wirkungsdauer bestehen bleibt. Die Tür führt zu einer extradimensionalen Behausung und ist 1,5 m breit und 3 m hoch. Du und jede Kreatur, die du beim Wirken des Zaubers bestimmst, können die extradimensionale Behausung betreten, solange die Tür offen bleibt. Du kannst sie öffnen oder schließen (keine Aktion erforderlich), wenn du dich innerhalb von 9 m von ihr befindest. Im geschlossenen Zustand ist die Tür unmerklich.</p><p>Hinter der Tür befindet sich ein prächtiges Foyer mit zahlreichen weiteren Kammern. Die Atmosphäre der Behausung ist sauber, frisch und warm.</p><p>Du kannst jeden beliebigen Grundriss für die Behausung erstellen, aber sie darf 50 zusammenhängende 10-Fuß-Würfel nicht überschreiten. Der Ort ist nach deiner Wahl möbliert und dekoriert. Er enthält ausreichend Nahrung, um ein neungängiges Bankett für bis zu 100 Personen zu servieren. Einrichtungsgegenstände und andere durch diesen Zauber erschaffene Objekte lösen sich in Rauch auf, wenn sie daraus entfernt werden.</p><p>Ein Personal von 100 nahezu transparenten Dienern bedient alle, die eintreten. Du bestimmst das Aussehen dieser Diener und ihre Kleidung. Sie sind unverwundbar und gehorchen deinen Befehlen. Jeder Diener kann Aufgaben ausführen, die ein Mensch ausführen könnte, aber sie können keine andere Kreatur angreifen oder eine Aktion ausführen, die ihr direkt Schaden zufügen würde. So können die Diener Dinge holen, putzen, flicken, Kleidung falten, Feuer anzünden, Essen servieren, Wein einschenken und so weiter. Die Diener können die Behausung nicht verlassen.</p><p>Wenn der Zauber endet, werden alle Kreaturen oder Objekte, die im extradimensionalen Raum verblieben sind, in die nächstgelegenen unbesetzten Felder zum Eingang hin ausgestoßen.</p></div>",
     "activities": {
       "Create Door": "Tür erschaffen"
@@ -3492,7 +3492,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplGlibness00": {
-    "name": "Gewandtheit",
+    "name": "Redegewandtheit",
     "description": "<p>Bis der Zauber endet, kannst du, wenn du eine Charisma-Probe ablegst, die gewürfelte Zahl durch eine 15 ersetzen. Außerdem, egal was du sagst, zeigt Magie, die feststellen würde, ob du die Wahrheit sagst, an, dass du die Wahrheit sprichst.</p>",
     "effects": {
       "tWt9b1JlQpDYbhfj": "Gewandt"
@@ -3520,10 +3520,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplMaze000000": {
-    "name": "Labyrinth",
-    "description": "<p>Du verbannst eine Kreatur, die du innerhalb der Reichweite sehen kannst, in eine labyrinthartige Halbebene. Das Ziel bleibt dort für die Dauer oder bis es dem Labyrinth entkommt.</p><p>Das Ziel kann eine Studienaktion ausführen, um zu versuchen, zu entkommen. Wenn es dies tut, macht es einen Intelligenz (Nachforschungen)-Wurf gegen SG 20. Bei Erfolg entkommt es, und der Zauber endet.</p><p>Wenn der Zauber endet, erscheint das Ziel in dem Raum wieder, den es verlassen hat, oder, falls dieser Raum besetzt ist, im nächsten unbesetzten Raum.</p>",
+    "name": "Irrgarten",
+    "description": "<p>Du verbannst eine Kreatur, die du innerhalb der Reichweite sehen kannst, in eine labyrinthartige Halbebene. Das Ziel bleibt dort für die Dauer oder bis es dem Irrgarten entkommt.</p><p>Das Ziel kann eine Studienaktion ausführen, um zu versuchen, zu entkommen. Wenn es dies tut, macht es einen Intelligenz (Nachforschungen)-Wurf gegen SG 20. Bei Erfolg entkommt es, und der Zauber endet.</p><p>Wenn der Zauber endet, erscheint das Ziel in dem Raum wieder, den es verlassen hat, oder, falls dieser Raum besetzt ist, im nächsten unbesetzten Raum.</p>",
     "activities": {
-      "Banish to Maze": "Ins Labyrinth verbannen"
+      "Banish to Maze": "In den Irrgarten verbannen"
     },
     "effects": {
       "y7cYsJ0DCzXt4Tvy": "Verbannt"
@@ -3537,7 +3537,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplPowerWordS": {
-    "name": "Machtwort: Betäuben",
+    "name": "Wort der Macht: Betäubung",
     "description": "<p>Du überwältigst den Geist einer Kreatur, die du innerhalb der Reichweite sehen kannst. Wenn das Ziel 150 Trefferpunkte oder weniger hat, hat es den Zustand Betäubt. Andernfalls ist seine Bewegungsrate bis zum Beginn deines nächsten Zuges 0.</p><p>Das &amp;Reference[Stunned apply=false] Ziel macht am Ende jedes seiner Züge einen [[/save ability=con dc=@attributes.spell.dc]] Rettungswurf und beendet den Zustand bei Erfolg für sich selbst.</p>",
     "effects": {
       "o7XJceFSBTiIIPFo": "Betäubt",
@@ -3659,7 +3659,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplTimeStop00": {
-    "name": "Zeit anhalten",
+    "name": "Zeitstopp",
     "description": "<p>Du hältst den Zeitfluss für alle außer dir selbst kurz an. Für andere Kreaturen vergeht keine Zeit, während du 1W4 + 1 Züge hintereinander ausführst, in denen du Aktionen nutzen und dich normal bewegen kannst.</p><p>Dieser Zauber endet, wenn eine der Aktionen, die du in dieser Zeit ausführst, oder irgendein Effekt, den du dabei erzeugst, eine andere Kreatur als dich selbst oder ein Objekt betrifft, das von jemand anderem als dir getragen wird. Zusätzlich endet der Zauber, wenn du dich an einen Ort bewegst, der mehr als 0,3 m von dem Ort entfernt ist, an dem du ihn gewirkt hast.</p>"
   },
   "phbsplTruePolymo": {
@@ -3673,7 +3673,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "materials": "Diamanten im Wert von 25.000+ GM, die der Zauber verbraucht"
   },
   "phbsplWeird00000": {
-    "name": "Unheimlich",
+    "name": "Unheimliches Schicksal",
     "description": "<p>Du versuchst, illusorische Schrecken in den Köpfen anderer zu erzeugen. Jede Kreatur deiner Wahl in einer Kugel mit 9 m Radius, zentriert auf einen Punkt innerhalb der Reichweite, macht einen Weisheitsrettungswurf. Bei einem misslungenen Rettungswurf erleidet ein Ziel 10W10 psychischen Schaden und erhält den Zustand &amp;Reference[Frightened apply=false] für die Wirkungsdauer. Bei einem erfolgreichen Rettungswurf erleidet ein Ziel nur die Hälfte des Schadens.</p><p>Ein verängstigtes Ziel macht am Ende jedes seiner Züge einen Weisheitsrettungswurf. Bei einem misslungenen Rettungswurf erleidet es [[/damage 5d10 type=psychic]] Schaden. Bei einem erfolgreichen Rettungswurf endet der Zauber für dieses Ziel.</p>",
     "activities": {
       "End of Turn Save": "Rettungswurf am Zugende"
@@ -3714,7 +3714,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Den Geistern der Natur zuflüsternd, erschaffst du einen der folgenden Effekte innerhalb der Reichweite.</p><p><strong>Wettersensor.</strong> Du erschaffst einen winzigen, harmlosen sensorischen Effekt, der vorhersagt, wie das Wetter an deinem Standort für die nächsten 24 Stunden sein wird. Der Effekt kann sich als goldene Kugel für klaren Himmel, eine Wolke für Regen, fallende Schneeflocken für Schnee usw. manifestieren. Dieser Effekt hält 1 Runde an.</p><p><strong>Blüte.</strong> Du lässt augenblicklich eine Blume blühen, eine Samenkapsel sich öffnen oder eine Blattknospe aufbrechen.</p><p><strong>Sensorischer Effekt.</strong> Du erschaffst einen harmlosen sensorischen Effekt, wie fallende Blätter, spektrale tanzende Feen, eine sanfte Brise, das Geräusch eines Tieres oder den schwachen Geruch eines Stinktiers. Der Effekt muss in einen 5-Fuß-Würfel passen.</p><p><strong>Feuerspiel.</strong> Du entzündest oder löschst eine Kerze, eine Fackel oder ein Lagerfeuer.</p>"
   },
   "phbsplEldritchBl": {
-    "name": "Ältestenstrahl",
+    "name": "Schauriger Strahl",
     "description": "<p>Du schleuderst einen Strahl knisternder Energie. Führe einen Fernkampfzauberangriff gegen eine Kreatur oder ein Objekt innerhalb der Reichweite aus. Bei einem Treffer erleidet das Ziel 1W10 Energieschaden.</p><p><strong>Zaubertrick-Verbesserung.</strong> Der Zauber erzeugt zwei Strahlen auf Stufe 5, drei Strahlen auf Stufe 11 und vier Strahlen auf Stufe 17. Du kannst die Strahlen auf dasselbe Ziel oder auf verschiedene Ziele richten. Führe für jeden Strahl einen separaten Angriffswurf aus.</p><p>[[(floor((@details.level+1)/6)+1)]]{Gesamtstrahlen}</p>"
   },
   "phbsplElementali": {
@@ -3804,7 +3804,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplResistance": {
-    "name": "Resistenz",
+    "name": "Widerstand",
     "description": "<p>Du berührst eine willige Kreatur und wählst eine Schadensart: Säure, Wucht, Kälte, Feuer, Blitz, Nekrotisch, Stich, Gift, Gleißend, Hieb oder Schall. Wenn die Kreatur Schaden der gewählten Art erleidet, bevor der Zauber endet, reduziert die Kreatur den gesamten erlittenen Schaden um 1W4. Eine Kreatur kann von diesem Zauber nur einmal pro Zug profitieren.</p>",
     "effects": {
       "u2mf5JowVgwqCARq": "Säureschutz",
@@ -3841,18 +3841,18 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsplSorcerousB": {
-    "name": "Magischer Ausbruch",
+    "name": "Explosion der Zauberei",
     "description": "<p>Du schleuderst magische Energie auf eine Kreatur oder ein Objekt innerhalb der Reichweite. Führe einen Fernkampfangriffswurf gegen das Ziel aus. Bei einem Treffer erleidet das Ziel 1W8 Schaden einer von dir gewählten Art: Säure, Kälte, Feuer, Blitz, Gift, Psychisch oder Donner.</p><p>Wenn du bei einem W8 für diesen Zauber eine 8 würfelst, kannst du einen weiteren W8 würfeln und ihn zum Schaden hinzufügen. Wenn du diesen Zauber wirkst, entspricht die maximale Anzahl dieser W8, die du zum Schaden des Zaubers hinzufügen kannst, deinem Zauberfähigkeitsmodifikator.</p><p><strong>Zaubertrick-Verbesserung. </strong>Der Schaden erhöht sich um 1W8, wenn du die Stufen 5 (2W8), 11 (3W8) und 17 (4W8) erreichst.</p>"
   },
   "phbsplSparetheDy": {
-    "name": "Sterbende Retten",
+    "name": "Verschonung der Sterbenden",
     "description": "<p>Wähle eine Kreatur innerhalb der Reichweite, die 0 Trefferpunkte hat und nicht tot ist. Die Kreatur wird stabil.</p><p><strong>Zaubertrick-Verbesserung.</strong> Die Reichweite verdoppelt sich, wenn du die Stufen 5 (9 m), 11 (18 m) und 17 (36 m) erreichst.</p>",
     "effects": {
       "4werkFeLTqFwHRIa": "Stabilisiert"
     }
   },
   "phbsplStarryWisp": {
-    "name": "Sternenflimmern",
+    "name": "Sternenfunke",
     "description": "<p>Du schleuderst einen Lichtfleck auf eine Kreatur oder ein Objekt innerhalb der Reichweite. Führe einen Fernkampfzauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel 1W8 Strahlenschaden, und bis zum Ende deines nächsten Zuges strahlt es schwaches Licht in einem Radius von 3 m aus und kann nicht vom &amp;Reference[Invisible] Zustand profitieren.</p><p><strong>Zaubertrick-Verbesserung.</strong> Der Schaden erhöht sich um 1W8, wenn du die Stufen 5 (2W8), 11 (3W8) und 17 (4W8) erreichst.</p>",
     "effects": {
       "T9kBIL7LS3j0Upwz": "Erleuchtet"
@@ -4074,7 +4074,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbspWoodElf0000": {
     "name": "Elf, Waldelf",
-    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"wood-elves\">Waldelfen</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspWoodElf0000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"elf-traits\">Elfenmerkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>Größe:\n</strong>Mittelgroß (etwa 1,5–1,8 m groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Elf besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 18 m.</p><p><strong>Elfische Abstammung. </strong>Du bist Teil einer\nAbstammungslinie, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die\nCharakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der\nTabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne einen\nZauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du\neine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du\nauf dem entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist deine\nZauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die\nFähigkeit, wenn du die Abstammung auswählst).</p><table><caption>Waldelfen-Abstammungsmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe\n5</td></tr></thead><tbody><tr><td>Deine Bewegungsrate erhöht sich auf 10,5 m. Du\nkennst außerdem den\n@UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidenkunst}\nZaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLongstride]{Lange Schritte}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Spurlos vorübergehen}</td></tr></tbody></table><p><strong>Feen-Abstammung.</strong>\nDu hast Vorteil auf Rettungswürfe, die du machst, um den Zustand Bezaubert\nzu vermeiden oder zu beenden.</p><p><strong>Scharfe Sinne.</strong> Du hast Übung in der\nFertigkeit Einsicht, Wahrnehmung oder Überleben.</p><p><strong>Trance.</strong> Du\nmusst nicht schlafen, und Magie kann dich nicht einschläfern. Du kannst eine\nlange Rast in 4 Stunden beenden, wenn du diese Stunden in einer tranceartigen Meditation\nverbringst, während der du bei Bewusstsein bleibst.</p>"
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"wood-elves\">Waldelfen</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspWoodElf0000\ninline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"elf-traits\">Elfenmerkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider</p><p><strong>Größe:\n</strong>Mittelgroß (etwa 1,5–1,8 m groß)</p><p><strong>Bewegungsrate:</strong> 9 m</p><p>Als Elf besitzt du diese besonderen\nMerkmale.</p><p><strong>Dunkelsicht. </strong>Du besitzt Dunkelsicht mit einer\nReichweite von 18 m.</p><p><strong>Elfische Abstammung. </strong>Du bist Teil einer\nAbstammungslinie, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die\nCharakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der\nTabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne einen\nZauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du\neine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du\nauf dem entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist deine\nZauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die\nFähigkeit, wenn du die Abstammung auswählst).</p><table><caption>Waldelfen-Abstammungsmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe\n5</td></tr></thead><tbody><tr><td>Deine Bewegungsrate erhöht sich auf 10,5 m. Du\nkennst außerdem den\n@UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidenkunst}\nZaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLongstride]{Lange Schritte}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Spurloses Gehen}</td></tr></tbody></table><p><strong>Feen-Abstammung.</strong>\nDu hast Vorteil auf Rettungswürfe, die du machst, um den Zustand Bezaubert\nzu vermeiden oder zu beenden.</p><p><strong>Scharfe Sinne.</strong> Du hast Übung in der\nFertigkeit Einsicht, Wahrnehmung oder Überleben.</p><p><strong>Trance.</strong> Du\nmusst nicht schlafen, und Magie kann dich nicht einschläfern. Du kannst eine\nlange Rast in 4 Stunden beenden, wenn du diese Stunden in einer tranceartigen Meditation\nverbringst, während der du bei Bewusstsein bleibst.</p>"
   },
   "phbspForestGnome": {
     "name": "Gnom, Waldgnom",
@@ -4206,7 +4206,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsptWoodElfLin": {
     "name": "Elfische Abstammung, Waldelf",
-    "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du die Abstammung wählst).</p><table><caption>Merkmale der Waldelfen-Abstammung</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Deine Bewegungsrate erhöht sich auf 10,5 m. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidenkunst} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLongstride]{Lange Schritte}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Spurlos vorübergehen}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry-Hinweis</strong></p><p>Die relevanten Merkmale und Zauber werden dir automatisch gewährt, wenn du die Spezies auswählst und Stufen aufsteigst.</p></section>"
+    "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du die Abstammung wählst).</p><table><caption>Merkmale der Waldelfen-Abstammung</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Deine Bewegungsrate erhöht sich auf 10,5 m. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidenkunst} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLongstride]{Lange Schritte}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Spurloses Gehen}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry-Hinweis</strong></p><p>Die relevanten Merkmale und Zauber werden dir automatisch gewährt, wenn du die Spezies auswählst und Stufen aufsteigst.</p></section>"
   },
   "phbsptFeyAncestr": {
     "name": "Feen-Abstammung",
@@ -4791,7 +4791,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbdrdLandSpells": {
     "name": "Zauber des Zirkels des Landes",
-    "description": "<p>Immer wenn du eine Lange Rast beendest, wähle eine Art von Land: arid,\npolar, gemäßigt oder tropisch. Konsultiere die untenstehende Tabelle, die dem\ngewählten Typ entspricht; du hast die für deine Druidenstufe und niedrigere\nStufen aufgeführten Zauber vorbereitet.</p><table><caption>Arides\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBlur000000]{Verschwimmen},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Brennende Hände},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Feuerpfeil}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBlight0000]{Dürre}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofSton]{Steinwand}</td></tr></tbody></table><table><caption>Polares\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFogCloud00]{Nebelwolke}, @UUID[Compendium.dnd5e.spells24.Item.phbsplHoldPerson]{Person festhalten}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofFrost]{Kältestrahl}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSleetStorm]{Schneesturm}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00]{Eissturm}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]{Kältekegel}</td></tr></tbody></table><table><caption>Gemäßigtes\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Nebelschritt}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShockingGr]{Schockgriff},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000]{Schlaf}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitz}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFreedomofM]{Bewegungsfreiheit}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplTreeStride]{Baumschritt}</td></tr></tbody></table><table><caption>Tropisches\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplAcidSplash]{Säurespritzer}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofSickn]{Strahl der Übelkeit},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWeb0000000]{Spinnennetz}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Verwandlung}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplInsectPlag]{Insektenplage}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-0B8V69GLRm5swkth\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieses Merkmal automatisiert nicht den\nWechsel zwischen vorbereiteten Zauberoptionen.</p></section>"
+    "description": "<p>Immer wenn du eine Lange Rast beendest, wähle eine Art von Land: arid,\npolar, gemäßigt oder tropisch. Konsultiere die untenstehende Tabelle, die dem\ngewählten Typ entspricht; du hast die für deine Druidenstufe und niedrigere\nStufen aufgeführten Zauber vorbereitet.</p><table><caption>Arides\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBlur000000]{Verschwimmen},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Brennende Hände},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Feuerpfeil}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBlight0000]{Dürre}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofSton]{Steinwand}</td></tr></tbody></table><table><caption>Polares\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFogCloud00]{Nebelwolke}, @UUID[Compendium.dnd5e.spells24.Item.phbsplHoldPerson]{Person festhalten}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofFrost]{Kältestrahl}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSleetStorm]{Schneesturm}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00]{Eissturm}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]{Kältekegel}</td></tr></tbody></table><table><caption>Gemäßigtes\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Nebelschritt}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShockingGr]{Schockgriff},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000]{Schlaf}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitz}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFreedomofM]{Bewegungsfreiheit}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplTreeStride]{Baumwandeln}</td></tr></tbody></table><table><caption>Tropisches\nLand</caption><thead><tr><td>Druidenstufe</td><td>Zirkelzauber</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplAcidSplash]{Säurespritzer}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofSickn]{Strahl der Übelkeit},\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWeb0000000]{Spinnennetz}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Verwandlung}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplInsectPlag]{Insektenplage}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-0B8V69GLRm5swkth\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieses Merkmal automatisiert nicht den\nWechsel zwischen vorbereiteten Zauberoptionen.</p></section>"
   },
   "phbdrdLandsAid00": {
     "name": "Hilfe des Landes",
@@ -5207,7 +5207,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbfstDruidicWar": {
     "name": "Druidischer Krieger",
-    "description": "<p>Du lernst zwei\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druiden-Zaubertricks} deiner Wahl.\n@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidance00]{Göttliche Führung} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplStarryWisp]{Sternenflimmern} werden\nempfohlen. Die gewählten Zaubertricks zählen für dich als Waldläuferzauber, und\nWeisheit ist dein Zauberwirkungsattribut für sie. Immer wenn du eine Waldläuferstufe\naufsteigst, kannst du einen dieser Zaubertricks durch einen anderen Druidenzaubertrick\nersetzen.</p>"
+    "description": "<p>Du lernst zwei\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druiden-Zaubertricks} deiner Wahl.\n@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidance00]{Göttliche Führung} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplStarryWisp]{Sternenfunke} werden\nempfohlen. Die gewählten Zaubertricks zählen für dich als Waldläuferzauber, und\nWeisheit ist dein Zauberwirkungsattribut für sie. Immer wenn du eine Waldläuferstufe\naufsteigst, kannst du einen dieser Zaubertricks durch einen anderen Druidenzaubertrick\nersetzen.</p>"
   },
   "phbrgrEpicBoon00": {
     "name": "Epische Gabe",
@@ -5479,7 +5479,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbscrSpellcasti": {
     "name": "Zauberwirken",
-    "description": "<p>Aus deiner angeborenen Magie schöpfend, kannst du Zauber wirken. Siehe die @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.b2QVn25z2N1ykWpf]{Regeln zum Zauberwirken}. Die folgenden Informationen beschreiben, wie du diese Regeln mit Zaubererzaubern anwendest, die später in der Beschreibung der Klasse in der @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.VfZ5mH2ZuyFq82Ga]{Zauberer-Zauberliste} erscheinen.</p><p><strong>Zaubertricks.</strong> Du kennst vier Zauberertricks deiner Wahl.@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Licht},@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Taschenspielerei},@UUID[Compendium.dnd5e.spells24.Item.phbsplShockingGr]{Schockgriff},und @UUID[Compendium.dnd5e.spells24.Item.phbsplSorcerousB]{Magischer Ausbruch} werden empfohlen. Immer wenn du eine Zaubererstufe aufsteigst, kannst du einen deiner Zaubertricks aus dieser Eigenschaft durch einen anderen Zauberertrick deiner Wahl ersetzen.</p><p>Wenn du die Zaubererstufe 4 und 10 erreichst, lernst du einen weiteren Zauberertrick deiner Wahl, wie in der Spalte 'Zaubertricks' der Tabelle 'Zauberer-Eigenschaften' gezeigt.</p><p><strong>Zauberplätze.</strong> Die @UUID[Compendium.dnd5e.content24.JournalEntry.phbSorcerer00000.JournalEntryPage.fsqRUA4acVXH4I3O#class-features]{Zauberer-Merkmalstabelle} zeigt, wie viele Zauberplätze du hast, um deine Zauber des 1. Grades und höher zu wirken. Du erhältst alle verbrauchten Plätze zurück, wenn du eine Lange Rast beendest.</p><p><strong>Vorbereitete Zauber des 1. Grades und höher.</strong> Du bereitest die Liste der Zauber des 1. Grades und höher vor, die dir mit dieser Eigenschaft zum Wirken zur Verfügung stehen. Wähle zunächst zwei Zaubererzauber des 1. Grades. <em>Brennende Hände</em> und <em>Magie entdecken</em> werden empfohlen.</p><p>Die Anzahl der Zauber auf deiner Liste erhöht sich, wenn du Zauberer-Stufen aufsteigst, wie in der Spalte 'Vorbereitete Zauber' der Tabelle 'Zauberer-Eigenschaften' gezeigt. Immer wenn diese Anzahl steigt, wähle zusätzliche Zaubererzauber, bis die Anzahl der Zauber auf deiner Liste mit der Anzahl in der Tabelle 'Zauberer-Eigenschaften' übereinstimmt. Die gewählten Zauber müssen von einem Grad sein, für den du Zauberplätze hast. Wenn du zum Beispiel ein Zauberer der Stufe 3 bist, kann deine Liste der vorbereiteten Zauber sechs Zaubererzauber des 1. oder 2. Grades in beliebiger Kombination enthalten.</p><p>Wenn eine andere Zauberer-Eigenschaft dir Zauber gibt, die du immer vorbereitet hast, zählen diese Zauber nicht gegen die Anzahl der Zauber, die du mit dieser Eigenschaft vorbereiten kannst, aber diese Zauber zählen ansonsten für dich als Zaubererzauber.</p><p><strong>Deine vorbereiteten Zauber ändern.</strong> Immer wenn du eine Zaubererstufe aufsteigst, kannst du einen Zauber auf deiner Liste durch einen anderen Zaubererzauber ersetzen, für den du Zauberplätze hast.</p><p><strong>Zauberfähigkeit.</strong> Charisma ist deine Zauberfähigkeit für deine Zaubererzauber.</p><p><strong>Zauberfokus.</strong> Du kannst einen Arkanen Fokus als Zauberfokus für deine Zaubererzauber verwenden.</p>"
+    "description": "<p>Aus deiner angeborenen Magie schöpfend, kannst du Zauber wirken. Siehe die @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.b2QVn25z2N1ykWpf]{Regeln zum Zauberwirken}. Die folgenden Informationen beschreiben, wie du diese Regeln mit Zaubererzaubern anwendest, die später in der Beschreibung der Klasse in der @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.VfZ5mH2ZuyFq82Ga]{Zauberer-Zauberliste} erscheinen.</p><p><strong>Zaubertricks.</strong> Du kennst vier Zauberertricks deiner Wahl.@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Licht},@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Taschenspielerei},@UUID[Compendium.dnd5e.spells24.Item.phbsplShockingGr]{Schockgriff},und @UUID[Compendium.dnd5e.spells24.Item.phbsplSorcerousB]{Explosion der Zauberei} werden empfohlen. Immer wenn du eine Zaubererstufe aufsteigst, kannst du einen deiner Zaubertricks aus dieser Eigenschaft durch einen anderen Zauberertrick deiner Wahl ersetzen.</p><p>Wenn du die Zaubererstufe 4 und 10 erreichst, lernst du einen weiteren Zauberertrick deiner Wahl, wie in der Spalte 'Zaubertricks' der Tabelle 'Zauberer-Eigenschaften' gezeigt.</p><p><strong>Zauberplätze.</strong> Die @UUID[Compendium.dnd5e.content24.JournalEntry.phbSorcerer00000.JournalEntryPage.fsqRUA4acVXH4I3O#class-features]{Zauberer-Merkmalstabelle} zeigt, wie viele Zauberplätze du hast, um deine Zauber des 1. Grades und höher zu wirken. Du erhältst alle verbrauchten Plätze zurück, wenn du eine Lange Rast beendest.</p><p><strong>Vorbereitete Zauber des 1. Grades und höher.</strong> Du bereitest die Liste der Zauber des 1. Grades und höher vor, die dir mit dieser Eigenschaft zum Wirken zur Verfügung stehen. Wähle zunächst zwei Zaubererzauber des 1. Grades. <em>Brennende Hände</em> und <em>Magie entdecken</em> werden empfohlen.</p><p>Die Anzahl der Zauber auf deiner Liste erhöht sich, wenn du Zauberer-Stufen aufsteigst, wie in der Spalte 'Vorbereitete Zauber' der Tabelle 'Zauberer-Eigenschaften' gezeigt. Immer wenn diese Anzahl steigt, wähle zusätzliche Zaubererzauber, bis die Anzahl der Zauber auf deiner Liste mit der Anzahl in der Tabelle 'Zauberer-Eigenschaften' übereinstimmt. Die gewählten Zauber müssen von einem Grad sein, für den du Zauberplätze hast. Wenn du zum Beispiel ein Zauberer der Stufe 3 bist, kann deine Liste der vorbereiteten Zauber sechs Zaubererzauber des 1. oder 2. Grades in beliebiger Kombination enthalten.</p><p>Wenn eine andere Zauberer-Eigenschaft dir Zauber gibt, die du immer vorbereitet hast, zählen diese Zauber nicht gegen die Anzahl der Zauber, die du mit dieser Eigenschaft vorbereiten kannst, aber diese Zauber zählen ansonsten für dich als Zaubererzauber.</p><p><strong>Deine vorbereiteten Zauber ändern.</strong> Immer wenn du eine Zaubererstufe aufsteigst, kannst du einen Zauber auf deiner Liste durch einen anderen Zaubererzauber ersetzen, für den du Zauberplätze hast.</p><p><strong>Zauberfähigkeit.</strong> Charisma ist deine Zauberfähigkeit für deine Zaubererzauber.</p><p><strong>Zauberfokus.</strong> Du kannst einen Arkanen Fokus als Zauberfokus für deine Zaubererzauber verwenden.</p>"
   },
   "phbmmoCarefulSpe": {
     "name": "Vorsichtiger Zauber",
@@ -5587,7 +5587,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbwlkContactPat": {
     "name": "Patron kontaktieren",
-    "description": "<p>In der Vergangenheit hast du deinen Patron normalerweise über Mittelsmänner kontaktiert.\nJetzt kannst du direkt kommunizieren; du hast den Zauber\n@UUID[Compendium.dnd5e.spells24.Item.phbsplContactOth]{Kontakt zu anderer Ebene} immer vorbereitet. Mit diesem Merkmal kannst du den Zauber wirken, ohne\neinen Zauberplatz zu verbrauchen, um deinen Patron zu kontaktieren, und du\nbestehst den Rettungswurf des Zaubers automatisch.</p><p>Sobald du den Zauber mit\ndiesem Merkmal gewirkt hast, kannst du dies erst wieder tun, nachdem du eine Lange\nRast beendet hast.</p><section class=\"secret\"\nid=\"secret-ZobRIiK6iB3SlCis\"><p><strong>Foundry-Hinweis</strong></p><p>Der\nZauber wird dir auf dieser Stufe automatisch mit einer kostenlosen\nAnwendung gewährt.</p></section>"
+    "description": "<p>In der Vergangenheit hast du deinen Patron normalerweise über Mittelsmänner kontaktiert.\nJetzt kannst du direkt kommunizieren; du hast den Zauber\n@UUID[Compendium.dnd5e.spells24.Item.phbsplContactOth]{Kontakt zu anderen Ebenen} immer vorbereitet. Mit diesem Merkmal kannst du den Zauber wirken, ohne\neinen Zauberplatz zu verbrauchen, um deinen Patron zu kontaktieren, und du\nbestehst den Rettungswurf des Zaubers automatisch.</p><p>Sobald du den Zauber mit\ndiesem Merkmal gewirkt hast, kannst du dies erst wieder tun, nachdem du eine Lange\nRast beendet hast.</p><section class=\"secret\"\nid=\"secret-ZobRIiK6iB3SlCis\"><p><strong>Foundry-Hinweis</strong></p><p>Der\nZauber wird dir auf dieser Stufe automatisch mit einer kostenlosen\nAnwendung gewährt.</p></section>"
   },
   "phbwlkEldritchIn": {
     "name": "Schauerliche Anrufungen",
@@ -5617,7 +5617,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbwlkPactMagic0": {
     "name": "Paktmagie",
-    "description": "<p>Durch okkulte Zeremonien hast du einen Pakt mit einer mysteriösen\nEntität geschlossen, um magische Kräfte zu erlangen. Die Entität ist eine Stimme in den Schatten – ihre\nIdentität ist unklar –, aber ihre Gabe an dich ist konkret: die Fähigkeit, Zauber zu wirken. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.mh3akteBDiLegqFK]{Regeln zum Zauberwirken}. Die folgenden Informationen beschreiben, wie du diese Regeln\nmit Hexenmeisterzaubern anwendest, die in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.sSzagq8GvYXpfmfs]{Hexenmeister-Zauberliste} erscheinen.</p><p><strong>Cantrips.</strong> Du kennst zwei Hexenmeister-\nCantrips deiner Wahl.\n@UUID[Compendium.dnd5e.spells24.Item.phbsplEldritchBl]{Ältestenstrahl} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Taschenspielerei}\nwerden empfohlen. Jedes Mal, wenn du eine Hexenmeisterstufe aufsteigst, kannst du eines deiner\nCantrips aus diesem Merkmal durch ein anderes Hexenmeister-Cantrip deiner\nWahl ersetzen.</p><p>Wenn du die Hexenmeisterstufen 4 und 10 erreichst, lernst du ein weiteres\nHexenmeister-Cantrip deiner Wahl, wie in der Spalte „Cantrips“ der\nTabelle „Hexenmeister-Merkmale“ gezeigt.</p><p><strong>Aktuelle maximale bekannte Cantrips:</strong>\n[[lookup @scale.warlock.cantrips-known]]</p><p><strong>Zauberplätze.</strong> Die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWarlock000000.JournalEntryPage.znue6EaGDDXgeQb0#class-features]{Hexenmeister-Merkmalstabelle} zeigt, wie viele Zauberplätze du hast, um deine Hexenmeisterzauber\nder Stufen 1–5 zu wirken. Die Tabelle zeigt auch die Stufe dieser Plätze, die alle\ndieselbe Stufe haben. Du erhältst alle verbrauchten Paktmagie-Zauberplätze\nzurück, wenn du eine Kurze oder Lange Rast beendest.</p><p>Wenn du beispielsweise ein Hexenmeister\nder 5. Stufe bist, hast du zwei Zauberplätze der 3. Stufe. Um den Zauber der 1. Stufe\nHexenblitz zu wirken, musst du einen dieser Plätze verbrauchen, und du wirkst ihn als einen\nZauber der 3. Stufe.</p><p><strong>Vorbereitete Zauber der Stufe 1+.</strong> Du\nbereitest die Liste der Zauber der Stufe 1+ vor, die dir zur Verfügung stehen, um sie\nmit diesem Merkmal zu wirken. Wähle zunächst zwei Hexenmeisterzauber der 1. Stufe.\n@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]{Person bezaubern} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplHex0000000]{Verwünschung} werden\nempfohlen.</p><p><strong>Aktuelle maximale vorbereitete Zauber:</strong> [[lookup @scale.warlock.max-prepared]]</p><p>Die Anzahl der Zauber auf deiner Liste\nsteigt, wenn du Hexenmeisterstufen aufsteigst, wie in der Spalte „Vorbereitete Zauber“\nder Tabelle „Hexenmeister-Merkmale“ gezeigt. Jedes Mal, wenn diese Anzahl steigt,\nwähle zusätzliche Hexenmeisterzauber, bis die Anzahl der Zauber auf deiner Liste\nder Zahl in der Tabelle entspricht. Die gewählten Zauber dürfen keine höhere Stufe haben,\nals in der Spalte „Zauberplatzstufe“ der Tabelle für deine Stufe angegeben ist.\nWenn du beispielsweise Stufe 6 erreichst, lernst du einen neuen Hexenmeisterzauber, der\nvon Stufe 1–3 sein kann.</p><p>Wenn ein anderes Hexenmeister-Merkmal dir Zauber\ndie du immer vorbereitet hast, zählen diese Zauber nicht gegen die Anzahl\nder Zauber, die du mit diesem Merkmal vorbereiten kannst, aber diese Zauber zählen ansonsten\nals Hexenmeisterzauber für dich.</p><p><strong>Vorbereitete Zauber ändern.</strong> Jedes Mal, wenn du eine Hexenmeisterstufe aufsteigst, kannst du einen\nZauber auf deiner Liste durch einen anderen Hexenmeisterzauber einer zulässigen\nStufe ersetzen.</p><p><strong>Zauberfähigkeit.</strong> Charisma ist die\nZauberfähigkeit für deine Hexenmeisterzauber.</p><p><strong>Zauberfokus.</strong> Du kannst einen Arkanen Fokus als Zauberfokus für\ndeine Hexenmeisterzauber verwenden.</p>"
+    "description": "<p>Durch okkulte Zeremonien hast du einen Pakt mit einer mysteriösen\nEntität geschlossen, um magische Kräfte zu erlangen. Die Entität ist eine Stimme in den Schatten – ihre\nIdentität ist unklar –, aber ihre Gabe an dich ist konkret: die Fähigkeit, Zauber zu wirken. Siehe die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.mh3akteBDiLegqFK]{Regeln zum Zauberwirken}. Die folgenden Informationen beschreiben, wie du diese Regeln\nmit Hexenmeisterzaubern anwendest, die in der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.sSzagq8GvYXpfmfs]{Hexenmeister-Zauberliste} erscheinen.</p><p><strong>Cantrips.</strong> Du kennst zwei Hexenmeister-\nCantrips deiner Wahl.\n@UUID[Compendium.dnd5e.spells24.Item.phbsplEldritchBl]{Schauriger Strahl} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Taschenspielerei}\nwerden empfohlen. Jedes Mal, wenn du eine Hexenmeisterstufe aufsteigst, kannst du eines deiner\nCantrips aus diesem Merkmal durch ein anderes Hexenmeister-Cantrip deiner\nWahl ersetzen.</p><p>Wenn du die Hexenmeisterstufen 4 und 10 erreichst, lernst du ein weiteres\nHexenmeister-Cantrip deiner Wahl, wie in der Spalte „Cantrips“ der\nTabelle „Hexenmeister-Merkmale“ gezeigt.</p><p><strong>Aktuelle maximale bekannte Cantrips:</strong>\n[[lookup @scale.warlock.cantrips-known]]</p><p><strong>Zauberplätze.</strong> Die\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbWarlock000000.JournalEntryPage.znue6EaGDDXgeQb0#class-features]{Hexenmeister-Merkmalstabelle} zeigt, wie viele Zauberplätze du hast, um deine Hexenmeisterzauber\nder Stufen 1–5 zu wirken. Die Tabelle zeigt auch die Stufe dieser Plätze, die alle\ndieselbe Stufe haben. Du erhältst alle verbrauchten Paktmagie-Zauberplätze\nzurück, wenn du eine Kurze oder Lange Rast beendest.</p><p>Wenn du beispielsweise ein Hexenmeister\nder 5. Stufe bist, hast du zwei Zauberplätze der 3. Stufe. Um den Zauber der 1. Stufe\nHexenblitz zu wirken, musst du einen dieser Plätze verbrauchen, und du wirkst ihn als einen\nZauber der 3. Stufe.</p><p><strong>Vorbereitete Zauber der Stufe 1+.</strong> Du\nbereitest die Liste der Zauber der Stufe 1+ vor, die dir zur Verfügung stehen, um sie\nmit diesem Merkmal zu wirken. Wähle zunächst zwei Hexenmeisterzauber der 1. Stufe.\n@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]{Person bezaubern} und\n@UUID[Compendium.dnd5e.spells24.Item.phbsplHex0000000]{Verwünschung} werden\nempfohlen.</p><p><strong>Aktuelle maximale vorbereitete Zauber:</strong> [[lookup @scale.warlock.max-prepared]]</p><p>Die Anzahl der Zauber auf deiner Liste\nsteigt, wenn du Hexenmeisterstufen aufsteigst, wie in der Spalte „Vorbereitete Zauber“\nder Tabelle „Hexenmeister-Merkmale“ gezeigt. Jedes Mal, wenn diese Anzahl steigt,\nwähle zusätzliche Hexenmeisterzauber, bis die Anzahl der Zauber auf deiner Liste\nder Zahl in der Tabelle entspricht. Die gewählten Zauber dürfen keine höhere Stufe haben,\nals in der Spalte „Zauberplatzstufe“ der Tabelle für deine Stufe angegeben ist.\nWenn du beispielsweise Stufe 6 erreichst, lernst du einen neuen Hexenmeisterzauber, der\nvon Stufe 1–3 sein kann.</p><p>Wenn ein anderes Hexenmeister-Merkmal dir Zauber\ndie du immer vorbereitet hast, zählen diese Zauber nicht gegen die Anzahl\nder Zauber, die du mit diesem Merkmal vorbereiten kannst, aber diese Zauber zählen ansonsten\nals Hexenmeisterzauber für dich.</p><p><strong>Vorbereitete Zauber ändern.</strong> Jedes Mal, wenn du eine Hexenmeisterstufe aufsteigst, kannst du einen\nZauber auf deiner Liste durch einen anderen Hexenmeisterzauber einer zulässigen\nStufe ersetzen.</p><p><strong>Zauberfähigkeit.</strong> Charisma ist die\nZauberfähigkeit für deine Hexenmeisterzauber.</p><p><strong>Zauberfokus.</strong> Du kannst einen Arkanen Fokus als Zauberfokus für\ndeine Hexenmeisterzauber verwenden.</p>"
   },
   "phbinvAgonizingB": {
     "name": "Qualvoller Strahl",
@@ -7803,7 +7803,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsumPhantomSte": {
-    "name": "Phantomross",
+    "name": "Geisterross",
     "description": "<p><em>Nahkampfangriffswurf:</em> +5, Reichweite 1,5 m. <em>Treffer: </em>7 (1d8 +\\_3) Wuchtschaden.</p>"
   },
   "phbsplSecretChes": {
@@ -10693,7 +10693,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "mmTreeStride0000": {
-    "name": "Baumschritt",
+    "name": "Baumwandeln",
     "description": "<p>Wenn innerhalb von [[lookup @range.value activity=8av8Lh1jNLCrOJny]] Fuß eines\n[[lookup @range.special activity=8av8Lh1jNLCrOJny]], teleportiert sich der/die/das [[lookup @name lowercase]]{monster} auf ein unbesetztes Feld innerhalb von [[lookup @range.value activity=8av8Lh1jNLCrOJny]] Fuß eines zweiten [[lookup @target.affects.special activity=8av8Lh1jNLCrOJny]], der sich innerhalb von 18 m\ndes vorherigen Baumes befindet.</p>",
     "activities": {
       "Expend Use": "Einsatz verbrauchen"
@@ -13700,7 +13700,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "dmgCubeOfForce00": {
     "name": "Würfel der Macht",
-    "description": "<div><p><em>Wundersamer Gegenstand, Selten (Benötigt Einstimmung)</em></p></div><p>Dieser Würfel ist etwa einen Zoll groß. Jede Seite hat eine deutliche Markierung. Du kannst eine dieser Seiten drücken, die dafür erforderliche Anzahl an Ladungen aufwenden und dadurch den damit verbundenen Zauber wirken (SG 17 für den Rettungswurf), wie in der Tabelle „Seiten des Würfels der Macht“ gezeigt.</p><p>Der Würfel beginnt mit 10 Ladungen und erhält täglich bei Sonnenaufgang 1W6 <span\nclass=\"no-break\">verbrauchte</span> Ladungen zurück.</p><table><caption>Seiten des Würfels der Macht</caption><thead><tr><td>Zauber</td><td>Ladungskosten</td></tr></thead><tbody><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMageArmor0]{Magierrüstung}</em></td><td>1</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Schild}</em></td><td>1</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLeomundsTi]{Leomunds Winzige Hütte}</em></td><td>3</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbPrivateSanctu]{Privates Heiligtum}</em></td><td>4</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplOtilukesRe]{Otilukes Widerstandsfähige Sphäre}</em></td><td>4</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Energiewand}</em></td><td>5</td></tr></tbody></table>"
+    "description": "<div><p><em>Wundersamer Gegenstand, Selten (Benötigt Einstimmung)</em></p></div><p>Dieser Würfel ist etwa einen Zoll groß. Jede Seite hat eine deutliche Markierung. Du kannst eine dieser Seiten drücken, die dafür erforderliche Anzahl an Ladungen aufwenden und dadurch den damit verbundenen Zauber wirken (SG 17 für den Rettungswurf), wie in der Tabelle „Seiten des Würfels der Macht“ gezeigt.</p><p>Der Würfel beginnt mit 10 Ladungen und erhält täglich bei Sonnenaufgang 1W6 <span\nclass=\"no-break\">verbrauchte</span> Ladungen zurück.</p><table><caption>Seiten des Würfels der Macht</caption><thead><tr><td>Zauber</td><td>Ladungskosten</td></tr></thead><tbody><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMageArmor0]{Magierrüstung}</em></td><td>1</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Schild}</em></td><td>1</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLeomundsTi]{Winzige Hütte}</em></td><td>3</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbPrivateSanctu]{Privates Heiligtum}</em></td><td>4</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplOtilukesRe]{Unverwüstliche Sphäre}</em></td><td>4</td></tr><tr><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Energiewand}</em></td><td>5</td></tr></tbody></table>"
   },
   "dmgCubicGate0000": {
     "name": "Kubisches Tor",
