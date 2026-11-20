@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed - Umlaute und ß in Überschriften mit Modesto
+
+Journalüberschriften und alle anderen Stellen in der Schrift Modesto Condensed zeigten statt
+ß eine Tilde, zum Beispiel „Zur Rei~enden Leine“. Modesto hat keine Umlaute und kein ß. Die
+Ersatzschrift Girassol hing bisher nur an einer Liste bekannter Bögen. Jetzt meldet das Modul
+Girassol bei Foundry als Teil von Modesto an, nur für Ä, Ö, Ü, ä, ö, ü, ß und Buchstaben mit
+Akzent. Damit gilt der Ersatz überall, wo Modesto steht.
+
 ## [14.2611.1] - 2026-11-16
 
 ### Fixed - Alle Zaubernamen der 2024er-Inhalte heißen wie im SRD 5.2.1

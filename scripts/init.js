@@ -917,5 +917,24 @@ Hooks.once("i18nInit", () => {
   console.log(`[${MODULE_ID}] dnd5e ${game.system.version}: ${gesetzt} Texte auf die 5.x-Fassung gesetzt.`);
 });
 
+/*
+ * Modesto Condensed hat keine Umlaute und kein ß, aus „Reißenden“ wird dort „Rei~enden“.
+ * Die Liste in styles/modesto-font-fix.css hilft nur auf den Bögen, die sie kennt.
+ * Foundry lädt Modesto aber per FontFace aus CONFIG.fontDefinitions, und diese Schnitte
+ * gehen jeder CSS-Deklaration vor. Deshalb hängt Girassol hier als weiterer Schnitt an
+ * Modesto, nur für Ä Ö Ü ä ö ü ß ẞ und die übrigen Buchstaben mit Akzent. Foundry lädt
+ * die Schnitte in Listenreihenfolge, der zuletzt geladene gewinnt für seine Zeichen. So gilt
+ * es überall, wo Modesto steht, auch in Journalüberschriften und abgelösten Fenstern.
+ */
+Hooks.once("init", () => {
+  const modesto = CONFIG.fontDefinitions?.["Modesto Condensed"];
+  if (!Array.isArray(modesto?.fonts)) return;
+  const url = `modules/${MODULE_ID}/assets/Girassol-Regular.woff2`;
+  if (modesto.fonts.some(f => f.urls?.includes(url))) return;
+  for (const weight of ["400", "700"]) {
+    modesto.fonts.push({ urls: [url], weight, unicodeRange: "U+00C0-00FF, U+1E9E" });
+  }
+});
+
 Hooks.once("init", () => willkommenEinrichten());
 Hooks.once("ready", () => willkommenZeigen());
