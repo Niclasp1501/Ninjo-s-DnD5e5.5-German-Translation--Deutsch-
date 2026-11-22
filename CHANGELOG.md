@@ -3,7 +3,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [14.2611.2] - 2026-11-23
+
+### Fixed - Reichweiten, die mit der Stufe wachsen
+
+Mit metrischen Längeneinheiten rechnete das Modul in einer Formel jede einzelne Zahl in Meter um.
+Aus der Reichweite von *Verschonung der Sterbenden* („15 Fuß, verdoppelt sich mit der Stufe“)
+wurde so eine Reichweite, die ab Stufe 5 schrumpfte: 2,7 m statt 9 m. Jetzt wird die ganze Formel
+umgerechnet, und die Reichweite wächst wieder auf 9, 18 und 36 m.
+
+### Fixed - „jede Kreatur“ statt „jedes creature“ in Monstertexten
+
+65 Merkmale der Monster von 2024 setzten den englischen Schlüssel ein, etwa beim Odem jedes Drachen:
+„jedes creature in einer …“. Dort steht jetzt das deutsche Wort für Kreatur, Gegner, Verbündeten
+oder Objekt, mit passendem Artikel.
 
 ### Fixed - Umlaute und ß in Überschriften mit Modesto
 
@@ -18,6 +31,12 @@ Akzent. Damit gilt der Ersatz überall, wo Modesto steht.
 Bei deutscher Oberfläche übersetzte das Modul Überschriften wie „Spells“, „Equipment“ oder
 „Monster“ in jedem Fenster, auch in denen anderer Module. Das gilt jetzt nur noch im
 Inhaltsverzeichnis, in Journalen, in Fenstern von dnd5e und im Kompendium.
+
+### Fixed - Kleinigkeiten
+
+- Die Kompendien von 2014 heißen **Hintergründe**, **Völker** und **Handelsgüter** statt
+  Hintergruende, Voelker und Handelsgueter.
+- **Passive Wahrnehmung** im Monsterbogen schreibt sich mit einem m.
 
 ## [14.2611.1] - 2026-11-16
 
