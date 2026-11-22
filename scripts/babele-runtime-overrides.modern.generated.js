@@ -7958,7 +7958,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmBrassDragonWyr": {
     "name": "Messingdrachenwelpe",
-    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], jedes [[lookup @target.affects.type activity=bDqgmtLG3zcVuqdi]] in einer [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]] Fuß langen, [[lookup @target.template.width activity=bDqgmtLG3zcVuqdi]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], jede Kreatur in einer [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]] Fuß langen, [[lookup @target.template.width activity=bDqgmtLG3zcVuqdi]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmBronzeDragonWy": {
     "name": "Bronzedrachenwelpe",
@@ -7966,7 +7966,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmCopperDragonWy": {
     "name": "Kupferdrachenwelpe",
-    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=qNI6W02jCUQbPpYE]], jedes [[lookup @target.affects.type activity=qNI6W02jCUQbPpYE]] in einer [[lookup @target.template.size activity=qNI6W02jCUQbPpYE]] Fuß langen, [[lookup @target.template.width activity=qNI6W02jCUQbPpYE]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> [[lookup @damage.onSave capitalize activity=qNI6W02jCUQbPpYE]] Schaden.</p>"
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=qNI6W02jCUQbPpYE]], jede Kreatur in einer [[lookup @target.template.size activity=qNI6W02jCUQbPpYE]] Fuß langen, [[lookup @target.template.width activity=qNI6W02jCUQbPpYE]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> [[lookup @damage.onSave capitalize activity=qNI6W02jCUQbPpYE]] Schaden.</p>"
   },
   "mmDragonTurtle00": {
     "name": "Drachenschildkröte",
@@ -8060,7 +8060,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmAzerSentinel00": {
     "name": "Azer-Wächter",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden, es sei denn, das [[lookup @name lowercase]]{monster} hat den Zustand Kampfunfähig.</p>",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede Kreatur nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden, es sei denn, das [[lookup @name lowercase]]{monster} hat den Zustand Kampfunfähig.</p>",
     "scalarStrings": {
       "system.details.habitat.value.1.subtype": "Elementarebene des Feuers"
     }
@@ -8074,7 +8074,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDustMephit0000": {
     "name": "Staubmephit",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede Kreatur in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "materials": "eine Prise Sand oder Rosenblüten",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elemental planes"
@@ -8096,7 +8096,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFireElemental0": {
     "name": "Feuer-Elementar",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} nimmt jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden. <span style=\"font-family:'Roboto\n    Condensed', sans-serif\">Kreaturen und brennbare Objekte in der Ausströmung fangen Feuer.</span></p>",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} nimmt jede Kreatur nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden. <span style=\"font-family:'Roboto\n    Condensed', sans-serif\">Kreaturen und brennbare Objekte in der Ausströmung fangen Feuer.</span></p>",
     "scalarStrings": {
       "system.details.habitat.value.1.subtype": "Elementarebene des Feuers"
     }
@@ -8107,7 +8107,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmIceMephit00000": {
     "name": "Eismephit",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Konstitutionsrettungswurf:\n    </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jedes\n    [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer\n    [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß\n    Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]]\n    Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Konstitutionsrettungswurf:\n    </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede\n    Kreatur in einer\n    [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß\n    Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]]\n    Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elemental planes"
     }
@@ -8121,14 +8121,14 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMagmaMephit000": {
     "name": "Magmamephit",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß-Ausströmung, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede Kreatur in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß-Ausströmung, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elemental planes"
     }
   },
   "mmMagmin00000000": {
     "name": "Magmin",
-    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jedes [[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß-Ausströmung, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p>Der [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]].</p><p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede Kreatur in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]]-Fuß-Ausströmung, die vom\n    [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elementarebene des Feuers"
     }
@@ -8139,7 +8139,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmSalamander0000": {
     "name": "Salamander",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>",
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede Kreatur nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>",
     "scalarStrings": {
       "system.details.habitat.value.0.subtype": "Elementarebene des Feuers"
     }
@@ -8744,7 +8744,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmBasilisk000000": {
     "name": "Basilisk",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mN9aF1WkHQWLIN4B]], jedes [[lookup @target.affects.type activity=mN9aF1WkHQWLIN4B]] in einem [[lookup @target.template.size activity=mN9aF1WkHQWLIN4B]] Fuß [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]]. Wenn der [[lookup @name lowercase]]{monster} sein Spiegelbild im [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]] sieht, muss der [[lookup @name lowercase]]{monster} diesen Rettungswurf ablegen. </p><p\n    class=\"feature\"><em>Erster Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am Ende seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt bei einem Erfolg für sich selbst endet. </p><p class=\"feature\"><em>Zweiter Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Petrified apply=false] anstelle des Zustands Festhalten.</p>"
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mN9aF1WkHQWLIN4B]], jede Kreatur in einem [[lookup @target.template.size activity=mN9aF1WkHQWLIN4B]] Fuß [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]]. Wenn der [[lookup @name lowercase]]{monster} sein Spiegelbild im [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]] sieht, muss der [[lookup @name lowercase]]{monster} diesen Rettungswurf ablegen. </p><p\n    class=\"feature\"><em>Erster Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am Ende seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt bei einem Erfolg für sich selbst endet. </p><p class=\"feature\"><em>Zweiter Fehlschlag:</em> Das Ziel erhält den Zustand &amp;Reference[Petrified apply=false] anstelle des Zustands Festhalten.</p>"
   },
   "mmBehir000000000": {
     "name": "Behir",
@@ -8857,7 +8857,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmRemorhaz000000": {
     "name": "Remorhaz",
-    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jedes [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede Kreatur in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
   },
   "mmRoc00000000000": {
     "name": "Roc",
@@ -8949,7 +8949,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmShriekerFungus": {
     "name": "Schreipilz",
-    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine [[lookup @target.affects.type activity=Tlv3gcYk5KfdtV7c]] oder eine Quelle hellen Lichts bewegt sich innerhalb von\n    [[lookup @range.value activity=Tlv3gcYk5KfdtV7c]] Fuß des [[lookup @name lowercase]]{monster}. <em>Reaktion:</em> Der [[lookup @name lowercase]]{monster} stößt einen Schrei aus, der innerhalb von [[lookup @target.template.size activity=Tlv3gcYk5KfdtV7c]] Fuß von ihm hörbar ist, für\n    [[lookup @duration.value activity=Tlv3gcYk5KfdtV7c]] Minute oder bis der [[lookup @name lowercase]]{monster} stirbt.</p>"
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine Kreatur oder eine Quelle hellen Lichts bewegt sich innerhalb von\n    [[lookup @range.value activity=Tlv3gcYk5KfdtV7c]] Fuß des [[lookup @name lowercase]]{monster}. <em>Reaktion:</em> Der [[lookup @name lowercase]]{monster} stößt einen Schrei aus, der innerhalb von [[lookup @target.template.size activity=Tlv3gcYk5KfdtV7c]] Fuß von ihm hörbar ist, für\n    [[lookup @duration.value activity=Tlv3gcYk5KfdtV7c]] Minute oder bis der [[lookup @name lowercase]]{monster} stirbt.</p>"
   },
   "mmTreant00000000": {
     "name": "Baumhirte",
@@ -9802,7 +9802,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmAcidBreath0000": {
     "name": "Säureatem",
-    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=qNI6W02jCUQbPpYE]], jede/r [[lookup @target.affects.type activity=qNI6W02jCUQbPpYE]] in einer [[lookup @target.template.size activity=qNI6W02jCUQbPpYE]] Fuß langen, [[lookup @target.template.width activity=qNI6W02jCUQbPpYE]] Fuß breiten Linie.</p><p><em>Misserfolg:\n</em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=qNI6W02jCUQbPpYE]], jede Kreatur in einer [[lookup @target.template.size activity=qNI6W02jCUQbPpYE]] Fuß langen, [[lookup @target.template.width activity=qNI6W02jCUQbPpYE]] Fuß breiten Linie.</p><p><em>Misserfolg:\n</em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmAcidSpray00000": {
     "name": "Säurespritzer",
@@ -9839,7 +9839,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmBalefulCommand": {
     "name": "Unheilvoller Befehl",
-    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=SzU2lwdbqgoFMuBM]], jede/r [[lookup @target.affects.type activity=SzU2lwdbqgoFMuBM]] in einer [[lookup @target.template.size activity=SzU2lwdbqgoFMuBM]] Fuß großen Ausströmung, die von der [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel hat die Zustände &amp;Reference[Frightened apply=false] und\n&amp;Reference[Incapacitated apply=false] bis zum Beginn des nächsten Zuges\nder [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=SzU2lwdbqgoFMuBM]], jeder Gegner in einer [[lookup @target.template.size activity=SzU2lwdbqgoFMuBM]] Fuß großen Ausströmung, die von der [[lookup @name lowercase]]{monster} ausgeht.</p><p><em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel hat die Zustände &amp;Reference[Frightened apply=false] und\n&amp;Reference[Incapacitated apply=false] bis zum Beginn des nächsten Zuges\nder [[lookup @name lowercase]]{monster}.</p>",
     "effects": {
       "4GgIe9QPQ5oYRsHN": "Verängstigt & Kampfunfähig"
     }
@@ -9933,7 +9933,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmColdBreath0000": {
     "name": "Kalter Odem",
-    "description": "<p><em>Konstitutionsrettungswurf: </em>SG [[lookup @save.dc.value activity=8P7hmd3Nron4RAIv]], jede [[lookup @target.affects.type activity=8P7hmd3Nron4RAIv]] in einem [[lookup @target.template.size activity=8P7hmd3Nron4RAIv]] Fuß-Kegel.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+    "description": "<p><em>Konstitutionsrettungswurf: </em>SG [[lookup @save.dc.value activity=8P7hmd3Nron4RAIv]], jede Kreatur in einem [[lookup @target.template.size activity=8P7hmd3Nron4RAIv]] Fuß-Kegel.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmConjureInferna": {
     "name": "Infernalische Kette beschwören",
@@ -10004,7 +10004,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDeadlyLeap0000": {
     "name": "Tödlicher Sprung",
-    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} verbraucht 1,5 m Bewegung, um auf ein Feld innerhalb von 4,5 m zu springen, das eine oder mehrere Große oder kleinere Kreaturen enthält.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=IPCXEQoTuaAG5l52]], jede [[lookup @target.affects.type activity=IPCXEQoTuaAG5l52]] im Zielfeld des [[lookup @name lowercase]]{monster}.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat den Zustand &amp;Reference[Prone apply=false].</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden, und das Ziel wird 1,5 m direkt vom [[lookup @name lowercase]]{monster} weggestoßen.</p>",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} verbraucht 1,5 m Bewegung, um auf ein Feld innerhalb von 4,5 m zu springen, das eine oder mehrere Große oder kleinere Kreaturen enthält.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=IPCXEQoTuaAG5l52]], jede Kreatur im Zielfeld des [[lookup @name lowercase]]{monster}.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat den Zustand &amp;Reference[Prone apply=false].</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden, und das Ziel wird 1,5 m direkt vom [[lookup @name lowercase]]{monster} weggestoßen.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10028,7 +10028,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDeflectMissile": {
     "name": "Geschoss ablenken",
-    "description": "<p class=\"feature\"><em>Auslöser:</em> Der [[lookup @name lowercase]]{monster} ist [[lookup @activation.condition activity=9T8cNbSBVACrrmRI]].</p><p class=\"feature\"><em>Reaktion:</em> Der [[lookup @name lowercase]]{monster} reduziert den Schaden, den er durch den Angriff erleidet, um [[/healing average]], und wenn dieser Schaden auf 0 reduziert wird, kann der [[lookup @name lowercase]]{monster} einen Teil der Angriffskraft umleiten.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=x0MjUmnv2OPAbm6y]], eine [[lookup @target.affects.type activity=x0MjUmnv2OPAbm6y]], die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=x0MjUmnv2OPAbm6y]] Fuß sehen kann. </p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p>",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Der [[lookup @name lowercase]]{monster} ist [[lookup @activation.condition activity=9T8cNbSBVACrrmRI]].</p><p class=\"feature\"><em>Reaktion:</em> Der [[lookup @name lowercase]]{monster} reduziert den Schaden, den er durch den Angriff erleidet, um [[/healing average]], und wenn dieser Schaden auf 0 reduziert wird, kann der [[lookup @name lowercase]]{monster} einen Teil der Angriffskraft umleiten.</p><p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=x0MjUmnv2OPAbm6y]], eine Kreatur, die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=x0MjUmnv2OPAbm6y]] Fuß sehen kann. </p><p class=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p>",
     "activities": {
       "Reduce Damage": "Schaden reduzieren",
       "Save": "Rettungswurf"
@@ -10036,7 +10036,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDestroyMetal00": {
     "name": "Metall zerstören",
-    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} [[lookup @range.special activity=GDJtelEYYTgc9jwr]] innerhalb von [[lookup @range.value activity=GDJtelEYYTgc9jwr]] Fuß von sich selbst [[lookup @target.affects.special activity=GDJtelEYYTgc9jwr]]. Die Berührung zerstört ein [[lookup @target.template.size activity=GDJtelEYYTgc9jwr]]-[[lookup @target.template.units activity=GDJtelEYYTgc9jwr]] [[lookup @target.template.type capitalize activity=GDJtelEYYTgc9jwr]] der [[lookup @target.affects.type activity=GDJtelEYYTgc9jwr]].</p>",
+    "description": "<p class=\"feature\">Der [[lookup @name lowercase]]{monster} [[lookup @range.special activity=GDJtelEYYTgc9jwr]] innerhalb von [[lookup @range.value activity=GDJtelEYYTgc9jwr]] Fuß von sich selbst [[lookup @target.affects.special activity=GDJtelEYYTgc9jwr]]. Die Berührung zerstört ein [[lookup @target.template.size activity=GDJtelEYYTgc9jwr]]-[[lookup @target.template.units activity=GDJtelEYYTgc9jwr]] [[lookup @target.template.type capitalize activity=GDJtelEYYTgc9jwr]] des Objekts.</p>",
     "activities": {
       "Expend Use": "Einsatz verbrauchen"
     }
@@ -10047,28 +10047,28 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDominateMind00": {
     "name": "Geist beherrschen",
-    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=zdXAMnjaOcsVmLZP]], eine [[lookup @target.affects.type activity=zdXAMnjaOcsVmLZP]], die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=zdXAMnjaOcsVmLZP]] Fuß sehen kann.</p><p><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Charmed\napply=false], bis der [[lookup @name lowercase]]{monster} stirbt oder sich auf einer anderen Existenzebene als das Ziel befindet. Solange es bezaubert ist, agiert das Ziel als Verbündeter des [[lookup @name lowercase]]{monster} und steht unter dessen Kontrolle, solange es sich innerhalb von [[lookup @target.template.size activity=zdXAMnjaOcsVmLZP]] Fuß von ihm befindet. Zusätzlich können der [[lookup @name lowercase]]{monster} und das Ziel telepathisch über jede Entfernung miteinander kommunizieren.</p><p>Das Ziel wiederholt den Rettungswurf, wann immer es Schaden erleidet, sowie nach jeweils 24 Stunden, die es mindestens 1,6 km vom [[lookup @name lowercase]]{monster} entfernt verbringt, wobei der Effekt bei einem Erfolg für sich selbst endet.</p>",
+    "description": "<p><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=zdXAMnjaOcsVmLZP]], eine Kreatur, die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=zdXAMnjaOcsVmLZP]] Fuß sehen kann.</p><p><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Charmed\napply=false], bis der [[lookup @name lowercase]]{monster} stirbt oder sich auf einer anderen Existenzebene als das Ziel befindet. Solange es bezaubert ist, agiert das Ziel als Verbündeter des [[lookup @name lowercase]]{monster} und steht unter dessen Kontrolle, solange es sich innerhalb von [[lookup @target.template.size activity=zdXAMnjaOcsVmLZP]] Fuß von ihm befindet. Zusätzlich können der [[lookup @name lowercase]]{monster} und das Ziel telepathisch über jede Entfernung miteinander kommunizieren.</p><p>Das Ziel wiederholt den Rettungswurf, wann immer es Schaden erleidet, sowie nach jeweils 24 Stunden, die es mindestens 1,6 km vom [[lookup @name lowercase]]{monster} entfernt verbringt, wobei der Effekt bei einem Erfolg für sich selbst endet.</p>",
     "effects": {
       "85n0EJTGfngNSLLl": "Beherrscht"
     }
   },
   "mmDragonsBreath0": {
     "name": "Drachenodem",
-    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=YfxQb5tcONgLb2nD]], jede [[lookup @target.affects.type activity=YfxQb5tcONgLb2nD]] in einem [[lookup @target.template.size activity=YfxQb5tcONgLb2nD]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden des für das Merkmal Drakonischer Ursprung gewählten Typs.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=YfxQb5tcONgLb2nD]], jede Kreatur in einem [[lookup @target.template.size activity=YfxQb5tcONgLb2nD]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden des für das Merkmal Drakonischer Ursprung gewählten Typs.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
   },
   "mmDrainingKiss00": {
     "name": "Entziehender Kuss",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=kFyuof0SS3nohP0f]], eine [[lookup @target.affects.type activity=kFyuof0SS3nohP0f]], die vom [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=kFyuof0SS3nohP0f]] Fuß bezaubert ist.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average]] Schaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber\nSchaden.</p><p class=\"feature\"><em>Misserfolg oder Erfolg:</em> Das Maximum der\nTrefferpunkte des Ziels sinkt um einen Betrag, der dem erlittenen Schaden entspricht.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=kFyuof0SS3nohP0f]], eine Kreatur, die vom [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=kFyuof0SS3nohP0f]] Fuß bezaubert ist.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average]] Schaden.</p><p class=\"feature\"><em>Erfolg:</em> Halber\nSchaden.</p><p class=\"feature\"><em>Misserfolg oder Erfolg:</em> Das Maximum der\nTrefferpunkte des Ziels sinkt um einen Betrag, der dem erlittenen Schaden entspricht.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
   },
   "mmDreadfulGlare0": {
     "name": "Furchtbarer Blick",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=8LmlZfevSQkOxGSN]], eine [[lookup @target.affects.type activity=8LmlZfevSQkOxGSN]], die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=8LmlZfevSQkOxGSN]] Fuß sehen kann. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Frightened apply=false] bis zum Ende des\nnächsten Zuges des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist 24 Stunden lang immun gegen den Furchtbaren Blick dieses [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=8LmlZfevSQkOxGSN]], eine Kreatur, die der [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=8LmlZfevSQkOxGSN]] Fuß sehen kann. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Frightened apply=false] bis zum Ende des\nnächsten Zuges des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist 24 Stunden lang immun gegen den Furchtbaren Blick dieses [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10134,7 +10134,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFireBreath0000": {
     "name": "Feueratem",
-    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], jedes [[lookup @target.affects.type activity=bDqgmtLG3zcVuqdi]] in einer [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]] Fuß langen, [[lookup @target.template.width activity=bDqgmtLG3zcVuqdi]] Fuß breiten Linie.</p><p><em>Misserfolg:\n</em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], jede Kreatur in einer [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]] Fuß langen, [[lookup @target.template.width activity=bDqgmtLG3zcVuqdi]] Fuß breiten Linie.</p><p><em>Misserfolg:\n</em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmFling000000000": {
     "name": "Schleudern",
@@ -10152,7 +10152,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFrostBreath000": {
     "name": "Frostatem",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=ChLJgxjftTSMSRHe]], jedes [[lookup @target.affects.type activity=ChLJgxjftTSMSRHe]] in einem [[lookup @target.template.size activity=ChLJgxjftTSMSRHe]] Fuß großen Kegel.\n<em>Misserfolg:</em> [[/damage average]] Schaden. <em>Erfolg: </em>Halber\nSchaden.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=ChLJgxjftTSMSRHe]], jede Kreatur in einem [[lookup @target.template.size activity=ChLJgxjftTSMSRHe]] Fuß großen Kegel.\n<em>Misserfolg:</em> [[/damage average]] Schaden. <em>Erfolg: </em>Halber\nSchaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -10166,7 +10166,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHeartSight0000": {
     "name": "Herzensblick",
-    "description": "<p class=\"feature\"><em>Charismarettungswurf:</em> SG [[lookup @save.dc.value activity=NqVrZShDV1L3zBA3]], ein [[lookup @target.affects.type activity=NqVrZShDV1L3zBA3]] innerhalb von [[lookup @range.value activity=NqVrZShDV1L3zBA3]] <span style=\"font-family:'Roboto\nCondensed', sans-serif\">Fuß </span>, das das [[lookup @name lowercase]]{monster} sehen kann (Celestische Wesen, Unholde und Untote misslingen den\nRettungswurf automatisch).</p><p class=\"feature\"><em>Misserfolg:</em> Das [[lookup @name lowercase]]{monster} kennt die Emotionen und Gesinnung des Ziels.</p>",
+    "description": "<p class=\"feature\"><em>Charismarettungswurf:</em> SG [[lookup @save.dc.value activity=NqVrZShDV1L3zBA3]], eine Kreatur innerhalb von [[lookup @range.value activity=NqVrZShDV1L3zBA3]] <span style=\"font-family:'Roboto\nCondensed', sans-serif\">Fuß </span>, das das [[lookup @name lowercase]]{monster} sehen kann (Celestische Wesen, Unholde und Untote misslingen den\nRettungswurf automatisch).</p><p class=\"feature\"><em>Misserfolg:</em> Das [[lookup @name lowercase]]{monster} kennt die Emotionen und Gesinnung des Ziels.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -10177,7 +10177,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHolyBurst00000": {
     "name": "Heiliger Ausbruch",
-    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=HrgMO1rsQla47fff]], jede/s [[lookup @target.affects.type activity=HrgMO1rsQla47fff]] in einer Kugel mit [[lookup @target.template.size activity=HrgMO1rsQla47fff]] Fuß Radius,\nzentriert auf einen Punkt, den der/die [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=HrgMO1rsQla47fff]] Fuß sehen kann. <em>Misserfolg:</em>\n[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=HrgMO1rsQla47fff]], jeder Gegner in einer Kugel mit [[lookup @target.template.size activity=HrgMO1rsQla47fff]] Fuß Radius,\nzentriert auf einen Punkt, den der/die [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=HrgMO1rsQla47fff]] Fuß sehen kann. <em>Misserfolg:</em>\n[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -10194,7 +10194,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHorrorNimbus00": {
     "name": "Horror-Nimbus",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=GP5MnIyXCVZ4ZMTQ]], jede/s [[lookup @target.affects.type activity=GP5MnIyXCVZ4ZMTQ]] in einer [[lookup @target.template.size activity=GP5MnIyXCVZ4ZMTQ]]-<span\nstyle=\"font-family:'Roboto Condensed', sans-serif\">Fuß</span>-Ausströmung,\ndie von dem/der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] für\n[[lookup @duration.value activity=GP5MnIyXCVZ4ZMTQ]] [[lookup @duration.units activity=GP5MnIyXCVZ4ZMTQ]], bis es Schaden nimmt oder\nbis es seinen Zug beendet, während der/die [[lookup @name lowercase]]{monster} außer\nSichtweite ist.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist\n24 Stunden lang immun gegen den Horror-Nimbus dieses/dieser [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=GP5MnIyXCVZ4ZMTQ]], jede Kreatur in einer [[lookup @target.template.size activity=GP5MnIyXCVZ4ZMTQ]]-<span\nstyle=\"font-family:'Roboto Condensed', sans-serif\">Fuß</span>-Ausströmung,\ndie von dem/der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Frightened apply=false] für\n[[lookup @duration.value activity=GP5MnIyXCVZ4ZMTQ]] [[lookup @duration.units activity=GP5MnIyXCVZ4ZMTQ]], bis es Schaden nimmt oder\nbis es seinen Zug beendet, während der/die [[lookup @name lowercase]]{monster} außer\nSichtweite ist.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist\n24 Stunden lang immun gegen den Horror-Nimbus dieses/dieser [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10219,7 +10219,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmInfernalTail00": {
     "name": "Infernaler Schwanz",
-    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=tJYeyUk3iPYJq9xM]], ein/e [[lookup @target.affects.type activity=tJYeyUk3iPYJq9xM]], den/die der/die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=tJYeyUk3iPYJq9xM]] [[lookup @range.units activity=tJYeyUk3iPYJq9xM]] sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average activity=tJYeyUk3iPYJq9xM]] Schaden, und das Ziel\nerleidet eine infernale Wunde, falls es noch keine hat. Solange es verwundet ist, verliert das\nZiel [[/damage average activity=zZfCQ0IeJZCjPLzE]] Trefferpunkte zu\nBeginn jedes seiner Züge. Die Wunde schließt sich nach [[lookup @duration.value activity=tJYeyUk3iPYJq9xM]] [[lookup @duration.units activity=tJYeyUk3iPYJq9xM]], nachdem ein Zauber dem Ziel Trefferpunkte wiederherstellt,\noder nachdem das Ziel oder eine Kreatur innerhalb von 1,5 m von ihm eine\nAktion aufwendet, um die Wunde zu stillen, indem sie einen erfolgreichen [[/check dc=17 ability=wis skill=med format=long]] ablegt.</p>",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=tJYeyUk3iPYJq9xM]], eine Kreatur, die der/die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=tJYeyUk3iPYJq9xM]] [[lookup @range.units activity=tJYeyUk3iPYJq9xM]] sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average activity=tJYeyUk3iPYJq9xM]] Schaden, und das Ziel\nerleidet eine infernale Wunde, falls es noch keine hat. Solange es verwundet ist, verliert das\nZiel [[/damage average activity=zZfCQ0IeJZCjPLzE]] Trefferpunkte zu\nBeginn jedes seiner Züge. Die Wunde schließt sich nach [[lookup @duration.value activity=tJYeyUk3iPYJq9xM]] [[lookup @duration.units activity=tJYeyUk3iPYJq9xM]], nachdem ein Zauber dem Ziel Trefferpunkte wiederherstellt,\noder nachdem das Ziel oder eine Kreatur innerhalb von 1,5 m von ihm eine\nAktion aufwendet, um die Wunde zu stillen, indem sie einen erfolgreichen [[/check dc=17 ability=wis skill=med format=long]] ablegt.</p>",
     "activities": {
       "Save": "Rettungswurf",
       "Stanch Wound Check": "Wunde stillen (Wurf)",
@@ -10253,7 +10253,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmLightningBreat": {
     "name": "Blitzatem",
-    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=LpjgVwftzGNMgTUJ]], jede/r [[lookup @target.affects.type activity=LpjgVwftzGNMgTUJ]] in einem [[lookup @target.template.size activity=LpjgVwftzGNMgTUJ]] Fuß langen, [[lookup @target.template.width activity=LpjgVwftzGNMgTUJ]] Fuß breiten [[lookup @target.template.type capitalize activity=LpjgVwftzGNMgTUJ]].</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
+    "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=LpjgVwftzGNMgTUJ]], jede Kreatur in einem [[lookup @target.template.size activity=LpjgVwftzGNMgTUJ]] Fuß langen, [[lookup @target.template.width activity=LpjgVwftzGNMgTUJ]] Fuß breiten [[lookup @target.template.type capitalize activity=LpjgVwftzGNMgTUJ]].</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmLightningStorm": {
     "name": "Blitzsturm",
@@ -10264,7 +10264,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmLightningStrik": {
     "name": "Blitzschlag",
-    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=v39JwGqgfaKiA4vc]], eine/n [[lookup @target.affects.type activity=v39JwGqgfaKiA4vc]], die/den das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=v39JwGqgfaKiA4vc]] Fuß sehen kann. <em>Misserfolg:</em> [[/damage average]]\nSchaden. <em>Erfolg:</em>Halber Schaden.</p>",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=v39JwGqgfaKiA4vc]], eine Kreatur, die das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=v39JwGqgfaKiA4vc]] Fuß sehen kann. <em>Misserfolg:</em> [[/damage average]]\nSchaden. <em>Erfolg:</em>Halber Schaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -10285,7 +10285,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMindrendingRoa": {
     "name": "Gedankenzerreißendes Gebrüll",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=zPMfwwIoTFzIrN5H]], jede/r [[lookup @target.affects.type activity=zPMfwwIoTFzIrN5H]] in einer [[lookup @target.template.size activity=zPMfwwIoTFzIrN5H]]-[[lookup @target.template.units activity=zPMfwwIoTFzIrN5H]]-Ausströmung, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat den Zustand &amp;Reference[Incapacitated\napply=false] bis zum Beginn des nächsten Zuges der/des [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=zPMfwwIoTFzIrN5H]], jeder Gegner in einer [[lookup @target.template.size activity=zPMfwwIoTFzIrN5H]]-[[lookup @target.template.units activity=zPMfwwIoTFzIrN5H]]-Ausströmung, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage average]] Schaden, und das Ziel hat den Zustand &amp;Reference[Incapacitated\napply=false] bis zum Beginn des nächsten Zuges der/des [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10299,7 +10299,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMoan0000000000": {
     "name": "Stöhnen",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=Mng39fcFDc4I1AzY]], jede/r [[lookup @target.affects.type activity=Mng39fcFDc4I1AzY]] in einer [[lookup @target.template.size activity=Mng39fcFDc4I1AzY]]-[[lookup @target.template.units activity=Mng39fcFDc4I1AzY]]-Ausströmung, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel\nhat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende\ndes nächsten Zuges der/des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist für die nächsten 24 Stunden immun gegen das Stöhnen dieser/dieses [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=Mng39fcFDc4I1AzY]], jede Kreatur in einer [[lookup @target.template.size activity=Mng39fcFDc4I1AzY]]-[[lookup @target.template.units activity=Mng39fcFDc4I1AzY]]-Ausströmung, die von der/dem [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel\nhat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende\ndes nächsten Zuges der/des [[lookup @name lowercase]]{monster}. <em>Erfolg:</em> Das\nZiel ist für die nächsten 24 Stunden immun gegen das Stöhnen dieser/dieses [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10323,7 +10323,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmNightmareHaunt": {
     "name": "Albtraumhafte Heimsuchung",
-    "description": "<p class=\"feature\">Während sie/er sich auf der Ätherebene befindet, wirkt die/der [[lookup @name lowercase]]{monster}\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDream00000]{Traum}</em>,\nwobei sie/er dieselbe Zauberfähigkeit wie Zauberwirken verwendet. Nur die/der [[lookup @name lowercase]]{monster} kann als Bote des Zaubers dienen, und das\nZiel muss ein/e [[lookup @target.affects.type activity=4GGGVhvLSrHgHdb9]] sein,\ndie/den die/der [[lookup @name lowercase]]{monster} [[lookup @target.affects.special activity=4GGGVhvLSrHgHdb9]] sehen kann. Der Zauber schlägt fehl und\nist verschwendet, wenn das Ziel unter dem Effekt des\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbEvilAndGoodPr]{Schutz vor Gut und Böse}</em>-Zaubers steht oder sich innerhalb eines\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicCircl]{Schutzkreis}</em>-Zaubers befindet.</p><p class=\"feature\">Wenn das Ziel Schaden durch\nden <em>Traum</em>-Zauber erleidet, verringert sich das Maximum der Trefferpunkte des Ziels um einen\nBetrag, der diesem Schaden entspricht. Wenn der Zauber das Ziel tötet, ist dessen Seele\nim Seelensack der/des [[lookup @name lowercase]]{monster} gefangen, und das\nZiel kann nicht von den Toten auferweckt werden, bis seine Seele befreit ist.</p>"
+    "description": "<p class=\"feature\">Während sie/er sich auf der Ätherebene befindet, wirkt die/der [[lookup @name lowercase]]{monster}\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDream00000]{Traum}</em>,\nwobei sie/er dieselbe Zauberfähigkeit wie Zauberwirken verwendet. Nur die/der [[lookup @name lowercase]]{monster} kann als Bote des Zaubers dienen, und das\nZiel muss eine Kreatur sein,\ndie die/der [[lookup @name lowercase]]{monster} [[lookup @target.affects.special activity=4GGGVhvLSrHgHdb9]] sehen kann. Der Zauber schlägt fehl und\nist verschwendet, wenn das Ziel unter dem Effekt des\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbEvilAndGoodPr]{Schutz vor Gut und Böse}</em>-Zaubers steht oder sich innerhalb eines\n<em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicCircl]{Schutzkreis}</em>-Zaubers befindet.</p><p class=\"feature\">Wenn das Ziel Schaden durch\nden <em>Traum</em>-Zauber erleidet, verringert sich das Maximum der Trefferpunkte des Ziels um einen\nBetrag, der diesem Schaden entspricht. Wenn der Zauber das Ziel tötet, ist dessen Seele\nim Seelensack der/des [[lookup @name lowercase]]{monster} gefangen, und das\nZiel kann nicht von den Toten auferweckt werden, bis seine Seele befreit ist.</p>"
   },
   "mmNimbleEscape00": {
     "name": "Flinke Flucht",
@@ -10337,7 +10337,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmParalyzingBrea": {
     "name": "Lähmender Atem",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=r4MGqEq5U9aaseBh]], jede [[lookup @target.affects.type activity=r4MGqEq5U9aaseBh]] in einem [[lookup @target.template.size activity=r4MGqEq5U9aaseBh]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Erstes Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Incapacitated apply=false] bis zum Ende seines\nnächsten Zuges, dann wiederholt es den Rettungswurf.</p><p class=\"feature\"><em>Zweites\nScheitern:</em> Das Ziel hat den Zustand &amp;Reference[Paralyzed apply=false],\nund es wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der\nEffekt bei einem Erfolg für sich selbst endet. Nach 1 Minute gelingt es\nihm automatisch.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=r4MGqEq5U9aaseBh]], jede Kreatur in einem [[lookup @target.template.size activity=r4MGqEq5U9aaseBh]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Erstes Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Incapacitated apply=false] bis zum Ende seines\nnächsten Zuges, dann wiederholt es den Rettungswurf.</p><p class=\"feature\"><em>Zweites\nScheitern:</em> Das Ziel hat den Zustand &amp;Reference[Paralyzed apply=false],\nund es wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der\nEffekt bei einem Erfolg für sich selbst endet. Nach 1 Minute gelingt es\nihm automatisch.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10348,7 +10348,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmParalyzingTent": {
     "name": "Lähmende Tentakel",
-    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=p157Iqz8s0M0VilW]], eine [[lookup @target.affects.type activity=p157Iqz8s0M0VilW]], die die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @target.template.size activity=p157Iqz8s0M0VilW]] Fuß sehen kann.</p><p class=\"feature\"><em>Scheitern:</em>\nDas Ziel hat den Zustand &amp;Reference[Poisoned apply=false] und\nwiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt\nbei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=p157Iqz8s0M0VilW]] [[lookup @duration.units activity=p157Iqz8s0M0VilW]] gelingt es ihm automatisch. Während es\nvergiftet ist, hat das Ziel den Zustand &amp;Reference[Paralyzed apply=false].</p>",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=p157Iqz8s0M0VilW]], eine Kreatur, die die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @target.template.size activity=p157Iqz8s0M0VilW]] Fuß sehen kann.</p><p class=\"feature\"><em>Scheitern:</em>\nDas Ziel hat den Zustand &amp;Reference[Poisoned apply=false] und\nwiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt\nbei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=p157Iqz8s0M0VilW]] [[lookup @duration.units activity=p157Iqz8s0M0VilW]] gelingt es ihm automatisch. Während es\nvergiftet ist, hat das Ziel den Zustand &amp;Reference[Paralyzed apply=false].</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10365,7 +10365,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmPetrifyingBrea": {
     "name": "Versteinernder Atem",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=reU3RXAk0MdPmKCl]], jede [[lookup @target.affects.type activity=reU3RXAk0MdPmKCl]] in einem [[lookup @target.template.size activity=reU3RXAk0MdPmKCl]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Erstes</em> <em>Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am\nEnde seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt\nbei einem Erfolg für sich selbst endet.</p><p class=\"feature\"><em>Zweites</em>\n<em>Scheitern:</em> Das Ziel hat den Zustand &amp;Reference[Petrified apply=false]\nanstelle des Zustands Festhalten.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=reU3RXAk0MdPmKCl]], jede Kreatur in einem [[lookup @target.template.size activity=reU3RXAk0MdPmKCl]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Erstes</em> <em>Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am\nEnde seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt\nbei einem Erfolg für sich selbst endet.</p><p class=\"feature\"><em>Zweites</em>\n<em>Scheitern:</em> Das Ziel hat den Zustand &amp;Reference[Petrified apply=false]\nanstelle des Zustands Festhalten.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10376,7 +10376,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmPetrifyingGaze": {
     "name": "Versteinernder Blick",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mN9aF1WkHQWLIN4B]], jede [[lookup @target.affects.type activity=mN9aF1WkHQWLIN4B]] in einem [[lookup @target.template.size activity=mN9aF1WkHQWLIN4B]]-Fuß-[[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]]. Wenn die\n[[lookup @name lowercase]]{monster} ihr Spiegelbild in der [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]] sieht, muss die [[lookup @name lowercase]]{monster} diesen Rettungswurf machen. </p><p\nclass=\"feature\"><em>Erstes Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am\nEnde seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt\nbei einem Erfolg für sich selbst endet. </p><p class=\"feature\"><em>Zweites Scheitern:</em> Das\nZiel hat den Zustand &amp;Reference[Petrified apply=false] anstelle von\ndem Zustand Festhalten.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=mN9aF1WkHQWLIN4B]], jede Kreatur in einem [[lookup @target.template.size activity=mN9aF1WkHQWLIN4B]]-Fuß-[[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]]. Wenn die\n[[lookup @name lowercase]]{monster} ihr Spiegelbild in der [[lookup @target.template.type capitalize activity=mN9aF1WkHQWLIN4B]] sieht, muss die [[lookup @name lowercase]]{monster} diesen Rettungswurf machen. </p><p\nclass=\"feature\"><em>Erstes Scheitern:</em> Das Ziel hat den\nZustand &amp;Reference[Restrained apply=false] und wiederholt den Rettungswurf am\nEnde seines nächsten Zuges, wenn es noch Festhalten ist, wobei der Effekt\nbei einem Erfolg für sich selbst endet. </p><p class=\"feature\"><em>Zweites Scheitern:</em> Das\nZiel hat den Zustand &amp;Reference[Petrified apply=false] anstelle von\ndem Zustand Festhalten.</p>",
     "activities": {
       "First Save": "Erster Rettungswurf",
       "Second Save": "Zweiter Rettungswurf"
@@ -10470,7 +10470,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmRedirectAttack": {
     "name": "Angriff umleiten",
-    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine Kreatur, die das [[lookup @name lowercase]]{monster} sehen kann, macht einen Angriffswurf gegen es.</p><p\nclass=\"feature\"><em>Reaktion:</em> Das [[lookup @name lowercase]]{monster}\nwählt [[lookup @target.affects.special activity=pIlCmuPw8YUqAISY]]\ninnerhalb von [[lookup @range.value activity=pIlCmuPw8YUqAISY]] Fuß von sich selbst.\nDas [[lookup @name lowercase]]{monster} und das [[lookup @target.affects.type activity=pIlCmuPw8YUqAISY]] tauschen die Plätze, und das\n[[lookup @target.affects.type activity=pIlCmuPw8YUqAISY]] wird stattdessen zum\nZiel des Angriffs.</p>",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine Kreatur, die das [[lookup @name lowercase]]{monster} sehen kann, macht einen Angriffswurf gegen es.</p><p\nclass=\"feature\"><em>Reaktion:</em> Das [[lookup @name lowercase]]{monster}\nwählt [[lookup @target.affects.special activity=pIlCmuPw8YUqAISY]]\ninnerhalb von [[lookup @range.value activity=pIlCmuPw8YUqAISY]] Fuß von sich selbst.\nDas [[lookup @name lowercase]]{monster} und der Verbündete tauschen die Plätze, und der\nVerbündete wird stattdessen zum\nZiel des Angriffs.</p>",
     "activities": {
       "Expend Use": "Einsatz verbrauchen"
     }
@@ -10488,7 +10488,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmRepulsionBreat": {
     "name": "Abstoßender Atem",
-    "description": "<p class=\"feature\"><em>Stärke-Rettungswurf:</em> SG [[lookup @save.dc.value activity=zuf9EEVj4nI1joaH]], jede [[lookup @target.affects.type activity=zuf9EEVj4nI1joaH]] in einem [[lookup @target.template.size activity=zuf9EEVj4nI1joaH]] Fuß-Kegel. </p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel wird bis zu 9 m\ngeradewegs vom [[lookup @name lowercase]]{monster} weggestoßen und hat den\nZustand &amp;Reference[Prone apply=false].</p>",
+    "description": "<p class=\"feature\"><em>Stärke-Rettungswurf:</em> SG [[lookup @save.dc.value activity=zuf9EEVj4nI1joaH]], jede Kreatur in einem [[lookup @target.template.size activity=zuf9EEVj4nI1joaH]] Fuß-Kegel. </p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel wird bis zu 9 m\ngeradewegs vom [[lookup @name lowercase]]{monster} weggestoßen und hat den\nZustand &amp;Reference[Prone apply=false].</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -10502,7 +10502,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmRoar0000000000": {
     "name": "Brüllen",
-    "description": "<p class=\"feature\">Die Sphinx stößt ein magisches Brüllen aus. Jedes Mal, wenn sie brüllt, hat das\nBrüllen einen anderen Effekt, wie unten beschrieben (die Reihenfolge wird zurückgesetzt, wenn\nsie eine lange Rast macht):</p><p class=\"feature-trait\"><strong>Erstes\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=Igeu89TALGlNPXDg]], jeder Feind in einer [[lookup @target.template.size activity=Igeu89TALGlNPXDg]] Fuß-Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.\n<em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened\napply=false] für [[lookup @duration.value activity=Igeu89TALGlNPXDg]] [[lookup @duration.units activity=Igeu89TALGlNPXDg]].</p><p class=\"feature-trait\"><strong>Zweites\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=uFTndQPvULZVHT9R]], jede [[lookup @target.affects.type activity=uFTndQPvULZVHT9R]] in einer [[lookup @target.template.size activity=uFTndQPvULZVHT9R]] Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Paralyzed apply=false], und es wiederholt den Rettungswurf\nam Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet.\nNach [[lookup @duration.value activity=uFTndQPvULZVHT9R]] [[lookup @duration.units activity=uFTndQPvULZVHT9R]] gelingt es ihm\nautomatisch.</p><p class=\"feature-trait\"><strong>Drittes Brüllen.</strong>\n<em>Konstitutions-Rettungswurf:</em> SG [[lookup @save.dc.value activity=Td8ArIMDfxWDLbE9]], jede [[lookup @target.affects.type activity=Td8ArIMDfxWDLbE9]] in einer [[lookup @target.template.size activity=Td8ArIMDfxWDLbE9]] Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage average]] Schaden,\nund das Ziel hat den Zustand &amp;Reference[Prone apply=false].\n<em>Erfolg:</em> Nur [[lookup @damage.onSave capitalize activity=Td8ArIMDfxWDLbE9]] Schaden.</p>",
+    "description": "<p class=\"feature\">Die Sphinx stößt ein magisches Brüllen aus. Jedes Mal, wenn sie brüllt, hat das\nBrüllen einen anderen Effekt, wie unten beschrieben (die Reihenfolge wird zurückgesetzt, wenn\nsie eine lange Rast macht):</p><p class=\"feature-trait\"><strong>Erstes\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=Igeu89TALGlNPXDg]], jeder Feind in einer [[lookup @target.template.size activity=Igeu89TALGlNPXDg]] Fuß-Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht.\n<em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened\napply=false] für [[lookup @duration.value activity=Igeu89TALGlNPXDg]] [[lookup @duration.units activity=Igeu89TALGlNPXDg]].</p><p class=\"feature-trait\"><strong>Zweites\nBrüllen.</strong> <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=uFTndQPvULZVHT9R]], jeder Gegner in einer [[lookup @target.template.size activity=uFTndQPvULZVHT9R]] Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel hat den\nZustand &amp;Reference[Paralyzed apply=false], und es wiederholt den Rettungswurf\nam Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet.\nNach [[lookup @duration.value activity=uFTndQPvULZVHT9R]] [[lookup @duration.units activity=uFTndQPvULZVHT9R]] gelingt es ihm\nautomatisch.</p><p class=\"feature-trait\"><strong>Drittes Brüllen.</strong>\n<em>Konstitutions-Rettungswurf:</em> SG [[lookup @save.dc.value activity=Td8ArIMDfxWDLbE9]], jeder Gegner in einer [[lookup @target.template.size activity=Td8ArIMDfxWDLbE9]] Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> [[/damage average]] Schaden,\nund das Ziel hat den Zustand &amp;Reference[Prone apply=false].\n<em>Erfolg:</em> Nur [[lookup @damage.onSave capitalize activity=Td8ArIMDfxWDLbE9]] Schaden.</p>",
     "activities": {
       "First Roar: Save": "Erstes Brüllen: Rettungswurf",
       "Second Roar: Save": "Zweites Brüllen: Rettungswurf",
@@ -10532,7 +10532,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmShieldBash0000": {
     "name": "Schildstoß",
-    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=eIErvLccVVCXiCSl]], ein [[lookup @target.affects.type activity=eIErvLccVVCXiCSl]] innerhalb von [[lookup @range.value activity=eIErvLccVVCXiCSl]] [[lookup @range.units activity=eIErvLccVVCXiCSl]], das der/die [[lookup @name lowercase]]{monster}\nsehen kann. <em>Misserfolg:</em> [[/damage average]] Schaden. Ist das Ziel eine\nmittelgroße oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Prone apply=false].\n</p>",
+    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=eIErvLccVVCXiCSl]], eine Kreatur innerhalb von [[lookup @range.value activity=eIErvLccVVCXiCSl]] [[lookup @range.units activity=eIErvLccVVCXiCSl]], das der/die [[lookup @name lowercase]]{monster}\nsehen kann. <em>Misserfolg:</em> [[/damage average]] Schaden. Ist das Ziel eine\nmittelgroße oder kleinere Kreatur, erhält es den Zustand &amp;Reference[Prone apply=false].\n</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10542,21 +10542,21 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmShriek00000000": {
     "name": "Schrei",
-    "description": "<p class=\"feature\"><em>Auslöser:</em> Ein [[lookup @target.affects.type activity=Tlv3gcYk5KfdtV7c]] oder eine Quelle hellen Lichts bewegt sich innerhalb von\n[[lookup @range.value activity=Tlv3gcYk5KfdtV7c]] Fuß des/der [[lookup @name lowercase]]{monster}. <em>Reaktion:</em> Der/Die [[lookup @name lowercase]]{monster} stößt einen Schrei aus, der innerhalb von [[lookup @target.template.size activity=Tlv3gcYk5KfdtV7c]] Fuß für\n[[lookup @duration.value activity=Tlv3gcYk5KfdtV7c]] Minute hörbar ist oder bis der/die\n[[lookup @name lowercase]]{monster} stirbt.</p>",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine Kreatur oder eine Quelle hellen Lichts bewegt sich innerhalb von\n[[lookup @range.value activity=Tlv3gcYk5KfdtV7c]] Fuß des/der [[lookup @name lowercase]]{monster}. <em>Reaktion:</em> Der/Die [[lookup @name lowercase]]{monster} stößt einen Schrei aus, der innerhalb von [[lookup @target.template.size activity=Tlv3gcYk5KfdtV7c]] Fuß für\n[[lookup @duration.value activity=Tlv3gcYk5KfdtV7c]] Minute hörbar ist oder bis der/die\n[[lookup @name lowercase]]{monster} stirbt.</p>",
     "activities": {
       "Use": "Einsatz"
     }
   },
   "mmSlayingBow0000": {
     "name": "Tötungsbogen",
-    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=C7BMf8hIfCjxRSWC]], ein [[lookup @target.affects.type activity=C7BMf8hIfCjxRSWC]], das der/die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=C7BMf8hIfCjxRSWC]] [[lookup @range.units activity=C7BMf8hIfCjxRSWC]] sehen kann. <em>Misserfolg:</em> Hat das [[lookup @target.affects.type activity=C7BMf8hIfCjxRSWC]] 100 Trefferpunkte oder\nweniger, stirbt es. Andernfalls erleidet es [[/damage average]] Schaden.</p>",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=C7BMf8hIfCjxRSWC]], eine Kreatur, die der/die [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=C7BMf8hIfCjxRSWC]] [[lookup @range.units activity=C7BMf8hIfCjxRSWC]] sehen kann. <em>Misserfolg:</em> Hat die Kreatur 100 Trefferpunkte oder\nweniger, stirbt sie. Andernfalls erleidet sie [[/damage average]] Schaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
   },
   "mmSleepBreath000": {
     "name": "Schlafhauch",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=6ce9oevQRWomSVSF]], jede/r [[lookup @target.affects.type activity=6ce9oevQRWomSVSF]] in einem [[lookup @target.template.size activity=6ce9oevQRWomSVSF]] Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel erhält den\nZustand &amp;Reference[Incapacitated apply=false] bis zum Ende seines\nnächsten Zuges, woraufhin es den Rettungswurf wiederholt.</p><p\nclass=\"feature\"><em>Zweiter Misserfolg:</em> Das Ziel erhält den\nZustand &amp;Reference[Unconscious apply=false] für [[lookup @duration.value activity=EZma0lCmQeTuVuAL]] Minute. Dieser Effekt endet für\ndas Ziel, wenn es Schaden erleidet oder eine Kreatur innerhalb von 1,5 m von ihm eine\nAktion aufwendet, um es zu wecken.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=6ce9oevQRWomSVSF]], jede Kreatur in einem [[lookup @target.template.size activity=6ce9oevQRWomSVSF]] Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel erhält den\nZustand &amp;Reference[Incapacitated apply=false] bis zum Ende seines\nnächsten Zuges, woraufhin es den Rettungswurf wiederholt.</p><p\nclass=\"feature\"><em>Zweiter Misserfolg:</em> Das Ziel erhält den\nZustand &amp;Reference[Unconscious apply=false] für [[lookup @duration.value activity=EZma0lCmQeTuVuAL]] Minute. Dieser Effekt endet für\ndas Ziel, wenn es Schaden erleidet oder eine Kreatur innerhalb von 1,5 m von ihm eine\nAktion aufwendet, um es zu wecken.</p>",
     "activities": {
       "1st Save": "1. Rettungswurf",
       "2nd Save": "2. Rettungswurf"
@@ -10609,7 +10609,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmSteamBreath000": {
     "name": "Dampfatem",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=5iI1KQRWrdMGh9sy]], jede [[lookup @target.affects.type activity=5iI1KQRWrdMGh9sy]] in einem [[lookup @target.template.size activity=5iI1KQRWrdMGh9sy]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Unter Wasser zu sein, gewährt keine\nResistenz gegen diesen Feuerschaden.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=5iI1KQRWrdMGh9sy]], jede Kreatur in einem [[lookup @target.template.size activity=5iI1KQRWrdMGh9sy]]-Fuß-Kegel.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Unter Wasser zu sein, gewährt keine\nResistenz gegen diesen Feuerschaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -10684,7 +10684,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmTramplingCharg": {
     "name": "Trampelnder Ansturm",
-    "description": "<p class=\"feature\">Der/Die/Das [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner/ihrer\nGeschwindigkeit, ohne &amp;Reference[OpportunityAttacks] zu provozieren, und kann sich\ndurch die Felder von [[lookup @target.affects.special activity=FG9rAj3Q8UTxbGLF]] bewegen. Jede/r [[lookup @target.affects.type activity=FG9rAj3Q8UTxbGLF]], deren/dessen Feld der/die/das [[lookup @name lowercase]]{monster} betritt, wird einmal vom folgenden Effekt betroffen.\n</p><p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=FG9rAj3Q8UTxbGLF]]. </p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Prone apply=false].</p>",
+    "description": "<p class=\"feature\">Der/Die/Das [[lookup @name lowercase]]{monster} bewegt sich bis zu seiner/ihrer\nGeschwindigkeit, ohne &amp;Reference[OpportunityAttacks] zu provozieren, und kann sich\ndurch die Felder von [[lookup @target.affects.special activity=FG9rAj3Q8UTxbGLF]] bewegen. Jede Kreatur, deren Feld der/die/das [[lookup @name lowercase]]{monster} betritt, wird einmal vom folgenden Effekt betroffen.\n</p><p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=FG9rAj3Q8UTxbGLF]]. </p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Prone apply=false].</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10705,7 +10705,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmUnnervingGaze0": {
     "name": "Beunruhigender Blick",
-    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine [[lookup @target.affects.type activity=btp6NZvx465nxWTF]], die das [[lookup @name lowercase]]{monster} sehen kann, beginnt ihren Zug innerhalb von [[lookup @target.template.size activity=btp6NZvx465nxWTF]] Fuß des [[lookup @name lowercase]]{monster} und kann das [[lookup @name lowercase]]{monster} sehen.</p><p class=\"feature\"><em>Reaktion – Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=btp6NZvx465nxWTF]], die auslösende [[lookup @target.affects.type activity=btp6NZvx465nxWTF]].</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende seines Zuges.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen den Beunruhigenden Blick dieses [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\"><em>Auslöser:</em> Eine Kreatur, die das [[lookup @name lowercase]]{monster} sehen kann, beginnt ihren Zug innerhalb von [[lookup @target.template.size activity=btp6NZvx465nxWTF]] Fuß des [[lookup @name lowercase]]{monster} und kann das [[lookup @name lowercase]]{monster} sehen.</p><p class=\"feature\"><em>Reaktion – Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=btp6NZvx465nxWTF]], die auslösende Kreatur.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] bis zum Ende seines Zuges.</p><p class=\"feature\"><em>Erfolg:</em> Das Ziel ist 24 Stunden lang immun gegen den Beunruhigenden Blick dieses [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10715,7 +10715,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmUnsettlingVisa": {
     "name": "Beunruhigendes Antlitz",
-    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=USxIbGZPLvfPnnoI]], jede [[lookup @target.affects.type activity=USxIbGZPLvfPnnoI]] in einer [[lookup @target.template.size activity=USxIbGZPLvfPnnoI]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht und das [[lookup @name lowercase]]{monster} sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] und wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=USxIbGZPLvfPnnoI]] [[lookup @duration.units activity=USxIbGZPLvfPnnoI]] gelingt es ihm automatisch.</p>",
+    "description": "<p class=\"feature\"><em>Weisheitsrettungswurf:</em> SG [[lookup @save.dc.value activity=USxIbGZPLvfPnnoI]], jede Kreatur in einer [[lookup @target.template.size activity=USxIbGZPLvfPnnoI]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht und das [[lookup @name lowercase]]{monster} sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Frightened apply=false] und wiederholt den Rettungswurf am Ende jedes seiner Züge, wobei der Effekt bei einem Erfolg für sich selbst endet. Nach [[lookup @duration.value activity=USxIbGZPLvfPnnoI]] [[lookup @duration.units activity=USxIbGZPLvfPnnoI]] gelingt es ihm automatisch.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10747,7 +10747,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmWarCry00000000": {
     "name": "Kriegsschrei",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} oder eine [[lookup @target.affects.type activity=uN0VTW2Fqig7YAs9]] seiner Wahl, die es sehen oder hören kann, erhält [[/healing average temp]] und hat Vorteil auf Angriffswürfe bis zum Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster}.</p>",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} oder eine Kreatur seiner Wahl, die es sehen oder hören kann, erhält [[/healing average temp]] und hat Vorteil auf Angriffswürfe bis zum Beginn des nächsten Zuges des [[lookup @name lowercase]]{monster}.</p>",
     "activities": {
       "Temp. Healing": "Temporäre Heilung"
     },
@@ -10767,7 +10767,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmWebStrand00000": {
     "name": "Netzfaden",
-    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=Ln5NXBaHGKlwdoiP]], eine Große oder kleinere [[lookup @target.affects.type activity=Ln5NXBaHGKlwdoiP]], die das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=Ln5NXBaHGKlwdoiP]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Restrained apply=false], bis das Netz zerstört ist (RK 10; TP 5; Verwundbarkeit gegen Feuerschaden; Immunität gegen Wucht-, Gift- und Psychischen Schaden).</p>",
+    "description": "<p class=\"feature\"><em>Geschicklichkeitsrettungswurf:</em> SG [[lookup @save.dc.value activity=Ln5NXBaHGKlwdoiP]], eine Große oder kleinere Kreatur, die das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=Ln5NXBaHGKlwdoiP]] Fuß sehen kann.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat den Zustand &amp;Reference[Restrained apply=false], bis das Netz zerstört ist (RK 10; TP 5; Verwundbarkeit gegen Feuerschaden; Immunität gegen Wucht-, Gift- und Psychischen Schaden).</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -10787,7 +10787,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmWhelm000000000": {
     "name": "Überwältigen",
-    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=TQchFj2VXXJgU7Lq]], jede [[lookup @target.affects.type activity=TQchFj2VXXJgU7Lq]] im Feld des [[lookup @name lowercase]]{monster}.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average activity=TQchFj2VXXJgU7Lq]] Schaden. Ist das Ziel eine\nGroße oder kleinere Kreatur, hat es den Zustand &amp;Reference[Grappled apply=false]\n(Entkommen SG [[lookup @skills.ath.passive]]). Bis der Griff endet,\nhat das Ziel den Zustand &amp;Reference[Restrained apply=false], ist\n&amp;Reference[suffocating]{suffocating}, es sei denn, es kann unter Wasser atmen,\nund erleidet zu Beginn jedes Zuges des [[lookup @name lowercase]]{monster}\n[[/damage average activity=khxVwH3AB0sx1qRG]] Schaden. Das\n[[lookup @name lowercase]]{monster} kann mit Überwältigen eine Große Kreatur oder bis\nzu zwei Mittlere oder kleinere Kreaturen gleichzeitig im Griff halten.</p><p\nclass=\"feature\">Als Aktion kann eine Kreatur innerhalb von 1,5 m des [[lookup @name lowercase]]{monster} eine Kreatur daraus ziehen, indem sie einen erfolgreichen\n[[/check ath dc=@skills.ath.passive format=long]] ablegt.</p><p\nclass=\"feature\"><em>Erfolg:</em> Nur halber Schaden.</p>",
+    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=TQchFj2VXXJgU7Lq]], jede Kreatur im Feld des [[lookup @name lowercase]]{monster}.</p><p class=\"feature\"><em>Misserfolg:</em>\n[[/damage average activity=TQchFj2VXXJgU7Lq]] Schaden. Ist das Ziel eine\nGroße oder kleinere Kreatur, hat es den Zustand &amp;Reference[Grappled apply=false]\n(Entkommen SG [[lookup @skills.ath.passive]]). Bis der Griff endet,\nhat das Ziel den Zustand &amp;Reference[Restrained apply=false], ist\n&amp;Reference[suffocating]{suffocating}, es sei denn, es kann unter Wasser atmen,\nund erleidet zu Beginn jedes Zuges des [[lookup @name lowercase]]{monster}\n[[/damage average activity=khxVwH3AB0sx1qRG]] Schaden. Das\n[[lookup @name lowercase]]{monster} kann mit Überwältigen eine Große Kreatur oder bis\nzu zwei Mittlere oder kleinere Kreaturen gleichzeitig im Griff halten.</p><p\nclass=\"feature\">Als Aktion kann eine Kreatur innerhalb von 1,5 m des [[lookup @name lowercase]]{monster} eine Kreatur daraus ziehen, indem sie einen erfolgreichen\n[[/check ath dc=@skills.ath.passive format=long]] ablegt.</p><p\nclass=\"feature\"><em>Erfolg:</em> Nur halber Schaden.</p>",
     "activities": {
       "Damage: Start of Turn": "Schaden: Beginn des Zuges",
       "Escape Check": "Entkommen-Probe",
@@ -10810,7 +10810,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmWhirlwind00000": {
     "name": "Wirbelwind",
-    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=GQzr4EMMm6kkZVdC]], jede Mittlere oder kleinere\n[[lookup @target.affects.type activity=GQzr4EMMm6kkZVdC]] im Feld des [[lookup @name lowercase]]{monster}. <em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel wird bis zu 6 m direkt vom\n[[lookup @name lowercase]]{monster} weggestoßen und hat den Zustand &amp;Reference[Prone\napply=false]. <em>Erfolg:</em> Nur halber Schaden.</p>",
+    "description": "<p class=\"feature\"><em>Stärkerettungswurf:</em> SG [[lookup @save.dc.value activity=GQzr4EMMm6kkZVdC]], jede Mittlere oder kleinere\nKreatur im Feld des [[lookup @name lowercase]]{monster}. <em>Misserfolg:</em> [[/damage average]]\nSchaden, und das Ziel wird bis zu 6 m direkt vom\n[[lookup @name lowercase]]{monster} weggestoßen und hat den Zustand &amp;Reference[Prone\napply=false]. <em>Erfolg:</em> Nur halber Schaden.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -11460,11 +11460,11 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDeathlyTelepor": {
     "name": "Tödlicher Teleport",
-    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=zvj61Na7MlcIN2xw]] [[lookup @range.units activity=zvj61Na7MlcIN2xw]]. [[lookup @range.special activity=zvj61Na7MlcIN2xw]], und jedes [[lookup @target.affects.type activity=zvj61Na7MlcIN2xw]] innerhalb von [[lookup @target.template.size activity=zvj61Na7MlcIN2xw]] [[lookup @target.template.units activity=zvj61Na7MlcIN2xw]]. des von ihr verlassenen Feldes erleidet [[/damage average]] Schaden.</p>"
+    "description": "<p class=\"feature\">Die [[lookup @name lowercase]]{monster} teleportiert sich bis zu\n[[lookup @range.value activity=zvj61Na7MlcIN2xw]] [[lookup @range.units activity=zvj61Na7MlcIN2xw]]. [[lookup @range.special activity=zvj61Na7MlcIN2xw]], und jede Kreatur innerhalb von [[lookup @target.template.size activity=zvj61Na7MlcIN2xw]] [[lookup @target.template.units activity=zvj61Na7MlcIN2xw]]. des von ihr verlassenen Feldes erleidet [[/damage average]] Schaden.</p>"
   },
   "mmDisruptLife000": {
     "name": "Lebensstörung",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=qSz7l1czwIc5j9gP]], jedes [[lookup @target.affects.type activity=qSz7l1czwIc5j9gP]], das kein Untoter ist, in einer\n[[lookup @target.template.size activity=qSz7l1czwIc5j9gP]] Fuß großen Ausströmung,\ndie von der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=qSz7l1czwIc5j9gP]], jede Kreatur, die kein Untoter ist, in einer\n[[lookup @target.template.size activity=qSz7l1czwIc5j9gP]] Fuß großen Ausströmung,\ndie von der [[lookup @name lowercase]]{monster} ausgeht.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden.</p><p\nclass=\"feature\"><em>Erfolg:</em> Halber Schaden.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
     "activities": {
       "Save": "Rettungswurf"
     }
@@ -11482,7 +11482,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFreezingBurst0": {
     "name": "Gefrierender Stoß",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=U2i9u4ELjeLQfePP]], jedes [[lookup @target.affects.type activity=U2i9u4ELjeLQfePP]] in einer Kugel mit [[lookup @target.template.size activity=U2i9u4ELjeLQfePP]] Fuß Radius,\ndie auf einen Punkt zentriert ist, den die [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=U2i9u4ELjeLQfePP]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und die\nBewegungsrate des Ziels ist 0 bis zum Ende des nächsten Zuges des Ziels.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=U2i9u4ELjeLQfePP]], jede Kreatur in einer Kugel mit [[lookup @target.template.size activity=U2i9u4ELjeLQfePP]] Fuß Radius,\ndie auf einen Punkt zentriert ist, den die [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=U2i9u4ELjeLQfePP]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und die\nBewegungsrate des Ziels ist 0 bis zum Ende des nächsten Zuges des Ziels.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Die [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn ihres\nnächsten Zuges ausführen.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -11543,7 +11543,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmNoxiousMiasma0": {
     "name": "Schädliches Miasma",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=Blm8nddvCOH69bL8]], jede [[lookup @target.affects.type activity=Blm8nddvCOH69bL8]] in einer Kugel mit [[lookup @target.template.size activity=Blm8nddvCOH69bL8]] Fuß Radius,\nzentriert auf einen Punkt, den das [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=Blm8nddvCOH69bL8]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel erleidet einen Malus von −2 auf die RK bis zum Ende seines nächsten Zuges.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=Blm8nddvCOH69bL8]], jede Kreatur in einer Kugel mit [[lookup @target.template.size activity=Blm8nddvCOH69bL8]] Fuß Radius,\nzentriert auf einen Punkt, den das [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=Blm8nddvCOH69bL8]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel erleidet einen Malus von −2 auf die RK bis zum Ende seines nächsten Zuges.</p><p\nclass=\"feature\"><em>Misserfolg oder Erfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -11588,7 +11588,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmShimmeringShie": {
     "name": "Schimmernder Schild",
-    "description": "<p>Das [[lookup @name lowercase]]{monster} wählt sich selbst oder eine [[lookup @target.affects.type activity=sl8NoPhB0e5z6jmK]], die es innerhalb von\n[[lookup @range.value activity=sl8NoPhB0e5z6jmK]] Fuß von sich sehen kann, als Ziel. Das\nZiel erhält [[/healing average temp]] temporäre Trefferpunkte, und seine RK erhöht sich um 2 bis\nzum Ende des nächsten Zuges des [[lookup @name lowercase]]{monster}. Das\n[[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
+    "description": "<p>Das [[lookup @name lowercase]]{monster} wählt sich selbst oder eine Kreatur, die es innerhalb von\n[[lookup @range.value activity=sl8NoPhB0e5z6jmK]] Fuß von sich sehen kann, als Ziel. Das\nZiel erhält [[/healing average temp]] temporäre Trefferpunkte, und seine RK erhöht sich um 2 bis\nzum Ende des nächsten Zuges des [[lookup @name lowercase]]{monster}. Das\n[[lookup @name lowercase]]{monster} kann diese Aktion erst wieder zu Beginn seines\nnächsten Zuges ausführen.</p>",
     "activities": {
       "Temporary Healing": "Temporäre Heilung"
     },
@@ -11609,7 +11609,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmThunderclap000": {
     "name": "Donnerschlag",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=Lq6GexegvlEVB6Dh]], jedes [[lookup @target.affects.type activity=Lq6GexegvlEVB6Dh]] in einer Kugel mit [[lookup @target.template.size activity=Lq6GexegvlEVB6Dh]] Fuß Radius, die auf einen\nPunkt zentriert ist, den das [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=Lq6GexegvlEVB6Dh]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Deafened apply=false] bis zum\nEnde seines nächsten Zuges.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=Lq6GexegvlEVB6Dh]], jede Kreatur in einer Kugel mit [[lookup @target.template.size activity=Lq6GexegvlEVB6Dh]] Fuß Radius, die auf einen\nPunkt zentriert ist, den das [[lookup @name lowercase]]{monster} innerhalb von\n[[lookup @range.value activity=Lq6GexegvlEVB6Dh]] Fuß sehen kann.</p><p\nclass=\"feature\"><em>Misserfolg:</em> [[/damage average]] Schaden, und das\nZiel hat den Zustand &amp;Reference[Deafened apply=false] bis zum\nEnde seines nächsten Zuges.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -11619,7 +11619,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmToxicInk000000": {
     "name": "Giftige Tinte",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=Kquf9zADg0jtKBqw]], jedes [[lookup @target.affects.type activity=Kquf9zADg0jtKBqw]] in einer [[lookup @target.template.size activity=Kquf9zADg0jtKBqw]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, während es unter\nWasser ist.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat die\nZustände &amp;Reference[Blinded apply=false] und &amp;Reference[Poisoned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name lowercase]]{monster}. Das [[lookup @name lowercase]]{monster}\nbewegt sich dann bis zu seiner Bewegungsrate.</p><p class=\"feature\"><em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=Kquf9zADg0jtKBqw]], jede Kreatur in einer [[lookup @target.template.size activity=Kquf9zADg0jtKBqw]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht, während es unter\nWasser ist.</p><p class=\"feature\"><em>Misserfolg:</em> Das Ziel hat die\nZustände &amp;Reference[Blinded apply=false] und &amp;Reference[Poisoned\napply=false] bis zum Ende des nächsten Zuges des [[lookup @name lowercase]]{monster}. Das [[lookup @name lowercase]]{monster}\nbewegt sich dann bis zu seiner Bewegungsrate.</p><p class=\"feature\"><em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
     "activities": {
       "Save": "Rettungswurf"
     },
@@ -11629,7 +11629,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmWeightOfYears0": {
     "name": "Last der Jahre",
-    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=xZul1ImCP658OBv3]], ein [[lookup @target.affects.type activity=xZul1ImCP658OBv3]], das das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=xZul1ImCP658OBv3]] Fuß sehen kann. <em>Misserfolg:</em> Das Ziel erhält 1\nStufe &amp;Reference[Exhaustion apply=false]. Solange das Ziel\nErschöpfungsstufen hat, erscheint es [[/r 3d10]] Jahre älter. <em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
+    "description": "<p class=\"feature\"><em>Konstitutionsrettungswurf:</em> SG [[lookup @save.dc.value activity=xZul1ImCP658OBv3]], eine Kreatur, die das [[lookup @name lowercase]]{monster} innerhalb von [[lookup @range.value activity=xZul1ImCP658OBv3]] Fuß sehen kann. <em>Misserfolg:</em> Das Ziel erhält 1\nStufe &amp;Reference[Exhaustion apply=false]. Solange das Ziel\nErschöpfungsstufen hat, erscheint es [[/r 3d10]] Jahre älter. <em>Misserfolg oder\nErfolg:</em> Das [[lookup @name lowercase]]{monster} kann diese\nAktion erst wieder zu Beginn seines nächsten Zuges ausführen.</p>",
     "activities": {
       "Save": "Rettungswurf",
       "Years Older": "Jahre älter"
@@ -11774,7 +11774,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmDeathBurst0000": {
     "name": "Todesstoß",
-    "description": "<p>Das [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]]. <em>Geschicklichkeits-Rettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede\n[[lookup @target.affects.type activity=1SfqWSp7RSyHgG4b]] in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:\n</em>[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>"
+    "description": "<p>Das [[lookup @name lowercase]]{monster} explodiert [[lookup @activation.condition activity=1SfqWSp7RSyHgG4b]]. <em>Geschicklichkeits-Rettungswurf: </em>SG [[lookup @save.dc.value activity=1SfqWSp7RSyHgG4b]], jede\nKreatur in einer [[lookup @target.template.size activity=1SfqWSp7RSyHgG4b]] Fuß großen Ausströmung,\ndie vom [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:\n</em>[[/damage average]] Schaden. <em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmDeathThroes000": {
     "name": "Todeszuckungen",
@@ -11851,7 +11851,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmFireAura000000": {
     "name": "Feueraura",
-    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]]-Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+    "description": "<p>Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede Kreatur nach Wahl des [[lookup @name lowercase]]{monster} in einer [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]]-Fuß-Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
   },
   "mmFireForm000000": {
     "name": "Feuergestalt",
@@ -11873,7 +11873,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmGibbering00000": {
     "name": "Gebrabbel",
-    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} brabbelt zusammenhanglos, solange es nicht den Zustand Kampfunfähig hat. <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=PyGOI84k0PPYrru8]], jede [[lookup @target.affects.type activity=PyGOI84k0PPYrru8]], die ihren Zug innerhalb von [[lookup @target.template.size activity=PyGOI84k0PPYrru8]] Fuß des [[lookup @name lowercase]]{monster} beginnt, während es brabbelt. <em>Misserfolg:</em> Das Ziel würfelt [[/r 1d8]], um zu bestimmen, was es in diesem Zug tut:</p><p class=\"feature-trait\"><strong>1–4.</strong> Das Ziel tut nichts.</p><p class=\"feature-trait\"><strong>5–6.</strong> Das Ziel führt keine Aktion oder Bonusaktion aus und nutzt seine gesamte Bewegung, um sich in eine zufällige Richtung zu bewegen.</p><p\nclass=\"feature-trait\"><strong>7–8.</strong> Das Ziel führt einen Nahkampfangriff gegen eine zufällig bestimmte Kreatur in seiner Reichweite aus oder tut nichts, wenn es keinen solchen Angriff ausführen kann.</p>",
+    "description": "<p class=\"feature\">Das [[lookup @name lowercase]]{monster} brabbelt zusammenhanglos, solange es nicht den Zustand Kampfunfähig hat. <em>Weisheits-Rettungswurf:</em> SG [[lookup @save.dc.value activity=PyGOI84k0PPYrru8]], jede Kreatur, die ihren Zug innerhalb von [[lookup @target.template.size activity=PyGOI84k0PPYrru8]] Fuß des [[lookup @name lowercase]]{monster} beginnt, während es brabbelt. <em>Misserfolg:</em> Das Ziel würfelt [[/r 1d8]], um zu bestimmen, was es in diesem Zug tut:</p><p class=\"feature-trait\"><strong>1–4.</strong> Das Ziel tut nichts.</p><p class=\"feature-trait\"><strong>5–6.</strong> Das Ziel führt keine Aktion oder Bonusaktion aus und nutzt seine gesamte Bewegung, um sich in eine zufällige Richtung zu bewegen.</p><p\nclass=\"feature-trait\"><strong>7–8.</strong> Das Ziel führt einen Nahkampfangriff gegen eine zufällig bestimmte Kreatur in seiner Reichweite aus oder tut nichts, wenn es keinen solchen Angriff ausführen kann.</p>",
     "activities": {
       "Roll d8": "Würfel W8"
     }
@@ -11884,7 +11884,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmHeatAura000000": {
     "name": "Hitzeaura",
-    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
+    "description": "<p class=\"feature\">Am Ende jedes Zuges des [[lookup @name lowercase]]{monster} erleidet jede Kreatur in einer [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]] Fuß großen Ausströmung, die vom [[lookup @name lowercase]]{monster} ausgeht, [[/damage average]] Schaden.</p>"
   },
   "mmHellishRestora": {
     "name": "Höllische Wiederherstellung",
@@ -11993,7 +11993,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "mmMucusCloud0000": {
     "name": "Schleimwolke",
-    "description": "<p class=\"feature\">Unter Wasser ist das [[lookup @name lowercase]]{monster} von Schleim umgeben.</p><p\nclass=\"feature\"><em>Konstitutionsrettungswurf:</em> SG 14, jedes [[lookup @target.affects.type activity=clFFG8uDBSFzxIo8]] in einer [[lookup @target.template.size activity=clFFG8uDBSFzxIo8]]-[[lookup @target.template.units activity=clFFG8uDBSFzxIo8]]-Ausströmung, die vom [[lookup @name lowercase]]{monster} am Ende des Zuges des [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist verflucht. Bis der Fluch endet, wird die Haut des Ziels schleimig, das Ziel kann Luft und Wasser atmen und kann keine Trefferpunkte zurückerhalten, es sei denn, es ist unter Wasser.</p><p class=\"feature\">Solange die verfluchte Kreatur sich außerhalb eines Gewässers befindet, erleidet die Kreatur am Ende jeder 10 Minuten [[/damage average activity=JrxCVyCOsBAMVZS7]] Schaden, es sei denn, Feuchtigkeit wird auf ihre Haut aufgetragen, bevor diese Minuten vergangen sind.</p>",
+    "description": "<p class=\"feature\">Unter Wasser ist das [[lookup @name lowercase]]{monster} von Schleim umgeben.</p><p\nclass=\"feature\"><em>Konstitutionsrettungswurf:</em> SG 14, jede Kreatur in einer [[lookup @target.template.size activity=clFFG8uDBSFzxIo8]]-[[lookup @target.template.units activity=clFFG8uDBSFzxIo8]]-Ausströmung, die vom [[lookup @name lowercase]]{monster} am Ende des Zuges des [[lookup @name lowercase]]{monster} ausgeht. <em>Misserfolg:</em> Das Ziel ist verflucht. Bis der Fluch endet, wird die Haut des Ziels schleimig, das Ziel kann Luft und Wasser atmen und kann keine Trefferpunkte zurückerhalten, es sei denn, es ist unter Wasser.</p><p class=\"feature\">Solange die verfluchte Kreatur sich außerhalb eines Gewässers befindet, erleidet die Kreatur am Ende jeder 10 Minuten [[/damage average activity=JrxCVyCOsBAMVZS7]] Schaden, es sei denn, Feuchtigkeit wird auf ihre Haut aufgetragen, bevor diese Minuten vergangen sind.</p>",
     "activities": {
       "Damage: Outside Water": "Schaden: Außerhalb des Wassers"
     },
