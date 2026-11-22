@@ -14,6 +14,10 @@ einen immer wieder aus dem Spiel. Mit dieser Übersetzung sprechen das System `d
 Charakterbögen und die mitgelieferten Kompendien Deutsch, und zwar mit genau den Begriffen, die
 auch in euren Büchern stehen.
 
+![Derselbe Charakterbogen links auf Englisch, rechts mit der Übersetzung](docs/images/dnd5e-1-sheet.png)
+*Die Heldin Akra aus den Inhalten von 2024: links dnd5e ohne Übersetzung, rechts mit ihr. Werte,
+Reiter, Zauber und Gegenstände sprechen Deutsch.*
+
 ### Die Begriffe aus dem offiziellen SRD
 
 Jeder Regelbegriff ist am offiziellen deutschen Systemreferenzdokument 5.2.1 von Wizards of the
@@ -22,6 +26,14 @@ Schadensarten und Fertigkeiten ebenso wie für Begriffe wie Attributswurf, W20-P
 Waffenbeherrschung oder Zaubergrad. So heißt im Bogen alles so, wie es im Buch steht, und niemand
 muss am Tisch übersetzen, was eine Fähigkeit eigentlich meint. Nur wo das SRD einen Begriff nicht
 kennt, etwa bei Eigenheiten von Foundry, entscheidet die Einheitlichkeit innerhalb des Moduls.
+
+Das gilt auch für die Zauber: Alle 340 Zauber der Inhalte von 2024 heißen wie ihre Überschrift im
+SRD, also **Feuerpfeil**, **Nebelschritt** und **Schauriger Strahl**. Zauber, die im Spielerhandbuch
+einen Erfinder im Namen tragen, heißen hier wie im SRD ohne ihn, etwa **Schwebende Scheibe**.
+
+![Der Zauber Feuerball links auf Englisch, rechts auf Deutsch](docs/images/dnd5e-2-spell.png)
+*Feuerball auf Englisch und auf Deutsch: Zauberzeit, Reichweite in Metern, Komponenten und die
+Beschreibung im Wortlaut des SRD.*
 
 ### Was übersetzt ist
 
@@ -34,16 +46,23 @@ Helden und die Regeln selbst. Die Abdeckung ist dabei sehr breit, aber nicht lü
 Einträge können noch englisch sein, und wenn dir einer auffällt, ist ein Hinweis auf GitHub der
 schnellste Weg, ihn in die nächste Version zu bringen.
 
+![Der Monsterbogen des erwachsenen roten Drachen auf Deutsch](docs/images/dnd5e-3-monster.png)
+*Monster aus dem SRD: der erwachsene rote Drache mit Bewegungsarten, Sinnen, Sprachen, Aktionen und
+legendären Aktionen auf Deutsch.*
+
+![Das Zauberkompendium nach Graden geordnet, daneben Feuerball](docs/images/dnd5e-4-compendium.png)
+*Die Kompendien tragen deutsche Namen und Ordner, hier die Zauber von 2024 nach Graden.*
+
 ### Kleine Dinge, die den Unterschied machen
 
 Die Überschriftenschrift von dnd5e kennt keine Umlaute, sodass Ä, Ö, Ü und ß mitten im Wort in
-einer anderen Schrift erschienen. Das Modul ergänzt genau diese Zeichen, und deutsche Überschriften
-sehen wieder aus wie aus einem Guss.
+einer anderen Schrift erschienen oder als Zeichensalat. Das Modul ergänzt genau diese Zeichen, und
+zwar überall, wo Foundry diese Schrift verwendet: in Bögen, Fenstertiteln und Journalüberschriften.
 
 Spielst du mit Metern, schaltest du in den Einstellungen von dnd5e die metrischen Längeneinheiten
 ein. Dann rechnet das Modul Bewegung, Sinne und Reichweiten von Figuren und Gegenständen beim
-Import von Fuß in Meter und von Meilen in Kilometer um. Die Beschreibungstexte bleiben dabei
-unangetastet.
+Import von Fuß in Meter und von Meilen in Kilometer um, auch Reichweiten, die mit der Stufe
+wachsen. Die Beschreibungstexte bleiben dabei unangetastet.
 
 ### Installation
 
@@ -56,7 +75,7 @@ mitzuinstallieren. Danach aktivierst du beides in deiner Welt, stellst in den Ei
 Du kannst auch diese Manifest-Adresse verwenden:
 `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
 
-Du brauchst Foundry VTT v13 oder v14, das System `dnd5e` ab Version 5.0 (geprüft bis 6.0.3) und
+Du brauchst Foundry VTT v13 oder v14, das System `dnd5e` ab Version 5.0 (geprüft bis 6.0.6) und
 Babele ab Version 2.7.5.
 
 ### Gut zu wissen
@@ -74,6 +93,10 @@ Playing D&D in German while Foundry keeps throwing English terms at you pulls ev
 game again and again. With this translation, the `dnd5e` system, the character sheets and the
 bundled compendiums speak German, using exactly the terms your German books use.
 
+![The same character sheet in English on the left and translated on the right](docs/images/dnd5e-1-sheet.png)
+*The hero Akra from the 2024 content: dnd5e without the translation on the left, with it on the
+right. Scores, tabs, spells and items all speak German.*
+
 ### The terms from the official SRD
 
 Every rules term is checked against the official German System Reference Document 5.2.1 from
@@ -82,6 +105,15 @@ type and skill, just as it does for terms like Attributswurf, W20-Prüfung, Waff
 Zaubergrad. So everything on the sheet is called what it is called in the book, and nobody has to
 translate at the table what an ability actually means. Only where the SRD has no term, such as for
 Foundry specifics, does consistency within the module decide.
+
+The same goes for spells: all 340 spells of the 2024 content carry the name of their heading in the
+SRD, such as **Feuerpfeil**, **Nebelschritt** and **Schauriger Strahl**. Spells that carry an
+inventor in the Player's Handbook are named here as in the SRD, without one, for example
+**Schwebende Scheibe**.
+
+![The spell Fireball in English on the left and in German on the right](docs/images/dnd5e-2-spell.png)
+*Fireball in English and in German: casting time, range in metres, components and the description
+in the wording of the SRD.*
 
 ### What is translated
 
@@ -94,15 +126,23 @@ monsters with their abilities, tables, trade goods, the premade heroes and the r
 Coverage is very broad, but not complete. Individual entries may still be in English, and if you
 spot one, a note on GitHub is the quickest way to get it into the next version.
 
+![The monster sheet of the adult red dragon in German](docs/images/dnd5e-3-monster.png)
+*Monsters from the SRD: the adult red dragon with its movement, senses, languages, actions and
+legendary actions in German.*
+
+![The spell compendium sorted by level, next to Fireball](docs/images/dnd5e-4-compendium.png)
+*The compendiums carry German names and folders, here the 2024 spells by level.*
+
 ### Small things that make a difference
 
 The heading font of dnd5e has no umlauts, so Ä, Ö, Ü and ß appeared in a different font in the
-middle of a word. The module adds exactly these characters, and German headings look all of a
-piece again.
+middle of a word, or as garbage. The module adds exactly these characters, everywhere Foundry uses
+that font: on sheets, in window titles and in journal headings.
 
 If you play with metres, switch on metric length units in the dnd5e settings. The module then
 converts movement, senses and ranges of actors and items from feet to metres and from miles to
-kilometres when they are imported. Description texts are left untouched.
+kilometres when they are imported, including ranges that grow with your level. Description texts
+are left untouched.
 
 ### Installation
 
@@ -114,7 +154,7 @@ world, switch the **Language** setting to **Deutsch** and reload.
 You can also use this manifest URL:
 `https://github.com/Niclasp1501/Ninjo-s-DnD5e5.5-German-Translation--Deutsch-/releases/latest/download/module.json`
 
-You need Foundry VTT v13 or v14, the `dnd5e` system from version 5.0 (tested up to 6.0.3) and
+You need Foundry VTT v13 or v14, the `dnd5e` system from version 5.0 (tested up to 6.0.6) and
 Babele from version 2.7.5.
 
 ### Good to know
