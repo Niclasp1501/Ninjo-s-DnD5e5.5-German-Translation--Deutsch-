@@ -573,12 +573,12 @@ function convertDistanceFormulaByUnit(value, unitKey) {
   if (typeof value !== "string") return value;
   const rule = DISTANCE_UNIT_MAP[String(unitKey ?? "").toLowerCase()];
   if (!rule) return value;
-  return value.replace(/(\d+(?:\.\d+)?)/g, (m, num) => {
-    const n = Number(num);
-    if (!Number.isFinite(n)) return m;
-    const scaled = Math.round(n * rule.factor * 10) / 10;
-    return Number.isInteger(scaled) ? String(scaled) : String(scaled);
-  });
+  // Die ganze Formel umrechnen, nicht jede Zahl darin. Aus „15 * pow(2, @scaling.increase)“
+  // wurde sonst „4.5 * pow(0.6, …)“, und Verschonung der Sterbenden schrumpfte ab Stufe 5
+  // auf 2,7 m, statt auf 9 m zu wachsen.
+  const formula = value.trim();
+  if (!formula) return value;
+  return `(${formula}) * ${rule.factor}`;
 }
 
 function convertDistanceValueByUnit(value, unitKey) {
