@@ -57,6 +57,7 @@ const TOC_HEADING_MAP_DE = new Map([
   ["Running Combat", "Kampf leiten"],
   ["Monster", "Monster"]
 ]);
+const DND5E_HEADING_SCOPE = ".table-of-contents, .journal-sheet, .journal-entry-page, .dnd5e2, #compendium";
 const TOC_HEADING_MAP_DE_NORMALIZED = new Map(
   Array.from(TOC_HEADING_MAP_DE.entries(), ([source, target]) => [source.toLowerCase(), target])
 );
@@ -335,6 +336,9 @@ function localizeOverviewHeadingsInElement(rootElement) {
       if (!text || text.length > 80) continue;
       const replacement = TOC_HEADING_MAP_DE_NORMALIZED.get(normalizeDisplayText(text));
       if (!replacement || replacement === text.trim()) continue;
+      // Nur in Fenstern von dnd5e und in Journalen. Wörter wie „Spells“ oder „Equipment“
+      // stehen auch in Fenstern anderer Module und gehören dort nicht uns.
+      if (!node.closest?.(DND5E_HEADING_SCOPE)) continue;
       node.textContent = replacement;
       changed += 1;
     }

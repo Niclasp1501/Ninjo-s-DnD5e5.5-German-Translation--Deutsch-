@@ -13,6 +13,12 @@ Ersatzschrift Girassol hing bisher nur an einer Liste bekannter Bögen. Jetzt me
 Girassol bei Foundry als Teil von Modesto an, nur für Ä, Ö, Ü, ä, ö, ü, ß und Buchstaben mit
 Akzent. Damit gilt der Ersatz überall, wo Modesto steht.
 
+### Fixed - Überschriften fremder Fenster bleiben, wie sie sind
+
+Bei deutscher Oberfläche übersetzte das Modul Überschriften wie „Spells“, „Equipment“ oder
+„Monster“ in jedem Fenster, auch in denen anderer Module. Das gilt jetzt nur noch im
+Inhaltsverzeichnis, in Journalen, in Fenstern von dnd5e und im Kompendium.
+
 ## [14.2611.1] - 2026-11-16
 
 ### Fixed - Alle Zaubernamen der 2024er-Inhalte heißen wie im SRD 5.2.1
