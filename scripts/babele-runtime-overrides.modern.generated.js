@@ -7867,56 +7867,56 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "mmAdultBlackDrag": {
-    "name": "Erwachsener Schwarzer Drache",
+    "name": "Ausgewachsener schwarzer Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmAdultBlueDrago": {
-    "name": "Blauer Drache (Erwachsen)",
+    "name": "Ausgewachsener blauer Drache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAdultBrassDrag": {
-    "name": "Messingdrache (Erwachsen)",
+    "name": "Ausgewachsener Messingdrache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAdultBronzeDra": {
-    "name": "Bronzedrache (Erwachsen)",
+    "name": "Ausgewachsener Bronzedrache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmAdultCopperDra": {
-    "name": "Kupferdrache (Erwachsen)",
+    "name": "Ausgewachsener Kupferdrache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAdultGoldDrago": {
-    "name": "Golddrache (Erwachsen)",
+    "name": "Ausgewachsener Golddrache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} bei einem Rettungswurf scheitert, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAdultGreenDrag": {
-    "name": "Grüner Drache (Erwachsen)",
+    "name": "Ausgewachsener grüner Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmAdultRedDragon": {
-    "name": "Roter Drache (Erwachsen)",
+    "name": "Ausgewachsener roter Drache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} bei einem Rettungswurf scheitert, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAdultSilverDra": {
-    "name": "Silberdrache (Erwachsen)",
+    "name": "Ausgewachsener Silberdrache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} bei einem Rettungswurf scheitert, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAdultWhiteDrag": {
-    "name": "Weißer Drache (Erwachsen)",
+    "name": "Ausgewachsener weißer Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen. Zusätzlich kostet &amp;Reference[Difficult Terrain], das aus Eis oder Schnee besteht, ihm keine zusätzliche Bewegung.</p>",
     "materials": "eine weiße Feder"
   },
   "mmAncientBlackDr": {
-    "name": "Schwarzer Drache (Uralt)",
+    "name": "Uralter schwarzer Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmAncientBlueDra": {
-    "name": "Blauer Drache (Uralt)",
+    "name": "Uralter blauer Drache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAncientBrassDr": {
-    "name": "Messingdrache (Uralt)",
+    "name": "Uralter Messingdrache",
     "description": "<p>Wenn der [[lookup @name lowercase]]{monster} einen Rettungswurf misslingt, kann er stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAncientBronzeD": {
@@ -7932,11 +7932,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>\n  chat: ''\nidentifier: amphibious\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
   },
   "mmAncientGreenDr": {
-    "name": "Uralter Grüner Drache",
+    "name": "Uralter grüner Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>\n  chat: ''\nidentifier: amphibious\nsource:\n  revision: 1\n  rules: '2024'\n  book: ''\n  license: CC-BY-4.0\nenchant: {}\nprerequisites:\n  level: null\n  repeatable: false\n  items: []\nproperties:\n  - trait\nrequirements: ''\nadvancement: {}\ncover: null\ncrewed: false"
   },
   "mmAncientRedDrag": {
-    "name": "Uralter Roter Drache",
+    "name": "Uralter roter Drache",
     "description": "<p>Wenn dem [[lookup @name lowercase]]{monster} ein Rettungswurf misslingt, kann es stattdessen wählen, ihn zu bestehen.</p>"
   },
   "mmAncientSilverD": {
@@ -7944,28 +7944,28 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]]-Angriffe aus. Er kann einen Angriff durch den Einsatz von (A) [[/item .mmParalyzingBrea]] oder (B) Zauberwirken ersetzen, um [[/item .mmSpellcasting00.Activity.DJGcakjcAlCCOOFg]] (Version auf Grad 2) zu wirken.</p>"
   },
   "mmAncientWhiteDr": {
-    "name": "Uralter Weißer Drache",
+    "name": "Uralter weißer Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen. Zusätzlich kostet es &amp;Reference[Difficult Terrain] aus Eis oder Schnee keine zusätzliche Bewegung.</p>",
     "materials": "eine weiße Feder"
   },
   "mmBlackDragonWyr": {
-    "name": "Schwarzes Drachenjunges",
+    "name": "Schwarzer Drachennestling",
     "description": "<p>Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmBlueDragonWyrm": {
-    "name": "Blauer Drachenwelpe",
+    "name": "Blauer Drachennestling",
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
   },
   "mmBrassDragonWyr": {
-    "name": "Messingdrachenwelpe",
+    "name": "Messingdrachennestling",
     "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], jede Kreatur in einer [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]] Fuß langen, [[lookup @target.template.width activity=bDqgmtLG3zcVuqdi]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> Halber Schaden.</p>"
   },
   "mmBronzeDragonWy": {
-    "name": "Bronzedrachenwelpe",
+    "name": "Bronzedrachennestling",
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
   },
   "mmCopperDragonWy": {
-    "name": "Kupferdrachenwelpe",
+    "name": "Kupferdrachennestling",
     "description": "<p><em>Geschicklichkeitsrettungswurf: </em>SG [[lookup @save.dc.value activity=qNI6W02jCUQbPpYE]], jede Kreatur in einer [[lookup @target.template.size activity=qNI6W02jCUQbPpYE]] Fuß langen, [[lookup @target.template.width activity=qNI6W02jCUQbPpYE]] Fuß breiten Linie.</p><p><em>Misserfolg: </em>[[/damage average]] Schaden.</p><p><em>Erfolg:</em> [[lookup @damage.onSave capitalize activity=qNI6W02jCUQbPpYE]] Schaden.</p>"
   },
   "mmDragonTurtle00": {
@@ -7973,11 +7973,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Die [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmGoldDragonWyrm": {
-    "name": "Golddrachenjunges",
+    "name": "Golddrachennestling",
     "description": "<p>Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmGreenDragonWyr": {
-    "name": "Gründrachenjunges",
+    "name": "Grüner Drachennestling",
     "description": "<p>Das [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmHalfdragon0000": {
@@ -7996,15 +7996,15 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "mmRedDragonWyrml": {
-    "name": "Rotdrachenjunges",
+    "name": "Roter Drachennestling",
     "description": "<p>Das [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
   },
   "mmSilverDragonWy": {
-    "name": "Silberdrachenjunges",
+    "name": "Silberdrachennestling",
     "description": "<p>Das [[lookup @name lowercase]]{monster} führt zwei [[/item .mmRend0000000000]] Angriffe aus.</p>"
   },
   "mmWhiteDragonWyr": {
-    "name": "Weißer Drachenwelpe",
+    "name": "Weißer Drachennestling",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Fertigkeitswurf ablegen zu müssen. Zusätzlich kostet es ihn &amp;Reference[Difficult Terrain], wenn er sich durch Eis oder Schnee bewegt, keine zusätzliche Bewegung.</p>"
   },
   "mmWyvern00000000": {
@@ -8012,11 +8012,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt einen [[/item .mmBite0000000000]]-Angriff und einen [[/item .mmSting000000000]]-Angriff aus.</p>"
   },
   "mmYoungBlackDrag": {
-    "name": "Junger Schwarzer Drache",
+    "name": "Junger schwarzer Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmYoungBlueDrago": {
-    "name": "Junger Blauer Drache",
+    "name": "Junger blauer Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]]-Angriffe aus.</p>"
   },
   "mmYoungBrassDrag": {
@@ -8036,11 +8036,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]]-Angriffe aus. Es kann einen Angriff durch den Einsatz von [[/item .mmWeakeningBreat]] ersetzen.</p>"
   },
   "mmYoungGreenDrag": {
-    "name": "Junger Grüner Drache",
+    "name": "Junger grüner Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann Luft und Wasser atmen.</p>"
   },
   "mmYoungRedDragon": {
-    "name": "Junger Roter Drache",
+    "name": "Junger roter Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]] Angriffe aus.</p>"
   },
   "mmYoungSilverDra": {
@@ -8048,7 +8048,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Der [[lookup @name lowercase]]{monster} führt drei [[/item .mmRend0000000000]] Angriffe aus. Er kann einen Angriff durch den Einsatz von [[/item .mmParalyzingBrea]] ersetzen.</p>"
   },
   "mmYoungWhiteDrag": {
-    "name": "Junger Weißer Drache",
+    "name": "Junger weißer Drache",
     "description": "<p>Der [[lookup @name lowercase]]{monster} kann sich über eisige Oberflächen bewegen und diese erklimmen, ohne einen Attributswurf ablegen zu müssen. Zusätzlich kostet &amp;Reference[Difficult Terrain], das aus Eis oder Schnee besteht, ihm keine zusätzliche Bewegung.</p>"
   },
   "mmAirElemental00": {
