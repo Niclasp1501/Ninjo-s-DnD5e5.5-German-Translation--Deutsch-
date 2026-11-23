@@ -3,6 +3,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed - Drachen, Gesinnungen und Schaden in Monsterbögen
+
+- Die 40 bunten und metallischen Drachen von 2024 heißen wie im SRD: **Ausgewachsener roter
+  Drache**, **Junger Golddrache**, **Uralter blauer Drache**, **Roter Drachennestling**. Bisher
+  standen fünf Schreibweisen nebeneinander, etwa „Roter Drache (Erwachsen)“ und
+  „Rotdrachenjunges“.
+- Die Gesinnung der Monster von 2024 ist deutsch, etwa **Chaotisch böse** statt Chaotic Evil.
+- In 30 Monstertexten steht **Feuerschaden**, **Hiebschaden** und so weiter statt „Feuer Schaden“.
+- Der Barbed Devil heißt **Stachelteufel**.
+
 ## [14.2611.2] - 2026-11-23
 
 ### Fixed - Reichweiten, die mit der Stufe wachsen
