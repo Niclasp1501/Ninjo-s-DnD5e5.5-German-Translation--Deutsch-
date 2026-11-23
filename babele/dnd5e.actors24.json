@@ -14,6 +14,10 @@
       "path": "system.details.biography.value",
       "converter": "dnd5e55DescriptionDeRuntime"
     },
+    "alignment": {
+      "path": "system.details.alignment",
+      "converter": "dnd5e55MonsterAlignmentDeRuntime"
+    },
     "movementContainer": {
       "path": "system.attributes.movement",
       "converter": "dnd5e55ActorMovementMetricRuntime"
