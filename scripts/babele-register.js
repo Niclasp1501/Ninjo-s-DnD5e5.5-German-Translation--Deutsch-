@@ -61,12 +61,17 @@ const EMBEDDED_ITEM_NAME_FALLBACK_MAP = {
   "Otherworldly Slam": "Außerweltlicher Hieb",
   "Fell Glare": "Böses Starren",
   "Fey Step": "Feenschritt",
-  "Healing Touch": "Heilende Berührung"
+  "Healing Touch": "Heilende Berührung",
+  // Seit dnd5e 6.1.1 steht die Herkunft des Reittiers im Namen.
+  "Fell Glare (Fiend Only)": "Böses Starren (nur Unhold)",
+  "Fey Step (Fey Only)": "Feenschritt (nur Feenwesen)",
+  "Healing Touch (Celestial Only)": "Heilende Berührung (nur Celestisches Wesen)"
 };
 const ACTOR_TYPE_CUSTOM_MAP = {
   "Spectral Sword": "Spektralschwert",
   "Nature Spirit": "Naturgeist",
   "Otherworldly Steed": "Außerweltliches Reittier",
+  "Spectral Force": "Spektrale Kraft",
   "Celestial, Fey, or Fiend (Your Choice)": "Celestisches Wesen, Feenwesen oder Unhold (deine Wahl)"
 };
 
@@ -485,6 +490,10 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
       if (typeof activityMeta.chatFlavor === "string" && activityMeta.chatFlavor.trim() && activity?.description) {
         activity.description.chatFlavor = fixMojibakeRuntime(activityMeta.chatFlavor);
       }
+      // Seit dnd5e 6.1 tragen Aktivitäten einen eigenen Text, den Merkmale per @Embed einbinden.
+      if (typeof activityMeta.description === "string" && activityMeta.description.trim() && activity?.description) {
+        activity.description.value = fixMojibakeRuntime(activityMeta.description);
+      }
       if (typeof activityMeta.activationCondition === "string" && activityMeta.activationCondition.trim() && activity?.activation) {
         activity.activation.condition = fixMojibakeRuntime(activityMeta.activationCondition);
       }
@@ -518,7 +527,8 @@ function translateActivitiesRuntime(originalValue, _entryTranslation, data) {
 
 function translateAdvancementRuntime(originalValue, _entryTranslation, data) {
   if (!isGermanUi()) return originalValue;
-  if (!Array.isArray(originalValue)) return originalValue;
+  // Bis dnd5e 6.0 ein Array, ab 6.1 ein Objekt nach Kennung des Schritts.
+  if (!originalValue || typeof originalValue !== "object") return originalValue;
 
   const itemType = String(data?.type ?? "");
   if (!["class", "subclass", "feat", "race", "background"].includes(itemType)) return originalValue;
@@ -528,13 +538,15 @@ function translateAdvancementRuntime(originalValue, _entryTranslation, data) {
   if (!advMap || typeof advMap !== "object") return originalValue;
 
   const translated = foundry.utils.deepClone(originalValue);
-  for (const step of translated) {
+  for (const step of Array.isArray(translated) ? translated : Object.values(translated)) {
     if (!step || typeof step !== "object") continue;
     const sid = String(step._id ?? "");
-    const title = String(step.title ?? "");
+    // dnd5e 6.1 hat das Feld „title“ in „name“ umbenannt.
+    const titelFeld = "name" in step && !("title" in step) ? "name" : "title";
+    const title = String(step[titelFeld] ?? "");
     const mapped = advMap[sid] || advMap[title] || null;
     if (!mapped || typeof mapped !== "object") continue;
-    if (typeof mapped.title === "string" && mapped.title.trim()) step.title = fixMojibakeRuntime(mapped.title);
+    if (typeof mapped.title === "string" && mapped.title.trim()) step[titelFeld] = fixMojibakeRuntime(mapped.title);
     if (typeof mapped.hint === "string" && mapped.hint.trim()) step.hint = fixMojibakeRuntime(mapped.hint);
   }
   return translated;
@@ -662,6 +674,19 @@ function convertOriginDistanceContainerUnitsRuntime(originalValue, _entryTransla
   if (!originalValue || typeof originalValue !== "object") return originalValue;
   const translated = foundry.utils.deepClone(originalValue);
   translated.units = "m";
+  // Ab dnd5e 6.1 liegen die Werte eine Ebene tiefer (movement.speeds, senses.ranges) und haben keinen
+  // eigenen Babele-Pfad. Ohne Umrechnung stünde dort „30 m“ statt „9 m“, sobald die Einheit Meter ist.
+  for (const unter of ["speeds", "ranges"]) {
+    const werte = translated[unter];
+    if (!werte || typeof werte !== "object") continue;
+    for (const [key, wert] of Object.entries(werte)) {
+      if (wert === null || wert === undefined || wert === "") continue;
+      const n = Number(wert);
+      if (!Number.isFinite(n)) continue;
+      const meter = convertFeetToMeters(n);
+      werte[key] = typeof wert === "string" ? String(meter) : meter;
+    }
+  }
   return translated;
 }
 
@@ -1093,6 +1118,10 @@ function convertActivitiesRangeRuntime(originalValue, _entryTranslation, data) {
       if (typeof activityMeta.chatFlavor === "string" && activityMeta.chatFlavor.trim() && activity?.description) {
         activity.description.chatFlavor = fixMojibakeRuntime(activityMeta.chatFlavor);
       }
+      // Seit dnd5e 6.1 tragen Aktivitäten einen eigenen Text, den Merkmale per @Embed einbinden.
+      if (typeof activityMeta.description === "string" && activityMeta.description.trim() && activity?.description) {
+        activity.description.value = fixMojibakeRuntime(activityMeta.description);
+      }
       if (typeof activityMeta.activationCondition === "string" && activityMeta.activationCondition.trim() && activity?.activation) {
         activity.activation.condition = fixMojibakeRuntime(activityMeta.activationCondition);
       }
@@ -1204,7 +1233,7 @@ function translateEmbeddedItemsRuntime(originalValue, _entryTranslation, _data) 
       item.effects = translateEffectsRuntime(item.effects, null, item);
     }
 
-    if (Array.isArray(item?.system?.advancement)) {
+    if (item?.system?.advancement && typeof item.system.advancement === "object") {
       item.system.advancement = translateAdvancementRuntime(item.system.advancement, null, item);
     }
 
