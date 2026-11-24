@@ -5,6 +5,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Added - dnd5e 6.1.1
+
+- **Elf, Gnom und Tiefling** sind in 6.1.1 je eine Spezies mit wählbarer Abstammung. Die neuen
+  Einträge sind deutsch, ebenso die Drakonische Abstammung mit ihren zehn Drachenvorfahren, die
+  Länder des Zirkels des Landes, die Elementare Affinität und Selbstwiederherstellung.
+- Das Kompendium **Aktive Effekte** ist übersetzt, alle 217 Effekte und ihre Ordner, etwa
+  „Vorteil auf Weisheitsrettungswürfe“ oder „Resistenz gegen Feuerschaden“.
+- Merkmale binden ihre Teile jetzt als **Aktivitäten** mit eigenem Text ein, zum Beispiel die
+  Effekte des Brutalen Schlags. Diese 65 Texte sind deutsch. Auch die Effekte an Klassen-,
+  Spezies- und Gegenstandsmerkmalen werden jetzt übersetzt, nicht erst auf dem Charakterbogen.
+- 79 neue Oberflächentexte, darunter Ansehen und Fraktionen, die Antimagie-Region und die
+  kurzen Knopftexte im Chat. Unter dnd5e vor 6.1 bleiben die Knöpfe wie bisher.
+- Dazu die 13 Gifte von 2014 (etwa Purpurwurmgift und Drowgift) und die Beschwörungen Treuer Hund,
+  Flammenkugel und Waffe des Glaubens.
+
+### Fixed - Klassennamen und Zauberbuch
+
+- Im Zauberwirken des Magiers und in drei weiteren Magiermerkmalen stand „Zauberer“, in der
+  Quelle der Magie des Zauberers „Hexenmeister“. Beides ist richtiggestellt, und der neue Kasten
+  zum Erweitern des Zauberbuchs ist übersetzt.
+
 ### Fixed - Drachen, Gesinnungen und Schaden in Monsterbögen
 
 - Die 40 bunten und metallischen Drachen von 2024 heißen wie im SRD: **Ausgewachsener roter
