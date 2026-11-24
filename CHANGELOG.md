@@ -5,6 +5,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Changed - Klassenmerkmale wie im SRD 5.2.1
+
+Wie zuvor die Zauber tragen jetzt auch die Klassen- und Unterklassenmerkmale von 2024 die Namen
+des deutschen SRD 5.2.1. Danke an squashball für den Hinweis (#7).
+
+- Rund 100 Merkmale sind umbenannt, darunter **Kampfrausch** statt *Wut*, **Tiergestalt** statt
+  *Wilde Gestalt*, **Durchschnaufen**, **Tatendrang**, **Göttliche Macht fokussieren**,
+  **Raffinierte Aktion**, **Erzfeind**, **Brutaler Hieb** und **Kampfkünste**.
+- Die Schauerlichen Anrufungen, die Metamagie-Optionen und die Wahloptionen der Ordnungen und
+  Schläge heißen ebenfalls wie im SRD, etwa **Dürstende Klinge**, **Gespiegelter Zauber** und
+  **Urschlag**.
+- Verweise, Aktivitäten, Effekte, Aufstiegstitel und Tabellenspalten folgen, ebenso die
+  Nennungen in den Texten der anderen Merkmale.
+- Der Zauber *Arcane Vigor* heißt **Arkane Vitalität** wie im Spielerhandbuch 2024. Im SRD kommt
+  er nicht vor.
+
 ### Added - dnd5e 6.1.1
 
 - **Elf, Gnom und Tiefling** sind in 6.1.1 je eine Spezies mit wählbarer Abstammung. Die neuen
@@ -13,7 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Das Kompendium **Aktive Effekte** ist übersetzt, alle 217 Effekte und ihre Ordner, etwa
   „Vorteil auf Weisheitsrettungswürfe“ oder „Resistenz gegen Feuerschaden“.
 - Merkmale binden ihre Teile jetzt als **Aktivitäten** mit eigenem Text ein, zum Beispiel die
-  Effekte des Brutalen Schlags. Diese 65 Texte sind deutsch. Auch die Effekte an Klassen-,
+  Effekte des Brutalen Hiebs. Diese 65 Texte sind deutsch. Auch die Effekte an Klassen-,
   Spezies- und Gegenstandsmerkmalen werden jetzt übersetzt, nicht erst auf dem Charakterbogen.
 - 79 neue Oberflächentexte, darunter Ansehen und Fraktionen, die Antimagie-Region und die
   kurzen Knopftexte im Chat. Unter dnd5e vor 6.1 bleiben die Knöpfe wie bisher.

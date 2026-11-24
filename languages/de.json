@@ -727,7 +727,7 @@
             "Label": "Distanz"
           },
           "Number": {
-            "Hint": "Verwenden Sie dies für rein numerische Werte wie den Wut-Schadensbonus oder die Anzahl der Anwendungen pro Tag.",
+            "Hint": "Verwenden Sie dies für rein numerische Werte wie den Kampfrausch-Schadensbonus oder die Anzahl der Anwendungen pro Tag.",
             "Label": "Numerisch"
           },
           "String": {
@@ -746,7 +746,7 @@
                 "label": "HG"
               }
             },
-            "Hint": "Verwende dies, um die Herausforderungsgrade von Kreaturen für Funktionen wie Wilde Gestalt darzustellen.",
+            "Hint": "Verwende dies, um die Herausforderungsgrade von Kreaturen für Funktionen wie Tiergestalt darzustellen.",
             "Label": "Herausforderungsgrad"
           },
           "Usage": {
@@ -782,7 +782,7 @@
             "label": "Skalentyp"
           }
         },
-        "Hint": "Ein einzelner Wert, der sich ändert, wenn eine Klasse eine Stufe aufsteigt und in Würfelformeln verfügbar gemacht wird (z.B. der Kampfkunst-Würfel eines Mönchs).",
+        "Hint": "Ein einzelner Wert, der sich ändert, wenn eine Klasse eine Stufe aufsteigt und in Würfelformeln verfügbar gemacht wird (z.B. der Kampfkünste-Würfel eines Mönchs).",
         "Title": "Skalierungswert",
         "Warning": {
           "DuplicateIdentifier": "Mehrere Skalierungswerte haben denselben Bezeichner {identifier}."
