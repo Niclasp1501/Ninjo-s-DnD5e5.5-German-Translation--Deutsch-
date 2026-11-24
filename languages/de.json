@@ -21,7 +21,9 @@
       "vehicle": "Fahrzeug",
       "vehiclePl": "Fahrzeuge",
       "encounter": "Begegnung",
-      "encounterPl": "Begegnungen"
+      "encounterPl": "Begegnungen",
+      "faction": "Fraktion",
+      "factionPl": "Fraktionen"
     },
     "ActiveEffect": {
       "enchantment": "Verzauberung",
@@ -55,7 +57,9 @@
       "weapon": "Waffe",
       "weaponPl": "Waffen",
       "facility": "Einrichtung",
-      "facilityPl": "Einrichtungen"
+      "facilityPl": "Einrichtungen",
+      "renown": "Ansehen",
+      "renownPl": "Ansehen"
     },
     "JournalEntryPage": {
       "class": "Klassenübersicht",
@@ -77,15 +81,17 @@
       "dnd5e": {
         "difficultTerrain": "Schwieriges Gelände",
         "rotateArea": "Bereich drehen",
-        "applyActiveEffect": "Aktiven Effekt anwenden (5e)"
+        "applyActiveEffect": "Aktiven Effekt anwenden (5e)",
+        "antimagic": "Antimagie"
       }
     },
     "HINTS": {
       "RegionBehavior": {
         "dnd5e": {
-          "difficultTerrain": "Markiert eine Region als schwieriges Gelände und legt ihren Typ sowie die Betroffenen fest.",
+          "difficultTerrain": "Markiert eine Region als schwieriges Gelände und legt seine Art fest und wen es betrifft.",
           "rotateArea": "Dreht Marker, Kacheln, Wände und andere Objekte um einen zentralen Drehpunkt.",
-          "applyActiveEffect": "Wendet Aktive Effekte auf Tokens an, solange sie sich in der Region befinden und bestimmte Bedingungen erfüllen."
+          "applyActiveEffect": "Wendet Aktive Effekte auf Tokens an, solange sie sich in der Region befinden und bestimmte Bedingungen erfüllen.",
+          "antimagic": "Verhindert, dass innerhalb der Region magische Fähigkeiten oder Gegenstände benutzt werden."
         }
       }
     }
@@ -888,6 +894,10 @@
           "Duplicate": "Dieser Gegenstand existiert bereits in diesem Fortschritt.",
           "Recursive": "Du kannst einen Gegenstand nicht in seinem eigenen Fortschritt vergeben.",
           "Type": "Items vom Typ {type} können nicht mit diesem Fortschrittstyp hinzugefügt werden."
+        },
+        "DefaultTitle": {
+          "ClassFeatures": "Klassenmerkmale",
+          "SubclassFeatures": "Unterklassenmerkmale"
         }
       },
       "Migration": {
@@ -1664,10 +1674,16 @@
         }
       },
       "Action": {
-        "ConsumeResource": "Ressource verbrauchen",
+        "ConsumeResource": {
+          "Full": "Ressource verbrauchen",
+          "Short": "Verbrauchen"
+        },
         "Create": "Verbrauchsziel erstellen",
         "Delete": "Verbrauchsziel entfernen",
-        "RefundResource": "Ressource Zurückerstatten"
+        "RefundResource": {
+          "Full": "Ressource zurückerstatten",
+          "Short": "Erstatten"
+        }
       },
       "Scaling": {
         "Amount": "Anzahl",
@@ -1947,7 +1963,11 @@
         "Thunder": "Schall"
       },
       "Empty": "Kein Schaden eingerichtet. Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben Schadensteile hinzu.",
-      "EmptyExceptBase": "Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben weitere Schadensteile hinzu."
+      "EmptyExceptBase": "Füge mit der Schaltfläche <i class=\"fas fa-plus\"></i> oben weitere Schadensteile hinzu.",
+      "Resistance": {
+        "Falling": "Fallen",
+        "UniqueCategory": "Besondere Arten"
+      }
     },
     "DamImm": "Schadensimmunitäten",
     "DamMod": "Schadensmodifikation",
@@ -1973,7 +1993,7 @@
       },
       "State": {
         "active": "Angewendet",
-        "downgrade": "Herabgestuft",
+        "downgrade": "Herab&shy;gestuft",
         "ignore": "Ignoriert"
       }
     },
@@ -2183,7 +2203,8 @@
         "Group": {
           "Rules": "Regeln",
           "Standard": "Standard",
-          "Custom": "Benutzerdefiniert"
+          "Custom": "Benutzerdefiniert",
+          "DamageApplicationOptions": "Optionen beim Zufügen von Schaden"
         },
         "Title": "{effect}: Änderung Nr. {number}",
         "Type": {
@@ -2198,9 +2219,29 @@
           },
           "Advantage": {
             "Label": "Vorteilmodus"
+          },
+          "DowngradeImmunityResistance": {
+            "Label": "Immunität und Resistenz herabstufen"
+          },
+          "IgnoreImmunity": {
+            "Label": "Immunität ignorieren"
+          },
+          "IgnoreResistance": {
+            "Label": "Resistenz ignorieren"
+          },
+          "IgnoreVulnerability": {
+            "Label": "Anfälligkeit ignorieren"
           }
         },
-        "Label": "Ändern"
+        "Label": "Ändern",
+        "Key": {
+          "Attack": "Angriffswürfe",
+          "Check": "Attributswürfe",
+          "D20": "W20-Tests",
+          "Damage": "Schadenswürfe",
+          "Healing": "Heilungswürfe",
+          "Save": "Rettungswürfe"
+        }
       },
       "DisabledTooltip": {
         "Disabled": "Dieser Effekt ist in mindestens einer Aktivität seines Gegenstands ausgewählt und kann deshalb nicht ausgesetzt werden.",
@@ -2247,7 +2288,8 @@
       },
       "Warning": {
         "RollCondition": "Bedingungen eines Effekts dürfen nicht auf 'roll.'-Eigenschaften verweisen. Verschiebe diese Bedingung in die einzelnen Änderungen, damit der Effekt angewendet wird.",
-        "StatusCondition": "Effekte, die Zustände verleihen, dürfen nicht selbst von Zuständen abhängen. Verschiebe diese Bedingung in die einzelnen Änderungen, damit der Effekt angewendet wird."
+        "StatusCondition": "Effekte, die Zustände verleihen, dürfen nicht selbst von Zuständen abhängen. Verschiebe diese Bedingung in die einzelnen Änderungen, damit der Effekt angewendet wird.",
+        "DependentsWithoutGM": "Wer {name} entfernt, entfernt auch die zugehörigen Gegenstände, Aktivitäten oder Effekte. Dafür muss eine Spielleitung angemeldet sein."
       },
       "Application": {
         "Action": {
@@ -2401,6 +2443,21 @@
         "magical": {
           "hint": "Diese Verzauberung ist magisch und sollte ausgeschaltet werden, wo keine Magie verfügbar ist.",
           "label": "Magisch"
+        },
+        "rider": {
+          "activities": {
+            "hint": "Diese zusätzlichen Aktivitäten kommen zum verzauberten Gegenstand hinzu, wenn die Verzauberung angewendet wird, und werden mit ihr wieder entfernt.",
+            "label": "Zusätzliche Aktivitäten"
+          },
+          "effects": {
+            "hint": "Diese zusätzlichen Effekte kommen zum verzauberten Gegenstand hinzu, wenn die Verzauberung angewendet wird, und werden mit ihr wieder entfernt.",
+            "label": "Zusätzliche Effekte"
+          },
+          "items": {
+            "hint": "Diese zusätzlichen Gegenstände erhält die Kreatur, sobald einer ihrer Gegenstände verzaubert wird. Endet die Verzauberung, werden sie wieder entfernt.",
+            "label": "Zusätzliche Gegenstände"
+          },
+          "label": "Verbunden"
         }
       },
       "Items": {
@@ -2421,6 +2478,9 @@
         "DisabledTooltip": "Diese Verzauberung ist in mindestens einer Verzauberungsaktivität ihres Gegenstands ausgewählt und kann deshalb nicht direkt auf den Gegenstand wirken.",
         "Hint": "Wenn aktiviert, wird diese Verzauberung direkt auf ihren übergeordneten Gegenstand angewendet.",
         "Label": "Verzauberung auf den Gegenstand anwenden"
+      },
+      "Rider": {
+        "Activity": "Zusatzaktivität der Verzauberung"
       }
     },
     "Environment": "Umgebung",
@@ -2495,7 +2555,11 @@
         "Origin": "Ursprung Talent"
       },
       "Monster": "Monstermerkmal",
-      "Species": "Speziesmerkmal",
+      "Species": {
+        "Label": "Speziesmerkmal",
+        "LabelLegacy": "Volksmerkmal",
+        "Lineage": "Abstammung"
+      },
       "SpeciesLegacy": "Volksmerkmal",
       "SupernaturalGift": {
         "Label": "Übernatürliches Geschenk",
@@ -2681,7 +2745,8 @@
       },
       "Warning": {
         "PhysicalItemOnly": "Nur physische Gegenstände werden unterstützt.",
-        "PlaceMembers": "Fehler beim Platzieren von Tokens in der Szene."
+        "PlaceMembers": "Fehler beim Platzieren von Tokens in der Szene.",
+        "SupportedItemOnly": "Nur physische Gegenstände und Ansehen werden unterstützt."
       }
     },
     "Hair": "Haar",
@@ -2735,7 +2800,10 @@
         }
       },
       "Title": "Heilen",
-      "HealingButton": "Heilung",
+      "HealingButton": {
+        "Full": "Heilung",
+        "Short": "Heilen"
+      },
       "HealingRoll": "Heilungswurf",
       "Hint": "Eine Kreatur heilen",
       "Type": {
@@ -3820,7 +3888,10 @@
         "Wildcard": "Sie müssen über die Berechtigung 'Dateien durchsuchen' verfügen, um Kreaturen mit Platzhalterbildern zu beschwören.",
         "PlaceTokens": "Die beschworenen Kreaturen konnten nicht in der Szene platziert werden."
       },
-      "Hint": "Beschwört eine neue Kreatur auf die Szene."
+      "Hint": "Beschwört eine neue Kreatur auf die Szene.",
+      "DamageChanges": {
+        "Label": "Schadensänderungen"
+      }
     },
     "Summoning": {
       "Label": "Beschwörung"
@@ -3829,7 +3900,10 @@
     "Suppressed": "Unterdrückt",
     "TARGET": {
       "Action": {
-        "PlaceTemplate": "Platziere Messschablone"
+        "PlaceTemplate": {
+          "Full": "Messschablone platzieren",
+          "Short": "Bereich"
+        }
       },
       "FIELDS": {
         "target": {
@@ -4929,7 +5003,9 @@
         "Versatile": "Vielseitig",
         "Verbal": "Verbal",
         "WeightlessContents": "Gewichtslose Inhalte",
-        "UnidentifiedContents": "Nicht identifizierten Inhalt verbergen"
+        "UnidentifiedContents": "Nicht identifizierten Inhalt verbergen",
+        "Hydrating": "Durstlöschend",
+        "Nutritious": "Nahrhaft"
       },
       "SECTIONS": {
         "Activities": "Aktivitäten",
@@ -5039,7 +5115,8 @@
       "Token": "D&D 5e Token-Blatt",
       "Vehicle": "D&D 5e Fahrzeug-Blatt",
       "ActiveEffect": "D&D-5e-Bogen für Aktive Effekte",
-      "AdventureImporter": "D&D-5e-Abenteuerimport"
+      "AdventureImporter": "D&D-5e-Abenteuerimport",
+      "Faction": "D&D 5e Fraktionsbogen"
     },
     "SPELLCASTING": {
       "METHODS": {
@@ -5469,11 +5546,26 @@
         "SelectSuccess": "Erfolge auswählen"
       },
       "Button": {
-        "rollFormula": "Würfeln",
-        "rollAttack": "Angriff",
-        "rollCheck": "Attributswurf",
-        "rollDamage": "Schaden",
-        "rollSave": "Rettungswurf"
+        "rollFormula": {
+          "Full": "Würfeln",
+          "Short": "Würfeln"
+        },
+        "rollAttack": {
+          "Full": "Angriff",
+          "Short": "Angriff"
+        },
+        "rollCheck": {
+          "Full": "Attributswurf",
+          "Short": "Wurf"
+        },
+        "rollDamage": {
+          "Full": "Schaden",
+          "Short": "Schaden"
+        },
+        "rollSave": {
+          "Full": "Rettungswurf",
+          "Short": "Rettung"
+        }
       },
       "Row": {
         "Actions": "Gegenstandsaktionen",
@@ -5482,7 +5574,8 @@
         "rollCheck": "Attributswürfe",
         "rollSave": "Rettungswürfe",
         "Items": "Gegenstände",
-        "Targets": "Ziele"
+        "Targets": "Ziele",
+        "Additional": "Weitere Aktionen"
       },
       "Targets": {
         "Count": "{number}× {name}"
@@ -5913,7 +6006,11 @@
       },
       "Communication": {
         "Label": "Fernkommunikation",
-        "Telepathy": "Telepathie"
+        "Telepathy": "Telepathie",
+        "Formatter": {
+          "Units": "{name}: Einheiten",
+          "Value": "{name}: Reichweite"
+        }
       },
       "Language": {
         "Aarakocra": "Aarakocra",
@@ -5962,7 +6059,10 @@
     },
     "LegendaryResistance": {
       "Action": {
-        "Resist": "Legendäre Resistenz"
+        "Resist": {
+          "Full": "Legendäre Resistenz",
+          "Short": "Widerstehen"
+        }
       },
       "Label": "Legendäre Resistenz",
       "LabelPl": "Legendäre Resistenzen",
@@ -6688,7 +6788,10 @@
       "Lost": "Konzentration verloren",
       "Abbreviation": "K",
       "Action": {
-        "Break": "Breche Konzentration",
+        "Break": {
+          "Full": "Konzentration beenden",
+          "Short": "Beenden"
+        },
         "End": "Konzentration beenden"
       },
       "Description": "Du hältst die Konzentration auf die Effekte von '{name}' ({type}) aufrecht.",
@@ -7028,7 +7131,36 @@
       "Title": "Willkommen bei D&D 5e"
     },
     "BiographyPublicEdit": "Bearbeite Öffentliche Biographie",
-    "FlagsRemarkableAthleteHintLegacy": "Halber Übungsbonus (aufgerundet) auf körperliche Fertigkeitswürfe und Initiative."
+    "FlagsRemarkableAthleteHintLegacy": "Halber Übungsbonus (aufgerundet) auf körperliche Fertigkeitswürfe und Initiative.",
+    "FACTION": {
+      "Action": {
+        "AddMember": "Mitglied hinzufügen"
+      }
+    },
+    "FilterGroupFaction": "Nach Fraktion gruppieren",
+    "RENOWN": {
+      "Action": {
+        "AddModifier": "Ansehensmodifikator hinzufügen",
+        "DeleteModifier": "Ansehensmodifikator löschen"
+      },
+      "Empty": "Noch keine Ansehensmodifikatoren. Füge mit dem Knopf <i class=\"fas fa-plus\"></i> oben einen hinzu.",
+      "FIELDS": {
+        "modifiers": {
+          "element": {
+            "faction": {
+              "label": "Fraktion"
+            },
+            "value": {
+              "label": "Wert",
+              "placeholder": "0"
+            }
+          },
+          "label": "Modifikatoren"
+        }
+      },
+      "Search": "Ansehen durchsuchen",
+      "Unknown": "Unbekannt"
+    }
   },
   "EDITOR": {
     "DND5E": {
@@ -7118,7 +7250,8 @@
       "StatusSurprised": "Überrascht",
       "StatusThreeQuartersCover": "Dreivierteldeckung",
       "StatusTotalCover": "Vollständige Deckung",
-      "StatusTransformed": "Verwandelt"
+      "StatusTransformed": "Verwandelt",
+      "StatusAntimagic": "Antimagie"
     }
   },
   "JOURNALENTRYPAGE": {
@@ -7542,6 +7675,10 @@
       },
       "CONDITIONS": {
         "Name": "Zustände"
+      },
+      "RENOWN": {
+        "Hint": "Schaltet die optionale Erfassung des Ansehens für Charaktere und Gruppen ein.",
+        "Name": "Ansehenswerte"
       }
     },
     "5eNoExhaustionN": "Erschöpfungsautomatik ausschalten",

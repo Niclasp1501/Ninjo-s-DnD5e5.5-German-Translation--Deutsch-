@@ -921,6 +921,35 @@ Hooks.once("i18nInit", () => {
   console.log(`[${MODULE_ID}] dnd5e ${game.system.version}: ${gesetzt} Texte auf die 5.x-Fassung gesetzt.`);
 });
 
+// dnd5e 6.1 hat diese Knopftexte in eine Lang- und eine Kurzform geteilt (Full, Short).
+// de.json trägt die 6.1-Fassung; vor 6.1 sind es einfache Texte, sonst stünde dort der rohe Schlüssel.
+const DND5E_VOR_61_TEXTE = {
+  "DND5E.CHATMESSAGE.Button.rollAttack": "Angriff",
+  "DND5E.CHATMESSAGE.Button.rollCheck": "Attributswurf",
+  "DND5E.CHATMESSAGE.Button.rollDamage": "Schaden",
+  "DND5E.CHATMESSAGE.Button.rollFormula": "Würfeln",
+  "DND5E.CHATMESSAGE.Button.rollSave": "Rettungswurf",
+  "DND5E.CONCENTRATION.Action.Break": "Konzentration beenden",
+  "DND5E.CONSUMPTION.Action.ConsumeResource": "Ressource verbrauchen",
+  "DND5E.CONSUMPTION.Action.RefundResource": "Ressource zurückerstatten",
+  "DND5E.Feature.Species": "Speziesmerkmal",
+  "DND5E.HEAL.HealingButton": "Heilung",
+  "DND5E.LegendaryResistance.Action.Resist": "Legendäre Resistenz",
+  "DND5E.TARGET.Action.PlaceTemplate": "Messschablone platzieren"
+};
+
+Hooks.once("i18nInit", () => {
+  if (game.system?.id !== "dnd5e" || !isGermanUi()) return;
+  if (!foundry.utils.isNewerVersion("6.1.0", game.system.version)) return;
+  for (const [key, value] of Object.entries(DND5E_VOR_61_TEXTE)) {
+    try {
+      foundry.utils.setProperty(game.i18n.translations, key, value);
+    } catch (_err) {
+      // Ein Zwischenglied ist kein Objekt; dann bleibt die 6.1-Fassung stehen.
+    }
+  }
+});
+
 /*
  * Modesto Condensed hat keine Umlaute und kein ß, aus „Reißenden“ wird dort „Rei~enden“.
  * Die Liste in styles/modesto-font-fix.css hilft nur auf den Bögen, die sie kennt.
