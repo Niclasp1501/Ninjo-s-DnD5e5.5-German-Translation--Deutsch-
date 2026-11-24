@@ -3802,6 +3802,21 @@
       ],
       "source": "MH S. 120"
     },
+    "Faithful Hound": {
+      "name": "Treuer Hund",
+      "items": [
+        {
+          "id": "See Invisibility",
+          "name": "Unsichtbares sehen",
+          "description": "<p>Der Hund sieht &amp;reference[invisible apply=false]{unsichtbare} Kreaturen und kann in die Ätherebene sehen. Illusionen ignoriert er.</p>"
+        },
+        {
+          "id": "Bite",
+          "name": "Biss",
+          "description": "<p>Zu Beginn jedes deiner Züge versucht der Hund, eine dir feindlich gesinnte Kreatur innerhalb von 1,5 m von ihm zu beißen. Sein Angriffsbonus entspricht deinem Attributsmodifikator zum Zauberwirken plus deinem Übungsbonus. Bei einem Treffer verursacht er 4W8 Stichschaden.</p>"
+        }
+      ]
+    },
     "Fire Elemental": {
       "name": "Feuerelementar",
       "items": [
@@ -3853,6 +3868,21 @@
         }
       ],
       "source": "MH S. 230"
+    },
+    "Flaming Sphere": {
+      "name": "Flammenkugel",
+      "items": [
+        {
+          "id": "Fiery Illumination",
+          "name": "Feuriges Leuchten",
+          "description": "<p>Die Kugel entzündet brennbare Gegenstände, die nicht getragen oder gehalten werden, und spendet in einem Radius von 6 m &amp;reference[bright light]{helles Licht} und weitere 6 m &amp;reference[dim light]{dämmriges Licht}.</p>"
+        },
+        {
+          "id": "Roll",
+          "name": "Rollen",
+          "description": "<p>Du bewegst die Kugel bis zu 9 m weit. Rammst du mit ihr eine Kreatur, muss diese den Rettungswurf gegen den Schaden der Kugel ablegen, und die Kugel bewegt sich in diesem Zug nicht weiter.</p><p>Beim Bewegen kannst du die Kugel über Hindernisse von bis zu 1,5 m Höhe lenken und über Gruben von bis zu 3 m Breite springen lassen.</p>"
+        }
+      ]
     },
     "Flesh Golem": {
       "name": "Fleischgolem",
@@ -8019,6 +8049,16 @@
         }
       ],
       "source": "MH S. 205"
+    },
+    "Spiritual Weapon": {
+      "name": "Waffe des Glaubens",
+      "items": [
+        {
+          "id": "Move and Attack",
+          "name": "Bewegen und angreifen",
+          "description": "<p>In deinen späteren Zügen kannst du die Kraft als Bonusaktion bis zu 6 m weit bewegen und den Angriff gegen eine Kreatur innerhalb von 1,5 m von ihr wiederholen. Bei einem Treffer erleidet das Ziel Energieschaden in Höhe von 1W8 plus deinem Attributsmodifikator zum Zauberwirken.</p><p><strong>Auf höheren Graden.</strong> Wirkst du diesen Zauber mit einem Zauberplatz des 3. Grades oder höher, steigt der Schaden für je zwei Grade über dem 2. um 1W8.</p>"
+        }
+      ]
     },
     "Sprite": {
       "name": "Feengeist",

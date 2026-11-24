@@ -949,11 +949,20 @@ export const LEGACY_OVERRIDES_BY_ID = {
   },
   "qBSEGJyHxdKIlBfj": {
     "name": "Trank des Gifts",
-    "description": "<p><em>Trank, ungewöhnlich</em></p>\n<p><em>Dieses Gebräu sieht, riecht und schmeckt wie ein Heiltrank oder ein anderer nützlicher Trank.</em></p>\n<p>In Wahrheit handelt es sich dabei jedoch um ein Gift, das mit Illusionsmagie belegt wurde. Ein @Compendium[dnd5e.spells.3OZnNhunvRtPOQmH]{Identifizieren} Zauber kann die wahre Natur des Trankes offenlegen.</p>\n<p>Wenn du ihn trinkst, erhältst du 3W6 Giftschaden, und du musst einen Konstitutionsrettungswurf gegen Schwierigkeitsgrad 13 schaffen oder du wirst vergiftet. Am Anfang jedes deiner Züge erhältst du, wenn du auf diese Art vergiftet wurdest, 3W6 Giftschaden. Am Ende deines jeweiligen Zugs kannst du den Rettungswurf wiederholen. Bei einem Erfolg wird der Giftschaden in deinem nachfolgenden Zügen immer 1W6 weniger. Der Gifteffekt endet, wenn der Schaden bis uaf 0 reduziert wurde.</p>\n<p><em><strong>Information</strong>: Um den verringerten Schaden eines erfolgreichen Konstitutionsschutzes anzuwenden, verwende bitte die Andere Formel (eingestellt auf 1W6) wie erforderlich.</em></p>"
+    "description": "<p><em>Trank, ungewöhnlich</em></p>\n<p><em>Dieses Gebräu sieht, riecht und schmeckt wie ein Heiltrank oder ein anderer nützlicher Trank.</em></p>\n<p>In Wahrheit handelt es sich dabei jedoch um ein Gift, das mit Illusionsmagie belegt wurde. Ein @Compendium[dnd5e.spells.3OZnNhunvRtPOQmH]{Identifizieren} Zauber kann die wahre Natur des Trankes offenlegen.</p>\n<p>Wenn du ihn trinkst, erhältst du 3W6 Giftschaden, und du musst einen Konstitutionsrettungswurf gegen Schwierigkeitsgrad 13 schaffen oder du wirst vergiftet. Am Anfang jedes deiner Züge erhältst du, wenn du auf diese Art vergiftet wurdest, 3W6 Giftschaden. Am Ende deines jeweiligen Zugs kannst du den Rettungswurf wiederholen. Bei einem Erfolg wird der Giftschaden in deinem nachfolgenden Zügen immer 1W6 weniger. Der Gifteffekt endet, wenn der Schaden bis uaf 0 reduziert wurde.</p>\n<p><em><strong>Information</strong>: Um den verringerten Schaden eines erfolgreichen Konstitutionsschutzes anzuwenden, verwende bitte die Andere Formel (eingestellt auf 1W6) wie erforderlich.</em></p>",
+    "effects": {
+      "be3nxDanNX7bg2dn": "Vergiftet"
+    }
   },
   "a86F565Pjdzym1jH": {
     "name": "Wahrheitsserum",
-    "description": "<p><em>(Einnahme)</em></p>\n<p>Eine Kreatur, die diesem Gift ausgesetzt wird, muss einen Konstitutionsrettungswurf gegen SG 15 schaffen, sonst ist sie für 1 Stunde @UUID[Compendium.dnd5e.rules.w7eitkpD7QQTB6j0.JournalEntryPage.lq3TRI6ZlED8ABMx]{vergiftet}. Die vergiftete Kreatur kann nicht wissentlich lügen, entsprechend der Auswirkungen des Zaubers @UUID[Compendium.dnd5e.spells.CylBa7jR8DSbo8Z3]{Zone der Wahrheit}.</p>"
+    "description": "<p><em>(Einnahme)</em></p>\n<p>Eine Kreatur, die diesem Gift ausgesetzt wird, muss einen Konstitutionsrettungswurf gegen SG 15 schaffen, sonst ist sie für 1 Stunde @UUID[Compendium.dnd5e.rules.w7eitkpD7QQTB6j0.JournalEntryPage.lq3TRI6ZlED8ABMx]{vergiftet}. Die vergiftete Kreatur kann nicht wissentlich lügen, entsprechend der Auswirkungen des Zaubers @UUID[Compendium.dnd5e.spells.CylBa7jR8DSbo8Z3]{Zone der Wahrheit}.</p>",
+    "effects": {
+      "XJxOfIIj9oraLfCb": {
+        "name": "Kann nicht lügen",
+        "description": "<p>Du kannst nicht wissentlich lügen, als stündest du unter der Wirkung des Zaubers @UUID[Compendium.dnd5e.spells.Item.CylBa7jR8DSbo8Z3]{Zone der Wahrheit}.</p>"
+      }
+    }
   },
   "Sx5E6utixHdAbGNb": {
     "name": "Säure (Phiole)",
@@ -10295,5 +10304,86 @@ export const LEGACY_OVERRIDES_BY_ID = {
   },
   "X03rbSjVcNNJNqa8": {
     "name": "Zauberstab der Wunder"
+  },
+  "0R4VzaAY99facLlm": {
+    "name": "Taggitöl",
+    "description": "<p>Eine Kreatur, die diesem Gift ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst ist sie 24 Stunden lang &amp;Reference[poisoned apply=false]{vergiftet}. Solange sie vergiftet ist, ist sie &amp;Reference[unconscious apply=false]{bewusstlos}. Sie wacht auf, wenn sie Schaden erleidet.</p>",
+    "effects": {
+      "MZS6EZWckpKRqLp1": "Vergiftet und bewusstlos"
+    }
+  },
+  "9HhPykgxpzgHjfak": {
+    "name": "Ätheressenz",
+    "description": "<p>Eine Kreatur, die diesem Gift ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst ist sie 8 Stunden lang &amp;Reference[poisoned apply=false]{vergiftet}. Solange sie vergiftet ist, ist sie &amp;Reference[unconscious apply=false]{bewusstlos}. Sie wacht auf, wenn sie Schaden erleidet oder eine andere Kreatur sie als Aktion wachrüttelt.</p>",
+    "effects": {
+      "n2M4VewapvHOC4q1": "Vergiftet und bewusstlos"
+    }
+  },
+  "9YyfarjYlV1QXvGi": {
+    "name": "Mitternachtstränen",
+    "description": "<p>Eine Kreatur, die dieses Gift einnimmt, spürt bis zum Glockenschlag um Mitternacht keine Wirkung. Ist das Gift bis dahin nicht neutralisiert, muss sie einen [[/save]]-Rettungswurf ablegen. Bei einem Misserfolg erleidet sie [[/damage average]] Schaden, bei einem Erfolg die Hälfte.</p>"
+  },
+  "Ak7k7JVu0iiI6N8r": {
+    "name": "Assassinenblut",
+    "description": "<p>Eine Kreatur, die diesem Gift ausgesetzt ist, muss einen [[/save]]-Rettungswurf ablegen. Bei einem Misserfolg erleidet sie [[/damage average]] Schaden und ist 24 Stunden lang &amp;Reference[poisoned apply=false]{vergiftet}. Bei einem Erfolg erleidet sie halben Schaden und ist nicht vergiftet.</p>",
+    "effects": {
+      "CPeuvBUuMeeY5K06": "Vergiftet"
+    }
+  },
+  "B018Yhz1M7Np8JCW": {
+    "name": "Aaskriecherschleim",
+    "description": "<p>Dieses Gift muss von einem toten oder kampfunfähigen Aaskriecher gewonnen werden. Eine Kreatur, die ihm ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst ist sie 1 Minute lang &amp;Reference[poisoned apply=false]{vergiftet}. Solange sie vergiftet ist, ist sie &amp;Reference[paralyzed apply=false]{gelähmt}. Sie kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und beendet den Effekt bei einem Erfolg für sich.</p>",
+    "effects": {
+      "nczzAQLDBNlAgWjq": "Vergiftet und gelähmt"
+    }
+  },
+  "BTBhiXNbSnkW8HP3": {
+    "name": "Betäubungsgift",
+    "description": "<p>Eine Kreatur, die diesem Gift ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst ist sie [[/r 4d6]] Stunden lang &amp;Reference[poisoned apply=false]{vergiftet}. Solange sie vergiftet ist, ist sie &amp;Reference[incapacitated apply=false]{kampfunfähig}.</p>",
+    "effects": {
+      "QnTGMuIGAsENzvHa": "Vergiftet und kampfunfähig"
+    }
+  },
+  "Neh9udRZHj0Bg9EH": {
+    "name": "Verbrannte Othurdämpfe",
+    "description": "<p>Eine Kreatur, die diesem Gift ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst erleidet sie [[/damage average]] Schaden und muss den Rettungswurf zu Beginn jedes ihrer Züge wiederholen. Bei jedem weiteren Misserfolg erleidet sie [[/damage average activity=699G3YGOfe67nPbM]] Schaden. Nach drei erfolgreichen Rettungswürfen endet das Gift.</p>",
+    "activities": {
+      "Save (initial)": "Rettungswurf (erster)",
+      "Save (following)": "Rettungswurf (folgende)"
+    }
+  },
+  "PWUGVaKaYHkvNMDr": {
+    "name": "Purpurwurmgift",
+    "description": "<p>Dieses Gift muss von einem toten oder kampfunfähigen Purpurwurm gewonnen werden. Eine Kreatur, die ihm ausgesetzt ist, muss einen [[/save]]-Rettungswurf ablegen. Bei einem Misserfolg erleidet sie [[/damage average]] Schaden, bei einem Erfolg die Hälfte.</p>"
+  },
+  "TQRezUN0WtdZX5ae": {
+    "name": "Schlangengift",
+    "description": "<p>Dieses Gift muss von einer toten oder kampfunfähigen Riesengiftschlange gewonnen werden. Eine Kreatur, die ihm ausgesetzt ist, muss einen [[/save]]-Rettungswurf ablegen. Bei einem Misserfolg erleidet sie [[/damage average]] Schaden, bei einem Erfolg die Hälfte.</p>"
+  },
+  "hmzXexBpLXFhmzEu": {
+    "name": "Blasse Tinktur",
+    "description": "<p>Eine Kreatur, die diesem Gift ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst erleidet sie [[/damage average]] Schaden und ist &amp;Reference[poisoned apply=false]{vergiftet}. Die vergiftete Kreatur muss den Rettungswurf alle 24 Stunden wiederholen und erleidet bei einem Misserfolg [[/damage average]] Schaden. Solange das Gift wirkt, lässt sich der Schaden, den es verursacht, auf keine Weise heilen. Nach sieben erfolgreichen Rettungswürfen endet der Effekt, und die Kreatur kann normal heilen.</p>",
+    "effects": {
+      "VK1DsXaQeXvrC6Bd": "Vergiftet"
+    }
+  },
+  "nxGKQlAdf0TMUKNa": {
+    "name": "Bosheit",
+    "description": "<p>Eine Kreatur, die diesem Gift ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst ist sie 1 Stunde lang &amp;Reference[poisoned apply=false]{vergiftet}. Solange sie vergiftet ist, ist sie &amp;Reference[blinded apply=false]{blind}.</p>",
+    "effects": {
+      "F00Q1raXGiNoOKoB": "Vergiftet und blind"
+    }
+  },
+  "rT5Hhe7uISNTZK18": {
+    "name": "Drowgift",
+    "description": "<p>Dieses Gift stellen in der Regel nur die Drow her, und nur an Orten fern vom Sonnenlicht. Eine Kreatur, die ihm ausgesetzt ist, muss einen [[/save]]-Rettungswurf bestehen, sonst ist sie 1 Stunde lang &amp;Reference[poisoned apply=false]{vergiftet}. Misslingt der Rettungswurf um 5 oder mehr, ist sie außerdem &amp;Reference[unconscious apply=false]{bewusstlos}, solange sie auf diese Weise vergiftet ist. Sie wacht auf, wenn sie Schaden erleidet oder eine andere Kreatur sie als Aktion wachrüttelt.</p>",
+    "effects": {
+      "2Q62v3BF8Ofb1koU": "Vergiftet",
+      "dV49mks4cT9d5vxg": "Vergiftet und bewusstlos"
+    }
+  },
+  "tJC6SG4kAO2Vt4Qd": {
+    "name": "Wyverngift",
+    "description": "<p>Dieses Gift muss von einem toten oder kampfunfähigen Wyvern gewonnen werden. Eine Kreatur, die ihm ausgesetzt ist, muss einen [[/save]]-Rettungswurf ablegen. Bei einem Misserfolg erleidet sie [[/damage average]] Schaden, bei einem Erfolg die Hälfte.</p>"
   }
 };

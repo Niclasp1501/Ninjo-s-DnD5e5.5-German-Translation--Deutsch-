@@ -2210,7 +2210,23 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbsplCallLightn": {
     "name": "Blitze herbeirufen",
-    "description": "<p>Eine Gewitterwolke erscheint an einem Punkt innerhalb der Reichweite, den du über dir sehen kannst. Sie nimmt die Form eines Zylinders an, der 10 Fuß hoch ist und einen Radius von 60 Fuß hat.</p><p>Wenn du den Zauber wirkst, wähle einen Punkt, den du unter der Wolke sehen kannst. Ein Blitz schießt von der Wolke zu diesem Punkt. Jede Kreatur innerhalb von 5 Fuß dieses Punktes muss einen Geschicklichkeitsrettungswurf machen und erleidet bei einem misslungenen Wurf 3W10 Blitzschaden oder die Hälfte davon bei einem erfolgreichen Wurf.</p><p>Bis der Zauber endet, kannst du eine Magieaktion aufwenden, um erneut auf diese Weise Blitze herabzurufen, wobei du denselben Punkt oder einen anderen anvisierst.</p><p>Wenn du diesen Zauber im Freien während eines Sturms wirkst, gibt dir der Zauber die Kontrolle über diesen Sturm, anstatt einen neuen zu erschaffen. Unter solchen Bedingungen erhöht sich der Schaden des Zaubers um 1W10.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W10 für jeden Zauberplatzgrad über dem 3. Grad.</p>"
+    "description": "<p>Eine Gewitterwolke erscheint an einem Punkt innerhalb der Reichweite, den du über dir sehen kannst. Sie nimmt die Form eines Zylinders an, der 3 m hoch ist und einen Radius von 18 m hat.</p><p>Wenn du den Zauber wirkst, wähle einen Punkt, den du unter der Wolke sehen kannst. Ein Blitz schießt von der Wolke zu diesem Punkt. Jede Kreatur innerhalb von 1,5 m um diesen Punkt muss einen Geschicklichkeitsrettungswurf machen und erleidet bei einem misslungenen Wurf 3W10 Blitzschaden oder die Hälfte davon bei einem erfolgreichen Wurf.</p><p>Bis der Zauber endet, kannst du eine Magieaktion aufwenden, um erneut auf diese Weise Blitze herabzurufen, wobei du denselben Punkt oder einen anderen anvisierst.</p><p>Wenn du diesen Zauber im Freien während eines Sturms wirkst, gibt dir der Zauber die Kontrolle über diesen Sturm, anstatt einen neuen zu erschaffen. Unter solchen Bedingungen erhöht sich der Schaden des Zaubers um 1W10.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W10 für jeden Zauberplatzgrad über dem 3. Grad.</p><section id=\"secret-UISNs3WQbYOUh9Zp\" class=\"secret hide-in-embed\"><p><strong>Foundry-Hinweis</strong></p><p>Wähle für spätere Blitze den Zaubergrad, mit dem du den Zauber ursprünglich gewirkt hast. Die Blitz-Aktivitäten verbrauchen keinen weiteren Zauberplatz.</p></section>",
+    "activities": {
+      "Lightning Strike": "Blitzschlag",
+      "Cast Spell": "Zauber wirken",
+      "Lightning Strike (Storm)": "Blitzschlag (Sturm)"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "description": "<p>Rufe einen Blitz auf einen Punkt unter der Gewitterwolke herab. Kreaturen innerhalb von 1,5 m um diesen Punkt legen den Geschicklichkeitsrettungswurf des Zaubers gegen 3W10 Blitzschaden ab.</p>"
+      },
+      "sPDfCSoPWxrz2niL": {
+        "description": "<p>Rufe eine aufragende Gewitterwolke über dir herbei, die Donner und Blitze über dem Schlachtfeld sammelt, während du die Kontrolle über den Sturm übernimmst.</p>"
+      },
+      "8DvTC5lYcdKn1Q3r": {
+        "description": "<p>Nutze diese Aktivität für einen Blitz aus einem durch den Sturm verstärkten Wirken. Kreaturen innerhalb von 1,5 m um den gewählten Punkt legen den Geschicklichkeitsrettungswurf des Zaubers gegen 4W10 Blitzschaden ab.</p>"
+      }
+    }
   },
   "phbsplClairvoyan": {
     "name": "Hellsehen",
@@ -2394,7 +2410,9 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Schutzgeister flattern für die Dauer in einer 15-Fuß-Ausströmung um dich herum. Wenn du gut oder neutral bist, erscheint ihre spektrale Form engelsgleich oder feenhaft (deine Wahl). Wenn du böse bist, erscheinen sie teuflisch.</p><p>Wenn du diesen Zauber wirkst, kannst du Kreaturen bestimmen, die von ihm unberührt bleiben. Die Bewegungsrate jeder anderen Kreatur wird in der Ausströmung halbiert, und wann immer die Ausströmung in den Raum einer Kreatur eindringt und wann immer eine Kreatur die Ausströmung betritt oder ihren Zug dort beendet, muss die Kreatur einen Weisheitsrettungswurf ablegen. Bei einem misslungenen Rettungswurf erleidet die Kreatur 3W8 gleißenden Schaden (wenn du gut oder neutral bist) oder 3W8 nekrotischen Schaden (wenn du böse bist). Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden. Eine Kreatur legt diesen Rettungswurf nur einmal pro Zug ab.</p><p><strong>Verwendung eines Zauberplatzes höheren Grades.</strong> Der Schaden erhöht sich um 1W8 für jeden Zauberplatzgrad über dem 3.</p>",
     "activities": {
       "Cast": "Wirken",
-      "Ausströmung Save": "Ausströmungs-Rettungswurf"
+      "Ausströmung Save": "Ausströmungs-Rettungswurf",
+      "Spirit Guardians Save": "Rettungswurf gegen die Schutzgeister",
+      "Cast Spell": "Zauber wirken"
     },
     "materials": "eine Gebetsrolle",
     "effects": {
@@ -2537,7 +2555,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Cast": "Wirken",
       "Disengage": "Rückzug",
-      "Ausströmung Save": "Ausströmungs-Rettungswurf"
+      "Ausströmung Save": "Ausströmungs-Rettungswurf",
+      "Emanation Save": "Rettungswurf gegen die Ausströmung"
     }
   },
   "phbsplControlWat": {
@@ -2896,9 +2915,9 @@ export const MODERN_OVERRIDES_BY_ID = {
         "RI73kNpd5iAababR": "Halbling",
         "6L3KbE75ugKNdbhg": "Mensch",
         "xNcsrma8ucsEEgz3": "Ork",
-        "8g4dm4vqB60zPWw5": "Elfische Abstammung",
-        "PkXN8vlW5cXx8vbB": "Teuflisches Erbe",
-        "ncs8GLvSuavCJAqf": "Gnomische Abstammung"
+        "8g4dm4vqB60zPWw5": "Elf",
+        "PkXN8vlW5cXx8vbB": "Tiefling",
+        "ncs8GLvSuavCJAqf": "Gnom"
       }
     }
   },
@@ -3128,7 +3147,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Possess Humanoid": "Humanoiden besitzen",
       "Return from Host": "Vom Wirt zurückkehren",
-      "Transfer Soul": "Seele übertragen"
+      "Transfer Soul": "Seele übertragen",
+      "Cast and Transfer Soul": "Wirken und Seele übertragen"
     },
     "materials": "ein Edelstein, Kristall oder Reliquiar im Wert von 500+ GM",
     "effects": {
@@ -4170,7 +4190,9 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Atemwaffe",
     "activities": {
       "Breath Weapon (Cone)": "Atemwaffe (Kegel)",
-      "Breath Weapon (Line)": "Atemwaffe (Linie)"
+      "Breath Weapon (Line)": "Atemwaffe (Linie)",
+      "Exhale Cone": "Atemwaffe (Kegel)",
+      "Exhale Line": "Atemwaffe (Linie)"
     },
     "description": "<p>Wenn du in deinem Zug die Aktion Angriff ausführst, kannst du einen deiner Angriffe durch eine Ausatmung magischer Energie ersetzen, entweder in einem 4,5 m langen Kegel oder einer 9 m langen, 1,5 m breiten Linie (wähle die Form jedes Mal). Jede Kreatur in diesem Bereich muss einen Geschicklichkeitsrettungswurf ablegen (SG 8 plus dein Konstitutionsmodifikator und dein Übungsbonus). Bei einem misslungenen Rettungswurf erleidet eine Kreatur 1W10 Schaden des Typs, der durch dein Merkmal Drakonische Abstammung bestimmt wird. Bei einem erfolgreichen Rettungswurf erleidet eine Kreatur halb so viel Schaden. Dieser Schaden erhöht sich um 1W10, wenn du die Charakterstufen 5 (2W10), 11 (3W10) und 17\\_(4W10) erreichst.Du kannst diese Atemwaffe so oft einsetzen, wie es deinem Übungsbonus entspricht, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest.</p><section class=\\\"secret\\\" id=\\\"secret-iuhfGfxgl8GeYWBf\\\"><p><strong>Foundry-Hinweis</strong></p><p>Die <strong>Atemwaffe (Kegel)</strong> und <strong>Atemwaffe (Linie)</strong> Aktivitäten sind beide für ihren Vorlagentyp konfiguriert und beinhalten jeden Schadenstyp. Der Schaden skaliert auch mit deinem Stufenaufstieg.</p><p>Du kannst den Schadenstyp im Dialogfeld des Schadenswurfs auswählen. Es wird sich danach an deine Schadenswahl erinnern. Du kannst die Aktivitäten bearbeiten, um die anderen Schadenstypen zu entfernen, um dies zu überspringen.</p></section>"
   },
@@ -4197,16 +4219,28 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptDrowElfLin": {
-    "name": "Elfen-Abstammung, Drow",
-    "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst (wähle die Fähigkeit, wenn du die Abstammung auswählst).</p><h3>Drow-Abstammungsmerkmale</h3><table><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Die Reichweite deiner Dunkelsicht erhöht sich auf 36 m. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplDancingLig]{Tanzende Lichter} Zaubertrick.</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feenfeuer}</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Dunkelheit}</p></td></tr></tbody></table><section\nclass=\"secret\" id=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry-Hinweis</strong></p><p>Dir werden die relevanten Merkmale und Zauber automatisch gewährt, wenn du die Spezies auswählst und wenn du aufsteigst.</p></section>"
+    "name": "Drow",
+    "description": "<table><caption><p>Merkmale der Drow-Abstammung</p></caption><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Die Reichweite deiner &amp;Reference[Darkvision]{Dunkelsicht} erhöht sich auf 36 m. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig]{Tanzende Lichter}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Feenfeuer}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Dunkelheit}</em></p></td></tr></tbody></table>",
+    "effects": {
+      "QVBCW93YJcBqKBVW": {
+        "name": "Drow-Abstammung",
+        "description": "<p>Die Reichweite deiner &amp;Reference[Darkvision]{Dunkelsicht} erhöht sich auf 36 m.</p>"
+      }
+    }
   },
   "phbsptHighElfLin": {
-    "name": "Elfische Abstammung, Hochelf",
-    "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du die Abstammung wählst).</p><table><caption>Merkmale der Hochelfen-Abstammung</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Taschenspielerei} Zaubertrick. Immer wenn du eine Lange Rast beendest, kannst du diesen Zaubertrick durch einen anderen Zaubertrick aus der Zauberliste des Magiers ersetzen.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Magie entdecken}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Nebelschritt}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry-Hinweis</strong></p><p>Die relevanten Merkmale und Zauber werden dir automatisch gewährt, wenn du die Spezies auswählst und Stufen aufsteigst.</p></section>"
+    "name": "Hochelf",
+    "description": "<table><caption><p>Merkmale der Hochelfen-Abstammung</p></caption><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Du kennst den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi]{Taschenspielerei}</em>. Immer wenn du eine Lange Rast beendest, kannst du ihn durch einen anderen Zaubertrick aus der Zauberliste des Magiers ersetzen.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Magie entdecken}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Nebelschritt}</em></p></td></tr></tbody></table>"
   },
   "phbsptWoodElfLin": {
-    "name": "Elfische Abstammung, Waldelf",
-    "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des entsprechenden Grades wirken, den du besitzt. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du die Abstammung wählst).</p><table><caption>Merkmale der Waldelfen-Abstammung</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Deine Bewegungsrate erhöht sich auf 10,5 m. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidenkunst} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLongstride]{Lange Schritte}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Spurloses Gehen}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry-Hinweis</strong></p><p>Die relevanten Merkmale und Zauber werden dir automatisch gewährt, wenn du die Spezies auswählst und Stufen aufsteigst.</p></section>"
+    "name": "Waldelf",
+    "description": "<table><caption><p>Merkmale der Waldelfen-Abstammung</p></caption><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Deine Bewegungsrate erhöht sich auf 10,5 m. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft]{Druidenkunst}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Lange Schritte}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Spurloses Gehen}</em></p></td></tr></tbody></table>",
+    "effects": {
+      "mvlJfduBL4fdWtAj": {
+        "name": "Waldelfen-Abstammung",
+        "description": "<p>Deine Bewegungsrate erhöht sich auf 10,5 m.</p>"
+      }
+    }
   },
   "phbsptFeyAncestr": {
     "name": "Feen-Abstammung",
@@ -4228,15 +4262,20 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptForestGnom": {
-    "name": "Gnomische Abstammung, Wald",
+    "name": "Waldgnom",
     "description": "<p>Du kennst den @UUID[Compendium.dnd5e.spells24.Item.phbsplMinorIllus]{Einfache Illusion} Zaubertrick. Du hast auch immer den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithA]{Mit Tieren sprechen} vorbereitet. Du kannst ihn ohne Zauberplatz so oft wirken, wie dein Übungsbonus beträgt, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du besitzt.</p><section id=\"secret-CwVBuqSGI27gl6R9\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die kostenlosen Wirkungen sind im Zauber enthalten.</p></section>"
   },
   "phbsptRockGnomeL": {
-    "name": "Gnomische Abstammung, Fels",
-    "description": "<p>Du kennst die Zaubertricks @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Ausbessern} und @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Taschenspielerei}. Zusätzlich kannst du 10 Minuten damit verbringen, <em>Prestidigitation</em> zu wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu erschaffen, wie ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn du das Gerät erschaffst, bestimmst du seine Funktion, indem du einen Effekt aus <em>Prestidigitation</em> wählst; das Gerät erzeugt diesen Effekt, wann immer du oder eine andere Kreatur eine Bonusaktion aufwendet, um es durch Berührung zu aktivieren. Wenn der gewählte Effekt Optionen enthält, wählst du eine dieser Optionen für das Gerät, wenn du es erschaffst. Wenn du zum Beispiel den Entzünden-Löschen-Effekt des Zaubers wählst, bestimmst du, ob das Gerät Feuer entzündet oder löscht; das Gerät tut nicht beides. Du kannst drei solcher Geräte gleichzeitig existieren lassen, und jedes zerfällt 8 Stunden nach seiner Erschaffung oder wenn du es mit einer Berührung als Nutzungsaktion demontierst.</p>"
+    "name": "Felsengnom",
+    "description": "<p>Du kennst die Zaubertricks @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Ausbessern} und @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Taschenspielerei}. Zusätzlich kannst du 10 Minuten damit verbringen, <em>Prestidigitation</em> zu wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu erschaffen, wie ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn du das Gerät erschaffst, bestimmst du seine Funktion, indem du einen Effekt aus <em>Prestidigitation</em> wählst; das Gerät erzeugt diesen Effekt, wann immer du oder eine andere Kreatur eine Bonusaktion aufwendet, um es durch Berührung zu aktivieren. Wenn der gewählte Effekt Optionen enthält, wählst du eine dieser Optionen für das Gerät, wenn du es erschaffst. Wenn du zum Beispiel den Entzünden-Löschen-Effekt des Zaubers wählst, bestimmst du, ob das Gerät Feuer entzündet oder löscht; das Gerät tut nicht beides. Du kannst drei solcher Geräte gleichzeitig existieren lassen, und jedes zerfällt 8 Stunden nach seiner Erschaffung oder wenn du es mit einer Berührung als Nutzungsaktion demontierst.</p>",
+    "activitiesMeta": {
+      "lw35fEVbZZCAR086": {
+        "description": "<p>Du kannst 10 Minuten damit verbringen, <em>Taschenspielerei</em> zu wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu erschaffen, etwa ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Beim Erschaffen legst du seine Funktion fest, indem du einen Effekt von <em>Taschenspielerei</em> wählst. Das Gerät erzeugt diesen Effekt, sobald du oder eine andere Kreatur es als Bonusaktion durch Berührung auslöst. Hat der gewählte Effekt selbst Wahlmöglichkeiten, legst du beim Erschaffen eine davon fest. Wählst du zum Beispiel das Entzünden oder Löschen, bestimmst du, ob das Gerät Feuer entzündet oder löscht; beides kann es nicht. Du kannst drei solche Geräte gleichzeitig haben. Jedes zerfällt 8 Stunden nach seiner Erschaffung oder wenn du es mit einer Berührung als &amp;Reference[Utilize]{Nutzen}-Aktion zerlegst.</p>"
+      }
+    }
   },
   "phbsptCloudsJaun": {
-    "name": "Wolken-Sprung",
+    "name": "Wolken-Sprung (Wolkenriese)",
     "description": "<p>Als Bonusaktion teleportierst du dich magisch bis zu 9 m weit an einen unbesetzten Ort, den du sehen kannst.</p>",
     "activities": {
       "Cloud's Jaunt": "Wolken-Sprung"
@@ -4249,7 +4288,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptFiresBurn0": {
-    "name": "Brand des Feuers",
+    "name": "Brand des Feuers (Feuerriese)",
     "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel zusätzlich 1W10 Feuerschaden zufügen.</p>",
     "activities": {
       "Burn": "Brand"
@@ -4262,7 +4301,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptFrostsChil": {
-    "name": "Kälte des Frosts",
+    "name": "Kälte des Frosts (Frostriese)",
     "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du diesem Ziel zusätzlich 1W6 Kälteschaden zufügen und seine Bewegungsrate bis zum Beginn deines nächsten Zuges um 3 m reduzieren.</p><section\nid=\"secret-jxuUuY0r33aiP0zL\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal enthält einen Aktiven Effekt, der zur Verfolgung verwendet werden kann und ihre Bewegungsrate um 10 reduziert.</p></section>",
     "activities": {
       "Chill": "Kälte"
@@ -4288,7 +4327,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptHillsTumbl": {
-    "name": "Hügelsturz",
+    "name": "Hügelsturz (Hügelriese)",
     "description": "<p>Wenn du eine Große oder kleinere Kreatur mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du diesem Ziel den Zustand &amp;Reference[Prone] verleihen.</p>",
     "activities": {
       "Hill's Tumble": "Hügelsturz"
@@ -4330,7 +4369,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptStonesEndu": {
-    "name": "Felsenfestigkeit",
+    "name": "Felsenfestigkeit (Steinriese)",
     "description": "<p>Wenn du Schaden erleidest, kannst du als Reaktion 1W12 würfeln. Addiere deinen Konstitutionsmodifikator zum Ergebnis und reduziere den Schaden um diese Summe.</p>",
     "advancement": {
       "phbsptStonesEndu": {
@@ -4340,7 +4379,7 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptStormsThun": {
-    "name": "Donner des Sturms",
+    "name": "Donner des Sturms (Sturmriese)",
     "description": "<p>Wenn du Schaden von einer Kreatur innerhalb von 18 m Entfernung erleidest, kannst du als Reaktion 1W8 Schallschaden an dieser Kreatur verursachen.</p>",
     "activities": {
       "Storm's Thunder": "Donner des Sturms"
@@ -4354,7 +4393,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Halblingsgewandtheit",
     "description": "<p>Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größenkategorie größer ist als du, aber du kannst nicht im selben Raum anhalten.</p>",
     "effects": {
-      "HtNoV5usxEadPbqp": "Halblingsgewandtheit"
+      "HtNoV5usxEadPbqp": "Halblingsgewandtheit",
+      "GQdaDsAEio14WFfG": "Halblingsgewandtheit"
     }
   },
   "phbsptLuck000000": {
@@ -4395,16 +4435,16 @@ export const MODERN_OVERRIDES_BY_ID = {
     }
   },
   "phbsptAbyssalLeg": {
-    "name": "Teuflisches Erbe, Abyssal",
-    "description": "<p>Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du vom entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist dein Zauberwirkungsattribut für die Zauber, die du mit dieser Eigenschaft wirkst (wähle das Attribut, wenn du das Erbe auswählst).</p><h3 data-anchor=\"abyssal\">Abyssal</h3><p>Die Entropie des Abyss, das Chaos des Pandemoniums und die Verzweiflung von Carceri rufen Tieflinge, die das abyssale Erbe besitzen. Hörner, Fell, Stoßzähne und eigentümliche Gerüche sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten das Blut von Dämonen in ihren Adern haben.</p><table><caption>Abyssale Erbe-Eigenschaften</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Giftschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplPoisonSpra]{Gift versprühen} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRayofSickn]{Strahl der Übelkeit}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldPerson]{Person festhalten}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-AZFLMUN7pgAxMG7Q\"><p><strong>Foundry-Hinweis</strong></p><p>Die Resistenz und Zauber werden dir automatisch gewährt, und du wirst aufgefordert, die Zauberwirkungsfähigkeit während des Fortschritts zu wählen.</p></section>"
+    "name": "Abyssisch",
+    "description": "<table><caption><p>Merkmale des abyssischen Erbes</p></caption><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Giftschaden. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPoisonSpra]{Gift versprühen}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofSickn]{Strahl der Übelkeit}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]{Person festhalten}</em></p></td></tr></tbody></table>"
   },
   "phbsptChthonicLe": {
-    "name": "Teuflisches Erbe, Chthonisch",
-    "description": "<p>Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du vom entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist dein Zauberwirkungsattribut für die Zauber, die du mit dieser Eigenschaft wirkst (wähle das Attribut, wenn du das Erbe auswählst).</p><h3 data-anchor=\"chthonic\">Chthonisch</h3><p>Tieflinge, die das chthonische Erbe besitzen, spüren nicht nur den Sog von Carceri, sondern auch die Gier von Gehenna und die Düsternis des Hades. Einige dieser Tieflinge sehen leichenhaft aus. Andere besitzen die überirdische Schönheit einer Sukkubus, oder sie haben körperliche Merkmale gemeinsam mit einer Nachthaft, einem Yugoloth oder einem anderen neutral bösen teuflischen Vorfahren.</p><table><caption>Chthonische Erbe-Eigenschaften</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Nekrotischen Schaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplChillTouch]{Kalte Hand} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFalseLife0]{Falsches Leben}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRayofEnfee]{Schwächestrahl}</td></tr></tbody></table><section class=\"secret\"\nid=\"secret-GmBAOZVbkBYItbCL\"><p><strong>Foundry-Hinweis</strong></p><p>Die Resistenz und Zauber werden dir automatisch gewährt, und du wirst aufgefordert, die Zauberwirkungsfähigkeit während des Fortschritts zu wählen.</p></section>"
+    "name": "Chthonisch",
+    "description": "<table><caption><p>Merkmale des chthonischen Erbes</p></caption><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Du hast &amp;Reference[Resistance]{Resistenz} gegen nekrotischen Schaden. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{Kalte Hand}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{Falsches Leben}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{Schwächestrahl}</em></p></td></tr></tbody></table>"
   },
   "phbsptInfernalLe": {
-    "name": "Teuflisches Erbe, Infernal",
-    "description": "<p>Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz wirken, den du vom entsprechenden Grad hast. Intelligenz, Weisheit oder Charisma ist dein Zauberwirkungsattribut für die Zauber, die du mit dieser Eigenschaft wirkst (wähle das Attribut, wenn du das Erbe auswählst).</p><h3 data-anchor=\"infernal\">Infernal</h3><p>Das infernale Erbe verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den tobenden Schlachtfeldern von Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein leichter Geruch nach Schwefel oder Rauch sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten ihre Abstammung auf Teufel zurückführen.</p><table><caption>Infernale Erbe-Eigenschaften</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst auch den @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Feuerpfeil} Zaubertrick.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Höllischer Tadel}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Dunkelheit}</td></tr></tbody></table><section\nclass=\"secret\" id=\"secret-UpLnecebx3jeydEG\"><p><strong>Foundry-Hinweis</strong></p><p>Die Resistenz und Zauber werden dir automatisch gewährt, und du wirst aufgefordert, die Zauberwirkungsfähigkeit während des Fortschritts zu wählen.</p></section>"
+    "name": "Infernalisch",
+    "description": "<table><caption><p>Merkmale des infernalischen Erbes</p></caption><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Feuerschaden. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireBolt00]{Feuerpfeil}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHellishReb]{Höllischer Tadel}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Dunkelheit}</em></p></td></tr></tbody></table>"
   },
   "phbsptOtherworld": {
     "name": "Außerweltliche Präsenz",
@@ -4412,9 +4452,41 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbbrbBrutalStri": {
     "name": "Brutaler Schlag",
-    "description": "<p>Wenn du [[/item Reckless Attack]] einsetzt, kannst du auf einen Stärke-basierten Angriffswurf deiner Wahl in deinem Zug auf Vorteil verzichten. Der gewählte Angriffswurf darf keinen Nachteil haben. Wenn der gewählte Angriffswurf trifft, erleidet das Ziel zusätzlich [[lookup @scale.barbarian.brutal-strike]] Schaden des gleichen Typs, der von der Waffe oder dem waffenlosen Schlag verursacht wurde, und du kannst einen Brutaler-Schlag-Effekt deiner Wahl verursachen. Du hast die folgenden Effektoptionen.</p><p><strong>Wuchtiger Schlag. </strong>Das Ziel wird 4,5 m direkt von dir weggestoßen. Du kannst dich dann bis zur Hälfte deiner Bewegungsrate direkt auf das Ziel zubewegen, ohne &amp;Reference[Opportunity\nAttacks] zu provozieren.</p><p><strong>Sehnenhieb. </strong>Die Bewegungsrate des Ziels wird um 4,5 m reduziert, bis zum Beginn deines nächsten Zuges. Ein Ziel kann nur von einem Sehnenhieb gleichzeitig betroffen sein – dem jüngsten.</p><section class=\"secret\"\nid=\"secret-vLb1SoKHWW2796Ko\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt für den Sehnenhieb, der auf ein Ziel angewendet werden kann.</p><p>Die <strong>Schaden</strong>-Aktivität skaliert automatisch, wenn du Verbesserter Brutaler Schlag (2) erhältst.</p></section>",
+    "description": "<p>Wenn du [[/item Reckless Attack]] einsetzt, kannst du auf einen Stärke-basierten Angriffswurf deiner Wahl in deinem Zug auf Vorteil verzichten. Der gewählte Angriffswurf darf keinen Nachteil haben. Wenn der gewählte Angriffswurf trifft, erleidet das Ziel zusätzlich [[lookup @scale.brutal-strike.damage]]{1W10} Schaden des gleichen Typs, der von der Waffe oder dem waffenlosen Schlag verursacht wurde, und du kannst einen Brutaler-Schlag-Effekt deiner Wahl verursachen. Du hast die folgenden Effektoptionen.</p><p><strong>Wuchtiger Schlag. </strong>Das Ziel wird 4,5 m direkt von dir weggestoßen. Du kannst dich dann bis zur Hälfte deiner Bewegungsrate direkt auf das Ziel zubewegen, ohne &amp;Reference[Opportunity\nAttacks] zu provozieren.</p><p><strong>Sehnenhieb. </strong>Die Bewegungsrate des Ziels wird um 4,5 m reduziert, bis zum Beginn deines nächsten Zuges. Ein Ziel kann nur von einem Sehnenhieb gleichzeitig betroffen sein – dem jüngsten.</p><section class=\"secret\"\nid=\"secret-vLb1SoKHWW2796Ko\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt für den Sehnenhieb, der auf ein Ziel angewendet werden kann.</p><p>Die <strong>Schaden</strong>-Aktivität skaliert automatisch, wenn du Verbesserter Brutaler Schlag (2) erhältst.</p></section>",
     "activities": {
-      "Brutal Strike": "Brutaler Schlag"
+      "Brutal Strike": "Brutaler Schlag",
+      "Extra Damage": "Zusätzlicher Schaden",
+      "Forceful Blow": "Wuchtiger Schlag",
+      "Hamstring Blow": "Sehnenhieb",
+      "Staggering Blow": "Taumelnder Schlag",
+      "Sundering Blow": "Zerstörender Schlag"
+    },
+    "effects": {
+      "Q0ou16II1WEcCdyW": {
+        "name": "Zerstört",
+        "description": "<p>Durch einen zerstörenden Schlag erhält der nächste Angriffswurf, den eine andere Kreatur gegen das Ziel ausführt, einen Bonus von +5.</p>"
+      },
+      "uacly0JAXLVwAS6y": {
+        "name": "Taumelnd",
+        "description": "<p>Durch einen taumelnden Schlag hat diese Figur Nachteil auf ihren nächsten Rettungswurf und kann bis zum Beginn des nächsten Zuges des Angreifers keine Gelegenheitsangriffe ausführen.</p>"
+      }
+    },
+    "activitiesMeta": {
+      "nN5gsB6AcSQ4uQPN": {
+        "description": "<p>Wenn du [[/item Reckless Attack]] einsetzt, kannst du bei einem auf Stärke basierenden Angriffswurf deiner Wahl in deinem Zug auf jeden Vorteil verzichten. Der gewählte Angriffswurf darf keinen Nachteil haben. Trifft er, erleidet das Ziel zusätzlich [[lookup @scale.brutal-strike.damage]]{1W10} Schaden derselben Art, die die Waffe oder der waffenlose Schlag verursacht.</p>"
+      },
+      "WKgVJp5AQRLqOlDh": {
+        "description": "<p>Das Ziel wird 4,5 m in gerader Linie von dir weggestoßen. Danach kannst du dich bis zur Hälfte deiner &amp;Reference[Speed]{Bewegungsrate} in gerader Linie auf das Ziel zubewegen, ohne &amp;Reference[Opportunity Attacks]{Gelegenheitsangriffe} zu provozieren.</p>"
+      },
+      "l33Ty0yfpOXRiLve": {
+        "description": "<p>Die &amp;Reference[Speed]{Bewegungsrate} des Ziels sinkt bis zum Beginn deines nächsten Zuges um 4,5 m. Ein Ziel kann immer nur von einem Sehnenhieb betroffen sein, dem jüngsten.</p>"
+      },
+      "vcAdrcmUKQWA68QT": {
+        "description": "<p>Das Ziel hat Nachteil auf seinen nächsten Rettungswurf und kann bis zum Beginn deines nächsten Zuges keine &amp;Reference[Opportunity Attacks]{Gelegenheitsangriffe} ausführen.</p>"
+      },
+      "MP1qQsApCj19F2M5": {
+        "description": "<p>Vor dem Beginn deines nächsten Zuges erhält der nächste Angriffswurf, den eine andere Kreatur gegen das Ziel ausführt, einen Bonus von +5. Ein Angriffswurf kann nur einmal von einem Zerstörenden Schlag profitieren.</p>"
+      }
     }
   },
   "phbbrbDangerSens": {
@@ -4468,7 +4540,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Anhaltender Zorn",
     "description": "<p>Wenn du Initiative würfelst, kannst du alle verbrauchten Anwendungen deines Zorns wiedererlangen. Nachdem du auf diese Weise Anwendungen deines Zorns wiedererlangt hast, kannst du dies erst wieder tun, nachdem du eine lange Rast beendet hast.</p><p>Zusätzlich ist dein Zorn so heftig, dass er nun 10 Minuten lang anhält, ohne dass du etwas tun musst, um ihn Runde für Runde zu verlängern. Dein Zorn endet frühzeitig, wenn du den Zustand &amp;Reference[Unconscious] hast (nicht nur den Zustand &amp;Reference[Incapacitated]) oder schwere Rüstung anlegst.</p><section\nclass=\"secret\" id=\"secret-3IS0iUbWZ04tp74k\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet eine Aktivität, die verwendet werden kann, wenn du Initiative würfelst, um alle Anwendungen deines Zorns wieder aufzuladen.</p></section>",
     "activities": {
-      "Recharge Rage on Initiative": "Zorn bei Initiative aufladen"
+      "Recharge Rage on Initiative": "Zorn bei Initiative aufladen",
+      "Regain Rage": "Wut zurückerhalten"
     }
   },
   "phbbrbPrimalCham": {
@@ -4486,7 +4559,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Wut",
     "description": "<p>Du kannst dich mit einer urzeitlichen Kraft namens Wut erfüllen, einer Kraft, die dir außergewöhnliche Stärke und Widerstandsfähigkeit verleiht. Du kannst sie als Bonusaktion aktivieren, wenn du keine schwere Rüstung trägst.</p><p>Du kannst deine Wut so oft aktivieren, wie es für deine Barbarenstufe in der Spalte „Wutanfälle“ der Tabelle „Barbaren-Eigenschaften“ angegeben ist (derzeit [[lookup @scale.barbarian.rages]]). Du erhältst eine verbrauchte Anwendung zurück, wenn du eine kurze Rast beendest, und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine lange Rast beendest.</p><p>Während sie aktiv ist, folgt deine Wut den untenstehenden Regeln.</p><p><strong>Schadensresistenz.</strong> Du hast Resistenz gegen Wuchtschaden, Stichschaden und Hiebschaden.</p><p><strong>Wutschaden.</strong> Wenn du einen Angriff mit Stärke ausführst – entweder mit einer Waffe oder einem waffenlosen Schlag – und dem Ziel Schaden zufügst, erhältst du einen Bonus auf den Schaden, der mit zunehmender Barbarenstufe steigt, wie in der Spalte „Wutschaden“ der Tabelle „Barbaren-Eigenschaften“ angegeben.</p><p><strong>Vorteil auf Stärke.</strong> Du hast Vorteil auf Stärke-Fertigkeitsprüfungen und Stärke-Rettungswürfe.</p><p><strong>Keine Konzentration oder Zauber.</strong> Du kannst die Konzentration nicht aufrechterhalten und keine Zauber wirken.</p><p><strong>Dauer.</strong> Die Wut dauert bis zum Ende deines nächsten Zuges an und endet vorzeitig, wenn du schwere Rüstung anlegst oder den Zustand Kampfunfähig hast. Wenn deine Wut in deinem nächsten Zug noch aktiv ist, kannst du die Wut um eine weitere Runde verlängern, indem du eines der folgenden Dinge tust:</p><ul><li>Führe einen Angriffswurf gegen einen Feind aus.</li><li>Zwinge einen Feind zu einem Rettungswurf.</li><li>Nutze eine Bonusaktion, um deine Wut zu verlängern.</li></ul><p>Jedes Mal, wenn die Wut verlängert wird, dauert sie bis zum Ende deines nächsten Zuges an. Du kannst eine Wut bis zu 10 Minuten aufrechterhalten.</p><section class=\"secret\"\nid=\"secret-o72MSFMdhSQC7kYa\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt, der die Resistenz und den zusätzlichen Schaden automatisiert. Diese Eigenschaft lädt deine Wutanwendungen auch automatisch bei einer kurzen und langen Rast wieder auf.</p></section>",
     "activities": {
-      "Expend Rage": "Wut verbrauchen"
+      "Expend Rage": "Wut verbrauchen",
+      "Activate": "Aktivieren"
+    },
+    "effects": {
+      "G5XZTi4zYTFiHVll": {
+        "name": "Wut",
+        "description": "<p><strong>Schadensresistenz.</strong> Du hast Resistenz gegen Wucht-, Stich- und Hiebschaden.</p><p><strong>Wutschaden.</strong> Wenn du einen Angriff mit Stärke ausführst, mit einer Waffe oder einem waffenlosen Schlag, und dem Ziel Schaden zufügst, erhältst du einen Bonus auf den Schaden, der mit deinen Barbarenstufen steigt, wie in der Spalte „Wutschaden“ der Tabelle „Barbarenmerkmale“ angegeben.</p><p><strong>Vorteil auf Stärke.</strong> Du hast Vorteil auf Stärkewürfe und Stärkerettungswürfe.</p>"
+      }
     }
   },
   "phbbrbRecklessAt": {
@@ -4530,7 +4610,10 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Recharge with Rage": "Mit Wut aufladen"
     },
     "effects": {
-      "3LofAPFLZJMQJirN": "Verängstigt"
+      "3LofAPFLZJMQJirN": {
+        "name": "Verängstigt",
+        "description": "<p>Bei einem misslungenen Rettungswurf hat die Kreatur 1 Minute lang den Zustand &amp;Reference[Frightened apply=false]{Verängstigt}. Am Ende jedes ihrer Züge wiederholt die verängstigte Kreatur den Rettungswurf und beendet den Effekt bei einem Erfolg für sich.</p>"
+      }
     }
   },
   "phbbrbMindlessRa": {
@@ -4551,10 +4634,16 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Bardische Inspiration",
     "description": "<p>Du kannst andere übernatürlich durch Worte, Musik oder Tanz inspirieren. Diese Inspiration wird durch deinen Bardische-Inspiration-Würfel dargestellt, der als W6 beginnt (derzeit [[lookup @scale.bard.inspiration.die]]).</p><p><strong>Bardische Inspiration verwenden.</strong> Als Bonusaktion kannst du eine andere Kreatur innerhalb von 18 m von dir inspirieren, die dich sehen oder hören kann. Diese Kreatur erhält einen deiner Bardische-Inspiration-Würfel. Eine Kreatur kann nur einen Bardische-Inspiration-Würfel gleichzeitig haben.</p><p>Einmal innerhalb der nächsten Stunde, wenn die Kreatur einen W20-Test misslingt, kann die Kreatur den Bardische-Inspiration-Würfel würfeln und die gewürfelte Zahl zum W20 addieren, wodurch der Misserfolg möglicherweise in einen Erfolg umgewandelt wird. Ein Bardische-Inspiration-Würfel wird verbraucht, wenn er gewürfelt wird.</p><p><strong>Anzahl der Anwendungen.</strong> Du kannst einen Bardische-Inspiration-Würfel so oft verleihen, wie es deinem Charisma-Modifikator entspricht (mindestens einmal), und du erhältst alle verbrauchten Anwendungen zurück, wenn du eine lange Rast beendest.</p><p><strong>Auf höheren Stufen. </strong>Dein Bardische-Inspiration-Würfel ändert sich, wenn du bestimmte Bardenstufen erreichst, wie in der Spalte „Bardenwürfel“ der Tabelle „Barden-Eigenschaften“ angegeben. Der Würfel wird auf Stufe 5 zu einem W8, auf Stufe 10 zu einem W10 und auf Stufe 15 zu einem W12.</p><section class=\"secret\"\nid=\"secret-PtUXhUXS84HSdaew\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt zur Verfolgung, wann ein Charakter Bardische Inspiration zur Verfügung hat.</p><p>Die Wiederherstellung ist auf lange Rast eingestellt (für Stufen, bevor @UUID[Compendium.dnd5e.classes24.Item.phbbrdFontOfInsp]{Quelle der Inspiration} erlangt wird). Bitte passe dies bei Bedarf manuell an.</p></section>",
     "activities": {
-      "Inspire": "Inspirieren"
+      "Inspire": "Inspirieren",
+      "Regain Inspiration": "Inspiration zurückerhalten"
     },
     "effects": {
       "WIHaOwkGqnX71mK1": "Inspiriert"
+    },
+    "activitiesMeta": {
+      "ZVcQ7fRwFSESRA2N": {
+        "description": "<p>Wenn du Initiative würfelst, erhältst du verbrauchte Anwendungen der Bardischen Inspiration zurück, bis du zwei hast, falls du weniger hast.</p>"
+      }
     }
   },
   "phbbrdCountercha": {
@@ -4620,12 +4709,25 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Einmal pro Zug, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe triffst, kannst du dem Ziel zusätzlich 1W8 nekrotischen oder gleißenden Schaden (nach deiner Wahl) zufügen.</p><section id=\"secret-iZHQe1DZBrtcFZCk\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Der Schaden dieser Eigenschaft erhöht sich automatisch, wenn du @UUID[Compendium.dnd5e.classes24.Item.phbclcImprovedBl]{Verbesserte Gesegnete Schläge} erhältst.</p></section>",
     "activities": {
       "Necrotic Divine Strike": "Nekrotischer Göttlicher Schlag",
-      "Radiant Divine Strike": "Gleißender Göttlicher Schlag"
+      "Radiant Divine Strike": "Gleißender Göttlicher Schlag",
+      "Divine Strike": "Göttlicher Schlag",
+      "Improved Divine Strike": "Verbesserter göttlicher Schlag"
+    },
+    "activitiesMeta": {
+      "uYVz8MBW0EZ2X0zD": {
+        "description": "<p>Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe triffst, kannst du dem Ziel zusätzlich 1W8 nekrotischen oder gleißenden Schaden (deine Wahl) zufügen.</p>"
+      },
+      "eeU1tB2ZL9CSISgz": {
+        "description": "<p>Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe triffst, kannst du dem Ziel zusätzlich 2W8 nekrotischen oder gleißenden Schaden (deine Wahl) zufügen.</p>"
+      }
     }
   },
   "phbClcPotentSpel": {
     "name": "Gesegnete Schläge: Mächtiges Zauberwirken",
-    "description": "<p>Addiere deinen Weisheitsmodifikator zum Schaden, den du mit jedem Kleriker-Zaubertrick verursachst.</p><section class=\"secret\"\nid=\"secret-bDHa7ClHZ3YPWKvs\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Bonusschaden ist nicht automatisch in deinen Zaubertricks enthalten.</p><p>Du kannst [[lookup @abilities.wis.mod]] zum Feld „Situativer Bonus“ deiner Zaubertrick-Schadenswürfe hinzufügen oder es dauerhaft zu deinen Zaubertricks hinzufügen, indem du „@abilities.wis.mod“ (ohne Anführungszeichen) in das Feld „Bonus“ eingibst.</p><p>Alternativ enthält die <strong>Schaden</strong>-Aktivität dieser Eigenschaft deinen Weisheitsmodifikator und erlaubt dir, den Schadenstyp im Dialogfeld des Wurfs zu wählen.</p></section>"
+    "description": "<p>Addiere deinen Weisheitsmodifikator zum Schaden, den du mit jedem Kleriker-Zaubertrick verursachst.</p><section class=\"secret\"\nid=\"secret-bDHa7ClHZ3YPWKvs\"><p><strong>Foundry-Hinweis</strong></p><p>Dieser Bonusschaden ist nicht automatisch in deinen Zaubertricks enthalten.</p><p>Du kannst [[lookup @abilities.wis.mod]] zum Feld „Situativer Bonus“ deiner Zaubertrick-Schadenswürfe hinzufügen oder es dauerhaft zu deinen Zaubertricks hinzufügen, indem du „@abilities.wis.mod“ (ohne Anführungszeichen) in das Feld „Bonus“ eingibst.</p><p>Alternativ enthält die <strong>Schaden</strong>-Aktivität dieser Eigenschaft deinen Weisheitsmodifikator und erlaubt dir, den Schadenstyp im Dialogfeld des Wurfs zu wählen.</p></section>",
+    "effects": {
+      "OIqHubfrJ2gjeNYg": "Mächtiges Zauberwirken"
+    }
   },
   "phbclcBlessedStr": {
     "name": "Gesegnete Schläge",
@@ -4637,10 +4739,25 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Divine Spark: Heal": "Göttlicher Funke: Heilen",
       "Divine Spark: Save": "Göttlicher Funke: Rettungswurf",
-      "Turn Undead": "Untote vertreiben"
+      "Turn Undead": "Untote vertreiben",
+      "Sear Undead": "Untote versengen"
     },
     "effects": {
       "iUeSbfduM7K8XrCF": "Vertrieben"
+    },
+    "activitiesMeta": {
+      "UdbUwbvrWwgDuNy9": {
+        "description": "<p>Als Magieaktion richtest du dein Heiliges Symbol auf eine andere Kreatur, die du innerhalb von 9 m sehen kannst, und bündelst göttliche Energie auf sie. Würfle 1W8 und addiere deinen Weisheitsmodifikator. Entweder stellst du der Kreatur Trefferpunkte in Höhe dieser Summe wieder her, oder du zwingst sie zu einem Konstitutionsrettungswurf. Bei einem misslungenen Rettungswurf erleidet sie nekrotischen oder gleißenden Schaden (deine Wahl) in Höhe dieser Summe, bei einem erfolgreichen halb so viel (abgerundet).</p><p>Du würfelst einen zusätzlichen W8, wenn du die Klerikerstufen 7 (2W8), 13 (3W8) und 18 (4W8) erreichst.</p>"
+      },
+      "OY9UrTXvlRL0JUoI": {
+        "description": "<p>Als Magieaktion richtest du dein Heiliges Symbol auf eine andere Kreatur, die du innerhalb von 9 m sehen kannst, und bündelst göttliche Energie auf sie. Würfle 1W8 und addiere deinen Weisheitsmodifikator. Entweder stellst du der Kreatur Trefferpunkte in Höhe dieser Summe wieder her, oder du zwingst sie zu einem Konstitutionsrettungswurf. Bei einem misslungenen Rettungswurf erleidet sie nekrotischen oder gleißenden Schaden (deine Wahl) in Höhe dieser Summe, bei einem erfolgreichen halb so viel (abgerundet).</p><p>Du würfelst einen zusätzlichen W8, wenn du die Klerikerstufen 7 (2W8), 13 (3W8) und 18 (4W8) erreichst.</p>"
+      },
+      "aOptL5pMaj3WtR8S": {
+        "description": "<p>Als Magieaktion hältst du dein Heiliges Symbol empor und tadelst Untote. Jeder Untote deiner Wahl innerhalb von 9 m von dir muss einen Weisheitsrettungswurf ablegen. Misslingt er, hat die Kreatur 1 Minute lang die Zustände &amp;Reference[Frightened apply=false]{Verängstigt} und &amp;Reference[Incapacitated apply=false]{Kampfunfähig}. In dieser Zeit versucht sie in ihren Zügen, sich so weit wie möglich von dir zu entfernen. Der Effekt endet für die Kreatur vorzeitig, wenn sie Schaden erleidet, wenn du den Zustand Kampfunfähig hast oder wenn du stirbst.</p>"
+      },
+      "rprxorXdFoHbRERZ": {
+        "description": "<p>Als Magieaktion hältst du dein Heiliges Symbol empor und tadelst Untote. Jeder Untote deiner Wahl innerhalb von 9 m von dir muss einen Weisheitsrettungswurf ablegen. Misslingt er, hat die Kreatur 1 Minute lang die Zustände &amp;Reference[Frightened apply=false]{Verängstigt} und &amp;Reference[Incapacitated apply=false]{Kampfunfähig}. In dieser Zeit versucht sie in ihren Zügen, sich so weit wie möglich von dir zu entfernen. Der Effekt endet für die Kreatur vorzeitig, wenn sie Schaden erleidet, wenn du den Zustand Kampfunfähig hast oder wenn du stirbst.</p><p>Immer wenn du Untote vertreiben einsetzt, kannst du so viele W8 würfeln, wie dein Weisheitsmodifikator beträgt (mindestens 1W8, derzeit [[lookup @abilities.wis.mod]]), und die Ergebnisse addieren. Jeder Untote, dem sein Rettungswurf gegen diesen Einsatz misslingt, erleidet gleißenden Schaden in Höhe der Summe. Dieser Schaden beendet den Effekt des Vertreibens nicht.</p>"
+      }
     }
   },
   "phbclcDivineInte": {
@@ -4700,7 +4817,18 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbclcDiscipleOf": {
     "name": "Jünger des Lebens",
-    "description": "<p>Wenn ein Zauber, den du mit einem Zauberplatz wirkst, Trefferpunkte bei einer Kreatur wiederherstellt, erhält diese Kreatur in der Runde, in der du den Zauber wirkst, zusätzliche Trefferpunkte. Die zusätzlichen Trefferpunkte entsprechen 2 plus dem Grad des Zauberplatzes.</p><section class=\"secret\"\nid=\"secret-Gy6bYP3AKuabnUlQ\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Fähigkeit beinhaltet eine Heilungsaktivität. Stelle den Grad auf den Zauberplatzgrad ein, den du gewirkt hast, und sie wird einen Heilungswurf für dich bereitstellen.</p></section>"
+    "description": "<p>Wenn ein Zauber, den du mit einem Zauberplatz wirkst, Trefferpunkte bei einer Kreatur wiederherstellt, erhält diese Kreatur in der Runde, in der du den Zauber wirkst, zusätzliche Trefferpunkte. Die zusätzlichen Trefferpunkte entsprechen 2 plus dem Grad des Zauberplatzes.</p><section class=\"secret\"\nid=\"secret-Gy6bYP3AKuabnUlQ\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Fähigkeit beinhaltet eine Heilungsaktivität. Stelle den Grad auf den Zauberplatzgrad ein, den du gewirkt hast, und sie wird einen Heilungswurf für dich bereitstellen.</p></section>",
+    "effects": {
+      "SJswY9WWGfmNXW2E": "Jünger des Lebens"
+    },
+    "activities": {
+      "Enchant Healing Spell": "Heilzauber verzaubern"
+    },
+    "activitiesMeta": {
+      "7BzRpy5Nw0guVN1y": {
+        "description": "<p>Lege die Verzauberung Jünger des Lebens auf einen passenden Heilzauber deiner Figur.</p>"
+      }
+    }
   },
   "phbclcLifeSpells": {
     "name": "Zauber der Lebensdomäne",
@@ -4719,7 +4847,16 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Die Vitalität der Natur blüht ständig in dir und gewährt dir die folgenden Vorteile.</p><p><strong>Immergrüne Wildgestalt.</strong> Wann immer du die Initiative würfelst und keine Anwendungen der Wildgestalt mehr übrig hast, erhältst du eine verbrauchte Anwendung davon zurück.</p><p><strong>Naturmagier.</strong> Du kannst Anwendungen der Wildgestalt in einen Zauberplatz umwandeln (keine Aktion erforderlich). Wähle eine Anzahl deiner unverbrauchten Anwendungen der Wildgestalt und wandle sie in einen einzelnen Zauberplatz um, wobei jede Anwendung 2 Zaubergrade beiträgt. Wenn du zum Beispiel zwei Anwendungen der Wildgestalt umwandelst, erzeugst du einen Zauberplatz des 4. Grades. Sobald du diesen Vorteil genutzt hast, kannst du dies erst wieder tun, wenn du eine lange Rast beendet hast.</p><p><strong>Langlebigkeit.</strong> Die ursprüngliche Magie, die du beherrschst, lässt dich langsamer altern. Für alle zehn Jahre, die vergehen, altert dein Körper nur ein Jahr.</p><section class=\"secret\"\nid=\"secret-qKoW7fFZUwKC0IOG\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Fähigkeit automatisiert das Wiedererlangen einer Anwendung der Wildgestalt beim Würfeln der Initiative nicht, aber sie beinhaltet eine Aktivität, die eine Anwendung wiederherstellt, wenn sie aktiviert wird.</p><p>Die <strong>Naturmagier</strong> Aktivität kann verwendet werden, um Wildgestalt-Anwendungen in Zauberplätze umzuwandeln.</p></section>",
     "activities": {
       "Nature Magician": "Naturmagier",
-      "Recharge on Initiative": "Bei Initiative aufladen"
+      "Recharge on Initiative": "Bei Initiative aufladen",
+      "Evergreen Wild Shape": "Immergrüne Wilde Gestalt"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "description": "<p>Du kannst Anwendungen der Wilden Gestalt in einen Zauberplatz umwandeln (keine Aktion erforderlich). Wähle eine Anzahl deiner unverbrauchten Anwendungen der Wilden Gestalt und wandle sie in einen einzigen Zauberplatz um, wobei jede Anwendung 2 Zaubergrade beiträgt. Wandelst du zum Beispiel zwei Anwendungen um, erhältst du einen Zauberplatz des 4. Grades. Sobald du diesen Vorteil genutzt hast, kannst du das erst nach einer Langen Rast erneut tun.</p>"
+      },
+      "xqLZdQ13RBZkeACB": {
+        "description": "<p>Immer wenn du Initiative würfelst und keine Anwendungen der Wilden Gestalt mehr hast, erhältst du eine verbrauchte Anwendung zurück.</p>"
+      }
     }
   },
   "phbdrdBeastSpell": {
@@ -4732,13 +4869,25 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbFuryPotentSpe": {
     "name": "Elementarer Zorn: Mächtiges Zauberwirken",
-    "description": "<p>Addiere deinen Weisheitsmodifikator zum Schaden, den du mit jedem Druiden-Zaubertrick verursachst (derzeit [[lookup @abilities.wis.mod]]).</p><section class=\"secret\"\nid=\"secret-kC2Lr5eZe550Tams\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Fähigkeit automatisiert das Hinzufügen des Weisheitsmodifikators zu Druiden-Zaubertricks nicht.</p></section>"
+    "description": "<p>Addiere deinen Weisheitsmodifikator zum Schaden, den du mit jedem Druiden-Zaubertrick verursachst (derzeit [[lookup @abilities.wis.mod]]).</p><section class=\"secret\"\nid=\"secret-kC2Lr5eZe550Tams\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Fähigkeit automatisiert das Hinzufügen des Weisheitsmodifikators zu Druiden-Zaubertricks nicht.</p></section>",
+    "effects": {
+      "AgV4xnwxfNOfXOr3": {
+        "name": "Mächtiges Zauberwirken",
+        "description": "<p>Addiere deinen Weisheitsmodifikator zum Schaden, den du mit einem Druiden-Zaubertrick verursachst.</p>"
+      }
+    }
   },
   "phbFuryPrimalStr": {
     "name": "Elementarer Zorn: Urzeitlicher Schlag",
     "description": "<p>Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf triffst, der eine Waffe oder den Angriff einer Tierform in Wildgestalt verwendet, kannst du dem Ziel zusätzlich 1W8 [[/damage 1d8 type=cold]]{cold}, [[/damage 1d8 type=fire]]{fire}, [[/damage 1d8 type=lightning]]{lightning} oder [[/damage 1d8 type=thunder]]{thunder} Schaden zufügen (wähle beim Treffer).</p><section\nclass=\"secret\" id=\"secret-teMMREyPGTtod1kP\"><p><strong>Foundry-Hinweis</strong></p><p>Der Schaden dieser Fähigkeit erhöht sich automatisch, wenn du @UUID[Compendium.dnd5e.classes24.Item.phbdrdImprovedEl]{Verbesserte Elementare Wut} erhältst. Wenn du die Aktivität verwendest, kannst du den Schadensart beim Würfeln auswählen. Sie wird standardmäßig auf den zuvor gewählten Schadensart eingestellt.</p></section>",
     "activities": {
-      "Primal Strike": "Urzeitlicher Schlag"
+      "Primal Strike": "Urzeitlicher Schlag",
+      "Improved Primal Strike": "Verbesserter urzeitlicher Schlag"
+    },
+    "activitiesMeta": {
+      "M1utqL6xPlIX9JX3": {
+        "description": "<p>Einmal in jedem deiner Züge, wenn du eine Kreatur mit einem Angriffswurf mit einer Waffe oder dem Angriff einer Tierform in Wilder Gestalt triffst, kannst du dem Ziel zusätzlich 2W8 Kälte-, Feuer-, Blitz- oder Schallschaden zufügen (wähle beim Treffer).</p>"
+      }
     }
   },
   "phbdrdElementalF": {
@@ -4755,7 +4904,13 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbPrimalOrderMa": {
     "name": "Urzeitliche Ordnung: Magier",
-    "description": "<p>Du kennst einen zusätzlichen Zaubertrick von der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU#cantrip]{Druiden-Zauberliste}. Zusätzlich verleiht dir deine mystische Verbindung zur Natur einen\nBonus auf deine Intelligenz (Arkanes Wissen oder Naturkunde)-Würfe. Der Bonus\nentspricht deinem Weisheitsmodifikator (Mindestbonus von +1, derzeit [[lookup @abilities.wis.mod]]).</p><section class=\"secret\"\nid=\"secret-adiIB9wCX5zZdZ9F\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses\nMerkmal beinhaltet einen Aktiven Effekt, der die Erhöhung deiner bekannten\nZaubertricks und den Bonus auf deine Arkanes Wissen- und Naturkunde-Würfe\nautomatisiert.</p></section>"
+    "description": "<p>Du kennst einen zusätzlichen Zaubertrick von der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU#cantrip]{Druiden-Zauberliste}. Zusätzlich verleiht dir deine mystische Verbindung zur Natur einen\nBonus auf deine Intelligenz (Arkanes Wissen oder Naturkunde)-Würfe. Der Bonus\nentspricht deinem Weisheitsmodifikator (Mindestbonus von +1, derzeit [[lookup @abilities.wis.mod]]).</p><section class=\"secret\"\nid=\"secret-adiIB9wCX5zZdZ9F\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses\nMerkmal beinhaltet einen Aktiven Effekt, der die Erhöhung deiner bekannten\nZaubertricks und den Bonus auf deine Arkanes Wissen- und Naturkunde-Würfe\nautomatisiert.</p></section>",
+    "effects": {
+      "IqjrvuQ2ORv65hxB": {
+        "name": "Magier: Würfe und Zaubertrick",
+        "description": "<p>Deine mystische Verbindung zur Natur gibt dir einen Bonus auf deine Intelligenzwürfe (Arkane Kunde oder Naturkunde). Der Bonus entspricht deinem Weisheitsmodifikator (mindestens +1).</p>"
+      }
+    }
   },
   "phbPrimalOrderWa": {
     "name": "Urzeitliche Ordnung: Wächter",
@@ -4774,7 +4929,9 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du kannst einen Naturgeist beschwören, der eine Tierform annimmt, um dir\nzu helfen. Als Magieaktion kannst du einen Zauberplatz oder eine Anwendung\nder Wilden Gestalt aufbrauchen, um den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Vertrauten finden} ohne Materialkomponenten\nzu wirken.</p><p>Wenn du den Zauber auf diese Weise wirkst, ist der Vertraute\nFeenwesen und verschwindet, wenn du eine Lange Rast beendest.</p><section id=\"secret-4iYtjsPCmpeQTKY5\"\nclass=\"secret\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieses Merkmal beinhaltet eine Beschwörungsaktivität,\ndie verwendet werden kann, um deinen wilden Gefährten zu beschwören. Du kannst\nwählen, ob du eine Anwendung der Wilden Gestalt oder einen Zauberplatz\naufbrauchst, wenn du sie aktivierst.</p><p>Die Beschwörung verschwindet nicht\nautomatisch, wenn du eine Lange Rast beendest.</p></section>",
     "activities": {
       "Summon with Spell Slot": "Beschwören mit Zauberplatz",
-      "Summon with Wild Shape": "Beschwören mit Wilder Gestalt"
+      "Summon with Wild Shape": "Beschwören mit Wilder Gestalt",
+      "Find Familiar": "Vertrauten finden",
+      "Cast with Wild Shape": "Mit Wilder Gestalt wirken"
     }
   },
   "phbdrdWildResurg": {
@@ -4783,11 +4940,19 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Regain Spell Slot": "Zauberplatz wiederherstellen",
       "Regain Wild Shape": "Wilde Gestalt wiederherstellen"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "description": "<p>Du kannst eine Anwendung der Wilden Gestalt verbrauchen (keine Aktion erforderlich), um dir einen Zauberplatz des 1. Grades zu verschaffen. Danach kannst du das erst nach einer Langen Rast erneut tun.</p>"
+      },
+      "7nAgPNN2dth7SR0D": {
+        "description": "<p>Einmal in jedem deiner Züge, wenn du keine Anwendungen der Wilden Gestalt mehr hast, kannst du dir eine Anwendung verschaffen, indem du einen Zauberplatz verbrauchst (keine Aktion erforderlich).</p>"
+      }
     }
   },
   "phbdrdWildShape0": {
     "name": "Wilde Gestalt",
-    "description": "<p>Die Macht der Natur erlaubt es dir, die Form eines Tieres anzunehmen. Als\nBonusaktion verwandelst du dich in eine Tierform, die du für dieses Merkmal\ngelernt hast (siehe „Bekannte Formen“ unten). Du bleibst in dieser Form für\neine Anzahl von Stunden, die der Hälfte deiner Druidenstufe entspricht (derzeit\n[[lookup @classes.druid.levels]]), oder bis du die Wilde Gestalt erneut\nverwendest, den Zustand 'Kampfunfähig' hast oder stirbst. Du kannst die\nForm auch frühzeitig als Bonusaktion verlassen.</p><p><strong>Anzahl der\nAnwendungen.</strong> Du kannst die Wilde Gestalt zweimal verwenden. Du erhältst\neine verbrauchte Anwendung zurück, wenn du eine Kurze Rast beendest, und du\nerhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange\nRast beendest.</p><p>Du erhältst zusätzliche Anwendungen, wenn du bestimmte\nDruidenstufen erreichst, wie in der Spalte 'Wilde Gestalt' der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbDruid00000000.JournalEntryPage.UCOh3zlvGxyk5jLr#class-features]{Druiden-Merkmale} Tabelle gezeigt.</p><p><strong>Aktuelle Anzahl der\nAnwendungen:</strong> [[lookup @scale.druid.wild-shape-uses]]</p><p><strong>Bekannte Formen. </strong>Du\nkennst vier Tierformen für dieses Merkmal, ausgewählt aus den Werteblöcken von\nTieren, die eine maximale Herausforderungsstufe von 1/4 haben und keine\nFluggeschwindigkeit besitzen. Die @UUID[Compendium.dnd5e.actors24.Actor.mmRat00000000000]{Rat},\n@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd},\n@UUID[Compendium.dnd5e.actors24.Actor.mmSpider00000000]{Spinne}, und\n@UUID[Compendium.dnd5e.actors24.Actor.mmWolf0000000000]{Wolf} werden\nempfohlen. Immer wenn du eine Lange Rast beendest, kannst du eine deiner\nbekannten Formen durch eine andere geeignete Form ersetzen.</p><section class=\"fvtt\nadvice\"><figure class=\"icon\"><img src=\"icons/vtt-512.png\"\n/></figure><article><h3>Automatisierung der Wilden\nGestalt</h3><p>Wenn du die Kreatur ausgewählt hast, in die du dich\nverwandeln möchtest, kannst du sie auf dein Charakterblatt ziehen, die Option\n'Wilde Gestalt' auswählen, und Foundry wird dein Blatt automatisch\naktualisieren. Du kannst die Verwandlung oben auf deinem Blatt rückgängig\nmachen oder indem du mit der rechten Maustaste auf deinen Charakter in der\nSeitenleiste klickst.</p></article></section><p>Wenn du bestimmte Druidenstufen\nerreichst, erhöht sich die Anzahl deiner bekannten Formen und die maximale\nHerausforderungsstufe für diese Formen, wie in der Tabelle 'Tiergestalten'\ngezeigt. Zusätzlich kannst du ab Stufe 8 eine Form annehmen, die eine\nFluggeschwindigkeit besitzt.</p><p><strong>Aktuelles Limit bekannter\nFormen:</strong> [[lookup @scale.druid.known-forms]]</p><p><strong>Aktuelles HS-Limit:</strong>\n[[lookup @scale.druid.wild-shape]]</p><p>Bei der Wahl bekannter Formen\nkannst du im <em>Monsterhandbuch</em> oder anderswo nach geeigneten\nTieren suchen, wenn der Spielleiter es dir erlaubt.</p><table><caption>Tiergestalten</caption><thead><tr><td>Druidenstufe</td><td>Bekannte\nFormen</td><td>Max.\nHS</td><td>Fluggeschwindigkeit</td></tr></thead><tbody><tr><td>2</td><td>4</td><td>1/4</td><td>Nein</td></tr><tr><td>4</td><td>6</td><td>1/2</td><td>Nein</td></tr><tr><td>8</td><td>8</td><td>1</td><td>Ja</td></tr></tbody></table><p><strong>Regeln\nwährend der Verwandlung.</strong> Während du in einer Form bist, behältst du\ndeine Persönlichkeit, Erinnerungen und die Fähigkeit zu sprechen, und die\nfolgenden Regeln gelten:</p><p><strong>Temporäre Trefferpunkte. </strong>Wenn du\neine Form der Wilden Gestalt annimmst, erhältst du eine Anzahl temporärer\nTrefferpunkte, die deiner Druidenstufe entspricht.</p><p><strong>Spielwerte.</strong> Deine Spielwerte werden durch den Werteblock des Tieres\nersetzt, aber du behältst deinen Kreaturentyp; Trefferpunkte; Trefferwürfel;\nIntelligenz-, Weisheits- und Charismawerte; Klassenmerkmale; Sprachen; und\nHeldentaten. Du behältst auch deine Fertigkeits- und Rettungswurf-Übungen und\nverwendest deinen Übungsbonus dafür, zusätzlich zu den Übungen der Kreatur.\nWenn ein Fertigkeits- oder Rettungswurfmodifikator im Werteblock des Tieres\nhöher ist als deiner, verwende den im Werteblock.</p><p><strong>Kein\nZauberwirken.</strong> Du kannst keine Zauber wirken, aber die Verwandlung\nunterbricht deine Konzentration nicht und beeinträchtigt auch sonst keinen\nZauber, den du bereits gewirkt hast.</p><p><strong>Gegenstände.\n</strong>Deine Fähigkeit, Gegenstände zu handhaben, wird durch die Gliedmaßen\nder Form und nicht durch deine eigenen bestimmt. Zusätzlich wählst du, ob deine\nAusrüstung in deinem Raum fällt, mit deiner neuen Form verschmilzt oder von ihr\ngetragen wird. Getragene Ausrüstung funktioniert normal, aber der DM entscheidet,\nob es für die neue Form praktisch ist, ein Ausrüstungsstück zu tragen, basierend\nauf Größe und Form der Kreatur. Deine Ausrüstung ändert weder Größe noch Form,\num der neuen Form zu entsprechen, und jede Ausrüstung, die die neue Form nicht\ntragen kann, muss entweder zu Boden fallen oder mit der Form verschmelzen.\nAusrüstung, die mit der Form verschmilzt, hat keine Wirkung, solange du in\ndieser Form bist.</p><section class=\"secret\"\nid=\"secret-FZNGONDktXDnwY0x\"><p><strong>Foundry-Hinweis</strong></p><p>Du\nkannst dieses Merkmal aktivieren, um die Anwendungen deiner Wilden Gestalt zu\nverfolgen.</p><p>Es stellt automatisch eine Anwendung bei einer Kurzen\nRast und alle Anwendungen bei einer Langen Rast wieder her.</p></section>"
+    "description": "<section class=\"fvtt advice\"><figure class=\"icon\"><img src=\"icons/vtt-512.png\"></figure><article><h3>Automatik der Wilden Gestalt</h3><p>Dieses Merkmal enthält die Aktivität <strong>Verwandeln</strong>. Beim Benutzen wählst du im Kompendium-Browser die Kreatur, in die du dich verwandeln möchtest. Rückgängig machst du die Verwandlung oben auf deinem Bogen über das Menü mit den drei senkrechten Punkten und <strong>Verwandlung aufheben</strong>.</p></article></section><p>Die Macht der Natur erlaubt es dir, die Form eines Tieres anzunehmen. Als\nBonusaktion verwandelst du dich in eine Tierform, die du für dieses Merkmal\ngelernt hast (siehe „Bekannte Formen“ unten). Du bleibst in dieser Form für\neine Anzahl von Stunden, die der Hälfte deiner Druidenstufe entspricht (derzeit\n[[lookup @classes.druid.levels]]), oder bis du die Wilde Gestalt erneut\nverwendest, den Zustand 'Kampfunfähig' hast oder stirbst. Du kannst die\nForm auch frühzeitig als Bonusaktion verlassen.</p><p><strong>Anzahl der\nAnwendungen.</strong> Du kannst die Wilde Gestalt zweimal verwenden. Du erhältst\neine verbrauchte Anwendung zurück, wenn du eine Kurze Rast beendest, und du\nerhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange\nRast beendest.</p><p>Du erhältst zusätzliche Anwendungen, wenn du bestimmte\nDruidenstufen erreichst, wie in der Spalte 'Wilde Gestalt' der\n@UUID[Compendium.dnd5e.content24.JournalEntry.phbDruid00000000.JournalEntryPage.UCOh3zlvGxyk5jLr#class-features]{Druiden-Merkmale} Tabelle gezeigt.</p><p><strong>Aktuelle Anzahl der\nAnwendungen:</strong> [[lookup @scale.druid.wild-shape-uses]]</p><p><strong>Bekannte Formen. </strong>Du\nkennst vier Tierformen für dieses Merkmal, ausgewählt aus den Werteblöcken von\nTieren, die eine maximale Herausforderungsstufe von 1/4 haben und keine\nFluggeschwindigkeit besitzen. Die @UUID[Compendium.dnd5e.actors24.Actor.mmRat00000000000]{Rat},\n@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd},\n@UUID[Compendium.dnd5e.actors24.Actor.mmSpider00000000]{Spinne}, und\n@UUID[Compendium.dnd5e.actors24.Actor.mmWolf0000000000]{Wolf} werden\nempfohlen. Immer wenn du eine Lange Rast beendest, kannst du eine deiner\nbekannten Formen durch eine andere geeignete Form ersetzen.</p><section class=\"fvtt\nadvice\"><figure class=\"icon\"><img src=\"icons/vtt-512.png\"\n/></figure><article><h3>Automatisierung der Wilden\nGestalt</h3><p>Wenn du die Kreatur ausgewählt hast, in die du dich\nverwandeln möchtest, kannst du sie auf dein Charakterblatt ziehen, die Option\n'Wilde Gestalt' auswählen, und Foundry wird dein Blatt automatisch\naktualisieren. Du kannst die Verwandlung oben auf deinem Blatt rückgängig\nmachen oder indem du mit der rechten Maustaste auf deinen Charakter in der\nSeitenleiste klickst.</p></article></section><p>Wenn du bestimmte Druidenstufen\nerreichst, erhöht sich die Anzahl deiner bekannten Formen und die maximale\nHerausforderungsstufe für diese Formen, wie in der Tabelle 'Tiergestalten'\ngezeigt. Zusätzlich kannst du ab Stufe 8 eine Form annehmen, die eine\nFluggeschwindigkeit besitzt.</p><p><strong>Aktuelles Limit bekannter\nFormen:</strong> [[lookup @scale.wild-shape.forms]]{4}</p><p><strong>Aktuelles HS-Limit:</strong>\n[[lookup @scale.wild-shape.cr]]{1/4}</p><p>Bei der Wahl bekannter Formen\nkannst du im <em>Monsterhandbuch</em> oder anderswo nach geeigneten\nTieren suchen, wenn der Spielleiter es dir erlaubt.</p><table><caption>Tiergestalten</caption><thead><tr><td>Druidenstufe</td><td>Bekannte\nFormen</td><td>Max.\nHS</td><td>Fluggeschwindigkeit</td></tr></thead><tbody><tr><td>2</td><td>4</td><td>1/4</td><td>Nein</td></tr><tr><td>4</td><td>6</td><td>1/2</td><td>Nein</td></tr><tr><td>8</td><td>8</td><td>1</td><td>Ja</td></tr></tbody></table><p><strong>Regeln\nwährend der Verwandlung.</strong> Während du in einer Form bist, behältst du\ndeine Persönlichkeit, Erinnerungen und die Fähigkeit zu sprechen, und die\nfolgenden Regeln gelten:</p><p><strong>Temporäre Trefferpunkte. </strong>Wenn du\neine Form der Wilden Gestalt annimmst, erhältst du eine Anzahl temporärer\nTrefferpunkte, die deiner Druidenstufe entspricht.</p><p><strong>Spielwerte.</strong> Deine Spielwerte werden durch den Werteblock des Tieres\nersetzt, aber du behältst deinen Kreaturentyp; Trefferpunkte; Trefferwürfel;\nIntelligenz-, Weisheits- und Charismawerte; Klassenmerkmale; Sprachen; und\nHeldentaten. Du behältst auch deine Fertigkeits- und Rettungswurf-Übungen und\nverwendest deinen Übungsbonus dafür, zusätzlich zu den Übungen der Kreatur.\nWenn ein Fertigkeits- oder Rettungswurfmodifikator im Werteblock des Tieres\nhöher ist als deiner, verwende den im Werteblock.</p><p><strong>Kein\nZauberwirken.</strong> Du kannst keine Zauber wirken, aber die Verwandlung\nunterbricht deine Konzentration nicht und beeinträchtigt auch sonst keinen\nZauber, den du bereits gewirkt hast.</p><p><strong>Gegenstände.\n</strong>Deine Fähigkeit, Gegenstände zu handhaben, wird durch die Gliedmaßen\nder Form und nicht durch deine eigenen bestimmt. Zusätzlich wählst du, ob deine\nAusrüstung in deinem Raum fällt, mit deiner neuen Form verschmilzt oder von ihr\ngetragen wird. Getragene Ausrüstung funktioniert normal, aber der DM entscheidet,\nob es für die neue Form praktisch ist, ein Ausrüstungsstück zu tragen, basierend\nauf Größe und Form der Kreatur. Deine Ausrüstung ändert weder Größe noch Form,\num der neuen Form zu entsprechen, und jede Ausrüstung, die die neue Form nicht\ntragen kann, muss entweder zu Boden fallen oder mit der Form verschmelzen.\nAusrüstung, die mit der Form verschmilzt, hat keine Wirkung, solange du in\ndieser Form bist.</p>"
   },
   "phbdrdLandSpells": {
     "name": "Zauber des Zirkels des Landes",
@@ -4795,7 +4960,7 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbdrdLandsAid00": {
     "name": "Hilfe des Landes",
-    "description": "<p>Als Magieaktion kannst du eine Anwendung deiner Wilden Gestalt aufbrauchen\nund einen Punkt innerhalb von 18 m von dir wählen. Lebensspendende Blumen und\nlebensentziehende Dornen erscheinen für einen Moment in einer Kugel mit 3 m\nRadius, die auf diesem Punkt zentriert ist. Jede Kreatur deiner Wahl in der\nKugel muss einen Konstitutionsrettungswurf gegen deinen Zauber-SG ablegen. Bei\neinem misslungenen Rettungswurf erleidet sie 2W6 nekrotischen Schaden, bei\neinem erfolgreichen Rettungswurf die Hälfte des Schadens. Eine Kreatur deiner\nWahl in diesem Bereich stellt [[/healing @scale.land.lands-aid]]{[[lookup @scale.land.lands-aid]] Trefferpunkte}\nwieder her.</p><p>Der Schaden und die Heilung erhöhen sich um 1W6, wenn du\ndie Druidenstufen 10 (3W6) und 14 (4W6) erreichst.</p><section class=\"secret\"\nid=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieses Merkmal beinhaltet eine Aktivität für den\nRettungswurf und die Heilung.</p><p>Die Heilungs-/Schadenswerte\nskalieren automatisch mit deinem Stufenaufstieg.</p></section>"
+    "description": "<p>Als Magieaktion kannst du eine Anwendung deiner Wilden Gestalt aufbrauchen\nund einen Punkt innerhalb von 18 m von dir wählen. Lebensspendende Blumen und\nlebensentziehende Dornen erscheinen für einen Moment in einer Kugel mit 3 m\nRadius, die auf diesem Punkt zentriert ist. Jede Kreatur deiner Wahl in der\nKugel muss einen Konstitutionsrettungswurf gegen deinen Zauber-SG ablegen. Bei\neinem misslungenen Rettungswurf erleidet sie 2W6 nekrotischen Schaden, bei\neinem erfolgreichen Rettungswurf die Hälfte des Schadens. Eine Kreatur deiner\nWahl in diesem Bereich stellt 2W6 Trefferpunkte\nwieder her.</p><p>Der Schaden und die Heilung erhöhen sich um 1W6, wenn du\ndie Druidenstufen 10 (3W6) und 14 (4W6) erreichst.</p><section class=\"secret\"\nid=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieses Merkmal beinhaltet eine Aktivität für den\nRettungswurf und die Heilung.</p><p>Die Heilungs-/Schadenswerte\nskalieren automatisch mit deinem Stufenaufstieg.</p></section>"
   },
   "phbdrdNaturalRec": {
     "name": "Natürliche Erholung",
@@ -4803,6 +4968,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Cast Spell": "Zauber wirken",
       "Recover Spell Slots": "Zauberplätze wiederherstellen"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "description": "<p>Du kannst einen der Zauber des 1. Grades oder höher, die du durch dein Merkmal Zirkelzauber vorbereitet hast, wirken, ohne einen Zauberplatz zu verbrauchen. Danach musst du eine Lange Rast beenden, bevor du das erneut tun kannst.</p>"
+      },
+      "u0UF6WePUutyp6e6": {
+        "description": "<p>Wenn du eine Kurze Rast beendest, kannst du verbrauchte Zauberplätze zurückgewinnen. Ihre Grade dürfen zusammen höchstens die Hälfte deiner Druidenstufe betragen (aufgerundet, derzeit [[lookup @classes.druid.levels]]), und keiner darf den 6. Grad oder höher haben. Als Druide der Stufe 6 kannst du zum Beispiel Zauberplätze im Wert von bis zu drei Graden zurückgewinnen: einen des 3. Grades, einen des 2. und einen des 1. Grades oder drei des 1. Grades. Sobald du mit diesem Merkmal Zauberplätze zurückgewonnen hast, kannst du das erst nach einer Langen Rast erneut tun.</p>"
+      }
     }
   },
   "phbdrdNaturesSan": {
@@ -4810,13 +4983,25 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Als Magieaktion kannst du eine Anwendung deiner Wilden Gestalt verbrauchen und spektrale Bäume und Ranken in einem 15-Fuß-Würfel auf dem Boden innerhalb von 36 m von dir erscheinen lassen. Sie bleiben dort für 1 Minute oder bis du den Zustand Kampfunfähig hast oder stirbst. Du und deine Verbündeten haben Teildeckung, solange sie sich in diesem Bereich befinden, und deine Verbündeten erhalten die aktuelle Resistenz deines Naturschutzes, solange sie dort sind.</p><p>Als Bonusaktion kannst du den Würfel bis zu 18 m weit auf den Boden innerhalb von 36 m von dir bewegen.</p><section class=\"secret\"\nid=\"secret-OyXlvV2zR9s0WXyn\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal enthält Aktive Effekte für jeden Landtyp des Naturschutzes und fügt den Statuseffekt Teildeckung hinzu, der die relevanten Boni automatisch anwendet. Wende den relevanten Effekt auf deine Verbündeten an.</p><p>Diese Aktiven Effekte werden jedoch nicht automatisch zu/von Akteuren im vorgesehenen Bereich hinzugefügt/entfernt.</p><p>Es enthält auch eine Aktivität, die zur Verfolgung deiner Bonusaktionsnutzung beim Bewegen der spektralen Bäume und Ranken verwendet werden kann.</p></section>",
     "activities": {
       "Move": "Bewegen",
-      "Spectral Trees and Vines": "Spektrale Bäume und Ranken"
+      "Spectral Trees and Vines": "Spektrale Bäume und Ranken",
+      "Place Sanctuary (Arid)": "Heiligtum errichten (Arid)",
+      "Place Sanctuary (Polar)": "Heiligtum errichten (Polar)",
+      "Place Sanctuary (Temperate)": "Heiligtum errichten (Gemäßigt)",
+      "Place Sanctuary (Tropical)": "Heiligtum errichten (Tropisch)"
     },
     "effects": {
       "h0xW0mOYF8frKgHf": "Naturschutz: Arid",
       "7YVMASgXswIFXNs2": "Naturschutz: Polar",
       "Gqgjm2NswU6f7qVL": "Naturschutz: Gemäßigt",
       "LKxwXqkEIXJR2XAa": "Naturschutz: Tropisch"
+    },
+    "activitiesMeta": {
+      "dnd5eactivity000": {
+        "description": "<p>Als Magieaktion kannst du eine Anwendung deiner Wilden Gestalt verbrauchen und geisterhafte Bäume und Ranken in einem Würfel von 4,5 m auf dem Boden innerhalb von 36 m von dir erscheinen lassen. Sie bleiben 1 Minute lang bestehen oder bis du den Zustand &amp;Reference[Incapacitated apply=false]{Kampfunfähig} hast oder stirbst. Du und deine Verbündeten habt in diesem Bereich &amp;Reference[Half Cover]{Teildeckung}, und deine Verbündeten erhalten dort die aktuelle &amp;Reference[Resistance]{Resistenz} deines Naturschutzes.</p>"
+      },
+      "oV51RLBkYFH4MPrS": {
+        "description": "<p>Als Bonusaktion kannst du den Würfel bis zu 18 m weit auf einen Boden innerhalb von 36 m von dir verschieben.</p>"
+      }
     }
   },
   "phbdrdNaturesWar": {
@@ -4869,7 +5054,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Taktischer Verstand",
     "description": "<p>Du hast einen Sinn für Taktik auf und abseits des Schlachtfeldes. Wenn du einen Attributswurf misslingst, kannst du eine Anwendung deines Zweiten Windes verbrauchen, um dich zum Erfolg zu drängen. Anstatt Trefferpunkte wiederzuerlangen, würfelst du 1W10 und addierst die gewürfelte Zahl zum Attributswurf, wodurch er möglicherweise zu einem Erfolg wird. Wenn der Wurf immer noch misslingt, wird diese Anwendung des Zweiten Windes nicht verbraucht.</p>",
     "activities": {
-      "Expend Second Wind": "Zweiten Wind verbrauchen"
+      "Expend Second Wind": "Zweiten Wind verbrauchen",
+      "Add Bonus": "Bonus addieren"
     }
   },
   "phbftrTacticalSh": {
@@ -4919,7 +5105,21 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbftrSurvivor00": {
     "name": "Überlebender",
-    "description": "<p>Du erreichst den Höhepunkt der Widerstandsfähigkeit im Kampf, was dir diese Vorteile verschafft.</p><p><strong>Dem Tod trotzen.</strong> Du hast Vorteil auf Rettungswürfe gegen den Tod. Wenn du außerdem bei einem Rettungswurf gegen den Tod eine 18–20 würfelst, erhältst du den Vorteil, eine 20 gewürfelt zu haben.</p><p><strong>Heroische Erholung.</strong> Zu Beginn jedes deiner Züge regenerierst du Trefferpunkte in Höhe von 5 plus deinem Konstitutionsmodifikator, wenn du angeschlagen bist und mindestens 1 Trefferpunkt hast.</p><section id=\"secret-z1Nr871ifr67hchm\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal automatisiert die Änderungen der Rettungswürfe gegen den Tod nicht. Es enthält eine Aktivität zur Heilung, fügt diese aber nicht automatisch hinzu, wenn du angeschlagen bist.</p></section>"
+    "description": "<p>Du erreichst den Höhepunkt der Widerstandsfähigkeit im Kampf, was dir diese Vorteile verschafft.</p><p><strong>Dem Tod trotzen.</strong> Du hast Vorteil auf Rettungswürfe gegen den Tod. Wenn du außerdem bei einem Rettungswurf gegen den Tod eine 18–20 würfelst, erhältst du den Vorteil, eine 20 gewürfelt zu haben.</p><p><strong>Heroische Erholung.</strong> Zu Beginn jedes deiner Züge regenerierst du Trefferpunkte in Höhe von 5 plus deinem Konstitutionsmodifikator, wenn du angeschlagen bist und mindestens 1 Trefferpunkt hast.</p><section id=\"secret-z1Nr871ifr67hchm\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal automatisiert die Änderungen der Rettungswürfe gegen den Tod nicht. Es enthält eine Aktivität zur Heilung, fügt diese aber nicht automatisch hinzu, wenn du angeschlagen bist.</p></section>",
+    "effects": {
+      "Pp5xPE2M5bTEdZWW": {
+        "name": "Dem Tod trotzen",
+        "description": "<p><strong>Hinweis:</strong> Dieser Effekt ändert nicht, was bei einer 18 oder 19 auf einen Todesrettungswurf geschieht.</p>"
+      }
+    },
+    "activities": {
+      "Heroic Rally": "Heroische Erholung"
+    },
+    "activitiesMeta": {
+      "5Fo0QwzexIPyLP3W": {
+        "description": "<p>Zu Beginn jedes deiner Züge erhältst du Trefferpunkte in Höhe von 5 plus deinem Konstitutionsmodifikator zurück, wenn du &amp;Reference[Bloodied apply=false]{Angeschlagen} bist und mindestens 1 Trefferpunkt hast.</p>"
+      }
+    }
   },
   "phbmnkAcrobaticM": {
     "name": "Akrobatische Bewegung",
@@ -4949,10 +5149,17 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Disziplinierter Überlebender",
     "description": "<p>Deine körperliche und geistige Disziplin verleiht dir Übung in allen Rettungswürfen.</p><p>Zusätzlich kannst du, wann immer du einen Rettungswurf machst und scheiterst, 1 Fokuspunkt ausgeben, um ihn neu zu würfeln, und du musst das neue Ergebnis verwenden.</p><section class=\"secret\"\nid=\"secret-VLGTfBDBcfExjSXG\"><p><strong>Foundry-Hinweis</strong></p><p>Dir werden die zusätzlichen Rettungswurf-Übungen automatisch gewährt, wenn du aufsteigst.</p><p>Nutze diese Fähigkeit, um 1 Fokuspunkt auszugeben.</p></section>",
     "activities": {
-      "Consume Focus Point": "Fokuspunkt verbrauchen"
+      "Consume Focus Point": "Fokuspunkt verbrauchen",
+      "Reroll Saving Throw": "Rettungswurf wiederholen"
     },
     "effects": {
-      "Js4phYMTL714onqn": "Disziplinierter Überlebender"
+      "Js4phYMTL714onqn": "Disziplinierter Überlebender",
+      "tKd3mh0VaGrzK0TS": "Disziplinierter Überlebender"
+    },
+    "activitiesMeta": {
+      "P38SXEOizo5QaG8h": {
+        "description": "<p>Immer wenn dir ein Rettungswurf misslingt, kannst du 1 Fokuspunkt ausgeben, um ihn zu wiederholen, und musst das neue Ergebnis verwenden.</p>"
+      }
     }
   },
   "phbmnkEmpoweredS": {
@@ -4960,6 +5167,9 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Wann immer du mit deinem waffenlosen Schlag Schaden zufügst, kann dieser nach deiner Wahl Energieschaden oder seinen normalen Schadenstyp verursachen.</p><section\nclass=\"secret\" id=\"secret-Hg8UeaCyLgncM7iJ\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktion <strong>Mächtiger Schlag</strong> dieser Fähigkeit ermöglicht es dir, im Würfeldialog zwischen Energieschaden und Wuchtschaden zu wählen. Deine Wahl wird für die Zukunft gespeichert.</p><p>Sie verwendet deinen Kampfkunstwürfel (derzeit [[lookup @scale.monk.die]] für Schaden) und wird automatisch aktualisiert, wenn du aufsteigst.</p></section>",
     "activities": {
       "Empowered Strike": "Mächtiger Schlag"
+    },
+    "effects": {
+      "uWjhNHYBWtrl7Fz4": "Mächtige Schläge"
     }
   },
   "phbmnkEpicBoon00": {
@@ -4997,11 +5207,41 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Flurry of Blows": "Schlaghagel",
       "Patient Defense": "Geduldige Verteidigung",
       "Patient Defense (Focus Point)": "Geduldige Verteidigung (Fokuspunkt)",
-      "Step of the Wind": "Schritt des Windes"
+      "Step of the Wind": "Schritt des Windes",
+      "Step of the Wind (Focus Point)": "Schritt des Windes (Fokuspunkt)",
+      "Flurry of Blows (Heightened)": "Schlaghagel (Erhöht)",
+      "Patient Defense (Focus Point, Heightened)": "Geduldige Verteidigung (Fokuspunkt, Erhöht)",
+      "Step of the Wind (Focus Point, Heightened)": "Schritt des Windes (Fokuspunkt, Erhöht)"
     },
     "effects": {
       "UYHRNxrU74xiUJAy": "Geduldige Verteidigung (Fokuspunkt)",
       "92bFICMzRpJmnO56": "Rückzug"
+    },
+    "activitiesMeta": {
+      "2ghJTBhilLrFn9xT": {
+        "description": "<p>Du kannst 1 Fokuspunkt ausgeben, um als Bonusaktion zwei waffenlose Schläge auszuführen.</p>"
+      },
+      "7xj7b6e8tDznDSrE": {
+        "description": "<p>Du kannst 1 Fokuspunkt ausgeben, um als Bonusaktion sowohl die Aktion &amp;Reference[Disengage]{Rückzug} als auch die Aktion &amp;Reference[Dodge]{Ausweichen} auszuführen.</p>"
+      },
+      "EFzidO6yAapw8d60": {
+        "description": "<p>Du kannst die Aktion &amp;Reference[Disengage]{Rückzug} als Bonusaktion ausführen.</p>"
+      },
+      "0MuRZ0Ur95xQTKFq": {
+        "description": "<p>Du kannst die Aktion &amp;Reference[Dash]{Sprint} als Bonusaktion ausführen.</p>"
+      },
+      "Iv2YrISquTZWEjjN": {
+        "description": "<p>Du kannst 1 Fokuspunkt ausgeben, um als Bonusaktion sowohl die Aktion &amp;Reference[Disengage]{Rückzug} als auch die Aktion &amp;Reference[Dash]{Sprint} auszuführen, und deine Sprungweite ist für diesen Zug verdoppelt.</p>"
+      },
+      "r0ou3Al6Dn3tgUC6": {
+        "description": "<p>Du kannst 1 Fokuspunkt ausgeben, um als Bonusaktion drei waffenlose Schläge auszuführen.</p>"
+      },
+      "KpoKztsxm5yuJWk6": {
+        "description": "<p>@Embed[Compendium.dnd5e.classes24.Item.phbmnkMonksFocus.Activity.7xj7b6e8tDznDSrE inline classes=\"hide-in-embed\"]</p><p>Wenn du einen Fokuspunkt ausgibst, um Geduldige Verteidigung zu nutzen, erhältst du temporäre Trefferpunkte in Höhe von zwei Würfen deines Kampfkunstwürfels.</p>"
+      },
+      "R3sqnBDwAjve0FvW": {
+        "description": "<p>@Embed[Compendium.dnd5e.classes24.Item.phbmnkMonksFocus.Activity.Iv2YrISquTZWEjjN inline classes=\"hide-in-embed\"]</p><p>Wenn du einen Fokuspunkt ausgibst, um Schritt des Windes zu nutzen, kannst du eine bereitwillige Kreatur innerhalb von 1,5 m von dir wählen, die höchstens groß ist. Du bewegst sie bis zum Ende deines Zuges mit dir. Ihre Bewegung provoziert keine Gelegenheitsangriffe.</p>"
+      }
     }
   },
   "phbmnkPerfectFoc": {
@@ -5027,7 +5267,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Überlegene Verteidigung",
     "description": "<p>Zu Beginn deines Zuges kannst du 3 Fokuspunkte ausgeben, um dich 1 Minute lang oder bis du den Zustand 'Kampfunfähig' hast, gegen Schaden zu stärken. Während dieser Zeit hast du Resistenz gegen alle Arten von Schaden außer Energieschaden.</p><section id=\"secret-jojCvqn1dDjsyTzI\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft verbraucht 3 Fokuspunkte und beinhaltet einen aktiven Effekt, der die relevanten Resistenzen anwendet.</p></section>",
     "effects": {
-      "zAtnsWRpAcTIkjpz": "Überlegene Verteidigung"
+      "zAtnsWRpAcTIkjpz": {
+        "name": "Überlegene Verteidigung",
+        "description": "<p>Du hast Resistenz gegen alle Schadensarten außer Energieschaden.</p>"
+      }
     }
   },
   "phbmnkUnarmedStr": {
@@ -5069,8 +5312,22 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Topple": "Zu Fall bringen"
     },
     "effects": {
-      "uQ474o5Wsv3sEAJK": "Verwirrt",
+      "uQ474o5Wsv3sEAJK": {
+        "name": "Verwirrt",
+        "description": "<p>Das Ziel kann bis zum Beginn seines nächsten Zuges keine Gelegenheitsangriffe ausführen.</p>"
+      },
       "E1A8QE6kPsLgqTAP": "Zu Fall gebracht"
+    },
+    "activitiesMeta": {
+      "1jdSaWanuRrdkVs3": {
+        "description": "<p>Das Ziel kann bis zum Beginn seines nächsten Zuges keine Gelegenheitsangriffe ausführen.</p>"
+      },
+      "XoaS0RtDCGAqrQsf": {
+        "description": "<p>Dem Ziel muss ein Stärkerettungswurf gelingen, sonst wird es bis zu 4,5 m von dir weggestoßen.</p>"
+      },
+      "5Qgc0K3TfuonkPIG": {
+        "description": "<p>Dem Ziel muss ein Geschicklichkeitsrettungswurf gelingen, sonst hat es den Zustand &amp;Reference[Prone apply=false]{Liegend}.</p>"
+      }
     }
   },
   "phbmnkWholenessO": {
@@ -5120,6 +5377,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     },
     "effects": {
       "hr8wnlgs3uXphCnI": "Göttlicher Sinn"
+    },
+    "activitiesMeta": {
+      "kjHydAAcspH9wVPI": {
+        "description": "<p>Als Bonusaktion kannst du deine Wahrnehmung öffnen, um Celestische Wesen, Unholde und Untote zu entdecken. In den nächsten 10 Minuten oder bis du den Zustand &amp;Reference[Incapacitated apply=false]{Kampfunfähig} hast, kennst du den Standort jeder Kreatur dieser Arten innerhalb von 18 m von dir und ihre Kreaturenart. Im selben Umkreis bemerkst du außerdem jeden Ort und jeden Gegenstand, der geweiht oder entweiht wurde, wie mit dem Zauber @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHallow0000]{Weihen}.</p>"
+      }
     }
   },
   "phbpdnEpicBoon00": {
@@ -5192,7 +5454,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbpdnSacredWeap": {
     "name": "Heilige Waffe",
-    "description": "<p>Wenn du die Aktion Angreifen ausführst, kannst du eine Anwendung deiner Göttlichen\nKanalisierung verbrauchen, um eine Nahkampfwaffe, die du hältst, mit positiver\nEnergie zu erfüllen. Für 10 Minuten oder bis du diese Eigenschaft erneut verwendest,\naddierst du deinen Charisma-Modifikator zu den Angriffswürfen, die du mit dieser Waffe machst\n(Mindestbonus von +1), und jedes Mal, wenn du damit triffst, verursachst du, dass sie ihren normalen\nSchadenstyp oder Strahlenschaden zufügt.</p><p>Die Waffe strahlt außerdem helles Licht in\neinem Radius von 6 m und dämmriges Licht 6 m darüber hinaus aus.</p><p>Du kannst diesen\nEffekt vorzeitig beenden (keine Aktion erforderlich). Dieser Effekt endet auch, wenn du die Waffe nicht\nträgst.</p>"
+    "description": "<p>Wenn du die Aktion Angreifen ausführst, kannst du eine Anwendung deiner Göttlichen\nKanalisierung verbrauchen, um eine Nahkampfwaffe, die du hältst, mit positiver\nEnergie zu erfüllen. Für 10 Minuten oder bis du diese Eigenschaft erneut verwendest,\naddierst du deinen Charisma-Modifikator zu den Angriffswürfen, die du mit dieser Waffe machst\n(Mindestbonus von +1), und jedes Mal, wenn du damit triffst, verursachst du, dass sie ihren normalen\nSchadenstyp oder Strahlenschaden zufügt.</p><p>Die Waffe strahlt außerdem helles Licht in\neinem Radius von 6 m und dämmriges Licht 6 m darüber hinaus aus.</p><p>Du kannst diesen\nEffekt vorzeitig beenden (keine Aktion erforderlich). Dieser Effekt endet auch, wenn du die Waffe nicht\nträgst.</p>",
+    "effects": {
+      "8uzTs90613ZVnU0w": "Licht der Heiligen Waffe"
+    }
   },
   "phbpdnSmiteOfPro": {
     "name": "Smite des Schutzes",
@@ -5278,6 +5543,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Decrease Exhaustion": "Erschöpfung verringern",
       "Temporary Hit Points": "Temporäre Trefferpunkte"
+    },
+    "activitiesMeta": {
+      "T17ZXCxvxeDwPoz5": {
+        "description": "<p>Als Magieaktion kannst du dir temporäre Trefferpunkte in Höhe von 1W8 plus deinem Weisheitsmodifikator (mindestens 1) verschaffen. Du kannst diese Aktion so oft nutzen, wie dein Weisheitsmodifikator beträgt (mindestens einmal), und erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest.</p>"
+      },
+      "y2cSZJxteG7Yew0u": {
+        "description": "<p>Immer wenn du eine Kurze Rast beendest, sinkt deine Erschöpfungsstufe, falls vorhanden, um 1.</p>"
+      }
     }
   },
   "phbrgrWeaponMast": {
@@ -5292,6 +5565,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     },
     "effects": {
       "oviiTMxQRTnne9oc": "Mehrfachangriffsverteidigung"
+    },
+    "activitiesMeta": {
+      "ioagLQG0o1axCBtr": {
+        "description": "<p>Wenn eine Kreatur dich mit einem Angriffswurf trifft, hat sie in diesem Zug Nachteil auf alle weiteren Angriffswürfe gegen dich.</p>"
+      }
     }
   },
   "phbrgrHuntersLor": {
@@ -5300,7 +5578,15 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbrgrHuntersPre": {
     "name": "Jägerbeute",
-    "description": "<p>Du erhältst eine der folgenden Optionen deiner Wahl. Immer wenn du eine kurze oder lange Rast beendest, kannst du die gewählte Option durch die andere ersetzen.</p><p><strong>Kolossenschlächter.</strong> Deine Zähigkeit kann selbst die widerstandsfähigsten Feinde zermürben. Wenn du eine Kreatur mit einer Waffe triffst, verursacht die Waffe 1W8 zusätzlichen Schaden am Ziel, wenn diesem Trefferpunkte fehlen. Du kannst diesen zusätzlichen Schaden nur einmal pro Zug verursachen.</p><p><strong>Hordenbrecher.</strong> Einmal pro Zug, wenn du einen Angriff mit einer Waffe ausführst, kannst du einen weiteren Angriff mit derselben Waffe gegen eine andere Kreatur ausführen, die sich innerhalb von 1,5 m des ursprünglichen Ziels befindet, sich innerhalb der Reichweite der Waffe befindet und die du in diesem Zug noch nicht angegriffen hast.</p><section class=\"secret\"\nid=\"secret-I2q5Nm7g6mkLjH5Y\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet eine <strong>Kolossenschlächter</strong>-Aktivität für den zusätzlichen Schaden. Du kannst den korrekten Schadenstyp im Würfeldialog auswählen.</p><p>Für die Option <strong>Hordenbrecher</strong> führe einfach einen weiteren Angriff aus.</p></section>"
+    "description": "<p>Du erhältst eine der folgenden Optionen deiner Wahl. Immer wenn du eine kurze oder lange Rast beendest, kannst du die gewählte Option durch die andere ersetzen.</p><p><strong>Kolossenschlächter.</strong> Deine Zähigkeit kann selbst die widerstandsfähigsten Feinde zermürben. Wenn du eine Kreatur mit einer Waffe triffst, verursacht die Waffe 1W8 zusätzlichen Schaden am Ziel, wenn diesem Trefferpunkte fehlen. Du kannst diesen zusätzlichen Schaden nur einmal pro Zug verursachen.</p><p><strong>Hordenbrecher.</strong> Einmal pro Zug, wenn du einen Angriff mit einer Waffe ausführst, kannst du einen weiteren Angriff mit derselben Waffe gegen eine andere Kreatur ausführen, die sich innerhalb von 1,5 m des ursprünglichen Ziels befindet, sich innerhalb der Reichweite der Waffe befindet und die du in diesem Zug noch nicht angegriffen hast.</p><section class=\"secret\"\nid=\"secret-I2q5Nm7g6mkLjH5Y\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet eine <strong>Kolossenschlächter</strong>-Aktivität für den zusätzlichen Schaden. Du kannst den korrekten Schadenstyp im Würfeldialog auswählen.</p><p>Für die Option <strong>Hordenbrecher</strong> führe einfach einen weiteren Angriff aus.</p></section>",
+    "activities": {
+      "Colossus Slayer": "Kolossenschlächter"
+    },
+    "activitiesMeta": {
+      "Ek6m8ZY5Df7Mp6DO": {
+        "description": "<p>Deine Zähigkeit zermürbt selbst die widerstandsfähigsten Feinde. Wenn du eine Kreatur mit einer Waffe triffst, verursacht die Waffe beim Ziel 1W8 zusätzlichen Schaden, falls ihm Trefferpunkte fehlen. Diesen zusätzlichen Schaden kannst du nur einmal pro Zug verursachen.</p>"
+      }
+    }
   },
   "phbrgrSuperiorDe": {
     "name": "Überlegene Jägerverteidigung",
@@ -5330,6 +5616,17 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Poison": "Vergiften",
       "Trip": "Stolpern",
       "Withdraw": "Rückzug"
+    },
+    "activitiesMeta": {
+      "n64fvJMT9fPUy7DH": {
+        "description": "<p>Du versetzt deinen Schlag mit einem Gift und zwingst das Ziel zu einem Konstitutionsrettungswurf. Bei einem misslungenen Rettungswurf hat es 1 Minute lang den Zustand &amp;Reference[Poisoned apply=false]{Vergiftet}. Am Ende jedes seiner Züge wiederholt das vergiftete Ziel den Rettungswurf und beendet den Effekt bei einem Erfolg für sich.</p><p>Um diesen Effekt zu nutzen, musst du eine Giftmischerausrüstung bei dir haben.</p>"
+      },
+      "dWcCw1vTWRMx4YzD": {
+        "description": "<p>Ist das Ziel höchstens groß, muss ihm ein Geschicklichkeitsrettungswurf gelingen, sonst hat es den Zustand &amp;Reference[Prone apply=false]{Liegend}.</p>"
+      },
+      "m2bRZ1YeD3yf9nV7": {
+        "description": "<p>Unmittelbar nach dem Angriff bewegst du dich bis zur Hälfte deiner &amp;Reference[Speed]{Bewegungsrate}, ohne Gelegenheitsangriffe zu provozieren.</p>"
+      }
     }
   },
   "phbrgeDeviousStr": {
@@ -5339,6 +5636,23 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Daze": "Benommenheit",
       "Knock Out": "Niederschlagen",
       "Obscure": "Verhüllen"
+    },
+    "effects": {
+      "wWFV1p8u9C1TUPg5": {
+        "name": "Benommen",
+        "description": "<p>In seinem nächsten Zug kann das Ziel nur eines der folgenden Dinge tun: sich bewegen, eine Aktion ausführen oder eine Bonusaktion ausführen.</p>"
+      }
+    },
+    "activitiesMeta": {
+      "4TnBjQTJzt9UjUos": {
+        "description": "<p>Dem Ziel muss ein Konstitutionsrettungswurf gelingen, sonst kann es in seinem nächsten Zug nur eines der folgenden Dinge tun: sich bewegen, eine Aktion ausführen oder eine Bonusaktion ausführen.</p>"
+      },
+      "3eq7lcmpkJJBU2KO": {
+        "description": "<p>Dem Ziel muss ein Konstitutionsrettungswurf gelingen, sonst hat es 1 Minute lang oder bis es Schaden erleidet den Zustand &amp;Reference[Unconscious apply=false]{Bewusstlos}. Am Ende jedes seiner Züge wiederholt das bewusstlose Ziel den Rettungswurf und beendet den Effekt bei einem Erfolg für sich.</p>"
+      },
+      "ki4lIPVGNA0HjEzH": {
+        "description": "<p>Dem Ziel muss ein Geschicklichkeitsrettungswurf gelingen, sonst hat es bis zum Ende seines nächsten Zuges den Zustand &amp;Reference[Blinded apply=false]{Blind}.</p>"
+      }
     }
   },
   "phbrgeElusive000": {
@@ -5394,7 +5708,8 @@ export const MODERN_OVERRIDES_BY_ID = {
   "phbrgeUncannyDod": {
     "name": "Unheimliche Ausweichbewegung",
     "activities": {
-      "Uncanny Dodge": "Unheimliche Ausweichbewegung"
+      "Uncanny Dodge": "Unheimliche Ausweichbewegung",
+      "Dodge": "Ausweichen"
     },
     "description": "<p>Wenn ein Angreifer, den du sehen kannst, dich mit einem Angriffswurf trifft, kannst du eine Reaktion aufwenden, um den Schaden des Angriffs gegen dich zu halbieren (abgerundet).</p><section class=\\\"secret\\\" id=\\\"secret-fLqTNntX7T0swRsu\\\"><p><strong>Foundry-Hinweis</strong></p><p>Wenn dein Token ausgewählt ist, kannst du entweder mit der rechten Maustaste auf die Chat-Karte des Schadenswurfs klicken und <span class=\\\"reference\\\"><em class=\\\"fas fa-user-shield\\\">\\_</em>Halben Schaden anwenden</span> auswählen oder auf die Schaltfläche „1/2“ und dann auf die Schaltfläche <span class=\\\"reference\\\"><em class=\\\"fa-solid fa-reply-all\\\">\\_</em>Anwenden</span> klicken.</p></section>"
   },
@@ -5409,18 +5724,35 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Sleight of Hand": "Fingerfertigkeit",
       "Thieves' Tools": "Diebeswerkzeug",
       "Use an Object": "Gegenstand benutzen"
+    },
+    "activitiesMeta": {
+      "G2QVu7o56FSQvuhy": {
+        "description": "<p>Lege einen Geschicklichkeitswurf (Fingerfertigkeit) ab, um mit Diebeswerkzeug ein Schloss zu knacken oder eine Falle zu entschärfen oder um eine Tasche zu leeren.</p>"
+      },
+      "5pHgM0ZQStN6rIGE": {
+        "description": "<p>Führe die Aktion &amp;Reference[Utilize]{Nutzen} aus, oder führe die Aktion &amp;Reference[Magic]{Magie} aus, um einen magischen Gegenstand zu benutzen, der diese Aktion erfordert.</p>"
+      }
     }
   },
   "phbrgeSecondstor": {
     "name": "Arbeit im zweiten Stock",
     "description": "<p>Du hast trainiert, um an besonders schwer zugängliche Orte zu gelangen, was dir diese Vorteile verschafft.</p><p><strong>Kletterer.</strong> Du erhältst eine Kletterbewegungsrate, die deiner Bewegungsrate entspricht.</p><p><strong>Springer.</strong> Du kannst deine &amp;Reference[Jumping]{jump} Distanz mit deiner Geschicklichkeit anstatt deiner Stärke bestimmen.</p><section class=\"secret\"\nid=\"secret-7BCLTkAFUjinYhJw\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Funktion fügt die Kletterbewegungsrate nicht automatisch hinzu und muss manuell hinzugefügt werden.</p></section>",
     "effects": {
-      "qPdh1z9RMd6oBcoj": "Arbeit im zweiten Stock"
+      "qPdh1z9RMd6oBcoj": "Arbeit im zweiten Stock",
+      "ctlSR3WUH2w9ID9Q": "Arbeit im zweiten Stock"
     }
   },
   "phbrgeSupremeSne": {
     "name": "Überragende Heimlichkeit",
-    "description": "<p>Du erhältst die folgende Option für den Gerissenen Schlag.</p><p><strong>Heimlicher Angriff (Kosten: 1W6).</strong> Wenn du den Zustand 'Unsichtbar' der &amp;Reference[Hide] Aktion hast, beendet dieser Angriff diesen Zustand bei dir nicht, wenn du den Zug hinter &amp;Reference[Three-Quarters Cover] oder &amp;Reference[Total Cover] beendest.</p>"
+    "description": "<p>Du erhältst die folgende Option für den Gerissenen Schlag.</p><p><strong>Heimlicher Angriff (Kosten: 1W6).</strong> Wenn du den Zustand 'Unsichtbar' der &amp;Reference[Hide] Aktion hast, beendet dieser Angriff diesen Zustand bei dir nicht, wenn du den Zug hinter &amp;Reference[Three-Quarters Cover] oder &amp;Reference[Total Cover] beendest.</p>",
+    "activities": {
+      "Stealth Attack": "Heimlicher Angriff"
+    },
+    "activitiesMeta": {
+      "3Icy3muzMz9BWS1C": {
+        "description": "<p>Hast du durch die Aktion &amp;Reference[Hide]{Verstecken} den Zustand &amp;Reference[Invisible apply=false]{Unsichtbar}, beendet dieser Angriff den Zustand nicht, wenn du deinen Zug hinter &amp;Reference[Three-Quarters Cover]{Dreivierteldeckung} oder &amp;Reference[Total Cover]{Vollständiger Deckung} beendest.</p>"
+      }
+    }
   },
   "phbrgeThiefsRefl": {
     "name": "Diebesreflexe",
@@ -5431,6 +5763,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du hast gelernt, den Nutzen magischer Gegenstände zu maximieren, was dir die folgenden Vorteile gewährt.</p><p><strong>Einstimmung.</strong> Du kannst dich gleichzeitig auf bis zu vier magische Gegenstände einstimmen.</p><p><strong>Ladungen.</strong> Immer wenn du eine Eigenschaft eines magischen Gegenstands nutzt, die Ladungen verbraucht, würfle [[/r 1d6]]. Bei einer 6 nutzt du die Eigenschaft, ohne die Ladungen zu verbrauchen.</p><p><strong>Schriftrollen.</strong> Du kannst jede <em>Zauberschriftrolle,</em> verwenden, wobei du Intelligenz als deine Zauberfähigkeit für den Zauber nutzt. Wenn der Zauber ein Zaubertrick oder ein Zauber des 1. Grades ist, kannst du ihn zuverlässig wirken. Wenn die Schriftrolle einen Zauber höheren Grades enthält, musst du zuerst einen [[/skill arc]]-Wurf (SG 10 plus Grad des Zaubers) bestehen. Bei einem erfolgreichen Wurf wirkst du den Zauber von der Schriftrolle. Bei einem misslungenen Wurf zerfällt die Schriftrolle.</p><section class=\"secret\"\nid=\"secret-2tHTpsolDU6Nggvo\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt, der dein Einstimmungsmaximum automatisch erhöht.</p><p>Wenn du eine Gegenstandseigenschaft nutzt, die Ladungen verbraucht, würfle den W6 und deaktiviere das Verbrauchsfeld, um sie kostenlos zu nutzen.</p></section>",
     "effects": {
       "FZWFvTtuOvMIj003": "Einstimmungsbonus"
+    },
+    "activities": {
+      "Use Scroll": "Schriftrolle benutzen"
+    },
+    "activitiesMeta": {
+      "mrK57dSVtwgDGh3F": {
+        "description": "<p>Du kannst jede <em>Zauberschriftrolle</em> benutzen und verwendest dabei Intelligenz als Attribut zum Zauberwirken. Ist der Zauber ein Zaubertrick oder ein Zauber des 1. Grades, kannst du ihn zuverlässig wirken. Enthält die Schriftrolle einen Zauber höheren Grades, muss dir zuerst ein Intelligenzwurf (Arkane Kunde) gelingen (SG 10 plus Grad des Zaubers). Bei einem Erfolg wirkst du den Zauber von der Schriftrolle, bei einem Misserfolg zerfällt sie.</p>"
+      }
     }
   },
   "phbscrArcaneApot": {
@@ -5447,13 +5787,22 @@ export const MODERN_OVERRIDES_BY_ID = {
       "Regain Sorcery Points": "Zauberpunkte zurückgewinnen",
       "Regain Spell Slot": "Zauberplatz zurückgewinnen"
     },
-    "description": "<p>Du kannst die Quelle der Magie in dir anzapfen. Diese Quelle wird durch Zaubereipunkte dargestellt, die es dir ermöglichen, eine Vielzahl von magischen Effekten zu erzeugen.</p><p>Du hast 2 Zaubereipunkte und erhältst mehr, wenn du höhere Stufen erreichst, wie in der Spalte Zaubereipunkte der Tabelle Hexenmeister-Merkmale gezeigt. Du kannst nicht mehr Zaubereipunkte haben als die in der Tabelle für deine Stufe angegebene Anzahl. Du erhältst alle verbrauchten Zaubereipunkte zurück, wenn du eine lange Rast beendest.</p><p>Du kannst deine Zaubereipunkte verwenden, um die folgenden Optionen zu nutzen, zusammen mit anderen Merkmalen, wie Metamagie, die diese Punkte verwenden.</p><p><strong>Zauberplätze in Zaubereipunkte umwandeln.</strong> Du kannst einen Zauberplatz aufwenden, um eine Anzahl von Zaubereipunkten zu erhalten, die dem Grad des Platzes entspricht (keine Aktion erforderlich).</p><p><strong>Zauberplätze erschaffen.</strong> Als Bonusaktion kannst du nicht verbrauchte Zaubereipunkte in einen Zauberplatz umwandeln. Die Tabelle „Zauberplätze erschaffen“ zeigt die Kosten für die Erschaffung eines Zauberplatzes eines bestimmten Grades und listet die Mindeststufe als Hexenmeister auf, die du haben musst, um einen Platz zu erschaffen. Du kannst einen Zauberplatz nicht höher als Grad\\_5 erschaffen.</p><p>Jeder Zauberplatz, den du mit diesem Merkmal erschaffst, verschwindet, wenn du eine lange Rast beendest.</p><table><caption>Zauberplätze erschaffen</caption><thead><tr><td>Grad des Zauberplatzes</td><td>Kosten in Zaubereipunkten</td><td>Min. Hexenmeister-Stufe</td></tr></thead><tbody><tr><td>1</td><td>2</td><td>2</td></tr><tr><td>2</td><td>3</td><td>3</td></tr><tr><td>3</td><td>5</td><td>5</td></tr><tr><td>4</td><td>6</td><td>7</td></tr><tr><td>5</td><td>7</td><td>9</td></tr></tbody></table><section class=\\\"secret\\\" id=\\\"secret-Q72pdf6OJGSybxFV\\\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivität <strong>Zauberplatz wiedererlangen</strong> wandelt deine Zaubereipunkte in Zauberplätze um.</p><p>Die Aktivität <strong>Zaubereipunkte wiedererlangen</strong> wandelt deinen gewählten Zauberplatz in Zaubereipunkte um.</p></section>"
+    "description": "<p>Du kannst die Quelle der Magie in dir anzapfen. Diese Quelle wird durch Zaubereipunkte dargestellt, die es dir ermöglichen, eine Vielzahl von magischen Effekten zu erzeugen.</p><p>Du hast 2 Zaubereipunkte und erhältst mehr, wenn du höhere Stufen erreichst, wie in der Spalte Zaubereipunkte der Tabelle „Zauberermerkmale“ angegeben. Du kannst nicht mehr Zaubereipunkte haben als die in der Tabelle für deine Stufe angegebene Anzahl. Du erhältst alle verbrauchten Zaubereipunkte zurück, wenn du eine lange Rast beendest.</p><p>Du kannst deine Zaubereipunkte verwenden, um die folgenden Optionen zu nutzen, zusammen mit anderen Merkmalen, wie Metamagie, die diese Punkte verwenden.</p><p><strong>Zauberplätze in Zaubereipunkte umwandeln.</strong> Du kannst einen Zauberplatz aufwenden, um eine Anzahl von Zaubereipunkten zu erhalten, die dem Grad des Platzes entspricht (keine Aktion erforderlich).</p><p><strong>Zauberplätze erschaffen.</strong> Als Bonusaktion kannst du nicht verbrauchte Zaubereipunkte in einen Zauberplatz umwandeln. Die Tabelle „Zauberplätze erschaffen“ zeigt die Kosten für die Erschaffung eines Zauberplatzes eines bestimmten Grades und listet die Mindeststufe als Zauberer auf, die du haben musst, um einen Platz zu erschaffen. Du kannst einen Zauberplatz nicht höher als Grad\\_5 erschaffen.</p><p>Jeder Zauberplatz, den du mit diesem Merkmal erschaffst, verschwindet, wenn du eine lange Rast beendest.</p><table><caption>Zauberplätze erschaffen</caption><thead><tr><td>Grad des Zauberplatzes</td><td>Kosten in Zaubereipunkten</td><td>Min. Zaubererstufe</td></tr></thead><tbody><tr><td>1</td><td>2</td><td>2</td></tr><tr><td>2</td><td>3</td><td>3</td></tr><tr><td>3</td><td>5</td><td>5</td></tr><tr><td>4</td><td>6</td><td>7</td></tr><tr><td>5</td><td>7</td><td>9</td></tr></tbody></table><section class=\\\"secret\\\" id=\\\"secret-Q72pdf6OJGSybxFV\\\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivität <strong>Zauberplatz wiedererlangen</strong> wandelt deine Zaubereipunkte in Zauberplätze um.</p><p>Die Aktivität <strong>Zaubereipunkte wiedererlangen</strong> wandelt deinen gewählten Zauberplatz in Zaubereipunkte um.</p></section>",
+    "activitiesMeta": {
+      "rYDgagyWjp6f3jtO": {
+        "description": "<p>Als Bonusaktion kannst du unverbrauchte Zaubereipunkte in einen Zauberplatz umwandeln. Die Tabelle „Zauberplätze erschaffen“ zeigt, was ein Zauberplatz eines bestimmten Grades kostet und welche Zaubererstufe du dafür mindestens haben musst. Du kannst keinen Zauberplatz über dem 5. Grad erschaffen.</p><p>Jeder Zauberplatz, den du mit diesem Merkmal erschaffst, verschwindet, wenn du eine Lange Rast beendest.</p>"
+      },
+      "qAphJay1yKd7VWxH": {
+        "description": "<p>Du kannst einen Zauberplatz verbrauchen, um so viele Zaubereipunkte zu erhalten, wie der Grad des Platzes beträgt (keine Aktion erforderlich).</p>"
+      }
+    }
   },
   "phbscrInnateSorc": {
     "name": "Angeborene Zauberei",
     "description": "<p>Ein Ereignis in deiner Vergangenheit hat einen unauslöschlichen Eindruck bei dir hinterlassen und dich mit schwelender Magie erfüllt. Als Bonusaktion kannst du diese Magie für 1 Minute entfesseln, wobei du die folgenden Vorteile erhältst:</p><ul><li>Der SG für Zauberrettungswürfe deiner Zaubererzauber erhöht sich um 1.</li><li>Du hast Vorteil auf die Angriffswürfe der Zaubererzauber, die du wirkst.</li></ul><p>Du kannst diese Eigenschaft zweimal nutzen und erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest.</p><section id=\"secret-nB2j1T08cVjrcuAj\"\nclass=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt, der deinen SG für Zauberrettungswürfe erhöht. Der Vorteil auf Angriffswürfe ist nicht automatisiert.</p></section>",
     "activities": {
-      "Innate Sorcery": "Angeborene Zauberei"
+      "Innate Sorcery": "Angeborene Zauberei",
+      "Unleash Magic": "Magie entfesseln"
     },
     "effects": {
       "WtiHwWONdmCOeSDR": "Angeborene Zauberei"
@@ -5553,7 +5902,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbscrDraconicRe": {
     "name": "Drakonische Widerstandsfähigkeit",
-    "description": "<p>Die Magie in deinem Körper manifestiert physische Merkmale deiner drakonischen Gabe. Dein maximaler Trefferpunkte-Wert erhöht sich um 3, und er erhöht sich um 1, wann immer du eine weitere Zaubererstufe erreichst.</p><p>Teile deines Körpers sind auch mit drachenähnlichen Schuppen bedeckt. Solange du keine Rüstung trägst, entspricht deine grundlegende Rüstungsklasse 10 plus deinen Geschicklichkeits- und Charisma-Modifikatoren.</p><section\nclass=\"secret\" id=\"secret-uBlQVhOqmjWWiLc4\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt, der automatisch dein maximales Trefferpunkte-Maximum erhöht und deine Rüstungslose Verteidigung einrichtet, die deaktiviert werden kann, wenn du lieber Rüstung tragen möchtest.</p></section>"
+    "description": "<p>Die Magie in deinem Körper manifestiert physische Merkmale deiner drakonischen Gabe. Dein maximaler Trefferpunkte-Wert erhöht sich um 3, und er erhöht sich um 1, wann immer du eine weitere Zaubererstufe erreichst.</p><p>Teile deines Körpers sind auch mit drachenähnlichen Schuppen bedeckt. Solange du keine Rüstung trägst, entspricht deine grundlegende Rüstungsklasse 10 plus deinen Geschicklichkeits- und Charisma-Modifikatoren.</p><section\nclass=\"secret\" id=\"secret-uBlQVhOqmjWWiLc4\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft beinhaltet einen Aktiven Effekt, der automatisch dein maximales Trefferpunkte-Maximum erhöht und deine Rüstungslose Verteidigung einrichtet, die deaktiviert werden kann, wenn du lieber Rüstung tragen möchtest.</p></section>",
+    "effects": {
+      "ZoJYjZ3KGM30khz3": "Drakonische Widerstandsfähigkeit"
+    }
   },
   "phbscrDraconicSp": {
     "name": "Drakonische Zauber",
@@ -5563,7 +5915,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Drachengefährte",
     "description": "<p>Du kannst @UUID[Compendium.dnd5e.spells24.Item.phbsplSummonDrag]{Drachen herbeirufen} ohne materielle Komponente wirken. Du kannst ihn auch einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest.</p><p>Wann immer du beginnst, den Zauber zu wirken, kannst du ihn so modifizieren, dass er keine Konzentration erfordert. Wenn du dies tust, beträgt die Wirkungsdauer des Zaubers für diesen Wurf 1 Minute.</p><section\nid=\"secret-dxl0rjuVblJvTXgy\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft kann verwendet werden, um deine kostenlose Nutzung zu verfolgen. Wenn du den Zauber wirkst, kannst du das Kästchen „Verbrauch“ und optional das Kästchen „Konzentration“ deaktivieren.</p></section>",
     "activities": {
-      "Expend Use": "Einsatz verbrauchen"
+      "Expend Use": "Einsatz verbrauchen",
+      "Summon Dragon (No Concentration)": "Drachen beschwören (ohne Konzentration)"
     }
   },
   "phbscrDragonWing": {
@@ -5608,7 +5961,14 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Magische Gerissenheit",
     "description": "<p>Du kannst ein esoterisches Ritual für 1 Minute durchführen. Am Ende davon\nerhältst du verbrauchte Paktmagie-Zauberplätze zurück, aber nicht mehr als eine Anzahl, die\nder Hälfte deines Maximums entspricht (aufgerundet). Sobald du dieses Merkmal eingesetzt hast, kannst du dies\nerst wieder tun, nachdem du eine Lange Rast beendet hast.</p><section\nid=\"secret-uXJIaDc9mWHsrILV\" class=\"secret\"><p><strong>Foundry-\nHinweis</strong></p><p>Dieses Merkmal beinhaltet eine kostenlose Anwendung und stellt\ndie korrekte Anzahl an Paktmagie-Zauberplätzen wieder her.</p></section>",
     "activities": {
-      "Regain Pact Spell Slots": "Pakt-Zauberplätze wiederherstellen"
+      "Regain Pact Spell Slots": "Pakt-Zauberplätze wiederherstellen",
+      "Perform Master Rite": "Meisterritual durchführen",
+      "Perform Esoteric Rite": "Esoterisches Ritual durchführen"
+    },
+    "activitiesMeta": {
+      "Ju8DZvUWsbTNIzZX": {
+        "description": "<p>Du kannst 1 Minute lang ein esoterisches Ritual durchführen. An seinem Ende erhältst du alle verbrauchten Zauberplätze deiner Paktmagie zurück. Sobald du dieses Merkmal genutzt hast, kannst du es erst nach einer Langen Rast erneut nutzen.</p>"
+      }
     }
   },
   "phbwlkMysticArca": {
@@ -5621,7 +5981,13 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbinvAgonizingB": {
     "name": "Qualvoller Strahl",
-    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 2+, ein Hexenmeister-Cantrip, das\nSchaden verursacht</p></blockquote><p>Wähle eines deiner bekannten Hexenmeister-Cantrips,\ndas Schaden verursacht. Du kannst deinen Charisma-Modifikator zu den\nSchadenswürfen dieses Zaubers addieren.</p><p><strong>Wiederholbar. </strong>Du kannst diese\nAnrufung mehr als einmal erhalten. Jedes Mal, wenn du dies tust, wähle ein anderes\nberechtigtes Cantrip.</p><section class=\"secret\"\nid=\"secret-e2JfbLoZ7SLiWlcU\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nÄnderung an deinem Cantrip muss manuell vorgenommen werden, indem\n„@abilities.cha.mod“ zum Feld „Bonus“ des\nZauberschadens hinzugefügt wird.</p></section>"
+    "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 2+, ein Hexenmeister-Cantrip, das\nSchaden verursacht</p></blockquote><p>Wähle eines deiner bekannten Hexenmeister-Cantrips,\ndas Schaden verursacht. Du kannst deinen Charisma-Modifikator zu den\nSchadenswürfen dieses Zaubers addieren.</p><p><strong>Wiederholbar. </strong>Du kannst diese\nAnrufung mehr als einmal erhalten. Jedes Mal, wenn du dies tust, wähle ein anderes\nberechtigtes Cantrip.</p><section class=\"secret\"\nid=\"secret-e2JfbLoZ7SLiWlcU\"><p><strong>Foundry-Hinweis</strong></p><p>Die\nÄnderung an deinem Cantrip muss manuell vorgenommen werden, indem\n„@abilities.cha.mod“ zum Feld „Bonus“ des\nZauberschadens hinzugefügt wird.</p></section>",
+    "effects": {
+      "DxfAKkrWPO4U1y9J": {
+        "name": "Qualvoller Strahl",
+        "description": "<p>Wähle einen deiner bekannten Hexenmeister-Zaubertricks, der Schaden verursacht. Du kannst deinen Charismamodifikator zu den Schadenswürfen dieses Zaubers addieren.</p>"
+      }
+    }
   },
   "phbinvArmorofSha": {
     "name": "Rüstung der Schatten",
@@ -5653,7 +6019,10 @@ export const MODERN_OVERRIDES_BY_ID = {
   },
   "phbinvEldritchMi": {
     "name": "Ältestes Gemüt",
-    "description": "<p>Du hast Vorteil auf Konstitutionsrettungswürfe, die du ablegst, um die\nKonzentration aufrechtzuerhalten.</p>"
+    "description": "<p>Du hast Vorteil auf Konstitutionsrettungswürfe, die du ablegst, um die\nKonzentration aufrechtzuerhalten.</p>",
+    "effects": {
+      "24hE74nCrrmswvlm": "Vorteil bei Konzentration"
+    }
   },
   "phbinvEldritchSm": {
     "name": "Ältestes Niederstrecken",
@@ -5688,6 +6057,12 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 5+</p></blockquote><p>Du kannst\nunter Wasser atmen und erhältst eine Schwimmgeschwindigkeit, die deiner\nBewegungsrate entspricht.</p><p>Du kannst auch\n@UUID[Compendium.dnd5e.spells24.Item.phbsplWaterBreat]{Wasser atmen}\neinmal wirken, ohne einen Zauberplatz zu verbrauchen. Du erhältst die Fähigkeit, es auf\ndiese Weise erneut zu wirken, wenn du eine lange Rast beendest.</p><section\nid=\"secret-aH09PLbY0nXMKypM\" class=\"secret\"><p><strong>Foundry-\nHinweis</strong></p><p>Die <strong>Gabe: Wasser atmen</strong> Aktion\nverbraucht eine begrenzte Nutzung und beinhaltet einen aktiven Effekt zur Verfolgung der\ngewählten Kreaturen.</p></section>",
     "activities": {
       "Gift Water Breathing": "Gabe: Wasser atmen"
+    },
+    "effects": {
+      "IEhxOF5rtwJ3xhOA": {
+        "name": "Wasseratmung und Schwimmbewegungsrate",
+        "description": "<p>Du kannst unter Wasser atmen und erhältst eine Schwimmbewegungsrate in Höhe deiner Bewegungsrate.</p>"
+      }
     }
   },
   "phbinvGiftoftheP": {
@@ -5704,7 +6079,11 @@ export const MODERN_OVERRIDES_BY_ID = {
     "activities": {
       "Find Familiar with Flight": "Vertrauten finden (Flug)",
       "Find Familiar with Swimming": "Vertrauten finden (Schwimmen)",
-      "Invest with Resistance": "Mit Resistenz investieren"
+      "Invest with Resistance": "Mit Resistenz investieren",
+      "Resistance": "Resistenz",
+      "Quick Attack": "Schneller Angriff",
+      "Find Familiar": "Vertrauten finden",
+      "Find Familiar (Expanded Options)": "Vertrauten finden (erweiterte Optionen)"
     },
     "description": "<blockquote><p>Voraussetzung: Hexenmeister der 5. Stufe oder höher, @UUID[Compendium.dnd5e.classes24.Item.phbinvPactChain0]{Pakt der Kette} Anrufung</p></blockquote><p>Wenn du @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Vertrauten finden} wirkst, erfüllst du den beschworenen Vertrauten mit einem Teil deiner unheimlichen Macht und gewährst der Kreatur die folgenden Vorteile.</p><p><strong>Luft- oder Wasserwesen.</strong> Der Vertraute erhält entweder eine Fluggeschwindigkeit oder eine Schwimmgeschwindigkeit (deine Wahl) von 12 m.</p><p><strong>Schneller Angriff.</strong> Als Bonusaktion kannst du dem Vertrauten befehlen, die Aktion \\_Angreifen\\_ auszuführen.</p><p><strong>Nekrotischer oder gleißender Schaden.</strong> Immer wenn der Vertraute Wucht-, Stich- oder Hiebschaden verursacht, kannst du stattdessen nekrotischen oder gleißenden Schaden verursachen lassen.</p><p><strong>Dein Rettungswurf-SG.</strong> Wenn der Vertraute eine Kreatur zu einem Rettungswurf zwingt, verwendet er deinen Zauberrettungs-SG.</p><p><strong>Resistenz.</strong> Wenn der Vertraute Schaden erleidet, kannst du eine Reaktion aufwenden, um ihm Resistenz gegen diesen Schaden zu gewähren.</p><section class=\\\"secret\\\" id=\\\"secret-D3vSCo0uEG4Kp1X6\\\"><p><strong>Foundry-Anmerkung</strong></p><p>Die Aktivitäten <strong>Vertrauten finden mit Flug</strong> und <strong>mit Schwimmen</strong> ermöglichen es dir beide, einen Vertrauten mit dem entsprechenden Bewegungsbonus zu beschwören. Beide Aktivitäten verbrauchen einen Paktmagie-Zauberplatz.</p><p>Die Aktivität <strong>Mit Resistenz ausstatten</strong> enthält einen aktiven Effekt für die Resistenz gegen jeden Schadenstyp, der angewendet werden kann, um die entsprechende Resistenz zu erhalten. Stelle sicher, dass du den vorherigen aktiven Effekt im Reiter \\\"Effekte\\\" deines Bogens deaktivierst/löschst, wenn du die Resistenzen änderst.</p><p>Der Vertraute verwendet automatisch deinen Rettungswurf-SG.</p></section>",
     "effects": {
@@ -5714,15 +6093,29 @@ export const MODERN_OVERRIDES_BY_ID = {
       "J9HrAcFSX8Oiz5Os": "Resistenz gegen Feuer",
       "QDl6CxMONYK8Kru1": "Resistenz gegen Hiebschaden",
       "SzrV0ZUdpHCl8ury": "Resistenz gegen Wuchtschaden",
-      "VxM3FsirIcd3Of7q": "Investition des Schwimmens",
+      "VxM3FsirIcd3Of7q": {
+        "name": "Wasserwesen",
+        "description": "<p><strong>Luft- oder Wasserwesen.</strong> Der Vertraute erhält entweder eine Flug- oder eine Schwimmbewegungsrate (deine Wahl) von 12 m.</p>"
+      },
       "W1jLBRVt0gryqFMJ": "Resistenz gegen Gift",
       "XYrQSl0kdJtV6Bf0": "Resistenz gegen Psionisch",
-      "Ziuu5P6LoAvevtuN": "Investition des Flugs",
+      "Ziuu5P6LoAvevtuN": {
+        "name": "Luftwesen",
+        "description": "<p><strong>Luft- oder Wasserwesen.</strong> Der Vertraute erhält entweder eine Flug- oder eine Schwimmbewegungsrate (deine Wahl) von 12 m.</p>"
+      },
       "chVfpaM9kmt2hOWW": "Resistenz gegen Säure",
       "dNB2b7C34xZ8f1VC": "Resistenz gegen Kälte",
       "ftnhEVvBRxrbAfa3": "Resistenz gegen Blitz",
       "hNA4gzQMT9cM2ALU": "Resistenz gegen Gleißend",
       "wNoq81xzNrVLdSGT": "Resistenz gegen Nekrotisch"
+    },
+    "activitiesMeta": {
+      "fHEY2QcPTBaT4lBF": {
+        "description": "<p>Wenn der Vertraute Schaden erleidet, kannst du eine Reaktion nutzen, um ihm Resistenz gegen diesen Schaden zu gewähren.</p>"
+      },
+      "nVygzzH0AxhOMaxu": {
+        "description": "<p>Als Bonusaktion kannst du dem Vertrauten befehlen, die Aktion &amp;Reference[Attack]{Angriff} auszuführen.</p>"
+      }
     }
   },
   "phbinvLessonsoft": {
@@ -5734,7 +6127,19 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<blockquote><p>Voraussetzung: Hexenmeister der Stufe 9+,\n@UUID[Compendium.dnd5e.classes24.Item.phbinvPactBlade0]{Pakt der Klinge}\nAnrufung</p></blockquote><p>Einmal pro Zug, wenn du eine Kreatur mit\ndeiner Paktwaffe triffst, kannst du der Kreatur zusätzlich 1W6 nekrotischen, psychischen\noder gleißenden Schaden (deiner Wahl) zufügen, und du kannst einen deiner Trefferwürfel\nausgeben, um ihn zu würfeln und eine Anzahl von Trefferpunkten gleich dem Wurf\nplus deinem Konstitutionsmodifikator (mindestens 1 Trefferpunkt) zurückzugewinnen.</p><section\nclass=\"secret\" id=\"secret-1Hta9I4donszrwIQ\"><p><strong>Foundry-\nHinweis</strong></p><p>Die <strong>Schaden</strong> Aktion ermöglicht es dir,\ndie Art des Schadens im Dialog des Wurfs zu wählen. Sie wird deine Wahl für die\nZukunft speichern.</p><p>Die <strong>Heilen (Größter Trefferwürfel)</strong>\nund <strong>Kleinster Trefferwürfel</strong> Aktionen verbrauchen den entsprechenden Trefferwürfel\nund bieten einen Heilungswurf mit deinem Konstitutionsmodifikator. Welche du wählst,\nist nur relevant, wenn du multiklassig mit mehreren Trefferwürfeltypen bist.</p></section>",
     "activities": {
       "Heal (Largest Hit Die)": "Heilen (Größter Trefferwürfel)",
-      "Heal (Smallest Hit Die)": "Heilen (Kleinster Trefferwürfel)"
+      "Heal (Smallest Hit Die)": "Heilen (Kleinster Trefferwürfel)",
+      "Extra Damage": "Zusätzlicher Schaden"
+    },
+    "activitiesMeta": {
+      "LDIKT3JVs25qBVuL": {
+        "description": "<p>Einmal pro Zug, wenn du eine Kreatur mit deiner Paktwaffe triffst, kannst du ihr zusätzlich 1W6 nekrotischen, psychischen oder gleißenden Schaden (deine Wahl) zufügen.</p>"
+      },
+      "emx17h6kO4xmSqC6": {
+        "description": "<p>Du kannst einen deiner Trefferwürfel ausgeben, ihn würfeln und Trefferpunkte in Höhe des Ergebnisses plus deinem Konstitutionsmodifikator zurückerhalten (mindestens 1 Trefferpunkt).</p>"
+      },
+      "oMHxbcnQh38wZEKU": {
+        "description": "<p>Du kannst einen deiner Trefferwürfel ausgeben, ihn würfeln und Trefferpunkte in Höhe des Ergebnisses plus deinem Konstitutionsmodifikator zurückerhalten (mindestens 1 Trefferpunkt).</p>"
+      }
     }
   },
   "phbinvMaskofMany": {
@@ -5822,7 +6227,10 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Hexensicht",
     "description": "<blockquote><p>Voraussetzung: Hexenmeister (Stufe 15+)</p></blockquote><p>Du hast\nWahre Sicht mit einer Reichweite von 9 m.</p><section\nid=\"secret-yUE0N1X1QX3kZHcx\" class=\"secret\"><p><strong>Foundry-\nHinweis</strong></p><p>Diese Fähigkeit beinhaltet einen aktiven Effekt, der dir\nautomatisch Wahrer Blick gewährt.</p></section>",
     "effects": {
-      "CkC8PmrUFz70FTwS": "Hexensicht"
+      "CkC8PmrUFz70FTwS": {
+        "name": "Wahrer Blick",
+        "description": "<p>Du hast &amp;Reference[Truesight]{Wahren Blick} mit einer Reichweite von 9 m.</p>"
+      }
     }
   },
   "phbwlkDarkOnesBl": {
@@ -5863,7 +6271,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Einmal pro Zug, wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du versuchen,\ndas Ziel sofort durch die Unteren Ebenen zu transportieren. Das Ziel\nmuss einen Charisma-Rettungswurf gegen deinen Zauber-SG bestehen, oder das\nZiel verschwindet und rast durch eine Albtraumlandschaft. Das Ziel\nerleidet 8W10 psychischen Schaden, wenn es kein Teufel ist, und es hat den\n&amp;Reference[Incapacitated] Zustand bis zum Ende deines nächsten Zuges,\nwenn es zu dem Raum zurückkehrt, den es zuvor besetzt hatte, oder zum nächsten\nunbesetzten Raum.</p><p>Sobald du diese Fähigkeit eingesetzt hast, kannst du sie erst wieder einsetzen,\nwenn du eine Lange Rast beendet hast, es sei denn, du verbrauchst einen Zauberplatz der Paktmagie (keine\nAktion erforderlich), um die Anwendung wiederherzustellen.</p><section class=\"secret\"\nid=\"secret-gG3gHikiPJVXNkev\"><p><strong>Foundry-Hinweis</strong></p><p>Diese\nFähigkeit beinhaltet eine begrenzte Anwendung.</p><p>Die <strong>Anwendung wiederherstellen</strong>\nAktivität verbraucht einen Zauberplatz der Paktmagie und stellt eine Anwendung dieser\nFähigkeit wieder her.</p></section>",
     "activities": {
       "Hurl Through Hell": "Durch die Hölle schleudern",
-      "Regain Use": "Anwendung wiederherstellen"
+      "Regain Use": "Anwendung wiederherstellen",
+      "Restore Use": "Anwendung wiederherstellen"
     }
   },
   "phbwzdArcaneReco": {
@@ -5900,26 +6309,33 @@ export const MODERN_OVERRIDES_BY_ID = {
     "description": "<p>Du beherrschst bestimmte Zauber derart meisterhaft, dass du sie beliebig oft wirken kannst. Wähle einen Zauber des 1. und einen Zauber des 2. Grades aus deinem Zauberbuch aus, die eine Aktion zum Wirken benötigen. Du hast diese Zauber stets vorbereitet und kannst sie auf dem niedrigsten Grad wirken, ohne einen Zauberplatz zu verbrauchen. Um einen der Zauber auf einem höheren Grad zu wirken, musst du einen Zauberplatz verbrauchen.</p><p>Wann immer du eine lange Rast beendest, kannst du dein Zauberbuch studieren und einen dieser Zauber durch einen geeigneten Zauber desselben Grades aus dem Buch ersetzen.</p><section class=\"secret\"\nid=\"secret-OhEjtOfrcVMJh1qk\"><p><strong>Foundry-\nHinweis</strong></p><p>Die <strong>Meistern</strong> Aktivität beinhaltet eine\nVerzauberung, die die Zauber als „Immer vorbereitet“ kennzeichnet und „, Gemeistert“\nzu ihrem Namen hinzufügt, um sie leicht identifizieren zu können.</p><p>Deaktiviere das Feld „Verbrauch“, wenn du auf dem\nniedrigsten Grad wirkst. Du kannst mehrere Zauber auf dieselbe Chat-Karte ziehen.</p></section>",
     "activities": {
       "Master Spell": "Zauber meistern"
+    },
+    "effects": {
+      "P5SxPZNi4KPzW8dD": {
+        "name": "Gemeistert",
+        "description": "<p>Du hast diese Zauber immer vorbereitet und kannst sie auf ihrem niedrigsten Grad wirken, ohne einen Zauberplatz zu verbrauchen. Um einen von ihnen auf einem höheren Grad zu wirken, musst du einen Zauberplatz verbrauchen.</p>"
+      }
     }
   },
   "phbwzdSpellcasti": {
     "name": "Zauberwirken",
-    "description": "<p>Als Schüler der arkanen Magie hast du gelernt, Zauber zu wirken. Siehe die @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.b2QVn25z2N1ykWpf]{Regeln zum Zauberwirken}. Die folgenden Informationen beschreiben, wie du diese Regeln mit Zaubern des Zauberers anwendest, die im @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Magier-Zauberliste} erscheinen.</p><p><strong>Zaubertricks.</strong> Du kennst drei Zaubertricks des Zauberers deiner Wahl. @UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Licht}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMageHand00]{Magierhand} und @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofFrost]{Kältestrahl} werden empfohlen. Immer wenn du eine Lange Rast beendest, kannst du einen deiner Zaubertricks aus diesem Merkmal durch einen anderen Zaubertrick des Zauberers deiner Wahl ersetzen.</p><p>Wenn du die Zauberer-Stufen 4 und 10 erreichst, lernst du einen weiteren Zaubertrick des Zauberers deiner Wahl, wie in der Spalte „Zaubertricks“ der @UUID[Compendium.dnd5e.content24.JournalEntry.phbWizard0000000.JournalEntryPage.g7cMRWzsgAsEF7zC#class-features]{Magier-Merkmalstabelle} gezeigt.</p><p><strong>Zauberbuch.</strong> Deine Zauberer-Lehre gipfelte in der Erschaffung eines einzigartigen Buches: deines Zauberbuchs. Es ist ein winziges Objekt, das 3 Pfund wiegt, 100 Seiten enthält und nur von dir oder jemandem gelesen werden kann, der @UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identifizieren} wirkt. Du bestimmst das Aussehen und die Materialien des Buches, wie zum Beispiel ein vergoldetes Foliant oder eine Sammlung von Pergament, das mit Bindfaden gebunden ist.</p><p>Das Buch enthält die Zauber der Stufe 1+, die du kennst. Es beginnt mit sechs Zaubern des Zauberers der Stufe 1 deiner Wahl. @UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Magie entdecken}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFeatherFal]{Federfall}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMageArmor0]{Magierrüstung}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magisches Geschoss}, @UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000]{Schlaf} und @UUID[Compendium.dnd5e.spells24.Item.phbsplThunderwav]{Donnerwoge} werden empfohlen.</p><p>Immer wenn du nach Stufe 1 eine Zauberer-Stufe aufsteigst, füge zwei Zauber des Zauberers deiner Wahl deinem Zauberbuch hinzu. Jeder dieser Zauber muss von einer Stufe sein, für die du Zauberplätze hast, wie in der Tabelle „Zauberer-Merkmale“ gezeigt. Die Zauber sind die Krönung der arkanen Forschung, die du regelmäßig betreibst.</p><p><strong>Zauberplätze.</strong> Die Tabelle „Zauberer-Merkmale“ zeigt, wie viele Zauberplätze du hast, um deine Zauber der Stufe 1+ zu wirken. Du erhältst alle verbrauchten Plätze zurück, wenn du eine Lange Rast beendest.</p><p><strong>Vorbereitete Zauber der Stufe 1+.</strong> Du bereitest die Liste der Zauber der Stufe 1+ vor, die dir mit diesem Merkmal zum Wirken zur Verfügung stehen. Wähle dazu vier Zauber aus deinem Zauberbuch. Die gewählten Zauber müssen von einer Stufe sein, für die du Zauberplätze hast.</p><p>Die Anzahl der Zauber auf deiner Liste erhöht sich, wenn du Zauberer-Stufen aufsteigst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Zauberer-Merkmale“ gezeigt. Immer wenn diese Anzahl steigt, wähle zusätzliche Zauber des Zauberers, bis die Anzahl der Zauber auf deiner Liste mit der Zahl in der Tabelle übereinstimmt. Die gewählten Zauber müssen von einer Stufe sein, für die du Zauberplätze hast. Wenn du zum Beispiel ein Zauberer der Stufe 3 bist, kann deine Liste der vorbereiteten Zauber sechs Zauber der Stufen 1 und 2 in beliebiger Kombination enthalten, die aus deinem Zauberbuch ausgewählt wurden.</p><p>Wenn ein anderes Zauberer-Merkmal dir Zauber gibt, die du immer vorbereitet hast, zählen diese Zauber nicht gegen die Anzahl der Zauber, die du mit diesem Merkmal vorbereiten kannst, aber diese Zauber zählen ansonsten als Zauber des Zauberers für dich.</p><p><strong>Ändern deiner vorbereiteten Zauber.</strong> Immer wenn du eine Lange Rast beendest, kannst du deine Liste der vorbereiteten Zauber ändern, indem du alle dortigen Zauber durch Zauber aus deinem Zauberbuch ersetzt.</p><p><strong>Zauberwirkungsattribut.</strong> Intelligenz ist dein Zauberwirkungsattribut für deine Zauber des Zauberers.</p><p><strong>Zauberfokus.</strong> Du kannst einen Arkanen Fokus oder dein Zauberbuch als Zauberfokus für deine Zauber des Zauberers verwenden.</p>"
+    "description": "<p>Als Schüler der arkanen Magie hast du gelernt, Zauber zu wirken. Siehe die @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000]{Regeln zum Zauberwirken}. Im Folgenden steht, wie du diese Regeln mit Magierzaubern anwendest, die in der @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Zauberliste des Magiers} stehen.</p><p><em><strong>Zaubertricks.</strong></em> Du kennst drei Magier-Zaubertricks deiner Wahl. Empfohlen sind <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLight00000]{Licht}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageHand00]{Magierhand}</em> und <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofFrost]{Kältestrahl}</em>. Immer wenn du eine Lange Rast beendest, kannst du einen deiner Zaubertricks aus diesem Merkmal durch einen anderen Magier-Zaubertrick deiner Wahl ersetzen.</p><p>Wenn du die Magierstufen 4 und 10 erreichst, lernst du einen weiteren Magier-Zaubertrick deiner Wahl, wie in der Spalte „Zaubertricks“ der @UUID[Compendium.dnd5e.content24.JournalEntry.phbWizard0000000.JournalEntryPage.g7cMRWzsgAsEF7zC#class-features]{Tabelle „Magiermerkmale“} angegeben.</p><p><em><strong>Zauberbuch.</strong></em><strong> </strong>Deine Lehrzeit als Magier gipfelte in der Herstellung eines einzigartigen Buches: deines Zauberbuchs. Es ist ein winziger Gegenstand, wiegt 1,5 kg, hat 100 Seiten und kann nur von dir oder von jemandem gelesen werden, der <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplIdentify00]{Identifizieren}</em> wirkt. Du bestimmst Aussehen und Material des Buches, etwa ein Folio mit Goldschnitt oder eine mit Schnur gebundene Sammlung von Pergamentblättern.</p><p>Das Buch enthält die Zauber des 1. Grades oder höher, die du kennst. Zu Beginn stehen darin sechs Magierzauber des 1. Grades deiner Wahl. Empfohlen sind <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Magie entdecken}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFeatherFal]{Federfall}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageArmor0]{Magierrüstung}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]{Magisches Geschoss}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSleep00000]{Schlaf}</em> und <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThunderwav]{Donnerwoge}</em>.</p><p>Immer wenn du nach Stufe 1 eine Magierstufe erreichst, trägst du zwei Magierzauber deiner Wahl in dein Zauberbuch ein. Jeder davon muss einen Grad haben, für den du Zauberplätze hast, wie in der Tabelle „Magiermerkmale“ angegeben. Diese Zauber sind das Ergebnis der arkanen Forschung, die du regelmäßig betreibst.</p><p><em><strong>Zauberplätze.</strong></em> Die Tabelle „Magiermerkmale“ zeigt, wie viele Zauberplätze du für deine Zauber des 1. Grades oder höher hast. Du erhältst alle verbrauchten Zauberplätze zurück, wenn du eine Lange Rast beendest.</p><p><em><strong>Vorbereitete Zauber des 1. Grades oder höher.</strong></em> Du bereitest die Liste der Zauber des 1. Grades oder höher vor, die du mit diesem Merkmal wirken kannst. Wähle dazu vier Zauber aus deinem Zauberbuch. Sie müssen einen Grad haben, für den du Zauberplätze hast.</p><p>Die Zahl der Zauber auf deiner Liste steigt mit deinen Magierstufen, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Magiermerkmale“ angegeben. Immer wenn sie steigt, wählst du weitere Magierzauber, bis deine Liste der Zahl in der Tabelle entspricht. Auch diese Zauber müssen einen Grad haben, für den du Zauberplätze hast. Als Magier der Stufe 3 kann deine Liste zum Beispiel sechs Zauber des 1. und 2. Grades in beliebiger Mischung aus deinem Zauberbuch enthalten.</p><p>Gibt dir ein anderes Magiermerkmal Zauber, die du immer vorbereitet hast, zählen diese nicht zu der Zahl, die du mit diesem Merkmal vorbereiten kannst, gelten für dich aber ansonsten als Magierzauber.</p><p><em><strong>Vorbereitete Zauber wechseln.</strong></em> Immer wenn du eine Lange Rast beendest, kannst du deine Liste vorbereiteter Zauber ändern und beliebige Zauber darauf durch Zauber aus deinem Zauberbuch ersetzen.</p><p><em><strong>Attribut zum Zauberwirken.</strong></em> Intelligenz ist dein Attribut zum Zauberwirken für deine Magierzauber.</p><p><em><strong>Zauberfokus.</strong></em><strong> </strong>Du kannst einen arkanen Fokus oder dein Zauberbuch als Zauberfokus für deine Magierzauber verwenden.</p><aside class=\"notable\"><h4 data-no-toc>Ein Zauberbuch erweitern und ersetzen</h4><p>Die Zauber, die du beim Stufenaufstieg in dein Zauberbuch einträgst, spiegeln deine fortlaufende magische Forschung wider. Auf deinen Abenteuern findest du aber vielleicht weitere Zauber, die du in das Buch aufnehmen kannst. Du könntest zum Beispiel einen Magierzauber auf einer Zauberschriftrolle entdecken und ihn dann in dein Zauberbuch übertragen.</p><p><em><strong>Einen Zauber ins Buch übertragen.</strong></em> Findest du einen Magierzauber des 1. Grades oder höher, kannst du ihn in dein Zauberbuch übertragen, wenn er einen Grad hat, den du vorbereiten kannst, und du Zeit dafür hast. Je Grad des Zaubers dauert die Abschrift 2 Stunden und kostet 50 GM. Danach kannst du den Zauber vorbereiten wie die anderen Zauber in deinem Zauberbuch.</p><p><em><strong>Das Buch abschreiben.</strong></em> Du kannst einen Zauber aus deinem Zauberbuch in ein anderes Buch übertragen. Das geht wie das Eintragen eines neuen Zaubers, aber schneller, weil du den Zauber bereits wirken kannst. Du brauchst je Grad des übertragenen Zaubers nur 1 Stunde und 10 GM.</p><p>Verlierst du dein Zauberbuch, kannst du auf dieselbe Weise die Magierzauber, die du vorbereitet hast, in ein neues Zauberbuch übertragen. Den Rest des neuen Buches füllst du, indem du neue Zauber findest. Deshalb halten viele Magier ein Ersatzbuch bereit.</p></aside>"
   },
   "phbwzdEmpoweredE": {
     "name": "Ermächtigte Hervorrufung",
-    "description": "<p>Immer wenn du einen Zauber des Zauberers aus der Schule der Hervorrufung wirkst, kannst du deinen Intelligenzmodifikator zu einem Schadenswurf dieses Zaubers addieren.</p><section\nclass=\"secret\" id=\"secret-3cdT0RlurgG5XV4o\"><p><strong>Foundry-Hinweis</strong></p><p>Du kannst deinen Intelligenzmodifikator zum Situationsbonus des Zaubers im Schadensdialog hinzufügen oder die <strong>Schaden</strong>-Aktivität dieses Merkmals verwenden, die es dir ermöglicht, den Typ im Schadensdialog auszuwählen.</p></section>"
+    "description": "<p>Immer wenn du einen Magierzauber aus der Schule der Hervorrufung wirkst, kannst du deinen Intelligenzmodifikator zu einem Schadenswurf dieses Zaubers addieren.</p><section\nclass=\"secret\" id=\"secret-3cdT0RlurgG5XV4o\"><p><strong>Foundry-Hinweis</strong></p><p>Du kannst deinen Intelligenzmodifikator zum Situationsbonus des Zaubers im Schadensdialog hinzufügen oder die <strong>Schaden</strong>-Aktivität dieses Merkmals verwenden, die es dir ermöglicht, den Typ im Schadensdialog auszuwählen.</p></section>"
   },
   "phbwzdEvocationS": {
     "name": "Hervorrufungs-Savant",
-    "description": "<p>Wähle zwei Zauber des Zauberers aus dem @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Schule der Hervorrufung} (ändere den Gruppierungsmodus auf „Schule“ für eine einfachere Auswahl), von denen jeder höchstens Stufe 2 sein darf, und füge sie kostenlos deinem Zauberbuch hinzu.</p><p>Zusätzlich kannst du, wann immer du in dieser Klasse Zugang zu einer neuen Stufe von Zauberplätzen erhältst, einen Zauber des Zauberers aus der Schule der Hervorrufung kostenlos deinem Zauberbuch hinzufügen. Der gewählte Zauber muss von einer Stufe sein, für die du Zauberplätze hast.</p>"
+    "description": "<p>Wähle zwei Magierzauber aus dem @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Schule der Hervorrufung} (ändere den Gruppierungsmodus auf „Schule“ für eine einfachere Auswahl), von denen jeder höchstens Stufe 2 sein darf, und füge sie kostenlos deinem Zauberbuch hinzu.</p><p>Zusätzlich kannst du, wann immer du in dieser Klasse Zugang zu einer neuen Stufe von Zauberplätzen erhältst, einen Magierzauber aus der Schule der Hervorrufung kostenlos deinem Zauberbuch hinzufügen. Der gewählte Zauber muss von einer Stufe sein, für die du Zauberplätze hast.</p>"
   },
   "phbwzdOverchanne": {
     "name": "Überladung",
-    "description": "<p>Du kannst die Macht deiner Zauber erhöhen. Wenn du einen Zauber des Zauberers mit einem Zauberplatz der Stufen 1–5 wirkst, der Schaden verursacht, kannst du in der Runde, in der du ihn wirkst, maximalen Schaden mit diesem Zauber verursachen.</p><p>Das erste Mal, wenn du dies tust, erleidest du keinen negativen Effekt. Wenn du dieses Merkmal erneut verwendest, bevor du eine Lange Rast beendest, erleidest du 2W12 nekrotischen Schaden für jede Stufe des Zauberplatzes, unmittelbar nachdem du den Zauber gewirkt hast. Dieser Schaden ignoriert Resistenzen und Immunitäten.</p><p>Jedes Mal, wenn du dieses Merkmal erneut verwendest, bevor du eine Lange Rast beendest, erhöht sich der nekrotische Schaden pro Zauberstufe um 1W12.</p><section class=\"secret\"\nid=\"secret-Uh2cD0di8YB1gKPG\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal hat begrenzte Verwendungen, um zu verfolgen, wie oft es verwendet wurde, um den Schaden zu automatisieren.</p><p>Die Aktivität <strong>Erste Verwendung</strong> beinhaltet eine kostenlose Verwendung und stellt alle Verwendungen des Merkmals wieder her.</p><p>Die Aktivität <strong>Zweite+ Verwendung</strong> verbraucht eine Verwendung und erhöht den Schaden automatisch und sollte für alle nachfolgenden Verwendungen genutzt werden, bis du eine Lange Rast beendest.</p></section>",
+    "description": "<p>Du kannst die Macht deiner Zauber erhöhen. Wenn du einen Magierzauber mit einem Zauberplatz der Stufen 1–5 wirkst, der Schaden verursacht, kannst du in der Runde, in der du ihn wirkst, maximalen Schaden mit diesem Zauber verursachen.</p><p>Das erste Mal, wenn du dies tust, erleidest du keinen negativen Effekt. Wenn du dieses Merkmal erneut verwendest, bevor du eine Lange Rast beendest, erleidest du 2W12 nekrotischen Schaden für jede Stufe des Zauberplatzes, unmittelbar nachdem du den Zauber gewirkt hast. Dieser Schaden ignoriert Resistenzen und Immunitäten.</p><p>Jedes Mal, wenn du dieses Merkmal erneut verwendest, bevor du eine Lange Rast beendest, erhöht sich der nekrotische Schaden pro Zauberstufe um 1W12.</p><section class=\"secret\"\nid=\"secret-Uh2cD0di8YB1gKPG\"><p><strong>Foundry-Hinweis</strong></p><p>Dieses Merkmal hat begrenzte Verwendungen, um zu verfolgen, wie oft es verwendet wurde, um den Schaden zu automatisieren.</p><p>Die Aktivität <strong>Erste Verwendung</strong> beinhaltet eine kostenlose Verwendung und stellt alle Verwendungen des Merkmals wieder her.</p><p>Die Aktivität <strong>Zweite+ Verwendung</strong> verbraucht eine Verwendung und erhöht den Schaden automatisch und sollte für alle nachfolgenden Verwendungen genutzt werden, bis du eine Lange Rast beendest.</p></section>",
     "activities": {
       "First Use": "Erste Verwendung",
-      "Second+ Use": "Zweite+ Verwendung"
+      "Second+ Use": "Zweite+ Verwendung",
+      "Overchannel": "Überladung"
     }
   },
   "phbwzdPotentCant": {
@@ -11656,7 +12072,8 @@ export const MODERN_OVERRIDES_BY_ID = {
     "name": "Abartiger Boden",
     "description": "<p>Der Boden in einer [[lookup @target.template.size activity=zVznqPXgYjETqpQz]] Fuß großen Ausströmung, die vom [[lookup @name]]{monster} ausgeht, ist &amp;Reference[Difficult Terrain].</p>",
     "activities": {
-      "Place Ausströmung": "Ausströmung platzieren"
+      "Place Ausströmung": "Ausströmung platzieren",
+      "Place Emanation": "Ausströmung platzieren"
     }
   },
   "mmAcidAbsorption": {
@@ -14646,5 +15063,207 @@ export const MODERN_OVERRIDES_BY_ID = {
   "dmgEfreetiChain0": {
     "name": "Ifrit-Rüstung",
     "description": "<p><em>Rüstung (@UUID[Compendium.dnd5e.equipment24.Item.phbarmChainMail0]{Kettenpanzer} oder @UUID[Compendium.dnd5e.equipment24.Item.phbarmChainShirt]{Kettenhemd}), legendär (erfordert Einstimmung)</em></p><p>Wenn du diese Rüstung trägst, erhältst du einen Bonus von +3 auf deine RK, bist gegen Feuerschaden immun und beherrschst Urtümlich. Außerdem kannst du auf geschmolzenem Gestein stehen und dich darüber bewegen, als wäre es fester Boden.</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>"
+  },
+  "phbspElf00000000": {
+    "name": "Elf",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000 inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"drow\">Drow</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDrow0000000 inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"high-elves\">Hochelfen</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHighElf0000 inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"wood-elves\">Waldelfen</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspWoodElf0000 inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"elf-traits\">Elfenmerkmale</h3><p><strong>Kreaturentyp:</strong> Humanoider<br><strong>Größe: </strong>Mittelgroß (etwa 1,5–1,8 m groß)<br><strong>Bewegungsrate:</strong> 9 m</p><p>Als Elf besitzt du diese besonderen Merkmale.</p><p><em><strong>Dunkelsicht.</strong></em><strong> </strong>Du hast &amp;Reference[Darkvision]{Dunkelsicht} mit einer Reichweite von 18 m.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptElvenLinea caption=false cite=false nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptFeyAncestr caption=false cite=false nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptKeenSenses caption=false cite=false nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptTrance0000 caption=false cite=false nameStyle=inline]</p>",
+    "advancement": {
+      "5w2FaHXRKiN7v1rE": {
+        "hint": "<p>Mittelgroß (etwa 1,5–1,8 m groß)</p>"
+      },
+      "boHzoT53gYPvJ9o2": {
+        "title": "Elfenmerkmale"
+      }
+    }
+  },
+  "phbspGnome000000": {
+    "name": "Gnom",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGnome000000 inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"gnome-traits\">Gnomenmerkmale</h3><p><strong>Kreaturentyp: </strong>Humanoider<br><strong>Größe: </strong>Klein (etwa 0,9–1,2 m groß)<br><strong>Bewegungsrate:</strong> 9 m</p><p>Als Gnom besitzt du diese besonderen Merkmale.</p><p><em><strong>Dunkelsicht.</strong></em><strong> </strong>Du hast Dunkelsicht mit einer Reichweite von 18 m.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptGnomishCun caption=false cite=false nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptGnomishLin caption=false cite=false nameStyle=inline]</p>",
+    "advancement": {
+      "O7gYRGMSW3atQ2Yc": {
+        "hint": "<p>Klein (etwa 0,9–1,2 m groß)</p>"
+      },
+      "LcGnqnqKYFw0PcE9": {
+        "title": "Gnomenmerkmale"
+      }
+    }
+  },
+  "phbspTiefling000": {
+    "name": "Tiefling",
+    "description": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000 inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"abyssal\">Abyssisch</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspAbyssalTief inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"chthonic\">Chthonisch</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspChthonicTie inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"infernal\">Infernalisch</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"tiefling-traits\">Tieflingmerkmale</h3><p><strong>Kreaturentyp</strong>: Humanoider<br><strong>Größe: </strong>Mittelgroß (etwa 1,2–2,1 m groß) oder Klein (etwa 0,9–1,2 m groß), gewählt bei der Wahl dieser Spezies<br><strong>Bewegungsrate:</strong> 9 m</p><p>Als Tiefling besitzt du die folgenden besonderen Merkmale.</p><p><em><strong>Dunkelsicht.</strong></em><strong> </strong>Du hast &amp;Reference[Darkvision]{Dunkelsicht} mit einer Reichweite von 18 m.</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptFiendishLe caption=false cite=false nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptOtherworld caption=false cite=false nameStyle=inline]</p>",
+    "advancement": {
+      "lskxIeib6rIreZ1h": {
+        "hint": "<p>Mittelgroß (etwa 1,2–2,1 m groß) oder Klein (etwa 0,9–1,2 m groß)</p>"
+      },
+      "T8T6H9TudTleafUL": {
+        "title": "Tieflingmerkmale"
+      }
+    }
+  },
+  "phbsptElvenLinea": {
+    "name": "Elfische Abstammung",
+    "description": "<p>Du gehörst einer Abstammung an, die dir übernatürliche Fähigkeiten verleiht. Wähle eine Abstammung aus der Tabelle „Elfische Abstammungen“. Du erhältst den Vorteil der Stufe 1 dieser Abstammung.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle angegeben. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst diese Möglichkeit zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des passenden Grades wirken, den du hast. Intelligenz, Weisheit oder Charisma ist dein Attribut zum Zauberwirken für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du die Abstammung wählst).</p><table><caption><p>Elfische Abstammungen</p></caption><thead><tr><td><p>Abstammung</p></td><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrowElfLin]{Drow}</p></td><td><p>Die Reichweite deiner &amp;Reference[Darkvision]{Dunkelsicht} erhöht sich auf 36 m. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig]{Tanzende Lichter}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Feenfeuer}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Dunkelheit}</em></p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptHighElfLin]{Hochelf}</p></td><td><p>Du kennst den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi]{Taschenspielerei}</em>. Immer wenn du eine Lange Rast beendest, kannst du ihn durch einen anderen Zaubertrick aus der Zauberliste des Magiers ersetzen.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Magie entdecken}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Nebelschritt}</em></p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptWoodElfLin]{Waldelf}</p></td><td><p>Deine Bewegungsrate erhöht sich auf 10,5 m. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft]{Druidenkunst}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Lange Schritte}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Spurloses Gehen}</em></p></td></tr></tbody></table>",
+    "advancement": {
+      "UXq1v36a9kxrZFZC": {
+        "hint": "<p>Du gehörst einer Abstammung an, die dir übernatürliche Fähigkeiten verleiht. Wähle eine Abstammung aus der Tabelle „Elfische Abstammungen“.</p>"
+      }
+    }
+  },
+  "phbsptFiendishLe": {
+    "name": "Teuflisches Erbe",
+    "description": "<p>Du hast ein Erbe empfangen, das dir übernatürliche Fähigkeiten verleiht. Wähle ein Erbe aus der Tabelle „Teuflische Erben“. Du erhältst den Vorteil der Stufe 1 dieses Erbes.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höheren Grades, wie in der Tabelle angegeben. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst diese Möglichkeit zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberplatz des passenden Grades wirken, den du hast. Intelligenz, Weisheit oder Charisma ist dein Attribut zum Zauberwirken für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du das Erbe wählst).</p><table><caption><p>Teuflische Erben</p></caption><thead><tr><td><p>Erbe</p></td><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptAbyssalLeg]{Abyssisch}</p></td><td><p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Giftschaden. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPoisonSpra]{Gift versprühen}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofSickn]{Strahl der Übelkeit}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]{Person festhalten}</em></p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptChthonicLe]{Chthonisch}</p></td><td><p>Du hast &amp;Reference[Resistance]{Resistenz} gegen nekrotischen Schaden. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{Kalte Hand}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{Falsches Leben}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{Schwächestrahl}</em></p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptInfernalLe]{Infernalisch}</p></td><td><p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Feuerschaden. Du kennst außerdem den Zaubertrick <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireBolt00]{Feuerpfeil}</em>.</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHellishReb]{Höllischer Tadel}</em></p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Dunkelheit}</em></p></td></tr></tbody></table>",
+    "advancement": {
+      "rQL2Qm4vq3c3DBDk": {
+        "hint": "<p>Du hast ein Erbe empfangen, das dir übernatürliche Fähigkeiten verleiht. Wähle ein Erbe aus der Tabelle „Teuflische Erben“.</p>"
+      }
+    }
+  },
+  "phbsptGnomishLin": {
+    "name": "Gnomische Abstammung",
+    "description": "<p>Du gehörst einer Abstammung an, die dir übernatürliche Fähigkeiten verleiht. Welche du auch wählst, Intelligenz, Weisheit oder Charisma ist dein Attribut zum Zauberwirken für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du die Abstammung wählst).</p><div class=\"hide-secrets\"><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptForestGnom caption=false cite=false classes=\"subfeature\" nameStyle=inline]</p><p>@Embed[Compendium.dnd5e.origins24.Item.phbsptRockGnomeL caption=false cite=false classes=\"subfeature\" nameStyle=inline]</p></div>",
+    "advancement": {
+      "wC1sjM4Uf7Bc9Gg3": {
+        "hint": "<p>Du gehörst einer Abstammung an, die dir übernatürliche Fähigkeiten verleiht.</p>"
+      }
+    }
+  },
+  "phbsptDrgAncBlac": {
+    "name": "Drachenvorfahr: Schwarzer Drache"
+  },
+  "phbsptDrgAncBlue": {
+    "name": "Drachenvorfahr: Blauer Drache"
+  },
+  "phbsptDrgAncBras": {
+    "name": "Drachenvorfahr: Messingdrache"
+  },
+  "phbsptDrgAncBron": {
+    "name": "Drachenvorfahr: Bronzedrache"
+  },
+  "phbsptDrgAncCopp": {
+    "name": "Drachenvorfahr: Kupferdrache"
+  },
+  "phbsptDrgAncGold": {
+    "name": "Drachenvorfahr: Golddrache"
+  },
+  "phbsptDrgAncGree": {
+    "name": "Drachenvorfahr: Grüner Drache"
+  },
+  "phbsptDrgAncRed0": {
+    "name": "Drachenvorfahr: Roter Drache"
+  },
+  "phbsptDrgAncSilv": {
+    "name": "Drachenvorfahr: Silberdrache"
+  },
+  "phbsptDrgAncWhit": {
+    "name": "Drachenvorfahr: Weißer Drache"
+  },
+  "phbsptDraconiAnc": {
+    "name": "Drakonische Abstammung",
+    "description": "<p>Deine Abstammung geht auf einen Drachen als Urahnen zurück. Wähle die Art des Drachen aus der Tabelle „Drakonische Vorfahren“. Deine Wahl beeinflusst deine Merkmale Atemwaffe und Schadensresistenz sowie dein Aussehen.</p><table><caption><p>Drakonische Vorfahren</p></caption><thead><tr><th><p>Drache</p></th><th><p>Schadensart</p></th><th><p>Drache</p></th><th><p>Schadensart</p></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncBlac]{Schwarz}</p></td><td><p>Säure</p></td><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncGold]{Gold}</p></td><td><p>Feuer</p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncBlue]{Blau}</p></td><td><p>Blitz</p></td><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncGree]{Grün}</p></td><td><p>Gift</p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncBras]{Messing}</p></td><td><p>Feuer</p></td><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncRed0]{Rot}</p></td><td><p>Feuer</p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncBron]{Bronze}</p></td><td><p>Blitz</p></td><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncSilv]{Silber}</p></td><td><p>Kälte</p></td></tr><tr><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncCopp]{Kupfer}</p></td><td><p>Säure</p></td><td><p>@UUID[Compendium.dnd5e.origins24.Item.phbsptDrgAncWhit]{Weiß}</p></td><td><p>Kälte</p></td></tr></tbody></table>",
+    "advancement": {
+      "XFXxfGcc0Z3nB070": {
+        "hint": "<p>Deine Abstammung geht auf einen Drachen als Urahnen zurück. Wähle die Art des Drachen aus der Tabelle „Drakonische Vorfahren“. Deine Wahl beeinflusst deine Merkmale Atemwaffe und Schadensresistenz sowie dein Aussehen.</p>"
+      }
+    }
+  },
+  "phbdrdLandArid00": {
+    "name": "Arides Land",
+    "description": "<table><caption><p>Arides Land</p></caption><thead><tr><td><p>Druidenstufe</p></td><td><p>Zirkelzauber</p></td></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlur000000]{Verschwimmen}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBurningHan]{Brennende Hände}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireBolt00]{Feuerpfeil}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Feuerball}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlight0000]{Dürre}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWallofSton]{Steinwand}</em></p></td></tr></tbody></table>",
+    "effects": {
+      "VY9krQjxNNVHcdyN": {
+        "name": "Naturschutz: Arid",
+        "description": "<p>Ab Stufe 10 hast du &amp;Reference[Resistance]{Resistenz} gegen eine Schadensart, die zu deinem aktuell im Merkmal Zirkelzauber gewählten Land gehört.</p>"
+      }
+    }
+  },
+  "phbdrdLandPolar0": {
+    "name": "Polares Land",
+    "description": "<table><caption><p>Polares Land</p></caption><thead><tr><td><p>Druidenstufe</p></td><td><p>Zirkelzauber</p></td></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFogCloud00]{Nebelwolke}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]{Person festhalten}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofFrost]{Kältestrahl}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSleetStorm]{Schneesturm}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplIceStorm00]{Eissturm}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplConeofCold]{Kältekegel}</em></p></td></tr></tbody></table>",
+    "effects": {
+      "n8mNpKpvixE4tmtv": {
+        "name": "Naturschutz: Polar",
+        "description": "<p>Ab Stufe 10 hast du &amp;Reference[Resistance]{Resistenz} gegen eine Schadensart, die zu deinem aktuell im Merkmal Zirkelzauber gewählten Land gehört.</p>"
+      }
+    }
+  },
+  "phbdrdLandTemper": {
+    "name": "Gemäßigtes Land",
+    "description": "<table><caption><p>Gemäßigtes Land</p></caption><thead><tr><td><p>Druidenstufe</p></td><td><p>Zirkelzauber</p></td></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Nebelschritt}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShockingGr]{Schockgriff}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSleep00000]{Schlaf}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLightningB]{Blitz}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFreedomofM]{Bewegungsfreiheit}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTreeStride]{Baumwandeln}</em></p></td></tr></tbody></table>",
+    "effects": {
+      "rfHt5AtvIIHEXs0M": {
+        "name": "Naturschutz: Gemäßigt",
+        "description": "<p>Ab Stufe 10 hast du &amp;Reference[Resistance]{Resistenz} gegen eine Schadensart, die zu deinem aktuell im Merkmal Zirkelzauber gewählten Land gehört.</p>"
+      }
+    }
+  },
+  "phbdrdLandTropic": {
+    "name": "Tropisches Land",
+    "description": "<table><caption><p>Tropisches Land</p></caption><thead><tr><td><p>Druidenstufe</p></td><td><p>Zirkelzauber</p></td></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAcidSplash]{Säurespritzer}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofSickn]{Strahl der Übelkeit}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWeb0000000]{Spinnennetz}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplStinkingCl]{Stinkende Wolke}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPolymorph0]{Verwandlung}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInsectPlag]{Insektenplage}</em></p></td></tr></tbody></table>",
+    "effects": {
+      "GLGBXj8MomiWXIlu": {
+        "name": "Naturschutz: Tropisch",
+        "description": "<p>Ab Stufe 10 hast du &amp;Reference[Resistance]{Resistenz} gegen eine Schadensart, die zu deinem aktuell im Merkmal Zirkelzauber gewählten Land gehört.</p>"
+      }
+    }
+  },
+  "phbmnkSelfrestor": {
+    "name": "Selbstwiederherstellung",
+    "description": "<p>Durch reine Willenskraft kannst du am Ende jedes deiner Züge einen der folgenden Zustände von dir entfernen: &amp;Reference[Charmed apply=false]{Bezaubert}, &amp;Reference[Frightened apply=false]{Verängstigt} oder &amp;Reference[Poisoned apply=false]{Vergiftet}.</p><p>Außerdem erhältst du keine Stufen der &amp;Reference[Exhaustion apply=false]{Erschöpfung}, wenn du auf Essen und Trinken verzichtest.</p>",
+    "effects": {
+      "oB4U8ru4ATK4dniq": {
+        "name": "Selbstwiederherstellung",
+        "description": "<p>Du erhältst keine Stufen der &amp;Reference[Exhaustion apply=false]{Erschöpfung}, wenn du auf Essen und Trinken verzichtest.</p>"
+      }
+    }
+  },
+  "phbscrElemAffAci": {
+    "name": "Elementare Affinität: Säure",
+    "description": "<p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Säureschaden, und wenn du einen Zauber wirkst, der Schaden dieser Art verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>",
+    "effects": {
+      "6Eu8DTeG0HJGozGV": {
+        "name": "Zusätzlicher Säureschaden",
+        "description": "<p>Wenn du einen Zauber wirkst, der Säureschaden verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>"
+      }
+    }
+  },
+  "phbscrElemAffCol": {
+    "name": "Elementare Affinität: Kälte",
+    "description": "<p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Kälteschaden, und wenn du einen Zauber wirkst, der Schaden dieser Art verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>",
+    "effects": {
+      "pxpEqONXrrsQAOE3": {
+        "name": "Zusätzlicher Kälteschaden",
+        "description": "<p>Wenn du einen Zauber wirkst, der Kälteschaden verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>"
+      }
+    }
+  },
+  "phbscrElemAffFir": {
+    "name": "Elementare Affinität: Feuer",
+    "description": "<p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Feuerschaden, und wenn du einen Zauber wirkst, der Schaden dieser Art verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>",
+    "effects": {
+      "Jl1rJFs2oXTHeOt5": {
+        "name": "Zusätzlicher Feuerschaden",
+        "description": "<p>Wenn du einen Zauber wirkst, der Feuerschaden verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>"
+      }
+    }
+  },
+  "phbscrElemAffLig": {
+    "name": "Elementare Affinität: Blitz",
+    "description": "<p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Blitzschaden, und wenn du einen Zauber wirkst, der Schaden dieser Art verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>",
+    "effects": {
+      "ctoeySJegxfEGSEv": {
+        "name": "Zusätzlicher Blitzschaden",
+        "description": "<p>Wenn du einen Zauber wirkst, der Blitzschaden verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>"
+      }
+    }
+  },
+  "phbscrElemAffPoi": {
+    "name": "Elementare Affinität: Gift",
+    "description": "<p>Du hast &amp;Reference[Resistance]{Resistenz} gegen Giftschaden, und wenn du einen Zauber wirkst, der Schaden dieser Art verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>",
+    "effects": {
+      "A08yoiXRKO7AF6k6": {
+        "name": "Zusätzlicher Giftschaden",
+        "description": "<p>Wenn du einen Zauber wirkst, der Giftschaden verursacht, kannst du deinen Charismamodifikator zu einem Schadenswurf dieses Zaubers addieren.</p>"
+      }
+    }
   }
 };

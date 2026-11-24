@@ -1,0 +1,685 @@
+{
+  "label": "Aktive Effekte",
+  "folders": {
+    "Ability Check & Save Advantage": "Vorteil auf Attributs- und Rettungswürfe",
+    "Ability Check & Save Disadvantage": "Nachteil auf Attributs- und Rettungswürfe",
+    "Ability Check Advantage": "Vorteil auf Attributswürfe",
+    "Ability Check Disadvantage": "Nachteil auf Attributswürfe",
+    "Ability Save Advantage": "Vorteil auf Rettungswürfe",
+    "Ability Save Disadvantage": "Nachteil auf Rettungswürfe",
+    "Attack Advantage": "Vorteil auf Angriffe",
+    "Attack Disadvantage": "Nachteil auf Angriffe",
+    "Condition Immunities": "Zustandsimmunitäten",
+    "Conditions": "Zustände",
+    "D20 Tests": "W20-Tests",
+    "Damage Immunities": "Schadensimmunitäten",
+    "Damage Resistances": "Schadensresistenzen",
+    "Damage Vulnerabilities": "Schadensanfälligkeiten",
+    "Dragonborn": "Drachenblütiger",
+    "Skill Advantage": "Vorteil auf Fertigkeiten",
+    "Skill Disadvantage": "Nachteil auf Fertigkeiten",
+    "Species": "Spezies",
+    "Speeds": "Bewegungsraten",
+    "Spells": "Zauber"
+  },
+  "entries": {
+    "Acid Breath Weapon": {
+      "name": "Atemwaffe: Säure",
+      "description": "<p>Deine Atemwaffe verursacht Säureschaden.</p>"
+    },
+    "Acid Immunity": {
+      "name": "Immunität gegen Säureschaden"
+    },
+    "Acid Resistance": {
+      "name": "Resistenz gegen Säureschaden"
+    },
+    "Acid Vulnerability": {
+      "name": "Anfälligkeit für Säureschaden"
+    },
+    "Acrobatics Advantage": {
+      "name": "Vorteil auf Akrobatik"
+    },
+    "Acrobatics Disadvantage": {
+      "name": "Nachteil auf Akrobatik"
+    },
+    "Advantage on Ability Checks": {
+      "name": "Vorteil auf Attributswürfe"
+    },
+    "Advantage on Attacks": {
+      "name": "Vorteil auf Angriffe"
+    },
+    "Advantage on Checks & Saves": {
+      "name": "Vorteil auf Attributs- und Rettungswürfe"
+    },
+    "Advantage on D20 Tests": {
+      "name": "Vorteil auf W20-Tests"
+    },
+    "Advantage on Melee Attacks": {
+      "name": "Vorteil auf Nahkampfangriffe"
+    },
+    "Advantage on Melee Spell Attacks": {
+      "name": "Vorteil auf Nahkampf-Zauberangriffe"
+    },
+    "Advantage on Melee Weapon Attacks": {
+      "name": "Vorteil auf Nahkampf-Waffenangriffe"
+    },
+    "Advantage on Ranged Attacks": {
+      "name": "Vorteil auf Fernkampfangriffe"
+    },
+    "Advantage on Ranged Spell Attacks": {
+      "name": "Vorteil auf Fernkampf-Zauberangriffe"
+    },
+    "Advantage on Ranged Weapon Attacks": {
+      "name": "Vorteil auf Fernkampf-Waffenangriffe"
+    },
+    "Advantage on Saving Throws": {
+      "name": "Vorteil auf Rettungswürfe"
+    },
+    "Advantage on Skill Checks": {
+      "name": "Vorteil auf Fertigkeitswürfe"
+    },
+    "Advantage on Spell Attacks": {
+      "name": "Vorteil auf Zauberangriffe"
+    },
+    "Advantage on Weapon Attacks": {
+      "name": "Vorteil auf Waffenangriffe"
+    },
+    "Animal Handling Advantage": {
+      "name": "Vorteil auf Mit Tieren umgehen"
+    },
+    "Animal Handling Disadvantage": {
+      "name": "Nachteil auf Mit Tieren umgehen"
+    },
+    "Arcana Advantage": {
+      "name": "Vorteil auf Arkane Kunde"
+    },
+    "Arcana Disadvantage": {
+      "name": "Nachteil auf Arkane Kunde"
+    },
+    "Athletics Advantage": {
+      "name": "Vorteil auf Athletik"
+    },
+    "Athletics Disadvantage": {
+      "name": "Nachteil auf Athletik"
+    },
+    "Aura of Life": {
+      "name": "Aura des Lebens",
+      "description": "<p>In der Aura haben du und deine Verbündeten Resistenz gegen nekrotischen Schaden, und euer Trefferpunktemaximum kann nicht verringert werden. Beginnt ein Verbündeter mit 0 Trefferpunkten seinen Zug in der Aura, erhält er [[/healing 1 type=healing]]{1 Trefferpunkt} zurück.</p>"
+    },
+    "Bleeding": {
+      "name": "Bluten"
+    },
+    "Bleeding Immunity": {
+      "name": "Zustandsimmunität: Bluten"
+    },
+    "Blinded": {
+      "name": "Blind"
+    },
+    "Blinded Immunity": {
+      "name": "Zustandsimmunität: Blind"
+    },
+    "Bludgeoning Immunity": {
+      "name": "Immunität gegen Wuchtschaden"
+    },
+    "Bludgeoning Resistance": {
+      "name": "Resistenz gegen Wuchtschaden"
+    },
+    "Bludgeoning Vulnerability": {
+      "name": "Anfälligkeit für Wuchtschaden"
+    },
+    "Burning": {
+      "name": "Brennend"
+    },
+    "Burning Immunity": {
+      "name": "Zustandsimmunität: Brennend"
+    },
+    "Burrow Speed": {
+      "name": "Bewegungsrate: Graben"
+    },
+    "Charisma Check & Save Advantage": {
+      "name": "Vorteil auf Charismawürfe und Charismarettungswürfe"
+    },
+    "Charisma Check & Save Disadvantage": {
+      "name": "Nachteil auf Charismawürfe und Charismarettungswürfe"
+    },
+    "Charisma Check Advantage": {
+      "name": "Vorteil auf Charismawürfe"
+    },
+    "Charisma Check Disadvantage": {
+      "name": "Nachteil auf Charismawürfe"
+    },
+    "Charisma Save Advantage": {
+      "name": "Vorteil auf Charismarettungswürfe"
+    },
+    "Charisma Save Disadvantage": {
+      "name": "Nachteil auf Charismarettungswürfe"
+    },
+    "Charmed": {
+      "name": "Bezaubert"
+    },
+    "Charmed Immunity": {
+      "name": "Zustandsimmunität: Bezaubert"
+    },
+    "Climb Speed": {
+      "name": "Bewegungsrate: Klettern"
+    },
+    "Cold Breath Weapon": {
+      "name": "Atemwaffe: Kälte",
+      "description": "<p>Deine Atemwaffe verursacht Kälteschaden.</p>"
+    },
+    "Cold Immunity": {
+      "name": "Immunität gegen Kälteschaden"
+    },
+    "Cold Resistance": {
+      "name": "Resistenz gegen Kälteschaden"
+    },
+    "Cold Vulnerability": {
+      "name": "Anfälligkeit für Kälteschaden"
+    },
+    "Constitution Check & Save Advantage": {
+      "name": "Vorteil auf Konstitutionswürfe und Konstitutionsrettungswürfe"
+    },
+    "Constitution Check & Save Disadvantage": {
+      "name": "Nachteil auf Konstitutionswürfe und Konstitutionsrettungswürfe"
+    },
+    "Constitution Check Advantage": {
+      "name": "Vorteil auf Konstitutionswürfe"
+    },
+    "Constitution Check Disadvantage": {
+      "name": "Nachteil auf Konstitutionswürfe"
+    },
+    "Constitution Save Advantage": {
+      "name": "Vorteil auf Konstitutionsrettungswürfe"
+    },
+    "Constitution Save Disadvantage": {
+      "name": "Nachteil auf Konstitutionsrettungswürfe"
+    },
+    "Cursed": {
+      "name": "Verflucht"
+    },
+    "Cursed Immunity": {
+      "name": "Zustandsimmunität: Verflucht"
+    },
+    "Dashing": {
+      "name": "Sprint"
+    },
+    "Deafened": {
+      "name": "Taub"
+    },
+    "Deafened Immunity": {
+      "name": "Zustandsimmunität: Taub"
+    },
+    "Deception Advantage": {
+      "name": "Vorteil auf Täuschen"
+    },
+    "Deception Disadvantage": {
+      "name": "Nachteil auf Täuschen"
+    },
+    "Dehydration": {
+      "name": "Dehydrierung"
+    },
+    "Dehydration Immunity": {
+      "name": "Zustandsimmunität: Dehydrierung"
+    },
+    "Dexterity Check & Save Advantage": {
+      "name": "Vorteil auf Geschicklichkeitswürfe und Geschicklichkeitsrettungswürfe"
+    },
+    "Dexterity Check & Save Disadvantage": {
+      "name": "Nachteil auf Geschicklichkeitswürfe und Geschicklichkeitsrettungswürfe"
+    },
+    "Dexterity Check Advantage": {
+      "name": "Vorteil auf Geschicklichkeitswürfe"
+    },
+    "Dexterity Check Disadvantage": {
+      "name": "Nachteil auf Geschicklichkeitswürfe"
+    },
+    "Dexterity Save Advantage": {
+      "name": "Vorteil auf Geschicklichkeitsrettungswürfe"
+    },
+    "Dexterity Save Disadvantage": {
+      "name": "Nachteil auf Geschicklichkeitsrettungswürfe"
+    },
+    "Disadvantage on Ability Checks": {
+      "name": "Nachteil auf Attributswürfe"
+    },
+    "Disadvantage on Attacks": {
+      "name": "Nachteil auf Angriffe"
+    },
+    "Disadvantage on Checks & Saves": {
+      "name": "Nachteil auf Attributs- und Rettungswürfe"
+    },
+    "Disadvantage on D20 Tests": {
+      "name": "Nachteil auf W20-Tests"
+    },
+    "Disadvantage on Melee Attacks": {
+      "name": "Nachteil auf Nahkampfangriffe"
+    },
+    "Disadvantage on Melee Spell Attacks": {
+      "name": "Nachteil auf Nahkampf-Zauberangriffe"
+    },
+    "Disadvantage on Melee Weapon Attacks": {
+      "name": "Nachteil auf Nahkampf-Waffenangriffe"
+    },
+    "Disadvantage on Ranged Attacks": {
+      "name": "Nachteil auf Fernkampfangriffe"
+    },
+    "Disadvantage on Ranged Spell Attacks": {
+      "name": "Nachteil auf Fernkampf-Zauberangriffe"
+    },
+    "Disadvantage on Ranged Weapon Attacks": {
+      "name": "Nachteil auf Fernkampf-Waffenangriffe"
+    },
+    "Disadvantage on Saving Throws": {
+      "name": "Nachteil auf Rettungswürfe"
+    },
+    "Disadvantage on Skill Checks": {
+      "name": "Nachteil auf Fertigkeitswürfe"
+    },
+    "Disadvantage on Spell Attacks": {
+      "name": "Nachteil auf Zauberangriffe"
+    },
+    "Disadvantage on Weapon Attacks": {
+      "name": "Nachteil auf Waffenangriffe"
+    },
+    "Diseased": {
+      "name": "Erkrankt"
+    },
+    "Diseased Immunity": {
+      "name": "Zustandsimmunität: Erkrankt"
+    },
+    "Disengaged": {
+      "name": "Rückzug"
+    },
+    "Dodging": {
+      "name": "Ausweichen"
+    },
+    "Exhaustion Immunity": {
+      "name": "Zustandsimmunität: Erschöpfung"
+    },
+    "Falling": {
+      "name": "Fallend"
+    },
+    "Falling Immunity": {
+      "name": "Zustandsimmunität: Fallend"
+    },
+    "Fire Breath Weapon": {
+      "name": "Atemwaffe: Feuer",
+      "description": "<p>Deine Atemwaffe verursacht Feuerschaden.</p>"
+    },
+    "Fire Immunity": {
+      "name": "Immunität gegen Feuerschaden"
+    },
+    "Fire Resistance": {
+      "name": "Resistenz gegen Feuerschaden"
+    },
+    "Fire Vulnerability": {
+      "name": "Anfälligkeit für Feuerschaden"
+    },
+    "Fly Speed": {
+      "name": "Bewegungsrate: Fliegen"
+    },
+    "Flying Steed": {
+      "name": "Fliegendes Reittier",
+      "description": "<p>Wird das Reittier durch einen Zauber des 4. Grades oder höher beschworen, hat es eine Flugbewegungsrate von 18 m.</p>"
+    },
+    "Force Immunity": {
+      "name": "Immunität gegen Energieschaden"
+    },
+    "Force Resistance": {
+      "name": "Resistenz gegen Energieschaden"
+    },
+    "Force Vulnerability": {
+      "name": "Anfälligkeit für Energieschaden"
+    },
+    "Frightened": {
+      "name": "Verängstigt"
+    },
+    "Frightened Immunity": {
+      "name": "Zustandsimmunität: Verängstigt"
+    },
+    "Grappled": {
+      "name": "Gepackt"
+    },
+    "Grappled Immunity": {
+      "name": "Zustandsimmunität: Gepackt"
+    },
+    "Half Cover": {
+      "name": "Teildeckung"
+    },
+    "History Advantage": {
+      "name": "Vorteil auf Geschichte"
+    },
+    "History Disadvantage": {
+      "name": "Nachteil auf Geschichte"
+    },
+    "Immunity to All Damage": {
+      "name": "Immunität gegen jeden Schaden"
+    },
+    "Incapacitated": {
+      "name": "Kampfunfähig"
+    },
+    "Incapacitated Immunity": {
+      "name": "Zustandsimmunität: Kampfunfähig"
+    },
+    "Initiative Advantage": {
+      "name": "Vorteil auf Initiative"
+    },
+    "Initiative Disadvantage": {
+      "name": "Nachteil auf Initiative"
+    },
+    "Insight Advantage": {
+      "name": "Vorteil auf Motiv erkennen"
+    },
+    "Insight Disadvantage": {
+      "name": "Nachteil auf Motiv erkennen"
+    },
+    "Intelligence Check & Save Advantage": {
+      "name": "Vorteil auf Intelligenzwürfe und Intelligenzrettungswürfe"
+    },
+    "Intelligence Check & Save Disadvantage": {
+      "name": "Nachteil auf Intelligenzwürfe und Intelligenzrettungswürfe"
+    },
+    "Intelligence Check Advantage": {
+      "name": "Vorteil auf Intelligenzwürfe"
+    },
+    "Intelligence Check Disadvantage": {
+      "name": "Nachteil auf Intelligenzwürfe"
+    },
+    "Intelligence Save Advantage": {
+      "name": "Vorteil auf Intelligenzrettungswürfe"
+    },
+    "Intelligence Save Disadvantage": {
+      "name": "Nachteil auf Intelligenzrettungswürfe"
+    },
+    "Intimidation Advantage": {
+      "name": "Vorteil auf Einschüchtern"
+    },
+    "Intimidation Disadvantage": {
+      "name": "Nachteil auf Einschüchtern"
+    },
+    "Investigation Advantage": {
+      "name": "Vorteil auf Nachforschungen"
+    },
+    "Investigation Disadvantage": {
+      "name": "Nachteil auf Nachforschungen"
+    },
+    "Invisible": {
+      "name": "Unsichtbar"
+    },
+    "Invisible Immunity": {
+      "name": "Zustandsimmunität: Unsichtbar"
+    },
+    "Lightning Breath Weapon": {
+      "name": "Atemwaffe: Blitz",
+      "description": "<p>Deine Atemwaffe verursacht Blitzschaden.</p>"
+    },
+    "Lightning Immunity": {
+      "name": "Immunität gegen Blitzschaden"
+    },
+    "Lightning Resistance": {
+      "name": "Resistenz gegen Blitzschaden"
+    },
+    "Lightning Vulnerability": {
+      "name": "Anfälligkeit für Blitzschaden"
+    },
+    "Malnutrition": {
+      "name": "Unterernährung"
+    },
+    "Malnutrition Immunity": {
+      "name": "Zustandsimmunität: Unterernährung"
+    },
+    "Medicine Advantage": {
+      "name": "Vorteil auf Heilkunde"
+    },
+    "Medicine Disadvantage": {
+      "name": "Nachteil auf Heilkunde"
+    },
+    "Nature Advantage": {
+      "name": "Vorteil auf Naturkunde"
+    },
+    "Nature Disadvantage": {
+      "name": "Nachteil auf Naturkunde"
+    },
+    "Necrotic Immunity": {
+      "name": "Immunität gegen nekrotischen Schaden"
+    },
+    "Necrotic Resistance": {
+      "name": "Resistenz gegen nekrotischen Schaden"
+    },
+    "Necrotic Vulnerability": {
+      "name": "Anfälligkeit für nekrotischen Schaden"
+    },
+    "No Opportunity Attacks": {
+      "name": "Keine Gelegenheitsangriffe"
+    },
+    "No Reactions": {
+      "name": "Keine Reaktionen"
+    },
+    "Paralyzed": {
+      "name": "Gelähmt"
+    },
+    "Paralyzed Immunity": {
+      "name": "Zustandsimmunität: Gelähmt"
+    },
+    "Perception Advantage": {
+      "name": "Vorteil auf Wahrnehmung"
+    },
+    "Perception Disadvantage": {
+      "name": "Nachteil auf Wahrnehmung"
+    },
+    "Performance Advantage": {
+      "name": "Vorteil auf Auftreten"
+    },
+    "Performance Disadvantage": {
+      "name": "Nachteil auf Auftreten"
+    },
+    "Persuasion Advantage": {
+      "name": "Vorteil auf Überzeugen"
+    },
+    "Persuasion Disadvantage": {
+      "name": "Nachteil auf Überzeugen"
+    },
+    "Petrified": {
+      "name": "Versteinert"
+    },
+    "Petrified Immunity": {
+      "name": "Zustandsimmunität: Versteinert"
+    },
+    "Piercing Immunity": {
+      "name": "Immunität gegen Stichschaden"
+    },
+    "Piercing Resistance": {
+      "name": "Resistenz gegen Stichschaden"
+    },
+    "Piercing Vulnerability": {
+      "name": "Anfälligkeit für Stichschaden"
+    },
+    "Poison Breath Weapon": {
+      "name": "Atemwaffe: Gift",
+      "description": "<p>Deine Atemwaffe verursacht Giftschaden.</p>"
+    },
+    "Poison Immunity": {
+      "name": "Immunität gegen Giftschaden"
+    },
+    "Poison Resistance": {
+      "name": "Resistenz gegen Giftschaden"
+    },
+    "Poison Vulnerability": {
+      "name": "Anfälligkeit für Giftschaden"
+    },
+    "Poisoned": {
+      "name": "Vergiftet"
+    },
+    "Poisoned Immunity": {
+      "name": "Zustandsimmunität: Vergiftet"
+    },
+    "Prone": {
+      "name": "Liegend"
+    },
+    "Prone Immunity": {
+      "name": "Zustandsimmunität: Liegend"
+    },
+    "Psychic Immunity": {
+      "name": "Immunität gegen psychischen Schaden"
+    },
+    "Psychic Resistance": {
+      "name": "Resistenz gegen psychischen Schaden"
+    },
+    "Psychic Vulnerability": {
+      "name": "Anfälligkeit für psychischen Schaden"
+    },
+    "Radiant Immunity": {
+      "name": "Immunität gegen gleißenden Schaden"
+    },
+    "Radiant Resistance": {
+      "name": "Resistenz gegen gleißenden Schaden"
+    },
+    "Radiant Vulnerability": {
+      "name": "Anfälligkeit für gleißenden Schaden"
+    },
+    "Religion Advantage": {
+      "name": "Vorteil auf Religion"
+    },
+    "Religion Disadvantage": {
+      "name": "Nachteil auf Religion"
+    },
+    "Resistance to All Damage": {
+      "name": "Resistenz gegen jeden Schaden"
+    },
+    "Restrained": {
+      "name": "Festgesetzt"
+    },
+    "Restrained Immunity": {
+      "name": "Zustandsimmunität: Festgesetzt"
+    },
+    "Silenced": {
+      "name": "Stumm"
+    },
+    "Silenced Immunity": {
+      "name": "Zustandsimmunität: Stumm"
+    },
+    "Slashing Immunity": {
+      "name": "Immunität gegen Hiebschaden"
+    },
+    "Slashing Resistance": {
+      "name": "Resistenz gegen Hiebschaden"
+    },
+    "Slashing Vulnerability": {
+      "name": "Anfälligkeit für Hiebschaden"
+    },
+    "Sleight of Hand Advantage": {
+      "name": "Vorteil auf Fingerfertigkeit"
+    },
+    "Sleight of Hand Disadvantage": {
+      "name": "Nachteil auf Fingerfertigkeit"
+    },
+    "Speed Doubled": {
+      "name": "Bewegungsrate verdoppelt"
+    },
+    "Speed Halved": {
+      "name": "Bewegungsrate halbiert"
+    },
+    "Speed is 0": {
+      "name": "Bewegungsrate 0"
+    },
+    "Stealth Advantage": {
+      "name": "Vorteil auf Heimlichkeit"
+    },
+    "Stealth Disadvantage": {
+      "name": "Nachteil auf Heimlichkeit"
+    },
+    "Strength Check & Save Advantage": {
+      "name": "Vorteil auf Stärkewürfe und Stärkerettungswürfe"
+    },
+    "Strength Check & Save Disadvantage": {
+      "name": "Nachteil auf Stärkewürfe und Stärkerettungswürfe"
+    },
+    "Strength Check Advantage": {
+      "name": "Vorteil auf Stärkewürfe"
+    },
+    "Strength Check Disadvantage": {
+      "name": "Nachteil auf Stärkewürfe"
+    },
+    "Strength Save Advantage": {
+      "name": "Vorteil auf Stärkerettungswürfe"
+    },
+    "Strength Save Disadvantage": {
+      "name": "Nachteil auf Stärkerettungswürfe"
+    },
+    "Stunned": {
+      "name": "Betäubt"
+    },
+    "Stunned Immunity": {
+      "name": "Zustandsimmunität: Betäubt"
+    },
+    "Suffocation": {
+      "name": "Ersticken"
+    },
+    "Suffocation Immunity": {
+      "name": "Zustandsimmunität: Ersticken"
+    },
+    "Surprised": {
+      "name": "Überrascht"
+    },
+    "Surprised Immunity": {
+      "name": "Zustandsimmunität: Überrascht"
+    },
+    "Survival Advantage": {
+      "name": "Vorteil auf Überlebenskunst"
+    },
+    "Survival Disadvantage": {
+      "name": "Nachteil auf Überlebenskunst"
+    },
+    "Swim Speed": {
+      "name": "Bewegungsrate: Schwimmen"
+    },
+    "Three-Quarters Cover": {
+      "name": "Dreivierteldeckung"
+    },
+    "Thunder Immunity": {
+      "name": "Immunität gegen Schallschaden"
+    },
+    "Thunder Resistance": {
+      "name": "Resistenz gegen Schallschaden"
+    },
+    "Thunder Vulnerability": {
+      "name": "Anfälligkeit für Schallschaden"
+    },
+    "Total Cover": {
+      "name": "Vollständige Deckung"
+    },
+    "Transformed": {
+      "name": "Verwandelt"
+    },
+    "Transformed Immunity": {
+      "name": "Zustandsimmunität: Verwandelt"
+    },
+    "Unconscious": {
+      "name": "Bewusstlos"
+    },
+    "Unconscious Immunity": {
+      "name": "Zustandsimmunität: Bewusstlos"
+    },
+    "Vulnerability to All Damage": {
+      "name": "Anfälligkeit für jeden Schaden"
+    },
+    "Wisdom Check & Save Advantage": {
+      "name": "Vorteil auf Weisheitswürfe und Weisheitsrettungswürfe"
+    },
+    "Wisdom Check & Save Disadvantage": {
+      "name": "Nachteil auf Weisheitswürfe und Weisheitsrettungswürfe"
+    },
+    "Wisdom Check Advantage": {
+      "name": "Vorteil auf Weisheitswürfe"
+    },
+    "Wisdom Check Disadvantage": {
+      "name": "Nachteil auf Weisheitswürfe"
+    },
+    "Wisdom Save Advantage": {
+      "name": "Vorteil auf Weisheitsrettungswürfe"
+    },
+    "Wisdom Save Disadvantage": {
+      "name": "Nachteil auf Weisheitsrettungswürfe"
+    }
+  }
+}

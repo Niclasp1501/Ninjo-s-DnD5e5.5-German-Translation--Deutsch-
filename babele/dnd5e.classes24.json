@@ -18,6 +18,10 @@
       "path": "system.activities",
       "converter": "dnd5e55ActivitiesDeRuntime"
     },
+    "effects": {
+      "path": "effects",
+      "converter": "dnd5e55EffectsDeRuntime"
+    },
     "advancement": {
       "path": "system.advancement",
       "converter": "dnd5e55AdvancementDeRuntime"
