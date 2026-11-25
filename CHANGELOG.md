@@ -5,6 +5,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Changed - Talente, Gegenstände und Monster wie im SRD 5.2.1
+
+Als dieses Modul entstand, gab es noch kein deutsches SRD, und viele Namen waren eigene
+Ableitungen. Jetzt sind sie Kapitel für Kapitel mit dem offiziellen deutschen SRD 5.2.1
+abgeglichen.
+
+- Die **Epischen Gaben** heißen „Gabe …“ statt „Gunst …“, etwa **Gabe der Kampffertigkeit** und
+  **Gabe des Wahren Blicks**. Dazu **Ringer**, **Zwei-Waffen-Kampf** und **Kampf mit großen Waffen**.
+- 86 **Monster** tragen den SRD-Namen, darunter **Gruftschrecken**, **Landhai**, **Teufelchen**,
+  **Grauschlick**, **Nachtvettel**, **Todesalb** und **Höllenschlundteufel**.
+- Rund 160 **magische Gegenstände**: Staffs sind **Stäbe**, Rods **Zepter**, dazu **Ioun-Steine**,
+  **Henkersschwert**, **Trickbeutel**, **Federfiguren**, **Zauberschriftrollen** und die
+  **Heiltränke** mit ihren SRD-Stufen.
+- **Ausrüstung**: Werkzeuge in der Einzahl wie **Schmiedewerkzeug**, dazu **Fernrohr**,
+  **Flasche**, **Lupe**, **Glefe**, **Kriegspicke** und **Gepolsterte Rüstung**.
+- **Herkunft**: **Akolyth**, **Feenblut**, **Unholdisches Erbe**, **Riesische Abstammung**,
+  **Angeborene Verstohlenheit**, **Adrenalinrausch** und **Odemwaffe**.
+
 ### Changed - Klassenmerkmale wie im SRD 5.2.1
 
 Wie zuvor die Zauber tragen jetzt auch die Klassen- und Unterklassenmerkmale von 2024 die Namen

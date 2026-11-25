@@ -3427,7 +3427,7 @@
       "Details": "Schriftrollendetails",
       "Explanation": {
         "Label": "Erklärung",
-        "Hint": "Menge der Regeln zur Verwendung von Zauberrollen, die in die erstellte Schriftrolle aufgenommen werden.",
+        "Hint": "Menge der Regeln zur Verwendung von Zauberschriftrollen, die in die erstellte Schriftrolle aufgenommen werden.",
         "Complete": "Komplett",
         "Reference": "Referenz"
       },
@@ -4260,7 +4260,7 @@
     "ToolGamingSet": "Spiel",
     "ToolHerbalismKit": "Kräuterkundeausrüstung",
     "ToolMusicalInstrument": "Musikinstrument",
-    "ToolNavigators": "Navigationswerkzeuge",
+    "ToolNavigators": "Navigationswerkzeug",
     "ToolPoisonersKit": "Giftmischerausrüstung",
     "ToolPromptTitle": "{tool}-Wurf",
     "ToolThieves": "Diebeswerkzeug",
