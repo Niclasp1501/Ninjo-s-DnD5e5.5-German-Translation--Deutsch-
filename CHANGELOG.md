@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [14.2611.3] - 2026-11-28
 
 ### Changed - Talente, Gegenstände und Monster wie im SRD 5.2.1
 
@@ -15,7 +15,7 @@ abgeglichen.
   **Gabe des Wahren Blicks**. Dazu **Ringer**, **Zwei-Waffen-Kampf** und **Kampf mit großen Waffen**.
 - 86 **Monster** tragen den SRD-Namen, darunter **Gruftschrecken**, **Landhai**, **Teufelchen**,
   **Grauschlick**, **Nachtvettel**, **Todesalb** und **Höllenschlundteufel**.
-- Rund 160 **magische Gegenstände**: Staffs sind **Stäbe**, Rods **Zepter**, dazu **Ioun-Steine**,
+- Rund 160 **magische Gegenstände**: Zauberstecken heißen **Stab**, die bisherigen Stäbe **Zepter**, dazu **Ioun-Steine**,
   **Henkersschwert**, **Trickbeutel**, **Federfiguren**, **Zauberschriftrollen** und die
   **Heiltränke** mit ihren SRD-Stufen.
 - **Ausrüstung**: Werkzeuge in der Einzahl wie **Schmiedewerkzeug**, dazu **Fernrohr**,
